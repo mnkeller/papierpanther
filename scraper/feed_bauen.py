@@ -106,6 +106,11 @@ def main():
                 "ref": ref,
                 "klartext_titel": kur["klartext_titel"],
                 "klartext": kur["klartext"],
+                # Leichte Sprache, optional. Leer heisst: fuer diesen Eintrag
+                # liegt noch keine Fassung vor — die Oberflaeche faellt dann
+                # sichtbar auf die normale Fassung zurueck, statt zu raten.
+                "klartext_titel_leicht": kur.get("klartext_titel_leicht", ""),
+                "klartext_leicht": kur.get("klartext_leicht", ""),
                 "lebenslage": kur.get("lebenslage", []),
                 "bezirk": kur.get("bezirk", []),
                 "anlass": kur.get("anlass", []),
@@ -166,6 +171,7 @@ def main():
             "tops_verfahren": roh.get("anzahl_verfahren", 0),
             "tops_kuratiert": len(feed),
             "entwuerfe": sum(1 for e in feed if e["entwurf"]),
+            "leichte_sprache": sum(1 for e in feed if e["klartext_leicht"]),
             "je_quelle": {
                 k: sum(1 for e in feed if e["quelle"] == k) for k in roh["quellen"]
             },

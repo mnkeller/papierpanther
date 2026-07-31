@@ -1,5 +1,5 @@
 {
-  "_hinweis": "Aufbereitete Klartext-Fassungen zu Tagesordnungspunkten aus rohdaten.json. Referenz-Schluessel ist '<quelle>:<sitzungs-id>#<top-nr>', quelle ist 'stadt' oder 'bza'. 'bezirk' ist der amtliche Stadtbezirk (Filter), 'ort' ein freier Ortsvermerk (nur Anzeige). 'entwurf': true heisst maschinell vorgeschlagen und noch nicht durchgesehen. Die Aufbereitung kann Fehler enthalten; die Oberflaeche weist darauf hin und verlinkt bei jedem Eintrag die Originalquelle.",
+  "_hinweis": "Aufbereitete Klartext-Fassungen zu Tagesordnungspunkten aus rohdaten.json. Referenz-Schluessel ist '<quelle>:<sitzungs-id>#<top-nr>', quelle ist 'stadt' oder 'bza'. Jeder Eintrag hat zwei Textfassungen: 'klartext_titel'/'klartext' in normaler Sprache und 'klartext_titel_leicht'/'klartext_leicht' in Leichter Sprache. Beide entstehen im selben Arbeitsgang - die Regeln dafuer stehen in KURATION.md. Leere Leicht-Felder sind erlaubt; die Oberflaeche faellt dann sichtbar auf die normale Fassung zurueck. 'bezirk' ist der amtliche Stadtbezirk (Filter), 'ort' ein freier Ortsvermerk (nur Anzeige). 'entwurf': true heisst maschinell vorgeschlagen und noch nicht durchgesehen. Die Aufbereitung kann Fehler enthalten; die Oberflaeche weist darauf hin und verlinkt bei jedem Eintrag die Originalquelle.",
   "_achsen": {
     "lebenslage": [
       "Eltern & Kinder",

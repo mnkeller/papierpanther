@@ -35,6 +35,7 @@ Nur Python-Standardbibliothek, keine Abhängigkeiten.
 index.html            Oberfläche + eingebettete Daten
 impressum.html        Impressum (§ 5 DDG)
 datenschutz.html      Datenschutzerklärung
+KURATION.md           wie die Kurztexte entstehen (inkl. Leichte Sprache)
 scraper/
   ris_ingolstadt.py   liest beide Portale aus       -> data/rohdaten.json
   entwuerfe_bauen.py  erzeugt Kurations-Vorschläge  -> data/kuration.json
@@ -53,6 +54,10 @@ Seite bleiben unangetastet.
 
 Die Trennung von `rohdaten.json` und `kuration.json` ist bewusst: Neu-Scrapen
 überschreibt niemals die aufbereiteten Texte.
+
+Jeder kuratierte Eintrag trägt seine Texte in zwei Fassungen — normale Sprache
+und **Leichte Sprache**. Beide entstehen im selben Arbeitsgang; die Regeln dafür
+stehen in [KURATION.md](KURATION.md).
 
 Hintergrund zur Datenlage, zum Beratungsstand und zu den offenen Fragen:
 [PROTOTYP-INGOLSTADT.md](PROTOTYP-INGOLSTADT.md).
