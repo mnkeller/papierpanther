@@ -43,8 +43,23 @@ LEBENSLAGE_STICHWORTE = [
      r"musikschule|eltern|ganztag|spielplatz|spielger(ä|ae)t|kinder", "Eltern & Kinder"),
     (r"jugend|jupa|jugendparlament|jugendarbeit|stadtjugendring|"
      r"skate|bolzplatz|basketball", "Jugend"),
-    (r"senior|\bpflege\b|pflegebericht|pflegeheim|altenpflege|altenhilfe|"
-     r"barrierefrei|rollator|generationen", "Senior:innen"),
+    (r"senior|pflegeheim|altenpflege|altenhilfe|rollator|generationen|"
+     r"altenheim|ruhestand", "Senior:innen"),
+    # Barrierefreiheit und Pflege betreffen nicht nur Aeltere, deshalb eigene Achse
+    (r"gesundheit|\bpflege\b|pflegebericht|klinik|krankenhaus|(ä|ae)rzt|"
+     r"selbsthilfe|sucht|psychiatr|psychosozial|hospiz|impf|seuchen|"
+     r"barrierefrei|behinder|inklusion|teilhabe", "Gesundheit & Pflege"),
+    (r"arbeitsmarkt|arbeitsplat|arbeitslos|besch(ä|ae)ftig|stellenabbau|"
+     r"qualifizier|umschul|jobcenter|fachkr(ä|ae)fte|ausbildungsplat|"
+     r"tvo(ö|oe)d|tarifbesch(ä|ae)ftig|arbeitszeit|stellenplan|personalamt",
+     "Arbeit & Beruf"),
+    (r"sozialleistung|zuschuss f(ü|ue)r|f(ö|oe)rderrichtlinie|armut|wohngeld|"
+     r"grundsicherung|\btafel\b|obdachlos|wohnungslos|sozialpass|"
+     r"hilfe zur pflege|bildungspaket", "Geld & Soziales"),
+    (r"asyl|gefl(ü|ue)chtet|fl(ü|ue)chtling|migration|integration|zuwander|"
+     r"ukrain|sprachkurs", "Zuwanderung & Integration"),
+    (r"verein|ehrenamt|f(ö|oe)rderverein|freiwillige|b(ü|ue)rgerschaftliches|"
+     r"brauchtum|sch(ü|ue)tzen|feuerwehrverein", "Ehrenamt & Vereine"),
     (r"wohn|\bmiet|bebauungsplan|fl(ä|ae)chennutzung|grundst(ü|ue)ck|"
      r"kanalsanierung|kanalnetz|abwasser|"
      r"abfall|m(ü|ue)ll|geb(ü|ue)hrensatzung|zweitwohnung|nachbarschaft",
@@ -86,6 +101,12 @@ ANLASS_STICHWORTE = [
     (r"konzept|planung|bedarfsplan|strategie|bericht|analyse|befragung",
      "Konzept & Planung"),
     (r"sanierung|baustelle|umbau|instandsetzung|erneuerung", "Baustelle"),
+    (r"klima|energie|solar|photovolt|windkraft|w(ä|ae)rmeplan|w(ä|ae)rmenetz|"
+     r"nachhaltig|umweltschutz|luftrein|l(ä|ae)rm|artenschutz|biodivers|"
+     r"starkregen|hitze", "Klima & Umwelt"),
+    (r"kultur|museum|theater|bibliothek|stadtb(ü|ue)cherei|musikschule|"
+     r"volkshochschule|\bvhs\b|denkmal|archiv|konzert|ausstellung|"
+     r"stadttheater|kunst", "Kultur & Bildung"),
     # Traegt vor allem die BZA-Punkte: Baeume, Gruen, Sauberkeit, Moebliar
     (r"baum|b(ä|ae)ume|baumf(ä|ae)ll|baumpflanz|gr(ü|ue)n|hecke|wiese|"
      r"m(ü|ue)lleimer|verm(ü|ue)ll|sauberkeit|hundekot|papierkorb|"
@@ -133,6 +154,37 @@ def klartext_titel(titel):
     return t
 
 
+# Gremien, die keine Buergerinformation im Sinne dieser Seite sind: Aufsichts-
+# und Verwaltungsraete staedtischer Gesellschaften, Zweckverbaende, Beiraete.
+# Ihre Tagesordnungen sind formal oeffentlich, aber inhaltlich Unternehmens-
+# steuerung — Jahresabschluesse, Beteiligungsberichte, Gremienbesetzungen.
+BETEILIGUNG_MUSTER = re.compile(
+    r"Aufsichtsrat|Verwaltungsrat|\bAöR\b|GmbH|Zweckverband|Verbandsversammlung|"
+    r"Beirat|Kommission|Gesellschafterversammlung",
+    re.I,
+)
+
+
+def ist_beteiligung(gremium):
+    return bool(BETEILIGUNG_MUSTER.search(gremium or ""))
+
+
+def ohne_personen(zusatz):
+    """
+    Entfernt Referenten- und Personenangaben aus dem Klammerzusatz.
+
+    Nachnamen sind eine Fehlerquelle: 'Herr Mueller' traf das Stichwort 'muell'
+    und machte aus einer Volkshochschul-Richtlinie ein Thema 'Wohnen & Miete'.
+    Namen sagen nichts ueber den Inhalt, also fliegen sie vor der Suche raus.
+    """
+    if not zusatz:
+        return ""
+    ohne = re.sub(r"(Referent(en|in|innen)?|Vortrag(ende[rn]?)?|Berichterstatter(in)?)\s*:.*",
+                  "", zusatz, flags=re.I | re.S)
+    ohne = re.sub(r"\b(Herr|Frau|Dr\.|Prof\.)\s+\S+", "", ohne)
+    return ohne.strip()
+
+
 def schlagworte(text, tabelle):
     treffer = []
     for muster, wert in tabelle:
@@ -153,6 +205,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--quelle", choices=["stadt", "bza"], help="nur eine Quelle")
     parser.add_argument("--max", type=int, default=0, help="hoechstens N Entwuerfe")
+    parser.add_argument("--mit-beteiligungen", action="store_true",
+                        help="Aufsichtsraete, Zweckverbaende und Beiraete mitnehmen")
     parser.add_argument("--probelauf", action="store_true", help="nichts schreiben")
     parser.add_argument("--prompt-bundle", metavar="DATEI",
                         help="Entwuerfe zusaetzlich als Textbuendel schreiben")
@@ -167,6 +221,8 @@ def main():
     for sitzung in roh["sitzungen"]:
         quelle = sitzung.get("quelle", "stadt")
         if args.quelle and quelle != args.quelle:
+            continue
+        if not args.mit_beteiligungen and ist_beteiligung(sitzung["gremium"]):
             continue
         for top in sitzung["tops"]:
             ref = f'{quelle}:{sitzung["id"]}#{top["nr"]}'
@@ -187,7 +243,9 @@ def main():
 
     neu = collections.OrderedDict()
     for ref, sitzung, top in offen:
-        suchtext = " ".join([top["titel"], top.get("zusatz", ""), sitzung["gremium"]])
+        suchtext = " ".join(
+            [top["titel"], ohne_personen(top.get("zusatz", "")), sitzung["gremium"]]
+        )
         eintrag = collections.OrderedDict()
         eintrag["klartext_titel"] = klartext_titel(top["titel"])
         eintrag["klartext"] = ""        # bleibt leer: die Oberflaeche zeigt dann
