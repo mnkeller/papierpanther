@@ -1,0 +1,1821 @@
+{
+  "_hinweis": "Aufbereitete Klartext-Fassungen zu Tagesordnungspunkten aus rohdaten.json. Referenz-Schluessel ist '<quelle>:<sitzungs-id>#<top-nr>', quelle ist 'stadt' oder 'bza'. 'bezirk' ist der amtliche Stadtbezirk (Filter), 'ort' ein freier Ortsvermerk (nur Anzeige). 'entwurf': true heisst maschinell vorgeschlagen und noch nicht durchgesehen. Die Aufbereitung kann Fehler enthalten; die Oberflaeche weist darauf hin und verlinkt bei jedem Eintrag die Originalquelle.",
+  "_achsen": {
+    "lebenslage": [
+      "Eltern & Kinder",
+      "Jugend",
+      "Senior:innen",
+      "Wohnen & Miete",
+      "Gewerbe & Gastro",
+      "Unterwegs",
+      "Freizeit & Sport",
+      "Studierende"
+    ],
+    "anlass": [
+      "Gebühren & Preise",
+      "Kinderbetreuung",
+      "Schulbau",
+      "Bauleitplanung",
+      "Verkehrsplanung",
+      "Sicherheit",
+      "Satzung & Regeln",
+      "Konzept & Planung",
+      "Baustelle"
+    ],
+    "bezirk": [
+      "stadtweit",
+      "I-Mitte",
+      "II-Nordwest",
+      "III-Nordost",
+      "IV-Südost",
+      "V-Südwest",
+      "VI-West",
+      "VII-Etting",
+      "VIII-Oberhaunstadt",
+      "IX-Mailing/Feldkirchen",
+      "X-Süd",
+      "XI-Friedrichshofen/Hollerstauden",
+      "XII-Münchener Straße"
+    ]
+  },
+  "eintraege": {
+    "stadt:13530#Ö 1": {
+      "klartext_titel": "Was Eltern über die Kitas in Ingolstadt gesagt haben",
+      "klartext": "Die Stadt hat Eltern zum Kita-Jahr 2025/26 befragt. Die Auswertung lag dem Jugendhilfeausschuss vor.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Kinderbetreuung"
+      ]
+    },
+    "stadt:13533#Ö 4": {
+      "klartext_titel": "Wie viele Kita-Plätze Ingolstadt in den nächsten Jahren braucht",
+      "klartext": "Die Stadt schreibt ihre Bedarfsplanung für Kindertageseinrichtungen fort. Dazu liegen Zahlen zum stadtweiten Bedarf und zu den geplanten Plätzen vor.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Kinderbetreuung",
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:13524#Ö 4": {
+      "klartext_titel": "Essensgeld in Kita, Mittagsbetreuung und Ganztagsschule soll steigen",
+      "klartext": "Mehrere Gebührensatzungen sollen geändert werden: für den Kita-Besuch, für die Mittags- und Randbetreuung an Grundschulen und für die Verpflegung in Ganztagsschulen. Anlass ist unter anderem der Rechtsanspruch auf Ganztagsbetreuung für Grundschulkinder.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise",
+        "Kinderbetreuung",
+        "Satzung & Regeln"
+      ]
+    },
+    "stadt:13534#Ö 2": {
+      "klartext_titel": "Neuer Schulcampus im Nordosten auf dem alten Rosner-Areal",
+      "klartext": "An der Schölnhammerstraße soll ein Schulcampus entstehen: Neubau der Mittelschule Nord-Ost, Neubau der 3. Staatlichen Realschule und gemeinsame Sportanlagen. Während der Bauzeit sind Auslagerungen und Interimsnutzungen geplant.",
+      "lebenslage": [
+        "Eltern & Kinder",
+        "Jugend"
+      ],
+      "bezirk": [
+        "III-Nordost"
+      ],
+      "ort": [],
+      "anlass": [
+        "Schulbau",
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:13534#Ö 1": {
+      "klartext_titel": "Welche Schulbauten in Ingolstadt dringend nötig sind",
+      "klartext": "Die Verwaltung hat mündlich über dringende und unabweisbare Schulbaumaßnahmen berichtet. Zu diesem Punkt liegt keine schriftliche Vorlage im Ratsinfoportal.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Schulbau"
+      ]
+    },
+    "stadt:13531#Ö 3": {
+      "klartext_titel": "Neue Regeln für den Baggersee",
+      "klartext": "Für das Naherholungsgebiet Baggersee soll eine Allgemeinverfügung erlassen werden — also verbindliche Regeln für die Benutzung. Grundlage ist ein Sicherheitsgutachten.",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "ort": [
+        "Baggersee"
+      ],
+      "anlass": [
+        "Sicherheit",
+        "Satzung & Regeln"
+      ]
+    },
+    "stadt:13525#Ö 7": {
+      "klartext_titel": "Sicherheitsgutachten zum Baggersee vorgestellt",
+      "klartext": "Der Oberbürgermeister hat mündlich über das Sicherheitsgutachten zum Baggersee berichtet. Im Ratsinfoportal liegt dazu ein Gefahrabwendungskonzept als Dokument.",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "ort": [
+        "Baggersee"
+      ],
+      "anlass": [
+        "Sicherheit"
+      ]
+    },
+    "stadt:13531#Ö 2": {
+      "klartext_titel": "Christkindlmarkt: Standgebühren sollen steigen",
+      "klartext": "Der Christkindlmarkt läuft länger als bisher. Die dadurch entstehenden Mehrkosten sollen über höhere Standgebühren finanziert werden.",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ]
+    },
+    "stadt:13531#Ö 4": {
+      "klartext_titel": "Außenbestuhlung für zwei Lokale in der Altstadt",
+      "klartext": "Zwei Ladenlokale haben Außenbestuhlung beantragt: der Weinraum Ingolstadt (Am Stein 3) und der Adana Grill (Milchstraße 23a, Bestuhlung entlang der Milchstraße).",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [
+        "Satzung & Regeln"
+      ]
+    },
+    "stadt:13529#Ö 4": {
+      "klartext_titel": "Änderungen am Busfahrplan",
+      "klartext": "Der Stadtrat hat sich mit Fahrplanmaßnahmen im Ingolstädter ÖPNV befasst — vorgelegt von der Stadtbus Ingolstadt GmbH.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung"
+      ]
+    },
+    "stadt:13525#Ö 3": {
+      "klartext_titel": "Wie der Verkehr in der Altstadt tatsächlich läuft",
+      "klartext": "Eine verkehrliche Grundlagenanalyse für die Altstadt ist fertig. Die Ergebnisse wurden im Ausschuss vorgestellt; ein Kurzbericht liegt als Dokument vor.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung",
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:13705#Ö 2": {
+      "klartext_titel": "Parken wird zum 1. September 2026 teurer",
+      "klartext": "Für die städtischen Parkeinrichtungen sind Tariferhöhungen zum 01.09.2026 vorgesehen. Es liegen Tarifübersichten für Kurzparker und Dauerparker vor.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ]
+    },
+    "stadt:13529#Ö 9": {
+      "klartext_titel": "Zweitwohnungssteuer wird geändert",
+      "klartext": "Die Satzung über die Erhebung der Zweitwohnungssteuer soll geändert werden. Betroffen sind alle, die in Ingolstadt eine Zweitwohnung gemeldet haben.",
+      "lebenslage": [
+        "Wohnen & Miete",
+        "Studierende"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise",
+        "Satzung & Regeln"
+      ]
+    },
+    "stadt:13538#Ö 4": {
+      "klartext_titel": "Gebühren der Kommunalbetriebe werden neu berechnet",
+      "klartext": "Die Ingolstädter Kommunalbetriebe (INKB) haben ihre Gebühren neu kalkuliert. Dafür sollen die Beitrags- und Gebührensatzungen geändert werden.",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise",
+        "Satzung & Regeln"
+      ]
+    },
+    "stadt:13532#Ö 1": {
+      "klartext_titel": "Seniorenpolitisches Gesamtkonzept 2026",
+      "klartext": "Die Stadt hat ein umfassendes Konzept zur Seniorenpolitik vorgelegt — mit Bevölkerungsdaten, einer Seniorenbefragung, einem Pflegebericht und konkreten Handlungsfeldern.",
+      "lebenslage": [
+        "Senior:innen"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:13534#Ö 6": {
+      "klartext_titel": "Öffentliche Toilette im Pius-Park soll kürzer öffnen",
+      "klartext": "Die Öffnungszeiten der öffentlichen Toilette im Pius-Park sollen eingeschränkt werden.",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "II-Nordwest"
+      ],
+      "ort": [],
+      "anlass": [
+        "Satzung & Regeln"
+      ]
+    },
+    "stadt:13710#Ö 4": {
+      "klartext_titel": "Kanalsanierung in Unterbrunnenreuth",
+      "klartext": "Der Verwaltungsrat der Kommunalbetriebe hat sich mit der Kanalsanierung in Unterbrunnenreuth befasst.",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "ort": [
+        "Unterbrunnenreuth"
+      ],
+      "anlass": [
+        "Baustelle"
+      ]
+    },
+    "stadt:13534#Ö 3": {
+      "klartext_titel": "Weiherfeld Süd: Bebauungsplan im letzten Schritt",
+      "klartext": "Für das Gebiet „Weiherfeld Süd\" stand der Satzungsbeschluss zum Bebauungs- und Grünordnungsplan Nr. 934 an — zusammen mit einer Änderung des Flächennutzungsplans. Zur Vorlage gehören unter anderem eine Verkehrsuntersuchung, eine Klimaanalyse und eine schalltechnische Untersuchung.",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "ort": [
+        "Weiherfeld"
+      ],
+      "anlass": [
+        "Bauleitplanung"
+      ]
+    },
+    "stadt:13525#Ö 4": {
+      "klartext_titel": "Überschwemmungsgebiet an der Sandrach wird festgesetzt",
+      "klartext": "Für die Sandrach soll ein Überschwemmungsgebiet per Verordnung festgesetzt werden — auf einer Länge von Fluss-Kilometer 1,026 bis 13,516. Detailkarten und ein Erläuterungsbericht liegen vor.",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "ort": [
+        "Sandrach"
+      ],
+      "anlass": [
+        "Satzung & Regeln",
+        "Sicherheit"
+      ]
+    },
+    "stadt:13725#Ö 2": {
+      "klartext_titel": "Donautherme: Öffnungszeiten und Eintrittspreise werden angepasst",
+      "klartext": "Der Aufsichtsrat hat über den Betrieb der Donautherme berichtet. Auf der Tagesordnung standen eine Anpassung der Öffnungszeiten und der Eintrittspreise.",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ]
+    },
+    "stadt:13533#Ö 6": {
+      "klartext_titel": "Musikschule: Gebühren und Regeln werden neu gefasst",
+      "klartext": "Benutzungssatzung und Gebührensatzung der Simon-Mayr-Sing- und Musikschule sollen neu gefasst werden. Zur Vorlage gehören eine neue und eine alte Gebührentabelle sowie eine Kalkulation der Mehreinnahmen.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise",
+        "Satzung & Regeln"
+      ]
+    },
+    "stadt:13535#Ö 12": {
+      "klartext_titel": "Mobile Jugendarbeit beim Stadtjugendring",
+      "klartext": "Der Finanzausschuss hat sich mit der mobilen Jugendarbeit in Trägerschaft des Stadtjugendrings Ingolstadt befasst.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
+    },
+    "bza:14211#Ö 3.1": {
+      "klartext_titel": "Fahrradstraße Gymnasiumstraße",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": true
+    },
+    "bza:14211#Ö 3.2": {
+      "klartext_titel": "Fahrradbügel Mauthstraße",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14211#Ö 3.3": {
+      "klartext_titel": "Trinkbrunnen in der Kanalstraße / Sauerstraße",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "bza:14211#Ö 3.4": {
+      "klartext_titel": "Stauffenbergstraße 2–4",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14211#Ö 4.1": {
+      "klartext_titel": "Kurzvorstellung Projekt „Abpflastern“",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "bza:14211#Ö 4.2": {
+      "klartext_titel": "Parkbuchten Audi Zentrum Schlüterstraße",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": true
+    },
+    "bza:14211#Ö 4.3": {
+      "klartext_titel": "Mülleimer Wohnmobilstellplatz am Hallenbad",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete",
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "bza:14211#Ö 4.4": {
+      "klartext_titel": "Beschädigungen Baumpflanzungen Harderstraße",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [
+        "Sicherheit",
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "bza:14211#Ö 4.5": {
+      "klartext_titel": "Außenbestuhlung vor Papa Joe’s (Harderstraße)",
+      "klartext": "",
+      "lebenslage": [
+        "Gewerbe & Gastro",
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14211#Ö 4.6": {
+      "klartext_titel": "Ersatz für Baumfällungen am Viktualienmarkt",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "bza:14211#Ö 4.7": {
+      "klartext_titel": "Degenhartstraße",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14211#Ö 4.8": {
+      "klartext_titel": "Gefährlicher Verkehr Kupferstraße",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "entwurf": true
+    },
+    "bza:14211#Ö 4.9": {
+      "klartext_titel": "30-er-Zone Gerolfinger-Straße",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": true
+    },
+    "bza:14207#Ö 3": {
+      "klartext_titel": "Bebauungsplan Nr. 196 „Friedrichshofen",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "XI-Friedrichshofen/Hollerstauden"
+      ],
+      "ort": [],
+      "anlass": [
+        "Bauleitplanung",
+        "Konzept & Planung"
+      ],
+      "entwurf": true
+    },
+    "bza:14152#Ö 2.1": {
+      "klartext_titel": "Schröplerlohe - Parkbank - Mängelmelder",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "IV-Südost"
+      ],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "bza:14152#Ö 3.1": {
+      "klartext_titel": "Stadtbus Ingolstadt – Neue Taktzeiten",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "IV-Südost"
+      ],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": true
+    },
+    "bza:14152#Ö 3.2": {
+      "klartext_titel": "Behinderten- und Jugendbeauftragter des BZA",
+      "klartext": "",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "IV-Südost"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14152#Ö 3.3": {
+      "klartext_titel": "Projekt Abpflastern",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "IV-Südost"
+      ],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "bza:14152#Ö 4.1": {
+      "klartext_titel": "Niederfeld - Schwenkweiherpflege",
+      "klartext": "",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "IV-Südost"
+      ],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "bza:14152#Ö 4.2": {
+      "klartext_titel": "Stadtweg/Fliederstr. - Bushäuschensicht",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "IV-Südost"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14152#Ö 4.3": {
+      "klartext_titel": "Niederfeld – Parkplatzsituation Rothenturmer Str.",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "IV-Südost"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14152#Ö 5": {
+      "klartext_titel": "Geschwindigkeitsmessungen",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "IV-Südost"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14152#Ö 6": {
+      "klartext_titel": "Bürgerhaushalt (BHH) - Projektliste",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "IV-Südost"
+      ],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "entwurf": true
+    },
+    "bza:14199#Ö 2": {
+      "klartext_titel": "Bestellung einer/s Jugend- und einer/s Inklusionsbeauftragten",
+      "klartext": "",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14199#Ö 3.1": {
+      "klartext_titel": "Fertigstellung Kanalsanierung Hans-Denck-Straße",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete",
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "ort": [],
+      "anlass": [
+        "Baustelle"
+      ],
+      "entwurf": true
+    },
+    "bza:14199#Ö 3.2": {
+      "klartext_titel": "Bebauungs- und Grünordnungsplan Nr. 935 „Solarparks Winden südlich B 16\"",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "ort": [],
+      "anlass": [
+        "Bauleitplanung",
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "bza:14199#Ö 4.1": {
+      "klartext_titel": "Anträge zum Verfahren „vierstreifiger Ausbau der B 16“",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14197#Ö 4": {
+      "klartext_titel": "Radwegnetz in Ober-/Unterhaunstadt (aktueller Stand/Änderungen)",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "VIII-Oberhaunstadt"
+      ],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": true
+    },
+    "bza:14197#Ö 5": {
+      "klartext_titel": "Satzung zur Änderung der Satzung über die Bildung von Stadtbezirken und Bezirksausschüssen …",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "VIII-Oberhaunstadt"
+      ],
+      "ort": [],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "entwurf": true
+    },
+    "bza:14175#Ö 3.2": {
+      "klartext_titel": "Jugendbeauftragter",
+      "klartext": "",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "IX-Mailing/Feldkirchen"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14177#Ö 3.1": {
+      "klartext_titel": "Cricket Feld",
+      "klartext": "",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "III-Nordost"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14177#Ö 4": {
+      "klartext_titel": "Bürgerhaushalt",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "III-Nordost"
+      ],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "entwurf": true
+    },
+    "bza:14177#Ö 5.1": {
+      "klartext_titel": "Ausfahrt Hofmillerstr. 29-33",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "III-Nordost"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14177#Ö 5.2": {
+      "klartext_titel": "Kreuzung Regensburger Str. / Kurt-Huber-Str.",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "III-Nordost"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14177#Ö 6.1": {
+      "klartext_titel": "Geschwindigkeitskontrollen",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "III-Nordost"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14177#Ö 6.3": {
+      "klartext_titel": "Jugendbeauftragter, Behindertenbeauftragter",
+      "klartext": "",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "III-Nordost"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14158#Ö 2": {
+      "klartext_titel": "Referat VI - Fahrradbeauftragte",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XII-Münchener Straße"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14158#Ö 2.1": {
+      "klartext_titel": "Vorstellung des Baureferenten und der Fahrradbeauftragten",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XII-Münchener Straße"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14158#Ö 2.2": {
+      "klartext_titel": "Beabsichtigte Ausweisung der Bahnhofstraße als Fahrradstraße",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XII-Münchener Straße"
+      ],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": true
+    },
+    "bza:14158#Ö 3": {
+      "klartext_titel": "Information über sachliche und örtliche Zuständigkeit des BZA XII",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XII-Münchener Straße"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14158#Ö 4": {
+      "klartext_titel": "Wahl der Beauftragten",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XII-Münchener Straße"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14158#Ö 4.1": {
+      "klartext_titel": "Integrationsbeauftragte(r)",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XII-Münchener Straße"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14158#Ö 4.2": {
+      "klartext_titel": "Jugendbeauftragte(r)",
+      "klartext": "",
+      "lebenslage": [
+        "Jugend",
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XII-Münchener Straße"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14158#Ö 5": {
+      "klartext_titel": "Schreiben der Stadt zum Bebauungsplan “Lindberghstraße”, BZA 2025-12-012",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete",
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XII-Münchener Straße"
+      ],
+      "ort": [],
+      "anlass": [
+        "Bauleitplanung"
+      ],
+      "entwurf": true
+    },
+    "bza:14158#Ö 6": {
+      "klartext_titel": "Antrag “Geschwindigkeitsbeschränkung Am Pulverl”",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XII-Münchener Straße"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14158#Ö 7": {
+      "klartext_titel": "Bürgeranliegen",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XII-Münchener Straße"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14155#Ö 4": {
+      "klartext_titel": "Bürgerhaushalt",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "II-Nordwest"
+      ],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "entwurf": true
+    },
+    "bza:14155#Ö 4.1": {
+      "klartext_titel": "Letzter Stand BHH 2025/2026",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "II-Nordwest"
+      ],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "entwurf": true
+    },
+    "bza:14155#Ö 5.1": {
+      "klartext_titel": "Tempo 30 auf der Gaimersheimer Straße",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "II-Nordwest"
+      ],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": true
+    },
+    "bza:14155#Ö 5.2": {
+      "klartext_titel": "Schachtische im Piuspark",
+      "klartext": "",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "II-Nordwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14155#Ö 6": {
+      "klartext_titel": "Veränderte Rolle des Bezirksausschusses",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "II-Nordwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14155#Ö 6.1": {
+      "klartext_titel": "Gemeinsame Festlegung der zukünftigen Arbeitsweise",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "II-Nordwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14155#Ö 6.2": {
+      "klartext_titel": "Themen und Projekte des Bezirksausschusses",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "II-Nordwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14155#Ö 6.3": {
+      "klartext_titel": "Information der Bürgerinnen und Bürger, Öffentlichkeitsarbeit",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "II-Nordwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14155#Ö 6.4": {
+      "klartext_titel": "Vernetzung im Stadtteil",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "II-Nordwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14155#Ö 7.1": {
+      "klartext_titel": "Maßnahmen gegen Vandalismus und Vermüllung",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "II-Nordwest"
+      ],
+      "ort": [],
+      "anlass": [
+        "Sicherheit",
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "bza:14155#Ö 7.2": {
+      "klartext_titel": "Basketballkorb für den Piuspark",
+      "klartext": "",
+      "lebenslage": [
+        "Jugend",
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "II-Nordwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14132#Ö 1": {
+      "klartext_titel": "Niederschrift vom 24.02.2026",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14132#Ö 2": {
+      "klartext_titel": "Antwortschreiben der Stadt und Informationen aus der Verwaltung",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14132#Ö 2.1": {
+      "klartext_titel": "Bebauungs- und Grünordnungsplan Nr. 178 A II „Erweiterung Kleingartenanlage Am Schmalzbuckel mit …",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete",
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [
+        "Bauleitplanung",
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "bza:14132#Ö 2.2": {
+      "klartext_titel": "Zebrastreifen Lechermannstraße (2025-05-009)",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": true
+    },
+    "bza:14132#Ö 2.3": {
+      "klartext_titel": "Schutzstreifen Fauststraße (2025-05-007)",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14132#Ö 2.4": {
+      "klartext_titel": "Geschwindigkeitsbeschränkung Lechermannstraße und Kirchstraße (2026-05-008)",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14132#Ö 2.5": {
+      "klartext_titel": "Auswertung der Geschwindigkeitsmessanlage in der Hagauer Straße Höhe Kreisel",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14132#Ö 2.6": {
+      "klartext_titel": "Auswertung der Geschwindigkeitsmessanlage Knörstraße",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14132#Ö 2.7": {
+      "klartext_titel": "Weihnachtsbeleuchtung Hundszell 2026 (2025-05-011)",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "entwurf": true
+    },
+    "bza:14132#Ö 3": {
+      "klartext_titel": "Bürgeranliegen",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14132#Ö 3.1": {
+      "klartext_titel": "Vermüllung an den Wertstoffinseln",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "bza:14132#Ö 3.2": {
+      "klartext_titel": "Vermüllung im Fort Peyerl",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "bza:14132#Ö 3.3": {
+      "klartext_titel": "Vermüllung im Grünzug Maximilianstraße",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete",
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "bza:14132#Ö 3.4": {
+      "klartext_titel": "Geschwindigkeit in der Ursula-Winter-Straße",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14132#Ö 4": {
+      "klartext_titel": "Unerledigte Anträge und Anliegen des BZA aus den letzten Jahren",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14132#Ö 5.1": {
+      "klartext_titel": "Besondere Funktionen innerhalb des BZAs",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14017#Ö 1": {
+      "klartext_titel": "Wahl der/des Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "IX-Mailing/Feldkirchen"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14017#Ö 2": {
+      "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "IX-Mailing/Feldkirchen"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14017#Ö 3": {
+      "klartext_titel": "Wahl der/des Schriftführers/in",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "IX-Mailing/Feldkirchen"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14008#Ö 1": {
+      "klartext_titel": "Wahl der/des Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "III-Nordost"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14008#Ö 2": {
+      "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "III-Nordost"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14008#Ö 3": {
+      "klartext_titel": "Wahl der/des Schriftführers/in",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "III-Nordost"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14015#Ö 1": {
+      "klartext_titel": "Wahl der/des Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "VII-Etting"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14015#Ö 2": {
+      "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "VII-Etting"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14015#Ö 3": {
+      "klartext_titel": "Wahl der/des Schriftführers/in",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "VII-Etting"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14019#Ö 1": {
+      "klartext_titel": "Wahl der/des Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "XI-Friedrichshofen/Hollerstauden"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14019#Ö 2": {
+      "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "XI-Friedrichshofen/Hollerstauden"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14019#Ö 3": {
+      "klartext_titel": "Wahl der/des Schriftführers/in",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "XI-Friedrichshofen/Hollerstauden"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14012#Ö 1": {
+      "klartext_titel": "Wahl der/des Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "VI-West"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14012#Ö 2": {
+      "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "VI-West"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14012#Ö 3": {
+      "klartext_titel": "Wahl der/des Schriftführers/in",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "VI-West"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14020#Ö 1": {
+      "klartext_titel": "Wahl der/des Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XII-Münchener Straße"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14020#Ö 2": {
+      "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XII-Münchener Straße"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14020#Ö 3": {
+      "klartext_titel": "Wahl der/des Schriftführers/in",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XII-Münchener Straße"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14010#Ö 1": {
+      "klartext_titel": "Wahl der/des Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "IV-Südost"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14010#Ö 2": {
+      "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "IV-Südost"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14010#Ö 3": {
+      "klartext_titel": "Wahl der/des Schriftführers/in",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "IV-Südost"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14018#Ö 1": {
+      "klartext_titel": "Wahl der/des Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14018#Ö 2": {
+      "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14018#Ö 3": {
+      "klartext_titel": "Wahl der/des Schriftführers/in",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14011#Ö 1": {
+      "klartext_titel": "Wahl der/des Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14011#Ö 2": {
+      "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14011#Ö 3": {
+      "klartext_titel": "Wahl der/des Schriftführers/in",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14007#Ö 1": {
+      "klartext_titel": "Wahl der/des Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "II-Nordwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14007#Ö 2": {
+      "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "II-Nordwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14007#Ö 3": {
+      "klartext_titel": "Wahl der/des Schriftführers/in",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "II-Nordwest"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14006#Ö 1": {
+      "klartext_titel": "Wahl der/des Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14006#Ö 2": {
+      "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14006#Ö 3": {
+      "klartext_titel": "Wahl der/des Schriftführers/in",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14005#Ö 1": {
+      "klartext_titel": "Bestätigung/Ergänzung des Protokolls der letzten Sitzung",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14005#Ö 2": {
+      "klartext_titel": "Informationen/Unterrichtung der Verwaltung",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14005#Ö 2.1": {
+      "klartext_titel": "ÖPNV-Fahrplanmaßnahmen",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": true
+    },
+    "bza:14005#Ö 2.2": {
+      "klartext_titel": "Kreisel Degenhartstraße",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14005#Ö 3.1": {
+      "klartext_titel": "Hundekotbeutelspender am Münster",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "bza:14005#Ö 3.2": {
+      "klartext_titel": "Toiletten am Baggersee",
+      "klartext": "",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14005#Ö 3.3": {
+      "klartext_titel": "Räum- und Streupflicht an der Degenhartstraße",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "bza:14005#Ö 3.4": {
+      "klartext_titel": "Fußgängerzone – Ludwigstraße Stolperfalle",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    }
+  }
+}

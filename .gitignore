@@ -1,0 +1,8 @@
+# HTML-Cache des Scrapers — nur lokal, schont beim Wiederholen das Ratsinfoportal
+scraper/.cache/
+
+# macOS
+.DS_Store
+
+# Claude Code lokale Launch-Konfiguration
+.claude/
