@@ -85,7 +85,13 @@ VERFAHREN_MUSTER = [
     r"^Informationen und Unterrichtung",
     # "Miteilungen" ist im Portal so getippt — Muster deckt beides ab
     r"^Mit+eilungen\b.{0,60}(Stadt|Verwaltung)",
-    r"^Stellungnahmen der (Stadt|Verwaltung|Stadtverwaltung)",
+    # "Stellungnahme der Verwaltung" steht bewusst NICHT hier: der Titel sagt
+    # nichts, aber alle 88 Vorkommen haengen an einem Dokument. Der Inhalt ist
+    # echt, er steckt nur im PDF — solche Punkte gehoeren kuratiert, nicht
+    # gefiltert. Ihr Klartext-Titel muss aus der Vorlage kommen.
+    r"^Stellungnahmen der (Stadt|Verwaltung|Stadtverwaltung)\s*$",
+    r"^(Neu-? ?und )?Umbesetzung(en)? in den (Aussch|Gremien)",
+    r"^Neu- und Umbesetzungen",
     r"^B(ü|ue)rgeranliegen und Antr(ä|ae)ge",
     r"^Antr(ä|ae)ge der (B(ü|ue)rger|BZA|Bezirksaussch)",
     r"^B(ü|ue)rgerantr(ä|ae)ge$",

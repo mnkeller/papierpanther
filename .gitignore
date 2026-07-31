@@ -6,3 +6,6 @@ scraper/.cache/
 
 # Claude Code lokale Launch-Konfiguration
 .claude/
+
+# Zwischenablage der Kurationsportionen — regenerierbar
+data/vorlagen_charge.json

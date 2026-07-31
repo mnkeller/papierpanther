@@ -11364,6 +11364,193 @@
       "ort": [],
       "anlass": [],
       "entwurf": true
+    },
+    "stadt:13538#Ö 1.3": {
+      "klartext_titel": "SPD will schnellere Verwaltung für Unternehmen",
+      "klartext": "Die SPD-Fraktion beantragt eine Strategie für die städtische Wirtschaftsförderung unter knappem Haushalt. Gefordert werden messbare Ziele für Bearbeitungszeiten bei Gewerbeanmeldungen und Genehmigungen sowie eine zentrale Anlaufstelle für Unternehmen.",
+      "klartext_titel_leicht": "Die SPD will schnellere Ämter für Firmen",
+      "klartext_leicht": "Firmen brauchen oft eine Erlaubnis von der Stadt. Das dauert manchmal lange. Die SPD im Stadt-Rat will das ändern. Firmen sollen eine feste Ansprech-Person bekommen.",
+      "lebenslage": [
+        "Gewerbe & Gastro",
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:13538#Ö 1.4": {
+      "klartext_titel": "CSU will Zentrum für Robotik und KI — 500.000 Euro im Jahr",
+      "klartext": "Die CSU-Fraktion beantragt ein Technologie-Transferzentrum für humanoide Robotik und Künstliche Intelligenz. Kleine und mittlere Unternehmen sowie Start-ups sollen dort Forschungs- und Erprobungstechnik nutzen können. Die Stadt soll sich fünf Jahre lang mit jährlich 500.000 Euro beteiligen.",
+      "klartext_titel_leicht": "Ein neues Zentrum für Roboter",
+      "klartext_leicht": "Roboter und Computer-Programme werden immer wichtiger. Ingolstadt soll ein Zentrum dafür bekommen. Firmen können dort neue Technik ausprobieren. Die Stadt soll jedes Jahr 500.000 Euro dazu geben. Das soll 5 Jahre lang so sein.",
+      "lebenslage": [
+        "Gewerbe & Gastro",
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:13538#Ö 1.5": {
+      "klartext_titel": "Frühwarnsystem für den Wandel der Ingolstädter Wirtschaft",
+      "klartext": "Die SPD-Fraktion beantragt ein Konzept, das wirtschaftliche Risiken früh erkennbar macht. Der Stadtrat soll regelmäßig Kennzahlen erhalten, um rechtzeitig gegensteuern zu können. Zur Begründung nennt der Antrag den IHK-Konjunkturindex, der im Frühjahr 2025 bei 89 statt der üblichen 116 Punkte lag.",
+      "klartext_titel_leicht": "Früh erkennen, wenn die Wirtschaft schwächelt",
+      "klartext_leicht": "In Ingolstadt arbeiten viele Menschen in der Industrie. Wenn es der Industrie schlecht geht, merkt das die ganze Stadt. Die SPD will darum ein Früh-Warn-System. Der Stadt-Rat soll regelmäßig Zahlen bekommen. Dann kann er schneller handeln.",
+      "lebenslage": [
+        "Arbeit & Beruf",
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:13538#Ö 1.6": {
+      "klartext_titel": "SPD: Wirtschaftsprogramme der Stadt sollen gebündelt werden",
+      "klartext": "Die SPD-Fraktion beantragt eine Gesamtstrategie „Wirtschaftsstandort Ingolstadt 2030“. Bestehende Programme zu Wirtschaftsförderung, Transformation und Fachkräftesicherung sollen darin zusammengeführt und auf drei bis fünf Schwerpunkte zugespitzt werden. Ziel ist unter anderem, Doppelstrukturen zu vermeiden.",
+      "klartext_titel_leicht": "Ein Plan für die Wirtschaft bis 2030",
+      "klartext_leicht": "Die Stadt hat viele Programme für die Wirtschaft. Sie laufen nebeneinander her. Die SPD will alles in einem Plan zusammenfassen. Der Plan soll wenige klare Schwerpunkte haben.",
+      "lebenslage": [
+        "Gewerbe & Gastro",
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:13538#Ö 1.7": {
+      "klartext_titel": "Grüne wollen Wirtschaftsstrategie bis 2035",
+      "klartext": "Die Fraktion Bündnis 90/Die Grünen beantragt eine Wirtschafts- und Transformationsstrategie mit Blick bis 2035. Als Zukunftsfelder nennt der Antrag industrielle Software und KI, Robotik, Cybersicherheit und Kreislaufwirtschaft. Erneuerbare Energien sowie Strom- und Wärmenetze sollen als Standortfaktoren mitgedacht werden.",
+      "klartext_titel_leicht": "Ein Wirtschafts-Plan bis zum Jahr 2035",
+      "klartext_leicht": "Die Grünen wollen einen langen Plan für die Wirtschaft. Er soll bis zum Jahr 2035 reichen. Wichtig sind neue Bereiche wie Roboter und Computer-Sicherheit. Auch saubere Energie soll dazu gehören.",
+      "lebenslage": [
+        "Gewerbe & Gastro",
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung",
+        "Klima & Umwelt"
+      ]
+    },
+    "stadt:13538#Ö 1.8": {
+      "klartext_titel": "CSU: Städtische Aufträge sollen kleineren Firmen offenstehen",
+      "klartext": "Die CSU-Fraktion beantragt, dass die Stadt ihre Spielräume im Vergaberecht zugunsten kleiner und mittlerer Unternehmen nutzt — etwa durch Aufteilung großer Aufträge in Lose und verhältnismäßige Anforderungen an Bewerber. Außerdem soll der Austausch mit Industrie- und Handelskammer, Handwerkskammer und Innungen verstärkt werden.",
+      "klartext_titel_leicht": "Auch kleine Firmen sollen Aufträge bekommen",
+      "klartext_leicht": "Die Stadt vergibt Aufträge, zum Beispiel für Bau-Arbeiten. Große Firmen bekommen sie oft leichter. Die CSU will das ändern. Große Aufträge sollen in kleine Teile geteilt werden. Dann können auch kleine Firmen mitmachen.",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Satzung & Regeln",
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:13538#Ö 1.9": {
+      "klartext_titel": "Verwaltung antwortet auf sieben Anträge zur Wirtschaft",
+      "klartext": "Zu den sieben Wirtschaftsanträgen aus dem Stadtrat legt die Verwaltung eine gemeinsame Stellungnahme vor. Sie schlägt acht Handlungsfelder als Leitthemen der städtischen Wirtschaftsstrategie vor und hält ein mit städtischen Mitteln unterlegtes Zukunftsinvestitionsprogramm für erforderlich.",
+      "klartext_titel_leicht": "Die Stadt antwortet auf Anträge zur Wirtschaft",
+      "klartext_leicht": "Im Stadt-Rat gab es 7 Anträge zur Wirtschaft. Die Stadt-Verwaltung hat darauf geantwortet. Sie nennt 8 wichtige Themen für die Zukunft. Sie will dafür auch städtisches Geld einsetzen.",
+      "lebenslage": [
+        "Gewerbe & Gastro",
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:13538#Ö 2": {
+      "klartext_titel": "Volkshochschule: Jugendparlament bekommt erstmals einen Sitz",
+      "klartext": "Im Kuratorium der Volkshochschule Ingolstadt-Eichstätt sollen künftig neun statt fünf Stadtratsmitglieder sitzen — je eines aus jeder Fraktion und Stadtratsgruppe. Zusätzlich soll erstmals eine Vertretung des Jugendparlaments mitwirken.",
+      "klartext_titel_leicht": "Mehr Menschen entscheiden über die Volks-Hoch-Schule",
+      "klartext_leicht": "Die Volks-Hoch-Schule bietet Kurse für Erwachsene an. Ein Gremium leitet die Schule. Dort sitzen bisher 5 Menschen aus dem Stadt-Rat. Künftig sollen es 9 sein. Auch das Jugend-Parlament bekommt einen Platz.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung",
+        "Satzung & Regeln"
+      ]
+    },
+    "stadt:13538#Ö 5": {
+      "klartext_titel": "Kommunalbetriebe planen mit bis zu 213 Millionen Euro Krediten",
+      "klartext": "Der Wirtschaftsplan der Ingolstädter Kommunalbetriebe für Oktober 2026 bis September 2027 sieht Kredite von bis zu 213 Millionen Euro für die gebührenfinanzierten Bereiche Wasser, Entwässerung, Abfall und Reinigung vor, dazu 6 Millionen für Winterdienst, Innenstadtreinigung und städtische Fahrzeuge. Die Aufnahme steht unter dem Vorbehalt der Genehmigung durch die Regierung von Oberbayern.",
+      "klartext_titel_leicht": "Die Stadt-Betriebe planen mit viel Geld",
+      "klartext_leicht": "Die Kommunal-Betriebe kümmern sich um Wasser und Müll. Sie brauchen Geld für ihre Arbeit. Dafür wollen sie Kredite aufnehmen. Es geht um bis zu 213 Millionen Euro. Die Regierung von Ober-Bayern muss noch zustimmen.",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:13538#Ö 6": {
+      "klartext_titel": "Neue Satzungen für Müll, Wasser, Abwasser und Straßenreinigung",
+      "klartext": "Vier Satzungen der Ingolstädter Kommunalbetriebe sollen geändert werden: zur Abfallwirtschaft, zur Wasserversorgung, zur Entwässerung und zur Straßenreinigung. Der Verwaltungsrat der Kommunalbetriebe hat den Änderungen bereits zugestimmt, der Stadtrat soll nachziehen.",
+      "klartext_titel_leicht": "Neue Regeln für Müll und Wasser",
+      "klartext_leicht": "Es gibt Regeln für Müll und Wasser in der Stadt. Auch für Abwasser und für saubere Straßen. Diese Regeln werden jetzt geändert. Der Stadt-Rat soll dazu Ja sagen.",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Satzung & Regeln",
+        "Gebühren & Preise"
+      ]
+    },
+    "stadt:13538#Ö 7": {
+      "klartext_titel": "Wirtschaftsförderungsgesellschaft IFG macht 3,55 Millionen Euro Verlust",
+      "klartext": "Die städtische IFG Ingolstadt schließt das Jahr 2025 mit einem Verlust von rund 3,55 Millionen Euro ab. Er wird mit einem Gewinnvortrag von knapp 1,96 Millionen verrechnet, der Rest aus der allgemeinen Rücklage gedeckt. Die Beteiligungsgesellschaft AI Network Ingolstadt erzielte einen kleinen Überschuss.",
+      "klartext_titel_leicht": "Eine Stadt-Firma macht Verlust",
+      "klartext_leicht": "Die IFG gehört der Stadt Ingolstadt. Sie hilft Firmen bei der Ansiedlung. Im Jahr 2025 hat die IFG Verlust gemacht. Es fehlen ungefähr 3,5 Millionen Euro. Die Firma nimmt dafür Geld aus ihren Rücklagen.",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
     }
   }
 }
