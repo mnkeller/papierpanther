@@ -41,8 +41,7 @@ KURATION.md           wie die Kurztexte entstehen (inkl. Leichte Sprache)
 scraper/
   ris_ingolstadt.py   liest beide Portale aus       -> data/rohdaten.json
   entwuerfe_bauen.py  erzeugt Kurations-Vorschläge  -> data/kuration.json
-  feed_bauen.py       Rohdaten + Kuration           -> data/feed.json
-                      und setzt die Daten in index.html ein
+  feed_bauen.py       Rohdaten + Kuration           -> data/feed.json + feed.js
   .cache/             HTML-Cache, schont das Portal bei Wiederholläufen
 data/
   rohdaten.json       unveränderte Auslesung beider Quellen
