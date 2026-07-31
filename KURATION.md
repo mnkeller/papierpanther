@@ -134,10 +134,37 @@ Orientierung: Netzwerk Leichte Sprache, Zielniveau etwa A1/A2. Die Fassung ist
 
 ---
 
-## Offen
+## Offen: der Umschalter für die ganze Seite
 
-Die Oberfläche zeigt bisher nur die normale Fassung. Geplant ist ein
-**Umschalter „Leichte Sprache"**, der die Anzeige umstellt — kein Filter, der
-Einträge ausblendet, denn wer Leichte Sprache braucht, will nicht weniger
-Einträge sehen, sondern dieselben in anderer Form. Für Einträge ohne leichte
-Fassung bleibt sichtbar die normale stehen, mit Vermerk.
+**Entschieden:** Ein Schalter stellt die **komplette Seite** auf Leichte Sprache
+um — nicht nur die Kartentexte. Kein Filter, der Einträge ausblendet: wer Leichte
+Sprache braucht, will nicht weniger Einträge sehen, sondern dieselben in anderer
+Form. Für Einträge ohne leichte Fassung bleibt die normale stehen, mit Vermerk.
+
+Das betrifft mehr als `kuration.json`. Zwei Fassungen brauchen auch:
+
+| Bereich | Beispiel normal | Beispiel leicht |
+|---|---|---|
+| Überschrift | „Der Stadtrat entscheidet ständig etwas." | „Der Stadt-Rat entscheidet viel." |
+| Hinweisbalken | „Kein offizielles Angebot der Stadt Ingolstadt." | „Diese Seite ist nicht von der Stadt." |
+| Filter-Überschriften | „Was betrifft Sie?" | „Was ist für Sie wichtig?" |
+| Achsennamen | „Lebenslage", „Anlass" | „Ihr Leben", „Das Thema" |
+| Achsenwerte | „Bauleitplanung", „Wohnen & Miete" | „Bau-Planung", „Wohnen und Miete" |
+| Stand | „Entscheidung angesetzt" | „Der Stadt-Rat wollte entscheiden." |
+| Knöpfe | „Im Ratsinfoportal prüfen" | „Beim Stadt-Rat nachlesen" |
+| Fußtext | „Wie das hier funktioniert" | „So arbeitet diese Seite." |
+
+Damit das nicht im Markup verstreut liegt, gehören diese Paare in ein
+**Textverzeichnis** im Seitenkopf (ein Objekt mit beiden Fassungen), aus dem die
+Oberfläche sich bedient. Der Schalter tauscht dann eine Variable, nicht dreißig
+einzelne Stellen.
+
+Weitere Anforderungen an den Schalter:
+
+- **Oben und sofort sichtbar.** Wer Leichte Sprache braucht, darf nicht erst
+  schwere Sprache lesen müssen, um den Schalter zu finden.
+- **Auswahl merken** (`localStorage`), damit sie beim nächsten Besuch steht.
+- **`lang`-Auszeichnung** bleibt `de`; Leichte Sprache ist keine eigene Sprache.
+  Der Schalter selbst braucht ein `aria-pressed`.
+- Die Texte der Seite werden ohnehin noch überarbeitet — die leichte Fassung
+  entsteht sinnvollerweise erst danach, sonst zweimal.
