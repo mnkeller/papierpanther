@@ -13,8 +13,10 @@ kann vertagt worden sein. Deshalb heisst der Stand "Entscheidung angesetzt" und
 nicht "entschieden".
 """
 
+import collections
 import json
 import os
+import re
 import sys
 from datetime import date
 
@@ -37,6 +39,39 @@ def lade(dateiname):
         sys.exit(f"Fehlt: {pfad}\nZuerst ris_ingolstadt.py laufen lassen.")
     with open(pfad, encoding="utf-8") as f:
         return json.load(f)
+
+
+def thema_schluessel(quelle, top):
+    """
+    Ein Thema, nicht ein Tagesordnungspunkt.
+
+    Dieselbe Vorlage steht nacheinander in mehreren Gremien auf der
+    Tagesordnung — der Schulcampus Nord-Ost etwa sechsmal: vier Ausschuesse
+    zur Vorberatung, der Finanzausschuss, zuletzt der Stadtrat zur
+    Entscheidung. Ueber zwei Jahre sind 1.079 Punkte nur 698 Themen.
+
+    Deshalb gruppiert der Feed nach Vorlagennummer. Wer keine hat — alle
+    BZA-Punkte und die muendlichen Berichte — bleibt fuer sich.
+    """
+    kvonr = re.search(r"__kvonr=(\d+)", top.get("vorlage_url") or "")
+    if kvonr:
+        return f"{quelle}:vorlage:{kvonr.group(1)}"
+    return None
+
+
+def leitstation(auftritte):
+    """
+    Welcher Auftritt vertritt das Thema?
+
+    Die Entscheidungssitzung, wenn es eine gibt — dort faellt die Sache.
+    Sonst der spaeteste Auftritt, weil der den aktuellen Stand zeigt.
+    """
+    mit_entscheidung = [
+        (s, t) for s, t in auftritte
+        if any(b["rolle"].startswith("Entscheidung") for b in t.get("beratungen") or [])
+    ]
+    kandidaten = mit_entscheidung or auftritte
+    return max(kandidaten, key=lambda st: st[0]["datum"] or "")
 
 
 def stand_ableiten(top, heute_iso):
@@ -92,18 +127,74 @@ def main():
         for top in sitzung["tops"]:
             index[f'{quelle}:{sitzung["id"]}#{top["nr"]}'] = (sitzung, top)
 
-    feed = []
+    # Alle Auftritte je Thema sammeln — auch die, die niemand kuratiert hat.
+    # Sonst kennt die Karte nur die eine Sitzung, in der jemand zufaellig
+    # kuratiert hat, statt den ganzen Weg der Vorlage.
+    auftritte_je_thema = collections.defaultdict(list)
+    for sitzung in roh["sitzungen"]:
+        quelle = sitzung.get("quelle", "stadt")
+        for top in sitzung["tops"]:
+            schluessel = thema_schluessel(quelle, top)
+            if schluessel:
+                auftritte_je_thema[schluessel].append((sitzung, top))
+
+    # Kuratierte Eintraege nach Thema buendeln. Sind mehrere Auftritte
+    # derselben Vorlage kuratiert, gewinnt die vollstaendigere Fassung —
+    # nicht die zufaellig zuerst eingetragene. Sonst verschwindet stillschweigend
+    # eine Leichte-Sprache-Fassung, nur weil ein anderer Auftritt frueher
+    # in der Datei steht.
+    def guete(kur):
+        return (
+            0 if kur.get("entwurf", False) else 1,
+            1 if kur.get("klartext_leicht") else 0,
+            1 if kur.get("klartext") else 0,
+            len(kur.get("lebenslage", [])) + len(kur.get("anlass", [])),
+        )
+
+    je_thema = collections.OrderedDict()
     fehlend = []
+    doppelt = []
     for ref, kur in eintraege_kuration.items():
         if ref not in index:
             fehlend.append(ref)
             continue
         sitzung, top = index[ref]
+        schluessel = thema_schluessel(sitzung.get("quelle", "stadt"), top) or ref
+        if schluessel in je_thema:
+            alt_ref, alt_kur = je_thema[schluessel]
+            if guete(kur) <= guete(alt_kur):
+                doppelt.append((schluessel, ref))
+                continue
+            doppelt.append((schluessel, alt_ref))
+        je_thema[schluessel] = (ref, kur)
+
+    feed = []
+    for schluessel, (ref, kur) in je_thema.items():
+        sitzung, top = index[ref]
+        # Die Karte haengt an der Leitstation, nicht an der kuratierten Sitzung
+        alle = auftritte_je_thema.get(schluessel) or [(sitzung, top)]
+        sitzung, top = leitstation(alle)
         stand, stand_datum = stand_ableiten(top, heute_iso)
+
+        stationen = sorted(
+            (
+                {
+                    "datum": s["datum"],
+                    "datum_anzeige": s["datum_anzeige"],
+                    "gremium": s["gremium"],
+                    "top_nr": t["nr"],
+                    "sitzung_url": s["url"],
+                }
+                for s, t in alle
+            ),
+            key=lambda x: x["datum"] or "",
+        )
 
         feed.append(
             {
                 "ref": ref,
+                "thema": schluessel,
+                "auftritte": stationen,
                 "klartext_titel": kur["klartext_titel"],
                 "klartext": kur["klartext"],
                 # Leichte Sprache, optional. Leer heisst: fuer diesen Eintrag
@@ -217,10 +308,24 @@ def main():
         f"{len(ausgabe['achsen']['stand'])} Staende"
     )
 
+    mehrfach = sum(1 for e in feed if len(e["auftritte"]) > 1)
+    print(
+        f"  Themen: {len(feed)} Karten aus {len(eintraege_kuration)} "
+        f"Kurationseintraegen; {mehrfach} Themen liefen durch mehrere Gremien"
+    )
+
     if fehlend:
         print(f"\n  ! {len(fehlend)} Kurationseintraege ohne Rohdaten-TOP:")
         for ref in fehlend:
             print(f"    - {ref}")
+
+    if doppelt:
+        print(
+            f"\n  {len(doppelt)} Kurationseintraege betreffen ein bereits "
+            f"erfasstes Thema und wurden zusammengefasst:"
+        )
+        for schluessel, verworfen in doppelt:
+            print(f"    - {verworfen}  ({schluessel})")
 
     ohne_bezirk = [e["ref"] for e in feed if not e["bezirk"]]
     if ohne_bezirk:
