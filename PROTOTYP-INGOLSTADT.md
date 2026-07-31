@@ -1,16 +1,15 @@
-# MeinBezirk Ingolstadt — Prototyp
+# PapierPanther — Datenlage und Befunde
 
-Adaption des [MeinBezirk-Toolkits](README.md) (Igor Schwarzmann, Berlin/Tempelhof-Schöneberg)
-auf Ingolstadt. Stand: 29.07.2026.
+Hintergrunddokument zu [README.md](README.md). Stand: 31.07.2026.
 
-**Zweck dieses Prototyps:** herausfinden, ob die Methodik in Ingolstadt tragfähig ist —
-bevor Aufwand in Betrieb, Reichweite oder Verwaltungskontakt geht.
+**Zweck:** festhalten, was die Datenrecherche im Ingolstädter Ratsinfoportal
+ergeben hat, und welche Fragen offen sind.
 
-**Bewusste Beschränkungen dieser Stufe:**
+**Bewusste Beschränkungen:**
 
 - ausschließlich öffentlich zugängliche Daten
 - kein Kontakt zur Stadtverwaltung
-- keine Veröffentlichung, kein Hosting — läuft lokal
+- keine Spiegelung städtischer PDFs, nur Verlinkung
 
 ---
 
@@ -134,8 +133,9 @@ online sind. Die Logik ist mit synthetischen Fällen gegengeprüft.
 ## Aufbau
 
 ```
-index.html                     Prototyp — Oberfläche + eingebettete Daten
-referenz-berlin-prototyp.html  Original des Berliner Prototyps, als Vergleich
+index.html                     Oberfläche + eingebettete Daten
+impressum.html                 Impressum (§ 5 DDG)
+datenschutz.html               Datenschutzerklärung
 scraper/
   ris_ingolstadt.py            liest beide Portale aus       -> data/rohdaten.json
   entwuerfe_bauen.py           erzeugt Kurations-Vorschläge  -> data/kuration.json
@@ -146,7 +146,6 @@ data/
   rohdaten.json                unveränderte Auslesung beider Quellen
   kuration.json                HAND-/MASCHINELL-GEPFLEGT: Klartext + Schlagworte
   feed.json                    erzeugt — nicht händisch ändern
-01-verstehen/ … 05-betreiben/  Methodik des Toolkits (noch Berliner Inhalte)
 ```
 
 `feed_bauen.py` schreibt in `index.html` nur den Bereich zwischen den Markern
@@ -286,36 +285,39 @@ sie schon gefallen ist. Nur der Beschlusstext selbst fehlt.
    das drückt die Kosten um mehr als eine Größenordnung
 4. Den Verzug von 4–8 Wochen offen ausweisen („Beschluss noch nicht protokolliert")
 
-## Hosting — Optionen, noch nichts eingerichtet
+## Hosting — eingerichtet
 
-Technisch ist das der einfachste Teil: `index.html` ist eine einzige Datei ohne
-externe Unterressourcen. Wer sie irgendwohin kopiert, hat die Seite online.
+Die Seite läuft auf **GitHub Pages** aus dem Repository
+`github.com/mnkeller/papierpanther`, Branch `main`:
+<https://mnkeller.github.io/papierpanther/>
 
-| Weg | Eignung |
-|---|---|
-| **GitHub Pages** | Kostenlos, HTTPS, eigene Domain möglich. Ein Actions-Workflow mit `schedule:` kann Scraper und Build regelmäßig laufen lassen und das Ergebnis committen — damit aktualisiert sich die Seite selbst. Der naheliegendste Weg. |
-| **Netlify / Cloudflare Pages** | Gleiches Prinzip, kostenloser Tarif, etwas komfortablere Oberfläche. |
-| **Klassisches Webhosting / Uberspace** | Eine Datei per rsync oder FTP hochladen. Der Scraper läuft dann bei dir lokal oder per Cronjob auf dem Server. |
-| **netzbegruenung-Infrastruktur** | Liegt nahe, weil dein Konto dort liegt. Dazu unten eine Abwägung. |
+`index.html` ist eine einzige Datei ohne externe Unterressourcen — ein `git push`
+auf `main` genügt, um den Live-Stand zu aktualisieren.
 
-### Die Abwägung bei Partei-Infrastruktur
+**Offene Architekturfrage:** Die Feed-Daten stehen inline in `index.html`
+(881 Bytes je Eintrag). Bei den aktuellen 136 Einträgen sind das 117 KB und
+unproblematisch. Ein Rückstand von zwei Jahren (~2.600 Einträge, siehe unten)
+ergäbe rund 2,3 MB in einer Datei, die vor dem ersten Bildaufbau vollständig
+geladen und als ebenso viele Karten ins DOM gerendert wird. Spätestens dann
+braucht es Auslagerung in eine separate JSON-Datei, Paginierung oder beides.
 
-Das Tool tritt als neutrale Bürgerinformation auf und sagt ausdrücklich, dass es
-kein Angebot der Stadt ist. Auf der Infrastruktur einer Partei gehostet, kann diese
-Neutralität in Frage stehen — unabhängig davon, wie sauber die Aufbereitung ist.
-Das ist eine politische Entscheidung, keine technische, und sie gehört dir. Ein
-neutraler Domainname und ein Impressum, das die Trägerschaft klar benennt, wären
-das Mindeste, wenn es diesen Weg nimmt.
+### Rechtliches — erledigt
 
-### Was mit der Veröffentlichung dazukommt
+- **Impressum** nach § 5 DDG: [impressum.html](impressum.html), verlinkt im
+  Seitenfuß, mit Verantwortlichem nach § 18 Abs. 2 MStV.
+- **Datenschutzerklärung**: [datenschutz.html](datenschutz.html). Die Seite
+  setzt keine Cookies und bindet nichts Externes ein; personenbezogene Daten
+  fallen nur über die Server-Logs von GitHub an (Drittlandübermittlung USA).
+- Der Hinweis „kein offizielles Angebot der Stadt Ingolstadt" ist von einer
+  Höflichkeit zu einer rechtlich relevanten Aussage geworden. Er steht im
+  Hinweisbalken, im Fußtext und im Impressum.
 
-- **Impressum** nach § 5 DDG: Name und ladungsfähige Adresse. Bei einem privaten
-  Angebot heißt das: deine eigenen Daten, sichtbar auf der Seite.
-- **Datenschutzerklärung**, sobald der Server Zugriffe mit IP-Adressen
-  protokolliert — was praktisch jeder tut.
-- Der Hinweis „kein offizielles Angebot der Stadt Ingolstadt" wird von einer
-  Höflichkeit zu einer rechtlich relevanten Aussage. Er steht bereits im
-  Hinweisbalken und im Fußtext.
+### Wenn eine eigene Domain dazukommt
+
+Bei Partei-Infrastruktur (netzbegruenung) wäre abzuwägen: Das Tool tritt als
+neutrale Bürgerinformation auf. Auf Parteiservern gehostet kann diese Neutralität
+in Frage stehen, unabhängig von der Qualität der Aufbereitung. Das ist eine
+politische Entscheidung, keine technische.
 - **Urheberrecht:** Beschlüsse, Vorlagen und Satzungen sind weitgehend amtliche
   Werke (§ 5 UrhG). Auf die Originaldokumente zu **verlinken** ist unproblematisch
   und genau das, was der Prototyp tut. Die PDFs der Stadt selbst zu spiegeln wäre
@@ -345,6 +347,37 @@ Wofür der Prototyp gebaut ist — diese Fragen sollte er beantworten:
    BZA-Punkte. Reicht das, oder braucht es doch eine LLM-Runde?
 7. **Beschlüsse:** Reicht der Beratungsstand für einen ersten Nutzen, oder braucht
    es die Ergebnisse aus den Niederschriften? (Machbarkeit ist geklärt — siehe Befund.)
+
+## Gemessen: wie groß ist der Rückstand von zwei Jahren?
+
+Erhoben am 31.07.2026 für **August 2024 bis Juli 2026**, indem alle 48
+Kalendermonate beider Portale gezogen wurden (exakte Sitzungszahl) und je Quelle
+eine Zufallsstichprobe von 12 Sitzungen ausgewertet wurde (Verhältniszahlen).
+
+| | Stadtrat + Ausschüsse | Bezirksausschüsse | gesamt |
+|---|---|---|---|
+| Sitzungen (exakt) | 251 | 109 | **360** |
+| TOPs je Sitzung (Stichprobe) | 5,2 | 11,8 | — |
+| TOPs hochgerechnet | ~1.320 | ~1.290 | **~2.610** |
+| davon Sitzungsroutine | 6 % | 22 % | — |
+| davon mit Vorlage | 57 % | **0 %** | — |
+
+**Das ist deutlich weniger als eine lineare Hochrechnung aus dem Fenster
+Mai–Juli 2026 ergibt** (die käme auf ~3.700 TOPs). Grund: 2026 ist
+Kommunalwahljahr, die Monate nach der Konstituierung sind ungewöhnlich dicht —
+im Juni 2026 tagten 12 Bezirksausschüsse, in ruhigen Monaten sind es 1 bis 3.
+
+Konsequenz für die Aufbereitung:
+
+- Die **~1.290 BZA-Punkte brauchen kein Sprachmodell**. Sie haben keine Vorlage
+  (0 % — bestätigt den Befund oben), ihre Titel sind bereits Alltagssprache, und
+  die Regelbasis in `entwuerfe_bauen.py` trifft sie.
+- Die eigentliche Übersetzungsarbeit sind die **~750 Stadtrats-Punkte mit
+  Vorlage** (57 % von ~1.320). Das ist die Menge, für die sich ein LLM lohnt —
+  eine Größenordnung weniger als befürchtet.
+- Ein vollständiger Scrape-Lauf über zwei Jahre sind rund **1.900 Abrufe**
+  (360 Sitzungen + ~750 Beratungswege + ~750 Vorlagen), bei 1,2 s Pause etwa
+  40 Minuten.
 
 ## Wenn es weitergeht
 

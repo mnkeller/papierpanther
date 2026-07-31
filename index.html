@@ -254,6 +254,12 @@
   .site-footer h2 { font-family: var(--font-display); font-size: 1rem; color: var(--text); margin-bottom: .6rem; }
   .site-footer p { max-width: 68ch; margin-bottom: .8rem; }
   .footer-meta { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border-strong); font-size: .8rem; color: var(--text-faint); }
+  .footer-recht {
+    margin-top: 1.25rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--border-strong);
+    display: flex; gap: 1.25rem; flex-wrap: wrap; font-size: .85rem;
+  }
+  .footer-recht a { color: var(--primary-dark); }
 
   @media (max-width: 620px) {
     .hero { padding: 2.5rem 0 1.75rem; }
@@ -372,6 +378,11 @@
       naturgemäß.
     </p>
     <p class="footer-meta" id="footer-meta"></p>
+    <div class="footer-recht">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="https://github.com/mnkeller/papierpanther" rel="noopener noreferrer" target="_blank">Quellcode</a>
+    </div>
   </div>
 </footer>
 

@@ -1,47 +1,79 @@
-# MeinBezirk
+# PapierPanther
 
-Eine Blaupause für kommunale Transparenz.
+Was der Ingolstädter Stadtrat entscheidet, und wen es betrifft.
 
-MeinBezirk ist ein Toolkit, das zeigt, wie man kommunale Entscheidungen transparent und für Bürger relevant aufbereiten kann. Es beschreibt eine Methodik — von der Datenrecherche bis zum Betrieb. Es liefert Prinzipien, Vorlagen und Beispiele. Kein Code-Framework, sondern ein Leitfaden zum Nachmachen und Anpassen.
+Die Tagesordnungen des Stadtrats und der zwölf Bezirksausschüsse sind öffentlich —
+aber in Amtsdeutsch, verteilt über hunderte Einzelpunkte in einem Ratsinfoportal,
+das niemand freiwillig durchsucht. PapierPanther liest sie aus, übersetzt sie in
+normale Sprache und sortiert sie danach, wen sie betreffen.
 
-**Dieses Repo erhebt keinen Anspruch auf Vollständigkeit. Es ist eine Blaupause — und eine Provokation.**
+**Kein offizielles Angebot der Stadt Ingolstadt.** Verbindlich ist immer das
+Originaldokument — jeder Eintrag verlinkt seine Quelle.
 
-Der Prototyp wurde für den Bezirk Tempelhof-Schöneberg in Berlin gebaut.
+Live: https://mnkeller.github.io/papierpanther/
 
-[Live-Prototyp ansehen →](https://igorschwarzmann.com/meinbezirk/)
+## Schnellstart
 
-## Warum das hier existiert
+```bash
+open index.html
+```
 
-Viele Akteure im Open-Data-Feld haben die Vorarbeit geleistet, die es überhaupt möglich macht, dass kommunale Daten heute so verfügbar sind. Ohne sie gäbe es nichts anzuzapfen. Aber vieles davon ist noch sehr bürokratisch — sprachlich und ästhetisch nicht zugänglich für die Menschen, die es betrifft.
+Die Seite läuft ohne Webserver: `index.html` lädt keine externen Dateien, die
+Daten stehen direkt in der Seite.
 
-Das Ziel von MeinBezirk ist, die Schwelle zwischen der Arbeit der Politik und den Bürgern abzusenken. Erkennbar zu machen, dass vieles gemacht wird, von dem wir alle nicht genug mitbekommen. Politik passiert. Sie erreicht nur zu selten die Menschen, für die sie gedacht ist.
+Daten neu holen und Feed neu bauen:
 
-Das hier ist nicht die einzige Antwort. Und selbst diese kann verbessert werden.
+```bash
+cd scraper && python3 ris_ingolstadt.py --von 2026-01 --bis 2026-07 && python3 feed_bauen.py
+```
 
-## Hintergrund
+Nur Python-Standardbibliothek, keine Abhängigkeiten.
 
-Der Berliner Prototyp wurde in etwa 90 Minuten mit KI-Werkzeugen gebaut. Der Punkt ist nicht die Geschwindigkeit. Der Punkt ist, dass KI es einer einzelnen Person überhaupt erst ermöglicht hat. Das ist ein Machbarkeitsunterschied, kein Geschwindigkeitsunterschied.
+## Aufbau
 
-## Inhaltsverzeichnis
+```
+index.html            Oberfläche + eingebettete Daten
+impressum.html        Impressum (§ 5 DDG)
+datenschutz.html      Datenschutzerklärung
+scraper/
+  ris_ingolstadt.py   liest beide Portale aus       -> data/rohdaten.json
+  entwuerfe_bauen.py  erzeugt Kurations-Vorschläge  -> data/kuration.json
+  feed_bauen.py       Rohdaten + Kuration           -> data/feed.json
+                      und setzt die Daten in index.html ein
+  .cache/             HTML-Cache, schont das Portal bei Wiederholläufen
+data/
+  rohdaten.json       unveränderte Auslesung beider Quellen
+  kuration.json       Klartext + Schlagworte, hand- und maschinengepflegt
+  feed.json           erzeugt — nicht händisch ändern
+```
 
-- [01 — Verstehen](01-verstehen/) — Was bedeutet kommunale Transparenz
-- [02 — Daten finden](02-daten-finden/) — Wo und wie findet man die Daten
-- [03 — Relevanz gestalten](03-relevanz-gestalten/) — Wie macht man Entscheidungen relevant
-- [04 — Umsetzen](04-umsetzen/) — Gestaltungsprinzipien und technische Umsetzung
-- [05 — Betreiben](05-betreiben/) — Betrieb, Pflege, Governance
-- [Quellen](quellen/) — Alle Quellen und Referenzen
+`feed_bauen.py` schreibt in `index.html` nur den Bereich zwischen den Markern
+`/* FEED-DATEN-ANFANG */` und `/* FEED-DATEN-ENDE */`. Gestaltung und Logik der
+Seite bleiben unangetastet.
 
-## Mitmachen
+Die Trennung von `rohdaten.json` und `kuration.json` ist bewusst: Neu-Scrapen
+überschreibt niemals die aufbereiteten Texte.
 
-Forks und Pull Requests sind sehr willkommen. Dieses Toolkit wird besser, wenn Menschen es für ihre Städte adaptieren, Fehler korrigieren und Lücken füllen. See [CONTRIBUTING.md](CONTRIBUTING.md) for how to adapt it for your city or country.
+Hintergrund zur Datenlage, zum Beratungsstand und zu den offenen Fragen:
+[PROTOTYP-INGOLSTADT.md](PROTOTYP-INGOLSTADT.md).
 
-## Lizenz
+## Datenquelle
 
-Code (`index.html`): [MIT License](LICENSE)
-Inhalte (alle `.md`-Dateien): [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
+Ratsinfoportal der Stadt Ingolstadt (SessionNet / Somacos „Session"), zwei
+Instanzen:
 
-## Attribution
+- `ingolstadt.de/sessionnet` — Stadtrat, Ausschüsse
+- `ingolstadt.de/sessionnetbza` — die zwölf Bezirksausschüsse
 
-Igor Schwarzmann
-Known Unknowns GmbH · Fregestr. 65 · 12159 Berlin
-Geschäftsführer: Igor Schwarzmann · Amtsgericht Charlottenburg
+Ausschließlich öffentlich zugängliche Seiten, ohne Anmeldung. Der Scraper hält
+1,2 Sekunden Pause je Abruf, schickt einen eigenen User-Agent und puffert im
+Dateicache.
+
+## Lizenz und Herkunft
+
+Code MIT, Inhalte CC-BY-4.0 — siehe [LICENSE](LICENSE).
+
+PapierPanther baut auf dem **MeinBezirk-Toolkit von Igor Schwarzmann /
+Known Unknowns GmbH** auf (CC-BY-4.0), aus dem die Methodik und Teile der
+Oberfläche stammen. Scraper, Datenaufbereitung und die Ingolstädter Anpassung
+sind in diesem Repository entstanden.

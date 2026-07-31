@@ -1,6 +1,7 @@
 MIT License
 
-Copyright (c) 2026 Igor Schwarzmann / Known Unknowns GmbH
+Copyright (c) 2026 Michael Keller
+Portions Copyright (c) 2026 Igor Schwarzmann / Known Unknowns GmbH
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -24,9 +25,13 @@ SOFTWARE.
 
 Creative Commons Attribution 4.0 International (CC-BY-4.0)
 
-The written content of this repository (all Markdown files, documentation,
-and toolkit text) is licensed under the Creative Commons Attribution 4.0
-International License.
+The written content of this repository (all Markdown files and documentation)
+is licensed under the Creative Commons Attribution 4.0 International License.
+
+This project builds on the MeinBezirk toolkit by Igor Schwarzmann /
+Known Unknowns GmbH (CC-BY-4.0), from which the methodology and parts of the
+user interface are derived. Scraper, data pipeline and the Ingolstadt
+adaptation were written for this repository.
 
 You are free to:
 - Share — copy and redistribute the material in any medium or format
