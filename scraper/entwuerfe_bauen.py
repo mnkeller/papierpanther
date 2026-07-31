@@ -169,6 +169,20 @@ def ist_beteiligung(gremium):
     return bool(BETEILIGUNG_MUSTER.search(gremium or ""))
 
 
+# Ein konkreter Punkt nennt fast immer einen Ort oder eine Sache:
+# "Trinkbrunnen in der Kanalstrasse". Eine reine Sammelueberschrift nicht:
+# "Jugend", "Inklusion", "Antraege". Die Unterpunkte darunter sind der Inhalt.
+ORTSBEZUG = re.compile(
+    r"stra(ß|ss)e|str\.|platz|weg\b|park|see\b|allee|gasse|ring\b|ufer|"
+    r"br(ü|ue)cke|schule|halle|bad\b|markt|graben",
+    re.I,
+)
+
+
+def ist_sammelueberschrift(titel):
+    return len(titel) < 22 and not ORTSBEZUG.search(titel)
+
+
 def ohne_personen(zusatz):
     """
     Entfernt Referenten- und Personenangaben aus dem Klammerzusatz.
@@ -231,6 +245,8 @@ def main():
             if not top["oeffentlich"] or top["verfahren"]:
                 continue
             if len(top["titel"]) < 12:      # Platzhalter-TOPs ueberspringen
+                continue
+            if ist_sammelueberschrift(top["titel"]):
                 continue
             offen.append((ref, sitzung, top))
 

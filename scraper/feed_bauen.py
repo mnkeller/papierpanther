@@ -191,28 +191,15 @@ def main():
         json.dump(ausgabe, f, ensure_ascii=False, indent=2)
     print(f"Geschrieben: {ziel}")
 
-    # Daten direkt in index.html einsetzen, damit der Prototyp ohne Webserver
-    # laeuft (per Doppelklick, file://) — ohne nachladbare Unterressource.
-    seiten_pfad = os.path.join(os.path.dirname(HIER), "index.html")
-    if os.path.exists(seiten_pfad):
-        with open(seiten_pfad, encoding="utf-8") as f:
-            seite = f.read()
-
-        anfang = "/* FEED-DATEN-ANFANG */"
-        ende = "/* FEED-DATEN-ENDE */"
-        i, j = seite.find(anfang), seite.find(ende)
-        if i == -1 or j == -1 or j < i:
-            print(f"  ! Marker in {seiten_pfad} nicht gefunden — nicht eingesetzt.")
-        else:
-            block = (
-                anfang
-                + "\n/* Automatisch erzeugt von scraper/feed_bauen.py. */\nwindow.FEED = "
-                + json.dumps(ausgabe, ensure_ascii=False)
-                + ";\n"
-            )
-            with open(seiten_pfad, "w", encoding="utf-8") as f:
-                f.write(seite[:i] + block + seite[j:])
-            print(f"Daten eingesetzt in: {seiten_pfad}")
+    # Die Daten liegen als eigene Skriptdatei neben der Seite, nicht mehr in ihr.
+    # Bewusst .js mit window.FEED statt .json per fetch(): ein klassisches
+    # <script src> laedt auch ueber file://, fetch() nicht. Damit laesst sich
+    # index.html weiterhin per Doppelklick oeffnen, ohne Webserver.
+    js_pfad = os.path.join(DATEN_VZ, "feed.js")
+    with open(js_pfad, "w", encoding="utf-8") as f:
+        f.write("/* Automatisch erzeugt von scraper/feed_bauen.py — nicht haendisch aendern. */\n")
+        f.write("window.FEED = " + json.dumps(ausgabe, ensure_ascii=False) + ";\n")
+    print(f"Geschrieben: {js_pfad} ({os.path.getsize(js_pfad) // 1024} KB)")
 
     st = ausgabe["statistik"]
     print(

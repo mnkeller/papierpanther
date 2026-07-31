@@ -92,6 +92,14 @@ VERFAHREN_MUSTER = [
     # Sitzungsformalien und Aemterbesetzung im Bezirksausschuss
     r"Feststellung der ordnungsgem(ä|ae)(ß|ss)en Ladung",
     r"^Genehmigung des Protokolls",
+    # Stadtratsformalien, erst beim Zwei-Jahres-Lauf aufgefallen
+    r"^Fragestunde",
+    r"^Dringlichkeitsantr(ä|ae)ge$",
+    r"^Genehmigung von Sitzungsniederschriften",
+    r"^Bekanntgaben?$",
+    r"^Sonstiges$",
+    r"^Niederschrift(en)?$",
+    r"^Antr(ä|ae)ge$",
     r"^Protokolle der BZA-Sitzungen",
     r"^Nicht (ö|oe)ffentliche Beratung",
     r"^Termin n(ä|ae)chste",

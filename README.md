@@ -15,11 +15,13 @@ Live: https://mnkeller.github.io/papierpanther/
 ## Schnellstart
 
 ```bash
-open index.html
+python3 -m http.server 8000
 ```
 
-Die Seite läuft ohne Webserver: `index.html` lädt keine externen Dateien, die
-Daten stehen direkt in der Seite.
+und dann <http://localhost:8000> aufrufen. Ein Doppelklick auf `index.html`
+funktioniert je nach Browser auch — die Daten liegen seit dem Zwei-Jahres-Stand
+in `data/feed.js` statt in der Seite selbst, und manche Browser (Safari) laden
+lokale Unterdateien nicht. Die Seite sagt es dann selbst und nennt den Ausweg.
 
 Daten neu holen und Feed neu bauen:
 
@@ -32,7 +34,7 @@ Nur Python-Standardbibliothek, keine Abhängigkeiten.
 ## Aufbau
 
 ```
-index.html            Oberfläche + eingebettete Daten
+index.html            Oberfläche (27 KB, ohne Daten)
 impressum.html        Impressum (§ 5 DDG)
 datenschutz.html      Datenschutzerklärung
 KURATION.md           wie die Kurztexte entstehen (inkl. Leichte Sprache)
@@ -46,11 +48,11 @@ data/
   rohdaten.json       unveränderte Auslesung beider Quellen
   kuration.json       Klartext + Schlagworte, hand- und maschinengepflegt
   feed.json           erzeugt — nicht händisch ändern
+  feed.js             dasselbe als window.FEED, das lädt die Seite
 ```
 
-`feed_bauen.py` schreibt in `index.html` nur den Bereich zwischen den Markern
-`/* FEED-DATEN-ANFANG */` und `/* FEED-DATEN-ENDE */`. Gestaltung und Logik der
-Seite bleiben unangetastet.
+`feed_bauen.py` schreibt `data/feed.json` und `data/feed.js`. `index.html` wird
+dabei **nicht** verändert — Gestaltung und Logik der Seite gehören dir allein.
 
 Die Trennung von `rohdaten.json` und `kuration.json` ist bewusst: Neu-Scrapen
 überschreibt niemals die aufbereiteten Texte.
