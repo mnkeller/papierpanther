@@ -551,8 +551,12 @@
     if (e.quelle === 'bza') {
       kopf.appendChild(el('span', 'herkunft bza', 'Bezirksausschuss'));
     }
+    /* "maschineller Entwurf" war zu pauschal: die Ueberschrift ist bei diesen
+       Eintraegen der Titel aus dem Ratsinfoportal, nur von Aktenzeichen
+       befreit. Maschinell geraten sind allein die Schlagworte — und genau das
+       sagt der Hinweis jetzt. */
     if (e.entwurf) {
-      kopf.appendChild(el('span', 'herkunft entwurf', 'maschineller Entwurf'));
+      kopf.appendChild(el('span', 'herkunft entwurf', 'automatisch verschlagwortet'));
     }
     c.appendChild(kopf);
 

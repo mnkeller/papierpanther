@@ -83,7 +83,8 @@ VERFAHREN_MUSTER = [
     r"^Ratsinformationssystem$",
     r"^Abl(ä|ae)ufe bei Antr(ä|ae)gen$",
     r"^Informationen und Unterrichtung",
-    r"^Mitteilungen der (Stadt|Verwaltung)",
+    # "Miteilungen" ist im Portal so getippt — Muster deckt beides ab
+    r"^Mit+eilungen\b.{0,60}(Stadt|Verwaltung)",
     r"^Stellungnahmen der (Stadt|Verwaltung|Stadtverwaltung)",
     r"^B(ü|ue)rgeranliegen und Antr(ä|ae)ge",
     r"^Antr(ä|ae)ge der (B(ü|ue)rger|BZA|Bezirksaussch)",
@@ -105,6 +106,11 @@ VERFAHREN_MUSTER = [
     r"^Termin n(ä|ae)chste",
     r"^Weitere Positionen im Bezirksausschuss",
     r"^Behindertenbeauftragt",
+    # Aemterbesetzung im Ausschuss selbst — Gremienorganisation, kein Thema
+    # fuer Buergerinnen. "Jugendbeauftragter", "Bestellung einer/s
+    # Inklusionsbeauftragten", "Behinderten- und Jugendbeauftragter des BZA".
+    r"^(Bestellung|Wahl)\s+.{0,40}beauftragte",
+    r"^[\w\s/,-]{0,45}beauftragte[rn]?( des \w+)?$",
     r"\(je \d+ Person",
 ]
 

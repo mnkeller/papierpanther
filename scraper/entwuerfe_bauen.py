@@ -122,6 +122,12 @@ PUTZ_MUSTER = [
     r"\s*\(\s*Art\.\s*[^)]{2,40}\)",
     r"\s*nach\s+dem\s+Baugesetzbuch",
     r"^\s*•\s*",
+    # Aktenzeichen der Bezirksausschuesse. Sie stehen mal hinten in Klammern
+    # ("Parksituation Wallmeisterstrasse (AZ: 2025-10-015)"), mal vorn ohne
+    # Klammer ("2025-07-011 Kraibergstrasse Zebrastreifen"). Fuer Leserinnen
+    # ist die Nummer wertlos — die Quelle steht ohnehin verlinkt darunter.
+    r"\s*\(\s*AZ:?\s*[\d/-]+\s*\)",
+    r"^\s*\d{4}-\d{2}-\d{3,4}\s+",
 ]
 
 
