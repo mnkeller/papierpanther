@@ -1816,6 +1816,102 @@
       "ort": [],
       "anlass": [],
       "entwurf": true
+    },
+    "stadt:13538#Ö 1.1": {
+      "klartext_titel": "CSU will Fördergeld vom Freistaat für die Ingolstädter Wirtschaft",
+      "klartext": "Die CSU-Fraktion beantragt, dass sich die Stadt beim Freistaat Bayern um eine Sonderförderung für den Wirtschaftsstandort bemüht. Anlass sind der angekündigte Stellenabbau beim größten Arbeitgeber der Stadt und ein Rückgang der Beschäftigtenzahl von 107.000 auf 102.000 seit 2019. Die Stadt soll außerdem Wirtschaft und Arbeitsmarkt analysieren.",
+      "klartext_titel_leicht": "Die CSU will Geld für die Wirtschaft",
+      "klartext_leicht": "In Ingolstadt gibt es weniger Arbeits-Plätze als früher. Eine große Firma streicht Stellen. Die CSU im Stadt-Rat will darum Hilfe vom Land Bayern. Das Land soll extra Geld für Ingolstadt geben.",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:13538#Ö 1.2": {
+      "klartext_titel": "Umschulungen für den Wechsel in wachsende Branchen",
+      "klartext": "Die Ausschussgemeinschaft FDP/JU beantragt, dass Wirtschaftsreferat, IFG und Jobcenter gemeinsam mit der Arbeitsagentur Weiterbildungen entwickeln. Sie sollen Beschäftigten und Arbeitsuchenden den Wechsel in wachsende Branchen erleichtern.",
+      "klartext_titel_leicht": "Neue Kurse für einen anderen Beruf",
+      "klartext_leicht": "Manche Firmen in Ingolstadt streichen Stellen. Andere Firmen suchen neue Leute. Die Stadt soll darum Kurse anbieten. Dann können Menschen einen anderen Beruf lernen.",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:13535#Ö 2": {
+      "klartext_titel": "Zwei neue Schulen auf dem früheren Rosner-Areal",
+      "klartext": "An der Schölnhammerstraße sollen eine neue Mittelschule und die dritte Staatliche Realschule gebaut werden, zusammen für rund 1.530 Schülerinnen und Schüler. Geplant sind außerdem gemeinsame Sportanlagen und eine Mensa für beide Schulen. Während der Bauzeit sollen ausgelagerte Klassen die Räume mitnutzen können.",
+      "klartext_titel_leicht": "Zwei neue Schulen für Ingolstadt",
+      "klartext_leicht": "Ingolstadt baut zwei neue Schulen. Sie kommen an die Schölnhammer-Straße. Das Gelände heißt Rosner-Areal. Es wird eine Mittel-Schule und eine Real-Schule. Zusammen ist Platz für ungefähr 1.500 Kinder. Es gibt auch Sport-Plätze und eine Kantine.",
+      "lebenslage": [
+        "Eltern & Kinder",
+        "Jugend"
+      ],
+      "bezirk": [],
+      "ort": [
+        "Schölnhammerstraße",
+        "ehemaliges Rosner-Areal"
+      ],
+      "anlass": [
+        "Schulbau"
+      ]
+    },
+    "stadt:13535#Ö 5": {
+      "klartext_titel": "Stadtverwaltung bleibt bei der 39-Stunden-Woche",
+      "klartext": "Der Tarifabschluss erlaubt es seit Januar 2026, die Wochenarbeitszeit von Tarifbeschäftigten freiwillig auf bis zu 42 Stunden anzuheben. Die Stadt will davon keinen Gebrauch machen. Die Verwaltung begründet das mit Zuschlägen von 10 bis 25 Prozent je Mehrstunde und dem Sparzwang im Haushalt.",
+      "klartext_titel_leicht": "Die Stadt bleibt bei 39 Stunden Arbeit",
+      "klartext_leicht": "Menschen bei der Stadt arbeiten 39 Stunden pro Woche. Sie könnten freiwillig mehr arbeiten. Bis zu 42 Stunden wären erlaubt. Die Stadt macht das aber nicht. Der Grund: Es kostet zu viel Geld.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Satzung & Regeln"
+      ]
+    },
+    "stadt:13532#Ö 2": {
+      "klartext_titel": "Selbsthilfegruppen können Zuschüsse länger beantragen",
+      "klartext": "Selbsthilfegruppen, die sich im Bürgerhaus treffen, mussten ihre Raumkosten bisher bis zum 15. Februar beantragen. Für 2026 verlängert die Stadt diese Frist auf den 31. Oktober. Rund 30 Gruppen nutzen das Bürgerhaus regelmäßig.",
+      "klartext_titel_leicht": "Mehr Zeit für einen Antrag auf Geld",
+      "klartext_leicht": "In Ingolstadt gibt es Selbst-Hilfe-Gruppen. Dort treffen sich Menschen mit einer Krankheit. Sie treffen sich im Bürger-Haus. Die Stadt zahlt für die Räume. Dafür braucht die Stadt einen Antrag. Neu ist: Der Antrag geht bis zum 31. Oktober 2026.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [
+        "Bürgerhaus"
+      ],
+      "anlass": [
+        "Gebühren & Preise"
+      ]
+    },
+    "stadt:13532#Ö 5": {
+      "klartext_titel": "Peter-Steuart-Haus schließt 2025 mit 390.000 Euro Fehlbetrag",
+      "klartext": "Das Peter-Steuart-Haus betreut Kinder und Jugendliche in Wohngruppen und begleitet Familien ambulant. Für 2025 weist es einen Fehlbetrag von rund 390.000 Euro aus, den die Waisenhausstiftung übernimmt. Die Wohngruppen waren im Schnitt zu 97 Prozent belegt.",
+      "klartext_titel_leicht": "Ein Kinder-Heim hat zu wenig Geld",
+      "klartext_leicht": "Das Peter-Steuart-Haus ist für Kinder und Jugendliche. Sie wohnen dort in Gruppen. Im Jahr 2025 hat das Haus zu wenig Geld eingenommen. Es fehlen ungefähr 390.000 Euro. Eine Stiftung bezahlt das Geld.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
     }
   }
 }

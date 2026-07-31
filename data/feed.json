@@ -5,36 +5,37 @@
       "name": "Ratsinfoportal der Stadt Ingolstadt — Stadtrat und Ausschuesse",
       "software": "Session (Somacos GmbH & Co. KG)",
       "basis_url": "https://www.ingolstadt.de/sessionnet",
-      "anzahl_sitzungen": 29,
-      "anzahl_tops": 284
+      "anzahl_sitzungen": 251,
+      "anzahl_tops": 2072
     },
     "bza": {
       "name": "Ratsinfoportal der Bezirksausschuesse der Stadt Ingolstadt",
       "software": "Session (Somacos GmbH & Co. KG)",
       "basis_url": "https://www.ingolstadt.de/sessionnetbza",
-      "anzahl_sitzungen": 22,
-      "anzahl_tops": 186
+      "anzahl_sitzungen": 109,
+      "anzahl_tops": 1343
     }
   },
   "hinweis": "Oeffentlich zugaengliche Seiten, ohne Anmeldung abgerufen.",
-  "daten_abgerufen_am": "2026-07-29",
-  "feed_gebaut_am": "2026-07-29",
+  "daten_abgerufen_am": "2026-07-31",
+  "feed_gebaut_am": "2026-07-31",
   "zeitraum": {
-    "von": "2026-05",
-    "bis": "2026-10"
+    "von": "2024-08",
+    "bis": "2026-07"
   },
   "statistik": {
-    "sitzungen_ausgelesen": 51,
-    "tops_ausgelesen": 470,
-    "tops_verfahren": 64,
-    "tops_kuratiert": 136,
+    "sitzungen_ausgelesen": 360,
+    "tops_ausgelesen": 3415,
+    "tops_verfahren": 398,
+    "tops_kuratiert": 142,
     "entwuerfe": 114,
+    "leichte_sprache": 6,
     "je_quelle": {
-      "stadt": 22,
+      "stadt": 28,
       "bza": 114
     },
     "stand": {
-      "Entscheidung angesetzt": 16,
+      "Entscheidung angesetzt": 22,
       "Ohne Vorlage": 117,
       "Bekanntgabe": 3
     }
@@ -88,6 +89,8 @@
       "ref": "stadt:13538#Ö 4",
       "klartext_titel": "Gebühren der Kommunalbetriebe werden neu berechnet",
       "klartext": "Die Ingolstädter Kommunalbetriebe (INKB) haben ihre Gebühren neu kalkuliert. Dafür sollen die Beitrags- und Gebührensatzungen geändert werden.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Wohnen & Miete"
       ],
@@ -139,6 +142,8 @@
       "ref": "bza:14211#Ö 3.1",
       "klartext_titel": "Fahrradstraße Gymnasiumstraße",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -170,6 +175,8 @@
       "ref": "bza:14211#Ö 3.2",
       "klartext_titel": "Fahrradbügel Mauthstraße",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -199,6 +206,8 @@
       "ref": "bza:14211#Ö 3.3",
       "klartext_titel": "Trinkbrunnen in der Kanalstraße / Sauerstraße",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -230,6 +239,8 @@
       "ref": "bza:14211#Ö 3.4",
       "klartext_titel": "Stauffenbergstraße 2–4",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -259,6 +270,8 @@
       "ref": "bza:14211#Ö 4.1",
       "klartext_titel": "Kurzvorstellung Projekt „Abpflastern“",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "I-Mitte"
@@ -288,6 +301,8 @@
       "ref": "bza:14211#Ö 4.2",
       "klartext_titel": "Parkbuchten Audi Zentrum Schlüterstraße",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -319,6 +334,8 @@
       "ref": "bza:14211#Ö 4.3",
       "klartext_titel": "Mülleimer Wohnmobilstellplatz am Hallenbad",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Wohnen & Miete",
         "Freizeit & Sport"
@@ -351,6 +368,8 @@
       "ref": "bza:14211#Ö 4.4",
       "klartext_titel": "Beschädigungen Baumpflanzungen Harderstraße",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -383,6 +402,8 @@
       "ref": "bza:14211#Ö 4.5",
       "klartext_titel": "Außenbestuhlung vor Papa Joe’s (Harderstraße)",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Gewerbe & Gastro",
         "Unterwegs"
@@ -413,6 +434,8 @@
       "ref": "bza:14211#Ö 4.6",
       "klartext_titel": "Ersatz für Baumfällungen am Viktualienmarkt",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "I-Mitte"
@@ -442,6 +465,8 @@
       "ref": "bza:14211#Ö 4.7",
       "klartext_titel": "Degenhartstraße",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -471,6 +496,8 @@
       "ref": "bza:14211#Ö 4.8",
       "klartext_titel": "Gefährlicher Verkehr Kupferstraße",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -503,6 +530,8 @@
       "ref": "bza:14211#Ö 4.9",
       "klartext_titel": "30-er-Zone Gerolfinger-Straße",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -531,9 +560,107 @@
       "beratungsweg": []
     },
     {
+      "ref": "stadt:13538#Ö 1.1",
+      "klartext_titel": "CSU will Fördergeld vom Freistaat für die Ingolstädter Wirtschaft",
+      "klartext": "Die CSU-Fraktion beantragt, dass sich die Stadt beim Freistaat Bayern um eine Sonderförderung für den Wirtschaftsstandort bemüht. Anlass sind der angekündigte Stellenabbau beim größten Arbeitgeber der Stadt und ein Rückgang der Beschäftigtenzahl von 107.000 auf 102.000 seit 2019. Die Stadt soll außerdem Wirtschaft und Arbeitsmarkt analysieren.",
+      "klartext_titel_leicht": "Die CSU will Geld für die Wirtschaft",
+      "klartext_leicht": "In Ingolstadt gibt es weniger Arbeits-Plätze als früher. Eine große Firma streicht Stellen. Die CSU im Stadt-Rat will darum Hilfe vom Land Bayern. Das Land soll extra Geld für Ingolstadt geben.",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "29.07.2026",
+      "quelle": "stadt",
+      "amtlicher_titel": "Ergänzungsantrag zum Sparprogramm - Sonder-Programm zur Strukturförderung des Wirtschaftsstandortes Ingolstadt",
+      "top_nr": "Ö 1.1",
+      "vorlage": "V0662/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22432",
+      "antragsteller": "Antrag der CSU-Stadtratsfraktion vom 30.09.2025-",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=242049&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "1.1",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538&toselect=89891"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13538#Ö 1.2",
+      "klartext_titel": "Umschulungen für den Wechsel in wachsende Branchen",
+      "klartext": "Die Ausschussgemeinschaft FDP/JU beantragt, dass Wirtschaftsreferat, IFG und Jobcenter gemeinsam mit der Arbeitsagentur Weiterbildungen entwickeln. Sie sollen Beschäftigten und Arbeitsuchenden den Wechsel in wachsende Branchen erleichtern.",
+      "klartext_titel_leicht": "Neue Kurse für einen anderen Beruf",
+      "klartext_leicht": "Manche Firmen in Ingolstadt streichen Stellen. Andere Firmen suchen neue Leute. Die Stadt soll darum Kurse anbieten. Dann können Menschen einen anderen Beruf lernen.",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "29.07.2026",
+      "quelle": "stadt",
+      "amtlicher_titel": "Qualifizierungsangebote im Einklang mit Ansiedlungsstrategie",
+      "top_nr": "Ö 1.2",
+      "vorlage": "V0788/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22562",
+      "antragsteller": "Antrag der Ausschussgemeinschaft FDP/JU vom 05.11.2025-",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FDP/JU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=243525&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "1.2",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538&toselect=89880"
+        }
+      ]
+    },
+    {
       "ref": "bza:14207#Ö 3",
       "klartext_titel": "Bebauungsplan Nr. 196 „Friedrichshofen",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Wohnen & Miete"
       ],
@@ -566,6 +693,8 @@
       "ref": "bza:14152#Ö 2.1",
       "klartext_titel": "Schröplerlohe - Parkbank - Mängelmelder",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "IV-Südost"
@@ -595,6 +724,8 @@
       "ref": "bza:14152#Ö 3.1",
       "klartext_titel": "Stadtbus Ingolstadt – Neue Taktzeiten",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -626,6 +757,8 @@
       "ref": "bza:14152#Ö 3.2",
       "klartext_titel": "Behinderten- und Jugendbeauftragter des BZA",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Jugend"
       ],
@@ -655,6 +788,8 @@
       "ref": "bza:14152#Ö 3.3",
       "klartext_titel": "Projekt Abpflastern",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "IV-Südost"
@@ -684,6 +819,8 @@
       "ref": "bza:14152#Ö 4.1",
       "klartext_titel": "Niederfeld - Schwenkweiherpflege",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Freizeit & Sport"
       ],
@@ -715,6 +852,8 @@
       "ref": "bza:14152#Ö 4.2",
       "klartext_titel": "Stadtweg/Fliederstr. - Bushäuschensicht",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -744,6 +883,8 @@
       "ref": "bza:14152#Ö 4.3",
       "klartext_titel": "Niederfeld – Parkplatzsituation Rothenturmer Str.",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -773,6 +914,8 @@
       "ref": "bza:14152#Ö 5",
       "klartext_titel": "Geschwindigkeitsmessungen",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -802,6 +945,8 @@
       "ref": "bza:14152#Ö 6",
       "klartext_titel": "Bürgerhaushalt (BHH) - Projektliste",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "IV-Südost"
@@ -831,6 +976,8 @@
       "ref": "stadt:13535#Ö 12",
       "klartext_titel": "Mobile Jugendarbeit beim Stadtjugendring",
       "klartext": "Der Finanzausschuss hat sich mit der mobilen Jugendarbeit in Trägerschaft des Stadtjugendrings Ingolstadt befasst.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Jugend"
       ],
@@ -890,6 +1037,8 @@
       "ref": "bza:14199#Ö 2",
       "klartext_titel": "Bestellung einer/s Jugend- und einer/s Inklusionsbeauftragten",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Jugend"
       ],
@@ -919,6 +1068,8 @@
       "ref": "bza:14199#Ö 3.1",
       "klartext_titel": "Fertigstellung Kanalsanierung Hans-Denck-Straße",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Wohnen & Miete",
         "Unterwegs"
@@ -951,6 +1102,8 @@
       "ref": "bza:14199#Ö 3.2",
       "klartext_titel": "Bebauungs- und Grünordnungsplan Nr. 935 „Solarparks Winden südlich B 16\"",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -983,6 +1136,8 @@
       "ref": "bza:14199#Ö 4.1",
       "klartext_titel": "Anträge zum Verfahren „vierstreifiger Ausbau der B 16“",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -1009,9 +1164,176 @@
       "beratungsweg": []
     },
     {
+      "ref": "stadt:13535#Ö 2",
+      "klartext_titel": "Zwei neue Schulen auf dem früheren Rosner-Areal",
+      "klartext": "An der Schölnhammerstraße sollen eine neue Mittelschule und die dritte Staatliche Realschule gebaut werden, zusammen für rund 1.530 Schülerinnen und Schüler. Geplant sind außerdem gemeinsame Sportanlagen und eine Mensa für beide Schulen. Während der Bauzeit sollen ausgelagerte Klassen die Räume mitnutzen können.",
+      "klartext_titel_leicht": "Zwei neue Schulen für Ingolstadt",
+      "klartext_leicht": "Ingolstadt baut zwei neue Schulen. Sie kommen an die Schölnhammer-Straße. Das Gelände heißt Rosner-Areal. Es wird eine Mittel-Schule und eine Real-Schule. Zusammen ist Platz für ungefähr 1.500 Kinder. Es gibt auch Sport-Plätze und eine Kantine.",
+      "lebenslage": [
+        "Eltern & Kinder",
+        "Jugend"
+      ],
+      "bezirk": [],
+      "anlass": [
+        "Schulbau"
+      ],
+      "ort": [
+        "Schölnhammerstraße",
+        "ehemaliges Rosner-Areal"
+      ],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "29.07.2026",
+      "quelle": "stadt",
+      "amtlicher_titel": "Errichtung des Schulcampus Nord-Ost auf dem ehemaligen Rosner-Areal (Schölnhammerstraße); — — 1. Neubau der Mittelschule Nord-Ost — Ergänzende Programmgenehmigung des Schulraumprogramms — — 2. Neubau der 3. Staatlichen Realschule — Programmgenehmigungdes Schulraumprogramms — — 3. Auslagerungs- und Interimsnutzungen — Genehmigung einer multifunktionalen Konzeption der Raumprogramme — — 4. Neubau gemeinsame Sportanlagen für die Mittelschule Nord-Ost und 3. Staatliche Realschule — Programmgenehmigung",
+      "top_nr": "Ö 2",
+      "vorlage": "V0385/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23138",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/02/2026",
+      "datum": "2026-07-22",
+      "datum_anzeige": "22.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251471&type=do"
+        },
+        {
+          "titel": "Anlage 1 - MS Nord-Ost RS neu Bericht interdisziplinäres Bedarfsmonitoring",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251481&type=do"
+        },
+        {
+          "titel": "Anlage 2 - MS Nord-Ost RS neu Vorläufiges Betriebs- und Nutzungskonzept mit steuerrechtlicher Bewertung",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251480&type=do"
+        },
+        {
+          "titel": "Anlage 3 - MS Nord-Ost Raumprogramm u. vorläufiges Betriebs- und Nutzungskonzept",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251421&type=do"
+        },
+        {
+          "titel": "Anlage 4 - RS neu Raumprogramm u. vorläufiges Betriebs- und Nutzungskonzept",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251422&type=do"
+        },
+        {
+          "titel": "Anlage 5 - MS Nord-Ost Funktionsschema",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251423&type=do"
+        },
+        {
+          "titel": "Anlage 6 - RS neu Funktionsschema",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251424&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-07-14",
+          "datum_anzeige": "14.07.2026",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "2",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13534&toselect=88890"
+        },
+        {
+          "datum": "2026-07-14",
+          "datum_anzeige": "14.07.2026",
+          "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+          "top_nr": "2",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13534&toselect=88890"
+        },
+        {
+          "datum": "2026-07-14",
+          "datum_anzeige": "14.07.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "2",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13534&toselect=88890"
+        },
+        {
+          "datum": "2026-07-14",
+          "datum_anzeige": "14.07.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "2",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13534&toselect=88890"
+        },
+        {
+          "datum": "2026-07-22",
+          "datum_anzeige": "22.07.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "2",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535&toselect=89013"
+        },
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "13",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538&toselect=89744"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13535#Ö 5",
+      "klartext_titel": "Stadtverwaltung bleibt bei der 39-Stunden-Woche",
+      "klartext": "Der Tarifabschluss erlaubt es seit Januar 2026, die Wochenarbeitszeit von Tarifbeschäftigten freiwillig auf bis zu 42 Stunden anzuheben. Die Stadt will davon keinen Gebrauch machen. Die Verwaltung begründet das mit Zuschlägen von 10 bis 25 Prozent je Mehrstunde und dem Sparzwang im Haushalt.",
+      "klartext_titel_leicht": "Die Stadt bleibt bei 39 Stunden Arbeit",
+      "klartext_leicht": "Menschen bei der Stadt arbeiten 39 Stunden pro Woche. Sie könnten freiwillig mehr arbeiten. Bis zu 42 Stunden wären erlaubt. Die Stadt macht das aber nicht. Der Grund: Es kostet zu viel Geld.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "22.07.2026",
+      "quelle": "stadt",
+      "amtlicher_titel": "Grundsatzbeschluss zur freiwilligen Arbeitszeiterhöhung für Tarifbeschäftigte nach TVöD-VKA",
+      "top_nr": "Ö 5",
+      "vorlage": "V0339/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23090",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/02/2026",
+      "datum": "2026-07-22",
+      "datum_anzeige": "22.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250856&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-07-22",
+          "datum_anzeige": "22.07.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535&toselect=88988"
+        }
+      ]
+    },
+    {
       "ref": "bza:14197#Ö 4",
       "klartext_titel": "Radwegnetz in Ober-/Unterhaunstadt (aktueller Stand/Änderungen)",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -1043,6 +1365,8 @@
       "ref": "bza:14197#Ö 5",
       "klartext_titel": "Satzung zur Änderung der Satzung über die Bildung von Stadtbezirken und Bezirksausschüssen …",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "VIII-Oberhaunstadt"
@@ -1072,6 +1396,8 @@
       "ref": "bza:14175#Ö 3.2",
       "klartext_titel": "Jugendbeauftragter",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Jugend"
       ],
@@ -1101,6 +1427,8 @@
       "ref": "bza:14177#Ö 3.1",
       "klartext_titel": "Cricket Feld",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Freizeit & Sport"
       ],
@@ -1130,6 +1458,8 @@
       "ref": "bza:14177#Ö 4",
       "klartext_titel": "Bürgerhaushalt",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "III-Nordost"
@@ -1159,6 +1489,8 @@
       "ref": "bza:14177#Ö 5.1",
       "klartext_titel": "Ausfahrt Hofmillerstr. 29-33",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -1188,6 +1520,8 @@
       "ref": "bza:14177#Ö 5.2",
       "klartext_titel": "Kreuzung Regensburger Str. / Kurt-Huber-Str.",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -1217,6 +1551,8 @@
       "ref": "bza:14177#Ö 6.1",
       "klartext_titel": "Geschwindigkeitskontrollen",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -1246,6 +1582,8 @@
       "ref": "bza:14177#Ö 6.3",
       "klartext_titel": "Jugendbeauftragter, Behindertenbeauftragter",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Jugend"
       ],
@@ -1275,6 +1613,8 @@
       "ref": "stadt:13725#Ö 2",
       "klartext_titel": "Donautherme: Öffnungszeiten und Eintrittspreise werden angepasst",
       "klartext": "Der Aufsichtsrat hat über den Betrieb der Donautherme berichtet. Auf der Tagesordnung standen eine Anpassung der Öffnungszeiten und der Eintrittspreise.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Freizeit & Sport"
       ],
@@ -1325,6 +1665,8 @@
       "ref": "stadt:13534#Ö 2",
       "klartext_titel": "Neuer Schulcampus im Nordosten auf dem alten Rosner-Areal",
       "klartext": "An der Schölnhammerstraße soll ein Schulcampus entstehen: Neubau der Mittelschule Nord-Ost, Neubau der 3. Staatlichen Realschule und gemeinsame Sportanlagen. Während der Bauzeit sind Auslagerungen und Interimsnutzungen geplant.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Eltern & Kinder",
         "Jugend"
@@ -1442,6 +1784,8 @@
       "ref": "stadt:13534#Ö 1",
       "klartext_titel": "Welche Schulbauten in Ingolstadt dringend nötig sind",
       "klartext": "Die Verwaltung hat mündlich über dringende und unabweisbare Schulbaumaßnahmen berichtet. Zu diesem Punkt liegt keine schriftliche Vorlage im Ratsinfoportal.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Eltern & Kinder"
       ],
@@ -1473,6 +1817,8 @@
       "ref": "stadt:13534#Ö 6",
       "klartext_titel": "Öffentliche Toilette im Pius-Park soll kürzer öffnen",
       "klartext": "Die Öffnungszeiten der öffentlichen Toilette im Pius-Park sollen eingeschränkt werden.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Freizeit & Sport"
       ],
@@ -1519,6 +1865,8 @@
       "ref": "stadt:13534#Ö 3",
       "klartext_titel": "Weiherfeld Süd: Bebauungsplan im letzten Schritt",
       "klartext": "Für das Gebiet „Weiherfeld Süd\" stand der Satzungsbeschluss zum Bebauungs- und Grünordnungsplan Nr. 934 an — zusammen mit einer Änderung des Flächennutzungsplans. Zur Vorlage gehören unter anderem eine Verkehrsuntersuchung, eine Klimaanalyse und eine schalltechnische Untersuchung.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Wohnen & Miete"
       ],
@@ -1638,6 +1986,8 @@
       "ref": "bza:14158#Ö 2",
       "klartext_titel": "Referat VI - Fahrradbeauftragte",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -1667,6 +2017,8 @@
       "ref": "bza:14158#Ö 2.1",
       "klartext_titel": "Vorstellung des Baureferenten und der Fahrradbeauftragten",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -1696,6 +2048,8 @@
       "ref": "bza:14158#Ö 2.2",
       "klartext_titel": "Beabsichtigte Ausweisung der Bahnhofstraße als Fahrradstraße",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -1727,6 +2081,8 @@
       "ref": "bza:14158#Ö 3",
       "klartext_titel": "Information über sachliche und örtliche Zuständigkeit des BZA XII",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -1756,6 +2112,8 @@
       "ref": "bza:14158#Ö 4",
       "klartext_titel": "Wahl der Beauftragten",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -1785,6 +2143,8 @@
       "ref": "bza:14158#Ö 4.1",
       "klartext_titel": "Integrationsbeauftragte(r)",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -1814,6 +2174,8 @@
       "ref": "bza:14158#Ö 4.2",
       "klartext_titel": "Jugendbeauftragte(r)",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Jugend",
         "Unterwegs"
@@ -1844,6 +2206,8 @@
       "ref": "bza:14158#Ö 5",
       "klartext_titel": "Schreiben der Stadt zum Bebauungsplan “Lindberghstraße”, BZA 2025-12-012",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Wohnen & Miete",
         "Unterwegs"
@@ -1876,6 +2240,8 @@
       "ref": "bza:14158#Ö 6",
       "klartext_titel": "Antrag “Geschwindigkeitsbeschränkung Am Pulverl”",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -1905,6 +2271,8 @@
       "ref": "bza:14158#Ö 7",
       "klartext_titel": "Bürgeranliegen",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -1934,6 +2302,8 @@
       "ref": "bza:14155#Ö 4",
       "klartext_titel": "Bürgerhaushalt",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "II-Nordwest"
@@ -1963,6 +2333,8 @@
       "ref": "bza:14155#Ö 4.1",
       "klartext_titel": "Letzter Stand BHH 2025/2026",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "II-Nordwest"
@@ -1992,6 +2364,8 @@
       "ref": "bza:14155#Ö 5.1",
       "klartext_titel": "Tempo 30 auf der Gaimersheimer Straße",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -2023,6 +2397,8 @@
       "ref": "bza:14155#Ö 5.2",
       "klartext_titel": "Schachtische im Piuspark",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Freizeit & Sport"
       ],
@@ -2052,6 +2428,8 @@
       "ref": "bza:14155#Ö 6",
       "klartext_titel": "Veränderte Rolle des Bezirksausschusses",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "II-Nordwest"
@@ -2079,6 +2457,8 @@
       "ref": "bza:14155#Ö 6.1",
       "klartext_titel": "Gemeinsame Festlegung der zukünftigen Arbeitsweise",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "II-Nordwest"
@@ -2106,6 +2486,8 @@
       "ref": "bza:14155#Ö 6.2",
       "klartext_titel": "Themen und Projekte des Bezirksausschusses",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "II-Nordwest"
@@ -2133,6 +2515,8 @@
       "ref": "bza:14155#Ö 6.3",
       "klartext_titel": "Information der Bürgerinnen und Bürger, Öffentlichkeitsarbeit",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "II-Nordwest"
@@ -2160,6 +2544,8 @@
       "ref": "bza:14155#Ö 6.4",
       "klartext_titel": "Vernetzung im Stadtteil",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "II-Nordwest"
@@ -2187,6 +2573,8 @@
       "ref": "bza:14155#Ö 7.1",
       "klartext_titel": "Maßnahmen gegen Vandalismus und Vermüllung",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Wohnen & Miete"
       ],
@@ -2219,6 +2607,8 @@
       "ref": "bza:14155#Ö 7.2",
       "klartext_titel": "Basketballkorb für den Piuspark",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Jugend",
         "Freizeit & Sport"
@@ -2249,6 +2639,8 @@
       "ref": "stadt:13533#Ö 4",
       "klartext_titel": "Wie viele Kita-Plätze Ingolstadt in den nächsten Jahren braucht",
       "klartext": "Die Stadt schreibt ihre Bedarfsplanung für Kindertageseinrichtungen fort. Dazu liegen Zahlen zum stadtweiten Bedarf und zu den geplanten Plätzen vor.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Eltern & Kinder"
       ],
@@ -2322,6 +2714,8 @@
       "ref": "stadt:13533#Ö 6",
       "klartext_titel": "Musikschule: Gebühren und Regeln werden neu gefasst",
       "klartext": "Benutzungssatzung und Gebührensatzung der Simon-Mayr-Sing- und Musikschule sollen neu gefasst werden. Zur Vorlage gehören eine neue und eine alte Gebührentabelle sowie eine Kalkulation der Mehreinnahmen.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Eltern & Kinder"
       ],
@@ -2406,6 +2800,8 @@
       "ref": "stadt:13532#Ö 1",
       "klartext_titel": "Seniorenpolitisches Gesamtkonzept 2026",
       "klartext": "Die Stadt hat ein umfassendes Konzept zur Seniorenpolitik vorgelegt — mit Bevölkerungsdaten, einer Seniorenbefragung, einem Pflegebericht und konkreten Handlungsfeldern.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Senior:innen"
       ],
@@ -2506,9 +2902,138 @@
       ]
     },
     {
+      "ref": "stadt:13532#Ö 2",
+      "klartext_titel": "Selbsthilfegruppen können Zuschüsse länger beantragen",
+      "klartext": "Selbsthilfegruppen, die sich im Bürgerhaus treffen, mussten ihre Raumkosten bisher bis zum 15. Februar beantragen. Für 2026 verlängert die Stadt diese Frist auf den 31. Oktober. Rund 30 Gruppen nutzen das Bürgerhaus regelmäßig.",
+      "klartext_titel_leicht": "Mehr Zeit für einen Antrag auf Geld",
+      "klartext_leicht": "In Ingolstadt gibt es Selbst-Hilfe-Gruppen. Dort treffen sich Menschen mit einer Krankheit. Sie treffen sich im Bürger-Haus. Die Stadt zahlt für die Räume. Dafür braucht die Stadt einen Antrag. Neu ist: Der Antrag geht bis zum 31. Oktober 2026.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "ort": [
+        "Bürgerhaus"
+      ],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "29.07.2026",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bezuschussung der Ingolstädter Selbsthilfegruppen - Antragsfristverlängerung für 2026",
+      "top_nr": "Ö 2",
+      "vorlage": "V0160/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22908",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+      "sitzung_kennung": "SGA/01/2026",
+      "datum": "2026-07-02",
+      "datum_anzeige": "02.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13532",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248758&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-07-02",
+          "datum_anzeige": "02.07.2026",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "2",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13532&toselect=88752"
+        },
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "23",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538&toselect=89747"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13532#Ö 5",
+      "klartext_titel": "Peter-Steuart-Haus schließt 2025 mit 390.000 Euro Fehlbetrag",
+      "klartext": "Das Peter-Steuart-Haus betreut Kinder und Jugendliche in Wohngruppen und begleitet Familien ambulant. Für 2025 weist es einen Fehlbetrag von rund 390.000 Euro aus, den die Waisenhausstiftung übernimmt. Die Wohngruppen waren im Schnitt zu 97 Prozent belegt.",
+      "klartext_titel_leicht": "Ein Kinder-Heim hat zu wenig Geld",
+      "klartext_leicht": "Das Peter-Steuart-Haus ist für Kinder und Jugendliche. Sie wohnen dort in Gruppen. Im Jahr 2025 hat das Haus zu wenig Geld eingenommen. Es fehlen ungefähr 390.000 Euro. Eine Stiftung bezahlt das Geld.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "29.07.2026",
+      "quelle": "stadt",
+      "amtlicher_titel": "Jahresabschlüsse des Peter-Steuart-Hauses und der Waisenhausstiftung Ingolstadt für das — Jahr 2025",
+      "top_nr": "Ö 5",
+      "vorlage": "V0291/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23042",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+      "sitzung_kennung": "SGA/01/2026",
+      "datum": "2026-07-02",
+      "datum_anzeige": "02.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13532",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250220&type=do"
+        },
+        {
+          "titel": "Anlage zu V0291-26 Jahresabschlüsse WH und PSH 2025",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250221&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-07-02",
+          "datum_anzeige": "02.07.2026",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13532&toselect=88725"
+        },
+        {
+          "datum": "2026-07-22",
+          "datum_anzeige": "22.07.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "8",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535&toselect=88989"
+        },
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "16",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538&toselect=89738"
+        }
+      ]
+    },
+    {
       "ref": "stadt:13531#Ö 3",
       "klartext_titel": "Neue Regeln für den Baggersee",
       "klartext": "Für das Naherholungsgebiet Baggersee soll eine Allgemeinverfügung erlassen werden — also verbindliche Regeln für die Benutzung. Grundlage ist ein Sicherheitsgutachten.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Freizeit & Sport"
       ],
@@ -2573,6 +3098,8 @@
       "ref": "stadt:13531#Ö 2",
       "klartext_titel": "Christkindlmarkt: Standgebühren sollen steigen",
       "klartext": "Der Christkindlmarkt läuft länger als bisher. Die dadurch entstehenden Mehrkosten sollen über höhere Standgebühren finanziert werden.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Gewerbe & Gastro"
       ],
@@ -2604,6 +3131,8 @@
       "ref": "stadt:13531#Ö 4",
       "klartext_titel": "Außenbestuhlung für zwei Lokale in der Altstadt",
       "klartext": "Zwei Ladenlokale haben Außenbestuhlung beantragt: der Weinraum Ingolstadt (Am Stein 3) und der Adana Grill (Milchstraße 23a, Bestuhlung entlang der Milchstraße).",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Gewerbe & Gastro"
       ],
@@ -2658,6 +3187,8 @@
       "ref": "stadt:13530#Ö 1",
       "klartext_titel": "Was Eltern über die Kitas in Ingolstadt gesagt haben",
       "klartext": "Die Stadt hat Eltern zum Kita-Jahr 2025/26 befragt. Die Auswertung lag dem Jugendhilfeausschuss vor.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Eltern & Kinder"
       ],
@@ -2704,6 +3235,8 @@
       "ref": "bza:14132#Ö 1",
       "klartext_titel": "Niederschrift vom 24.02.2026",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "V-Südwest"
@@ -2731,6 +3264,8 @@
       "ref": "bza:14132#Ö 2",
       "klartext_titel": "Antwortschreiben der Stadt und Informationen aus der Verwaltung",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "V-Südwest"
@@ -2758,6 +3293,8 @@
       "ref": "bza:14132#Ö 2.1",
       "klartext_titel": "Bebauungs- und Grünordnungsplan Nr. 178 A II „Erweiterung Kleingartenanlage Am Schmalzbuckel mit …",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Wohnen & Miete",
         "Freizeit & Sport"
@@ -2800,6 +3337,8 @@
       "ref": "bza:14132#Ö 2.2",
       "klartext_titel": "Zebrastreifen Lechermannstraße (2025-05-009)",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -2836,6 +3375,8 @@
       "ref": "bza:14132#Ö 2.3",
       "klartext_titel": "Schutzstreifen Fauststraße (2025-05-007)",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -2874,6 +3415,8 @@
       "ref": "bza:14132#Ö 2.4",
       "klartext_titel": "Geschwindigkeitsbeschränkung Lechermannstraße und Kirchstraße (2026-05-008)",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -2908,6 +3451,8 @@
       "ref": "bza:14132#Ö 2.5",
       "klartext_titel": "Auswertung der Geschwindigkeitsmessanlage in der Hagauer Straße Höhe Kreisel",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -2937,6 +3482,8 @@
       "ref": "bza:14132#Ö 2.6",
       "klartext_titel": "Auswertung der Geschwindigkeitsmessanlage Knörstraße",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -2966,6 +3513,8 @@
       "ref": "bza:14132#Ö 2.7",
       "klartext_titel": "Weihnachtsbeleuchtung Hundszell 2026 (2025-05-011)",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "V-Südwest"
@@ -3000,6 +3549,8 @@
       "ref": "bza:14132#Ö 3",
       "klartext_titel": "Bürgeranliegen",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "V-Südwest"
@@ -3027,6 +3578,8 @@
       "ref": "bza:14132#Ö 3.1",
       "klartext_titel": "Vermüllung an den Wertstoffinseln",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Wohnen & Miete"
       ],
@@ -3058,6 +3611,8 @@
       "ref": "bza:14132#Ö 3.2",
       "klartext_titel": "Vermüllung im Fort Peyerl",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Wohnen & Miete"
       ],
@@ -3089,6 +3644,8 @@
       "ref": "bza:14132#Ö 3.3",
       "klartext_titel": "Vermüllung im Grünzug Maximilianstraße",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Wohnen & Miete",
         "Unterwegs"
@@ -3121,6 +3678,8 @@
       "ref": "bza:14132#Ö 3.4",
       "klartext_titel": "Geschwindigkeit in der Ursula-Winter-Straße",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -3150,6 +3709,8 @@
       "ref": "bza:14132#Ö 4",
       "klartext_titel": "Unerledigte Anträge und Anliegen des BZA aus den letzten Jahren",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "V-Südwest"
@@ -3177,6 +3738,8 @@
       "ref": "bza:14132#Ö 5.1",
       "klartext_titel": "Besondere Funktionen innerhalb des BZAs",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "V-Südwest"
@@ -3204,6 +3767,8 @@
       "ref": "stadt:13529#Ö 4",
       "klartext_titel": "Änderungen am Busfahrplan",
       "klartext": "Der Stadtrat hat sich mit Fahrplanmaßnahmen im Ingolstädter ÖPNV befasst — vorgelegt von der Stadtbus Ingolstadt GmbH.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -3250,6 +3815,8 @@
       "ref": "stadt:13529#Ö 9",
       "klartext_titel": "Zweitwohnungssteuer wird geändert",
       "klartext": "Die Satzung über die Erhebung der Zweitwohnungssteuer soll geändert werden. Betroffen sind alle, die in Ingolstadt eine Zweitwohnung gemeldet haben.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Wohnen & Miete",
         "Studierende"
@@ -3311,6 +3878,8 @@
       "ref": "bza:14017#Ö 1",
       "klartext_titel": "Wahl der/des Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "IX-Mailing/Feldkirchen"
@@ -3338,6 +3907,8 @@
       "ref": "bza:14017#Ö 2",
       "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "IX-Mailing/Feldkirchen"
@@ -3365,6 +3936,8 @@
       "ref": "bza:14017#Ö 3",
       "klartext_titel": "Wahl der/des Schriftführers/in",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "IX-Mailing/Feldkirchen"
@@ -3392,6 +3965,8 @@
       "ref": "bza:14008#Ö 1",
       "klartext_titel": "Wahl der/des Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "III-Nordost"
@@ -3419,6 +3994,8 @@
       "ref": "bza:14008#Ö 2",
       "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "III-Nordost"
@@ -3446,6 +4023,8 @@
       "ref": "bza:14008#Ö 3",
       "klartext_titel": "Wahl der/des Schriftführers/in",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "III-Nordost"
@@ -3473,6 +4052,8 @@
       "ref": "bza:14015#Ö 1",
       "klartext_titel": "Wahl der/des Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "VII-Etting"
@@ -3500,6 +4081,8 @@
       "ref": "bza:14015#Ö 2",
       "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "VII-Etting"
@@ -3527,6 +4110,8 @@
       "ref": "bza:14015#Ö 3",
       "klartext_titel": "Wahl der/des Schriftführers/in",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "VII-Etting"
@@ -3554,6 +4139,8 @@
       "ref": "bza:14019#Ö 1",
       "klartext_titel": "Wahl der/des Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "XI-Friedrichshofen/Hollerstauden"
@@ -3581,6 +4168,8 @@
       "ref": "bza:14019#Ö 2",
       "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "XI-Friedrichshofen/Hollerstauden"
@@ -3608,6 +4197,8 @@
       "ref": "bza:14019#Ö 3",
       "klartext_titel": "Wahl der/des Schriftführers/in",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "XI-Friedrichshofen/Hollerstauden"
@@ -3635,6 +4226,8 @@
       "ref": "bza:14012#Ö 1",
       "klartext_titel": "Wahl der/des Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "VI-West"
@@ -3662,6 +4255,8 @@
       "ref": "bza:14012#Ö 2",
       "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "VI-West"
@@ -3689,6 +4284,8 @@
       "ref": "bza:14012#Ö 3",
       "klartext_titel": "Wahl der/des Schriftführers/in",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "VI-West"
@@ -3716,6 +4313,8 @@
       "ref": "bza:14020#Ö 1",
       "klartext_titel": "Wahl der/des Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -3745,6 +4344,8 @@
       "ref": "bza:14020#Ö 2",
       "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -3774,6 +4375,8 @@
       "ref": "bza:14020#Ö 3",
       "klartext_titel": "Wahl der/des Schriftführers/in",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -3803,6 +4406,8 @@
       "ref": "stadt:13525#Ö 7",
       "klartext_titel": "Sicherheitsgutachten zum Baggersee vorgestellt",
       "klartext": "Der Oberbürgermeister hat mündlich über das Sicherheitsgutachten zum Baggersee berichtet. Im Ratsinfoportal liegt dazu ein Gefahrabwendungskonzept als Dokument.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Freizeit & Sport"
       ],
@@ -3839,6 +4444,8 @@
       "ref": "stadt:13525#Ö 3",
       "klartext_titel": "Wie der Verkehr in der Altstadt tatsächlich läuft",
       "klartext": "Eine verkehrliche Grundlagenanalyse für die Altstadt ist fertig. Die Ergebnisse wurden im Ausschuss vorgestellt; ein Kurzbericht liegt als Dokument vor.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -3890,6 +4497,8 @@
       "ref": "stadt:13525#Ö 4",
       "klartext_titel": "Überschwemmungsgebiet an der Sandrach wird festgesetzt",
       "klartext": "Für die Sandrach soll ein Überschwemmungsgebiet per Verordnung festgesetzt werden — auf einer Länge von Fluss-Kilometer 1,026 bis 13,516. Detailkarten und ein Erläuterungsbericht liegen vor.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Wohnen & Miete"
       ],
@@ -3966,6 +4575,8 @@
       "ref": "bza:14010#Ö 1",
       "klartext_titel": "Wahl der/des Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "IV-Südost"
@@ -3993,6 +4604,8 @@
       "ref": "bza:14010#Ö 2",
       "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "IV-Südost"
@@ -4020,6 +4633,8 @@
       "ref": "bza:14010#Ö 3",
       "klartext_titel": "Wahl der/des Schriftführers/in",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "IV-Südost"
@@ -4047,6 +4662,8 @@
       "ref": "stadt:13524#Ö 4",
       "klartext_titel": "Essensgeld in Kita, Mittagsbetreuung und Ganztagsschule soll steigen",
       "klartext": "Mehrere Gebührensatzungen sollen geändert werden: für den Kita-Besuch, für die Mittags- und Randbetreuung an Grundschulen und für die Verpflegung in Ganztagsschulen. Anlass ist unter anderem der Rechtsanspruch auf Ganztagsbetreuung für Grundschulkinder.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Eltern & Kinder"
       ],
@@ -4129,6 +4746,8 @@
       "ref": "stadt:13710#Ö 4",
       "klartext_titel": "Kanalsanierung in Unterbrunnenreuth",
       "klartext": "Der Verwaltungsrat der Kommunalbetriebe hat sich mit der Kanalsanierung in Unterbrunnenreuth befasst.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Wohnen & Miete"
       ],
@@ -4175,6 +4794,8 @@
       "ref": "bza:14018#Ö 1",
       "klartext_titel": "Wahl der/des Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "X-Süd"
@@ -4202,6 +4823,8 @@
       "ref": "bza:14018#Ö 2",
       "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "X-Süd"
@@ -4229,6 +4852,8 @@
       "ref": "bza:14018#Ö 3",
       "klartext_titel": "Wahl der/des Schriftführers/in",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "X-Süd"
@@ -4256,6 +4881,8 @@
       "ref": "bza:14011#Ö 1",
       "klartext_titel": "Wahl der/des Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "V-Südwest"
@@ -4283,6 +4910,8 @@
       "ref": "bza:14011#Ö 2",
       "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "V-Südwest"
@@ -4310,6 +4939,8 @@
       "ref": "bza:14011#Ö 3",
       "klartext_titel": "Wahl der/des Schriftführers/in",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "V-Südwest"
@@ -4337,6 +4968,8 @@
       "ref": "bza:14007#Ö 1",
       "klartext_titel": "Wahl der/des Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "II-Nordwest"
@@ -4364,6 +4997,8 @@
       "ref": "bza:14007#Ö 2",
       "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "II-Nordwest"
@@ -4391,6 +5026,8 @@
       "ref": "bza:14007#Ö 3",
       "klartext_titel": "Wahl der/des Schriftführers/in",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "II-Nordwest"
@@ -4418,6 +5055,8 @@
       "ref": "bza:14006#Ö 1",
       "klartext_titel": "Wahl der/des Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "I-Mitte"
@@ -4445,6 +5084,8 @@
       "ref": "bza:14006#Ö 2",
       "klartext_titel": "Wahl der/des stellvertretenden Vorsitzenden",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "I-Mitte"
@@ -4472,6 +5113,8 @@
       "ref": "bza:14006#Ö 3",
       "klartext_titel": "Wahl der/des Schriftführers/in",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "I-Mitte"
@@ -4499,6 +5142,8 @@
       "ref": "stadt:13705#Ö 2",
       "klartext_titel": "Parken wird zum 1. September 2026 teurer",
       "klartext": "Für die städtischen Parkeinrichtungen sind Tariferhöhungen zum 01.09.2026 vorgesehen. Es liegen Tarifübersichten für Kurzparker und Dauerparker vor.",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -4561,6 +5206,8 @@
       "ref": "bza:14005#Ö 1",
       "klartext_titel": "Bestätigung/Ergänzung des Protokolls der letzten Sitzung",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "I-Mitte"
@@ -4588,6 +5235,8 @@
       "ref": "bza:14005#Ö 2",
       "klartext_titel": "Informationen/Unterrichtung der Verwaltung",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "I-Mitte"
@@ -4615,6 +5264,8 @@
       "ref": "bza:14005#Ö 2.1",
       "klartext_titel": "ÖPNV-Fahrplanmaßnahmen",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -4646,6 +5297,8 @@
       "ref": "bza:14005#Ö 2.2",
       "klartext_titel": "Kreisel Degenhartstraße",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -4675,6 +5328,8 @@
       "ref": "bza:14005#Ö 3.1",
       "klartext_titel": "Hundekotbeutelspender am Münster",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [],
       "bezirk": [
         "I-Mitte"
@@ -4704,6 +5359,8 @@
       "ref": "bza:14005#Ö 3.2",
       "klartext_titel": "Toiletten am Baggersee",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Freizeit & Sport"
       ],
@@ -4733,6 +5390,8 @@
       "ref": "bza:14005#Ö 3.3",
       "klartext_titel": "Räum- und Streupflicht an der Degenhartstraße",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -4762,6 +5421,8 @@
       "ref": "bza:14005#Ö 3.4",
       "klartext_titel": "Fußgängerzone – Ludwigstraße Stolperfalle",
       "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
       "lebenslage": [
         "Unterwegs"
       ],
