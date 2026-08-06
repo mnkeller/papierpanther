@@ -27,16 +27,16 @@
     "sitzungen_ausgelesen": 360,
     "tops_ausgelesen": 3415,
     "tops_verfahren": 493,
-    "tops_kuratiert": 906,
+    "tops_kuratiert": 935,
     "entwuerfe": 843,
-    "leichte_sprache": 42,
+    "leichte_sprache": 71,
     "je_quelle": {
-      "stadt": 63,
+      "stadt": 92,
       "bza": 843
     },
     "stand": {
       "Bekanntgabe": 3,
-      "Entscheidung angesetzt": 57,
+      "Entscheidung angesetzt": 86,
       "Ohne Vorlage": 846
     }
   },
@@ -7225,6 +7225,436 @@
       ]
     },
     {
+      "ref": "stadt:13529#Ö 15",
+      "thema": "stadt:vorlage:23021",
+      "auftritte": [
+        {
+          "datum": "2026-06-10",
+          "datum_anzeige": "10.06.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13524"
+        },
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 15",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
+        }
+      ],
+      "klartext_titel": "Kulturbeirat: Mehr Mitsprache für Künstlerinnen und Künstler",
+      "klartext": "Der Kulturbeirat berät die Stadt in Kulturfragen und bekommt eine neue Geschäftsordnung. Grundlage sind Workshops mit Kulturakteurinnen und -akteuren im Herbst 2024 und mit den Beiratsmitgliedern im Juli 2025. Ziel ist, die Position der Kulturschaffenden im Gremium zu stärken und einen offeneren Austausch zu ermöglichen. Die neue Fassung wurde bereits am 13. November 2025 im Kulturbeirat selbst vorgestellt.",
+      "klartext_titel_leicht": "Der Kultur-Beirat bekommt mehr Mitsprache",
+      "klartext_leicht": "Der Kultur-Beirat berät die Stadt. Dort sitzen auch Künstlerinnen und Künstler. Sie sollen jetzt mehr mitbestimmen dürfen. Dafür gibt es neue Regeln für den Beirat. Die Regeln wurden mit den Mitgliedern besprochen.",
+      "lebenslage": [
+        "Ehrenamt & Vereine"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung",
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "24.06.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Neufassung der Geschäftsordnung für den Kulturbeirat der Stadt Ingolstadt",
+      "top_nr": "Ö 15",
+      "vorlage": "V0270/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23021",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2026",
+      "datum": "2026-06-24",
+      "datum_anzeige": "24.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249984&type=do"
+        },
+        {
+          "titel": "Anlage 1 Geschäftsordnung für den Kulturbeirat",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249982&type=do"
+        },
+        {
+          "titel": "Anlage 2 Synopse Neufassung der Geschäftsordnung des Kulturbeirates",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249983&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-06-10",
+          "datum_anzeige": "10.06.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13524&toselect=88190"
+        },
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "15",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529&toselect=88585"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13529#Ö 16",
+      "thema": "stadt:vorlage:23041",
+      "auftritte": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 16",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
+        }
+      ],
+      "klartext_titel": "Weniger Sitzungen für die Quartierskommissionen",
+      "klartext": "Im Augustin-, Konrad- und Piusviertel gibt es eigene Kommissionen für die Quartiersentwicklung. Ihre Richtlinien werden neu gefasst, weil sich die beteiligten Träger und Akteure verändert haben. Wichtigste Neuerung: Statt bisher zwei Sitzungen pro Jahr soll künftig nur noch mindestens eine Sitzung pro Stadtteil und Jahr stattfinden. In allen drei Vierteln betreibt die Stadt zusätzlich Stadtteiltreffs und Quartiersmanagement.",
+      "klartext_titel_leicht": "Weniger Treffen für drei Stadtteil-Gruppen",
+      "klartext_leicht": "Im Augustin-Viertel, Konrad-Viertel und Pius-Viertel gibt es Gruppen. Sie sprechen über die Zukunft ihres Stadtteils. Bisher haben sie sich 2 Mal im Jahr getroffen. Jetzt reicht 1 Treffen im Jahr. Der Grund: Manche Mitglieder haben gewechselt.",
+      "lebenslage": [
+        "Ehrenamt & Vereine"
+      ],
+      "bezirk": [],
+      "anlass": [
+        "Satzung & Regeln",
+        "Konzept & Planung"
+      ],
+      "ort": [
+        "Augustinviertel",
+        "Konradviertel",
+        "Piusviertel"
+      ],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "24.06.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Neufassung der Richtlinien für die Kommissionen der Quartiersentwicklung",
+      "top_nr": "Ö 16",
+      "vorlage": "V0290/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23041",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2026",
+      "datum": "2026-06-24",
+      "datum_anzeige": "24.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250268&type=do"
+        },
+        {
+          "titel": "Anlage 1 zu Richtlinien Quartiersentwicklung Augustinviertel Nr. 225a",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250291&type=do"
+        },
+        {
+          "titel": "Anlage 1 zu Richtlinien Quartiersentwicklung Konradviertel Nr. 224a",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250296&type=do"
+        },
+        {
+          "titel": "Anlage 1 zu Richtlinien Quartiersentwicklung Piusviertel Nr. 223a",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250297&type=do"
+        },
+        {
+          "titel": "Anlage 1.1 zur Vorlage Richtlinien QE Augustinviertel 24.06.2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250289&type=do"
+        },
+        {
+          "titel": "Anlage 1.2 zur Vorlage Synopse QuE Augustinviertel",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250290&type=do"
+        },
+        {
+          "titel": "Anlage 2.1 zur Vorlage Richtlinien QE Konradviertel 24.06.2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250292&type=do"
+        },
+        {
+          "titel": "Anlage 2.2 zur Vorlage Synopse QuE Konradviertel",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250293&type=do"
+        },
+        {
+          "titel": "Anlage 3.1 zur Vorlage Richtlinien QE Piusviertel 24.06.2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250294&type=do"
+        },
+        {
+          "titel": "Anlage 3.2 zur Vorlage Synopse QuE Piusviertel",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250295&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "16",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529&toselect=88586"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13529#Ö 19",
+      "thema": "stadt:vorlage:23056",
+      "auftritte": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 19",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
+        }
+      ],
+      "klartext_titel": "AfD gegen ein neues Umweltreferat",
+      "klartext": "Die AfD-Fraktion beantragt per Dringlichkeitsantrag, die geplante Einrichtung eines neuen Umweltreferats nicht weiterzuverfolgen. Zur Begründung führt sie an, dass fachlich qualifiziertes Personal bereits in anderen Referaten vorhanden sei und vergleichbare größere Städte teils nur ein Umweltamt statt eines eigenen Referats hätten. Der Antrag richtet sich gegen einen Vorschlag, der später als eigener Tagesordnungspunkt zur Neugründung eines Referats VIII vorliegt.",
+      "klartext_titel_leicht": "Die AfD ist gegen ein neues Umwelt-Amt",
+      "klartext_leicht": "Die Stadt plant ein neues Amt für Umwelt. Es soll ein eigenes Referat werden. Die AfD im Stadt-Rat ist dagegen. Sie sagt: Andere Ämter können das mit erledigen. Ein eigenes Referat kostet zu viel.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Klima & Umwelt",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "24.06.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Keine Weiterverfolgung der Schaffung eines neuen sog. Umweltreferats",
+      "top_nr": "Ö 19",
+      "vorlage": "V0305/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23056",
+      "antragsteller": "Antrag der AfD-Stadtratsfraktion vom 08.06.2026-",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2026",
+      "datum": "2026-06-24",
+      "datum_anzeige": "24.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag AfD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250480&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "19",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529&toselect=88680"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13529#Ö 20.1",
+      "thema": "stadt:vorlage:23113",
+      "auftritte": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 20.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
+        }
+      ],
+      "klartext_titel": "Freie Wähler fordern Aufklärung nach Feuerwehreinsatz Scheelestraße",
+      "klartext": "Nach einem aktuellen Schadensereignis in der Scheelestraße beantragt die FW-Fraktion per Dringlichkeitsantrag eine umfassende öffentliche Information für den Stadtrat. Begründet wird das mit einer unübersichtlichen Informationslage und aufkommenden Gerüchten, die für Verunsicherung bei Einsatzkräften und Bürgerinnen und Bürgern gesorgt hätten. Worum es bei dem Schadensereignis selbst ging, geht aus der Antragsvorlage nicht hervor.",
+      "klartext_titel_leicht": "Freie Wähler wollen Infos zu einem Feuerwehr-Einsatz",
+      "klartext_leicht": "In der Scheele-Straße gab es einen Feuerwehr-Einsatz. Es gab dazu viele Gerüchte. Die Menschen waren verunsichert. Die Freien Wähler wollen darum genaue Informationen. Der Stadt-Rat soll sie schnell bekommen.",
+      "lebenslage": [],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "ort": [
+        "Scheelestraße"
+      ],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "24.06.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Feuerwehreinsatz Scheelestraße — -Dringlichkeitsantrag der FW-Stadtratsfraktion vom 23.06.2026-",
+      "top_nr": "Ö 20.1",
+      "vorlage": "V0360/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23113",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2026",
+      "datum": "2026-06-24",
+      "datum_anzeige": "24.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FW",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250997&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "20.1",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529&toselect=88806"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13529#Ö 24",
+      "thema": "stadt:vorlage:23111",
+      "auftritte": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 24",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
+        }
+      ],
+      "klartext_titel": "Neue Kita an der Königsberger Straße: Stadt zahlt bis zu 3,78 Millionen Euro",
+      "klartext": "Die städtische Wohnungsbaugesellschaft GWG baut an der Königsberger Straße eine neue viergruppige Kindertagesstätte mit 100 Plätzen als Ersatz für die bestehende Kita St. Monika. Die Stadt gewährt dafür einen Baukostenzuschuss von bis zu 3.777.200 Euro nach den geltenden Förderrichtlinien. Baubeginn ist frühestens Februar 2027, die Fertigstellung wird für August 2028 erwartet. Die Finanzierung steht noch unter Vorbehalt.",
+      "klartext_titel_leicht": "Eine neue Kita für 100 Kinder",
+      "klartext_leicht": "An der Königsberger Straße entsteht eine neue Kita. Sie ersetzt die alte Kita St. Monika. Dort haben dann 100 Kinder Platz. Die Stadt zahlt dafür bis zu 3,78 Millionen Euro. Der Bau soll 2027 beginnen. Fertig soll die Kita 2028 sein.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [],
+      "anlass": [
+        "Kinderbetreuung",
+        "Gebühren & Preise"
+      ],
+      "ort": [
+        "Königsberger Straße",
+        "St. Monika"
+      ],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "24.06.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Gewährung eines Baukostenzuschusses an die Gemeinnützige Wohnungsbaugesellschaft Ingolstadt GmbH für den Neubau einer Kindertagesstätte an der Königsberger Straße (St. Monika)",
+      "top_nr": "Ö 24",
+      "vorlage": "V0358/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23111",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2026",
+      "datum": "2026-06-24",
+      "datum_anzeige": "24.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250989&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "24",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529&toselect=88810"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13529#Ö 25",
+      "thema": "stadt:vorlage:23112",
+      "auftritte": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 25",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
+        }
+      ],
+      "klartext_titel": "Stadt beantragt 10 Millionen Euro Kredit für Klinikum-Sanierung",
+      "klartext": "Weil noch kein rechtskräftiger Haushalt 2026 vorliegt, befindet sich die Stadt in der vorläufigen Haushaltsführung mit eingeschränkten Handlungsmöglichkeiten. Für die Generalsanierung des Klinikums soll die Verwaltung trotzdem bei der Regierung von Oberbayern eine Kreditermächtigung über 10 Millionen Euro beantragen. Das Geld ist als Investitionsumlage an den Krankenhauszweckverband vorgesehen und war bereits in einer früheren Vorlage angekündigt.",
+      "klartext_titel_leicht": "Geld für den Umbau vom Klinikum",
+      "klartext_leicht": "Die Stadt hat noch keinen fertigen Haushalts-Plan für 2026. Trotzdem braucht das Klinikum Geld. Es wird gerade umgebaut. Die Stadt will dafür einen Kredit aufnehmen. Es geht um 10 Millionen Euro. Das Land Bayern muss noch zustimmen.",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung",
+        "Gebühren & Preise"
+      ],
+      "ort": [
+        "Klinikum Ingolstadt"
+      ],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "24.06.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Beantragung einer Kreditermächtiung für das Haushaltsjahr 2026 im Rahmen der vorläufigen — Haushaltsführung nach Art. 69 Abs. 2 und 4 GO — Krankenhauszweckverband Ingolstadt; — Abruf Investitionsumlage für Generalsanierung Klinikum für 2026",
+      "top_nr": "Ö 25",
+      "vorlage": "V0359/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23112",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2026",
+      "datum": "2026-06-24",
+      "datum_anzeige": "24.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250992&type=do"
+        },
+        {
+          "titel": "Anlage 1 Investitionsplan Generalsanierung und Rahmenterminplan",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250993&type=do"
+        },
+        {
+          "titel": "Anlage 2 KhZVI Haushaltssatzung 2026 OBAB Nr. 9 v. 02.04.2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250994&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "25",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529&toselect=88812"
+        }
+      ]
+    },
+    {
       "ref": "bza:14017#Ö 1",
       "thema": "bza:14017#Ö 1",
       "auftritte": [
@@ -7951,6 +8381,82 @@
       "beratungsweg": []
     },
     {
+      "ref": "stadt:13526#Ö 5",
+      "thema": "stadt:vorlage:22922",
+      "auftritte": [
+        {
+          "datum": "2026-05-19",
+          "datum_anzeige": "19.05.2026",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13521"
+        },
+        {
+          "datum": "2026-06-16",
+          "datum_anzeige": "16.06.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13526"
+        }
+      ],
+      "klartext_titel": "Container-Krippe „Schatztruhe“ bleibt bis 2027",
+      "klartext": "Die dreigruppige Krippe „Schatztruhe“ war ursprünglich nur für zwei Jahre als Übergangslösung in Containern geplant. Weil der Neubau einer Kita am Fort Peyerl in der Ottonenstraße nicht mehr verfolgt wird, soll der Betrieb nun bis zum 31. August 2027 verlängert werden. Dafür müssen Miet- und Pachtverträge für Container und Grundstück verlängert werden. Die Kosten dafür betragen 44.400 Euro für 2026 und 88.800 Euro für 2027.",
+      "klartext_titel_leicht": "Die Container-Krippe bleibt länger stehen",
+      "klartext_leicht": "Die Krippe Schatz-Truhe ist in Containern. Sie sollte eigentlich bald wegkommen. Ein neues Gebäude wird aber nicht gebaut. Darum bleibt die Container-Krippe länger. Sie bleibt bis zum Sommer 2027. Das kostet die Stadt Geld für Miete.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [],
+      "anlass": [
+        "Kinderbetreuung",
+        "Gebühren & Preise"
+      ],
+      "ort": [
+        "Eisvogelstraße"
+      ],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "16.06.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Verlängerung des Betriebs der dreigruppigen Krippe „Schatztruhe“ bis 31.08.2027",
+      "top_nr": "Ö 5",
+      "vorlage": "V0174/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22922",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/01/2026",
+      "datum": "2026-06-16",
+      "datum_anzeige": "16.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13526",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248865&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-19",
+          "datum_anzeige": "19.05.2026",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13521&toselect=87656"
+        },
+        {
+          "datum": "2026-06-16",
+          "datum_anzeige": "16.06.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13526&toselect=88492"
+        }
+      ]
+    },
+    {
       "ref": "stadt:13525#Ö 7",
       "thema": "stadt:13525#Ö 7",
       "auftritte": [
@@ -8182,6 +8688,72 @@
       "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14010",
       "dokumente": [],
       "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13525#Ö 6",
+      "thema": "stadt:vorlage:22930",
+      "auftritte": [
+        {
+          "datum": "2026-06-11",
+          "datum_anzeige": "11.06.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525"
+        }
+      ],
+      "klartext_titel": "Neue Straße im Gewerbegebiet südlich der Manchinger Straße wird gewidmet",
+      "klartext": "Im Gewerbegebiet südlich der Manchinger Straße ist der Straßenbau abgeschlossen. Die neue Straße soll nun förmlich als öffentliche Ortsstraße gewidmet werden — ein rein verwaltungsrechtlicher Schritt, der die Fläche formal dem öffentlichen Verkehr widmet und damit die Grundlage für Unterhalt und Nutzung schafft.",
+      "klartext_titel_leicht": "Eine neue Straße wird offiziell freigegeben",
+      "klartext_leicht": "Im Gewerbe-Gebiet an der Manchinger Straße gibt es eine neue Straße. Sie ist schon fertig gebaut. Jetzt wird sie offiziell zur Straße erklärt. Das ist ein Verwaltungs-Schritt. Erst danach darf die Stadt die Straße pflegen.",
+      "lebenslage": [],
+      "bezirk": [],
+      "anlass": [
+        "Verkehrsplanung",
+        "Bauleitplanung"
+      ],
+      "ort": [
+        "Gewerbegebiet südlich Manchinger Straße"
+      ],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "11.06.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Vollzug des Bayerischen Straßen- und Wegegesetzes — Widmung im Rahmen des Bebauungsplanes Nr. 177 V \"Gewerbegebet südlich Manchinger Straße\"",
+      "top_nr": "Ö 6",
+      "vorlage": "V0182/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22930",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+      "sitzung_kennung": "PLA/01/2026",
+      "datum": "2026-06-11",
+      "datum_anzeige": "11.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249299&type=do"
+        },
+        {
+          "titel": "Anlage 1 Lageplan V00182-26",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250523&type=do"
+        },
+        {
+          "titel": "Anlage 2 B-Plan",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249304&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-06-11",
+          "datum_anzeige": "11.06.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "6",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525&toselect=88465"
+        }
+      ]
     },
     {
       "ref": "stadt:13710#Ö 4",
@@ -8481,6 +9053,135 @@
       "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14011",
       "dokumente": [],
       "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13524#Ö 3",
+      "thema": "stadt:vorlage:22948",
+      "auftritte": [
+        {
+          "datum": "2026-06-10",
+          "datum_anzeige": "10.06.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13524"
+        }
+      ],
+      "klartext_titel": "Drei Kulturfestivals werden zum „Fleißer Festival“ zusammengelegt",
+      "klartext": "Wegen der andauernden Haushaltskonsolidierung sollen die Literaturtage, die Tanztage und das FEM*Festival zu einem gemeinsamen „Fleißer Festival“ zusammengelegt werden. Das Kulturamt hat bereits in den vergangenen Jahren gespart, etwa durch die Einstellung der Reihen „Weltenklang“ und „Belly&Heart“. Die Bündelung ist ein weiterer Schritt, um mit weniger Geld ein Kulturangebot aufrechtzuerhalten, statt einzelne Formate ganz zu streichen.",
+      "klartext_titel_leicht": "Drei Festivals werden zu einem Festival",
+      "klartext_leicht": "Ingolstadt hatte drei Kultur-Festivals. Die Literatur-Tage, die Tanz-Tage und das FEM-Festival. Die Stadt hat zu wenig Geld. Darum werden die drei Festivals zusammengelegt. Es entsteht ein neues Festival. Es heißt Fleißer-Festival.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "10.06.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Konsolidierung der bestehenden Festivallandschaft durch Bündelung in ein „Fleißer Festival“",
+      "top_nr": "Ö 3",
+      "vorlage": "V0200/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22948",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/01/2026",
+      "datum": "2026-06-10",
+      "datum_anzeige": "10.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13524",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249292&type=do"
+        },
+        {
+          "titel": "Anlage 1 Fleißer Festival Konzeptbeschreibung FINAL",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249815&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-06-10",
+          "datum_anzeige": "10.06.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13524&toselect=88189"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13524#Ö 7",
+      "thema": "stadt:vorlage:22929",
+      "auftritte": [
+        {
+          "datum": "2026-06-10",
+          "datum_anzeige": "10.06.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13524"
+        }
+      ],
+      "klartext_titel": "Neue Straße im Gewerbegebiet heißt Hedy-Lamarr-Straße",
+      "klartext": "Für die neue Erschließungsstraße im Gewerbegebiet südlich der Manchinger Straße schlägt die Verwaltung den Namen „Hedy-Lamarr-Straße“ vor. Der zuständige Bezirksausschuss IV-Südost hat dem Vorschlag bereits zugestimmt. Benannt wird die Straße nach der Schauspielerin und Erfinderin Hedy Lamarr, die unter anderem an einem frühen Vorläufer heutiger Funktechnik mitwirkte.",
+      "klartext_titel_leicht": "Eine neue Straße bekommt einen Namen",
+      "klartext_leicht": "Im Gewerbe-Gebiet gibt es eine neue Straße. Sie braucht noch einen Namen. Die Stadt schlägt vor: Hedy-Lamarr-Straße. Hedy Lamarr war Schauspielerin und Erfinderin. Der Bezirks-Ausschuss IV-Südost findet den Namen gut.",
+      "lebenslage": [],
+      "bezirk": [
+        "IV-Südost"
+      ],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "ort": [
+        "Gewerbegebiet südlich Manchinger Straße"
+      ],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "10.06.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Vollzug des Bayerischen Straßen- und Wegegesetzes — Benennung einer neuen Straße im Umgriff des Bebauungsplanes Nr. 177 V \"Gewerbegebiet südlich Manchinger Straße\"",
+      "top_nr": "Ö 7",
+      "vorlage": "V0181/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22929",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/01/2026",
+      "datum": "2026-06-10",
+      "datum_anzeige": "10.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13524",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249298&type=do"
+        },
+        {
+          "titel": "Anlage 1 Lageplan V00181-26",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250531&type=do"
+        },
+        {
+          "titel": "Anlage 2 Hedy Lamarr",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249297&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-06-10",
+          "datum_anzeige": "10.06.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "7",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13524&toselect=88187"
+        }
+      ]
     },
     {
       "ref": "bza:14007#Ö 1",
@@ -8794,6 +9495,958 @@
           "oeffentlich": true,
           "rolle": "Entscheidung",
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13705&toselect=88101"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13519#Ö 3",
+      "thema": "stadt:vorlage:22968",
+      "auftritte": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519"
+        }
+      ],
+      "klartext_titel": "Zweiter Bürgermeister verliert eigenen Geschäftsbereich",
+      "klartext": "Der Geschäftsbereich des zweiten Bürgermeisters wird aufgelöst; das Amt für Sport und Freizeit geht direkt an den dritten Bürgermeister über. Der bisherige Bereich der dritten Bürgermeisterin — Umweltamt, Forstamt und die Stabsstelle für Klima, Biodiversität und Donau — wird vorübergehend dem Referat VII zugeordnet, bis das neue Umweltreferat VIII steht. Es handelt sich um eine reine Zuständigkeitsverschiebung innerhalb der Verwaltungsspitze.",
+      "klartext_titel_leicht": "Neue Aufgaben für die Bürgermeister",
+      "klartext_leicht": "Ingolstadt hat mehrere Bürgermeister. Jeder ist für bestimmte Themen zuständig. Der 2. Bürgermeister verliert seinen eigenen Bereich. Sport gehört jetzt zum 3. Bürgermeister. Umwelt und Wald gehören vorübergehend zu einem anderen Referat. Später soll ein neues Umwelt-Referat entstehen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "13.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250879&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Neuorganisation der Bürgermeisterebene",
+      "top_nr": "Ö 3",
+      "vorlage": "V0219/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22968",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2026",
+      "datum": "2026-05-13",
+      "datum_anzeige": "13.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249530&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249906&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519&toselect=88048"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13519#Ö 4",
+      "thema": "stadt:vorlage:22932",
+      "auftritte": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519"
+        }
+      ],
+      "klartext_titel": "Entschädigung für die dritte Bürgermeisterin festgelegt",
+      "klartext": "Die ehrenamtliche dritte Bürgermeisterin oder der ehrenamtliche dritte Bürgermeister erhält eine Entschädigung in Höhe von 50 Prozent des Grundgehalts der Besoldungsgruppe B 5. Diese kommt zusätzlich zur regulären Entschädigung als Stadtratsmitglied hinzu. Die Höhe ist gesetzlich vorgeschrieben zu Beginn jeder Amtszeit neu festzusetzen und richtet sich nach dem Umfang der zusätzlichen Aufgaben.",
+      "klartext_titel_leicht": "Geld für die dritte Bürgermeisterin",
+      "klartext_leicht": "Ingolstadt hat auch eine dritte Bürgermeisterin. Das Amt ist ein Ehrenamt. Sie bekommt dafür extra Geld. Es kommt zu ihrem normalen Stadtrats-Gehalt dazu. Das Gesetz schreibt das so vor.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "13.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250879&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Festsetzung der Entschädigung für die ehrenamtliche dritte Bürgermeisterin / den ehrenamtlichen dritten Bürgermeister",
+      "top_nr": "Ö 4",
+      "vorlage": "V0184/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22932",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2026",
+      "datum": "2026-05-13",
+      "datum_anzeige": "13.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249266&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249846&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519&toselect=88002"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13519#Ö 5",
+      "thema": "stadt:vorlage:22969",
+      "auftritte": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519"
+        }
+      ],
+      "klartext_titel": "Neues Umweltreferat VIII entsteht zum 1. September",
+      "klartext": "Zum 1. September 2026 wird ein neues Referat VIII für Umwelt, Nachhaltigkeit und Transformation gegründet. Ihm werden Umweltamt, Forstamt und die Stabsstelle „Strategie Klima, Biodiversität und Donau“ zugeordnet, zusätzlich integriert es die bisher im Direktorium angesiedelte Stabsstelle Nachhaltigkeit. Die Leitung des neuen Referats — ein berufsmäßiger Stadtratsposten — soll öffentlich ausgeschrieben werden. Das bisherige Referat VIII für Wirtschaft wird zeitgleich aufgelöst, weil diese Aufgaben ab September an die IFG übergehen.",
+      "klartext_titel_leicht": "Ein neues Amt für Umwelt und Klima",
+      "klartext_leicht": "Die Stadt gründet ein neues Referat. Ein Referat ist wie eine Abteilung. Es heißt Referat 8. Es kümmert sich um Umwelt, Klima und Wald. Es beginnt am 1. September 2026. Eine neue Person soll das Referat leiten.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Klima & Umwelt",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "13.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250879&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Neugründung eines Referats VIII - Umwelt, Nachhaltigkeit und Transformation",
+      "top_nr": "Ö 5",
+      "vorlage": "V0220/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22969",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2026",
+      "datum": "2026-05-13",
+      "datum_anzeige": "13.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249529&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250704&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519&toselect=88049"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13519#Ö 6",
+      "thema": "stadt:vorlage:22962",
+      "auftritte": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519"
+        }
+      ],
+      "klartext_titel": "Aufgabenbereiche der Stadtratsausschüsse werden neu geregelt",
+      "klartext": "Bei der Neufassung der Geschäftsordnung im Mai 2026 war Paragraf 5 zur Bezeichnung und zum Aufgabenbereich der Ausschüsse zunächst ausgeklammert worden. Er wird nun nachgeliefert, zusammen mit Klarstellungen dazu, wann eine Programm- oder Projektgenehmigung nötig ist. Grundlage sind Empfehlungen der Geschäftsordnungskommission zur neuen Ausschussstruktur der aktuellen Wahlperiode.",
+      "klartext_titel_leicht": "Neue Regeln für die Ausschüsse im Stadtrat",
+      "klartext_leicht": "Der Stadtrat hat mehrere Ausschüsse. Jeder Ausschuss kümmert sich um ein Thema. Die Regeln dafür waren nicht ganz fertig. Jetzt werden sie ergänzt. Es geht auch darum: Wann muss ein Bau-Projekt extra genehmigt werden?",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "13.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250879&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Änderung der Geschäftsordnung für den Stadtrat der Stadt Ingolstadt; — § 5 Bezeichnung und Aufgabenbereich der Ausschüsse; — Konkretisierung Programm- und Projektgenehmigungen",
+      "top_nr": "Ö 6",
+      "vorlage": "V0213/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22962",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2026",
+      "datum": "2026-05-13",
+      "datum_anzeige": "13.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249456&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249914&type=do"
+        },
+        {
+          "titel": "Anlage 1 Geschäftsordnung Änderung 2026-05-13",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249572&type=do"
+        },
+        {
+          "titel": "Anlage 2 Synopse Änderung Geschäftsordnung 2026-05-13",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249573&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "6",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519&toselect=88031"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13519#Ö 7",
+      "thema": "stadt:vorlage:22980",
+      "auftritte": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519"
+        }
+      ],
+      "klartext_titel": "IFG-Verwaltungsrat wächst von 12 auf 15 Mitglieder",
+      "klartext": "Die Unternehmenssatzung der städtischen Wirtschaftsförderungsgesellschaft IFG wird geändert: Der Verwaltungsrat soll künftig statt zwölf fünfzehn Mitglieder haben, zusätzlich zum Oberbürgermeister als Vorsitzendem. Ziel ist, dass mehr Fraktionen und Gruppierungen im Stadtrat dort vertreten sein können.",
+      "klartext_titel_leicht": "Mehr Mitglieder für den IFG-Rat",
+      "klartext_leicht": "Die IFG kümmert sich um Wirtschaft in Ingolstadt. Sie gehört der Stadt. Ein Rat kontrolliert die IFG. Bisher hatte er 12 Mitglieder. Jetzt werden es 15. So können mehr Parteien mitmachen.",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "13.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250879&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "IFG Ingolstadt AöR; — Änderung der Unternehmenssatzung hinsichtlich der Größe des Verwaltungsrates",
+      "top_nr": "Ö 7",
+      "vorlage": "V0143/26/1",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22980",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2026",
+      "datum": "2026-05-13",
+      "datum_anzeige": "13.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249559&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249773&type=do"
+        },
+        {
+          "titel": "Anlage Satzung zur Änderung der Unternehmenssatzung",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249637&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "7",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519&toselect=88050"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13519#Ö 8",
+      "thema": "stadt:vorlage:22967",
+      "auftritte": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 8",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519"
+        }
+      ],
+      "klartext_titel": "Auch der Verwaltungsrat der Kommunalbetriebe wächst auf 15 Mitglieder",
+      "klartext": "Wie bei der IFG wird auch die Satzung der Ingolstädter Kommunalbetriebe (INKB) geändert: Der Verwaltungsrat bekommt künftig fünfzehn statt zwölf Mitglieder. Die INKB sind unter anderem für Wasser, Abwasser, Müllentsorgung und Straßenreinigung zuständig.",
+      "klartext_titel_leicht": "Mehr Mitglieder für den Rat der Stadt-Betriebe",
+      "klartext_leicht": "Die INKB kümmern sich um Wasser und Müll in Ingolstadt. Ein Rat kontrolliert die INKB. Bisher hatte er 12 Mitglieder. Jetzt werden es 15. Genau wie bei der IFG.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "13.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250879&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Ingolstädter Kommunalbetriebe AöR — Änderung der Unternehmenssatzung hinsichtlich der Größe des Verwaltungsrates",
+      "top_nr": "Ö 8",
+      "vorlage": "V0218/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22967",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2026",
+      "datum": "2026-05-13",
+      "datum_anzeige": "13.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249552&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249738&type=do"
+        },
+        {
+          "titel": "Anlage Satzung zur Änderung der Unternehmenssatzung",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249555&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "8",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519&toselect=88046"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13519#Ö 8.1",
+      "thema": "stadt:vorlage:22982",
+      "auftritte": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 8.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519"
+        }
+      ],
+      "klartext_titel": "Heilig-Geist-Spital-Stiftung: Stiftungsrat soll auf bis zu 15 Mitglieder wachsen",
+      "klartext": "Die Heilig-Geist-Spital-Stiftung Ingolstadt soll ihre Satzung ändern, damit künftig bis zu fünfzehn statt weniger Mitglieder im Stiftungsrat sitzen können. Ziel ist, dass jede Fraktion oder Wählergruppe im Stadtrat mindestens ein eigenes Mitglied entsenden kann. Der Stadtrat verpflichtet dazu seine im Stiftungsrat sitzenden Mitglieder, die Änderung dort einzubringen — die eigentliche Satzungsänderung beschließt die Stiftung selbst.",
+      "klartext_titel_leicht": "Mehr Mitspracherecht für Parteien bei einer alten Stiftung",
+      "klartext_leicht": "Die Heilig-Geist-Spital-Stiftung ist sehr alt. Sie hilft Menschen in Not. Ein Rat entscheidet über die Stiftung. Jetzt soll der Rat größer werden. Dann kann jede Partei ein Mitglied schicken.",
+      "lebenslage": [
+        "Geld & Soziales"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "13.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250879&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Heilig-Geist-Spital-Stiftung Ingolstadt; — Änderung der Stiftungssatzung hinsichtlich der Größe des Stiftungsrates",
+      "top_nr": "Ö 8.1",
+      "vorlage": "V0232/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22982",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2026",
+      "datum": "2026-05-13",
+      "datum_anzeige": "13.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249587&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249742&type=do"
+        },
+        {
+          "titel": "Anlage Bestehende Satzung der Heilig-Geist-Spital-Stiftung",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249588&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "8.1",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519&toselect=88066"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13519#Ö 9",
+      "thema": "stadt:vorlage:22941",
+      "auftritte": [
+        {
+          "datum": "2026-05-05",
+          "datum_anzeige": "05.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 17",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517"
+        },
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 9",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519"
+        }
+      ],
+      "klartext_titel": "Ausschüsse der neuen Wahlperiode werden besetzt",
+      "klartext": "Nach der Kommunalwahl müssen alle Ausschüsse des Stadtrats sowie die städtischen Vertretungen in Beteiligungsunternehmen und Zweckverbänden neu besetzt werden. Die Verteilung der Sitze richtet sich nach den neuen Stärkeverhältnissen im Stadtrat. Zusätzlich wird über die Besetzung des Jugendhilfeausschusses entschieden, für den zwölf Wahlvorschläge vorliegen.",
+      "klartext_titel_leicht": "Neue Mitglieder für die Ausschüsse",
+      "klartext_leicht": "Nach einer Wahl ändert sich der Stadt-Rat. Darum müssen die Ausschüsse neu besetzt werden. Jede Partei bekommt so viele Plätze wie sie Stimmen hat. Das gilt auch für Firmen der Stadt.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "13.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250879&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Besetzung der Ausschüsse und Gremien; — Berücksichtigung der veränderten Stärkeverhältnisse im Stadtrat",
+      "top_nr": "Ö 9",
+      "vorlage": "V0193/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22941",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2026",
+      "datum": "2026-05-13",
+      "datum_anzeige": "13.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249667&type=do"
+        },
+        {
+          "titel": "Beschluss StR 05.05.2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249910&type=do"
+        },
+        {
+          "titel": "Beschluss StR 13.05.2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249909&type=do"
+        },
+        {
+          "titel": "Anlage 1 Besetzung Ausschüsse und Gremien",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249668&type=do"
+        },
+        {
+          "titel": "Anlage 2 JHA Vorschläge stimmberechtigte Mitglieder",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249669&type=do"
+        },
+        {
+          "titel": "Anlage 3 JHA Vorschläge beratende Mitglieder",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249670&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-05",
+          "datum_anzeige": "05.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "17",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517&toselect=87680"
+        },
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "9",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519&toselect=88007"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13519#Ö 10",
+      "thema": "stadt:vorlage:22852",
+      "auftritte": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 10",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519"
+        }
+      ],
+      "klartext_titel": "Die zwölf Bezirksausschüsse werden für 2026 bis 2032 besetzt",
+      "klartext": "Die Mitglieder der zwölf Bezirksausschüsse werden von den zur Stadtratswahl zugelassenen Parteien und Wählergruppen vorgeschlagen. Wie viele Sitze jede Gruppierung in welchem Bezirk erhält, richtet sich nach dem Wahlergebnis in diesem Stadtbezirk und wird nach dem Verfahren Sainte-Laguë/Schepers berechnet. Die Amtszeit läuft bis 2032.",
+      "klartext_titel_leicht": "Neue Mitglieder für die Bezirks-Ausschüsse",
+      "klartext_leicht": "Ingolstadt hat 12 Bezirks-Ausschüsse. Nach der Wahl werden sie neu besetzt. Jede Partei bekommt Plätze nach ihrem Wahl-Ergebnis. Das gilt für jeden Stadtbezirk einzeln. Die neuen Mitglieder bleiben bis 2032.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "13.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250879&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Besetzung der Bezirksausschüsse 2026 - 2032",
+      "top_nr": "Ö 10",
+      "vorlage": "V0108/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22852",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2026",
+      "datum": "2026-05-13",
+      "datum_anzeige": "13.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249493&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249785&type=do"
+        },
+        {
+          "titel": "Sitzungsvorlage V0108-26 - Anlage 1",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249480&type=do"
+        },
+        {
+          "titel": "Sitzungsvorlage V0108-26 - Anlage 2",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249538&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "10",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519&toselect=88027"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13519#Ö 11",
+      "thema": "stadt:vorlage:22961",
+      "auftritte": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 11",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519"
+        }
+      ],
+      "klartext_titel": "Fraktionsgelder werden nach Fraktionswechsel neu verteilt",
+      "klartext": "Weil Stadträtin Dr. Dorothea Deneke-Stoll von der CSU- zur SPD-Fraktion gewechselt ist, werden die Zuwendungen für beide Fraktionen rückwirkend zum 1. Mai 2026 neu berechnet. Die Beträge der übrigen Fraktionen und Gruppen bleiben unverändert. Grundlage ist ein Beschluss vom Mai 2026, der einen Sockelbetrag von 12.033,33 Euro pro Fraktion plus eine Pro-Kopf-Pauschale von 7.896,88 Euro ab dem dritten Mitglied vorsieht.",
+      "klartext_titel_leicht": "Geld für Parteien wird neu verteilt",
+      "klartext_leicht": "Eine Stadträtin ist zu einer anderen Partei gewechselt. Sie war bei der CSU, jetzt ist sie bei der SPD. Parteien bekommen Geld von der Stadt für ihre Arbeit. Das Geld wird jetzt neu berechnet. Es gilt rückwirkend ab Mai 2026.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "13.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250879&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Zuwendungen an die Fraktionen und Stadtratsgruppen; — Auswirkungen der veränderten Stärkeverhältnisse im Stadtrat",
+      "top_nr": "Ö 11",
+      "vorlage": "V0212/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22961",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2026",
+      "datum": "2026-05-13",
+      "datum_anzeige": "13.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249565&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249747&type=do"
+        },
+        {
+          "titel": "Anlage 1 Berechnung Fraktionszuwendungen",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249566&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "11",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519&toselect=88030"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13519#Ö 12",
+      "thema": "stadt:vorlage:22960",
+      "auftritte": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 12",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519"
+        }
+      ],
+      "klartext_titel": "Bürgermeister Wöhrl wird Aufsichtsratsvorsitzender der BioIN GmbH",
+      "klartext": "Eigentlich steht dem Oberbürgermeister von Amts wegen der Vorsitz im Aufsichtsrat der BioIN GmbH zu, einer Beteiligungsgesellschaft der Stadt. Mit Zustimmung des Oberbürgermeisters soll stattdessen Bürgermeister Franz Wöhrl zum Vorsitzenden bestellt werden — das ist laut Gesellschaftsvertrag möglich.",
+      "klartext_titel_leicht": "Ein anderer Bürgermeister übernimmt einen Vorsitz",
+      "klartext_leicht": "Die BioIN GmbH gehört zur Stadt. Ein Rat kontrolliert die Firma. Normalerweise leitet der Oberbürgermeister diesen Rat. Jetzt soll Bürgermeister Wöhrl das übernehmen. Der Oberbürgermeister ist damit einverstanden.",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "13.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250879&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "BioIN GmbH: — Bestellung von Herrn Bürgermeister Franz Wöhrl zum Vorsitzenden des Aufsichtsrates der BioIN GmbH",
+      "top_nr": "Ö 12",
+      "vorlage": "V0211/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22960",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2026",
+      "datum": "2026-05-13",
+      "datum_anzeige": "13.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249425&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249754&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "12",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519&toselect=88028"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13519#Ö 13",
+      "thema": "stadt:vorlage:22890",
+      "auftritte": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 13",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519"
+        }
+      ],
+      "klartext_titel": "Klinikum: Neue Weisung zur öffentlichen Krankenhausversorgung",
+      "klartext": "Stadt und Bezirk Oberbayern müssen die Krankenhausversorgung der Bevölkerung sicherstellen. Seit Anfang 2026 liegt die psychiatrische Versorgung nicht mehr beim Krankenhauszweckverband, sondern beim Bezirk, der sie an die kbo-DAK GmbH übertragen hat. Der Stadtrat soll nun einen neuen sogenannten Betrauungsakt beschließen — eine förmliche Weisung, die festlegt, welche Leistungen als Daseinsvorsorge gelten und damit besonderen beihilferechtlichen Regeln unterliegen.",
+      "klartext_titel_leicht": "Neue Regeln für die Krankenhaus-Versorgung",
+      "klartext_leicht": "Das Klinikum versorgt kranke Menschen in Ingolstadt. Die Psychiatrie gehört jetzt zu einer anderen Firma. Das Land Bayern hat das so entschieden. Die Stadt muss dafür neue Regeln beschließen. Diese Regeln sind eine Weisung an das Klinikum.",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung",
+        "Satzung & Regeln"
+      ],
+      "ort": [
+        "Klinikum Ingolstadt"
+      ],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "13.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250879&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Krankenhauszweckverband Ingolstadt / Klinikum Ingolstadt GmbH; — Betrauungsakt entsprechend Freistellungsbeschluss",
+      "top_nr": "Ö 13",
+      "vorlage": "V0142/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22890",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2026",
+      "datum": "2026-05-13",
+      "datum_anzeige": "13.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248827&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249758&type=do"
+        },
+        {
+          "titel": "Anlage Betrauungsakt",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248828&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "13",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519&toselect=87691"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13519#Ö 14",
+      "thema": "stadt:vorlage:22924",
+      "auftritte": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 14",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519"
+        }
+      ],
+      "klartext_titel": "Frühere Landesgartenschau-Gesellschaft macht 17.700 Euro Verlust",
+      "klartext": "Die Landesgartenschau Ingolstadt 2020 GmbH befindet sich in Liquidation, wird also nach Abschluss ihrer Aufgabe aufgelöst. Für 2025 weist sie einen Jahresfehlbetrag von 17.723,32 Euro aus, der auf neue Rechnung vorgetragen wird. Der Oberbürgermeister soll ermächtigt werden, diesem Abschluss in der Gesellschafterversammlung zuzustimmen und dem Liquidator Entlastung zu erteilen.",
+      "klartext_titel_leicht": "Die alte Garten-Schau-Firma macht kleinen Verlust",
+      "klartext_leicht": "Ingolstadt hatte 2020 eine große Garten-Schau. Die Firma dafür gibt es noch, wird aber aufgelöst. Sie hat 2025 etwas Verlust gemacht. Es sind rund 17.700 Euro. Das ist wenig Geld für eine Firma.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "13.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250879&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Landesgartenschau Ingolstadt 2020 GmbH i. L. — Jahresabschluss 2025",
+      "top_nr": "Ö 14",
+      "vorlage": "V0176/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22924",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2026",
+      "datum": "2026-05-13",
+      "datum_anzeige": "13.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248845&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249782&type=do"
+        },
+        {
+          "titel": "LGS Jahresabschluss 2025 Anlagen 1-3",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248846&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "14",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519&toselect=87692"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13519#Ö 15",
+      "thema": "stadt:vorlage:22818",
+      "auftritte": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 15",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519"
+        }
+      ],
+      "klartext_titel": "Verkehrsgesellschaft INVG macht 22,3 Millionen Euro Verlust — Stadtwerke gleichen aus",
+      "klartext": "Die Ingolstädter Verkehrsgesellschaft (INVG), zuständig für Bus und ÖPNV, weist für das Geschäftsjahr 2024/25 einen Verlust von 22.284.769,57 Euro aus. Dieser wird komplett von der Stadtwerke Ingolstadt Beteiligungen GmbH ausgeglichen, wie es der bestehende Ergebnisabführungsvertrag vorsieht. Ein Verlust in dieser Größenordnung ist bei Nahverkehrsunternehmen nicht ungewöhnlich, weil Fahrpreise die Betriebskosten meist nicht decken.",
+      "klartext_titel_leicht": "Der Busbetrieb macht großen Verlust",
+      "klartext_leicht": "Die INVG organisiert Busse in Ingolstadt. Im letzten Jahr hat sie viel Verlust gemacht. Es sind über 22 Millionen Euro. Die Stadt-Werke gleichen das aus. Das ist bei Bus-Firmen normal. Die Ticket-Preise decken die Kosten meistens nicht.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "13.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250879&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Jahresabschluss 2024/25 der Ingolstädter Verkehrsgesellschaft mbH",
+      "top_nr": "Ö 15",
+      "vorlage": "V0076/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22818",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2026",
+      "datum": "2026-05-13",
+      "datum_anzeige": "13.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=247990&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249763&type=do"
+        },
+        {
+          "titel": "Anlage 1 INVG Jahresabschluss 2024-25",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249018&type=do"
+        },
+        {
+          "titel": "Anlage 2 SBI Jahresabschluss 2024-25",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249019&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "15",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519&toselect=87690"
         }
       ]
     },
@@ -9130,6 +10783,328 @@
       "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14005",
       "dokumente": [],
       "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13517#Ö 3",
+      "thema": "stadt:vorlage:22935",
+      "auftritte": [
+        {
+          "datum": "2026-05-05",
+          "datum_anzeige": "05.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517"
+        }
+      ],
+      "klartext_titel": "Sitzungsgelder und Entschädigungen kosten die Stadt rund 1,12 Millionen Euro",
+      "klartext": "Die Rechtsstellungs- und Entschädigungssatzung regelt, wie viel Aufwandsentschädigung und Sitzungsgeld Stadtratsmitglieder erhalten. Sie wird komplett neu gefasst, orientiert an der Mustersatzung des Bayerischen Gemeindetags. Zur Wahl stehen zwei Varianten, je nachdem ob der dritte Bürgermeisterposten hauptamtlich oder ehrenamtlich besetzt wird. Die jährlichen Kosten werden unabhängig von der Variante auf rund 1.120.000 Euro beziffert.",
+      "klartext_titel_leicht": "Geld für die Arbeit im Stadtrat",
+      "klartext_leicht": "Stadträte bekommen Geld für ihre Arbeit. Die Regeln dafür werden neu geschrieben. Es gibt zwei mögliche Varianten. Der Unterschied: Ist der 3. Bürgermeister hauptberuflich tätig oder nicht? Beide Varianten kosten die Stadt etwa 1,12 Millionen Euro im Jahr.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "05.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250215&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Erlass der Satzung zur Regelung von Fragen des örtlichen Gemeindeverfassungsrechts",
+      "top_nr": "Ö 3",
+      "vorlage": "V0187/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22935",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2026",
+      "datum": "2026-05-05",
+      "datum_anzeige": "05.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248984&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249432&type=do"
+        },
+        {
+          "titel": "Anlage 1 RES Variante 1 - berufsmäßiger dritter Bürgermeister",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249245&type=do"
+        },
+        {
+          "titel": "Anlage 2 RES Variante 2 - ehrenamtlicher dritter Bürgermeister",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249246&type=do"
+        },
+        {
+          "titel": "Anlage 3 Synopse RES Variante 1 - berufsmäßiger dritter Bürgermeister",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249247&type=do"
+        },
+        {
+          "titel": "Anlage 4 Synopse RES Variante 2 - ehrenamtlicher dritter Bürgermeister",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249265&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-05",
+          "datum_anzeige": "05.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517&toselect=87663"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13517#Ö 4",
+      "thema": "stadt:vorlage:22931",
+      "auftritte": [
+        {
+          "datum": "2026-05-05",
+          "datum_anzeige": "05.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517"
+        }
+      ],
+      "klartext_titel": "Zweiter Bürgermeister wird in Besoldungsgruppe B 6 eingestuft",
+      "klartext": "Das Amt des zweiten Bürgermeisters oder der zweiten Bürgermeisterin wird rückwirkend zum 1. Mai 2026 in die höhere Besoldungsgruppe B 6 eingestuft. Möglich sind laut Gesetz die Gruppen B 5 oder B 6; die Wahl richtet sich nach Aufgabenumfang und Schwierigkeitsgrad, wofür die Einwohnerzahl von rund 150.000 als Maßstab dient.",
+      "klartext_titel_leicht": "Neues Gehalt für den zweiten Bürgermeister",
+      "klartext_leicht": "Der 2. Bürgermeister bekommt ein festes Gehalt. Es gibt zwei mögliche Gehalts-Stufen. Ingolstadt wählt jetzt die höhere Stufe. Das gilt rückwirkend ab Mai 2026. Der Grund: Ingolstadt hat viele Einwohner.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "05.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250215&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Festsetzung der Besoldungsgruppe für die berufsmäßige zweite Bürgermeisterin / den berufsmäßigen zweiten Bürgermeister",
+      "top_nr": "Ö 4",
+      "vorlage": "V0183/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22931",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2026",
+      "datum": "2026-05-05",
+      "datum_anzeige": "05.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249253&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249386&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-05",
+          "datum_anzeige": "05.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517&toselect=87660"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13517#Ö 5",
+      "thema": "stadt:vorlage:22944",
+      "auftritte": [
+        {
+          "datum": "2026-05-05",
+          "datum_anzeige": "05.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517"
+        }
+      ],
+      "klartext_titel": "Dritter Bürgermeister wird in Besoldungsgruppe B 5 eingestuft",
+      "klartext": "Anders als beim zweiten Bürgermeister wird das Amt des dritten Bürgermeisters oder der dritten Bürgermeisterin rückwirkend zum 1. Mai 2026 in die niedrigere Besoldungsgruppe B 5 eingestuft. Das entspricht der bisherigen Praxis für dieses Amt. Auch hier ist rechtlich B 5 oder B 6 möglich; ausschlaggebend sind Aufgabenumfang und Schwierigkeitsgrad.",
+      "klartext_titel_leicht": "Neues Gehalt für den dritten Bürgermeister",
+      "klartext_leicht": "Ingolstadt hat auch einen 3. Bürgermeister. Er bekommt ein festes Gehalt. Es gibt zwei mögliche Gehalts-Stufen. Für ihn gilt die niedrigere Stufe. Das war schon vorher so.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "05.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250215&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Festsetzung der Besoldungsgruppe für die berufsmäßige dritte Bürgermeisterin / den berufsmäßigen dritten Bürgermeister — (Referent: Oberbürgermeister Dr. Kern) — Hinweis: nur bei Festlegung auf berufsmäßige dritte Bürgermeisterin / berufsmäßigen dritten Bürgermeister in Rechtsstellungs- und Entschädigungssatzung",
+      "top_nr": "Ö 5",
+      "vorlage": "V0196/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22944",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2026",
+      "datum": "2026-05-05",
+      "datum_anzeige": "05.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249260&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-05",
+          "datum_anzeige": "05.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517&toselect=87688"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13517#Ö 7",
+      "thema": "stadt:vorlage:22933",
+      "auftritte": [
+        {
+          "datum": "2026-05-05",
+          "datum_anzeige": "05.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517"
+        }
+      ],
+      "klartext_titel": "Dienstaufwandsentschädigung für Oberbürgermeister und Bürgermeister neu festgesetzt",
+      "klartext": "Die sogenannte Dienstaufwandsentschädigung deckt amtsbedingte Mehrkosten von hauptamtlichen Wahlbeamten ab und wird gesetzlich getrennt von Gehalt und Sitzungsgeld gezahlt. Ein 2012 gefasster Grundsatzbeschluss wird aufgehoben und neu geregelt: Der Oberbürgermeister erhält künftig 1.350 Euro monatlich, weitere Bürgermeister und berufsmäßige Stadtratsmitglieder je 1.100 Euro. Beide Beträge sollen sich künftig automatisch an gesetzliche Rahmenänderungen anpassen, rückwirkend gültig ab dem 1. Mai 2026.",
+      "klartext_titel_leicht": "Neue Aufwands-Entschädigung für Bürgermeister",
+      "klartext_leicht": "Bürgermeister haben zusätzliche Kosten durch ihr Amt. Dafür bekommen sie extra Geld. Das nennt man Aufwands-Entschädigung. Der Oberbürgermeister bekommt künftig 1.350 Euro im Monat. Die anderen Bürgermeister bekommen 1.100 Euro. Das gilt rückwirkend ab Mai 2026.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "05.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250215&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Festsetzung der Dienstaufwandsentschädigungen für die berufsmäßigen kommunalen Wahlbeamtinnen und Wahlbeamten der Stadt Ingolstadt",
+      "top_nr": "Ö 7",
+      "vorlage": "V0185/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22933",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2026",
+      "datum": "2026-05-05",
+      "datum_anzeige": "05.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249238&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249788&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-05",
+          "datum_anzeige": "05.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "7",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517&toselect=87662"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13517#Ö 8",
+      "thema": "stadt:vorlage:22938",
+      "auftritte": [
+        {
+          "datum": "2026-05-05",
+          "datum_anzeige": "05.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 8",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517"
+        }
+      ],
+      "klartext_titel": "Vergütungen in Aufsichtsräten städtischer Firmen werden um 10 Prozent gekürzt",
+      "klartext": "Als Beitrag zur Haushaltskonsolidierung sollen die Vergütungen für Aufsichtsratsmitglieder in Unternehmen mit Mehrheitsbeteiligung der Stadt um 10 Prozent gekürzt werden. Zusätzlich wird die automatische jährliche Erhöhung dieser Vergütungen bis zum 30. April 2029 ausgesetzt, ohne dass sie später nachgeholt wird. Wo bisher kein Sitzungsgeld gezahlt wurde, soll dieses künftig in eine einheitliche monatliche Grundvergütung einfließen.",
+      "klartext_titel_leicht": "Weniger Geld für Aufsichtsräte von Stadt-Firmen",
+      "klartext_leicht": "Die Stadt hat mehrere eigene Firmen. Dort gibt es Aufsichtsräte, die sie kontrollieren. Die Mitglieder bekommen dafür Geld. Dieses Geld wird jetzt um 10 Prozent gekürzt. Die Stadt will damit sparen. Die Kürzung gilt bis zum Jahr 2029.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "05.05.2026",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250215&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Vergütungen für die Mitglieder der Aufsichtsorgane der Beteiligungsunternehmen",
+      "top_nr": "Ö 8",
+      "vorlage": "V0190/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22938",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2026",
+      "datum": "2026-05-05",
+      "datum_anzeige": "05.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249087&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249390&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-05-05",
+          "datum_anzeige": "05.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "8",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517&toselect=87666"
+        }
+      ]
     },
     {
       "ref": "bza:14060#Ö 2.1",
