@@ -130,6 +130,17 @@ def main():
     # Alle Auftritte je Thema sammeln — auch die, die niemand kuratiert hat.
     # Sonst kennt die Karte nur die eine Sitzung, in der jemand zufaellig
     # kuratiert hat, statt den ganzen Weg der Vorlage.
+    # Niederschriften je Sitzung. Sie sind der einzige oeffentliche Beleg
+    # dafuer, wie tatsaechlich entschieden wurde — die Tagesordnung sagt nur,
+    # worueber beraten werden sollte. Sie erscheinen erst nach Genehmigung in
+    # der Folgesitzung, also mit rund 4 bis 8 Wochen Verzug.
+    niederschrift_je_sitzung = {}
+    for sitzung in roh["sitzungen"]:
+        for dokument in sitzung.get("dokumente", []):
+            if re.search(r"niederschrift", dokument["titel"], re.I):
+                niederschrift_je_sitzung[sitzung["url"]] = dokument["url"]
+                break
+
     auftritte_je_thema = collections.defaultdict(list)
     for sitzung in roh["sitzungen"]:
         quelle = sitzung.get("quelle", "stadt")
@@ -190,6 +201,11 @@ def main():
             key=lambda x: x["datum"] or "",
         )
 
+        # Beleg fuer das Ergebnis: die Niederschrift der Sitzung, in der die
+        # Entscheidung angesetzt war. Fehlt sie, ist das keine Luecke im
+        # Datensatz, sondern der uebliche Verzug — die Oberflaeche sagt das.
+        niederschrift = niederschrift_je_sitzung.get(sitzung["url"], "")
+
         feed.append(
             {
                 "ref": ref,
@@ -210,6 +226,7 @@ def main():
                 # --- abgeleitet ---
                 "stand": stand,
                 "stand_datum": stand_datum,
+                "niederschrift_url": niederschrift,
                 # --- unveraenderte Angaben aus der Quelle ---
                 "quelle": sitzung.get("quelle", "stadt"),
                 "amtlicher_titel": top["titel"],

@@ -30,7 +30,8 @@
     --warn-tx: #7d6320;
     --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
     --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
-    --max: 940px;
+    --max: 1180px;   /* breiter als einspaltig: Filterspalte plus Feed */
+    --max-text: 780px;
     --radius: 10px;
     --shadow: 0 1px 3px rgba(22,35,43,.06), 0 0 0 1px rgba(22,35,43,.04);
     --shadow-hover: 0 6px 20px rgba(22,35,43,.09), 0 0 0 1px rgba(22,35,43,.05);
@@ -82,6 +83,8 @@
     padding: .6rem 0;
   }
   .disclaimer strong { font-weight: 600; }
+  /* Lesbare Zeilenlaenge, obwohl der Rahmen jetzt breiter ist */
+  .disclaimer p { max-width: var(--max-text); }
 
   /* ---------- Hero ---------- */
   .hero { padding: 3.5rem 0 2.5rem; }
@@ -112,26 +115,44 @@
   }
   .stat-label { font-size: .78rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: .05em; }
 
-  /* ---------- Filter ---------- */
-  .filters {
-    background: var(--bg-warm);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    padding: 1.75rem 0;
+  /* ---------- Arbeitsflaeche: Filterspalte neben dem Feed ----------
+     Bewusst zweispaltig statt Filterband ueber der Liste: bei 880 Eintraegen
+     will man beim Blaettern nachjustieren, ohne nach oben zu springen. */
+  .arbeitsflaeche { padding: 2.25rem 0 3.5rem; }
+  .arbeitsflaeche .container {
+    display: grid; gap: 2.5rem;
+    grid-template-columns: 260px minmax(0, 1fr);
+    align-items: start;
   }
-  .filters-head { display: flex; align-items: baseline; gap: .75rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
-  .filters-head h2 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; }
-  .filters-hint { font-size: .84rem; color: var(--text-muted); }
+  .filter-spalte {
+    position: sticky; top: 5rem;
+    max-height: calc(100vh - 7rem); overflow-y: auto;
+    padding-right: .5rem;
+  }
+  .filters-head { margin-bottom: 1.25rem; }
+  .filters-head h2 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; }
+  .filters-hint { display: block; font-size: .8rem; color: var(--text-faint); margin-top: .15rem; }
   .btn-reset {
-    margin-left: auto; background: none; border: 1px solid var(--border-strong);
-    color: var(--text-muted); font: inherit; font-size: .8rem;
-    padding: .3rem .7rem; border-radius: 999px; cursor: pointer;
+    margin-top: .6rem; background: none; border: 1px solid var(--border-strong);
+    color: var(--text-muted); font: inherit; font-size: .78rem;
+    padding: .28rem .7rem; border-radius: 999px; cursor: pointer;
   }
-  .btn-reset:hover { border-color: var(--primary); color: var(--primary); }
-  .filter-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+  .btn-reset:hover { border-color: var(--accent); color: var(--accent); }
+  .filter-grid { display: flex; flex-direction: column; gap: 1.35rem; }
   .filter-group h3 {
-    font-size: .72rem; text-transform: uppercase; letter-spacing: .09em;
-    color: var(--text-faint); margin-bottom: .6rem; font-weight: 600;
+    font-size: .7rem; text-transform: uppercase; letter-spacing: .09em;
+    color: var(--text-faint); margin-bottom: .5rem; font-weight: 600;
+    padding-bottom: .3rem; border-bottom: 1px solid var(--border);
+  }
+
+  @media (max-width: 900px) {
+    .arbeitsflaeche .container { grid-template-columns: 1fr; gap: 1.75rem; }
+    .filter-spalte {
+      position: static; max-height: none; overflow: visible;
+      background: var(--bg-warm); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.1rem 1.2rem;
+    }
+    .filter-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
   }
   .filter-opts { display: flex; flex-wrap: wrap; gap: .4rem; }
   .chip-btn {
@@ -148,16 +169,19 @@
   .chip-btn .count { opacity: .55; font-size: .78em; margin-left: .3em; }
 
   /* ---------- Feed ---------- */
-  .feed-section { padding: 2.25rem 0 3.5rem; }
   .feed-count { font-size: .88rem; color: var(--text-muted); margin-bottom: 1.25rem; }
   .feed { display: flex; flex-direction: column; gap: 1rem; }
+  /* Farbige Kante statt gleichfoermiger Karten: Stadtrat und Bezirks-
+     ausschuss sind so schon beim Ueberfliegen auseinanderzuhalten. */
   .card {
     background: var(--card); border: 1px solid var(--border);
-    border-radius: var(--radius); box-shadow: var(--shadow);
+    border-left: 4px solid var(--primary);
+    border-radius: 3px var(--radius) var(--radius) 3px; box-shadow: var(--shadow);
     padding: 1.4rem 1.5rem;
     transition: box-shadow .15s ease, transform .15s ease;
   }
   .card:hover { box-shadow: var(--shadow-hover); }
+  .card.quelle-bza { border-left-color: #2c6146; }
   .card-head { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; margin-bottom: .6rem; }
   .card-date { font-size: .78rem; color: var(--text-faint); font-variant-numeric: tabular-nums; }
   .card-gremium {
@@ -244,6 +268,21 @@
   .pruef-link:hover { background: var(--accent); color: #fff; }
   .pruef-link::after { content: ' ↗'; opacity: .6; font-size: .9em; }
 
+  /* Beschlussergebnis: Die Niederschrift ist der einzige Beleg dafuer, wie
+     tatsaechlich abgestimmt wurde. Liegt sie noch nicht vor, steht dort der
+     Grund statt gar nichts. */
+  .beschluss {
+    display: inline-block; margin: .9rem .5rem 0 0; font-size: .82rem;
+    font-weight: 500; text-decoration: none; color: #2c6146;
+    border: 1px solid #2c6146; border-radius: 6px;
+    padding: .3rem .7rem; background: #eef4f0;
+  }
+  .beschluss:hover { background: #2c6146; color: #fff; }
+  .beschluss::after { content: ' ↗'; opacity: .6; font-size: .9em; }
+  .beschluss-offen {
+    display: block; margin-top: .7rem; font-size: .8rem; color: var(--text-faint);
+  }
+
   .leer { text-align: center; padding: 3rem 1rem; color: var(--text-faint); }
   .leer code { background: var(--bg-warm); padding: .1rem .35rem; border-radius: 4px; font-size: .92em; }
 
@@ -269,6 +308,11 @@
     display: flex; gap: 1.25rem; flex-wrap: wrap; font-size: .85rem;
   }
   .footer-recht a { color: var(--primary-dark); }
+  .footer-dank {
+    margin-top: 1.25rem; font-size: .82rem; color: var(--text-faint);
+    max-width: 68ch;
+  }
+  .footer-dank a { color: var(--primary-dark); }
 
   @media (max-width: 620px) {
     .hero { padding: 2.5rem 0 1.75rem; }
@@ -300,11 +344,12 @@
 
 <div class="disclaimer">
   <div class="container">
-    <strong>Kein offizielles Angebot der Stadt Ingolstadt.</strong>
-    Die Texte hier sind automatisiert und mit KI aufbereitet und können Fehler
-    enthalten. Verbindlich ist immer das Originaldokument — jeder Eintrag
-    verlinkt seine Quelle im Ratsinfoportal. Bitte dort prüfen, bevor Sie sich
-    auf eine Angabe verlassen.
+    <p>
+      <strong>Ein privates Projekt, kein Angebot der Stadt.</strong>
+      Die Zusammenfassungen entstehen automatisiert und mit KI-Unterstützung —
+      das geht schnell, kann aber Fehler enthalten. Jeder Eintrag verlinkt sein
+      Originaldokument im Ratsinfoportal; dort steht, was gilt.
+    </p>
   </div>
 </div>
 
@@ -330,32 +375,34 @@
         <circle cx="69" cy="41" r="2.6" fill="#003E59"/>
         <path d="M55 51l3 4 3-4z" fill="#B00E2B"/>
       </svg>
-      <h1>Der Stadtrat entscheidet ständig etwas. <em>Sie erfahren es selten.</em></h1>
+      <h1>Was der Stadtrat beschäftigt — <em>und was davon Sie angeht.</em></h1>
       <p>
-        Die Tagesordnungen des Ingolstädter Stadtrats und seiner Ausschüsse sind
-        öffentlich — aber in Amtsdeutsch, verteilt über hunderte Einzelpunkte.
-        Der PapierPanther gräbt sich durchs Ratsinfoportal, übersetzt sie in
-        normale Sprache und sortiert sie danach, wen sie betreffen.
+        Ob Fahrradbügel, Kita-Plätze oder Gebühren: Der Stadtrat und die zwölf
+        Bezirksausschüsse behandeln jede Woche Themen, die den Alltag in
+        Ingolstadt betreffen. Alles steht öffentlich im Ratsinfoportal — nur
+        eben verteilt über hunderte Einzelpunkte in Amtssprache. Der
+        PapierPanther sammelt sie ein, fasst sie zusammen und sortiert sie
+        danach, wen sie betreffen. Suchen Sie einfach Ihren Stadtbezirk.
       </p>
       <div class="hero-stats" id="hero-stats"></div>
     </div>
   </section>
 
-  <section class="filters" id="filter">
+  <section class="arbeitsflaeche" id="filter">
     <div class="container">
-      <div class="filters-head">
-        <h2>Was betrifft Sie?</h2>
-        <span class="filters-hint">Mehrfachauswahl möglich</span>
-        <button class="btn-reset" id="btn-reset" type="button">Alle Filter zurücksetzen</button>
-      </div>
-      <div class="filter-grid" id="filter-grid"></div>
-    </div>
-  </section>
+      <aside class="filter-spalte">
+        <div class="filters-head">
+          <h2>Wonach möchten Sie schauen?</h2>
+          <span class="filters-hint">Mehreres auswählbar</span>
+          <button class="btn-reset" id="btn-reset" type="button">Auswahl zurücksetzen</button>
+        </div>
+        <div class="filter-grid" id="filter-grid"></div>
+      </aside>
 
-  <section class="feed-section">
-    <div class="container">
-      <p class="feed-count" id="feed-count"></p>
-      <div class="feed" id="feed"></div>
+      <div class="feed-spalte">
+        <p class="feed-count" id="feed-count"></p>
+        <div class="feed" id="feed"></div>
+      </div>
     </div>
   </section>
 </main>
@@ -364,29 +411,38 @@
   <div class="container">
     <h2>Wie das hier funktioniert</h2>
     <p>
-      Ein Skript liest die öffentlich zugänglichen Seiten des Ratsinfoportals der
-      Stadt Ingolstadt (SessionNet) aus — Sitzungskalender, Tagesordnungen,
-      Vorlagennummern, Dokumentenlinks. Kein Verwaltungszugang, keine Anmeldung,
-      keine nicht-öffentlichen Inhalte.
+      Alles auf dieser Seite stammt aus dem Ratsinfoportal der Stadt Ingolstadt
+      — den öffentlich einsehbaren Sitzungskalendern, Tagesordnungen und
+      Vorlagen. Ein Programm liest sie regelmäßig aus, fasst die Punkte
+      zusammen und ordnet ihnen Schlagworte zu: für wen es interessant ist, wo
+      es passiert, worum es geht.
     </p>
     <p>
-      Aus diesen Rohdaten wird eine Auswahl aufbereitet: Tagesordnungspunkte, die
-      Bürger:innen erkennbar betreffen, bekommen eine Klartext-Fassung und
-      Schlagworte für Lebenslage, Ort und Anlass.
+      <strong>Weil das automatisch passiert, können Fehler passieren.</strong>
+      Die Zusammenfassungen ersetzen deshalb nicht das Originaldokument,
+      sondern führen dorthin. Bei jedem Eintrag ist die Quelle einen Klick
+      entfernt.
     </p>
     <p>
-      <strong>Diese Aufbereitung kann Fehler enthalten.</strong> Sie entsteht
-      automatisiert und mit KI-Unterstützung, nicht redaktionell geprüft.
-      Deshalb verlinkt jeder Eintrag sein Original im Ratsinfoportal —
-      maßgeblich ist immer das, was dort steht.
+      <strong>Was Sie hier sehen und was nicht:</strong> Die Seite zeigt, worüber
+      beraten wird und wo entschieden werden soll. Wie eine Abstimmung
+      ausgegangen ist, steht in der Niederschrift der Sitzung — die wird erst
+      etwa vier bis acht Wochen später veröffentlicht. Sobald sie vorliegt,
+      verlinkt der Eintrag sie. Nicht-öffentliche Sitzungsteile sind naturgemäß
+      nicht dabei.
     </p>
     <p>
-      <strong>Grenzen dieses Prototyps:</strong> Er zeigt Tagesordnungspunkte,
-      nicht Beschlussergebnisse — was der Stadtrat beraten hat, ist nicht
-      unbedingt, was er entschieden hat. Nicht-öffentliche Sitzungsteile fehlen
-      naturgemäß.
+      <strong>Etwas gefunden, das nicht stimmt?</strong> Über
+      <a href="impressum.html">das Impressum</a> erreichen Sie mich — Hinweise
+      auf Fehler sind ausdrücklich willkommen.
     </p>
     <p class="footer-meta" id="footer-meta"></p>
+    <p class="footer-dank">
+      PapierPanther folgt der Idee von
+      <a href="https://igorschwarzmann.com/meinbezirk/toolkit/" rel="noopener noreferrer" target="_blank">MeinBezirk</a>,
+      einem Toolkit von Igor Schwarzmann für kommunale Transparenz. Von dort
+      stammen die Methodik und Teile der Oberfläche.
+    </p>
     <div class="footer-recht">
       <a href="impressum.html">Impressum</a>
       <a href="datenschutz.html">Datenschutz</a>
@@ -421,10 +477,12 @@
     return;
   }
 
-  // Wie viele Karten auf einmal ins Dokument gehen. Bei ueber tausend
-  // Eintraegen wuerde ein Zug den Seitenaufbau spuerbar bremsen.
-  var SEITE = 50;
-  var gezeigt = SEITE;
+  // Beim ersten Aufschlagen bewusst wenige Karten: die Seite soll zum Filtern
+  // einladen, nicht mit einer endlosen Liste empfangen. Nach dem Nachladen
+  // dann groessere Schritte.
+  var ERSTE_SEITE = 8;
+  var SEITE = 20;
+  var gezeigt = ERSTE_SEITE;
 
   var ACHSEN = [
     { key: 'lebenslage', label: 'Lebenslage' },
@@ -512,7 +570,7 @@
         var i = liste.indexOf(wert);
         if (i === -1) { liste.push(wert); b.setAttribute('aria-pressed', 'true'); }
         else { liste.splice(i, 1); b.setAttribute('aria-pressed', 'false'); }
-        gezeigt = SEITE;   // neue Auswahl faengt wieder oben an
+        gezeigt = ERSTE_SEITE;   // neue Auswahl faengt wieder oben an
         zeichne();
       });
       opts.appendChild(b);
@@ -528,7 +586,7 @@
       document.querySelectorAll('.chip-btn'),
       function (b) { b.setAttribute('aria-pressed', 'false'); }
     );
-    gezeigt = SEITE;
+    gezeigt = ERSTE_SEITE;
     zeichne();
   });
 
@@ -543,7 +601,7 @@
   }
 
   function karte(e) {
-    var c = el('article', 'card');
+    var c = el('article', 'card' + (e.quelle === 'bza' ? ' quelle-bza' : ''));
 
     var kopf = el('div', 'card-head');
     kopf.appendChild(el('span', 'card-date', e.datum_anzeige));
@@ -596,6 +654,21 @@
     pl.target = '_blank';
     pl.rel = 'noopener';
     pruef.appendChild(pl);
+
+    /* Beschlussergebnis: nur die Niederschrift belegt, wie abgestimmt wurde.
+       Sie wird erst nach Genehmigung in der Folgesitzung veroeffentlicht —
+       fehlt sie, ist das der Grund, und den sagen wir statt zu schweigen. */
+    if (e.niederschrift_url) {
+      var bl = el('a', 'beschluss', 'Beschluss in der Niederschrift nachlesen');
+      bl.href = e.niederschrift_url;
+      bl.target = '_blank';
+      bl.rel = 'noopener';
+      pruef.appendChild(bl);
+    } else if (e.stand && e.stand.indexOf('Entscheidung') === 0) {
+      pruef.appendChild(el('span', 'beschluss-offen',
+        'Wie abgestimmt wurde, steht in der Niederschrift der Sitzung. '
+        + 'Sie erscheint meist vier bis acht Wochen später.'));
+    }
     c.appendChild(pruef);
 
     /* Original + Quellen */

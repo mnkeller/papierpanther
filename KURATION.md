@@ -48,7 +48,24 @@ sichtbar auf die normale Fassung zurück.
 
 ## Regeln für die normale Fassung
 
-- **1 bis 3 Sätze.** Wer mehr braucht, hat den Punkt nicht verstanden.
+**Länge: 4 bis 7 Sätze.** Der Text soll die Frage beantworten, nicht nur
+ankündigen, dass es eine gibt. Wer nach dem Lesen immer noch das PDF öffnen
+muss, um zu verstehen worum es geht, hat nichts gewonnen — dann hätte auch der
+Titel gereicht.
+
+Was hineingehört, soweit die Vorlage es hergibt:
+
+- **Worum geht es konkret?** Nicht „eine Satzungsänderung", sondern was sich
+  ändert.
+- **Zahlen, die die Sache greifbar machen:** Beträge, Flächen, Plätze, Fristen,
+  Termine. Sie sind der häufigste Grund, warum Leute sonst doch ins PDF müssen.
+- **Wer ist betroffen und wie?**
+- **Was ist der Stand?** Antrag einer Fraktion, Vorschlag der Verwaltung,
+  angesetzte Entscheidung.
+- **Begründung oder Streitpunkt**, wenn die Vorlage einen nennt.
+
+Weiter gilt:
+
 - **Sagen, was es für Leute bedeutet**, nicht das Amtsdeutsch umstellen.
   Nicht „Fortschreibung der Bedarfsplanung", sondern „Wie viele Kita-Plätze die
   Stadt in den nächsten Jahren braucht".
@@ -100,8 +117,13 @@ Orientierung: Netzwerk Leichte Sprache, Zielniveau etwa A1/A2. Die Fassung ist
 
 **Länge**
 
-- 2 bis 4 Sätze. Darf länger sein als die normale Fassung — Leichte Sprache
-  braucht mehr Sätze für denselben Inhalt. Das ist richtig so.
+- 5 bis 9 Sätze, und damit meist **länger als die normale Fassung**. Leichte
+  Sprache braucht für denselben Inhalt mehr Sätze, weil jeder Satz nur einen
+  Gedanken tragen darf. Das ist richtig so — kürzen heißt hier weglassen, und
+  weglassen heißt: Leserinnen der leichten Fassung erfahren weniger. Genau das
+  soll nicht passieren.
+- Auch Zahlen gehören hinein. „Es geht um viel Geld" hilft niemandem;
+  „Es geht um 500.000 Euro pro Jahr" schon.
 
 **Titel in Leichter Sprache**
 
