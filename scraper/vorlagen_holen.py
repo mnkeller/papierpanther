@@ -126,6 +126,12 @@ def main():
                 continue
             if len(t["titel"]) < 12 or ist_sammelueberschrift(t["titel"]):
                 continue
+            # TOPs ohne eigene Ö-Nummer (Aenderungsantraege, Stellungnahmen der
+            # Verwaltung "hierzu") teilen sich alle denselben Ref "stadt:<id>#Ö"
+            # und lassen sich darum nicht einzeln referenzieren; sie werden mit
+            # ihrem uebergeordneten, nummerierten TOP mitkuratiert.
+            if t["nr"].strip() == "Ö":
+                continue
             schluessel = thema_schluessel("stadt", t)
             if schluessel and schluessel not in erledigt:
                 themen[schluessel].append((s, t))
