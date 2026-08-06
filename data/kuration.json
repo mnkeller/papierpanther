@@ -17768,6 +17768,439 @@
         "Konzept & Planung",
         "Gebühren & Preise"
       ]
+    },
+    "stadt:11853#Ö 41.4": {
+      "klartext_titel": "AfD will neue Stabsstellen der Stadtverwaltung wieder abschaffen",
+      "klartext": "Die AfD-Fraktion beantragt per Dringlichkeitsantrag, die unter dem früheren Oberbürgermeister Scharpf neu geschaffenen Stabsstellen als zusätzliche Führungsebene wieder abzuschaffen. Die Fraktion kritisiert, dass Referent:innen dadurch einen erschwerten direkten Zugang zum Oberbürgermeister gehabt hätten. Betroffene Mitarbeitende sollen sozialverträglich auf andere offene Stellen in den Ämtern verteilt werden.",
+      "klartext_titel_leicht": "Die AfD will eine Führungs-Ebene abschaffen",
+      "klartext_leicht": "In der Stadtverwaltung gibt es sogenannte Stabsstellen. Sie wurden vor einiger Zeit neu eingeführt. Die AfD-Fraktion findet das nicht gut. Sie will diese Stellen wieder abschaffen. Die Mitarbeitenden sollen dann andere Stellen bekommen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:11853#Ö 41.5": {
+      "klartext_titel": "AfD will Extra-Vergütung für Ausschusssprecher streichen",
+      "klartext": "Die AfD-Fraktion beantragt, die zusätzliche Vergütung für sogenannte Ausschusssprecher der Fraktionen zum Ende der laufenden Wahlperiode ersatzlos zu streichen. Die Fraktion begründet dies damit, dass Ausschusssprecher nicht erkennbar mehr Arbeit hätten als andere Stadtratsmitglieder, insbesondere in kleineren Fraktionen und Gruppen.",
+      "klartext_titel_leicht": "Weniger Geld für Ausschuss-Sprecher?",
+      "klartext_leicht": "Manche Stadtrats-Mitglieder sind Ausschuss-Sprecher. Sie bekommen dafür extra Geld. Die AfD-Fraktion findet: Das ist nicht nötig. Sie will diese Extra-Zahlung streichen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise",
+        "Satzung & Regeln"
+      ]
+    },
+    "stadt:11853#Ö 41.7": {
+      "klartext_titel": "AfD will Preisgelder für Kultur, Musik und Kunst halbieren",
+      "klartext": "Die AfD-Fraktion beantragt, sämtliche städtischen Preisgelder für besondere Leistungen in Kultur, Musik und Kunst zu halbieren. Bei besserer Haushaltslage sollen die Beträge später wieder angehoben werden können. Die Fraktion argumentiert, dass Preisgelder in bisheriger Höhe angesichts der aktuellen Sparlage nicht vermittelbar seien.",
+      "klartext_titel_leicht": "AfD will weniger Preisgeld für Kunst und Kultur",
+      "klartext_leicht": "Die Stadt vergibt manchmal Preise mit Geld dazu, zum Beispiel für Kunst oder Musik. Die AfD-Fraktion will dieses Preisgeld halbieren. Grund: Die Stadt muss sparen. Später könnte es wieder mehr Geld geben.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung",
+        "Gebühren & Preise"
+      ]
+    },
+    "stadt:11853#Ö 41.8": {
+      "klartext_titel": "AfD will Amt für internationale Beziehungen auflösen",
+      "klartext": "Die AfD-Fraktion beantragt, das unter dem früheren Oberbürgermeister Scharpf neu geschaffene Amt für internationale Beziehungen zu schließen und dessen Aufgaben wieder dem Kulturreferat zuzuordnen, wie es früher üblich war. Das dortige Personal soll ins Kulturreferat eingegliedert werden, um Personal- und Sachmittel einzusparen.",
+      "klartext_titel_leicht": "AfD will ein Amt für Städtepartnerschaften schließen",
+      "klartext_leicht": "Es gibt ein Amt für internationale Beziehungen in Ingolstadt. Es kümmert sich um Partnerstädte im Ausland. Die AfD-Fraktion findet das Amt überflüssig. Sie will es schließen. Die Aufgaben sollen zum Kulturreferat wechseln.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:11853#Ö 41.9": {
+      "klartext_titel": "AfD will Sitzungsgelder kürzen und weniger Sitzungen",
+      "klartext": "Die AfD-Fraktion beantragt, die Zahl der Sitzungen mit Sitzungsgeld zu verringern, auch bei städtischen Beteiligungsgesellschaften. Für Sitzungen unter einer Stunde Dauer soll das Sitzungsgeld um 50 Prozent gekürzt werden. Zusätzlich soll für 24 Monate auf eine inflationsbereinigte Anpassung von Sitzungsgeldern und Aufwandsentschädigungen für den Stadtrat verzichtet werden.",
+      "klartext_titel_leicht": "AfD will weniger Sitzungsgeld für den Stadtrat",
+      "klartext_leicht": "Stadtrats-Mitglieder bekommen Geld für Sitzungen. Das heißt Sitzungsgeld. Die AfD-Fraktion will das kürzen. Kurze Sitzungen sollen die Hälfte kosten. Auch soll es zwei Jahre lang keine Erhöhung geben.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise",
+        "Satzung & Regeln"
+      ]
+    },
+    "stadt:11853#Ö 43.2": {
+      "klartext_titel": "SPD fordert Überblick über zehn Jahre Personalentwicklung der Stadt",
+      "klartext": "Im Rahmen der Konsolidierungsberatungen gab es laut SPD-Fraktion widersprüchliche Aussagen zur Personalentwicklung der Stadtverwaltung. Die Fraktion beantragt deshalb, dass der Personalreferent eine umfassende Darstellung der Personalentwicklung der letzten zehn Jahre vorlegt, aufgeschlüsselt nach Funktionsgruppen wie Verwaltung, Soziales, Bildung, Kindertagesstätten, Sicherheit und Feuerwehr. Ziel ist eine sachlich fundierte Grundlage für die weiteren Sparberatungen.",
+      "klartext_titel_leicht": "Wie viel Personal hat die Stadt in zehn Jahren bekommen?",
+      "klartext_leicht": "Die Stadt Ingolstadt hat viele Mitarbeitende. Fraktionen streiten, ob es zu viele sind. Die SPD-Fraktion will das genau wissen. Sie fordert einen Bericht über die letzten zehn Jahre. Er soll zeigen, wo neue Stellen entstanden sind.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:11851#Ö 7": {
+      "klartext_titel": "Waisenhausstiftung betreut 35 Kinder in stationären Wohngruppen",
+      "klartext": "Die Waisenhausstiftung Ingolstadt betreibt das Peter-Steuart-Haus für Kinder, Jugendliche und Familien. In vier stationären Wohngruppen können bis zu 35 Kinder und Jugendliche betreut werden, dazu bieten Krippe, Kindergarten, Schulkindergarten und sozialpädagogischer Hort 115 Kita-Plätze. Im Bereich der ambulanten Hilfen werden rund 100 Familien in ihrem häuslichen Umfeld betreut, ergänzt durch 7 Plätze im teilbetreuten Wohnen für junge Volljährige. Die Verwaltung gibt den Halbjahresbericht 2025 zum operativen Geschäft der Stiftung bekannt.",
+      "klartext_titel_leicht": "Die Waisenhaus-Stiftung hilft vielen Kindern",
+      "klartext_leicht": "Die Waisenhaus-Stiftung Ingolstadt betreibt das Peter-Steuart-Haus. Dort leben bis zu 35 Kinder und Jugendliche. Es gibt auch Kita-Plätze und Hilfe für rund 100 Familien zuhause. Jetzt gibt es einen Bericht über das erste Halbjahr 2025.",
+      "lebenslage": [
+        "Eltern & Kinder",
+        "Geld & Soziales"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:11850#Ö 1": {
+      "klartext_titel": "142 städtische Gebäude im 16. Energiebericht ausgewertet",
+      "klartext": "Das Amt für Gebäudemanagement legt seinen 16. Energiebericht vor, der die Entwicklung von 1990 bis 2024 fortschreibt. Betrachtet werden 142 städtische Liegenschaften mit einer gesamten Netto-Raumfläche von 395.000 Quadratmetern.",
+      "klartext_titel_leicht": "Wie viel Energie städtische Gebäude brauchen",
+      "klartext_leicht": "Die Stadt Ingolstadt hat viele eigene Gebäude. Sie verbrauchen Energie zum Heizen und für Strom. Ein Bericht zeigt das jedes Jahr. Der neue Bericht schaut sich 142 Gebäude an.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Klima & Umwelt"
+      ]
+    },
+    "stadt:11850#Ö 10": {
+      "klartext_titel": "Neues 9,1 Hektar großes Gewerbegebiet bei Manching geplant",
+      "klartext": "Der Markt Manching plant auf einer rund 9,1 Hektar großen Fläche zwischen dem kleinen Leilachsee und der Max-Immelmann-Kaserne ein neues Gewerbegebiet auf dem Gelände eines ehemaligen Kieswerks. Dafür ändert Manching seinen Flächennutzungsplan und stellt gleichzeitig den Bebauungsplan Nr. 67 'Gewerbegebiet Oberstimm-West I' auf. Die Stadt Ingolstadt wird im Parallelverfahren als Trägerin öffentlicher Belange frühzeitig beteiligt und gibt die geplante Ausweisung bekannt.",
+      "klartext_titel_leicht": "Ein Gewerbegebiet entsteht bei Manching",
+      "klartext_leicht": "Der Markt Manching liegt neben Ingolstadt. Dort soll ein neues Gewerbegebiet entstehen. Es ist ungefähr 9 Hektar groß. Früher war dort ein Kieswerk. Ingolstadt wird bei der Planung mit gefragt.",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Bauleitplanung"
+      ]
+    },
+    "stadt:11850#Ö 18": {
+      "klartext_titel": "Neue Hochspannungsleitung: Prüfung der Raumverträglichkeit läuft",
+      "klartext": "Die Firma Tennet TSO plant den Ersatz- und Parallelneubau der 380-kV-Leitung Raitersaich-West bis Sittling. Dafür läuft eine Raumverträglichkeitsprüfung mit einem Beteiligungszeitraum vom 29. September bis 14. November 2025, zu der die Verwaltung eine vorläufige Stellungnahme abgibt.",
+      "klartext_titel_leicht": "Eine neue Strom-Leitung wird geprüft",
+      "klartext_leicht": "Eine Firma will eine große Strom-Leitung bauen. Sie führt von Raitersaich bis Sittling. Vorher muss geprüft werden, ob das gut für die Region passt. Das nennt man Raumverträglichkeits-Prüfung. Bürger:innen und Behörden können bis November 2025 dazu Stellung nehmen.",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Klima & Umwelt",
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:11848#Ö 1": {
+      "klartext_titel": "Fachstelle für Pflegeaufsicht legt Tätigkeitsbericht 2024 vor",
+      "klartext": "Die Fachstelle für Pflege- und Behinderteneinrichtungen, Qualitätsentwicklung und Aufsicht (FQA) ist als Kreisverwaltungsbehörde für die Aufsicht über Pflege- und Betreuungseinrichtungen zuständig. Die Verwaltung gibt den Tätigkeitsbericht der FQA für das Jahr 2024 bekannt. Für diese Pflichtaufgabe erhält die Stadt besondere Finanzzuweisungen vom Freistaat Bayern.",
+      "klartext_titel_leicht": "Wie die Stadt Pflegeheime kontrolliert",
+      "klartext_leicht": "Es gibt eine Stelle, die Pflegeheime in Ingolstadt kontrolliert. Sie heißt FQA. Sie prüft, ob dort alles in Ordnung ist. Ein Bericht zeigt, was die FQA 2024 gemacht hat.",
+      "lebenslage": [
+        "Senior:innen",
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:11846#Ö 1": {
+      "klartext_titel": "Studie untersucht Kinder mit erhöhtem Förderbedarf in Kitas und Grundschulen",
+      "klartext": "Das Amt für Jugend und Familie und das Amt für Kinderbetreuung und -bildung haben das Zentralinstitut für Ehe und Familie in der Gesellschaft (ZFG) beauftragt, die Situation von Kindern mit erhöhtem Förderbedarf in Ingolstädter Kindertageseinrichtungen und Grundschulen zu untersuchen. Dafür befragte das ZFG im Frühjahr 2025 pädagogische Mitarbeitende der Kitas und Lehrkräfte an Grundschulen online. Der Jugendhilfeausschuss nimmt den Abschlussbericht der Studie zur Kenntnis.",
+      "klartext_titel_leicht": "Studie untersucht Kinder mit besonderem Förder-Bedarf",
+      "klartext_leicht": "Manche Kinder brauchen mehr Unterstützung als andere. Das nennt man erhöhten Förder-Bedarf. Eine Studie hat untersucht, wie es diesen Kindern in Ingolstadt geht. Dafür wurden Erzieher:innen und Lehrkräfte befragt. Der Bericht liegt jetzt vor.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Kinderbetreuung"
+      ]
+    },
+    "stadt:11846#Ö 3.1": {
+      "klartext_titel": "AfD will Kita-Fachkräfte aus ostdeutschen Bundesländern anwerben",
+      "klartext": "Die AfD-Fraktion beantragt, dass die Stadt Ingolstadt gezielt in Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt und Thüringen um Fachpersonal für die Kindertagesbetreuung wirbt, um den Personalmangel in Ingolstadt zu bekämpfen. Die Fraktion verweist auf den Geburtenrückgang in den neuen Bundesländern, der dort bereits zu Kita-Schließungen und befristeten Verträgen für Erzieher:innen führt, etwa in Leipzig, Halle und Weimar.",
+      "klartext_titel_leicht": "AfD will Kita-Personal aus Ostdeutschland anwerben",
+      "klartext_leicht": "In Ingolstadt fehlen Erzieher:innen für Kitas. In manchen ostdeutschen Bundesländern gibt es dagegen zu wenige Kinder. Dort müssen Kitas schließen. Die AfD-Fraktion will: Ingolstadt soll dort gezielt Personal anwerben.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Kinderbetreuung"
+      ]
+    },
+    "stadt:11846#Ö 3.2": {
+      "klartext_titel": "Verwaltung: Personalsituation in Kitas hat sich stark verbessert",
+      "klartext": "Zum AfD-Antrag auf gezielte Anwerbung von Fachpersonal begrüßt die Verwaltung grundsätzlich alle Maßnahmen gegen den Fachkräftemangel und hält den Vorschlag für nachvollziehbar. Sie berichtet aber, dass sich die Personalsituation in städtischen Kitas seit dem Kitajahr 2020/21 stark verbessert hat: Damals fehlten 66 Fach- und Ergänzungskräfte, zum Kitajahr 2025/26 sind es nur noch 6. Grund seien leicht sinkende Geburtenzahlen sowie eigene Maßnahmen wie eine seit 2023 betriebene Landingpage zur Personalgewinnung; ab September 2025 können zudem erstmals wieder 6 von 10 Springerstellen besetzt werden.",
+      "klartext_titel_leicht": "Es fehlen viel weniger Kita-Fachkräfte als früher",
+      "klartext_leicht": "Die AfD wollte Kita-Personal aus Ostdeutschland anwerben. Die Verwaltung findet die Idee grundsätzlich gut. Sie berichtet aber: Es fehlen inzwischen viel weniger Fachkräfte als vor fünf Jahren. Damals fehlten 66 Personen, jetzt nur noch 6. Die Stadt hat selbst schon viel gegen den Mangel getan.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Kinderbetreuung"
+      ]
+    },
+    "stadt:11846#Ö 4.1": {
+      "klartext_titel": "UWG will Bildungsbeirat zur Vernetzung von Kitas, Schulen und Eltern",
+      "klartext": "Die UWG-Fraktion beantragt die Schaffung eines Bildungsbeirats, der die verschiedenen Bildungsbereiche vernetzt, als Sprachrohr für Elternbeiräte dient und Stadtrat, Referate und Ämter berät. Die Fraktion begründet dies damit, dass der bestehende Gesamtelternbeirat nur Eltern von Kita-Kindern vertritt, nicht aber Eltern an Grund-, Mittel- und weiterführenden Schulen. Falls nötig, soll die Verwaltung dafür eine eigene Satzung erarbeiten.",
+      "klartext_titel_leicht": "Die UWG will einen neuen Bildungs-Beirat",
+      "klartext_leicht": "In Ingolstadt gibt es Kitas und Schulen. Eltern, Schulen und die Stadt sollen besser miteinander reden. Die UWG-Fraktion schlägt dafür einen neuen Beirat vor. Er soll Bildungs-Beirat heißen.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ]
+    },
+    "stadt:11846#Ö 4.2": {
+      "klartext_titel": "Verwaltung schlägt 'Runden Tisch Kindertagesbetreuung' statt Bildungsbeirat vor",
+      "klartext": "Als Antwort auf den UWG-Antrag für einen Bildungsbeirat verweist die Verwaltung auf ein bereits initiiertes Format: den 'Runden Tisch Kindertagesbetreuung', der erstmals am 16. Oktober 2025 tagt. Daran nehmen der Bildungsreferent, Mitarbeitende des Amts für Kinderbetreuung, Leitungskräfte der Kitas, der Gesamtelternbeirat sowie je eine Vertretung jeder Fraktion teil. Das Format soll künftig mindestens zweimal jährlich stattfinden und bei Bedarf um freie und kirchliche Träger sowie Schulen erweitert werden.",
+      "klartext_titel_leicht": "Die Verwaltung schlägt einen Runden Tisch statt Beirat vor",
+      "klartext_leicht": "Die UWG wollte einen neuen Bildungs-Beirat. Die Verwaltung hat eine andere Idee. Sie richtet einen Runden Tisch ein. Dort reden Eltern, Kitas und die Stadt miteinander. Der erste Termin ist im Oktober 2025.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ]
+    },
+    "stadt:11846#Ö 6": {
+      "klartext_titel": "Jahresbericht 2024 des Amtes für Jugend und Familie vorgelegt",
+      "klartext": "Das Amt für Jugend und Familie legt dem Jugendhilfeausschuss seinen Jahresbericht für 2024 als Rechenschaftsbericht über die erbrachten Leistungen vor. Leistungen, die auf freie Träger übertragen sind, werden darin nicht abgebildet, sondern in eigenen Berichten der jeweiligen Träger dargestellt.",
+      "klartext_titel_leicht": "Das Jugendamt zeigt seinen Jahresbericht 2024",
+      "klartext_leicht": "Das Amt für Jugend und Familie kümmert sich um Kinder und Familien. Es schreibt jedes Jahr einen Bericht über seine Arbeit. Der Bericht für 2024 liegt jetzt vor. Er zeigt, was das Amt geleistet hat.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:12061#Ö 1": {
+      "klartext_titel": "Stadttheater öffnet sich für mehr kulturelle Teilhabe",
+      "klartext": "Das Stadttheater Ingolstadt stellt dem Migrationsrat seinen Öffnungsprozess für mehr kulturelle Teilhabe vor. Dazu zählen eine interkulturelle Kampagne, ein diverserer Spielplan mit Stücken wie 'Istanbul', 'Radio Sarajevo' und 'Pembo' sowie mehr Diversität im Schauspielensemble.",
+      "klartext_titel_leicht": "Das Theater will alle Menschen einladen",
+      "klartext_leicht": "Das Stadttheater Ingolstadt möchte für mehr Menschen offen sein. Es zeigt jetzt vielfältigere Stücke. Auch die Schauspieler:innen sollen vielfältiger werden. Das stellt das Theater dem Migrationsrat vor.",
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ]
+    },
+    "stadt:12061#Ö 2": {
+      "klartext_titel": "322 Menschen in ANKER-Einrichtung und Dependance untergebracht",
+      "klartext": "Die Verwaltung berichtet dem Migrationsrat über den Stand der Flüchtlingsunterbringung zum 24. Juli 2025. In der ANKER-Einrichtung lebten damals 218 Personen, in der Dependance MIK/IN weitere 104, mit Afghanistan jeweils als häufigstem Herkunftsland. Die Belegungszahlen schwanken laut Verwaltung fortlaufend.",
+      "klartext_titel_leicht": "Wie viele Geflüchtete lebten im Sommer 2025 in Ingolstadt?",
+      "klartext_leicht": "Geflüchtete Menschen leben in Ingolstadt in besonderen Unterkünften. Im Juli 2025 waren es in zwei großen Unterkünften zusammen 322 Menschen. Viele kommen aus Afghanistan. Die Zahlen ändern sich immer wieder.",
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:12061#Ö 3": {
+      "klartext_titel": "Neues Programm IFA hilft zugewanderten Frauen in den Arbeitsmarkt",
+      "klartext": "Von 2023 bis Mitte 2025 lief in Ingolstadt das Pilotprojekt 'MumM! – Mentorinnen unterstützen motivierte Migrantinnen', das gut qualifizierte Frauen mit Migrationserfahrung durch Information und Netzwerkaufbau beim Berufseinstieg in ihrem Fachgebiet unterstützte. Aufbauend auf dessen Ergebnissen startet nun das Nachfolgeprojekt IFA – Internationale Frauen für den Arbeitsmarkt. Koordinatorinnen ziehen im Migrationsrat ein Resümee zu MumM und stellen die neuen Chancen durch IFA vor.",
+      "klartext_titel_leicht": "Ein neues Programm hilft Frauen bei der Arbeitssuche",
+      "klartext_leicht": "Manche Frauen sind nach Deutschland gezogen und suchen Arbeit. Ein Projekt half ihnen dabei: MumM. Es lief bis Mitte 2025. Jetzt gibt es ein neues Programm: IFA. Es hilft zugewanderten Frauen weiter.",
+      "lebenslage": [
+        "Zuwanderung & Integration",
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:12061#Ö 4": {
+      "klartext_titel": "Migrationsrat plant gemeinsames Haus der Kulturvereine",
+      "klartext": "Der Migrationsrat berichtet aus seinen Arbeitsgruppen. Die Arbeitsgruppe Satzungsänderung verzögert sich durch stadtinterne Abstimmungen und die Haushaltskonsolidierung; ein überarbeiteter Entwurf wird frühestens im Herbst 2025 erwartet. Die Arbeitsgruppe Haus der Kulturvereine traf sich im Juni 2025 zum zweiten Netzwerktreffen von Heimat-, Brauchtums- und ausländischen Kulturvereinen und diskutierte dabei über ein gemeinsames Haus für alle Ingolstädter Kulturvereine, das auf positiven Zuspruch stieß.",
+      "klartext_titel_leicht": "Der Migrationsrat berichtet aus seinen Arbeitsgruppen",
+      "klartext_leicht": "Der Migrationsrat hat mehrere Arbeitsgruppen. Eine arbeitet an neuen Regeln für den Rat. Das dauert länger als geplant. Eine andere Gruppe möchte ein gemeinsames Haus für alle Kultur-Vereine in Ingolstadt. Die Idee kommt gut an.",
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung",
+        "Kultur & Bildung"
+      ]
+    },
+    "stadt:11844#Ö 2.1": {
+      "klartext_titel": "Schulentwicklungsbericht 2025 für alle Schularten vorgelegt",
+      "klartext": "Die Verwaltung gibt den Schulentwicklungsbericht 2025 für die allgemeinbildenden Schulen (Grund-, Mittel-, Realschulen, Gymnasien) sowie für Förderschulen bekannt. Die Erstellung eines solchen Berichts ist eine Pflichtaufgabe der Stadt als Sachaufwandsträgerin nach dem Bayerischen Schulfinanzierungsgesetz.",
+      "klartext_titel_leicht": "Wie sich die Schulen in Ingolstadt entwickeln",
+      "klartext_leicht": "Die Stadt Ingolstadt ist für viele Schulgebäude zuständig. Sie muss regelmäßig prüfen, wie sich die Schulen entwickeln. Dafür gibt es den Schulentwicklungsbericht. Der neue Bericht für 2025 liegt jetzt vor.",
+      "lebenslage": [
+        "Eltern & Kinder",
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Schulbau",
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:11844#Ö 15": {
+      "klartext_titel": "Ökomodellregion Stadt.Land.Ingolstadt wird bis 2028 verlängert",
+      "klartext": "Der Stadtrat nimmt den positiv bewerteten Jahresbericht 2023/2024 der Ökomodellregion Stadt.Land.Ingolstadt zur Kenntnis, den die Jury des Bayerischen Landwirtschaftsministeriums in einer Zwischenevaluation ebenfalls positiv beurteilt hat. Die Ökomodellregion, getragen vom Landschaftspflegeverband, wird bis Ende September 2028 verlängert, ebenso die Zweckvereinbarung zur Kooperation im Gemeindeverbund und die Stelle für das Projektmanagement. Ingolstadts einwohnerbasierter Eigenanteil beträgt für 2025 rund 33.000 Euro und bleibt auch ab 2026 auf diesem Niveau.",
+      "klartext_titel_leicht": "Ingolstadt macht weiter bei der Öko-Modellregion",
+      "klartext_leicht": "Ingolstadt gehört zu einer Öko-Modellregion. Dort arbeiten Städte und Gemeinden für mehr Bio-Landwirtschaft zusammen. Ein Bericht zeigt, dass es gut läuft. Die Region macht deshalb bis 2028 weiter. Ingolstadt zahlt dafür etwa 33.000 Euro pro Jahr.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Klima & Umwelt"
+      ]
+    },
+    "stadt:11844#Ö 16": {
+      "klartext_titel": "Antidiskriminierungsstelle wird nach Pilotphase evaluiert",
+      "klartext": "Der Stadtrat hatte 2022 eine Antidiskriminierungsstelle als Pilotprojekt eingerichtet, die von einer der beiden Gleichstellungsbeauftragten im Rahmen einer um vier Wochenstunden aufgestockten Stelle wahrgenommen wird. Nach Ablauf der Pilotphase gibt die Organisations- und Personalentwicklung nun einen Evaluationsbericht bekannt, der auch die Tätigkeiten der Beauftragten für Gleichstellung, Integration und Inklusion einbezieht. Zwischenberichte waren bereits 2024 und 2025 im Migrationsrat vorgestellt worden.",
+      "klartext_titel_leicht": "Eine Beratungs-Stelle gegen Diskriminierung wird geprüft",
+      "klartext_leicht": "Seit 2022 gibt es in Ingolstadt eine Stelle gegen Diskriminierung. Sie hilft Menschen, die ungerecht behandelt wurden. Das war zuerst nur ein Test. Jetzt wird geprüft, wie gut das funktioniert hat. Ein Bericht zeigt die Ergebnisse.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:11844#Ö 22": {
+      "klartext_titel": "Gebührenbericht des Amts für Brand- und Katastrophenschutz liegt vor",
+      "klartext": "Die Verwaltung gibt den Gebührenbericht des Amts für Brand- und Katastrophenschutz bekannt. Ein solcher Bericht zeigt, ob die erhobenen Gebühren die tatsächlichen Kosten der kostenrechnenden Einrichtung decken. Die genauen Zahlen sind der Anlage zu entnehmen, die hier nicht ausgewertet wurde.",
+      "klartext_titel_leicht": "Was der Brandschutz an Gebühren einnimmt",
+      "klartext_leicht": "Das Amt für Brand- und Katastrophenschutz erhebt manchmal Gebühren. Ein Bericht zeigt, ob diese Gebühren die Kosten decken. Der Bericht liegt jetzt vor.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ]
+    },
+    "stadt:11844#Ö 23": {
+      "klartext_titel": "Berufsfeuerwehr: 153 Neueinstellungen in zehn Jahren, Personal deutlich aufgestockt",
+      "klartext": "Auf einen Antrag von Stadtrat Stachel legt die Verwaltung die Personalentwicklung des Amts für Brand- und Katastrophenschutz offen. Zwischen 2015 und 2025 wurden 153 Personen eingestellt, während 98 das Amt verließen, was einem Nettopersonalaufbau von 55 Mitarbeitenden entspricht. Ab 2018 haben sich die jährlichen Einstellungen mehr als verdoppelt, teils sogar verdreifacht, weil die Personalstärke in diesem Zeitraum deutlich erhöht werden musste.",
+      "klartext_titel_leicht": "Die Feuerwehr hat viel neues Personal bekommen",
+      "klartext_leicht": "Ein Stadtrat wollte wissen: Wie hat sich das Personal der Feuerwehr entwickelt? Die Verwaltung hat das jetzt aufgeschrieben. In zehn Jahren kamen 153 neue Mitarbeitende dazu. 98 haben die Feuerwehr verlassen. Insgesamt sind es also 55 Personen mehr als vorher.",
+      "lebenslage": [
+        "Ehrenamt & Vereine"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Sicherheit",
+        "Konzept & Planung"
+      ]
+    },
+    "stadt:11844#Ö 26": {
+      "klartext_titel": "Bedarfsplanung für Kita-Plätze fortgeschrieben",
+      "klartext": "Das Amt für Kinderbetreuung und -bildung hat gemeinsam mit den freien Trägern den bisherigen Ausbaustand der Kindertagesbetreuung festgestellt und den weiteren Platzbedarf in der Kita-Steuerungsgruppe erörtert. Die Fortschreibung der Bedarfsplanung umfasst die Betreuung von unter 3-Jährigen, von 3-Jährigen bis zur Einschulung, die Integration sowie weitere Planungen. Zum 1. November 2024 lebten in Ingolstadt 1.308 Kinder im Alter von 0 bis 1 Jahr, 1.371 im Alter von 1 bis 2 Jahren und 1.492 im Alter von 2 bis 3 Jahren.",
+      "klartext_titel_leicht": "Die Stadt plant neue Kita-Plätze",
+      "klartext_leicht": "Die Stadt Ingolstadt muss genug Kita-Plätze für alle Kinder haben. Das plant sie regelmäßig neu. Das nennt man Bedarfsplanung. Sie zeigt, wie viele kleine Kinder es in Ingolstadt gibt. Und wie viele Plätze noch gebraucht werden.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Kinderbetreuung"
+      ]
+    },
+    "stadt:11844#Ö 27": {
+      "klartext_titel": "Rechtsanspruch auf Ganztagsbetreuung ab 2026/27: Erste Bedarfsplanung liegt vor",
+      "klartext": "Das Ganztagsförderungsgesetz von Oktober 2021 sieht ab dem Schuljahr 2026/2027 einen stufenweisen Rechtsanspruch auf ganztägige Förderung für Grundschulkinder vor, der bis 2029/30 jährlich um eine weitere Klassenstufe erweitert wird. Der Anspruch umfasst acht Betreuungsstunden an allen Werktagen inklusive Ferien, mit höchstens vier Wochen Schließzeit im Jahr. Das Amt für Kinderbetreuung und -bildung legt dazu seine erste Bedarfsplanung vor, mit der die Stadt sich auf diese neue Pflichtaufgabe vorbereiten will.",
+      "klartext_titel_leicht": "Grundschul-Kinder bekommen bald ein Recht auf Ganztags-Betreuung",
+      "klartext_leicht": "Ab dem Schuljahr 2026/2027 gibt es ein neues Gesetz. Grundschul-Kinder dürfen dann ganztags betreut werden, auch in den Ferien. Jedes Jahr kommt eine weitere Klassenstufe dazu. Die Stadt Ingolstadt bereitet sich darauf vor und plant, wie viele Plätze nötig sind.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Kinderbetreuung"
+      ]
     }
   }
 }
