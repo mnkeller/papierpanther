@@ -27,16 +27,16 @@
     "sitzungen_ausgelesen": 360,
     "tops_ausgelesen": 3415,
     "tops_verfahren": 493,
-    "tops_kuratiert": 1109,
+    "tops_kuratiert": 1138,
     "entwuerfe": 843,
-    "leichte_sprache": 245,
+    "leichte_sprache": 274,
     "je_quelle": {
-      "stadt": 266,
+      "stadt": 295,
       "bza": 843
     },
     "stand": {
       "Bekanntgabe": 3,
-      "Entscheidung angesetzt": 260,
+      "Entscheidung angesetzt": 289,
       "Ohne Vorlage": 846
     }
   },
@@ -41215,6 +41215,241 @@
       ]
     },
     {
+      "ref": "stadt:11830#Ö 3",
+      "thema": "stadt:vorlage:19987",
+      "auftritte": [
+        {
+          "datum": "2025-05-06",
+          "datum_anzeige": "06.05.2025",
+          "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11830"
+        }
+      ],
+      "klartext_titel": "Caffetteria Capri darf Außenbestuhlung in der Milchstraße aufstellen",
+      "klartext": "Die Caffetteria Capri in der Milchstraße 4 beantragt eine Sondernutzungserlaubnis für Außenbestuhlung. Geplant sind 10,5 Quadratmeter auf dem Gehweg vor dem Café und weitere 4 Quadratmeter in der Salamander-Passage. Der Bezirksausschuss I-Mitte wurde beteiligt und stimmt der Sondernutzung zu. Das Tiefbauamt schlägt vor, den Antrag zu genehmigen.",
+      "klartext_titel_leicht": "Ein Café darf draußen Tische aufstellen",
+      "klartext_leicht": "Die Caffetteria Capri ist in der Milch-Straße 4 in Ingolstadt. Das Café möchte Tische und Stühle vor die Tür stellen. Das nennt man Außen-Bestuhlung. Der Platz ist ungefähr 10 Quadrat-Meter groß. Noch mehr Platz gibt es in der Salamander-Passage. Der Bezirks-Ausschuss Mitte hat schon zugestimmt. Das Tief-Bau-Amt findet den Plan gut.",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [
+        "Milchstraße 4"
+      ],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "06.05.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237101&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Außenbestuhlung für folgenden Gastronomiebetrieb — Caffetteria Capri, Milchstraße 4",
+      "top_nr": "Ö 3",
+      "vorlage": "V0222/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19987",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+      "sitzung_kennung": "SVA/03/2025",
+      "datum": "2025-05-06",
+      "datum_anzeige": "06.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11830",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234397&type=do"
+        },
+        {
+          "titel": "Beschluss SVA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235539&type=do"
+        },
+        {
+          "titel": "Anlage 1 Caffetteria Capri Milchstraße 4",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234596&type=do"
+        },
+        {
+          "titel": "Anlage 2 Caffeteria Capri",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234595&type=do"
+        },
+        {
+          "titel": "Anlage 3 2025-03-25-Protokoll-BZA.Mitte",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234597&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-05-06",
+          "datum_anzeige": "06.05.2025",
+          "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11830&toselect=80427"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11830#Ö 4",
+      "thema": "stadt:vorlage:20000",
+      "auftritte": [
+        {
+          "datum": "2025-05-06",
+          "datum_anzeige": "06.05.2025",
+          "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11830"
+        }
+      ],
+      "klartext_titel": "Restaurant Bombay Palace darf Außenbestuhlung in der Münchener Straße aufstellen",
+      "klartext": "Das Restaurant Bombay Palace in der Münchener Straße 103 beantragt eine Sondernutzungserlaubnis für 10 Quadratmeter Außenbestuhlung auf dem Gehweg. Die städtische Fahrradbeauftragte hat keine Bedenken, weil genug Platz für Rollstühle und Kinderwagen bleibt. Der Bezirksausschuss XII-Münchener Straße hat mündlich zugestimmt, das schriftliche Protokoll liegt noch nicht vor. Das Tiefbauamt schlägt vor, den Antrag zu genehmigen.",
+      "klartext_titel_leicht": "Ein Restaurant darf draußen Tische aufstellen",
+      "klartext_leicht": "Das Restaurant Bombay Palace ist in der Münchener Straße 103. Es möchte Tische und Stühle vor die Tür stellen. Der Platz ist ungefähr 10 Quadrat-Meter groß. Rollstühle und Kinder-Wagen haben trotzdem genug Platz. Der Bezirks-Ausschuss Münchener Straße hat schon zugestimmt. Das Tief-Bau-Amt findet den Plan gut.",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [
+        "XII-Münchener Straße"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [
+        "Münchener Straße 103"
+      ],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "06.05.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237101&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Sondernutzung Tische und Stühle, Außenbestuhlung Bombay Palace, Münchener Straße 103",
+      "top_nr": "Ö 4",
+      "vorlage": "V0235/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20000",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+      "sitzung_kennung": "SVA/03/2025",
+      "datum": "2025-05-06",
+      "datum_anzeige": "06.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11830",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234598&type=do"
+        },
+        {
+          "titel": "Beschluss SVA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235540&type=do"
+        },
+        {
+          "titel": "Anlage 1a",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234641&type=do"
+        },
+        {
+          "titel": "Anlage 1b Gis Auszug",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234642&type=do"
+        },
+        {
+          "titel": "Anlage 1c Ansicht Bestuhlungsfläche",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234643&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-05-06",
+          "datum_anzeige": "06.05.2025",
+          "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11830&toselect=80428"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11830#Ö 5",
+      "thema": "stadt:vorlage:20001",
+      "auftritte": [
+        {
+          "datum": "2025-05-06",
+          "datum_anzeige": "06.05.2025",
+          "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11830"
+        }
+      ],
+      "klartext_titel": "Camerino Concept Store darf Außenbestuhlung in der Ludwigstraße aufstellen",
+      "klartext": "Der Camerino Concept Store in der Ludwigstraße 12 beantragt erstmals eine Sondernutzungserlaubnis für Außenbestuhlung. Geplant sind rund 10 Quadratmeter Fläche vor dem Laden. Der Bezirksausschuss I-Mitte wurde beteiligt und stimmt der Sondernutzung zu. Das Tiefbauamt schlägt vor, den Antrag zu genehmigen.",
+      "klartext_titel_leicht": "Ein Laden darf draußen Tische aufstellen",
+      "klartext_leicht": "Der Camerino Concept Store ist in der Ludwig-Straße 12 in Ingolstadt. Der Laden möchte zum ersten Mal Tische und Stühle vor die Tür stellen. Der Platz ist ungefähr 10 Quadrat-Meter groß. Der Bezirks-Ausschuss Mitte hat schon zugestimmt. Das Tief-Bau-Amt findet den Plan gut.",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [
+        "Ludwigstraße 12"
+      ],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "06.05.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237101&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Außenbestuhlung für folgendes Ladenlokal / Bar-Lounge / Boutique Camerino Concept Store, Ludwigstraße 12",
+      "top_nr": "Ö 5",
+      "vorlage": "V0236/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20001",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+      "sitzung_kennung": "SVA/03/2025",
+      "datum": "2025-05-06",
+      "datum_anzeige": "06.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11830",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234612&type=do"
+        },
+        {
+          "titel": "Beschluss SVA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235541&type=do"
+        },
+        {
+          "titel": "Anlage 1a Camerino Antrag Plan",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234637&type=do"
+        },
+        {
+          "titel": "Anlage 1b Ludwigstraße 12 Ansicht",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234638&type=do"
+        },
+        {
+          "titel": "Anlage 1c Lageplan",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234639&type=do"
+        },
+        {
+          "titel": "Anlage 2 2025-03-25-Protokoll-BZA.Mitte",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234640&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-05-06",
+          "datum_anzeige": "06.05.2025",
+          "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11830&toselect=80429"
+        }
+      ]
+    },
+    {
       "ref": "bza:13298#Ö 3.1",
       "thema": "bza:13298#Ö 3.1",
       "auftritte": [
@@ -42398,6 +42633,1300 @@
       "beratungsweg": []
     },
     {
+      "ref": "stadt:11825#Ö 5",
+      "thema": "stadt:vorlage:19954",
+      "auftritte": [
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Jahresrechnung 2023 der Stadt zur Feststellung",
+      "klartext": "Das Rechnungsprüfungsamt hat die Jahresrechnung 2023 der Stadt Ingolstadt geprüft. Der Rechnungsprüfungsausschuss hat das Ergebnis am 21. März 2025 übernommen. Der Stadtrat soll die Jahresrechnung 2023 nun förmlich feststellen. Zugleich soll er der Verwaltung die Entlastung für das Haushaltsjahr 2023 erteilen.",
+      "klartext_titel_leicht": "Stadt-Rat prüft die Zahlen von 2023",
+      "klartext_leicht": "Jede Stadt muss am Jahres-Ende alle Einnahmen und Ausgaben zusammen-rechnen. Das nennt man Jahres-Rechnung. Ein Prüf-Amt hat die Jahres-Rechnung von 2023 kontrolliert. Ein Ausschuss vom Stadt-Rat hat das Ergebnis im März 2025 übernommen. Jetzt soll der ganze Stadt-Rat die Jahres-Rechnung 2023 offiziell feststellen. Er soll der Verwaltung auch bestätigen: Die Zahlen waren richtig. Das nennt man Entlastung.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "10.04.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Örtliche Rechnungsprüfung der Jahresrechnung 2023 der Stadt Ingolstadt",
+      "top_nr": "Ö 5",
+      "vorlage": "V0099/25/1",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19954",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234123&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234558&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825&toselect=80133"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11825#Ö 8",
+      "thema": "stadt:vorlage:19920",
+      "auftritte": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 8",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Haushalt 2025: 705,84 Millionen Euro Verwaltungshaushalt, 135,35 Millionen neue Kredite",
+      "klartext": "Die Stadt Ingolstadt legt ihre Haushaltssatzung für 2025 vor. Der Verwaltungshaushalt umfasst 705,84 Millionen Euro, der Vermögenshaushalt 296,99 Millionen Euro. Um den Haushalt auszugleichen, sind eine Entnahme von 110,44 Millionen Euro aus der Rücklage und eine Kreditaufnahme von 135,35 Millionen Euro vorgesehen. Die Gewerbesteuer bleibt bei 400 Prozent, die Grundsteuer A bei 390 Prozent und die Grundsteuer B bei 475 Prozent. Wegen der angespannten Finanzlage sollen vorsorglich 15 Prozent des Verwaltungshaushalts und 20 Prozent des Vermögenshaushalts gesperrt werden.",
+      "klartext_titel_leicht": "So viel Geld gibt die Stadt 2025 aus",
+      "klartext_leicht": "Die Stadt Ingolstadt plant jedes Jahr, wie viel Geld sie ausgibt. Das steht im Haushalt. Für 2025 sind es 705,84 Millionen Euro für laufende Kosten. Dazu kommen 296,99 Millionen Euro für Bau-Projekte. Die Stadt braucht dafür 135,35 Millionen Euro neue Kredite. Sie nimmt auch 110,44 Millionen Euro aus ihren Rücklagen. Ein Teil des Geldes wird vorerst gesperrt, damit die Stadt flexibel bleibt.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "10.04.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Haushaltssatzung mit Haushaltsplan der Stadt Ingolstadt für das Haushaltsjahr 2025",
+      "top_nr": "Ö 8",
+      "vorlage": "V0167/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19920",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233660&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234944&type=do"
+        },
+        {
+          "titel": "Vorberatung FWA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235832&type=do"
+        },
+        {
+          "titel": "Anlage 1 Haushaltssatzung und Festsetzung VWH",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234516&type=do"
+        },
+        {
+          "titel": "Anlage 2.1 Stichwortverzeichnis 2025",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233978&type=do"
+        },
+        {
+          "titel": "Anlage 2 Gesamtplan und Einzelpläne (Verwaltungs- und Vermögenshaushalt)",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234517&type=do"
+        },
+        {
+          "titel": "Anlage 3 Verpflichtungsermächtigungen",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234518&type=do"
+        },
+        {
+          "titel": "Anlage 4 Eckwerte",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233664&type=do"
+        },
+        {
+          "titel": "Anlage 5 Vorbericht",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234519&type=do"
+        },
+        {
+          "titel": "Anlage 6 Haushaltsrechtlicher Stellenplan neu",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233666&type=do"
+        },
+        {
+          "titel": "Anlage 7 Finanzplan",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233667&type=do"
+        },
+        {
+          "titel": "Anlage 8 Investitionsprogramm",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233668&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "1",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823&toselect=79757"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "8",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825&toselect=79879"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11825#Ö 9",
+      "thema": "stadt:vorlage:19940",
+      "auftritte": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 9",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Konsolidierungspaket II: Stadt muss 25 bis 30 Millionen Euro pro Jahr einsparen",
+      "klartext": "Die Finanzplanung der Stadt Ingolstadt zeigt für die Jahre 2026 bis 2028 eine Finanzierungslücke im Verwaltungshaushalt. Der Stadtrat soll zur Kenntnis nehmen, dass durchschnittlich mindestens 25 bis 30 Millionen Euro pro Jahr eingespart werden müssen. Die Personalkosten im Kernhaushalt sollen dafür bereits ab 2026 um 7 bis 9 Millionen Euro pro Jahr sinken, unter anderem durch eine Wiederbesetzungssperre. Freiwillige Leistungen der Verwaltung und der städtischen Tochterunternehmen sollen überprüft werden, mit dem Ziel, dort weitere 10 bis 12 Millionen Euro pro Jahr einzusparen. Ein erstes Konsolidierungspaket mit einem Volumen von 100 Millionen Euro für 2024 bis 2027 hatte der Stadtrat bereits 2023 beschlossen.",
+      "klartext_titel_leicht": "Die Stadt muss viel Geld sparen",
+      "klartext_leicht": "Ingolstadt hat zu wenig Geld für die Jahre 2026 bis 2028. Die Stadt muss deshalb sparen. Jedes Jahr sollen es 25 bis 30 Millionen Euro sein. Ein großer Teil soll bei den Personal-Kosten gespart werden. Das sind 7 bis 9 Millionen Euro pro Jahr. Freie Leistungen der Stadt werden auch geprüft. Dort soll noch mehr Geld gespart werden. Schon 2023 hat der Stadt-Rat ein erstes Spar-Paket beschlossen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "10.04.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Grundsatzbeschluss zum Konsolidierungspaket II für die Jahre 2026 - 2028",
+      "top_nr": "Ö 9",
+      "vorlage": "V0178/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19940",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233925&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234945&type=do"
+        },
+        {
+          "titel": "Vorberatung FWA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235835&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "2",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823&toselect=79830"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "9",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825&toselect=80159"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11825#Ö 10",
+      "thema": "stadt:vorlage:19955",
+      "auftritte": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 2.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823"
+        },
+        {
+          "datum": "2025-04-08",
+          "datum_anzeige": "08.04.2025",
+          "gremium": "Ausschuss für Verwaltung, Personal und Recht",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11824"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 10",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Stadt will Personalkosten 2026 um 6 Millionen Euro senken",
+      "klartext": "Im Rahmen der Haushaltskonsolidierung soll die Verwaltung 6 Millionen Euro bei den Personalausgaben einsparen. Das entspricht etwa 75 bis 80 Vollzeitstellen und soll über pauschale Kürzungen im Haushalt 2026 erreicht werden. Die Verwaltung soll dem Stadtrat erstmals im Oktober 2025 über das Ergebnis berichten. Zusätzlicher Personalbedarf soll künftig nur noch über ein referatsübergreifendes Verfahren gedeckt werden, über das der Stadtrat jeweils im Juli entscheidet.",
+      "klartext_titel_leicht": "Die Stadt will weniger Personal-Kosten",
+      "klartext_leicht": "Die Stadt Ingolstadt will Geld sparen. Ein Teil soll bei den Personal-Kosten gespart werden. Das sind 6 Millionen Euro. Das entspricht ungefähr 75 bis 80 volle Arbeits-Stellen. Die Verwaltung berichtet dem Stadt-Rat im Oktober 2025 darüber. Neue Stellen sollen künftig schwerer genehmigt werden. Der Stadt-Rat entscheidet darüber jedes Jahr im Juli.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "10.04.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Maßnahmen zur Reduzierung der Personalausgaben im Rahmen der Haushaltskonsolidierung und Einführung eines konsolidierten Planstellenverfahrens zur künftigen Deckung zusätzlicher unabdingbarer Personalbedarfe",
+      "top_nr": "Ö 10",
+      "vorlage": "V0190/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19955",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234143&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235985&type=do"
+        },
+        {
+          "titel": "Vorberatung FWA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235986&type=do"
+        },
+        {
+          "titel": "Vorberatung VPA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235812&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "2.1",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823&toselect=80199"
+        },
+        {
+          "datum": "2025-04-08",
+          "datum_anzeige": "08.04.2025",
+          "gremium": "Ausschuss für Verwaltung, Personal und Recht",
+          "top_nr": "6",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11824&toselect=80273"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "10",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825&toselect=80179"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11825#Ö 11",
+      "thema": "stadt:vorlage:19879",
+      "auftritte": [
+        {
+          "datum": "2025-03-25",
+          "datum_anzeige": "25.03.2025",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11821"
+        },
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 11",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Georgisches Kammerorchester plant schmerzhafte Einsparungen bis 2028",
+      "klartext": "Die Georgisches Kammerorchester Ingolstadt Konzertgesellschaft mbH legt ihre Mittelfristplanung für 2026 bis 2028 vor. Der Stadtrat soll diese als Gesellschafter genehmigen. Wegen der angespannten städtischen Haushaltslage sieht die neue Planung im Vergleich zur alten Planung von 2023 deutliche Einsparungen vor, etwa bei den Gagen für Konzerte in Ingolstadt. Gleichzeitig sollen die Einnahmen aus Abonnements steigen.",
+      "klartext_titel_leicht": "Das Kammer-Orchester muss sparen",
+      "klartext_leicht": "Das Georgische Kammer-Orchester spielt Konzerte in Ingolstadt. Die Stadt bezahlt einen Teil davon. Die Stadt hat aber wenig Geld. Deshalb muss das Orchester für die Jahre 2026 bis 2028 sparen. Der Stadt-Rat soll diesen Plan genehmigen. Das Orchester will zum Beispiel weniger für Gastspiele bezahlen. Gleichzeitig soll es mehr Geld durch Abonnements einnehmen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "10.04.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Georgisches Kammerorchester Ingolstadt Konzertgesellschaft mbH; — Ausübung der Gesellschafterrechte zur Mittelfristplanung 2026 bis 2028",
+      "top_nr": "Ö 11",
+      "vorlage": "V0129/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19879",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=232048&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235741&type=do"
+        },
+        {
+          "titel": "Vorberatung FWA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234523&type=do"
+        },
+        {
+          "titel": "Vorberatung KBA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236358&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-03-25",
+          "datum_anzeige": "25.03.2025",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11821&toselect=79518"
+        },
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823&toselect=79744"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "11",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825&toselect=79873"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11825#Ö 12",
+      "thema": "stadt:vorlage:19884",
+      "auftritte": [
+        {
+          "datum": "2025-03-25",
+          "datum_anzeige": "25.03.2025",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11821"
+        },
+        {
+          "datum": "2025-04-08",
+          "datum_anzeige": "08.04.2025",
+          "gremium": "Ausschuss für Verwaltung, Personal und Recht",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11824"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 12",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Georgisches Kammerorchester soll künftig „Kammerphilharmonie Ingolstadt“ heißen",
+      "klartext": "Die Georgisches Kammerorchester Ingolstadt Konzertgesellschaft mbH will sich zur Saison 2025/2026 in „Kammerphilharmonie Ingolstadt GmbH“ umbenennen. Der Stadtrat soll seinen Vertreter in der Gesellschafterversammlung ermächtigen, dieser Umbenennung zuzustimmen. Laut Orchester erschwert der Begriff „georgisch“ die Vermarktung, weil er ein enges musikalisches Programm suggeriert, obwohl das Repertoire breiter ist.",
+      "klartext_titel_leicht": "Das Kammer-Orchester bekommt einen neuen Namen",
+      "klartext_leicht": "Ein Orchester in Ingolstadt heißt bisher Georgisches Kammer-Orchester. Das Orchester möchte einen neuen Namen. Der neue Name soll „Kammer-Philharmonie Ingolstadt“ sein. Grund: Das Wort „georgisch“ verwirrt viele Menschen. Sie denken dann nur an Musik aus Georgien. Das Orchester spielt aber viele verschiedene Musik-Stücke. Der Stadt-Rat soll der Namens-Änderung zustimmen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "10.04.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Georgisches Kammerorchester Ingolstadt Konzertgesellschaft mbH; — Ausübung der Gesellschafterrechte zur Namensänderung",
+      "top_nr": "Ö 12",
+      "vorlage": "V0134/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19884",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233605&type=do"
+        },
+        {
+          "titel": "Beschlusss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235744&type=do"
+        },
+        {
+          "titel": "Vorberatung KBA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236355&type=do"
+        },
+        {
+          "titel": "Vorberatung VPA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235035&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-03-25",
+          "datum_anzeige": "25.03.2025",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11821&toselect=79586"
+        },
+        {
+          "datum": "2025-04-08",
+          "datum_anzeige": "08.04.2025",
+          "gremium": "Ausschuss für Verwaltung, Personal und Recht",
+          "top_nr": "1",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11824&toselect=79765"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "12",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825&toselect=79874"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11825#Ö 16",
+      "thema": "stadt:vorlage:19851",
+      "auftritte": [
+        {
+          "datum": "2025-03-26",
+          "datum_anzeige": "26.03.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11822"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 16",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Neue Verordnung legt Überschwemmungsgebiete an vier Bächen fest",
+      "klartext": "Die Stadt Ingolstadt soll eine Verordnung erlassen, die Überschwemmungsgebiete am Mailinger Bach, Haunstädter Bach, Retzgraben und Köschinger Bach festlegt. Grundlage ist ein Hochwasser, wie es statistisch einmal in 100 Jahren auftritt (HQ100). Die Festsetzung betrifft den Gewässerabschnitt zwischen Fluss-Kilometer 7,40 und 17,80. In den festgelegten Gebieten gelten dann besondere bauliche Einschränkungen zum Hochwasserschutz.",
+      "klartext_titel_leicht": "Die Stadt legt Hochwasser-Gebiete fest",
+      "klartext_leicht": "In Ingolstadt gibt es die Bäche Mailinger Bach, Haunstädter Bach, Retzgraben und Köschinger Bach. Bei starkem Regen können diese Bäche über die Ufer treten. Das nennt man Hochwasser. Die Stadt legt jetzt fest, welche Flächen dabei unter Wasser stehen können. Diese Flächen heißen Überschwemmungs-Gebiete. Dort darf man dann nicht mehr so einfach bauen. Das soll die Menschen vor Hochwasser schützen.",
+      "lebenslage": [],
+      "bezirk": [],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "10.04.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Verordnung zur Festsetzung des Überschwemmungsgebiets am Mailinger Bach, Haunstädter Bach, Retzgraben und Köschinger Bach im Stadtgebiet von Ingolstadt von Fluss-km 7,40 bis 17,80 (Gewässer III. Ordnung)",
+      "top_nr": "Ö 16",
+      "vorlage": "V0106/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19851",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231412&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234769&type=do"
+        },
+        {
+          "titel": "Vorberatung PLA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234006&type=do"
+        },
+        {
+          "titel": "Verordnungsentwurf",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231431&type=do"
+        },
+        {
+          "titel": "Übersichtskarte compressed",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231432&type=do"
+        },
+        {
+          "titel": "Detailkarte 1",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231433&type=do"
+        },
+        {
+          "titel": "Detailkarte 2",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231434&type=do"
+        },
+        {
+          "titel": "Detailkarte 3",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231435&type=do"
+        },
+        {
+          "titel": "Detailkarte 4",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231436&type=do"
+        },
+        {
+          "titel": "Detailkarte 5",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231437&type=do"
+        },
+        {
+          "titel": "Detailkarte 6",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231438&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-03-26",
+          "datum_anzeige": "26.03.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "6",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11822&toselect=79550"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "16",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825&toselect=79878"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11825#Ö 17",
+      "thema": "stadt:vorlage:19874",
+      "auftritte": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11818"
+        },
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 17",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Gebühren für Kitas und Mittagsbetreuung an Grundschulen sollen sich ändern",
+      "klartext": "Die Stadt Ingolstadt will die Gebührensatzungen für ihre Kindertageseinrichtungen sowie für die Mittags- und Randbetreuung an Grundschulen ändern. Hintergrund sind steigende Kosten, vor allem beim Personal. Die Finanzierung von Kitas kommt zu etwa 75 bis 80 Prozent aus staatlicher Förderung, den Rest von etwa 20 bis 25 Prozent müssen die Träger meist über Elterngebühren decken. Während freie Träger in Ingolstadt ihre Gebühren wegen der Kostensteigerungen laufend angepasst haben, wurden die städtischen Gebühren bislang seltener erhöht.",
+      "klartext_titel_leicht": "Kita-Gebühren sollen sich ändern",
+      "klartext_leicht": "Kitas kosten Geld. Einen Teil davon zahlt der Staat. Einen Teil davon zahlen die Eltern. Das nennt man Eltern-Gebühr. Die Kosten für Kitas steigen. Deshalb will die Stadt Ingolstadt die Eltern-Gebühren ändern. Das betrifft auch die Mittags-Betreuung an Grundschulen.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kinderbetreuung",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "10.04.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Änderung der Gebührensatzung für die städtischen Kindertageseinrichtungen; — Änderung der Besuchs- und der Gebührensatzung für die Mittags- und Randbetreuung an Ingolstädter Grundschulen",
+      "top_nr": "Ö 17",
+      "vorlage": "V0124/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19874",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231755&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236381&type=do"
+        },
+        {
+          "titel": "Vorberatung FWA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234361&type=do"
+        },
+        {
+          "titel": "Anlage 1 Änderung Gebührensatzung Abzug EBZ KiGa+Krippe final",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231757&type=do"
+        },
+        {
+          "titel": "Anlage 2 Änderung Benutzungssatzung MB final",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231758&type=do"
+        },
+        {
+          "titel": "Anlage 3 Änderung Satzung Gebühren MB final-RA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231867&type=do"
+        },
+        {
+          "titel": "Anlage 4 Mehreinnahmen final",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231761&type=do"
+        },
+        {
+          "titel": "Anlage 5 Synopse",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231988&type=do"
+        },
+        {
+          "titel": "Anlage 6 Alternative Berechnung mit höherem Einstieg Krippe (275)",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233241&type=do"
+        },
+        {
+          "titel": "Anlage 7 Alternative Berechnung mit höherem Einstieg Kindergarten (70)",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233242&type=do"
+        },
+        {
+          "titel": "Anlage 8 Alternative Berechnung Mehreinnahmen bei höherem Einstieg Kindergarten(70) und Krippe (275)",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233243&type=do"
+        },
+        {
+          "titel": "Anlage 9 Stellungnahme GEB IN Gebührenerhöhung 2025",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233878&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "1",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11818&toselect=79613"
+        },
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823&toselect=79745"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "17",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825&toselect=79880"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11825#Ö 19",
+      "thema": "stadt:vorlage:19877",
+      "auftritte": [
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 19",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Volkshochschule Ingolstadt bekommt neue Satzung und Richtlinien",
+      "klartext": "Der Stadtrat soll die Satzung der Volkshochschule Ingolstadt von 1978 ändern. Zugleich sollen die Richtlinien für die Volkshochschule von 2010 angepasst werden. Beide Änderungen liegen als Anlagen zur Sitzungsvorlage vor und werden hier nicht im Detail dargestellt, da nur der Hauptantrag ausgewertet wurde. Über beide Änderungen soll der Stadtrat getrennt abstimmen.",
+      "klartext_titel_leicht": "Die Volkshochschule bekommt neue Regeln",
+      "klartext_leicht": "Die Volkshochschule Ingolstadt hat eine Satzung. Das ist eine Regel von der Stadt. Die Regel ist von 1978. Der Stadt-Rat soll die Regel jetzt ändern. Auch andere Richtlinien der Volkshochschule sollen sich ändern. Die genauen Änderungen stehen in einer Anlage. Diese Anlage wurde hier nicht ausgewertet.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung",
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "10.04.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Satzung zur Änderung der Satzung für die Volkshochschule Ingolstadt vom 27. November 1978; Änderung der Richtlinien für die Volkshochschule Ingolstadt vom 21. Oktober 2010",
+      "top_nr": "Ö 19",
+      "vorlage": "V0127/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19877",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231779&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234741&type=do"
+        },
+        {
+          "titel": "V0127 25 Anlage 1. Änderung der Satzung der VHS",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233384&type=do"
+        },
+        {
+          "titel": "V0127 25 Anlage 2. Änderung der Richtlinien für die VHS",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231785&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "19",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825&toselect=79882"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11825#Ö 20",
+      "thema": "stadt:vorlage:19867",
+      "auftritte": [
+        {
+          "datum": "2025-03-20",
+          "datum_anzeige": "20.03.2025",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11820"
+        },
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823"
+        },
+        {
+          "datum": "2025-04-08",
+          "datum_anzeige": "08.04.2025",
+          "gremium": "Ausschuss für Verwaltung, Personal und Recht",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11824"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 20",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Gebühren für Obdachlosenunterkünfte: Stadt trug 2022 und 2023 über 1,1 Millionen Euro Unterdeckung",
+      "klartext": "Die Stadt Ingolstadt legt ihren Gebührenbericht für die Obdachlosenunterkünfte der Jahre 2022 bis 2024 vor. Die Gebühren haben die tatsächlichen Kosten in diesem Zeitraum nicht gedeckt: 2022 betrug die Unterdeckung 554.872 Euro, 2023 waren es 610.244 Euro. Schon in den Jahren 2019 bis 2021 gab es solche Unterdeckungen. Der Stadtrat soll die Unterdeckungen bestätigen und die Satzung über die Gebühren für die Obdachlosenunterkünfte entsprechend ändern.",
+      "klartext_titel_leicht": "Obdachlosen-Unterkünfte kosten mehr, als sie einbringen",
+      "klartext_leicht": "Die Stadt Ingolstadt hat Unterkünfte für Menschen ohne Wohnung. Diese Menschen zahlen dafür eine Gebühr. Die Gebühren decken die Kosten aber nicht. Im Jahr 2022 fehlten 554.872 Euro. Im Jahr 2023 fehlten 610.244 Euro. Schon vorher gab es solche Lücken. Der Stadt-Rat soll das bestätigen. Er soll auch die Gebühren-Regeln ändern.",
+      "lebenslage": [
+        "Geld & Soziales"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "10.04.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Änderung der Satzung der Stadt Ingolstadt über die Erhebung von Gebühren für die Benutzung der Obdachlosenunterkünfte; Gebührenbericht 2022 bis 2024",
+      "top_nr": "Ö 20",
+      "vorlage": "V0117/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19867",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231692&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234771&type=do"
+        },
+        {
+          "titel": "Vorberatung FWA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234364&type=do"
+        },
+        {
+          "titel": "Vorberatung SGA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234568&type=do"
+        },
+        {
+          "titel": "Vorberatung VPA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234493&type=do"
+        },
+        {
+          "titel": "Anlage 1 Änderungssatzung Gebührensatzung 2025 überarbeitet",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231819&type=do"
+        },
+        {
+          "titel": "Anlage 2 Gebührenbericht Obdachlosenwesen 2022 bis 2024",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231822&type=do"
+        },
+        {
+          "titel": "Anlage 3 Gebührenkalkulation Obdachlosenwesen 2025",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231823&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-03-20",
+          "datum_anzeige": "20.03.2025",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "2",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11820&toselect=79498"
+        },
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "6",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823&toselect=79747"
+        },
+        {
+          "datum": "2025-04-08",
+          "datum_anzeige": "08.04.2025",
+          "gremium": "Ausschuss für Verwaltung, Personal und Recht",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11824&toselect=79764"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "20",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825&toselect=79884"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11825#Ö 21",
+      "thema": "stadt:vorlage:19767",
+      "auftritte": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11818"
+        },
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 21",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Fanprojekt Ingolstadt soll bis Ende 2027 weiter gefördert werden",
+      "klartext": "Das Fanprojekt Ingolstadt betreut die Fanszene des FC Ingolstadt sozialpädagogisch und richtet sich an Fußballfans zwischen 12 und 27 Jahren. Es soll vom 1. September 2025 bis zunächst 31. Dezember 2027 fortgeführt werden, sofern weiterhin 75 Prozent der Förderung vom DFB und vom Freistaat Bayern kommen. Die Stadt Ingolstadt fördert das Projekt weiterhin mit 50.000 Euro pro Jahr über den Träger Stadtjugendring Ingolstadt. Zusätzlich darf der Träger bis zu 10.000 Euro aus allgemeinen städtischen Mitteln für das Fanprojekt nutzen.",
+      "klartext_titel_leicht": "Die Stadt unterstützt weiter die Fußball-Fans",
+      "klartext_leicht": "Der FC Ingolstadt hat viele Fans. Manche Fans brauchen besondere Unterstützung. Dafür gibt es das Fanprojekt Ingolstadt. Es hilft Fußball-Fans zwischen 12 und 27 Jahren. Die Stadt zahlt dafür 50.000 Euro pro Jahr. Auch der Deutsche Fußball-Bund und der Freistaat Bayern zahlen mit. Das Fanprojekt soll bis Ende 2027 weiterlaufen.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "10.04.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Förderung des Fanprojekts Ingolstadt in Trägerschaft des Stadtjugendrings Ingolstadt",
+      "top_nr": "Ö 21",
+      "vorlage": "V0023/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19767",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230042&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235873&type=do"
+        },
+        {
+          "titel": "Vorberatung",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235430&type=do"
+        },
+        {
+          "titel": "Vorberatung FWA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234405&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "6",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11818&toselect=79610"
+        },
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "7",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823&toselect=79746"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "21",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825&toselect=80271"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11825#Ö 22",
+      "thema": "stadt:vorlage:19811",
+      "auftritte": [
+        {
+          "datum": "2025-04-08",
+          "datum_anzeige": "08.04.2025",
+          "gremium": "Ausschuss für Verwaltung, Personal und Recht",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11824"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 22",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Badeplatz im Piuspark wird endgültig aufgegeben",
+      "klartext": "Der Landschaftssee im Piuspark, der bei der Landesgartenschau 2021 entstand, wurde trotz Badeverbots zum Baden genutzt. 2023 startete deshalb ein Testbetrieb mit Sicherheitskonzept und eigener Benutzungssatzung. Die technische Anlage ermöglichte den Badebetrieb aber nur an wenigen Tagen im Jahr 2023, auch nach einer Ertüchtigung des Leitungssystems. Der Stadtrat soll die Benutzungssatzung für den Badeplatz deshalb wieder aufheben.",
+      "klartext_titel_leicht": "Der Bade-Platz im Piuspark wird geschlossen",
+      "klartext_leicht": "Im Piuspark gibt es einen See. Der See ist seit der Garten-Schau 2021 da. Viele Menschen haben dort gebadet, obwohl es verboten war. Die Stadt hat 2023 einen Test-Betrieb erlaubt. Es gab feste Regeln zur Sicherheit. Aber die Technik hat oft nicht funktioniert. Baden war deshalb nur an wenigen Tagen möglich. Der Stadt-Rat soll das Baden am See jetzt ganz beenden.",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [
+        "Piuspark"
+      ],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "10.04.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Aufhebung der Benutzungssatzung für den Badeplatz im Piuspark",
+      "top_nr": "Ö 22",
+      "vorlage": "V0067/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19811",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230715&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235875&type=do"
+        },
+        {
+          "titel": "Vorberatung VPA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235168&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-04-08",
+          "datum_anzeige": "08.04.2025",
+          "gremium": "Ausschuss für Verwaltung, Personal und Recht",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11824&toselect=79763"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "22",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825&toselect=79886"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11825#Ö 25",
+      "thema": "stadt:vorlage:19881",
+      "auftritte": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 9",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 25",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Stadt hebt Mindestabstand für Mobilfunkanlagen zu Schulen und Kitas auf",
+      "klartext": "Der Stadtrat soll die bisherige Regel aufheben, wonach Mobilfunkanlagen auf städtischen Grundstücken mindestens 100 Meter von Schulen und Kindergärten entfernt sein müssen. Diese Regel stammt aus dem Jahr 2002. Ziel der Aufhebung ist eine bessere Netzabdeckung, da der mobile Datenverbrauch 2024 um rund 25 bis 30 Prozent gestiegen ist. Die gesetzlichen Grenzwerte für elektromagnetische Felder bleiben davon unberührt und gelten weiterhin.",
+      "klartext_titel_leicht": "Handy-Masten dürfen näher an Schulen stehen",
+      "klartext_leicht": "Handys brauchen Sende-Masten, damit sie funktionieren. Diese Masten heißen Mobilfunk-Anlagen. Bisher mussten sie mindestens 100 Meter von Schulen und Kitas entfernt sein. Diese Regel ist von 2002. Der Stadt-Rat will diese Regel jetzt streichen. Grund: Handys brauchen heute mehr Daten als früher. Die Grenzwerte für Strahlung ändern sich dabei nicht. Sie gelten weiterhin.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "10.04.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Anpassung der Standortbewertung von Mobilfunkanlagen an aktuelle Anforderungen",
+      "top_nr": "Ö 25",
+      "vorlage": "V0131/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19881",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=232161&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234608&type=do"
+        },
+        {
+          "titel": "Vorberatung FWA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234533&type=do"
+        },
+        {
+          "titel": "Anlage 1-Pressemitteilung Gnadenthal Messung",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233188&type=do"
+        },
+        {
+          "titel": "Anlage 2-Sitzungsvorlage V0183 2002 Mobilfunk in Ingolstadt",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233189&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "9",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823&toselect=79753"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "25",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825&toselect=79887"
+        }
+      ]
+    },
+    {
       "ref": "bza:13149#Ö 3",
       "thema": "bza:13149#Ö 3",
       "auftritte": [
@@ -42961,6 +44490,161 @@
       "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=13149",
       "dokumente": [],
       "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11818#Ö 7",
+      "thema": "stadt:vorlage:19800",
+      "auftritte": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11818"
+        }
+      ],
+      "klartext_titel": "Verein INfreestyle soll als Träger der Jugendhilfe anerkannt werden",
+      "klartext": "Der Stadtrat soll den Verein INfreestyle e.V. als Träger der freien Jugendhilfe anerkennen. Der Verein ist seit März 2023 in der Jugendarbeit in Ingolstadt tätig und fördert Kinder und Jugendliche über musikalische, kreative und naturverbundene Angebote. Dazu zählen Workshops und Kurse in den Bereichen Musikproduktion, Film, Medien und Natur, offen für junge Menschen unabhängig von ihrer Herkunft. Die Anerkennung erfolgt nach § 75 Absatz 1 des Achten Sozialgesetzbuches.",
+      "klartext_titel_leicht": "Ein neuer Verein hilft Jugendlichen",
+      "klartext_leicht": "Der Verein INfreestyle e.V. arbeitet mit Kindern und Jugendlichen. Er macht das seit März 2023 in Ingolstadt. Der Verein bietet Musik, Film und Natur-Projekte an. Alle jungen Menschen dürfen mitmachen. Der Stadt-Rat soll den Verein jetzt offiziell anerkennen. Dann darf der Verein wie andere Jugend-Vereine arbeiten.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "03.04.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "INfreestyle e. V., Anerkennung als Träger der freien Jugendhilfe gem. § 75 SGB VIII",
+      "top_nr": "Ö 7",
+      "vorlage": "V0056/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19800",
+      "antragsteller": "",
+      "gremium": "Jugendhilfeausschuss",
+      "sitzung_kennung": "JHA/02/2025",
+      "datum": "2025-04-03",
+      "datum_anzeige": "03.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11818",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230346&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "7",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11818&toselect=79611"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11823#Ö 8",
+      "thema": "stadt:vorlage:19854",
+      "auftritte": [
+        {
+          "datum": "2025-03-26",
+          "datum_anzeige": "26.03.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 9",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11822"
+        },
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 8",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823"
+        }
+      ],
+      "klartext_titel": "Neues Baugebiet 'Am Samhof': 4,3 Millionen Euro für Erschließung und Straßensanierung",
+      "klartext": "Für das neue Baugebiet 'Am Samhof' mit rund 260 Wohneinheiten soll der Stadtrat die Projektgenehmigung für die Erschließungsanlagen erteilen. Gleichzeitig soll die Krumenauerstraße zwischen Cusanusstraße und Gerolfinger Straße saniert werden. Die Gesamtkosten beider Maßnahmen betragen 4,3 Millionen Euro, davon 3,5 Millionen Euro für das Baugebiet. Grundlage ist der Bebauungs- und Grünordnungsplan Nr. 107, den der Stadtrat 2021 beschlossen hat. Das Baugebiet grenzt im Norden an das Klinikum und im Osten an die Krumenauerstraße.",
+      "klartext_titel_leicht": "Ein neues Wohn-Gebiet wird gebaut: Am Samhof",
+      "klartext_leicht": "In Ingolstadt entsteht ein neues Wohn-Gebiet. Es heißt „Am Samhof“. Dort sollen ungefähr 260 Wohnungen entstehen. Dafür braucht es neue Straßen und Leitungen. Auch die Krumenauer-Straße wird repariert. Das kostet zusammen 4,3 Millionen Euro. Der Stadt-Rat soll dafür jetzt grünes Licht geben.",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "anlass": [
+        "Bauleitplanung",
+        "Baustelle"
+      ],
+      "ort": [
+        "Am Samhof"
+      ],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "03.04.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Erschließung des Baugebietes \"Am Samhof\" (Bebauungsplan Nr. 107) und Sanierung der Krumenauerstraße zwischen der Cusanusstraße und der Gerolfinger Straße — hier: Projektgenehmigung",
+      "top_nr": "Ö 8",
+      "vorlage": "V0109/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19854",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FWA/02/2025",
+      "datum": "2025-04-03",
+      "datum_anzeige": "03.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231538&type=do"
+        },
+        {
+          "titel": "Anlage 1 - Am Samhof",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231566&type=do"
+        },
+        {
+          "titel": "Anlage 2 - Am Samhof",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231567&type=do"
+        },
+        {
+          "titel": "Anlage 3 - Am Samhof",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231568&type=do"
+        },
+        {
+          "titel": "Beschluss FWA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234399&type=do"
+        },
+        {
+          "titel": "Vorberatung PLA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234855&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-03-26",
+          "datum_anzeige": "26.03.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "9",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11822&toselect=79551"
+        },
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "8",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823&toselect=79748"
+        }
+      ]
     },
     {
       "ref": "bza:13295#Ö 1",
@@ -44262,6 +45946,85 @@
       "beratungsweg": []
     },
     {
+      "ref": "stadt:11822#Ö 10",
+      "thema": "stadt:vorlage:19850",
+      "auftritte": [
+        {
+          "datum": "2025-03-26",
+          "datum_anzeige": "26.03.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 10",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11822"
+        }
+      ],
+      "klartext_titel": "Buxheimer Weg und Hochbuckelweg: Widmung wird berichtigt",
+      "klartext": "Trotz Einfahrverbots wird der Verbindungsweg zwischen Fuggerstraße und Richard-Strauss-Straße häufig als Abkürzung befahren. Dabei stimmt die vorhandene Beschilderung nicht mit der offiziellen Widmung der Wege überein. Der Stadtrat soll deshalb Teilstücke des Hochbuckel- und Buxheimer Weges umstufen und zusätzlich einen Verbindungsweg zwischen Hertel- und Parreutstraße in Gaimersheim als Fuß- und Radweg widmen. Zudem soll die Verwaltung Poller anordnen, die den Weg für Autos sperren, aber freie Zufahrt für zwei Hausnummern und die Lebenshilfe erlauben.",
+      "klartext_titel_leicht": "Ein Schleichweg wird neu geregelt",
+      "klartext_leicht": "Zwischen zwei Straßen gibt es einen kleinen Weg. Viele Autos fahren dort durch, obwohl es verboten ist. Die Schilder dort stimmen nicht mit den Regeln überein. Der Stadt-Rat soll die Regeln jetzt richtig-stellen. Er soll auch einen neuen Fuß- und Rad-Weg festlegen. Poller sollen Autos künftig abhalten. Nur wenige Anwohner dürfen dann noch durchfahren.",
+      "lebenslage": [],
+      "bezirk": [],
+      "anlass": [
+        "Verkehrsplanung",
+        "Satzung & Regeln"
+      ],
+      "ort": [
+        "Buxheimer Weg",
+        "Hochbuckelweg"
+      ],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "26.03.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236790&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Vollzug des Bayerischen Straßen- und Wegegesetzes — 1. Berichtigung der Widmung des Buxheimer Weges und des Hochbuckelweges — 2. Antrag auf Widmung der Flurnummer 2598/121 Gmkg. Gaimersheim",
+      "top_nr": "Ö 10",
+      "vorlage": "V0105/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19850",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+      "sitzung_kennung": "PLA/02/2025",
+      "datum": "2025-03-26",
+      "datum_anzeige": "26.03.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11822",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231358&type=do"
+        },
+        {
+          "titel": "Beschluss PLA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234016&type=do"
+        },
+        {
+          "titel": "Antrag 1 Buxheimer Weg Anlage 1a",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231881&type=do"
+        },
+        {
+          "titel": "Antrag 1 Buxheimer Weg Anlage 1b",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231882&type=do"
+        },
+        {
+          "titel": "Antrag 2 VW Hertel-Parreut Anlage 2a",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231883&type=do"
+        },
+        {
+          "titel": "Antrag 2 VW Hertel-Parreut Anlage 2b",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231884&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-03-26",
+          "datum_anzeige": "26.03.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "10",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11822&toselect=79549"
+        }
+      ]
+    },
+    {
       "ref": "bza:13296#Ö 2.1",
       "thema": "bza:13296#Ö 2.1",
       "auftritte": [
@@ -44890,6 +46653,87 @@
       "beratungsweg": []
     },
     {
+      "ref": "stadt:11819#Ö 1",
+      "thema": "stadt:vorlage:19864",
+      "auftritte": [
+        {
+          "datum": "2025-03-18",
+          "datum_anzeige": "18.03.2025",
+          "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11819"
+        }
+      ],
+      "klartext_titel": "Café Anna-Ingolstadt darf Außenbestuhlung erweitern",
+      "klartext": "Das Café Anna-Ingolstadt in der Theresienstraße 19 beantragt, seine Außenbestuhlung auf den Bereich vor der Theresienstraße 21 zu erweitern. Die zusätzliche Fläche beträgt rund 20 Quadratmeter. Der Nachbar in der Theresienstraße 21 hat der Erweiterung zugestimmt. Der Bezirksausschuss I-Mitte wurde beteiligt und stimmt der Sondernutzung ebenfalls zu.",
+      "klartext_titel_leicht": "Ein Café darf mehr Tische aufstellen",
+      "klartext_leicht": "Das Café Anna-Ingolstadt ist in der Theresien-Straße 19. Es möchte mehr Tische und Stühle nach draußen stellen. Der neue Platz ist vor dem Haus Theresien-Straße 21. Er ist ungefähr 20 Quadrat-Meter groß. Der Nachbar hat schon zugestimmt. Der Bezirks-Ausschuss Mitte hat auch zugestimmt.",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [
+        "Theresienstraße 19-21"
+      ],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "18.03.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235925&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Sondernutzung Tische und Stühle — Außenbestuhlung Erweiterung Anna-Ingolstadt, Theresienstraße 19 - 21",
+      "top_nr": "Ö 1",
+      "vorlage": "V0114/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19864",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+      "sitzung_kennung": "SVA/02/2025",
+      "datum": "2025-03-18",
+      "datum_anzeige": "18.03.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11819",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231653&type=do"
+        },
+        {
+          "titel": "Beschluss SVA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235636&type=do"
+        },
+        {
+          "titel": "BZA Zustimmung - Anlage 3",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231660&type=do"
+        },
+        {
+          "titel": "Erweiterungsfläche - Anlage 1",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231655&type=do"
+        },
+        {
+          "titel": "Flächenansicht - Anlage 1a",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231657&type=do"
+        },
+        {
+          "titel": "Zustimmung Spörer - Anlage 2",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231659&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-03-18",
+          "datum_anzeige": "18.03.2025",
+          "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+          "top_nr": "1",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11819&toselect=78487"
+        }
+      ]
+    },
+    {
       "ref": "bza:13271#Ö 1",
       "thema": "bza:13271#Ö 1",
       "auftritte": [
@@ -45290,6 +47134,717 @@
       "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=13271",
       "dokumente": [],
       "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11817#Ö 3",
+      "thema": "stadt:vorlage:19843",
+      "auftritte": [
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817"
+        }
+      ],
+      "klartext_titel": "Michael Kern verlässt den Stadtrat, Babür Aydeniz rückt nach",
+      "klartext": "Dr. Michael Kern ist am 23. Februar 2025 zum Oberbürgermeister von Ingolstadt gewählt worden. Mit dem Amtsantritt zum 1. März 2025 scheidet er kraft Gesetzes als ehrenamtliches Stadtratsmitglied aus dem Stadtrat aus. Für ihn rückt Prof. Dr. Babür Aydeniz als Listennachfolger der CSU in den Stadtrat nach. Zugleich enden Kerns Mandate in den Gremien der Zweckverbände.",
+      "klartext_titel_leicht": "Ein neuer Mann kommt in den Stadt-Rat",
+      "klartext_leicht": "Dr. Michael Kern war Mitglied im Stadt-Rat. Er wurde am 23. Februar 2025 zum Ober-Bürgermeister gewählt. Deshalb kann er nicht mehr im Stadt-Rat sitzen. Für ihn kommt jetzt Prof. Dr. Babür Aydeniz in den Stadt-Rat. Er ist von der CSU. Das passiert automatisch zum 1. März 2025.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "26.02.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235732&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Ausscheiden und Nachrücken in den Stadtrat infolge der Wahl des neuen Oberbürgermeisters",
+      "top_nr": "Ö 3",
+      "vorlage": "V0098/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19843",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2025",
+      "datum": "2025-02-26",
+      "datum_anzeige": "26.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231759&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231959&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817&toselect=78311"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11817#Ö 5",
+      "thema": "stadt:vorlage:19852",
+      "auftritte": [
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817"
+        }
+      ],
+      "klartext_titel": "Gutachterausschuss für Grundstückswerte wird für vier Jahre neu berufen",
+      "klartext": "Der Stadtrat soll den Gutachterausschuss für den Bereich der Stadt Ingolstadt für die Amtszeit vom 1. März 2025 bis 28. Februar 2029 neu berufen. Grundlage ist das Baugesetzbuch in Verbindung mit der bayerischen Gutachterausschussverordnung. Der Ausschuss ermittelt unter anderem Bodenrichtwerte und ist gesetzlich vorgeschrieben. Er besteht aus einem Vorsitzenden und mindestens zwei Stellvertretern, die städtische Bedienstete sind.",
+      "klartext_titel_leicht": "Ein Ausschuss prüft Grundstücks-Preise neu",
+      "klartext_leicht": "Der Gutachter-Ausschuss prüft, wie viel Grundstücke in Ingolstadt wert sind. Das ist gesetzlich vorgeschrieben. Der Ausschuss braucht neue Mitglieder. Sie arbeiten vom 1. März 2025 bis zum 28. Februar 2029. Ein Vorsitzender und mindestens zwei Stellvertreter gehören dazu. Sie arbeiten für die Stadt Ingolstadt.",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Bauleitplanung",
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "26.02.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235732&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Wiederberufung/Neuberufung der Mitglieder des Gutachterausschusses",
+      "top_nr": "Ö 5",
+      "vorlage": "V0107/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19852",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2025",
+      "datum": "2025-02-26",
+      "datum_anzeige": "26.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231446&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231967&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817&toselect=78336"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11817#Ö 6",
+      "thema": "stadt:vorlage:19736",
+      "auftritte": [
+        {
+          "datum": "2025-02-05",
+          "datum_anzeige": "05.02.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 12",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11814"
+        },
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817"
+        }
+      ],
+      "klartext_titel": "Zweiter Nachhaltigkeitsbericht der Stadt liegt vor",
+      "klartext": "Der Stadtrat soll den 2. Nachhaltigkeitsbericht der Stadt Ingolstadt billigen, der auf einem bundesweiten Berichtsrahmen für nachhaltige Kommunen basiert. Zugleich soll die Weiterentwicklung der Nachhaltigkeitsstrategie aus dem Strategiereview 2024 gebilligt werden. Für die Erstellung der Berichte sind alle zwei Jahre 30.000 Euro vorgesehen. An der Weiterentwicklung des Berichtsrahmens war auch die Stabsstelle Nachhaltigkeit der Stadt beteiligt.",
+      "klartext_titel_leicht": "Die Stadt berichtet über Nachhaltigkeit",
+      "klartext_leicht": "Ingolstadt will nachhaltiger werden. Das heißt: Die Stadt will die Umwelt schonen. Sie schreibt dazu alle zwei Jahre einen Bericht. Jetzt liegt der zweite Bericht vor. Der Stadt-Rat soll ihn billigen. Ein Bericht kostet 30.000 Euro.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Klima & Umwelt",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "26.02.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235732&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Nachhaltigkeitsagenda Ingolstadt - 2. Nachhaltigkeitsbericht",
+      "top_nr": "Ö 6",
+      "vorlage": "V0964/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19736",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2025",
+      "datum": "2025-02-26",
+      "datum_anzeige": "26.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=229373&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234932&type=do"
+        },
+        {
+          "titel": "Vorberatung PLA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231710&type=do"
+        },
+        {
+          "titel": "Anlage 1 Nachhaltigkeitsbericht",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230221&type=do"
+        },
+        {
+          "titel": "Anlage 2 Strategiereview",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=229424&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-02-05",
+          "datum_anzeige": "05.02.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "12",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11814&toselect=77544"
+        },
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "6",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817&toselect=77954"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11817#Ö 7",
+      "thema": "stadt:vorlage:19808",
+      "auftritte": [
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817"
+        }
+      ],
+      "klartext_titel": "Satzung der Stiftung van Schoor wird bekanntgemacht",
+      "klartext": "Der Stiftungsrat der Stiftung van Schoor hat bereits im Dezember 2023 eine neue Satzung beschlossen. Der Stadtrat hatte dieser Neufassung ebenfalls im Dezember 2023 zugestimmt. Amtlich bekanntgemacht wurde die Satzung im März 2024 im Amtsblatt der Stadt Ingolstadt. Der Stadtrat soll nun formal die Änderung der Satzung beschließen und ihre öffentliche Bekanntmachung anordnen.",
+      "klartext_titel_leicht": "Eine Stiftung bekommt neue Regeln",
+      "klartext_leicht": "Die Stiftung van Schoor gehört zur Stadt Ingolstadt. Sie hat eine Satzung. Das ist eine Regel für die Stiftung. Der Stiftungsrat hat die Regel schon 2023 geändert. Der Stadt-Rat hat auch schon zugestimmt. Jetzt soll der Stadt-Rat die Änderung noch einmal offiziell beschließen. Die Regel wird dann öffentlich bekanntgemacht.",
+      "lebenslage": [
+        "Geld & Soziales"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "26.02.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235732&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Satzung zur Änderung der Satzung der Stiftung van Schoor",
+      "top_nr": "Ö 7",
+      "vorlage": "V0064/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19808",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2025",
+      "datum": "2025-02-26",
+      "datum_anzeige": "26.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230686&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231972&type=do"
+        },
+        {
+          "titel": "2025-01-27 Satzung zur Änderung der Satzung der Stiftung van Schoor",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230688&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "7",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817&toselect=77953"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11817#Ö 9",
+      "thema": "stadt:vorlage:19813",
+      "auftritte": [
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 9",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817"
+        }
+      ],
+      "klartext_titel": "Städtische Unternehmen müssen Satzungen an neue Gemeindeordnung anpassen",
+      "klartext": "Der Freistaat Bayern hat am 17. Dezember 2024 die Gemeindeordnung geändert. Dadurch gelten für Jahresabschluss, Lagebericht und Prüfungspflicht der städtischen Kommunalunternehmen und Eigenbetriebe neue gesetzliche Vorgaben. Der Stadtrat soll die Verwaltung beauftragen, die Satzungen dieser Unternehmen entsprechend anzupassen. Ein Nachhaltigkeitsbericht im Lagebericht ist dabei grundsätzlich nicht vorgeschrieben, außer der jeweilige Verwaltungsrat verlangt ihn ausdrücklich.",
+      "klartext_titel_leicht": "Städtische Firmen bekommen neue Regeln fürs Geld",
+      "klartext_leicht": "Der Freistaat Bayern hat ein Gesetz geändert. Das Gesetz heißt Gemeinde-Ordnung. Es regelt, wie Städte und ihre Firmen Geld-Berichte schreiben müssen. Ingolstadt hat mehrere solcher Firmen. Ihre Satzungen müssen jetzt angepasst werden. Der Stadt-Rat soll die Verwaltung damit beauftragen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "26.02.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235732&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Umsetzung der Änderungen der Gemeindeordnung zur Aufstellung von — Jahresabschluss und Lagebericht sowie der Prüfungspflicht",
+      "top_nr": "Ö 9",
+      "vorlage": "V0069/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19813",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2025",
+      "datum": "2025-02-26",
+      "datum_anzeige": "26.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231522&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231976&type=do"
+        },
+        {
+          "titel": "Anlage 1 Änderung Gemeindeordnung 17.12.2024",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231524&type=do"
+        },
+        {
+          "titel": "Anlage 2 Größenabhängige Erleichterungen zu Aufstellung und Prüfung Jahresabschluss und Lagebericht",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231523&type=do"
+        },
+        {
+          "titel": "Anlage 3 zur künftigen Prüfung kleiner Kap.Ges und Nachhaltigkeitsberichterstattung",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231525&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "9",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817&toselect=78220"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11817#Ö 10",
+      "thema": "stadt:vorlage:19788",
+      "auftritte": [
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 10",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817"
+        }
+      ],
+      "klartext_titel": "INVG macht 20,1 Millionen Euro Verlust im Geschäftsjahr 2023/24",
+      "klartext": "Die Ingolstädter Verkehrsgesellschaft mbH (INVG) hat für das Geschäftsjahr Oktober 2023 bis September 2024 einen Jahresverlust von 20.137.789,53 Euro erwirtschaftet. Der Verlust wird vollständig von der Stadtwerke Ingolstadt Beteiligungen GmbH ausgeglichen. Die Wirtschaftsprüfungsgesellschaft PKF Fasselt hat den Jahresabschluss ohne Einschränkung testiert. Der Stadtrat soll den Vorstand der Ingolstädter Kommunalbetriebe beauftragen, in der Gesellschafterversammlung der INVG die Feststellung des Jahresabschlusses sowie die Entlastung von Geschäftsführung und Aufsichtsrat zu beschließen.",
+      "klartext_titel_leicht": "Der Nahverkehr macht 20 Millionen Euro Verlust",
+      "klartext_leicht": "Die INVG kümmert sich um Busse und Bahnen in Ingolstadt. Im Geschäftsjahr 2023/24 hat die INVG viel Geld verloren. Es sind 20.137.789,53 Euro. Ein anderes Stadt-Unternehmen gleicht den Verlust aus. Ein Prüfer hat die Zahlen kontrolliert. Alles war korrekt. Der Stadt-Rat soll den Jahresabschluss jetzt offiziell feststellen.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "26.02.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235732&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Jahresabschluss und Lagebericht 2023/2024 der Ingolstädter Verkehrsgesellschaft mbH",
+      "top_nr": "Ö 10",
+      "vorlage": "V0044/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19788",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2025",
+      "datum": "2025-02-26",
+      "datum_anzeige": "26.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231177&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231980&type=do"
+        },
+        {
+          "titel": "Anlage 1 Jahresabschluss 2023-24 Ingolstädter Verkehrsgesellschaft mbH",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231178&type=do"
+        },
+        {
+          "titel": "Anlage 2 Jahresabschluss 2023-24 Stadtbus Ingolstadt GmbH",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231179&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "10",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817&toselect=78216"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11817#Ö 11",
+      "thema": "stadt:vorlage:19740",
+      "auftritte": [
+        {
+          "datum": "2025-02-05",
+          "datum_anzeige": "05.02.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 13",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11814"
+        },
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 11",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817"
+        }
+      ],
+      "klartext_titel": "Stadtverwaltung soll künftig nachhaltiger einkaufen",
+      "klartext": "Der Stadtrat soll eine Strategie für nachhaltige Beschaffung in der Stadtverwaltung Ingolstadt als Leitbild befürworten. Die Verwaltung soll darauf aufbauend eine Richtlinie für nachhaltige Beschaffung erarbeiten und die städtische Vergabeordnung entsprechend ändern. Städtische Beteiligungsunternehmen sollen das Leitbild sinngemäß ebenfalls beachten. Für die Unterstützung durch eine Agentur sind 2025 insgesamt 1.850 Euro vorgesehen.",
+      "klartext_titel_leicht": "Die Stadt will umweltfreundlicher einkaufen",
+      "klartext_leicht": "Die Stadt Ingolstadt kauft viele Dinge ein. Sie will das künftig umweltfreundlicher machen. Das nennt man nachhaltige Beschaffung. Der Stadt-Rat soll dafür einen Plan billigen. Die Verwaltung soll danach genaue Regeln erarbeiten. Auch Firmen der Stadt sollen sich daran halten. Dafür gibt die Stadt 2025 insgesamt 1.850 Euro aus.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Klima & Umwelt",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "26.02.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235732&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Nachhaltige Beschaffung in der Verwaltung",
+      "top_nr": "Ö 11",
+      "vorlage": "V0967/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19740",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2025",
+      "datum": "2025-02-26",
+      "datum_anzeige": "26.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=229434&type=do"
+        },
+        {
+          "titel": "Beschluss StR 26.02.2025",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233503&type=do"
+        },
+        {
+          "titel": "Vorberatung PLA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233557&type=do"
+        },
+        {
+          "titel": "Anlage A Strategie-nachhaltige-Beschaffung FINAL",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=229427&type=do"
+        },
+        {
+          "titel": "Anlage B Kernelemente der Richtlinien",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=229428&type=do"
+        },
+        {
+          "titel": "Anlage C Strategiereview",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=229429&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-02-05",
+          "datum_anzeige": "05.02.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "13",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11814&toselect=77545"
+        },
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "11",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817&toselect=77957"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11817#Ö 13",
+      "thema": "stadt:vorlage:19838",
+      "auftritte": [
+        {
+          "datum": "2025-02-13",
+          "datum_anzeige": "13.02.2025",
+          "gremium": "Ausschuss für Verwaltung, Personal und Recht",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11816"
+        },
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 13",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817"
+        }
+      ],
+      "klartext_titel": "E-Autos parken ab April 2025 die ersten drei Stunden gebührenfrei",
+      "klartext": "Der Freistaat Bayern hat Ende Dezember 2024 eine neue Verordnung erlassen, die bayernweit für Elektrofahrzeuge gilt. Fahrzeuge mit E-Kennzeichen nach dem Elektromobilitätsgesetz dürfen ab dem 1. April 2025 die ersten drei Stunden einer Parkzeit mit Parkscheibe gebührenfrei parken. Der Stadtrat soll die Parkgebührenordnung von Ingolstadt entsprechend an diese landesweite Vorgabe anpassen. Die Änderung setzt damit geltendes Landesrecht in der städtischen Satzung um.",
+      "klartext_titel_leicht": "E-Autos dürfen bald kostenlos parken",
+      "klartext_leicht": "E-Autos fahren mit Strom, nicht mit Benzin. Ab dem 1. April 2025 dürfen E-Autos in Bayern kostenlos parken. Das gilt für die ersten drei Stunden. Die Autos brauchen dafür ein E-Kennzeichen und eine Parkscheibe. Das hat der Freistaat Bayern so entschieden. Der Stadt-Rat soll die Ingolstädter Park-Regeln jetzt anpassen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Verkehrsplanung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "26.02.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235732&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Änderung der Verordnung über die Parkgebühren in Ingolstadt (Parkgebührenordnung); — Parkgebührenbefreiung für Elektrofahrzeuge (Verordnung zur Änderung der Zuständigkeitsverordnung (ZustV) ab 01.04.2025",
+      "top_nr": "Ö 13",
+      "vorlage": "V0093/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19838",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2025",
+      "datum": "2025-02-26",
+      "datum_anzeige": "26.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231114&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231984&type=do"
+        },
+        {
+          "titel": "Anlage zu V0093-25 Änderung der Parkgebührenordnung",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231115&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-02-13",
+          "datum_anzeige": "13.02.2025",
+          "gremium": "Ausschuss für Verwaltung, Personal und Recht",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11816&toselect=78312"
+        },
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "13",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817&toselect=78300"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11817#Ö 14",
+      "thema": "stadt:vorlage:19646",
+      "auftritte": [
+        {
+          "datum": "2025-02-12",
+          "datum_anzeige": "12.02.2025",
+          "gremium": "Kommission für Brand- und Katastrophenschutz sowie Rettungswesen",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11962"
+        },
+        {
+          "datum": "2025-02-13",
+          "datum_anzeige": "13.02.2025",
+          "gremium": "Ausschuss für Verwaltung, Personal und Recht",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11816"
+        },
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 14",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817"
+        }
+      ],
+      "klartext_titel": "Grundsatzbeschluss zur Weiterentwicklung der Feuerwehr Ingolstadt",
+      "klartext": "Eine Projektgruppe hat ein Sollkonzept für die künftige Feuerwehr Ingolstadt erarbeitet, das den Ist-Zustand der Leistungsfähigkeit erfasst. Der Stadtrat soll das Gesamtkonzept zur Steigerung des Erreichungsgrades gemäß Variante B beschließen, einschließlich eines Standortkonzepts und einer Investitionsempfehlung für Einsatzmitteltechnik. Grundlage ist ein gemeinsamer Antrag von 2023, den der Stadtrat damals beschlossen hatte. Die Verwaltung soll anschließend beauftragt werden, die einzelnen investiven Maßnahmen des Konzepts umzusetzen.",
+      "klartext_titel_leicht": "Die Feuerwehr Ingolstadt soll besser werden",
+      "klartext_leicht": "Die Feuerwehr Ingolstadt soll künftig schneller und besser helfen können. Eine Arbeits-Gruppe hat dafür einen Plan gemacht. Der Plan zeigt, was die Feuerwehr jetzt schon kann. Er zeigt auch, was sich ändern soll. Dazu gehören neue Standorte und neue Technik. Der Stadt-Rat soll diesen Plan jetzt beschließen. Danach soll die Verwaltung die einzelnen Schritte umsetzen.",
+      "lebenslage": [
+        "Ehrenamt & Vereine"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Sicherheit",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "26.02.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235732&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Feuerwehrbedarfsplan der Stadt Ingolstadt — hier: Grundsatzbeschluss zur notwendigen Weiterentwicklung der Feuerwehr Ingolstadt",
+      "top_nr": "Ö 14",
+      "vorlage": "V0877/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19646",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2025",
+      "datum": "2025-02-26",
+      "datum_anzeige": "26.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=226229&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233877&type=do"
+        },
+        {
+          "titel": "Anlage 1 - Leistungsfähigkeit der Feuerwehr Ingolstadt",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230174&type=do"
+        },
+        {
+          "titel": "Anlage 2 - Sollkonzept",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230175&type=do"
+        },
+        {
+          "titel": "Anlage 3 - Ergebnisbericht",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230176&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-02-12",
+          "datum_anzeige": "12.02.2025",
+          "gremium": "Kommission für Brand- und Katastrophenschutz sowie Rettungswesen",
+          "top_nr": "1",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11962&toselect=77615"
+        },
+        {
+          "datum": "2025-02-13",
+          "datum_anzeige": "13.02.2025",
+          "gremium": "Ausschuss für Verwaltung, Personal und Recht",
+          "top_nr": "1",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11816&toselect=77844"
+        },
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "14",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817&toselect=77958"
+        }
+      ]
     },
     {
       "ref": "bza:13159#Ö 3.1",
