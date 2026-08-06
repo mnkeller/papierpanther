@@ -77,9 +77,10 @@ Dateicache.
 
 ## Lizenz und Herkunft
 
-Code MIT, Inhalte CC-BY-4.0 — siehe [LICENSE](LICENSE).
+Code MIT (siehe [LICENSE](LICENSE)), geschriebene Inhalte dieses Repositories
+CC-BY-4.0.
 
 PapierPanther baut auf dem **MeinBezirk-Toolkit von Igor Schwarzmann /
 Known Unknowns GmbH** auf (CC-BY-4.0), aus dem die Methodik und Teile der
 Oberfläche stammen. Scraper, Datenaufbereitung und die Ingolstädter Anpassung
-sind in diesem Repository entstanden.
+sind in diesem Repository entstanden. Details zur Herkunft: [NOTICE](NOTICE).
