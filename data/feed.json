@@ -27,18 +27,18 @@
     "sitzungen_ausgelesen": 360,
     "tops_ausgelesen": 3415,
     "tops_verfahren": 493,
-    "tops_kuratiert": 1297,
-    "entwuerfe": 844,
-    "leichte_sprache": 434,
+    "tops_kuratiert": 1325,
+    "entwuerfe": 845,
+    "leichte_sprache": 461,
     "je_quelle": {
-      "stadt": 454,
+      "stadt": 482,
       "bza": 843
     },
     "stand": {
-      "Bekanntgabe": 66,
+      "Bekanntgabe": 90,
       "Entscheidung angesetzt": 376,
       "Ohne Vorlage": 851,
-      "Wird noch beraten": 4
+      "Wird noch beraten": 8
     }
   },
   "achsen": {
@@ -39016,6 +39016,94 @@
       ]
     },
     {
+      "ref": "stadt:11844#Ö 32",
+      "thema": "stadt:vorlage:20099",
+      "auftritte": [
+        {
+          "datum": "2025-07-01",
+          "datum_anzeige": "01.07.2025",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11839"
+        },
+        {
+          "datum": "2025-07-29",
+          "datum_anzeige": "29.07.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 32",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11844"
+        }
+      ],
+      "klartext_titel": "Ingolstadt hat 2024 niedrigste Arbeitslosenquote aller deutschen Großstädte",
+      "klartext": "Ingolstadt war Ende 2024 mit 4,0 Prozent weiterhin die deutsche Großstadt mit der niedrigsten Arbeitslosenquote. Die Zahl der Arbeitsuchenden im Rechtskreis SGB II sank gegenüber dem Vorjahr leicht um 7 Personen beziehungsweise 0,2 Prozent, während die Zahl der Arbeitslosen um 172 Personen beziehungsweise 11,8 Prozent stieg. Mit einer durchschnittlichen SGB-II-Hilfequote von 6,0 Prozent hat Ingolstadt den siebtniedrigsten Wert aller deutschen Großstädte. Die Verwaltung gibt den Jahres- und Eingliederungsbericht 2024 des Jobcenters bekannt.",
+      "klartext_titel_leicht": "Ingolstadt hat sehr wenig Arbeitslosigkeit",
+      "klartext_leicht": "Das Jobcenter hilft Menschen, Arbeit zu finden. Es hat einen Bericht für 2024 geschrieben. Ingolstadt hat die wenigste Arbeitslosigkeit aller großen deutschen Städte: 4,0 Prozent. Trotzdem ist die Zahl der Arbeitslosen etwas gestiegen.",
+      "lebenslage": [
+        "Arbeit & Beruf",
+        "Geld & Soziales"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "29.07.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=244888&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Jobcenter - Jahres- und Eingliederungsbericht 2024",
+      "top_nr": "Ö 32",
+      "vorlage": "V0332/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20099",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2025",
+      "datum": "2025-07-29",
+      "datum_anzeige": "29.07.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11844",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235982&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=239554&type=do"
+        },
+        {
+          "titel": "Vorberatung SGA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237599&type=do"
+        },
+        {
+          "titel": "Jahres- und Eingliederungsbericht 2024",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236080&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-07-01",
+          "datum_anzeige": "01.07.2025",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11839&toselect=82039"
+        },
+        {
+          "datum": "2025-07-29",
+          "datum_anzeige": "29.07.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "32",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11844&toselect=82914"
+        }
+      ]
+    },
+    {
       "ref": "stadt:11843#Ö 2",
       "thema": "stadt:vorlage:20230",
       "auftritte": [
@@ -39378,6 +39466,71 @@
           "oeffentlich": true,
           "rolle": "Entscheidung",
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11843&toselect=83194"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11843#Ö 4",
+      "thema": "stadt:vorlage:20234",
+      "auftritte": [
+        {
+          "datum": "2025-07-24",
+          "datum_anzeige": "24.07.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11843"
+        }
+      ],
+      "klartext_titel": "Budgetbericht 2024: Zuschussbedarf lag 14,27 Millionen Euro unter Plan",
+      "klartext": "Der Zuschussbedarf aller Referatsbudgets lag 2024 bei 235,22 Millionen Euro und damit um 14,27 Millionen Euro beziehungsweise 5,72 Prozent unter den Planwerten. Die Verwaltung gibt den Budgetbericht der Referate für das Haushaltsjahr 2024 in komprimierter Form bekannt. Personalkosten werden dabei gesondert vom Referat I berichtet.",
+      "klartext_titel_leicht": "Die Stadt hat 2024 weniger ausgegeben als geplant",
+      "klartext_leicht": "Die Stadt Ingolstadt hat für 2024 nachgerechnet. Sie hat weniger Geld gebraucht als geplant. Es waren 14,27 Millionen Euro weniger. Die Verwaltung berichtet darüber.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "24.07.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Budgetbericht der Referate für das Haushaltsjahr 2024",
+      "top_nr": "Ö 4",
+      "vorlage": "V0466/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20234",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FWA/04/2025",
+      "datum": "2025-07-24",
+      "datum_anzeige": "24.07.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11843",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237591&type=do"
+        },
+        {
+          "titel": "Bekanntgabe FWA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=239369&type=do"
+        },
+        {
+          "titel": "Budgetbericht 2024",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237592&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-07-24",
+          "datum_anzeige": "24.07.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11843&toselect=82496"
         }
       ]
     },
@@ -41829,6 +41982,67 @@
       "beratungsweg": []
     },
     {
+      "ref": "stadt:11839#Ö 1",
+      "thema": "stadt:vorlage:20116",
+      "auftritte": [
+        {
+          "datum": "2025-07-01",
+          "datum_anzeige": "01.07.2025",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11839"
+        }
+      ],
+      "klartext_titel": "Exzellenzstiftung Ignaz Kögler: Jahresabschluss 2024 ohne Beanstandung",
+      "klartext": "Die Exzellenzstiftung Ingolstädter Wissenschaft - Ignaz Kögler legt ihren geprüften Jahresabschluss und Bericht über die Erfüllung des Stiftungszwecks für 2024 vor. Der Wirtschaftsprüfer hat einen uneingeschränkten Prüfvermerk erteilt und bestätigt, dass das Grundstockvermögen der Stiftung zum Jahresende erhalten geblieben ist. Der Ausschuss nimmt den Jahresabschluss zur Kenntnis.",
+      "klartext_titel_leicht": "Eine Wissenschafts-Stiftung zeigt ihre Zahlen",
+      "klartext_leicht": "Die Exzellenzstiftung Ignaz Kögler unterstützt Wissenschaft in Ingolstadt. Ein Prüfer hat ihre Zahlen für 2024 kontrolliert. Alles war in Ordnung. Das Vermögen der Stiftung ist erhalten geblieben.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "01.07.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237803&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Jahresabschluss und Bericht über die Erfüllung des Stiftungszwecks der Exzellenzstiftung — Ingolstädter Wissenschaft - Ignaz Kögler für das Jahr 2024",
+      "top_nr": "Ö 1",
+      "vorlage": "V0349/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20116",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+      "sitzung_kennung": "SGA/05/2025",
+      "datum": "2025-07-01",
+      "datum_anzeige": "01.07.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11839",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236238&type=do"
+        },
+        {
+          "titel": "Anlage zu V0349-25 JA-Bericht 2024 Exzellenzstiftung Ignaz Kögler Auszug",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236712&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-07-01",
+          "datum_anzeige": "01.07.2025",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "1",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11839&toselect=82057"
+        }
+      ]
+    },
+    {
       "ref": "bza:13351#Ö",
       "thema": "bza:13351#Ö",
       "auftritte": [
@@ -42180,6 +42394,191 @@
           "oeffentlich": true,
           "rolle": "Entscheidung",
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11837&toselect=81996"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11837#Ö 1",
+      "thema": "stadt:vorlage:20094",
+      "auftritte": [
+        {
+          "datum": "2025-06-24",
+          "datum_anzeige": "24.06.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11837"
+        }
+      ],
+      "klartext_titel": "Elternbefragung: Städtische Kitas werden gut bewertet",
+      "klartext": "Die jährliche Online-Elternbefragung in den städtischen Kindertageseinrichtungen für das Kita-Jahr 2024/25 wurde erstmals über die Kita-App 'IN-Kita' durchgeführt. Abgefragt wurden unter anderem Gesamtbeurteilung, Eingewöhnung, Räume, Verpflegung, Tagesablauf, Bildungspartnerschaft mit Eltern, Betreuungspersonal und Ferienbetreuung. Die städtischen Kindertageseinrichtungen werden einrichtungsübergreifend gut bewertet, teilt die Verwaltung dem Jugendhilfeausschuss mit.",
+      "klartext_titel_leicht": "Eltern sind mit den Kitas zufrieden",
+      "klartext_leicht": "Die Stadt Ingolstadt fragt Eltern jedes Jahr, wie zufrieden sie mit den Kitas sind. Das nennt man Eltern-Befragung. Die Ergebnisse für 2024/25 sind gut. Die Kitas werden insgesamt positiv bewertet.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kinderbetreuung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "24.06.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Auswertung der Elternbefragung für das Kita-Jahr 2024/25.",
+      "top_nr": "Ö 1",
+      "vorlage": "V0327/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20094",
+      "antragsteller": "",
+      "gremium": "Jugendhilfeausschuss",
+      "sitzung_kennung": "JHA/04/2025",
+      "datum": "2025-06-24",
+      "datum_anzeige": "24.06.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11837",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235885&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-06-24",
+          "datum_anzeige": "24.06.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "1",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11837&toselect=82000"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11837#Ö 7",
+      "thema": "stadt:vorlage:20114",
+      "auftritte": [
+        {
+          "datum": "2025-06-24",
+          "datum_anzeige": "24.06.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11837"
+        }
+      ],
+      "klartext_titel": "Neues Rahmenkonzept für offene Kinder- und Jugendarbeit",
+      "klartext": "Die Verwaltung gibt das überarbeitete Rahmenkonzept der Einrichtungen der offenen Kinder- und Jugendarbeit in Ingolstadt 2025 bekannt. Es dient der gesetzlich vorgeschriebenen Qualitätsentwicklung in der Jugendhilfe und legt Standards fest, an denen sich Träger und Fachkräfte in den Einrichtungen orientieren sollen.",
+      "klartext_titel_leicht": "Neue Standards für die Jugendarbeit",
+      "klartext_leicht": "In Ingolstadt gibt es offene Angebote für Kinder und Jugendliche, zum Beispiel Jugendzentren. Für sie gibt es jetzt ein neues Konzept. Es legt fest, wie gute Jugendarbeit aussehen soll.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kinderbetreuung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "24.06.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Rahmenkonzept der Einrichtungen der offenen Kinder- und Jugendarbeit in Ingolstadt 2025",
+      "top_nr": "Ö 7",
+      "vorlage": "V0347/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20114",
+      "antragsteller": "",
+      "gremium": "Jugendhilfeausschuss",
+      "sitzung_kennung": "JHA/04/2025",
+      "datum": "2025-06-24",
+      "datum_anzeige": "24.06.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11837",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236210&type=do"
+        },
+        {
+          "titel": "OKJA Ingolstadt Rahmenkonzept 2025",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236212&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-06-24",
+          "datum_anzeige": "24.06.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "7",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11837&toselect=82002"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11837#Ö 8",
+      "thema": "stadt:vorlage:20093",
+      "auftritte": [
+        {
+          "datum": "2025-06-24",
+          "datum_anzeige": "24.06.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "Ö 8",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11837"
+        }
+      ],
+      "klartext_titel": "Jahresbericht 2024: Amt für Kinderbetreuung zieht Bilanz",
+      "klartext": "Das Amt für Kinderbetreuung und -bildung legt dem Jugendhilfeausschuss seinen Jahresbericht für den Zeitraum 1. Januar bis 31. Dezember 2024 als Rechenschaftsbericht über die erbrachten Leistungen vor, wie es das Achte Sozialgesetzbuch vorsieht.",
+      "klartext_titel_leicht": "Das Kita-Amt zeigt seinen Jahresbericht 2024",
+      "klartext_leicht": "Das Amt für Kinderbetreuung kümmert sich um Kitas in Ingolstadt. Es schreibt jedes Jahr einen Bericht. Der Bericht für 2024 liegt jetzt vor.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kinderbetreuung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "24.06.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Jahresbericht des Amtes für Kinderbetreuung und -bildung für den Zeitraum 01.01.2024 bis 31.12.2024.",
+      "top_nr": "Ö 8",
+      "vorlage": "V0326/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20093",
+      "antragsteller": "",
+      "gremium": "Jugendhilfeausschuss",
+      "sitzung_kennung": "JHA/04/2025",
+      "datum": "2025-06-24",
+      "datum_anzeige": "24.06.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11837",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235880&type=do"
+        },
+        {
+          "titel": "Gesamtjahresbericht AfK 2024",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236645&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-06-24",
+          "datum_anzeige": "24.06.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "8",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11837&toselect=81999"
         }
       ]
     },
@@ -44195,6 +44594,361 @@
           "oeffentlich": true,
           "rolle": "Entscheidung",
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11833&toselect=80562"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11995#Ö 1",
+      "thema": "stadt:vorlage:19985",
+      "auftritte": [
+        {
+          "datum": "2025-05-14",
+          "datum_anzeige": "14.05.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995"
+        }
+      ],
+      "klartext_titel": "Marieluise-Fleißer-Haus: Ingolstadts jüngstes Museum stellt sich vor",
+      "klartext": "Das Marieluise-Fleißer-Haus in der Kupferstraße 18 ist das jüngste Museum der Stadt Ingolstadt und widmet sich Literatur, Geschichte und Kreativität. Die Ingolstädter Autorin Marieluise Fleißer wurde 1901 in dem Gebäude geboren, dessen Dachbalken bis ins Spätmittelalter auf das Jahr 1401 zurückgehen und das nachweislich 18-mal umgebaut wurde. Das Haus wird dem Migrationsrat zusammen mit dem neuen Referenten für Kultur und Bildung vorgestellt.",
+      "klartext_titel_leicht": "Ein neues Museum für eine Ingolstädter Schriftstellerin",
+      "klartext_leicht": "In Ingolstadt gibt es ein neues Museum. Es heißt Marieluise-Fleißer-Haus. Dort wurde die Schriftstellerin Marieluise Fleißer 1901 geboren. Das Gebäude ist sehr alt. Es wird dem Migrationsrat jetzt vorgestellt.",
+      "lebenslage": [],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [
+        "Kupferstraße 18"
+      ],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "14.05.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Vorstellung des Marie-Luise-Fleißer Hauses und Vorstellung des Referenten für Kultur und Bildung — Referenten: Herr Marc Grandmontagne, Frau Doris Wittmann",
+      "top_nr": "Ö 1",
+      "vorlage": "V0220/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19985",
+      "antragsteller": "",
+      "gremium": "Migrationsrat",
+      "sitzung_kennung": "MR/02/2025",
+      "datum": "2025-05-14",
+      "datum_anzeige": "14.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234442&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-05-14",
+          "datum_anzeige": "14.05.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "1",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995&toselect=80279"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11995#Ö 2",
+      "thema": "stadt:vorlage:19986",
+      "auftritte": [
+        {
+          "datum": "2025-05-14",
+          "datum_anzeige": "14.05.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995"
+        }
+      ],
+      "klartext_titel": "Projekt WoFA hilft Migrant:innen bei der Wohnungssuche in Ingolstadt",
+      "klartext": "Das Projekt WoFA (Wohnraum für Alle) wurde vor knapp sechs Jahren von der Evangelischen Landeskirche Bayern initiiert und wird hauptsächlich vom bayerischen Innenministerium gefördert, mit einem Förderzeitraum bis Ende 2026. Ingolstadt ist mit einer Vollzeitstelle bei der Ejsa Ingolstadt e.V. der jüngste von mittlerweile 13 Standorten in Bayern, gestartet im September 2024. Besonderheit in Ingolstadt ist eine zusätzliche Förderung durch das städtische Sozialamt. Das Projekt unterstützt Menschen mit Migrationshintergrund unter anderem durch Einzelberatungen sowie Mietkurse und Mietcafés bei der Wohnungssuche.",
+      "klartext_titel_leicht": "Ein Projekt hilft Migrant:innen bei der Wohnungssuche",
+      "klartext_leicht": "Manche Menschen mit Migrations-Geschichte haben Probleme, eine Wohnung zu finden. Ein Projekt hilft ihnen dabei. Es heißt WoFA. Seit September 2024 gibt es das Projekt auch in Ingolstadt. Es bietet zum Beispiel Beratung und Miet-Kurse an.",
+      "lebenslage": [
+        "Wohnen & Miete",
+        "Zuwanderung & Integration"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "14.05.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht zum Projekt WoFA (Wohnraum für Alle) — Referent: Herr Johannes Schweizer",
+      "top_nr": "Ö 2",
+      "vorlage": "V0221/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19986",
+      "antragsteller": "",
+      "gremium": "Migrationsrat",
+      "sitzung_kennung": "MR/02/2025",
+      "datum": "2025-05-14",
+      "datum_anzeige": "14.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234443&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-05-14",
+          "datum_anzeige": "14.05.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "2",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995&toselect=80280"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11995#Ö 3",
+      "thema": "stadt:vorlage:19992",
+      "auftritte": [
+        {
+          "datum": "2025-05-14",
+          "datum_anzeige": "14.05.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995"
+        }
+      ],
+      "klartext_titel": "60 Jugendliche erarbeiten Tanztheaterstück beim Jugendkultursommer",
+      "klartext": "Beim Jugendkultursommer 2025, seit 2024 unter Trägerschaft des Stadtjugendrings, erarbeiten rund 60 junge Menschen aus Ingolstadt von März bis Juli gemeinsam ein Tanztheaterstück. Sie setzen sich dabei intensiv mit Tanz, Theater und Musik auseinander und bringen Elemente ihres Alltags in das inklusive, kulturpädagogische Bewegungstheater ein. Wichtiger als die Aufführung selbst sei laut Verwaltung der pädagogische Weg dorthin.",
+      "klartext_titel_leicht": "Jugendliche machen zusammen ein Tanz-Stück",
+      "klartext_leicht": "Im Jugendkultursommer machen junge Menschen aus Ingolstadt zusammen Theater. Etwa 60 Jugendliche tanzen und spielen Theater. Sie üben von März bis Juli. Am Ende zeigen sie ihr Stück auf einer Bühne.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "14.05.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht über das Tanztheater des Jugendkultursommers 2025 — Referent: Herr Alexander Angermann",
+      "top_nr": "Ö 3",
+      "vorlage": "V0227/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19992",
+      "antragsteller": "",
+      "gremium": "Migrationsrat",
+      "sitzung_kennung": "MR/02/2025",
+      "datum": "2025-05-14",
+      "datum_anzeige": "14.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234503&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-05-14",
+          "datum_anzeige": "14.05.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995&toselect=80299"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11995#Ö 4",
+      "thema": "stadt:vorlage:19994",
+      "auftritte": [
+        {
+          "datum": "2025-05-14",
+          "datum_anzeige": "14.05.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995"
+        }
+      ],
+      "klartext_titel": "35,6 Prozent der Menschen in Deutschland erlebten schon Diskriminierung",
+      "klartext": "Laut einer Studie der Antidiskriminierungsstelle des Bundes aus dem Jahr 2017 haben 35,6 Prozent der in Deutschland lebenden Bevölkerung mindestens einmal innerhalb von zwei Jahren Diskriminierung erlebt, etwa aufgrund von Herkunft, Sprache, Hautfarbe, Geschlecht oder sexueller Identität. Die Antidiskriminierungsstelle der Stadt Ingolstadt legt dem Migrationsrat ihren Zwischenbericht mit der Datenlage für 2024 vor, da Diskriminierung besonders im direkten Lebensumfeld stattfindet und der kommunalen Ebene dabei eine wichtige Rolle zukommt.",
+      "klartext_titel_leicht": "Viele Menschen erleben Diskriminierung",
+      "klartext_leicht": "Diskriminierung heißt: Jemand wird ungerecht behandelt. Zum Beispiel wegen der Herkunft oder der Sprache. Viele Menschen in Deutschland haben das schon erlebt. Ingolstadt hat eine eigene Stelle dagegen. Sie berichtet jetzt über das Jahr 2024.",
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "14.05.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Zwischenbericht der Antidiskriminierungsstelle der Stadt Ingolstadt (Datenlage 2024) — Referentin: Frau Barbara Deimel",
+      "top_nr": "Ö 4",
+      "vorlage": "V0229/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19994",
+      "antragsteller": "",
+      "gremium": "Migrationsrat",
+      "sitzung_kennung": "MR/02/2025",
+      "datum": "2025-05-14",
+      "datum_anzeige": "14.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234510&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-05-14",
+          "datum_anzeige": "14.05.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995&toselect=80300"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11995#Ö 5",
+      "thema": "stadt:vorlage:19995",
+      "auftritte": [
+        {
+          "datum": "2025-05-14",
+          "datum_anzeige": "14.05.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995"
+        }
+      ],
+      "klartext_titel": "15.000 Muslime leben in Ingolstadt — Religionsdialog seit 25 Jahren aktiv",
+      "klartext": "In Ingolstadt leben über 140.000 Menschen aus mehr als 140 Nationen und verschiedenen Glaubensgemeinschaften, darunter rund 15.000 Muslime als zweitgrößte religiöse Gruppe. Seit rund 25 Jahren gibt es den Christlich-Islamischen Dialog, den Vertreter:innen christlicher und muslimischer Gemeinden gegründet haben, um den Austausch zwischen beiden Glaubensgemeinschaften zu fördern. Der Migrationsrat erhält einen Bericht zur fortlaufenden Veranstaltungsreihe Begegnung der Religionen.",
+      "klartext_titel_leicht": "Verschiedene Religionen treffen sich in Ingolstadt",
+      "klartext_leicht": "In Ingolstadt leben Menschen aus vielen Ländern und mit verschiedenen Religionen. Rund 15.000 Menschen sind Muslime. Seit 25 Jahren treffen sich Christ:innen und Muslim:innen zum Austausch. Der Migrationsrat bekommt einen Bericht darüber.",
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "14.05.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht zur Veranstaltungsreihe Begegnung der Religionen — Referentin: Frau Nesrin Bal",
+      "top_nr": "Ö 5",
+      "vorlage": "V0230/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19995",
+      "antragsteller": "",
+      "gremium": "Migrationsrat",
+      "sitzung_kennung": "MR/02/2025",
+      "datum": "2025-05-14",
+      "datum_anzeige": "14.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234515&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-05-14",
+          "datum_anzeige": "14.05.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995&toselect=80301"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11995#Ö 6",
+      "thema": "stadt:vorlage:19996",
+      "auftritte": [
+        {
+          "datum": "2025-05-14",
+          "datum_anzeige": "14.05.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995"
+        }
+      ],
+      "klartext_titel": "Migrationsrat besetzt zwei Sitze neu",
+      "klartext": "Nach dem Ausscheiden von Anna Benini und Georgios Saridis aus dem Migrationsrat wurden Nachbesetzungen nötig. Herr Zoremba rückte für Frau Benini als ordentliches Mitglied nach, während Ifeoma Ugwuoke im Februar 2025 als Nachrückerin für Herrn Saridis beschlossen wurde. Magdalena Fuchs übernimmt künftig die frei gewordene Stellvertretung für Markus Bregulla.",
+      "klartext_titel_leicht": "Der Migrationsrat bekommt neue Mitglieder",
+      "klartext_leicht": "Zwei Mitglieder haben den Migrationsrat verlassen. Deshalb kommen neue Personen nach. Herr Zoremba und Frau Ugwuoke sind jetzt dabei. Auch eine Stellvertretung wechselt.",
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "14.05.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Nachbesetzung von Ausschüssen und Gremien — Referentin: Frau Ingrid Gumplinger",
+      "top_nr": "Ö 6",
+      "vorlage": "V0231/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19996",
+      "antragsteller": "",
+      "gremium": "Migrationsrat",
+      "sitzung_kennung": "MR/02/2025",
+      "datum": "2025-05-14",
+      "datum_anzeige": "14.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234528&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-05-14",
+          "datum_anzeige": "14.05.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "6",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995&toselect=80303"
         }
       ]
     },
@@ -49101,6 +49855,219 @@
       ]
     },
     {
+      "ref": "stadt:11825#Ö 6",
+      "thema": "stadt:vorlage:19674",
+      "auftritte": [
+        {
+          "datum": "2025-03-19",
+          "datum_anzeige": "19.03.2025",
+          "gremium": "Inklusionsrat",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11973"
+        },
+        {
+          "datum": "2025-03-20",
+          "datum_anzeige": "20.03.2025",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11820"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Inklusionsbeauftragte legt Tätigkeitsbericht 2022 bis 2024 vor",
+      "klartext": "Die Inklusionsbeauftragte der Stadt Ingolstadt legt ihren Tätigkeitsbericht für die Jahre 2022 bis 2024 sowie das Inklusionsmonitoring 2024 vor. Grundlage ist ein 2017 erstmals erstellter Aktionsplan Inklusion, der 2022 mit Beteiligungsprozessen evaluiert wurde. Beide Berichte werden dem Inklusionsrat, dem zuständigen Ausschuss und dem Stadtrat bekanntgegeben.",
+      "klartext_titel_leicht": "Bericht zur Inklusion in Ingolstadt",
+      "klartext_leicht": "Inklusion heißt: Alle Menschen können mitmachen, auch Menschen mit Behinderung. Die Inklusions-Beauftragte der Stadt schreibt Berichte darüber. Der neue Bericht zeigt die Jahre 2022 bis 2024.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "10.04.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Tätigkeitsbericht 2022-2024 der Inklusionsbeauftragten der Stadt Ingolstadt und Inklusionsmonitoring 2024",
+      "top_nr": "Ö 6",
+      "vorlage": "V0905/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19674",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=226601&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234564&type=do"
+        },
+        {
+          "titel": "Vorberatung SGA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234201&type=do"
+        },
+        {
+          "titel": "2025.02.11 Tätigkeitsbericht 2021 2023 komprimiert",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231565&type=do"
+        },
+        {
+          "titel": "Bericht Monitoring final",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231601&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-03-19",
+          "datum_anzeige": "19.03.2025",
+          "gremium": "Inklusionsrat",
+          "top_nr": "2",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11973&toselect=78451"
+        },
+        {
+          "datum": "2025-03-20",
+          "datum_anzeige": "20.03.2025",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "1",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11820&toselect=79497"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "6",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825&toselect=79872"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11825#Ö 18",
+      "thema": "stadt:vorlage:19892",
+      "auftritte": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11818"
+        },
+        {
+          "datum": "2025-04-08",
+          "datum_anzeige": "08.04.2025",
+          "gremium": "Ausschuss für Verwaltung, Personal und Recht",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11824"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 18",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Arbeitsmarktzulage für Kita-Personal läuft aus — Personalmangel deutlich gesunken",
+      "klartext": "Die Stadt hatte im September 2022 eine befristete Arbeitsmarktzulage für pädagogisches Fach- und Ergänzungspersonal in Kindertageseinrichtungen eingeführt, um dem Fachkräftemangel entgegenzuwirken. Seither ist die Zahl der fehlenden Fach- und Ergänzungskräfte in Ingolstadt von insgesamt 91 im Jahr 2022 auf 50 im September 2024 gesunken. Der Stadtrat beschließt, die zum 31. August 2025 auslaufende Zulage nicht zu verlängern.",
+      "klartext_titel_leicht": "Kita-Personal bekommt bald keine Extra-Zulage mehr",
+      "klartext_leicht": "Kita-Personal hat seit 2022 eine Extra-Zulage bekommen. Das sollte helfen, mehr Fachkräfte zu finden. Es hat funktioniert: Es fehlen jetzt viel weniger Fachkräfte. Deshalb läuft die Zulage im August 2025 aus. Sie wird nicht verlängert.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kinderbetreuung",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "10.04.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Arbeitsmarktzulage für pädagogisches Personal in Kindertageseinrichtungen",
+      "top_nr": "Ö 18",
+      "vorlage": "V0142/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19892",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233233&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236984&type=do"
+        },
+        {
+          "titel": "Vorberatung VPA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236457&type=do"
+        },
+        {
+          "titel": "Anlage 1 Übersicht Maßnahmen",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233234&type=do"
+        },
+        {
+          "titel": "Anlage 2 Fehlendes Personal",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233237&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "2",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11818&toselect=79614"
+        },
+        {
+          "datum": "2025-04-08",
+          "datum_anzeige": "08.04.2025",
+          "gremium": "Ausschuss für Verwaltung, Personal und Recht",
+          "top_nr": "2",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11824&toselect=79767"
+        },
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "18",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825&toselect=79881"
+        }
+      ]
+    },
+    {
       "ref": "bza:13149#Ö 3",
       "thema": "bza:13149#Ö 3",
       "auftritte": [
@@ -49817,6 +50784,304 @@
           "oeffentlich": true,
           "rolle": "Entscheidung",
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823&toselect=79748"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11818#Ö 4",
+      "thema": "stadt:vorlage:19640",
+      "auftritte": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11818"
+        }
+      ],
+      "klartext_titel": "Haushalt 2025: Amt für Kinderbetreuung bereitet Ganztags-Rechtsanspruch vor",
+      "klartext": "Das Amt für Kinderbetreuung und -bildung ist als örtlicher Träger der Jugendhilfe für die Kindertagesbetreuung in Ingolstadt zuständig, mit bereits bestehendem Rechtsanspruch auf einen Kita-Platz bis zur Einschulung. Ab dem Schuljahr 2026/2027 kommt stufenweise der Rechtsanspruch auf ganztägige Betreuung für Grundschulkinder hinzu. Der Jugendhilfeausschuss soll dem Haushaltsentwurf des Amtes für 2025 zustimmen, der 45 eigene Einrichtungen umfasst.",
+      "klartext_titel_leicht": "Der Haushalt fürs Kita-Amt 2025",
+      "klartext_leicht": "Das Amt für Kinderbetreuung betreibt 45 Kitas in Ingolstadt. Es braucht dafür Geld. Der Plan für 2025 liegt vor. Bald kommt eine neue Aufgabe dazu: Ganztags-Betreuung für Grundschul-Kinder.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kinderbetreuung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Wird noch beraten",
+      "stand_datum": "03.04.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Haushalt 2025 des Amtes für Kinderbetreuung und -bildung",
+      "top_nr": "Ö 4",
+      "vorlage": "V0871/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19640",
+      "antragsteller": "",
+      "gremium": "Jugendhilfeausschuss",
+      "sitzung_kennung": "JHA/02/2025",
+      "datum": "2025-04-03",
+      "datum_anzeige": "03.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11818",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=225984&type=do"
+        },
+        {
+          "titel": "Anlage 1 final",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231764&type=do"
+        },
+        {
+          "titel": "Anlage 2 (gravierende Änderungen) final",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231818&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11818&toselect=79616"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11818#Ö 5",
+      "thema": "stadt:vorlage:19590",
+      "auftritte": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11818"
+        }
+      ],
+      "klartext_titel": "Haushalt 2025 des Amtes für Jugend und Familie vorgelegt",
+      "klartext": "Der Jugendhilfeausschuss soll den Haushaltsentwurf des Amtes für Jugend und Familie für 2025 zur Kenntnis nehmen und befürworten. Das Amt kümmert sich um gesetzliche Aufgaben der Kinder- und Jugendhilfe wie Beratung, Unterstützung und Schutz von Familien in Ingolstadt.",
+      "klartext_titel_leicht": "Der Haushalt fürs Jugendamt 2025",
+      "klartext_leicht": "Das Amt für Jugend und Familie kümmert sich um Kinder und Familien. Dafür braucht es Geld. Der Plan für 2025 liegt jetzt vor. Ein Ausschuss soll ihn befürworten.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Wird noch beraten",
+      "stand_datum": "03.04.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Haushalt 2025 des Amtes für Jugend und Familie",
+      "top_nr": "Ö 5",
+      "vorlage": "V0821/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19590",
+      "antragsteller": "",
+      "gremium": "Jugendhilfeausschuss",
+      "sitzung_kennung": "JHA/02/2025",
+      "datum": "2025-04-03",
+      "datum_anzeige": "03.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11818",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=225451&type=do"
+        },
+        {
+          "titel": "2025-02-07 Haushalt 2025 Tabellen",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231197&type=do"
+        },
+        {
+          "titel": "2025-02-07 Haushalt 2025 Übersicht JHA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231198&type=do"
+        },
+        {
+          "titel": "2025-02-07 JHA AfJF gravierende Änderungen 2023-2024-2025",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231199&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11818&toselect=79615"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11818#Ö 8",
+      "thema": "stadt:vorlage:19833",
+      "auftritte": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "Ö 8",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11818"
+        }
+      ],
+      "klartext_titel": "Neues Rahmenkonzept für Jugendsozialarbeit an Schulen",
+      "klartext": "Die Verwaltung gibt das überarbeitete Rahmenkonzept für die Jugendsozialarbeit an Schulen in Ingolstadt bekannt. Es dient der gesetzlich vorgeschriebenen Qualitätsentwicklung in der Kinder- und Jugendhilfe und legt fest, wie Schulsozialarbeit an den Ingolstädter Schulen ausgestaltet werden soll.",
+      "klartext_titel_leicht": "Neue Standards für Sozialarbeit an Schulen",
+      "klartext_leicht": "An manchen Schulen gibt es Sozialarbeiter:innen. Sie helfen Schüler:innen bei Problemen. Für diese Arbeit gibt es jetzt ein neues Konzept. Es zeigt, wie gute Schulsozialarbeit aussehen soll.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "03.04.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Rahmenkonzept Jugendsozialarbeit an Schulen in Ingolstadt",
+      "top_nr": "Ö 8",
+      "vorlage": "V0089/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19833",
+      "antragsteller": "",
+      "gremium": "Jugendhilfeausschuss",
+      "sitzung_kennung": "JHA/02/2025",
+      "datum": "2025-04-03",
+      "datum_anzeige": "03.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11818",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231009&type=do"
+        },
+        {
+          "titel": "JaS Rahmenkonzept Stand 01 2025 ENDVERSION",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231010&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "8",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11818&toselect=79612"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11823#Ö 10",
+      "thema": "stadt:vorlage:19929",
+      "auftritte": [
+        {
+          "datum": "2025-03-25",
+          "datum_anzeige": "25.03.2025",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11821"
+        },
+        {
+          "datum": "2025-03-26",
+          "datum_anzeige": "26.03.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 11",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11822"
+        },
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 10",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823"
+        }
+      ],
+      "klartext_titel": "Stadtrat beauftragt Suche nach Ausweichort für den Festsaal",
+      "klartext": "Der Stadtrat erkennt die große Bedeutung des Festsaals als zentralen Veranstaltungsort Ingolstadts an. Während der Sanierung des Hämer-Baus des Stadttheaters soll deshalb eine Interimsstätte die gesellschaftliche und kulturelle Nutzung sicherstellen. Der Stadtrat beauftragt die Verwaltung, zeitnah eine abgestimmte, beschlussfähige Option vorzulegen.",
+      "klartext_titel_leicht": "Der Festsaal braucht einen Ausweich-Ort",
+      "klartext_leicht": "Der Festsaal im Stadttheater wird bald saniert. Solange kann er nicht genutzt werden. Der Stadt-Rat findet den Festsaal aber sehr wichtig für Veranstaltungen. Die Verwaltung soll deshalb schnell einen anderen Ort finden.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung",
+        "Baustelle"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Wird noch beraten",
+      "stand_datum": "03.04.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Interimsstätte für den Festsaal für die Dauer der Sanierung des Hämer-Baus",
+      "top_nr": "Ö 10",
+      "vorlage": "V0174/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19929",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FWA/02/2025",
+      "datum": "2025-04-03",
+      "datum_anzeige": "03.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233762&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237685&type=do"
+        },
+        {
+          "titel": "Vorberatung FWA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235747&type=do"
+        },
+        {
+          "titel": "Vorberatung KBA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236287&type=do"
+        },
+        {
+          "titel": "Vorberatung PLA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235165&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-03-26",
+          "datum_anzeige": "26.03.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "11",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11822&toselect=79838"
+        },
+        {
+          "datum": "2025-04-03",
+          "datum_anzeige": "03.04.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "10",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11823&toselect=79818"
         }
       ]
     },
@@ -51825,6 +53090,136 @@
       "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=13227",
       "dokumente": [],
       "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11821#Ö 5",
+      "thema": "stadt:vorlage:19866",
+      "auftritte": [
+        {
+          "datum": "2025-03-25",
+          "datum_anzeige": "25.03.2025",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11821"
+        }
+      ],
+      "klartext_titel": "Stadttheater Ingolstadt stellt Spielplan 2025/26 vor",
+      "klartext": "",
+      "klartext_titel_leicht": "Der Theater-Spielplan 2025/26 ist da",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "stand": "Bekanntgabe",
+      "stand_datum": "25.03.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=238119&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Stadttheater Ingolstadt Spielplan 2025/2026",
+      "top_nr": "Ö 5",
+      "vorlage": "V0116/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19866",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/02/2025",
+      "datum": "2025-03-25",
+      "datum_anzeige": "25.03.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11821",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231678&type=do"
+        },
+        {
+          "titel": "Beschluss KBA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236361&type=do"
+        },
+        {
+          "titel": "Stand 24.02.2025 Produktionen Spielplan 2025-2026 für Kulturausschuss",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231772&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-03-25",
+          "datum_anzeige": "25.03.2025",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11821&toselect=79519"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11821#Ö 6",
+      "thema": "stadt:vorlage:19840",
+      "auftritte": [
+        {
+          "datum": "2025-03-25",
+          "datum_anzeige": "25.03.2025",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11821"
+        }
+      ],
+      "klartext_titel": "Ingolstadt bewirbt sich 2025 erneut um den Europapreis",
+      "klartext": "Die Verwaltung gibt einen Bericht über die europäischen und städtepartnerschaftlichen Aktivitäten des Kulturreferats im Jahr 2024 bekannt. Auf dieser Grundlage hat sich Ingolstadt erneut um den Europapreis der Parlamentarischen Versammlung des Europarates beworben. Die Preisträger werden Ende April 2025 bekanntgegeben.",
+      "klartext_titel_leicht": "Ingolstadt bewirbt sich um einen Europa-Preis",
+      "klartext_leicht": "Ingolstadt hat viele Partner-Städte in Europa. Die Stadt hat sich für einen Europa-Preis beworben. Das ist eine besondere Auszeichnung. Wer gewinnt, wird Ende April 2025 bekanntgegeben.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "25.03.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=238119&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht über die europäischen und städtepartnerschaftlichen Aktivitäten des Referats für Kultur und Bildung, Amt für Internationale Beziehungen und Kulturverwaltung im Jahr 2024",
+      "top_nr": "Ö 6",
+      "vorlage": "V0095/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19840",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/02/2025",
+      "datum": "2025-03-25",
+      "datum_anzeige": "25.03.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11821",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231156&type=do"
+        },
+        {
+          "titel": "Beschluss",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233884&type=do"
+        },
+        {
+          "titel": "V0095 25 Anlage Bericht über europäische und städtepartnerschaftliche Aktivitäten in 2024",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231163&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-03-25",
+          "datum_anzeige": "25.03.2025",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "6",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11821&toselect=79520"
+        }
+      ]
     },
     {
       "ref": "stadt:11819#Ö 1",
@@ -54123,6 +55518,318 @@
       ]
     },
     {
+      "ref": "stadt:11817#Ö 8",
+      "thema": "stadt:vorlage:19809",
+      "auftritte": [
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 8",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817"
+        }
+      ],
+      "klartext_titel": "Seniorenstift Heilig-Geist-Spital: Neues Betreuungskonzept mit Kita-Anbindung",
+      "klartext": "Der Stiftungsvorstand der Heilig-Geist-Spital-Stiftung berichtet dem Stadtrat mündlich über den Planungsstand für das Seniorenstift in der Fechtgasse. Gemeinsam mit einem Investor wurden inzwischen die Planungen sowie ein neues Pflege- und Betreuungskonzept entwickelt. Anders als bisher vorgesehen sollen künftig ambulant betreute Wohngemeinschaften, Service-Wohnen, Tagespflege, ein ambulanter Pflegedienst und eine integrierte Kindertageseinrichtung in der Liegenschaft angeboten werden.",
+      "klartext_titel_leicht": "Ein Senioren-Heim bekommt einen neuen Plan",
+      "klartext_leicht": "In der Fechtgasse soll ein Senioren-Heim entstehen. Es gehört zur Heilig-Geist-Spital-Stiftung. Der Plan dafür hat sich geändert. Es soll jetzt auch betreutes Wohnen und eine Kita geben. Der Stadt-Rat bekommt den neuen Plan vorgestellt.",
+      "lebenslage": [
+        "Senior:innen",
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [
+        "Fechtgasse"
+      ],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "26.02.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235732&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Seniorenstift Heilig-Geist-Spital; Vorstellung des Planungs- und Betreuungskonzeptes",
+      "top_nr": "Ö 8",
+      "vorlage": "V0065/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19809",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2025",
+      "datum": "2025-02-26",
+      "datum_anzeige": "26.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230698&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235105&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "8",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817&toselect=78219"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11817#Ö 21.1",
+      "thema": "stadt:vorlage:19845",
+      "auftritte": [
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 21.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817"
+        }
+      ],
+      "klartext_titel": "Oberbürgermeister ordnet dringende Dachsanierung an der Pestalozzistraße an",
+      "klartext": "Weil das Dach der Grund- und Mittelschule an der Pestalozzistraße statisch ertüchtigt werden musste, hat der Oberbürgermeister im Februar 2025 per dringlicher Anordnung einen ersten Teil der Sanierung sowie einer PV-Anlage genehmigt. Die Kosten dafür betragen 361.698,36 Euro, die im Haushalt 2025 nicht eingeplant waren. Ohne Gegenfinanzierung verschlechtert sich dadurch das Jahresergebnis 2025 zulasten des Folgejahres; im Jahresverlauf könnte ein Antrag auf überplanmäßige Ausgaben nötig werden.",
+      "klartext_titel_leicht": "Ein Schul-Dach musste sofort repariert werden",
+      "klartext_leicht": "Das Dach einer Schule in der Pestalozzi-Straße war nicht mehr sicher. Es musste schnell repariert werden. Der Ober-Bürgermeister hat das deshalb sofort erlaubt, ohne den Stadt-Rat vorher zu fragen. Das darf er bei Eile. Es kostet 361.698,36 Euro.",
+      "lebenslage": [
+        "Eltern & Kinder",
+        "Jugend"
+      ],
+      "bezirk": [],
+      "anlass": [
+        "Schulbau",
+        "Baustelle"
+      ],
+      "ort": [
+        "Pestalozzistraße 1"
+      ],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "26.02.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235732&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Pestalozzistraße 1, Grund- und Mittelschule an der Pestalozzistraße, Gebäude B (Altbau und Erweiterungsbau) und C (Alte Turnhalle) – Dachsanierung und Installation PV-Anlage — - Projektgenehmigung",
+      "top_nr": "Ö 21.1",
+      "vorlage": "V0100/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19845",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2025",
+      "datum": "2025-02-26",
+      "datum_anzeige": "26.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817",
+      "dokumente": [
+        {
+          "titel": "Dringliche Anordnung",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231285&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235626&type=do"
+        },
+        {
+          "titel": "2024-10-24 Anlage 1 - Luftbild (1)",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231321&type=do"
+        },
+        {
+          "titel": "Anlage 2 Luftbild Pestalozzistr.",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231786&type=do"
+        },
+        {
+          "titel": "Anlage 3 - IV-2024-0089213 Nr.364 GS,MS Pestalozzi B,Altbau,C,Turnhalle PB VDI6200 eingehende Prüfung 07.02.24 (1)",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231322&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "21.1",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817&toselect=78409"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11817#Ö 22",
+      "thema": "stadt:vorlage:19600",
+      "auftritte": [
+        {
+          "datum": "2025-02-05",
+          "datum_anzeige": "05.02.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 15",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11814"
+        },
+        {
+          "datum": "2025-02-06",
+          "datum_anzeige": "06.02.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11815"
+        },
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 22",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817"
+        }
+      ],
+      "klartext_titel": "Bericht zu laufenden Baumaßnahmen: Ausführungs- und Kostenstände Q3/Q4 2024",
+      "klartext": "Die Verwaltung gibt einen Bericht über die Ausführungs- und Kostenstände aller laufenden Baumaßnahmen des Referats VI mit Projektkosten über 500.000 Euro netto bekannt, für den Berichtszeitraum drittes und viertes Quartal 2024. Zusätzlich werden intern vom Referenten genehmigte Projektgenehmigungen zwischen 250.000 und 500.000 Euro netto bekanntgegeben.",
+      "klartext_titel_leicht": "Wie stehen die Bau-Projekte der Stadt Ende 2024?",
+      "klartext_leicht": "Die Stadt baut gerade viele Gebäude und Straßen. Ein Bericht zeigt, wie weit diese Bau-Projekte sind. Er zeigt auch, ob sie im Kosten-Rahmen bleiben. Das gilt für Projekte über 500.000 Euro.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Baustelle",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "26.02.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235732&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht über die Ausführungs- und Kostenstände der laufenden Baumaßnahmen und über die Abarbeitung von Mängelmeldungen (Berichtszeitraum Q3 und Q4 2024)",
+      "top_nr": "Ö 22",
+      "vorlage": "V0831/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19600",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2025",
+      "datum": "2025-02-26",
+      "datum_anzeige": "26.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=225782&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=232004&type=do"
+        },
+        {
+          "titel": "Vorberatung FWA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=232132&type=do"
+        },
+        {
+          "titel": "Vorberatung PLA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231159&type=do"
+        },
+        {
+          "titel": "V0831 24 Anlage BPC-Q3-Q4 2024-Bericht",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=229608&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-02-05",
+          "datum_anzeige": "05.02.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "15",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11814&toselect=77528"
+        },
+        {
+          "datum": "2025-02-06",
+          "datum_anzeige": "06.02.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "6",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11815&toselect=77651"
+        },
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "22",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817&toselect=77965"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11817#Ö 28",
+      "thema": "stadt:vorlage:19771",
+      "auftritte": [
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 28",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817"
+        }
+      ],
+      "klartext_titel": "Jährlicher Statusbericht zum Mobilfunkausbau für 2024 vorgelegt",
+      "klartext": "Seit 2021 legt die Verwaltung dem Stadtrat einen jährlichen, komprimierten Bericht zum Mitwirkungsverfahren beim Ausbau der Mobilfunkinfrastruktur vor, im Zusammenhang mit der jährlichen Sitzung des Runden Tisches Mobilfunk. Die Verwaltung stellt diesen Statusbericht nun erneut vor.",
+      "klartext_titel_leicht": "Wie weit war der Handy-Netz-Ausbau Anfang 2025?",
+      "klartext_leicht": "Handys brauchen gute Netze, damit sie funktionieren. Ingolstadt beobachtet den Ausbau dieser Netze jedes Jahr. Dafür gibt es einen Bericht. Der neue Bericht liegt jetzt vor.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "26.02.2025",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235732&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht zum Status des Mobilfunkausbaus in Ingolstadt",
+      "top_nr": "Ö 28",
+      "vorlage": "V0027/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19771",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2025",
+      "datum": "2025-02-26",
+      "datum_anzeige": "26.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230151&type=do"
+        },
+        {
+          "titel": "Beschluss StR",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=232018&type=do"
+        },
+        {
+          "titel": "Anlage zur Sitzungsvorlage V0027 25",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230150&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-02-26",
+          "datum_anzeige": "26.02.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "28",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11817&toselect=78215"
+        }
+      ]
+    },
+    {
       "ref": "bza:13159#Ö 3.1",
       "thema": "bza:13159#Ö 3.1",
       "auftritte": [
@@ -54858,6 +56565,243 @@
         }
       ],
       "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11966#Ö 1",
+      "thema": "stadt:vorlage:19801",
+      "auftritte": [
+        {
+          "datum": "2025-02-25",
+          "datum_anzeige": "25.02.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11966"
+        }
+      ],
+      "klartext_titel": "Ausländerbehörde berichtet über Auswirkungen der Syrien-Lage auf Ingolstadt",
+      "klartext": "Die Lage in Syrien verändert sich fortlaufend. Das Amt für Ausländerwesen und Migration informiert den Migrationsrat über die aktuelle Situation und deren Auswirkungen auf Ingolstadt, insbesondere über die geltende Rechtslage, aktuelle Regelungen und Zahlen zu syrischen Staatsangehörigen in der Stadt.",
+      "klartext_titel_leicht": "Was die Lage in Syrien für Ingolstadt bedeutet",
+      "klartext_leicht": "In Syrien hat sich viel verändert. Das betrifft auch Menschen aus Syrien, die in Ingolstadt leben. Das Ausländeramt berichtet dem Migrationsrat darüber. Es erklärt die aktuellen Regeln und Zahlen.",
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "25.02.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht zur aktuellen Situation aus dem Amt für Ausländerwesen und Migration – Schwerpunkt Syrien — Referentin: Frau Ute Mattes",
+      "top_nr": "Ö 1",
+      "vorlage": "V0057/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19801",
+      "antragsteller": "",
+      "gremium": "Migrationsrat",
+      "sitzung_kennung": "MR/01/2025",
+      "datum": "2025-02-25",
+      "datum_anzeige": "25.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11966",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230352&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-02-25",
+          "datum_anzeige": "25.02.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "1",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11966&toselect=77705"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11966#Ö 2",
+      "thema": "stadt:vorlage:19802",
+      "auftritte": [
+        {
+          "datum": "2025-02-25",
+          "datum_anzeige": "25.02.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11966"
+        }
+      ],
+      "klartext_titel": "Stadt startet Fortschreibung des Seniorenpolitischen Gesamtkonzepts",
+      "klartext": "Bayerische Landkreise und kreisfreie Städte sind gesetzlich verpflichtet, ein Seniorenpolitisches Gesamtkonzept zu entwickeln, das auf einer Bestandsanalyse und Zukunftsprognosen für die ältere Bevölkerung beruht. Die Stadt Ingolstadt will dafür die Perspektiven älterer Menschen sowie die Expertise von Fachleuten aus Seniorenarbeit, Altenhilfe und Pflege einbinden, unter anderem durch Befragungen von Betroffenen und pflegenden Angehörigen sowie Interviews und Workshops mit Fachleuten.",
+      "klartext_titel_leicht": "Die Stadt plant für ältere Menschen",
+      "klartext_leicht": "Die Stadt Ingolstadt muss einen Plan für ältere Menschen haben. Das schreibt ein Gesetz vor. Der Plan soll jetzt aktualisiert werden. Dafür fragt die Stadt ältere Menschen und Fachleute nach ihrer Meinung.",
+      "lebenslage": [
+        "Senior:innen"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "25.02.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht zur Fortschreibung des Seniorenpolitischen Gesamtkonzepts — Referent: Herr Karl Hofmann",
+      "top_nr": "Ö 2",
+      "vorlage": "V0058/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19802",
+      "antragsteller": "",
+      "gremium": "Migrationsrat",
+      "sitzung_kennung": "MR/01/2025",
+      "datum": "2025-02-25",
+      "datum_anzeige": "25.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11966",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230357&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-02-25",
+          "datum_anzeige": "25.02.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "2",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11966&toselect=77706"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11966#Ö 3",
+      "thema": "stadt:vorlage:19803",
+      "auftritte": [
+        {
+          "datum": "2025-02-25",
+          "datum_anzeige": "25.02.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11966"
+        }
+      ],
+      "klartext_titel": "Soll der Migrationsrat einen neuen Namen bekommen?",
+      "klartext": "Das Gremium wurde 1979 als Ausländerbeirat gegründet und 2008 in Migrationsrat umbenannt. Im Rahmen der laufenden Satzungsänderung berät der Migrationsrat vor, wie das Gremium ab der nächsten Wahlperiode 2026 heißen soll. Als Orientierung dient ein Vergleich mit der Namensgebung in anderen Städten.",
+      "klartext_titel_leicht": "Der Migrationsrat sucht einen neuen Namen",
+      "klartext_leicht": "Der Migrationsrat hieß früher Ausländerbeirat. 2008 bekam er seinen heutigen Namen. Jetzt wird über einen neuen Namen nachgedacht. Andere Städte dienen dabei als Vorbild.",
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Wird noch beraten",
+      "stand_datum": "25.02.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Vorberatung des Entwurfs zur Namensgebung des Gremiums (Migrationsrat) ab der nächsten Wahlperiode 2026 — Referenten: Frau Ingrid Gumplinger und Herr Dr. Andreas Sarropoulos",
+      "top_nr": "Ö 3",
+      "vorlage": "V0059/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19803",
+      "antragsteller": "",
+      "gremium": "Migrationsrat",
+      "sitzung_kennung": "MR/01/2025",
+      "datum": "2025-02-25",
+      "datum_anzeige": "25.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11966",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230358&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-02-25",
+          "datum_anzeige": "25.02.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11966&toselect=77707"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:11966#Ö 4",
+      "thema": "stadt:vorlage:19804",
+      "auftritte": [
+        {
+          "datum": "2025-02-25",
+          "datum_anzeige": "25.02.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11966"
+        }
+      ],
+      "klartext_titel": "MiMi-Gesundheitsprojekt wird bis 2026 weitergeführt",
+      "klartext": "Der Migrationsrat berichtet aus seinen Arbeitsgruppen. Dazu zählt die Weiterführung des MiMi-Gesundheitsprojekts Bayern ('Mit Migranten für Migranten') für 2025 und 2026, das die Gesundheitskompetenz von Menschen mit Migrationshintergrund fördert. Standortträger ist die Stadt Ingolstadt in Kooperation mit dem Netzwerk für Arbeit und Sozialbelange (NefAS e.V.), landesweiter Projektträger ist das Ethnomedizinische Zentrum.",
+      "klartext_titel_leicht": "Ein Gesundheits-Projekt für Migrant:innen geht weiter",
+      "klartext_leicht": "Manche Menschen mit Migrations-Geschichte wissen wenig über Gesundheit in Deutschland. Ein Projekt hilft ihnen dabei. Es heißt MiMi. Ingolstadt macht dabei mit. Das Projekt läuft bis 2026 weiter.",
+      "lebenslage": [
+        "Zuwanderung & Integration",
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "25.02.2025",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht aus den Arbeitsgruppen des Migrationsrates",
+      "top_nr": "Ö 4",
+      "vorlage": "V0060/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19804",
+      "antragsteller": "",
+      "gremium": "Migrationsrat",
+      "sitzung_kennung": "MR/01/2025",
+      "datum": "2025-02-25",
+      "datum_anzeige": "25.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11966",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230368&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2025-02-25",
+          "datum_anzeige": "25.02.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11966&toselect=77708"
+        }
+      ]
     },
     {
       "ref": "bza:13215#Ö 2.1",
