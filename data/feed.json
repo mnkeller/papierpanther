@@ -27,17 +27,17 @@
     "sitzungen_ausgelesen": 360,
     "tops_ausgelesen": 3415,
     "tops_verfahren": 493,
-    "tops_kuratiert": 1225,
+    "tops_kuratiert": 1240,
     "entwuerfe": 843,
-    "leichte_sprache": 361,
+    "leichte_sprache": 378,
     "je_quelle": {
-      "stadt": 382,
+      "stadt": 397,
       "bza": 843
     },
     "stand": {
-      "Bekanntgabe": 3,
+      "Bekanntgabe": 13,
       "Entscheidung angesetzt": 376,
-      "Ohne Vorlage": 846
+      "Ohne Vorlage": 851
     }
   },
   "achsen": {
@@ -2898,22 +2898,19 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
         }
       ],
-      "klartext_titel": "Linke fordert schnellen Hitzeschutz für Pflegeheime und Schulen",
-      "klartext": "Die Stadtratsgruppe Die Linke bringt einen Dringlichkeitsantrag zum Hitzeschutz ein. Die Verwaltung soll gemeinsam mit den Trägern und Leitungen von Alten- und Pflegeheimen, Schulen und dem Klinikum planen, wie sich Aufenthalts-, Unterrichts- und Bewohnerräume schnellstmöglich kühlen lassen. Der Antrag zielt ausdrücklich auf kurzfristig wirksame Maßnahmen, nicht auf langfristige Sanierungskonzepte. Eingereicht wurde er am 9. Juli 2026, mitten in der Sommerhitze.",
-      "klartext_titel_leicht": "Schutz vor Hitze in Heimen und Schulen",
-      "klartext_leicht": "Im Sommer wird es in Gebäuden sehr heiß. Das ist gefährlich für alte und kranke Menschen. Auch Kinder in der Schule leiden darunter. Die Linke im Stadt-Rat will schnell etwas tun. Die Stadt soll mit den Heimen und Schulen sprechen. Zusammen sollen sie die Räume kühler machen. Es geht um schnelle Lösungen, nicht um große Umbauten.",
+      "klartext_titel": "Stadt richtet Task Force gegen Hitzewellen ein",
+      "klartext": "Die Hitzebelastung in Ingolstadt nimmt zu: 2025 maß das Bayerische Landesamt für Umwelt in der Donauregion eine um 1,4 Grad höhere Jahresmitteltemperatur als im Referenzzeitraum 1971 bis 2000 sowie 15 Tage über 30 Grad, rund 10 mehr als im Vergleichszeitraum. Die Linken-Fraktion beantragt deshalb schnell wirksame Hitzeschutzmaßnahmen in Alten- und Pflegeheimen, Schulen und im Klinikum Ingolstadt. Die Verwaltung schlägt in ihrer Stellungnahme vor, dass der Stadtrat der Einrichtung einer Task Force 'Hitzeschutz' zustimmt.",
+      "klartext_titel_leicht": "Ingolstadt bereitet sich auf mehr Hitze vor",
+      "klartext_leicht": "In Ingolstadt wird es im Sommer immer heißer. 2025 gab es viele sehr heiße Tage. Das ist gefährlich, vor allem für alte und kranke Menschen. Die Fraktion Die Linke will deshalb Schutz-Maßnahmen, zum Beispiel in Pflegeheimen und Schulen. Die Verwaltung schlägt dafür eine eigene Arbeits-Gruppe vor. Sie heißt Task Force Hitzeschutz.",
       "lebenslage": [
-        "Senior:innen",
         "Gesundheit & Pflege",
-        "Eltern & Kinder",
-        "Jugend"
+        "Senior:innen"
       ],
       "bezirk": [
         "stadtweit"
       ],
       "anlass": [
-        "Klima & Umwelt",
-        "Sicherheit"
+        "Klima & Umwelt"
       ],
       "ort": [],
       "entwurf": false,
@@ -3602,6 +3599,436 @@
       ]
     },
     {
+      "ref": "stadt:13538#Ö 11.6",
+      "thema": "stadt:vorlage:23043",
+      "auftritte": [
+        {
+          "datum": "2026-07-22",
+          "datum_anzeige": "22.07.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 6.6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535"
+        },
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 11.6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "Jobcenter bleibt in städtischer Trägerschaft",
+      "klartext": "Im Rahmen des Dachbeschlusses zur Haushaltssicherung sollte geprüft werden, ob das Jobcenter Ingolstadt weiter als kommunaler Träger oder künftig gemeinsam mit der Agentur für Arbeit betrieben werden soll. Die Verwaltung gibt bekannt, dass das Jobcenter ein zugelassener kommunaler Träger bleibt. Eine Rückgabe der sogenannten Options-Trägerschaft bringe keine finanzielle Entlastung für die Stadt.",
+      "klartext_titel_leicht": "Das Jobcenter bleibt bei der Stadt",
+      "klartext_leicht": "Das Jobcenter in Ingolstadt gehört zur Stadt. Es hätte auch anders organisiert werden können. Die Stadt hat das geprüft. Ergebnis: Das Jobcenter bleibt wie bisher bei der Stadt. Ein Wechsel würde kein Geld sparen.",
+      "lebenslage": [
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "29.07.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Vertiefte Prüfung des Jobcenters",
+      "top_nr": "Ö 11.6",
+      "vorlage": "V0292/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23043",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250236&type=do"
+        },
+        {
+          "titel": "V0292 26 Anlage Abrechnung der Verwaltungskosten#",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250752&type=do"
+        },
+        {
+          "titel": "V0292 26 Anlage Auszüge aus dem Sozialgesetzbuch",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250751&type=do"
+        },
+        {
+          "titel": "V292-26 Anlage KFA Hinweise an Kommunen mit gE",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250741&type=do"
+        },
+        {
+          "titel": "V292-26 Anlage Kommunale Jobcenter Übersichtskarte",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250743&type=do"
+        },
+        {
+          "titel": "V292-26 Anlage Vergleich TV-BA und TVöD-VKA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250742&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-07-22",
+          "datum_anzeige": "22.07.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "6.6",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535&toselect=89056"
+        },
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "11.6",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538&toselect=89749"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13538#Ö 11.7",
+      "thema": "stadt:vorlage:23241",
+      "auftritte": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 11.7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "Aufsicht knüpft neue Kredite an Bedingungen",
+      "klartext": "Während die Stadt Ingolstadt ohne genehmigten Haushalt 2026 wirtschaftet, gelten für neue Kreditaufnahmen enge gesetzliche Grenzen nach der Gemeindeordnung. Die Verwaltung gibt bekannt, dass die Regierung von Oberbayern als Rechtsaufsichtsbehörde eine Kreditermächtigung für den Krankenhauszweckverband bewilligt hat, allerdings mit Auflagen. Auch für weitere geplante Kreditaufnahmen der Stadt hat die Aufsichtsbehörde entsprechende Genehmigungsauflagen erteilt.",
+      "klartext_titel_leicht": "Die Stadt darf nur mit Auflagen neue Kredite aufnehmen",
+      "klartext_leicht": "Ingolstadt hat noch keinen fertigen Haushalt für 2026. Deshalb gelten strenge Regeln für neue Kredite. Eine Aufsichts-Behörde muss zustimmen. Für einen Kredit vom Krankenhaus-Zweckverband hat sie schon zugestimmt. Sie hat dafür aber Bedingungen gestellt. Das gilt auch für weitere Kredite der Stadt.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "29.07.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Genehmigungsauflage der Rechtsaufsicht bei Bewilligung einer Kreditermächtigung",
+      "top_nr": "Ö 11.7",
+      "vorlage": "V0486/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23241",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252443&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "11.7",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538&toselect=89975"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13538#Ö 12",
+      "thema": "stadt:vorlage:23025",
+      "auftritte": [
+        {
+          "datum": "2026-07-02",
+          "datum_anzeige": "02.07.2026",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13532"
+        },
+        {
+          "datum": "2026-07-22",
+          "datum_anzeige": "22.07.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 11",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535"
+        },
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 12",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "Arbeitslosenquote in Ingolstadt bleibt bundesweit niedrig",
+      "klartext": "Ingolstadt lag Ende 2025 mit 4,8 Prozent weiterhin unter den zehn deutschen Großstädten mit der niedrigsten Arbeitslosenquote. Die Zahl der Arbeitsuchenden im Rechtskreis SGB II sank gegenüber dem Vorjahr um 214 Personen beziehungsweise 7,3 Prozent, während die Zahl der Arbeitslosen leicht um 87 Personen beziehungsweise 5,3 Prozent stieg. Mit einer SGB-II-Hilfequote von durchschnittlich 5,9 Prozent hat Ingolstadt den sechstniedrigsten Wert aller deutschen Großstädte. Die Verwaltung gibt den Jahres- und Eingliederungsbericht 2025 des Jobcenters bekannt.",
+      "klartext_titel_leicht": "Wenige Menschen in Ingolstadt sind arbeitslos",
+      "klartext_leicht": "Das Jobcenter hilft Menschen, Arbeit zu finden. Es hat einen Bericht für 2025 geschrieben. Ingolstadt hat wenig Arbeitslosigkeit: 4,8 Prozent. Das ist einer der besten Werte in Deutschland. Weniger Menschen suchen Arbeit als im Jahr davor. Die Zahl der Arbeitslosen ist aber leicht gestiegen.",
+      "lebenslage": [
+        "Arbeit & Beruf",
+        "Geld & Soziales"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "29.07.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Jahres- und Eingliederungsbericht 2025 des Jobcenters",
+      "top_nr": "Ö 12",
+      "vorlage": "V0274/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23025",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249948&type=do"
+        },
+        {
+          "titel": "Jahres- und Eingliederungsbericht 2025 final",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250139&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-07-02",
+          "datum_anzeige": "02.07.2026",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13532&toselect=88726"
+        },
+        {
+          "datum": "2026-07-22",
+          "datum_anzeige": "22.07.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "11",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535&toselect=88991"
+        },
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "12",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538&toselect=89748"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13538#Ö 21",
+      "thema": "stadt:vorlage:23036",
+      "auftritte": [
+        {
+          "datum": "2026-06-30",
+          "datum_anzeige": "30.06.2026",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13530"
+        },
+        {
+          "datum": "2026-07-07",
+          "datum_anzeige": "07.07.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13533"
+        },
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 21",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "Neuer Rechtsanspruch auf Ganztagsbetreuung startet 2026/27",
+      "klartext": "Ab dem Schuljahr 2026/2027 gilt für Grundschulkinder stufenweise ein bundesweiter Rechtsanspruch auf ganztägige Förderung, der bis 2029/30 jährlich um eine weitere Jahrgangsstufe erweitert wird. Der Anspruch umfasst acht Betreuungsstunden an allen fünf Werktagen inklusive der Ferienzeiten, mit höchstens vier Wochen Schließzeit im Jahr. Die Verwaltung gibt die Bedarfsplanung für die ganztägige Förderung von Grundschulkindern in Ingolstadt bekannt, mit der diese Betreuungslücke geschlossen werden soll.",
+      "klartext_titel_leicht": "Grundschul-Kinder bekommen ein Recht auf Ganztags-Betreuung",
+      "klartext_leicht": "Ab dem Schuljahr 2026/2027 gibt es ein neues Recht für Grundschul-Kinder. Sie dürfen dann ganztags betreut werden. Das gilt auch in den Ferien. Jedes Jahr kommt eine weitere Klassenstufe dazu. Die Stadt Ingolstadt hat dafür einen Plan gemacht. Er zeigt, wie viele Plätze gebraucht werden.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kinderbetreuung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "29.07.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bedarfsplanung für die ganztägige Förderung von Kindern im Grundschulalter in Ingolstadt gem. § 80 SGB VIII",
+      "top_nr": "Ö 21",
+      "vorlage": "V0285/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23036",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250189&type=do"
+        },
+        {
+          "titel": "Eigenschaften Betreuungsangebote",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250191&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-06-30",
+          "datum_anzeige": "30.06.2026",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13530&toselect=88484"
+        },
+        {
+          "datum": "2026-07-07",
+          "datum_anzeige": "07.07.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13533&toselect=88758"
+        },
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "21",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538&toselect=89743"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13538#Ö 15",
+      "thema": "stadt:13538#Ö 15",
+      "auftritte": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 15",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "CSU will Badesteg am Baggersee zurückbringen, Verwaltung ist dagegen",
+      "klartext": "Der frühere Badesteg am Baggersee nahe dem Wildgehege wurde im Zuge eines neuen Sicherheitskonzepts entfernt. Die CSU-Fraktion beantragt, ihn an einem alternativen, nahegelegenen Standort wieder zu errichten, nachdem rechtliche, wasserrechtliche, naturschutzfachliche und sicherheitsrelevante Voraussetzungen sowie die Kosten geklärt wurden. Die Verwaltung schlägt in ihrer Stellungnahme vor, den Antrag nicht weiterzuverfolgen. Der Stadtrat entscheidet über beide Positionen.",
+      "klartext_titel_leicht": "Soll der Bade-Steg am Baggersee zurückkommen?",
+      "klartext_leicht": "Am Baggersee gab es früher einen Bade-Steg. Er wurde entfernt, weil er unsicher war. Die CSU-Fraktion möchte einen neuen Steg an einer anderen Stelle. Die Verwaltung findet das keine gute Idee. Sie schlägt vor, den Antrag abzulehnen. Der Stadt-Rat entscheidet, wer recht bekommt.",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [
+        "Baggersee"
+      ],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Wiedererrichtung des Badestegs am Baggersee an einem alternativen Standort",
+      "top_nr": "Ö 15",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13538#Ö 22",
+      "thema": "stadt:13538#Ö 22",
+      "auftritte": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 22",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "Wie die Stadt die freie Kulturszene retten soll: Vier Vorschläge im Vergleich",
+      "klartext": "Der freien Kulturszene in Ingolstadt fehlen laut Linken-Fraktion rund 230.000 Euro, um ihr bisheriges Angebot zu halten; sie schlägt ein freiwilliges 'Kulturspendenkonto' vor. Die Grünen beantragen stattdessen einen 'Kultur-Soli' nach dem Vorbild von Freiburg und Köln, einen Aufschlag auf Theaterkarten. Die Verwaltung greift diese Idee in ihrer Stellungnahme auf und schlägt einen Zuschlag von 2 Euro 'Kulturzwickl' auf Theaterkarten und Abonnements ab der Spielzeit 2026/2027 vor, kombiniert mit einer freiwilligen 'Spendenseite Kultur' im Internet statt eines eigenen Spendenkontos. Die Freie-Wähler-Fraktion lehnt eine Zusatzabgabe dagegen ab und will stattdessen die regulären Eintrittspreise anpassen, falls dafür Spielraum besteht. Der Stadtrat entscheidet zwischen diesen vier Positionen.",
+      "klartext_titel_leicht": "Wie soll die Kultur-Szene Geld bekommen?",
+      "klartext_leicht": "Kleine Kultur-Vereine in Ingolstadt haben wenig Geld. Vier Fraktionen haben dazu Ideen. Die Linke will ein Spenden-Konto. Die Grünen wollen einen Extra-Euro auf Theaterkarten. Die Verwaltung schlägt sogar 2 Euro extra vor. Die Freien Wähler sind dagegen. Sie wollen lieber die normalen Preise erhöhen. Der Stadt-Rat muss sich jetzt entscheiden.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Unterstützung der freien Kulturszene",
+      "top_nr": "Ö 22",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
       "ref": "bza:14207#Ö 3",
       "thema": "bza:14207#Ö 3",
       "auftritte": [
@@ -4257,6 +4684,203 @@
       ]
     },
     {
+      "ref": "stadt:13535#Ö 3",
+      "thema": "stadt:vorlage:23185",
+      "auftritte": [
+        {
+          "datum": "2026-07-22",
+          "datum_anzeige": "22.07.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535"
+        }
+      ],
+      "klartext_titel": "Straßenunterhalt: 496.128 Euro Mehrausgaben für Beilngrieser Straße",
+      "klartext": "Für Unterhalt und Pflege von Straßen fallen unter anderem durch eine Übergangsmaßnahme an der Beilngrieser Straße Mehrausgaben von 496.127,76 Euro an. Die Verwaltung gibt diese Mittelumsetzung bekannt; die Mehrausgaben werden durch entsprechende Mehreinnahmen aus Rückzahlungen und Gutschriften aus Vorjahren gedeckt, sodass keine zusätzlichen Haushaltsmittel nötig sind.",
+      "klartext_titel_leicht": "Eine Straße kostet mehr als geplant",
+      "klartext_leicht": "Die Beilngrieser Straße wird zwischenzeitlich repariert. Das kostet mehr Geld als gedacht: 496.127,76 Euro. Die Stadt hat aber an anderer Stelle Geld übrig. Damit wird die Mehrausgabe bezahlt.",
+      "lebenslage": [],
+      "bezirk": [],
+      "anlass": [
+        "Baustelle"
+      ],
+      "ort": [
+        "Beilngrieser Straße"
+      ],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "22.07.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bekanntgabe einer Mittelumsetzung für Mehrausgaben bzw. zusätzliche Ausgaben in der — haushaltslosen Zeit für das Haushaltsjahr 2026",
+      "top_nr": "Ö 3",
+      "vorlage": "V0430/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23185",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/02/2026",
+      "datum": "2026-07-22",
+      "datum_anzeige": "22.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251950&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-07-22",
+          "datum_anzeige": "22.07.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535&toselect=89194"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13535#Ö 4",
+      "thema": "stadt:vorlage:23094",
+      "auftritte": [
+        {
+          "datum": "2026-07-22",
+          "datum_anzeige": "22.07.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535"
+        }
+      ],
+      "klartext_titel": "Budgetbericht 2025: Zuschussbedarf der Stadt lag knapp unter Plan",
+      "klartext": "Ohne Berücksichtigung der Haushaltssperre lag der Zuschussbedarf aller Referatsbudgets 2025 bei 249,65 Millionen Euro, das sind 1,26 Millionen Euro beziehungsweise 0,5 Prozent weniger als geplant. Berücksichtigt man zusätzliche Mittelbereitstellungen und die verbliebenen Haushaltssperren, wären die gesetzten Ziele dagegen um 7,37 Millionen Euro verfehlt worden. Die Verwaltung gibt den Budgetbericht der Referate für das Haushaltsjahr 2025 bekannt, wegen der angespannten Haushaltslage in komprimierter Form.",
+      "klartext_titel_leicht": "Die Stadt zieht Bilanz für 2025",
+      "klartext_leicht": "Die Stadt Ingolstadt hat für 2025 nachgerechnet, wie viel Geld sie ausgegeben hat. Ohne eine Spar-Sperre wäre es etwas weniger als geplant gewesen. Mit der Sperre mitgerechnet, wäre es aber mehr gewesen: 7,37 Millionen Euro mehr. Die Verwaltung berichtet darüber.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "22.07.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Budgetbericht der Referate für das Haushaltsjahr 2025",
+      "top_nr": "Ö 4",
+      "vorlage": "V0343/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23094",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/02/2026",
+      "datum": "2026-07-22",
+      "datum_anzeige": "22.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251562&type=do"
+        },
+        {
+          "titel": "Budgetbericht 2025 final",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251693&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-07-22",
+          "datum_anzeige": "22.07.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535&toselect=89010"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13535#Ö 10",
+      "thema": "stadt:vorlage:23044",
+      "auftritte": [
+        {
+          "datum": "2026-07-02",
+          "datum_anzeige": "02.07.2026",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13532"
+        },
+        {
+          "datum": "2026-07-22",
+          "datum_anzeige": "22.07.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 10",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535"
+        }
+      ],
+      "klartext_titel": "Wie Sozialleistungen im Referat V finanziert werden",
+      "klartext": "Die Verwaltung gibt bekannt, wie die Sozialleistungen der Ämter im Referat V aus Bundes-, Landes- und städtischen Mitteln finanziert werden. Berichtet wird zudem, wer die Kosten für das zur Verwaltung dieser Leistungen nötige Personal trägt sowie wie sich die aus dem städtischen Haushalt zu tragenden Sozialausgaben in den vergangenen Jahren entwickelt haben.",
+      "klartext_titel_leicht": "Wer bezahlt Sozial-Leistungen in Ingolstadt?",
+      "klartext_leicht": "Die Stadt zahlt Menschen manchmal Sozial-Hilfe. Woher kommt das Geld dafür? Manchmal vom Bund, manchmal vom Land, manchmal von der Stadt selbst. Die Verwaltung erklärt das jetzt genauer. Sie zeigt auch, wie sich die Kosten in den letzten Jahren verändert haben.",
+      "lebenslage": [
+        "Geld & Soziales"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "22.07.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Finanzierung und Administration steuerfinanzierter Sozialleistungen im Referat V",
+      "top_nr": "Ö 10",
+      "vorlage": "V0293/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23044",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/02/2026",
+      "datum": "2026-07-22",
+      "datum_anzeige": "22.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250256&type=do"
+        },
+        {
+          "titel": "Präsentation zu V0293-26",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252232&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-07-02",
+          "datum_anzeige": "02.07.2026",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13532&toselect=88727"
+        },
+        {
+          "datum": "2026-07-22",
+          "datum_anzeige": "22.07.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "10",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535&toselect=88994"
+        }
+      ]
+    },
+    {
       "ref": "bza:14197#Ö 4",
       "thema": "bza:14197#Ö 4",
       "auftritte": [
@@ -4717,6 +5341,50 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13534&toselect=88935"
         }
       ]
+    },
+    {
+      "ref": "stadt:13534#Ö 7",
+      "thema": "stadt:13534#Ö 7",
+      "auftritte": [
+        {
+          "datum": "2026-07-14",
+          "datum_anzeige": "14.07.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit, Ausschuss für Kultur und Bildung, Ausschuss für Sport, Veranstaltungen und Freizeit, Jugendhilfeausschuss",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13534"
+        }
+      ],
+      "klartext_titel": "Linke will Zweckentfremdungssatzung, Verwaltung sieht Voraussetzungen nicht erfüllt",
+      "klartext": "Die Stadtratsgruppe Die Linke und Stadtrat Werner beantragen, dass der Stadtrat Ingolstadt als Gebiet mit gefährdeter Wohnraumversorgung einstuft und die Verwaltung eine Zweckentfremdungssatzung ausarbeitet. Eine solche Satzung würde etwa die Umwandlung von Wohnraum in Ferienwohnungen, gewerbliche Umnutzung oder länger andauernden Leerstand genehmigungspflichtig machen. Die Verwaltung stellt in ihrer Stellungnahme fest, dass die gesetzlichen Voraussetzungen dafür in Ingolstadt derzeit nicht vorliegen.",
+      "klartext_titel_leicht": "Braucht Ingolstadt eine neue Wohnungs-Regel?",
+      "klartext_leicht": "In Ingolstadt gibt es zu wenig Wohnungen. Manche werden zu Ferienwohnungen. Die Fraktion Die Linke will das mit einer neuen Regel erschweren. Die Verwaltung hat das geprüft. Ergebnis: Die Regel ist aktuell nicht möglich. Die Bedingungen dafür sind nicht erfüllt.",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Zweckentfremdungssatzung",
+      "top_nr": "Ö 7",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit, Ausschuss für Kultur und Bildung, Ausschuss für Sport, Veranstaltungen und Freizeit, Jugendhilfeausschuss",
+      "sitzung_kennung": "PLA/02/2026",
+      "datum": "2026-07-14",
+      "datum_anzeige": "14.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13534",
+      "dokumente": [],
+      "beratungsweg": []
     },
     {
       "ref": "bza:14158#Ö 2.2",
@@ -5477,6 +6145,75 @@
       "beratungsweg": []
     },
     {
+      "ref": "stadt:13533#Ö 3",
+      "thema": "stadt:vorlage:22997",
+      "auftritte": [
+        {
+          "datum": "2026-07-07",
+          "datum_anzeige": "07.07.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13533"
+        }
+      ],
+      "klartext_titel": "Stadtbücherei legt Jahresbericht 2025 vor",
+      "klartext": "Die Stadtbücherei Ingolstadt legt ihren Jahresbericht für 2025 vor, mit Nutzungs- und Leistungszahlen im Vergleich zu 2024 und 2023 sowie einem deutschlandweiten Vergleich. Die Verwaltung gibt den Bericht bekannt, der Ausschuss für Kultur und Bildung soll ihn zur Kenntnis nehmen.",
+      "klartext_titel_leicht": "Die Stadtbücherei zeigt ihren Jahresbericht",
+      "klartext_leicht": "Die Stadtbücherei Ingolstadt schreibt jedes Jahr einen Bericht. Darin steht, wie viele Menschen die Bücherei nutzen. Der Bericht für 2025 liegt jetzt vor. Ein Ausschuss soll ihn zur Kenntnis nehmen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "07.07.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Jahresbericht 2025 der Stadtbücherei Ingolstadt",
+      "top_nr": "Ö 3",
+      "vorlage": "V0247/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22997",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/02/2026",
+      "datum": "2026-07-07",
+      "datum_anzeige": "07.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13533",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249800&type=do"
+        },
+        {
+          "titel": "Jahresbericht 2025",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249797&type=do"
+        },
+        {
+          "titel": "Jahresbericht Ingolstadt im bundesweiten Durchschnitt 2025",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249798&type=do"
+        },
+        {
+          "titel": "Jahresbericht Kennzahlen 2025 Stadtbücherei",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249799&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-07-07",
+          "datum_anzeige": "07.07.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13533&toselect=88756"
+        }
+      ]
+    },
+    {
       "ref": "stadt:13531#Ö 2",
       "thema": "stadt:13531#Ö 2",
       "auftritte": [
@@ -5488,18 +6225,17 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13531"
         }
       ],
-      "klartext_titel": "Christkindlmarkt: Standgebühren sollen steigen",
-      "klartext": "Der Christkindlmarkt läuft länger als bisher. Die dadurch entstehenden Mehrkosten sollen über höhere Standgebühren finanziert werden.",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "klartext_titel": "Standgebühren beim Christkindlmarkt sollen wegen längerer Laufzeit steigen",
+      "klartext": "Der Christkindlmarkt in Ingolstadt soll künftig länger dauern, was zu Mehrkosten führt. Der zuständige Ausschuss soll einer entsprechenden Erhöhung der Standgebühren zustimmen, mit der diese Mehrkosten finanziert werden. Feste und Märkte gelten als freiwillige Aufgabe der Stadt.",
+      "klartext_titel_leicht": "Stände auf dem Christkindlmarkt werden teurer",
+      "klartext_leicht": "Der Christkindlmarkt in Ingolstadt soll länger dauern. Das kostet mehr Geld. Die Händler:innen auf dem Markt sollen deshalb mehr Standgeld zahlen. Ein Ausschuss soll das beschließen.",
       "lebenslage": [
         "Gewerbe & Gastro"
       ],
-      "bezirk": [
-        "I-Mitte"
-      ],
+      "bezirk": [],
       "anlass": [
-        "Gebühren & Preise"
+        "Gebühren & Preise",
+        "Kultur & Bildung"
       ],
       "ort": [],
       "entwurf": false,
@@ -6355,7 +7091,7 @@
       "beratungsweg": []
     },
     {
-      "ref": "stadt:13524#Ö 4",
+      "ref": "stadt:13529#Ö 13",
       "thema": "stadt:vorlage:22923",
       "auftritte": [
         {
@@ -6380,10 +7116,10 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
         }
       ],
-      "klartext_titel": "Essensgeld in Kita, Mittagsbetreuung und Ganztagsschule soll steigen",
-      "klartext": "Mehrere Gebührensatzungen sollen geändert werden: für den Kita-Besuch, für die Mittags- und Randbetreuung an Grundschulen und für die Verpflegung in Ganztagsschulen. Anlass ist unter anderem der Rechtsanspruch auf Ganztagsbetreuung für Grundschulkinder.",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "klartext_titel": "AfD und Linke wollen geplante Kita-Essensgebühr stoppen",
+      "klartext": "Die Stadt plant, die Gebühr für das Mittagessen in Kindertagesstätten von 4 auf 5 Euro pro Mahlzeit zu erhöhen. Die AfD-Fraktion beantragt per Dringlichkeitsantrag, die Erhöhung auszusetzen, zunächst alternative Einsparoptionen zu prüfen und die Gebühr notfalls auf höchstens 4,50 Euro zu begrenzen; eine Familie mit zwei Kindern zahle sonst rund 480 Euro mehr im Jahr. Die Fraktion Die Linke beantragt ebenfalls, die Entscheidung zu verschieben, und will zusätzlich prüfen lassen, ob ein günstigerer Anbieter oder ein vegetarisches beziehungsweise veganes Angebot bei der Neuvergabe 2027 Kosten sparen könnte.",
+      "klartext_titel_leicht": "Soll das Kita-Essen teurer werden?",
+      "klartext_leicht": "Kinder essen in der Kita oft zu Mittag. Dafür zahlen Eltern eine Gebühr. Sie soll von 4 auf 5 Euro steigen. Die AfD-Fraktion ist dagegen und will erst sparen. Die Fraktion Die Linke will die Entscheidung verschieben. Sie will außerdem prüfen, ob veganes Essen günstiger wäre.",
       "lebenslage": [
         "Eltern & Kinder"
       ],
@@ -6391,9 +7127,8 @@
         "stadtweit"
       ],
       "anlass": [
-        "Gebühren & Preise",
         "Kinderbetreuung",
-        "Satzung & Regeln"
+        "Gebühren & Preise"
       ],
       "ort": [],
       "entwurf": false,
@@ -7118,10 +7853,10 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
         }
       ],
-      "klartext_titel": "Feuerwehr Stadtmitte: Kommandant bestätigt",
-      "klartext": "Martin Freiherr von Kap-herr wird als Kommandant der Freiwilligen Feuerwehr Ingolstadt-Stadtmitte bestätigt. Nach dem Bayerischen Feuerwehrgesetz muss die Stadt gewählte Kommandanten bestätigen; zuständig dafür ist der Stadtrat. Die Aufwandsentschädigung beträgt 268,56 Euro im Monat. Die Feuerwehr Ingolstadt besteht aus der Berufsfeuerwehr und 16 organisatorisch selbständigen Freiwilligen Feuerwehren.",
-      "klartext_titel_leicht": "Ein neuer Chef für die Feuerwehr Stadt-Mitte",
-      "klartext_leicht": "Die Freiwillige Feuerwehr hilft bei Bränden und Unfällen. Jede Feuerwehr hat einen Chef. Er heißt Kommandant. Die Mitglieder wählen ihn selbst. Der Stadt-Rat muss die Wahl bestätigen. Der neue Chef heißt Martin von Kap-herr. Er bekommt 268 Euro im Monat dafür.",
+      "klartext_titel": "Martin von Kap-herr als Feuerwehrkommandant Stadtmitte bestätigt",
+      "klartext": "Freiherr Martin von Kap-herr soll als Kommandant der Freiwilligen Feuerwehr Ingolstadt-Stadtmitte bestätigt werden. Nach dem bayerischen Feuerwehrgesetz erhält er dafür eine monatliche Entschädigung von 268,56 Euro, insgesamt 3.222,72 Euro im Jahr, die aus dem städtischen Haushalt bereitgestellt werden.",
+      "klartext_titel_leicht": "Ein neuer Feuerwehr-Chef für die Stadtmitte",
+      "klartext_leicht": "Die Freiwillige Feuerwehr Stadtmitte braucht einen Kommandanten. Das ist der Chef der Feuerwehr. Martin von Kap-herr soll dieses Amt bekommen. Er bekommt dafür Geld von der Stadt: 268,56 Euro im Monat.",
       "lebenslage": [
         "Ehrenamt & Vereine"
       ],
@@ -7653,6 +8388,90 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529&toselect=88812"
         }
       ]
+    },
+    {
+      "ref": "stadt:13529#Ö 10",
+      "thema": "stadt:13529#Ö 10",
+      "auftritte": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 10",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
+        }
+      ],
+      "klartext_titel": "ödp will Sparkassen-Gewinne prüfen, Verwaltung verweist auf Verwaltungsrat",
+      "klartext": "Die ödp-Stadtratsgruppe verweist auf ein Rekordergebnis der deutschen Sparkassen 2024 von fast 16 Milliarden Euro Gewinn und beantragt, dass die Stadt mögliche Gewinnausschüttungen der Sparkasse Ingolstadt-Eichstätt prüft. Die Verwaltung legt in ihrer Stellungnahme die rechtliche Lage dar: Über die Verwendung des Jahresüberschusses entscheidet nach der Sparkassenordnung allein der Verwaltungsrat der Sparkasse, wobei zunächst ausreichende Sicherheitsrücklagen gebildet werden müssen. Ausschüttungen an die Stadt als Träger sind nur zulässig, soweit die gesetzlichen Aufgaben und eine angemessene Eigenkapitalausstattung der Sparkasse dadurch nicht beeinträchtigt werden.",
+      "klartext_titel_leicht": "Soll die Sparkasse mehr Geld an die Stadt zahlen?",
+      "klartext_leicht": "Sparkassen machen oft hohe Gewinne. Meist zahlen sie diese nicht an ihre Städte aus. Die ödp findet: Das sollte Ingolstadt prüfen. Die Verwaltung erklärt: Das entscheidet die Sparkasse selbst, über ihren eigenen Verwaltungsrat. Zuerst muss die Sparkasse genug Rücklagen haben.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Ausschüttungen der Sparkassen",
+      "top_nr": "Ö 10",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2026",
+      "datum": "2026-06-24",
+      "datum_anzeige": "24.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13529#Ö 23",
+      "thema": "stadt:13529#Ö 23",
+      "auftritte": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 23",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
+        }
+      ],
+      "klartext_titel": "Wer zahlt für Altlasten am Weinzierl-Gelände? AfD fragt nach, Verwaltung erklärt Verträge",
+      "klartext": "Für die Sanierung von Altlasten auf dem früheren Weinzierl-Gelände wird laut Verwaltung ein Millionenbetrag nötig. Die AfD-Fraktion beantragt, dass Stadt und IFG öffentlich über die Vertragsbestandteile zu möglichen Altlastenregelungen beim Kauf des Geländes 1990 und beim Weiterverkauf an die Stadt 2002 informieren. Die Verwaltung erläutert in ihrer Stellungnahme, dass beim Verkauf 1990 zunächst eine Haftung der Verkäufer für unentdeckte Altlasten vereinbart war, während die Stadt beim Kauf der Teilfläche von der IFG 2002 vertraglich zustimmte, etwaige Altlasten auf eigene Kosten zu beseitigen.",
+      "klartext_titel_leicht": "Wer zahlt für alte Umweltschäden am Weinzierl-Gelände?",
+      "klartext_leicht": "Auf dem Weinzierl-Gelände gibt es Altlasten im Boden. Das sind alte Umwelt-Schäden. Sie zu beseitigen kostet viel Geld. Die AfD-Fraktion will wissen: Wer muss dafür zahlen? Die Verwaltung erklärt die alten Verträge. Ergebnis: Die Stadt zahlt selbst, laut einem Vertrag von 2002.",
+      "lebenslage": [],
+      "bezirk": [],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "ort": [
+        "Weinzierl-Gelände"
+      ],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Kaufverträge zum Weinzierl-Gelände",
+      "top_nr": "Ö 23",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2026",
+      "datum": "2026-06-24",
+      "datum_anzeige": "24.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
+      "dokumente": [],
+      "beratungsweg": []
     },
     {
       "ref": "bza:14017#Ö 1",
@@ -8756,6 +9575,70 @@
       ]
     },
     {
+      "ref": "stadt:13525#Ö 2",
+      "thema": "stadt:vorlage:22993",
+      "auftritte": [
+        {
+          "datum": "2026-06-11",
+          "datum_anzeige": "11.06.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525"
+        }
+      ],
+      "klartext_titel": "Bericht zum Reallabor 'Schleifmühle macht Platz' vorgelegt",
+      "klartext": "Im Rahmen des Ziels, Ingolstadt attraktiver und klimaangepasster zu gestalten, hatte die Stadt im Juli 2023 eine temporäre Aktion am Schleifmühlplatz durchgeführt, das Reallabor 'Schleifmühle macht Platz'. Die Verwaltung gibt jetzt den Ergebnisbericht zu dieser Aktion bekannt.",
+      "klartext_titel_leicht": "Ein Test-Projekt am Schleifmühlplatz wird ausgewertet",
+      "klartext_leicht": "Im Juli 2023 hat die Stadt am Schleifmühlplatz etwas Neues ausprobiert. Das nennt man Reallabor. Es sollte zeigen, wie der Platz besser genutzt werden kann. Jetzt gibt es einen Bericht darüber. Die Verwaltung stellt ihn vor.",
+      "lebenslage": [],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "anlass": [
+        "Klima & Umwelt",
+        "Grün & Sauberkeit"
+      ],
+      "ort": [
+        "Schleifmühlplatz"
+      ],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "11.06.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht zum Reallabor „Schleifmühle macht Platz“ im Juli 2023",
+      "top_nr": "Ö 2",
+      "vorlage": "V0243/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22993",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+      "sitzung_kennung": "PLA/01/2026",
+      "datum": "2026-06-11",
+      "datum_anzeige": "11.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249679&type=do"
+        },
+        {
+          "titel": "Dokumentation Reallabor",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249680&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-06-11",
+          "datum_anzeige": "11.06.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "2",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525&toselect=88192"
+        }
+      ]
+    },
+    {
       "ref": "stadt:13710#Ö 4",
       "thema": "stadt:vorlage:23000",
       "auftritte": [
@@ -9180,6 +10063,67 @@
           "oeffentlich": true,
           "rolle": "Entscheidung",
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13524&toselect=88187"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13524#Ö 6",
+      "thema": "stadt:vorlage:22949",
+      "auftritte": [
+        {
+          "datum": "2026-06-10",
+          "datum_anzeige": "10.06.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13524"
+        }
+      ],
+      "klartext_titel": "Ingolstadt bewirbt sich erfolglos um den Europapreis",
+      "klartext": "Die Verwaltung gibt einen Bericht über die europäischen und städtepartnerschaftlichen Aktivitäten des Kulturreferats im Jahr 2025 bekannt. Auf dieser Grundlage hatte sich Ingolstadt erneut um den Europapreis der Parlamentarischen Versammlung des Europarates beworben. Ende April 2026 wurde bekanntgegeben, dass die italienische Stadt Reggio Emilia den Preis gewonnen hat.",
+      "klartext_titel_leicht": "Ingolstadt gewinnt einen Europa-Preis nicht",
+      "klartext_leicht": "Ingolstadt hat viele Partner-Städte in Europa. Die Stadt hat sich für einen Europa-Preis beworben. Das ist eine besondere Auszeichnung. Im April 2026 stand fest: Eine andere Stadt hat gewonnen. Es war Reggio Emilia aus Italien.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "10.06.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht über die europäischen und städtepartnerschaftlichen Aktivitäten des Referats für Kultur und Bildung, Amt für Internationale Beziehungen und Kulturverwaltung im Jahr 2025",
+      "top_nr": "Ö 6",
+      "vorlage": "V0201/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22949",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/01/2026",
+      "datum": "2026-06-10",
+      "datum_anzeige": "10.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13524",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249314&type=do"
+        },
+        {
+          "titel": "V0201 26 Anlage 1 Bericht städtepartnerschaftliche Aktivitäten 2025",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249313&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-06-10",
+          "datum_anzeige": "10.06.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "6",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13524&toselect=88186"
         }
       ]
     },
