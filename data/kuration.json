@@ -20605,14 +20605,14 @@
       ]
     },
     "stadt:11821#Ö 5": {
-      "klartext_titel": "Stadttheater Ingolstadt stellt Spielplan 2025/26 vor",
-      "klartext": "",
-      "klartext_titel_leicht": "Der Theater-Spielplan 2025/26 ist da",
-      "klartext_leicht": "",
-      "entwurf": true,
+      "klartext_titel": "Spielplan des Stadttheaters für 2025/26 bekannt gegeben",
+      "klartext": "Der Ausschuss für Kultur und Bildung hat den Spielplan des Stadttheaters Ingolstadt für die Spielzeit 2025/2026 zur Kenntnis genommen. Das genaue Programm ist als Anlage beigefügt und wird hier nicht im Detail wiedergegeben.",
+      "klartext_titel_leicht": "Neuer Spielplan fürs Stadttheater 2025/26",
+      "klartext_leicht": "Das Stadttheater Ingolstadt hat einen neuen Spielplan für 2025/2026. Das ist die Liste der Stücke, die gezeigt werden. Der Ausschuss für Kultur hat davon erfahren. Das genaue Programm steht in einer eigenen Broschüre.",
+      "entwurf": false,
       "lebenslage": [],
       "bezirk": [
-        "stadtweit"
+        "I-Mitte"
       ],
       "ort": [],
       "anlass": [
@@ -25614,6 +25614,466 @@
       "ort": [],
       "anlass": [
         "Klima & Umwelt"
+      ],
+      "entwurf": false
+    },
+    "stadt:11817#Ö 2": {
+      "klartext_titel": "Rücklagen der Stadt drohen bis 2028 aufgebraucht zu sein",
+      "klartext": "Eine Präsentation zur Haushaltskonsolidierung vom Februar 2025 zeigt: Der Verwaltungshaushalt 2025 kann nur durch eine nahezu vollständige Entnahme aus der Rücklage ausgeglichen werden, das geplante Investitionsprogramm sieht bis 2028 Kreditaufnahmen von insgesamt rund 500 Millionen Euro vor. Die Rücklage der Stadt, die 2022 noch bei rund 210 Millionen Euro lag, droht der Prognose zufolge bis 2028 komplett aufgebraucht zu sein und ins Negative zu rutschen. Für 2025 gilt daher eine strikte Einhaltung der Planansätze und Haushaltssperren, für die Folgejahre ab 2026 sind umfangreiche weitere Konsolidierungsmaßnahmen notwendig, um den Haushalt auszugleichen.",
+      "klartext_titel_leicht": "Der Stadt geht das gesparte Geld aus",
+      "klartext_leicht": "Die Stadt Ingolstadt hat gespartes Geld, eine Rücklage. Sie wird jedes Jahr kleiner. Ohne Gegenmaßnahmen könnte sie bis 2028 ganz aufgebraucht sein. Deshalb muss die Stadt jetzt genau auf ihre Ausgaben achten. Ab 2026 muss noch mehr gespart werden, damit der Haushalt wieder ausgeglichen ist.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "entwurf": false
+    },
+    "stadt:11817#Ö 32.1": {
+      "klartext_titel": "Freie Wähler fragen nach den Kosten der vorgezogenen Oberbürgermeisterwahl",
+      "klartext": "Die Fraktion Freie Wähler bittet um eine überschlägige Aufstellung der Kosten, die der Stadt Ingolstadt durch die vorgezogene Oberbürgermeisterwahl 2025 entstanden sind oder noch entstehen, etwa für Personal, Porto, Druck und Verwaltung — im Umlauf seien Schätzungen von 500.000 Euro und mehr. Im Ratsinfoportal liegt bislang nur das Anfrage-Schreiben vor; eine schriftliche Antwort der Verwaltung ist zum Zeitpunkt der Sitzung noch nicht als Dokument veröffentlicht.",
+      "klartext_titel_leicht": "Was kostete die vorgezogene Oberbürgermeister-Wahl?",
+      "klartext_leicht": "2025 gab es eine vorgezogene Wahl für den Oberbürgermeister. Das kostet die Stadt Geld, zum Beispiel für Personal und Druck. Manche schätzen die Kosten auf 500.000 Euro. Die Freien Wähler wollen die genauen Zahlen wissen. Eine schriftliche Antwort der Stadt gibt es dazu noch nicht.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "entwurf": false
+    },
+    "stadt:11817#Ö 32.2": {
+      "klartext_titel": "ÖDP fragt, wo Bezirksausschuss-Protokolle einsehbar sind, und nach dem Körnermagazin",
+      "klartext": "Die ÖDP-Stadtratsgruppe fragt, wo die öffentlichen Niederschriften der Bezirksausschuss-Sitzungen für Bürgerinnen und Bürger einsehbar sind, da diese auf der städtischen Webseite fehlen. Zudem fragt sie nach dem Sachstand zum Körnermagazin, insbesondere ob der Denkmalerhalt sichergestellt ist, da durch eine seit Jahren offenstehende Dachluke Feuchtigkeit ins Gebäude eindringen kann. Im Ratsinfoportal liegt bislang nur das Anfrage-Schreiben vor; eine schriftliche Antwort der Verwaltung ist zum Zeitpunkt der Sitzung noch nicht als Dokument veröffentlicht.",
+      "klartext_titel_leicht": "Wo finde ich die Protokolle der Bezirksausschüsse?",
+      "klartext_leicht": "Bürger fragen oft: Wo finde ich die Protokolle von Bezirksausschuss-Sitzungen? Auf der Internetseite der Stadt fehlen sie. Die ÖDP-Fraktion fragt deshalb nach. Sie fragt auch nach dem Körnermagazin, einem alten Gebäude. Dort steht seit Jahren eine Dachluke offen. Regen kann eindringen und das Gebäude beschädigen. Eine schriftliche Antwort der Stadt gibt es dazu noch nicht.",
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:11822#Ö 8": {
+      "klartext_titel": "Schutz der Igel vor Mährobotern",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit war folgendes Thema: Schutz der Igel vor Mährobotern.",
+      "klartext_titel_leicht": "Schutz der Igel vor Mährobotern",
+      "klartext_leicht": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit: Schutz der Igel vor Mährobotern.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "entwurf": false
+    },
+    "stadt:11821#Ö 1": {
+      "klartext_titel": "Aktuelle Information zum Kulturgeschehen",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Aktuelle Information zum Kulturgeschehen.",
+      "klartext_titel_leicht": "Aktuelle Information zum Kulturgeschehen",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Aktuelle Information zum Kulturgeschehen.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": false
+    },
+    "stadt:11821#Ö 2": {
+      "klartext_titel": "Sachstandsbericht zu Schulbaumaßnahmen",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Sachstandsbericht zu Schulbaumaßnahmen.",
+      "klartext_titel_leicht": "Sachstandsbericht zu Schulbaumaßnahmen",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Sachstandsbericht zu Schulbaumaßnahmen.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Schulbau"
+      ],
+      "entwurf": false
+    },
+    "stadt:11821#Ö 7": {
+      "klartext_titel": "80 Jahre Kriegsende: Überblick über die in Ingolstadt geplanten Veranstaltungen",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: 80 Jahre Kriegsende: Überblick über die in Ingolstadt geplanten Veranstaltungen.",
+      "klartext_titel_leicht": "80 Jahre Kriegsende: Überblick über die in Ingolstadt geplanten Veranstaltungen",
+      "klartext_leicht": "Ausschuss für Kultur: Überblick über Veranstaltungen zu 80 Jahren Kriegsende in Ingolstadt.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": false
+    },
+    "stadt:11973#Ö 1": {
+      "klartext_titel": "Impulsvortrag: Verständliche Nachrichten für alle — Erfahrungen aus dem Forschungsprojekt Leichte und Einfache Sprache im Journalismus",
+      "klartext": "Im Inklusionsrat war folgendes Thema: Impulsvortrag: Verständliche Nachrichten für alle — Erfahrungen aus dem Forschungsprojekt Leichte und Einfache Sprache im Journalismus.",
+      "klartext_titel_leicht": "Impulsvortrag: Verständliche Nachrichten für alle — Erfahrungen aus dem Forschungsprojekt Leichte und Einfache Sprache im Journalismus",
+      "klartext_leicht": "Inklusionsrat: Vortrag zu verständlichen Nachrichten für alle. Erfahrungen aus einem Forschungsprojekt.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:11973#Ö 3": {
+      "klartext_titel": "Mündliche Berichte aus den Arbeitskreisen: Psychische Gesundheit, Inklusive Bildung, Wohnen und Mobilität",
+      "klartext": "Im Inklusionsrat war folgendes Thema: Mündliche Berichte aus den Arbeitskreisen: Psychische Gesundheit, Inklusive Bildung, Wohnen und Mobilität.",
+      "klartext_titel_leicht": "Mündliche Berichte aus den Arbeitskreisen: Psychische Gesundheit, Inklusive Bildung, Wohnen und Mobilität",
+      "klartext_leicht": "Inklusionsrat: Mündliche Berichte aus den Arbeitskreisen: Psychische Gesundheit, Inklusive Bildung, Wohnen und Mobilität.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Gesundheit & Pflege",
+        "Wohnen & Miete"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:11973#Ö 4": {
+      "klartext_titel": "Ausblick und Termine: Fest der Inklusion und Dinner in Weiß",
+      "klartext": "Im Inklusionsrat war folgendes Thema: Ausblick und Termine: Fest der Inklusion und Dinner in Weiß.",
+      "klartext_titel_leicht": "Ausblick und Termine: Fest der Inklusion und Dinner in Weiß",
+      "klartext_leicht": "Inklusionsrat: Ausblick und Termine: Fest der Inklusion und Dinner in Weiß.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:13235#Ö 1": {
+      "klartext_titel": "Antrag der Firma Märker Transportbeton auf beschränkte Erlaubnis zum Kiesabbau bei Neuburg mit anschließender Wiederverfüllung",
+      "klartext": "Im Planungsausschuss des Planungsverbands Region Ingolstadt war folgendes Thema: Antrag der Firma Märker Transportbeton auf beschränkte Erlaubnis zum Kiesabbau bei Neuburg mit anschließender Wiederverfüllung.",
+      "klartext_titel_leicht": "Antrag der Firma Märker Transportbeton auf beschränkte Erlaubnis zum Kiesabbau bei Neuburg mit anschließender Wiederverfüllung",
+      "klartext_leicht": "Planungsausschuss der Region: Antrag einer Firma auf Kiesabbau bei Neuburg, danach wieder auffüllen.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Bauleitplanung",
+        "Klima & Umwelt"
+      ],
+      "entwurf": false
+    },
+    "stadt:13235#Ö 2": {
+      "klartext_titel": "Antrag auf Nasskiesabbau im Bereich Schnödhof West durch die Firma Wanner & Märker, Gemeinde Burgheim",
+      "klartext": "Im Planungsausschuss des Planungsverbands Region Ingolstadt war folgendes Thema: Antrag auf Nasskiesabbau im Bereich Schnödhof West durch die Firma Wanner & Märker, Gemeinde Burgheim.",
+      "klartext_titel_leicht": "Antrag auf Nasskiesabbau im Bereich Schnödhof West durch die Firma Wanner & Märker, Gemeinde Burgheim",
+      "klartext_leicht": "Planungsausschuss der Region: Antrag auf Nasskiesabbau bei Schnödhof West, Gemeinde Burgheim.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Bauleitplanung",
+        "Klima & Umwelt"
+      ],
+      "entwurf": false
+    },
+    "stadt:13235#Ö 3": {
+      "klartext_titel": "Möglicher Aufstellungsbeschluss zur Ausweisung von Vorranggebieten für die Landwirtschaft",
+      "klartext": "Im Planungsausschuss des Planungsverbands Region Ingolstadt war folgendes Thema: Möglicher Aufstellungsbeschluss zur Ausweisung von Vorranggebieten für die Landwirtschaft.",
+      "klartext_titel_leicht": "Möglicher Aufstellungsbeschluss zur Ausweisung von Vorranggebieten für die Landwirtschaft",
+      "klartext_leicht": "Planungsausschuss des Planungsverbands Region Ingolstadt: Möglicher Aufstellungsbeschluss zur Ausweisung von Vorranggebieten für die Landwirtschaft.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Bauleitplanung"
+      ],
+      "entwurf": false
+    },
+    "stadt:13235#Ö 4": {
+      "klartext_titel": "Fortschreibung des Regionalplanes: Windkraft, Sachstand der Stellungnahmen zur 31. Fortschreibung",
+      "klartext": "Im Planungsausschuss des Planungsverbands Region Ingolstadt war folgendes Thema: Fortschreibung des Regionalplanes: Windkraft, Sachstand der Stellungnahmen zur 31. Fortschreibung.",
+      "klartext_titel_leicht": "Fortschreibung des Regionalplanes: Windkraft, Sachstand der Stellungnahmen zur 31. Fortschreibung",
+      "klartext_leicht": "Planungsausschuss des Planungsverbands Region Ingolstadt: Fortschreibung des Regionalplanes: Windkraft, Sachstand der Stellungnahmen zur 31. Fortschreibung.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Klima & Umwelt",
+        "Bauleitplanung"
+      ],
+      "entwurf": false
+    },
+    "stadt:11817#Ö 1": {
+      "klartext_titel": "Abschiedsrede des Oberbürgermeisters",
+      "klartext": "Im Stadtrat war folgendes Thema: Abschiedsrede des Oberbürgermeisters.",
+      "klartext_titel_leicht": "Abschiedsrede des Oberbürgermeisters",
+      "klartext_leicht": "Stadtrat: Abschiedsrede des Oberbürgermeisters.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:11817#Ö 12": {
+      "klartext_titel": "Aufhebung und Korrektur des Ziels Klimaneutralität 2035",
+      "klartext": "Im Stadtrat war folgendes Thema: Aufhebung und Korrektur des Ziels Klimaneutralität 2035.",
+      "klartext_titel_leicht": "Aufhebung und Korrektur des Ziels Klimaneutralität 2035",
+      "klartext_leicht": "Stadtrat: Aufhebung und Korrektur des Ziels Klimaneutralität 2035.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Klima & Umwelt",
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:11817#Ö 23": {
+      "klartext_titel": "Sachstand Lessingschule",
+      "klartext": "Im Stadtrat war folgendes Thema: Sachstand Lessingschule.",
+      "klartext_titel_leicht": "Sachstand Lessingschule",
+      "klartext_leicht": "Stadtrat: Sachstand Lessingschule.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Schulbau"
+      ],
+      "entwurf": false
+    },
+    "stadt:11817#Ö 27": {
+      "klartext_titel": "Wasserspielplatz „PlayFountain“ auch für Ingolstadt",
+      "klartext": "Im Stadtrat war folgendes Thema: Wasserspielplatz „PlayFountain“ auch für Ingolstadt.",
+      "klartext_titel_leicht": "Wasserspielplatz „PlayFountain“ auch für Ingolstadt",
+      "klartext_leicht": "Stadtrat: Wasserspielplatz „PlayFountain“ auch für Ingolstadt.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": false
+    },
+    "stadt:11966#Ö 5": {
+      "klartext_titel": "Informationen und Anregungen",
+      "klartext": "Im Migrationsrat war folgendes Thema: Informationen und Anregungen.",
+      "klartext_titel_leicht": "Informationen und Anregungen",
+      "klartext_leicht": "Migrationsrat: Informationen und Anregungen.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:11968#Ö 1": {
+      "klartext_titel": "Mündlicher Bericht der Mobilen Jugendarbeit",
+      "klartext": "Im Unterausschuss Jugendhilfeplanung war folgendes Thema: Mündlicher Bericht der Mobilen Jugendarbeit.",
+      "klartext_titel_leicht": "Mündlicher Bericht der Mobilen Jugendarbeit",
+      "klartext_leicht": "Unterausschuss Jugendhilfeplanung: Mündlicher Bericht der Mobilen Jugendarbeit.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Jugend"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:11968#Ö 2": {
+      "klartext_titel": "Mündlicher Bericht des Fanprojekts Ingolstadt",
+      "klartext": "Im Unterausschuss Jugendhilfeplanung war folgendes Thema: Mündlicher Bericht des Fanprojekts Ingolstadt.",
+      "klartext_titel_leicht": "Mündlicher Bericht des Fanprojekts Ingolstadt",
+      "klartext_leicht": "Unterausschuss Jugendhilfeplanung: Mündlicher Bericht des Fanprojekts Ingolstadt.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Jugend"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:13225#Ö 2": {
+      "klartext_titel": "Bestätigung und Ergänzung des Protokolls der letzten Sitzung",
+      "klartext": "Im Jugendparlament war folgendes Thema: Bestätigung und Ergänzung des Protokolls der letzten Sitzung.",
+      "klartext_titel_leicht": "Bestätigung und Ergänzung des Protokolls der letzten Sitzung",
+      "klartext_leicht": "Jugendparlament: Bestätigung und Ergänzung des Protokolls der letzten Sitzung.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Jugend"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:13225#Ö 3": {
+      "klartext_titel": "Antrag JuPa-Pullis",
+      "klartext": "Im Jugendparlament war folgendes Thema: Antrag JuPa-Pullis.",
+      "klartext_titel_leicht": "Antrag JuPa-Pullis",
+      "klartext_leicht": "Jugendparlament: Antrag JuPa-Pullis.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Jugend"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:13225#Ö 4": {
+      "klartext_titel": "Besprechen und Formulieren von Antragsideen",
+      "klartext": "Im Jugendparlament war folgendes Thema: Besprechen und Formulieren von Antragsideen.",
+      "klartext_titel_leicht": "Besprechen und Formulieren von Antragsideen",
+      "klartext_leicht": "Jugendparlament: Besprechen und Formulieren von Antragsideen.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Jugend"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:11815#Ö 3": {
+      "klartext_titel": "Weiteres Vorgehen beim Interims-Festsaal",
+      "klartext": "Im Ausschuss für Finanzen und Personal war folgendes Thema: Weiteres Vorgehen beim Interims-Festsaal.",
+      "klartext_titel_leicht": "Weiteres Vorgehen beim Interims-Festsaal",
+      "klartext_leicht": "Ausschuss für Finanzen und Personal: Weiteres Vorgehen beim Interims-Festsaal.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung",
+        "Gebühren & Preise"
+      ],
+      "entwurf": false
+    },
+    "stadt:11815#Ö 9": {
+      "klartext_titel": "Wasserspielplatz „PlayFountain“ auch für Ingolstadt",
+      "klartext": "Im Ausschuss für Finanzen und Personal war folgendes Thema: Wasserspielplatz „PlayFountain“ auch für Ingolstadt.",
+      "klartext_titel_leicht": "Wasserspielplatz „PlayFountain“ auch für Ingolstadt",
+      "klartext_leicht": "Ausschuss für Finanzen und Personal: Wasserspielplatz „PlayFountain“ auch für Ingolstadt.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": false
+    },
+    "stadt:11814#Ö 2": {
+      "klartext_titel": "Aufhebung und Korrektur des Ziels Klimaneutralität 2035",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit war folgendes Thema: Aufhebung und Korrektur des Ziels Klimaneutralität 2035.",
+      "klartext_titel_leicht": "Aufhebung und Korrektur des Ziels Klimaneutralität 2035",
+      "klartext_leicht": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit: Aufhebung und Korrektur des Ziels Klimaneutralität 2035.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Klima & Umwelt",
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:11814#Ö 3": {
+      "klartext_titel": "Sachstand Lessingschule",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit war folgendes Thema: Sachstand Lessingschule.",
+      "klartext_titel_leicht": "Sachstand Lessingschule",
+      "klartext_leicht": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit: Sachstand Lessingschule.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Schulbau"
+      ],
+      "entwurf": false
+    },
+    "stadt:11814#Ö 4": {
+      "klartext_titel": "Mittelschule Südost",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit war folgendes Thema: Mittelschule Südost.",
+      "klartext_titel_leicht": "Mittelschule Südost",
+      "klartext_leicht": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit: Mittelschule Südost.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Schulbau"
       ],
       "entwurf": false
     }
