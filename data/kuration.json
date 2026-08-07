@@ -7879,8 +7879,8 @@
       "klartext_leicht": "Bezirks-Ausschuss VII-Etting: Stellungnahmen und Anfragen der Stadtverwaltung."
     },
     "bza:13311#Ö 5.1": {
-      "klartext_titel": "Fahrradverkehr an der Druckampel (Kipfenberger Str.)",
-      "klartext": "",
+      "klartext_titel": "Umlaufsperre an der Druckampel soll Radfahrer auf die Straße lenken",
+      "klartext": "An der Druckampel in der Kipfenberger Straße wurde auf dem Gehweg südlich der Ampel eine Umlaufsperre eingebaut. Sie soll Radfahrende dazu bringen, statt des Gehwegs die Fahrbahn zu benutzen. Nach den Sommerferien ist zusätzlich eine Kamerabeobachtung der Kreuzung geplant, um die Wirkung der Maßnahme zu überprüfen.",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -7891,7 +7891,9 @@
       "anlass": [
         "Verkehrsplanung"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Neue Sperre an der Druck-Ampel für Fahrräder",
+      "klartext_leicht": "An der Druck-Ampel in der Kipfenberger Straße gibt es ein Problem. Viele Rad-Fahrer fahren auf dem Geh-Weg statt auf der Straße. Jetzt wurde eine Sperre auf dem Geh-Weg eingebaut. Die Rad-Fahrer sollen dadurch auf die Straße wechseln. Nach den Sommer-Ferien beobachtet eine Kamera die Kreuzung. So sieht die Stadt, ob die Sperre hilft."
     },
     "bza:13311#Ö 6": {
       "klartext_titel": "Sachstandsbericht von Anträgen aus den letzten Sitzungen",
@@ -7967,24 +7969,28 @@
       "klartext_leicht": "Bezirks-Ausschuss VII-Etting: Ortstermin am Friedhof wegen neuer Urnenwänden."
     },
     "bza:13149#Ö 3": {
-      "klartext_titel": "Errichtung eines Bewegungsparcours an der Halle Neun (Az: 2024-12-001 B, 2023-04-28 B)",
-      "klartext": "",
+      "klartext_titel": "Bewegungsparcours an der Halle Neun ist vom Tisch",
+      "klartext": "Der geplante Bewegungsparcours an der Halle Neun wird nicht gebaut. Die Deutsche Bahn als Grundstückseigentümerin hat den Bauantrag abgelehnt, weil die Fläche direkt an Bahngleise angrenzt. Sie befürchtet, dass Nutzer unbefugt auf die Gleisanlagen gelangen könnten, sowie Sachbeschädigungen und Behinderungen des Lieferverkehrs.",
       "lebenslage": [
-        "Unterwegs"
+        "Freizeit & Sport"
       ],
       "bezirk": [
         "XII-Münchener Straße"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Kein Fitness-Parcours an der Halle Neun",
+      "klartext_leicht": "An der Halle Neun sollte ein Bewegungs-Parcours zum Sport machen entstehen. Das Grundstück gehört der Deutschen Bahn. Die Bahn hat den Bau-Antrag abgelehnt. Der Grund: Das Grundstück liegt direkt neben den Bahn-Gleisen. Die Bahn befürchtet, dass Menschen dort unerlaubt auf die Gleise gelangen. Auch Schäden und Probleme beim Liefer-Verkehr sind ein Grund. Der Bewegungs-Parcours wird deshalb nicht gebaut."
     },
     "bza:13149#Ö 4.1": {
-      "klartext_titel": "Verkehrssituation Umgriff Schule Münchener Straße, Schr. v.25.02.2025 (Ref.VII",
-      "klartext": "",
+      "klartext_titel": "Keine Querungsinsel an der Schule Münchener Straße, aber Halteverbot mit Rettungsweg",
+      "klartext": "Im Umgriff der Schule Münchener Straße lässt sich nach Prüfung der Verwaltung keine dauerhafte Querungsinsel oder ein Fußgängerüberweg einrichten, da die Schleppkurven für Fahrzeuge und die Sichtverhältnisse dies nicht zulassen. Stattdessen wird ein absolutes Haltverbot mit dem Zusatzzeichen für einen Rettungsweg angeordnet.",
       "lebenslage": [
         "Eltern & Kinder",
-        "Unterwegs"
+        "Jugend"
       ],
       "bezirk": [
         "XII-Münchener Straße"
@@ -7993,7 +7999,9 @@
       "anlass": [
         "Verkehrsplanung"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Keine Insel zum Überqueren an der Schule Münchener Straße",
+      "klartext_leicht": "An der Schule Münchener Straße sollten Kinder besser die Straße überqueren können. Eine feste Insel in der Mitte der Straße geht aber nicht. Der Platz reicht für große Fahrzeuge nicht aus. Man kann von dort auch schlecht sehen. Stattdessen ordnet die Stadt ein Halte-Verbot an. Ein Rettungs-Weg bleibt dabei frei."
     },
     "bza:13149#Ö 4.2": {
       "klartext_titel": "Zustand Parkfläche Nähe Anton-Kirche, Schr. v. 25.02.2025 (Ref. II",
@@ -8011,21 +8019,24 @@
       "klartext_leicht": "Bezirks-Ausschuss XII-Münchener Straße: Zustand Parkfläche Nähe Anton-Kirche, Schr. v. 25.02.2025 (Ref. II."
     },
     "bza:13149#Ö 4.3": {
-      "klartext_titel": "Parksituation Am Pulverl, Schr. v. 04.03.2025 (Ref. III",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Keine neuen Maßnahmen gegen Falschparken Am Pulverl",
+      "klartext": "Wegen der Parksituation in der Straße Am Pulverl verweist die Verwaltung auf den städtischen Verkehrsüberwachungsdienst, der dort bereits regelmäßig kontrolliert. Da der Dienst nicht überall gleichzeitig präsent sein kann, sind derzeit keine zusätzlichen Maßnahmen vorgesehen.",
+      "lebenslage": [],
       "bezirk": [
         "XII-Münchener Straße"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Parken Am Pulverl bleibt wie bisher",
+      "klartext_leicht": "In der Straße Am Pulverl gibt es Probleme mit Falsch-Parkern. Die Stadt kontrolliert dort schon regelmäßig. Aber die Kontrolleure können nicht überall gleichzeitig sein. Neue Maßnahmen plant die Stadt gerade nicht."
     },
     "bza:13149#Ö 4.4": {
-      "klartext_titel": "Grünpfeilschild Münchener Straße/Apianstraße, Schr. v. 17.03.2025 (Ref. VII",
-      "klartext": "",
+      "klartext_titel": "Grünpfeilschild kommt an die Kreuzung Münchener Straße/Apianstraße",
+      "klartext": "An der Kreuzung Münchener Straße/Apianstraße wird ein Grünpfeilschild am Ampelmast angebracht, das Rechtsabbiegen bei Rot erlaubt. Sollte es dadurch zu Unfällen kommen, wird das Schild wieder entfernt.",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -8034,54 +8045,61 @@
       ],
       "ort": [],
       "anlass": [
-        "Grün & Sauberkeit"
+        "Verkehrsplanung"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Grüner Pfeil an der Ampel Münchener Straße/Apianstraße",
+      "klartext_leicht": "An der Ampel Münchener Straße Ecke Apianstraße kommt ein grüner Pfeil dazu. Damit dürfen Autos bei Rot rechts abbiegen, wenn nichts kommt. Gibt es dadurch Unfälle, nimmt die Stadt das Schild wieder weg."
     },
     "bza:13149#Ö 4.5": {
-      "klartext_titel": "Abfalleimer am Spielplatz an der Allee der Bäume, Schr. v. 26.02.2025 (Ref.VII",
-      "klartext": "",
+      "klartext_titel": "Neuer Abfalleimer für den Spielplatz an der Allee der Bäume",
+      "klartext": "Für den Spielplatz an der Allee der Bäume wird ein vogelsicherer Abfalleimer vorgeschlagen, da ein Modell mit fest verschließbarem Deckel derzeit nicht verfügbar ist. Die Kosten dafür liegen bei rund 1.000 Euro; der Bezirksausschuss muss die Finanzierung noch bestätigen.",
       "lebenslage": [
-        "Eltern & Kinder",
-        "Wohnen & Miete",
-        "Unterwegs",
-        "Freizeit & Sport"
+        "Eltern & Kinder"
       ],
       "bezirk": [
         "XII-Münchener Straße"
       ],
       "ort": [],
       "anlass": [
-        "Grün & Sauberkeit"
+        "Grün & Sauberkeit",
+        "Gebühren & Preise"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Neuer Mülleimer für den Spielplatz Allee der Bäume",
+      "klartext_leicht": "Am Spielplatz an der Allee der Bäume soll ein neuer Mülleimer aufgestellt werden. Er soll vogel-sicher sein, damit Vögel den Müll nicht herausholen können. Ein Mülleimer mit fest verschließbarem Deckel gibt es gerade nicht. Der Mülleimer kostet etwa 1.000 Euro. Der Bezirks-Ausschuss muss das Geld dafür noch bewilligen."
     },
     "bza:13149#Ö 4.6": {
-      "klartext_titel": "Einschaltung der Sirenen, Schr. v. 05.02.2025 (Ref. III",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Feuerwehrsirenen werden tagsüber nicht zusätzlich zur Alarmierung genutzt",
+      "klartext": "Die Verwaltung lehnt es ab, die Sirenen tagsüber zusätzlich zur Alarmierung der Feuerwehr einzuschalten. Die Einsatzkräfte werden bereits flächendeckend und zuverlässig über digitale Meldeempfänger alarmiert, sodass eine zusätzliche Sirenenauslösung überflüssig wäre und nur unnötigen Lärm verursachen würde. Auch als Warnung vor heranfahrenden Einsatzfahrzeugen seien Sirenen nicht vorgesehen; die Sirenen bleiben dem Katastrophenschutz vorbehalten.",
+      "lebenslage": [],
       "bezirk": [
         "XII-Münchener Straße"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Sicherheit"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Keine zusätzlichen Sirenen-Alarme für die Feuerwehr am Tag",
+      "klartext_leicht": "Manche wollten, dass tagsüber Sirenen die Feuerwehr-Leute alarmieren. Die Stadt lehnt das ab. Die Feuerwehr-Leute bekommen den Alarm schon über kleine Funk-Geräte. Das klappt gut und ohne Lärm für alle. Zusätzliche Sirenen wären deshalb nicht nötig. Sirenen bleiben für den Katastrophen-Schutz reserviert, zum Beispiel bei großen Gefahren."
     },
     "bza:13149#Ö 5": {
-      "klartext_titel": "Außenbestuhlung Gastronomiebetrieb Münchener Straße 103, Schr. v. 03.03.2025 (Ref. VI",
-      "klartext": "",
+      "klartext_titel": "Tiefbauamt befürwortet Außenbewirtung an der Münchener Straße 103",
+      "klartext": "Für einen Gastronomiebetrieb in der Münchener Straße 103 wurde erstmals eine Außenbewirtung auf rund 10 Quadratmetern öffentlichem Straßengrund beantragt. Das Tiefbauamt empfiehlt dem Bezirksausschuss, der Sondernutzung zuzustimmen.",
       "lebenslage": [
-        "Gewerbe & Gastro",
-        "Unterwegs"
+        "Gewerbe & Gastro"
       ],
       "bezirk": [
         "XII-Münchener Straße"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Außen-Sitzplätze an der Münchener Straße 103 werden befürwortet",
+      "klartext_leicht": "Ein Gastronomie-Betrieb in der Münchener Straße 103 möchte draußen Tische und Stühle aufstellen. Dafür braucht er die Erlaubnis der Stadt, weil es auf dem Gehweg ist. Es geht um etwa 10 Quadratmeter Fläche. Das Tiefbau-Amt der Stadt ist dafür. Der Bezirks-Ausschuss soll jetzt zustimmen."
     },
     "bza:13149#Ö 6.1": {
       "klartext_titel": "Sportverein TSV Unsernherrn Entkalkungsanlage",
@@ -8160,10 +8178,11 @@
       "klartext_leicht": "Bezirks-Ausschuss VI-West: Personelle Veränderungen im Bezirksausschuss Ingolstadt-West."
     },
     "bza:13295#Ö 2.2": {
-      "klartext_titel": "Antrag des FC Gerolfing e.V. auf Zuschuss aus dem Bürgerhaushalt 2024 zum Bau eines Rasenvolleyballfeldes auf …",
-      "klartext": "",
+      "klartext_titel": "FC Gerolfing darf Rasenvolleyballfeld bauen, Bürgerhaushalt-Zuschuss noch offen",
+      "klartext": "Der FC Gerolfing e.V. möchte auf seinem gepachteten Sportgelände ein 18 mal 9 Meter großes Rasenvolleyballfeld errichten und beantragt dafür einen Zuschuss aus dem Bürgerhaushalt. Das Sportamt befürwortet das Vorhaben grundsätzlich, da es zusätzliche Trainingsmöglichkeiten schafft und das Feld für mehrere Sportarten nutzbar ist. Die Stadt als Grundstückseigentümerin hat der Errichtung inzwischen zugestimmt, Bau und Unterhalt trägt der Verein selbst. Ob und in welcher Höhe ein Zuschuss aus dem Bürgerhaushalt möglich ist — maximal 30 Prozent der Kosten, höchstens 10.000 Euro —, prüft noch die zentrale Koordinierungsstelle im Hauptamt.",
       "lebenslage": [
-        "Freizeit & Sport"
+        "Freizeit & Sport",
+        "Ehrenamt & Vereine"
       ],
       "bezirk": [
         "VI-West"
@@ -8172,29 +8191,44 @@
       "anlass": [
         "Gebühren & Preise"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Fußball-Verein Gerolfing darf Volleyballfeld aus Rasen bauen",
+      "klartext_leicht": "Der FC Gerolfing möchte ein Volleyball-Feld aus Rasen bauen. Es soll auf dem Sport-Gelände des Vereins entstehen. Das Feld soll 18 mal 9 Meter groß sein. Das Sport-Amt findet die Idee gut. Auf dem Feld können auch andere Sport-Arten gespielt werden. Die Stadt hat dem Bau jetzt zugestimmt. Der Verein bezahlt Bau und Pflege selbst. Der Verein möchte außerdem Geld aus dem Bürger-Haushalt bekommen. Ob das klappt, prüft noch eine Stelle im Rathaus."
     },
     "bza:13295#Ö 4": {
-      "klartext_titel": "Friedhof Dünzlau — AZ. 2024-06-010",
-      "klartext": "",
+      "klartext_titel": "Kirchenpfleger Dünzlau bekommt eigenen Schlüssel für das Leichenhaus",
+      "klartext": "Der Kirchenpfleger Dünzlau erhält für den Friedhof Dünzlau einen zusätzlichen Schlüssel, unter anderem für die Reinigung des Leichenhauses. Die Öffnungszeiten des Friedhofs richten sich nach der städtischen Friedhofssatzung. Zudem werden die Bäumchen im Leichenhaus ausgetauscht.",
       "lebenslage": [],
       "bezirk": [
         "VI-West"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Dünzlau"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Neuer Schlüssel für das Leichenhaus auf dem Friedhof Dünzlau",
+      "klartext_leicht": "Auf dem Friedhof Dünzlau gibt es ein Leichenhaus. Der Kirchenpfleger von Dünzlau bekommt jetzt einen eigenen Schlüssel dafür. So kann er es besser sauber halten. Die Öffnungszeiten des Friedhofs stehen in der Friedhofs-Satzung der Stadt. Außerdem werden die kleinen Bäume im Leichenhaus ausgetauscht."
     },
     "bza:13295#Ö 5": {
-      "klartext_titel": "Dorfplatz Pettenhofen — AZ. 2022-06-016",
-      "klartext": "",
+      "klartext_titel": "Dorfplatz Pettenhofen wird mit Pavillon, Bücherschrank und Sitzsteinen aufgewertet",
+      "klartext": "Für den Dorfplatz Pettenhofen ist ein mehrjähriger Maßnahmenplan vorgesehen: 2024 sollen die Christbaumbeleuchtung vorbereitet und ein Bücherschrank eingebaut werden, 2025 folgen ein dauerhafter Stromanschluss, ein gepflasterter Aufenthaltsbereich mit Pavillon und Sitzbank, Sitzsteine als Schutz vor parkenden Autos sowie zusätzliche Strauchpflanzungen. Andere Wünsche des Bezirksausschusses, etwa ein Grundwasserbrunnen, werden wegen ablehnender Stellungnahmen der zuständigen Ämter nicht umgesetzt. Die Kosten trägt der Bezirksausschuss anteilig mit 15.000 Euro im Haushalt 2024 und weiteren 6.000 Euro im Haushalt 2025, den Rest übernehmen Hochbau- und Gartenamt.",
       "lebenslage": [],
       "bezirk": [
         "VI-West"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Pettenhofen"
+      ],
+      "anlass": [
+        "Grün & Sauberkeit",
+        "Konzept & Planung"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Dorfplatz Pettenhofen bekommt mehr Sitzplätze und einen Bücherschrank",
+      "klartext_leicht": "Der Dorfplatz in Pettenhofen soll schöner werden. Es gibt einen Plan für mehrere Jahre. 2024 kommt ein Bücherschrank dazu. Auch die Beleuchtung für den Christbaum wird vorbereitet. 2025 kommen ein Pavillon mit Sitzbank und Steine zum Sitzen dazu. Außerdem werden neue Sträucher gepflanzt. Einen Brunnen mit Grundwasser wird es nicht geben. Zuständige Ämter waren dagegen. Die Kosten teilen sich der Bezirks-Ausschuss und zwei Ämter der Stadt."
     },
     "bza:13295#Ö 6": {
       "klartext_titel": "Kornstraße in Gerolfing",
@@ -8258,17 +8292,19 @@
       "klartext_leicht": "Bezirks-Ausschuss VI-West: Hochwasserschäden am Schafirrsee und Radweg an der Donau."
     },
     "bza:13295#Ö 10": {
-      "klartext_titel": "Bereitstellung von Konfiskatbehältern für Fallwild, Gescheide von erlegtem Wild und Wildkörpern an …",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Antrag auf Konfiskatbehälter für Wildreste in Ingolstadt gescheitert",
+      "klartext": "Ein Antrag auf städtisch geförderte Konfiskatbehälter für Fallwild und Schlachtabfälle der Jagd ist gescheitert. Das Veterinäramt hielt den ursprünglichen Vorschlag für unzureichend, das Umweltamt schlug die Entsorgung über die Müllverwertungsanlage vor, die dies jedoch ablehnte. Gespräche mit Ordnungs-, Gewerbe- und Tiefbauamt sowie verschiedenen Jägerschaften konnten keine gemeinsame Lösung finden, da sich die Interessen in den Stadtteilen stark unterscheiden. Die Jagdgenossenschaft Ingolstadt stellte am 26. September 2024 fest, dass die Hegegemeinschaft die Errichtung von Konfiskatbehältern mit städtischer Unterstützung ablehnt; die Verwaltung schließt den Antrag daraufhin ab.",
+      "lebenslage": [],
       "bezirk": [
         "VI-West"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Behälter für tote Wildtiere kommen nicht",
+      "klartext_leicht": "Jäger wollten spezielle Behälter für tote Wildtiere und Schlacht-Reste. Die Stadt sollte das bezahlen. Verschiedene Ämter der Stadt konnten sich nicht einigen. Auch die Jäger selbst waren sich nicht einig. Am Ende hat die Jagd-Genossenschaft entschieden. Die Behälter werden nicht mit Geld der Stadt gebaut. Der Antrag ist damit abgeschlossen."
     },
     "bza:13295#Ö 11": {
       "klartext_titel": "Bürgerversammlung am 2. Juli 2025 - Themensammlung",
@@ -8469,19 +8505,24 @@
       "klartext_leicht": "Bezirks-Ausschuss II-Nordwest: Informationen, Stellungnahmen und Anfragen der Verwaltung."
     },
     "bza:13262#Ö 3.1": {
-      "klartext_titel": "2022-02-017-Stellungnahme: Amt f.Jugend und Familie / Aktivspielplatz im Piuspark",
-      "klartext": "",
+      "klartext_titel": "Aktivspielplatz im Piuspark liegt wegen Personalmangel weiter auf Eis",
+      "klartext": "Der Stadtrat hatte die Standortprüfung für einen Aktivspielplatz im Piuspark bereits am 16. Mai 2023 grundsätzlich befürwortet. Die tatsächliche Umsetzung ruht derzeit jedoch, weil im Zuge der Haushaltskonsolidierung mehr als 200 Stellen im Stadtgebiet abgebaut wurden und dem zuständigen Amt die Personalkapazität für die Planung fehlt.",
       "lebenslage": [
         "Eltern & Kinder",
-        "Jugend",
-        "Freizeit & Sport"
+        "Jugend"
       ],
       "bezirk": [
         "II-Nordwest"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Piusviertel"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Spielplatz im Piuspark muss weiter warten",
+      "klartext_leicht": "Im Piuspark soll ein besonderer Spielplatz entstehen, ein Aktiv-Spielplatz. Der Stadt-Rat hat der Idee schon 2023 zugestimmt. Gebaut wird er trotzdem noch nicht. Der Grund: Der Stadt fehlt Personal. Die Stadt musste viele Stellen streichen, um Geld zu sparen. Deshalb hat niemand Zeit, den Spielplatz zu planen."
     },
     "bza:13262#Ö 3.2": {
       "klartext_titel": "Anfrage: Inklusionsamt / Entsendung Nachfolgerreglung",
@@ -8546,28 +8587,37 @@
       "klartext_leicht": "Bezirks-Ausschuss II-Nordwest: Bürgerhaushalt – Beratung und Entscheidungen."
     },
     "bza:13262#Ö 4.1": {
-      "klartext_titel": "aktueller Stand BHH 2025",
-      "klartext": "",
+      "klartext_titel": "Bürgerhaushalt Nordwest 2025: gut ein Drittel der 87.000 Euro verplant",
+      "klartext": "Vom Bürgerhaushalt 2025 des Bezirks II-Nordwest mit einem Ansatz von 87.000 Euro sind bislang 35.000 Euro verplant: für Sonnenschirme im Essensbereich der Christoph-Kolumbus-Schule, Indoor-Spielburgen für die Kita Sternenhaus und ein Sonnensegel für die Kita Netz für Kinder in der Permoserstraße. Rund 52.000 Euro stehen noch als Restmittel zur Verfügung.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "II-Nordwest"
+      ],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "So viel Geld hat der Bürgerhaushalt Nordwest noch",
+      "klartext_leicht": "Der Bezirk Nordwest hat Geld für kleine Projekte, den Bürger-Haushalt. Für 2025 sind es 87.000 Euro. Ein Teil ist schon verplant. Zum Beispiel für Sonnenschirme an einer Schule und für zwei Kitas. Es sind noch etwa 52.000 Euro übrig."
+    },
+    "bza:13262#Ö 4.2": {
+      "klartext_titel": "Beratung zum Sondervermögen des Bezirksausschusses Nordwest",
+      "klartext": "Im Bezirksausschuss II-Nordwest war folgendes Thema: Beratung: Sondervermögen des BZA NW.",
       "lebenslage": [],
       "bezirk": [
         "II-Nordwest"
       ],
       "ort": [],
       "anlass": [
-        "Gebühren & Preise"
+        "Konzept & Planung"
       ],
-      "entwurf": true
-    },
-    "bza:13262#Ö 4.2": {
-      "klartext_titel": "Beratung: Sondervermögen des BZA NW",
-      "klartext": "",
-      "lebenslage": [],
-      "bezirk": [
-        "II-Nordwest"
-      ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Beratung zum Sondervermögen des Bezirksausschusses Nordwest",
+      "klartext_leicht": "Bezirks-Ausschuss II-Nordwest: Beratung: Sondervermögen des BZA NW."
     },
     "bza:13262#Ö 4.3": {
       "klartext_titel": "Entscheidung: Schattenkonzept Piuspark",
@@ -8602,19 +8652,23 @@
       "klartext_leicht": "Bezirks-Ausschuss X-Süd: Fertigstellung Balancieranlage Grundschule Zuchering."
     },
     "bza:13296#Ö 2.2": {
-      "klartext_titel": "Bordsteinabsenkung und Beschilderung Radweg Georg-Heiß-Straße in Spitalhof",
-      "klartext": "",
+      "klartext_titel": "Radweg Georg-Heiß-Straße bekommt Beschilderung, breitere Bordsteinabsenkung muss warten",
+      "klartext": "Nach einem Ortstermin ordnet die Verwaltung für den bislang unbeschilderten Geh- und Radweg in der Georg-Heiß-Straße die Benutzungspflicht für den Radverkehr Richtung Westen an. Für die Gegenrichtung wird versuchsweise ein Benutzungsrecht durch das Zeichen „Radfahrer frei“ eingerichtet, da dort bislang keine Unfälle bekannt sind. Die vom Bezirksausschuss gewünschte Verbreiterung der Bordsteinabsenkung zur Hans-Denck-Straße hält die Verwaltung für nachvollziehbar, kann sie wegen der angespannten Haushaltslage aber derzeit nicht zeitnah umsetzen.",
       "lebenslage": [
         "Unterwegs"
       ],
       "bezirk": [
         "X-Süd"
       ],
-      "ort": [],
+      "ort": [
+        "Spitalhof"
+      ],
       "anlass": [
         "Verkehrsplanung"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Neue Schilder für den Radweg Georg-Heiß-Straße",
+      "klartext_leicht": "Der Rad-Weg in der Georg-Heiß-Straße hatte noch keine Schilder. Jetzt bekommt er welche. In eine Richtung müssen Rad-Fahrer den Radweg benutzen. In die andere Richtung dürfen sie es versuchsweise. Der Bezirks-Ausschuss wollte außerdem eine breitere Bord-Stein-Absenkung an einer Kreuzung. Das findet die Stadt gut, hat aber gerade zu wenig Geld dafür."
     },
     "bza:13296#Ö 2.3": {
       "klartext_titel": "Buswartehäuschen „Wallmeisterstraße“",
@@ -8844,28 +8898,28 @@
       "klartext_leicht": "Bezirks-Ausschuss V-Südwest: Antwortschreiben der Stadt und Informationen aus der Verwaltung."
     },
     "bza:13271#Ö 3.1": {
-      "klartext_titel": "Bebauungs- und Grünordnungsplan Nr. 178 A II „Erweiterung Kleingartenanlage Am Schmalzbuckel mit …",
-      "klartext": "",
-      "lebenslage": [
-        "Wohnen & Miete",
-        "Freizeit & Sport"
-      ],
+      "klartext_titel": "Änderung des Bebauungsplans „Am Schmalzbuckel“ lag im Februar/März 2025 öffentlich aus",
+      "klartext": "Für die Änderung des Bebauungs- und Grünordnungsplans Nr. 178 A II „Erweiterung Kleingartenanlage Am Schmalzbuckel“ fand vom 6. Februar bis 10. März 2025 die öffentliche Auslegung statt. In diesem Zeitraum konnten die Verfahrensunterlagen im Internet und im Stadtplanungsamt eingesehen und Anregungen eingereicht werden. Über die im Verfahren vorgebrachten Anregungen entscheidet anschließend der Stadtrat im Rahmen der Abwägung.",
+      "lebenslage": [],
       "bezirk": [
         "V-Südwest"
       ],
-      "ort": [],
-      "anlass": [
-        "Bauleitplanung",
-        "Grün & Sauberkeit"
+      "ort": [
+        "Schmalzbuckel"
       ],
-      "entwurf": true
+      "anlass": [
+        "Bauleitplanung"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Bauplan „Am Schmalzbuckel“ konnte im Frühjahr 2025 eingesehen werden",
+      "klartext_leicht": "Die Stadt ändert einen Bauplan für das Gebiet „Am Schmalzbuckel“. Dort soll die Kleingarten-Anlage erweitert werden. Vom 6. Februar bis zum 10. März 2025 konnten alle den Plan ansehen. Wer wollte, konnte dazu etwas sagen. Über diese Vorschläge entscheidet später der Stadt-Rat."
     },
     "bza:13271#Ö 3.2": {
-      "klartext_titel": "Weiterer Zebrastreifen am Schulzentrum Südwest in der Maximilianstraße (2024-05-013)",
-      "klartext": "",
+      "klartext_titel": "Kein weiterer Zebrastreifen am Schulzentrum Südwest, Querungsinseln bevorzugt",
+      "klartext": "Für die Maximilianstraße am Schulzentrum Südwest bevorzugt die Verwaltung statt eines weiteren Zebrastreifens den Ausbau von Querungsinseln. Bei Querungsinseln müssen Fahrzeuge warten, während Fußgänger Vorrang haben, was aus Sicht der Verwaltung mehr tatsächliche Sicherheit bringt als ein Zebrastreifen. Am Schulzentrum bestehen bereits zwei Querungsinseln.",
       "lebenslage": [
         "Eltern & Kinder",
-        "Unterwegs"
+        "Jugend"
       ],
       "bezirk": [
         "V-Südwest"
@@ -8874,7 +8928,9 @@
       "anlass": [
         "Verkehrsplanung"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Kein neuer Zebrastreifen am Schulzentrum Südwest",
+      "klartext_leicht": "Am Schulzentrum Südwest in der Maximilian-Straße wurde ein neuer Zebra-Streifen gewünscht. Die Stadt findet Querungs-Inseln besser. Das sind kleine Inseln in der Straßen-Mitte. Dort müssen Autos warten, nicht die Fußgänger. Das ist sicherer. Am Schulzentrum gibt es schon zwei solche Inseln."
     },
     "bza:13271#Ö 4.1": {
       "klartext_titel": "Hundetütenspender an der Kita Schatztruhe",
@@ -8911,17 +8967,20 @@
       "klartext_leicht": "Bezirks-Ausschuss V-Südwest: Beschwerde über Hundekot Herrenlettenstraße."
     },
     "bza:13271#Ö 5.1": {
-      "klartext_titel": "Änderungen im Bürgerhaushalt 2024 und 2025",
-      "klartext": "",
+      "klartext_titel": "Bürgerhaushalt Südwest 2024: fast alle 78.000 Euro verplant",
+      "klartext": "Vom Bürgerhaushalt 2024 des Bezirks V-Südwest mit einem Ansatz von 78.000 Euro sind 77.521 Euro verplant, sodass nur noch 479 Euro an Restmitteln übrig sind. Bereits umgesetzt wurden unter anderem der Ausbau des Barfußpfads am Pater-Josef-Schmid-Weg, eine Bank mit Abfalleimer am Bolzplatz Maximilianstraße, ein Zuschuss für den Parkplatz des SV Hundszell und Stockschützen-Ausrüstung desselben Vereins. Noch offen sind unter anderem ein Brunnen am Schulzentrum Südwest, Schautafeln mit historischem Rückblick, Igelquartiere und ein Zuschuss für das Vivarium im Apian-Gymnasium.",
       "lebenslage": [],
       "bezirk": [
         "V-Südwest"
       ],
       "ort": [],
       "anlass": [
-        "Gebühren & Preise"
+        "Gebühren & Preise",
+        "Konzept & Planung"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Bürgerhaushalt Südwest 2024 ist fast aufgebraucht",
+      "klartext_leicht": "Der Bezirk Südwest hatte 2024 78.000 Euro für kleine Projekte. Fast alles Geld ist schon verplant. Nur noch 479 Euro sind übrig. Schon fertig sind zum Beispiel ein Barfuß-Pfad und eine Bank am Bolzplatz. Auch der SV Hundszell bekam Geld. Noch offen sind zum Beispiel ein Brunnen an einer Schule und Häuschen für Igel."
     },
     "bza:13271#Ö 5.2": {
       "klartext_titel": "Zuschuss Defibrillator SV Haunwöhr",
@@ -9068,10 +9127,27 @@
       "klartext_leicht": "Bezirks-Ausschuss V-Südwest: Antwortschreiben der Stadt und Informationen aus der Verwaltung."
     },
     "bza:13255#Ö 5.1": {
-      "klartext_titel": "Bebauungs- und Grünordnungsplan Nr. 178 A II „Erweiterung Kleingartenanlage Am Schmalzbuckel mit …",
-      "klartext": "",
+      "klartext_titel": "Änderung des Bebauungsplans „Am Schmalzbuckel“ auch dem Bezirksausschuss Südwest erneut vorgelegt",
+      "klartext": "Wie bereits in einer früheren Sitzung des Bezirksausschusses V-Südwest mitgeteilt, fand für die Änderung des Bebauungs- und Grünordnungsplans Nr. 178 A II „Erweiterung Kleingartenanlage Am Schmalzbuckel“ vom 6. Februar bis 10. März 2025 die öffentliche Auslegung statt. Die Verfahrensunterlagen konnten im Internet und im Stadtplanungsamt eingesehen werden; über eingereichte Anregungen entscheidet der Stadtrat im Rahmen der Abwägung.",
+      "lebenslage": [],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [
+        "Schmalzbuckel"
+      ],
+      "anlass": [
+        "Bauleitplanung"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Bauplan „Am Schmalzbuckel“ noch einmal im Bezirksausschuss Südwest",
+      "klartext_leicht": "Die Stadt ändert einen Bauplan für das Gebiet „Am Schmalzbuckel“. Dort soll die Kleingarten-Anlage erweitert werden. Vom 6. Februar bis zum 10. März 2025 konnten alle den Plan ansehen. Diese Mitteilung ging dem Bezirks-Ausschuss Südwest ein zweites Mal zu, für eine weitere Sitzung. Über Vorschläge dazu entscheidet später der Stadt-Rat."
+    },
+    "bza:13255#Ö 5.2": {
+      "klartext_titel": "SV Hundszell bekommt 3.000 Euro für zwei Kleinfeldtore",
+      "klartext": "Der Bezirksausschuss V-Südwest hat am 24. September 2024 einen Zuschuss von 3.000 Euro aus dem Bürgerhaushalt für den Kauf von zwei Kleinfeldtoren des SV Hundszell e.V. befürwortet. Das Amt für Sport und Freizeit unterstützt den Antrag, da die Fußballabteilung des Vereins derzeit 120 Jugendliche betreut. Ob die Mittel dafür im Haushaltsjahr 2025 tatsächlich zur Verfügung stehen, wird noch geprüft.",
       "lebenslage": [
-        "Wohnen & Miete",
+        "Jugend",
         "Freizeit & Sport"
       ],
       "bezirk": [
@@ -9079,23 +9155,11 @@
       ],
       "ort": [],
       "anlass": [
-        "Bauleitplanung",
-        "Grün & Sauberkeit"
-      ],
-      "entwurf": true
-    },
-    "bza:13255#Ö 5.2": {
-      "klartext_titel": "Antrag des SV Hundszell e.V. auf Zuschuss aus dem Bürgerhaushalt 2025 zur Anschaffung von zwei Kleinfeldtoren …",
-      "klartext": "",
-      "lebenslage": [],
-      "bezirk": [
-        "V-Südwest"
-      ],
-      "ort": [],
-      "anlass": [
         "Gebühren & Preise"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Geld für zwei neue Fußballtore beim SV Hundszell",
+      "klartext_leicht": "Der SV Hundszell hat 120 Jugendliche im Fußball. Der Verein möchte zwei kleine Tore kaufen. Der Bezirks-Ausschuss Südwest hat dafür 3.000 Euro bewilligt. Das Sport-Amt der Stadt findet das gut. Ob das Geld 2025 wirklich da ist, wird noch geprüft."
     },
     "bza:13255#Ö 5.3": {
       "klartext_titel": "Information: Beschilderung am Kreisel Hagauer Straße",
@@ -9177,17 +9241,20 @@
       "klartext_leicht": "Bezirks-Ausschuss V-Südwest: Beschwerde über Hundekot Herrenlettenstraße."
     },
     "bza:13255#Ö 8.1": {
-      "klartext_titel": "Änderungen im Bürgerhaushalt 2024 und 2025",
-      "klartext": "",
+      "klartext_titel": "Bürgerhaushalt Südwest 2024 auch in dieser Sitzung vorgestellt: fast ausgeschöpft",
+      "klartext": "Auch in dieser Sitzung wurde dem Bezirksausschuss V-Südwest der Stand des Bürgerhaushalts 2024 vorgelegt: Von den 78.000 Euro Ansatz sind 77.521 Euro verplant, sodass nur 479 Euro an Restmitteln übrig bleiben. Bereits umgesetzt wurden unter anderem der Barfußpfad am Pater-Josef-Schmid-Weg, eine Bank mit Abfalleimer am Bolzplatz Maximilianstraße sowie Zuschüsse für den SV Hundszell. Noch offen sind unter anderem ein Brunnen am Schulzentrum Südwest und Igelquartiere.",
       "lebenslage": [],
       "bezirk": [
         "V-Südwest"
       ],
       "ort": [],
       "anlass": [
-        "Gebühren & Preise"
+        "Gebühren & Preise",
+        "Konzept & Planung"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Bürgerhaushalt Südwest 2024 ist fast aufgebraucht",
+      "klartext_leicht": "Der Bezirk Südwest hatte 2024 78.000 Euro für kleine Projekte. Fast alles Geld ist schon verplant. Nur noch 479 Euro sind übrig. Diese Übersicht bekam der Bezirks-Ausschuss in dieser Sitzung noch einmal gezeigt. Schon fertig sind zum Beispiel ein Barfuß-Pfad und Geld für den SV Hundszell."
     },
     "bza:13215#Ö 2.1": {
       "klartext_titel": "Erni-Singerl-Str. – Park- und Lärmsituation 2024-04 Mängelmelder",
@@ -9208,34 +9275,8 @@
       "klartext_leicht": "Bezirks-Ausschuss IV-Südost: Erni-Singerl-Str. – Park- und Lärmsituation 2024-04 Mängelmelder."
     },
     "bza:13215#Ö 2.2": {
-      "klartext_titel": "Klein-Salvator-Str. Einmündung IN 18",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
-      "bezirk": [
-        "IV-Südost"
-      ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
-    },
-    "bza:13215#Ö 2.3": {
-      "klartext_titel": "Martin-Hemm-Str. – Absolutes Halteverbot - 2024-04-047",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
-      "bezirk": [
-        "IV-Südost"
-      ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
-    },
-    "bza:13215#Ö 2.4": {
-      "klartext_titel": "Stollstr. – Parken, Warn- und Hinweisschild 2024-04-045/46",
-      "klartext": "",
+      "klartext_titel": "Verwaltung lehnt bauliche Änderungen an der Einmündung Klein-Salvator-Straße/IN18 ab",
+      "klartext": "Zur Gefährdung von Radfahrenden an der Einmündung der Klein-Salvator-Straße in die IN18 lehnt die Verwaltung die vorgeschlagenen baulichen Änderungen ab. Für Geschwindigkeitskontrollen verweist sie an die Verkehrswacht, die Geschwindigkeitsanzeigegeräte aufstellen kann. Eine Verschmälerung der Abbiegespur würde das Blockieren der Radfahrerfurt nicht verhindern. Die vorhandene Beschilderung mit „Vorfahrt achten“, dem Zusatzzeichen für kreuzenden Radverkehr und der rot markierten Radfahrerfurt hält die Verwaltung für ausreichend.",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -9244,22 +9285,60 @@
       ],
       "ort": [],
       "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Keine baulichen Änderungen an der Kreuzung Klein-Salvator-Straße",
+      "klartext_leicht": "An der Kreuzung Klein-Salvator-Straße und IN18 haben es Rad-Fahrer manchmal schwer. Es gab Vorschläge, die Kreuzung umzubauen. Die Stadt lehnt das ab. Sie findet die Schilder und die rote Markierung für Radfahrer schon ausreichend. Für Geschwindigkeits-Kontrollen kann man sich an die Verkehrs-Wacht wenden."
+    },
+    "bza:13215#Ö 2.3": {
+      "klartext_titel": "Zusätzliches Halteverbotsschild in der Martin-Hemm-Straße wird angebracht",
+      "klartext": "In der Martin-Hemm-Straße gilt auf der Ostseite gegenüber dem Tunnel am Hauptbahnhof-Ost bereits ein absolutes Haltverbot über eine Strecke von rund 135 Metern. Da Fahrzeuge, die über die Parkhausumfahrt einbiegen, das Verbot bislang nicht erkennen konnten, wird das Haltverbotsschild gegenüber der Ausfahrt aus der Parkhausstraße wiederholt, um die Sichtbarkeit zu verbessern.",
+      "lebenslage": [],
+      "bezirk": [
+        "IV-Südost"
+      ],
+      "ort": [],
+      "anlass": [
         "Verkehrsplanung"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Neues Halteverbots-Schild in der Martin-Hemm-Straße",
+      "klartext_leicht": "In der Martin-Hemm-Straße gilt schon ein Halte-Verbot. Manche Autofahrer haben das Schild nicht gesehen. Sie kamen über eine andere Zufahrt. Jetzt kommt ein zweites Halteverbots-Schild dazu. So sehen es alle Autofahrer besser."
+    },
+    "bza:13215#Ö 2.4": {
+      "klartext_titel": "Keine zeitliche Beschränkung der Parkplätze in der Stollstraße, aber neues Verkehrszeichen",
+      "klartext": "Eine zeitliche Beschränkung der Parkplätze im verkehrsberuhigten Bereich der Stollstraße lehnt die Verwaltung ab, da dies den allgemeinen Gemeingebrauch der Straße einschränken und auch Besucher der Anwohner treffen würde. Damit Radfahrende und E-Scooter-Fahrende auf die vorgeschriebene Schrittgeschwindigkeit im verkehrsberuhigten Bereich aufmerksam werden, wurde bei der Einfahrt von der Durchwegung ein kleines Verkehrszeichen „Beginn eines verkehrsberuhigten Bereichs“ angeordnet. Ein zusätzliches Hinweisschild darf die Verwaltung als Straßenverkehrsbehörde dagegen nicht aufstellen.",
+      "lebenslage": [],
+      "bezirk": [
+        "IV-Südost"
+      ],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung",
+        "Satzung & Regeln"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Parken in der Stollstraße bleibt wie bisher",
+      "klartext_leicht": "In der Stollstraße wollten manche das Parken zeitlich begrenzen. Die Stadt lehnt das ab. Das würde auch Besucher der Anwohner treffen. Dafür kommt ein kleines Schild dazu. Es soll Rad-Fahrer und E-Scooter-Fahrer daran erinnern, langsam zu fahren."
     },
     "bza:13215#Ö 2.5": {
-      "klartext_titel": "FT Ringsee – Parkplatzöffnung 2024-04-44",
-      "klartext": "",
+      "klartext_titel": "Öffnung des Parkplatzes an der Freien Turnerschaft Ringsee ist Sache des Vereins",
+      "klartext": "Über eine Öffnung des vereinseigenen Parkplatzes an der Martin-Hemm-Straße kann die Stadt Ingolstadt nicht entscheiden. Die Verwaltung bittet, sich dazu direkt an die Freie Turnerschaft Ingolstadt-Ringsee zu wenden. Für eventuelle Hinweisschilder auf öffentlichen Straßen wäre danach ein Antrag beim Tiefbauamt nötig.",
       "lebenslage": [
-        "Unterwegs"
+        "Freizeit & Sport"
       ],
       "bezirk": [
         "IV-Südost"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Parkplatz an der Freien Turnerschaft: Verein muss entscheiden",
+      "klartext_leicht": "Am Sportverein Freie Turnerschaft Ringsee gibt es einen Parkplatz. Manche wollten, dass ihn mehr Menschen benutzen dürfen. Das kann die Stadt nicht entscheiden. Der Verein selbst muss das entscheiden. Erst danach kann die Stadt Hinweis-Schilder aufstellen."
     },
     "bza:13215#Ö 3.1": {
       "klartext_titel": "IN KB – Sauberkeit an Wertstoffinseln",
@@ -9474,19 +9553,8 @@
       "klartext_leicht": "Bezirks-Ausschuss VII-Etting: Stellungnahmen und Anfragen der Stadtverwaltung."
     },
     "bza:13158#Ö 4.1": {
-      "klartext_titel": "Errichtung eines Fahrkartenautomaten in Etting",
-      "klartext": "",
-      "lebenslage": [],
-      "bezirk": [
-        "VII-Etting"
-      ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
-    },
-    "bza:13158#Ö 4.2": {
-      "klartext_titel": "Straßenmarkierung Ostenbrunnenstraße",
-      "klartext": "",
+      "klartext_titel": "Kein Fahrkartenautomat für Etting, aber Vorverkaufsgerät im Einzelhandel möglich",
+      "klartext": "Wegen der hohen Investitions- und Wartungskosten von rund 30.000 Euro plant der Verkehrsverbund Großraum Ingolstadt (VGI) keinen Fahrkartenautomaten in Etting. Als Alternative bietet der VGI an, ein Vorverkaufsgerät in einem örtlichen Einzelhandelsgeschäft zu installieren, samt Einführung, einer Betriebspauschale von 100 Euro und einer Provision pro verkaufter Fahrkarte. Bisherige Kontakte zu Geschäften in Etting hatten kein Interesse ergeben; der Bezirksausschuss wird gebeten, erneut Anfragen bei ansässigen Geschäften zu stellen.",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -9494,8 +9562,27 @@
         "VII-Etting"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Kein Fahrkarten-Automat für Etting geplant",
+      "klartext_leicht": "In Etting soll es keinen Fahrkarten-Automaten geben. Er wäre zu teuer, etwa 30.000 Euro. Der Verkehrs-Verbund VGI hat eine andere Idee. Ein Geschäft in Etting könnte Fahrkarten vorverkaufen. Dafür bekommt das Geschäft Geld von der VGI. Bisher wollte kein Geschäft mitmachen. Der Bezirks-Ausschuss soll noch einmal nachfragen."
+    },
+    "bza:13158#Ö 4.2": {
+      "klartext_titel": "Kein Tempo-30-Piktogramm an der Ostenbrunnenstraße, Geschwindigkeitsanzeige möglich",
+      "klartext": "Ein zusätzliches Tempo-30-Piktogramm auf der Fahrbahn der Ostenbrunnenstraße auf Höhe des Friedhofs lehnt die Verwaltung ab, da Verkehrszeichen für Tempo-30-Zonen nur an Anfang und Ende erlaubt sind und zu häufige Bodenmarkierungen die Wirkung der eigentlichen Beschilderung schwächen würden. Als Alternative gegen zu schnelles Fahren bietet die Verwaltung an, ein Geschwindigkeitsanzeigegerät in der Straße aufzustellen.",
+      "lebenslage": [],
+      "bezirk": [
+        "VII-Etting"
+      ],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Kein neues Tempo-30-Zeichen auf der Straße, aber Geschwindigkeits-Anzeige möglich",
+      "klartext_leicht": "In der Ostenbrunnenstraße gilt Tempo 30. Manche wollten ein zusätzliches Zeichen auf der Fahrbahn. Die Stadt lehnt das ab. Solche Zeichen dürfen nur am Anfang und Ende der Zone stehen. Zu viele Zeichen würden weniger auffallen. Die Stadt bietet stattdessen ein Gerät an, das die Geschwindigkeit anzeigt."
     },
     "bza:13158#Ö 4.3": {
       "klartext_titel": "Mail vom Amt für Verkehrsmanagement und Geoinformation",
@@ -9569,8 +9656,8 @@
       "klartext_leicht": "Bezirks-Ausschuss VII-Etting: Termine Bürgerversammlungen."
     },
     "bza:13147#Ö 3.1": {
-      "klartext_titel": "Halteverbot Lindberghstraße, Schr. v. 27.01.2025 (Ref VII",
-      "klartext": "",
+      "klartext_titel": "Eingeschränktes Halteverbot in der Lindberghstraße dient dem Busverkehr",
+      "klartext": "Das eingeschränkte Halteverbot auf der Nordseite der Lindberghstraße zwischen Kyrmannstraße und Scheinerstraße soll die Durchfahrt des Bus- und Schulbusverkehrs sichern und Fahrzeitverluste vermeiden. Halten bis zu drei Minuten sowie Be- und Entladen bleiben weiterhin erlaubt; das Verbot gilt zeitlich beschränkt montags bis freitags von 7 bis 17 Uhr. Ein weiteres, rund 17 Meter langes Halteverbot zwischen Scheinerstraße und Gustav-Adolf-Straße wurde ebenfalls auf diese Zeiten beschränkt. Vor Erlass einzelner verkehrsrechtlicher Anordnungen kann die Verwaltung die Bezirksausschüsse nicht bei jedem Fall anhören, will künftig aber stärker informieren.",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -9578,8 +9665,12 @@
         "XII-Münchener Straße"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Halteverbot in der Lindberghstraße hilft den Bussen",
+      "klartext_leicht": "In der Lindberghstraße dürfen Autos an manchen Stellen nicht halten. Das Verbot gilt nur werktags von 7 bis 17 Uhr. Der Grund: Busse und Schulbusse sollen gut durchkommen. Kurz halten zum Ein- und Aussteigen ist weiter erlaubt. Ein zweites, kurzes Halteverbot gilt genauso."
     },
     "bza:13147#Ö 3.2": {
       "klartext_titel": "Parkfläche Nähe Anton Kirche, Schr. v. 17.01.2025 (Ref. II",
@@ -20839,6 +20930,21 @@
       ],
       "ort": [],
       "anlass": [],
+      "entwurf": false
+    },
+    "bza:13296#Ö 2": {
+      "klartext_titel": "Mehrere Stellungnahmen der Verwaltung im Bezirksausschuss Süd",
+      "klartext": "Im Bezirksausschuss standen mehrere Stellungnahmen der Stadtverwaltung zu einzelnen Bürgeranfragen auf der Tagesordnung.",
+      "klartext_titel_leicht": "Mehrere Antworten der Stadt im Bezirksausschuss Süd",
+      "klartext_leicht": "Im Bezirks-Ausschuss X-Süd hat die Stadt-Verwaltung mehrere Fragen von Bürgern beantwortet. Diese Antworten heißen Stellungnahmen.",
+      "lebenslage": [],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
       "entwurf": false
     }
   }
