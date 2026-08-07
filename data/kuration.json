@@ -26553,6 +26553,416 @@
         "Konzept & Planung"
       ],
       "entwurf": false
+    },
+    "stadt:10136#Ö 35.1": {
+      "klartext_titel": "Postbank-Filiale Am Stein wird bis Ende 2025 zur reinen Beratungsfiliale ohne Postdienste",
+      "klartext": "Auf SPD-Anfrage zur Schließung der Postzentrale in der Innenstadt erklärt die Verwaltung: Die Deutsche Post AG betreibt keine eigenen Filialen, sondern arbeitet mit Partnern wie der Postbank zusammen, deren Filiale Am Stein 8 bislang auch Postdienstleistungen anbot. Im Rahmen eines bundesweiten Filialkonzepts reduziert die Postbank ihre Standorte bis Ende 2026 von rund 550 auf 320, wovon 200 weiterhin Post- und Paketdienste anbieten und 120 zu reinen „Beratungsfilialen“ ohne Postdienste werden — darunter die Filiale Am Stein, deren Umwandlung bis Ende 2025 geplant ist, ein genauer Termin steht noch nicht fest.",
+      "klartext_titel_leicht": "Post-Filiale in der Altstadt schließt bald ihre Postdienste",
+      "klartext_leicht": "In der Altstadt gibt es eine Postbank-Filiale. Dort kann man bisher auch Pakete abholen und Briefmarken kaufen. Das ändert sich bald. Die Postbank baut deutschlandweit viele Filialen um. In der Ingolstädter Filiale gibt es dann nur noch Bank-Beratung, keine Post-Dienste mehr. Das soll bis Ende 2025 passieren.",
+      "lebenslage": [],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10136#Ö 35.2": {
+      "klartext_titel": "Begrünungssatzung wird kontrolliert, aber Verstöße können bisher nicht mit Bußgeld geahndet werden",
+      "klartext": "Auf ÖDP-Anfrage zur Einhaltung der Begrünungs- und Gestaltungssatzung erklärt die Verwaltung: Kontrollen erfolgen stichprobenartig bei Baukontrollen, aufgrund von Bürgerbeschwerden sowie bei der Prüfung von Freiflächengestaltungsplänen im Baugenehmigungsverfahren, oft abgesichert durch eine Sicherheitsleistung, die erst nach genehmigter Umsetzung freigegeben wird. Anders als etwa die Satzung der Stadt Mainz ist die Ingolstädter Satzung derzeit nicht bußgeldbewehrt; Verstöße können aber über Zwangsmittel wie Zwangsgeld durchgesetzt werden. Eine Bußgeldbewehrung wäre nach bayerischer Bauordnung theoretisch bis zu 500.000 Euro möglich, würde aber eine Satzungsänderung und deutlich mehr Personal für Kontrolle und Verfolgung erfordern.",
+      "klartext_titel_leicht": "Begrünungs-Regeln werden kontrolliert, aber ohne Bußgeld",
+      "klartext_leicht": "In Ingolstadt gibt es Regeln, wie viel Grün an neuen Gebäuden sein muss. Die Stadt kontrolliert das, zum Beispiel bei Beschwerden. Wer sich nicht daran hält, bekommt aber bisher kein Bußgeld. Andere Städte wie Mainz haben das schon. Für ein Bußgeld in Ingolstadt bräuchte es eine neue Regel und mehr Personal.",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Satzung & Regeln",
+        "Klima & Umwelt"
+      ],
+      "entwurf": false
+    },
+    "stadt:10136#Ö 35.3": {
+      "klartext_titel": "Stadt konnte nur die Hälfte des Kasernengeländes kaufen, Rest bleibt bei ANKER-Einrichtung",
+      "klartext": "Auf Anfrage von Bündnis 90/Die Grünen zur Zukunft der ANKER-Einrichtung auf dem Gelände der ehemaligen Max-Immelmann-Kaserne erläutert die Verwaltung: Die Stadt konnte 2018 rund 51.646 Quadratmeter der eigentumsfähigen Flächen erwerben, auf denen heute unter anderem der Wertstoffhof Süd betrieben wird. Die vom Freistaat Bayern für die ANKER-Einrichtung genutzte östliche Restfläche blieb im Eigentum der Bundesanstalt für Immobilienaufgaben, die weder 2015 noch seither zu einem Verkauf bereit war. Für eine mögliche Nachnutzung wurden bereits Konzepte für Depots von Armeemuseum und Stadtmuseum, INKB, Bauhof und ein Feuerwehrausbildungszentrum formuliert; eine entsprechende Änderung des Flächennutzungsplans wurde damals beschlossen, aber wegen der fortdauernden Nutzung als Erstaufnahmeeinrichtung bislang nicht weiterverfolgt.",
+      "klartext_titel_leicht": "Stadt konnte nur einen Teil des alten Kasernengeländes kaufen",
+      "klartext_leicht": "Auf dem Gelände der früheren Max-Immelmann-Kaserne gibt es eine große Einrichtung für Geflüchtete. Sie heißt ANKER-Einrichtung. Die Stadt wollte das ganze Gelände kaufen. Das hat aber nur teilweise geklappt. Einen Teil nutzt die Stadt schon, zum Beispiel für den Wertstoffhof. Den anderen Teil, wo die ANKER-Einrichtung steht, konnte die Stadt bis heute nicht kaufen.",
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [
+        "Zuchering"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10136#Ö 35.4": {
+      "klartext_titel": "Freistaat will Asylunterkunft in der Neuburger Straße bis 2028 weiter nutzen",
+      "klartext": "Auf Anfrage von Stadtrat Niedermeier zur Asylunterkunft in Containern an der Neuburger Straße, deren Mietvertrag im August 2025 endet, teilt die Verwaltung mit: Der Freistaat Bayern hat Interesse an einer Verlängerung bis 2028 signalisiert, entsprechende Vertragsverhandlungen stehen noch aus. Für Instandhaltung, Sanierung und Verkehrssicherung der Containeranlage ist während der Mietzeit der Freistaat als Mieter zuständig; nach Ende der bisherigen Mietzeit geht das Eigentum an Containern, Zaun und Ballfangzaun an den Freistaat über.",
+      "klartext_titel_leicht": "Asylunterkunft an der Neuburger Straße soll länger bleiben",
+      "klartext_leicht": "An der Neuburger Straße gibt es eine Unterkunft für Geflüchtete, in Containern. Der Mietvertrag dafür endet im August 2025. Der Freistaat Bayern möchte die Unterkunft aber bis 2028 weiter nutzen. Verhandlungen darüber laufen noch. Um Reparaturen an den Containern kümmert sich der Freistaat als Mieter.",
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10313#Ö 4": {
+      "klartext_titel": "Mündliche Berichte aus den Arbeitskreisen: Psychische Gesundheit",
+      "klartext": "Im Inklusionsrat war folgendes Thema: Mündliche Berichte aus den Arbeitskreisen: Psychische Gesundheit.",
+      "klartext_titel_leicht": "Mündliche Berichte aus den Arbeitskreisen: Psychische Gesundheit",
+      "klartext_leicht": "Inklusionsrat: Mündliche Berichte aus den Arbeitskreisen: Psychische Gesundheit.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10313#Ö 5": {
+      "klartext_titel": "Bericht der Antidiskriminierungsstelle nach der Pilotphase und zur Fortführung",
+      "klartext": "Im Inklusionsrat war folgendes Thema: Bericht der Antidiskriminierungsstelle nach der Pilotphase und zur Fortführung.",
+      "klartext_titel_leicht": "Bericht der Antidiskriminierungsstelle nach der Pilotphase und zur Fortführung",
+      "klartext_leicht": "Inklusionsrat: Bericht der Antidiskriminierungsstelle nach der Pilotphase und zur Fortführung.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10136#Ö 3": {
+      "klartext_titel": "Bericht zur Sicherheitslage in Ingolstadt durch den Leiter der Polizeiinspektion",
+      "klartext": "Im Stadtrat war folgendes Thema: Bericht zur Sicherheitslage in Ingolstadt durch den Leiter der Polizeiinspektion.",
+      "klartext_titel_leicht": "Bericht zur Sicherheitslage in Ingolstadt durch den Leiter der Polizeiinspektion",
+      "klartext_leicht": "Stadtrat: Bericht zur Sicherheitslage in Ingolstadt durch den Leiter der Polizeiinspektion.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "entwurf": false
+    },
+    "stadt:10136#Ö 18": {
+      "klartext_titel": "Änderung der Richtlinien für Einstellung, Beförderung und Qualifizierung der Berufsfeuerwehr",
+      "klartext": "Im Stadtrat war folgendes Thema: Änderung der Richtlinien für Einstellung, Beförderung und Qualifizierung der Berufsfeuerwehr.",
+      "klartext_titel_leicht": "Änderung der Richtlinien für Einstellung, Beförderung und Qualifizierung der Berufsfeuerwehr",
+      "klartext_leicht": "Stadtrat: Änderung der Richtlinien für Einstellung, Beförderung und Qualifizierung der Berufsfeuerwehr.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "entwurf": false
+    },
+    "stadt:11870#Ö 2": {
+      "klartext_titel": "Bestätigung und Ergänzung des Protokolls der letzten Sitzung",
+      "klartext": "Im Jugendparlament war folgendes Thema: Bestätigung und Ergänzung des Protokolls der letzten Sitzung.",
+      "klartext_titel_leicht": "Bestätigung und Ergänzung des Protokolls der letzten Sitzung",
+      "klartext_leicht": "Jugendparlament: Bestätigung und Ergänzung des Protokolls der letzten Sitzung.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Jugend"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:11870#Ö 3": {
+      "klartext_titel": "Kostenübernahme der Brüsselfahrt",
+      "klartext": "Im Jugendparlament war folgendes Thema: Kostenübernahme der Brüsselfahrt.",
+      "klartext_titel_leicht": "Kostenübernahme der Brüsselfahrt",
+      "klartext_leicht": "Jugendparlament: Kostenübernahme der Brüsselfahrt.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Jugend"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:11870#Ö 4": {
+      "klartext_titel": "Fußballtore am Corelli-Spielplatz",
+      "klartext": "Im Jugendparlament war folgendes Thema: Fußballtore am Corelli-Spielplatz.",
+      "klartext_titel_leicht": "Fußballtore am Corelli-Spielplatz",
+      "klartext_leicht": "Jugendparlament: Fußballtore am Corelli-Spielplatz.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Jugend",
+        "Eltern & Kinder"
+      ],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": false
+    },
+    "stadt:11870#Ö 6": {
+      "klartext_titel": "Schließung der Sitzung",
+      "klartext": "Im Jugendparlament war folgendes Thema: Schließung der Sitzung.",
+      "klartext_titel_leicht": "Schließung der Sitzung",
+      "klartext_leicht": "Jugendparlament: Schließung der Sitzung.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Jugend"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10135#Ö 10": {
+      "klartext_titel": "Änderung der Richtlinien für Einstellung, Beförderung und Qualifizierung der Berufsfeuerwehr",
+      "klartext": "Im Ausschuss für Verwaltung, Personal und Recht war folgendes Thema: Änderung der Richtlinien für Einstellung, Beförderung und Qualifizierung der Berufsfeuerwehr.",
+      "klartext_titel_leicht": "Änderung der Richtlinien für Einstellung, Beförderung und Qualifizierung der Berufsfeuerwehr",
+      "klartext_leicht": "Ausschuss für Verwaltung: Neue Regeln für Einstellung und Beförderung bei der Berufsfeuerwehr.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "entwurf": false
+    },
+    "stadt:10134#Ö 1": {
+      "klartext_titel": "Finanzlagebericht von Herrn Fleckinger",
+      "klartext": "Im Ausschuss für Finanzen und Personal war folgendes Thema: Finanzlagebericht von Herrn Fleckinger.",
+      "klartext_titel_leicht": "Finanzlagebericht von Herrn Fleckinger",
+      "klartext_leicht": "Ausschuss für Finanzen und Personal: Finanzlagebericht von Herrn Fleckinger.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "entwurf": false
+    },
+    "stadt:10303#Ö 3": {
+      "klartext_titel": "Aktuelle Informationen zum Thema Einbürgerungen",
+      "klartext": "Im Migrationsrat war folgendes Thema: Aktuelle Informationen zum Thema Einbürgerungen.",
+      "klartext_titel_leicht": "Aktuelle Informationen zum Thema Einbürgerungen",
+      "klartext_leicht": "Migrationsrat: Aktuelle Informationen zum Thema Einbürgerungen.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10303#Ö 6": {
+      "klartext_titel": "Informationen und Anregungen",
+      "klartext": "Im Migrationsrat war folgendes Thema: Informationen und Anregungen.",
+      "klartext_titel_leicht": "Informationen und Anregungen",
+      "klartext_leicht": "Migrationsrat: Informationen und Anregungen.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10132#Ö 3": {
+      "klartext_titel": "Aktuelle Information zum Kulturgeschehen",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Aktuelle Information zum Kulturgeschehen.",
+      "klartext_titel_leicht": "Aktuelle Information zum Kulturgeschehen",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Aktuelle Information zum Kulturgeschehen.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10132#Ö 4": {
+      "klartext_titel": "Umwandlung temporärer in dauerhafte Gedenkschilder",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Umwandlung temporärer in dauerhafte Gedenkschilder.",
+      "klartext_titel_leicht": "Umwandlung temporärer in dauerhafte Gedenkschilder",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Umwandlung temporärer in dauerhafte Gedenkschilder.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10132#Ö 6": {
+      "klartext_titel": "Gymnasien: Schulentwicklung und Gymnasialkonzept",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Gymnasien: Schulentwicklung und Gymnasialkonzept.",
+      "klartext_titel_leicht": "Gymnasien: Schulentwicklung und Gymnasialkonzept",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Gymnasien: Schulentwicklung und Gymnasialkonzept.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Jugend"
+      ],
+      "ort": [],
+      "anlass": [
+        "Schulbau"
+      ],
+      "entwurf": false
+    },
+    "stadt:10131#Ö 3": {
+      "klartext_titel": "Aktuelles aus dem Bereich Asyl",
+      "klartext": "Im Ausschuss für Soziales, Gesundheit, Stiftungen und Familien war folgendes Thema: Aktuelles aus dem Bereich Asyl.",
+      "klartext_titel_leicht": "Aktuelles aus dem Bereich Asyl",
+      "klartext_leicht": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien: Aktuelles aus dem Bereich Asyl.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10130#Ö 3": {
+      "klartext_titel": "Sachstandsbericht zu aktuellen Veranstaltungen",
+      "klartext": "Im Ausschuss für Sport, Veranstaltungen und Freizeit war folgendes Thema: Sachstandsbericht zu aktuellen Veranstaltungen.",
+      "klartext_titel_leicht": "Sachstandsbericht zu aktuellen Veranstaltungen",
+      "klartext_leicht": "Ausschuss für Sport, Veranstaltungen und Freizeit: Sachstandsbericht zu aktuellen Veranstaltungen.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:11792#Ö 1": {
+      "klartext_titel": "Fortschreibung des Regionalplanes: Erneuerbare Energie, Teilbereich Windkraft",
+      "klartext": "Im Planungsausschuss des Planungsverbands Region Ingolstadt war folgendes Thema: Fortschreibung des Regionalplanes: Erneuerbare Energie, Teilbereich Windkraft.",
+      "klartext_titel_leicht": "Fortschreibung des Regionalplanes: Erneuerbare Energie, Teilbereich Windkraft",
+      "klartext_leicht": "Planungsausschuss des Planungsverbands Region Ingolstadt: Fortschreibung des Regionalplanes: Erneuerbare Energie, Teilbereich Windkraft.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Klima & Umwelt",
+        "Bauleitplanung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10290#Ö 1": {
+      "klartext_titel": "Bedarfsermittlung für Kinder mit Förderbedarf in Kitas und Schulen",
+      "klartext": "Im Unterausschuss Jugendhilfeplanung war folgendes Thema: Bedarfsermittlung für Kinder mit Förderbedarf in Kitas und Schulen.",
+      "klartext_titel_leicht": "Bedarfsermittlung für Kinder mit Förderbedarf in Kitas und Schulen",
+      "klartext_leicht": "Unterausschuss Jugendhilfeplanung: Bedarfsermittlung für Kinder mit Förderbedarf in Kitas und Schulen.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10290#Ö 2": {
+      "klartext_titel": "Erfahrungen mit Inklusionsfachkräften in städtischen Kindertageseinrichtungen",
+      "klartext": "Im Unterausschuss Jugendhilfeplanung war folgendes Thema: Erfahrungen mit Inklusionsfachkräften in städtischen Kindertageseinrichtungen.",
+      "klartext_titel_leicht": "Erfahrungen mit Inklusionsfachkräften in städtischen Kindertageseinrichtungen",
+      "klartext_leicht": "Unterausschuss Jugendhilfeplanung: Erfahrungen mit Inklusionsfachkräften in städtischen Kindertageseinrichtungen.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10290#Ö 3": {
+      "klartext_titel": "Vorstellung der Koordinierenden Kinderschutzstelle Ingolstadt (KOKI)",
+      "klartext": "Im Unterausschuss Jugendhilfeplanung war folgendes Thema: Vorstellung der Koordinierenden Kinderschutzstelle Ingolstadt (KOKI).",
+      "klartext_titel_leicht": "Vorstellung der Koordinierenden Kinderschutzstelle Ingolstadt (KOKI)",
+      "klartext_leicht": "Unterausschuss Jugendhilfeplanung: Vorstellung der Koordinierenden Kinderschutzstelle Ingolstadt (KOKI).",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
     }
   }
 }
