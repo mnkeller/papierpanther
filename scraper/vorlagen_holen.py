@@ -173,11 +173,16 @@ def main():
         haupt = [d for d in t["dokumente"] if not IST_ANLAGE.match(d["titel"])]
         # BZA-Dokumente heissen oft nur "<Aktenzeichen> <Ortsangabe>" — ein
         # Lageplan faellt dann nicht unter IST_ANLAGE, obwohl er einer ist.
-        # Die eigentliche Stellungnahme der Verwaltung steht, wenn vorhanden,
-        # immer vor dem Plan.
-        stellungnahmen = [d for d in haupt if "stellungnahme" in d["titel"].lower()]
-        if stellungnahmen:
-            haupt = stellungnahmen + [d for d in haupt if d not in stellungnahmen]
+        # Bei Fraktions-Anfragen im Stadtrat liegen oft zwei Dokumente vor:
+        # die Anfrage selbst und separat die Beantwortung. Die Antwort der
+        # Verwaltung steht, wenn vorhanden, immer vor der reinen Frage.
+        antwort = re.compile(r"stellungnahme|beantwortung|\bantwort\b", re.I)
+        nur_frage = re.compile(r"^(anfrage|frage)\b", re.I)
+        antworten = [d for d in haupt if antwort.search(d["titel"])]
+        fragen = [d for d in haupt if d not in antworten and nur_frage.match(d["titel"])]
+        rest = [d for d in haupt if d not in antworten and d not in fragen]
+        if antworten:
+            haupt = antworten + rest + fragen
         eintrag = {
             "thema": schluessel,
             "ref": f'{args.quelle}:{s["id"]}#{t["nr"]}',

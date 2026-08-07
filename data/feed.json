@@ -27,17 +27,17 @@
     "sitzungen_ausgelesen": 360,
     "tops_ausgelesen": 3415,
     "tops_verfahren": 493,
-    "tops_kuratiert": 1359,
+    "tops_kuratiert": 1389,
     "entwuerfe": 2,
-    "leichte_sprache": 1357,
+    "leichte_sprache": 1387,
     "je_quelle": {
-      "stadt": 505,
+      "stadt": 535,
       "bza": 854
     },
     "stand": {
       "Bekanntgabe": 112,
-      "Entscheidung angesetzt": 376,
-      "Ohne Vorlage": 862,
+      "Entscheidung angesetzt": 377,
+      "Ohne Vorlage": 891,
       "Wird noch beraten": 9
     }
   },
@@ -4031,6 +4031,776 @@
       "beratungsweg": []
     },
     {
+      "ref": "stadt:13538#Ö 34.1",
+      "thema": "stadt:13538#Ö 34.1",
+      "auftritte": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 34.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "Gänsezäune am Baggersee fielen 2026 aus, Grundreinigung läuft weiter",
+      "klartext": "Die SPD-Fraktion fragte wegen einer hohen Gänsepopulation und Verschmutzungen an den Badeseen nach. Die Verwaltung antwortet: Die sonst üblichen Gänsezäune am Baggersee wurden 2026 mangels Budget nicht aufgestellt, wodurch sich mehr Gänse auf den Liegewiesen aufhalten. Gartenamt und Bauhof reinigen die Ufer weiter regelmäßig, eine Fachfirma mäht zudem jährlich die Wasserpflanzen, um Algenbildung vorzubeugen, und das Gesundheitsamt kontrolliert die Wasserqualität mit Laboruntersuchungen. Ein langfristiges Gesamtkonzept für die Badeseen ist nicht geplant; die Stadt setzt stattdessen auf die bestehenden jährlichen Pflegemaßnahmen, sieht die Entwicklung aber insgesamt positiv, mahnt jedoch angesichts des Klimawandels und häufigerer Hitzeperioden zur Fortführung der Pflege.",
+      "klartext_titel_leicht": "Warum am Baggersee mehr Gänse-Kot liegt",
+      "klartext_leicht": "Am Baggersee gibt es viele Gänse. Sie hinterlassen Kot auf den Liegewiesen. Sonst standen dort Zäune gegen die Gänse. 2026 fehlte dafür das Geld. Die Zäune blieben weg. Das Garten-Amt reinigt die Wiesen trotzdem regelmäßig. Auch das Wasser wird kontrolliert. Einen großen, langfristigen Plan für die Seen gibt es nicht. Die Stadt macht stattdessen jedes Jahr die gleiche Pflege.",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Klima & Umwelt",
+        "Grün & Sauberkeit"
+      ],
+      "ort": [
+        "Baggersee",
+        "Auwaldsee"
+      ],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage der SPD-Stadtratsfraktion vom 19.06.2026 zum Thema Funktion der Ingolstädter Badeseen als Naherholungsgebiete in Einklang mit Natur - und Tierschutz sowie Gewässerökologie",
+      "top_nr": "Ö 34.1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [
+        {
+          "titel": "Anfrage Funktion der Ingolstädter Badeseen als Naherholungsgebiete in Einklang mit Natur- und Tierschutz sowie Gewässerökologie",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252489&type=do"
+        },
+        {
+          "titel": "Beantwortung Anfrage SPD Badeseen",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252420&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13538#Ö 34.2",
+      "thema": "stadt:13538#Ö 34.2",
+      "auftritte": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 34.2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "Wiedereröffnung des Schlachthofs noch offen",
+      "klartext": "Die Freien Wähler fragten wegen des derzeit geschlossenen städtischen Schlachthofs nach, unter anderem nach einem Zeitpunkt für die Wiedereröffnung und Unterstützung für die Beschäftigten. Im Ratsinfoportal liegt bislang nur das Anfrage-Schreiben vor; eine schriftliche Antwort der Verwaltung ist zum Zeitpunkt der Sitzung noch nicht als Dokument veröffentlicht.",
+      "klartext_titel_leicht": "Schlachthof bleibt vorerst geschlossen",
+      "klartext_leicht": "Der Schlachthof in Ingolstadt ist geschlossen. Die Partei Freie Wähler wollte wissen: Wann öffnet er wieder? Und was passiert mit den Beschäftigten? Eine schriftliche Antwort der Stadt gibt es dazu noch nicht.",
+      "lebenslage": [
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage der FW-Stadtratsfraktion vom 08.07.2026 zum Thema Schlachthof",
+      "top_nr": "Ö 34.2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [
+        {
+          "titel": "20260708 ANF FW FR Schlachthof",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252207&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13538#Ö 34.3",
+      "thema": "stadt:13538#Ö 34.3",
+      "auftritte": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 34.3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "Rund 130 neue Studierenden-Appartements im Bau, über 100 Wartende auf Wohnheimplatz",
+      "klartext": "Auf Anfrage der Fraktion Die Linke zu Studierendenwohnungen teilt die Verwaltung mit: Aktuell ist kein Bauantrag ausschließlich für Studierendenwohnungen anhängig, wohl aber ein Neubau mit rund 300 Studierendenappartements in der Regimentstraße. Von den 3.175 Appartements in Ingolstadt, die derzeit nur an Studierende oder Auszubildende vermietet werden, sind 130 weitere im Bau und für 39 liegt bereits eine Baugenehmigung vor. Über 100 Studierende stehen bei einem Wohnheimträger auf der Warteliste. Die Studierendenzahl ist in zehn Jahren um 42 Prozent auf rund 9.100 gestiegen; eine gezielte kommunale Strategie gegen die Verdrängung durch Investoren gibt es baurechtlich kaum, da Studierendenwohnungen wie normale Wohnnutzung behandelt werden.",
+      "klartext_titel_leicht": "Über 100 Studierende warten auf einen Wohnheim-Platz",
+      "klartext_leicht": "In Ingolstadt studieren immer mehr Menschen. In zehn Jahren wurden es 42 Prozent mehr. Viele suchen eine günstige Wohnung. Über 100 Studierende stehen auf einer Warteliste für einen Wohnheim-Platz. Es werden neue Wohnungen für Studierende gebaut, zum Beispiel in der Regimentstraße. Die Stadt kann aber rechtlich wenig tun, um solche Wohnungen extra zu schützen.",
+      "lebenslage": [
+        "Studierende",
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "anlass": [
+        "Bauleitplanung",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage der Stadtratsfraktion DIE LINKE vom 19.07.2026 zum Thema Studierendenwohnungen",
+      "top_nr": "Ö 34.3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [
+        {
+          "titel": "20260729 Studierendenwohnen Die Linke Stellungnahme Ref. VII",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252570&type=do"
+        },
+        {
+          "titel": "Fragen LINKE 19.07.2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252203&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13538#Ö 34.4",
+      "thema": "stadt:13538#Ö 34.4",
+      "auftritte": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 34.4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "Keine Einschränkungen bei der Wassernutzung in Ingolstadt geplant",
+      "klartext": "Auf eine ausführliche Anfrage der ÖDP zur Wassernutzung antworten Wasserwirtschaftsamt, Umweltamt und INKB gemeinsam: Tiefengrundwasser ist der öffentlichen Trinkwasserversorgung vorbehalten, oberflächennahes Grundwasser steht für Gartenbewässerung, Landwirtschaft und Gewerbe zur Verfügung. Eine Allgemeinverfügung zur Einschränkung der Wassernutzung wie zuletzt in München wurde in Ingolstadt bislang nicht erlassen; in Trockenzeiten wird lediglich zur sparsamen Verwendung aufgerufen. Die INKB fördern Substitutionsprojekte wie Zisternen und Betriebswassernutzung, etwa in Teilen Ettings. Aktuell gelten Wassergebühren von 1,49 Euro brutto je Kubikmeter sowie Kanalgebühren für Schmutz- und Niederschlagswasser.",
+      "klartext_titel_leicht": "Wasser sparen wird empfohlen, aber nicht vorgeschrieben",
+      "klartext_leicht": "Die Partei ÖDP wollte wissen, wie Ingolstadt mit Wasser umgeht. Die Stadt sagt: Trinkwasser kommt aus tiefen Brunnen. Es ist nur für die Wasserversorgung da. Für den Garten darf man anderes Grundwasser nutzen. Ein Verbot wie in München, zum Beispiel bei Trockenheit, gibt es in Ingolstadt nicht. Die Stadt bittet aber alle, sparsam mit Wasser umzugehen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Klima & Umwelt",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage der ÖDP-Stadtratsgruppe vom 20.07.2026 zum Thema Wasser/Trinkwasser in Ingolstadt",
+      "top_nr": "Ö 34.4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [
+        {
+          "titel": "20260729 Wassernutzung ÖDP Stellungnahme Ref. VII",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252571&type=do"
+        },
+        {
+          "titel": "ÖDP Wasser",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252208&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13538#Ö 34.5",
+      "thema": "stadt:13538#Ö 34.5",
+      "auftritte": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 34.5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "Museum MKKD soll Herbst 2027 eröffnen, Kosten liegen bei 62,8 Millionen Euro",
+      "klartext": "Auf Anfrage der AfD zum Museum für Konkrete Kunst und Design (MKKD) berichtet die Verwaltung: Aktuell laufen der Einbau der Fußbodenheizung im Erdgeschoss sowie Innenausbau- und Außenarbeiten. Die Eröffnung ist für Herbst 2027 vorgesehen, ein genauer Termin steht noch nicht fest. Die Kostenprognose liegt laut Bauprojektcontrollingbericht vom Januar 2026 bei 62,8 Millionen Euro; die Stadt versucht, Mehrkosten durch einen Wasserschaden von 2025 von der Versicherung beziehungsweise dem Verursacher erstattet zu bekommen.",
+      "klartext_titel_leicht": "Neues Museum MKKD soll 2027 öffnen",
+      "klartext_leicht": "In Ingolstadt entsteht ein neues Museum, das MKKD. Es soll im Herbst 2027 öffnen. Der genaue Tag steht noch nicht fest. Der Bau kostet etwa 63 Millionen Euro. 2025 gab es einen Wasserschaden am Gebäude. Die Stadt möchte das Geld dafür von der Versicherung zurückbekommen.",
+      "lebenslage": [],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "anlass": [
+        "Bauleitplanung",
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage der AfD-Stadtratsfraktion vom 21.07.2026 zum Thema MKKD",
+      "top_nr": "Ö 34.5",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [
+        {
+          "titel": "2026.07.29 Fragestunde - MKKD Antwort",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252466&type=do"
+        },
+        {
+          "titel": "Fragestunde Stadtratssitzung am 29.07.2026 MKKD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252224&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13538#Ö 34.6",
+      "thema": "stadt:13538#Ö 34.6",
+      "auftritte": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 34.6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "Rieter-Areal weiter im Insolvenzverfahren, Fortführung des Projekts offen",
+      "klartext": "Zum sogenannten Rieter-Areal (IN-Quartier) antwortet die Verwaltung auf AfD-Anfrage: Für die beteiligten Projektgesellschaften läuft ein Insolvenzverfahren, der Sachstand ist unverändert. Umwelt- und Stadtplanungsamt haben zuletzt Anhörungsschreiben verschickt, um Gebäudesicherung und Grundwasserschutz zu überprüfen. Eine Fortführung des Projekts würde eine Einigung der Hauptgläubiger zur Finanzierung voraussetzen; das Planungsreferat sucht weiter den Austausch mit den Gläubigern. Alternative Nutzungskonzepte sind derzeit nicht vorgesehen, da das ursprünglich geplante gemischt genutzte Quartier weiterhin das Planungsziel bleibt.",
+      "klartext_titel_leicht": "Rieter-Areal steckt weiter in der Insolvenz fest",
+      "klartext_leicht": "Auf dem Rieter-Areal sollte ein neues Stadt-Viertel entstehen. Die Baufirmen dahinter haben aber kein Geld mehr, eine Insolvenz. Wie es weitergeht, ist unklar. Die Stadt spricht mit den Geldgebern der Firmen. Ein anderer Plan für die Fläche ist bisher nicht vorgesehen.",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "anlass": [
+        "Bauleitplanung",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage der AfD-Stadtratsfraktion vom 21.07.2026 zum Thema Rieter-Areal",
+      "top_nr": "Ö 34.6",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [
+        {
+          "titel": "20260729 Inquartier AfD Stellungnahme Ref. VII",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252573&type=do"
+        },
+        {
+          "titel": "Fragestunde Stadtratssitzung am 29.07.2026 Rieter-Areal",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252225&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13538#Ö 34.7",
+      "thema": "stadt:13538#Ö 34.7",
+      "auftritte": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 34.7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "AfD fragt nach verstärkter Sicherheitswacht im Piusviertel",
+      "klartext": "Die AfD-Fraktion fragt wegen bekannter Probleme im Piusviertel nach einem verstärkten Einsatz der Sicherheitswacht, nach aktuellen Einsatzzeiten und -orten sowie nach Erfahrungsberichten. Im Ratsinfoportal liegt bislang nur das Anfrage-Schreiben vor; eine schriftliche Antwort der Verwaltung ist zum Zeitpunkt der Sitzung noch nicht als Dokument veröffentlicht.",
+      "klartext_titel_leicht": "AfD fragt nach mehr Sicherheitswacht im Piusviertel",
+      "klartext_leicht": "Im Piusviertel gibt es laut AfD-Fraktion Probleme. Die Fraktion fragt: Kann die Sicherheitswacht dort mehr patrouillieren? Eine schriftliche Antwort der Stadt gibt es dazu noch nicht.",
+      "lebenslage": [],
+      "bezirk": [
+        "II-Nordwest"
+      ],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "ort": [
+        "Piusviertel"
+      ],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage der AfD-Stadtratsfraktion vom 21.07.2026 zum Thema Sicherheitswacht",
+      "top_nr": "Ö 34.7",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [
+        {
+          "titel": "Fragestunde Stadtratssitzung am 29.07.2026 Sicherheitswacht",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252226&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13538#Ö 34.8",
+      "thema": "stadt:13538#Ö 34.8",
+      "auftritte": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 34.8",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "Wer in Ingolstadt den Ehrentitel Altbürgermeister trägt",
+      "klartext": "Auf AfD-Anfrage listet das Hauptamt auf, wer in Ingolstadt Ehrentitel früherer Amtsträger trägt: Altoberbürgermeister sind Dr. Christian Lösel und Dr. Christian Scharpf, Altbürgermeisterin ist Brigitte Fuchs, Altbürgermeister sind Sepp Mißlbeck und Albert Wittmann. Dr. Dorothea Deneke-Stoll und Petra Kleine tragen bislang keinen Ehrentitel. Der frühere Oberbürgermeister Dr. Alfred Lehmann erhielt den Titel Altoberbürgermeister 2014, verzichtete jedoch 2019 dauerhaft darauf.",
+      "klartext_titel_leicht": "Wer den Ehren-Titel Altbürgermeister trägt",
+      "klartext_leicht": "Frühere Bürgermeister von Ingolstadt können einen Ehren-Titel bekommen. Er heißt Altbürgermeister oder Altoberbürgermeister. Mehrere frühere Amtsträger tragen diesen Titel. Manche noch nicht. Ein früherer Oberbürgermeister hat 2019 freiwillig auf seinen Titel verzichtet.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage der AfD-Stadtratsfraktion vom 21.07.2026 zum Thema Altbürgermeister",
+      "top_nr": "Ö 34.8",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [
+        {
+          "titel": "Antwort - Ehrentitel Fragestunde AfD Fraktion",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252462&type=do"
+        },
+        {
+          "titel": "Fragestunde Stadtratssitzung am 29.07.2026 Titel Altbürgermeister",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252227&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13538#Ö 34.9",
+      "thema": "stadt:13538#Ö 34.9",
+      "auftritte": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 34.9",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "Hitzeaktionsplan läuft, aber Geld für Sonnensegel und Stadtgrün ist knapp",
+      "klartext": "Zur Hitzevorsorge antwortet die Verwaltung auf SPD-Anfrage: Der Stadtrat hat am 3. Juni 2025 einen Hitzeaktionsplan beschlossen, dessen Schwerpunkt wegen der Haushaltskonsolidierung derzeit auf Gesundheitsschutz und Aufklärung liegt. Umgesetzt wurden unter anderem ein Hitzeportal mit Leichter Sprache, eine Karte kühler Orte sowie Informationsaktionen und Vorträge. Bei Hitzewellen sei der Ruf nach Maßnahmen groß, deren Finanzierung aber oft schwierig — kurzfristige Maßnahmen wie Sonnensegel oder mobiles Stadtgrün seien teuer und selten förderfähig. Der aktuelle Umsetzungsstand der priorisierten Maßnahmen konnte wegen der kurzen Beantwortungsfrist nicht bei allen zuständigen Referaten abschließend abgefragt werden.",
+      "klartext_titel_leicht": "Plan gegen Hitze läuft, aber Geld fehlt für manche Maßnahmen",
+      "klartext_leicht": "Ingolstadt hat seit 2025 einen Plan gegen Hitze, den Hitzeaktionsplan. Es gibt zum Beispiel eine Internet-Seite mit Hitze-Tipps in Leichter Sprache. Auch eine Karte mit kühlen Orten in der Stadt gibt es. Für mehr Grün und Sonnenschirme in der Stadt fehlt aber oft das Geld. Das macht die Umsetzung schwierig.",
+      "lebenslage": [
+        "Senior:innen"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage der SPD-Stadtratsfraktion vom 22.07.2026 zum Thema Hitzevorsorge und der Umgang mit zunehmenden Hitzebelastungen",
+      "top_nr": "Ö 34.9",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [
+        {
+          "titel": "20260729 Hitzeschutz SPD Stellungnahme Ref. VII",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252572&type=do"
+        },
+        {
+          "titel": "Anlage Klimaanpassungkonzept M 14",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252574&type=do"
+        },
+        {
+          "titel": "Hitzevorsorge und der Umgang mit zunehmenden Hitzebelastungen",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252333&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13538#Ö 34.10",
+      "thema": "stadt:13538#Ö 34.10",
+      "auftritte": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 34.10",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "Sportunterricht: rund 375.000 Euro Transportkosten, Ausgabensperre schränkt Budget ein",
+      "klartext": "Auf SPD-Anfrage zum Schulsport teilt die Verwaltung mit: Für den Transport von Schülerinnen und Schülern zu Sport- und Schwimmstätten wurden 2025 rund 374.000 Euro ausgegeben, 2026 sind 414.810 Euro veranschlagt; wegen einer 10-prozentigen Ausgabensperre stehen aktuell noch 109.260 Euro zur Verfügung. Welche Schulen konkret von Einschränkungen betroffen sind, ist einer beigefügten Übersicht zu entnehmen. Mittelfristig sollen Baumaßnahmen wie der Schulcampus Nordost Abhilfe schaffen; städtische Sportstätten stehen Schulen an Schultagen von 8 bis 17 Uhr vorrangig zur Verfügung, Vereine zahlen dafür keine Miete an das Schulverwaltungsamt.",
+      "klartext_titel_leicht": "Sportunterricht kostet viel für Fahrten zu anderen Hallen",
+      "klartext_leicht": "Manche Schulen haben keine eigene Sporthalle. Die Schüler müssen zu anderen Hallen fahren. Das kostet Geld, etwa 400.000 Euro im Jahr. Wegen Geldmangels darf davon aktuell nicht alles ausgegeben werden. Ein neuer Schulcampus im Nordosten soll das Problem später kleiner machen.",
+      "lebenslage": [
+        "Eltern & Kinder",
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Schulbau",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage der SPD-Stadtratsfraktion vom 22.07.2026 zum Thema Schulsport",
+      "top_nr": "Ö 34.10",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [
+        {
+          "titel": "Anlage 1 Übersicht Auslagerung Sportstättennutzung SJ 2026 27",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252519&type=do"
+        },
+        {
+          "titel": "Anlage 2 SWI Schulschwimmen 28-10-2025",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252520&type=do"
+        },
+        {
+          "titel": "Anlage 3 SVA Runder Tisch Schulschwimmen 28.10.2025",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252521&type=do"
+        },
+        {
+          "titel": "Frage Schulsport",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252332&type=do"
+        },
+        {
+          "titel": "Stellungnahme Verwaltung SPD-Anfrage Schulsport vom 21.07.2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252518&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13538#Ö 34.11",
+      "thema": "stadt:13538#Ö 34.11",
+      "auftritte": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 34.11",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "Energiespar-Projekte an elf städtischen Gebäuden warten auf Genehmigung aus München",
+      "klartext": "Zur Umsetzung von Energiespar-Contracting-Projekten antwortet die Verwaltung: Nach Stadtratsbeschluss vom 4. Juni 2024 und Stellenbesetzung im Juli 2025 sollen elf Liegenschaften starten, darunter mehrere Grund- und Mittelschulen sowie das Christoph-Scheiner-Gymnasium. Externe Firmen garantieren dabei Energieeinsparungen und betreiben die Anlagen während der Vertragslaufzeit. Die Regierung von Oberbayern muss jedoch sowohl das Contracting als auch die bevorzugte Finanzierung per Forfaitierung noch genehmigen, da dies als kreditähnliches Rechtsgeschäft gilt; diese Genehmigung steht wegen der angespannten Finanzlage der Stadt weiterhin aus. Die Ausschreibung kann laut Verwaltung unverzüglich starten, sobald die Genehmigung vorliegt.",
+      "klartext_titel_leicht": "Energie sparen an Schulen wartet auf Genehmigung",
+      "klartext_leicht": "An elf Gebäuden der Stadt soll Energie gespart werden, zum Beispiel an Schulen. Externe Firmen sollen das übernehmen und garantieren dafür Einsparungen. Die Stadt braucht dafür aber noch eine Erlaubnis von der Regierung in München. Die fehlt bisher. Erst danach kann es losgehen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Klima & Umwelt",
+        "Schulbau"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage der SPD-Stadtratsfraktion vom 22.07.2026 zum Thema Umsetzung von Energiespar-Contracting-Projekten",
+      "top_nr": "Ö 34.11",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [
+        {
+          "titel": "2026 07 29 SPD Fragestunde StR Energiesparcontracting",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252580&type=do"
+        },
+        {
+          "titel": "Anfrage 3 Fragestunde Stadtrat 290726",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252331&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13538#Ö 34.12",
+      "thema": "stadt:13538#Ö 34.12",
+      "auftritte": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 34.12",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "SPD fragt, ob die Stadt Empfehlungen zur zivilen Verteidigung schon umsetzt",
+      "klartext": "Die SPD-Fraktion fragt, ob die konzeptionelle Arbeit der Stadtverwaltung zur zivilen Verteidigung und Krisenvorsorge dem am 19. Juni 2026 veröffentlichten „Wegweiser zur Zivilen Verteidigung in Kommunen“ des Bundesamts für Bevölkerungsschutz und Katastrophenhilfe entspricht, und welche Empfehlungen bereits umgesetzt sind. Im Ratsinfoportal liegt bislang nur das Anfrage-Schreiben vor; eine schriftliche Antwort der Verwaltung ist zum Zeitpunkt der Sitzung noch nicht als Dokument veröffentlicht.",
+      "klartext_titel_leicht": "SPD fragt nach dem Schutz für den Krisenfall",
+      "klartext_leicht": "Der Bund hat einen Leitfaden veröffentlicht. Er sagt, wie Städte sich auf Krisen und Kriege vorbereiten sollen. Die SPD-Fraktion fragt: Macht Ingolstadt das schon so? Eine schriftliche Antwort der Stadt gibt es dazu noch nicht.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Sicherheit",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage der SPD-Stadtratsfraktion vom 22.07.2026 zum Thema Zivile Verteidigung und Krisenvorsorge",
+      "top_nr": "Ö 34.12",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [
+        {
+          "titel": "Zivile Verteidigung und Krisenvorsorge",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252330&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13538#Ö 1",
+      "thema": "stadt:13538#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "Sonderbefassung zur aktuellen Lage und zu Potenzialen am Wirtschaftsstandort Ingolstadt",
+      "klartext": "Im Stadtrat war folgendes Thema: Sonderbefassung zur aktuellen Lage und zu Potenzialen am Wirtschaftsstandort Ingolstadt.",
+      "klartext_titel_leicht": "Sonderbefassung zur aktuellen Lage und zu Potenzialen am Wirtschaftsstandort Ingolstadt",
+      "klartext_leicht": "Stadtrat: Sonderbefassung zur aktuellen Lage und zu Potenzialen am Wirtschaftsstandort Ingolstadt.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Sonderbefassung zur aktuellen Lage und zu Potenzialen am Wirtschaftsstandort Ingolstadt",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13538#Ö 31",
+      "thema": "stadt:13538#Ö 31",
+      "auftritte": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 31",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "Klinikum Ingolstadt — Sachstandsbericht zur Versorgungssituation",
+      "klartext": "Im Stadtrat war folgendes Thema: Klinikum Ingolstadt — Sachstandsbericht zur Versorgungssituation.",
+      "klartext_titel_leicht": "Klinikum Ingolstadt — Sachstandsbericht zur Versorgungssituation",
+      "klartext_leicht": "Stadtrat: Klinikum Ingolstadt — Sachstandsbericht zur Versorgungssituation.",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Klinikum Ingolstadt — Sachstandsbericht zur Versorgungssituation und zu den Baumaßnahmen",
+      "top_nr": "Ö 31",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13538#Ö 11",
+      "thema": "stadt:13538#Ö 11",
+      "auftritte": [
+        {
+          "datum": "2026-07-29",
+          "datum_anzeige": "29.07.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 11",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538"
+        }
+      ],
+      "klartext_titel": "Weitere Umsetzungsmaßnahmen des Dachbeschlusses zur Haushaltssicherung",
+      "klartext": "Im Stadtrat war folgendes Thema: Weitere Umsetzungsmaßnahmen des Dachbeschlusses zur Haushaltssicherung.",
+      "klartext_titel_leicht": "Weitere Umsetzungsmaßnahmen des Dachbeschlusses zur Haushaltssicherung",
+      "klartext_leicht": "Stadtrat: Weitere Umsetzungsmaßnahmen des Dachbeschlusses zur Haushaltssicherung.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Weitere Umsetzungsmaßnahmen des Dachbeschlusses zur Haushaltssicherung und -stabilisierung (V0888/25)",
+      "top_nr": "Ö 11",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/04/2026",
+      "datum": "2026-07-29",
+      "datum_anzeige": "29.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13538",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
       "ref": "bza:14207#Ö 3",
       "thema": "bza:14207#Ö 3",
       "auftritte": [
@@ -4923,6 +5693,97 @@
       "beratungsweg": []
     },
     {
+      "ref": "stadt:13535#Ö 1",
+      "thema": "stadt:13535#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2026-07-22",
+          "datum_anzeige": "22.07.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535"
+        }
+      ],
+      "klartext_titel": "Finanzlagebericht: Stadthaushalt Mitte 2026 zur Hälfte ausgeschöpft",
+      "klartext": "Der Finanzlagebericht zum Stand 7. Juli 2026 zeigt: Vom Gesamtbudget von 483,83 Millionen Euro sind 52,19 Prozent verbraucht. Bei den Steuereinnahmen ist die Gewerbesteuer mit 99,88 Prozent nahezu voll erreicht, die Grundsteuer B mit 133,42 Prozent bereits deutlich übertroffen, während die Einkommensteuer erst zu 49,31 Prozent eingegangen ist. Das Personalkostenbudget von rund 228,8 Millionen Euro ist zu 42,12 Prozent ausgeschöpft; das Personalamt prognostiziert zum Jahresende rund 226,8 Millionen Euro Gesamtkosten.",
+      "klartext_titel_leicht": "Stadt-Kasse Mitte 2026: gut die Hälfte des Geldes ausgegeben",
+      "klartext_leicht": "Die Stadt Ingolstadt hat für 2026 ein großes Budget, fast 484 Millionen Euro. Bis Anfang Juli war gut die Hälfte davon ausgegeben. Manche Steuern kamen schon fast vollständig herein, zum Beispiel die Gewerbesteuer. Andere Steuern kamen bisher nur zur Hälfte, zum Beispiel die Einkommensteuer. Das Geld für die Gehälter der Stadt-Mitarbeitenden ist erst zu einem kleinen Teil ausgegeben.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Finanzlagebericht von Herrn Fleckinger",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/02/2026",
+      "datum": "2026-07-22",
+      "datum_anzeige": "22.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535",
+      "dokumente": [
+        {
+          "titel": "2026-07-22 Finanzlagebericht final",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252323&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13535#Ö 6",
+      "thema": "stadt:13535#Ö 6",
+      "auftritte": [
+        {
+          "datum": "2026-07-22",
+          "datum_anzeige": "22.07.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535"
+        }
+      ],
+      "klartext_titel": "Weitere Umsetzungsmaßnahmen des Dachbeschlusses zur Haushaltssicherung",
+      "klartext": "Im Ausschuss für Finanzen und Personal war folgendes Thema: Weitere Umsetzungsmaßnahmen des Dachbeschlusses zur Haushaltssicherung.",
+      "klartext_titel_leicht": "Weitere Umsetzungsmaßnahmen des Dachbeschlusses zur Haushaltssicherung",
+      "klartext_leicht": "Ausschuss für Finanzen und Personal: Weitere Umsetzungsmaßnahmen des Dachbeschlusses zur Haushaltssicherung.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Weitere Umsetzungsmaßnahmen des Dachbeschlusses zur Haushaltssicherung und -stabilisierung (V0888/25)",
+      "top_nr": "Ö 6",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/02/2026",
+      "datum": "2026-07-22",
+      "datum_anzeige": "22.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13535",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
       "ref": "bza:14197#Ö 4",
       "thema": "bza:14197#Ö 4",
       "auftritte": [
@@ -5219,6 +6080,270 @@
       "beratungsweg": []
     },
     {
+      "ref": "stadt:13730#Ö 2",
+      "thema": "stadt:13730#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2026-07-17",
+          "datum_anzeige": "17.07.2026",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13730"
+        }
+      ],
+      "klartext_titel": "Bestätigung/Ergänzung des Protokolls der letzten Sitzung",
+      "klartext": "Im Jugendparlament war folgendes Thema: Bestätigung/Ergänzung des Protokolls der letzten Sitzung.",
+      "klartext_titel_leicht": "Bestätigung/Ergänzung des Protokolls der letzten Sitzung",
+      "klartext_leicht": "Jugendparlament: Bestätigung/Ergänzung des Protokolls der letzten Sitzung.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bestätigung/Ergänzung des Protokolls der letzten Sitzung",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/02/2026",
+      "datum": "2026-07-17",
+      "datum_anzeige": "17.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13730",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13730#Ö 3",
+      "thema": "stadt:13730#Ö 3",
+      "auftritte": [
+        {
+          "datum": "2026-07-17",
+          "datum_anzeige": "17.07.2026",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13730"
+        }
+      ],
+      "klartext_titel": "Bericht aus dem Vorstand und Bericht zu bisherigen Anträgen",
+      "klartext": "Im Jugendparlament war folgendes Thema: Bericht aus dem Vorstand und Bericht zu bisherigen Anträgen.",
+      "klartext_titel_leicht": "Bericht aus dem Vorstand und Bericht zu bisherigen Anträgen",
+      "klartext_leicht": "Jugendparlament: Bericht aus dem Vorstand und Bericht zu bisherigen Anträgen.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht aus dem Vorstand und Bericht zu bisherigen Anträgen",
+      "top_nr": "Ö 3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/02/2026",
+      "datum": "2026-07-17",
+      "datum_anzeige": "17.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13730",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13730#Ö 4",
+      "thema": "stadt:13730#Ö 4",
+      "auftritte": [
+        {
+          "datum": "2026-07-17",
+          "datum_anzeige": "17.07.2026",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13730"
+        }
+      ],
+      "klartext_titel": "Beratung des Stadtrats lt. Satzung: Jugend-Check",
+      "klartext": "Im Jugendparlament war folgendes Thema: Beratung des Stadtrats lt. Satzung: Jugend-Check.",
+      "klartext_titel_leicht": "Beratung des Stadtrats lt. Satzung: Jugend-Check",
+      "klartext_leicht": "Jugendparlament: Beratung des Stadtrats lt. Satzung: Jugend-Check.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Beratung des Stadtrats lt. Satzung: Jugend-Check",
+      "top_nr": "Ö 4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/02/2026",
+      "datum": "2026-07-17",
+      "datum_anzeige": "17.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13730",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13730#Ö 5",
+      "thema": "stadt:13730#Ö 5",
+      "auftritte": [
+        {
+          "datum": "2026-07-17",
+          "datum_anzeige": "17.07.2026",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13730"
+        }
+      ],
+      "klartext_titel": "Projektvorstellungen: Jugendbefragung 2026, Lange Nacht der Demokratie",
+      "klartext": "Im Jugendparlament war folgendes Thema: Projektvorstellungen: Jugendbefragung 2026, Lange Nacht der Demokratie.",
+      "klartext_titel_leicht": "Projektvorstellungen: Jugendbefragung 2026, Lange Nacht der Demokratie",
+      "klartext_leicht": "Jugendparlament: Projektvorstellungen: Jugendbefragung 2026, Lange Nacht der Demokratie.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Projektvorstellungen: Jugendbefragung 2026, Lange Nacht der Demokratie",
+      "top_nr": "Ö 5",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/02/2026",
+      "datum": "2026-07-17",
+      "datum_anzeige": "17.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13730",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13730#Ö 6",
+      "thema": "stadt:13730#Ö 6",
+      "auftritte": [
+        {
+          "datum": "2026-07-17",
+          "datum_anzeige": "17.07.2026",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13730"
+        }
+      ],
+      "klartext_titel": "A0426.01 Antrag Döner und Kommunalpolitik",
+      "klartext": "Im Jugendparlament war folgendes Thema: A0426.01 Antrag Döner und Kommunalpolitik.",
+      "klartext_titel_leicht": "A0426.01 Antrag Döner und Kommunalpolitik",
+      "klartext_leicht": "Jugendparlament: A0426.01 Antrag Döner und Kommunalpolitik.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "A0426.01 Antrag Döner und Kommunalpolitik",
+      "top_nr": "Ö 6",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/02/2026",
+      "datum": "2026-07-17",
+      "datum_anzeige": "17.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13730",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13730#Ö 7",
+      "thema": "stadt:13730#Ö 7",
+      "auftritte": [
+        {
+          "datum": "2026-07-17",
+          "datum_anzeige": "17.07.2026",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13730"
+        }
+      ],
+      "klartext_titel": "Besprechung künftiger Anträge: Ü16-Party und Finanzworkshop",
+      "klartext": "Im Jugendparlament war folgendes Thema: Besprechung künftiger Anträge: Ü16-Party und Finanzworkshop.",
+      "klartext_titel_leicht": "Besprechung künftiger Anträge: Ü16-Party und Finanzworkshop",
+      "klartext_leicht": "Jugendparlament: Besprechung künftiger Anträge: Ü16-Party und Finanzworkshop.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Besprechung künftiger Anträge: Ü16-Party und Finanzworkskop",
+      "top_nr": "Ö 7",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/02/2026",
+      "datum": "2026-07-17",
+      "datum_anzeige": "17.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13730",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
       "ref": "stadt:13725#Ö 2",
       "thema": "stadt:vorlage:23167",
       "auftritte": [
@@ -5417,6 +6542,90 @@
       "quelle": "stadt",
       "amtlicher_titel": "Zweckentfremdungssatzung",
       "top_nr": "Ö 7",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit, Ausschuss für Kultur und Bildung, Ausschuss für Sport, Veranstaltungen und Freizeit, Jugendhilfeausschuss",
+      "sitzung_kennung": "PLA/02/2026",
+      "datum": "2026-07-14",
+      "datum_anzeige": "14.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13534",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13534#Ö 4",
+      "thema": "stadt:13534#Ö 4",
+      "auftritte": [
+        {
+          "datum": "2026-07-14",
+          "datum_anzeige": "14.07.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit, Ausschuss für Kultur und Bildung, Ausschuss für Sport, Veranstaltungen und Freizeit, Jugendhilfeausschuss",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13534"
+        }
+      ],
+      "klartext_titel": "Bekanntgabe der regelmäßigen Zusammensetzung des Klimarats",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit und weiteren Ausschüssen war folgendes Thema: Bekanntgabe der regelmäßigen Zusammensetzung des Klimarats.",
+      "klartext_titel_leicht": "Bekanntgabe der regelmäßigen Zusammensetzung des Klimarats",
+      "klartext_leicht": "Mehrere Fachausschüsse: Bekanntgabe der regelmäßigen Zusammensetzung des Klimarats.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bekanntgabe der regelmäßigen Zusammensetzung des Klimarats",
+      "top_nr": "Ö 4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit, Ausschuss für Kultur und Bildung, Ausschuss für Sport, Veranstaltungen und Freizeit, Jugendhilfeausschuss",
+      "sitzung_kennung": "PLA/02/2026",
+      "datum": "2026-07-14",
+      "datum_anzeige": "14.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13534",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13534#Ö 5",
+      "thema": "stadt:13534#Ö 5",
+      "auftritte": [
+        {
+          "datum": "2026-07-14",
+          "datum_anzeige": "14.07.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit, Ausschuss für Kultur und Bildung, Ausschuss für Sport, Veranstaltungen und Freizeit, Jugendhilfeausschuss",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13534"
+        }
+      ],
+      "klartext_titel": "Planungen Technisches Rathaus",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit und weiteren Ausschüssen war folgendes Thema: Planungen Technisches Rathaus.",
+      "klartext_titel_leicht": "Planungen Technisches Rathaus",
+      "klartext_leicht": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit und weiteren Ausschüssen: Planungen Technisches Rathaus.",
+      "lebenslage": [],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Planungen Technisches Rathaus",
+      "top_nr": "Ö 5",
       "vorlage": "",
       "vorlage_url": "",
       "antragsteller": "",
@@ -6256,6 +7465,132 @@
       ]
     },
     {
+      "ref": "stadt:13533#Ö 1",
+      "thema": "stadt:13533#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2026-07-07",
+          "datum_anzeige": "07.07.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13533"
+        }
+      ],
+      "klartext_titel": "Aktuelle Information zum Kulturgeschehen",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Aktuelle Information zum Kulturgeschehen.",
+      "klartext_titel_leicht": "Aktuelle Information zum Kulturgeschehen",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Aktuelle Information zum Kulturgeschehen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Aktuelle Information zum Kulturgeschehen",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/02/2026",
+      "datum": "2026-07-07",
+      "datum_anzeige": "07.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13533",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13533#Ö 2",
+      "thema": "stadt:13533#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2026-07-07",
+          "datum_anzeige": "07.07.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13533"
+        }
+      ],
+      "klartext_titel": "Sachstandsbericht zu Schulbaumaßnahmen",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Sachstandsbericht zu Schulbaumaßnahmen.",
+      "klartext_titel_leicht": "Sachstandsbericht zu Schulbaumaßnahmen",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Sachstandsbericht zu Schulbaumaßnahmen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Schulbau"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Sachstandsbericht zu Schulbaumaßnahmen",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/02/2026",
+      "datum": "2026-07-07",
+      "datum_anzeige": "07.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13533",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13533#Ö 7",
+      "thema": "stadt:13533#Ö 7",
+      "auftritte": [
+        {
+          "datum": "2026-07-07",
+          "datum_anzeige": "07.07.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13533"
+        }
+      ],
+      "klartext_titel": "Unterstützung der freien Kulturszene",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Unterstützung der freien Kulturszene.",
+      "klartext_titel_leicht": "Unterstützung der freien Kulturszene",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Unterstützung der freien Kulturszene.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Unterstützung der freien Kulturszene",
+      "top_nr": "Ö 7",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/02/2026",
+      "datum": "2026-07-07",
+      "datum_anzeige": "07.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13533",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
       "ref": "stadt:13531#Ö 2",
       "thema": "stadt:13531#Ö 2",
       "auftritte": [
@@ -6364,6 +7699,48 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13531&toselect=88722"
         }
       ]
+    },
+    {
+      "ref": "stadt:13531#Ö 1",
+      "thema": "stadt:13531#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2026-07-01",
+          "datum_anzeige": "01.07.2026",
+          "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13531"
+        }
+      ],
+      "klartext_titel": "Aktueller Sachstandsbericht zu Veranstaltungen",
+      "klartext": "Im Ausschuss für Sport, Veranstaltungen und Freizeit war folgendes Thema: Aktueller Sachstandsbericht zu Veranstaltungen.",
+      "klartext_titel_leicht": "Aktueller Sachstandsbericht zu Veranstaltungen",
+      "klartext_leicht": "Ausschuss für Sport, Veranstaltungen und Freizeit: Aktueller Sachstandsbericht zu Veranstaltungen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Aktueller Sachstandsbericht zu Veranstaltungen",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+      "sitzung_kennung": "SVA/01/2026",
+      "datum": "2026-07-01",
+      "datum_anzeige": "01.07.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13531",
+      "dokumente": [],
+      "beratungsweg": []
     },
     {
       "ref": "stadt:13530#Ö 1",
@@ -8531,6 +9908,90 @@
       "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
       "dokumente": [],
       "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13529#Ö 17",
+      "thema": "stadt:vorlage:22994",
+      "auftritte": [
+        {
+          "datum": "2026-06-11",
+          "datum_anzeige": "11.06.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525"
+        },
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 17",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
+        }
+      ],
+      "klartext_titel": "Zwischenbericht zum Mobilitätsplan Ingolstadt 2040+ vorgestellt",
+      "klartext": "Im Stadtrat war folgendes Thema: Zwischenbericht zum Mobilitätsplan Ingolstadt 2040+ und Endbericht zur Erhebung. Das zugehörige Dokument ließ sich vom Ratsinformationsportal nicht abrufen.",
+      "klartext_titel_leicht": "Bericht zum Verkehrs-Plan der Zukunft vorgestellt",
+      "klartext_leicht": "Stadtrat: Zwischenbericht zum Mobilitätsplan Ingolstadt 2040+ und Endbericht zur Erhebung. Das Dokument dazu konnte nicht abgerufen werden.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Verkehrsplanung",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "24.06.2026",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Zwischenbericht zum Mobilitätsplan Ingolstadt 2040+ und Endbericht zur Erhebung „Mobilität in Deutschland – MiD 2023“",
+      "top_nr": "Ö 17",
+      "vorlage": "V0244/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22994",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2026",
+      "datum": "2026-06-24",
+      "datum_anzeige": "24.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249688&type=do"
+        },
+        {
+          "titel": "Anlage 1 V0244-26 MiD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249712&type=do"
+        },
+        {
+          "titel": "Anlage 2 V0244-26",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249778&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-06-11",
+          "datum_anzeige": "11.06.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "1",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525&toselect=88193"
+        },
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "17",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529&toselect=88588"
+        }
+      ]
     },
     {
       "ref": "bza:14017#Ö 1",
