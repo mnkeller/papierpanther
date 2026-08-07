@@ -13367,28 +13367,36 @@
       "klartext_leicht": "An der Haunwöhrer Straße bei der Orbanstraße gibt es einen Zebrastreifen. Die Stadt hat gezählt, wie viele Menschen ihn nutzen. Es sind nicht so viele. Für eine Ampel würde das nicht reichen. Weil Schulkinder den Weg aber oft nutzen, bleibt der Zebrastreifen trotzdem."
     },
     "bza:11799#Ö 3.2": {
-      "klartext_titel": "Neubau Entwässerung Fauststraße / Schrobenhausener Straße (2024-05-017)",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
-      "bezirk": [
-        "V-Südwest"
-      ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
-    },
-    "bza:11799#Ö 3.3": {
-      "klartext_titel": "Umlaufsperre Baggerweg (2024-05-014)",
-      "klartext": "",
+      "klartext_titel": "Entwässerung Fauststraße/Schrobenhausener Straße verzögert sich wegen Altlasten",
+      "klartext": "Für den 2,6 Millionen Euro teuren Neubau der Straßenentwässerung in Fauststraße und Schrobenhausener Straße wurde 2023 bereits ein erster Abschnitt mit einer Rigolenanlage am Sportplatz des SV Haunwöhr fertiggestellt, 2024 folgt der Sammelkanal bis zum Kreisverkehr. Ein Baugeologisches Gutachten fand jedoch in der Schrobenhausener Straße stark schadstoffbelasteten Bauschutt im Untergrund, weshalb die dort geplante Versickerung vor Ort neu geplant werden muss; eine Realisierung ist laut Tiefbauamt frühestens 2027 möglich. Die schlechte Asphaltdecke der Fauststraße wird unabhängig davon noch im Herbst 2024 erneuert.",
       "lebenslage": [],
       "bezirk": [
         "V-Südwest"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Bauleitplanung",
+        "Klima & Umwelt"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Neue Entwässerung für die Fauststraße dauert länger als gedacht",
+      "klartext_leicht": "In der Fauststraße und der Schrobenhausener Straße soll das Regenwasser besser abfließen können. Ein Teil ist schon fertig gebaut. Dann fand man im Boden viel alten, giftigen Bauschutt. Deshalb muss neu geplant werden. Fertig wird alles frühestens 2027. Die kaputte Straßendecke der Fauststraße wird aber schon im Herbst 2024 repariert."
+    },
+    "bza:11799#Ö 3.3": {
+      "klartext_titel": "Keine Umlaufsperre am Baggerweg, zu gefährlich für Radfahrende",
+      "klartext": "Eine am Geh- und Radweg zur Einfahrt in den Baggerweg gewünschte Umlaufsperre lehnt die Verwaltung ab. Wegen einer Kurve und dichter Bewaldung ist die Sicht dort stark eingeschränkt, sodass Radfahrende die Sperre zu spät erkennen und verunfallen könnten; zudem wäre eine ausreichende Beleuchtung dort nicht möglich. Auch Spaziergänger mit Kinderwagen wären durch eine Sperre erheblich behindert. Ein zusätzlich gewünschtes Hundeleinen-Hinweisschild ist kein amtliches Verkehrszeichen und wird ebenfalls nicht aufgestellt.",
+      "lebenslage": [],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Keine Absperrung am Baggerweg, das wäre zu gefährlich",
+      "klartext_leicht": "Am Baggerweg wurde eine kleine Absperrung für den Radweg gewünscht. Die Stadt lehnt das ab. An der Stelle sieht man wegen einer Kurve und vielen Bäumen schlecht. Rad-Fahrer könnten die Absperrung zu spät sehen und stürzen. Auch für Menschen mit Kinderwagen wäre sie ein Hindernis."
     },
     "bza:11799#Ö 3.4": {
       "klartext_titel": "Tiny Forest am Apian- Gymnasium",
@@ -13404,15 +13412,20 @@
       "klartext_leicht": "Bezirks-Ausschuss V-Südwest: Tiny Forest am Apian- Gymnasium."
     },
     "bza:11799#Ö 3.5": {
-      "klartext_titel": "Schaukasten (2024-05-016)",
-      "klartext": "",
+      "klartext_titel": "Keine neuen Schaukästen im Bezirk Südwest",
+      "klartext": "Die Verwaltung lehnt die Errichtung neuer Schaukästen und Vitrinen ab. Bereits 2022 hatte eine Stellungnahme wegen rückläufiger touristischer Relevanz und aus Verkehrssicherungsgründen zum Abbau von elf maroden Schaukästen und Infotafeln in verschiedenen Stadtteilen geführt. Angesichts digitaler Alternativen wie Online-Stadtplänen sei der Informationsmehrwert überschaubar, während Unterhalt und Verkehrssicherung unverhältnismäßig hohen Aufwand bedeuteten; als freiwillige Aufgabe sei die Maßnahme im Zuge der Haushaltskonsolidierung zudem abzulehnen.",
       "lebenslage": [],
       "bezirk": [
         "V-Südwest"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Keine neuen Schaukästen im Bezirk Südwest",
+      "klartext_leicht": "Im Bezirk Südwest wurde ein neuer Schaukasten gewünscht, zum Aushängen von Infos. Die Stadt lehnt das ab. Es gibt schon digitale Angebote wie Online-Stadtpläne. Alte, kaputte Schaukästen wurden zuletzt sogar abgebaut. Neue zu bauen würde Geld kosten, das die Stadt gerade sparen muss."
     },
     "bza:11799#Ö 3.6": {
       "klartext_titel": "Totenweg, Dorfstraße",
