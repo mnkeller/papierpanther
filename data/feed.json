@@ -27,17 +27,17 @@
     "sitzungen_ausgelesen": 360,
     "tops_ausgelesen": 3415,
     "tops_verfahren": 493,
-    "tops_kuratiert": 1419,
-    "entwuerfe": 2,
-    "leichte_sprache": 1417,
+    "tops_kuratiert": 1448,
+    "entwuerfe": 1,
+    "leichte_sprache": 1447,
     "je_quelle": {
-      "stadt": 565,
+      "stadt": 594,
       "bza": 854
     },
     "stand": {
       "Bekanntgabe": 112,
       "Entscheidung angesetzt": 377,
-      "Ohne Vorlage": 921,
+      "Ohne Vorlage": 950,
       "Wird noch beraten": 9
     }
   },
@@ -18018,6 +18018,92 @@
       "beratungsweg": []
     },
     {
+      "ref": "stadt:13513#Ö 29.1",
+      "thema": "stadt:13513#Ö 29.1",
+      "auftritte": [
+        {
+          "datum": "2026-03-26",
+          "datum_anzeige": "26.03.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 29.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513"
+        }
+      ],
+      "klartext_titel": "Kammerphilharmonie Ingolstadt GmbH: Ausübung der Gesellschafterrechte zum Wirtschaftsplan 2026 und zur Geschäftsführung",
+      "klartext": "Im Stadtrat war folgendes Thema: Kammerphilharmonie Ingolstadt GmbH: Ausübung der Gesellschafterrechte zum Wirtschaftsplan 2026 und zur Geschäftsführung.",
+      "klartext_titel_leicht": "Kammerphilharmonie Ingolstadt GmbH: Ausübung der Gesellschafterrechte zum Wirtschaftsplan 2026 und zur Geschäftsführung",
+      "klartext_leicht": "Stadtrat: Kammerphilharmonie Ingolstadt GmbH: Ausübung der Gesellschafterrechte zum Wirtschaftsplan 2026 und zur Geschäftsführung.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249702&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "öffentlicher Teil: Kammerphilharmonie Ingolstadt GmbH: — Ausübung der Gesellschafterrechte zum Wirtschaftsplan 2026 und zur Geschäftsführung",
+      "top_nr": "Ö 29.1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/2/2026",
+      "datum": "2026-03-26",
+      "datum_anzeige": "26.03.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13513#Ö 32.1",
+      "thema": "stadt:13513#Ö 32.1",
+      "auftritte": [
+        {
+          "datum": "2026-03-26",
+          "datum_anzeige": "26.03.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 32.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513"
+        }
+      ],
+      "klartext_titel": "Umnutzung Wohnblock in der Stauffenbergstraße",
+      "klartext": "Im Stadtrat war folgendes Thema: Umnutzung Wohnblock in der Stauffenbergstraße.",
+      "klartext_titel_leicht": "Umnutzung Wohnblock in der Stauffenbergstraße",
+      "klartext_leicht": "Stadtrat: Umnutzung Wohnblock in der Stauffenbergstraße.",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Bauleitplanung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249702&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Umnutzung Wohnblock in der Stauffenbergstraße",
+      "top_nr": "Ö 32.1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/2/2026",
+      "datum": "2026-03-26",
+      "datum_anzeige": "26.03.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
       "ref": "stadt:13692#Ö 1",
       "thema": "stadt:vorlage:22850",
       "auftritte": [
@@ -18194,6 +18280,50 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13692&toselect=86777"
         }
       ]
+    },
+    {
+      "ref": "stadt:13692#Ö 4",
+      "thema": "stadt:13692#Ö 4",
+      "auftritte": [
+        {
+          "datum": "2026-03-25",
+          "datum_anzeige": "25.03.2026",
+          "gremium": "Migrationsrat",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13692"
+        }
+      ],
+      "klartext_titel": "Informationen und Anregungen",
+      "klartext": "Im Migrationsrat war folgendes Thema: Informationen und Anregungen.",
+      "klartext_titel_leicht": "Informationen und Anregungen",
+      "klartext_leicht": "Migrationsrat: Informationen und Anregungen.",
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Informationen und Anregungen",
+      "top_nr": "Ö 4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Migrationsrat",
+      "sitzung_kennung": "MR/1/2026",
+      "datum": "2026-03-25",
+      "datum_anzeige": "25.03.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13692",
+      "dokumente": [],
+      "beratungsweg": []
     },
     {
       "ref": "bza:13985#Ö 3.1",
@@ -19286,6 +19416,51 @@
       ]
     },
     {
+      "ref": "stadt:13511#Ö 6",
+      "thema": "stadt:13511#Ö 6",
+      "auftritte": [
+        {
+          "datum": "2026-03-18",
+          "datum_anzeige": "18.03.2026",
+          "gremium": "Ausschuss für Verwaltung, Personal und Recht",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13511"
+        }
+      ],
+      "klartext_titel": "Arbeitsgelegenheiten für Asylbewerber",
+      "klartext": "Im Ausschuss für Verwaltung, Personal und Recht war folgendes Thema: Arbeitsgelegenheiten für Asylbewerber.",
+      "klartext_titel_leicht": "Arbeitsgelegenheiten für Asylbewerber",
+      "klartext_leicht": "Ausschuss für Verwaltung, Personal und Recht: Arbeitsgelegenheiten für Asylbewerber.",
+      "lebenslage": [
+        "Zuwanderung & Integration",
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248917&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Arbeitsgelegenheiten für Asylbewerber",
+      "top_nr": "Ö 6",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Verwaltung, Personal und Recht",
+      "sitzung_kennung": "VPA/2/2026",
+      "datum": "2026-03-18",
+      "datum_anzeige": "18.03.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13511",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
       "ref": "stadt:13510#Ö 2",
       "thema": "stadt:vorlage:22843",
       "auftritte": [
@@ -19500,6 +19675,48 @@
       ]
     },
     {
+      "ref": "stadt:13510#Ö 1",
+      "thema": "stadt:13510#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2026-03-17",
+          "datum_anzeige": "17.03.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13510"
+        }
+      ],
+      "klartext_titel": "Finanzlagebericht von Herrn Fleckinger",
+      "klartext": "Im Ausschuss für Finanzen und Personal war folgendes Thema: Finanzlagebericht von Herrn Fleckinger.",
+      "klartext_titel_leicht": "Finanzlagebericht von Herrn Fleckinger",
+      "klartext_leicht": "Ausschuss für Finanzen und Personal: Finanzlagebericht von Herrn Fleckinger.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248952&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Finanzlagebericht von Herrn Fleckinger",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FWA/2/2026",
+      "datum": "2026-03-17",
+      "datum_anzeige": "17.03.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13510",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
       "ref": "stadt:13509#Ö 9",
       "thema": "stadt:vorlage:22569",
       "auftritte": [
@@ -19682,6 +19899,53 @@
       ]
     },
     {
+      "ref": "stadt:13509#Ö 1",
+      "thema": "stadt:13509#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2026-03-12",
+          "datum_anzeige": "12.03.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13509"
+        }
+      ],
+      "klartext_titel": "Landschaftspflegeverband betreut Naturschutzprojekte für über eine Million Euro",
+      "klartext": "Der Landschaftspflegeverband Ingolstadt e.V., gegründet 2021, hat dem Ausschuss seinen Tätigkeitsbericht vorgelegt. Aktuell laufen unter anderem ein fünfjähriges Beweidungsprojekt mit rund 1,09 Millionen Euro Fördermitteln und ein vierjähriges Projekt zum Lohenmanagement mit rund 239.500 Euro, gefördert unter anderem vom Bundesamt für Naturschutz. Praktisch betreut der Verband die Landschaftspflege in den Naturschutzgebieten Kälberschütt und Ochsenschütt, die Brennenpflege sowie die Pflege von Amphibiengewässern am Columbuswasser. Als Ausblick möchte sich der Verband stärker als Dienstleistungspartner für Umwelt-, Forst- und Gartenamt positionieren und Fördergelder aus weiteren Quellen erschließen.",
+      "klartext_titel_leicht": "Verein pflegt Natur in und um Ingolstadt",
+      "klartext_leicht": "Der Landschaftspflegeverband Ingolstadt kümmert sich um die Natur. Er wurde 2021 gegründet. Er pflegt zum Beispiel Naturschutz-Gebiete und Teiche für Frösche und Kröten. Dafür lässt er auch Tiere auf Wiesen weiden. Das kostet über eine Million Euro, bezahlt aus Förder-Geldern. Der Verein möchte in Zukunft noch enger mit den Ämtern der Stadt zusammenarbeiten.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249462&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Tätigkeitsbericht Landschaftspflegeverband Ingolstadt",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+      "sitzung_kennung": "PLA/2/2026",
+      "datum": "2026-03-12",
+      "datum_anzeige": "12.03.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13509",
+      "dokumente": [
+        {
+          "titel": "2026 LPV Präsentation Stadtentwicklung V02 260312",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=247984&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
       "ref": "stadt:13508#Ö 5",
       "thema": "stadt:vorlage:22823",
       "auftritte": [
@@ -19693,19 +19957,19 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13508"
         }
       ],
-      "klartext_titel": "Stadttheater Ingolstadt stellt Spielplan 2026/27 vor",
-      "klartext": "",
-      "klartext_titel_leicht": "Der neue Theater-Spielplan ist da",
-      "klartext_leicht": "",
+      "klartext_titel": "Spielplan des Stadttheaters für 2026/27 bekannt gegeben",
+      "klartext": "Der Ausschuss für Kultur und Bildung hat den Spielplan des Stadttheaters Ingolstadt für die Spielzeit 2026/2027 zur Kenntnis genommen. Das genaue Programm ist als Anlage beigefügt und wird hier nicht im Detail wiedergegeben.",
+      "klartext_titel_leicht": "Neuer Spielplan fürs Stadttheater 2026/27",
+      "klartext_leicht": "Das Stadttheater Ingolstadt hat einen neuen Spielplan für 2026/2027. Das ist die Liste der Stücke, die gezeigt werden. Der Ausschuss für Kultur hat davon erfahren. Das genaue Programm steht in einer eigenen Broschüre.",
       "lebenslage": [],
       "bezirk": [
-        "stadtweit"
+        "I-Mitte"
       ],
       "anlass": [
         "Kultur & Bildung"
       ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Bekanntgabe",
       "stand_datum": "10.03.2026",
       "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248834&type=do",
@@ -19745,6 +20009,175 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13508&toselect=86750"
         }
       ]
+    },
+    {
+      "ref": "stadt:13508#Ö 1",
+      "thema": "stadt:13508#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2026-03-10",
+          "datum_anzeige": "10.03.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13508"
+        }
+      ],
+      "klartext_titel": "Aktuelle Information zum Kulturgeschehen",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Aktuelle Information zum Kulturgeschehen.",
+      "klartext_titel_leicht": "Aktuelle Information zum Kulturgeschehen",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Aktuelle Information zum Kulturgeschehen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248834&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Aktuelle Information zum Kulturgeschehen",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/2/2026",
+      "datum": "2026-03-10",
+      "datum_anzeige": "10.03.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13508",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13508#Ö 2",
+      "thema": "stadt:13508#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2026-03-10",
+          "datum_anzeige": "10.03.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13508"
+        }
+      ],
+      "klartext_titel": "Sachstandsbericht zu Schulbaumaßnahmen",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Sachstandsbericht zu Schulbaumaßnahmen.",
+      "klartext_titel_leicht": "Sachstandsbericht zu Schulbaumaßnahmen",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Sachstandsbericht zu Schulbaumaßnahmen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Schulbau"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248834&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Sachstandsbericht zu Schulbaumaßnahmen",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/2/2026",
+      "datum": "2026-03-10",
+      "datum_anzeige": "10.03.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13508",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13508#Ö 6",
+      "thema": "stadt:13508#Ö 6",
+      "auftritte": [
+        {
+          "datum": "2026-03-10",
+          "datum_anzeige": "10.03.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13508"
+        }
+      ],
+      "klartext_titel": "Schaffung einer Stelle zur Beratung und Beantragung von Drittfördermitteln für Kunst- und Kreativschaffende",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Schaffung einer Stelle zur Beratung und Beantragung von Drittfördermitteln für Kunst- und Kreativschaffende.",
+      "klartext_titel_leicht": "Schaffung einer Stelle zur Beratung und Beantragung von Drittfördermitteln für Kunst- und Kreativschaffende",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Neue Stelle zur Beratung von Kunst- und Kreativ-Schaffenden bei Förderanträgen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248834&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Schaffung einer Stelle zur Beratung/Beantragung von Drittfördermitteln für Kunst- und Kreativschaffende",
+      "top_nr": "Ö 6",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/2/2026",
+      "datum": "2026-03-10",
+      "datum_anzeige": "10.03.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13508",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13948#Ö 1",
+      "thema": "stadt:13948#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2026-03-05",
+          "datum_anzeige": "05.03.2026",
+          "gremium": "Planungsverband Region Ingolstadt, Planungsausschuss",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13948"
+        }
+      ],
+      "klartext_titel": "Änderung des Regionalplanes: Fortschreibung des Kapitels Windenergie, Reduktion der Flächenkulisse auf 1,1 Prozent",
+      "klartext": "Im Planungsausschuss des Planungsverbands Region Ingolstadt war folgendes Thema: Änderung des Regionalplanes: Fortschreibung des Kapitels Windenergie, Reduktion der Flächenkulisse auf 1,1 Prozent.",
+      "klartext_titel_leicht": "Änderung des Regionalplanes: Fortschreibung des Kapitels Windenergie, Reduktion der Flächenkulisse auf 1,1 Prozent",
+      "klartext_leicht": "Planungsausschuss der Region Ingolstadt: Weniger Flächen für Windräder, nur noch 1,1 Prozent.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Klima & Umwelt",
+        "Bauleitplanung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Änderung des Regionalplanes Ingolstadt, Fortschreibung des Kapitels Windenergie: Sachstand, Rahmenkonzeption und Reduktion der Flächenkulisse mit Ziel 1,1 %",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Planungsverband Region Ingolstadt, Planungsausschuss",
+      "sitzung_kennung": "RPV/01/2026",
+      "datum": "2026-03-05",
+      "datum_anzeige": "05.03.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13948",
+      "dokumente": [],
+      "beratungsweg": []
     },
     {
       "ref": "stadt:13507#Ö 2",
@@ -19890,6 +20323,51 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13507&toselect=86702"
         }
       ]
+    },
+    {
+      "ref": "stadt:13507#Ö 4",
+      "thema": "stadt:13507#Ö 4",
+      "auftritte": [
+        {
+          "datum": "2026-02-26",
+          "datum_anzeige": "26.02.2026",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13507"
+        }
+      ],
+      "klartext_titel": "Arbeitsgelegenheiten für Asylbewerber",
+      "klartext": "Im Ausschuss für Soziales, Gesundheit, Stiftungen und Familien war folgendes Thema: Arbeitsgelegenheiten für Asylbewerber.",
+      "klartext_titel_leicht": "Arbeitsgelegenheiten für Asylbewerber",
+      "klartext_leicht": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien: Arbeitsgelegenheiten für Asylbewerber.",
+      "lebenslage": [
+        "Zuwanderung & Integration",
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248544&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Arbeitsgelegenheiten für Asylbewerber",
+      "top_nr": "Ö 4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+      "sitzung_kennung": "SGA/2/2026",
+      "datum": "2026-02-26",
+      "datum_anzeige": "26.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13507",
+      "dokumente": [],
+      "beratungsweg": []
     },
     {
       "ref": "stadt:13506#Ö 2",
@@ -22262,6 +22740,779 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11853&toselect=84475"
         }
       ]
+    },
+    {
+      "ref": "stadt:13504#Ö 1",
+      "thema": "stadt:13504#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2026-02-11",
+          "datum_anzeige": "11.02.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504"
+        }
+      ],
+      "klartext_titel": "Vereidigung des berufsmäßigen Stadtrats Matthias Franz",
+      "klartext": "Im Stadtrat war folgendes Thema: Vereidigung des berufsmäßigen Stadtrats Matthias Franz.",
+      "klartext_titel_leicht": "Vereidigung des berufsmäßigen Stadtrats Matthias Franz",
+      "klartext_leicht": "Stadtrat: Vereidigung des berufsmäßigen Stadtrats Matthias Franz.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248335&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Vereidigung des berufsmäßigen Stadtrats Matthias Franz",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/1/2026",
+      "datum": "2026-02-11",
+      "datum_anzeige": "11.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13504#Ö 3",
+      "thema": "stadt:13504#Ö 3",
+      "auftritte": [
+        {
+          "datum": "2026-02-11",
+          "datum_anzeige": "11.02.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504"
+        }
+      ],
+      "klartext_titel": "Debatte zum Haushalt 2026",
+      "klartext": "Im Stadtrat war folgendes Thema: Debatte zum Haushalt 2026.",
+      "klartext_titel_leicht": "Debatte zum Haushalt 2026",
+      "klartext_leicht": "Stadtrat: Debatte zum Haushalt 2026.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248335&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Debatte zum Haushalt 2026",
+      "top_nr": "Ö 3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/1/2026",
+      "datum": "2026-02-11",
+      "datum_anzeige": "11.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13504#Ö 3.1",
+      "thema": "stadt:13504#Ö 3.1",
+      "auftritte": [
+        {
+          "datum": "2026-02-11",
+          "datum_anzeige": "11.02.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 3.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504"
+        }
+      ],
+      "klartext_titel": "Haushaltsrede des Oberbürgermeisters Dr. Michael Kern",
+      "klartext": "Im Stadtrat war folgendes Thema: Haushaltsrede des Oberbürgermeisters Dr. Michael Kern.",
+      "klartext_titel_leicht": "Haushaltsrede des Oberbürgermeisters Dr. Michael Kern",
+      "klartext_leicht": "Stadtrat: Haushaltsrede des Oberbürgermeisters Dr. Michael Kern.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248335&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Haushaltsrede des Oberbürgermeisters Dr. Michael Kern",
+      "top_nr": "Ö 3.1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/1/2026",
+      "datum": "2026-02-11",
+      "datum_anzeige": "11.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13504#Ö 3.2",
+      "thema": "stadt:13504#Ö 3.2",
+      "auftritte": [
+        {
+          "datum": "2026-02-11",
+          "datum_anzeige": "11.02.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 3.2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504"
+        }
+      ],
+      "klartext_titel": "Haushaltsrede des Finanzreferenten Franz Fleckinger",
+      "klartext": "Im Stadtrat war folgendes Thema: Haushaltsrede des Finanzreferenten Franz Fleckinger.",
+      "klartext_titel_leicht": "Haushaltsrede des Finanzreferenten Franz Fleckinger",
+      "klartext_leicht": "Stadtrat: Haushaltsrede des Finanzreferenten Franz Fleckinger.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248335&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Haushaltsrede des Finanzreferenten Franz Fleckinger",
+      "top_nr": "Ö 3.2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/1/2026",
+      "datum": "2026-02-11",
+      "datum_anzeige": "11.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13504#Ö 3.3",
+      "thema": "stadt:13504#Ö 3.3",
+      "auftritte": [
+        {
+          "datum": "2026-02-11",
+          "datum_anzeige": "11.02.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 3.3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504"
+        }
+      ],
+      "klartext_titel": "Haushaltsrede der CSU-Stadtratsfraktion",
+      "klartext": "Im Stadtrat war folgendes Thema: Haushaltsrede der CSU-Stadtratsfraktion.",
+      "klartext_titel_leicht": "Haushaltsrede der CSU-Stadtratsfraktion",
+      "klartext_leicht": "Stadtrat: Haushaltsrede der CSU-Stadtratsfraktion.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248335&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Haushaltsrede der CSU-Stadtratsfraktion",
+      "top_nr": "Ö 3.3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/1/2026",
+      "datum": "2026-02-11",
+      "datum_anzeige": "11.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13504#Ö 3.4",
+      "thema": "stadt:13504#Ö 3.4",
+      "auftritte": [
+        {
+          "datum": "2026-02-11",
+          "datum_anzeige": "11.02.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 3.4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504"
+        }
+      ],
+      "klartext_titel": "Haushaltsrede der SPD-Stadtratsfraktion",
+      "klartext": "Im Stadtrat war folgendes Thema: Haushaltsrede der SPD-Stadtratsfraktion.",
+      "klartext_titel_leicht": "Haushaltsrede der SPD-Stadtratsfraktion",
+      "klartext_leicht": "Stadtrat: Haushaltsrede der SPD-Stadtratsfraktion.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248335&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Haushaltsrede der SPD-Stadtratsfraktion",
+      "top_nr": "Ö 3.4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/1/2026",
+      "datum": "2026-02-11",
+      "datum_anzeige": "11.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13504#Ö 3.5",
+      "thema": "stadt:13504#Ö 3.5",
+      "auftritte": [
+        {
+          "datum": "2026-02-11",
+          "datum_anzeige": "11.02.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 3.5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504"
+        }
+      ],
+      "klartext_titel": "Haushaltsrede der Stadtratsfraktion Bündnis 90/Die Grünen",
+      "klartext": "Im Stadtrat war folgendes Thema: Haushaltsrede der Stadtratsfraktion Bündnis 90/Die Grünen.",
+      "klartext_titel_leicht": "Haushaltsrede der Stadtratsfraktion Bündnis 90/Die Grünen",
+      "klartext_leicht": "Stadtrat: Haushaltsrede der Stadtratsfraktion Bündnis 90/Die Grünen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248335&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Haushaltsrede der Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN",
+      "top_nr": "Ö 3.5",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/1/2026",
+      "datum": "2026-02-11",
+      "datum_anzeige": "11.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13504#Ö 3.6",
+      "thema": "stadt:13504#Ö 3.6",
+      "auftritte": [
+        {
+          "datum": "2026-02-11",
+          "datum_anzeige": "11.02.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 3.6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504"
+        }
+      ],
+      "klartext_titel": "Haushaltsrede der UWG-Stadtratsfraktion",
+      "klartext": "Im Stadtrat war folgendes Thema: Haushaltsrede der UWG-Stadtratsfraktion.",
+      "klartext_titel_leicht": "Haushaltsrede der UWG-Stadtratsfraktion",
+      "klartext_leicht": "Stadtrat: Haushaltsrede der UWG-Stadtratsfraktion.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248335&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Haushaltsrede der UWG-Stadtratsfraktion",
+      "top_nr": "Ö 3.6",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/1/2026",
+      "datum": "2026-02-11",
+      "datum_anzeige": "11.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13504#Ö 3.7",
+      "thema": "stadt:13504#Ö 3.7",
+      "auftritte": [
+        {
+          "datum": "2026-02-11",
+          "datum_anzeige": "11.02.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 3.7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504"
+        }
+      ],
+      "klartext_titel": "Haushaltsrede der FW-Stadtratsfraktion",
+      "klartext": "Im Stadtrat war folgendes Thema: Haushaltsrede der FW-Stadtratsfraktion.",
+      "klartext_titel_leicht": "Haushaltsrede der FW-Stadtratsfraktion",
+      "klartext_leicht": "Stadtrat: Haushaltsrede der FW-Stadtratsfraktion.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248335&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Haushaltsrede der FW-Stadtratsfraktion",
+      "top_nr": "Ö 3.7",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/1/2026",
+      "datum": "2026-02-11",
+      "datum_anzeige": "11.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13504#Ö 3.8",
+      "thema": "stadt:13504#Ö 3.8",
+      "auftritte": [
+        {
+          "datum": "2026-02-11",
+          "datum_anzeige": "11.02.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 3.8",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504"
+        }
+      ],
+      "klartext_titel": "Haushaltsrede der AfD-Stadtratsfraktion",
+      "klartext": "Im Stadtrat war folgendes Thema: Haushaltsrede der AfD-Stadtratsfraktion.",
+      "klartext_titel_leicht": "Haushaltsrede der AfD-Stadtratsfraktion",
+      "klartext_leicht": "Stadtrat: Haushaltsrede der AfD-Stadtratsfraktion.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248335&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Haushaltsrede der AfD-Stadtratsfraktion",
+      "top_nr": "Ö 3.8",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/1/2026",
+      "datum": "2026-02-11",
+      "datum_anzeige": "11.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13504#Ö 3.9",
+      "thema": "stadt:13504#Ö 3.9",
+      "auftritte": [
+        {
+          "datum": "2026-02-11",
+          "datum_anzeige": "11.02.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 3.9",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504"
+        }
+      ],
+      "klartext_titel": "Haushaltsrede der Stadtratsgruppe Die Linke",
+      "klartext": "Im Stadtrat war folgendes Thema: Haushaltsrede der Stadtratsgruppe Die Linke.",
+      "klartext_titel_leicht": "Haushaltsrede der Stadtratsgruppe Die Linke",
+      "klartext_leicht": "Stadtrat: Haushaltsrede der Stadtratsgruppe Die Linke.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248335&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Haushaltsrede der Stadtratsgruppe DIE LINKE",
+      "top_nr": "Ö 3.9",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/1/2026",
+      "datum": "2026-02-11",
+      "datum_anzeige": "11.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13504#Ö 3.10",
+      "thema": "stadt:13504#Ö 3.10",
+      "auftritte": [
+        {
+          "datum": "2026-02-11",
+          "datum_anzeige": "11.02.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 3.10",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504"
+        }
+      ],
+      "klartext_titel": "Haushaltsrede der ÖDP-Stadtratsgruppe",
+      "klartext": "Im Stadtrat war folgendes Thema: Haushaltsrede der ÖDP-Stadtratsgruppe.",
+      "klartext_titel_leicht": "Haushaltsrede der ÖDP-Stadtratsgruppe",
+      "klartext_leicht": "Stadtrat: Haushaltsrede der ÖDP-Stadtratsgruppe.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248335&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Haushaltsrede der ÖDP-Stadtratsgruppe",
+      "top_nr": "Ö 3.10",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/1/2026",
+      "datum": "2026-02-11",
+      "datum_anzeige": "11.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13504#Ö 3.11",
+      "thema": "stadt:13504#Ö 3.11",
+      "auftritte": [
+        {
+          "datum": "2026-02-11",
+          "datum_anzeige": "11.02.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 3.11",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504"
+        }
+      ],
+      "klartext_titel": "Haushaltsrede der FDP-Stadtratsgruppe",
+      "klartext": "Im Stadtrat war folgendes Thema: Haushaltsrede der FDP-Stadtratsgruppe.",
+      "klartext_titel_leicht": "Haushaltsrede der FDP-Stadtratsgruppe",
+      "klartext_leicht": "Stadtrat: Haushaltsrede der FDP-Stadtratsgruppe.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248335&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Haushaltsrede der FDP-Stadtratsgruppe",
+      "top_nr": "Ö 3.11",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/1/2026",
+      "datum": "2026-02-11",
+      "datum_anzeige": "11.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13504#Ö 3.12",
+      "thema": "stadt:13504#Ö 3.12",
+      "auftritte": [
+        {
+          "datum": "2026-02-11",
+          "datum_anzeige": "11.02.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 3.12",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504"
+        }
+      ],
+      "klartext_titel": "Haushaltsrede der JU-Stadtratsgruppe",
+      "klartext": "Im Stadtrat war folgendes Thema: Haushaltsrede der JU-Stadtratsgruppe.",
+      "klartext_titel_leicht": "Haushaltsrede der JU-Stadtratsgruppe",
+      "klartext_leicht": "Stadtrat: Haushaltsrede der JU-Stadtratsgruppe.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248335&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Haushaltsrede der JU-Stadtratsgruppe",
+      "top_nr": "Ö 3.12",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/1/2026",
+      "datum": "2026-02-11",
+      "datum_anzeige": "11.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13504#Ö 3.13",
+      "thema": "stadt:13504#Ö 3.13",
+      "auftritte": [
+        {
+          "datum": "2026-02-11",
+          "datum_anzeige": "11.02.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 3.13",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504"
+        }
+      ],
+      "klartext_titel": "Haushaltsrede von Stadtrat Werner",
+      "klartext": "Im Stadtrat war folgendes Thema: Haushaltsrede von Stadtrat Werner.",
+      "klartext_titel_leicht": "Haushaltsrede von Stadtrat Werner",
+      "klartext_leicht": "Stadtrat: Haushaltsrede von Stadtrat Werner.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248335&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Haushaltsrede Stadtrat Werner",
+      "top_nr": "Ö 3.13",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/1/2026",
+      "datum": "2026-02-11",
+      "datum_anzeige": "11.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13504#Ö 8",
+      "thema": "stadt:13504#Ö 8",
+      "auftritte": [
+        {
+          "datum": "2026-02-11",
+          "datum_anzeige": "11.02.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 8",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504"
+        }
+      ],
+      "klartext_titel": "Maßnahmen zur Konsolidierung der kommunalen Finanzen: Preisgelder im Bereich Kultur, Musik und Kunst halbieren",
+      "klartext": "Im Stadtrat war folgendes Thema: Maßnahmen zur Konsolidierung der kommunalen Finanzen: Preisgelder im Bereich Kultur, Musik und Kunst halbieren.",
+      "klartext_titel_leicht": "Maßnahmen zur Konsolidierung der kommunalen Finanzen: Preisgelder im Bereich Kultur, Musik und Kunst halbieren",
+      "klartext_leicht": "Stadtrat: Preisgelder für Kultur, Musik und Kunst sollen halbiert werden, um Geld zu sparen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248335&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Maßnahmen zur Konsolidierung der kommunalen Finanzen in Ingolstadt – Preisgelder im Bereich Kultur, Musik, Kunst etc. halbieren",
+      "top_nr": "Ö 8",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/1/2026",
+      "datum": "2026-02-11",
+      "datum_anzeige": "11.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13504#Ö 10",
+      "thema": "stadt:13504#Ö 10",
+      "auftritte": [
+        {
+          "datum": "2026-02-11",
+          "datum_anzeige": "11.02.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 10",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504"
+        }
+      ],
+      "klartext_titel": "Kontextualisierung von Werken des NS-Propaganda-Malers Oskar Martin-Amorbach",
+      "klartext": "Im Stadtrat war folgendes Thema: Kontextualisierung von Werken des NS-Propaganda-Malers Oskar Martin-Amorbach.",
+      "klartext_titel_leicht": "Kontextualisierung von Werken des NS-Propaganda-Malers Oskar Martin-Amorbach",
+      "klartext_leicht": "Stadtrat: Kontextualisierung von Werken des NS-Propaganda-Malers Oskar Martin-Amorbach.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248335&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Kontextualisierung von Werken des NS-Propaganda-Malers Oskar Martin-Amorbach",
+      "top_nr": "Ö 10",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/1/2026",
+      "datum": "2026-02-11",
+      "datum_anzeige": "11.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13504#Ö 18",
+      "thema": "stadt:13504#Ö 18",
+      "auftritte": [
+        {
+          "datum": "2026-02-11",
+          "datum_anzeige": "11.02.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 18",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504"
+        }
+      ],
+      "klartext_titel": "Bewerbung der Stadt Ingolstadt als Modellregion Oberbayern für Bürokratieabbau und Wirtschaftsförderung",
+      "klartext": "Im Stadtrat war folgendes Thema: Bewerbung der Stadt Ingolstadt als Modellregion Oberbayern für Bürokratieabbau und Wirtschaftsförderung.",
+      "klartext_titel_leicht": "Bewerbung der Stadt Ingolstadt als Modellregion Oberbayern für Bürokratieabbau und Wirtschaftsförderung",
+      "klartext_leicht": "Stadtrat: Bewerbung der Stadt Ingolstadt als Modellregion Oberbayern für Bürokratieabbau und Wirtschaftsförderung.",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248335&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bewerbung der Stadt Ingolstadt als Modellregion Oberbayern für den Bürokratieabbau; — Wirtschaftsförderung durch Entlastung von Unternehmen",
+      "top_nr": "Ö 18",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/1/2026",
+      "datum": "2026-02-11",
+      "datum_anzeige": "11.02.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13504",
+      "dokumente": [],
+      "beratungsweg": []
     },
     {
       "ref": "bza:13927#Ö 3",
