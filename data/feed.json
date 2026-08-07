@@ -27,17 +27,17 @@
     "sitzungen_ausgelesen": 360,
     "tops_ausgelesen": 3415,
     "tops_verfahren": 493,
-    "tops_kuratiert": 1568,
+    "tops_kuratiert": 1598,
     "entwuerfe": 1,
-    "leichte_sprache": 1567,
+    "leichte_sprache": 1597,
     "je_quelle": {
-      "stadt": 714,
+      "stadt": 744,
       "bza": 854
     },
     "stand": {
       "Bekanntgabe": 112,
       "Entscheidung angesetzt": 377,
-      "Ohne Vorlage": 1070,
+      "Ohne Vorlage": 1100,
       "Wird noch beraten": 9
     }
   },
@@ -51242,6 +51242,48 @@
       "beratungsweg": []
     },
     {
+      "ref": "stadt:11840#Ö 2",
+      "thema": "stadt:11840#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2025-07-08",
+          "datum_anzeige": "08.07.2025",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11840"
+        }
+      ],
+      "klartext_titel": "Sachstandsbericht zu Schulbaumaßnahmen",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Sachstandsbericht zu Schulbaumaßnahmen.",
+      "klartext_titel_leicht": "Sachstandsbericht zu Schulbaumaßnahmen",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Sachstandsbericht zu Schulbaumaßnahmen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Schulbau"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=240200&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Sachstandsbericht zu Schulbaumaßnahmen",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/03/2025",
+      "datum": "2025-07-08",
+      "datum_anzeige": "08.07.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11840",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
       "ref": "bza:13417#Ö 3",
       "thema": "bza:13417#Ö 3",
       "auftritte": [
@@ -51898,6 +51940,92 @@
       ]
     },
     {
+      "ref": "stadt:11839#Ö 2",
+      "thema": "stadt:11839#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2025-07-01",
+          "datum_anzeige": "01.07.2025",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11839"
+        }
+      ],
+      "klartext_titel": "Abwassermonitoring Polio",
+      "klartext": "Im Ausschuss für Soziales, Gesundheit, Stiftungen und Familien war folgendes Thema: Abwassermonitoring Polio.",
+      "klartext_titel_leicht": "Abwassermonitoring Polio",
+      "klartext_leicht": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien: Abwassermonitoring Polio.",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237803&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Abwassermonitoring Polio",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+      "sitzung_kennung": "SGA/05/2025",
+      "datum": "2025-07-01",
+      "datum_anzeige": "01.07.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11839",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11839#Ö 3",
+      "thema": "stadt:11839#Ö 3",
+      "auftritte": [
+        {
+          "datum": "2025-07-01",
+          "datum_anzeige": "01.07.2025",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11839"
+        }
+      ],
+      "klartext_titel": "Bewerbung der Stadt Ingolstadt als Cannabis-Modellregion",
+      "klartext": "Im Ausschuss für Soziales, Gesundheit, Stiftungen und Familien war folgendes Thema: Bewerbung der Stadt Ingolstadt als Cannabis-Modellregion.",
+      "klartext_titel_leicht": "Bewerbung der Stadt Ingolstadt als Cannabis-Modellregion",
+      "klartext_leicht": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien: Bewerbung der Stadt Ingolstadt als Cannabis-Modellregion.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237803&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bewerbung der Stadt Ingolstadt als Cannabis-Modellregion",
+      "top_nr": "Ö 3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+      "sitzung_kennung": "SGA/05/2025",
+      "datum": "2025-07-01",
+      "datum_anzeige": "01.07.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11839",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
       "ref": "bza:13351#Ö",
       "thema": "bza:13351#Ö",
       "auftritte": [
@@ -52133,6 +52261,48 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11838&toselect=82028"
         }
       ]
+    },
+    {
+      "ref": "stadt:11838#Ö 2",
+      "thema": "stadt:11838#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2025-06-26",
+          "datum_anzeige": "26.06.2025",
+          "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11838"
+        }
+      ],
+      "klartext_titel": "Mündlicher Sachstandsbericht zu aktuellen Veranstaltungen",
+      "klartext": "Im Ausschuss für Sport, Veranstaltungen und Freizeit war folgendes Thema: Mündlicher Sachstandsbericht zu aktuellen Veranstaltungen.",
+      "klartext_titel_leicht": "Mündlicher Sachstandsbericht zu aktuellen Veranstaltungen",
+      "klartext_leicht": "Ausschuss für Sport, Veranstaltungen und Freizeit: Mündlicher Sachstandsbericht zu aktuellen Veranstaltungen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Mündlicher Sachstandsbericht zu aktuellen Veranstaltungen",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+      "sitzung_kennung": "SVA/04/2025",
+      "datum": "2025-06-26",
+      "datum_anzeige": "26.06.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11838",
+      "dokumente": [],
+      "beratungsweg": []
     },
     {
       "ref": "stadt:11837#Ö 3",
@@ -52436,6 +52606,282 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11837&toselect=81999"
         }
       ]
+    },
+    {
+      "ref": "stadt:13380#Ö 2",
+      "thema": "stadt:13380#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2025-06-20",
+          "datum_anzeige": "20.06.2025",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13380"
+        }
+      ],
+      "klartext_titel": "Strategie zum Umgang mit dem 5.000-Euro-Budget",
+      "klartext": "Im Jugendparlament war folgendes Thema: Strategie zum Umgang mit dem 5.000-Euro-Budget.",
+      "klartext_titel_leicht": "Strategie zum Umgang mit dem 5.000-Euro-Budget",
+      "klartext_leicht": "Jugendparlament: Strategie zum Umgang mit dem 5.000-Euro-Budget.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Strategie zum Umgang mit 5.000 Euro Budget",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/04/2025",
+      "datum": "2025-06-20",
+      "datum_anzeige": "20.06.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13380",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13380#Ö 3",
+      "thema": "stadt:13380#Ö 3",
+      "auftritte": [
+        {
+          "datum": "2025-06-20",
+          "datum_anzeige": "20.06.2025",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13380"
+        }
+      ],
+      "klartext_titel": "Bestätigung und Ergänzung des Protokolls der letzten Sitzung",
+      "klartext": "Im Jugendparlament war folgendes Thema: Bestätigung und Ergänzung des Protokolls der letzten Sitzung.",
+      "klartext_titel_leicht": "Bestätigung und Ergänzung des Protokolls der letzten Sitzung",
+      "klartext_leicht": "Jugendparlament: Bestätigung und Ergänzung des Protokolls der letzten Sitzung.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bestätigung/Ergänzung des Protokolls der letzten Sitzung",
+      "top_nr": "Ö 3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/04/2025",
+      "datum": "2025-06-20",
+      "datum_anzeige": "20.06.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13380",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13380#Ö 4",
+      "thema": "stadt:13380#Ö 4",
+      "auftritte": [
+        {
+          "datum": "2025-06-20",
+          "datum_anzeige": "20.06.2025",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13380"
+        }
+      ],
+      "klartext_titel": "Bericht aus dem Vorstand und zu bisherigen Anträgen",
+      "klartext": "Im Jugendparlament war folgendes Thema: Bericht aus dem Vorstand und zu bisherigen Anträgen.",
+      "klartext_titel_leicht": "Bericht aus dem Vorstand und zu bisherigen Anträgen",
+      "klartext_leicht": "Jugendparlament: Bericht aus dem Vorstand und zu bisherigen Anträgen.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht aus dem Vorstand und zu bisherigen Anträgen",
+      "top_nr": "Ö 4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/04/2025",
+      "datum": "2025-06-20",
+      "datum_anzeige": "20.06.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13380",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13380#Ö 5",
+      "thema": "stadt:13380#Ö 5",
+      "auftritte": [
+        {
+          "datum": "2025-06-20",
+          "datum_anzeige": "20.06.2025",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13380"
+        }
+      ],
+      "klartext_titel": "Antrag Selbstbehauptungskurs",
+      "klartext": "Im Jugendparlament war folgendes Thema: Antrag Selbstbehauptungskurs.",
+      "klartext_titel_leicht": "Antrag Selbstbehauptungskurs",
+      "klartext_leicht": "Jugendparlament: Antrag Selbstbehauptungskurs.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Antrag Selbstbehauptungskurs — A0425.01",
+      "top_nr": "Ö 5",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/04/2025",
+      "datum": "2025-06-20",
+      "datum_anzeige": "20.06.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13380",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13380#Ö 6",
+      "thema": "stadt:13380#Ö 6",
+      "auftritte": [
+        {
+          "datum": "2025-06-20",
+          "datum_anzeige": "20.06.2025",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13380"
+        }
+      ],
+      "klartext_titel": "Antrag Projekt Mentale Gesundheit",
+      "klartext": "Im Jugendparlament war folgendes Thema: Antrag Projekt Mentale Gesundheit.",
+      "klartext_titel_leicht": "Antrag Projekt Mentale Gesundheit",
+      "klartext_leicht": "Jugendparlament: Antrag Projekt Mentale Gesundheit.",
+      "lebenslage": [
+        "Jugend",
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Antrag Mentale Gesundheit Projekt — A0425.02",
+      "top_nr": "Ö 6",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/04/2025",
+      "datum": "2025-06-20",
+      "datum_anzeige": "20.06.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13380",
+      "dokumente": [
+        {
+          "titel": "A0425.02 Projekt Mentale Gesundheit",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236599&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13380#Ö 7",
+      "thema": "stadt:13380#Ö 7",
+      "auftritte": [
+        {
+          "datum": "2025-06-20",
+          "datum_anzeige": "20.06.2025",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13380"
+        }
+      ],
+      "klartext_titel": "Antrag Upstream Surfing",
+      "klartext": "Im Jugendparlament war folgendes Thema: Antrag Upstream Surfing.",
+      "klartext_titel_leicht": "Antrag Upstream Surfing",
+      "klartext_leicht": "Jugendparlament: Antrag Upstream Surfing.",
+      "lebenslage": [
+        "Jugend",
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Antrag Upstream Surfing — A0425.03",
+      "top_nr": "Ö 7",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/04/2025",
+      "datum": "2025-06-20",
+      "datum_anzeige": "20.06.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13380",
+      "dokumente": [
+        {
+          "titel": "A0425.03 Upstream Surfing",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236598&type=do"
+        }
+      ],
+      "beratungsweg": []
     },
     {
       "ref": "bza:13375#Ö 1",
@@ -53369,6 +53815,187 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11836&toselect=81937"
         }
       ]
+    },
+    {
+      "ref": "stadt:11836#Ö 2",
+      "thema": "stadt:11836#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2025-06-03",
+          "datum_anzeige": "03.06.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11836"
+        }
+      ],
+      "klartext_titel": "Konsolidierungspaket II soll Stadthaushalt um mehrere Millionen Euro entlasten",
+      "klartext": "Eine Übersicht zum ersten Teilpaket des Haushaltskonsolidierungsgrundsatzbeschlusses II nennt als Sparmaßnahmen unter anderem eine Reduzierung der Personalkosten um 9,5 Millionen Euro, der freiwilligen Leistungen um 1,5 Millionen Euro, der Ausgaben für Beteiligungen um 0,5 Millionen Euro jährlich sowie des Schuldendienstes für Zins und Tilgung um 1,5 Millionen Euro. Auf der Einnahmenseite sollen die Bauinvestitionen um 30 Millionen Euro erhöht werden, der Bürgerhaushalt um 0,6 Millionen Euro gekürzt werden und Grundstücksverkäufe zusätzliches Geld einbringen, dessen Höhe noch nicht bezifferbar ist. Stand der Übersicht ist Mai 2025, einzelne Maßnahmen sollen laut den vorgesehenen Beschlussvorlagen bis Sommer und Herbst 2025 weiter konkretisiert werden.",
+      "klartext_titel_leicht": "Stadt will beim Sparen mehrere Millionen Euro einsparen",
+      "klartext_leicht": "Ingolstadt muss beim Geld sparen. Ein Plan dafür heißt Konsolidierungspaket II. Es soll zum Beispiel weniger Geld für Personal und für freiwillige Leistungen ausgegeben werden. Gleichzeitig soll mehr Geld in Bauprojekte fließen. Der Bürgerhaushalt für kleine Projekte wird gekürzt. Auch Grundstücks-Verkäufe sollen Geld bringen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=241878&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Teilpaket 1 zum Haushaltskonsolidierungsgrundsatzbeschluss II",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2025",
+      "datum": "2025-06-03",
+      "datum_anzeige": "03.06.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11836",
+      "dokumente": [
+        {
+          "titel": "Grafik PK Konsolidierung 2805",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236383&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11836#Ö 15.1",
+      "thema": "stadt:11836#Ö 15.1",
+      "auftritte": [
+        {
+          "datum": "2025-06-03",
+          "datum_anzeige": "03.06.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 15.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11836"
+        }
+      ],
+      "klartext_titel": "UWG fragt nach dem Zustand der Rettungsringe an der Donau",
+      "klartext": "Die UWG-Fraktion verweist auf eine Zusage des Wasserwirtschaftsamts von 2017, Rettungsringe an sechs Standorten entlang der Donau anzubringen, und fragt, wann diese zuletzt überprüft wurden, ob sie noch funktionsfähig und ausreichend zahlreich sind und ob es einen — möglichst mehrsprachigen — Übersichtsplan der Standorte gibt. Im Ratsinfoportal liegt bislang nur das Anfrage-Schreiben vor; eine schriftliche Antwort der Verwaltung ist zum Zeitpunkt der Sitzung noch nicht als Dokument veröffentlicht.",
+      "klartext_titel_leicht": "Sind die Rettungsringe an der Donau noch in Ordnung?",
+      "klartext_leicht": "An der Donau hängen seit 2017 Rettungsringe für den Notfall, an sechs Stellen. Die UWG-Fraktion fragt: Wurden die seitdem kontrolliert? Funktionieren sie noch? Reichen sie aus? Eine schriftliche Antwort der Stadt gibt es dazu noch nicht.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=241878&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage der UWG-Stadtratsfraktion vom 27.03.2025 zum Thema Rettungsringe an der Donau",
+      "top_nr": "Ö 15.1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2025",
+      "datum": "2025-06-03",
+      "datum_anzeige": "03.06.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11836",
+      "dokumente": [
+        {
+          "titel": "Anfrage der UWG-Stadtratsfraktion zum Thema Rettungsringe an der Donau vom 27.03.2025",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236195&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11836#Ö 6",
+      "thema": "stadt:11836#Ö 6",
+      "auftritte": [
+        {
+          "datum": "2025-06-03",
+          "datum_anzeige": "03.06.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11836"
+        }
+      ],
+      "klartext_titel": "Flusswärme aus der Donau",
+      "klartext": "Im Stadtrat war folgendes Thema: Flusswärme aus der Donau.",
+      "klartext_titel_leicht": "Flusswärme aus der Donau",
+      "klartext_leicht": "Stadtrat: Flusswärme aus der Donau.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=241878&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Flusswärme aus der Donau",
+      "top_nr": "Ö 6",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2025",
+      "datum": "2025-06-03",
+      "datum_anzeige": "03.06.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11836",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11836#Ö 11",
+      "thema": "stadt:11836#Ö 11",
+      "auftritte": [
+        {
+          "datum": "2025-06-03",
+          "datum_anzeige": "03.06.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 11",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11836"
+        }
+      ],
+      "klartext_titel": "Verbot der Neuanlage von Schottergärten",
+      "klartext": "Im Stadtrat war folgendes Thema: Verbot der Neuanlage von Schottergärten.",
+      "klartext_titel_leicht": "Verbot der Neuanlage von Schottergärten",
+      "klartext_leicht": "Stadtrat: Verbot der Neuanlage von Schottergärten.",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln",
+        "Klima & Umwelt"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=241878&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Verbot der Neuanlage von Schottergärten",
+      "top_nr": "Ö 11",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2025",
+      "datum": "2025-06-03",
+      "datum_anzeige": "03.06.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11836",
+      "dokumente": [],
+      "beratungsweg": []
     },
     {
       "ref": "bza:13161#Ö 3.1",
@@ -54404,6 +55031,90 @@
       ]
     },
     {
+      "ref": "stadt:11834#Ö 1",
+      "thema": "stadt:11834#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2025-05-22",
+          "datum_anzeige": "22.05.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11834"
+        }
+      ],
+      "klartext_titel": "Finanzlagebericht von Herrn Fleckinger",
+      "klartext": "Im Ausschuss für Finanzen und Personal war folgendes Thema: Finanzlagebericht von Herrn Fleckinger.",
+      "klartext_titel_leicht": "Finanzlagebericht von Herrn Fleckinger",
+      "klartext_leicht": "Ausschuss für Finanzen und Personal: Finanzlagebericht von Herrn Fleckinger.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Finanzlagebericht von Herrn Fleckinger",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FWA/03/2025",
+      "datum": "2025-05-22",
+      "datum_anzeige": "22.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11834",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11834#Ö 2",
+      "thema": "stadt:11834#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2025-05-22",
+          "datum_anzeige": "22.05.2025",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11834"
+        }
+      ],
+      "klartext_titel": "Neufassung der Städtischen Vergabeordnung",
+      "klartext": "Im Ausschuss für Finanzen und Personal war folgendes Thema: Neufassung der Städtischen Vergabeordnung.",
+      "klartext_titel_leicht": "Neufassung der Städtischen Vergabeordnung",
+      "klartext_leicht": "Ausschuss für Finanzen und Personal: Neufassung der Städtischen Vergabeordnung.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Neufassung der Städtischen Vergabeordnung",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FWA/03/2025",
+      "datum": "2025-05-22",
+      "datum_anzeige": "22.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11834",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
       "ref": "stadt:11833#Ö 6",
       "thema": "stadt:vorlage:20003",
       "auftritte": [
@@ -54472,6 +55183,93 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11833&toselect=80562"
         }
       ]
+    },
+    {
+      "ref": "stadt:11833#Ö 4",
+      "thema": "stadt:11833#Ö 4",
+      "auftritte": [
+        {
+          "datum": "2025-05-20",
+          "datum_anzeige": "20.05.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11833"
+        }
+      ],
+      "klartext_titel": "Verbot der Neuanlage von Schottergärten",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit war folgendes Thema: Verbot der Neuanlage von Schottergärten.",
+      "klartext_titel_leicht": "Verbot der Neuanlage von Schottergärten",
+      "klartext_leicht": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit: Verbot der Neuanlage von Schottergärten.",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln",
+        "Klima & Umwelt"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236975&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Verbot der Neuanlage von Schottergärten",
+      "top_nr": "Ö 4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+      "sitzung_kennung": "PLA/03/2025",
+      "datum": "2025-05-20",
+      "datum_anzeige": "20.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11833",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11833#Ö 5",
+      "thema": "stadt:11833#Ö 5",
+      "auftritte": [
+        {
+          "datum": "2025-05-20",
+          "datum_anzeige": "20.05.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11833"
+        }
+      ],
+      "klartext_titel": "Flusswärme aus der Donau",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit war folgendes Thema: Flusswärme aus der Donau.",
+      "klartext_titel_leicht": "Flusswärme aus der Donau",
+      "klartext_leicht": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit: Flusswärme aus der Donau.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236975&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Flusswärme aus der Donau",
+      "top_nr": "Ö 5",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+      "sitzung_kennung": "PLA/03/2025",
+      "datum": "2025-05-20",
+      "datum_anzeige": "20.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11833",
+      "dokumente": [],
+      "beratungsweg": []
     },
     {
       "ref": "stadt:11995#Ö 1",
@@ -54827,6 +55625,50 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995&toselect=80303"
         }
       ]
+    },
+    {
+      "ref": "stadt:11995#Ö 7",
+      "thema": "stadt:11995#Ö 7",
+      "auftritte": [
+        {
+          "datum": "2025-05-14",
+          "datum_anzeige": "14.05.2025",
+          "gremium": "Migrationsrat",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995"
+        }
+      ],
+      "klartext_titel": "Informationen und Anregungen",
+      "klartext": "Im Migrationsrat war folgendes Thema: Informationen und Anregungen.",
+      "klartext_titel_leicht": "Informationen und Anregungen",
+      "klartext_leicht": "Migrationsrat: Informationen und Anregungen.",
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Informationen und Anregungen",
+      "top_nr": "Ö 7",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Migrationsrat",
+      "sitzung_kennung": "MR/02/2025",
+      "datum": "2025-05-14",
+      "datum_anzeige": "14.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11995",
+      "dokumente": [],
+      "beratungsweg": []
     },
     {
       "ref": "bza:13344#Ö 2.1",
@@ -55844,6 +56686,315 @@
       "datum": "2025-05-13",
       "datum_anzeige": "13.05.2025",
       "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=13344",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13342#Ö 2",
+      "thema": "stadt:13342#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2025-05-09",
+          "datum_anzeige": "09.05.2025",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13342"
+        }
+      ],
+      "klartext_titel": "Bestätigung und Ergänzung des Protokolls der letzten Sitzung",
+      "klartext": "Im Jugendparlament war folgendes Thema: Bestätigung und Ergänzung des Protokolls der letzten Sitzung.",
+      "klartext_titel_leicht": "Bestätigung und Ergänzung des Protokolls der letzten Sitzung",
+      "klartext_leicht": "Jugendparlament: Bestätigung und Ergänzung des Protokolls der letzten Sitzung.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bestätigung/Ergänzung des Protokolls der letzten SItzung",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/03/2025",
+      "datum": "2025-05-09",
+      "datum_anzeige": "09.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13342",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13342#Ö 3",
+      "thema": "stadt:13342#Ö 3",
+      "auftritte": [
+        {
+          "datum": "2025-05-09",
+          "datum_anzeige": "09.05.2025",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13342"
+        }
+      ],
+      "klartext_titel": "Bericht aus dem Vorstand: Anträge zu Pullis, Stolpersteinen, Fußballtoren Corelli, Mental-Health-Plakataktion und AG Schülerrat",
+      "klartext": "Im Jugendparlament war folgendes Thema: Bericht aus dem Vorstand: Anträge zu Pullis, Stolpersteinen, Fußballtoren Corelli, Mental-Health-Plakataktion und AG Schülerrat.",
+      "klartext_titel_leicht": "Bericht aus dem Vorstand: Anträge zu Pullis, Stolpersteinen, Fußballtoren Corelli, Mental-Health-Plakataktion und AG Schülerrat",
+      "klartext_leicht": "Jugendparlament: Bericht vom Vorstand. Anträge zu Pullis, Stolpersteinen, Fußballtoren und mehr.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht aus dem Vorstand und zu bisherigen Anträgen — — • Antrag Pullis — • Antrag Stolpersteine — • Antrag Fußballtore Corelli — • Antrag Mental Health Plakataktion — • AG Schülerrat",
+      "top_nr": "Ö 3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/03/2025",
+      "datum": "2025-05-09",
+      "datum_anzeige": "09.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13342",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13342#Ö 4",
+      "thema": "stadt:13342#Ö 4",
+      "auftritte": [
+        {
+          "datum": "2025-05-09",
+          "datum_anzeige": "09.05.2025",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13342"
+        }
+      ],
+      "klartext_titel": "Antrag zum Selbstbehauptungskurs",
+      "klartext": "Im Jugendparlament war folgendes Thema: Antrag zum Selbstbehauptungskurs.",
+      "klartext_titel_leicht": "Antrag zum Selbstbehauptungskurs",
+      "klartext_leicht": "Jugendparlament: Antrag zum Selbstbehauptungskurs.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Antrag zum Selbstbehauptungskurs A0325.01",
+      "top_nr": "Ö 4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/03/2025",
+      "datum": "2025-05-09",
+      "datum_anzeige": "09.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13342",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13342#Ö 5",
+      "thema": "stadt:13342#Ö 5",
+      "auftritte": [
+        {
+          "datum": "2025-05-09",
+          "datum_anzeige": "09.05.2025",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13342"
+        }
+      ],
+      "klartext_titel": "Antrag auf Unterstützung einer Schulfeier",
+      "klartext": "Im Jugendparlament war folgendes Thema: Antrag auf Unterstützung einer Schulfeier.",
+      "klartext_titel_leicht": "Antrag auf Unterstützung einer Schulfeier",
+      "klartext_leicht": "Jugendparlament: Antrag auf Unterstützung einer Schulfeier.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Antrag auf Unterstützung von Schulfeier A0325.02",
+      "top_nr": "Ö 5",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/03/2025",
+      "datum": "2025-05-09",
+      "datum_anzeige": "09.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13342",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13342#Ö 6",
+      "thema": "stadt:13342#Ö 6",
+      "auftritte": [
+        {
+          "datum": "2025-05-09",
+          "datum_anzeige": "09.05.2025",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13342"
+        }
+      ],
+      "klartext_titel": "Antrag Schachturnier",
+      "klartext": "Im Jugendparlament war folgendes Thema: Antrag Schachturnier.",
+      "klartext_titel_leicht": "Antrag Schachturnier",
+      "klartext_leicht": "Jugendparlament: Antrag Schachturnier.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Antrag Schachtunier A0325.03",
+      "top_nr": "Ö 6",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/03/2025",
+      "datum": "2025-05-09",
+      "datum_anzeige": "09.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13342",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13342#Ö 7",
+      "thema": "stadt:13342#Ö 7",
+      "auftritte": [
+        {
+          "datum": "2025-05-09",
+          "datum_anzeige": "09.05.2025",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13342"
+        }
+      ],
+      "klartext_titel": "Antrag zu einer festen Blitzanlage am Westpark",
+      "klartext": "Im Jugendparlament war folgendes Thema: Antrag zu einer festen Blitzanlage am Westpark.",
+      "klartext_titel_leicht": "Antrag zu einer festen Blitzanlage am Westpark",
+      "klartext_leicht": "Jugendparlament: Antrag zu einer festen Blitzanlage am Westpark.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Antrag zu einer festen Blitzanlage am Westpark A0325.04",
+      "top_nr": "Ö 7",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/03/2025",
+      "datum": "2025-05-09",
+      "datum_anzeige": "09.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13342",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13342#Ö 8",
+      "thema": "stadt:13342#Ö 8",
+      "auftritte": [
+        {
+          "datum": "2025-05-09",
+          "datum_anzeige": "09.05.2025",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 8",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13342"
+        }
+      ],
+      "klartext_titel": "Neuwahlen des Vorstandes",
+      "klartext": "Im Jugendparlament war folgendes Thema: Neuwahlen des Vorstandes.",
+      "klartext_titel_leicht": "Neuwahlen des Vorstandes",
+      "klartext_leicht": "Jugendparlament: Neuwahlen des Vorstandes.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Neu-Wahlen des Vorstandes",
+      "top_nr": "Ö 8",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/03/2025",
+      "datum": "2025-05-09",
+      "datum_anzeige": "09.05.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13342",
       "dokumente": [],
       "beratungsweg": []
     },
@@ -60027,6 +61178,174 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825&toselect=79881"
         }
       ]
+    },
+    {
+      "ref": "stadt:11825#Ö 1",
+      "thema": "stadt:11825#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Vereidigung von Oberbürgermeister Dr. Michael Kern",
+      "klartext": "Im Stadtrat war folgendes Thema: Vereidigung von Oberbürgermeister Dr. Michael Kern.",
+      "klartext_titel_leicht": "Vereidigung von Oberbürgermeister Dr. Michael Kern",
+      "klartext_leicht": "Stadtrat: Vereidigung von Oberbürgermeister Dr. Michael Kern.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Vereidigung von Herrn Oberbürgermeister Dr. Michael Kern",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11825#Ö 2",
+      "thema": "stadt:11825#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Vereidigung von Stadtrat Prof. Dr. Babür Aydeniz",
+      "klartext": "Im Stadtrat war folgendes Thema: Vereidigung von Stadtrat Prof. Dr. Babür Aydeniz.",
+      "klartext_titel_leicht": "Vereidigung von Stadtrat Prof. Dr. Babür Aydeniz",
+      "klartext_leicht": "Stadtrat: Vereidigung von Stadtrat Prof. Dr. Babür Aydeniz.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Vereidigung von Herrn Stadtrat Prof. Dr. Babür Aydeniz",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11825#Ö 3",
+      "thema": "stadt:11825#Ö 3",
+      "auftritte": [
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Antrittsrede des Oberbürgermeisters",
+      "klartext": "Im Stadtrat war folgendes Thema: Antrittsrede des Oberbürgermeisters.",
+      "klartext_titel_leicht": "Antrittsrede des Oberbürgermeisters",
+      "klartext_leicht": "Stadtrat: Antrittsrede des Oberbürgermeisters.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Antrittsrede des Oberbürgermeisters",
+      "top_nr": "Ö 3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11825#Ö 7",
+      "thema": "stadt:11825#Ö 7",
+      "auftritte": [
+        {
+          "datum": "2025-04-10",
+          "datum_anzeige": "10.04.2025",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825"
+        }
+      ],
+      "klartext_titel": "Debatte zum Haushalt 2025",
+      "klartext": "Im Stadtrat war folgendes Thema: Debatte zum Haushalt 2025.",
+      "klartext_titel_leicht": "Debatte zum Haushalt 2025",
+      "klartext_leicht": "Stadtrat: Debatte zum Haushalt 2025.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237489&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Debatte zum Haushalt 2025",
+      "top_nr": "Ö 7",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2025",
+      "datum": "2025-04-10",
+      "datum_anzeige": "10.04.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11825",
+      "dokumente": [],
+      "beratungsweg": []
     },
     {
       "ref": "bza:13149#Ö 3",
