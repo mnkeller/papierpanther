@@ -3321,32 +3321,44 @@
       "entwurf": false
     },
     "bza:13612#Ö 3.4": {
-      "klartext_titel": "Ampel an der Einmündung Hepbergerstraße / Echenzeller Weg",
-      "klartext": "",
+      "klartext_titel": "Ampel Hepberger Straße: Geradeaus-Schild wird verdoppelt statt versetzt",
+      "klartext": "Ein Geradeausschild vor der Ampel Hepberger Straße/Manfred-Hochstatter-Straße/Echenzeller Weg lässt sich wegen der örtlichen Sichtverhältnisse nicht versetzen. Stattdessen hat die Verwaltung eine zusätzliche Linkswiederholung der Geradeausbeschilderung angeordnet, die das Tiefbauamt umsetzt. Eine Reduzierung auf Tempo 30 sieht die Verwaltung derzeit nicht als notwendig an, da die vorhandene Fußgängerschutzanlage eine sichere Querung ermöglicht; die Situation wird nach neuen Vollzugshinweisen des Innenministeriums erneut geprüft.",
+      "klartext_titel_leicht": "Ein Schild an einer Ampel wird verdoppelt",
+      "klartext_leicht": "An einer Kreuzung in Etting gibt es ein Verkehrs-Schild. Es sollte an eine andere Stelle. Das geht aber nicht. Stattdessen kommt ein zweites gleiches Schild dazu. So sieht man es besser.",
       "lebenslage": [
         "Unterwegs"
       ],
       "bezirk": [
         "VII-Etting"
       ],
-      "ort": [],
-      "anlass": [
-        "Verkehrsplanung"
+      "ort": [
+        "Hepberger Straße"
       ],
-      "entwurf": true
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "entwurf": false
     },
     "bza:13612#Ö 3.5": {
-      "klartext_titel": "Geschwindigkeitsbeschränkung Hepberger Straße Manfred-Hochstatter-Straße",
-      "klartext": "",
+      "klartext_titel": "Kein Grund für Tempo 30 an der Hepberger Straße erkennbar",
+      "klartext": "Ein Bürger hatte eine Geschwindigkeitsbeschränkung an der Einmündung Hepberger Straße/Manfred-Hochstatter-Straße gefordert. Die Verwaltung sieht dafür keine ausreichende Gefahrenlage, da eine Fußgängerschutzanlage und eine Querungshilfe bereits sichere Querungsmöglichkeiten böten. Sie beobachtet die Verkehrssituation aber weiter und verweist darauf, dass die Grünzeiten an Ampeln bewusst nur für einen Teil der Fahrbahn ausgelegt sind, was von Fußgänger:innen oft als zu kurz empfunden wird.",
+      "klartext_titel_leicht": "Tempo 30 kommt an dieser Kreuzung vorerst nicht",
+      "klartext_leicht": "An einer Kreuzung sollten Autos langsamer fahren. Die Verwaltung sieht dafür keinen Grund. Es gibt dort schon eine sichere Ampel zum Überqueren. Die Stadt beobachtet die Lage aber weiter.",
       "lebenslage": [
         "Unterwegs"
       ],
       "bezirk": [
         "VII-Etting"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Hepberger Straße"
+      ],
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "entwurf": false
     },
     "bza:13612#Ö 3.6": {
       "klartext_titel": "Informationen aus der Verwaltung / Mängelmelder",
@@ -3388,17 +3400,24 @@
       "klartext_leicht": "Bezirks-Ausschuss VII-Etting: Workshop der Bezirksausschüsse."
     },
     "bza:13357#Ö 3.1": {
-      "klartext_titel": "Abfallbehälter mit Abdeckung im Haslangpark (2024-11-018)",
-      "klartext": "",
+      "klartext_titel": "Abschließbare Mülltonnen im Haslangpark scheitern an 11.700 Euro Kosten",
+      "klartext": "Für abschließbare Restmülltonnen mit 13 Haltern im Haslangpark würden Stückkosten von 900 Euro anfallen, insgesamt 11.700 Euro. Aufgrund der angespannten Haushaltslage ist dieses Vorhaben derzeit nicht umsetzbar.",
+      "klartext_titel_leicht": "Neue Mülltonnen-Deckel sind zu teuer",
+      "klartext_leicht": "Im Haslangpark sollten Mülltonnen einen Deckel zum Abschließen bekommen. Das würde 11.700 Euro kosten. Die Stadt hat gerade wenig Geld. Deshalb passiert das erst einmal nicht.",
       "lebenslage": [
-        "Wohnen & Miete"
+        "Freizeit & Sport"
       ],
       "bezirk": [
         "XI-Friedrichshofen/Hollerstauden"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Haslangpark"
+      ],
+      "anlass": [
+        "Grün & Sauberkeit",
+        "Gebühren & Preise"
+      ],
+      "entwurf": false
     },
     "bza:13357#Ö 3.2": {
       "klartext_titel": "Unterjährige Mitteilung zur Aufwandsentschädigung",
@@ -3662,19 +3681,21 @@
       "klartext_leicht": "Bezirks-Ausschuss XII-Münchener Straße: Bürgeranliegen / Verschiedenes."
     },
     "bza:13219#Ö 2.1": {
-      "klartext_titel": "Wertingerstr. - Grüninsel 2025-04-005",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Keine weiteren Bäume auf Grüninsel Wertinger Straße möglich",
+      "klartext": "Auf der rund 20 mal 6 Meter großen Wiesenfläche an der Wertinger Straße/Südlichen Ringstraße stehen bereits zwei Silber-Ahorn-Bäume, die bis zu 20 Meter hoch und breit werden können. Für weitere Baumpflanzungen fehlt daher der Platz, zumal sich auf der Fläche auch Leitungen befinden, deren vorgeschriebene Sicherheitsabstände zusätzlich einschränken. Das Gartenamt lehnt eine weitere Bepflanzung deshalb ab.",
+      "klartext_titel_leicht": "Auf der Grün-Insel passen keine neuen Bäume",
+      "klartext_leicht": "An der Wertinger Straße gibt es eine kleine Grünfläche mit zwei Bäumen. Es sollten mehr Bäume gepflanzt werden. Das geht aber nicht. Die Bäume brauchen Platz zum Wachsen. Auch Leitungen liegen im Boden.",
+      "lebenslage": [],
       "bezirk": [
         "IV-Südost"
       ],
-      "ort": [],
+      "ort": [
+        "Wertinger Straße"
+      ],
       "anlass": [
         "Grün & Sauberkeit"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13219#Ö 2.2": {
       "klartext_titel": "Donaulände – Vermüllung",
@@ -3694,19 +3715,21 @@
       "klartext_leicht": "Bezirks-Ausschuss IV-Südost: Donaulände – Vermüllung."
     },
     "bza:13219#Ö 2.3": {
-      "klartext_titel": "Pommernweg/ Marlene Dietrich",
-      "klartext": "",
-      "lebenslage": [
-        "Wohnen & Miete"
-      ],
+      "klartext_titel": "Mülleimer am Pommernweg wegen illegaler Entsorgung entfernt",
+      "klartext": "Der Mülleimer an der Kreuzung Pommernweg/Marlene-Dietrich-Straße im Monika-Viertel wurde ersatzlos entfernt, weil dort vermehrt Sperrmüll und Hausmüll unsachgemäß entsorgt und dadurch die Entsorgungskosten des Gartenamts erheblich stiegen. Ein Ersatzmülleimer wird nicht neu aufgestellt; die Aufstellung von Mülleimern in Grünanlagen ist eine freiwillige Leistung, keine Pflichtaufgabe. Bürger:innen werden gebeten, insbesondere Hundekotbeutel im eigenen Hausmüll zu entsorgen.",
+      "klartext_titel_leicht": "Ein Mülleimer kommt nicht zurück",
+      "klartext_leicht": "An einer Kreuzung stand ein Mülleimer. Er wurde entfernt. Grund: Viele Menschen haben dort großen Müll illegal abgelegt. Das kostete die Stadt viel Geld. Ein neuer Mülleimer kommt dort nicht mehr hin.",
+      "lebenslage": [],
       "bezirk": [
         "IV-Südost"
       ],
-      "ort": [],
+      "ort": [
+        "Pommernweg"
+      ],
       "anlass": [
         "Grün & Sauberkeit"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13219#Ö 3.1": {
       "klartext_titel": "Kontaktbeamter – Vorstellung Aufgaben",
@@ -3793,32 +3816,41 @@
       "klartext_leicht": "Bezirks-Ausschuss X-Süd: FFH-Gebiet „Zucheringer Wald“."
     },
     "bza:13348#Ö 3.1": {
-      "klartext_titel": "Verschmutzungen und Schmiede Weiherstraße",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs",
-        "Freizeit & Sport"
-      ],
-      "bezirk": [
-        "X-Süd"
-      ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
-    },
-    "bza:13348#Ö 3.2": {
-      "klartext_titel": "Öffentlichkeitsbeteiligung zum Bebauungs- und Grünordnungsplan Nr. 809 A „Seehof",
-      "klartext": "",
+      "klartext_titel": "Keine Ölverschmutzung und keine ruhestörende Schmiede in der Weiherstraße festgestellt",
+      "klartext": "Bei zwei Ortsbegehungen im August und September 2025 konnte das Umweltamt weder ein Fahrzeug noch eine Ölverunreinigung auf der Fahrbahn der Weiherstraße 7 feststellen, weshalb zunächst kein Handlungsbedarf besteht. Die dort betriebene mobile Schmiede läuft laut Befragung nur etwa einmal wöchentlich, meist samstags, für rund zwei Stunden; das Gebiet ist als Dorfgebiet ausgewiesen, für das großzügigere Lärmgrenzwerte als in Wohngebieten gelten.",
+      "klartext_titel_leicht": "Keine Verschmutzung und kein zu lauter Lärm gefunden",
+      "klartext_leicht": "In der Weiherstraße gab es Beschwerden über Öl auf der Straße und Lärm von einer Schmiede. Die Stadt hat das vor Ort geprüft. Sie hat kein Öl gefunden. Die Schmiede läuft nur einmal pro Woche für zwei Stunden.",
       "lebenslage": [],
       "bezirk": [
         "X-Süd"
       ],
-      "ort": [],
-      "anlass": [
-        "Bauleitplanung",
-        "Grün & Sauberkeit"
+      "ort": [
+        "Weiherstraße"
       ],
-      "entwurf": true
+      "anlass": [
+        "Grün & Sauberkeit",
+        "Sicherheit"
+      ],
+      "entwurf": false
+    },
+    "bza:13348#Ö 3.2": {
+      "klartext_titel": "Bebauungsplan Seehof – Am Kempesee: Frühzeitige Beteiligung läuft",
+      "klartext": "Für den Bebauungs- und Grünordnungsplan Nr. 809 A 'Seehof – Am Kempesee' hatte der Stadtrat am 17. Dezember 2024 einen erneuten Aufstellungsbeschluss gefasst. Vom 21. Oktober bis 21. November 2025 läuft die frühzeitige Öffentlichkeitsbeteiligung sowie die Beteiligung der Behörden und sonstigen Träger öffentlicher Belange; der Bezirksausschuss wird gebeten, mögliche Anregungen bis dahin schriftlich mitzuteilen.",
+      "klartext_titel_leicht": "Bürger:innen können zu einem neuen Bau-Plan mitreden",
+      "klartext_leicht": "Am Kempesee soll ein neues Wohn-Gebiet entstehen. Dafür gibt es einen Bau-Plan. Bürger:innen können bis 21. November 2025 dazu ihre Meinung sagen. Auch der Bezirks-Ausschuss soll sich dazu äußern.",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "ort": [
+        "Seehof"
+      ],
+      "anlass": [
+        "Bauleitplanung"
+      ],
+      "entwurf": false
     },
     "bza:13348#Ö 3.3": {
       "klartext_titel": "Geschwindigkeit „Alte Mühle“",
@@ -3836,15 +3868,22 @@
       "klartext_leicht": "Bezirks-Ausschuss X-Süd: Geschwindigkeit „Alte Mühle“."
     },
     "bza:13348#Ö 3.4": {
-      "klartext_titel": "Erweiterung Halteverbot „Am Sunder“",
-      "klartext": "",
+      "klartext_titel": "Haltverbot 'Am Sunder' erweitert für bessere Sicht in der Kurve",
+      "klartext": "Die Verwaltung hat das eingeschränkte Haltverbot in der Straße Am Sunder geringfügig erweitert, um Sichtbehinderungen durch parkende Fahrzeuge in einer unübersichtlichen Kurve zu beseitigen.",
+      "klartext_titel_leicht": "Ein Halteverbot wird etwas größer",
+      "klartext_leicht": "In der Straße Am Sunder gibt es eine unübersichtliche Kurve. Parkende Autos haben dort die Sicht versperrt. Deshalb dürfen an einer Stelle jetzt mehr Autos nicht mehr halten.",
       "lebenslage": [],
       "bezirk": [
         "X-Süd"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Am Sunder"
+      ],
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "entwurf": false
     },
     "bza:13348#Ö 3.5": {
       "klartext_titel": "Benennung eines Jugendbeauftragten im BZA Süd",
@@ -4181,73 +4220,101 @@
       "klartext_leicht": "Bezirks-Ausschuss III-Nordost: Geschwindigkeitskontrollen."
     },
     "bza:13163#Ö 3.1": {
-      "klartext_titel": "Am Westpark – zulässige Höchstgeschwindigkeit 30 km/h (2025-11-009)",
-      "klartext": "",
+      "klartext_titel": "Tempo 30 Am Westpark nach tödlichem Unfall — zunächst als Test",
+      "klartext": "Nach einem Verkehrsunfall mit Todesfolge Mitte März 2025 hat die Unfallkommission die Straße Am Westpark ausgewertet: Zwischen Audi-Ring und Ortsende ereigneten sich von 2022 bis April 2025 über 20 Unfälle, darunter zwei mit Todesfolge, was die Straße innerorts zu einem Unfallschwerpunkt macht. Als Reaktion wird die Höchstgeschwindigkeit dort testweise für zunächst 12 Monate auf 30 km/h reduziert; nach Ablauf entscheidet eine erneute Auswertung, ob die Regelung dauerhaft bleibt, angepasst oder wieder aufgehoben wird.",
+      "klartext_titel_leicht": "Nach einem tödlichen Unfall gilt jetzt Tempo 30",
+      "klartext_leicht": "An der Straße Am Westpark ist im März 2025 ein Mensch bei einem Unfall gestorben. Dort gab es schon viele Unfälle. Deshalb gilt dort jetzt für ein Jahr Tempo 30. Das ist ein Test. Danach wird neu entschieden.",
       "lebenslage": [
         "Unterwegs"
       ],
       "bezirk": [
         "XI-Friedrichshofen/Hollerstauden"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
-    },
-    "bza:13163#Ö 3.2": {
-      "klartext_titel": "Ampelschaltung Levelingstraße (2025-11-005)",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
+      "ort": [
+        "Am Westpark"
       ],
-      "bezirk": [
-        "XI-Friedrichshofen/Hollerstauden"
-      ],
-      "ort": [],
       "anlass": [
+        "Sicherheit",
         "Verkehrsplanung"
       ],
-      "entwurf": true
+      "entwurf": false
+    },
+    "bza:13163#Ö 3.2": {
+      "klartext_titel": "Ampel Levelingstraße: Grünzeit für Fußgänger ist regelkonform bemessen",
+      "klartext": "Der Bezirksausschuss hatte sich nach der Ampelschaltung in der Levelingstraße erkundigt, weil viele Fußgänger:innen die Grünzeit subjektiv als zu kurz empfinden. Die Verwaltung erklärt, dass die Grünzeiten an Ingolstädter Ampeln nach den bundesweiten Richtlinien für Lichtsignalanlagen bewusst nur die halbe Fahrbahn abdecken, während der Rest während der anschließenden Schutzzeit sicher zurückgelegt werden kann.",
+      "klartext_titel_leicht": "Warum die Ampel-Grünzeit kurz erscheint",
+      "klartext_leicht": "An einer Ampel finden manche die Grün-Zeit zu kurz zum Überqueren. Die Verwaltung erklärt: Das ist so geplant. Man muss nur die Hälfte der Straße bei Grün schaffen. Der Rest ist auch bei Rot noch sicher.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XI-Friedrichshofen/Hollerstauden"
+      ],
+      "ort": [
+        "Levelingstraße"
+      ],
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "entwurf": false
     },
     "bza:13163#Ö 3.3": {
-      "klartext_titel": "Stationäre Geschwindigkeitsüberwachung Westparkspange (2025-11-006)",
-      "klartext": "",
+      "klartext_titel": "Tempo 30 kommt auf der gesamten Westparkspange",
+      "klartext": "Nach gestiegenen Unfallzahlen im Audi-Ring hat die Unfallkommission beschlossen, die dort testweise geltende Geschwindigkeitsreduzierung auf 30 km/h auf die gesamte Westparkspange auszuweiten, da die bisherigen 50 km/h vermehrt zu Abbiege-Unfällen mit hohen Sachschäden führten; die Umsetzung ist noch 2025 geplant. Im Audi-Ring sanken die Unfallzahlen im ersten Halbjahr 2025 durch monatlich zwei Radarmessungen bereits um 30 Prozent.",
+      "klartext_titel_leicht": "Tempo 30 gilt bald auf der ganzen Westpark-Strecke",
+      "klartext_leicht": "Im Audi-Ring gilt schon Tempo 30. Das hat geholfen: weniger Unfälle. Jetzt soll die ganze Westpark-Strecke Tempo 30 bekommen. Das passiert noch 2025.",
       "lebenslage": [
         "Unterwegs"
       ],
       "bezirk": [
         "XI-Friedrichshofen/Hollerstauden"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Westparkspange"
+      ],
+      "anlass": [
+        "Sicherheit",
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
     },
     "bza:13163#Ö 3.4": {
-      "klartext_titel": "Baugebiet Samhof – Ausbau der Krumenauerstraße (2025-11-010)",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Tempolimit für Krumenauerstraße im Baugebiet Samhof noch offen",
+      "klartext": "Ob im Zuge des Ausbaus der Krumenauerstraße für das Baugebiet Samhof eine Geschwindigkeitsbeschränkung sinnvoll ist, kann die Verwaltung derzeit noch nicht beurteilen. Sie will die Entwicklung im Auge behalten und bei Bedarf reagieren.",
+      "klartext_titel_leicht": "Ob dort Tempo 30 kommt, ist noch offen",
+      "klartext_leicht": "Im neuen Baugebiet Samhof wird eine Straße ausgebaut. Ob dort eine langsamere Geschwindigkeit gelten soll, weiß die Stadt noch nicht. Sie schaut sich das später noch einmal an.",
+      "lebenslage": [],
       "bezirk": [
         "XI-Friedrichshofen/Hollerstauden"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Krumenauerstraße"
+      ],
+      "anlass": [
+        "Verkehrsplanung",
+        "Baustelle"
+      ],
+      "entwurf": false
     },
     "bza:13163#Ö 3.5": {
-      "klartext_titel": "Bebauungsplan Samhof Dachsberg (2025-11-008)",
-      "klartext": "",
+      "klartext_titel": "Bebauungsplan Samhof/Dachsberg: Ablauf des Verfahrens erklärt",
+      "klartext": "Die Verwaltung erläutert dem Bezirksausschuss den üblichen Ablauf eines Bebauungsplanverfahrens: Zunächst legt das Stadtplanungsamt den Planungsstand dem Stadtrat und seinen vorberatenden Ausschüssen vor, danach folgt die Beteiligung der Öffentlichkeit und Träger öffentlicher Belange einschließlich des zuständigen Bezirksausschusses. Nach Rechtsverbindlichkeit sind für die Bebaubarkeit noch Ausgleichsmaßnahmen und die Erschließung durch Tiefbauamt beziehungsweise Kommunalbetriebe nötig.",
+      "klartext_titel_leicht": "So läuft die Planung für Samhof/Dachsberg ab",
+      "klartext_leicht": "Für das neue Baugebiet Samhof/Dachsberg gibt es einen Bau-Plan. Die Verwaltung erklärt, wie so ein Plan entsteht. Zuerst entscheidet der Stadt-Rat. Dann dürfen Bürger:innen mitreden. Danach muss noch viel gebaut werden, bevor Häuser entstehen können.",
       "lebenslage": [
         "Wohnen & Miete"
       ],
       "bezirk": [
         "XI-Friedrichshofen/Hollerstauden"
       ],
-      "ort": [],
+      "ort": [
+        "Samhof"
+      ],
       "anlass": [
         "Bauleitplanung"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13163#Ö 3.6": {
       "klartext_titel": "Halteverbot Birkenweg",
@@ -4263,58 +4330,81 @@
       "klartext_leicht": "Bezirks-Ausschuss XI-Friedrichshofen/Hollerstauden: Halteverbot Birkenweg."
     },
     "bza:13163#Ö 3.7": {
-      "klartext_titel": "Verkehrsspiegel Pappelweg (2025-11-007)",
-      "klartext": "",
+      "klartext_titel": "Neuer Verkehrsspiegel am Pappelweg wegen Kurve und Büschen",
+      "klartext": "An der Einmündung Pappelweg/'kleine' Friedrichshofener Straße besteht wegen des Kurvenverlaufs und Bewuchses eine eingeschränkte Sicht. Die Verwaltung installiert deshalb einen Verkehrsspiegel, warnt aber, dass Entfernungen und Geschwindigkeiten im Spiegel, besonders von Zweiradfahrenden, leicht falsch eingeschätzt werden können.",
+      "klartext_titel_leicht": "Ein neuer Spiegel hilft an einer Kurve",
+      "klartext_leicht": "Am Pappelweg ist eine Kurve schlecht einsehbar. Büsche und die Kurve versperren die Sicht. Die Stadt baut deshalb einen Verkehrs-Spiegel auf. Er hilft, andere Fahrzeuge früher zu sehen.",
       "lebenslage": [
         "Unterwegs"
       ],
       "bezirk": [
         "XI-Friedrichshofen/Hollerstauden"
       ],
-      "ort": [],
+      "ort": [
+        "Pappelweg"
+      ],
+      "anlass": [
+        "Sicherheit",
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
+    },
+    "bza:13163#Ö 3.8": {
+      "klartext_titel": "Furt an der Levelingstraße wird für Radfahrer verbreitert",
+      "klartext": "Die Verwaltung begrüßt den Antrag, die Furt an der Ampelanlage Levelingstraße/Audi-Kreisel zu verbreitern, und stimmt zu, dass die bisherige Breite bei hohem Radaufkommen zu Engstellen führt. Dafür muss auch die Ampelanlage geringfügig angepasst werden, um mehr Aufstellfläche für den Radverkehr zu schaffen; einen Umsetzungstermin nennt sie noch nicht.",
+      "klartext_titel_leicht": "Radfahrende bekommen mehr Platz an einer Ampel",
+      "klartext_leicht": "An einer Ampel drängeln sich viele Radfahrende. Der Übergang ist zu schmal. Die Stadt will ihn breiter machen. Dafür muss auch die Ampel etwas verändert werden. Wann das passiert, ist noch nicht klar.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XI-Friedrichshofen/Hollerstauden"
+      ],
+      "ort": [
+        "Levelingstraße"
+      ],
       "anlass": [
         "Verkehrsplanung"
       ],
-      "entwurf": true
-    },
-    "bza:13163#Ö 3.8": {
-      "klartext_titel": "Stellungnahme Furt Levelingstraße (2024-11-014)",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
-      "bezirk": [
-        "XI-Friedrichshofen/Hollerstauden"
-      ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13163#Ö 3.9": {
-      "klartext_titel": "Lärmschutzwand Straße (2022-11-002)",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
-      "bezirk": [
-        "XI-Friedrichshofen/Hollerstauden"
-      ],
-      "ort": [],
-      "anlass": [
-        "Klima & Umwelt"
-      ],
-      "entwurf": true
-    },
-    "bza:13163#Ö 3.10": {
-      "klartext_titel": "Verschiebung Neubau MS Mitte-West (2025-11-011)",
-      "klartext": "",
+      "klartext_titel": "Keine neuen Möglichkeiten für Lärmschutzwand an der Friedrichshofener Straße",
+      "klartext": "Nach erneuter Rücksprache mit der Stadtentwicklung sieht die Verwaltung weiterhin keine neuen Erkenntnisse oder Möglichkeiten, an der Friedrichshofener Straße eine Lärmschutzwand umzusetzen.",
+      "klartext_titel_leicht": "Eine Lärmschutz-Wand ist weiterhin nicht möglich",
+      "klartext_leicht": "An der Friedrichshofener Straße ist es laut. Eine Lärmschutz-Wand könnte helfen. Die Stadt hat noch einmal geprüft. Es geht weiterhin nicht.",
       "lebenslage": [],
       "bezirk": [
         "XI-Friedrichshofen/Hollerstauden"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Friedrichshofener Straße"
+      ],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "entwurf": false
+    },
+    "bza:13163#Ö 3.10": {
+      "klartext_titel": "Neubau Mittelschule Mitte-West verschiebt sich auf 2030",
+      "klartext": "Der Stadtrat hat am 29. Juli 2025 im Rahmen der Haushaltskonsolidierung beschlossen, den Neubau der Mittelschule Mitte-West im Baugebiet Dachsberg auf die Jahre ab 2030 zu verschieben. Die neue Schule soll aus den Mittelschulen Friedrichshofen und Auf der Schanz zusammengelegt werden; dank umgesetzter Interimsmaßnahmen zur Kapazitätserweiterung sieht die Verwaltung dafür aktuell noch keinen dringenden Baubedarf. Der geplante Neubau der Johann-Nepomuk-von-Kurz-Schule im selben Baugebiet bleibt davon unberührt und früher terminiert.",
+      "klartext_titel_leicht": "Eine neue Schule wird später gebaut",
+      "klartext_leicht": "Im Baugebiet Dachsberg sollte eine neue Mittelschule entstehen. Die Stadt hat wenig Geld. Deshalb wird der Bau verschoben, auf die Zeit nach 2030. Eine andere Schule im selben Gebiet wird trotzdem früher gebaut.",
+      "lebenslage": [
+        "Eltern & Kinder",
+        "Jugend"
+      ],
+      "bezirk": [
+        "XI-Friedrichshofen/Hollerstauden"
+      ],
+      "ort": [
+        "Dachsberg"
+      ],
+      "anlass": [
+        "Schulbau",
+        "Konzept & Planung"
+      ],
+      "entwurf": false
     },
     "bza:13163#Ö 4.1": {
       "klartext_titel": "Licht Masterplan Ingolstadt",
@@ -4369,39 +4459,53 @@
       "klartext_leicht": "Bezirks-Ausschuss V-Südwest: Antwortschreiben der Stadt und Informationen aus der Verwaltung."
     },
     "bza:13592#Ö 3.1": {
-      "klartext_titel": "Zwei Abfalleimer am ehemaligen Bahndamm (2024-05-022)",
-      "klartext": "",
-      "lebenslage": [
-        "Wohnen & Miete"
-      ],
+      "klartext_titel": "Keine neuen Mülleimer am ehemaligen Bahndamm",
+      "klartext": "Der Antrag auf zwei Abfalleimer am ehemaligen Bahndamm wird abgelehnt, weil die Fläche nicht der Stadt gehört und dort kein Aufenthaltsort zum Verweilen ist. Ein Mülleimer am nahegelegenen Spielplatz Orbanstraße kann laut Verwaltung auch von Passant:innen mitgenutzt werden.",
+      "klartext_titel_leicht": "Keine neuen Mülleimer an einem alten Bahndamm",
+      "klartext_leicht": "Am alten Bahndamm sollten zwei Mülleimer aufgestellt werden. Das lehnt die Stadt ab. Die Fläche gehört nicht der Stadt. Ein Mülleimer am Spielplatz in der Nähe darf trotzdem mitbenutzt werden.",
+      "lebenslage": [],
       "bezirk": [
         "V-Südwest"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": false
     },
     "bza:13592#Ö 3.2": {
-      "klartext_titel": "Beschilderung im Umfeld des Buschlettenwegs (2024-05-002)",
-      "klartext": "",
+      "klartext_titel": "Buschlettenweg bleibt für Durchfahrten gesperrt, Anlieger dürfen einfahren",
+      "klartext": "Der Weg zwischen Bonhoefferstraße und Roßlettenstraße unterhalb des Damms bleibt mit dem Verkehrszeichen 'Verbot für Kraftfahrzeuge' beschildert; von der Roßlettenstraße aus dürfen Anlieger künftig für 400 Meter einfahren, um ihr Grundstück zu erreichen, eine Durchfahrt bleibt ausgeschlossen. Sperrpfosten sind derzeit nicht vorgesehen, da regelmäßige Kontrollen bisher kaum Verstöße zeigten; der eigentliche Buschlettenweg zum Wasserwerk wird für land- und forstwirtschaftlichen Verkehr freigegeben.",
+      "klartext_titel_leicht": "Ein Feldweg bleibt für Autos meist gesperrt",
+      "klartext_leicht": "Ein Feldweg beim Buschlettenweg ist für Autos verboten. Nur Anwohner:innen dürfen ein Stück einfahren, um zu ihrem Grundstück zu kommen. Durchfahren ist weiterhin nicht erlaubt.",
       "lebenslage": [],
       "bezirk": [
         "V-Südwest"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Buschlettenweg"
+      ],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
     },
     "bza:13592#Ö 3.3": {
-      "klartext_titel": "Umbenennung Totenweg – Angerläckerweg (2024-05-031)",
-      "klartext": "",
+      "klartext_titel": "Totenweg behält seinen Namen — Beschilderung ist korrekt",
+      "klartext": "Das Tiefbauamt hat die Umbenennung des seit 1962 gewidmeten 'Totenwegs' in 'Angerläckerweg' geprüft und stellt fest, dass die bestehende Beschilderung bereits korrekt ist: Der Totenweg beginnt an der Einmündung zum Angerläckerweg und endet an der Dorfstraße, der Angerläckerweg verläuft getrennt davon. Eine Änderung der Beschilderung ist deshalb nicht nötig.",
+      "klartext_titel_leicht": "Ein Weg behält seinen alten Namen",
+      "klartext_leicht": "Ein Weg heißt Totenweg. Manche wollten ihn umbenennen. Die Stadt hat das geprüft. Der Name und die Schilder sind schon richtig. Es ändert sich nichts.",
       "lebenslage": [],
       "bezirk": [
         "V-Südwest"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Totenweg"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "entwurf": false
     },
     "bza:13592#Ö 3.4": {
       "klartext_titel": "Kanalsanierung Zeppelin-, Spitalhof- und Härtingerstraße",
@@ -4437,15 +4541,22 @@
       "klartext_leicht": "Bezirks-Ausschuss V-Südwest: Schutzstreifen Fauststraße."
     },
     "bza:13592#Ö 3.6": {
-      "klartext_titel": "Anfrage an VGI (2025-05-004)",
-      "klartext": "",
-      "lebenslage": [],
+      "klartext_titel": "Buslinie 10 verkehrt vorerst weiter im Ringverkehr",
+      "klartext": "Nach der Sanierung der Grundschulen Hundszell und Haunwöhr wird der freigestellte Schülerverkehr in Abstimmung mit dem Schulverwaltungsamt angepasst. Die Buslinie 10 verkehrt laut VGI bis auf Weiteres im Ringverkehr, ein doppeltes Abstempeln des Tickets ist dabei nicht nötig. Die bestehenden Buswartehäuschen bleiben zunächst an ihrem Standort, bis eine erste Auswertungsphase zeigt, ob Anpassungen nötig werden.",
+      "klartext_titel_leicht": "Der Bus fährt weiter im Kreis",
+      "klartext_leicht": "Zwei Schulen werden gerade saniert. Deshalb fährt ein Bus im Kreis, statt hin und zurück. Das bleibt vorerst so. Man muss dabei das Ticket nicht zweimal abstempeln.",
+      "lebenslage": [
+        "Unterwegs",
+        "Eltern & Kinder"
+      ],
       "bezirk": [
         "V-Südwest"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
     },
     "bza:13592#Ö 3.7": {
       "klartext_titel": "Information: Sanierung Kirchstraße",
@@ -4465,32 +4576,43 @@
       "klartext_leicht": "Bezirks-Ausschuss V-Südwest: Information: Sanierung Kirchstraße."
     },
     "bza:13154#Ö 3.1": {
-      "klartext_titel": "Ampelschaltung Münchener Straße, Schr. v. 04.09.2025 ( Ref. VII",
-      "klartext": "",
+      "klartext_titel": "Ampel am Kaufland Münchener Straße kann bei Flohmärkten aktiviert werden",
+      "klartext": "Die Fußgängerschutzanlage am Kaufland Münchener Straße ist sonntags derzeit deaktiviert, da eine sichere Querung wegen des geringen Verkehrsaufkommens auch so möglich ist. Bei Veranstaltungen wie Flohmärkten mit erhöhtem Aufkommen bietet die Verwaltung an, die Anlage probeweise zu aktivieren, sofern ihr die Veranstaltungsdaten mindestens 14 Arbeitstage vorher gemeldet werden.",
+      "klartext_titel_leicht": "Die Ampel am Kaufland kann bei Märkten helfen",
+      "klartext_leicht": "Am Kaufland gibt es eine Fußgänger-Ampel. Sie ist sonntags meist aus. Bei einem Flohmarkt kann sie extra eingeschaltet werden. Dafür muss man den Termin vorher der Stadt melden.",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [
+        "XII-Münchener Straße"
+      ],
+      "ort": [
+        "Münchener Straße"
+      ],
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "entwurf": false
+    },
+    "bza:13154#Ö 3.2": {
+      "klartext_titel": "Abbiegemarkierung Aubürgerstraße derzeit nicht umsetzbar",
+      "klartext": "Die vorgeschlagene Markierung für Linksabbieger von der Aubürgerstraße in die Münchener Straße ist wegen der versetzten Zufahrten aktuell nicht realisierbar. Die Verwaltung vermerkt die Anregung im Straßenakt, um die Machbarkeit bei künftigen Änderungen erneut zu prüfen.",
+      "klartext_titel_leicht": "Eine Abbiege-Markierung geht derzeit nicht",
+      "klartext_leicht": "An einer Kreuzung sollte eine Markierung fürs Linksabbiegen entstehen. Das geht wegen der Straßenform gerade nicht. Die Idee bleibt aber gespeichert. Später wird es noch einmal geprüft.",
       "lebenslage": [
         "Unterwegs"
       ],
       "bezirk": [
         "XII-Münchener Straße"
       ],
-      "ort": [],
+      "ort": [
+        "Aubürgerstraße"
+      ],
       "anlass": [
         "Verkehrsplanung"
       ],
-      "entwurf": true
-    },
-    "bza:13154#Ö 3.2": {
-      "klartext_titel": "Markierung Linksabbieger Aubürgerstraße / Münchener Straße, Schr. v. 04.09.2025 (Ref. VII",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
-      "bezirk": [
-        "XII-Münchener Straße"
-      ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13154#Ö 4": {
       "klartext_titel": "Radweg Münchener Straße, Antwortschreiben Fahrradbeauftragte",
@@ -4735,21 +4857,23 @@
       "klartext_leicht": "Bezirks-Ausschuss VIII-Oberhaunstadt: Sonstiges — Im Anschluss an die Sitzung/18.30 Uhr, findet die Bürgerversammlung statt.."
     },
     "bza:13218#Ö 2.1": {
-      "klartext_titel": "Romy-Schneider-Str. – Vermüllung und Lärmsituation 2024-04-052",
-      "klartext": "",
+      "klartext_titel": "Mobile Jugendarbeit besucht Romy-Schneider-Straße wegen Vermüllung und Lärm",
+      "klartext": "Nach Beschwerden über Vermüllung und Lärm in der Romy-Schneider-Straße besucht die Mobile Jugendarbeit des Stadtjugendrings seit Januar 2025 wöchentlich den Ort, um mit dortigen Jugendlichen ins Gespräch zu kommen. Dabei wurden bislang nur vereinzelt Jugendgruppen ohne störendes Verhalten angetroffen; ordnungsrechtliche Maßnahmen gehören nicht zum Auftrag der Mobilen Jugendarbeit, die sich stattdessen um Beziehungsarbeit und Vermittlung kümmert.",
+      "klartext_titel_leicht": "Sozialarbeiter:innen besuchen einen Treffpunkt für Jugendliche",
+      "klartext_leicht": "An der Romy-Schneider-Straße gab es Beschwerden über Müll und Lärm. Sozialarbeiter:innen besuchen den Ort seitdem jede Woche. Sie reden mit den Jugendlichen dort. Bisher haben sie kein störendes Verhalten gesehen.",
       "lebenslage": [
-        "Wohnen & Miete",
-        "Unterwegs"
+        "Jugend"
       ],
       "bezirk": [
         "IV-Südost"
       ],
-      "ort": [],
+      "ort": [
+        "Romy-Schneider-Straße"
+      ],
       "anlass": [
-        "Klima & Umwelt",
         "Grün & Sauberkeit"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13218#Ö 2.2": {
       "klartext_titel": "Kothauer Str. KiGa Markus",
@@ -4769,20 +4893,23 @@
       "klartext_leicht": "Bezirks-Ausschuss IV-Südost: Kothauer Str. KiGa Markus."
     },
     "bza:13218#Ö 3.1": {
-      "klartext_titel": "Weningstr. – Bebauungs- und Grünordnungsplan 2025-04-014",
-      "klartext": "",
+      "klartext_titel": "Neues Wohngebiet an der Weningstraße: Öffentlichkeit beteiligt",
+      "klartext": "Der Stadtrat hat am 29. Juli 2025 das Verfahren zur Änderung des vorhabenbezogenen Bebauungs- und Grünordnungsplans Nr. 120 C 'Wohnen an der Weningstraße' eingeleitet und den Entwurf genehmigt. Vom 20. August bis 22. September 2025 wird der Entwurf im Internet veröffentlicht, parallel läuft die Beteiligung der Behörden und sonstiger Träger öffentlicher Belange.",
+      "klartext_titel_leicht": "Ein neuer Wohn-Plan liegt zur Ansicht aus",
+      "klartext_leicht": "An der Wening-Straße soll gewohnt werden. Dafür gibt es einen neuen Bau-Plan. Bürger:innen können sich diesen Plan im Internet anschauen. Das geht bis zum 22. September 2025.",
       "lebenslage": [
-        "Unterwegs"
+        "Wohnen & Miete"
       ],
       "bezirk": [
         "IV-Südost"
       ],
-      "ort": [],
-      "anlass": [
-        "Bauleitplanung",
-        "Grün & Sauberkeit"
+      "ort": [
+        "Weningstraße"
       ],
-      "entwurf": true
+      "anlass": [
+        "Bauleitplanung"
+      ],
+      "entwurf": false
     },
     "bza:13218#Ö 3.2": {
       "klartext_titel": "Am Anger – Sachstand Ev. Gemeindehaus",
@@ -5099,28 +5226,37 @@
       "klartext_leicht": "Bezirks-Ausschuss VI-West: Bau einer Lagerhalle für die Vereinigte Faschingsgesellschaft Gerolfing e.V.."
     },
     "bza:13579#Ö 3": {
-      "klartext_titel": "Friedhof Gerolfing – Errichtung weiterer Urnenwände",
-      "klartext": "",
+      "klartext_titel": "Friedhof Gerolfing: Errichtung weiterer Urnenwände Thema im Bezirksausschuss",
+      "klartext": "Im Bezirksausschuss VI-West ging es um die geplante Errichtung weiterer Urnenwände auf dem Friedhof Gerolfing. Die zugehörige Planzeichnung liegt nur als nicht auswertbarer Scan vor.",
+      "klartext_titel_leicht": "Mehr Platz für Urnen auf dem Friedhof Gerolfing",
+      "klartext_leicht": "Auf dem Friedhof Gerolfing sollen mehr Urnen-Wände gebaut werden. Das war ein Thema im Bezirks-Ausschuss West.",
       "lebenslage": [],
       "bezirk": [
         "VI-West"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Friedhof Gerolfing"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
     },
     "bza:13579#Ö 4": {
-      "klartext_titel": "Bürgerhaushalt – Umsetzung offener Maßnahmen aufgrund Haushaltskonsolidierung",
-      "klartext": "",
+      "klartext_titel": "Bürgerhaushalt bis 2029 ausgesetzt — auch Weihnachtsbeleuchtung betroffen",
+      "klartext": "Der Stadtrat hat am 3. Juni 2025 wegen der Haushaltskonsolidierung den Bürgerhaushalt bis einschließlich 2029 ausgesetzt, ebenso den jährlichen Grundbetrag für ortsteilbezogene Investitionen der Bezirksausschüsse. Deshalb kann die Verwaltung keine weiteren Christbäume in den Ortsteilen beleuchten lassen; seit 2024 unterstützt die Stadt nur die Weihnachtsbeleuchtung auf den Dorfplätzen Dünzlau und Pettenhofen, künftig soll verstärkt auf bürgerschaftliches Engagement gesetzt werden.",
+      "klartext_titel_leicht": "Die Stadt spart auch bei der Weihnachts-Beleuchtung",
+      "klartext_leicht": "Die Stadt Ingolstadt muss sparen. Deshalb gibt es bis 2029 kein Geld mehr für den Bürgerhaushalt. Auch für Weihnachts-Beleuchtung in Ortsteilen gibt es weniger Geld. Nur zwei Orte werden noch unterstützt.",
       "lebenslage": [],
       "bezirk": [
         "VI-West"
       ],
       "ort": [],
       "anlass": [
-        "Gebühren & Preise"
+        "Gebühren & Preise",
+        "Kultur & Bildung"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13579#Ö 5": {
       "klartext_titel": "Feuerwehrhaus Mühlhausen, Wandbild",
@@ -5151,15 +5287,22 @@
       "klartext_leicht": "Bezirks-Ausschuss VI-West: Rückblick Bürgerversammlung."
     },
     "bza:13579#Ö 7": {
-      "klartext_titel": "Beschilderung Oberer Fretzgraben und Gstätten",
-      "klartext": "",
+      "klartext_titel": "Feldwege Oberer Fretzgraben und Gstätten bleiben unbeschildert",
+      "klartext": "Die Verwaltung lehnt eine Beschilderung der Feldwege Oberer Fretzgraben und Gstätten mit 'Verbot für Kraftfahrzeuge' ab, da es dafür keine rechtliche Grundlage gibt und beide Wege als öffentliche Feld- und Waldwege für alle Verkehrsteilnehmenden gewidmet sind. Bei einem gemeinsamen Ortstermin mit Tiefbauamt und Polizei während der morgendlichen Hauptverkehrszeit wurde zudem kein einziges Fahrzeug auf den Wegen festgestellt.",
+      "klartext_titel_leicht": "Zwei Feldwege bekommen kein Verbots-Schild",
+      "klartext_leicht": "Zwei Feldwege sollten ein Verbots-Schild für Autos bekommen. Die Stadt lehnt das ab. Es gibt dafür keinen rechtlichen Grund. Bei einer Kontrolle fuhr dort sowieso kein einziges Auto.",
       "lebenslage": [],
       "bezirk": [
         "VI-West"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Oberer Fretzgraben",
+        "Gstätten"
+      ],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
     },
     "bza:13579#Ö 8": {
       "klartext_titel": "Radfahrer auf Höhe der Zimmererstraße 10",
@@ -20496,6 +20639,32 @@
       "entwurf": false
     },
     "bza:13956#Ö 2": {
+      "klartext_titel": "Stellungnahmen der Stadt zu mehreren Bürgeranfragen",
+      "klartext": "Im Bezirksausschuss X-Süd standen mehrere Stellungnahmen der Stadtverwaltung zu einzelnen Bürgeranfragen auf der Tagesordnung.",
+      "klartext_titel_leicht": "Die Stadt antwortet auf mehrere Fragen",
+      "klartext_leicht": "Im Bezirks-Ausschuss X-Süd gab es mehrere Antworten der Stadt. Sie betrafen einzelne Fragen von Bürger:innen.",
+      "lebenslage": [],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": false
+    },
+    "bza:13348#Ö 3": {
+      "klartext_titel": "Stellungnahmen der Stadt zu mehreren Bürgeranfragen",
+      "klartext": "Im Bezirksausschuss X-Süd standen mehrere Stellungnahmen der Stadtverwaltung zu einzelnen Bürgeranfragen auf der Tagesordnung.",
+      "klartext_titel_leicht": "Die Stadt antwortet auf mehrere Fragen",
+      "klartext_leicht": "Im Bezirks-Ausschuss X-Süd gab es mehrere Antworten der Stadt. Sie betrafen einzelne Fragen von Bürger:innen.",
+      "lebenslage": [],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": false
+    },
+    "bza:13578#Ö 2": {
       "klartext_titel": "Stellungnahmen der Stadt zu mehreren Bürgeranfragen",
       "klartext": "Im Bezirksausschuss X-Süd standen mehrere Stellungnahmen der Stadtverwaltung zu einzelnen Bürgeranfragen auf der Tagesordnung.",
       "klartext_titel_leicht": "Die Stadt antwortet auf mehrere Fragen",
