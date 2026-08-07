@@ -5548,15 +5548,23 @@
       "klartext_leicht": "Bezirks-Ausschuss X-Süd: Aufwertung Spielplätze im Stadtbezirk Süd."
     },
     "bza:13346#Ö 2.4": {
-      "klartext_titel": "Verlegung Bushaltestelle Seehof",
-      "klartext": "",
-      "lebenslage": [],
+      "klartext_titel": "Bushaltestelle Seehof bleibt am jetzigen Standort",
+      "klartext": "Bei einem Ortstermin mit Anwohner:innen, der BZA-Vorsitzenden und der VGI hat sich der aktuelle Standort der Bushaltestelle Seehof als funktional und verkehrssicher erwiesen. Eine Verlegung zurück zum früheren Standort Am Sunder würde die Gefahr von Rückstau in die Weicheringer Straße erhöhen und käme wegen der angespannten Haushaltslage zudem mit Kosten von rund 1.500 Euro. Die Verwaltung rät deshalb vom Umzug ab.",
+      "klartext_titel_leicht": "Die Bushaltestelle Seehof bleibt, wo sie ist",
+      "klartext_leicht": "An der Bushaltestelle Seehof gab es Lärm-Beschwerden. Manche wollten die Haltestelle verschieben. Die Stadt hat sich das vor Ort angeschaut. Der jetzige Platz ist gut und sicher. Ein Umzug würde außerdem Geld kosten. Die Haltestelle bleibt deshalb, wo sie ist.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
       "bezirk": [
         "X-Süd"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Seehof"
+      ],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
     },
     "bza:13346#Ö 4": {
       "klartext_titel": "Ergebnisse Geschwindigkeitsmessungen",
@@ -5881,15 +5889,23 @@
       "klartext_leicht": "Bezirks-Ausschuss IV-Südost: Am Anger – Ev. Gemeindehaus – weitere Entwicklung."
     },
     "bza:13217#Ö 3.2": {
-      "klartext_titel": "Hbf Ost – Bushalt – 2025-04-002",
-      "klartext": "",
-      "lebenslage": [],
+      "klartext_titel": "Bushaltestelle Hauptbahnhof Ost wird nicht verlegt",
+      "klartext": "Die barrierefreie, videoüberwachte Bushaltestelle Hauptbahnhof Ost dient als Endhaltestelle und Wendeschleife der Linien 17 und 58. Eine vom Bezirksausschuss angeregte Verlegung würde eine zusätzliche Wendeschleife und damit längere Fahrzeiten sowie eine Umplanung der Umsteigesituation an Knotenpunkten wie ZOB und Klinikum nötig machen, weshalb die VGI aus wirtschaftlichen Gründen davon absieht. Bei einer künftigen Umplanung des ESV-Geländes will die VGI die Möglichkeit erneut prüfen.",
+      "klartext_titel_leicht": "Die Bushaltestelle am Bahnhof Ost bleibt gleich",
+      "klartext_leicht": "Am Bahnhof Ost gibt es eine Bushaltestelle. Sie sollte verlegt werden. Das würde aber die Busfahrpläne durcheinanderbringen und mehr kosten. Deshalb bleibt die Haltestelle vorerst, wo sie ist.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
       "bezirk": [
         "IV-Südost"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Hauptbahnhof"
+      ],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
     },
     "bza:13217#Ö 4.1": {
       "klartext_titel": "Rumänischer Freundeskreis",
@@ -6182,15 +6198,21 @@
       "klartext_leicht": "Bezirks-Ausschuss II-Nordwest: Sondersitzung am 23.07.2025 um 18:45 Uhr im Imkerpavillon Piuspark."
     },
     "bza:13419#Ö 3.1": {
-      "klartext_titel": "Lernräume AZ 2024-03-034",
-      "klartext": "",
-      "lebenslage": [],
+      "klartext_titel": "Zwei Jugendtreffs bieten Lernräume für Prüfungszeiten an",
+      "klartext": "Im Stadtbezirk Nordost hat das Amt für Jugend und Familie bei den dortigen Einrichtungen der offenen Kinder- und Jugendarbeit angefragt, ob Räume zu bestimmten Zeiten als Lernräume genutzt werden können. Der Stadtteiltreff Konradviertel und der Jugendtreff Underground haben aktuell keine Kapazitäten, während die Jugendkulturbox SPOT und Paradise55 grundsätzliche Bereitschaft signalisiert haben und ihre Räume außerhalb der Ferien mehrmals wöchentlich als Lernräume anbieten.",
+      "klartext_titel_leicht": "Zwei Jugendtreffs bieten Räume zum Lernen an",
+      "klartext_leicht": "Manche Kinder brauchen einen ruhigen Ort zum Lernen, zum Beispiel vor Prüfungen. Zwei Jugendtreffs im Nordosten bieten dafür jetzt Räume an. Sie heißen SPOT und Paradise55. In den Ferien geht das aber nicht.",
+      "lebenslage": [
+        "Jugend"
+      ],
       "bezirk": [
         "III-Nordost"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": false
     },
     "bza:13419#Ö 3.2": {
       "klartext_titel": "Fertigstellung Rückertstr.",
@@ -6409,17 +6431,19 @@
       "klartext_leicht": "Bezirks-Ausschuss VI-West: Aufstellung Elektroschrottcontainer in Gerolfing."
     },
     "bza:13375#Ö 6": {
-      "klartext_titel": "Maßnahmen der INKB zur Gewährleistung der Sauberkeit von Wertstoffinseln",
-      "klartext": "",
+      "klartext_titel": "Wie die INKB die Wertstoffinseln sauber halten",
+      "klartext": "Die Ingolstädter Kommunalbetriebe (INKB) betreiben rund 120 Wertstoffinseln im Stadtgebiet, an denen Bürger:innen unabhängig von Öffnungszeiten Altglas, Altkleider und teils Elektrokleingeräte sowie Altpapier abgeben können. 2024 wurden dort 2.867 Tonnen Altglas und 828 Tonnen Altkleider erfasst. Die INKB sind gesetzlich zum Betrieb verpflichtet und finanzieren die Reinigung über Entgelte der Dualen Systeme sowie Abfallgebühren; Anträge auf Entfernung einzelner Inseln können nur bewilligt werden, wenn in der Nähe eine neue Insel entsteht, da die Zielvorgabe bei einer Insel pro 1.200 Einwohner:innen liegt.",
+      "klartext_titel_leicht": "Wer die Wertstoff-Inseln sauber hält",
+      "klartext_leicht": "In Ingolstadt gibt es etwa 120 Wertstoff-Inseln. Dort kann man Altglas und Altkleider abgeben, auch wenn kein Wertstoffhof offen hat. 2024 kamen dort fast 2.900 Tonnen Altglas zusammen. Die Stadt-Firma INKB muss die Inseln betreiben. Sie reinigt sie regelmäßig. Eine Insel kann nur wegfallen, wenn in der Nähe eine neue entsteht.",
       "lebenslage": [],
       "bezirk": [
-        "VI-West"
+        "stadtweit"
       ],
       "ort": [],
       "anlass": [
         "Grün & Sauberkeit"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13375#Ö 7": {
       "klartext_titel": "Blumenwiese Irgertsheim",
@@ -6452,32 +6476,40 @@
       "klartext_leicht": "Bezirks-Ausschuss VI-West: Ersatz kaputter Bäume Streuobstwiese Mühlhausen Richtung Pettenhofen."
     },
     "bza:13161#Ö 3.1": {
-      "klartext_titel": "Kleinkindschaukel auf dem Spielplatz Pareuthstraße (2024-11-004)",
-      "klartext": "",
+      "klartext_titel": "Kleinkinderschaukel kommt auf den Spielplatz Parreuthstraße",
+      "klartext": "Die gewünschte Kleinkinderschaukel kann nur auf dem Spielplatz Parreuthstraße montiert werden, nicht auf dem Spielplatz Wolfgang-Höfer-Straße. Dort bilden die drei vorhandenen Schaukeln eine zusammenhängende Kontaktschaukel als ein Spielgerät, aus dem sich kein einzelnes Element ersetzen lässt; der Spielplatz Parreuthstraße ist von dort fußläufig in vier Minuten erreichbar.",
+      "klartext_titel_leicht": "Eine neue Schaukel kommt auf einen anderen Spielplatz",
+      "klartext_leicht": "Ein Spielplatz sollte eine Schaukel für kleine Kinder bekommen. Auf einem Spielplatz geht das nicht, weil die Schaukeln dort zusammengehören. Die neue Schaukel kommt stattdessen auf einen anderen Spielplatz in der Nähe.",
       "lebenslage": [
         "Eltern & Kinder",
-        "Unterwegs",
         "Freizeit & Sport"
       ],
       "bezirk": [
         "XI-Friedrichshofen/Hollerstauden"
       ],
-      "ort": [],
+      "ort": [
+        "Parreuthstraße"
+      ],
       "anlass": [],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13161#Ö 3.2": {
-      "klartext_titel": "Abfallbehälter mit Abdeckung im Haslangpark (2024-11-018)",
-      "klartext": "",
-      "lebenslage": [
-        "Wohnen & Miete"
-      ],
+      "klartext_titel": "25 Mülleimer im Haslangpark sollen ausgetauscht werden — Kosten 25.000 Euro",
+      "klartext": "Im Haslangpark stehen derzeit 25 Abfalleimer neben den Bänken, die auf Wunsch des Bezirksausschusses entfernt und durch neue Modelle mit Deckel in geeigneten Abständen ersetzt werden sollen, um Geruchsbelästigung zu vermeiden. Ein Abfalleimer kostet inklusive Lieferung, Montage und Entsorgung rund 1.000 Euro, insgesamt also etwa 25.000 Euro; die Verwaltung fragt beim Bezirksausschuss an, ob dieser die Kosten trägt.",
+      "klartext_titel_leicht": "Neue Mülleimer im Haslangpark sollen 25.000 Euro kosten",
+      "klartext_leicht": "Im Haslangpark stehen 25 Mülleimer. Sie sollen gegen neue mit Deckel getauscht werden. Das soll Gestank vermeiden. Das kostet zusammen 25.000 Euro. Der Bezirks-Ausschuss muss entscheiden, ob er das bezahlt.",
+      "lebenslage": [],
       "bezirk": [
         "XI-Friedrichshofen/Hollerstauden"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Haslangpark"
+      ],
+      "anlass": [
+        "Grün & Sauberkeit",
+        "Gebühren & Preise"
+      ],
+      "entwurf": false
     },
     "bza:13161#Ö 3.3": {
       "klartext_titel": "Parkplatz Jurastraße (2024-11-011)",
@@ -6630,43 +6662,63 @@
       "klartext_leicht": "Bezirks-Ausschuss V-Südwest: Antwortschreiben der Stadt und Informationen aus der Verwaltung."
     },
     "bza:13362#Ö 2.1": {
-      "klartext_titel": "Zuschuss an das Apian-Gymnasium für Imkereibedarf (2024-05-016 B)",
-      "klartext": "",
-      "lebenslage": [],
+      "klartext_titel": "500 Euro Zuschuss für Imkerei-Ausstattung am Apian-Gymnasium",
+      "klartext": "Der Bezirksausschuss hat einstimmig 500 Euro aus dem Bürgerhaushalt 2024 für Imkereibedarf am Apian-Gymnasium bewilligt, das seit einigen Jahren einen Bienengarten auf dem Schulgelände betreibt. Mit dem Geld werden ein Honig-Auftaugerät, ein Dampfwachsschmelzer, Regalbretter und ein Regenfallrohr-Set für die Bienenhütte angeschafft.",
+      "klartext_titel_leicht": "Geld für Bienen an einer Schule",
+      "klartext_leicht": "Am Apian-Gymnasium gibt es einen Bienen-Garten. Schüler:innen lernen dort etwas über Bienen. Sie ernten auch Honig. Dafür braucht die Schule neue Geräte. Der Bezirks-Ausschuss zahlt dafür 500 Euro.",
+      "lebenslage": [
+        "Jugend"
+      ],
       "bezirk": [
         "V-Südwest"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Kultur & Bildung",
+        "Gebühren & Preise"
+      ],
+      "entwurf": false
     },
     "bza:13362#Ö 2.2": {
-      "klartext_titel": "Zuschuss für Vivarium (Neuanschaffung eines Terrariums) am Apian-Gymnasium (2024-05-014 B)",
-      "klartext": "",
+      "klartext_titel": "1.500 Euro Zuschuss für neues Terrarium am Apian-Gymnasium",
+      "klartext": "Der Bezirksausschuss hat einstimmig 1.500 Euro aus dem Bürgerhaushalt 2024 für ein neues Terrarium am Apian-Gymnasium bewilligt. Im Wahlfach Vivarium versorgen Schüler:innen Tiere und lernen artgerechte Haltung; nach erfolgreichen Nachzuchten der Panzerschleiche 2021, 2023 und 2024 wird nun ein größeres Terrarium (120 mal 60 mal 60 Zentimeter) benötigt, dessen Beschaffung nach Freigabe des Haushalts 2025 erfolgt.",
+      "klartext_titel_leicht": "Geld für ein größeres Terrarium an einer Schule",
+      "klartext_leicht": "Am Apian-Gymnasium kümmern sich Schüler:innen um Tiere in einem Terrarium. Die Tiere haben schon mehrmals Nachwuchs bekommen. Jetzt brauchen sie ein größeres Terrarium. Der Bezirks-Ausschuss zahlt dafür 1.500 Euro.",
       "lebenslage": [
-        "Geld & Soziales"
+        "Jugend"
       ],
       "bezirk": [
         "V-Südwest"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Kultur & Bildung",
+        "Gebühren & Preise"
+      ],
+      "entwurf": false
     },
     "bza:13362#Ö 2.3": {
-      "klartext_titel": "Änderung der Buslinie 10",
-      "klartext": "",
-      "lebenslage": [],
+      "klartext_titel": "Buslinie 10 bekommt ab Juni 2025 neue Streckenführung",
+      "klartext": "Gemeinsam mit dem Bezirksausschuss hat die Stadtbus-Geschäftsführung eine geänderte Linienführung für die Buslinie 10 erarbeitet, die der Aufsichtsrat der Stadtbus Ingolstadt am 2. April 2025 im Rahmen der Konsolidierungsbestrebungen beschlossen hat. Die Änderung tritt zum 23. Juni 2025 in Kraft.",
+      "klartext_titel_leicht": "Der Bus 10 fährt bald eine andere Strecke",
+      "klartext_leicht": "Der Bus Linie 10 bekommt eine neue Strecke. Das hat der Bezirks-Ausschuss mit der Stadtbus-Firma zusammen geplant. Ab dem 23. Juni 2025 gilt die neue Strecke.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
       "bezirk": [
         "V-Südwest"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
     },
     "bza:13362#Ö 2.4": {
-      "klartext_titel": "Maßnahmen der INKB zur Gewährung der Sauberkeit von Wertstoffinseln (2024-05-015 und 2024-05-023)",
-      "klartext": "",
+      "klartext_titel": "Wie die INKB die Wertstoffinseln sauber halten",
+      "klartext": "Die Ingolstädter Kommunalbetriebe (INKB) betreiben rund 120 Wertstoffinseln im Stadtgebiet, an denen Bürger:innen unabhängig von Öffnungszeiten Altglas, Altkleider und teils Elektrokleingeräte sowie Altpapier abgeben können. 2024 wurden dort 2.867 Tonnen Altglas und 828 Tonnen Altkleider erfasst. Die INKB sind gesetzlich zum Betrieb verpflichtet und finanzieren die Reinigung über Entgelte der Dualen Systeme sowie Abfallgebühren; Anträge auf Entfernung einzelner Inseln können nur bewilligt werden, wenn in der Nähe eine neue Insel entsteht, da die Zielvorgabe bei einer Insel pro 1.200 Einwohner:innen liegt.",
+      "klartext_titel_leicht": "Wer die Wertstoff-Inseln sauber hält",
+      "klartext_leicht": "In Ingolstadt gibt es etwa 120 Wertstoff-Inseln. Dort kann man Altglas und Altkleider abgeben, auch wenn kein Wertstoffhof offen hat. 2024 kamen dort fast 2.900 Tonnen Altglas zusammen. Die Stadt-Firma INKB muss die Inseln betreiben. Sie reinigt sie regelmäßig. Eine Insel kann nur wegfallen, wenn in der Nähe eine neue entsteht.",
       "lebenslage": [],
       "bezirk": [
         "V-Südwest"
@@ -6675,20 +6727,27 @@
       "anlass": [
         "Grün & Sauberkeit"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13362#Ö 2.5": {
-      "klartext_titel": "Antrag SV Hundszell und SV Haunwöhr auf einen Kunstrasenplatz im Rahmen der Bebauung des Weinzierl-Geländes …",
-      "klartext": "",
-      "lebenslage": [],
+      "klartext_titel": "Kein Kunstrasenplatz auf dem Weinzierl-Gelände — Standort widerspricht Entsiegelungsziel",
+      "klartext": "Die Stadt verfolgt seit einem Grundsatzbeschluss von 2021 das Ziel, das Weinzierl-Gelände zu entsiegeln und als naturnahe, öffentlich zugängliche Freizeitfläche zu entwickeln; ein Kunstrasenplatz für die Sportvereine Hundszell und Haunwöhr lässt sich damit nicht vereinbaren. Zusätzlich liegt das Gelände in einem gesetzlichen Überschwemmungsgebiet, in dem bauliche Nebenanlagen ohnehin nicht zulässig wären. Ein Trainingsspielfeld ist stattdessen im laufenden Bebauungsplanverfahren Am Schmalzbuckel vorgesehen.",
+      "klartext_titel_leicht": "Kein Kunstrasen-Platz auf dem Weinzierl-Gelände",
+      "klartext_leicht": "Zwei Sport-Vereine wollten einen Kunstrasen-Platz auf dem Weinzierl-Gelände. Das geht nicht. Das Gelände soll naturnah bleiben. Außerdem kann dort Hochwasser entstehen. Ein Trainingsplatz entsteht stattdessen an einem anderen Ort.",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
       "bezirk": [
         "V-Südwest"
       ],
-      "ort": [],
-      "anlass": [
-        "Kultur & Bildung"
+      "ort": [
+        "Weinzierl-Gelände"
       ],
-      "entwurf": true
+      "anlass": [
+        "Bauleitplanung",
+        "Klima & Umwelt"
+      ],
+      "entwurf": false
     },
     "bza:13362#Ö 5.1": {
       "klartext_titel": "Umbenennung Angerläckerweg/Totenweg",
@@ -6778,37 +6837,54 @@
       "klartext_leicht": "Bezirks-Ausschuss X-Süd: Kanalsanierung Hans-Denck-Straße."
     },
     "bza:13344#Ö 2.2": {
-      "klartext_titel": "Neuzuordnung von Adressen zu amtlich benannten Ortsteilen",
-      "klartext": "",
+      "klartext_titel": "Straßen im Süden sollen anderen Ortsteilen zugeordnet werden",
+      "klartext": "Der Bezirksausschuss Süd berät über eine Neuzuordnung mehrerer Straßen zu den amtlich benannten Ortsteilen: Die Spitalwaldstraße 43-51a soll künftig zu Oberbrunnenreuth statt Spitalhof gehören, der Schergweg umgekehrt zu Spitalhof statt Oberbrunnenreuth, und die Lichtenauer Straße 10 zu Winden statt Zuchering. Für den Bereich Einbogen, wo sich Gemarkungs-, Stadt- und Unterbezirksgrenzen überschneiden, wird zudem eine eigene Zuordnung sowie eine Anpassung der Stadtbezirksgrenze diskutiert.",
+      "klartext_titel_leicht": "Manche Straßen bekommen einen anderen Ortsteil-Namen",
+      "klartext_leicht": "Jede Straße in Ingolstadt gehört zu einem Ortsteil. Manche Straßen sind aber falsch zugeordnet. Der Bezirks-Ausschuss Süd bespricht das jetzt. Zum Beispiel soll eine Straße vom Ortsteil Spitalhof zu Oberbrunnenreuth wechseln.",
       "lebenslage": [],
       "bezirk": [
         "X-Süd"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "entwurf": false
     },
     "bza:13344#Ö 2.3": {
-      "klartext_titel": "Umbenennung Bushaltestelle „Schergweg“",
-      "klartext": "",
-      "lebenslage": [],
+      "klartext_titel": "Bushaltestelle Schergweg heißt bald Heckenweg",
+      "klartext": "Die Bushaltestelle 'Schergweg' wird zum Schuljahresbeginn 2025/26 in 'Heckenweg' umbenannt. Die vom Bezirksausschuss gewünschte Verlegung der Haltestelle Seehof wurde bereits bei einem Ortstermin mit der BZA-Vorsitzenden abschließend besprochen.",
+      "klartext_titel_leicht": "Eine Bushaltestelle bekommt einen neuen Namen",
+      "klartext_leicht": "Eine Bushaltestelle heißt bisher Schergweg. Ab dem neuen Schuljahr 2025/26 heißt sie Heckenweg.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
       "bezirk": [
         "X-Süd"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
     },
     "bza:13344#Ö 2.4": {
-      "klartext_titel": "Elektronische Anzeigetafeln Bushaltestellen",
-      "klartext": "",
-      "lebenslage": [],
+      "klartext_titel": "Keine elektronischen Anzeigetafeln an Bushaltestellen aus Kostengründen",
+      "klartext": "Die Errichtung elektronischer Anzeigetafeln an den vom Bezirksausschuss genannten Bushaltestellen ist aus Kostengründen derzeit nicht geplant, teilt die VGI mit.",
+      "klartext_titel_leicht": "Keine elektronischen Anzeigen an Bushaltestellen",
+      "klartext_leicht": "An manchen Bushaltestellen sollten elektronische Anzeigetafeln aufgestellt werden. Sie zeigen, wann der nächste Bus kommt. Das ist der Stadt aber zu teuer. Es passiert deshalb vorerst nicht.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
       "bezirk": [
         "X-Süd"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Gebühren & Preise",
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
     },
     "bza:13344#Ö 2.5": {
       "klartext_titel": "Sauberkeit an Wertstoffinseln",
@@ -7082,15 +7158,21 @@
       "klartext_leicht": "Bezirks-Ausschuss I-Mitte: Fleißer Denkmal – Standortvorschlag."
     },
     "bza:13216#Ö 2.1": {
-      "klartext_titel": "A9 Autobahn - Rollstuhlfahrerauffahrt 2024-04-056",
-      "klartext": "",
-      "lebenslage": [],
+      "klartext_titel": "Barrierefreier Steg unter der A9: Baustart im Juli 2025",
+      "klartext": "Für die barrierefreie Anbindung des Fußgängerstegs unter der Autobahnbrücke A9 erarbeitet das Tiefbauamt derzeit die Ausführungspläne. Der Baustart ist für Juli 2025 geplant, die Verkehrsfreigabe für Ende 2025 vorgesehen; im Mittelpunkt steht die Nutzung für Rollstuhlfahrer:innen und mobilitätseingeschränkte Menschen, Radfahren bleibt auf dem Steg weiterhin untersagt.",
+      "klartext_titel_leicht": "Ein Steg unter der Autobahn wird barrierefrei",
+      "klartext_leicht": "Unter der Autobahn A9 gibt es einen Steg für Fußgänger:innen. Menschen im Rollstuhl kommen dort schlecht hin. Das soll sich ändern. Der Bau beginnt im Juli 2025. Ende 2025 soll er fertig sein. Radfahren bleibt dort weiterhin verboten.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
       "bezirk": [
         "IV-Südost"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
     },
     "bza:13216#Ö 2.2": {
       "klartext_titel": "Königsbergerstr - GWG Neubau - Stellplatzverordnung",
@@ -7123,33 +7205,43 @@
       "klartext_leicht": "Bezirks-Ausschuss IV-Südost: Geisenfelderstr. - Kreislaufschrank."
     },
     "bza:13216#Ö 2.4": {
-      "klartext_titel": "Niederfeld – Bolzplatz FC Niederfeld 2024-04-049",
-      "klartext": "",
+      "klartext_titel": "Bolzplatz Niederfeld bleibt öffentlich zugänglich, kein Vereinsplatz",
+      "klartext": "Laut einem Schreiben des Amts für Sport und Freizeit von 2005 bleibt der vom FC Niederfeld genutzte Bolzplatz weiterhin als Bolzplatz ausgewiesen, für dessen Pflege die Stadt zuständig ist; ein verbrieftes Nutzungsrecht hat der Verein nicht erhalten. Damit hat die Stadt das Hausrecht, und der Platz bleibt öffentlich für alle Bürger:innen zugänglich, wie es die Grünanlagensatzung vorsieht. Ein Flutlicht wurde 2016 auf Betreiben von Bezirksausschuss und Verein installiert.",
+      "klartext_titel_leicht": "Der Bolzplatz in Niederfeld bleibt für alle da",
+      "klartext_leicht": "In Niederfeld gibt es einen Bolzplatz. Ein Fußball-Verein nutzt ihn oft. Der Platz gehört aber der Stadt. Er bleibt deshalb für alle Menschen zugänglich, nicht nur für den Verein.",
       "lebenslage": [
-        "Jugend",
         "Freizeit & Sport"
       ],
       "bezirk": [
         "IV-Südost"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Niederfeld"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "entwurf": false
     },
     "bza:13216#Ö 2.5": {
-      "klartext_titel": "Manchingerstr. - Radweg Bunsenstr./Salierstr. 2024-04-053",
-      "klartext": "",
+      "klartext_titel": "Radweg Manchinger Straße wird nicht für Gegenrichtung freigegeben",
+      "klartext": "Der etwa 2,60 Meter breite gemeinsame Geh- und Radweg auf der Südseite der Manchinger Straße zwischen Salierstraße und Bunsenstraße ist zu schmal, um ihn auch für die Gegenrichtung freizugeben, zumal dort stark frequentierte Grundstückszufahrten liegen. Da auf beiden Straßenseiten bereits Radwege bestehen und drei signalisierte Querungsmöglichkeiten vorhanden sind, sieht die Verwaltung keine Notwendigkeit für die Freigabe.",
+      "klartext_titel_leicht": "Radfahrende dürfen dort nicht in beide Richtungen fahren",
+      "klartext_leicht": "An der Manchinger Straße gibt es einen Radweg. Er ist zu schmal für beide Fahrtrichtungen. Auf der anderen Straßenseite gibt es aber auch einen Radweg. Deshalb bleibt es, wie es ist.",
       "lebenslage": [
         "Unterwegs"
       ],
       "bezirk": [
         "IV-Südost"
       ],
-      "ort": [],
-      "anlass": [
-        "Verkehrsplanung"
+      "ort": [
+        "Manchinger Straße"
       ],
-      "entwurf": true
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "entwurf": false
     },
     "bza:13216#Ö 2.6": {
       "klartext_titel": "Autobahnausfahrt – Beschilderung",
@@ -7165,20 +7257,23 @@
       "klartext_leicht": "Bezirks-Ausschuss IV-Südost: Autobahnausfahrt – Beschilderung."
     },
     "bza:13216#Ö 2.7": {
-      "klartext_titel": "Odilostr. – Kita Zuweg 2024-04-039",
-      "klartext": "",
+      "klartext_titel": "Kein neuer Zuweg zur Kita an der Odilostraße wegen Biotopschutz",
+      "klartext": "Ein direkter Zugang zur Kita über einen bestehenden Trampelpfad wäre nur mit einer Brücke über einen Graben möglich, was erheblichen Eingriff in die Vegetation und das Beschneiden zahlreicher Bäume erfordern würde. Da der Graben als geschütztes Biotop kartiert ist, gelten dafür besondere naturschutzrechtliche Einschränkungen, weshalb die Verwaltung das Vorhaben ablehnt.",
+      "klartext_titel_leicht": "Kein neuer Weg zur Kita wegen Natur-Schutz",
+      "klartext_leicht": "Zu einer Kita an der Odilostraße sollte ein neuer, kürzerer Weg entstehen. Dafür bräuchte man eine kleine Brücke über einen Graben. Der Graben ist aber ein geschütztes Stück Natur. Deshalb darf dort nicht gebaut werden.",
       "lebenslage": [
-        "Eltern & Kinder",
-        "Unterwegs"
+        "Eltern & Kinder"
       ],
       "bezirk": [
         "IV-Südost"
       ],
-      "ort": [],
-      "anlass": [
-        "Kinderbetreuung"
+      "ort": [
+        "Odilostraße"
       ],
-      "entwurf": true
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "entwurf": false
     },
     "bza:13216#Ö 2.8": {
       "klartext_titel": "Peisserstr. – Scheitza Projekt",
@@ -7358,8 +7453,10 @@
       "klartext_leicht": "Bezirks-Ausschuss II-Nordwest: Vortrag: Kontaktbeamter – allgemeiner Lagebericht für den Bezirk NW."
     },
     "bza:13340#Ö 3.2": {
-      "klartext_titel": "Information: Maßnahmen INKB zur Gewährleistung der Sauberkeit von Wertstoffinseln",
-      "klartext": "",
+      "klartext_titel": "Wie die INKB die Wertstoffinseln sauber halten",
+      "klartext": "Die Ingolstädter Kommunalbetriebe (INKB) betreiben rund 120 Wertstoffinseln im Stadtgebiet, an denen Bürger:innen unabhängig von Öffnungszeiten Altglas, Altkleider und teils Elektrokleingeräte sowie Altpapier abgeben können. 2024 wurden dort 2.867 Tonnen Altglas und 828 Tonnen Altkleider erfasst. Die INKB sind gesetzlich zum Betrieb verpflichtet und finanzieren die Reinigung über Entgelte der Dualen Systeme sowie Abfallgebühren; Anträge auf Entfernung einzelner Inseln können nur bewilligt werden, wenn in der Nähe eine neue Insel entsteht, da die Zielvorgabe bei einer Insel pro 1.200 Einwohner:innen liegt.",
+      "klartext_titel_leicht": "Wer die Wertstoff-Inseln sauber hält",
+      "klartext_leicht": "In Ingolstadt gibt es etwa 120 Wertstoff-Inseln. Dort kann man Altglas und Altkleider abgeben, auch wenn kein Wertstoffhof offen hat. 2024 kamen dort fast 2.900 Tonnen Altglas zusammen. Die Stadt-Firma INKB muss die Inseln betreiben. Sie reinigt sie regelmäßig. Eine Insel kann nur wegfallen, wenn in der Nähe eine neue entsteht.",
       "lebenslage": [],
       "bezirk": [
         "II-Nordwest"
@@ -7368,7 +7465,7 @@
       "anlass": [
         "Grün & Sauberkeit"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13340#Ö 3.3": {
       "klartext_titel": "Einladung: Marathon-Lesung zum 80. Jahrestag der Befreiung vom Nationalsozialismus und Ende des Zweiten …",
@@ -7399,17 +7496,22 @@
       "klartext_leicht": "Bezirks-Ausschuss II-Nordwest: Bürgerhaushalt – Beratung und Entscheidungen."
     },
     "bza:13340#Ö 4.1": {
-      "klartext_titel": "aktueller Stand BHH 2025 / Sondervermögen des BZA NW",
-      "klartext": "",
-      "lebenslage": [],
+      "klartext_titel": "Bürgerhaushalt Nordwest: 35.000 von 87.000 Euro bereits verplant",
+      "klartext": "Vom Bürgerhaushalt 2025 des Bezirks II-Nordwest mit einem Ansatz von 87.000 Euro sind bislang 35.000 Euro für Sonnenschirme an der Christoph-Kolumbus-Schule und Indoor-Spielburgen für die Kita Sternenhaus verplant; ein Sonnensegel für die Kita Netz für Kinder in der Permoserstraße ist ebenfalls beantragt. Damit verbleiben rund 52.000 Euro an Restmitteln.",
+      "klartext_titel_leicht": "Wie viel Geld der Bürgerhaushalt Nordwest noch hat",
+      "klartext_leicht": "Der Bezirk Nordwest hat Geld für kleine Projekte, den Bürgerhaushalt. Es sind 87.000 Euro. Ein Teil ist schon verplant, zum Beispiel für Sonnenschirme an einer Schule. Es sind noch etwa 52.000 Euro übrig.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
       "bezirk": [
         "II-Nordwest"
       ],
       "ort": [],
       "anlass": [
-        "Gebühren & Preise"
+        "Gebühren & Preise",
+        "Konzept & Planung"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13340#Ö 4.2": {
       "klartext_titel": "Auskunft zum Bürgerhaushalt und bereits beschlossenen Maßnahmen",
@@ -7442,17 +7544,22 @@
       "klartext_leicht": "Bezirks-Ausschuss II-Nordwest: Antrag: IG Ingolstädter Eltern e.V.."
     },
     "bza:13298#Ö 3.1": {
-      "klartext_titel": "Geschwindigkeitskontrollen Frühlingsstr. 2024-03-043",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Frühlingstraße ist bereits offizielle Blitzer-Messstelle",
+      "klartext": "Die Frühlingstraße auf Höhe des Caritas-Zentrums St. Vinzenz ist bereits eine eingetragene offizielle Messstelle der Polizei zur Geschwindigkeitsüberwachung, an der im Jahresdurchschnitt mindestens einmal monatlich gemessen wird.",
+      "klartext_titel_leicht": "Die Polizei kontrolliert hier schon regelmäßig",
+      "klartext_leicht": "An der Frühlingsstraße wollte der Bezirks-Ausschuss mehr Geschwindigkeits-Kontrollen. Die gibt es aber schon. Die Polizei misst dort jeden Monat mindestens einmal.",
+      "lebenslage": [],
       "bezirk": [
         "III-Nordost"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Frühlingstraße"
+      ],
+      "anlass": [
+        "Sicherheit",
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
     },
     "bza:13298#Ö 3.2": {
       "klartext_titel": "Parkplatzwegfall wg. Buslinie 41",
@@ -7485,21 +7592,27 @@
       "klartext_leicht": "Bezirks-Ausschuss III-Nordost: Parkplätze Lessingstr.."
     },
     "bza:13298#Ö 3.4": {
-      "klartext_titel": "Bepflanzung Grünstreifen 2024-03-28/29",
-      "klartext": "",
+      "klartext_titel": "Keine neuen Bäume in der Theodor-Heuss-Straße wegen Gasleitung",
+      "klartext": "Im Grünstreifen der Theodor-Heuss-Straße verläuft eine Gasleitung, für die besonders große Pflanzabstände gelten, weshalb dort seit Jahren nur eine Blumenmischung wächst statt Bäume. Nach dem geplanten Umbau des Kreuzungsbereichs Nürnberger Straße/Theodor-Heuss-Straße im Zuge des Ausbaus 'Schneller Weg' will das Gartenamt erneut prüfen, ob zusätzliche Bäume möglich sind.",
+      "klartext_titel_leicht": "Warum in einer Straße keine Bäume stehen",
+      "klartext_leicht": "In der Theodor-Heuss-Straße liegt eine Gas-Leitung unter der Erde. Bäume brauchen aber Abstand zu Gas-Leitungen. Deshalb wachsen dort nur Blumen. Nach einem späteren Straßen-Umbau prüft die Stadt das noch einmal.",
       "lebenslage": [],
       "bezirk": [
         "III-Nordost"
       ],
-      "ort": [],
+      "ort": [
+        "Theodor-Heuss-Straße"
+      ],
       "anlass": [
         "Grün & Sauberkeit"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13298#Ö 3.5": {
-      "klartext_titel": "Bolzplatz Lessingstr 2024-03-037",
-      "klartext": "",
+      "klartext_titel": "Keine eigene Hausordnung für Bolzplatz Lessingstraße nötig",
+      "klartext": "Eine eigene Hausordnung für den Bolzplatz Lessingstraße ist überflüssig, da die Benutzungszeiten zur Lärmreduzierung bereits in der städtischen Grünanlagensatzung geregelt sind; deren Einhaltung kontrolliert die Polizei. Die Stadt will ihre eigenen Kontrollen nach Veranstaltungen künftig verstärken und weist Veranstalter:innen ausdrücklich darauf hin, den Platz ordentlich zu hinterlassen.",
+      "klartext_titel_leicht": "Der Bolzplatz braucht keine eigenen Regeln",
+      "klartext_leicht": "Für den Bolzplatz Lessingstraße sollte es eigene Regeln geben. Das braucht es nicht. Es gibt schon eine Regel für alle Grünflächen der Stadt. Die Stadt will aber öfter kontrollieren.",
       "lebenslage": [
         "Jugend",
         "Freizeit & Sport"
@@ -7507,22 +7620,33 @@
       "bezirk": [
         "III-Nordost"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Lessingstraße"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "entwurf": false
     },
     "bza:13298#Ö 3.6": {
-      "klartext_titel": "Fußgängerfurt in der Schillerstraße/Regensburgerstr. 2024-03-036",
-      "klartext": "",
+      "klartext_titel": "Neue Fußgängerfurt an der Kreuzung Schillerstraße/Regensburger Straße kommt",
+      "klartext": "Die Verwaltung stimmt der vom Bezirksausschuss beantragten zusätzlichen Fußgängerfurt an der Nordseite der Kreuzung Schillerstraße/Regensburger Straße zu und hat den Antrag ans Tiefbauamt weitergeleitet. Die neue Furt wird im Zuge des ohnehin geplanten Umbaus der Schillerstraße berücksichtigt.",
+      "klartext_titel_leicht": "Ein neuer Fußgänger-Übergang kommt an einer Kreuzung",
+      "klartext_leicht": "An einer Kreuzung fehlt ein Übergang für Fußgänger:innen. Er soll jetzt kommen. Er entsteht, wenn die Straße dort sowieso umgebaut wird.",
       "lebenslage": [
         "Unterwegs"
       ],
       "bezirk": [
         "III-Nordost"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Schillerstraße"
+      ],
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "entwurf": false
     },
     "bza:13298#Ö 3.7": {
       "klartext_titel": "Fortsetzung Baumaßnahmen",
@@ -7540,20 +7664,22 @@
       "klartext_leicht": "Bezirks-Ausschuss III-Nordost: Fortsetzung Baumaßnahmen."
     },
     "bza:13298#Ö 3.8": {
-      "klartext_titel": "Parken H-P. Müller-Str. 2024-03-041/042",
-      "klartext": "",
-      "lebenslage": [
-        "Wohnen & Miete",
-        "Unterwegs"
-      ],
+      "klartext_titel": "Haltverbot Hans-Peter-Müller-Straße wird nicht ausgeweitet",
+      "klartext": "Ein durchgängiges absolutes Haltverbot auf der Nordseite der Hans-Peter-Müller-Straße lehnt die Verwaltung ab, da dort bereits ein eingeschränktes Haltverbot gilt und kurzes Halten Verkehrssicherheit und -fluss nicht wesentlich beeinträchtigt. Auf der Südseite wurde dagegen erst im Januar 2025 ein bestehendes absolutes Haltverbot in einem unübersichtlichen Kurvenbereich verlängert, weil dort wiederholt gefährlich geparkt wurde.",
+      "klartext_titel_leicht": "Das Halteverbot bleibt so, wie es ist",
+      "klartext_leicht": "An einer Straße sollte ein strengeres Halteverbot gelten. Die Stadt lehnt das ab. Es gibt schon ein Verbot, das reicht. An einer anderen Stelle wurde ein Verbot aber schon verlängert, weil dort gefährlich geparkt wurde.",
+      "lebenslage": [],
       "bezirk": [
         "III-Nordost"
       ],
-      "ort": [],
-      "anlass": [
-        "Verkehrsplanung"
+      "ort": [
+        "Hans-Peter-Müller-Straße"
       ],
-      "entwurf": true
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "entwurf": false
     },
     "bza:13298#Ö 3.9": {
       "klartext_titel": "Schneller Weg",
@@ -7569,30 +7695,40 @@
       "klartext_leicht": "Bezirks-Ausschuss III-Nordost: Schneller Weg."
     },
     "bza:13298#Ö 3.10": {
-      "klartext_titel": "Verbesserung Gemeinschaftsunterkünfte 2024-03-033",
-      "klartext": "",
+      "klartext_titel": "Gemeinschaftsunterkunft Schollstraße: Tag der offenen Tür vor Eröffnung geplant",
+      "klartext": "Auf Bitte des Bezirksausschusses um regelmäßigen Bürgerdialog zur geplanten Gemeinschaftsunterkunft der Regierung von Oberbayern in der Schollstraße kündigt die Regierung kurz vor der Eröffnung einen Tag der offenen Tür an, bei dem Bürger:innen die Unterkunft besichtigen und Mitarbeitende Fragen beantworten können. Im laufenden Betrieb stehen zudem eine ständige Verwaltungsleitung, ein Hausmeister und ein Unterkunftskoordinator für Anliegen der Stadt und der Nachbarschaft zur Verfügung.",
+      "klartext_titel_leicht": "Eine neue Unterkunft öffnet ihre Türen vorher",
+      "klartext_leicht": "In der Schollstraße entsteht eine neue Unterkunft für geflüchtete Menschen. Bürger:innen hatten Fragen dazu. Kurz vor der Eröffnung gibt es deshalb einen Tag der offenen Tür. Dort kann man sich alles ansehen und Fragen stellen.",
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "bezirk": [
+        "III-Nordost"
+      ],
+      "ort": [
+        "Schollstraße"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "bza:13298#Ö 3.11": {
+      "klartext_titel": "Keine Staudenpflanzung an der Nürnberger Straße",
+      "klartext": "Die Fläche an der Nürnberger Straße soll wie die Umgebung als einheitliche Rasenfläche mit Bäumen erhalten bleiben. Eine gewünschte Staudenpflanzung eignet sich laut Gartenamt eher für größere Flächen wie Parks und wäre zudem mit höherem Pflegeaufwand und Kosten verbunden; die Verwaltung bietet an, alternative Vorschläge zu prüfen.",
+      "klartext_titel_leicht": "Keine bunten Blumenbeete an der Nürnberger Straße",
+      "klartext_leicht": "An der Nürnberger Straße sollten bunte Stauden-Blumen gepflanzt werden. Das lehnt die Stadt ab. Solche Blumen brauchen viel Pflege. Die Fläche bleibt deshalb eine Wiese mit Bäumen.",
       "lebenslage": [],
       "bezirk": [
         "III-Nordost"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
-    },
-    "bza:13298#Ö 3.11": {
-      "klartext_titel": "Begrünung Nürnberger Straße 2024-03-013",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
+      "ort": [
+        "Nürnberger Straße"
       ],
-      "bezirk": [
-        "III-Nordost"
-      ],
-      "ort": [],
       "anlass": [
         "Grün & Sauberkeit"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13298#Ö 3.12": {
       "klartext_titel": "Fahrbahnsanierung Goethestr.",
@@ -7612,19 +7748,21 @@
       "klartext_leicht": "Bezirks-Ausschuss III-Nordost: Fahrbahnsanierung Goethestr.."
     },
     "bza:13298#Ö 3.13": {
-      "klartext_titel": "Parken Schölnhammerstr. 2024-03-038-40",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Haltverbot Schölnhammerstraße wird angepasst statt ausgeweitet",
+      "klartext": "Weder Polizei noch VGI sehen in der Schölnhammerstraße Probleme durch parkende Fahrzeuge oder LKWs, auch der Verkehrsüberwachungsdienst stellte bei zwei Kontrollen keine Verstöße fest. Nach internen Rückmeldungen zu gelegentlichen Parkverstößen ändert die Verwaltung dennoch die Länge des bestehenden Haltverbots: Es beginnt künftig an der Kreuzung Römer-/Schölnhammerstraße und endet nach der Zufahrt zum Audi-Grundstück.",
+      "klartext_titel_leicht": "Das Halteverbot in einer Straße wird angepasst",
+      "klartext_leicht": "In der Schölnhammerstraße gibt es manchmal Parkprobleme. Die Polizei hat aber kaum Verstöße gefunden. Das bestehende Halteverbot wird trotzdem etwas verändert. Es gilt jetzt an einer anderen Stelle.",
+      "lebenslage": [],
       "bezirk": [
         "III-Nordost"
       ],
-      "ort": [],
+      "ort": [
+        "Schölnhammerstraße"
+      ],
       "anlass": [
         "Verkehrsplanung"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13298#Ö 3.14": {
       "klartext_titel": "Kleinspielfeld Augrabenpark",
@@ -20665,6 +20803,32 @@
       "entwurf": false
     },
     "bza:13578#Ö 2": {
+      "klartext_titel": "Stellungnahmen der Stadt zu mehreren Bürgeranfragen",
+      "klartext": "Im Bezirksausschuss X-Süd standen mehrere Stellungnahmen der Stadtverwaltung zu einzelnen Bürgeranfragen auf der Tagesordnung.",
+      "klartext_titel_leicht": "Die Stadt antwortet auf mehrere Fragen",
+      "klartext_leicht": "Im Bezirks-Ausschuss X-Süd gab es mehrere Antworten der Stadt. Sie betrafen einzelne Fragen von Bürger:innen.",
+      "lebenslage": [],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": false
+    },
+    "bza:13346#Ö 2": {
+      "klartext_titel": "Stellungnahmen der Stadt zu mehreren Bürgeranfragen",
+      "klartext": "Im Bezirksausschuss X-Süd standen mehrere Stellungnahmen der Stadtverwaltung zu einzelnen Bürgeranfragen auf der Tagesordnung.",
+      "klartext_titel_leicht": "Die Stadt antwortet auf mehrere Fragen",
+      "klartext_leicht": "Im Bezirks-Ausschuss X-Süd gab es mehrere Antworten der Stadt. Sie betrafen einzelne Fragen von Bürger:innen.",
+      "lebenslage": [],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": false
+    },
+    "bza:13344#Ö 2": {
       "klartext_titel": "Stellungnahmen der Stadt zu mehreren Bürgeranfragen",
       "klartext": "Im Bezirksausschuss X-Süd standen mehrere Stellungnahmen der Stadtverwaltung zu einzelnen Bürgeranfragen auf der Tagesordnung.",
       "klartext_titel_leicht": "Die Stadt antwortet auf mehrere Fragen",
