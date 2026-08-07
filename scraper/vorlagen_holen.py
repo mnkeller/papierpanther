@@ -2,12 +2,14 @@
 """
 Holt die naechste Portion Vorlagentexte zur Kuration.
 
-    python3 vorlagen_holen.py --max 30          # Portion holen
-    python3 vorlagen_holen.py --max 30 --liste  # nur zeigen, nichts laden
+    python3 vorlagen_holen.py --max 30                # Portion Stadtrat holen
+    python3 vorlagen_holen.py --max 30 --quelle bza   # Portion Bezirksausschuesse holen
+    python3 vorlagen_holen.py --max 30 --liste         # nur zeigen, nichts laden
 
-Waehlt Themen aus Stadtrat und Fachausschuessen, die noch keinen Klartext
-haben. Ein Thema ist eine Vorlage, nicht ein Tagesordnungspunkt — dieselbe
-Vorlage laeuft durch mehrere Gremien und braucht trotzdem nur einen Text.
+Waehlt Themen aus Stadtrat und Fachausschuessen (oder, mit --quelle bza, aus
+den Bezirksausschuessen), die noch keinen Klartext haben. Ein Thema ist eine
+Vorlage, nicht ein Tagesordnungspunkt — dieselbe Vorlage laeuft durch mehrere
+Gremien und braucht trotzdem nur einen Text.
 
 Geladen wird ausschliesslich das Hauptdokument, keine Anlagen. Anlagen sind
 Plaene, Tabellen und Gutachten; sie vervielfachen die Textmenge, ohne die
@@ -96,6 +98,8 @@ def pdf_text(url):
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--max", type=int, default=25, help="wie viele Themen")
+    ap.add_argument("--quelle", choices=["stadt", "bza"], default="stadt",
+                     help="welche Gremienebene (Default: stadt)")
     ap.add_argument("--liste", action="store_true", help="nur zeigen")
     args = ap.parse_args()
 
@@ -119,7 +123,7 @@ def main():
     # Themen sammeln
     themen = collections.defaultdict(list)
     for s in roh["sitzungen"]:
-        if s.get("quelle") != "stadt" or ist_beteiligung(s["gremium"]):
+        if s.get("quelle", "stadt") != args.quelle or ist_beteiligung(s["gremium"]):
             continue
         for t in s["tops"]:
             if not t["oeffentlich"] or t["verfahren"]:
@@ -127,12 +131,16 @@ def main():
             if len(t["titel"]) < 12 or ist_sammelueberschrift(t["titel"]):
                 continue
             # TOPs ohne eigene Ö-Nummer (Aenderungsantraege, Stellungnahmen der
-            # Verwaltung "hierzu") teilen sich alle denselben Ref "stadt:<id>#Ö"
+            # Verwaltung "hierzu") teilen sich alle denselben Ref "<quelle>:<id>#Ö"
             # und lassen sich darum nicht einzeln referenzieren; sie werden mit
             # ihrem uebergeordneten, nummerierten TOP mitkuratiert.
             if t["nr"].strip() == "Ö":
                 continue
-            schluessel = thema_schluessel("stadt", t)
+            schluessel = thema_schluessel(args.quelle, t)
+            if not schluessel and args.quelle == "bza":
+                # BZA-Punkte haben keine Vorlagennummer und laufen nicht durch
+                # mehrere Gremien — jeder TOP ist sein eigenes Thema.
+                schluessel = f'{args.quelle}:{s["id"]}#{t["nr"]}'
             if schluessel and schluessel not in erledigt:
                 themen[schluessel].append((s, t))
 
@@ -164,7 +172,7 @@ def main():
         haupt = [d for d in t["dokumente"] if not IST_ANLAGE.match(d["titel"])]
         eintrag = {
             "thema": schluessel,
-            "ref": f'stadt:{s["id"]}#{t["nr"]}',
+            "ref": f'{args.quelle}:{s["id"]}#{t["nr"]}',
             "datum": s["datum"],
             "gremium": s["gremium"],
             "amtlicher_titel": t["titel"],
