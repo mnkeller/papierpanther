@@ -27,17 +27,17 @@
     "sitzungen_ausgelesen": 360,
     "tops_ausgelesen": 3415,
     "tops_verfahren": 493,
-    "tops_kuratiert": 1358,
-    "entwuerfe": 34,
-    "leichte_sprache": 1305,
+    "tops_kuratiert": 1359,
+    "entwuerfe": 5,
+    "leichte_sprache": 1335,
     "je_quelle": {
       "stadt": 505,
-      "bza": 853
+      "bza": 854
     },
     "stand": {
       "Bekanntgabe": 112,
       "Entscheidung angesetzt": 376,
-      "Ohne Vorlage": 861,
+      "Ohne Vorlage": 862,
       "Wird noch beraten": 9
     }
   },
@@ -73133,20 +73133,20 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11489"
         }
       ],
-      "klartext_titel": "Wertinger/Schwäblstr. Bewohnerparkausweis 2023 04 040",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [
-        "Wohnen & Miete",
-        "Unterwegs"
-      ],
+      "klartext_titel": "Kein Bewohnerparkausweis für Wertinger-/Schwäblstraße",
+      "klartext": "Die Einrichtung eines Bewohnerparkgebiets in Wertinger- und Schwäblstraße lehnt die Verwaltung ab. Eine Voraussetzung dafür wäre eine erhebliche Belastung durch Fremdverkehr wie Berufspendler; nach erster Analyse werden aber mehr als 50 Prozent der Parkplätze bereits von Anwohnenden selbst belegt. Da der Parkraum schon für die Bewohner knapp ist, wäre ein Bewohnerparkgebiet nicht zielführend und rechtswidrig; wegen der Haushaltslage sind auch keine weiteren Untersuchungen geplant.",
+      "klartext_titel_leicht": "Keinen Bewohner-Parkausweis für Wertinger- und Schwäblstraße",
+      "klartext_leicht": "In der Wertinger- und der Schwäblstraße wurde ein Bewohner-Parkausweis gewünscht. Damit dürften nur Anwohner dort parken. Die Stadt lehnt das ab. Der Grund: Es parken schon jetzt vor allem Anwohner in den Straßen. Ein Bewohner-Parkausweis wäre deshalb nicht erlaubt.",
+      "lebenslage": [],
       "bezirk": [
         "IV-Südost"
       ],
-      "anlass": [],
+      "anlass": [
+        "Verkehrsplanung",
+        "Satzung & Regeln"
+      ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -73181,17 +73181,22 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11489"
         }
       ],
-      "klartext_titel": "Auwaldsee – Gewässeraufsicht 2024 04 030",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "klartext_titel": "Neue Container-Wachstation für die Wasserwacht am Auwaldsee bis Badesaison 2025",
+      "klartext": "Mit dem Abriss der „Blauen Lagune“ im Herbst 2024 verliert die BRK-Wasserwacht ihre bisherigen Räume am Auwaldsee. Als Ersatz entsteht eine Containerwache mit Aufenthaltsraum und Sanitäreinrichtungen, deren begehbares Dach künftig eine bessere Gewässeraufsicht ermöglichen soll. Die Errichtung soll bis zur Badesaison 2025 abgeschlossen sein.",
+      "klartext_titel_leicht": "Neue Wach-Station für die Wasserwacht am Auwaldsee",
+      "klartext_leicht": "Am Auwaldsee wird ein altes Gebäude abgerissen, die „Blaue Lagune“. Dort war bisher die Wasserwacht untergebracht. Sie passt auf Schwimmer im See auf. Jetzt bekommt die Wasserwacht einen neuen Container. Er soll bis zum Sommer 2025 fertig sein.",
       "lebenslage": [],
       "bezirk": [
         "IV-Südost"
       ],
-      "anlass": [],
-      "ort": [],
-      "entwurf": true,
+      "anlass": [
+        "Konzept & Planung",
+        "Sicherheit"
+      ],
+      "ort": [
+        "Auwaldsee"
+      ],
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -73226,17 +73231,21 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11489"
         }
       ],
-      "klartext_titel": "Auwaldsee – Getränkeautomaten Blaue Lagune 2024 04 12",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "klartext_titel": "Kein Getränkeautomat am Auwaldsee-Ufer geplant",
+      "klartext": "Ein Getränkeautomat am Ufer der Blauen Lagune am Auwaldsee ist derzeit nicht möglich, da die nötige Infrastruktur wie Stromversorgung und Fundament fehlt und Diebstahl- sowie Vandalismusrisiko bestehen. Die Verwaltung will die Idee nach dem Abriss des Gebäudes und im Rahmen der Neukonzeption des nördlichen Ufergeländes neu bewerten, etwa falls dort ein Café oder Kiosk entsteht.",
+      "klartext_titel_leicht": "Kein Getränke-Automat am Auwaldsee",
+      "klartext_leicht": "Am Auwaldsee wurde ein Getränke-Automat gewünscht. Das geht gerade nicht. Es fehlt zum Beispiel Strom dafür. Außerdem könnte er beschädigt oder bestohlen werden. Später wird das Ufer neu gestaltet. Dann schaut sich die Stadt die Idee noch einmal an.",
       "lebenslage": [],
       "bezirk": [
         "IV-Südost"
       ],
-      "anlass": [],
-      "ort": [],
-      "entwurf": true,
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [
+        "Auwaldsee"
+      ],
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -73311,17 +73320,23 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11489"
         }
       ],
-      "klartext_titel": "Monika – Stadtteiltreff – Bufdis 2024 04 033",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [],
+      "klartext_titel": "Kein Bundesfreiwilliger für die Interessengemeinschaft im Monikaviertel",
+      "klartext": "Der ab Oktober 2024 im Stadtteiltreff Augustinviertel eingesetzte Bundesfreiwilligendienstleistende kann die IG Lebensqualität St. Monika nicht zusätzlich unterstützen, da er dort bereits ausgelastet ist. Bewohnende des Monikaviertels können aber weiterhin die Angebote des Stadtteiltreffs Augustinviertel nutzen; in den neuen Räumen der GWG sollen künftig eigene Räume für die Quartiersarbeit im Monikaviertel entstehen.",
+      "klartext_titel_leicht": "Kein zusätzlicher Helfer für die Interessengemeinschaft Monikaviertel",
+      "klartext_leicht": "Im Monikaviertel gibt es eine Bürger-Gruppe, die IG Lebensqualität St. Monika. Sie wollte Unterstützung von einem Bundes-Freiwilligen. Das geht gerade nicht, weil er schon woanders viel zu tun hat. Die Bewohner können aber weiter die Angebote im Augustinviertel nutzen. Später soll es eigene Räume im Monikaviertel geben.",
+      "lebenslage": [
+        "Senior:innen"
+      ],
       "bezirk": [
         "IV-Südost"
       ],
-      "anlass": [],
-      "ort": [],
-      "entwurf": true,
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [
+        "Monikaviertel"
+      ],
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -73356,21 +73371,22 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11489"
         }
       ],
-      "klartext_titel": "Odilostr/Mühlanger – Verkehrssituation 2023 04 048",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "klartext_titel": "Kein Warnblinklicht an der Bushaltestelle Tassilostraße, keine Tempo-30-Schilder Am Mühlanger",
+      "klartext": "Für die Bushaltestelle Tassilostraße lehnt die Verwaltung ein Warnblinklicht ab, da in den letzten 3,5 Jahren keine Unfälle zwischen Fußgängern und Kraftfahrzeugen registriert wurden und eine nahe Kindertagesstätte laut Vorschrift kein ausreichender Grund ist. Auch in der Straße Am Mühlanger sieht die Verwaltung keine Gefahrensituation, die eine weitere Maßnahme rechtfertigen würde; eine „freiwillig Tempo 30“-Beschilderung ist zudem kein amtliches Verkehrszeichen und wird nicht angeordnet.",
+      "klartext_titel_leicht": "Keine neuen Schilder an der Odilostraße und Am Mühlanger",
+      "klartext_leicht": "An der Bushaltestelle Tassilostraße wurde ein Warnlicht gewünscht. Die Stadt lehnt das ab. Es gab dort keine Unfälle. Auch in der Straße Am Mühlanger sieht die Stadt keine Gefahr. Ein Tempo-30-Schild zum Freiwillig-Fahren gibt es offiziell nicht, deshalb kommt auch das nicht.",
       "lebenslage": [
-        "Unterwegs"
+        "Eltern & Kinder"
       ],
       "bezirk": [
         "IV-Südost"
       ],
       "anlass": [
-        "Verkehrsplanung"
+        "Verkehrsplanung",
+        "Sicherheit"
       ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -73405,13 +73421,11 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11489"
         }
       ],
-      "klartext_titel": "Pettenkoferstr – Tempo 30 Schild – 2024 04 038",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Tempo-30-Beschilderung in der Pettenkoferstraße gilt als ausreichend",
+      "klartext": "Die Beschilderung „Beginn einer Tempo-30-Zone“ beim Einbiegen von der Manchinger Straße in die Pettenkoferstraße ist laut Verwaltung gut sichtbar angebracht; ein zusätzliches „30“-Piktogramm auf der Fahrbahn wenige Meter dahinter verdeutlicht die Regelung zusätzlich.",
+      "klartext_titel_leicht": "Tempo-30-Schild in der Pettenkoferstraße bleibt wie es ist",
+      "klartext_leicht": "In der Pettenkoferstraße wurde nach dem Tempo-30-Schild gefragt. Die Stadt findet es gut sichtbar. Auf der Straße steht außerdem noch eine große 30 gemalt. Das reicht laut Stadt aus.",
+      "lebenslage": [],
       "bezirk": [
         "IV-Südost"
       ],
@@ -73419,7 +73433,7 @@
         "Verkehrsplanung"
       ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -73454,10 +73468,10 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11489"
         }
       ],
-      "klartext_titel": "Südliche Ringstr – Radweg Manchinger/Asamstr ostseitig 2024 04 037",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "klartext_titel": "Radweg an der südlichen Ringstraße bleibt nur einseitig befahrbar",
+      "klartext": "Der Radweg auf der Ostseite der südlichen Ringstraße zwischen Manchinger und Asamstraße war während einer Baustelle temporär für beide Fahrtrichtungen freigegeben. Nach Ende der Baustelle wurde diese Regelung wieder aufgehoben, da der Weg mit knapp über 2 Metern die gesetzlich geforderte Mindestbreite von 2,50 Metern für einen Zweirichtungsradweg nicht erreicht und eine dauerhafte Freigabe daher rechtlich nicht möglich ist.",
+      "klartext_titel_leicht": "Radweg an der südlichen Ringstraße bleibt einseitig",
+      "klartext_leicht": "An der südlichen Ringstraße durften Rad-Fahrer während einer Baustelle in beide Richtungen fahren. Das war nur für die Bauzeit gedacht. Jetzt gilt wieder die alte Regel. Der Radweg ist zu schmal für beide Richtungen gleichzeitig. Das schreibt das Gesetz vor.",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -73468,7 +73482,7 @@
         "Verkehrsplanung"
       ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -73547,13 +73561,11 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11489"
         }
       ],
-      "klartext_titel": "Albrecht-Dürer-Str. - Streuobstwiesen 2023 04 015",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Keine abgestorbenen Bäume an der Streuobstwiese Albrecht-Dürer-Straße gefunden",
+      "klartext": "Bei der von Bezirksausschussmitgliedern gemeldeten Streuobstwiese an der Albrecht-Dürer-Straße konnte das Gartenamt bei einer Vor-Ort-Prüfung keine abgestorbenen Obstbäume feststellen. Die Verwaltung bittet um Mitteilung, falls eine andere Fläche gemeint war.",
+      "klartext_titel_leicht": "Bäume an der Streuobstwiese Albrecht-Dürer-Straße sind nicht vertrocknet",
+      "klartext_leicht": "An der Streuobstwiese Albrecht-Dürer-Straße wurden vertrocknete Bäume gemeldet. Das Garten-Amt hat nachgeschaut. Es hat keine toten Bäume gefunden. Vielleicht war eine andere Fläche gemeint.",
+      "lebenslage": [],
       "bezirk": [
         "IV-Südost"
       ],
@@ -73561,7 +73573,7 @@
         "Grün & Sauberkeit"
       ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -73596,17 +73608,22 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11489"
         }
       ],
-      "klartext_titel": "Klenzepark – Stangenabsperrung 2024 04 027",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "klartext_titel": "Stangenabsperrung im Klenzepark schützt Natur und markiert unsichere Wege",
+      "klartext": "Die Stangenabsperrung um die Festungsbauten im Klenzepark soll der Natur einen Rückzugsort geben. Zudem handelt es sich bei den abgesperrten Flächen nicht um öffentliche, gesicherte Wege; Absperrung und Schilder sollen verdeutlichen, dass diese nicht gefahrlos begehbar sind.",
+      "klartext_titel_leicht": "Absperrung im Klenzepark bleibt zum Schutz von Natur und Besuchern",
+      "klartext_leicht": "Im Klenzepark gibt es Stangen als Absperrung um alte Festungsmauern. Dahinter soll die Natur in Ruhe wachsen können. Die Wege dort sind außerdem nicht sicher zum Begehen. Die Absperrung und die Schilder warnen davor.",
       "lebenslage": [],
       "bezirk": [
         "IV-Südost"
       ],
-      "anlass": [],
-      "ort": [],
-      "entwurf": true,
+      "anlass": [
+        "Grün & Sauberkeit",
+        "Sicherheit"
+      ],
+      "ort": [
+        "Klenzepark"
+      ],
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -73681,17 +73698,22 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11489"
         }
       ],
-      "klartext_titel": "ERCI – Ausstattung 2024 04 014",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [],
+      "klartext_titel": "Sportamt befürwortet Ballettausstattung für Eiskunstlauf-Abteilung des ERC Ingolstadt Panther",
+      "klartext": "Für die Eiskunstlauf-Abteilung des ERC Ingolstadt Panther e.V. sollen aus dem Bürgerhaushalt 2024 Sportgeräte wie Sprossenwand und Ballettstange angeschafft werden. Das Amt für Sport und Freizeit befürwortet den Kauf, da Ballett-Elemente wichtig für Gleichgewicht, Kraft, Koordination und Streckung im Eiskunstlauf sind.",
+      "klartext_titel_leicht": "Geld für neue Trainingsgeräte beim ERC Ingolstadt Panther",
+      "klartext_leicht": "Die Eiskunstlauf-Abteilung vom ERC Ingolstadt Panther möchte neue Trainingsgeräte kaufen. Zum Beispiel eine Stange zum Üben von Ballett-Bewegungen. Das Sport-Amt der Stadt findet das gut. Ballett hilft beim Eiskunstlauf, zum Beispiel für das Gleichgewicht.",
+      "lebenslage": [
+        "Jugend",
+        "Freizeit & Sport"
+      ],
       "bezirk": [
         "IV-Südost"
       ],
-      "anlass": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -73766,17 +73788,23 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11489"
         }
       ],
-      "klartext_titel": "Halle neun – Parcouranlage 2023 04 028 B",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [],
-      "bezirk": [
-        "IV-Südost"
+      "klartext_titel": "Parcoursanlage an der Halle Neun war für 2024/25 detailliert geplant",
+      "klartext": "Für rund 319.000 Euro war eine 360 Quadratmeter große Parcoursanlage an der Halle Neun geplant, finanziert über die Bürgerhaushalte der Bezirksausschüsse IV-Südost und XII-Münchener Straße sowie Mittel des Gartenamts. Weil das Baugelände als ehemaliges Bombenziel des Zweiten Weltkriegs kontaminiert ist, sollte die Fläche komplett mit einer abdichtenden Betonplatte versehen werden, die zugleich als Bodenbelag dient; Baubeginn war für Oktober 2024, Fertigstellung für Frühjahr 2025 vorgesehen. Die Deutsche Bahn als Grundstückseigentümerin lehnte den Bauantrag jedoch später aus Sicherheitsgründen ab, sodass das Projekt inzwischen nicht mehr weiterverfolgt wird.",
+      "klartext_titel_leicht": "Parcours-Anlage an der Halle Neun war schon fertig geplant",
+      "klartext_leicht": "An der Halle Neun sollte eine große Parcours-Anlage zum Sport machen entstehen. Der Plan war schon sehr genau: Kosten, Größe, Bauzeit — alles stand fest. Der Bau sollte im Herbst 2024 beginnen. Später hat die Deutsche Bahn aber Nein gesagt. Ihr gehört das Grundstück. Sie hatte Sicherheits-Bedenken. Die Parcours-Anlage wird deshalb doch nicht gebaut.",
+      "lebenslage": [
+        "Freizeit & Sport",
+        "Jugend"
       ],
-      "anlass": [],
+      "bezirk": [
+        "IV-Südost",
+        "XII-Münchener Straße"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -73819,19 +73847,20 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11489"
         }
       ],
-      "klartext_titel": "Wertingerstr – Grünstreifen 2023 04 010 B",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "klartext_titel": "Gestaltungsvorschlag für Grünfläche Südliche Ringstraße/Wertinger Straße: zwei Bäume und eine Bank",
+      "klartext": "Für die Grünfläche an der Ecke Südliche Ringstraße/Wertinger Straße schlägt das Gartenamt die Pflanzung von zwei Amerikanischen Stadtlinden sowie das Aufstellen einer Sitzbank vor. Die geschätzten Kosten für die Gesamtmaßnahme liegen bei 5.000 Euro.",
+      "klartext_titel_leicht": "Zwei neue Bäume und eine Bank an der Wertinger Straße geplant",
+      "klartext_leicht": "An der Ecke Südliche Ringstraße und Wertinger Straße soll es grüner werden. Das Garten-Amt schlägt zwei neue Bäume vor. Dazu soll eine Sitzbank kommen. Das Ganze kostet etwa 5.000 Euro.",
       "lebenslage": [],
       "bezirk": [
         "IV-Südost"
       ],
       "anlass": [
-        "Grün & Sauberkeit"
+        "Grün & Sauberkeit",
+        "Gebühren & Preise"
       ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -74332,19 +74361,22 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11865"
         }
       ],
-      "klartext_titel": "Bürgerhaushalt – Beratung und Entscheidungen",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [],
+      "klartext_titel": "Bürgerhaushalt Nordwest 2025: erste 35.000 Euro von 87.000 Euro verplant",
+      "klartext": "Von den 87.000 Euro des Bürgerhaushalts 2025 für den Bezirk II-Nordwest waren zu diesem frühen Zeitpunkt 35.000 Euro verplant: für Sonnenschirme im Essensbereich der Christoph-Kolumbus-Schule und Indoor-Spielburgen für die Kita Sternenhaus. Rund 52.000 Euro standen zu diesem Zeitpunkt noch als Restmittel zur Verfügung.",
+      "klartext_titel_leicht": "Bürgerhaushalt Nordwest 2025: erst ein Teil verplant",
+      "klartext_leicht": "Der Bezirk Nordwest hat 2025 87.000 Euro für kleine Projekte. Zu diesem Zeitpunkt waren erst 35.000 Euro verplant. Zum Beispiel für Sonnenschirme an einer Schule und für eine Kita. Etwa 52.000 Euro waren noch übrig.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
       "bezirk": [
         "II-Nordwest"
       ],
       "anlass": [
-        "Gebühren & Preise"
+        "Gebühren & Preise",
+        "Konzept & Planung"
       ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -74421,19 +74453,20 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11865"
         }
       ],
-      "klartext_titel": "aktueller Stand BHH 2024",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "klartext_titel": "Bürgerhaushalt Nordwest 2024: früherer Zwischenstand mit rund 96.700 von 130.000 Euro verplant",
+      "klartext": "Zu einem früheren Zeitpunkt waren vom Bürgerhaushalt 2024 des Bezirks II-Nordwest mit 130.000 Euro Ansatz erst 96.771 Euro verplant, rund 33.228 Euro standen noch als Restmittel zur Verfügung. Umgesetzt waren zu diesem Zeitpunkt bereits unter anderem die Zaunanlage für den Imkerverein Piuspark und das Graffiti-Projekt der Jugendfreizeitstätte Piustreff.",
+      "klartext_titel_leicht": "Bürgerhaushalt Nordwest 2024: früherer Zwischenstand",
+      "klartext_leicht": "Der Bezirk Nordwest hatte 2024 130.000 Euro für kleine Projekte. Zu diesem früheren Zeitpunkt waren erst knapp 97.000 Euro verplant. Etwa 33.000 Euro waren noch übrig. Fertig war zum Beispiel schon ein Zaun für den Imkerverein.",
       "lebenslage": [],
       "bezirk": [
         "II-Nordwest"
       ],
       "anlass": [
-        "Gebühren & Preise"
+        "Gebühren & Preise",
+        "Konzept & Planung"
       ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -75171,21 +75204,23 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11452"
         }
       ],
-      "klartext_titel": "Verkehrsregelung am Katharinengymnasium",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "klartext_titel": "Kein Tempo 20 und kein Halteverbot am Katharinen-Gymnasium",
+      "klartext": "Rund um das Katharinen-Gymnasium gilt bereits Tempo 30, ergänzt um Fußgängerüberwege in Jesuitenstraße und der Straße Auf der Schanz. Eine weitere Reduzierung auf Tempo 20 lehnt die Verwaltung mangels erkennbarer Gefahrensituation ab, ebenso ein absolutes Haltverbot: Der Wegfall der Kurzpark-, Bewohner- und Behindertenplätze würde den ohnehin hohen Parkdruck in der Altstadt verschärfen, während parkende Autos in der Tempo-30-Zone sogar eine verkehrsberuhigende Wirkung haben.",
+      "klartext_titel_leicht": "Keine neuen Verkehrs-Regeln am Katharinen-Gymnasium",
+      "klartext_leicht": "Am Katharinen-Gymnasium gilt schon Tempo 30. Manche wollten Tempo 20 und ein Halte-Verbot für Parkplätze. Die Stadt lehnt beides ab. Es gibt schon Zebrastreifen für die Schulkinder. Parkplätze wegzunehmen würde den Parkdruck in der Altstadt nur noch größer machen.",
       "lebenslage": [
-        "Unterwegs"
+        "Eltern & Kinder",
+        "Jugend"
       ],
       "bezirk": [
         "I-Mitte"
       ],
       "anlass": [
-        "Verkehrsplanung"
+        "Verkehrsplanung",
+        "Sicherheit"
       ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -75220,17 +75255,21 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11452"
         }
       ],
-      "klartext_titel": "Strömungstisch Innenstadt - Stellungnahme 2018-01-008",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [],
+      "klartext_titel": "Strömungstisch in der Innenstadt weicht einem Trinkwasserspender",
+      "klartext": "Der Strömungstisch in der Innenstadt wird abgebaut und durch einen Trinkwasserspender der INKB ersetzt, ein verbindlicher Aufbautermin steht noch nicht fest. Der abgebaute Wassertisch wird beim Gartenamt zwischengelagert; eine Weiterverwendung als Matschtisch in Kitas erscheint der Verwaltung wenig geeignet, Vorschläge werden aber geprüft.",
+      "klartext_titel_leicht": "Strömungstisch in der Innenstadt wird zu Trinkwasserspender",
+      "klartext_leicht": "In der Innenstadt gibt es einen Strömungstisch mit Wasser zum Spielen. Er wird abgebaut. Stattdessen kommt ein Trinkwasserspender. Wann genau, steht noch nicht fest. Der alte Wassertisch wird erst einmal beim Garten-Amt gelagert.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
       "bezirk": [
         "I-Mitte"
       ],
-      "anlass": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -75939,17 +75978,22 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11452"
         }
       ],
-      "klartext_titel": "MTV Großgeräte - Stellungnahme 2024-01-012",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [],
+      "klartext_titel": "Sportamt befürwortet Turngeräte für den MTV 1881 Ingolstadt",
+      "klartext": "Für die Turnabteilung des MTV 1881 Ingolstadt e.V. sollen Weichbodenmatten, ein Bodenturnläufer und ein Trainingswürfel aus dem Bürgerhaushalt angeschafft werden. Nach einem gemeinsamen Ortstermin zur Klärung von Nutzung und Lagerung befürwortet das Amt für Sport und Freizeit die Anschaffung.",
+      "klartext_titel_leicht": "Geld für neue Turngeräte beim MTV 1881 Ingolstadt",
+      "klartext_leicht": "Die Turnabteilung vom MTV 1881 Ingolstadt möchte neue Geräte kaufen. Zum Beispiel weiche Matten zum Landen. Ein Termin vor Ort hat gezeigt: Es passt. Das Sport-Amt der Stadt findet die Anschaffung gut.",
+      "lebenslage": [
+        "Jugend",
+        "Freizeit & Sport"
+      ],
       "bezirk": [
         "I-Mitte"
       ],
-      "anlass": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -76026,19 +76070,19 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11788"
         }
       ],
-      "klartext_titel": "Bücherschrank Uhlandstr. 2022-03-009",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Bücherschrank an der Ecke Uhlandstraße/Kleiststraße wird direkt an der Mauer aufgestellt",
+      "klartext": "Die Verwaltung stimmt dem gewünschten Standort für einen öffentlichen Bücherschrank an der Ecke Uhlandstraße/Kleiststraße zu. Er wird direkt an der Mauer angebracht, um Platz zu sparen und die Sichtverhältnisse im Straßenverkehr nicht zu beeinträchtigen; bei erkanntem Sicherheitsrisiko muss er wieder abgebaut werden.",
+      "klartext_titel_leicht": "Neuer Bücherschrank an der Uhlandstraße kommt an die Mauer",
+      "klartext_leicht": "An der Ecke Uhlandstraße und Kleiststraße kommt ein öffentlicher Bücherschrank hin. Jeder darf sich dort Bücher nehmen oder welche hineinstellen. Er kommt direkt an eine Mauer. So stört er den Verkehr nicht. Wird er doch zum Problem, muss er wieder weg.",
+      "lebenslage": [],
       "bezirk": [
         "III-Nordost"
       ],
-      "anlass": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -76073,13 +76117,11 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11788"
         }
       ],
-      "klartext_titel": "Begrünung Nürnberger Str. 2024-03-013",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Keine Baumpflanzung an der Kreuzung Nürnberger Straße/Eichendorffstraße möglich",
+      "klartext": "Die Grünfläche an der Kreuzung Nürnberger Straße/Eichendorffstraße ist von Wasser-, Elektro- und Abwasserleitungen unterquert; nach Rücksprache mit INKB und Stadtwerken dürfen dort keine Bäume gepflanzt werden. Die Verwaltung bittet um Hinweise zu alternativen Flächen.",
+      "klartext_titel_leicht": "Keine neuen Bäume an der Kreuzung Nürnberger Straße",
+      "klartext_leicht": "An der Kreuzung Nürnberger Straße und Eichendorffstraße sollten Bäume gepflanzt werden. Das geht nicht. Unter der Erde liegen dort viele Leitungen, zum Beispiel für Wasser und Strom. Die Stadt bittet um Vorschläge für andere Flächen.",
+      "lebenslage": [],
       "bezirk": [
         "III-Nordost"
       ],
@@ -76087,7 +76129,7 @@
         "Grün & Sauberkeit"
       ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -76122,19 +76164,19 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11788"
         }
       ],
-      "klartext_titel": "Treppensicherung Lutzstr. 2024-03-006",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Marode Treppe zwischen Theodor-Heuss-Brücke und Lutzstraße ist bereits saniert",
+      "klartext": "Die als marode gemeldete Treppenverbindung zwischen Theodor-Heuss-Brücke und Lutzstraße mit herausgebrochenen Betonstücken und beschädigtem Geländer wurde laut Tiefbauamt inzwischen instand gesetzt.",
+      "klartext_titel_leicht": "Treppe an der Lutzstraße ist schon repariert",
+      "klartext_leicht": "Die Treppe zwischen der Theodor-Heuss-Brücke und der Lutzstraße war kaputt. Steine waren herausgebrochen, das Geländer war beschädigt. Das war gefährlich. Die Stadt hat die Treppe inzwischen repariert.",
+      "lebenslage": [],
       "bezirk": [
         "III-Nordost"
       ],
-      "anlass": [],
+      "anlass": [
+        "Sicherheit"
+      ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -76169,19 +76211,21 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11788"
         }
       ],
-      "klartext_titel": "Sanierung Zugangstreppe Nordbahnhof 2024-03-012",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "klartext_titel": "Zugangstreppe am Nordbahnhof-Ost ist saniert, weitere Treppen sollen folgen",
+      "klartext": "Die dringend sanierungsbedürftige Zugangstreppe auf der Ostseite des Nordbahnhofs wurde laut Tiefbauamt bereits Anfang Juni 2024 nach einer Mängelmeldung saniert. Die Treppenstufen weiterer betroffener Bauwerke sollen in nächster Zeit ebenfalls erneuert werden.",
+      "klartext_titel_leicht": "Treppe am Nordbahnhof-Ost ist schon repariert",
+      "klartext_leicht": "Die Treppe am Nordbahnhof, Ost-Seite, war kaputt und gefährlich. Die Stadt hat sie im Juni 2024 repariert. Andere kaputte Treppen sollen bald auch repariert werden.",
       "lebenslage": [],
       "bezirk": [
         "III-Nordost"
       ],
       "anlass": [
-        "Baustelle"
+        "Sicherheit"
       ],
-      "ort": [],
-      "entwurf": true,
+      "ort": [
+        "Nordbahnhof"
+      ],
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -76216,17 +76260,20 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11788"
         }
       ],
-      "klartext_titel": "Beschrankung Unterhaunstädter Weg 2024-03-019",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "klartext_titel": "Bahnübergang Unterhaunstädter Weg bleibt vorerst wie er ist, Erneuerung erst ab 2026",
+      "klartext": "Der Bahnübergang am Unterhaunstädter Weg liegt an einem privaten Anschlussgleis zum Gunvor-Gelände; für dessen Betrieb ist Gunvor selbst zuständig, nicht die Stadt. Die zuständige DB InfraGo will den Übergang erst nach der Straßensanierung ab 2026 nach aktuellem Regelwerk optimieren. Pfeifsignale der Triebfahrzeuge bleiben laut Verwaltung weiterhin im Ermessen der Triebfahrzeugführenden, etwa wenn sich Verkehrsteilnehmende unvorsichtig verhalten.",
+      "klartext_titel_leicht": "Bahnübergang Unterhaunstädter Weg bleibt vorerst so wie er ist",
+      "klartext_leicht": "Am Unterhaunstädter Weg gibt es einen Bahnübergang. Er gehört nicht der Stadt, sondern einer Firma. Ein Umbau ist erst ab 2026 geplant. Lok-Führer dürfen weiter pfeifen, wenn sie das für nötig halten. Zum Beispiel, wenn sich jemand falsch verhält.",
       "lebenslage": [],
       "bezirk": [
         "III-Nordost"
       ],
-      "anlass": [],
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -76261,19 +76308,20 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11788"
         }
       ],
-      "klartext_titel": "Mobile Anlagen Hundewiese 2024-03-018",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "klartext_titel": "Container und feste Anlagen auf der Hundewiese Wirffelstraße bleiben verboten",
+      "klartext": "Die Hundewiese an der Wirffelstraße liegt im festgesetzten Überschwemmungsgebiet der Donau. Container, Bauwagen oder ähnliche feste Anlagen dürfen dort laut Umweltamt aus wasserrechtlichen Gründen nicht dauerhaft aufgestellt werden, da sie den Wasserabfluss im Hochwasserfall behindern könnten. Erlaubt sind lediglich Schattenspender wie Sonnenschirme oder Tipis, die nach jeder Nutzung sofort wieder abgebaut werden; eine Ausnahmegenehmigung für dauerhafte Anlagen wäre nur mit strengen Auflagen möglich, etwa einer rund um die Uhr erreichbaren verantwortlichen Person für den Hochwasserfall.",
+      "klartext_titel_leicht": "Keine festen Häuschen auf der Hundewiese erlaubt",
+      "klartext_leicht": "Auf der Hundewiese an der Wirffelstraße sollten feste Häuschen oder ein Container aufgestellt werden. Das geht nicht. Die Wiese liegt in einem Gebiet, das bei Hochwasser überflutet werden kann. Feste Bauten würden das Wasser stören. Sonnenschirme oder Zelte darf man aufstellen. Man muss sie danach aber wieder mitnehmen.",
       "lebenslage": [],
       "bezirk": [
         "III-Nordost"
       ],
       "anlass": [
+        "Satzung & Regeln",
         "Grün & Sauberkeit"
       ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -76696,17 +76744,20 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11794"
         }
       ],
-      "klartext_titel": "Etting Friedhofsmauer",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "klartext_titel": "Friedhofsmauer in Etting wird ausgebessert statt komplett erneuert",
+      "klartext": "Die beschädigte Biberschwanz-Abdeckung der Friedhofsmauer in Etting, durch die Regenwasser eindringen kann, wird laut Hochbauamt ausgebessert. Aus Kostengründen werden nicht alle Platten ausgetauscht, sondern nur die lückenhaften Stellen ergänzt; da die ursprünglichen Ziegel nicht mehr lieferbar sind, kommt ähnlicher Ersatz zum Einsatz. Die gesamte Abdeckung wird zudem gereinigt.",
+      "klartext_titel_leicht": "Friedhofsmauer in Etting wird ausgebessert",
+      "klartext_leicht": "Die Mauer am Friedhof in Etting ist an manchen Stellen kaputt. Dort kann Regen eindringen. Die Stadt bessert die kaputten Stellen aus. Ganz neu gemacht wird die Mauer nicht, das würde zu viel kosten. Die ganze Mauer wird außerdem gereinigt.",
       "lebenslage": [],
       "bezirk": [
         "VII-Etting"
       ],
-      "anlass": [],
+      "anlass": [
+        "Grün & Sauberkeit",
+        "Gebühren & Preise"
+      ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -76741,17 +76792,20 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11794"
         }
       ],
-      "klartext_titel": "Grundwassermessungen",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "klartext_titel": "Gutachten zur Wiedervernässung zwischen Retzbach und Haunstätter Bach läuft bis Sommer 2025",
+      "klartext": "Für die Fläche zwischen Retzbach und Haunstätter Bach läuft seit Frühjahr 2024 ein moorhydrogeologisches Gutachten, das die Eignung des Gebiets für eine Anhebung des Grundwasserspiegels und die Renaturierung des Niedermoores prüft. Die Untersuchungen zu Grundwasser, Oberflächenwasser und Niederschlag dauern rund ein Jahr; erst wenn die Ergebnisse im Sommer 2025 vorliegen, kann die Verwaltung dem Bezirksausschuss Etting über mögliche Wiedervernässungskonzepte berichten.",
+      "klartext_titel_leicht": "Untersuchung zum Grundwasser dauert bis Sommer 2025",
+      "klartext_leicht": "Zwischen Retzbach und Haunstätter Bach soll eine Fläche wieder feuchter werden, für die Natur. Dafür läuft seit dem Frühjahr 2024 eine Untersuchung. Sie dauert etwa ein Jahr. Die Ergebnisse kommen im Sommer 2025. Erst dann kann die Stadt mehr dazu sagen.",
       "lebenslage": [],
       "bezirk": [
         "VII-Etting"
       ],
-      "anlass": [],
+      "anlass": [
+        "Klima & Umwelt",
+        "Konzept & Planung"
+      ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -76786,17 +76840,21 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11794"
         }
       ],
-      "klartext_titel": "Neue Formen von Urnengräbern / Doppel- und Einzelgräber",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [],
+      "klartext_titel": "Neue Urnengrab-Formen auf dem Friedhof Etting wegen Platzmangels nicht möglich",
+      "klartext": "Neue, platzintensivere Urnengrab-Formen wie Erdurnengräber in Stern- oder Spiralform sind auf dem eng bebauten Friedhof Etting laut Bestattungsamt nicht umsetzbar, da die vorhandenen Flächen bereits durch Einzel-, Mehrfach- und Urnengräber sowie Urnenwände dicht genutzt sind. Urnen können aber bereits in allen bestehenden Grabarten beigesetzt werden. Von den 32 leeren Gräbern im alten Friedhofsteil können Doppelgräber bedarfsorientiert in zwei Einzelgräber umgewandelt werden; bereits belegte Doppelgräber lassen sich dagegen grundsätzlich nicht umwandeln.",
+      "klartext_titel_leicht": "Keine neuen Grab-Formen auf dem Friedhof Etting möglich",
+      "klartext_leicht": "Auf dem Friedhof Etting wurden neue Formen für Urnen-Gräber gewünscht, zum Beispiel in Stern-Form. Das geht nicht. Der Friedhof ist schon sehr voll. Urnen können aber schon jetzt in allen vorhandenen Grab-Arten bestattet werden. Leere Doppel-Gräber können bei Bedarf in zwei einzelne Gräber aufgeteilt werden.",
+      "lebenslage": [
+        "Senior:innen"
+      ],
       "bezirk": [
         "VII-Etting"
       ],
-      "anlass": [],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -77166,19 +77224,23 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11797"
         }
       ],
-      "klartext_titel": "Fahrradständer beim Zugang Zucheringer Wald und an der Bushaltestelle Hagau",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "klartext_titel": "Fahrradständer am Zugang zum Zucheringer Wald bleibt wie er ist",
+      "klartext": "Der Fahrradständer beim Zugang zum Zucheringer Wald vor der Fußgängerbrücke über die Sandrach ist laut Gartenamt frei zugänglich und benutzbar; die Verwaltung sieht daher keinen Handlungsbedarf.",
+      "klartext_titel_leicht": "Fahrradständer am Zucheringer Wald bleibt wie er ist",
+      "klartext_leicht": "Am Eingang zum Zucheringer Wald steht ein Fahrradständer. Man kann ihn gut benutzen. Die Stadt sieht deshalb keinen Grund, dort etwas zu ändern.",
       "lebenslage": [
         "Unterwegs"
       ],
       "bezirk": [
         "X-Süd"
       ],
-      "anlass": [],
-      "ort": [],
-      "entwurf": true,
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "ort": [
+        "Zuchering"
+      ],
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -77428,19 +77490,20 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11797"
         }
       ],
-      "klartext_titel": "Bürgerhaushalt 2024/25",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "klartext_titel": "Bürgerhaushalt Süd 2024 auch in dieser Sitzung vollständig ausgeschöpft",
+      "klartext": "Auch in dieser Sitzung wurde dem Bezirksausschuss X-Süd der Stand des Bürgerhaushalts 2024 vorgelegt: Der Ansatz von 67.000 Euro ist vollständig verplant, Restmittel bleiben nicht übrig. Umgesetzt wurden unter anderem eine Aufstockung des Bücherschrank-Budgets, ein Zuschuss für die Beleuchtung des Dorfstadels der Freiwilligen Feuerwehr Brunnenreuth und ein Beamer für den Schützenverein Edelweiß Brunnenreuth. Noch offen sind unter anderem die Umgestaltung des Zugangsbereichs Sandrach sowie die Aufwertung von Spielplätzen im Stadtbezirk.",
+      "klartext_titel_leicht": "Bürgerhaushalt Süd 2024 ist ganz aufgebraucht",
+      "klartext_leicht": "Der Bezirk Süd hatte 2024 67.000 Euro für kleine Projekte. Das ganze Geld ist verplant. Diese Übersicht bekam der Bezirks-Ausschuss in dieser Sitzung noch einmal gezeigt. Fertig ist zum Beispiel Geld für die Feuerwehr Brunnenreuth.",
       "lebenslage": [],
       "bezirk": [
         "X-Süd"
       ],
       "anlass": [
-        "Gebühren & Preise"
+        "Gebühren & Preise",
+        "Konzept & Planung"
       ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -77643,19 +77706,23 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11799"
         }
       ],
-      "klartext_titel": "Fußgängerüberweg an der Haunwöhrer Straße auf Höhe der Orbanstraße (2024-05-004)",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "klartext_titel": "Fußgängerüberweg Haunwöhrer Straße/Orbanstraße bleibt trotz geringer Nutzung erhalten",
+      "klartext": "Der Fußgängerüberweg an der Haunwöhrer Straße auf Höhe der Orbanstraße bleibt bestehen. Eine verdeckte Messung außerhalb der Ferienzeit ergab, dass die für eine Fußgängerampel nötige Mindestzahl von 50 querenden Personen pro Stunde auch zu Schulzeiten nicht erreicht wird. Da der Überweg aber einen wichtigen Teil des Schulwegs darstellt, verzichtet die Verwaltung auf dessen Abbau.",
+      "klartext_titel_leicht": "Zebrastreifen an der Haunwöhrer Straße bleibt erhalten",
+      "klartext_leicht": "An der Haunwöhrer Straße bei der Orbanstraße gibt es einen Zebrastreifen. Die Stadt hat gezählt, wie viele Menschen ihn nutzen. Es sind nicht so viele. Für eine Ampel würde das nicht reichen. Weil Schulkinder den Weg aber oft nutzen, bleibt der Zebrastreifen trotzdem.",
       "lebenslage": [
-        "Unterwegs"
+        "Eltern & Kinder",
+        "Jugend"
       ],
       "bezirk": [
         "V-Südwest"
       ],
-      "anlass": [],
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
       "ort": [],
-      "entwurf": true,
+      "entwurf": false,
       "stand": "Ohne Vorlage",
       "stand_datum": "",
       "niederschrift_url": "",
@@ -77894,6 +77961,48 @@
       "datum": "2024-09-24",
       "datum_anzeige": "24.09.2024",
       "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11799",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:11797#Ö 2",
+      "thema": "bza:11797#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2024-09-24",
+          "datum_anzeige": "24.09.2024",
+          "gremium": "Bezirksausschuss X-Süd",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11797"
+        }
+      ],
+      "klartext_titel": "Mehrere Stellungnahmen der Verwaltung im Bezirksausschuss Süd",
+      "klartext": "Im Bezirksausschuss standen mehrere Stellungnahmen der Stadtverwaltung zu einzelnen Bürgeranfragen auf der Tagesordnung.",
+      "klartext_titel_leicht": "Mehrere Antworten der Stadt im Bezirksausschuss Süd",
+      "klartext_leicht": "Im Bezirks-Ausschuss X-Süd hat die Stadt-Verwaltung mehrere Fragen von Bürgern beantwortet. Diese Antworten heißen Stellungnahmen.",
+      "lebenslage": [],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "bza",
+      "amtlicher_titel": "Stellungnahmen der Stadt Ingolstadt",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss X-Süd",
+      "sitzung_kennung": "BZA-X/05/2024",
+      "datum": "2024-09-24",
+      "datum_anzeige": "24.09.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11797",
       "dokumente": [],
       "beratungsweg": []
     }
