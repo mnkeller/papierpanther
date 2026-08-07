@@ -1180,10 +1180,11 @@
       "klartext_leicht": "Bezirks-Ausschuss V-Südwest: Antwortschreiben der Stadt und Informationen aus der Verwaltung."
     },
     "bza:14132#Ö 2.1": {
-      "klartext_titel": "Bebauungs- und Grünordnungsplan Nr. 178 A II „Erweiterung Kleingartenanlage Am Schmalzbuckel mit …",
-      "klartext": "",
+      "klartext_titel": "Bebauungsplan Kleingartenanlage Am Schmalzbuckel ist rechtskräftig",
+      "klartext": "Der Stadtrat hat den Bebauungs- und Grünordnungsplan Nr. 178 A II für die Erweiterung der Kleingartenanlage Am Schmalzbuckel mit Trainingsspielfeld am 30. Oktober 2025 als Satzung beschlossen. Mit der Bekanntmachung vom 25. März 2026 ist der Plan rechtsverbindlich geworden. Die im Beteiligungsverfahren eingegangenen Anregungen wurden dem Stadtrat vorgetragen und in einer Abwägung behandelt.",
+      "klartext_titel_leicht": "Der Plan für die Kleingärten ist jetzt gültig",
+      "klartext_leicht": "Am Schmalzbuckel in Ingolstadt gibt es Kleingärten. Sie sollen größer werden. Dafür gab es einen Bau-Plan. Der Stadt-Rat hat den Plan im Oktober 2025 beschlossen. Seit März 2026 gilt der Plan ganz offiziell.",
       "lebenslage": [
-        "Wohnen & Miete",
         "Freizeit & Sport"
       ],
       "bezirk": [
@@ -1191,51 +1192,69 @@
       ],
       "ort": [],
       "anlass": [
-        "Bauleitplanung",
-        "Grün & Sauberkeit"
+        "Bauleitplanung"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:14132#Ö 2.2": {
-      "klartext_titel": "Zebrastreifen Lechermannstraße (2025-05-009)",
-      "klartext": "",
+      "klartext_titel": "Blinkanlage am Zebrastreifen Lechermannstraße bleibt nachts aus",
+      "klartext": "Der Bezirksausschuss hatte angefragt, ob die Betriebszeiten der Blinkanlage am Fußgängerüberweg in der Lechermannstraße geändert werden sollen. Die Verwaltung teilt mit, dass die Anlage seit einem 2016 gemeinsam mit der damaligen BZA-Vorsitzenden gefundenen Kompromiss täglich von 6 bis 22 Uhr läuft und nachts ausgeschaltet bleibt. Eine weitere Einschränkung der Betriebszeiten ist nicht vorgesehen.",
+      "klartext_titel_leicht": "Die Warn-Blinker am Zebrastreifen bleiben nachts aus",
+      "klartext_leicht": "An der Lechermann-Straße gibt es einen Zebrastreifen. Dort blinkt eine Warn-Anlage für Fußgänger:innen. Nachts ist sie ausgeschaltet. Das war schon 2016 so vereinbart. Sie blinkt nur zwischen 6 und 22 Uhr. Der Bezirks-Ausschuss wollte das ändern. Die Verwaltung sagt: Es bleibt wie es ist.",
       "lebenslage": [
         "Unterwegs"
       ],
       "bezirk": [
         "V-Südwest"
       ],
-      "ort": [],
+      "ort": [
+        "Lechermannstraße"
+      ],
+      "anlass": [
+        "Sicherheit",
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
+    },
+    "bza:14132#Ö 2.3": {
+      "klartext_titel": "Schutzstreifen Fauststraße: Parkplätze werden verlegt",
+      "klartext": "Auf Bitte des Bezirksausschusses prüfte die Verwaltung, einen durchgängigen Schutzstreifen für Radfahrende in der Fauststraße zu markieren. Auf Höhe der Hausnummern 66 bis 72c können die Parkplätze auf die gegenüberliegende Straßenseite verlegt werden. Zwischen Hausnummer 67 und der Bushaltestelle 'An der Lagerschanze' lassen sich wegfallende Parkplätze durch neu geschaffene Plätze in der Straße 'An der Lagerschanze' ausgleichen.",
+      "klartext_titel_leicht": "Radfahrer bekommen einen durchgängigen Schutz-Streifen",
+      "klartext_leicht": "In der Faust-Straße sollen Radfahrende einen eigenen Streifen bekommen. Er soll durchgehend sein. Dafür müssen manche Parkplätze umziehen. Sie kommen auf die andere Straßenseite. Andere Parkplätze entstehen in einer Nachbar-Straße.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ort": [
+        "Fauststraße"
+      ],
       "anlass": [
         "Verkehrsplanung"
       ],
-      "entwurf": true
-    },
-    "bza:14132#Ö 2.3": {
-      "klartext_titel": "Schutzstreifen Fauststraße (2025-05-007)",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
-      "bezirk": [
-        "V-Südwest"
-      ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:14132#Ö 2.4": {
-      "klartext_titel": "Geschwindigkeitsbeschränkung Lechermannstraße und Kirchstraße (2026-05-008)",
-      "klartext": "",
+      "klartext_titel": "Tempo 30 kommt in der Lechermannstraße und Kirchstraße",
+      "klartext": "Die Verwaltung ordnet in der Lechermannstraße eine Geschwindigkeitsreduzierung auf 30 km/h an, im Bereich von der Abzweigung zum Kiesweg bis zur Kirchstraße. Grund ist nicht die dortige Bushaltestelle, sondern der Lückenschluss zwischen zwei bereits bestehenden Tempo-30-Abschnitten, der so zu einem gleichmäßigeren Verkehrsfluss führt. Eine weitere Ausdehnung der Tempo-30-Strecke im Kurvenbereich zum Kiesweg Richtung Hagauer Straße lehnt die Verwaltung mangels rechtlicher Grundlage ab.",
+      "klartext_titel_leicht": "Autos dürfen dort bald nur noch 30 fahren",
+      "klartext_leicht": "In der Lechermann-Straße und der Kirch-Straße wird es eine neue Regel geben. Autos dürfen dort nur noch 30 km/h fahren. Damit werden zwei vorhandene Tempo-30-Bereiche verbunden. Der Verkehr soll dadurch gleichmäßiger fließen.",
       "lebenslage": [
         "Unterwegs"
       ],
       "bezirk": [
         "V-Südwest"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Lechermannstraße",
+        "Kirchstraße"
+      ],
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "entwurf": false
     },
     "bza:14132#Ö 2.5": {
       "klartext_titel": "Auswertung der Geschwindigkeitsmessanlage in der Hagauer Straße Höhe Kreisel",
@@ -1268,17 +1287,24 @@
       "klartext_leicht": "Bezirks-Ausschuss V-Südwest: Auswertung der Geschwindigkeitsmessanlage Knörstraße."
     },
     "bza:14132#Ö 2.7": {
-      "klartext_titel": "Weihnachtsbeleuchtung Hundszell 2026 (2025-05-011)",
-      "klartext": "",
-      "lebenslage": [],
+      "klartext_titel": "Weihnachtsbeleuchtung Hundszell: Lichterkette kostet 86 Euro pro Stück",
+      "klartext": "Der Bezirksausschuss hatte um Auskunft zu den Kosten für die Weihnachtsbeleuchtung gebeten. Die Stadtwerke Ingolstadt Netze übernehmen Transport, Montage, Demontage, Einlagerung sowie Reparaturen der Christbaumbeleuchtung im Stadtgebiet und berechnen dafür 86 Euro zuzüglich Mehrwertsteuer je Lichterkette, abgerechnet nach tatsächlich benötigter Stückzahl. Christbäume selbst müssen die Ortsteile beziehungsweise Begünstigten organisieren; Stromkosten wurden bislang nicht in Rechnung gestellt. In Hundszell sind 16 Beleuchtungsmodule installiert.",
+      "klartext_titel_leicht": "Was eine Weihnachts-Lichterkette in Hundszell kostet",
+      "klartext_leicht": "In Hundszell hängen zu Weihnachten Lichterketten an Bäumen. Der Bezirks-Ausschuss wollte wissen, was das kostet. Die Stadtwerke bauen die Lichterketten auf und wieder ab. Eine Lichterkette kostet dafür 86 Euro. Den Christbaum selbst muss der Ortsteil besorgen.",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
       "bezirk": [
         "V-Südwest"
       ],
-      "ort": [],
-      "anlass": [
-        "Sicherheit"
+      "ort": [
+        "Hundszell"
       ],
-      "entwurf": true
+      "anlass": [
+        "Gebühren & Preise",
+        "Kultur & Bildung"
+      ],
+      "entwurf": false
     },
     "bza:14132#Ö 3": {
       "klartext_titel": "Bürgeranliegen",
@@ -2043,53 +2069,108 @@
       ]
     },
     "bza:14060#Ö 2.1": {
-      "klartext_titel": "Parksituation Wallmeisterstraße",
-      "klartext": "",
+      "klartext_titel": "Gehwegparken in der Wallmeisterstraße bleibt verboten — Haltverbot für Durchfahrt",
+      "klartext": "Nach einem Ortstermin mit Anwohner:innen, Landwirten und dem Bezirksausschuss lehnt die Verwaltung das gewünschte Gehwegparken in der Wallmeisterstraße ab, weil dafür nur wenig zusätzlicher Parkraum entstünde und die verbleibende Gehwegbreite für Fußgänger:innen zu gering wäre. Stattdessen wird zwischen Hausnummer 10 und den Parkbuchten vor Hausnummer 16 ein absolutes Haltverbot angeordnet, damit landwirtschaftliche Maschinen wieder ungehindert durchfahren können. Kund:innen der dortigen Metzgerei können weiterhin den Hof oder die 2023 eingerichtete Kurzparkzone nutzen.",
+      "klartext_titel_leicht": "Auf dem Gehweg darf weiterhin nicht geparkt werden",
+      "klartext_leicht": "In der Wallmeister-Straße wollten manche auf dem Gehweg parken dürfen. Die Verwaltung sagt Nein dazu. Der Gehweg wäre dann zu schmal. Stattdessen dürfen an einer Stelle gar keine Autos mehr parken. So können große Landwirtschafts-Maschinen wieder durchfahren.",
       "lebenslage": [
-        "Unterwegs"
+        "Gewerbe & Gastro"
       ],
       "bezirk": [
         "X-Süd"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Wallmeisterstraße"
+      ],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
     },
     "bza:14060#Ö 2.2": {
-      "klartext_titel": "Bebauungs- und Grünordnungsplan Nr. 934 „Weiherfeld Süd\"",
-      "klartext": "",
+      "klartext_titel": "Bebauungsplan Weiherfeld Süd wird öffentlich ausgelegt",
+      "klartext": "Der Stadtrat hat am 11. Februar 2026 die Entwürfe des Bebauungs- und Grünordnungsplans Nr. 934 'Weiherfeld Süd' sowie die zugehörige Flächennutzungsplan-Änderung mit Begründung und Umweltbericht genehmigt. Vom 6. März bis 8. April 2026 liegen die Unterlagen im Internet sowie im Stadtplanungsamt öffentlich aus; Anregungen können bis zum 8. April 2026 eingereicht werden. Parallel dazu läuft die Beteiligung der Behörden und sonstiger Träger öffentlicher Belange.",
+      "klartext_titel_leicht": "Ein neuer Bau-Plan liegt zur Ansicht aus",
+      "klartext_leicht": "In Weiherfeld Süd soll gebaut werden. Dafür gibt es einen Bau-Plan. Der Stadt-Rat hat einen Entwurf schon gebilligt. Bürger:innen können sich den Plan jetzt anschauen. Das geht bis zum 8. April 2026. Sie können dazu auch ihre Meinung sagen.",
       "lebenslage": [
-        "Freizeit & Sport"
+        "Wohnen & Miete"
       ],
       "bezirk": [
         "X-Süd"
       ],
-      "ort": [],
-      "anlass": [
-        "Bauleitplanung",
-        "Grün & Sauberkeit"
+      "ort": [
+        "Weiherfeld Süd"
       ],
-      "entwurf": true
+      "anlass": [
+        "Bauleitplanung"
+      ],
+      "entwurf": false
     },
     "bza:14060#Ö 2.3": {
-      "klartext_titel": "Beleuchtung Geh- und Radweg Lavendelweg-Ringelblumenweg",
-      "klartext": "",
+      "klartext_titel": "Keine Beleuchtung für Geh- und Radweg Lavendelweg-Ringelblumenweg",
+      "klartext": "Der Bezirksausschuss hatte eine solarbetriebene, bewegungsgesteuerte Beleuchtung für den viel genutzten Geh- und Radweg zwischen Lavendelweg und Ringelblumenweg vorgeschlagen. Die Verwaltung lehnt eine Beleuchtung nach sorgfältiger Prüfung ab, um unnötiges Licht in der begrünten Umgebung zum Schutz der Insekten zu vermeiden. Der Weg gilt aus Verwaltungssicht als geringer und akzeptabler Umweg im Vergleich zu beleuchteten Alternativstrecken; eine ähnliche Anfrage war bereits 2022 abgelehnt worden.",
+      "klartext_titel_leicht": "Ein Weg bekommt keine Beleuchtung",
+      "klartext_leicht": "Zwischen zwei Straßen gibt es einen kurzen Weg für Fußgänger:innen und Radfahrende. Er sollte Licht bekommen, damit man ihn auch nachts nutzen kann. Die Verwaltung lehnt das ab. Grund: Licht stört Insekten in der Natur. Schon 2022 wurde eine ähnliche Bitte abgelehnt.",
       "lebenslage": [
         "Unterwegs"
       ],
       "bezirk": [
         "X-Süd"
       ],
-      "ort": [],
+      "ort": [
+        "Lavendelweg",
+        "Ringelblumenweg"
+      ],
       "anlass": [
         "Verkehrsplanung",
-        "Sicherheit"
+        "Klima & Umwelt"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:14025#Ö 3.1": {
-      "klartext_titel": "Kraibergstraße Zebrastreifen",
-      "klartext": "",
+      "klartext_titel": "Poller sollen Parken am Zebrastreifen Kraibergstraße verhindern",
+      "klartext": "Um das Parken auf dem Seitenstreifen an den Parkbuchten südlich und nördlich des Fußgängerüberwegs in der Kraibergstraße zu verhindern, plant die Verwaltung dort Poller. Die bisherigen Schilder 'Absolutes Haltverbot' mit dem Zusatz 'auch auf dem Seitenstreifen' werden dafür demontiert, da das Parken auf der schmalen Fahrbahn ohnehin gesetzlich verboten ist. Damit sollen die vorgeschriebenen Sichtverhältnisse am Fußgängerüberweg wieder eingehalten werden; einen konkreten Umsetzungstermin nennt die Verwaltung noch nicht.",
+      "klartext_titel_leicht": "Poller sollen falsches Parken am Zebrastreifen stoppen",
+      "klartext_leicht": "An der Kraiberg-Straße gibt es einen Zebrastreifen. Manche Autos parken dort zu nah dran. Das ist gefährlich für Fußgänger:innen. Die Stadt will deshalb Poller aufstellen. Poller sind kleine feste Pfosten. Sie verhindern das Parken an dieser Stelle.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "VII-Etting"
+      ],
+      "ort": [
+        "Kraibergstraße"
+      ],
+      "anlass": [
+        "Sicherheit",
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
+    },
+    "bza:14025#Ö 3.2": {
+      "klartext_titel": "Kein Ortstermin zur Parksituation Kraibergstraße — Rechtslage bleibt bestehen",
+      "klartext": "Nach einer bereits erfolgten ersten Antwort zur eingeschränkten Sicht an einer privaten Grundstücksausfahrt in der Kraibergstraße hatte der Bezirksausschuss einen gemeinsamen Ortstermin gewünscht. Die Verwaltung sieht dafür keinen Anlass, da die Sichteinschränkung durch parkende Fahrzeuge kein straßenspezifisches Problem sei, sondern in vielen Nebenstraßen auftrete, und § 10 der Straßenverkehrsordnung bereits regelt, dass Ein- und Ausfahrende sich entsprechend vorsichtig verhalten müssen. Die Parkplatzsituation in der Kraibergstraße wird deshalb nicht verändert.",
+      "klartext_titel_leicht": "Die Parkplätze in der Kraiberg-Straße bleiben wie sie sind",
+      "klartext_leicht": "In der Kraiberg-Straße gibt es Streit um Parkplätze. Ein Anwohner sieht schlecht aus seiner Einfahrt. Der Bezirks-Ausschuss wollte sich das vor Ort ansehen. Die Verwaltung sagt: Das ist nicht nötig. Ein Gesetz regelt das schon. Die Parkplätze bleiben unverändert.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "VII-Etting"
+      ],
+      "ort": [
+        "Kraibergstraße"
+      ],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
+    },
+    "bza:14025#Ö 3.3": {
+      "klartext_titel": "E-Scooter-Stellplätze in Etting warten auf Bundesregelung ab 2027",
+      "klartext": "Der Bundesrat hat am 19. Dezember 2025 eine Novelle der Elektrokleinstfahrzeuge-Verordnung und der Straßenverkehrsordnung beschlossen, die ab 1. Januar 2027 eine bundeseinheitliche Regelung für E-Scooter bringt und den Kommunen mehr Handlungsspielraum gibt. Bis dahin ordnet die Verwaltung keine eigenen Abstellflächen für E-Scooter in Etting an; sobald ein gesamtstädtisches Konzept vorliegt, werden die Bezirksausschüsse informiert.",
+      "klartext_titel_leicht": "E-Scooter-Parkplätze müssen noch warten",
+      "klartext_leicht": "In Etting stehen manchmal E-Scooter herum. Der Bezirks-Ausschuss wollte feste Abstell-Plätze dafür. Der Bund macht dazu bald ein neues Gesetz. Es gilt ab 2027. Bis dahin wartet die Stadt Ingolstadt mit einer eigenen Regel.",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -2100,60 +2181,42 @@
       "anlass": [
         "Verkehrsplanung"
       ],
-      "entwurf": true
+      "entwurf": false
     },
-    "bza:14025#Ö 3.2": {
-      "klartext_titel": "Kraibergstraße Parkprobleme",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
-      "bezirk": [
-        "VII-Etting"
-      ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
-    },
-    "bza:14025#Ö 3.3": {
-      "klartext_titel": "E-Scooter Stellplätze im Ortsgebiet Etting",
-      "klartext": "",
+    "bza:14025#Ö 3.4": {
+      "klartext_titel": "Kaum eigene Straßenbaustellen in Etting 2025",
+      "klartext": "Der Bezirksausschuss hatte um eine bessere Koordinierung von Straßenbaustellen in Etting gebeten. Die Verwaltung teilt mit, dass 2025 in Etting selbst keine wesentlichen Maßnahmen stattfanden, nur einzelne kurzzeitige Sperrungen. Baustellen in den Einfallstraßen aus Westen wurden dagegen vom Staatlichen Bauamt, dem Markt Gaimersheim und dem Landratsamt Eichstätt durchgeführt; darauf hat das städtische Verkehrsmanagement nur begrenzten Einfluss über ein Anhörungsverfahren.",
+      "klartext_titel_leicht": "Wer entscheidet über Baustellen in Etting?",
+      "klartext_leicht": "In Etting gibt es manchmal Baustellen. Der Bezirks-Ausschuss wollte, dass sie besser abgestimmt werden. Die Stadt Ingolstadt selbst hatte 2025 aber kaum eigene Baustellen dort. Andere Baustellen kommen von anderen Behörden. Die Stadt kann bei denen nur wenig mitreden.",
       "lebenslage": [],
       "bezirk": [
         "VII-Etting"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
-    },
-    "bza:14025#Ö 3.4": {
-      "klartext_titel": "Koordinierung Straßenbautätigkeiten",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
+      "anlass": [
+        "Baustelle"
       ],
-      "bezirk": [
-        "VII-Etting"
-      ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:14025#Ö 3.5": {
-      "klartext_titel": "Verkehrsbeschilderung Kindergarten am Retzbachweg",
-      "klartext": "",
+      "klartext_titel": "Kein zusätzliches Kinder-Schild am Kindergarten Retzbachweg",
+      "klartext": "Obwohl der Bezirksausschuss für die Aufstellung des Gefahrzeichens 'Kinder' mit Zusatz 'Kindergarten' am Retzbachweg gestimmt hatte, lehnt die Verwaltung das zusätzliche Schild ab. Der Kindergarten liegt bereits in einer ausreichend beschilderten Tempo-30-Zone, in der laut Straßenverkehrsordnung ein solches Gefahrzeichen grundsätzlich nicht erforderlich ist; zusätzlich befinden sich im Retzbachweg bereits Temposchwellen.",
+      "klartext_titel_leicht": "Kein neues Schild vor dem Kindergarten",
+      "klartext_leicht": "Am Retzbachweg ist ein Kindergarten. Der Bezirks-Ausschuss wollte ein extra Warnschild dafür. Die Verwaltung lehnt das ab. Dort gilt schon Tempo 30. Ein weiteres Schild ist deshalb nicht nötig.",
       "lebenslage": [
-        "Eltern & Kinder",
-        "Unterwegs"
+        "Eltern & Kinder"
       ],
       "bezirk": [
         "VII-Etting"
       ],
-      "ort": [],
+      "ort": [
+        "Retzbachweg"
+      ],
       "anlass": [
+        "Sicherheit",
         "Verkehrsplanung"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:14025#Ö 3.6": {
       "klartext_titel": "Informationen aus der Verwaltung / Mängelmelder",
@@ -2195,32 +2258,41 @@
       "klartext_leicht": "Bezirks-Ausschuss VI-West: Glasfaserausbau Mühlhausen."
     },
     "bza:14024#Ö 3": {
-      "klartext_titel": "Christbäume - Lichterketten",
-      "klartext": "",
-      "lebenslage": [],
+      "klartext_titel": "Weihnachtsbeleuchtung im West-Bezirk: Lichterkette kostet 86 Euro pro Stück",
+      "klartext": "Der Bezirksausschuss VI-West hatte um Klärung der Kosten für das Anbringen von Weihnachts-Lichterketten an Christbäumen in den Ortsteilen gebeten. Die Stadtwerke Ingolstadt Netze übernehmen Transport, Montage, Demontage, Einlagerung und Reparatur der Beleuchtung und berechnen dafür 86 Euro zuzüglich Mehrwertsteuer je Lichterkette. Das Aufstellen der Christbäume selbst ist weder Aufgabe der Stadtwerke noch der Stadt Ingolstadt.",
+      "klartext_titel_leicht": "Was eine Weihnachts-Lichterkette im Westen kostet",
+      "klartext_leicht": "Im Bezirk West hängen zu Weihnachten Lichterketten an Bäumen. Der Bezirks-Ausschuss wollte wissen, was das kostet. Die Stadtwerke bauen die Lichterketten auf und wieder ab. Eine Lichterkette kostet dafür 86 Euro. Den Baum selbst muss der Ortsteil besorgen.",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
       "bezirk": [
         "VI-West"
       ],
       "ort": [],
       "anlass": [
-        "Grün & Sauberkeit"
+        "Gebühren & Preise",
+        "Kultur & Bildung"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13985#Ö 3.1": {
-      "klartext_titel": "Fahrradstraße Steigerwaldstraße (2025-11-012)",
-      "klartext": "",
+      "klartext_titel": "Mittelmarkierung in der Steigerwaldstraße rechtlich nicht möglich",
+      "klartext": "Der Bezirksausschuss hatte gebeten, eine Mittelmarkierung im Kurvenbereich der Steigerwaldstraße zu prüfen. Die Verwaltung lehnt dies ab, weil der Bereich in einer Tempo-30-Zone liegt, in der laut Straßenverkehrsordnung weder Fahrstreifenbegrenzungen noch Leitlinien erlaubt sind; auch fachlich sieht sie derzeit keinen Handlungsbedarf. Die Bitte, Büsche im Kurvenbereich zurückzuschneiden, wurde an das Gartenamt weitergegeben.",
+      "klartext_titel_leicht": "Keine Mittel-Linie in einer Kurve erlaubt",
+      "klartext_leicht": "In der Steigerwald-Straße gibt es eine Kurve. Dort sollte eine Linie in der Straßenmitte markiert werden. Das ist aber gesetzlich nicht erlaubt. Dort gilt nämlich Tempo 30. Büsche in der Kurve werden trotzdem zurückgeschnitten.",
       "lebenslage": [
         "Unterwegs"
       ],
       "bezirk": [
         "XI-Friedrichshofen/Hollerstauden"
       ],
-      "ort": [],
+      "ort": [
+        "Steigerwaldstraße"
+      ],
       "anlass": [
         "Verkehrsplanung"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13985#Ö 4.1": {
       "klartext_titel": "Parksituation Am Dachberg",
@@ -2267,45 +2339,61 @@
       "klartext_leicht": "Bezirks-Ausschuss IV-Südost: Umgesetzte Maßnahmen (Einweihungen: Spielplatz Paul-Klee, Minispielfeld GAMS)."
     },
     "bza:13873#Ö 2.1": {
-      "klartext_titel": "Asamstr. Mittelschule – Ampelschaltung 2025-04-022/030",
-      "klartext": "",
+      "klartext_titel": "Verkehr an der Mittelschule Süd-Ost hat sich entspannt",
+      "klartext": "Die Verwaltung und die Polizei haben den Hol- und Bringverkehr an der Mittelschule Süd-Ost beobachtet und stellen eine merkliche Entspannung fest. Eine zusätzliche Haltelinie an der Fußgängerschutzanlage auf Höhe der Einmündung Schröplerstraße hält die Verwaltung für nicht notwendig, da diese nur auf Anforderung reagiert. In der Asamstraße und der Maffeistraße gilt im Schulbereich bereits Tempo 30 zu den schulrelevanten Zeiten.",
+      "klartext_titel_leicht": "An der Schule ist der Verkehr ruhiger geworden",
+      "klartext_leicht": "An der Mittelschule Süd-Ost bringen Eltern morgens ihre Kinder mit dem Auto. Das gab früher Probleme. Jetzt ist es ruhiger geworden. Die Verwaltung beobachtet das weiter. Dort gilt schon Tempo 30 zu den Schulzeiten.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "IV-Südost"
+      ],
+      "ort": [
+        "Asamstraße"
+      ],
+      "anlass": [
+        "Sicherheit",
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
+    },
+    "bza:13873#Ö 2.2": {
+      "klartext_titel": "Fahrrad-Piktogramme für die Schröplerstraße",
+      "klartext": "Im Bezirksausschuss IV-Südost war ein Radpiktogramm für die Schröplerstraße an der Einmündung Asamstraße Thema. Die vorliegende Planungszeichnung zeigt die geplante Markierung Richtung Osten.",
+      "klartext_titel_leicht": "Fahrrad-Zeichen für eine Straße",
+      "klartext_leicht": "In der Schröpler-Straße soll ein Fahrrad-Zeichen auf die Straße gemalt werden. Das zeigt: Hier fahren Radfahrende. Der Bezirks-Ausschuss Süd-Ost hat sich damit beschäftigt.",
       "lebenslage": [
         "Unterwegs"
       ],
       "bezirk": [
         "IV-Südost"
       ],
-      "ort": [],
+      "ort": [
+        "Schröplerstraße"
+      ],
       "anlass": [
         "Verkehrsplanung"
       ],
-      "entwurf": true
-    },
-    "bza:13873#Ö 2.2": {
-      "klartext_titel": "Schröplerstr. – Piktogramm 2025-04-024",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
-      "bezirk": [
-        "IV-Südost"
-      ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13873#Ö 2.3": {
-      "klartext_titel": "Geisenfelderstr. – Parksituation 2025-04-017",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Kurzparkzone Geisenfelder Straße wird nicht erweitert",
+      "klartext": "Der Bezirksausschuss hatte sich für eine Erweiterung der Kurzparkzone in der Geisenfelder Straße bis zur Hans-Mielich-Straße ausgesprochen. Die Verwaltung lehnt dies nach einer Vor-Ort-Prüfung ab, da im bereits ausgeschilderten Bereich kaum Fahrzeuge parken und eine Ausweitung Parkende nur weiter nach Süden oder in nicht regulierte Nebenstraßen verdrängen würde. Zudem sei ein Bewohnerparkgebiet in der Geisenfelder Straße weiterhin nicht möglich.",
+      "klartext_titel_leicht": "Die Kurzparkzone bleibt so groß wie bisher",
+      "klartext_leicht": "In der Geisenfelder Straße gibt es eine Kurzparkzone. Dort darf man nur kurz parken. Der Bezirks-Ausschuss wollte diese Zone größer machen. Die Verwaltung lehnt das ab. Grund: Dort parken schon jetzt kaum Autos.",
+      "lebenslage": [],
       "bezirk": [
         "IV-Südost"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Geisenfelder Straße"
+      ],
+      "anlass": [
+        "Verkehrsplanung",
+        "Gebühren & Preise"
+      ],
+      "entwurf": false
     },
     "bza:13873#Ö 2.4": {
       "klartext_titel": "Paul-Klee-Str./Nelkenweg – Schotterung 2025-04-003",
@@ -2340,19 +2428,24 @@
       "klartext_leicht": "Bezirks-Ausschuss IV-Südost: Kothauerstr.- Spielplatz."
     },
     "bza:13873#Ö 2.6": {
-      "klartext_titel": "Donaudamm – Verkehrsregelung 2024-04-042",
-      "klartext": "",
+      "klartext_titel": "Donaudamm: Fußgänger und Radfahrer teilen sich den Weg",
+      "klartext": "Der Weg auf dem Donaudamm ab der Peisserstraße stadtauswärts gehört nur teilweise der Stadt Ingolstadt, andere Abschnitte der Bundeswehr und dem Freistaat Bayern. Seit 1961 ist er als beschränkt öffentlicher Weg mit der Widmung 'Nur Fußgänger und Radfahrer' gewidmet, mit Ausnahme des Teilstücks zwischen Autobahn und Steckenlohe auf Bundeswehrgelände, das nicht gewidmet ist. Für alle Nutzer:innen gilt gegenseitige Rücksichtnahme.",
+      "klartext_titel_leicht": "Wer darf auf dem Donaudamm gehen und fahren?",
+      "klartext_leicht": "Auf dem Donaudamm gibt es einen Weg. Dort dürfen nur Fußgänger:innen und Radfahrende fahren. Ein Teil des Wegs gehört der Bundeswehr. Dort gilt die Regel nicht. Alle sollen aufeinander Rücksicht nehmen.",
       "lebenslage": [
-        "Unterwegs"
+        "Unterwegs",
+        "Freizeit & Sport"
       ],
       "bezirk": [
         "IV-Südost"
       ],
-      "ort": [],
+      "ort": [
+        "Donaudamm"
+      ],
       "anlass": [
         "Verkehrsplanung"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13873#Ö 2.7": {
       "klartext_titel": "Feselenstr. – Bauruine",
@@ -2525,28 +2618,39 @@
       "klartext_leicht": "Bezirks-Ausschuss IV-Südost: Konstituierende Sitzung."
     },
     "bza:13956#Ö 2.1": {
-      "klartext_titel": "Eingeschränktes Haltverbot Grasinger Weg",
-      "klartext": "",
+      "klartext_titel": "Haltverbot Grasinger Weg wird nicht erweitert",
+      "klartext": "Die Verwaltung hat geprüft, das seit 1998 bestehende eingeschränkte Haltverbot im Grasinger Weg bis zur Vogelweidestraße auszuweiten, findet dafür aber keine rechtlich haltbare Begründung. Die Verkehrsüberwachung kontrolliert den Grasinger Weg und andere Bereiche in Zuchering derzeit häufiger, was die Situation nach Einschätzung der Verwaltung entspannen soll.",
+      "klartext_titel_leicht": "Das Halteverbot im Grasinger Weg bleibt gleich groß",
+      "klartext_leicht": "Im Grasinger Weg gibt es ein Halteverbot. Es sollte länger werden. Die Verwaltung lehnt das ab. Es gibt keinen guten Grund dafür. Die Polizei kontrolliert dort aber jetzt öfter.",
       "lebenslage": [],
       "bezirk": [
         "X-Süd"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Grasinger Weg"
+      ],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
     },
     "bza:13956#Ö 2.2": {
-      "klartext_titel": "Zwei Straßenspiegel an der Weicheringer Straße",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Keine neuen Verkehrsspiegel an der Weicheringer Straße",
+      "klartext": "Die Verwaltung lehnt die erneut geprüfte Anbringung von Verkehrsspiegeln an den Einmündungen Am Sunder/Weicheringer Straße und Karlskroner/Weicheringer Straße ab, da beide Stellen laut Polizei nicht unfallträchtig sind. Für den südlichen Teil von Seehof läuft derzeit ein Bebauungsplanverfahren, das auch den Einmündungsbereich Am Sunder betrifft; hierfür hat das Verkehrsmanagement bereits Maßnahmen zur besseren Sicht angeregt.",
+      "klartext_titel_leicht": "Keine neuen Spiegel an zwei Kreuzungen",
+      "klartext_leicht": "An zwei Kreuzungen in Seehof sollten Verkehrs-Spiegel montiert werden. Die Verwaltung lehnt das ab. Dort passieren keine Unfälle. Ein neuer Bau-Plan für die Gegend könnte die Sicht später trotzdem verbessern.",
+      "lebenslage": [],
       "bezirk": [
         "X-Süd"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Weicheringer Straße"
+      ],
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "entwurf": false
     },
     "bza:13956#Ö 2.3": {
       "klartext_titel": "Parksituation Wallmeisterstraße",
@@ -2635,30 +2739,43 @@
       "klartext_leicht": "Bezirks-Ausschuss V-Südwest: Antwortschreiben der Stadt und Informationen aus der Verwaltung."
     },
     "bza:13874#Ö 2.1": {
-      "klartext_titel": "Spielplatz Ottonenstraße (2024-05-001)",
-      "klartext": "",
+      "klartext_titel": "Naturspielplatz Ottonenstraße: Bepflanzung folgt im Winter 2025",
+      "klartext": "Der Spielplatz in der Ottonenstraße wurde nach einem 2024 vorgestellten Konzept mit natürlichen Materialien wie Holz, Sand und Steinen gestaltet, darunter ein Balanciergerät, ein Klettertipi und ein Sandkasten, ergänzt um Naschobst, Spielhügel und Ruhemöglichkeiten. Bewusst wurde auf ein Überangebot an Spielgeräten verzichtet, um Fantasie und Sinneserfahrung zu fördern. Die Spielgeräte wurden im Frühjahr 2025 eingebaut, die Bepflanzung folgt im Herbst und Winter 2025 und soll sich zu einer dichten Gehölzstruktur entwickeln.",
+      "klartext_titel_leicht": "Ein neuer Spielplatz mit viel Natur",
+      "klartext_leicht": "In der Ottonen-Straße gibt es einen neuen Spielplatz. Er ist aus Holz, Sand und Steinen gebaut. Es gibt ein Klettergerät und einen Sandkasten. Es gibt bewusst nicht zu viele Spielgeräte. Kinder sollen selbst kreativ sein. Pflanzen kommen im Winter 2025 dazu.",
       "lebenslage": [
         "Eltern & Kinder",
-        "Unterwegs",
         "Freizeit & Sport"
       ],
       "bezirk": [
         "V-Südwest"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Ottonenstraße"
+      ],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": false
     },
     "bza:13874#Ö 2.2": {
-      "klartext_titel": "Gegenseitige Rücksichtnahme am ehemaligen Haunwöhrer Bahndamm (2025-05-010)",
-      "klartext": "",
-      "lebenslage": [],
+      "klartext_titel": "Sensibilisierungskampagne für den Haunwöhrer Bahndamm geplant",
+      "klartext": "Der Bezirksausschuss hatte auf Nutzungskonflikte zwischen verschiedenen Verkehrsteilnehmenden am ehemaligen Haunwöhrer Bahndamm hingewiesen. Die Verwaltung bestätigt das Problem und ist mit anderen Kommunen im Austausch, um geeignete Maßnahmen für ein rücksichtsvolleres Miteinander zu finden; sobald belastbare Ansätze vorliegen, ist eine Sensibilisierungskampagne geplant, die mit der aktuellen Haushaltslage vereinbar sein muss.",
+      "klartext_titel_leicht": "Mehr Rücksicht auf dem alten Bahndamm gewünscht",
+      "klartext_leicht": "Am alten Bahndamm in Haunwöhr treffen viele verschiedene Menschen aufeinander. Das gibt manchmal Streit. Die Stadt sucht nach einer Lösung. Sie will dafür später eine Aktion starten. Das braucht aber noch Zeit.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
       "bezirk": [
         "V-Südwest"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Haunwöhrer Bahndamm"
+      ],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
     },
     "bza:13874#Ö 2.3": {
       "klartext_titel": "Auswertung der Geschwindigkeitsmessanlage Hagauer Straße",
@@ -2739,19 +2856,25 @@
       "klartext_leicht": "Bezirks-Ausschuss XII-Münchener Straße: Präsentation Bebauungsplan Münchener Straße / Lindberghstraße."
     },
     "bza:13927#Ö 4": {
-      "klartext_titel": "Ampelschaltung Münchener Straße / Sandrachweg (Schr. v. 22.01.2026, Ref.VII, AZ: 2025-12-013)",
-      "klartext": "",
+      "klartext_titel": "Ampel Münchener Straße/Sandrachweg: Rotzeit um zwei Sekunden verlängert",
+      "klartext": "Nach Diskussionen im Bezirksausschuss über Rotlichtverstöße an der Ampel Münchener Straße/Sandrachweg in Unsernherrn hat das Verkehrsmanagement die gemeinsame Rotzeit an dieser Signalanlage um zwei Sekunden verlängert, ohne die Grünphase zu verändern. Die Anpassung wurde am 11. Dezember 2025 eingespielt.",
+      "klartext_titel_leicht": "Eine Ampel schaltet jetzt etwas länger auf Rot",
+      "klartext_leicht": "An einer Ampel in Unsernherrn sind Autos oft bei Rot gefahren. Die Stadt hat die Ampel jetzt angepasst. Sie zeigt jetzt zwei Sekunden länger Rot. Das soll sicherer sein.",
       "lebenslage": [
         "Unterwegs"
       ],
       "bezirk": [
         "XII-Münchener Straße"
       ],
-      "ort": [],
+      "ort": [
+        "Münchener Straße",
+        "Sandrachweg"
+      ],
       "anlass": [
+        "Sicherheit",
         "Verkehrsplanung"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13927#Ö 5": {
       "klartext_titel": "Ergebnisse der Geschwindigkeitsmessanlagen, weitere Standorte",
@@ -3143,21 +3266,30 @@
       "klartext_leicht": "Bezirks-Ausschuss II-Nordwest: Schachtische im Piuspark."
     },
     "bza:13612#Ö 3.1": {
-      "klartext_titel": "Geschwindigkeitsreduzierung Kipfenbergerstraße",
-      "klartext": "",
+      "klartext_titel": "Tempo 30 kommt in einem Teilstück der Kipfenberger Straße",
+      "klartext": "Nach Prüfung durch die Verwaltung und Stellungnahme der Polizei wird die Höchstgeschwindigkeit in einem Teilstück der Kipfenberger Straße auf 30 km/h reduziert. Grund ist unter anderem, dass die Radwegbenutzungspflicht auf der Ostseite aufgehoben und der Weg zum Gehweg mit Zusatz 'Radfahrer frei' wurde, wodurch Radfahrende künftig auch die Fahrbahn nutzen dürfen.",
+      "klartext_titel_leicht": "In einem Straßenstück gilt bald Tempo 30",
+      "klartext_leicht": "In der Kipfenberger Straße gibt es einen Weg für Radfahrende. Dieser Weg ändert sich gerade. Deshalb dürfen Radfahrende jetzt auch auf der Straße fahren. Autos dürfen dort dann nur noch 30 km/h fahren.",
       "lebenslage": [
         "Unterwegs"
       ],
       "bezirk": [
         "VII-Etting"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Kipfenberger Straße"
+      ],
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "entwurf": false
     },
     "bza:13612#Ö 3.2": {
-      "klartext_titel": "Ampelanlage zur TE-Tor 9",
-      "klartext": "",
+      "klartext_titel": "Ampel am TE-Tor 9 wird neu ausgerichtet",
+      "klartext": "Nach Prüfung der Örtlichkeit am TE-Tor 9 lässt die Verwaltung die Signalgeber der dortigen Ampel neu ausrichten. Der Signalgeber für den Linksabbieger, bisher über der Fahrbahn an einem Ausleger montiert, wird entfernt und stattdessen am Mast der gegenüberliegenden Fußgängerinsel installiert, um Verwechslungen zu vermeiden. Die Umsetzung erfolgt zeitnah.",
+      "klartext_titel_leicht": "Eine Ampel wird besser sichtbar gemacht",
+      "klartext_leicht": "Am TE-Tor 9 gibt es eine Ampel. Ein Signal war schlecht zu sehen. Es wird jetzt an eine andere Stelle gebaut. Dann sieht man es besser.",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -3166,22 +3298,27 @@
       ],
       "ort": [],
       "anlass": [
+        "Sicherheit",
         "Verkehrsplanung"
       ],
-      "entwurf": true
+      "entwurf": false
     },
     "bza:13612#Ö 3.3": {
-      "klartext_titel": "Parkprobleme Kraibergstraße",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Kein Verkehrsspiegel an der Kraibergstraße 24",
+      "klartext": "An der Kraibergstraße 24 konnte die Verwaltung vor Ort keinen Verkehrsspiegel feststellen und sieht wegen guter Sichtverhältnisse und der geringen Straßenbreite von 3,30 Metern, auf der Parken ohnehin nicht gestattet ist, auch keinen Bedarf dafür. Gegenüber der Hausnummer 22 besteht bereits ein privat angebrachter Verkehrsspiegel; gegen dessen Austausch durch einen größeren Spiegel hat die Verwaltung keine Bedenken.",
+      "klartext_titel_leicht": "Kein neuer Verkehrs-Spiegel an einem Haus",
+      "klartext_leicht": "An der Kraiberg-Straße 24 sollte ein Verkehrs-Spiegel hin. Die Verwaltung sagt: Das ist nicht nötig. Man sieht dort schon gut genug. Ein Spiegel an einem anderen Haus darf aber größer werden.",
+      "lebenslage": [],
       "bezirk": [
         "VII-Etting"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Kraibergstraße"
+      ],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false
     },
     "bza:13612#Ö 3.4": {
       "klartext_titel": "Ampel an der Einmündung Hepbergerstraße / Echenzeller Weg",
@@ -20331,6 +20468,45 @@
       "anlass": [
         "Konzept & Planung"
       ]
+    },
+    "bza:14199#Ö 3": {
+      "klartext_titel": "Stellungnahmen der Stadt zu mehreren Bürgeranfragen",
+      "klartext": "Im Bezirksausschuss X-Süd standen mehrere Stellungnahmen der Stadtverwaltung zu einzelnen Bürgeranfragen auf der Tagesordnung.",
+      "klartext_titel_leicht": "Die Stadt antwortet auf mehrere Fragen",
+      "klartext_leicht": "Im Bezirks-Ausschuss X-Süd gab es mehrere Antworten der Stadt. Sie betrafen einzelne Fragen von Bürger:innen.",
+      "lebenslage": [],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": false
+    },
+    "bza:14060#Ö 2": {
+      "klartext_titel": "Stellungnahmen der Stadt zu mehreren Bürgeranfragen",
+      "klartext": "Im Bezirksausschuss X-Süd standen mehrere Stellungnahmen der Stadtverwaltung zu einzelnen Bürgeranfragen auf der Tagesordnung.",
+      "klartext_titel_leicht": "Die Stadt antwortet auf mehrere Fragen",
+      "klartext_leicht": "Im Bezirks-Ausschuss X-Süd gab es mehrere Antworten der Stadt. Sie betrafen einzelne Fragen von Bürger:innen.",
+      "lebenslage": [],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": false
+    },
+    "bza:13956#Ö 2": {
+      "klartext_titel": "Stellungnahmen der Stadt zu mehreren Bürgeranfragen",
+      "klartext": "Im Bezirksausschuss X-Süd standen mehrere Stellungnahmen der Stadtverwaltung zu einzelnen Bürgeranfragen auf der Tagesordnung.",
+      "klartext_titel_leicht": "Die Stadt antwortet auf mehrere Fragen",
+      "klartext_leicht": "Im Bezirks-Ausschuss X-Süd gab es mehrere Antworten der Stadt. Sie betrafen einzelne Fragen von Bürger:innen.",
+      "lebenslage": [],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "ort": [],
+      "anlass": [],
+      "entwurf": false
     }
   }
 }

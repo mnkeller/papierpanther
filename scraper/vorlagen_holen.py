@@ -170,6 +170,13 @@ def main():
     for nummer, (schluessel, auftritte) in enumerate(gewaehlt, 1):
         s, t = leitstation(auftritte)
         haupt = [d for d in t["dokumente"] if not IST_ANLAGE.match(d["titel"])]
+        # BZA-Dokumente heissen oft nur "<Aktenzeichen> <Ortsangabe>" — ein
+        # Lageplan faellt dann nicht unter IST_ANLAGE, obwohl er einer ist.
+        # Die eigentliche Stellungnahme der Verwaltung steht, wenn vorhanden,
+        # immer vor dem Plan.
+        stellungnahmen = [d for d in haupt if "stellungnahme" in d["titel"].lower()]
+        if stellungnahmen:
+            haupt = stellungnahmen + [d for d in haupt if d not in stellungnahmen]
         eintrag = {
             "thema": schluessel,
             "ref": f'{args.quelle}:{s["id"]}#{t["nr"]}',
