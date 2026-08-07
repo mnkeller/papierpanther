@@ -137,9 +137,10 @@ def main():
             if t["nr"].strip() == "Ö":
                 continue
             schluessel = thema_schluessel(args.quelle, t)
-            if not schluessel and args.quelle == "bza":
-                # BZA-Punkte haben keine Vorlagennummer und laufen nicht durch
-                # mehrere Gremien — jeder TOP ist sein eigenes Thema.
+            if not schluessel:
+                # Ohne Vorlagennummer (BZA-Punkte, aber auch Fraktions-Anfragen
+                # und Sonderbefassungen im Stadtrat) gibt es kein gemeinsames
+                # Laufen durch mehrere Gremien — jeder TOP ist sein eigenes Thema.
                 schluessel = f'{args.quelle}:{s["id"]}#{t["nr"]}'
             if schluessel and schluessel not in erledigt:
                 themen[schluessel].append((s, t))

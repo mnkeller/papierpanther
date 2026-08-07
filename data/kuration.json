@@ -59,7 +59,9 @@
       "ort": [],
       "anlass": [
         "Kinderbetreuung"
-      ]
+      ],
+      "klartext_titel_leicht": "Was Eltern über die Kitas gesagt haben",
+      "klartext_leicht": "Die Stadt hat Eltern gefragt: Wie zufrieden seid ihr mit den Kitas? Das war für das Kita-Jahr 2025/26. Die Antworten hat der Jugendhilfe-Ausschuss bekommen."
     },
     "stadt:13533#Ö 4": {
       "klartext_titel": "Wie viele Kita-Plätze Ingolstadt in den nächsten Jahren braucht",
@@ -74,7 +76,9 @@
       "anlass": [
         "Kinderbetreuung",
         "Konzept & Planung"
-      ]
+      ],
+      "klartext_titel_leicht": "Wie viele Kita-Plätze Ingolstadt noch braucht",
+      "klartext_leicht": "Die Stadt plant, wie viele Kita-Plätze sie in Zukunft braucht. Dafür gibt es Zahlen für die ganze Stadt. Und Zahlen dazu, wie viele Plätze schon geplant sind."
     },
     "stadt:13524#Ö 4": {
       "klartext_titel": "Essensgeld in Kita, Mittagsbetreuung und Ganztagsschule soll steigen",
@@ -90,7 +94,9 @@
         "Gebühren & Preise",
         "Kinderbetreuung",
         "Satzung & Regeln"
-      ]
+      ],
+      "klartext_titel_leicht": "Essensgeld in Kita und Schule soll steigen",
+      "klartext_leicht": "Mehrere Gebühren sollen sich ändern. Zum Beispiel für die Kita. Und für die Mittags-Betreuung an Grundschulen. Und für das Essen in Ganztags-Schulen. Ein Grund dafür: Grundschul-Kinder haben jetzt ein Recht auf Ganztags-Betreuung."
     },
     "stadt:13534#Ö 2": {
       "klartext_titel": "Neuer Schulcampus im Nordosten auf dem alten Rosner-Areal",
@@ -106,7 +112,9 @@
       "anlass": [
         "Schulbau",
         "Konzept & Planung"
-      ]
+      ],
+      "klartext_titel_leicht": "Neue Schulen im Nordosten geplant",
+      "klartext_leicht": "An der Schölnhammerstraße sollen neue Schulen entstehen. Geplant sind eine neue Mittelschule und eine neue Realschule. Dazu kommen gemeinsame Sportanlagen. Während der Bauzeit müssen manche Schulen woanders unterrichten."
     },
     "stadt:13534#Ö 1": {
       "klartext_titel": "Welche Schulbauten in Ingolstadt dringend nötig sind",
@@ -120,7 +128,9 @@
       "ort": [],
       "anlass": [
         "Schulbau"
-      ]
+      ],
+      "klartext_titel_leicht": "Welche Schulen dringend gebaut werden müssen",
+      "klartext_leicht": "Die Verwaltung hat erzählt, welche Schul-Bauten in Ingolstadt dringend nötig sind. Das war nur ein mündlicher Bericht. Es gibt dazu kein Schrift-Stück im Ratsinfo-Portal."
     },
     "stadt:13531#Ö 3": {
       "klartext_titel": "Neue Regeln für den Baggersee",
@@ -135,7 +145,9 @@
       "anlass": [
         "Sicherheit",
         "Satzung & Regeln"
-      ]
+      ],
+      "klartext_titel_leicht": "Neue Regeln für den Baggersee",
+      "klartext_leicht": "Für den Baggersee soll es feste Regeln geben. Sie sollen sagen, was am See erlaubt ist und was nicht. Grundlage dafür ist ein Gutachten zur Sicherheit."
     },
     "stadt:13525#Ö 7": {
       "klartext_titel": "Sicherheitsgutachten zum Baggersee vorgestellt",
@@ -149,7 +161,9 @@
       ],
       "anlass": [
         "Sicherheit"
-      ]
+      ],
+      "klartext_titel_leicht": "Gutachten zur Sicherheit am Baggersee vorgestellt",
+      "klartext_leicht": "Der Oberbürgermeister hat mündlich über die Sicherheit am Baggersee berichtet. Dazu gibt es ein Konzept, wie man Gefahren am See verhindert. Das Konzept liegt im Ratsinfo-Portal."
     },
     "stadt:13531#Ö 2": {
       "klartext_titel": "Standgebühren beim Christkindlmarkt sollen wegen längerer Laufzeit steigen",
@@ -178,7 +192,9 @@
       "ort": [],
       "anlass": [
         "Satzung & Regeln"
-      ]
+      ],
+      "klartext_titel_leicht": "Zwei Lokale wollen Tische draußen aufstellen",
+      "klartext_leicht": "Zwei Lokale in der Altstadt möchten draußen Tische und Stühle aufstellen. Das ist der Weinraum Ingolstadt. Und der Adana Grill. Beide haben dafür einen Antrag gestellt."
     },
     "stadt:13529#Ö 4": {
       "klartext_titel": "Änderungen am Busfahrplan",
@@ -192,7 +208,9 @@
       "ort": [],
       "anlass": [
         "Verkehrsplanung"
-      ]
+      ],
+      "klartext_titel_leicht": "Änderungen am Busfahrplan",
+      "klartext_leicht": "Der Stadtrat hat sich mit dem Busfahrplan beschäftigt. Die Stadtbus Ingolstadt GmbH hat dazu Vorschläge gemacht."
     },
     "stadt:13525#Ö 3": {
       "klartext_titel": "Wie der Verkehr in der Altstadt tatsächlich läuft",
@@ -207,7 +225,9 @@
       "anlass": [
         "Verkehrsplanung",
         "Konzept & Planung"
-      ]
+      ],
+      "klartext_titel_leicht": "Wie der Verkehr in der Altstadt läuft",
+      "klartext_leicht": "Es gibt eine neue Untersuchung zum Verkehr in der Altstadt. Die Ergebnisse wurden im Ausschuss gezeigt. Ein kurzer Bericht dazu liegt vor."
     },
     "stadt:13705#Ö 2": {
       "klartext_titel": "Parken wird zum 1. September 2026 teurer",
@@ -221,7 +241,9 @@
       "ort": [],
       "anlass": [
         "Gebühren & Preise"
-      ]
+      ],
+      "klartext_titel_leicht": "Parken wird ab September 2026 teurer",
+      "klartext_leicht": "Wer in städtischen Parkhäusern parkt, zahlt ab dem 1. September 2026 mehr. Das gilt für kurzes Parken. Und für langes Parken. Genaue Preis-Listen liegen vor."
     },
     "stadt:13529#Ö 9": {
       "klartext_titel": "Zweitwohnungssteuer wird geändert",
@@ -237,7 +259,9 @@
       "anlass": [
         "Gebühren & Preise",
         "Satzung & Regeln"
-      ]
+      ],
+      "klartext_titel_leicht": "Steuer für Zweitwohnungen wird geändert",
+      "klartext_leicht": "Wer in Ingolstadt eine Zweit-Wohnung gemeldet hat, zahlt dafür eine Steuer. Die Regeln dazu sollen sich ändern."
     },
     "stadt:13538#Ö 4": {
       "klartext_titel": "Gebühren der Kommunalbetriebe werden neu berechnet",
@@ -252,7 +276,9 @@
       "anlass": [
         "Gebühren & Preise",
         "Satzung & Regeln"
-      ]
+      ],
+      "klartext_titel_leicht": "Gebühren der Kommunalbetriebe werden neu berechnet",
+      "klartext_leicht": "Die Ingolstädter Kommunalbetriebe, kurz INKB, haben ihre Gebühren neu berechnet. Deshalb sollen mehrere Satzungen geändert werden."
     },
     "stadt:13532#Ö 1": {
       "klartext_titel": "Seniorenpolitisches Gesamtkonzept 2026",
@@ -266,7 +292,9 @@
       "ort": [],
       "anlass": [
         "Konzept & Planung"
-      ]
+      ],
+      "klartext_titel_leicht": "Großer Plan für ältere Menschen in Ingolstadt",
+      "klartext_leicht": "Die Stadt hat einen großen Plan für die Politik mit älteren Menschen vorgelegt. Darin stehen Zahlen zur Bevölkerung. Und die Ergebnisse einer Befragung von Senior:innen. Auch ein Bericht zur Pflege ist dabei."
     },
     "stadt:13534#Ö 6": {
       "klartext_titel": "Öffentliche Toilette im Pius-Park soll kürzer öffnen",
@@ -280,7 +308,9 @@
       "ort": [],
       "anlass": [
         "Satzung & Regeln"
-      ]
+      ],
+      "klartext_titel_leicht": "Toilette im Pius-Park hat bald kürzer geöffnet",
+      "klartext_leicht": "Die öffentliche Toilette im Pius-Park soll kürzer geöffnet haben als bisher."
     },
     "stadt:13710#Ö 4": {
       "klartext_titel": "Kanalsanierung in Unterbrunnenreuth",
@@ -294,7 +324,9 @@
       ],
       "anlass": [
         "Baustelle"
-      ]
+      ],
+      "klartext_titel_leicht": "Kanal in Unterbrunnenreuth wird saniert",
+      "klartext_leicht": "In Unterbrunnenreuth wird der Kanal repariert. Darüber hat der Verwaltungsrat der Kommunalbetriebe gesprochen."
     },
     "stadt:13534#Ö 3": {
       "klartext_titel": "Weiherfeld Süd: Bebauungsplan im letzten Schritt",
@@ -308,7 +340,9 @@
       ],
       "anlass": [
         "Bauleitplanung"
-      ]
+      ],
+      "klartext_titel_leicht": "Bauplan Weiherfeld Süd ist fast fertig",
+      "klartext_leicht": "Für das Gebiet Weiherfeld Süd steht der letzte Schritt beim Bauplan an, der Satzungs-Beschluss. Gleichzeitig ändert sich der Flächennutzungsplan. Zur Vorlage gehören auch Untersuchungen zu Verkehr, Klima und Lärm."
     },
     "stadt:13525#Ö 4": {
       "klartext_titel": "Überschwemmungsgebiet an der Sandrach wird festgesetzt",
@@ -323,7 +357,9 @@
       "anlass": [
         "Satzung & Regeln",
         "Sicherheit"
-      ]
+      ],
+      "klartext_titel_leicht": "Überschwemmungsgebiet an der Sandrach wird festgelegt",
+      "klartext_leicht": "An der Sandrach soll ein Überschwemmungsgebiet festgelegt werden. Das ist ein Gebiet, das bei Hochwasser unter Wasser stehen darf. Karten und ein Bericht dazu liegen vor."
     },
     "stadt:13725#Ö 2": {
       "klartext_titel": "Donautherme: Öffnungszeiten und Eintrittspreise werden angepasst",
@@ -337,7 +373,9 @@
       "ort": [],
       "anlass": [
         "Gebühren & Preise"
-      ]
+      ],
+      "klartext_titel_leicht": "Donautherme: Öffnungszeiten und Preise ändern sich",
+      "klartext_leicht": "Der Aufsichtsrat hat über die Donautherme berichtet. Es geht um neue Öffnungszeiten. Und um neue Eintritts-Preise."
     },
     "stadt:13533#Ö 6": {
       "klartext_titel": "Musikschule: Gebühren und Regeln werden neu gefasst",
@@ -352,7 +390,9 @@
       "anlass": [
         "Gebühren & Preise",
         "Satzung & Regeln"
-      ]
+      ],
+      "klartext_titel_leicht": "Musikschule bekommt neue Regeln und Gebühren",
+      "klartext_leicht": "Die Simon-Mayr-Sing- und Musikschule bekommt neue Regeln. Auch die Gebühren sollen sich ändern. Dazu gibt es die alte und die neue Gebühren-Liste."
     },
     "stadt:13535#Ö 12": {
       "klartext_titel": "Mobile Jugendarbeit beim Stadtjugendring",
@@ -366,7 +406,9 @@
       "ort": [],
       "anlass": [
         "Konzept & Planung"
-      ]
+      ],
+      "klartext_titel_leicht": "Mobile Jugendarbeit beim Stadtjugendring",
+      "klartext_leicht": "Der Finanzausschuss hat über die mobile Jugendarbeit gesprochen. Das ist ein Angebot des Stadtjugendrings Ingolstadt."
     },
     "bza:14211#Ö 3.1": {
       "klartext_titel": "Fahrradstraße Gymnasiumstraße",
