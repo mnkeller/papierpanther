@@ -27,17 +27,17 @@
     "sitzungen_ausgelesen": 360,
     "tops_ausgelesen": 3415,
     "tops_verfahren": 493,
-    "tops_kuratiert": 1389,
+    "tops_kuratiert": 1419,
     "entwuerfe": 2,
-    "leichte_sprache": 1387,
+    "leichte_sprache": 1417,
     "je_quelle": {
-      "stadt": 535,
+      "stadt": 565,
       "bza": 854
     },
     "stand": {
       "Bekanntgabe": 112,
       "Entscheidung angesetzt": 377,
-      "Ohne Vorlage": 891,
+      "Ohne Vorlage": 921,
       "Wird noch beraten": 9
     }
   },
@@ -8526,6 +8526,138 @@
       "beratungsweg": []
     },
     {
+      "ref": "stadt:13530#Ö 4",
+      "thema": "stadt:13530#Ö 4",
+      "auftritte": [
+        {
+          "datum": "2026-06-30",
+          "datum_anzeige": "30.06.2026",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13530"
+        }
+      ],
+      "klartext_titel": "Mündlicher Bericht: Vorstellung der neuen Kommunalen Jugendpflegerin",
+      "klartext": "Im Jugendhilfeausschuss war folgendes Thema: Mündlicher Bericht: Vorstellung der neuen Kommunalen Jugendpflegerin.",
+      "klartext_titel_leicht": "Mündlicher Bericht: Vorstellung der neuen Kommunalen Jugendpflegerin",
+      "klartext_leicht": "Jugendhilfeausschuss: Mündlicher Bericht: Vorstellung der neuen Kommunalen Jugendpflegerin.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Mündlicher Bericht Vorstellung der neuen Kommunalen Jugendpflegerin",
+      "top_nr": "Ö 4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendhilfeausschuss",
+      "sitzung_kennung": "JHA/02/2026",
+      "datum": "2026-06-30",
+      "datum_anzeige": "30.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13530",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13530#Ö 5",
+      "thema": "stadt:13530#Ö 5",
+      "auftritte": [
+        {
+          "datum": "2026-06-30",
+          "datum_anzeige": "30.06.2026",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13530"
+        }
+      ],
+      "klartext_titel": "Mündlicher Bericht: Ergebnisse der Jugendbefragung 2026",
+      "klartext": "Im Jugendhilfeausschuss war folgendes Thema: Mündlicher Bericht: Ergebnisse der Jugendbefragung 2026.",
+      "klartext_titel_leicht": "Mündlicher Bericht: Ergebnisse der Jugendbefragung 2026",
+      "klartext_leicht": "Jugendhilfeausschuss: Mündlicher Bericht: Ergebnisse der Jugendbefragung 2026.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Mündlicher Bericht Ergebnisse Jugendbefragung 2026",
+      "top_nr": "Ö 5",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendhilfeausschuss",
+      "sitzung_kennung": "JHA/02/2026",
+      "datum": "2026-06-30",
+      "datum_anzeige": "30.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13530",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13530#Ö 6",
+      "thema": "stadt:13530#Ö 6",
+      "auftritte": [
+        {
+          "datum": "2026-06-30",
+          "datum_anzeige": "30.06.2026",
+          "gremium": "Jugendhilfeausschuss",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13530"
+        }
+      ],
+      "klartext_titel": "Mündlicher Bericht: Mobile Jugendarbeit",
+      "klartext": "Im Jugendhilfeausschuss war folgendes Thema: Mündlicher Bericht: Mobile Jugendarbeit.",
+      "klartext_titel_leicht": "Mündlicher Bericht: Mobile Jugendarbeit",
+      "klartext_leicht": "Jugendhilfeausschuss: Mündlicher Bericht: Mobile Jugendarbeit.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Mündlicher Bericht Mobile Jugendarbeit",
+      "top_nr": "Ö 6",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendhilfeausschuss",
+      "sitzung_kennung": "JHA/02/2026",
+      "datum": "2026-06-30",
+      "datum_anzeige": "30.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13530",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
       "ref": "stadt:13524#Ö 4",
       "thema": "stadt:vorlage:22923",
       "auftritte": [
@@ -9994,6 +10126,267 @@
       ]
     },
     {
+      "ref": "stadt:13529#Ö 22.1",
+      "thema": "stadt:13529#Ö 22.1",
+      "auftritte": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 22.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
+        }
+      ],
+      "klartext_titel": "AfD fragt nach Sanierungsstand des Weinzierl-Geländes",
+      "klartext": "Die AfD-Fraktion fragt, warum ihre Fragen zur Sanierung bzw. Schadensfeststellung auf dem ehemaligen Weinzierl-Gelände aus einem offenen Brief vom 13.04.2026 noch nicht beantwortet wurden, ob seither Sicherungsmaßnahmen oder Untersuchungen stattfanden und wie der Zeitplan für eine Sanierung aussieht. Im Ratsinfoportal liegt bislang nur das Anfrage-Schreiben vor; eine schriftliche Antwort der Verwaltung ist zum Zeitpunkt der Sitzung noch nicht als Dokument veröffentlicht.",
+      "klartext_titel_leicht": "AfD fragt nach dem Weinzierl-Gelände",
+      "klartext_leicht": "Auf dem Weinzierl-Gelände gibt es wohl Schäden, die saniert werden müssen. Die AfD-Fraktion hatte dazu schon im April 2026 Fragen gestellt. Eine Antwort gab es bisher nicht. Die Fraktion fragt jetzt noch einmal nach dem Zeitplan.",
+      "lebenslage": [],
+      "bezirk": [
+        "VI-West"
+      ],
+      "anlass": [
+        "Klima & Umwelt",
+        "Sicherheit"
+      ],
+      "ort": [
+        "Weinzierl"
+      ],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Fragen zum offenen Brief der AfD-Stadtratsfraktion vom 13.04.2026 bzgl. sog. Weinzierl-Gelände",
+      "top_nr": "Ö 22.1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2026",
+      "datum": "2026-06-24",
+      "datum_anzeige": "24.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
+      "dokumente": [
+        {
+          "titel": "Fragestunde Stadtratssitzung am 13.05.2026 Nachfrage zu offenen Brief an OB bzgl",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250749&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13529#Ö 22.2",
+      "thema": "stadt:13529#Ö 22.2",
+      "auftritte": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 22.2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
+        }
+      ],
+      "klartext_titel": "2.286 Haushalte in Ingolstadt haben einen Wohnberechtigungsschein",
+      "klartext": "Auf AfD-Anfrage teilt die Verwaltung mit: Zum 31. Mai 2026 gab es in Ingolstadt 2.286 Haushalte mit einem Wohnberechtigungsschein, davon die meisten (1.839) in der niedrigsten Einkommensstufe I. Eine Entwicklung über die letzten zehn Jahre lässt sich nicht darstellen, da das bayerische Wohnungsbindungsrecht anders als Bundesgesetze keine Statistikpflicht vorsieht. Die Staatsangehörigkeit spielt für die Vergabe keine Rolle und wird auch nicht erfasst; erfasst werden nur die Kategorien deutsch, EU-Bürger und Drittstaatsangehörige — aktuell sind rund 45 Prozent der Scheininhabenden Deutsche, etwa 10 Prozent EU-Bürger und rund 45 Prozent Nicht-EU-Ausländer.",
+      "klartext_titel_leicht": "Über 2.000 Haushalte haben einen Wohn-Schein",
+      "klartext_leicht": "Ein Wohnberechtigungsschein erlaubt es, eine günstige Sozial-Wohnung zu mieten. In Ingolstadt haben 2.286 Haushalte so einen Schein. Die meisten davon haben ein niedriges Einkommen. Wie viele Scheine es früher gab, weiß die Stadt nicht genau. Dafür gibt es keine Pflicht zum Zählen. Die Herkunft der Menschen spielt für den Schein keine Rolle.",
+      "lebenslage": [
+        "Wohnen & Miete",
+        "Geld & Soziales"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Wohnberechtigungsschein in Ingolstadt, Frage der AfD-Stadtratsfraktion vom 02.06.2026",
+      "top_nr": "Ö 22.2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2026",
+      "datum": "2026-06-24",
+      "datum_anzeige": "24.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
+      "dokumente": [
+        {
+          "titel": "Antwort auf Stadtratsanfrage zum Wohnberechtigungsschein",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251017&type=do"
+        },
+        {
+          "titel": "Fragestunde Stadtratssitzung am 24.06.2026 Wohnberechtigungsschein",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250750&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13529#Ö 22.3",
+      "thema": "stadt:13529#Ö 22.3",
+      "auftritte": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 22.3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
+        }
+      ],
+      "klartext_titel": "Stadt sieht Wegfall der ICE-Anbindung Ingolstadts als unwahrscheinlich",
+      "klartext": "Zur Sorge um einen möglichen Wegfall der ICE/IC-Anbindung antwortet der Verkehrsverbund Großraum Ingolstadt (VGI) auf AfD-Anfrage: Hintergrund ist eine Studie der Eisenbahn- und Verkehrsgewerkschaft (EVG) zur geplanten Reform der Trassenfinanzierung im Fernverkehr, bei der künftig Trassenpakete europaweit ausgeschrieben werden sollen. Der Oberbürgermeister hat sich bereits schriftlich beim Bundes- und beim Bayerischen Verkehrsminister für den vollständigen Erhalt aller ICE-Halte am Hauptbahnhof Ingolstadt eingesetzt. Ein Wegfall der Fernhalte gilt laut VGI als „mit an Sicherheit grenzender Wahrscheinlichkeit“ nicht zu erwarten, unter anderem weil die Bundesnetzagentur bei unangemessenen Fahrplänen eingreifen kann; eine Übergangslösung sei daher nicht erforderlich.",
+      "klartext_titel_leicht": "Ingolstadt soll seine ICE-Züge wohl behalten",
+      "klartext_leicht": "Manche befürchteten, Ingolstadt könnte seinen ICE-Halt verlieren. Grund ist eine geplante Änderung bei der Bahn. Der Oberbürgermeister hat sich schon an die Minister in Berlin und München gewandt. Er hat für den Erhalt gekämpft. Der Verkehrsverbund sagt: Ein Verlust der ICE-Züge ist sehr unwahrscheinlich.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Möglicher Wegfall der ICE/IC-Anbindung Ingolstadts - Anfrage der AfD-Stadtratsfraktion vom 14.06.2026",
+      "top_nr": "Ö 22.3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2026",
+      "datum": "2026-06-24",
+      "datum_anzeige": "24.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
+      "dokumente": [
+        {
+          "titel": "Antwort",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251040&type=do"
+        },
+        {
+          "titel": "Fragestunde Stadtratssitzung am 24.06.2026 Möglicher Wegfall der ICE-Anbindung Ingolstadts",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250765&type=do"
+        },
+        {
+          "titel": "Schreiben OB an Bundesminister 2026.06.15",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251053&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13529#Ö 22.4",
+      "thema": "stadt:13529#Ö 22.4",
+      "auftritte": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 22.4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
+        }
+      ],
+      "klartext_titel": "Sanierung der südlichen Ringstraße kostet 1,325 Millionen Euro, Bauzeit im August",
+      "klartext": "Auf AfD-Anfrage zur Sanierung der südlichen Ringstraße teilt die Verwaltung mit: Die Straßenbauarbeiten sollen an zwei Augustwochenenden 2026 unter Vollsperrung erfolgen, die anschließende Brückensanierung bis Ende Oktober unter halbseitiger Verkehrsführung. Das günstigste Angebot lag bei 1,325 Millionen Euro und liegt damit innerhalb der genehmigten 1,34 Millionen Euro. Sollten dennoch Mehrkosten entstehen, könnten diese aus freien Mitteln des von der Regierung von Oberbayern genehmigten ersten Paketbeschlusses gedeckt werden.",
+      "klartext_titel_leicht": "Südliche Ringstraße wird im August saniert",
+      "klartext_leicht": "Die südliche Ringstraße wird repariert. Die Straßenarbeiten sind an zwei Wochenenden im August geplant. Dann ist die Straße ganz gesperrt. Danach wird noch die Brücke repariert. Das dauert bis Ende Oktober, aber mit nur einer halben Sperrung. Die Kosten liegen bei rund 1,3 Millionen Euro und passen zum geplanten Budget.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Baustelle",
+        "Verkehrsplanung"
+      ],
+      "ort": [
+        "Südliche Ringstraße"
+      ],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Sanierung der südlichen Ringstraße, Anfrage der AfD-Stadtratsfraktion vom 18.06.2026",
+      "top_nr": "Ö 22.4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2026",
+      "datum": "2026-06-24",
+      "datum_anzeige": "24.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
+      "dokumente": [
+        {
+          "titel": "Antwort Ref. VI",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251007&type=do"
+        },
+        {
+          "titel": "Fragestunde Stadtratssitzung am 24.06.2026 Sanierung der südlichen Ringstraße",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250820&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13529#Ö 18",
+      "thema": "stadt:13529#Ö 18",
+      "auftritte": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 18",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
+        }
+      ],
+      "klartext_titel": "Informationen des Bayerischen Innenministeriums zum geplanten Standort für das Außengrenzverfahren im Rahmen der GEAS-Umsetzung",
+      "klartext": "Im Stadtrat war folgendes Thema: Informationen des Bayerischen Innenministeriums zum geplanten Standort für das Außengrenzverfahren im Rahmen der GEAS-Umsetzung.",
+      "klartext_titel_leicht": "Informationen des Bayerischen Innenministeriums zum geplanten Standort für das Außengrenzverfahren im Rahmen der GEAS-Umsetzung",
+      "klartext_leicht": "Stadtrat: Informationen des Innenministeriums zum Standort für das Grenzverfahren nach der neuen EU-Asylregel GEAS.",
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Informationen des StMI zum geplanten Standort für das Außengrenzverfahren im Rahmen der GEAS-Umsetzung",
+      "top_nr": "Ö 18",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2026",
+      "datum": "2026-06-24",
+      "datum_anzeige": "24.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
       "ref": "bza:14017#Ö 1",
       "thema": "bza:14017#Ö 1",
       "auftritte": [
@@ -10796,6 +11189,90 @@
       ]
     },
     {
+      "ref": "stadt:13526#Ö 1",
+      "thema": "stadt:13526#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2026-06-16",
+          "datum_anzeige": "16.06.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13526"
+        }
+      ],
+      "klartext_titel": "Finanzlagebericht von Herrn Fleckinger",
+      "klartext": "Im Ausschuss für Finanzen und Personal war folgendes Thema: Finanzlagebericht von Herrn Fleckinger.",
+      "klartext_titel_leicht": "Finanzlagebericht von Herrn Fleckinger",
+      "klartext_leicht": "Ausschuss für Finanzen und Personal: Finanzlagebericht von Herrn Fleckinger.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Finanzlagebericht von Herrn Fleckinger",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/01/2026",
+      "datum": "2026-06-16",
+      "datum_anzeige": "16.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13526",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13526#Ö 4",
+      "thema": "stadt:13526#Ö 4",
+      "auftritte": [
+        {
+          "datum": "2026-06-16",
+          "datum_anzeige": "16.06.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13526"
+        }
+      ],
+      "klartext_titel": "Ausschüttungen der Sparkassen",
+      "klartext": "Im Ausschuss für Finanzen und Personal war folgendes Thema: Ausschüttungen der Sparkassen.",
+      "klartext_titel_leicht": "Ausschüttungen der Sparkassen",
+      "klartext_leicht": "Ausschuss für Finanzen und Personal: Ausschüttungen der Sparkassen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Ausschüttungen der Sparkassen",
+      "top_nr": "Ö 4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/01/2026",
+      "datum": "2026-06-16",
+      "datum_anzeige": "16.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13526",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
       "ref": "stadt:13525#Ö 7",
       "thema": "stadt:13525#Ö 7",
       "auftritte": [
@@ -11157,6 +11634,50 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525&toselect=88192"
         }
       ]
+    },
+    {
+      "ref": "stadt:13525#Ö 5",
+      "thema": "stadt:13525#Ö 5",
+      "auftritte": [
+        {
+          "datum": "2026-06-11",
+          "datum_anzeige": "11.06.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525"
+        }
+      ],
+      "klartext_titel": "Zweckentfremdungssatzung",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit war folgendes Thema: Zweckentfremdungssatzung.",
+      "klartext_titel_leicht": "Zweckentfremdungssatzung",
+      "klartext_leicht": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit: Zweckentfremdungssatzung.",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Zweckentfremdungssatzung",
+      "top_nr": "Ö 5",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+      "sitzung_kennung": "PLA/01/2026",
+      "datum": "2026-06-11",
+      "datum_anzeige": "11.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525",
+      "dokumente": [],
+      "beratungsweg": []
     },
     {
       "ref": "stadt:13710#Ö 4",
@@ -11646,6 +12167,90 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13524&toselect=88186"
         }
       ]
+    },
+    {
+      "ref": "stadt:13524#Ö 1",
+      "thema": "stadt:13524#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2026-06-10",
+          "datum_anzeige": "10.06.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13524"
+        }
+      ],
+      "klartext_titel": "Bericht der Projektpartnergemeinde Legmoin (Burkina Faso)",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Bericht der Projektpartnergemeinde Legmoin (Burkina Faso).",
+      "klartext_titel_leicht": "Bericht der Projektpartnergemeinde Legmoin (Burkina Faso)",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Bericht der Projektpartnergemeinde Legmoin (Burkina Faso).",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht der Projektpartnergemeinde Legmoin (Burkina Faso) durch Herrn Dari Somé",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/01/2026",
+      "datum": "2026-06-10",
+      "datum_anzeige": "10.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13524",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13524#Ö 2",
+      "thema": "stadt:13524#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2026-06-10",
+          "datum_anzeige": "10.06.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13524"
+        }
+      ],
+      "klartext_titel": "Aktuelle Information zum Kulturgeschehen",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Aktuelle Information zum Kulturgeschehen.",
+      "klartext_titel_leicht": "Aktuelle Information zum Kulturgeschehen",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Aktuelle Information zum Kulturgeschehen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Aktuelle Information zum Kulturgeschehen",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/01/2026",
+      "datum": "2026-06-10",
+      "datum_anzeige": "10.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13524",
+      "dokumente": [],
+      "beratungsweg": []
     },
     {
       "ref": "bza:14007#Ö 1",
@@ -13041,6 +13646,194 @@
       ]
     },
     {
+      "ref": "stadt:13519#Ö 18.1",
+      "thema": "stadt:13519#Ö 18.1",
+      "auftritte": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 18.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519"
+        }
+      ],
+      "klartext_titel": "Schulcampus Nord-Ost bleibt dringend, aber Regierung von Oberbayern verweigert Kredit-Genehmigung",
+      "klartext": "Auf Anfrage der Freien Wähler zum Schulcampus Nord-Ost (Rosner-Gelände) bestätigt die Verwaltung: Die Maßnahme mit Mittelschule und 3. Staatlicher Realschule bleibt schulfachlich dringend und ist bis 2029 im Investitionsprogramm eingeplant. Die Regierung von Oberbayern hat jedoch die dafür beantragte Gesamtkreditermächtigung im Haushalt 2026 versagt und verlangt, dass solche Vorhaben künftig nur noch gebündelt in Maßnahmenpaketen vorgelegt werden, abhängig von nachweisbaren Fortschritten bei der Haushaltskonsolidierung. Der Aufstellungsbeschluss für den zugehörigen Bebauungsplan erfolgte bereits am 30. Oktober 2025, die frühzeitige Beteiligung lief bis Mitte Dezember 2025. Eine Verzögerung des Schulcampus hätte auch Folgen für die geplante Sanierung des Katharinen-Gymnasiums, das für die Bauzeit dorthin ausgelagert werden sollte.",
+      "klartext_titel_leicht": "Neuer Schulcampus Nord-Ost wartet auf Geld aus München",
+      "klartext_leicht": "Im Nordosten von Ingolstadt sollen neue Schulen gebaut werden, der Schulcampus Nord-Ost. Die Stadt braucht dafür einen Kredit. Die Regierung in München hat den Kredit bisher nicht erlaubt. Die Stadt muss zuerst zeigen, dass sie beim Sparen vorankommt. Der Bau verzögert sich dadurch. Ein anderes Gymnasium sollte während der Bauzeit dorthin umziehen. Auch das verzögert sich.",
+      "lebenslage": [
+        "Eltern & Kinder",
+        "Jugend"
+      ],
+      "bezirk": [
+        "III-Nordost"
+      ],
+      "anlass": [
+        "Schulbau",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250879&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage der FW-Stadtratsfraktion vom 07.05.2026 zum Thema Entwicklungen Schulstandort Nord-Ost",
+      "top_nr": "Ö 18.1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2026",
+      "datum": "2026-05-13",
+      "datum_anzeige": "13.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519",
+      "dokumente": [
+        {
+          "titel": "20260507 ANF FW FR Schulbauprojekt NO und Auswirkungen auf das Katharienengymnasium",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249481&type=do"
+        },
+        {
+          "titel": "Antwort Planungs- und Entwickungsstand Schulzentrum Nord-Ost",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249653&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13519#Ö 19",
+      "thema": "stadt:13519#Ö 19",
+      "auftritte": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 19",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519"
+        }
+      ],
+      "klartext_titel": "Klinikum Ingolstadt prüft Krankenhaus-Verbund mit drei weiteren Kliniken der Region",
+      "klartext": "Ein Zwischenstandsbericht des beauftragten Beratungsunternehmens WMC Healthcare zur „Ausgestaltung Medizinverbund Region 10“ beschreibt den Stand eines möglichen Zusammenschlusses von Klinikum Ingolstadt mit den Kliniken im Naturpark Altmühltal (Eichstätt, Kösching), den Ilmtalkliniken (Pfaffenhofen, Mainburg) und dem Kreiskrankenhaus Schrobenhausen. Auslöser ist unter anderem die Bundesreform KHVVG, die Kliniken zu stärkerer Zusammenarbeit und Leistungsbündelung anhält; die vier Träger arbeiten bereits seit 2021 an einer gemeinsamen Medizinstrategie und ließen 2023 verschiedene Verbundmodelle durch die Beratung PwC prüfen. Aktuell wird eine der geprüften Varianten weiter konkretisiert, unter anderem hinsichtlich Restrukturierungsmaßnahmen, Kosten und Personalstruktur; erste Erkenntnisse zum Zeitplan werden für Mitte 2026 erwartet, eine endgültige Entscheidung der politischen Gremien steht noch aus.",
+      "klartext_titel_leicht": "Klinikum Ingolstadt prüft Zusammenschluss mit anderen Kliniken",
+      "klartext_leicht": "Das Klinikum Ingolstadt denkt über eine engere Zusammenarbeit mit drei anderen Krankenhäusern nach. Das sind Kliniken in Eichstätt, Kösching, Pfaffenhofen, Mainburg und Schrobenhausen. Ein neues Bundesgesetz verlangt mehr Zusammenarbeit zwischen Krankenhäusern. Berater prüfen gerade, wie ein gemeinsames Konzept aussehen könnte. Eine endgültige Entscheidung gibt es noch nicht.",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250879&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht zur regionalen Medizinstrategie",
+      "top_nr": "Ö 19",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2026",
+      "datum": "2026-05-13",
+      "datum_anzeige": "13.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519",
+      "dokumente": [
+        {
+          "titel": "260512 Region 10 Ausgestaltung Medizinverbund Zwischenstandsbericht politische Gremien",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249710&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13519#Ö 1",
+      "thema": "stadt:13519#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519"
+        }
+      ],
+      "klartext_titel": "Wahl des dritten Bürgermeisters bzw. der dritten Bürgermeisterin",
+      "klartext": "Im Stadtrat war folgendes Thema: Wahl des dritten Bürgermeisters bzw. der dritten Bürgermeisterin.",
+      "klartext_titel_leicht": "Wahl des dritten Bürgermeisters bzw. der dritten Bürgermeisterin",
+      "klartext_leicht": "Stadtrat: Wahl des dritten Bürgermeisters bzw. der dritten Bürgermeisterin.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250879&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Wahl des dritten Bürgermeisters / der dritten Bürgermeisterin — - Bildung des Wahlausschusses — - Durchführung der Wahl gemäß Art. 51 Abs. 3 GO",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2026",
+      "datum": "2026-05-13",
+      "datum_anzeige": "13.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13519#Ö 2",
+      "thema": "stadt:13519#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2026-05-13",
+          "datum_anzeige": "13.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519"
+        }
+      ],
+      "klartext_titel": "Vereidigung des gewählten Bürgermeisters bzw. der gewählten Bürgermeisterin",
+      "klartext": "Im Stadtrat war folgendes Thema: Vereidigung des gewählten Bürgermeisters bzw. der gewählten Bürgermeisterin.",
+      "klartext_titel_leicht": "Vereidigung des gewählten Bürgermeisters bzw. der gewählten Bürgermeisterin",
+      "klartext_leicht": "Stadtrat: Vereidigung des gewählten Bürgermeisters bzw. der gewählten Bürgermeisterin.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250879&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Vereidigung des / der gewählten Bürgermeisters / Bürgermeisterin",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/02/2026",
+      "datum": "2026-05-13",
+      "datum_anzeige": "13.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13519",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
       "ref": "bza:14005#Ö 1",
       "thema": "bza:14005#Ö 1",
       "auftritte": [
@@ -14172,6 +14965,258 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517&toselect=87667"
         }
       ]
+    },
+    {
+      "ref": "stadt:13517#Ö 1",
+      "thema": "stadt:13517#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2026-05-05",
+          "datum_anzeige": "05.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517"
+        }
+      ],
+      "klartext_titel": "Rede zum Beginn der Legislaturperiode durch Oberbürgermeister Dr. Kern",
+      "klartext": "Im Stadtrat war folgendes Thema: Rede zum Beginn der Legislaturperiode durch Oberbürgermeister Dr. Kern.",
+      "klartext_titel_leicht": "Rede zum Beginn der Legislaturperiode durch Oberbürgermeister Dr. Kern",
+      "klartext_leicht": "Stadtrat: Rede zum Beginn der Legislaturperiode durch Oberbürgermeister Dr. Kern.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250215&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Rede zum Beginn der Legislaturperiode durch Oberbürgermeister Dr. Kern",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2026",
+      "datum": "2026-05-05",
+      "datum_anzeige": "05.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13517#Ö 2",
+      "thema": "stadt:13517#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2026-05-05",
+          "datum_anzeige": "05.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517"
+        }
+      ],
+      "klartext_titel": "Vereidigung der Stadtratsmitglieder durch den Oberbürgermeister",
+      "klartext": "Im Stadtrat war folgendes Thema: Vereidigung der Stadtratsmitglieder durch den Oberbürgermeister.",
+      "klartext_titel_leicht": "Vereidigung der Stadtratsmitglieder durch den Oberbürgermeister",
+      "klartext_leicht": "Stadtrat: Vereidigung der Stadtratsmitglieder durch den Oberbürgermeister.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250215&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Vereidigung der Stadtratsmitglieder durch den Oberbürgermeister",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2026",
+      "datum": "2026-05-05",
+      "datum_anzeige": "05.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13517#Ö 6",
+      "thema": "stadt:13517#Ö 6",
+      "auftritte": [
+        {
+          "datum": "2026-05-05",
+          "datum_anzeige": "05.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517"
+        }
+      ],
+      "klartext_titel": "Festsetzung der Entschädigung für die ehrenamtliche dritte Bürgermeisterin bzw. den dritten Bürgermeister",
+      "klartext": "Im Stadtrat war folgendes Thema: Festsetzung der Entschädigung für die ehrenamtliche dritte Bürgermeisterin bzw. den dritten Bürgermeister.",
+      "klartext_titel_leicht": "Festsetzung der Entschädigung für die ehrenamtliche dritte Bürgermeisterin bzw. den dritten Bürgermeister",
+      "klartext_leicht": "Stadtrat: Festsetzung der Entschädigung für die ehrenamtliche dritte Bürgermeisterin bzw. den dritten Bürgermeister.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250215&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Festsetzung Entschädigung für die ehrenamtliche dritte Bürgermeisterin / den ehrenamtlichen dritten Bürgermeister — (Referent: Oberbürgermeister Dr. Kern) — Hinweis: nur bei Festlegung auf ehrenamtliche dritte Bürgermeisterin / ehrenamtlichen drittenBürgermeister in Rechtsstellungs- und Entschädigungssatzung",
+      "top_nr": "Ö 6",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2026",
+      "datum": "2026-05-05",
+      "datum_anzeige": "05.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13517#Ö 10",
+      "thema": "stadt:13517#Ö 10",
+      "auftritte": [
+        {
+          "datum": "2026-05-05",
+          "datum_anzeige": "05.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 10",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517"
+        }
+      ],
+      "klartext_titel": "Wahl des zweiten Bürgermeisters bzw. der zweiten Bürgermeisterin",
+      "klartext": "Im Stadtrat war folgendes Thema: Wahl des zweiten Bürgermeisters bzw. der zweiten Bürgermeisterin.",
+      "klartext_titel_leicht": "Wahl des zweiten Bürgermeisters bzw. der zweiten Bürgermeisterin",
+      "klartext_leicht": "Stadtrat: Wahl des zweiten Bürgermeisters bzw. der zweiten Bürgermeisterin.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250215&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Wahl des zweiten Bürgermeisters / der zweiten Bürgermeisterin — - Bildung des Wahlausschusses — - Durchführung der Wahl gemäß Art. 51 Abs. 3 GO",
+      "top_nr": "Ö 10",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2026",
+      "datum": "2026-05-05",
+      "datum_anzeige": "05.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13517#Ö 11",
+      "thema": "stadt:13517#Ö 11",
+      "auftritte": [
+        {
+          "datum": "2026-05-05",
+          "datum_anzeige": "05.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 11",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517"
+        }
+      ],
+      "klartext_titel": "Wahl des dritten Bürgermeisters bzw. der dritten Bürgermeisterin",
+      "klartext": "Im Stadtrat war folgendes Thema: Wahl des dritten Bürgermeisters bzw. der dritten Bürgermeisterin.",
+      "klartext_titel_leicht": "Wahl des dritten Bürgermeisters bzw. der dritten Bürgermeisterin",
+      "klartext_leicht": "Stadtrat: Wahl des dritten Bürgermeisters bzw. der dritten Bürgermeisterin.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250215&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Wahl des dritten Bürgermeisters / der dritten Bürgermeisterin — - Bildung des Wahlausschusses — - Durchführung der Wahl gemäß Art. 51 Abs. 3 GO — Hinweis: nur bei Festlegung auf berufsmäßige dritte Bürgermeisterin / berufsmäßigen dritten Bürgermeisterin Rechtsstellungs- und Entschädigungssatzung",
+      "top_nr": "Ö 11",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2026",
+      "datum": "2026-05-05",
+      "datum_anzeige": "05.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13517#Ö 12",
+      "thema": "stadt:13517#Ö 12",
+      "auftritte": [
+        {
+          "datum": "2026-05-05",
+          "datum_anzeige": "05.05.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 12",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517"
+        }
+      ],
+      "klartext_titel": "Vereidigung der gewählten Bürgermeister bzw. Bürgermeisterinnen",
+      "klartext": "Im Stadtrat war folgendes Thema: Vereidigung der gewählten Bürgermeister bzw. Bürgermeisterinnen.",
+      "klartext_titel_leicht": "Vereidigung der gewählten Bürgermeister bzw. Bürgermeisterinnen",
+      "klartext_leicht": "Stadtrat: Vereidigung der gewählten Bürgermeister bzw. Bürgermeisterinnen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250215&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Vereidigung der gewählten Bürgermeister / Bürgermeisterinnen",
+      "top_nr": "Ö 12",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/01/2026",
+      "datum": "2026-05-05",
+      "datum_anzeige": "05.05.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13517",
+      "dokumente": [],
+      "beratungsweg": []
     },
     {
       "ref": "bza:14060#Ö 2.1",
@@ -16661,6 +17706,316 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513&toselect=87386"
         }
       ]
+    },
+    {
+      "ref": "stadt:13513#Ö 29",
+      "thema": "stadt:13513#Ö 29",
+      "auftritte": [
+        {
+          "datum": "2026-03-26",
+          "datum_anzeige": "26.03.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 29",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513"
+        }
+      ],
+      "klartext_titel": "Gründerzentrum brigk übertrifft Ziel bei Unternehmenszahl, bleibt bei Veranstaltungen dahinter",
+      "klartext": "Auf einen umfangreichen Fragenkatalog von FDP und Junger Union zur Evaluation des digitalen Gründerzentrums brigk antwortet die IFG Ingolstadt AöR: Bei der Zahl der im brigk angesiedelten Unternehmen wurde das gemäß Förderbescheid vereinbarte Ziel von 30 Unternehmen 2025 mit tatsächlich 45 Unternehmen deutlich übertroffen (2021 waren es erst 8). Bei den Netzwerkveranstaltungen blieb das brigk 2024 mit 32 Veranstaltungen hinter dem Ziel von 100 zurück, erreichte aber mit 1.665 Teilnehmenden mehr als das Ziel von 1.500; 2025 stiegen die Veranstaltungen auf 51 mit 1.883 Teilnehmenden. Beim ergänzenden Standort brigkAIR wuchs die Zahl der ansässigen Start-ups von 3 (2023) auf 5 (erstes Halbjahr 2025), die Zahl der belegten Arbeitsplätze im Co-Working-Bereich stieg von 1 auf 22. Die Zielerreichung wird regelmäßig vom bayerischen Wirtschaftsministerium als Fördergeber im Rahmen von Verwendungsnachweisprüfungen kontrolliert.",
+      "klartext_titel_leicht": "Gründerzentrum brigk hat mehr Firmen als geplant",
+      "klartext_leicht": "Das brigk ist ein Ort für Gründer von neuen digitalen Firmen. Das Ziel war: 30 Firmen sollen dort sein. 2025 waren es schon 45 Firmen, mehr als geplant. Bei Veranstaltungen für Firmen-Gründer gab es dagegen weniger als geplant. Ein Zusatz-Angebot namens brigkAIR wächst ebenfalls, zum Beispiel bei den Arbeitsplätzen zum gemeinsamen Arbeiten.",
+      "lebenslage": [
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249702&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Stellungnahme zu den Fragen der FDP/JU zur Evaluation des brigk",
+      "top_nr": "Ö 29",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/2/2026",
+      "datum": "2026-03-26",
+      "datum_anzeige": "26.03.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513",
+      "dokumente": [
+        {
+          "titel": "Antwort Ref. VIII",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248316&type=do"
+        },
+        {
+          "titel": "Fragen brigk fdp ju",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248317&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13513#Ö 12.1",
+      "thema": "stadt:13513#Ö 12.1",
+      "auftritte": [
+        {
+          "datum": "2026-03-26",
+          "datum_anzeige": "26.03.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 12.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513"
+        }
+      ],
+      "klartext_titel": "Neubau eines Amazon-Logistikzentrums mit Parkhaus in Ingolstadt",
+      "klartext": "Im Stadtrat war folgendes Thema: Neubau eines Amazon-Logistikzentrums mit Parkhaus in Ingolstadt.",
+      "klartext_titel_leicht": "Neubau eines Amazon-Logistikzentrums mit Parkhaus in Ingolstadt",
+      "klartext_leicht": "Stadtrat: Neubau eines Amazon-Logistikzentrums mit Parkhaus in Ingolstadt.",
+      "lebenslage": [
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Bauleitplanung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249702&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Neubau eines Amazon-Logistikzentrums mit Parkhaus in Ingolstadt",
+      "top_nr": "Ö 12.1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/2/2026",
+      "datum": "2026-03-26",
+      "datum_anzeige": "26.03.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13513#Ö 13",
+      "thema": "stadt:13513#Ö 13",
+      "auftritte": [
+        {
+          "datum": "2026-03-26",
+          "datum_anzeige": "26.03.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 13",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513"
+        }
+      ],
+      "klartext_titel": "Spontanhilfe-Konzept und moderne Frühwarnsysteme",
+      "klartext": "Im Stadtrat war folgendes Thema: Spontanhilfe-Konzept und moderne Frühwarnsysteme.",
+      "klartext_titel_leicht": "Spontanhilfe-Konzept und moderne Frühwarnsysteme",
+      "klartext_leicht": "Stadtrat: Spontanhilfe-Konzept und moderne Frühwarnsysteme.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249702&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Spontanhilfe-Konzept und moderne Frühwarnsysteme",
+      "top_nr": "Ö 13",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/2/2026",
+      "datum": "2026-03-26",
+      "datum_anzeige": "26.03.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13513#Ö 15",
+      "thema": "stadt:13513#Ö 15",
+      "auftritte": [
+        {
+          "datum": "2026-03-26",
+          "datum_anzeige": "26.03.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 15",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513"
+        }
+      ],
+      "klartext_titel": "Einrichtung einer interdisziplinären Arbeitsgruppe „Zivilschutz und zivile Verteidigung“",
+      "klartext": "Im Stadtrat war folgendes Thema: Einrichtung einer interdisziplinären Arbeitsgruppe „Zivilschutz und zivile Verteidigung“.",
+      "klartext_titel_leicht": "Einrichtung einer interdisziplinären Arbeitsgruppe „Zivilschutz und zivile Verteidigung“",
+      "klartext_leicht": "Stadtrat: Einrichtung einer interdisziplinären Arbeitsgruppe „Zivilschutz und zivile Verteidigung“.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249702&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Einrichtung einer interdisziplinären Arbeitsgruppe \"Zivilschutz und zivile Verteidigung\"",
+      "top_nr": "Ö 15",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/2/2026",
+      "datum": "2026-03-26",
+      "datum_anzeige": "26.03.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13513#Ö 18",
+      "thema": "stadt:13513#Ö 18",
+      "auftritte": [
+        {
+          "datum": "2026-03-26",
+          "datum_anzeige": "26.03.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 18",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513"
+        }
+      ],
+      "klartext_titel": "Schaffung einer Stelle zur Beratung und Beantragung von Drittfördermitteln für Kunst- und Kreativschaffende",
+      "klartext": "Im Stadtrat war folgendes Thema: Schaffung einer Stelle zur Beratung und Beantragung von Drittfördermitteln für Kunst- und Kreativschaffende.",
+      "klartext_titel_leicht": "Schaffung einer Stelle zur Beratung und Beantragung von Drittfördermitteln für Kunst- und Kreativschaffende",
+      "klartext_leicht": "Stadtrat: Schaffung einer Stelle zur Beratung und Beantragung von Drittfördermitteln für Kunst- und Kreativschaffende.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249702&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Schaffung einer Stelle zur Beratung/Beantragung von Drittfördermitteln für Kunst- und Kreativschaffende",
+      "top_nr": "Ö 18",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/2/2026",
+      "datum": "2026-03-26",
+      "datum_anzeige": "26.03.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13513#Ö 19",
+      "thema": "stadt:13513#Ö 19",
+      "auftritte": [
+        {
+          "datum": "2026-03-26",
+          "datum_anzeige": "26.03.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 19",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513"
+        }
+      ],
+      "klartext_titel": "Arbeitsgelegenheiten für Asylbewerber",
+      "klartext": "Im Stadtrat war folgendes Thema: Arbeitsgelegenheiten für Asylbewerber.",
+      "klartext_titel_leicht": "Arbeitsgelegenheiten für Asylbewerber",
+      "klartext_leicht": "Stadtrat: Arbeitsgelegenheiten für Asylbewerber.",
+      "lebenslage": [
+        "Zuwanderung & Integration",
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249702&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Arbeitsgelegenheiten für Asylbewerber",
+      "top_nr": "Ö 19",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/2/2026",
+      "datum": "2026-03-26",
+      "datum_anzeige": "26.03.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13513#Ö 28",
+      "thema": "stadt:13513#Ö 28",
+      "auftritte": [
+        {
+          "datum": "2026-03-26",
+          "datum_anzeige": "26.03.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 28",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513"
+        }
+      ],
+      "klartext_titel": "Widerruf der Bestellung von Oberbürgermeister Dr. Michael Kern zum Mitglied des Kuratoriums der Stiftung „Dr. Reissmüller“",
+      "klartext": "Im Stadtrat war folgendes Thema: Widerruf der Bestellung von Oberbürgermeister Dr. Michael Kern zum Mitglied des Kuratoriums der Stiftung „Dr. Reissmüller“.",
+      "klartext_titel_leicht": "Widerruf der Bestellung von Oberbürgermeister Dr. Michael Kern zum Mitglied des Kuratoriums der Stiftung „Dr. Reissmüller“",
+      "klartext_leicht": "Stadtrat: Widerruf der Bestellung von Oberbürgermeister Dr. Michael Kern zum Mitglied des Kuratoriums der Stiftung „Dr. Reissmüller“.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249702&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Widerruf der Bestellung von Oberbürgermeister Dr. Michael Kern zum Mitglied des Kuratoriums der Stiftung „Dr. Reissmüller\"",
+      "top_nr": "Ö 28",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/2/2026",
+      "datum": "2026-03-26",
+      "datum_anzeige": "26.03.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13513",
+      "dokumente": [],
+      "beratungsweg": []
     },
     {
       "ref": "stadt:13692#Ö 1",
