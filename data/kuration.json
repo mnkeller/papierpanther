@@ -9720,30 +9720,36 @@
       "klartext_leicht": "Bezirks-Ausschuss XII-Münchener Straße: Geschwindigkeitsmessung Lindberghstraße, Schr. v. 24.01.2025."
     },
     "bza:13147#Ö 3.5": {
-      "klartext_titel": "Signalanlagen Münchener Straße, St. Anton, St. Markus, Schr. v. 08.01.2025 (Ref. VII, Az: 2024-12-022)",
-      "klartext": "",
+      "klartext_titel": "Ampel bei St. Markus schaltet sonntags jetzt eine Stunde früher ein",
+      "klartext": "Die vom Bezirksausschuss gewünschte frühere Schaltung der Ampel für Kirchgänger bei St. Anton war laut Verwaltung nicht nötig, da diese Signalanlage bereits durchgehend in Betrieb ist. Bei der benachbarten Signalanlage St. Markus wurde die sonntägliche Einschaltzeit dagegen von 9 auf 8 Uhr vorgezogen.",
       "lebenslage": [
-        "Unterwegs"
+        "Senior:innen"
       ],
       "bezirk": [
         "XII-Münchener Straße"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Ampel bei St. Markus geht sonntags früher an",
+      "klartext_leicht": "An zwei Ampeln in der Münchener Straße wurde nach früherem Ein-Schalten gefragt. Bei St. Anton ist die Ampel schon immer an. Bei St. Markus schaltet sie sich jetzt sonntags um 8 Uhr statt um 9 Uhr ein. So kommen Kirchgänger besser über die Straße."
     },
     "bza:13147#Ö 3.6": {
-      "klartext_titel": "Haltelinie Unteranger, Schr. v. 08.01.2025 (Ref. VII, Az: 2024-12-021)",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Zurückversetzte Haltelinie am Unteranger bleibt, Umsetzung erst 2025",
+      "klartext": "Die während einer Baustelle in der Hans-Denck-Straße zurückversetzte Haltelinie an der Ampel Münchener Straße/Unteranger soll dauerhaft bleiben. Das Verkehrsmanagement stimmt zu, muss aber noch die Fahrzeug- und Fahrraderkennung anpassen. Wegen der angespannten Haushaltslage kann das erst im zweiten Halbjahr 2025 umgesetzt werden.",
+      "lebenslage": [],
       "bezirk": [
         "XII-Münchener Straße"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Haltelinie am Unteranger bleibt so, wie sie jetzt ist",
+      "klartext_leicht": "Am Unteranger wurde die Haltelinie an der Ampel während einer Baustelle nach hinten verschoben. Das soll so bleiben. Die Technik der Ampel muss dafür noch angepasst werden. Das dauert. Fertig ist es erst in der zweiten Hälfte von 2025."
     },
     "bza:13147#Ö 4.1": {
       "klartext_titel": "Sachstand bisheriger Förderungen",
@@ -9793,43 +9799,56 @@
       "klartext_leicht": "Bezirks-Ausschuss XII-Münchener Straße: Ergebnisse der Geschwindigkeitsmessanlagen."
     },
     "bza:13226#Ö 3.1": {
-      "klartext_titel": "Ampel F.-Ebert-Str./Schillerstr. AZ 2024-03-032",
-      "klartext": "",
+      "klartext_titel": "Ampel Schillerstraße/Friedrich-Ebert-Straße bleibt künftig bis 2 Uhr nachts in Betrieb",
+      "klartext": "Weil es an der Kreuzung Schillerstraße/Friedrich-Ebert-Straße nach dem bisherigen Abschalten der Ampel um 23 Uhr immer wieder zu kritischen Situationen kam, will die Verwaltung die Betriebszeit verlängern: Die Signalanlage soll künftig erst um 2 Uhr nachts abgeschaltet werden, montags bis freitags ab 5:30 Uhr, samstags ab 7 Uhr und sonntags ab 9 Uhr.",
+      "lebenslage": [],
+      "bezirk": [
+        "III-Nordost"
+      ],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Ampel Schillerstraße bleibt länger an",
+      "klartext_leicht": "An der Kreuzung Schillerstraße und Friedrich-Ebert-Straße gab es abends gefährliche Situationen. Die Ampel ging um 23 Uhr aus. Autos fuhren dann oft zu schnell. Jetzt soll die Ampel bis 2 Uhr nachts an bleiben. Das soll sicherer sein."
+    },
+    "bza:13226#Ö 3.2": {
+      "klartext_titel": "Kein Platz für eine zusätzliche Schaukel am Spielplatz Hermann-Hesse-Straße",
+      "klartext": "Am erst kürzlich neu geplanten und gebauten Spielplatz Hermann-Hesse-Straße findet sich laut Gartenamt kein Platz für eine zusätzliche Schaukel, da alle offenen Flächen bereits mit Geräten belegt sind und unter den großen Bäumen aus Wurzelschutzgründen nichts errichtet werden darf. Als Alternative verweist die Verwaltung auf die vorhandene Hängematte sowie auf den rund 230 Meter entfernten Spielplatz Peter-und-Paul-Weg, der eine Schaukel besitzt.",
       "lebenslage": [
-        "Unterwegs"
+        "Eltern & Kinder"
       ],
       "bezirk": [
         "III-Nordost"
       ],
       "ort": [],
       "anlass": [
-        "Verkehrsplanung"
+        "Grün & Sauberkeit"
       ],
-      "entwurf": true
-    },
-    "bza:13226#Ö 3.2": {
-      "klartext_titel": "Schaukel H.-Hesse-Str. AZ 2024-03-015B",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
-      "bezirk": [
-        "III-Nordost"
-      ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Keine neue Schaukel am Spielplatz Hermann-Hesse-Straße",
+      "klartext_leicht": "Am Spielplatz Hermann-Hesse-Straße wurde eine Schaukel gewünscht. Es gibt aber keinen Platz mehr dafür. Der Spielplatz wurde erst vor Kurzem neu gebaut. Unter den großen Bäumen darf nichts gebaut werden. Kleine Kinder können stattdessen die Hängematte nutzen. Eine Schaukel gibt es außerdem am nahen Spielplatz Peter-und-Paul-Weg."
     },
     "bza:13226#Ö 3.3": {
-      "klartext_titel": "Bodentrampolin Donaustrand AZ 2025-03-002",
-      "klartext": "",
-      "lebenslage": [],
+      "klartext_titel": "Bodentrampolin am Donaustrand wird bestellt",
+      "klartext": "Das von der Kinderversammlung gewünschte Bodentrampolin am Donaustrand wird vom Gartenamt zeitnah bestellt und sobald wie möglich installiert.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
       "bezirk": [
         "III-Nordost"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Donaustrand"
+      ],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Neues Bodentrampolin am Donaustrand kommt",
+      "klartext_leicht": "Kinder haben sich ein Bodentrampolin am Donaustrand gewünscht. Das Garten-Amt der Stadt bestellt es jetzt. Es wird bald aufgebaut."
     },
     "bza:13226#Ö 3.4": {
       "klartext_titel": "Anwohnerinfo Mitterweg",
@@ -9847,8 +9866,8 @@
       "klartext_leicht": "Bezirks-Ausschuss III-Nordost: Anwohnerinfo Mitterweg."
     },
     "bza:13226#Ö 3.5": {
-      "klartext_titel": "Radwegführung Regensburger Str. / Gutenbergstr. AZ 2024-03-010",
-      "klartext": "",
+      "klartext_titel": "Radverkehrsführung Regensburger Straße/Gutenbergstraße soll verbessert werden",
+      "klartext": "Die Verwaltung stimmt zu, dass die Radverkehrsführung zwischen Regensburger Straße und Gutenbergstraße in beide Richtungen verbesserungswürdig ist. Für eine Optimierung ist ein baulicher Eingriff in den gesamten Kreuzungsbereich nötig; die Planungen werden aufgenommen. Wegen der angespannten Haushaltslage ist eine Umsetzung in naher Zukunft aber voraussichtlich nicht gesichert.",
       "lebenslage": [
         "Unterwegs"
       ],
@@ -9859,22 +9878,25 @@
       "anlass": [
         "Verkehrsplanung"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Radweg an der Kreuzung Regensburger Straße soll besser werden",
+      "klartext_leicht": "An der Kreuzung Regensburger Straße und Gutenbergstraße ist der Radweg nicht gut. Die Stadt findet das auch. Für eine Verbesserung muss die ganze Kreuzung umgebaut werden. Die Stadt fängt mit der Planung an. Wann der Umbau wirklich kommt, ist wegen fehlendem Geld noch unklar."
     },
     "bza:13226#Ö 3.6": {
-      "klartext_titel": "Aufwertung Lärmschutzwand Frühlingstr. 2024-03-25",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Begrünung der Lärmschutzwand Frühlingstraße bleibt aus, Bahngrundstück und fehlendes Geld im Weg",
+      "klartext": "Eine Begrünung der Lärmschutzwand in der Frühlingstraße ist laut Gartenamt nicht möglich: Die dafür vorgesehene Fläche gehört größtenteils der Deutschen Bahn, die aus Gründen der Inspektion und Unterhaltung einen Mindestabstand von 1,50 Metern zur Wand verlangt. Der städtische Flächenanteil ist bereits durch selbst angesiedelte Sträucher und Gehölze wie Eschen und Spitz-Ahorne begrünt; eine geplante Neuanlage wäre wegen der Nähe zum Bahngrundstück sehr pflegeintensiv und ist angesichts fehlender Haushaltsmittel nicht vorgesehen.",
+      "lebenslage": [],
       "bezirk": [
         "III-Nordost"
       ],
       "ort": [],
       "anlass": [
-        "Klima & Umwelt"
+        "Grün & Sauberkeit",
+        "Gebühren & Preise"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Lärmschutzwand Frühlingstraße wird nicht extra begrünt",
+      "klartext_leicht": "Die Lärmschutzwand in der Frühlingstraße sollte grüner werden. Das geht aber nicht. Die Fläche davor gehört größtenteils der Bahn. Die Bahn braucht Platz für Kontrollen an der Wand. Der kleine Teil der Stadt ist schon von selbst grün geworden, mit Sträuchern und Bäumen. Für mehr Grün fehlt der Stadt das Geld."
     },
     "bza:13226#Ö 3.7": {
       "klartext_titel": "Baufertigstellungen",
@@ -10250,17 +10272,23 @@
       "klartext_leicht": "Bezirks-Ausschuss II-Nordwest: Bürgerhaushalt – Beratung und Entscheidungen."
     },
     "bza:13173#Ö 4.1": {
-      "klartext_titel": "aktueller Stand BHH 2024/25",
-      "klartext": "",
-      "lebenslage": [],
+      "klartext_titel": "Bürgerhaushalt Nordwest 2024: rund 111.000 von 130.000 Euro verplant",
+      "klartext": "Vom Bürgerhaushalt 2024 des Bezirks II-Nordwest mit einem Ansatz von 130.000 Euro sind 111.639 Euro verplant, sodass rund 18.360 Euro an Restmitteln bleiben. Umgesetzt wurden unter anderem eine Zaunanlage für den Imkerverein Piuspark, Spiele und neue Medien für das Seniorenzentrum Bonhoeffer, ein Graffiti-Projekt der Jugendfreizeitstätte Piustreff und ein Soccer-Court am Katharinen-Gymnasium. Noch offen sind unter anderem ein Kunst-am-Bau-Mosaik an der Christoph-Kolumbus-Schule und ein Experimentierraum derselben Schule.",
+      "lebenslage": [
+        "Senior:innen",
+        "Eltern & Kinder"
+      ],
       "bezirk": [
         "II-Nordwest"
       ],
       "ort": [],
       "anlass": [
-        "Gebühren & Preise"
+        "Gebühren & Preise",
+        "Konzept & Planung"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Bürgerhaushalt Nordwest 2024: das meiste Geld ist schon verplant",
+      "klartext_leicht": "Der Bezirk Nordwest hatte 2024 130.000 Euro für kleine Projekte. Schon verplant sind 111.639 Euro. Etwa 18.000 Euro sind noch übrig. Fertig ist zum Beispiel ein Zaun für den Imkerverein. Auch neue Spiele für ein Seniorenzentrum gibt es schon. Noch offen ist zum Beispiel ein Kunstwerk an einer Schule."
     },
     "bza:13173#Ö 4.2": {
       "klartext_titel": "Nachtrag: AZ 2024-02-019B -Tore am Corelliweg",
@@ -10475,41 +10503,44 @@
       "klartext_leicht": "Bezirks-Ausschuss XI-Friedrichshofen/Hollerstauden: 5.2. Abfallbehälter mit Abdeckung im Haslangpark."
     },
     "bza:11490#Ö 2.1": {
-      "klartext_titel": "Stargarderstr. - Bolzplatz 2024-04-023",
-      "klartext": "",
-      "lebenslage": [
-        "Jugend",
-        "Unterwegs",
-        "Freizeit & Sport"
-      ],
-      "bezirk": [
-        "IV-Südost"
-      ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
-    },
-    "bza:11490#Ö 2.2": {
-      "klartext_titel": "Marienbaderstr. – Spielplatz 2024-04-008",
-      "klartext": "",
+      "klartext_titel": "Bolzplatz Stargarder Straße bleibt trotz neuem Waldkindergarten nutzbar",
+      "klartext": "Der neu installierte Waldkindergarten-Wagen an der Stargarder Straße steht im nördlichsten Bereich des Bolzplatzes vor dem Baumbestand. Ein Ballfangzaun wird errichtet, um die Kindergartenkinder zu schützen und gleichzeitig das Ballholen für die Fußballspieler zu erleichtern. Da sich die Fläche dadurch nur um ein Drittel in der Länge verringert, bleibt laut Verwaltung genug Platz zum Fußballspielen.",
       "lebenslage": [
         "Eltern & Kinder",
-        "Unterwegs",
-        "Freizeit & Sport"
+        "Jugend"
       ],
       "bezirk": [
         "IV-Südost"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Bolzplatz Stargarder Straße bleibt nutzbar",
+      "klartext_leicht": "An der Stargarder Straße gibt es jetzt einen Wald-Kindergarten. Er steht am Rand des Bolzplatzes. Ein Zaun schützt die Kindergarten-Kinder vor Bällen. Der Bolzplatz wird dadurch etwas kleiner. Zum Fußballspielen bleibt aber genug Platz."
+    },
+    "bza:11490#Ö 2.2": {
+      "klartext_titel": "Spielplatz Marienbader Straße wird nicht saniert, gilt als in Ordnung",
+      "klartext": "Nach Überprüfung vor Ort sieht die Verwaltung keine Sanierung des Spielplatzes Marienbader Straße als erforderlich an, auch unter Berücksichtigung anderer bereits realisierter Projekte in der Umgebung wie dem Spielplatz an der Marienburger Straße. Die Spielplätze werden turnusmäßig monatlich vom Kontrollteam inspiziert; festgestellte Schäden werden zeitnah ausgebessert.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "IV-Südost"
+      ],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Spielplatz Marienbader Straße bleibt wie er ist",
+      "klartext_leicht": "Der Spielplatz Marienbader Straße wurde überprüft. Die Stadt findet ihn in Ordnung. Eine Sanierung ist nicht nötig. Ein Kontroll-Team schaut sich alle Spielplätze jeden Monat an. Schäden werden schnell repariert."
     },
     "bza:11490#Ö 2.3": {
-      "klartext_titel": "Altwasserweg – Durchfahrtsverkehr - 2024-04-004",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Keine Sperrung des Durchgangsverkehrs im Altwasserweg",
+      "klartext": "Ein Antrag, den Durchgangsverkehr im 120 Meter langen Altwasserweg zu unterbinden, lehnt die Verwaltung ab. Das Verkehrsaufkommen sei gering, es gebe keine Kindergärten, Schulen oder Altenheime an der Straße und keine bekannten Unfälle. Lediglich morgens und nachmittags komme es kurzzeitig durch eine soziale Einrichtung zu mehr Verkehr, der aber bei Einhaltung des bestehenden Haltverbots flüssig abgewickelt werden könne.",
+      "lebenslage": [],
       "bezirk": [
         "IV-Südost"
       ],
@@ -10517,22 +10548,26 @@
       "anlass": [
         "Verkehrsplanung"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Altwasserweg bleibt für Durchgangsverkehr offen",
+      "klartext_leicht": "Im Altwasserweg sollte der Durchgangs-Verkehr gestoppt werden. Die Stadt lehnt das ab. Es fahren dort nur wenige Autos. Schulen oder Kindergärten gibt es dort nicht. Nur morgens und nachmittags kommen kurz mehr Autos, wegen einer sozialen Einrichtung. Das geht aber gut, wenn alle das Halte-Verbot beachten."
     },
     "bza:11490#Ö 2.4": {
-      "klartext_titel": "Niederfeld – Busendhalt - Parkbuchten 2024-04-026",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Absolutes Haltverbot an der Busendhaltestelle Niederfeld angeordnet",
+      "klartext": "Auf ausdrücklichen Wunsch des Bezirksausschusses wurde in den Parkbuchten gegenüber der Busendhaltestelle Niederfeld ein absolutes Haltverbot angeordnet. Bauliche Maßnahmen werden zunächst nicht weiterverfolgt; die Verwaltung bittet bis zur Umsetzung um Geduld.",
+      "lebenslage": [],
       "bezirk": [
         "IV-Südost"
       ],
-      "ort": [],
+      "ort": [
+        "Niederfeld"
+      ],
       "anlass": [
         "Verkehrsplanung"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Halteverbot an der Bus-Endhaltestelle Niederfeld",
+      "klartext_leicht": "An der Bus-Endhaltestelle Niederfeld gibt es jetzt ein Halte-Verbot gegenüber den Parkbuchten. Der Bezirks-Ausschuss hatte das gewünscht. Einen Umbau gibt es vorerst nicht."
     },
     "bza:11490#Ö 2.5": {
       "klartext_titel": "Hölzlstr. – Einbahnregelung",
@@ -10683,10 +10718,11 @@
       "klartext_leicht": "Bezirks-Ausschuss V-Südwest: Antwortschreiben der Stadt und Informationen aus der Verwaltung."
     },
     "bza:11917#Ö 3.1": {
-      "klartext_titel": "Fahrradstraße Gustav-Adorf-Straße (2023-05-021)",
-      "klartext": "",
+      "klartext_titel": "Fahrradstraße Gustav-Adolf-Straße wird nach Anwohnertermin mit schmalerer Fahrbahn umgesetzt",
+      "klartext": "Nach einem Ortstermin mit Anwohnenden, Bezirksausschuss-Mitgliedern, dem Fahrradbeirat und dem ADFC wurde die Planung für die Fahrradstraße Gustav-Adolf-Straße angepasst: Die Fahrbahnbreite wird auf das Mindestmaß von 3,5 Metern reduziert, um Platz für einen von den Anwohnenden gewünschten Gehweg auf der Westseite zu schaffen. Die Verwaltung sieht das Verhalten für spielende Kinder im Straßenraum als weitgehend unverändert an, da diese schon jetzt dem Fahrverkehr ausweichen müssen, und verweist auf positive Erfahrungen mit bereits umgesetzten Fahrradstraßen im Westen der Stadt.",
       "lebenslage": [
-        "Unterwegs"
+        "Unterwegs",
+        "Eltern & Kinder"
       ],
       "bezirk": [
         "V-Südwest"
@@ -10695,7 +10731,9 @@
       "anlass": [
         "Verkehrsplanung"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Fahrradstraße Gustav-Adolf-Straße wird schmaler geplant",
+      "klartext_leicht": "In der Gustav-Adolf-Straße soll eine Fahrradstraße entstehen. Anwohner hatten Sorgen, zum Beispiel wegen spielender Kinder. Es gab deshalb ein Treffen vor Ort. Danach wurde die Planung geändert. Die Fahrbahn wird schmaler. Dafür gibt es mehr Platz für einen Gehweg. Die Stadt sagt: Mit anderen Fahrradstraßen gab es gute Erfahrungen."
     },
     "bza:11917#Ö 3.2": {
       "klartext_titel": "Sanierung Fauststraße (66/2 SG Straßenneubau)",
@@ -10904,17 +10942,20 @@
       "klartext_leicht": "Bezirks-Ausschuss I-Mitte: Aufstellung nicht abgerufener Gelder."
     },
     "bza:11453#Ö 4.3": {
-      "klartext_titel": "Bürgerhaushalt 2024/25",
-      "klartext": "",
+      "klartext_titel": "Bürgerhaushalt Mitte 2024: rund 118.000 von 127.000 Euro verplant",
+      "klartext": "Vom Bürgerhaushalt 2024 des Bezirks I-Mitte mit einem Ansatz von 107.000 Euro und einem Sonderbudget von 20.000 Euro sind 118.329 Euro verplant, sodass rund 8.670 Euro an Restmitteln bleiben. Umgesetzt wurden unter anderem eine Orgel für die Kirche Maria de Victoria, ein Spielplatz beim Zoo Wasserstern und Hundekotbeutelspender im Luitpoldpark. Noch offen sind unter anderem eine Bolderwand an der Ickstatt-Realschule und die Bestuhlung der Fronte 79.",
       "lebenslage": [],
       "bezirk": [
         "I-Mitte"
       ],
       "ort": [],
       "anlass": [
-        "Gebühren & Preise"
+        "Gebühren & Preise",
+        "Konzept & Planung"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Bürgerhaushalt Mitte 2024: das meiste Geld ist schon verplant",
+      "klartext_leicht": "Der Bezirk Mitte hatte 2024 127.000 Euro für kleine Projekte. Fast alles ist verplant. Etwa 8.600 Euro sind noch übrig. Fertig ist zum Beispiel eine Orgel für eine Kirche. Auch ein Spielplatz beim Zoo Wasserstern ist fertig. Noch offen ist zum Beispiel eine Kletterwand an einer Schule."
     },
     "bza:11908#Ö 2.1": {
       "klartext_titel": "Lautsprecheranlage am Friedhof Zuchering",
@@ -10959,17 +11000,20 @@
       "klartext_leicht": "Bezirks-Ausschuss X-Süd: Zustand Wege am Kempesee."
     },
     "bza:11908#Ö 4": {
-      "klartext_titel": "Bürgerhaushalt 2024/25",
-      "klartext": "",
+      "klartext_titel": "Bürgerhaushalt Süd 2024 vollständig ausgeschöpft",
+      "klartext": "Der Bürgerhaushalt 2024 des Bezirks X-Süd mit einem Ansatz von 67.000 Euro ist vollständig verplant, Restmittel bleiben nicht übrig. Umgesetzt wurden unter anderem eine Aufstockung des Bücherschrank-Budgets, ein Zuschuss für die Beleuchtung des Dorfstadels der Freiwilligen Feuerwehr Brunnenreuth und ein Beamer für den Schützenverein Edelweiß Brunnenreuth. Noch offen sind unter anderem die Umgestaltung des Zugangsbereichs Sandrach sowie die Aufwertung von Spielplätzen im Stadtbezirk.",
       "lebenslage": [],
       "bezirk": [
         "X-Süd"
       ],
       "ort": [],
       "anlass": [
-        "Gebühren & Preise"
+        "Gebühren & Preise",
+        "Konzept & Planung"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Bürgerhaushalt Süd 2024 ist ganz aufgebraucht",
+      "klartext_leicht": "Der Bezirk Süd hatte 2024 67.000 Euro für kleine Projekte. Das ganze Geld ist jetzt verplant. Fertig ist zum Beispiel Geld für die Feuerwehr Brunnenreuth. Auch ein Beamer für einen Schützenverein ist fertig. Noch offen ist zum Beispiel die Umgestaltung eines Zugangsbereichs."
     },
     "bza:11795#Ö 3": {
       "klartext_titel": "Stellungnahmen und Anfragen der Stadtverwaltung",
@@ -10985,9 +11029,10 @@
       "klartext_leicht": "Bezirks-Ausschuss VII-Etting: Stellungnahmen und Anfragen der Stadtverwaltung."
     },
     "bza:11795#Ö 3.1": {
-      "klartext_titel": "Fahrradverkehr an der Druckampel (Kipfenbergerstraße)",
-      "klartext": "",
+      "klartext_titel": "Kein Stoppschild an der Druckampel, aber Umlaufsperre gegen Gehwegradeln geplant",
+      "klartext": "Für die Einmündung Faberstraße/Kipfenberger Straße bei der Druckampel prüfte die Verwaltung zwei Vorschläge: ein Stoppschild statt „Vorfahrt gewähren“ sowie einen Schutzstreifen in der Faberstraße. Beides lehnt sie ab — ein Stoppschild sei wegen ausreichender Sichtverhältnisse nicht nötig, ein Schutzstreifen würde Parkflächen der Anwohner kosten. Stattdessen soll eine Umlaufsperre im Gehweg das verbotswidrige Befahren durch Radfahrende unattraktiv machen und die Situation an der Fußgängerampel, besonders für Schulkinder, verbessern.",
       "lebenslage": [
+        "Eltern & Kinder",
         "Unterwegs"
       ],
       "bezirk": [
@@ -10995,9 +11040,12 @@
       ],
       "ort": [],
       "anlass": [
-        "Verkehrsplanung"
+        "Verkehrsplanung",
+        "Sicherheit"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Kein Stopp-Schild an der Druck-Ampel, aber eine neue Sperre",
+      "klartext_leicht": "An der Druck-Ampel gab es Vorschläge für mehr Sicherheit. Ein Stopp-Schild lehnt die Stadt ab. Auch einen extra Streifen für Fahrräder lehnt sie ab, weil dafür Parkplätze wegfallen müssten. Stattdessen kommt eine kleine Sperre auf den Gehweg. Sie soll Rad-Fahrer davon abhalten, auf dem Gehweg zu fahren."
     },
     "bza:11795#Ö 3.2": {
       "klartext_titel": "E-Mails der Stadtverwaltung",
@@ -11028,8 +11076,8 @@
       "klartext_leicht": "Bezirks-Ausschuss VII-Etting: Sachstandsbericht von Anträgen aus den letzten Sitzungen."
     },
     "bza:11795#Ö 4.1": {
-      "klartext_titel": "B Kindergarten St-Raphael (Bezuschussung Holztipi)",
-      "klartext": "",
+      "klartext_titel": "Amt befürwortet Zuschuss für Holztipi im Kindergarten St. Raphael",
+      "klartext": "Der katholische Kindergarten St. Raphael beantragt einen Zuschuss für ein Holztipi im Außenspielbereich. Das Amt für Kinderbetreuung und -bildung befürwortet die finanzielle Unterstützung durch den Bezirksausschuss, kann aber zu sicherheitsrelevanten Aspekten wie der fachgerechten Montage sowie zur Plausibilität der Kosten keine Aussage treffen.",
       "lebenslage": [
         "Eltern & Kinder"
       ],
@@ -11037,8 +11085,13 @@
         "VII-Etting"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Kinderbetreuung",
+        "Gebühren & Preise"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Geld für ein Holz-Tipi im Kindergarten St. Raphael",
+      "klartext_leicht": "Der Kindergarten St. Raphael möchte ein Holz-Tipi für den Garten kaufen. Das ist ein kleines Zelt aus Holz zum Spielen. Das Amt für Kinder-Betreuung findet die Idee gut. Der Bezirks-Ausschuss soll das Geld dafür geben."
     },
     "bza:11795#Ö 4.2": {
       "klartext_titel": "Pausenhofüberdachung GS Etting (Variante 2A und 2B)",
@@ -11176,19 +11229,20 @@
       "klartext_leicht": "Bezirks-Ausschuss XII-Münchener Straße: Unfallstrecke Münchener Straße."
     },
     "bza:11909#Ö 7": {
-      "klartext_titel": "Bürgerhaushalt 2024/2025",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Bürgerhaushalt Münchener Straße 2024: rund 40.000 von 98.000 Euro verplant",
+      "klartext": "Vom Bürgerhaushalt 2024 des Bezirks XII-Münchener Straße mit einem Ansatz von 98.000 Euro sind 40.340 Euro verplant, sodass rund 57.659 Euro an Restmitteln bleiben. Umgesetzt wurden unter anderem Tische und Bänke für die Kita am Schulzentrum Südwest, eine Fahrradreparaturstation am Hauptbahnhof und ein Zuschuss für die Jugendausrüstung des Schützenvereins Unsernherrn. Noch offen ist unter anderem der Bewegungsparcours bei der Halle Neun, der laut anderer Stellungnahme inzwischen an der Ablehnung durch die Deutsche Bahn gescheitert ist.",
+      "lebenslage": [],
       "bezirk": [
         "XII-Münchener Straße"
       ],
       "ort": [],
       "anlass": [
-        "Gebühren & Preise"
+        "Gebühren & Preise",
+        "Konzept & Planung"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Bürgerhaushalt Münchener Straße 2024: viel Geld ist noch übrig",
+      "klartext_leicht": "Der Bezirk Münchener Straße hatte 2024 98.000 Euro für kleine Projekte. Erst gut 40.000 Euro sind verplant. Etwa 57.000 Euro sind noch übrig. Fertig sind zum Beispiel Tische und Bänke für eine Kita. Auch eine Reparatur-Station für Fahrräder ist fertig. Noch offen war ein Bewegungs-Parcours, der aber nicht gebaut wird."
     },
     "bza:11909#Ö 8": {
       "klartext_titel": "Bürgeranliegen / Verschiedenes",
@@ -11221,11 +11275,9 @@
       "klartext_leicht": "Bezirks-Ausschuss III-Nordost: Gemeinschaftsunterkunft ARA Hotel Schollstr.."
     },
     "bza:11907#Ö 3.2": {
-      "klartext_titel": "Aufwertung Grünstreifen Tengstr. 2024-03-022",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Keine Aufwertung des Grünstreifens an der Tengstraße möglich",
+      "klartext": "Die Grünfläche zwischen Tengstraße und dem Bahnanschluss der Raffinerie/Interpark ist größtenteils in privatem Besitz. Der einzige städtische Teilbereich ist bereits für ökologische Ausgleichsmaßnahmen künftiger Bebauungspläne reserviert, weshalb die Verwaltung keine Fläche für die vorgeschlagene Aufwertung zur Verfügung stellen kann. Sie bietet an, alternative Flächen zu prüfen.",
+      "lebenslage": [],
       "bezirk": [
         "III-Nordost"
       ],
@@ -11233,22 +11285,24 @@
       "anlass": [
         "Grün & Sauberkeit"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Grünstreifen an der Tengstraße kann nicht aufgewertet werden",
+      "klartext_leicht": "An der Tengstraße sollte eine Grünfläche schöner werden. Das geht aber nicht. Die Fläche gehört größtenteils nicht der Stadt. Den kleinen städtischen Teil braucht die Stadt für andere Pflanz-Projekte. Die Stadt schaut sich gerne andere Flächen an, wenn es Vorschläge gibt."
     },
     "bza:11907#Ö 3.3": {
-      "klartext_titel": "Aufwertung Lärmschutzwand Frühlingstr. 2024-03-025",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Begrünung der Lärmschutzwand Frühlingstraße sollte 2025 geplant werden",
+      "klartext": "Lärmschutzwand und angrenzende Fläche in der Frühlingstraße gehören der Deutschen Bahn. Eine Begrünung ist möglich, darf aber die gesetzlich vorgeschriebene Bauwerksprüfung und Unterhaltung der Wand nicht einschränken und braucht eine Abstimmung mit der Bahn. Das Gartenamt kündigte an, dem Bezirksausschuss nach Klärung der Bedingungen voraussichtlich im Frühjahr 2025 eine Planung vorzulegen.",
+      "lebenslage": [],
       "bezirk": [
         "III-Nordost"
       ],
       "ort": [],
       "anlass": [
-        "Klima & Umwelt"
+        "Grün & Sauberkeit"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Plan für mehr Grün an der Lärmschutzwand Frühlingstraße angekündigt",
+      "klartext_leicht": "Die Lärmschutzwand in der Frühlingstraße gehört der Bahn. Sie könnte begrünt werden. Dafür muss sich die Stadt erst mit der Bahn absprechen. Das Garten-Amt wollte dem Bezirks-Ausschuss im Frühjahr 2025 einen Plan zeigen. (Später stellte sich heraus: Wegen fehlendem Geld wird die Wand doch nicht extra begrünt.)"
     },
     "bza:11907#Ö 4.1": {
       "klartext_titel": "Kindergarten St. Paulus",
@@ -11371,17 +11425,20 @@
       "klartext_leicht": "Bezirks-Ausschuss VIII-Oberhaunstadt: Lärmaktionsplan 2024 / Entwurf."
     },
     "bza:11898#Ö 7": {
-      "klartext_titel": "Parkregelung Siegertstraße und Nusserstrasse / Anhörung",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
+      "klartext_titel": "Parksituation Siegert- und Nusserstraße soll erneut im Bezirksausschuss entschieden werden",
+      "klartext": "Die Parksituation in Siegert- und Nusserstraße wurde bereits 2019/2020 im Bezirksausschuss behandelt, ohne dass eine Beschlussfassung vorliegt. Da eine Bürgerin das Thema erneut aufgriff, bittet die Verwaltung, die damaligen Vorschläge — ein einseitiges absolutes Haltverbot oder eine Parkverbotszone — erneut zu beraten und zu beschließen. Beide Straßen sind mit rund 5 Metern Fahrbahnbreite so schmal, dass dort ohnehin schon ein gesetzliches Haltverbot gilt, wenn die Restfahrbahnbreite unter 3,05 Meter sinkt.",
+      "lebenslage": [],
       "bezirk": [
         "VIII-Oberhaunstadt"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Verkehrsplanung",
+        "Satzung & Regeln"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Parken in Siegertstraße und Nusserstraße soll neu entschieden werden",
+      "klartext_leicht": "In der Siegertstraße und der Nusserstraße parken viele Autos. Die Straßen sind schmal, deshalb gilt dort schon ein gesetzliches Halte-Verbot an manchen Stellen. Schon vor Jahren gab es Vorschläge für feste Regeln. Entschieden wurde damals aber nichts. Der Bezirks-Ausschuss soll jetzt neu darüber entscheiden."
     },
     "bza:11899#Ö 1": {
       "klartext_titel": "Niederschrift vom 24.09.2024",
@@ -11428,19 +11485,20 @@
       "klartext_leicht": "Bezirks-Ausschuss V-Südwest: Mitteilung über den Baubeginn Kanalsanierung Zeppelin-, Spitalhof- und Härtingerstraße."
     },
     "bza:11899#Ö 2.2": {
-      "klartext_titel": "Neuaufstellung des Flächennutzungsplanes der Stadt Ingolstadt mit integriertem Landschaftsplan 2024-05-006",
-      "klartext": "",
-      "lebenslage": [
-        "Wohnen & Miete"
-      ],
+      "klartext_titel": "Bezirksausschüsse werden erst nach Abschluss weiterer Fachkonzepte zum neuen Flächennutzungsplan einbezogen",
+      "klartext": "Zur Neuaufstellung des Flächennutzungsplans mit integriertem Landschaftsplan teilt die Verwaltung mit, dass die Anmerkungen aus dem Bezirksausschuss-Protokoll ins formelle Verfahren einfließen. Eine gesonderte Vorstellung des Flächennutzungsplans in den Bezirksausschüssen ist derzeit nicht vorgesehen; ein neuer Entwurf liegt noch nicht vor. Erst nach Abschluss des Stadtentwicklungskonzepts ISEK und weiterer Fachkonzepte wird ein Entwurf erarbeitet, zu dem die Bezirksausschüsse dann informiert und einbezogen werden.",
+      "lebenslage": [],
       "bezirk": [
         "V-Südwest"
       ],
       "ort": [],
       "anlass": [
-        "Bauleitplanung"
+        "Bauleitplanung",
+        "Konzept & Planung"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "Neuer Flächennutzungsplan der Stadt: Bezirksausschüsse müssen noch warten",
+      "klartext_leicht": "Die Stadt plant einen neuen Flächennutzungsplan. Der legt fest, wofür Flächen in der Stadt genutzt werden dürfen. Einen fertigen Entwurf gibt es noch nicht. Die Bezirks-Ausschüsse werden erst später einbezogen, wenn mehr feststeht."
     },
     "bza:11899#Ö 2.3": {
       "klartext_titel": "Zwischenbericht bezüglich 2024-05-007 Änderung des Flächennutzungsplanes - Aktueller Stand Parkplätze …",
@@ -11523,17 +11581,20 @@
       "klartext_leicht": "Bezirks-Ausschuss VI-West: Starkregenereignis in Gerolfing am 14. August 2024."
     },
     "bza:11871#Ö 2.1": {
-      "klartext_titel": "Bürgerhaushalt 2025 - Einbeziehung Unterhaltskosten",
-      "klartext": "",
+      "klartext_titel": "So berechnet die Stadt die Bürgerhaushalt-Mittel je Stadtbezirk für 2025",
+      "klartext": "Für den Bürgerhaushalt 2025 stehen laut Stadtratsbeschlüssen insgesamt 665.000 Euro zur Verfügung, die sich nach der Einwohnerzahl auf die zwölf Stadtbezirke verteilen. Der Bezirk VI-West erhält demnach rund 33.590 Euro, aufgerundet 34.000 Euro. Die größten Anteile entfallen auf III-Nordost mit rund 101.000 Euro und IV-Südost mit rund 91.000 Euro, den kleinsten Anteil erhält VII-Etting mit rund 22.000 Euro.",
       "lebenslage": [],
       "bezirk": [
-        "VI-West"
+        "stadtweit"
       ],
       "ort": [],
       "anlass": [
-        "Gebühren & Preise"
+        "Gebühren & Preise",
+        "Konzept & Planung"
       ],
-      "entwurf": true
+      "entwurf": false,
+      "klartext_titel_leicht": "So viel Bürgerhaushalt-Geld bekommt jeder Stadtbezirk 2025",
+      "klartext_leicht": "Jeder Stadtbezirk bekommt Geld für kleine Projekte, den Bürger-Haushalt. Insgesamt sind es 665.000 Euro für die ganze Stadt. Wie viel ein Bezirk bekommt, hängt von der Einwohnerzahl ab. Der Bezirk West bekommt etwa 34.000 Euro. Der Bezirk Nordost bekommt am meisten, etwa 101.000 Euro."
     },
     "bza:11871#Ö 2.2": {
       "klartext_titel": "SC Irgertsheim Grünpflanzung Sportgelände und Sportgeräte",
@@ -11553,17 +11614,24 @@
       "klartext_leicht": "Bezirks-Ausschuss VI-West: SC Irgertsheim Grünpflanzung Sportgelände und Sportgeräte."
     },
     "bza:11871#Ö 2.4": {
-      "klartext_titel": "Zuschuss zum Kauf eines Luftgewehrs/Lichtgewehrs für den Schützenverein Dünzlau",
-      "klartext": "",
+      "klartext_titel": "Lichtgewehre für Schützenverein Dünzlau förderfähig, Luftgewehre nicht",
+      "klartext": "Zur Frage, ob der Schützenverein Dünzlau einen Zuschuss zum Kauf eines Luftgewehrs oder Lichtgewehrs erhalten kann, stellt die Verwaltung klar: Luftgewehre gelten waffenrechtlich als Schusswaffen, deren Förderung die Bürgerhaushalt-Richtlinien ausdrücklich ausschließen. Lichtgewehre dagegen sind Simulationsgeräte ohne Geschossabgabe und damit förderfähig. Ob der Verein tatsächlich einen Antrag stellen will, war zum Zeitpunkt der Anfrage noch offen.",
       "lebenslage": [
         "Ehrenamt & Vereine"
       ],
       "bezirk": [
         "VI-West"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Dünzlau"
+      ],
+      "anlass": [
+        "Satzung & Regeln",
+        "Gebühren & Preise"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Lichtgewehre dürfen gefördert werden, Luftgewehre nicht",
+      "klartext_leicht": "Der Schützenverein Dünzlau fragte nach Geld für ein Luftgewehr oder ein Lichtgewehr. Ein Luftgewehr zählt als Waffe. Waffen darf die Stadt nicht mit dem Bürgerhaushalt bezahlen. Ein Lichtgewehr schießt nichts ab und zählt nicht als Waffe. Dafür darf die Stadt Geld geben."
     },
     "bza:11871#Ö 2.5": {
       "klartext_titel": "Fahnenmasten für Pettenhofen",
@@ -11579,28 +11647,36 @@
       "klartext_leicht": "Bezirks-Ausschuss VI-West: Fahnenmasten für Pettenhofen."
     },
     "bza:11871#Ö 3": {
-      "klartext_titel": "Geschwindigkeit in der Gabelholzstraße und dem Mühlackerweg",
-      "klartext": "",
-      "lebenslage": [
-        "Unterwegs"
-      ],
-      "bezirk": [
-        "VI-West"
-      ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
-    },
-    "bza:11871#Ö 4": {
-      "klartext_titel": "Reinigung Friedhof Dünzlau",
-      "klartext": "",
+      "klartext_titel": "Tempo-30-Schild in der Gabelholzstraße galt versehentlich zu weit, wird korrigiert",
+      "klartext": "Eine neu montierte Geschwindigkeitsbegrenzung auf 30 km/h in der Gabelholzstraße sollte nur für einen Teilabschnitt gelten, wirkte aber ungewollt bis zum Ortsende im Mühlackerweg fort. Die Verwaltung setzt dort die zulässige Höchstgeschwindigkeit auf die innerorts üblichen 50 km/h zurück, da der Radverkehr ab dieser Stelle sicher auf einem Sonderweg neben der Fahrbahn geführt wird und keine rechtlichen Gründe für 30 km/h vorliegen.",
       "lebenslage": [],
       "bezirk": [
         "VI-West"
       ],
       "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Tempo-Schild in der Gabelholzstraße wird korrigiert",
+      "klartext_leicht": "In der Gabelholzstraße wurde ein neues Tempo-30-Schild aufgestellt. Aus Versehen galt es zu weit, bis in den Mühlackerweg hinein. Das war nicht so geplant. Die Stadt stellt das jetzt richtig. Im Mühlackerweg gilt wieder Tempo 50, wie sonst in der Stadt üblich."
+    },
+    "bza:11871#Ö 4": {
+      "klartext_titel": "Reinigung des Friedhofs Dünzlau läuft nach anfänglichen Problemen ordnungsgemäß",
+      "klartext": "Nach der Neuausschreibung der Unterhaltsreinigung an den Ingolstädter Friedhöfen übernahm die Firma DSS ab Dezember 2023 die Arbeiten am Friedhof Dünzlau. Anfängliche Reinigungsmängel gingen laut Verwaltung darauf zurück, dass der Firma zunächst kein Schlüssel für die Leichenhalle zur Verfügung stand. Bei einer unangekündigten Kontrolle im Juli 2024 wurden keine Mängel mehr festgestellt; seit Frühsommer 2024 überwacht zusätzlich ein Mitarbeiter des Amtes für Gebäudemanagement die Reinigungsarbeiten.",
+      "lebenslage": [],
+      "bezirk": [
+        "VI-West"
+      ],
+      "ort": [
+        "Dünzlau"
+      ],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Friedhof Dünzlau wird jetzt ordentlich sauber gehalten",
+      "klartext_leicht": "Am Friedhof Dünzlau gab es zuerst Probleme bei der Reinigung. Die Putz-Firma hatte anfangs keinen Schlüssel für das Leichenhaus. Das ist jetzt gelöst. Bei einer Kontrolle im Juli 2024 war alles in Ordnung. Ein Mitarbeiter der Stadt schaut seitdem extra nach der Reinigung."
     },
     "bza:11871#Ö 5": {
       "klartext_titel": "Wechsel des Stadtteilkümmerers",
@@ -11687,32 +11763,43 @@
       "klartext_leicht": "Bezirks-Ausschuss XI-Friedrichshofen/Hollerstauden: Trinkwasserbrunnen und Trinkwasserspender im Stadtgebiet."
     },
     "bza:11529#Ö 3.4": {
-      "klartext_titel": "Zuschuss für den VfB Friedrichshofen (2025-11-001 B)",
-      "klartext": "",
+      "klartext_titel": "VfB Friedrichshofen bekommt 10.800 Euro für zusätzliche Spielfläche",
+      "klartext": "Der VfB Friedrichshofen mit 1.335 Mitgliedern, davon 444 Jugendliche in der Fußballabteilung, benötigt für Fußball und die wachsende Cricket-Abteilung eine zusätzliche Spielfläche. Der Verein hatte in Eigenleistung bereits einen Wall beseitigt und ein Beachvolleyballfeld aufgefüllt, die eigenen Mittel sind jedoch ausgeschöpft. Das Amt für Sport und Freizeit schätzte die Kosten für die weitere Herrichtung der Fläche auf rund 10.800 Euro; der Bezirksausschuss hat diesen Zuschuss aus dem Bürgerhaushalt einstimmig beschlossen.",
       "lebenslage": [
-        "Geld & Soziales"
+        "Jugend",
+        "Freizeit & Sport"
       ],
       "bezirk": [
         "XI-Friedrichshofen/Hollerstauden"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Friedrichshofen"
+      ],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Geld für eine neue Sportfläche beim VfB Friedrichshofen",
+      "klartext_leicht": "Der VfB Friedrichshofen hat viele Mitglieder, auch viele Jugendliche. Sie spielen Fußball und Cricket. Dafür braucht der Verein mehr Platz. Der Verein hat schon selbst mitgeholfen, die Fläche vorzubereiten. Das eigene Geld reicht aber nicht mehr. Der Bezirks-Ausschuss hat jetzt 10.800 Euro dafür bewilligt."
     },
     "bza:11529#Ö 3.5": {
-      "klartext_titel": "Zuschuss für den Hospizverein und die Aussegnungshalle (2025-11-002 B und 003 B)",
-      "klartext": "",
+      "klartext_titel": "3.000 Euro für Trauerzimmer des Hospizvereins, 26.500 Euro für Aussegnungshalle Friedrichshofen eingeplant",
+      "klartext": "Der Hospizverein Levelingstraße erhält einen Zuschuss von 3.000 Euro aus dem Bürgerhaushalt 2024 für die Renovierung eines Trauerzimmers, das 30 Prozent der Gesamtkosten von 10.000 Euro deckt. Für den Bürgerhaushalt 2025 sind zusätzlich 26.500 Euro für die Aussegnungshalle auf dem Friedhof Friedrichshofen eingeplant; deren Erweiterung und Sanierung hat das Hochbauamt bereits in sein Investitionsprogramm für 2025 aufgenommen.",
       "lebenslage": [
-        "Gesundheit & Pflege",
-        "Geld & Soziales",
-        "Ehrenamt & Vereine"
+        "Senior:innen"
       ],
       "bezirk": [
         "XI-Friedrichshofen/Hollerstauden"
       ],
-      "ort": [],
-      "anlass": [],
-      "entwurf": true
+      "ort": [
+        "Friedrichshofen"
+      ],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "entwurf": false,
+      "klartext_titel_leicht": "Geld für ein Trauerzimmer und die Aussegnungshalle in Friedrichshofen",
+      "klartext_leicht": "Der Hospiz-Verein Levelingstraße bekommt 3.000 Euro. Damit wird ein Trauer-Zimmer renoviert. Außerdem bekommt die Aussegnungshalle auf dem Friedhof Friedrichshofen 26.500 Euro. Dort können Angehörige sich von Verstorbenen verabschieden. Der Umbau ist für 2025 geplant."
     },
     "bza:11529#Ö 3.6": {
       "klartext_titel": "INKB Stadtteilkümmerer",
@@ -20933,6 +21020,36 @@
       "entwurf": false
     },
     "bza:13296#Ö 2": {
+      "klartext_titel": "Mehrere Stellungnahmen der Verwaltung im Bezirksausschuss Süd",
+      "klartext": "Im Bezirksausschuss standen mehrere Stellungnahmen der Stadtverwaltung zu einzelnen Bürgeranfragen auf der Tagesordnung.",
+      "klartext_titel_leicht": "Mehrere Antworten der Stadt im Bezirksausschuss Süd",
+      "klartext_leicht": "Im Bezirks-Ausschuss X-Süd hat die Stadt-Verwaltung mehrere Fragen von Bürgern beantwortet. Diese Antworten heißen Stellungnahmen.",
+      "lebenslage": [],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "bza:13157#Ö 3": {
+      "klartext_titel": "Mehrere Stellungnahmen der Verwaltung im Bezirksausschuss Süd",
+      "klartext": "Im Bezirksausschuss standen mehrere Stellungnahmen der Stadtverwaltung zu einzelnen Bürgeranfragen auf der Tagesordnung.",
+      "klartext_titel_leicht": "Mehrere Antworten der Stadt im Bezirksausschuss Süd",
+      "klartext_leicht": "Im Bezirks-Ausschuss X-Süd hat die Stadt-Verwaltung mehrere Fragen von Bürgern beantwortet. Diese Antworten heißen Stellungnahmen.",
+      "lebenslage": [],
+      "bezirk": [
+        "X-Süd"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "bza:11908#Ö 2": {
       "klartext_titel": "Mehrere Stellungnahmen der Verwaltung im Bezirksausschuss Süd",
       "klartext": "Im Bezirksausschuss standen mehrere Stellungnahmen der Stadtverwaltung zu einzelnen Bürgeranfragen auf der Tagesordnung.",
       "klartext_titel_leicht": "Mehrere Antworten der Stadt im Bezirksausschuss Süd",
