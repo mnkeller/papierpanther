@@ -26076,6 +26076,483 @@
         "Schulbau"
       ],
       "entwurf": false
+    },
+    "stadt:11812#Ö 3": {
+      "klartext_titel": "Über 1,5 Millionen Euro Bildungs- und Teilhabeleistungen an bedürftige Familien ausgezahlt",
+      "klartext": "Eine Präsentation zum Bildungs- und Teilhabepaket (BuT) zeigt: Anträge können online oder in Papierform gestellt werden. Für die Bearbeitung entstanden der Stadt Personalkosten von rund 180.516 Euro, wovon der SGB-II-Anteil mit rund 97.329 Euro zu 84,8 Prozent, also rund 82.534 Euro, vom Bund erstattet wird. An ausgezahlten Leistungen wurden rund 1.088.233 Euro über SGB II sowie weitere 418.031 Euro über Wohngeld und Kinderzuschlag ausgereicht.",
+      "klartext_titel_leicht": "Über eine Million Euro Hilfe für Familien mit wenig Geld",
+      "klartext_leicht": "Familien mit wenig Geld können Hilfe für Bildung bekommen, zum Beispiel für Schulausflüge. Das heißt Bildungs- und Teilhabepaket. Man kann es online oder auf Papier beantragen. Die Stadt hat dafür über eine Million Euro an Familien ausgezahlt. Für die Bearbeitung der Anträge braucht die Stadt auch eigenes Personal.",
+      "lebenslage": [
+        "Eltern & Kinder",
+        "Geld & Soziales"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "entwurf": false
+    },
+    "stadt:10144#Ö 41.1": {
+      "klartext_titel": "Stadträtin Krumwiede fragt nach dem Stand der Straßenbenennung nach Hugo Höllenreiner",
+      "klartext": "Stadträtin Agnes Krumwiede fragt nach neuen Entwicklungen bei der vom Stadtrat bereits beschlossenen Benennung eines Straßenabschnitts nach Hugo Höllenreiner. Im Ratsinfoportal liegt bislang nur das Anfrage-Schreiben vor; eine schriftliche Antwort der Verwaltung ist zum Zeitpunkt der Sitzung noch nicht als Dokument veröffentlicht.",
+      "klartext_titel_leicht": "Wie weit ist die neue Straße für Hugo Höllenreiner?",
+      "klartext_leicht": "Der Stadtrat hat schon beschlossen, eine Straße nach Hugo Höllenreiner zu benennen. Eine Stadträtin fragt: Was ist seitdem passiert? Eine schriftliche Antwort der Stadt gibt es dazu noch nicht.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:11814#Ö 8": {
+      "klartext_titel": "Flächen für Erholung und Freizeit im Bezirk Nordost, kleinräumige Verbindungen an den Bezirksgrenzen",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit war folgendes Thema: Flächen für Erholung und Freizeit im Bezirk Nordost, kleinräumige Verbindungen an den Bezirksgrenzen.",
+      "klartext_titel_leicht": "Flächen für Erholung und Freizeit im Bezirk Nordost, kleinräumige Verbindungen an den Bezirksgrenzen",
+      "klartext_leicht": "Ausschuss für Stadtentwicklung: Mehr Flächen für Erholung im Nordosten. Kleine Wege an den Bezirksgrenzen.",
+      "bezirk": [
+        "III-Nordost"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": false
+    },
+    "stadt:11814#Ö 9": {
+      "klartext_titel": "Erneuerung eines Bolzplatzes im Augrabenpark",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit war folgendes Thema: Erneuerung eines Bolzplatzes im Augrabenpark.",
+      "klartext_titel_leicht": "Erneuerung eines Bolzplatzes im Augrabenpark",
+      "klartext_leicht": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit: Erneuerung eines Bolzplatzes im Augrabenpark.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Jugend"
+      ],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": false
+    },
+    "stadt:11814#Ö 10": {
+      "klartext_titel": "Einführung eines digitalen Bewässerungssystems für Stadtbäume",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit war folgendes Thema: Einführung eines digitalen Bewässerungssystems für Stadtbäume.",
+      "klartext_titel_leicht": "Einführung eines digitalen Bewässerungssystems für Stadtbäume",
+      "klartext_leicht": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit: Einführung eines digitalen Bewässerungssystems für Stadtbäume.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "entwurf": false
+    },
+    "stadt:11814#Ö 11": {
+      "klartext_titel": "Blaulicht-Vorrangschaltung an Kreuzungen",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit war folgendes Thema: Blaulicht-Vorrangschaltung an Kreuzungen.",
+      "klartext_titel_leicht": "Blaulicht-Vorrangschaltung an Kreuzungen",
+      "klartext_leicht": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit: Blaulicht-Vorrangschaltung an Kreuzungen.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "entwurf": false
+    },
+    "stadt:11813#Ö 1": {
+      "klartext_titel": "Aktuelle Information zum Kulturgeschehen",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Aktuelle Information zum Kulturgeschehen.",
+      "klartext_titel_leicht": "Aktuelle Information zum Kulturgeschehen",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Aktuelle Information zum Kulturgeschehen.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": false
+    },
+    "stadt:11813#Ö 2": {
+      "klartext_titel": "Weiteres Vorgehen beim Interims-Festsaal",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Weiteres Vorgehen beim Interims-Festsaal.",
+      "klartext_titel_leicht": "Weiteres Vorgehen beim Interims-Festsaal",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Weiteres Vorgehen beim Interims-Festsaal.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung",
+        "Gebühren & Preise"
+      ],
+      "entwurf": false
+    },
+    "stadt:11813#Ö 4": {
+      "klartext_titel": "Mittelschule Südost",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Mittelschule Südost.",
+      "klartext_titel_leicht": "Mittelschule Südost",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Mittelschule Südost.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Schulbau"
+      ],
+      "entwurf": false
+    },
+    "stadt:11813#Ö 5": {
+      "klartext_titel": "Sachstand Lessingschule",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Sachstand Lessingschule.",
+      "klartext_titel_leicht": "Sachstand Lessingschule",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Sachstand Lessingschule.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Schulbau"
+      ],
+      "entwurf": false
+    },
+    "stadt:10144#Ö 5": {
+      "klartext_titel": "Prüfung und Feststellung der Jahresabschlüsse 2023 des Peter-Steuart-Hauses und der Waisenhausstiftung Ingolstadt",
+      "klartext": "Im Stadtrat war folgendes Thema: Prüfung und Feststellung der Jahresabschlüsse 2023 des Peter-Steuart-Hauses und der Waisenhausstiftung Ingolstadt.",
+      "klartext_titel_leicht": "Prüfung und Feststellung der Jahresabschlüsse 2023 des Peter-Steuart-Hauses und der Waisenhausstiftung Ingolstadt",
+      "klartext_leicht": "Stadtrat: Prüfung und Feststellung der Jahresabschlüsse 2023 des Peter-Steuart-Hauses und der Waisenhausstiftung Ingolstadt.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "entwurf": false
+    },
+    "stadt:10144#Ö 41.2": {
+      "klartext_titel": "Anfrage der SPD-Stadtratsfraktion zum Thema Syrien",
+      "klartext": "Im Stadtrat war folgendes Thema: Anfrage der SPD-Stadtratsfraktion zum Thema Syrien.",
+      "klartext_titel_leicht": "Anfrage der SPD-Stadtratsfraktion zum Thema Syrien",
+      "klartext_leicht": "Stadtrat: Anfrage der SPD-Stadtratsfraktion zum Thema Syrien.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:12098#Ö 2": {
+      "klartext_titel": "Bestätigung und Ergänzung des Protokolls der letzten Sitzung",
+      "klartext": "Im Jugendparlament war folgendes Thema: Bestätigung und Ergänzung des Protokolls der letzten Sitzung.",
+      "klartext_titel_leicht": "Bestätigung und Ergänzung des Protokolls der letzten Sitzung",
+      "klartext_leicht": "Jugendparlament: Bestätigung und Ergänzung des Protokolls der letzten Sitzung.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Jugend"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:12098#Ö 3": {
+      "klartext_titel": "Bericht aus dem Vorstand: Corelli-Spielplatz, Lernräume, OB-Hearing",
+      "klartext": "Im Jugendparlament war folgendes Thema: Bericht aus dem Vorstand: Corelli-Spielplatz, Lernräume, OB-Hearing.",
+      "klartext_titel_leicht": "Bericht aus dem Vorstand: Corelli-Spielplatz, Lernräume, OB-Hearing",
+      "klartext_leicht": "Jugendparlament: Bericht aus dem Vorstand: Corelli-Spielplatz, Lernräume, OB-Hearing.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Jugend"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:12098#Ö 4": {
+      "klartext_titel": "JuPa-Weihnachtstreffen",
+      "klartext": "Im Jugendparlament war folgendes Thema: JuPa-Weihnachtstreffen.",
+      "klartext_titel_leicht": "JuPa-Weihnachtstreffen",
+      "klartext_leicht": "Jugendparlament: JuPa-Weihnachtstreffen.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Jugend"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:12098#Ö 6": {
+      "klartext_titel": "Schließung der Sitzung",
+      "klartext": "Im Jugendparlament war folgendes Thema: Schließung der Sitzung.",
+      "klartext_titel_leicht": "Schließung der Sitzung",
+      "klartext_leicht": "Jugendparlament: Schließung der Sitzung.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Jugend"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10142#Ö 18": {
+      "klartext_titel": "Neubau einer 4-gruppigen Kindertagesstätte am Fort Peyerl",
+      "klartext": "Im Ausschuss für Finanzen und Personal war folgendes Thema: Neubau einer 4-gruppigen Kindertagesstätte am Fort Peyerl.",
+      "klartext_titel_leicht": "Neubau einer 4-gruppigen Kindertagesstätte am Fort Peyerl",
+      "klartext_leicht": "Ausschuss für Finanzen und Personal: Neubau einer 4-gruppigen Kindertagesstätte am Fort Peyerl.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "ort": [],
+      "anlass": [
+        "Kinderbetreuung",
+        "Bauleitplanung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10141#Ö 14": {
+      "klartext_titel": "Außenanlagen Museum für Konkrete Kunst und Design/Hochschulplatz und Umbau Roßmühlstraße: 2. ergänzende Projektgenehmigung",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit war folgendes Thema: Außenanlagen Museum für Konkrete Kunst und Design/Hochschulplatz und Umbau Roßmühlstraße: 2. ergänzende Projektgenehmigung.",
+      "klartext_titel_leicht": "Außenanlagen Museum für Konkrete Kunst und Design/Hochschulplatz und Umbau Roßmühlstraße: 2. ergänzende Projektgenehmigung",
+      "klartext_leicht": "Ausschuss für Stadtentwicklung: Neue Genehmigung für Außenanlagen am Museum MKKD und Umbau Roßmühlstraße.",
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Bauleitplanung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10140#Ö 2": {
+      "klartext_titel": "Aktuelle Information zum Kulturgeschehen",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Aktuelle Information zum Kulturgeschehen.",
+      "klartext_titel_leicht": "Aktuelle Information zum Kulturgeschehen",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Aktuelle Information zum Kulturgeschehen.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10140#Ö 3": {
+      "klartext_titel": "Bericht der Projektpartnergemeinde Legmoin (Burkina Faso)",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Bericht der Projektpartnergemeinde Legmoin (Burkina Faso).",
+      "klartext_titel_leicht": "Bericht der Projektpartnergemeinde Legmoin (Burkina Faso)",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Bericht der Projektpartnergemeinde Legmoin (Burkina Faso).",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10140#Ö 6": {
+      "klartext_titel": "Sachstand Antrag MINT-Cluster III",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Sachstand Antrag MINT-Cluster III.",
+      "klartext_titel_leicht": "Sachstand Antrag MINT-Cluster III",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Sachstand Antrag MINT-Cluster III.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Studierende"
+      ],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10140#Ö 11": {
+      "klartext_titel": "Aktueller Sachstand Kulturkanal",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Aktueller Sachstand Kulturkanal.",
+      "klartext_titel_leicht": "Aktueller Sachstand Kulturkanal",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Aktueller Sachstand Kulturkanal.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10140#Ö 14": {
+      "klartext_titel": "Sachstandsbericht zu Schulbaumaßnahmen",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Sachstandsbericht zu Schulbaumaßnahmen.",
+      "klartext_titel_leicht": "Sachstandsbericht zu Schulbaumaßnahmen",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Sachstandsbericht zu Schulbaumaßnahmen.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Schulbau"
+      ],
+      "entwurf": false
+    },
+    "stadt:10140#Ö 18": {
+      "klartext_titel": "Zwischenbericht zu den Ergebnissen der Straßennamenkommission",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Zwischenbericht zu den Ergebnissen der Straßennamenkommission.",
+      "klartext_titel_leicht": "Zwischenbericht zu den Ergebnissen der Straßennamenkommission",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Zwischenbericht zu den Ergebnissen der Straßennamenkommission.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10139#Ö 6": {
+      "klartext_titel": "Voraussichtliche Rechtsänderungen zum 1.1.2025 im SGB II und im Wohngeldrecht",
+      "klartext": "Im Ausschuss für Soziales, Gesundheit, Stiftungen und Familien war folgendes Thema: Voraussichtliche Rechtsänderungen zum 1.1.2025 im SGB II und im Wohngeldrecht.",
+      "klartext_titel_leicht": "Voraussichtliche Rechtsänderungen zum 1.1.2025 im SGB II und im Wohngeldrecht",
+      "klartext_leicht": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien: Voraussichtliche Rechtsänderungen zum 1.1.2025 im SGB II und im Wohngeldrecht.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Geld & Soziales"
+      ],
+      "ort": [],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "entwurf": false
+    },
+    "stadt:10139#Ö 7": {
+      "klartext_titel": "Belegungskonzept für die Obdachlosenunterkunft",
+      "klartext": "Im Ausschuss für Soziales, Gesundheit, Stiftungen und Familien war folgendes Thema: Belegungskonzept für die Obdachlosenunterkunft.",
+      "klartext_titel_leicht": "Belegungskonzept für die Obdachlosenunterkunft",
+      "klartext_leicht": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien: Belegungskonzept für die Obdachlosenunterkunft.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Geld & Soziales",
+        "Wohnen & Miete"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10138#Ö 1": {
+      "klartext_titel": "Mündlicher Bericht zu Veranstaltungen und Märkten",
+      "klartext": "Im Ausschuss für Sport, Veranstaltungen und Freizeit war folgendes Thema: Mündlicher Bericht zu Veranstaltungen und Märkten.",
+      "klartext_titel_leicht": "Mündlicher Bericht zu Veranstaltungen und Märkten",
+      "klartext_leicht": "Ausschuss für Sport, Veranstaltungen und Freizeit: Mündlicher Bericht zu Veranstaltungen und Märkten.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10313#Ö 1": {
+      "klartext_titel": "Vorstellung der Arbeit von Langau e.V.",
+      "klartext": "Im Inklusionsrat war folgendes Thema: Vorstellung der Arbeit von Langau e.V..",
+      "klartext_titel_leicht": "Vorstellung der Arbeit von Langau e.V.",
+      "klartext_leicht": "Inklusionsrat: Vorstellung der Arbeit von Langau e.V..",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10313#Ö 2": {
+      "klartext_titel": "Umgestaltung Harderstraße: aktueller Stand der Sanierung und Barrierefreiheit",
+      "klartext": "Im Inklusionsrat war folgendes Thema: Umgestaltung Harderstraße: aktueller Stand der Sanierung und Barrierefreiheit.",
+      "klartext_titel_leicht": "Umgestaltung Harderstraße: aktueller Stand der Sanierung und Barrierefreiheit",
+      "klartext_leicht": "Inklusionsrat: Umgestaltung Harderstraße: aktueller Stand der Sanierung und Barrierefreiheit.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [],
+      "ort": [],
+      "anlass": [
+        "Bauleitplanung"
+      ],
+      "entwurf": false
+    },
+    "stadt:10313#Ö 3": {
+      "klartext_titel": "Vorstellung Spielplatz Schwarzer Weg",
+      "klartext": "Im Inklusionsrat war folgendes Thema: Vorstellung Spielplatz Schwarzer Weg.",
+      "klartext_titel_leicht": "Vorstellung Spielplatz Schwarzer Weg",
+      "klartext_leicht": "Inklusionsrat: Vorstellung Spielplatz Schwarzer Weg.",
+      "bezirk": [
+        "stadtweit"
+      ],
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": false
     }
   }
 }

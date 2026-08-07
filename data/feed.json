@@ -27,17 +27,17 @@
     "sitzungen_ausgelesen": 360,
     "tops_ausgelesen": 3415,
     "tops_verfahren": 493,
-    "tops_kuratiert": 1657,
+    "tops_kuratiert": 1687,
     "entwuerfe": 0,
-    "leichte_sprache": 1657,
+    "leichte_sprache": 1687,
     "je_quelle": {
-      "stadt": 803,
+      "stadt": 833,
       "bza": 854
     },
     "stand": {
       "Bekanntgabe": 112,
       "Entscheidung angesetzt": 377,
-      "Ohne Vorlage": 1159,
+      "Ohne Vorlage": 1189,
       "Wird noch beraten": 9
     }
   },
@@ -73628,6 +73628,396 @@
       "beratungsweg": []
     },
     {
+      "ref": "stadt:11814#Ö 8",
+      "thema": "stadt:11814#Ö 8",
+      "auftritte": [
+        {
+          "datum": "2025-02-05",
+          "datum_anzeige": "05.02.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 8",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11814"
+        }
+      ],
+      "klartext_titel": "Flächen für Erholung und Freizeit im Bezirk Nordost, kleinräumige Verbindungen an den Bezirksgrenzen",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit war folgendes Thema: Flächen für Erholung und Freizeit im Bezirk Nordost, kleinräumige Verbindungen an den Bezirksgrenzen.",
+      "klartext_titel_leicht": "Flächen für Erholung und Freizeit im Bezirk Nordost, kleinräumige Verbindungen an den Bezirksgrenzen",
+      "klartext_leicht": "Ausschuss für Stadtentwicklung: Mehr Flächen für Erholung im Nordosten. Kleine Wege an den Bezirksgrenzen.",
+      "lebenslage": [],
+      "bezirk": [
+        "III-Nordost"
+      ],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235436&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Flächen für Erholung und Freizeit im Bezirk Nordost, kleinräumige Verbindungen an den Bezirksgrenzen",
+      "top_nr": "Ö 8",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+      "sitzung_kennung": "PLA/01/2025",
+      "datum": "2025-02-05",
+      "datum_anzeige": "05.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11814",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11814#Ö 9",
+      "thema": "stadt:11814#Ö 9",
+      "auftritte": [
+        {
+          "datum": "2025-02-05",
+          "datum_anzeige": "05.02.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 9",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11814"
+        }
+      ],
+      "klartext_titel": "Erneuerung eines Bolzplatzes im Augrabenpark",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit war folgendes Thema: Erneuerung eines Bolzplatzes im Augrabenpark.",
+      "klartext_titel_leicht": "Erneuerung eines Bolzplatzes im Augrabenpark",
+      "klartext_leicht": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit: Erneuerung eines Bolzplatzes im Augrabenpark.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235436&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Erneuerung eines bestehenden Bolzplatzes im Augrabenpark",
+      "top_nr": "Ö 9",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+      "sitzung_kennung": "PLA/01/2025",
+      "datum": "2025-02-05",
+      "datum_anzeige": "05.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11814",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11814#Ö 10",
+      "thema": "stadt:11814#Ö 10",
+      "auftritte": [
+        {
+          "datum": "2025-02-05",
+          "datum_anzeige": "05.02.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 10",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11814"
+        }
+      ],
+      "klartext_titel": "Einführung eines digitalen Bewässerungssystems für Stadtbäume",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit war folgendes Thema: Einführung eines digitalen Bewässerungssystems für Stadtbäume.",
+      "klartext_titel_leicht": "Einführung eines digitalen Bewässerungssystems für Stadtbäume",
+      "klartext_leicht": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit: Einführung eines digitalen Bewässerungssystems für Stadtbäume.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235436&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Einführung eines Digitalen Bewässerungssystems für Stadtbäume in Ingolstadt",
+      "top_nr": "Ö 10",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+      "sitzung_kennung": "PLA/01/2025",
+      "datum": "2025-02-05",
+      "datum_anzeige": "05.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11814",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11814#Ö 11",
+      "thema": "stadt:11814#Ö 11",
+      "auftritte": [
+        {
+          "datum": "2025-02-05",
+          "datum_anzeige": "05.02.2025",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 11",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11814"
+        }
+      ],
+      "klartext_titel": "Blaulicht-Vorrangschaltung an Kreuzungen",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit war folgendes Thema: Blaulicht-Vorrangschaltung an Kreuzungen.",
+      "klartext_titel_leicht": "Blaulicht-Vorrangschaltung an Kreuzungen",
+      "klartext_leicht": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit: Blaulicht-Vorrangschaltung an Kreuzungen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235436&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Blaulicht-Vorrang-Schaltung an Kreuzungen",
+      "top_nr": "Ö 11",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+      "sitzung_kennung": "PLA/01/2025",
+      "datum": "2025-02-05",
+      "datum_anzeige": "05.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11814",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11813#Ö 1",
+      "thema": "stadt:11813#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2025-02-04",
+          "datum_anzeige": "04.02.2025",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11813"
+        }
+      ],
+      "klartext_titel": "Aktuelle Information zum Kulturgeschehen",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Aktuelle Information zum Kulturgeschehen.",
+      "klartext_titel_leicht": "Aktuelle Information zum Kulturgeschehen",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Aktuelle Information zum Kulturgeschehen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234571&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Aktuelle Information zum Kulturgeschehen",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/01/2025",
+      "datum": "2025-02-04",
+      "datum_anzeige": "04.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11813",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11813#Ö 2",
+      "thema": "stadt:11813#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2025-02-04",
+          "datum_anzeige": "04.02.2025",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11813"
+        }
+      ],
+      "klartext_titel": "Weiteres Vorgehen beim Interims-Festsaal",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Weiteres Vorgehen beim Interims-Festsaal.",
+      "klartext_titel_leicht": "Weiteres Vorgehen beim Interims-Festsaal",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Weiteres Vorgehen beim Interims-Festsaal.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234571&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Weiteres Vorgehen Interim-Festsaal",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/01/2025",
+      "datum": "2025-02-04",
+      "datum_anzeige": "04.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11813",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11813#Ö 4",
+      "thema": "stadt:11813#Ö 4",
+      "auftritte": [
+        {
+          "datum": "2025-02-04",
+          "datum_anzeige": "04.02.2025",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11813"
+        }
+      ],
+      "klartext_titel": "Mittelschule Südost",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Mittelschule Südost.",
+      "klartext_titel_leicht": "Mittelschule Südost",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Mittelschule Südost.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Schulbau"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234571&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Mittelschule Südost",
+      "top_nr": "Ö 4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/01/2025",
+      "datum": "2025-02-04",
+      "datum_anzeige": "04.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11813",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11813#Ö 5",
+      "thema": "stadt:11813#Ö 5",
+      "auftritte": [
+        {
+          "datum": "2025-02-04",
+          "datum_anzeige": "04.02.2025",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11813"
+        }
+      ],
+      "klartext_titel": "Sachstand Lessingschule",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Sachstand Lessingschule.",
+      "klartext_titel_leicht": "Sachstand Lessingschule",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Sachstand Lessingschule.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Schulbau"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234571&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Sachstand Lessingschule",
+      "top_nr": "Ö 5",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/01/2025",
+      "datum": "2025-02-04",
+      "datum_anzeige": "04.02.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11813",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:11812#Ö 3",
+      "thema": "stadt:11812#Ö 3",
+      "auftritte": [
+        {
+          "datum": "2025-01-30",
+          "datum_anzeige": "30.01.2025",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11812"
+        }
+      ],
+      "klartext_titel": "Über 1,5 Millionen Euro Bildungs- und Teilhabeleistungen an bedürftige Familien ausgezahlt",
+      "klartext": "Eine Präsentation zum Bildungs- und Teilhabepaket (BuT) zeigt: Anträge können online oder in Papierform gestellt werden. Für die Bearbeitung entstanden der Stadt Personalkosten von rund 180.516 Euro, wovon der SGB-II-Anteil mit rund 97.329 Euro zu 84,8 Prozent, also rund 82.534 Euro, vom Bund erstattet wird. An ausgezahlten Leistungen wurden rund 1.088.233 Euro über SGB II sowie weitere 418.031 Euro über Wohngeld und Kinderzuschlag ausgereicht.",
+      "klartext_titel_leicht": "Über eine Million Euro Hilfe für Familien mit wenig Geld",
+      "klartext_leicht": "Familien mit wenig Geld können Hilfe für Bildung bekommen, zum Beispiel für Schulausflüge. Das heißt Bildungs- und Teilhabepaket. Man kann es online oder auf Papier beantragen. Die Stadt hat dafür über eine Million Euro an Familien ausgezahlt. Für die Bearbeitung der Anträge braucht die Stadt auch eigenes Personal.",
+      "lebenslage": [
+        "Eltern & Kinder",
+        "Geld & Soziales"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bildung und Teilhabe (Antragsverfahren, Personalkosten, Ausgaben für BuT-Leistungen)",
+      "top_nr": "Ö 3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+      "sitzung_kennung": "SGA/01/2025",
+      "datum": "2025-01-30",
+      "datum_anzeige": "30.01.2025",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=11812",
+      "dokumente": [
+        {
+          "titel": "Sozialausschuss 30.01.2025",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230001&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
       "ref": "stadt:11811#Ö 1",
       "thema": "stadt:vorlage:19542",
       "auftritte": [
@@ -78369,6 +78759,142 @@
       ]
     },
     {
+      "ref": "stadt:10144#Ö 41.1",
+      "thema": "stadt:10144#Ö 41.1",
+      "auftritte": [
+        {
+          "datum": "2024-12-17",
+          "datum_anzeige": "17.12.2024",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 41.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10144"
+        }
+      ],
+      "klartext_titel": "Stadträtin Krumwiede fragt nach dem Stand der Straßenbenennung nach Hugo Höllenreiner",
+      "klartext": "Stadträtin Agnes Krumwiede fragt nach neuen Entwicklungen bei der vom Stadtrat bereits beschlossenen Benennung eines Straßenabschnitts nach Hugo Höllenreiner. Im Ratsinfoportal liegt bislang nur das Anfrage-Schreiben vor; eine schriftliche Antwort der Verwaltung ist zum Zeitpunkt der Sitzung noch nicht als Dokument veröffentlicht.",
+      "klartext_titel_leicht": "Wie weit ist die neue Straße für Hugo Höllenreiner?",
+      "klartext_leicht": "Der Stadtrat hat schon beschlossen, eine Straße nach Hugo Höllenreiner zu benennen. Eine Stadträtin fragt: Was ist seitdem passiert? Eine schriftliche Antwort der Stadt gibt es dazu noch nicht.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234169&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage von Stadträtin Krumwiede vom 26.11.2024 zur Straßenumbenennung nach Hugo Höllenreiner",
+      "top_nr": "Ö 41.1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/10/2024",
+      "datum": "2024-12-17",
+      "datum_anzeige": "17.12.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10144",
+      "dokumente": [
+        {
+          "titel": "Anfrage von Stadträtin Krumwiede",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=226615&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:10144#Ö 5",
+      "thema": "stadt:10144#Ö 5",
+      "auftritte": [
+        {
+          "datum": "2024-12-17",
+          "datum_anzeige": "17.12.2024",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10144"
+        }
+      ],
+      "klartext_titel": "Prüfung und Feststellung der Jahresabschlüsse 2023 des Peter-Steuart-Hauses und der Waisenhausstiftung Ingolstadt",
+      "klartext": "Im Stadtrat war folgendes Thema: Prüfung und Feststellung der Jahresabschlüsse 2023 des Peter-Steuart-Hauses und der Waisenhausstiftung Ingolstadt.",
+      "klartext_titel_leicht": "Prüfung und Feststellung der Jahresabschlüsse 2023 des Peter-Steuart-Hauses und der Waisenhausstiftung Ingolstadt",
+      "klartext_leicht": "Stadtrat: Prüfung und Feststellung der Jahresabschlüsse 2023 des Peter-Steuart-Hauses und der Waisenhausstiftung Ingolstadt.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234169&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Prüfung und Feststellung der Jahresabschlüsse 2023 des Peter-Steuart-Hauses und der Waisenhausstiftung Ingolstadt",
+      "top_nr": "Ö 5",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/10/2024",
+      "datum": "2024-12-17",
+      "datum_anzeige": "17.12.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10144",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:10144#Ö 41.2",
+      "thema": "stadt:10144#Ö 41.2",
+      "auftritte": [
+        {
+          "datum": "2024-12-17",
+          "datum_anzeige": "17.12.2024",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 41.2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10144"
+        }
+      ],
+      "klartext_titel": "Anfrage der SPD-Stadtratsfraktion zum Thema Syrien",
+      "klartext": "Im Stadtrat war folgendes Thema: Anfrage der SPD-Stadtratsfraktion zum Thema Syrien.",
+      "klartext_titel_leicht": "Anfrage der SPD-Stadtratsfraktion zum Thema Syrien",
+      "klartext_leicht": "Stadtrat: Anfrage der SPD-Stadtratsfraktion zum Thema Syrien.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234169&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage der SPD-Stadtratsfraktion vom 13.12.2024 zum Thema Syrien",
+      "top_nr": "Ö 41.2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/10/2024",
+      "datum": "2024-12-17",
+      "datum_anzeige": "17.12.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10144",
+      "dokumente": [
+        {
+          "titel": "Anfrage Fragestunde Stadtrat 171224",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=229413&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
       "ref": "bza:12103#Ö 1",
       "thema": "bza:12103#Ö 1",
       "auftritte": [
@@ -78573,6 +79099,182 @@
       "datum": "2024-12-10",
       "datum_anzeige": "10.12.2024",
       "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11530",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:12098#Ö 2",
+      "thema": "stadt:12098#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2024-12-06",
+          "datum_anzeige": "06.12.2024",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=12098"
+        }
+      ],
+      "klartext_titel": "Bestätigung und Ergänzung des Protokolls der letzten Sitzung",
+      "klartext": "Im Jugendparlament war folgendes Thema: Bestätigung und Ergänzung des Protokolls der letzten Sitzung.",
+      "klartext_titel_leicht": "Bestätigung und Ergänzung des Protokolls der letzten Sitzung",
+      "klartext_leicht": "Jugendparlament: Bestätigung und Ergänzung des Protokolls der letzten Sitzung.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bestätigung/Ergänzung des Protokolls der letzten Sitzung",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/06/2024",
+      "datum": "2024-12-06",
+      "datum_anzeige": "06.12.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=12098",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:12098#Ö 3",
+      "thema": "stadt:12098#Ö 3",
+      "auftritte": [
+        {
+          "datum": "2024-12-06",
+          "datum_anzeige": "06.12.2024",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=12098"
+        }
+      ],
+      "klartext_titel": "Bericht aus dem Vorstand: Corelli-Spielplatz, Lernräume, OB-Hearing",
+      "klartext": "Im Jugendparlament war folgendes Thema: Bericht aus dem Vorstand: Corelli-Spielplatz, Lernräume, OB-Hearing.",
+      "klartext_titel_leicht": "Bericht aus dem Vorstand: Corelli-Spielplatz, Lernräume, OB-Hearing",
+      "klartext_leicht": "Jugendparlament: Bericht aus dem Vorstand: Corelli-Spielplatz, Lernräume, OB-Hearing.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht aus dem Vorstand — Korellispielplatz — Lernräume — OB-Hearing",
+      "top_nr": "Ö 3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/06/2024",
+      "datum": "2024-12-06",
+      "datum_anzeige": "06.12.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=12098",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:12098#Ö 4",
+      "thema": "stadt:12098#Ö 4",
+      "auftritte": [
+        {
+          "datum": "2024-12-06",
+          "datum_anzeige": "06.12.2024",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=12098"
+        }
+      ],
+      "klartext_titel": "JuPa-Weihnachtstreffen",
+      "klartext": "Im Jugendparlament war folgendes Thema: JuPa-Weihnachtstreffen.",
+      "klartext_titel_leicht": "JuPa-Weihnachtstreffen",
+      "klartext_leicht": "Jugendparlament: JuPa-Weihnachtstreffen.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "JuPa-Weihnachtstreffen — A0624.01",
+      "top_nr": "Ö 4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/06/2024",
+      "datum": "2024-12-06",
+      "datum_anzeige": "06.12.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=12098",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:12098#Ö 6",
+      "thema": "stadt:12098#Ö 6",
+      "auftritte": [
+        {
+          "datum": "2024-12-06",
+          "datum_anzeige": "06.12.2024",
+          "gremium": "Jugendparlament",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=12098"
+        }
+      ],
+      "klartext_titel": "Schließung der Sitzung",
+      "klartext": "Im Jugendparlament war folgendes Thema: Schließung der Sitzung.",
+      "klartext_titel_leicht": "Schließung der Sitzung",
+      "klartext_leicht": "Jugendparlament: Schließung der Sitzung.",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Schließung der Sitzung",
+      "top_nr": "Ö 6",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Jugendparlament",
+      "sitzung_kennung": "JuPa/06/2024",
+      "datum": "2024-12-06",
+      "datum_anzeige": "06.12.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=12098",
       "dokumente": [],
       "beratungsweg": []
     },
@@ -79701,6 +80403,93 @@
       ]
     },
     {
+      "ref": "stadt:10142#Ö 18",
+      "thema": "stadt:10142#Ö 18",
+      "auftritte": [
+        {
+          "datum": "2024-12-03",
+          "datum_anzeige": "03.12.2024",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 18",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10142"
+        }
+      ],
+      "klartext_titel": "Neubau einer 4-gruppigen Kindertagesstätte am Fort Peyerl",
+      "klartext": "Im Ausschuss für Finanzen und Personal war folgendes Thema: Neubau einer 4-gruppigen Kindertagesstätte am Fort Peyerl.",
+      "klartext_titel_leicht": "Neubau einer 4-gruppigen Kindertagesstätte am Fort Peyerl",
+      "klartext_leicht": "Ausschuss für Finanzen und Personal: Neubau einer 4-gruppigen Kindertagesstätte am Fort Peyerl.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kinderbetreuung",
+        "Bauleitplanung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=232154&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Neubau einer 4-gruppigen Kindertagesstätte am Fort Peyerl, Ottonenstraße 31, — 85051 Ingolstadt",
+      "top_nr": "Ö 18",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FWA/06/2024",
+      "datum": "2024-12-03",
+      "datum_anzeige": "03.12.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10142",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:10141#Ö 14",
+      "thema": "stadt:10141#Ö 14",
+      "auftritte": [
+        {
+          "datum": "2024-11-28",
+          "datum_anzeige": "28.11.2024",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 14",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10141"
+        }
+      ],
+      "klartext_titel": "Außenanlagen Museum für Konkrete Kunst und Design/Hochschulplatz und Umbau Roßmühlstraße: 2. ergänzende Projektgenehmigung",
+      "klartext": "Im Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit war folgendes Thema: Außenanlagen Museum für Konkrete Kunst und Design/Hochschulplatz und Umbau Roßmühlstraße: 2. ergänzende Projektgenehmigung.",
+      "klartext_titel_leicht": "Außenanlagen Museum für Konkrete Kunst und Design/Hochschulplatz und Umbau Roßmühlstraße: 2. ergänzende Projektgenehmigung",
+      "klartext_leicht": "Ausschuss für Stadtentwicklung: Neue Genehmigung für Außenanlagen am Museum MKKD und Umbau Roßmühlstraße.",
+      "lebenslage": [],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "anlass": [
+        "Bauleitplanung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231150&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Außenanlagen Museum für Konkrete Kunst und Design/Hochschulplatz und Umbau Roßmühlstraße — hier: 2. ergänzende Projektgenehmigung",
+      "top_nr": "Ö 14",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+      "sitzung_kennung": "PLA/06/2024",
+      "datum": "2024-11-28",
+      "datum_anzeige": "28.11.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10141",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
       "ref": "bza:11917#Ö 1",
       "thema": "bza:11917#Ö 1",
       "auftritte": [
@@ -80580,6 +81369,349 @@
       ]
     },
     {
+      "ref": "stadt:10140#Ö 2",
+      "thema": "stadt:10140#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2024-11-26",
+          "datum_anzeige": "26.11.2024",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10140"
+        }
+      ],
+      "klartext_titel": "Aktuelle Information zum Kulturgeschehen",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Aktuelle Information zum Kulturgeschehen.",
+      "klartext_titel_leicht": "Aktuelle Information zum Kulturgeschehen",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Aktuelle Information zum Kulturgeschehen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230748&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Aktuelle Information zum Kulturgeschehen",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/06/2024",
+      "datum": "2024-11-26",
+      "datum_anzeige": "26.11.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10140",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:10140#Ö 3",
+      "thema": "stadt:10140#Ö 3",
+      "auftritte": [
+        {
+          "datum": "2024-11-26",
+          "datum_anzeige": "26.11.2024",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10140"
+        }
+      ],
+      "klartext_titel": "Bericht der Projektpartnergemeinde Legmoin (Burkina Faso)",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Bericht der Projektpartnergemeinde Legmoin (Burkina Faso).",
+      "klartext_titel_leicht": "Bericht der Projektpartnergemeinde Legmoin (Burkina Faso)",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Bericht der Projektpartnergemeinde Legmoin (Burkina Faso).",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230748&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht der Projektpartnergemeinde Legmoin (Burkina Faso) durch Herrn Dari Somé",
+      "top_nr": "Ö 3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/06/2024",
+      "datum": "2024-11-26",
+      "datum_anzeige": "26.11.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10140",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:10140#Ö 6",
+      "thema": "stadt:10140#Ö 6",
+      "auftritte": [
+        {
+          "datum": "2024-11-26",
+          "datum_anzeige": "26.11.2024",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10140"
+        }
+      ],
+      "klartext_titel": "Sachstand Antrag MINT-Cluster III",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Sachstand Antrag MINT-Cluster III.",
+      "klartext_titel_leicht": "Sachstand Antrag MINT-Cluster III",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Sachstand Antrag MINT-Cluster III.",
+      "lebenslage": [
+        "Studierende"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230748&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Sachstand Antrag MINT-Cluster III",
+      "top_nr": "Ö 6",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/06/2024",
+      "datum": "2024-11-26",
+      "datum_anzeige": "26.11.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10140",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:10140#Ö 11",
+      "thema": "stadt:10140#Ö 11",
+      "auftritte": [
+        {
+          "datum": "2024-11-26",
+          "datum_anzeige": "26.11.2024",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 11",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10140"
+        }
+      ],
+      "klartext_titel": "Aktueller Sachstand Kulturkanal",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Aktueller Sachstand Kulturkanal.",
+      "klartext_titel_leicht": "Aktueller Sachstand Kulturkanal",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Aktueller Sachstand Kulturkanal.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230748&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Aktueller Sachstand Kulturkanal",
+      "top_nr": "Ö 11",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/06/2024",
+      "datum": "2024-11-26",
+      "datum_anzeige": "26.11.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10140",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:10140#Ö 14",
+      "thema": "stadt:10140#Ö 14",
+      "auftritte": [
+        {
+          "datum": "2024-11-26",
+          "datum_anzeige": "26.11.2024",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 14",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10140"
+        }
+      ],
+      "klartext_titel": "Sachstandsbericht zu Schulbaumaßnahmen",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Sachstandsbericht zu Schulbaumaßnahmen.",
+      "klartext_titel_leicht": "Sachstandsbericht zu Schulbaumaßnahmen",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Sachstandsbericht zu Schulbaumaßnahmen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Schulbau"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230748&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Sachstandsbericht zu Schulbaumaßnahmen",
+      "top_nr": "Ö 14",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/06/2024",
+      "datum": "2024-11-26",
+      "datum_anzeige": "26.11.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10140",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:10140#Ö 18",
+      "thema": "stadt:10140#Ö 18",
+      "auftritte": [
+        {
+          "datum": "2024-11-26",
+          "datum_anzeige": "26.11.2024",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 18",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10140"
+        }
+      ],
+      "klartext_titel": "Zwischenbericht zu den Ergebnissen der Straßennamenkommission",
+      "klartext": "Im Ausschuss für Kultur und Bildung war folgendes Thema: Zwischenbericht zu den Ergebnissen der Straßennamenkommission.",
+      "klartext_titel_leicht": "Zwischenbericht zu den Ergebnissen der Straßennamenkommission",
+      "klartext_leicht": "Ausschuss für Kultur und Bildung: Zwischenbericht zu den Ergebnissen der Straßennamenkommission.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230748&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Zwischenbericht zu den Ergebnissen der Straßennamenkommission",
+      "top_nr": "Ö 18",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "sitzung_kennung": "KBA/06/2024",
+      "datum": "2024-11-26",
+      "datum_anzeige": "26.11.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10140",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:10139#Ö 6",
+      "thema": "stadt:10139#Ö 6",
+      "auftritte": [
+        {
+          "datum": "2024-11-21",
+          "datum_anzeige": "21.11.2024",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10139"
+        }
+      ],
+      "klartext_titel": "Voraussichtliche Rechtsänderungen zum 1.1.2025 im SGB II und im Wohngeldrecht",
+      "klartext": "Im Ausschuss für Soziales, Gesundheit, Stiftungen und Familien war folgendes Thema: Voraussichtliche Rechtsänderungen zum 1.1.2025 im SGB II und im Wohngeldrecht.",
+      "klartext_titel_leicht": "Voraussichtliche Rechtsänderungen zum 1.1.2025 im SGB II und im Wohngeldrecht",
+      "klartext_leicht": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien: Voraussichtliche Rechtsänderungen zum 1.1.2025 im SGB II und im Wohngeldrecht.",
+      "lebenslage": [
+        "Geld & Soziales"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230418&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Voraussichtliche Rechtsänderungen zum 1.1.2025 im SGB II und im Wohngeldrecht",
+      "top_nr": "Ö 6",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+      "sitzung_kennung": "SGA/06/2024",
+      "datum": "2024-11-21",
+      "datum_anzeige": "21.11.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10139",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:10139#Ö 7",
+      "thema": "stadt:10139#Ö 7",
+      "auftritte": [
+        {
+          "datum": "2024-11-21",
+          "datum_anzeige": "21.11.2024",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10139"
+        }
+      ],
+      "klartext_titel": "Belegungskonzept für die Obdachlosenunterkunft",
+      "klartext": "Im Ausschuss für Soziales, Gesundheit, Stiftungen und Familien war folgendes Thema: Belegungskonzept für die Obdachlosenunterkunft.",
+      "klartext_titel_leicht": "Belegungskonzept für die Obdachlosenunterkunft",
+      "klartext_leicht": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien: Belegungskonzept für die Obdachlosenunterkunft.",
+      "lebenslage": [
+        "Geld & Soziales",
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230418&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Belegungskonzept Obdachlosenunterkunft",
+      "top_nr": "Ö 7",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+      "sitzung_kennung": "SGA/06/2024",
+      "datum": "2024-11-21",
+      "datum_anzeige": "21.11.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10139",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
       "ref": "bza:11908#Ö 2.1",
       "thema": "bza:11908#Ö 2.1",
       "auftritte": [
@@ -80793,6 +81925,48 @@
       "datum": "2024-11-20",
       "datum_anzeige": "20.11.2024",
       "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11908",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:10138#Ö 1",
+      "thema": "stadt:10138#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2024-11-19",
+          "datum_anzeige": "19.11.2024",
+          "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10138"
+        }
+      ],
+      "klartext_titel": "Mündlicher Bericht zu Veranstaltungen und Märkten",
+      "klartext": "Im Ausschuss für Sport, Veranstaltungen und Freizeit war folgendes Thema: Mündlicher Bericht zu Veranstaltungen und Märkten.",
+      "klartext_titel_leicht": "Mündlicher Bericht zu Veranstaltungen und Märkten",
+      "klartext_leicht": "Ausschuss für Sport, Veranstaltungen und Freizeit: Mündlicher Bericht zu Veranstaltungen und Märkten.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=227131&type=do",
+      "quelle": "stadt",
+      "amtlicher_titel": "Mündlicher Bericht zu Veranstaltungen und Märkten von Herrn Klein",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Sport, Veranstaltungen und Freizeit",
+      "sitzung_kennung": "SVA/06/2024",
+      "datum": "2024-11-19",
+      "datum_anzeige": "19.11.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10138",
       "dokumente": [],
       "beratungsweg": []
     },
@@ -81794,6 +82968,134 @@
       "datum": "2024-11-12",
       "datum_anzeige": "12.11.2024",
       "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=11907",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:10313#Ö 1",
+      "thema": "stadt:10313#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2024-11-12",
+          "datum_anzeige": "12.11.2024",
+          "gremium": "Inklusionsrat",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10313"
+        }
+      ],
+      "klartext_titel": "Vorstellung der Arbeit von Langau e.V.",
+      "klartext": "Im Inklusionsrat war folgendes Thema: Vorstellung der Arbeit von Langau e.V..",
+      "klartext_titel_leicht": "Vorstellung der Arbeit von Langau e.V.",
+      "klartext_leicht": "Inklusionsrat: Vorstellung der Arbeit von Langau e.V..",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Vorstellung der Arbeit von Langau e.V.",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Inklusionsrat",
+      "sitzung_kennung": "IR/03/2024",
+      "datum": "2024-11-12",
+      "datum_anzeige": "12.11.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10313",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:10313#Ö 2",
+      "thema": "stadt:10313#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2024-11-12",
+          "datum_anzeige": "12.11.2024",
+          "gremium": "Inklusionsrat",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10313"
+        }
+      ],
+      "klartext_titel": "Umgestaltung Harderstraße: aktueller Stand der Sanierung und Barrierefreiheit",
+      "klartext": "Im Inklusionsrat war folgendes Thema: Umgestaltung Harderstraße: aktueller Stand der Sanierung und Barrierefreiheit.",
+      "klartext_titel_leicht": "Umgestaltung Harderstraße: aktueller Stand der Sanierung und Barrierefreiheit",
+      "klartext_leicht": "Inklusionsrat: Umgestaltung Harderstraße: aktueller Stand der Sanierung und Barrierefreiheit.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Bauleitplanung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Umgestaltung Harderstraße (aktueller Stand der Sanierung und Umgestaltung Barrierefreiheit)",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Inklusionsrat",
+      "sitzung_kennung": "IR/03/2024",
+      "datum": "2024-11-12",
+      "datum_anzeige": "12.11.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10313",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:10313#Ö 3",
+      "thema": "stadt:10313#Ö 3",
+      "auftritte": [
+        {
+          "datum": "2024-11-12",
+          "datum_anzeige": "12.11.2024",
+          "gremium": "Inklusionsrat",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10313"
+        }
+      ],
+      "klartext_titel": "Vorstellung Spielplatz Schwarzer Weg",
+      "klartext": "Im Inklusionsrat war folgendes Thema: Vorstellung Spielplatz Schwarzer Weg.",
+      "klartext_titel_leicht": "Vorstellung Spielplatz Schwarzer Weg",
+      "klartext_leicht": "Inklusionsrat: Vorstellung Spielplatz Schwarzer Weg.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "stand": "Ohne Vorlage",
+      "stand_datum": "",
+      "niederschrift_url": "",
+      "quelle": "stadt",
+      "amtlicher_titel": "Vorstellung Spielplatz Schwarzer Weg",
+      "top_nr": "Ö 3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Inklusionsrat",
+      "sitzung_kennung": "IR/03/2024",
+      "datum": "2024-11-12",
+      "datum_anzeige": "12.11.2024",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=10313",
       "dokumente": [],
       "beratungsweg": []
     },
