@@ -13,12 +13,16 @@
     --accent: #b00e2b;
     --text: #16232b;
     --text-muted: #566a74;
-    --text-faint: #7e8f98;
+    /* War #7e8f98 (nur 3.1:1) — auf 4.5:1 gegen Weiss/Hintergrund gedunkelt,
+       siehe Barrierefreiheits-Anforderung im MeinBezirk-Toolkit (WCAG 2.1). */
+    --text-faint: #63737b;
     --bg: #f8f7f4;
     --bg-warm: #f1efe9;
     --card: #ffffff;
     --border: #e4e0d8;
-    --border-strong: #cfc9be;
+    /* War #cfc9be (nur ~1.6:1 als UI-Rahmen) — auf 3:1 gedunkelt, das
+       WCAG-Minimum fuer sichtbare Bedienelement-Grenzen (1.4.11). */
+    --border-strong: #8f8779;
     --chip-lebenslage-bg: #e3f0f2;
     --chip-lebenslage-tx: #14505c;
     --chip-ort-bg: #e9eef5;
@@ -166,7 +170,10 @@
   .chip-btn[aria-pressed="true"] {
     background: var(--primary); border-color: var(--primary); color: #fff; font-weight: 500;
   }
-  .chip-btn .count { opacity: .55; font-size: .78em; margin-left: .3em; }
+  /* Volltonfarbe statt opacity: die alte .55-Deckkraft druckte die Zahl
+     unter 4.5:1 Kontrast (Fund aus der Barrierefreiheits-Pruefung). */
+  .chip-btn .count { font-size: .78em; margin-left: .3em; color: var(--text-muted); }
+  .chip-btn[aria-pressed="true"] .count { color: rgba(255,255,255,.85); }
 
   /* ---------- Feed ---------- */
   .feed-count { font-size: .88rem; color: var(--text-muted); margin-bottom: 1.25rem; }
@@ -319,6 +326,56 @@
     .hero-stats { gap: 0 1.5rem; }
     .card { padding: 1.2rem 1.15rem; }
   }
+
+  /* ---------- Leichte-Sprache-Schalter ---------- */
+  .btn-leicht {
+    font: inherit; font-size: .82rem; cursor: pointer;
+    background: none; border: 1px solid rgba(255,255,255,.5); color: #fff;
+    padding: .3rem .75rem; border-radius: 999px;
+  }
+  .btn-leicht:hover { background: rgba(255,255,255,.14); }
+  .btn-leicht[aria-pressed="true"] {
+    background: #fff; color: var(--primary-dark); border-color: #fff; font-weight: 600;
+  }
+
+  /* ---------- Freitextsuche ---------- */
+  .search-box { margin-bottom: 1.25rem; }
+  .search-box label {
+    display: block; font-size: .7rem; text-transform: uppercase; letter-spacing: .09em;
+    color: var(--text-faint); margin-bottom: .4rem; font-weight: 600;
+  }
+  .search-input {
+    width: 100%; font: inherit; font-size: .92rem; padding: .55rem .7rem;
+    border: 1px solid var(--border-strong); border-radius: 8px;
+    background: #fff; color: var(--text);
+  }
+  .search-input::placeholder { color: var(--text-faint); }
+
+  /* Sichtbarer Fokusring auf allen interaktiven Elementen — wichtig fuer
+     Tastaturbedienung, siehe Barrierefreiheits-Hinweise im Toolkit. */
+  .btn-leicht:focus-visible,
+  .search-input:focus-visible,
+  .chip-btn:focus-visible,
+  .btn-reset:focus-visible,
+  .btn-mehr:focus-visible,
+  a:focus-visible,
+  button:focus-visible,
+  summary:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px;
+  }
+  .header-link:focus-visible, .btn-leicht:focus-visible { outline-color: #fff; }
+
+  .leicht-hinweis {
+    font-size: .78rem; color: var(--text-faint); font-style: italic;
+    margin-top: .35rem;
+  }
+
+  /* Nur fuer Screenreader: kuendigt bei target="_blank"-Links an, dass sich
+     ein neuer Tab oeffnet. Sehende sehen dafuer schon das ↗-Symbol. */
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
 </style>
 </head>
 <body>
@@ -336,15 +393,16 @@
       <path d="M18.6 18.2l1.4 1.9 1.4-1.9z" fill="#B00E2B"/>
     </svg>
     <div class="wordmark">PapierPanther <span>Ingolstadt</span></div>
-    <span class="header-tag">Prototyp</span>
+    <span class="header-tag" id="header-tag">Prototyp</span>
     <span class="header-spacer"></span>
-    <a class="header-link" href="#transparenz">Wie das hier funktioniert</a>
+    <button class="btn-leicht" id="btn-leicht" type="button" aria-pressed="false">Leichte Sprache</button>
+    <a class="header-link" id="header-link" href="#transparenz">Wie das hier funktioniert</a>
   </div>
 </header>
 
 <div class="disclaimer">
   <div class="container">
-    <p>
+    <p id="disclaimer-text">
       <strong>Ein privates Projekt, kein Angebot der Stadt.</strong>
       Die Zusammenfassungen entstehen automatisiert und mit KI-Unterstützung —
       das geht schnell, kann aber Fehler enthalten. Jeder Eintrag verlinkt sein
@@ -375,8 +433,8 @@
         <circle cx="69" cy="41" r="2.6" fill="#003E59"/>
         <path d="M55 51l3 4 3-4z" fill="#B00E2B"/>
       </svg>
-      <h1>Schanzer Stadtpolitik — <em>mit einem Klick. Auf einen Blick.</em></h1>
-      <p>
+      <h1 id="hero-h1">Schanzer Stadtpolitik — <em>mit einem Klick. Auf einen Blick.</em></h1>
+      <p id="hero-p">
         Ob Fahrradbügel, Kita-Plätze oder Gebühren: Der Stadtrat und die zwölf
         Bezirksausschüsse behandeln jede Woche Themen, die den Alltag in
         Ingolstadt betreffen. Alles steht öffentlich im Ratsinfoportal — nur
@@ -391,16 +449,21 @@
   <section class="arbeitsflaeche" id="filter">
     <div class="container">
       <aside class="filter-spalte">
+        <div class="search-box">
+          <label for="suche" id="suche-label">Suchen</label>
+          <input type="search" id="suche" name="suche" class="search-input"
+                 placeholder="z. B. Kita, Radweg, Piuspark" autocomplete="off">
+        </div>
         <div class="filters-head">
-          <h2>Wonach möchten Sie schauen?</h2>
-          <span class="filters-hint">Mehreres auswählbar</span>
+          <h2 id="filters-head-h2">Wonach möchten Sie schauen?</h2>
+          <span class="filters-hint" id="filters-hint">Mehreres auswählbar</span>
           <button class="btn-reset" id="btn-reset" type="button">Auswahl zurücksetzen</button>
         </div>
         <div class="filter-grid" id="filter-grid"></div>
       </aside>
 
       <div class="feed-spalte">
-        <p class="feed-count" id="feed-count"></p>
+        <p class="feed-count" id="feed-count" aria-live="polite"></p>
         <div class="feed" id="feed"></div>
       </div>
     </div>
@@ -409,21 +472,21 @@
 
 <footer class="site-footer" id="transparenz">
   <div class="container">
-    <h2>Wie das hier funktioniert</h2>
-    <p>
+    <h2 id="footer-h2">Wie das hier funktioniert</h2>
+    <p id="footer-p1">
       Alles auf dieser Seite stammt aus dem Ratsinfoportal der Stadt Ingolstadt
       — den öffentlich einsehbaren Sitzungskalendern, Tagesordnungen und
       Vorlagen. Ein Programm liest sie regelmäßig aus, fasst die Punkte
       zusammen und ordnet ihnen Schlagworte zu: für wen es interessant ist, wo
       es passiert, worum es geht.
     </p>
-    <p>
+    <p id="footer-p2">
       <strong>Weil das automatisch passiert, können Fehler passieren.</strong>
       Die Zusammenfassungen ersetzen deshalb nicht das Originaldokument,
       sondern führen dorthin. Bei jedem Eintrag ist die Quelle einen Klick
       entfernt.
     </p>
-    <p>
+    <p id="footer-p3">
       <strong>Was Sie hier sehen und was nicht:</strong> Die Seite zeigt, worüber
       beraten wird und wo entschieden werden soll. Wie eine Abstimmung
       ausgegangen ist, steht in der Niederschrift der Sitzung — die wird erst
@@ -431,22 +494,22 @@
       verlinkt der Eintrag sie. Nicht-öffentliche Sitzungsteile sind naturgemäß
       nicht dabei.
     </p>
-    <p>
+    <p id="footer-p4">
       <strong>Etwas gefunden, das nicht stimmt?</strong> Über
       <a href="impressum.html">das Impressum</a> erreichen Sie mich — Hinweise
       auf Fehler sind ausdrücklich willkommen.
     </p>
     <p class="footer-meta" id="footer-meta"></p>
-    <p class="footer-dank">
+    <p class="footer-dank" id="footer-dank">
       PapierPanther folgt der Idee von
       <a href="https://igorschwarzmann.com/meinbezirk/toolkit/" rel="noopener noreferrer" target="_blank">MeinBezirk</a>,
       einem Toolkit von Igor Schwarzmann für kommunale Transparenz. Von dort
       stammen die Methodik und Teile der Oberfläche.
     </p>
     <div class="footer-recht">
-      <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-      <a href="https://github.com/mnkeller/papierpanther" rel="noopener noreferrer" target="_blank">Quellcode</a>
+      <a href="impressum.html" id="footer-link-impressum">Impressum</a>
+      <a href="datenschutz.html" id="footer-link-datenschutz">Datenschutz</a>
+      <a href="https://github.com/mnkeller/papierpanther" rel="noopener noreferrer" target="_blank" id="footer-link-quellcode">Quellcode<span class="sr-only"> (öffnet in neuem Tab)</span></a>
     </div>
   </div>
 </footer>
@@ -485,18 +548,167 @@
   var gezeigt = ERSTE_SEITE;
 
   var ACHSEN = [
-    { key: 'lebenslage', label: 'Lebenslage' },
-    { key: 'bezirk',     label: 'Stadtbezirk' },
-    { key: 'anlass',     label: 'Anlass' },
-    { key: 'stand',      label: 'Stand' }
+    { key: 'lebenslage', textId: 'achseLebenslage' },
+    { key: 'bezirk',     textId: 'achseBezirk' },
+    { key: 'anlass',     textId: 'achseAnlass' },
+    { key: 'stand',      textId: 'achseStand' }
   ];
   var aktiv = { lebenslage: [], bezirk: [], anlass: [], stand: [] };
+  var suchbegriff = '';
+
+  /* ---------------- Leichte Sprache ----------------
+     Ein Schalter stellt die ganze Seite um, nicht nur die Kartentexte —
+     siehe KURATION.md, Abschnitt "Der Umschalter fuer die ganze Seite".
+     Texte liegen paarweise (normal/leicht) in TEXTE, damit sie nicht ueber
+     das Markup verstreut sind. */
+  var LS_KEY_LEICHT = 'papierpanther-leichte-sprache';
+  var leicht = false;
+  try { leicht = localStorage.getItem(LS_KEY_LEICHT) === '1'; } catch (err) { /* Storage kann gesperrt sein */ }
+
+  var TEXTE = {
+    headerTag:    { n: 'Prototyp', l: 'Test-Version' },
+    headerLink:   { n: 'Wie das hier funktioniert', l: 'So funktioniert diese Seite' },
+    disclaimer: {
+      n: '<strong>Ein privates Projekt, kein Angebot der Stadt.</strong> Die Zusammenfassungen entstehen automatisiert und mit KI-Unterstützung — das geht schnell, kann aber Fehler enthalten. Jeder Eintrag verlinkt sein Originaldokument im Ratsinfoportal; dort steht, was gilt.',
+      l: '<strong>Diese Seite ist nicht von der Stadt Ingolstadt.</strong> Ein Computer-Programm schreibt die Texte. Es nutzt Künstliche Intelligenz. Das geht schnell. Aber es können Fehler passieren. Jeder Eintrag hat einen Link zum Original-Dokument. Dort steht die richtige Information.'
+    },
+    heroH1: {
+      n: 'Schanzer Stadtpolitik — <em>mit einem Klick. Auf einen Blick.</em>',
+      l: 'Stadt-Politik in Ingolstadt — <em>leicht erklärt.</em>'
+    },
+    heroP: {
+      n: 'Ob Fahrradbügel, Kita-Plätze oder Gebühren: Der Stadtrat und die zwölf Bezirksausschüsse behandeln jede Woche Themen, die den Alltag in Ingolstadt betreffen. Alles steht öffentlich im Ratsinfoportal — nur eben verteilt über hunderte Einzelpunkte in Amtssprache. Der PapierPanther sammelt sie ein, fasst sie zusammen und sortiert sie danach, wen sie betreffen. Suchen Sie einfach Ihren Stadtbezirk.',
+      l: 'Der Stadt-Rat trifft viele Entscheidungen. Die 12 Bezirks-Ausschüsse entscheiden mit. Es geht um Rad-Wege, Kita-Plätze oder Gebühren. Alle Infos stehen im Rats-Info-Portal der Stadt. Aber der Text dort ist schwer zu lesen. Der PapierPanther sammelt die Infos. Er schreibt sie einfacher auf. Er sortiert sie nach Thema. Suchen Sie einfach Ihren Stadt-Bezirk.'
+    },
+    filtersHeadH2: { n: 'Wonach möchten Sie schauen?', l: 'Was möchten Sie sehen?' },
+    filtersHint:   { n: 'Mehreres auswählbar', l: 'Sie können mehrere Themen wählen.' },
+    btnReset:      { n: 'Auswahl zurücksetzen', l: 'Alles löschen' },
+    sucheLabel:       { n: 'Suchen', l: 'Wort suchen' },
+    suchePlaceholder: { n: 'z. B. Kita, Radweg, Piuspark', l: 'zum Beispiel: Kita' },
+    leerFilter: {
+      n: 'Keine Einträge für diese Kombination. Filter weiter fassen?',
+      l: 'Keine Einträge gefunden. Wählen Sie weniger Filter oder ein anderes Wort.'
+    },
+    amtlicherWortlaut: { n: 'Amtlicher Wortlaut und Quellen', l: 'Mehr Infos und Links' },
+    origLabelTitel: { n: 'Titel im Ratsinfoportal', l: 'So heißt das offiziell' },
+    origLabelAntrag: { n: 'Antrag', l: 'Antrag von' },
+    origLabelWeg: { n: 'Beratungsweg', l: 'Diese Gruppen reden mit' },
+    wegHinweis: {
+      n: 'Die Rolle ist die geplante Rolle der Sitzung. Ob der Beschluss tatsächlich gefasst oder vertagt wurde, steht nicht in diesen Daten — das ergibt erst die Niederschrift.',
+      l: 'Das ist der Plan für die Sitzung. Er kann sich noch ändern. Ob der Stadt-Rat wirklich entschieden hat, steht erst im Protokoll.'
+    },
+    quelleSitzung: { n: 'Sitzung im Ratsinfoportal', l: 'Zur Sitzung' },
+    pruefen: { n: 'Im Ratsinfoportal prüfen', l: 'Beim Stadt-Rat nachlesen' },
+    beschlussLink: { n: 'Beschluss in der Niederschrift nachlesen', l: 'Ergebnis im Protokoll lesen' },
+    beschlussOffen: {
+      n: 'Wie abgestimmt wurde, steht in der Niederschrift der Sitzung. Sie erscheint meist vier bis acht Wochen später.',
+      l: 'Wie der Stadt-Rat abgestimmt hat, steht im Protokoll. Das Protokoll kommt meist erst nach 4 bis 8 Wochen.'
+    },
+    herkunftBza:     { n: 'Bezirksausschuss', l: 'Bezirks-Ausschuss' },
+    herkunftEntwurf: { n: 'automatisch verschlagwortet', l: 'automatisch sortiert' },
+    ort: { n: 'Ort: ', l: 'Ort: ' },
+    keineLeichteFassung: {
+      n: '', l: 'Für dieses Thema gibt es noch keine Leichte-Sprache-Fassung. Hier steht der normale Text.'
+    },
+    footerH2: { n: 'Wie das hier funktioniert', l: 'So funktioniert diese Seite' },
+    footerP1: {
+      n: 'Alles auf dieser Seite stammt aus dem Ratsinfoportal der Stadt Ingolstadt — den öffentlich einsehbaren Sitzungskalendern, Tagesordnungen und Vorlagen. Ein Programm liest sie regelmäßig aus, fasst die Punkte zusammen und ordnet ihnen Schlagworte zu: für wen es interessant ist, wo es passiert, worum es geht.',
+      l: 'Alle Infos kommen vom Rats-Info-Portal der Stadt Ingolstadt. Dort stehen Sitzungs-Termine, Themen-Listen und Dokumente. Das darf jede und jeder lesen. Ein Computer-Programm liest diese Seiten regelmäßig. Es fasst jedes Thema kurz zusammen. Es ordnet jedes Thema: Für wen ist es wichtig? Wo passiert es? Worum geht es?'
+    },
+    footerP2: {
+      n: '<strong>Weil das automatisch passiert, können Fehler passieren.</strong> Die Zusammenfassungen ersetzen deshalb nicht das Originaldokument, sondern führen dorthin. Bei jedem Eintrag ist die Quelle einen Klick entfernt.',
+      l: '<strong>Ein Computer-Programm kann Fehler machen.</strong> Das kann auch hier passieren. Darum ersetzt dieser Text nicht das Original-Dokument. Der Text zeigt nur den Weg dorthin. Bei jedem Eintrag gibt es einen Link zur Quelle.'
+    },
+    footerP3: {
+      n: '<strong>Was Sie hier sehen und was nicht:</strong> Die Seite zeigt, worüber beraten wird und wo entschieden werden soll. Wie eine Abstimmung ausgegangen ist, steht in der Niederschrift der Sitzung — die wird erst etwa vier bis acht Wochen später veröffentlicht. Sobald sie vorliegt, verlinkt der Eintrag sie. Nicht-öffentliche Sitzungsteile sind naturgemäß nicht dabei.',
+      l: '<strong>Das zeigt diese Seite, und das zeigt sie nicht:</strong> Die Seite zeigt, worüber der Stadt-Rat redet. Sie zeigt, wo er bald entscheiden will. Wie die Abstimmung ausging, steht im Protokoll der Sitzung. Das Protokoll kommt erst 4 bis 8 Wochen später. Sobald es da ist, gibt es einen Link dazu. Manche Sitzungs-Teile sind nicht öffentlich. Die zeigt diese Seite nicht.'
+    },
+    footerP4: {
+      n: '<strong>Etwas gefunden, das nicht stimmt?</strong> Über <a href="impressum.html">das Impressum</a> erreichen Sie mich — Hinweise auf Fehler sind ausdrücklich willkommen.',
+      l: 'Haben Sie einen Fehler gefunden? Schreiben Sie mir. Meine Kontakt-Daten stehen im <a href="impressum.html">Impressum</a>. Über Hinweise freue ich mich.'
+    },
+    footerDank: {
+      n: 'PapierPanther folgt der Idee von <a href="https://igorschwarzmann.com/meinbezirk/toolkit/" rel="noopener noreferrer" target="_blank">MeinBezirk<span class="sr-only"> (öffnet in neuem Tab)</span></a>, einem Toolkit von Igor Schwarzmann für kommunale Transparenz. Von dort stammen die Methodik und Teile der Oberfläche.',
+      l: 'Der PapierPanther nutzt eine Idee von <a href="https://igorschwarzmann.com/meinbezirk/toolkit/" rel="noopener noreferrer" target="_blank">MeinBezirk<span class="sr-only"> (öffnet in neuem Tab)</span></a>. Das ist ein Werkzeug von Igor Schwarzmann für offene Kommunal-Politik. Von dort kommen die Methode und ein Teil der Gestaltung.'
+    },
+    footerDatenschutz: { n: 'Datenschutz', l: 'Daten-Schutz' },
+    footerQuellcode:   { n: 'Quellcode', l: 'Programm-Code' },
+    statSitzungen: { n: 'Sitzungen ausgelesen', l: 'Sitzungen gelesen' },
+    statTops:      { n: 'Tagesordnungspunkte', l: 'Themen' },
+    statKuratiert: { n: 'davon aufbereitet', l: 'davon erklärt' },
+    statBezirke:   { n: 'Stadtbezirke', l: 'Stadt-Bezirke' },
+    achseLebenslage: { n: 'Lebenslage', l: 'Ihr Leben' },
+    achseBezirk:     { n: 'Stadtbezirk', l: 'Ihr Stadt-Bezirk' },
+    achseAnlass:     { n: 'Anlass', l: 'Das Thema' },
+    achseStand:      { n: 'Stand', l: 'Wie weit ist es?' }
+  };
+
+  /* Schlagwortlisten in Leichter Sprache. Die Werte selbst (aus daten.achsen)
+     bleiben die massgeblichen Filterschluessel — nur die Anzeige wechselt. */
+  var LEBENSLAGE_LEICHT = {
+    'Eltern & Kinder': 'Eltern und Kinder',
+    'Jugend': 'Jugend',
+    'Studierende': 'Studentinnen und Studenten',
+    'Arbeit & Beruf': 'Arbeit und Beruf',
+    'Senior:innen': 'Ältere Menschen',
+    'Gesundheit & Pflege': 'Gesundheit und Pflege',
+    'Geld & Soziales': 'Geld vom Staat',
+    'Zuwanderung & Integration': 'Menschen, die neu in Ingolstadt sind',
+    'Wohnen & Miete': 'Wohnen und Miete',
+    'Gewerbe & Gastro': 'Geschäfte und Restaurants',
+    'Unterwegs': 'Verkehr',
+    'Freizeit & Sport': 'Freizeit und Sport',
+    'Ehrenamt & Vereine': 'Ehren-Amt und Vereine'
+  };
+  var ANLASS_LEICHT = {
+    'Gebühren & Preise': 'Gebühren und Preise',
+    'Kinderbetreuung': 'Kinder-Betreuung',
+    'Schulbau': 'Schule bauen',
+    'Kultur & Bildung': 'Kultur und Bildung',
+    'Bauleitplanung': 'Bau-Planung',
+    'Verkehrsplanung': 'Verkehrs-Planung',
+    'Baustelle': 'Baustelle',
+    'Klima & Umwelt': 'Klima und Umwelt',
+    'Grün & Sauberkeit': 'Grün-Flächen und Sauberkeit',
+    'Sicherheit': 'Sicherheit',
+    'Satzung & Regeln': 'Regeln von der Stadt',
+    'Konzept & Planung': 'Plan für die Zukunft'
+  };
+  var BEZIRK_LEICHT = { 'stadtweit': 'in ganz Ingolstadt' };
+  var STAND_LEICHT = {
+    'Wird noch beraten': 'Der Stadt-Rat bespricht das noch.',
+    'Entscheidung geplant': 'Der Stadt-Rat will bald entscheiden.',
+    'Entscheidung angesetzt': 'Der Stadt-Rat wollte jetzt entscheiden.',
+    'Bekanntgabe': 'Das ist nur eine Information.',
+    'Ohne Vorlage': 'Es gibt kein Dokument dazu.'
+  };
+
+  function txt(id) { return TEXTE[id][leicht ? 'l' : 'n']; }
+
+  function achsenwertText(achse, wert) {
+    if (!leicht) return wert;
+    if (achse === 'lebenslage') return LEBENSLAGE_LEICHT[wert] || wert;
+    if (achse === 'anlass') return ANLASS_LEICHT[wert] || wert;
+    if (achse === 'bezirk') return BEZIRK_LEICHT[wert] || wert;
+    return wert;
+  }
+
+  function standText(stand, datum) {
+    if (!leicht) return stand + (datum ? ' am ' + datum : '');
+    return (STAND_LEICHT[stand] || stand) + (datum ? ' (Termin: ' + datum + ')' : '');
+  }
 
   function el(tag, klasse, text) {
     var n = document.createElement(tag);
     if (klasse) n.className = klasse;
     if (text != null) n.textContent = text;
     return n;
+  }
+
+  /* An jeden target="_blank"-Link gehaengt: das sichtbare ↗-Symbol reicht
+     fuer Sehende, Screenreader brauchen eine eigene Ansage. */
+  function neuerTabHinweis(a) {
+    a.appendChild(el('span', 'sr-only', ' (öffnet in neuem Tab)'));
   }
 
   /* 'stand' ist ein Einzelwert, die anderen Achsen sind Listen. */
@@ -516,34 +728,88 @@
     return;
   }
 
-  /* ---------------- Kopfzahlen ---------------- */
-  var st = daten.statistik;
-  [
-    [st.sitzungen_ausgelesen, 'Sitzungen ausgelesen'],
-    [st.tops_ausgelesen, 'Tagesordnungspunkte'],
-    [st.tops_kuratiert, 'davon aufbereitet'],
-    [daten.achsen.bezirk.length, 'Stadtbezirke']
-  ].forEach(function (paar) {
-    var box = el('div', 'stat');
-    box.appendChild(el('div', 'stat-num', String(paar[0])));
-    box.appendChild(el('div', 'stat-label', paar[1]));
-    document.getElementById('hero-stats').appendChild(box);
+  /* Suchtext je Eintrag einmalig vorberechnen: normale und leichte Fassung,
+     Titel, Gremium, Schlagworte — die Suche soll unabhaengig vom Sprach-
+     modus alle passenden Eintraege finden. */
+  daten.eintraege.forEach(function (e) {
+    e._suchtext = [
+      e.klartext_titel, e.klartext, e.klartext_titel_leicht, e.klartext_leicht,
+      e.amtlicher_titel, e.gremium, e.vorlage, e.antragsteller,
+      (e.ort || []).join(' '),
+      werte(e, 'lebenslage').join(' '), werte(e, 'bezirk').join(' '), werte(e, 'anlass').join(' ')
+    ].filter(Boolean).join(' ').toLowerCase();
   });
 
-  var quellnamen = Object.keys(daten.quellen).map(function (k) {
-    return daten.quellen[k].name;
-  });
-  document.getElementById('footer-meta').textContent =
-    'Quellen: ' + quellnamen.join(' · ') +
-    ' · Software: Session (Somacos GmbH & Co. KG)' +
-    ' · Daten abgerufen am ' + datumDe(daten.daten_abgerufen_am) +
-    ' · Zeitraum ' + daten.zeitraum.von + ' bis ' + daten.zeitraum.bis +
-    ' · Aufbereitet: ' + st.tops_kuratiert + ' von ' + st.tops_ausgelesen +
-    ' Tagesordnungspunkten (' + st.tops_verfahren + ' Sitzungsroutine ausgelassen).';
+  /* ---------------- Kopfzahlen ---------------- */
+  var st = daten.statistik;
+
+  function baueHeroStats() {
+    var box = document.getElementById('hero-stats');
+    box.textContent = '';
+    [
+      [st.sitzungen_ausgelesen, txt('statSitzungen')],
+      [st.tops_ausgelesen, txt('statTops')],
+      [st.tops_kuratiert, txt('statKuratiert')],
+      [daten.achsen.bezirk.length, txt('statBezirke')]
+    ].forEach(function (paar) {
+      var box2 = el('div', 'stat');
+      box2.appendChild(el('div', 'stat-num', String(paar[0])));
+      box2.appendChild(el('div', 'stat-label', paar[1]));
+      box.appendChild(box2);
+    });
+  }
 
   function datumDe(iso) {
     var t = String(iso).split('-');
     return t.length === 3 ? t[2] + '.' + t[1] + '.' + t[0] : iso;
+  }
+
+  function baueFooterMeta() {
+    var quellnamen = Object.keys(daten.quellen).map(function (k) {
+      return daten.quellen[k].name;
+    });
+    var txt2;
+    if (!leicht) {
+      txt2 = 'Quellen: ' + quellnamen.join(' · ') +
+        ' · Software: Session (Somacos GmbH & Co. KG)' +
+        ' · Daten abgerufen am ' + datumDe(daten.daten_abgerufen_am) +
+        ' · Zeitraum ' + daten.zeitraum.von + ' bis ' + daten.zeitraum.bis +
+        ' · Aufbereitet: ' + st.tops_kuratiert + ' von ' + st.tops_ausgelesen +
+        ' Tagesordnungspunkten (' + st.tops_verfahren + ' Sitzungsroutine ausgelassen).';
+    } else {
+      txt2 = 'Diese Infos kommen von: ' + quellnamen.join(' und ') + '. ' +
+        'Die Technik heißt Session (Somacos GmbH & Co. KG). ' +
+        'Die Daten sind vom ' + datumDe(daten.daten_abgerufen_am) + '. ' +
+        'Der Zeitraum ist ' + daten.zeitraum.von + ' bis ' + daten.zeitraum.bis + '. ' +
+        st.tops_kuratiert + ' von ' + st.tops_ausgelesen + ' Themen sind erklärt. ' +
+        st.tops_verfahren + ' Themen waren nur Formalie und fehlen deshalb.';
+    }
+    document.getElementById('footer-meta').textContent = txt2;
+  }
+
+  function texteAnwenden() {
+    document.getElementById('header-tag').textContent = txt('headerTag');
+    document.getElementById('header-link').textContent = txt('headerLink');
+    document.getElementById('disclaimer-text').innerHTML = txt('disclaimer');
+    document.getElementById('hero-h1').innerHTML = txt('heroH1');
+    document.getElementById('hero-p').textContent = txt('heroP');
+    document.getElementById('filters-head-h2').textContent = txt('filtersHeadH2');
+    document.getElementById('filters-hint').textContent = txt('filtersHint');
+    document.getElementById('btn-reset').textContent = txt('btnReset');
+    document.getElementById('suche-label').textContent = txt('sucheLabel');
+    document.getElementById('suche').setAttribute('placeholder', txt('suchePlaceholder'));
+    document.getElementById('footer-h2').textContent = txt('footerH2');
+    document.getElementById('footer-p1').textContent = txt('footerP1');
+    document.getElementById('footer-p2').innerHTML = txt('footerP2');
+    document.getElementById('footer-p3').innerHTML = txt('footerP3');
+    document.getElementById('footer-p4').innerHTML = txt('footerP4');
+    document.getElementById('footer-dank').innerHTML = txt('footerDank');
+    document.getElementById('footer-link-datenschutz').textContent = txt('footerDatenschutz');
+    /* textContent wuerde den sr-only-Hinweis "(neuer Tab)" mitloeschen,
+       darum hier bewusst Text + Hinweis-Span neu zusammensetzen. */
+    var qc = document.getElementById('footer-link-quellcode');
+    qc.textContent = txt('footerQuellcode');
+    qc.appendChild(el('span', 'sr-only', ' (öffnet in neuem Tab)'));
   }
 
   /* ---------------- Filter aufbauen ---------------- */
@@ -553,45 +819,82 @@
     }).length;
   }
 
-  var grid = document.getElementById('filter-grid');
-  ACHSEN.forEach(function (achse) {
-    var gruppe = el('div', 'filter-group');
-    gruppe.appendChild(el('h3', null, achse.label));
-    var opts = el('div', 'filter-opts');
+  function baueFilter() {
+    var grid = document.getElementById('filter-grid');
+    grid.textContent = '';
+    ACHSEN.forEach(function (achse) {
+      var gruppe = el('div', 'filter-group');
+      var ueberschrift = el('h3', null, txt(achse.textId));
+      ueberschrift.id = 'achse-titel-' + achse.key;
+      gruppe.appendChild(ueberschrift);
+      /* role="group" + aria-labelledby: Screenreader nennen beim Eintauchen
+         in die Chip-Liste die Achse ("Ihr Leben, Gruppe"), nicht nur eine
+         Folge namenloser Knoepfe. */
+      var opts = el('div', 'filter-opts');
+      opts.setAttribute('role', 'group');
+      opts.setAttribute('aria-labelledby', ueberschrift.id);
 
-    daten.achsen[achse.key].forEach(function (wert) {
-      var b = el('button', 'chip-btn');
-      b.type = 'button';
-      b.setAttribute('aria-pressed', 'false');
-      b.appendChild(document.createTextNode(wert));
-      b.appendChild(el('span', 'count', String(anzahlFuer(achse.key, wert))));
-      b.addEventListener('click', function () {
-        var liste = aktiv[achse.key];
-        var i = liste.indexOf(wert);
-        if (i === -1) { liste.push(wert); b.setAttribute('aria-pressed', 'true'); }
-        else { liste.splice(i, 1); b.setAttribute('aria-pressed', 'false'); }
-        gezeigt = ERSTE_SEITE;   // neue Auswahl faengt wieder oben an
-        zeichne();
+      daten.achsen[achse.key].forEach(function (wert) {
+        var b = el('button', 'chip-btn');
+        b.type = 'button';
+        var gedrueckt = aktiv[achse.key].indexOf(wert) !== -1;
+        b.setAttribute('aria-pressed', gedrueckt ? 'true' : 'false');
+        b.appendChild(document.createTextNode(achsenwertText(achse.key, wert)));
+        b.appendChild(el('span', 'count', String(anzahlFuer(achse.key, wert))));
+        b.addEventListener('click', function () {
+          var liste = aktiv[achse.key];
+          var i = liste.indexOf(wert);
+          if (i === -1) { liste.push(wert); b.setAttribute('aria-pressed', 'true'); }
+          else { liste.splice(i, 1); b.setAttribute('aria-pressed', 'false'); }
+          gezeigt = ERSTE_SEITE;   // neue Auswahl faengt wieder oben an
+          zeichne();
+        });
+        opts.appendChild(b);
       });
-      opts.appendChild(b);
-    });
 
-    gruppe.appendChild(opts);
-    grid.appendChild(gruppe);
+      gruppe.appendChild(opts);
+      grid.appendChild(gruppe);
+    });
+  }
+
+  var sucheInput = document.getElementById('suche');
+  var sucheTimer = null;
+  sucheInput.addEventListener('input', function () {
+    var wert = sucheInput.value;
+    clearTimeout(sucheTimer);
+    sucheTimer = setTimeout(function () {
+      suchbegriff = wert.trim().toLowerCase();
+      gezeigt = ERSTE_SEITE;
+      zeichne();
+    }, 120);
   });
 
   document.getElementById('btn-reset').addEventListener('click', function () {
     ACHSEN.forEach(function (a) { aktiv[a.key] = []; });
-    Array.prototype.forEach.call(
-      document.querySelectorAll('.chip-btn'),
-      function (b) { b.setAttribute('aria-pressed', 'false'); }
-    );
+    suchbegriff = '';
+    sucheInput.value = '';
+    gezeigt = ERSTE_SEITE;
+    baueFilter();
+    zeichne();
+  });
+
+  var btnLeicht = document.getElementById('btn-leicht');
+  btnLeicht.setAttribute('aria-pressed', leicht ? 'true' : 'false');
+  btnLeicht.addEventListener('click', function () {
+    leicht = !leicht;
+    btnLeicht.setAttribute('aria-pressed', leicht ? 'true' : 'false');
+    try { localStorage.setItem(LS_KEY_LEICHT, leicht ? '1' : '0'); } catch (err) { /* Storage kann gesperrt sein */ }
+    texteAnwenden();
+    baueHeroStats();
+    baueFilter();
+    baueFooterMeta();
     gezeigt = ERSTE_SEITE;
     zeichne();
   });
 
   /* ---------------- Karten ---------------- */
   function passt(eintrag) {
+    if (suchbegriff && eintrag._suchtext.indexOf(suchbegriff) === -1) return false;
     return ACHSEN.every(function (a) {
       var gewaehlt = aktiv[a.key];
       if (!gewaehlt.length) return true;
@@ -607,41 +910,46 @@
     kopf.appendChild(el('span', 'card-date', e.datum_anzeige));
     kopf.appendChild(el('span', 'card-gremium', e.gremium));
     if (e.quelle === 'bza') {
-      kopf.appendChild(el('span', 'herkunft bza', 'Bezirksausschuss'));
+      kopf.appendChild(el('span', 'herkunft bza', txt('herkunftBza')));
     }
     /* "maschineller Entwurf" war zu pauschal: die Ueberschrift ist bei diesen
        Eintraegen der Titel aus dem Ratsinfoportal, nur von Aktenzeichen
        befreit. Maschinell geraten sind allein die Schlagworte — und genau das
        sagt der Hinweis jetzt. */
     if (e.entwurf) {
-      kopf.appendChild(el('span', 'herkunft entwurf', 'automatisch verschlagwortet'));
+      kopf.appendChild(el('span', 'herkunft entwurf', txt('herkunftEntwurf')));
     }
     c.appendChild(kopf);
 
-    c.appendChild(el('h3', null, e.klartext_titel));
-    /* Bei Entwuerfen ist der Klartext leer — dann nichts erfinden. */
-    if (e.klartext) {
+    var titelLeicht = leicht && e.klartext_titel_leicht;
+    c.appendChild(el('h3', null, titelLeicht ? e.klartext_titel_leicht : e.klartext_titel));
+
+    /* Bei Entwuerfen ist der Klartext leer — dann nichts erfinden. Fehlt in
+       der Leichten Sprache nur die Uebersetzung, faellt die Karte sichtbar
+       auf die normale Fassung zurueck (KURATION.md). */
+    if (leicht && e.klartext_leicht) {
+      c.appendChild(el('p', 'card-text', e.klartext_leicht));
+    } else if (e.klartext) {
       c.appendChild(el('p', 'card-text', e.klartext));
+      if (leicht) c.appendChild(el('p', 'leicht-hinweis', txt('keineLeichteFassung')));
     }
 
     /* Stand der Beratung */
     if (e.stand && e.stand !== 'Ohne Vorlage') {
       var badge = el('div', 'stand stand-' + e.stand.split(' ')[0].toLowerCase());
-      badge.appendChild(document.createTextNode(
-        e.stand + (e.stand_datum ? ' am ' + e.stand_datum : '')
-      ));
+      badge.appendChild(document.createTextNode(standText(e.stand, e.stand_datum)));
       c.appendChild(badge);
     }
 
     /* Freier Ortsvermerk, kein Filter */
     if (e.ort && e.ort.length) {
-      c.appendChild(el('div', 'ortsvermerk', 'Ort: ' + e.ort.join(', ')));
+      c.appendChild(el('div', 'ortsvermerk', txt('ort') + e.ort.join(', ')));
     }
 
     var chips = el('div', 'chips');
     ['lebenslage', 'bezirk', 'anlass'].forEach(function (key) {
       werte(e, key).forEach(function (w) {
-        chips.appendChild(el('span', 'chip ' + key, w));
+        chips.appendChild(el('span', 'chip ' + key, achsenwertText(key, w)));
       });
     });
     c.appendChild(chips);
@@ -649,25 +957,25 @@
     /* Quelle immer sichtbar — nicht erst nach dem Aufklappen */
     var pruef = el('div', 'pruefen');
     var pl = el('a', 'pruef-link',
-      'Im Ratsinfoportal prüfen' + (e.vorlage ? ' · ' + e.vorlage : ''));
+      txt('pruefen') + (e.vorlage ? ' · ' + e.vorlage : ''));
     pl.href = e.vorlage_url || e.sitzung_url;
     pl.target = '_blank';
     pl.rel = 'noopener';
+    neuerTabHinweis(pl);
     pruef.appendChild(pl);
 
     /* Beschlussergebnis: nur die Niederschrift belegt, wie abgestimmt wurde.
        Sie wird erst nach Genehmigung in der Folgesitzung veroeffentlicht —
        fehlt sie, ist das der Grund, und den sagen wir statt zu schweigen. */
     if (e.niederschrift_url) {
-      var bl = el('a', 'beschluss', 'Beschluss in der Niederschrift nachlesen');
+      var bl = el('a', 'beschluss', txt('beschlussLink'));
       bl.href = e.niederschrift_url;
       bl.target = '_blank';
       bl.rel = 'noopener';
+      neuerTabHinweis(bl);
       pruef.appendChild(bl);
     } else if (e.stand && e.stand.indexOf('Entscheidung') === 0) {
-      pruef.appendChild(el('span', 'beschluss-offen',
-        'Wie abgestimmt wurde, steht in der Niederschrift der Sitzung. '
-        + 'Sie erscheint meist vier bis acht Wochen später.'));
+      pruef.appendChild(el('span', 'beschluss-offen', txt('beschlussOffen')));
     }
     c.appendChild(pruef);
 
@@ -675,22 +983,22 @@
     var det = el('details', 'card-orig');
     var sum = el('summary');
     sum.appendChild(document.createTextNode(
-      'Amtlicher Wortlaut und Quellen' + (e.vorlage ? ' · ' + e.vorlage : '')
+      txt('amtlicherWortlaut') + (e.vorlage ? ' · ' + e.vorlage : '')
     ));
     det.appendChild(sum);
 
     var body = el('div', 'orig-body');
-    body.appendChild(el('span', 'orig-label', 'Titel im Ratsinfoportal'));
+    body.appendChild(el('span', 'orig-label', txt('origLabelTitel')));
     body.appendChild(el('div', 'orig-title', e.amtlicher_titel));
 
     if (e.antragsteller) {
-      body.appendChild(el('span', 'orig-label', 'Antrag'));
+      body.appendChild(el('span', 'orig-label', txt('origLabelAntrag')));
       body.appendChild(el('div', 'orig-title', e.antragsteller));
     }
 
     /* Beratungsweg: welches Gremium wann und in welcher Rolle befasst war */
     if (e.beratungsweg && e.beratungsweg.length) {
-      body.appendChild(el('span', 'orig-label', 'Beratungsweg'));
+      body.appendChild(el('span', 'orig-label', txt('origLabelWeg')));
       var weg = el('ol', 'weg');
       e.beratungsweg.forEach(function (s) {
         var li = el('li');
@@ -699,36 +1007,39 @@
           ' · ' + s.datum_anzeige + ' · ' + s.gremium + ' · TOP ' + s.top_nr
         ));
         if (s.sitzung_url) {
-          var wl = el('a', 'weg-link', 'zur Sitzung');
+          var wl = el('a', 'weg-link', txt('quelleSitzung'));
           wl.href = s.sitzung_url; wl.target = '_blank'; wl.rel = 'noopener';
+          neuerTabHinweis(wl);
           li.appendChild(document.createTextNode(' '));
           li.appendChild(wl);
         }
         weg.appendChild(li);
       });
       body.appendChild(weg);
-      body.appendChild(el('div', 'weg-hinweis',
-        'Die Rolle ist die geplante Rolle der Sitzung. Ob der Beschluss ' +
-        'tatsächlich gefasst oder vertagt wurde, steht nicht in diesen Daten — ' +
-        'das ergibt erst die Niederschrift.'));
+      body.appendChild(el('div', 'weg-hinweis', txt('wegHinweis')));
     }
 
     body.appendChild(el('span', 'orig-label',
-      'Tagesordnungspunkt ' + e.top_nr + ' · Sitzung ' + e.sitzung_kennung));
+      leicht
+        ? 'Punkt ' + e.top_nr + ' in der Sitzung ' + e.sitzung_kennung
+        : 'Tagesordnungspunkt ' + e.top_nr + ' · Sitzung ' + e.sitzung_kennung));
 
     var links = el('div', 'quellen');
-    var a1 = el('a', 'quelle-link', 'Sitzung im Ratsinfoportal');
+    var a1 = el('a', 'quelle-link', txt('quelleSitzung'));
     a1.href = e.sitzung_url; a1.target = '_blank'; a1.rel = 'noopener';
+    neuerTabHinweis(a1);
     links.appendChild(a1);
 
     if (e.vorlage_url) {
-      var a2 = el('a', 'quelle-link', 'Vorlage ' + e.vorlage);
+      var a2 = el('a', 'quelle-link', (leicht ? 'Dokument ' : 'Vorlage ') + e.vorlage);
       a2.href = e.vorlage_url; a2.target = '_blank'; a2.rel = 'noopener';
+      neuerTabHinweis(a2);
       links.appendChild(a2);
     }
     e.dokumente.forEach(function (d) {
       var a = el('a', 'quelle-link', d.titel);
       a.href = d.url; a.target = '_blank'; a.rel = 'noopener';
+      neuerTabHinweis(a);
       links.appendChild(a);
     });
     body.appendChild(links);
@@ -743,15 +1054,19 @@
     var feed = document.getElementById('feed');
     feed.textContent = '';
 
-    var gewaehlt = ACHSEN.reduce(function (n, a) { return n + aktiv[a.key].length; }, 0);
+    var gewaehlt = ACHSEN.reduce(function (n, a) { return n + aktiv[a.key].length; }, 0)
+      + (suchbegriff ? 1 : 0);
     document.getElementById('feed-count').textContent =
       gewaehlt === 0
-        ? treffer.length + ' Einträge — alle aufbereiteten Tagesordnungspunkte'
-        : treffer.length + ' von ' + daten.eintraege.length + ' Einträgen passen zu Ihrer Auswahl';
+        ? (leicht
+            ? treffer.length + ' Einträge. Das sind alle Themen.'
+            : treffer.length + ' Einträge — alle aufbereiteten Tagesordnungspunkte')
+        : (leicht
+            ? treffer.length + ' von ' + daten.eintraege.length + ' Einträgen passen zu Ihrer Wahl.'
+            : treffer.length + ' von ' + daten.eintraege.length + ' Einträgen passen zu Ihrer Auswahl');
 
     if (!treffer.length) {
-      feed.appendChild(el('div', 'leer',
-        'Keine Einträge für diese Kombination. Filter weiter fassen?'));
+      feed.appendChild(el('div', 'leer', txt('leerFilter')));
       return;
     }
 
@@ -761,8 +1076,10 @@
 
     if (treffer.length > gezeigt) {
       var rest = treffer.length - gezeigt;
-      var mehr = el('button', 'btn-mehr',
-        'Weitere ' + Math.min(SEITE, rest) + ' anzeigen (' + rest + ' übrig)');
+      var mehrText = leicht
+        ? Math.min(SEITE, rest) + ' mehr zeigen (' + rest + ' bleiben übrig)'
+        : 'Weitere ' + Math.min(SEITE, rest) + ' anzeigen (' + rest + ' übrig)';
+      var mehr = el('button', 'btn-mehr', mehrText);
       mehr.type = 'button';
       mehr.addEventListener('click', function () {
         gezeigt += SEITE;
@@ -772,6 +1089,10 @@
     }
   }
 
+  texteAnwenden();
+  baueHeroStats();
+  baueFilter();
+  baueFooterMeta();
   zeichne();
 })();
 </script>
