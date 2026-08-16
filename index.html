@@ -169,6 +169,11 @@
     padding-bottom: .3rem; border-bottom: 1px solid var(--border);
   }
 
+  /* Toggle fuer die Filterliste: nur auf schmalen Breiten sichtbar. Auf dem
+     Desktop bleibt die Filterspalte immer offen, dafuer existiert der Knopf
+     dort gar nicht im Layout. */
+  .filter-toggle-row { display: none; }
+
   @media (max-width: 900px) {
     .arbeitsflaeche .container { grid-template-columns: 1fr; gap: 1.75rem; }
     .filter-spalte {
@@ -177,6 +182,24 @@
       border-radius: var(--radius); padding: 1.1rem 1.2rem;
     }
     .filter-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+
+    /* Eingeklappt beginnt die Seite: bei 42 Chips sonst drei Bildschirmhoehen
+       Scrollen, bevor der erste Eintrag zu sehen ist. */
+    .filter-toggle-row { display: block; margin-top: .9rem; }
+    .btn-filter-toggle {
+      width: 100%; display: flex; align-items: center; justify-content: space-between;
+      gap: .5rem; font: inherit; font-size: .92rem; font-weight: 600; cursor: pointer;
+      background: #fff; border: 1px solid var(--border-strong); border-radius: 8px;
+      padding: .65rem .9rem; color: var(--text);
+    }
+    .btn-filter-toggle:hover { border-color: var(--primary); }
+    .btn-filter-toggle .chevron { transition: transform .15s ease; font-size: .8em; }
+    .btn-filter-toggle[aria-expanded="true"] .chevron { transform: rotate(180deg); }
+    .filter-aktiv-zusammenfassung {
+      margin-top: .5rem; font-size: .82rem; color: var(--text-muted);
+    }
+    .filter-aktiv-zusammenfassung:empty { display: none; }
+    .filter-spalte:not(.offen) .filter-grid { display: none; }
   }
   .filter-opts { display: flex; flex-wrap: wrap; gap: .4rem; }
   .chip-btn {
@@ -502,6 +525,14 @@
           <span class="filters-hint" id="filters-hint">Mehreres auswählbar</span>
           <button class="btn-reset" id="btn-reset" type="button">Auswahl zurücksetzen</button>
         </div>
+        <div class="filter-toggle-row">
+          <button class="btn-filter-toggle" id="btn-filter-toggle" type="button"
+                  aria-expanded="false" aria-controls="filter-grid">
+            <span id="filter-toggle-label">Filter anzeigen</span>
+            <span class="chevron" aria-hidden="true">▾</span>
+          </button>
+          <p class="filter-aktiv-zusammenfassung" id="filter-aktiv-zusammenfassung"></p>
+        </div>
         <div class="filter-grid" id="filter-grid"></div>
       </aside>
 
@@ -625,6 +656,9 @@
     },
     filtersHeadH2: { n: 'Wonach möchten Sie schauen?', l: 'Was möchten Sie sehen?' },
     filtersHint:   { n: 'Mehreres auswählbar', l: 'Sie können mehrere Themen wählen.' },
+    filterToggleAn:  { n: 'Filter anzeigen', l: 'Filter zeigen' },
+    filterToggleAus: { n: 'Filter ausblenden', l: 'Filter verstecken' },
+    filterAktiv:     { n: 'Aktiv: ', l: 'Ausgewählt: ' },
     btnReset:      { n: 'Auswahl zurücksetzen', l: 'Alles löschen' },
     sucheLabel:       { n: 'Suchen', l: 'Wort suchen' },
     suchePlaceholder: { n: 'z. B. Kita, Radweg, Piuspark', l: 'zum Beispiel: Kita' },
@@ -839,6 +873,8 @@
     document.getElementById('filters-head-h2').textContent = txt('filtersHeadH2');
     document.getElementById('filters-hint').textContent = txt('filtersHint');
     document.getElementById('btn-reset').textContent = txt('btnReset');
+    document.getElementById('filter-toggle-label').textContent =
+      txt(btnFilterToggle.getAttribute('aria-expanded') === 'true' ? 'filterToggleAus' : 'filterToggleAn');
     document.getElementById('suche-label').textContent = txt('sucheLabel');
     document.getElementById('suche').setAttribute('placeholder', txt('suchePlaceholder'));
     document.getElementById('footer-h2').textContent = txt('footerH2');
@@ -890,6 +926,7 @@
           if (i === -1) { liste.push(wert); b.setAttribute('aria-pressed', 'true'); }
           else { liste.splice(i, 1); b.setAttribute('aria-pressed', 'false'); }
           gezeigt = ERSTE_SEITE;   // neue Auswahl faengt wieder oben an
+          aktualisiereFilterZusammenfassung();
           zeichne();
         });
         opts.appendChild(b);
@@ -898,7 +935,39 @@
       gruppe.appendChild(opts);
       grid.appendChild(gruppe);
     });
+    aktualisiereFilterZusammenfassung();
   }
+
+  /* ---------------- Filter-Umschalter (mobil) ----------------
+     Bei 42 Chips beginnt der Feed sonst erst nach drei Bildschirmhoehen
+     Scrollen. Auf schmalen Breiten startet die Filterliste eingeklappt;
+     eine Zusammenfassung zeigt, was gerade ausgewaehlt ist, auch wenn die
+     Liste selbst zu ist. Auf dem Desktop greift die Klasse nicht — dort
+     blendet CSS den Umschalter komplett aus. */
+  var filterSpalte = document.querySelector('.filter-spalte');
+  var btnFilterToggle = document.getElementById('btn-filter-toggle');
+
+  function aktualisiereFilterZusammenfassung() {
+    var namen = [];
+    ACHSEN.forEach(function (a) {
+      aktiv[a.key].forEach(function (w) { namen.push(achsenwertText(a.key, w)); });
+    });
+    var box = document.getElementById('filter-aktiv-zusammenfassung');
+    box.textContent = namen.length ? txt('filterAktiv') + namen.join(', ') : '';
+    var zaehler = btnFilterToggle.querySelector('.toggle-count');
+    if (zaehler) zaehler.remove();
+    if (namen.length) {
+      var span = el('span', 'toggle-count count', ' (' + namen.length + ')');
+      btnFilterToggle.insertBefore(span, btnFilterToggle.querySelector('.chevron'));
+    }
+  }
+
+  btnFilterToggle.addEventListener('click', function () {
+    var offen = filterSpalte.classList.toggle('offen');
+    btnFilterToggle.setAttribute('aria-expanded', offen ? 'true' : 'false');
+    document.getElementById('filter-toggle-label').textContent =
+      txt(offen ? 'filterToggleAus' : 'filterToggleAn');
+  });
 
   var sucheInput = document.getElementById('suche');
   var sucheTimer = null;
@@ -917,7 +986,7 @@
     suchbegriff = '';
     sucheInput.value = '';
     gezeigt = ERSTE_SEITE;
-    baueFilter();
+    baueFilter();   // ruft aktualisiereFilterZusammenfassung() mit auf
     zeichne();
   });
 
