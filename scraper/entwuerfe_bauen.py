@@ -32,6 +32,9 @@ import sys
 HIER = os.path.dirname(os.path.abspath(__file__))
 DATEN_VZ = os.path.join(os.path.dirname(HIER), "data")
 
+sys.path.insert(0, HIER)
+from referenzen import bare_positionen, top_ref  # noqa: E402
+
 # Stichwort -> Lebenslage. Mehrere Treffer sind erlaubt.
 #
 # Wortstaemme sind bewusst eng gefasst. Ein zu breiter Stamm erzeugt falsche
@@ -244,8 +247,9 @@ def main():
             continue
         if not args.mit_beteiligungen and ist_beteiligung(sitzung["gremium"]):
             continue
+        bare_pos = bare_positionen(sitzung)
         for top in sitzung["tops"]:
-            ref = f'{quelle}:{sitzung["id"]}#{top["nr"]}'
+            ref = top_ref(quelle, sitzung, top, bare_pos)
             if ref in vorhanden:
                 continue
             if not top["oeffentlich"] or top["verfahren"]:

@@ -23,6 +23,10 @@ from datetime import date
 HIER = os.path.dirname(os.path.abspath(__file__))
 DATEN_VZ = os.path.join(os.path.dirname(HIER), "data")
 
+sys.path.insert(0, HIER)
+from entwuerfe_bauen import ist_beteiligung, ist_sammelueberschrift  # noqa: E402
+from referenzen import bare_positionen, top_ref  # noqa: E402
+
 # Reihenfolge bestimmt die Sortierung der Filterachse "Stand"
 STAND_REIHENFOLGE = [
     "Entscheidung geplant",
@@ -120,12 +124,16 @@ def main():
     eintraege_kuration = kuration["eintraege"]
     heute_iso = date.today().isoformat()
 
-    # Index ueber alle Tagesordnungspunkte, Schluessel mit Quellen-Praefix
+    # Index ueber alle Tagesordnungspunkte, Schluessel mit Quellen-Praefix.
+    # top_ref() loest dabei blosse "Ö"-TOPs (Aenderungsantraege, "hierzu"-
+    # Stellungnahmen) ueber ihre Position auf, siehe referenzen.py — sonst
+    # ueberschreiben sich mehrere davon in derselben Sitzung gegenseitig.
     index = {}
     for sitzung in roh["sitzungen"]:
         quelle = sitzung.get("quelle", "stadt")
+        bare_pos = bare_positionen(sitzung)
         for top in sitzung["tops"]:
-            index[f'{quelle}:{sitzung["id"]}#{top["nr"]}'] = (sitzung, top)
+            index[top_ref(quelle, sitzung, top, bare_pos)] = (sitzung, top)
 
     # Alle Auftritte je Thema sammeln — auch die, die niemand kuratiert hat.
     # Sonst kennt die Karte nur die eine Sitzung, in der jemand zufaellig
@@ -266,6 +274,38 @@ def main():
     for e in feed:
         stand_verteilung[e["stand"]] = stand_verteilung.get(e["stand"], 0) + 1
 
+    # Abdeckung ehrlich ausweisen: "1712 Themen" ist nicht dieselbe Zahl wie
+    # "1712 Tagesordnungspunkte" — dieselbe Vorlage laeuft oft durch mehrere
+    # Gremien (siehe thema_schluessel oben). Die Fusszeile soll die tatsaechliche
+    # TOP-Abdeckung nennen, nicht die kleinere Themenzahl, und alle Gruende fuer
+    # die Luecke nennen statt nur "Sitzungsroutine" — siehe pruefen.py::p_abdeckung,
+    # dieselbe Zaehlung (TOP-fuer-TOP ueber die Rohdaten, nicht ueber die
+    # "auftritte"-Listen: mehrere TOPs koennen sich denselben bloßen "Ö"-Nummer
+    # teilen und dann als Duplikat verschwinden, wenn man stattdessen die
+    # Listenlaengen aufsummiert).
+    im_feed_themen = set(je_thema.keys())
+    im_feed_refs = {e["ref"] for e in feed}
+    gruende = collections.Counter()
+    for sitzung in roh["sitzungen"]:
+        q = sitzung.get("quelle", "stadt")
+        bare_pos = bare_positionen(sitzung)
+        for top in sitzung["tops"]:
+            ref = top_ref(q, sitzung, top, bare_pos)
+            schluessel = thema_schluessel(q, top) or ref
+            if ref in im_feed_refs or schluessel in im_feed_themen:
+                gruende["abgedeckt"] += 1
+            elif not top["oeffentlich"]:
+                gruende["nicht_oeffentlich"] += 1
+            elif top["verfahren"]:
+                gruende["sitzungsroutine"] += 1
+            elif ist_beteiligung(sitzung["gremium"]):
+                gruende["beteiligung"] += 1
+            elif len(top["titel"]) < 12 or ist_sammelueberschrift(top["titel"]):
+                gruende["sonstige"] += 1
+            else:
+                gruende["offen"] += 1
+    tops_abgedeckt = gruende["abgedeckt"]
+
     ausgabe = {
         "stadt": "Ingolstadt",
         "quellen": roh["quellen"],
@@ -277,7 +317,17 @@ def main():
             "sitzungen_ausgelesen": roh["anzahl_sitzungen"],
             "tops_ausgelesen": roh["anzahl_tops"],
             "tops_verfahren": roh.get("anzahl_verfahren", 0),
-            "tops_kuratiert": len(feed),
+            "tops_kuratiert": len(feed),          # Themen — nach Vorlage entdoppelt
+            "tops_abgedeckt": tops_abgedeckt,      # tatsaechliche TOP-Abdeckung
+            # Die folgenden vier plus tops_abgedeckt ergeben zusammen genau
+            # tops_ausgelesen — anders als tops_verfahren oben (das zaehlt ALLE
+            # Sitzungsroutine-TOPs, auch die drei, die zufaellig trotzdem in
+            # einem kuratierten Thema mitlaufen).
+            "tops_sitzungsroutine_offen": gruende["sitzungsroutine"],
+            "tops_beteiligung": gruende["beteiligung"],
+            "tops_sonstige": gruende["sonstige"],
+            "tops_nicht_oeffentlich": gruende["nicht_oeffentlich"],
+            "tops_offen": gruende["offen"],        # noch nicht kuratiert
             "entwuerfe": sum(1 for e in feed if e["entwurf"]),
             "leichte_sprache": sum(1 for e in feed if e["klartext_leicht"]),
             "je_quelle": {

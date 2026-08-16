@@ -38,6 +38,7 @@ PDF_CACHE = os.path.join(HIER, ".cache", "pdf")
 sys.path.insert(0, HIER)
 from entwuerfe_bauen import ist_beteiligung, ist_sammelueberschrift  # noqa: E402
 from feed_bauen import thema_schluessel, leitstation  # noqa: E402
+from referenzen import bare_positionen, top_ref  # noqa: E402
 from ris_ingolstadt import USER_AGENT, PAUSE_SEKUNDEN  # noqa: E402
 
 # Anlagen erkennt man am Titel. Alles andere ist die Vorlage selbst, ein
@@ -104,44 +105,38 @@ def main():
     args = ap.parse_args()
 
     roh = lade("rohdaten.json")
-    kur = lade("kuration.json")["eintraege"]
 
-    # Welche Themen haben schon einen Klartext? Entwuerfe zaehlen nicht als
-    # erledigt — sie tragen nur einen Titel.
-    index = {}
-    for s in roh["sitzungen"]:
-        q = s.get("quelle", "stadt")
-        for t in s["tops"]:
-            index[f'{q}:{s["id"]}#{t["nr"]}'] = (s, t)
+    # Welche Themen sind schon abgedeckt? Aus data/feed.json lesen (thema +
+    # ref je Eintrag), nicht aus einem ref-gekeyten Dict ueber die Rohdaten
+    # neu ableiten: mehrere TOPs ohne eigene Ö-Nummer teilen sich denselben
+    # blossen Ref "<quelle>:<id>#Ö" (siehe Kommentar unten bei "nur_frage") —
+    # ein solches Dict ueberschreibt sich dabei selbst und liess frueher
+    # 291 TOPs unter den Tisch fallen, sodass diese Funktion "0 offene Themen"
+    # meldete, obwohl es welche gab.
+    feed = lade("feed.json")["eintraege"]
+    erledigt = {e["thema"] for e in feed} | {e["ref"] for e in feed}
 
-    erledigt = set()
-    for ref, k in kur.items():
-        if ref in index and k.get("klartext"):
-            s, t = index[ref]
-            erledigt.add(thema_schluessel(s.get("quelle", "stadt"), t) or ref)
-
-    # Themen sammeln
+    # Themen sammeln. TOPs ohne eigene Ö-Nummer (Aenderungsantraege,
+    # Stellungnahmen der Verwaltung "hierzu") bekommen ihre Position in der
+    # Sitzung als Ersatz-Nummer (top_ref(), siehe referenzen.py) — frueher
+    # wurden sie hier komplett uebersprungen, weil sie sich sonst alle den
+    # blossen Ref "<quelle>:<id>#Ö" teilen wuerden.
     themen = collections.defaultdict(list)
     for s in roh["sitzungen"]:
         if s.get("quelle", "stadt") != args.quelle or ist_beteiligung(s["gremium"]):
             continue
+        bare_pos = bare_positionen(s)
         for t in s["tops"]:
             if not t["oeffentlich"] or t["verfahren"]:
                 continue
             if len(t["titel"]) < 12 or ist_sammelueberschrift(t["titel"]):
-                continue
-            # TOPs ohne eigene Ö-Nummer (Aenderungsantraege, Stellungnahmen der
-            # Verwaltung "hierzu") teilen sich alle denselben Ref "<quelle>:<id>#Ö"
-            # und lassen sich darum nicht einzeln referenzieren; sie werden mit
-            # ihrem uebergeordneten, nummerierten TOP mitkuratiert.
-            if t["nr"].strip() == "Ö":
                 continue
             schluessel = thema_schluessel(args.quelle, t)
             if not schluessel:
                 # Ohne Vorlagennummer (BZA-Punkte, aber auch Fraktions-Anfragen
                 # und Sonderbefassungen im Stadtrat) gibt es kein gemeinsames
                 # Laufen durch mehrere Gremien — jeder TOP ist sein eigenes Thema.
-                schluessel = f'{args.quelle}:{s["id"]}#{t["nr"]}'
+                schluessel = top_ref(args.quelle, s, t, bare_pos)
             if schluessel and schluessel not in erledigt:
                 themen[schluessel].append((s, t))
 
@@ -185,7 +180,7 @@ def main():
             haupt = antworten + rest + fragen
         eintrag = {
             "thema": schluessel,
-            "ref": f'{args.quelle}:{s["id"]}#{t["nr"]}',
+            "ref": top_ref(args.quelle, s, t),
             "datum": s["datum"],
             "gremium": s["gremium"],
             "amtlicher_titel": t["titel"],

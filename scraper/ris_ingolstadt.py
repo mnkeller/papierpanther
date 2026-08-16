@@ -101,6 +101,9 @@ VERFAHREN_MUSTER = [
     r"^Genehmigung des Protokolls",
     # Stadtratsformalien, erst beim Zwei-Jahres-Lauf aufgefallen
     r"^Fragestunde",
+    # Reine Sitzungspausen ohne jeden Inhalt — kein Dokument, keine Sache
+    r"^Sitzungspause\b",
+    r"^Sitzungsunterbrechung\b",
     r"^Dringlichkeitsantr(ä|ae)ge$",
     r"^Genehmigung von Sitzungsniederschriften",
     r"^Bekanntgaben?$",

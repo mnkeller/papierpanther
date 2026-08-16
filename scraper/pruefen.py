@@ -20,12 +20,14 @@ import json
 import os
 import re
 import sys
+import urllib.parse
 
 HIER = os.path.dirname(os.path.abspath(__file__))
 DATEN_VZ = os.path.join(os.path.dirname(HIER), "data")
 
 sys.path.insert(0, HIER)
 from entwuerfe_bauen import ist_beteiligung, ist_sammelueberschrift  # noqa: E402
+from referenzen import bare_positionen, top_ref  # noqa: E402
 
 fehler, warnungen = [], []
 
@@ -98,6 +100,47 @@ def p_pflichtfelder(kur):
             warnt(f"{ref}: leichter Text ohne leichten Titel")
 
 
+ERLAUBTE_HOSTS = {"www.ingolstadt.de", "ingolstadt.de"}
+
+
+def p_nur_erlaubte_hosts(feed):
+    """
+    Jeder Link im Feed zeigt auf die Stadt Ingolstadt — nichts sonst.
+
+    Verteidigung gegen einen kuenftigen Parser- oder Kurationsfehler, der eine
+    externe oder javascript:-URL einschleust. Aktuell schuetzt nur Zufall
+    davor (absolut() in ris_ingolstadt.py stellt jeder Nicht-http-URL die
+    Basis-Adresse voran) — das hier macht es zur Zusicherung.
+    """
+    fehlerhaft = []
+    for e in feed:
+        urls = [e.get("vorlage_url"), e.get("sitzung_url"), e.get("niederschrift_url")]
+        urls += [d.get("url") for d in e.get("dokumente") or []]
+        urls += [s.get("sitzung_url") for s in e.get("beratungsweg") or []]
+        for url in filter(None, urls):
+            parsed = urllib.parse.urlparse(url)
+            if parsed.scheme not in ("https", "http") or parsed.netloc not in ERLAUBTE_HOSTS:
+                fehlerhaft.append(f"{e['ref']}: {url!r}")
+    if fehlerhaft:
+        fehlt(f"{len(fehlerhaft)} URLs ausserhalb der erlaubten Hosts: {fehlerhaft[:5]}")
+
+
+def p_nur_oeffentliche_tops(kur, index):
+    """
+    Nicht-oeffentliche Tagesordnungspunkte duerfen nie kuratiert werden.
+
+    Aktuell schuetzt nur der Umstand davor, dass niemand einen 'N'-Punkt von
+    Hand eingetragen hat — feed_bauen.py filtert nicht danach. Das hier macht
+    es zur Zusicherung statt zum Zufall.
+    """
+    fehlerhaft = [
+        ref for ref, (sitzung, top) in index.items()
+        if ref in kur and not top["oeffentlich"]
+    ]
+    if fehlerhaft:
+        fehlt(f"{len(fehlerhaft)} kuratierte Eintraege sind nicht oeffentlich: {fehlerhaft}")
+
+
 BEHAUPTET_BESCHLUSS = re.compile(
     r"\b(hat beschlossen|wurde beschlossen|ist beschlossen|"
     r"hat entschieden|wurde entschieden|beschloss)\b", re.I
@@ -136,11 +179,13 @@ def p_abdeckung(roh, feed):
     im_feed_themen = {e["thema"] for e in feed}
     sys.path.insert(0, HIER)
     from feed_bauen import thema_schluessel
+    from referenzen import bare_positionen, top_ref
 
     for s in roh["sitzungen"]:
         q = s.get("quelle", "stadt")
+        bare_pos = bare_positionen(s)
         for t in s["tops"]:
-            ref = f'{q}:{s["id"]}#{t["nr"]}'
+            ref = top_ref(q, s, t, bare_pos)
             schluessel = thema_schluessel(q, t) or ref
             if ref in im_feed_refs or schluessel in im_feed_themen:
                 gruende["im Feed"] += 1
@@ -175,8 +220,9 @@ def main():
     index = {}
     for s in roh["sitzungen"]:
         q = s.get("quelle", "stadt")
+        bare_pos = bare_positionen(s)
         for t in s["tops"]:
-            index[f'{q}:{s["id"]}#{t["nr"]}'] = (s, t)
+            index[top_ref(q, s, t, bare_pos)] = (s, t)
 
     p_referenzen(kur, index)
     p_kein_verlust(kur, feed["eintraege"])
@@ -185,6 +231,8 @@ def main():
     p_pflichtfelder(kur)
     p_kein_behaupteter_beschluss(kur)
     p_leichte_sprache(kur)
+    p_nur_erlaubte_hosts(feed["eintraege"])
+    p_nur_oeffentliche_tops(kur, index)
     gruende = p_abdeckung(roh, feed["eintraege"])
 
     print("Abdeckung aller Tagesordnungspunkte")
