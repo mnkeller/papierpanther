@@ -71,6 +71,15 @@ Weiter gilt:
   Stadt in den nächsten Jahren braucht".
 - **Nichts erfinden.** Steht ein Betrag, ein Ort oder ein Datum nicht in der
   Vorlage, darf er auch nicht im Text stehen. Im Zweifel weglassen.
+- **Keine Hausnummern bei Beschwerden und Nachbarschaftsstreitigkeiten.**
+  Straßenname reicht — bei BZA-Punkten wie „Verkehrsspiegel", „Lärm" oder
+  „Verschmutzung" macht die Hausnummer einen identifizierbaren Haushalt oder
+  Kleinbetrieb öffentlich durchsuchbar, ohne dass es der Sache nutzt. Anders bei
+  Bauvorhaben, Gewerbeanmeldungen (Außenbestuhlung u. Ä.) und öffentlichen
+  Gebäuden: dort ist die genaue Adresse der eigentliche Inhalt und bleibt stehen.
+  Faustregel: Steht die Hausnummer nur da, weil sie in der Vorlage stand, aber
+  keine der Fragen „wer baut/beantragt was" oder „welches öffentliche Gebäude"
+  beantwortet — weglassen.
 - **Keine Wertung.** Nicht „endlich", nicht „nur", nicht „immerhin".
 - **Kein Ergebnis behaupten.** Beraten ist nicht entschieden. Also „Der Stadtrat
   hat beraten" oder „soll entscheiden", nie „hat beschlossen", solange das nicht
