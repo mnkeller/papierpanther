@@ -845,21 +845,35 @@
     var quellnamen = Object.keys(daten.quellen).map(function (k) {
       return daten.quellen[k].name;
     });
+    /* tops_kuratiert zaehlt Themen (nach Vorlage entdoppelt), tops_abgedeckt
+       die tatsaechlich erfassten Tagesordnungspunkte — dieselbe Vorlage laeuft
+       oft durch mehrere Gremien. Die Fusszeile nennt beides plus alle Gruende
+       fuer die Luecke, nicht nur "Sitzungsroutine" (siehe scraper/pruefen.py). */
+    var pct = Math.round((st.tops_abgedeckt / st.tops_ausgelesen) * 100);
+    var sonstige = st.tops_sonstige + st.tops_nicht_oeffentlich;
     var txt2;
     if (!leicht) {
       txt2 = 'Quellen: ' + quellnamen.join(' · ') +
         ' · Software: Session (Somacos GmbH & Co. KG)' +
         ' · Daten abgerufen am ' + datumDe(daten.daten_abgerufen_am) +
         ' · Zeitraum ' + daten.zeitraum.von + ' bis ' + daten.zeitraum.bis +
-        ' · Aufbereitet: ' + st.tops_kuratiert + ' von ' + st.tops_ausgelesen +
-        ' Tagesordnungspunkten (' + st.tops_verfahren + ' Sitzungsroutine ausgelassen).';
+        ' · Aufbereitet: ' + st.tops_abgedeckt + ' von ' + st.tops_ausgelesen +
+        ' Tagesordnungspunkten (' + pct + ' %), zusammengefasst zu ' +
+        st.tops_kuratiert + ' Themen' +
+        ' · nicht aufbereitet: ' + st.tops_sitzungsroutine_offen + ' Sitzungsroutine, ' +
+        st.tops_beteiligung + ' Aufsichtsrat/Zweckverband/Beirat, ' +
+        st.tops_offen + ' noch nicht kuratiert, ' + sonstige + ' sonstige.';
     } else {
       txt2 = 'Diese Infos kommen von: ' + quellnamen.join(' und ') + '. ' +
         'Die Technik heißt Session (Somacos GmbH & Co. KG). ' +
         'Die Daten sind vom ' + datumDe(daten.daten_abgerufen_am) + '. ' +
         'Der Zeitraum ist ' + daten.zeitraum.von + ' bis ' + daten.zeitraum.bis + '. ' +
-        st.tops_kuratiert + ' von ' + st.tops_ausgelesen + ' Themen sind erklärt. ' +
-        st.tops_verfahren + ' Themen waren nur Formalie und fehlen deshalb.';
+        'Von ' + st.tops_ausgelesen + ' Themen im Rats-Info-Portal sind ' +
+        st.tops_abgedeckt + ' erklärt (' + pct + ' Prozent), als ' +
+        st.tops_kuratiert + ' Karten. ' +
+        st.tops_sitzungsroutine_offen + ' Themen waren nur Formalie. ' +
+        st.tops_beteiligung + ' Themen gehören zu Aufsichtsräten, Zweckverbänden oder Beiräten. ' +
+        st.tops_offen + ' Themen sind noch nicht bearbeitet.';
     }
     document.getElementById('footer-meta').textContent = txt2;
   }
