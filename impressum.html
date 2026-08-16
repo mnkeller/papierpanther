@@ -26,11 +26,11 @@
     --accent: #b00e2b;
     --text: #16232b;
     --text-muted: #566a74;
-    --text-faint: #7e8f98;
+    --text-faint: #5c6a72;
     --bg: #f8f7f4;
     --bg-warm: #f1efe9;
     --border: #e4e0d8;
-    --border-strong: #cfc9be;
+    --border-strong: #8f8779;
     --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
     --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
   }
@@ -90,6 +90,12 @@
   }
   .site-footer .container { display: flex; gap: 1.25rem; flex-wrap: wrap; }
   .site-footer a { color: var(--primary-dark); }
+
+  /* Sichtbarer Fokusring auf allen interaktiven Elementen — wichtig fuer
+     Tastaturbedienung, siehe Barrierefreiheits-Hinweise im Toolkit. */
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px;
+  }
 </style>
 </head>
 <body>
