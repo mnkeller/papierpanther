@@ -81,6 +81,8 @@ Code MIT (siehe [LICENSE](LICENSE)), geschriebene Inhalte dieses Repositories
 CC-BY-4.0.
 
 PapierPanther baut auf dem **MeinBezirk-Toolkit von Igor Schwarzmann /
-Known Unknowns GmbH** auf (CC-BY-4.0), aus dem die Methodik und Teile der
-Oberfläche stammen. Scraper, Datenaufbereitung und die Ingolstädter Anpassung
-sind in diesem Repository entstanden. Details zur Herkunft: [NOTICE](NOTICE).
+Known Unknowns GmbH** auf ([github.com/igor/meinbezirk](https://github.com/igor/meinbezirk),
+CC-BY-4.0), aus dem die frühe Methodik und Teile der ursprünglichen
+Oberflächenstruktur stammen. Scraper, Datenaufbereitung und die Ingolstädter
+Anpassung — inklusive des kompletten Redesigns von `index.html` — sind in
+diesem Repository entstanden. Details zur Herkunft: [NOTICE](NOTICE).

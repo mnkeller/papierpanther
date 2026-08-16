@@ -1,34 +1,21 @@
 # PapierPanther — Datenlage und Befunde
 
-Hintergrunddokument zu [README.md](README.md). Stand: 31.07.2026.
+Hintergrunddokument zu [README.md](README.md). Stand der Recherche: 31.07.2026 —
+**dieser Stand ist historisch**, die Zahlen unten (Sitzungen, TOPs, Einträge)
+spiegeln den Datensatz zum Zeitpunkt der jeweiligen Messung, nicht den
+aktuellen. Für den aktuellen Stand, den Schnellstart und den Aufbau der
+Datenpipeline siehe [README.md](README.md) — dort wird auch gepflegt, sobald
+sich etwas ändert. Dieses Dokument bleibt als Recherche- und
+Entscheidungsprotokoll stehen.
 
 **Zweck:** festhalten, was die Datenrecherche im Ingolstädter Ratsinfoportal
-ergeben hat, und welche Fragen offen sind.
+ergeben hat, und welche Fragen offen waren.
 
 **Bewusste Beschränkungen:**
 
 - ausschließlich öffentlich zugängliche Daten
 - kein Kontakt zur Stadtverwaltung
 - keine Spiegelung städtischer PDFs, nur Verlinkung
-
----
-
-## Schnellstart
-
-```bash
-open "index.html"
-```
-
-Der Prototyp läuft ohne Webserver: `index.html` lädt keine externen Dateien, die
-Daten stehen direkt in der Seite (geprüft — null Unterressourcen).
-
-Daten neu holen und Feed neu bauen:
-
-```bash
-cd scraper && python3 ris_ingolstadt.py --von 2026-01 --bis 2026-07 && python3 feed_bauen.py
-```
-
-Nur Python-Standardbibliothek, keine Abhängigkeiten.
 
 ---
 
@@ -133,24 +120,32 @@ online sind. Die Logik ist mit synthetischen Fällen gegengeprüft.
 ## Aufbau
 
 ```
-index.html                     Oberfläche + eingebettete Daten
+index.html                     Oberfläche (Daten NICHT eingebettet, siehe unten)
 impressum.html                 Impressum (§ 5 DDG)
 datenschutz.html               Datenschutzerklärung
 scraper/
   ris_ingolstadt.py            liest beide Portale aus       -> data/rohdaten.json
   entwuerfe_bauen.py           erzeugt Kurations-Vorschläge  -> data/kuration.json
-  feed_bauen.py                Rohdaten + Kuration           -> data/feed.json
-                               und setzt die Daten in index.html ein
+  vorlagen_holen.py            holt PDF-Text zur Kuration    -> data/vorlagen_charge.json
+  feed_bauen.py                Rohdaten + Kuration           -> data/feed.json + feed.js
+  pruefen.py                   Zusicherungen gegen den Feed (Referenzen, Datenverlust,
+                               behauptete Beschlüsse, erlaubte Hosts, u. a.)
   .cache/                      HTML-Cache, damit Wiederholläufe das Portal schonen
 data/
   rohdaten.json                unveränderte Auslesung beider Quellen
   kuration.json                HAND-/MASCHINELL-GEPFLEGT: Klartext + Schlagworte
   feed.json                    erzeugt — nicht händisch ändern
+  feed.js                      dasselbe als window.FEED — das laedt index.html per <script src>
 ```
 
-`feed_bauen.py` schreibt in `index.html` nur den Bereich zwischen den Markern
-`/* FEED-DATEN-ANFANG */` und `/* FEED-DATEN-ENDE */`. Gestaltung und Logik der
-Seite kannst du frei bearbeiten, der Build überschreibt sie nicht.
+Seit dem Umzug der Daten in eine eigene Datei fasst `feed_bauen.py` `index.html`
+**nicht mehr an** — es schreibt ausschließlich `data/feed.json` und `data/feed.js`.
+Gestaltung und Logik der Seite liegen vollständig und ausschließlich in
+`index.html` selbst. Der Grund für den Umzug: Bei den heutigen ~1.700 Einträgen
+wären das mehrere MB Daten inline im HTML, die vor dem ersten Bildaufbau
+vollständig geladen werden müssten — ausgelagert lädt die Seite die Daten per
+klassischem `<script src="data/feed.js">`, was (anders als `fetch()`) auch über
+`file://` funktioniert.
 
 Die **Trennung von `rohdaten.json` und `kuration.json` ist bewusst**: Neu-Scrapen
 überschreibt niemals die aufbereiteten Texte. Verknüpft wird über den Schlüssel
@@ -186,11 +181,14 @@ fehlende. Aufgefallen und behoben: „markt" traf *Viktualienmarkt*, „pflege" 
 *Schwenkweiherpflege*, „kanal" traf *Kanalstraße*, „see" hätte *Museen* getroffen.
 Die Listen arbeiten deshalb mit Wortgrenzen und zusammengesetzten Begriffen.
 
-Aktueller Stand: **51 Sitzungen, 470 Tagesordnungspunkte** (Mai–Juli 2026) aus
-beiden Quellen, davon 64 als Sitzungsroutine ausgesondert. Aufbereitet sind
-**136 Einträge** — 22 von Hand, 114 maschinelle Entwürfe. `feed_bauen.py` meldet
-am Ende, wie viele Punkte noch offen sind, und welche Einträge keinen Stadtbezirk
-haben.
+Stand damals (Einführung der Entwurfs-Automatisierung, 31.07.2026): **51
+Sitzungen, 470 Tagesordnungspunkte** (Mai–Juli 2026) aus beiden Quellen, davon
+64 als Sitzungsroutine ausgesondert. Aufbereitet waren **136 Einträge** — 22 von
+Hand, 114 maschinelle Entwürfe. Der Zwei-Jahres-Rückstand (siehe unten) ist seither
+eingespielt und vollständig von Hand/LLM kuratiert; für den aktuellen Stand
+(Sitzungen, TOPs, offene Einträge) siehe die Fußzeile der Seite oder
+[README.md](README.md). `feed_bauen.py` meldet am Ende jedes Laufs, wie viele
+Punkte noch offen sind, und welche Einträge keinen Stadtbezirk haben.
 
 ---
 
@@ -294,12 +292,16 @@ Die Seite läuft auf **GitHub Pages** aus dem Repository
 `index.html` ist eine einzige Datei ohne externe Unterressourcen — ein `git push`
 auf `main` genügt, um den Live-Stand zu aktualisieren.
 
-**Offene Architekturfrage:** Die Feed-Daten stehen inline in `index.html`
-(881 Bytes je Eintrag). Bei den aktuellen 136 Einträgen sind das 117 KB und
-unproblematisch. Ein Rückstand von zwei Jahren (~2.600 Einträge, siehe unten)
-ergäbe rund 2,3 MB in einer Datei, die vor dem ersten Bildaufbau vollständig
-geladen und als ebenso viele Karten ins DOM gerendert wird. Spätestens dann
-braucht es Auslagerung in eine separate JSON-Datei, Paginierung oder beides.
+**Architekturfrage — erledigt:** Die Feed-Daten standen anfangs inline in
+`index.html` (881 Bytes je Eintrag, bei 136 Einträgen noch unproblematische
+117 KB). Mit dem Zwei-Jahres-Rückstand ausgelagert nach `data/feed.json` +
+`data/feed.js` (siehe „Aufbau" oben) — bei den heutigen ~1.700 Einträgen wären
+das sonst mehrere MB inline im HTML gewesen, vollständig geladen und als
+ebenso viele Karten ins DOM gerendert, bevor die Seite ueberhaupt etwas zeigt.
+Die Seite zeigt beim ersten Aufschlag ohnehin nur 8 Karten und lädt den Rest
+nach — Paginierung der Anzeige gibt es also bereits, nur (noch) nicht beim
+Laden der Rohdaten selbst. Bei weiterem Wachstum bliebe das der nächste
+Schritt.
 
 ### Rechtliches — erledigt
 
