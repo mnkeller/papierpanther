@@ -217,7 +217,16 @@ def schlagworte(text, tabelle):
 
 
 def bezirk_aus_gremium(gremium):
-    """'Bezirksausschuss VII-Etting' -> 'VII-Etting'."""
+    """
+    'Bezirksausschuss VII-Etting' -> 'VII-Etting'.
+
+    Nur fuer die 12 Bezirksausschuesse der Stadt Ingolstadt gedacht. Achtung,
+    Namenskollision: Der Bezirk Oberbayern hat ein eigenes Gremium, das
+    ebenfalls schlicht "Bezirksausschuss" heisst (sein staendiger Ausschuss,
+    keine Ingolstaedter Stadtteil-Vertretung) — aber ohne die roemische
+    Nummer und den Stadtteilnamen danach, daher greift dieses Muster dort
+    nicht und liefert korrekt [] statt eines falschen Stadtteils.
+    """
     m = re.search(r"Bezirksausschuss\s+([IVX]+\s*-\s*.+)$", gremium)
     if not m:
         return []
@@ -226,7 +235,8 @@ def bezirk_aus_gremium(gremium):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--quelle", choices=["stadt", "bza"], help="nur eine Quelle")
+    parser.add_argument("--quelle", choices=["stadt", "bza", "bezirk_obb"],
+                        help="nur eine Quelle")
     parser.add_argument("--max", type=int, default=0, help="hoechstens N Entwuerfe")
     parser.add_argument("--mit-beteiligungen", action="store_true",
                         help="Aufsichtsraete, Zweckverbaende und Beiraete mitnehmen")

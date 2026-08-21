@@ -2,12 +2,13 @@
 """
 Holt die naechste Portion Vorlagentexte zur Kuration.
 
-    python3 vorlagen_holen.py --max 30                # Portion Stadtrat holen
-    python3 vorlagen_holen.py --max 30 --quelle bza   # Portion Bezirksausschuesse holen
-    python3 vorlagen_holen.py --max 30 --liste         # nur zeigen, nichts laden
+    python3 vorlagen_holen.py --max 30                       # Portion Stadtrat holen
+    python3 vorlagen_holen.py --max 30 --quelle bza          # Bezirksausschuesse Ingolstadt
+    python3 vorlagen_holen.py --max 30 --quelle bezirk_obb   # Bezirk Oberbayern
+    python3 vorlagen_holen.py --max 30 --liste                # nur zeigen, nichts laden
 
-Waehlt Themen aus Stadtrat und Fachausschuessen (oder, mit --quelle bza, aus
-den Bezirksausschuessen), die noch keinen Klartext haben. Ein Thema ist eine
+Waehlt Themen aus der gewaehlten Quelle (Stadtrat/Fachausschuesse, die 12
+Bezirksausschuesse der Stadt Ingolstadt, oder der Bezirk Oberbayern), die noch keinen Klartext haben. Ein Thema ist eine
 Vorlage, nicht ein Tagesordnungspunkt — dieselbe Vorlage laeuft durch mehrere
 Gremien und braucht trotzdem nur einen Text.
 
@@ -99,7 +100,7 @@ def pdf_text(url):
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--max", type=int, default=25, help="wie viele Themen")
-    ap.add_argument("--quelle", choices=["stadt", "bza"], default="stadt",
+    ap.add_argument("--quelle", choices=["stadt", "bza", "bezirk_obb"], default="stadt",
                      help="welche Gremienebene (Default: stadt)")
     ap.add_argument("--liste", action="store_true", help="nur zeigen")
     args = ap.parse_args()

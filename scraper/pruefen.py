@@ -100,7 +100,10 @@ def p_pflichtfelder(kur):
             warnt(f"{ref}: leichter Text ohne leichten Titel")
 
 
-ERLAUBTE_HOSTS = {"www.ingolstadt.de", "ingolstadt.de"}
+ERLAUBTE_HOSTS = {
+    "www.ingolstadt.de", "ingolstadt.de",
+    "buergerinfo-bezirk-obb.digitalfabrix.de",
+}
 
 
 def p_nur_erlaubte_hosts(feed):

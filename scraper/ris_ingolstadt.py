@@ -1,19 +1,24 @@
 #!/usr/bin/env python3
 """
-Liest die Ratsinfoportale der Stadt Ingolstadt aus (SessionNet / Somacos "Session").
+Liest Ratsinformationssysteme auf Basis von SessionNet / Somacos "Session" aus.
 
-Zwei Quellen, gleiche Software, deshalb derselbe Parser:
-  stadt  — Stadtrat, Ausschuesse, Aufsichts- und Verwaltungsraete  (/sessionnet)
-  bza    — die 12 Bezirksausschuesse                              (/sessionnetbza)
+Drei Quellen, gleiche Software, zwei Auslieferungsvarianten (.php bei der
+Stadt Ingolstadt, das aeltere .asp beim Bezirk Oberbayern), deshalb derselbe
+Parser mit einer Dateiendung als Konfigurationswert je Quelle:
+  stadt       — Stadtrat, Ausschuesse, Aufsichts- und Verwaltungsraete (Ingolstadt)
+  bza         — die 12 Bezirksausschuesse der Stadt Ingolstadt
+  bezirk_obb  — Bezirkstag und Ausschuesse des Bezirks Oberbayern
 
 Nur oeffentlich zugaengliche Seiten, keine Anmeldung, kein Verwaltungszugang.
 robots.txt der Stadt Ingolstadt sperrt weder /sessionnet/ noch /sessionnetbza/
-(geprueft 2026-07-29).
+(geprueft 2026-07-29). Beim Bezirk Oberbayern existiert unter /robots.txt gar
+keine Datei (HTTP 404, geprueft 2026-08-16) — also ebenfalls keine Sperre.
 
 Verwendung:
-    python3 ris_ingolstadt.py                        # beide Quellen, letzte 3 Monate
+    python3 ris_ingolstadt.py                        # alle Quellen, letzte 3 Monate
     python3 ris_ingolstadt.py --von 2026-01 --bis 2026-07
-    python3 ris_ingolstadt.py --quelle bza           # nur Bezirksausschuesse
+    python3 ris_ingolstadt.py --quelle bza           # nur Bezirksausschuesse Ingolstadt
+    python3 ris_ingolstadt.py --quelle bezirk_obb    # nur Bezirk Oberbayern
     python3 ris_ingolstadt.py --ohne-beratungen      # Beratungsweg nicht laden
     python3 ris_ingolstadt.py --no-cache             # Cache ignorieren
 
@@ -36,11 +41,20 @@ QUELLEN = {
         "name": "Ratsinfoportal der Stadt Ingolstadt — Stadtrat und Ausschuesse",
         "software": "Session (Somacos GmbH & Co. KG)",
         "basis_url": "https://www.ingolstadt.de/sessionnet",
+        "endung": "php",
     },
     "bza": {
         "name": "Ratsinfoportal der Bezirksausschuesse der Stadt Ingolstadt",
         "software": "Session (Somacos GmbH & Co. KG)",
         "basis_url": "https://www.ingolstadt.de/sessionnetbza",
+        "endung": "php",
+    },
+    "bezirk_obb": {
+        "name": "Buergerinfoportal des Bezirks Oberbayern",
+        "software": "Session (Somacos GmbH & Co. KG)",
+        "basis_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de",
+        # Aeltere Session-Auslieferung: dieselben Seiten, .asp statt .php.
+        "endung": "asp",
     },
 }
 
@@ -193,18 +207,18 @@ def dokumente_aus(fragment, basis):
 
 # ------------------------------------------------------------------- Parser
 
-def parse_kalender(seite):
-    """Liefert Sitzungs-IDs aus einer Monatsansicht (si0040.php)."""
+def parse_kalender(seite, endung="php"):
+    """Liefert Sitzungs-IDs aus einer Monatsansicht (si0040.<endung>)."""
     ids = []
-    for treffer in re.findall(r"si0056\.php\?__ksinr=(\d+)", seite):
+    for treffer in re.findall(rf"si0056\.{endung}\?__ksinr=(\d+)", seite):
         if treffer not in ids:
             ids.append(treffer)
     return ids
 
 
-def parse_beratungen(seite, basis):
+def parse_beratungen(seite, basis, endung="php"):
     """
-    Liest den Beratungsweg einer Vorlage (vo0053.php).
+    Liest den Beratungsweg einer Vorlage (vo0053.<endung>).
 
     Jede Station ist eine Karte, deren Kopfzeile so aussieht:
         01.07.2026 Ausschuss fuer Sport ... TOP 3 oeffentlich - Vorberatung
@@ -230,7 +244,7 @@ def parse_beratungen(seite, basis):
         tag, monat, jahr = datum_de.split(".")
 
         sitzung_url = ""
-        link = re.search(r'href="(si0056\.php\?__ksinr=\d+[^"]*)"', block)
+        link = re.search(rf'href="(si0056\.{endung}\?__ksinr=\d+[^"]*)"', block)
         if link:
             sitzung_url = absolut(link.group(1), basis)
 
@@ -250,7 +264,7 @@ def parse_beratungen(seite, basis):
     return stationen
 
 
-def parse_sitzung(sitzungs_id, seite, basis):
+def parse_sitzung(sitzungs_id, seite, basis, endung="php"):
     """Baut ein Sitzungsobjekt inkl. Tagesordnungspunkten."""
     if not seite:
         return None
@@ -275,7 +289,7 @@ def parse_sitzung(sitzungs_id, seite, basis):
         "datum": datum_iso,
         "datum_anzeige": datum_de,
         "zeit": feld("yytime"),
-        "url": f"{basis}/si0056.php?__ksinr={sitzungs_id}",
+        "url": f"{basis}/si0056.{endung}?__ksinr={sitzungs_id}",
         "dokumente": [],
         "tops": [],
     }
@@ -327,7 +341,7 @@ def parse_sitzung(sitzungs_id, seite, basis):
         titel = re.sub(r"\s*—\s*-?\s*$", "", titel).strip()
 
         vorlage = re.search(
-            r'href="(vo0050\.php\?__kvonr=\d+)"[^>]*>\s*(?:<[^>]+>\s*)*([^<]+?)\s*<',
+            rf'href="(vo0050\.{endung}\?__kvonr=\d+)"[^>]*>\s*(?:<[^>]+>\s*)*([^<]+?)\s*<',
             karte,
             re.S,
         )
@@ -369,22 +383,23 @@ def monate(von, bis):
 def quelle_auslesen(kuerzel, zeitraum, cache, mit_beratungen):
     """Liest eine komplette Instanz aus und liefert die Sitzungsliste."""
     basis = QUELLEN[kuerzel]["basis_url"]
+    endung = QUELLEN[kuerzel].get("endung", "php")
     print(f"\n=== Quelle '{kuerzel}' ({basis}) ===")
 
     sitzungs_ids = []
     for jahr, monat in zeitraum:
-        pfad = f"si0040.php?__cjahr={jahr}&__cmonat={monat}&__canz=1&__cselect=0"
+        pfad = f"si0040.{endung}?__cjahr={jahr}&__cmonat={monat}&__canz=1&__cselect=0"
         print(f"  Kalender {MONATSNAMEN[monat]} {jahr} ...", end=" ", flush=True)
         seite = hole(pfad, basis, cache=cache)
-        neu = [i for i in parse_kalender(seite) if i not in sitzungs_ids]
+        neu = [i for i in parse_kalender(seite, endung) if i not in sitzungs_ids]
         sitzungs_ids.extend(neu)
         print(f"{len(neu)} Sitzungen")
 
     print(f"  {len(sitzungs_ids)} Sitzungen, lade Tagesordnungen ...")
     sitzungen = []
     for nummer, sitzungs_id in enumerate(sitzungs_ids, 1):
-        seite = hole(f"si0056.php?__ksinr={sitzungs_id}", basis, cache=cache)
-        sitzung = parse_sitzung(sitzungs_id, seite, basis)
+        seite = hole(f"si0056.{endung}?__ksinr={sitzungs_id}", basis, cache=cache)
+        sitzung = parse_sitzung(sitzungs_id, seite, basis, endung)
         if not sitzung:
             continue
         sitzung["quelle"] = kuerzel
@@ -407,8 +422,8 @@ def quelle_auslesen(kuerzel, zeitraum, cache, mit_beratungen):
             kvonr = re.search(r"__kvonr=(\d+)", top["vorlage_url"])
             if not kvonr:
                 continue
-            seite = hole(f"vo0053.php?__kvonr={kvonr.group(1)}", basis, cache=cache)
-            top["beratungen"] = parse_beratungen(seite, basis)
+            seite = hole(f"vo0053.{endung}?__kvonr={kvonr.group(1)}", basis, cache=cache)
+            top["beratungen"] = parse_beratungen(seite, basis, endung)
         stationen = sum(len(t["beratungen"]) for t in vorlagen)
         print(f"{stationen} Stationen")
 
@@ -430,9 +445,9 @@ def main():
     parser.add_argument("--bis", default=standard_bis, help="Endmonat YYYY-MM")
     parser.add_argument(
         "--quelle",
-        default="beide",
-        choices=["stadt", "bza", "beide"],
-        help="Welche Instanz auslesen (Standard: beide)",
+        default="alle",
+        choices=[*QUELLEN, "alle"],
+        help="Welche Instanz auslesen (Standard: alle)",
     )
     parser.add_argument(
         "--ohne-beratungen",
@@ -444,7 +459,7 @@ def main():
 
     cache = not args.no_cache
     zeitraum = monate(args.von, args.bis)
-    gewaehlt = ["stadt", "bza"] if args.quelle == "beide" else [args.quelle]
+    gewaehlt = list(QUELLEN) if args.quelle == "alle" else [args.quelle]
     print(f"Zeitraum: {args.von} bis {args.bis} ({len(zeitraum)} Monate)")
     print(f"Quellen:  {', '.join(gewaehlt)}")
 

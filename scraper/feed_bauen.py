@@ -394,7 +394,12 @@ def main():
         for schluessel, verworfen in doppelt:
             print(f"    - {verworfen}  ({schluessel})")
 
-    ohne_bezirk = [e["ref"] for e in feed if not e["bezirk"]]
+    # Die Bezirk-Stadtteile-Achse gilt nur fuer stadt/bza — beim Bezirk
+    # Oberbayern ist "kein Stadtteil" der korrekte, gewollte Zustand, keine
+    # Kuratierungsluecke.
+    ohne_bezirk = [
+        e["ref"] for e in feed if not e["bezirk"] and e["quelle"] != "bezirk_obb"
+    ]
     if ohne_bezirk:
         print(
             f"\n  {len(ohne_bezirk)} Eintraege ohne Stadtbezirk "
