@@ -232,6 +232,7 @@
   }
   .card:hover { box-shadow: var(--shadow-hover); }
   .card.quelle-bza { border-left-color: #2c6146; }
+  .card.quelle-bezirk_obb { border-left-color: #5a3d99; }
   .card-head { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; margin-bottom: .6rem; }
   .card-date { font-size: .78rem; color: var(--text-faint); font-variant-numeric: tabular-nums; }
   .card-gremium {
@@ -282,6 +283,7 @@
     padding: .1rem .4rem; border-radius: 4px; white-space: nowrap;
   }
   .herkunft.bza { background: #e6f0ea; color: #2c6146; }
+  .herkunft.bezirk_obb { background: #ece6f7; color: #5a3d99; }
   .herkunft.entwurf { background: var(--warn-bg); color: var(--warn-tx); }
 
   /* Stand der Beratung */
@@ -682,6 +684,7 @@
       l: 'Wie der Stadt-Rat abgestimmt hat, steht im Protokoll. Das Protokoll kommt meist erst nach 4 bis 8 Wochen.'
     },
     herkunftBza:     { n: 'Bezirksausschuss', l: 'Bezirks-Ausschuss' },
+    herkunftBezirkObb: { n: 'Bezirk Oberbayern', l: 'Bezirk Oberbayern' },
     herkunftEntwurf: { n: 'automatisch verschlagwortet', l: 'automatisch sortiert' },
     ort: { n: 'Ort: ', l: 'Ort: ' },
     keineLeichteFassung: {
@@ -1030,13 +1033,15 @@
   }
 
   function karte(e) {
-    var c = el('article', 'card' + (e.quelle === 'bza' ? ' quelle-bza' : ''));
+    var c = el('article', 'card' + (e.quelle !== 'stadt' ? ' quelle-' + e.quelle : ''));
 
     var kopf = el('div', 'card-head');
     kopf.appendChild(el('span', 'card-date', e.datum_anzeige));
     kopf.appendChild(el('span', 'card-gremium', e.gremium));
     if (e.quelle === 'bza') {
       kopf.appendChild(el('span', 'herkunft bza', txt('herkunftBza')));
+    } else if (e.quelle === 'bezirk_obb') {
+      kopf.appendChild(el('span', 'herkunft bezirk_obb', txt('herkunftBezirkObb')));
     }
     /* "maschineller Entwurf" war zu pauschal: die Ueberschrift ist bei diesen
        Eintraegen der Titel aus dem Ratsinfoportal, nur von Aktenzeichen
