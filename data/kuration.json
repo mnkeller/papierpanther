@@ -43,7 +43,8 @@
       "IX-Mailing/Feldkirchen",
       "X-Süd",
       "XI-Friedrichshofen/Hollerstauden",
-      "XII-Münchener Straße"
+      "XII-Münchener Straße",
+      "Bezirk Oberbayern"
     ]
   },
   "eintraege": {
@@ -30407,7 +30408,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -30418,7 +30421,9 @@
       "klartext_titel_leicht": "Ausschüsse werden neu besetzt",
       "klartext_leicht": "Ein Mitglied des Bezirkstags hat die Partei gewechselt. Deshalb ändert sich die Sitzverteilung im Bezirkstag. Das schreibt das Gesetz so vor. Mehrere Ausschüsse müssen deshalb neu besetzt werden. Die Parteien schlagen dafür neue Mitglieder vor.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Satzung & Regeln"
@@ -30431,7 +30436,9 @@
       "klartext_titel_leicht": "Bezahlung des Bezirkstags-Chefs wird korrigiert",
       "klartext_leicht": "Der Chef des Bezirkstags hat nur noch ein Ehrenamt. Vorher hatte er zwei Ämter gleichzeitig. Für ein Ehrenamt gibt es mehr Geld im Monat. Der Bezirkstag hatte das Geld im Dezember schon einmal festgelegt. Dabei ist aber ein Rechenfehler passiert. Der Betrag wird jetzt richtig berechnet.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Satzung & Regeln"
@@ -30446,7 +30453,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Vogtareuth"
       ],
@@ -30459,7 +30468,9 @@
       "klartext_titel_leicht": "AfD will Klimaschutz neu bewerten, Verwaltung ist dagegen",
       "klartext_leicht": "Die AfD will, dass der Bezirk seinen Klimaschutz neu bewertet. Grund sind neue, weniger schlimme Klima-Vorhersagen. Die Verwaltung sagt: Das betrifft unsere Pläne nicht. Der Bezirk hat sich eigene Klima-Ziele gesetzt. Diese Ziele hängen nicht an den Vorhersagen. Die Verwaltung findet auch: Einige Behauptungen im Antrag stimmen nicht. Sie rät deshalb, den Antrag abzulehnen.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Klima & Umwelt"
@@ -30474,7 +30485,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Gehörlosenzentrum, Lohengrinstraße 11, München"
       ],
@@ -30487,7 +30500,9 @@
       "klartext_titel_leicht": "Alter Schutz für Bodenfunde in Erding endet",
       "klartext_leicht": "In Erding gibt es ein altes Grabfeld aus der Bronzezeit. Der Bezirk hatte es 2015 besonders geschützt. Ein neues Gesetz erlaubt diesen Schutz durch den Bezirk nicht mehr. Deshalb hebt der Bezirkstag den alten Schutz jetzt auf.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Langengeisling, Erding"
       ],
@@ -30502,7 +30517,9 @@
       "klartext_titel_leicht": "Kloster Seeon hat mehr Verlust gemacht als geplant",
       "klartext_leicht": "Kloster Seeon gehört dem Bezirk. Es ist ein Ort für Tagungen und Kultur. Im Jahr 2025 gab es mehr Verlust als geplant. Grund war: Weniger Firmen haben Tagungen gebucht. Der Bezirk gleicht den Verlust aus. Das Geld kommt aus einer Rücklage.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Kloster Seeon"
       ],
@@ -30519,7 +30536,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Satzung & Regeln"
@@ -30534,7 +30553,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Klinikum Ingolstadt"
       ],
@@ -30547,7 +30568,9 @@
       "klartext_titel": "Änderung der Prüfungsrichtlinien des Bezirks Oberbayern",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -30560,7 +30583,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Klinikum Ingolstadt"
       ],
@@ -30575,7 +30600,9 @@
       "klartext_titel_leicht": "Bezirkstag ist gegen Antisemitismus",
       "klartext_leicht": "Der Bayerische Bezirketag hat eine Erklärung gegen Antisemitismus verfasst. Der Bezirkstag Oberbayern will sich dieser Erklärung anschließen. Grund sind viele antisemitische Vorfälle im letzten Jahr. Allein in Oberbayern waren es über 1.000. Der Bezirkstag ruft alle auf, sich dagegen einzusetzen.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -30586,7 +30613,9 @@
       "klartext_titel_leicht": "Bezirk berichtet über seine Firmen-Anteile",
       "klartext_leicht": "Der Bezirk ist an mehreren Firmen beteiligt. Einmal im Jahr muss er darüber berichten. Der neue Bericht ist für das Jahr 2024. Er zeigt Zahlen und Risiken der einzelnen Firmen.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -30597,7 +30626,9 @@
       "klartext_titel_leicht": "Bezirk berichtet über sein Zukunftsprogramm",
       "klartext_leicht": "Der Bezirk will moderner werden. Dafür gibt es seit 2020 ein Programm mit vielen Projekten. Inzwischen sind es 74 Projekte. 40 davon sind schon fertig. Der Bezirkstag hört sich den Bericht dazu an.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Konzept & Planung"
@@ -30608,7 +30639,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirkstag)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -30621,7 +30654,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Klinikum Ingolstadt",
         "Taufkirchen (Vils)"
@@ -30639,7 +30674,9 @@
       "lebenslage": [
         "Arbeit & Beruf"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -30650,7 +30687,9 @@
       "klartext_titel_leicht": "Bezirks-Landwirtschaft macht Gewinn",
       "klartext_leicht": "Der Bezirk hat eigene landwirtschaftliche Flächen. Eine eigene Verwaltung kümmert sich darum. Im letzten Jahr gab es einen Gewinn von über 400.000 Euro. Das ist mehr als geplant.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Haar",
         "Gabersee",
@@ -30665,7 +30704,9 @@
       "klartext_titel_leicht": "Plan für Bezirks-Landwirtschaft wird vorbereitet",
       "klartext_leicht": "Der Bezirk hat eigene landwirtschaftliche Flächen. Für das nächste Jahr gibt es einen Finanzplan. Geplant ist wieder ein Gewinn. Der Bezirksausschuss bespricht den Plan zuerst. Später entscheidet der ganze Bezirkstag.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Haar",
         "Gabersee",
@@ -30680,7 +30721,9 @@
       "klartext_titel_leicht": "Bezirk hatte 2025 ein großes Geld-Loch",
       "klartext_leicht": "Der Bezirk hat jedes Jahr eine große Rechnung über Geld. Für 2025 zeigt diese Rechnung ein Minus. Es fehlen 36,5 Millionen Euro. Der Bezirksausschuss hört sich die Zahlen an.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -30693,7 +30736,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -30702,7 +30747,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirksausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -30713,7 +30760,9 @@
       "klartext_titel_leicht": "Restaurant im Kloster Seeon wird saniert",
       "klartext_leicht": "Kloster Seeon hat ein Restaurant für Gäste. Die Küche dort ist alt und kaputt. Die Reparatur kostet viel Geld, schätzungsweise 2,5 Millionen Euro. Zuerst gibt es Geld für die genaue Planung.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Kloster Seeon"
       ],
@@ -30728,7 +30777,9 @@
       "klartext_titel_leicht": "Kloster Seeon: Zwischenbericht zeigt leichte Besserung",
       "klartext_leicht": "Kloster Seeon macht regelmäßig Verlust, das war so geplant. Nach vier Monaten ist der Verlust etwas kleiner als erwartet. Grund für den schwachen Start waren wenige gebuchte Tagungen. Einzelne Gäste kamen dagegen mehr als erwartet. Der Werkausschuss hört sich den Bericht an.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Kloster Seeon"
       ],
@@ -30963,7 +31014,9 @@
       "klartext_titel_leicht": "Kloster Seeon: Bericht über laufende Bauarbeiten",
       "klartext_leicht": "Rund um Kloster Seeon wird seit Jahren gebaut. Die meisten Arbeiten sind fertig. Am Ende soll das ganze Gelände barrierefrei sein. Auch eine alte Kegelbahn soll abgerissen werden. Der Werkausschuss hört sich den Bericht dazu an.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Kloster Seeon"
       ],
@@ -30976,7 +31029,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Werkausschuss Kloster Seeon)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -30989,7 +31044,9 @@
       "lebenslage": [
         "Eltern & Kinder"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Johann-Nepomuk-von-Kurz-Zentrum, Friedrichshofen, Ingolstadt"
       ],
@@ -31004,7 +31061,9 @@
       "klartext_titel_leicht": "Gewächshaus einer Bezirks-Schule ist marode",
       "klartext_leicht": "Der Bezirk hat eine Landwirtschaftsschule in Landsberg am Lech. Dort gibt es ein altes Gewächshaus für den Unterricht. Es ist kaputt und nicht mehr sicher genug. Bei schlechtem Wetter darf dort nicht unterrichtet werden. Ein Gutachten soll jetzt klären, was zu tun ist.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Agrarbildungszentrum, Landsberg am Lech"
       ],
@@ -31017,7 +31076,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Ausschuss für Kultur, Schulen und Museen)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -31030,7 +31091,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31043,7 +31106,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31054,7 +31119,9 @@
       "klartext_titel_leicht": "Staat genehmigt Bezirks-Haushalt für 2026",
       "klartext_leicht": "Der Bezirk braucht für seinen Haushalt die Zustimmung vom Freistaat Bayern. Für 2026 hat der Freistaat zugestimmt. Die Verwaltung erklärt dem Bezirksausschuss die wichtigsten Punkte.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31065,7 +31132,9 @@
       "klartext_titel_leicht": "Bezirk baut sein Verwaltungsgebäude in München aus",
       "klartext_leicht": "Die Bezirksverwaltung in München braucht mehr Platz. Ein altes Dach wird deshalb ausgebaut. Es entstehen neue Besprechungsräume, barrierefrei. Auf dem Dach kommt auch eine Solaranlage. Das kostet rund 5,3 Millionen Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Prinzregentenstraße 14-18, München"
       ],
@@ -31083,7 +31152,9 @@
         "Eltern & Kinder",
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Johann-Nepomuk-von-Kurz-Zentrum, Friedrichshofen, Ingolstadt"
       ],
@@ -31098,7 +31169,9 @@
       "klartext_titel_leicht": "Berufsschule in München bekommt neues Klassenzimmer",
       "klartext_leicht": "Der Bezirk hat eine Berufsschule in München. Eine alte Werkstatt wird nicht mehr gebraucht. Daraus werden ein Büro und ein neues Klassenzimmer. Das kostet rund 250.000 Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Berufsbildungswerk München, Johanneskirchen"
       ],
@@ -31113,7 +31186,9 @@
       "klartext_titel_leicht": "Technik in Schul-Werkhalle wird repariert",
       "klartext_leicht": "In einer Schul-Werkhalle in München ist die Technik kaputt. Das Gebäude läuft nur noch von Hand. Die Reparatur kostet rund 230.000 Euro. Sie soll noch in den Sommerferien passieren.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Schulzentrum München-Johanneskirchen"
       ],
@@ -31126,7 +31201,9 @@
       "klartext_titel_leicht": "Feuerlösch-Anlage der Bezirksverwaltung wird erneuert",
       "klartext_leicht": "In der Tiefgarage der Bezirksverwaltung gibt es eine Sprinkleranlage gegen Feuer. Sie ist 40 Jahre alt und muss erneuert werden. Dafür fallen fünf Parkplätze weg. Das kostet rund 545.000 Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Prinzregentenstraße 14-18, München"
       ],
@@ -31139,7 +31216,9 @@
       "klartext_titel_leicht": "Solaranlage für die Bezirksverwaltung geplant",
       "klartext_leicht": "Auf einem Dach der Bezirksverwaltung soll eine Solaranlage entstehen. Sie soll eigenen Strom erzeugen. Das kostet rund 300.000 Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Prinzregentenstraße 14-18, München"
       ],
@@ -31156,7 +31235,9 @@
       "lebenslage": [
         "Studierende"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Schulen für Holz und Gestaltung, Garmisch-Partenkirchen"
       ],
@@ -31167,7 +31248,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirksausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -31176,7 +31259,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Ausschuss für Bau, Umwelt und Energie)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -31189,7 +31274,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Klinikum Ingolstadt"
       ],
@@ -31204,7 +31291,9 @@
       "klartext_titel_leicht": "Bezirk beendet Mitgliedschaft in einem Kulturverein",
       "klartext_leicht": "Der Bezirk ist seit 1986 Mitglied in einem Kulturverein im Donaumoos. Er zahlt dafür jedes Jahr Geld. Der Verein hilft aber schon lange nicht mehr mit im Museum. Der Bezirk will deswegen austreten. Das soll Ende 2026 passieren.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Donaumoos"
       ],
@@ -31218,7 +31307,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirksausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -31231,7 +31322,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Gebühren & Preise"
@@ -31246,7 +31339,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31259,7 +31354,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31273,7 +31370,9 @@
         "Geld & Soziales",
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31286,7 +31385,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31295,7 +31396,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Sozial- und Gesundheitsausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -31308,7 +31411,9 @@
       "lebenslage": [
         "Arbeit & Beruf"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Berufsbildungswerk München"
       ],
@@ -31321,7 +31426,9 @@
       "klartext_titel_leicht": "Bezirk gibt Geld für Denkmalpflege",
       "klartext_leicht": "Alte Gebäude und Denkmäler brauchen manchmal Geld für die Pflege. Der Bezirk hilft dabei. Für 2026 gibt es 1,44 Millionen Euro für 88 Projekte.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31332,7 +31439,9 @@
       "klartext_titel_leicht": "Bezirk kürzt Geld für Kulturprojekte",
       "klartext_leicht": "Der Bezirk fördert Kulturprojekte mit Geld. Es gab viele Anträge, aber zu wenig Geld für alle. Deshalb bekommt jedes Projekt weniger als beantragt. Nur Inklusion und Volksmusik sind davon ausgenommen.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -31345,7 +31454,9 @@
       "klartext_titel_leicht": "Bezirk gibt Geld für Heimatpflege",
       "klartext_leicht": "Der Bezirk fördert Projekte zur Heimatpflege. Für 2026 gibt es dafür rund 196.000 Euro. Das Geld geht an 27 größere und mehrere kleinere Projekte.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -31356,7 +31467,9 @@
       "klartext_titel": "Tätigkeitsbericht 2025: Zentrum für Volksmusik, Literatur und Popularmusik",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -31367,7 +31480,9 @@
       "klartext_titel_leicht": "Bezirks-Festival ZAMMA findet in Unterschleißheim statt",
       "klartext_leicht": "Der Bezirk veranstaltet ein Festival namens ZAMMA. Es findet vom 1. bis 5. Juli statt. Der Ort ist Unterschleißheim. Der Ausschuss hört sich den Planungsstand an.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Unterschleißheim"
       ],
@@ -31380,7 +31495,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Ausschuss für Kultur, Schulen und Museen)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -31391,7 +31508,9 @@
       "klartext_titel_leicht": "Bezirk überträgt übriges Geld ins nächste Jahr",
       "klartext_leicht": "Der Bezirk hat 2025 nicht das ganze geplante Geld ausgegeben. Der Rest wird ins Jahr 2026 übertragen. Das betrifft auch Schulen, zum Beispiel in Ingolstadt. Der Bezirksausschuss stimmt zu.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31405,7 +31524,9 @@
         "Geld & Soziales",
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31418,7 +31539,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Haar"
       ],
@@ -31431,7 +31554,9 @@
       "klartext_titel_leicht": "Zuschuss für Musikschule wird nachträglich korrigiert",
       "klartext_leicht": "Der Bezirk unterstützt eine Musikakademie mit Geld. Eine Erhöhung des Zuschusses wurde vergessen einzuplanen. Der Ausschuss korrigiert das jetzt. Es geht um rund 13.600 Euro mehr im Jahr.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Marktoberdorf"
       ],
@@ -31446,7 +31571,9 @@
       "klartext_titel_leicht": "Bezirk bekommt 8.000 Bücher geschenkt",
       "klartext_leicht": "Der Bayerische Rundfunk hat seine Bibliothek aufgelöst. Der Bezirk hat rund 8.000 Bücher davon übernommen. Sie sind rund 104.000 Euro wert. Der Bezirk musste nur den Transport bezahlen.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -31462,7 +31589,9 @@
         "Eltern & Kinder",
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Carl-August-Heckscher-Schule, Haar"
       ],
@@ -31473,7 +31602,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirksausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -31486,7 +31617,9 @@
       "lebenslage": [
         "Arbeit & Beruf"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Berufsbildungswerk München"
       ],
@@ -31497,7 +31630,9 @@
       "klartext_titel": "Zuwendungen im Förderbereich Sport für das Haushaltsjahr 2026",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -31506,7 +31641,9 @@
       "klartext_titel": "Tätigkeitsbericht 2025: Trachtenfachberatung des Bezirks Oberbayern",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -31517,7 +31654,9 @@
       "klartext_titel_leicht": "Kunstzentrum Schafhof hatte ein gutes Jahr, aber Ärger mit dem Café",
       "klartext_leicht": "Der Bezirk betreibt ein Kunstzentrum namens Schafhof in Freising. Das Jahr 2025 lief dort gut. Es gab mehrere Ausstellungen und Märkte. Der Café-Betreiber musste aber überraschend aufgeben. Jetzt betreibt das Schafhof-Team das Café selbst.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Schafhof, Freising"
       ],
@@ -31530,7 +31669,9 @@
       "klartext_titel": "Tätigkeitsbericht 2025: Sudetendeutsche Heimatpflege",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -31541,7 +31682,9 @@
       "klartext_titel_leicht": "Bezirks-Galerie zeigt Kunst im Verwaltungsgebäude",
       "klartext_leicht": "Der Bezirk hat eine eigene Galerie in München. Dort waren zuletzt zwei Ausstellungen zu sehen. Der Ausschuss hört sich den Bericht dazu an.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "München"
       ],
@@ -31554,7 +31697,9 @@
       "klartext_titel": "Zentrum für Volksmusik, Literatur und Popularmusik: Aufbau der Oberbayern-Bibliothek",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -31563,7 +31708,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Ausschuss für Kultur, Schulen und Museen)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -31574,7 +31721,9 @@
       "klartext_titel_leicht": "Schuldächer in München werden für 700.000 Euro repariert",
       "klartext_leicht": "Ein Schulzentrum des Bezirks in München hat alte, kaputte Dächer. Kleine Reparaturen reichen nicht mehr. Die Dächer werden jetzt größer instandgesetzt. Das kostet rund 700.000 Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Schulzentrum München-Johanneskirchen"
       ],
@@ -31589,7 +31738,9 @@
       "lebenslage": [
         "Jugend"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Übersee am Chiemsee"
       ],
@@ -31604,7 +31755,9 @@
       "lebenslage": [
         "Freizeit & Sport"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31617,7 +31770,9 @@
       "lebenslage": [
         "Freizeit & Sport"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31626,7 +31781,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Ausschuss für Bau, Umwelt und Energie)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -31639,7 +31796,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Gebühren & Preise"
@@ -31652,7 +31811,9 @@
       "klartext_titel_leicht": "Neues Mitglied im Kulturausschuss",
       "klartext_leicht": "Eine Gruppe im Bezirkstag will ihr Mitglied im Kulturausschuss wechseln. Ein neuer Vertreter soll künftig dort sitzen. Der Bezirkstag entscheidet darüber.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -31665,7 +31826,9 @@
       "klartext_titel_leicht": "Mehr Geld für den Bezirkstagspräsidenten",
       "klartext_leicht": "Der Bezirkstagspräsident bekommt für sein Ehrenamt Geld. Bisher hatte er noch ein zweites Amt als Bürgermeister. Das zweite Amt endet im Mai 2026. Danach kann seine Entschädigung steigen. Sie soll dann rund 11.219 Euro im Monat betragen.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31676,7 +31839,9 @@
       "klartext_titel_leicht": "Streit um zusätzliches Amt im Bezirkstag",
       "klartext_leicht": "Der Bezirkstagspräsident hat mehrere Stellvertreter. Eine Gruppe im Bezirkstag will einen Stellvertreterposten streichen. Die Verwaltung ist dagegen. Der Bezirkstag stimmt über den Antrag ab.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31687,7 +31852,9 @@
       "klartext_titel_leicht": "Sollen Stellvertreter:innen einen Bericht abgeben?",
       "klartext_leicht": "Der Bezirkstagspräsident hat mehrere Stellvertreter:innen. Eine Gruppe will von ihnen einen Bericht über ihre Arbeit. Die Verwaltung findet das nicht nötig. Der Bezirkstag stimmt über den Antrag ab.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31700,7 +31867,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31714,7 +31883,9 @@
         "Gesundheit & Pflege",
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31725,7 +31896,9 @@
       "klartext_titel_leicht": "Bezirk steigt aus Museumsprojekt in Dachau aus",
       "klartext_leicht": "Der Bezirk wollte in Dachau ein neues Museum bauen. Dafür fehlt jetzt das Geld. Der Bezirk will aus dem Projekt aussteigen. Auch aus dem zuständigen Verband will er austreten. Das soll Ende 2026 passieren.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Dachau"
       ],
@@ -31743,7 +31916,9 @@
         "Eltern & Kinder",
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Johann-Nepomuk-von-Kurz-Zentrum Ingolstadt"
       ],
@@ -31760,7 +31935,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Ingolstadt"
       ],
@@ -31775,7 +31952,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31789,7 +31968,9 @@
         "Arbeit & Beruf",
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31802,7 +31983,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31811,7 +31994,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirkstag)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -31824,7 +32009,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31837,7 +32024,9 @@
       "lebenslage": [
         "Arbeit & Beruf"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Landsberg am Lech"
       ],
@@ -31852,7 +32041,9 @@
       "lebenslage": [
         "Eltern & Kinder"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Verkehrsplanung"
@@ -31865,7 +32056,9 @@
       "klartext_titel_leicht": "Technik für Videokonferenzen wird bezahlt",
       "klartext_leicht": "Der Bezirk hat zwei Standorte für Imkerei. Für gemeinsame Besprechungen wurde Technik für Videokonferenzen gekauft. Dafür war eigentlich kein Geld eingeplant. Die Kosten von rund 24.000 Euro werden jetzt anders finanziert.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Landsberg am Lech",
         "Kloster Seeon"
@@ -31879,7 +32072,9 @@
       "klartext_titel_leicht": "Alter Bauernhof wird im Museum wieder aufgebaut",
       "klartext_leicht": "Im Freilichtmuseum Glentleiten entsteht ein altes Bauernhaus neu. Es wurde aus einem anderen Ort dorthin gebracht. Zwei Gebäude sind schon fertig und für Besuch offen. Für den nächsten Teil braucht es 220.000 Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Freilichtmuseum Glentleiten"
       ],
@@ -31893,7 +32088,9 @@
       "klartext_titel": "Genehmigung der Annahme einer Geldspende an die Carl-August-Heckscher-Schule in München",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -31906,7 +32103,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31919,7 +32118,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -31930,7 +32131,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirksausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -31943,7 +32146,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "München"
       ],
@@ -31959,7 +32164,9 @@
         "Gesundheit & Pflege",
         "Unterwegs"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31972,7 +32179,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31985,7 +32194,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -31998,7 +32209,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32011,7 +32224,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32025,7 +32240,9 @@
         "Arbeit & Beruf",
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32038,7 +32255,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "München"
       ],
@@ -32053,7 +32272,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32067,7 +32288,9 @@
         "Gesundheit & Pflege",
         "Arbeit & Beruf"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32080,7 +32303,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32094,7 +32319,9 @@
         "Geld & Soziales",
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32103,7 +32330,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Sozial- und Gesundheitsausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -32116,7 +32345,9 @@
       "lebenslage": [
         "Eltern & Kinder"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Ingolstadt"
       ],
@@ -32131,7 +32362,9 @@
       "klartext_titel_leicht": "Einrichtung für Volksmusik bekommt neuen Namen",
       "klartext_leicht": "Der Bezirk hat eine Einrichtung für Volksmusik in Bruckmühl. Der jetzige Name ist lang und schwer verständlich. Sie soll einen neuen Namen bekommen. Der neue Name soll Forum Kultur sein. Das soll 2026 passieren.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Bruckmühl"
       ],
@@ -32144,7 +32377,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Ausschuss für Kultur, Schulen und Museen)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -32157,7 +32392,9 @@
       "lebenslage": [
         "Eltern & Kinder"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "München-Johanneskirchen"
       ],
@@ -32173,7 +32410,9 @@
       "klartext_titel_leicht": "Bezirk hilft, seltene Wiesen zu schützen",
       "klartext_leicht": "Bei Kloster Benediktbeuern gibt es feuchte Wiesen. Dort leben seltene Vögel. Ein Projekt soll diese Wiesen schützen. Der Bezirk gibt dafür Geld. Es sind rund 22.500 Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Benediktbeuern"
       ],
@@ -32188,7 +32427,9 @@
       "klartext_titel_leicht": "Bezirk prüft seinen Energieverbrauch",
       "klartext_leicht": "Der Bezirk prüft jedes Jahr, wie viel Energie er verbraucht. 2024 wurde etwas weniger CO2 ausgestoßen als 2023. Das reicht aber noch nicht für die Klimaziele. Der Bezirk will deshalb mehr Solaranlagen bauen. Auch beim neuen Gebäude in Ingolstadt.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Ingolstadt"
       ],
@@ -32201,7 +32442,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Ausschuss für Bau, Umwelt und Energie)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -32212,7 +32455,9 @@
       "klartext_titel_leicht": "Alte Kegelbahn im Kloster soll weg",
       "klartext_leicht": "Im Kloster Seeon gibt es eine alte Kegelbahn. Sie ist sehr kaputt. Sie wird nicht mehr genutzt. Sie ist auch kein geschütztes Denkmal mehr. Der Bezirk will die Kegelbahn deshalb abreißen. Das kostet etwa 75.000 Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Kloster Seeon"
       ],
@@ -32229,7 +32474,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Kloster Seeon"
       ],
@@ -32244,7 +32491,9 @@
       "klartext_titel_leicht": "Weniger Personalstellen für Kloster Seeon",
       "klartext_leicht": "Kloster Seeon gehört dem Bezirk. Dort gibt es weniger Personalstellen für 2026. Der Personalrat hat dem zugestimmt.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32257,7 +32506,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Kloster Seeon"
       ],
@@ -32272,7 +32523,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Kloster Seeon"
       ],
@@ -32283,7 +32536,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Werkausschuss Kloster Seeon)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -32292,7 +32547,9 @@
       "klartext_titel": "DiaTon - Anpassung der Satzung mit Richtlinie",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -32303,7 +32560,9 @@
       "klartext_titel_leicht": "Neuer Preis für sauberes Wasser geplant",
       "klartext_leicht": "Kleine Bäche gehören oft den Gemeinden. Manche Gemeinden pflegen ihre Bäche besonders gut. Dafür soll es einen neuen Preis geben. Der Preis heißt „Helden für das Leben im Wasser“. Er kommt aber erst, wenn genug Geld da ist.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Klima & Umwelt"
@@ -32318,7 +32577,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Ingolstadt"
       ],
@@ -32333,7 +32594,9 @@
       "klartext_titel_leicht": "Bezirk modernisiert seine Verwaltung",
       "klartext_leicht": "Der Bezirk will moderner arbeiten. Dafür gibt es einen Plan mit 65 Projekten. Ein großer Teil davon ist schon fertig. Der Bezirkstag bekommt dazu einen Bericht.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32342,7 +32605,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirkstag)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -32355,7 +32620,9 @@
       "lebenslage": [
         "Arbeit & Beruf"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32364,7 +32631,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Personalausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -32375,7 +32644,9 @@
       "klartext_titel_leicht": "Bezirk erneuert Technik im Verwaltungsgebäude",
       "klartext_leicht": "Der Bezirk hat ein großes Verwaltungsgebäude in München. Die Internet-Kabel dort sind sehr alt. Sie sollen erneuert werden. Auch die Lampen werden auf LED umgestellt. Das kostet rund 4 Millionen Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "München"
       ],
@@ -32388,7 +32659,9 @@
       "klartext_titel_leicht": "Sicherere Technik für Werkstätten im Museum",
       "klartext_leicht": "Im Freilichtmuseum Glentleiten gibt es Werkstätten. Ihre Stromleitung ist kaputt. Das soll jetzt repariert werden. Dafür sind rund 250.000 Euro geplant.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Freilichtmuseum Glentleiten"
       ],
@@ -32403,7 +32676,9 @@
       "klartext_titel_leicht": "Künstlerhaus bekommt neue Heizung",
       "klartext_leicht": "Der Bezirk hat ein Künstlerhaus in Freising. Es heißt Schafhof. Die Heizung dort ist alt und wird erneuert. Auch eine kleine Solaranlage kommt dazu. Das kostet rund 370.000 Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Freising"
       ],
@@ -32418,7 +32693,9 @@
       "klartext_titel_leicht": "Kunsthaus Schafhof braucht mehr Geld",
       "klartext_leicht": "Der Bezirk hat ein Kunsthaus, den Schafhof. Dort ist das Geld für 2025 nicht genug. Ein Café dort ist pleitegegangen. Auch Krankheit im Team hat Geld gekostet. Der Bezirk gibt jetzt 42.300 Euro extra.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Schafhof Freising"
       ],
@@ -32433,7 +32710,9 @@
       "klartext_titel_leicht": "Geld für Reparatur der Basilika in Benediktbeuern",
       "klartext_leicht": "In Benediktbeuern gibt es eine alte Kirche. Ein Hagelsturm hat sie beschädigt. Jetzt muss sie repariert werden. Der Bezirk gibt dafür 50.000 Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Benediktbeuern"
       ],
@@ -32446,7 +32725,9 @@
       "klartext_titel": "DiaTon - Anpassung der Satzung mit Richtlinie",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -32459,7 +32740,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Ingolstadt"
       ],
@@ -32470,7 +32753,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirksausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -32483,7 +32768,9 @@
       "lebenslage": [
         "Freizeit & Sport"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32492,7 +32779,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Ausschuss für Bau, Umwelt und Energie)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -32505,7 +32794,9 @@
       "lebenslage": [
         "Eltern & Kinder"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "München-Johanneskirchen"
       ],
@@ -32520,7 +32811,9 @@
       "klartext_titel_leicht": "Bezirk gibt wieder Geld für Denkmalpflege",
       "klartext_leicht": "Alte Gebäude brauchen manchmal Geld für die Pflege. Der Bezirk hilft dabei. In dieser Runde gab es 98 Anträge. Der Ausschuss will dafür rund 1,2 Millionen Euro geben.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -32533,7 +32826,9 @@
       "klartext_titel_leicht": "Museum Amerang wird etwas teurer",
       "klartext_leicht": "Das Freilichtmuseum Amerang gehört dem Bezirk. Der Eintritt dort wird etwas teurer. Grund sind höhere Kosten. Kinder mit ihren Eltern zahlen weiterhin nichts.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Amerang"
       ],
@@ -32548,7 +32843,9 @@
       "klartext_titel_leicht": "Museum Glentleiten wird etwas teurer",
       "klartext_leicht": "Das Freilichtmuseum Glentleiten gehört dem Bezirk. Der Eintritt dort wird etwas teurer. Grund sind höhere Kosten. Kinder mit ihren Eltern zahlen weiterhin nichts.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Freilichtmuseum Glentleiten"
       ],
@@ -32561,7 +32858,9 @@
       "klartext_titel": "ZAMMA Festival in Oberbayern - Neuausrichtung des Festivals",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -32570,7 +32869,9 @@
       "klartext_titel": "DiaTon - Anpassung der Satzung mit Richtlinie",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -32579,7 +32880,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Ausschuss für Kultur, Schulen und Museen)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -32592,7 +32895,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32603,7 +32908,9 @@
       "klartext_titel_leicht": "Keine Wahlwerbung in Bezirks-Gebäuden vor der Wahl",
       "klartext_leicht": "Im März 2026 ist Kommunalwahl. Der Bezirk will dabei neutral bleiben. Deshalb dürfen Parteien seine Räume nicht mehr nutzen. Das gilt in den letzten drei Monaten vor der Wahl.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32616,7 +32923,9 @@
       "lebenslage": [
         "Eltern & Kinder"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "München"
       ],
@@ -32629,7 +32938,9 @@
       "klartext_titel_leicht": "Bezirks-Landgüter planen mit Gewinn",
       "klartext_leicht": "Der Bezirk besitzt landwirtschaftliche Güter. Für 2025/2026 ist dort ein Gewinn geplant. Es geht um 190.000 Euro. Auch für Solaranlagen ist Geld eingeplant.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32640,7 +32951,9 @@
       "klartext_titel_leicht": "Bezirks-Landgüter machen hohen Gewinn durch Grundstückstausch",
       "klartext_leicht": "Der Bezirk hat Grundstücke getauscht. Dabei ist ein hoher Gewinn entstanden. Es geht um rund 8,2 Millionen Euro. Ohne den Tausch wäre der Gewinn viel kleiner gewesen.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32653,7 +32966,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "München"
       ],
@@ -32666,7 +32981,9 @@
       "klartext_titel_leicht": "Bezirk kauft viele neue Laptops",
       "klartext_leicht": "Eine Abteilung des Bezirks bekommt ein neues Arbeitsplatz-System. Mitarbeitende teilen sich künftig Schreibtische. Dafür braucht es viele neue Laptops. Der Kauf musste schnell gehen.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32675,7 +32992,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirksausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -32686,7 +33005,9 @@
       "klartext_titel_leicht": "Neue Mitglieder im Bezirkstag",
       "klartext_leicht": "Drei Sitze im Bezirkstag sind frei geworden. Neue Personen rücken nach. Sie werden jetzt vereidigt.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32697,7 +33018,9 @@
       "klartext_titel_leicht": "Bezirk besetzt viele Ausschusssitze neu",
       "klartext_leicht": "Mehrere Mitglieder des Bezirkstags haben aufgehört. Jetzt müssen viele Sitze in Ausschüssen neu besetzt werden. Das betrifft auch einen Sitz beim Klinikum Ingolstadt. Die Parteien schlagen dafür neue Personen vor.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Ingolstadt"
       ],
@@ -32712,7 +33035,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32725,7 +33050,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32736,7 +33063,9 @@
       "klartext_titel_leicht": "Alte Jahresabschlüsse der Bezirksgüter werden bestätigt",
       "klartext_leicht": "Die Bezirks-Landgüter müssen alte Jahresabschlüsse abschließen. Es geht um die Jahre 2019 bis 2021. Beide Jahre hatten Gewinn.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32749,7 +33078,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Kloster Seeon"
       ],
@@ -32762,7 +33093,9 @@
       "klartext_titel_leicht": "Heizwerk in Landsberg darf mehr Kunden beliefern",
       "klartext_leicht": "In Landsberg gibt es ein Heizwerk mit Holzschnitzeln. Bisher durfte es kaum private Häuser beliefern. Das soll sich jetzt ändern. Mehr Haushalte sollen dort Wärme kaufen können.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Landsberg am Lech"
       ],
@@ -32777,7 +33110,9 @@
       "klartext_titel_leicht": "Bericht über Firmen, an denen der Bezirk beteiligt ist",
       "klartext_leicht": "Der Bezirk ist an mehreren Firmen beteiligt. Darüber gibt es jedes Jahr einen Bericht. Der aktuelle Bericht ist für das Jahr 2023.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32790,7 +33125,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32803,7 +33140,9 @@
       "lebenslage": [
         "Arbeit & Beruf"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "München"
       ],
@@ -32819,7 +33158,9 @@
         "Eltern & Kinder",
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Ingolstadt",
         "Johann-Nepomuk-von-Kurz-Zentrum Ingolstadt"
@@ -32833,7 +33174,9 @@
       "klartext_titel_leicht": "Weniger Bürokratie bei kleinen Förderungen",
       "klartext_leicht": "Der Bezirk gibt Geld für viele Projekte. Bei kleinen Beträgen musste bisher viel nachgewiesen werden. Das soll jetzt einfacher werden. Nur bei Bedarf muss noch etwas belegt werden.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32844,7 +33187,9 @@
       "klartext_titel_leicht": "Keine eigene Solar-Genossenschaft für den Bezirk",
       "klartext_leicht": "Eine Partei wollte, dass der Bezirk mit Bürger-Solarfirmen zusammenarbeitet. Der Bezirk prüft das. Er sagt: Das lohnt sich aktuell nicht. Trotzdem will der Bezirk mehr Solaranlagen bauen.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Klima & Umwelt"
@@ -32857,7 +33202,9 @@
       "klartext_titel_leicht": "Solarpark an der Autobahn lohnt sich kaum",
       "klartext_leicht": "Eine Gruppe im Bezirkstag wollte einen Solarpark an der Autobahn. Die Prüfung zeigt: Das lohnt sich zurzeit nicht. Gründe sind unter anderem niedrige Vergütungen und ein möglicher Straßenbau dort.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Vaterstetten"
       ],
@@ -32870,7 +33217,9 @@
       "klartext_titel": "Antrag der ödp vom 17.04.2025: Resolution zu Stromlieferungen",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -32883,7 +33232,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32892,7 +33243,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirkstag)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -32903,7 +33256,9 @@
       "klartext_titel_leicht": "Neue Gleichstellungsbeauftragte beim Bezirk",
       "klartext_leicht": "Der Bezirk hat eine neue Gleichstellungsbeauftragte. Sie heißt Sylvia Deufel. Sie kümmert sich um Gleichberechtigung im Bezirk.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32916,7 +33271,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Ingolstadt"
       ],
@@ -32929,7 +33286,9 @@
       "klartext_titel_leicht": "Bezirk saniert eine Mietwohnung",
       "klartext_leicht": "Der Bezirk vermietet Wohnungen in Landsberg. Eine Wohnung wird jetzt frei. Sie soll saniert werden. Das kostet rund 145.000 Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Landsberg am Lech"
       ],
@@ -32944,7 +33303,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32957,7 +33318,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32971,7 +33334,9 @@
         "Gesundheit & Pflege",
         "Arbeit & Beruf"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32984,7 +33349,9 @@
       "lebenslage": [
         "Arbeit & Beruf"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -32995,7 +33362,9 @@
       "klartext_titel_leicht": "Bezirk beschwert sich über späte Prüfberichte",
       "klartext_leicht": "Prüfer haben die Bauausgaben des Bezirks von vor vielen Jahren untersucht. Der Bericht kam sehr spät. Der Bezirk beschwert sich darüber. Er will künftig schnellere Berichte.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33004,7 +33373,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirksausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33017,7 +33388,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Kloster Seeon"
       ],
@@ -33030,7 +33403,9 @@
       "klartext_titel_leicht": "Neue Sauna in Kloster Seeon fertig",
       "klartext_leicht": "Kloster Seeon gehört dem Bezirk. Dort wurde die Sauna erneuert. Die Arbeiten sind jetzt fertig. Auch die Außenanlagen sind fast fertig.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Kloster Seeon"
       ],
@@ -33041,7 +33416,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Werkausschuss Kloster Seeon)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33052,7 +33429,9 @@
       "klartext_titel_leicht": "Bezirk setzt Regeln für seine Museen",
       "klartext_leicht": "Der Bezirk hat mehrere Museen und Kultureinrichtungen. Für sie sollen jetzt gemeinsame Regeln gelten. Dazu gehört zum Beispiel Barrierefreiheit für alle.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -33063,7 +33442,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Ausschuss für Kultur, Schulen und Museen)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33072,7 +33453,9 @@
       "klartext_titel": "Bericht und Beschlussfassung – Konsultationsprozess zur Finanzperspektive Bezirk Oberbayern und Maßnahmen",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33086,7 +33469,9 @@
         "Gesundheit & Pflege",
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33099,7 +33484,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33113,7 +33500,9 @@
         "Gesundheit & Pflege",
         "Arbeit & Beruf"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33126,7 +33515,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "München"
       ],
@@ -33137,7 +33528,9 @@
       "klartext_titel": "Antrag der Ausschussgemeinschaft LiVolParTie vom 07.04.2025: Erhöhung der Assistenzlöhne",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33150,7 +33543,9 @@
       "lebenslage": [
         "Arbeit & Beruf"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33164,7 +33559,9 @@
         "Gesundheit & Pflege",
         "Wohnen & Miete"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33177,7 +33574,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33186,7 +33585,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Sozial- und Gesundheitsausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33199,7 +33600,9 @@
       "lebenslage": [
         "Arbeit & Beruf"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33208,7 +33611,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Personalausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33219,7 +33624,9 @@
       "klartext_titel_leicht": "Streit um Atomstrom aus Tschechien",
       "klartext_leicht": "Bayern könnte künftig Atomstrom aus Tschechien kaufen. Eine Partei ist dagegen. Sie hat Angst vor einem Atomunfall in der Nähe. Der Bezirkstag soll dazu Stellung nehmen.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Klima & Umwelt"
@@ -33230,7 +33637,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirksausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33241,7 +33650,9 @@
       "klartext_titel_leicht": "Küche in Landsberg wird geprüft",
       "klartext_leicht": "Im Agrarbildungszentrum Landsberg gibt es eine alte Küche. Sie soll erneuert werden. Zuerst prüft ein Fachplaner, was nötig ist. Das kostet rund 20.000 Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Landsberg am Lech"
       ],
@@ -33254,7 +33665,9 @@
       "klartext_titel_leicht": "Bezirk erneuert Heizungssteuerung im Verwaltungsgebäude",
       "klartext_leicht": "Der Bezirk hat ein großes Verwaltungsgebäude in München. Die Steuerung für Heizung und Lüftung ist alt. Sie soll erneuert werden. Das kostet insgesamt rund 1 Million Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "München"
       ],
@@ -33267,7 +33680,9 @@
       "klartext_titel_leicht": "Neuer Ausstellungsraum in Amerang fertig",
       "klartext_leicht": "Im Freilichtmuseum Amerang gibt es jetzt einen neuen Ausstellungsraum. Der Bau ist fertig.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Amerang"
       ],
@@ -33282,7 +33697,9 @@
       "klartext_titel_leicht": "Trachtensammlung in Glentleiten fertig erweitert",
       "klartext_leicht": "Im Freilichtmuseum Glentleiten gibt es eine Sammlung mit alten Trachten. Sie wurde neu gestaltet und erweitert. Die Arbeiten sind jetzt fertig.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Freilichtmuseum Glentleiten"
       ],
@@ -33299,7 +33716,9 @@
       "lebenslage": [
         "Freizeit & Sport"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33312,7 +33731,9 @@
       "lebenslage": [
         "Freizeit & Sport"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33321,7 +33742,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Ausschuss für Bau, Umwelt und Energie)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33334,7 +33757,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33345,7 +33770,9 @@
       "klartext_titel_leicht": "Bezirk spart Geld bei Tourismus-Mitgliedschaft",
       "klartext_leicht": "Der Bezirk ist Mitglied in einem Tourismus-Verein. Die teure Mitgliedschaft soll billiger werden. So spart der Bezirk rund 39.000 Euro im Jahr.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33356,7 +33783,9 @@
       "klartext_titel_leicht": "Museums-Sammlung braucht mehr Zeit zum Aufräumen",
       "klartext_leicht": "Ein Freilichtmuseum im Donaumoos ordnet seine Sammlung neu. Das dauert länger als gedacht. Ein Jahr mehr Zeit ist nötig. Der Bezirk zahlt dafür etwas mehr Geld.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -33369,7 +33798,9 @@
       "klartext_titel_leicht": "Bezirk sichert Solaranlage für Klinik ab",
       "klartext_leicht": "Eine Klinik des Bezirks in Wasserburg baut eine Solaranlage. Der Staat fördert das. Der Bezirk bürgt dafür mit rund 1,3 Millionen Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Wasserburg am Inn"
       ],
@@ -33386,7 +33817,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33399,7 +33832,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33408,7 +33843,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirksausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33419,7 +33856,9 @@
       "klartext_titel_leicht": "Bezirk kürzt Geld für Kulturprojekte 2025",
       "klartext_leicht": "Der Bezirk fördert Kulturprojekte mit Geld. Es gab viele Anträge, aber zu wenig Geld für alle. Deshalb bekommt jedes Projekt weniger als beantragt. Nur Inklusion und Volksmusik sind davon ausgenommen.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -33432,7 +33871,9 @@
       "klartext_titel_leicht": "Bezirk kürzt Geld für Heimatpflege 2025",
       "klartext_leicht": "Der Bezirk fördert Vereine, die sich um Heimatpflege kümmern. Es gab mehr Anträge als Geld da war. Deshalb bekommt jedes Projekt etwas weniger.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -33445,7 +33886,9 @@
       "klartext_titel_leicht": "Bezirk gibt Geld für Denkmalpflege",
       "klartext_leicht": "Alte Gebäude und Denkmäler brauchen manchmal Geld für die Pflege. Der Bezirk hilft dabei. Für die erste Runde 2025 gibt es rund 1,1 Millionen Euro für 73 Projekte.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -33458,7 +33901,9 @@
       "klartext_titel_leicht": "Alte Küche in Landsberg soll saniert werden",
       "klartext_leicht": "Im Agrarbildungszentrum Landsberg gibt es eine alte Küche. Dort wird täglich für viele Menschen gekocht. Die Leitungen sind kaputt. Die Küche soll deshalb saniert werden.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Landsberg am Lech"
       ],
@@ -33471,7 +33916,9 @@
       "klartext_titel_leicht": "Gedenktafel für Opfer der NS-Zeit geplant",
       "klartext_leicht": "In der NS-Zeit wurden kranke Menschen aus Oberbayern ermordet. Das geschah in Schloss Hartheim. Der Bezirk will dort eine Gedenktafel aufstellen. Sie soll an die Opfer erinnern.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -33484,7 +33931,9 @@
       "klartext_titel_leicht": "Neue Jury für Kunstgalerie des Bezirks",
       "klartext_leicht": "Der Bezirk hat eine eigene Kunstgalerie. Dort stellen auch Künstler:innen mit Behinderung aus. Eine Jury wählt die Künstler:innen aus. Der Ausschuss bestimmt jetzt neue Jurymitglieder.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -33497,7 +33946,9 @@
       "klartext_titel_leicht": "Bezirk unterstützt neues Gericht für NS-Raubkunst",
       "klartext_leicht": "Im Nationalsozialismus wurde Kunst gestohlen. Dafür gibt es jetzt ein neues Gericht. Der Bezirk will sich daran beteiligen. So können Betroffene leichter ihr Recht bekommen.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -33508,7 +33959,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Ausschuss für Kultur, Schulen und Museen)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33521,7 +33974,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33534,7 +33989,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33547,7 +34004,9 @@
       "lebenslage": [
         "Eltern & Kinder"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Verkehrsplanung"
@@ -33562,7 +34021,9 @@
       "lebenslage": [
         "Eltern & Kinder"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33575,7 +34036,9 @@
       "lebenslage": [
         "Eltern & Kinder"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33589,7 +34052,9 @@
         "Eltern & Kinder",
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33600,7 +34065,9 @@
       "klartext_titel_leicht": "Moorschutz bei Ingolstadt bekommt neue Aufgaben",
       "klartext_leicht": "Bei Ingolstadt liegt ein großes Moor, das Donaumoos. Ein Verband kümmert sich um seinen Schutz. Der Bezirk ist Mitglied in diesem Verband. Die Regeln des Verbands werden jetzt angepasst, unter anderem für mehr Klimaschutz.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Ingolstadt"
       ],
@@ -33615,7 +34082,9 @@
       "klartext_titel_leicht": "Bezirk erneuert Text zur Erinnerungsarbeit",
       "klartext_leicht": "Der Bezirk hat einen Grundsatztext zur Erinnerung an die Vergangenheit. Dieser Text wird jetzt aktualisiert. Er soll dann im Internet veröffentlicht werden.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -33628,7 +34097,9 @@
       "klartext_titel_leicht": "Kein Bauernhof mit sozialem Angebot für den Bezirk",
       "klartext_leicht": "Eine Partei wollte einen besonderen Bauernhof für den Bezirk. Dort sollten auch Menschen mit Behinderung mitarbeiten. Der Bezirk lehnt das ab. Er sagt: Das ist nicht seine Aufgabe.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33637,7 +34108,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirksausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33648,7 +34121,9 @@
       "klartext_titel_leicht": "Neue Vertretung der AWO im Ausschuss",
       "klartext_leicht": "Die AWO sitzt im Sozialausschuss des Bezirks mit. Die Vertretung wechselt. Cornelia Emili übernimmt die Aufgabe.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33661,7 +34136,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33674,7 +34151,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33687,7 +34166,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33696,7 +34177,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Sozial- und Gesundheitsausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33709,7 +34192,9 @@
       "lebenslage": [
         "Freizeit & Sport"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33718,7 +34203,9 @@
       "klartext_titel": "Sachstandsbericht \"Oberbayerisches Gedenkbuch\"",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33727,7 +34214,9 @@
       "klartext_titel": "Schulzentrum Förderschwerpunkt Hören und Sprache München-Johanneskirchen, Generalsanierung Förderzentrum Förderschwerpunkt Hören - Sachstandsbericht",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33736,7 +34225,9 @@
       "klartext_titel": "Tätigkeitsbericht 2024 - Sudetendeutsche Heimatpflege",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33747,7 +34238,9 @@
       "klartext_titel_leicht": "Kunsthaus Schafhof zieht Bilanz für 2024",
       "klartext_leicht": "Der Bezirk hat ein Kunsthaus, den Schafhof. Dort lief 2024 einiges gut. Es gab große Ausstellungen. Auch neue Angebote für Kinder kamen gut an.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Schafhof Freising"
       ],
@@ -33762,7 +34255,9 @@
       "klartext_titel_leicht": "Bericht über die inklusive Kunstgalerie des Bezirks",
       "klartext_leicht": "Der Bezirk hat eine eigene Kunstgalerie. Dort stellen auch Künstler:innen mit Behinderung aus. Der Bericht zeigt, was die Galerie 2024 gemacht hat.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -33773,7 +34268,9 @@
       "klartext_titel": "Zentrum für Volksmusik, Literatur und Popularmusik - Tätigkeitsbericht 2024",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33784,7 +34281,9 @@
       "klartext_titel_leicht": "Regeln für die Musik- und Literatursammlung des Bezirks",
       "klartext_leicht": "Der Bezirk sammelt Musik und Bücher aus der Region. Dafür gibt es jetzt ein neues Konzept. Es regelt, was in die Sammlung aufgenommen wird.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -33797,7 +34296,9 @@
       "klartext_titel_leicht": "Regeln für die Kunstsammlung des Schafhofs",
       "klartext_leicht": "Der Schafhof gehört dem Bezirk und sammelt Kunst. Es gibt jetzt ein neues Konzept dafür. Es hilft, welche Kunstwerke gekauft werden sollen.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Schafhof Freising"
       ],
@@ -33812,7 +34313,9 @@
       "klartext_titel_leicht": "Regeln für die Kunstsammlung des Bezirks",
       "klartext_leicht": "Der Bezirk hat eine eigene Kunstgalerie mit vielen Werken. Es gibt jetzt ein neues Konzept dafür. Es hilft, welche Kunstwerke gekauft werden sollen.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -33825,7 +34328,9 @@
       "klartext_titel_leicht": "Regeln für die Sammlung im Museum Glentleiten",
       "klartext_leicht": "Das Freilichtmuseum Glentleiten sammelt alte Alltagsgegenstände. Es gibt jetzt ein neues Konzept dafür. Es soll im Internet veröffentlicht werden.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Freilichtmuseum Glentleiten"
       ],
@@ -33840,7 +34345,9 @@
       "klartext_titel_leicht": "Regeln für die Sammlung im Museum Amerang",
       "klartext_leicht": "Das Freilichtmuseum Amerang sammelt alte Alltagsgegenstände. Es gibt jetzt ein neues Konzept dafür. Es soll im Internet veröffentlicht werden.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Amerang"
       ],
@@ -33855,7 +34362,9 @@
       "klartext_titel_leicht": "Trachten-Sammlung in Benediktbeuern bekommt neuen Namen",
       "klartext_leicht": "In Benediktbeuern gibt es eine Sammlung mit alten Trachten. Sie gehört zum Museum Glentleiten. Der Ort hat jetzt einen neuen, einheitlichen Namen: Sammlung Tracht, Gwand, Mode.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Benediktbeuern"
       ],
@@ -33868,7 +34377,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Ausschuss für Kultur, Schulen und Museen)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33877,7 +34388,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Personalausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33890,7 +34403,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Ingolstadt"
       ],
@@ -33905,7 +34420,9 @@
       "klartext_titel_leicht": "Weitere Sitze im Bezirkstag neu besetzt",
       "klartext_leicht": "Ein Mitglied des Bezirkstags hat die Partei gewechselt. Dadurch mussten mehrere Ausschusssitze neu verteilt werden. Jetzt kommen noch ein paar weitere Änderungen dazu.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33914,7 +34431,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirkstag)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33923,7 +34442,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirksausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33936,7 +34457,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33945,7 +34468,9 @@
       "klartext_titel": "Beschluss über den Verlust der Mitgliedschaft eines Mitglieds im Bezirkstag",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -33956,7 +34481,9 @@
       "klartext_titel_leicht": "CSU bekommt mehr Sitze im Bezirksausschuss",
       "klartext_leicht": "Ein Mitglied des Bezirkstags ist von den Grünen zur CSU gewechselt. Dadurch bekommt die CSU mehr Sitze in wichtigen Gremien. Ein letzter Sitz wird durch Los entschieden.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33969,7 +34496,9 @@
       "lebenslage": [
         "Freizeit & Sport"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -33982,7 +34511,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Kloster Seeon"
       ],
@@ -33995,7 +34526,9 @@
       "klartext_titel_leicht": "Feste Regeln für den Kunstpreis des Bezirks",
       "klartext_leicht": "Der Bezirk vergibt seit Jahren einen Kunstpreis. Bisher gab es dafür keine festen Regeln. Jetzt bekommt der Preis eine offizielle Satzung.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -34010,7 +34543,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Ingolstadt"
       ],
@@ -34025,7 +34560,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34038,7 +34575,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34051,7 +34590,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Ingolstadt"
       ],
@@ -34062,7 +34603,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirkstag)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -34073,7 +34616,9 @@
       "klartext_titel_leicht": "Keine Wahlwerbung in Bezirks-Gebäuden vor der Wahl",
       "klartext_leicht": "2025 war Bundestagswahl. Der Bezirk will dabei neutral bleiben. Deshalb durften Parteien seine Räume nicht mehr nutzen. Das galt in den letzten drei Monaten vor der Wahl.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34084,7 +34629,9 @@
       "klartext_titel_leicht": "Sanierung für Musikzentrum in Bruckmühl geht weiter",
       "klartext_leicht": "Der Bezirk hat ein Zentrum für Volksmusik in Bruckmühl. Die Gebäude werden in zwei Schritten saniert. Der erste Schritt läuft schon. Jetzt wird der zweite Schritt vorbereitet.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Bruckmühl"
       ],
@@ -34102,7 +34649,9 @@
       "lebenslage": [
         "Arbeit & Beruf"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Berchtesgaden"
       ],
@@ -34115,7 +34664,9 @@
       "klartext_titel_leicht": "Mehr Geld für Musikakademie in Marktoberdorf",
       "klartext_leicht": "Der Bezirk unterstützt eine Musikschule in Marktoberdorf. Die Kosten dort sind gestiegen. Der Bezirk zahlt deshalb mehr Geld. Sonst müssten die Schüler:innen mehr bezahlen.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Marktoberdorf"
       ],
@@ -34130,7 +34681,9 @@
       "klartext_titel_leicht": "Neue Toiletten im Museum Glentleiten",
       "klartext_leicht": "Im Freilichtmuseum Glentleiten wird ein Gebäude umgebaut. Dabei werden auch die Toiletten erneuert. Das kostet 50.000 Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Freilichtmuseum Glentleiten"
       ],
@@ -34145,7 +34698,9 @@
       "klartext_titel_leicht": "Alter Prüfhinweis ist erledigt",
       "klartext_leicht": "Vor Jahren hat ein Prüfer etwas an einer Schul-Abrechnung bemängelt. Das ist jetzt erledigt.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34156,7 +34711,9 @@
       "klartext_titel_leicht": "Kein Verbot von Gentechnik auf Bezirks-Feldern",
       "klartext_leicht": "Eine Gruppe im Bezirk wollte, dass keine Gentechnik auf Bezirks-Feldern verwendet wird. Der Bezirk verzichtet zwar schon lange freiwillig darauf. Ein festes Verbot lehnt er aber ab.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Klima & Umwelt"
@@ -34171,7 +34728,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34180,7 +34739,9 @@
       "klartext_titel": "EU-Beihilfenrecht; Betrauungsakt Krankenhauszweckverband Ingolstadt",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -34189,7 +34750,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirksausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -34202,7 +34765,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34213,7 +34778,9 @@
       "klartext_titel_leicht": "Neue Vertretung der Caritas im Ausschuss",
       "klartext_leicht": "Die Caritas sitzt im Sozialausschuss des Bezirks mit. Die Vertretung wechselt. Johanna Wettengl übernimmt die Aufgabe.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34226,7 +34793,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34240,7 +34809,9 @@
         "Arbeit & Beruf",
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34253,7 +34824,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "München"
       ],
@@ -34268,7 +34841,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "München"
       ],
@@ -34284,7 +34859,9 @@
         "Geld & Soziales",
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34297,7 +34874,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34311,7 +34890,9 @@
         "Gesundheit & Pflege",
         "Unterwegs"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34324,7 +34905,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34338,7 +34921,9 @@
         "Gesundheit & Pflege",
         "Zuwanderung & Integration"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34351,7 +34936,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34360,7 +34947,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Sozial- und Gesundheitsausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -34371,7 +34960,9 @@
       "klartext_titel_leicht": "Bezirk plant neue Netzwerk-Kabel im Verwaltungsgebäude",
       "klartext_leicht": "Der Bezirk hat ein großes Verwaltungsgebäude in München. Die Internet-Kabel dort sind schlecht. Zuerst wird die Planung für neue Kabel beauftragt. Das kostet rund 75.000 Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "München"
       ],
@@ -34384,7 +34975,9 @@
       "klartext_titel_leicht": "Bezirk schützt seltene Wiesen an der Donau bei Ingolstadt",
       "klartext_leicht": "An der Donau bei Ingolstadt gibt es besondere trockene Wiesen. Dort leben seltene Tiere und Pflanzen. Ein Projekt schützt diese Wiesen. Der Bezirk gibt dafür Geld.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Ingolstadt"
       ],
@@ -34399,7 +34992,9 @@
       "klartext_titel_leicht": "Bezirk rettet alte Apfel- und Birnensorten",
       "klartext_leicht": "In den Alpen gibt es seltene, alte Sorten von Äpfeln und Birnen. Ein Projekt sammelt und schützt sie. Sie sollen wieder mehr verbreitet werden. Der Bezirk gibt dafür rund 42.000 Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Klima & Umwelt"
@@ -34412,7 +35007,9 @@
       "klartext_titel_leicht": "Bezirk hilft beim Kauf von Naturschutz-Wiesen",
       "klartext_leicht": "Im Ampertal bei Freising gibt es wertvolle Feuchtwiesen. Der Landkreis will diese Wiesen kaufen, um sie dauerhaft zu schützen. Der Bezirk gibt dafür 15.000 Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Freising"
       ],
@@ -34427,7 +35024,9 @@
       "klartext_titel_leicht": "Bezirk stößt weniger CO2 aus, verbraucht aber mehr Energie",
       "klartext_leicht": "Der Bezirk prüft jedes Jahr seinen Energieverbrauch. 2023 wurde etwas mehr Energie verbraucht. Trotzdem sank der CO2-Ausstoß leicht. Das reicht aber noch nicht für die eigenen Klimaziele.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Klima & Umwelt"
@@ -34440,7 +35039,9 @@
       "klartext_titel_leicht": "Klimawandel schadet Bächen und Seen",
       "klartext_leicht": "Wegen des Klimawandels trocknen kleine Bäche öfter aus. Gleichzeitig werden Seen wärmer. Das schadet vielen Tieren im Wasser. Auch Starkregen und Überschwemmungen nehmen zu. Der Bezirk will Moore und Feuchtgebiete besser schützen.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Klima & Umwelt"
@@ -34451,7 +35052,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Ausschuss für Bau, Umwelt und Energie)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -34462,7 +35065,9 @@
       "klartext_titel_leicht": "Personalstellen für Kloster Seeon bleiben gleich",
       "klartext_leicht": "Kloster Seeon gehört dem Bezirk. Dort gibt es für 2025 genauso viele Stellen wie im Jahr davor. Der Personalrat hat dem zugestimmt.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34475,7 +35080,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Kloster Seeon"
       ],
@@ -34488,7 +35095,9 @@
       "klartext_titel_leicht": "Neue Möbel für den Festsaal in Kloster Seeon",
       "klartext_leicht": "Im Festsaal von Kloster Seeon stehen alte, kaputte Möbel. Sie werden jetzt durch neue ersetzt. Das kostet rund 190.000 Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Kloster Seeon"
       ],
@@ -34501,7 +35110,9 @@
       "klartext_titel_leicht": "Neue Technik für Veranstaltungen in Kloster Seeon",
       "klartext_leicht": "Im Festsaal von Kloster Seeon gibt es Technik für Licht und Ton. Diese Technik ist alt. Sie wird jetzt erneuert. Das kostet rund 85.000 Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Kloster Seeon"
       ],
@@ -34514,7 +35125,9 @@
       "klartext_titel_leicht": "Bauprojekte in Kloster Seeon fast fertig",
       "klartext_leicht": "In Kloster Seeon wird gerade gebaut. Eine neue Sauna und ein Lagergebäude sind fast fertig. Alles bleibt im geplanten Kostenrahmen.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Kloster Seeon"
       ],
@@ -34531,7 +35144,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Kloster Seeon"
       ],
@@ -34542,7 +35157,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Werkausschuss Kloster Seeon)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -34555,7 +35172,9 @@
       "lebenslage": [
         "Eltern & Kinder"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Ingolstadt"
       ],
@@ -34572,7 +35191,9 @@
       "lebenslage": [
         "Eltern & Kinder"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "München-Johanneskirchen"
       ],
@@ -34589,7 +35210,9 @@
       "lebenslage": [
         "Eltern & Kinder"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "München-Johanneskirchen"
       ],
@@ -34602,7 +35225,9 @@
       "klartext_titel": "Veränderung Förderprogramm \"Bestnoten hören\"",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -34611,7 +35236,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Ausschuss für Kultur, Schulen und Museen)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -34622,7 +35249,9 @@
       "klartext_titel_leicht": "Neues Mitglied im Bezirkstag",
       "klartext_leicht": "Ein Sitz im Bezirkstag ist frei geworden. Eine neue Person rückt nach. Sie wird jetzt vereidigt.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34633,7 +35262,9 @@
       "klartext_titel_leicht": "Bezirk besetzt Ausschusssitze neu",
       "klartext_leicht": "Eine Bezirksrätin hat aufgehört. Jetzt müssen ihre Sitze in Ausschüssen neu besetzt werden. Ihre Partei schlägt dafür neue Personen vor.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34642,7 +35273,9 @@
       "klartext_titel": "Beschluss über den Verlust der Mitgliedschaft eines Mitglieds im Bezirkstag",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -34655,7 +35288,9 @@
       "lebenslage": [
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34666,7 +35301,9 @@
       "klartext_titel_leicht": "Bezirk korrigiert einen Fehler in seinen eigenen Regeln",
       "klartext_leicht": "Der Bezirkstag hat eigene Regeln, die Geschäftsordnung. Darin gab es einen kleinen Fehler. Dieser Fehler wird jetzt behoben.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": false
@@ -34679,7 +35316,9 @@
       "lebenslage": [
         "Arbeit & Beruf"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "München"
       ],
@@ -34690,7 +35329,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirkstag)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -34701,7 +35342,9 @@
       "klartext_titel_leicht": "Bezirk zahlt mehr für Museum bei Ingolstadt",
       "klartext_leicht": "Bei Ingolstadt gibt es ein Museum über Kelten und Römer. Der Bezirk zahlt dafür Geld, zusammen mit anderen. Die Kosten sind gestiegen. Der Bezirk zahlt deshalb jetzt mehr.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Manching"
       ],
@@ -34716,7 +35359,9 @@
       "klartext_titel_leicht": "Bezirk bekommt ein altes Musikinstrument geschenkt",
       "klartext_leicht": "Jemand hat dem Bezirk ein altes Musikinstrument geschenkt, ein Bandoneon. Es kommt in eine Sammlung. Der Bezirk nimmt das Geschenk an.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Wasserburg am Inn"
       ],
@@ -34734,7 +35379,9 @@
         "Gesundheit & Pflege",
         "Geld & Soziales"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Ingolstadt"
       ],
@@ -34745,7 +35392,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirksausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -34754,7 +35403,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Personalausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -34765,7 +35416,9 @@
       "klartext_titel_leicht": "Bericht über das Musikfestival ZAMMA",
       "klartext_leicht": "In Holzkirchen gab es 2024 ein Musikfestival namens ZAMMA. Es wird jetzt darüber berichtet, wie es gelaufen ist.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Holzkirchen"
       ],
@@ -34780,7 +35433,9 @@
       "klartext_titel_leicht": "Bezirk gibt viel Geld für Denkmalpflege",
       "klartext_leicht": "Alte Gebäude und Denkmäler brauchen manchmal Geld für die Pflege. Der Bezirk hilft dabei. Für diese Runde 2024 gibt es rund 1,6 Millionen Euro.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -34793,7 +35448,9 @@
       "klartext_titel_leicht": "Neuer Preis für Musik im Dialekt",
       "klartext_leicht": "Der Bezirk vergibt einen neuen Preis. Er heißt DiaTon. Er ist für junge Musiker:innen, die Dialekt in ihrer Musik nutzen. Der erste Preis wird 2025 vergeben.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -34804,7 +35461,9 @@
       "klartext_titel": "Förderprogramm \"Bestnoten hören\"",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -34817,7 +35476,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -34832,7 +35493,9 @@
       "lebenslage": [
         "Gesundheit & Pflege"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [
         "Kultur & Bildung"
@@ -34845,7 +35508,9 @@
       "klartext_titel_leicht": "Neue Mietpreise am Kunsthaus Schafhof",
       "klartext_leicht": "Der Schafhof gehört dem Bezirk. Dort können auch andere Veranstaltungen stattfinden. Die Preise dafür waren sehr alt. Sie werden jetzt erneuert. Für Kunsthandwerksmärkte bleiben die Preise aber gleich.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "Schafhof Freising"
       ],
@@ -34858,7 +35523,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Ausschuss für Kultur, Schulen und Museen)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
@@ -34869,7 +35536,9 @@
       "klartext_titel_leicht": "Bezirk bekommt alte Trachtenteile geschenkt",
       "klartext_leicht": "Jemand hat dem Bezirk alte Trachtenteile geschenkt, zum Beispiel Gürtel. Sie kommen in eine Sammlung. Der Bezirk nimmt das Geschenk an.",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [
         "München"
       ],
@@ -34882,7 +35551,9 @@
       "klartext_titel": "Bekanntgaben und Sonstiges (Bezirksausschuss)",
       "klartext": "",
       "lebenslage": [],
-      "bezirk": [],
+      "bezirk": [
+        "Bezirk Oberbayern"
+      ],
       "ort": [],
       "anlass": [],
       "entwurf": true
