@@ -287,7 +287,10 @@ def main():
         eintrag["klartext"] = ""        # bleibt leer: die Oberflaeche zeigt dann
                                         # nur den Titel, statt Text zu erfinden
         eintrag["lebenslage"] = schlagworte(suchtext, LEBENSLAGE_STICHWORTE)
-        eintrag["bezirk"] = bezirk_aus_gremium(sitzung["gremium"])
+        if quelle == "bezirk_obb":
+            eintrag["bezirk"] = ["Bezirk Oberbayern"]
+        else:
+            eintrag["bezirk"] = bezirk_aus_gremium(sitzung["gremium"])
         eintrag["ort"] = []
         eintrag["anlass"] = schlagworte(suchtext, ANLASS_STICHWORTE)
         eintrag["entwurf"] = True
