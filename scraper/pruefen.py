@@ -172,6 +172,38 @@ def p_leichte_sprache(kur, grenze=14):
                 warnt(f"{ref}: Satz mit {n} Woertern (Leichte Sprache) — {satz[:52]}…")
 
 
+def p_haushalt_summen(haushalt):
+    """
+    Zweite, unabhaengige Pruefsumme fuer data/haushalt.json — schuetzt gegen
+    einen kuenftigen haushalt_lesen.py, der die Pruefung beim Parsen selbst
+    umgeht oder eine veraltete Datei liegen laesst, die nie neu geprueft wurde.
+    """
+    for jahr_str, d in haushalt["jahre"].items():
+        hg = d["hauptgruppen"]
+        if len(hg) != 10:
+            fehlt(f"Haushalt {jahr_str}: nur {len(hg)}/10 Hauptgruppen")
+            continue
+        summe_e = sum(hg[c]["ansatz"] for c in "0123")
+        summe_a = sum(hg[c]["ansatz"] for c in "456789")
+        if round(summe_e, 2) != round(d["summe_einnahmen"], 2):
+            fehlt(f"Haushalt {jahr_str}: Hauptgruppen 0-3 summieren zu {summe_e}, "
+                  f"aber summe_einnahmen ist {d['summe_einnahmen']}")
+        if round(summe_a, 2) != round(d["summe_ausgaben"], 2):
+            fehlt(f"Haushalt {jahr_str}: Hauptgruppen 4-9 summieren zu {summe_a}, "
+                  f"aber summe_ausgaben ist {d['summe_ausgaben']}")
+
+    vwh = haushalt["verwaltungs_vermoegenshaushalt_aktuell"]
+    aktuell = haushalt["jahre"][str(haushalt["aktuelles_jahr"])]
+    kontrolle_e = vwh["verwaltungshaushalt_einnahmen"] + vwh["vermoegenshaushalt_einnahmen"]
+    kontrolle_a = vwh["verwaltungshaushalt_ausgaben"] + vwh["vermoegenshaushalt_ausgaben"]
+    if round(kontrolle_e, 2) != round(aktuell["summe_einnahmen"], 2):
+        fehlt(f"Haushalt: Verwaltungs- + Vermoegenshaushalt Einnahmen ({kontrolle_e}) "
+              f"stimmt nicht mit Summe Einnahmen ({aktuell['summe_einnahmen']}) ueberein")
+    if round(kontrolle_a, 2) != round(aktuell["summe_ausgaben"], 2):
+        fehlt(f"Haushalt: Verwaltungs- + Vermoegenshaushalt Ausgaben ({kontrolle_a}) "
+              f"stimmt nicht mit Summe Ausgaben ({aktuell['summe_ausgaben']}) ueberein")
+
+
 def p_abdeckung(roh, feed):
     """
     Jeder Sachpunkt ist entweder im Feed oder aus einem benannten Grund
@@ -236,6 +268,8 @@ def main():
     p_leichte_sprache(kur)
     p_nur_erlaubte_hosts(feed["eintraege"])
     p_nur_oeffentliche_tops(kur, index)
+    if os.path.exists(os.path.join(DATEN_VZ, "haushalt.json")):
+        p_haushalt_summen(lade("haushalt.json"))
     gruende = p_abdeckung(roh, feed["eintraege"])
 
     print("Abdeckung aller Tagesordnungspunkte")

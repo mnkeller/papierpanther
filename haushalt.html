@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'">
+<title>Der Haushalt — PapierPanther</title>
+<meta name="description" content="Der Haushalt der Stadt Ingolstadt erklärt: was Kameralistik ist, wo ihre Grenzen liegen, und wohin das Geld tatsächlich fließt.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mnkeller.github.io/papierpanther/haushalt.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PapierPanther Ingolstadt">
+<meta property="og:url" content="https://mnkeller.github.io/papierpanther/haushalt.html">
+<meta property="og:title" content="Der Haushalt — PapierPanther">
+<meta property="og:description" content="Der Haushalt der Stadt Ingolstadt erklärt: was Kameralistik ist, wo ihre Grenzen liegen, und wohin das Geld tatsächlich fließt.">
+<meta property="og:image" content="https://mnkeller.github.io/papierpanther/vorschau.png">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Der Haushalt — PapierPanther">
+<meta name="twitter:image" content="https://mnkeller.github.io/papierpanther/vorschau.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003E59'/%3E%3Cpath d='M18 30c0-8 5-15 14-15s14 7 14 15' fill='none' stroke='%23ffffff' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M17 22c-2-4-2-8 1-11 1 3 1 6 3 8z' fill='%23ffffff'/%3E%3Cpath d='M47 22c2-4 2-8-1-11-1 3-1 6-3 8z' fill='%23ffffff'/%3E%3Ccircle cx='25' cy='31' r='3' fill='%23ffffff'/%3E%3Ccircle cx='39' cy='31' r='3' fill='%23ffffff'/%3E%3Cpath d='M30 38l2 3 2-3z' fill='%23B00E2B'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --primary: #003e59;
+    --primary-dark: #00263a;
+    --accent: #b00e2b;
+    --text: #16232b;
+    --text-muted: #566a74;
+    --text-faint: #5c6a72;
+    --bg: #f8f7f4;
+    --bg-warm: #f1efe9;
+    --card: #ffffff;
+    --border: #e4e0d8;
+    --border-strong: #8f8779;
+    --warn-bg: #fdf6e7;
+    --warn-border: #e8d9b0;
+    --warn-tx: #7d6320;
+    --einnahmen-1: #14505c; --einnahmen-2: #2f7080; --einnahmen-3: #6ba0ac; --einnahmen-4: #a9c7ce;
+    --ausgaben-1: #96551f;  --ausgaben-2: #b6752f; --ausgaben-3: #cf9a55; --ausgaben-4: #ddb989;
+    --ausgaben-5: #c98a6b;  --ausgaben-6: #a9694f;
+    --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+    --radius: 10px;
+    --shadow: 0 1px 3px rgba(22,35,43,.06), 0 0 0 1px rgba(22,35,43,.04);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-body); color: var(--text); background: var(--bg);
+    line-height: 1.65; font-size: 16px; -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
+  a { color: var(--accent); }
+
+  .site-header {
+    background: var(--primary); border-bottom: 3px solid var(--accent);
+    padding: .85rem 0; position: sticky; top: 0; z-index: 50;
+  }
+  .site-header .container { display: flex; align-items: center; gap: .65rem; flex-wrap: wrap; }
+  .logo-mark { flex: none; display: block; }
+  .brand {
+    font-family: var(--font-display); font-size: 1.28rem; font-weight: 700;
+    letter-spacing: -.01em; color: #fff; text-decoration: none;
+  }
+  .brand span { color: #a9c7d6; font-weight: 400; }
+  .header-spacer { margin-left: auto; }
+  .header-link { font-size: .82rem; color: #cfe0e8; text-decoration: none; }
+  .header-link:hover { color: #fff; text-decoration: underline; }
+  .btn-leicht {
+    font: inherit; font-size: .82rem; cursor: pointer;
+    background: none; border: 1px solid rgba(255,255,255,.5); color: #fff;
+    padding: .3rem .75rem; border-radius: 999px;
+  }
+  .btn-leicht:hover { background: rgba(255,255,255,.14); }
+  .btn-leicht[aria-pressed="true"] {
+    background: #fff; color: var(--primary-dark); border-color: #fff; font-weight: 600;
+  }
+
+  main { padding: 3rem 0 3.5rem; }
+  h1 {
+    font-family: var(--font-display); font-size: clamp(1.75rem, 4.5vw, 2.4rem);
+    font-weight: 700; letter-spacing: -.02em; margin-bottom: .5rem; max-width: 20ch;
+  }
+  .lede { color: var(--text-muted); font-size: 1.05rem; max-width: 62ch; margin-bottom: 1.75rem; }
+  .hinweis {
+    background: var(--warn-bg); border: 1px solid var(--warn-border); color: var(--warn-tx);
+    border-radius: var(--radius); padding: 1rem 1.15rem; font-size: .92rem; margin-bottom: 2.5rem;
+  }
+  .hinweis strong { font-weight: 600; }
+
+  h2 {
+    font-family: var(--font-display); font-size: 1.5rem; font-weight: 700;
+    margin: 3rem 0 .75rem; letter-spacing: -.01em;
+  }
+  h3 {
+    font-family: var(--font-display); font-size: 1.1rem; font-weight: 700;
+    margin: 1.75rem 0 .5rem;
+  }
+  p { margin-bottom: 1rem; max-width: 68ch; }
+  .abschnitt { margin-bottom: .5rem; }
+
+  .beispiel {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 1.25rem 1.4rem; margin: 1.25rem 0 1.75rem;
+  }
+  .beispiel h3 { margin-top: 0; font-size: 1rem; color: var(--primary); }
+  .beispiel p { font-size: .95rem; }
+  .beispiel p:last-child { margin-bottom: 0; }
+  .kennzahl { font-family: var(--font-display); font-weight: 700; color: var(--accent); }
+
+  .diagramm {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 1.5rem 1.5rem 1.25rem; margin: 1.25rem 0 2rem;
+    max-width: 100%; overflow-x: auto;
+  }
+  .diagramm svg { display: block; width: 100%; height: auto; font-family: var(--font-body); }
+  .diagramm-titel { font-size: .95rem; font-weight: 600; color: var(--text); margin-bottom: .9rem; }
+  .diagramm-fuss { font-size: .78rem; color: var(--text-faint); margin-top: .75rem; }
+  .balken-label { font-size: 12.5px; fill: var(--text); }
+  .balken-label-fett { font-size: 11px; fill: var(--text); font-weight: 700; }
+  .balken-label-klein { font-size: 11px; fill: var(--text-muted); }
+  .balken-wert { font-size: 12.5px; fill: var(--text-muted); }
+  .balken-gruppe { cursor: pointer; }
+  .balken-gruppe:hover rect { opacity: .85; }
+  .balken-gruppe:focus-visible rect { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .info-marke { cursor: pointer; }
+  .info-marke circle { fill: var(--bg-warm); stroke: var(--border-strong); }
+  .info-marke:hover circle, .info-marke[aria-expanded="true"] circle { fill: var(--primary); stroke: var(--primary); }
+  .info-marke text { font-size: 9px; fill: var(--text-muted); text-anchor: middle; dominant-baseline: central; }
+  .info-marke:hover text, .info-marke[aria-expanded="true"] text { fill: #fff; }
+  .info-marke:focus-visible circle { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .info-erklaerung { font-size: 11.5px; fill: var(--text-muted); }
+  .achse-text { font-size: 11px; fill: var(--text-faint); }
+  .achse-linie { stroke: var(--border-strong); stroke-width: 1; }
+  .linie-einnahmen { fill: none; stroke: var(--einnahmen-1); stroke-width: 2.5; }
+  .linie-ausgaben { fill: none; stroke: var(--ausgaben-1); stroke-width: 2.5; }
+  .punkt-einnahmen { fill: var(--einnahmen-1); }
+  .punkt-ausgaben { fill: var(--ausgaben-1); }
+  .punkt-ansatz { fill: var(--card); stroke-width: 2; }
+
+  .quellen { font-size: .82rem; color: var(--text-faint); }
+  .quellen a { color: var(--primary-dark); }
+  .stand {
+    margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--border-strong);
+    font-size: .82rem; color: var(--text-faint);
+  }
+  .site-footer {
+    border-top: 1px solid var(--border); background: var(--bg-warm);
+    padding: 1.75rem 0; font-size: .85rem; color: var(--text-muted);
+  }
+  .site-footer .container { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+  .site-footer a { color: var(--primary-dark); }
+
+  a:focus-visible, button:focus-visible, .balken-gruppe:focus-visible {
+    outline: 2px solid var(--accent); outline-offset: 2px;
+  }
+  .ladehinweis { color: var(--text-faint); font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <svg class="logo-mark" width="34" height="34" viewBox="0 0 40 40" aria-hidden="true">
+      <rect x="9" y="17" width="22" height="16" rx="2" fill="#f1efe9"/>
+      <path d="M27 17h4v4z" fill="#B00E2B"/>
+      <path d="M11 18c0-7.5 4-12 9-12s9 4.5 9 12" fill="#fff"/>
+      <path d="M13 15 L9.5 5 L17.5 11.5 Z" fill="#fff"/>
+      <path d="M27 15 L30.5 5 L22.5 11.5 Z" fill="#fff"/>
+      <circle cx="16.5" cy="15" r="1.7" fill="#003E59"/>
+      <circle cx="23.5" cy="15" r="1.7" fill="#003E59"/>
+      <path d="M18.6 18.2l1.4 1.9 1.4-1.9z" fill="#B00E2B"/>
+    </svg>
+    <a class="brand" href="index.html">PapierPanther <span>Ingolstadt</span></a>
+    <span class="header-spacer"></span>
+    <button class="btn-leicht" id="btn-leicht" type="button" aria-pressed="false">Leichte Sprache</button>
+    <a class="header-link" href="index.html">Zurück zur Übersicht</a>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <h1>Der Haushalt der Stadt Ingolstadt</h1>
+    <p class="lede" id="txt-lede"></p>
+
+    <div class="hinweis" id="txt-hinweis"></div>
+
+    <section id="was-ist-kameralistik">
+      <h2 id="txt-kam-h2"></h2>
+      <p id="txt-kam-p1"></p>
+      <p id="txt-kam-p2"></p>
+
+      <div class="beispiel" id="beispiel-kameralistik">
+        <h3 id="txt-kam-beispiel-h3"></h3>
+        <p class="ladehinweis">Lade Zahlen …</p>
+      </div>
+    </section>
+
+    <section id="probleme">
+      <h2 id="txt-prob-h2"></h2>
+      <p id="txt-prob-intro"></p>
+      <p id="txt-prob-folgen"></p>
+      <p id="txt-prob-abschreibung"></p>
+      <p id="txt-prob-bilanz"></p>
+      <p id="txt-prob-generationen"></p>
+      <p id="txt-prob-ausgeglichen"></p>
+
+      <div class="beispiel" id="beispiel-probleme">
+        <h3 id="txt-prob-beispiel-h3"></h3>
+        <p class="ladehinweis">Lade Zahlen …</p>
+      </div>
+    </section>
+
+    <section id="diagramme">
+      <h2 id="txt-diag-h2"></h2>
+
+      <div class="diagramm" id="diagramm-hauptgruppen">
+        <p class="ladehinweis">Lade Diagramm …</p>
+      </div>
+
+      <div class="diagramm" id="diagramm-fluss">
+        <p class="ladehinweis">Lade Diagramm …</p>
+      </div>
+
+      <div class="diagramm" id="diagramm-zeitreihe">
+        <p class="ladehinweis">Lade Diagramm …</p>
+      </div>
+
+      <div class="diagramm" id="diagramm-referate">
+        <p class="ladehinweis">Lade Diagramm …</p>
+      </div>
+    </section>
+
+    <p class="stand quellen" id="quellen-block">Lade Quellenangaben …</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <a href="index.html">Übersicht</a>
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="https://github.com/mnkeller/papierpanther" rel="noopener noreferrer" target="_blank">Quellcode</a>
+  </div>
+</footer>
+
+<script src="data/haushalt.js"></script>
+<script>
+(function () {
+  "use strict";
+  var D = window.HAUSHALT_DATEN;
+  if (!D) {
+    document.querySelectorAll(".ladehinweis").forEach(function (el) {
+      el.textContent = "Haushaltsdaten konnten nicht geladen werden.";
+    });
+    return;
+  }
+
+  function euro(n) {
+    return new Intl.NumberFormat("de-DE", { maximumFractionDigits: 0 }).format(Math.round(n)) + " €";
+  }
+  function mio(n) {
+    return new Intl.NumberFormat("de-DE", { maximumFractionDigits: 1 }).format(n / 1e6) + " Mio. €";
+  }
+  function pct(teil, ganzes) {
+    return new Intl.NumberFormat("de-DE", { maximumFractionDigits: 1 }).format((teil / ganzes) * 100) + " %";
+  }
+  function svgEl(tag, attrs, kinder) {
+    var el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (var k in attrs) el.setAttribute(k, attrs[k]);
+    (kinder || []).forEach(function (kind) { el.appendChild(kind); });
+    return el;
+  }
+  function text(x, y, inhalt, klasse, anker) {
+    var t = svgEl("text", { x: x, y: y, class: klasse || "" });
+    if (anker) t.setAttribute("text-anchor", anker);
+    t.textContent = inhalt;
+    return t;
+  }
+  function textMitTeilen(x, y, teile) {
+    var t = svgEl("text", { x: x, y: y });
+    teile.forEach(function (teil) {
+      var tspan = document.createElementNS("http://www.w3.org/2000/svg", "tspan");
+      if (teil.klasse) tspan.setAttribute("class", teil.klasse);
+      tspan.textContent = teil.text;
+      t.appendChild(tspan);
+    });
+    return t;
+  }
+
+  var jahr = D.aktuelles_jahr;
+  var jahresDaten = D.jahre[String(jahr)];
+  var vwh = D.verwaltungs_vermoegenshaushalt_aktuell;
+  var referate = D.referate_aktuell || [];
+  var referateSummeEinnahmen = referate.reduce(function (s, r) { return s + r.einnahmen; }, 0);
+
+  /* ---------------- Leichte Sprache ---------------- */
+  var LS_KEY_LEICHT = "papierpanther-leichte-sprache";
+  var leicht = false;
+  try { leicht = localStorage.getItem(LS_KEY_LEICHT) === "1"; } catch (err) { /* Storage kann gesperrt sein */ }
+
+  var TEXTE = {
+    "hinweis": {
+      n: "<strong>PapierPanther ist kein Angebot der Stadt Ingolstadt.</strong> " +
+        "Alle Zahlen stammen aus der amtlichen Haushaltssatzung im Ratsinfoportal. " +
+        "Wir haben sie gegen die gedruckten Summenzeilen geprüft. Verbindlich ist " +
+        "trotzdem immer das Originaldokument, das unten verlinkt ist.",
+      l: "<strong>PapierPanther ist kein Angebot der Stadt Ingolstadt.</strong> " +
+        "Alle Zahlen kommen aus der amtlichen Haushalts-Satzung. Die finden Sie im " +
+        "Rats-Info-Portal der Stadt. Wir haben die Zahlen geprüft. Das Original-Dokument " +
+        "gilt aber immer. Sie finden es unten als Link.",
+    },
+    "lede": {
+      n: "Wofür gibt die Stadt ihr Geld aus, und woher kommt es? Diese Seite erklärt " +
+        "die Kameralistik, die Buchführung der Stadt, zeigt ihre Grenzen und macht den " +
+        "aktuellen Haushalt als Diagramme sichtbar.",
+      l: "Diese Seite erklärt den Haushalt der Stadt Ingolstadt. Ein Haushalt ist ein " +
+        "Plan für Geld. Er zeigt: Woher kommt Geld? Wofür gibt die Stadt Geld aus? " +
+        "Wir zeigen die Zahlen auch als Bilder.",
+    },
+    "kam-h2": { n: "Was ist Kameralistik?", l: "Was ist Kameralistik?" },
+    "kam-p1": {
+      n: "Ingolstadt führt seine Bücher kameralistisch. Das heißt: Der Haushalt zeigt, " +
+        "was in einem Jahr an Geld reinkommt und rausgeht. Vermögen und Schulden zeigt " +
+        "er nicht. Er besteht aus zwei Teilen.",
+      l: "Ingolstadt rechnet nach einem bestimmten System. Das System heißt Kameralistik. " +
+        "Der Haushalt zeigt: Geld kommt rein. Geld geht raus. Der Haushalt zeigt nicht, " +
+        "wie viel die Stadt besitzt. Er zeigt auch nicht, wie hoch die Schulden sind. " +
+        "Der Haushalt hat zwei Teile.",
+    },
+    "kam-p2": {
+      n: "Der <strong>Verwaltungshaushalt</strong> zeigt den laufenden Betrieb: Personal, " +
+        "Energie, Zinsen, laufende Zuschüsse. Der <strong>Vermögenshaushalt</strong> zeigt " +
+        "Investitionen: Bauprojekte, Grundstückskäufe, Kredittilgung. Beide müssen für " +
+        "sich ausgeglichen sein. Reicht das Geld im Verwaltungshaushalt nicht, springt " +
+        "eine <strong>Zuführung</strong> aus dem Vermögenshaushalt ein. Das ist der " +
+        "wichtigste Mechanismus der Kameralistik: Er bestimmt, wie viel Geld am Ende für " +
+        "Investitionen übrig bleibt.",
+      l: "Ein Teil heißt <strong>Verwaltungshaushalt</strong>. Er zeigt die laufenden " +
+        "Kosten. Zum Beispiel Gehälter, Strom und Zinsen. Der andere Teil heißt " +
+        "<strong>Vermögenshaushalt</strong>. Er zeigt große Ausgaben. Zum Beispiel neue " +
+        "Gebäude oder Grundstücke. Beide Teile müssen ausgeglichen sein. Einnahmen und " +
+        "Ausgaben müssen also gleich groß sein. Reicht das Geld im Verwaltungshaushalt " +
+        "nicht, hilft der Vermögenshaushalt aus. Das nennt man <strong>Zuführung</strong>.",
+    },
+    "kam-beispiel-h3": {
+      n: "So sieht das im aktuellen Haushalt aus",
+      l: "So ist es im Haushalt gerade",
+    },
+    "prob-h2": { n: "Wo es hakt", l: "Was nicht so gut ist" },
+    "prob-intro": {
+      n: "Bayerns Kommunen dürfen seit 2007 selbst wählen, ob sie kameralistisch oder " +
+        "doppisch (nach kaufmännischer, doppelter Buchführung) haushalten. Eine " +
+        "Umstellung war nie Pflicht. Ingolstadt ist bei der Kameralistik geblieben, wie " +
+        "die meisten bayerischen Kommunen. Andere Bundesländer haben ihre Kommunen zur " +
+        "Doppik verpflichtet.",
+      l: "Städte und Gemeinden in Bayern dürfen selbst wählen. Sie können mit " +
+        "Kameralistik rechnen. Oder mit einem anderen System. Das andere System heißt " +
+        "Doppik. Das gilt seit dem Jahr 2007. Ingolstadt rechnet weiter mit Kameralistik. " +
+        "Das machen die meisten bayerischen Städte so. Andere Bundesländer schreiben " +
+        "ihren Städten die Doppik vor.",
+    },
+    "prob-folgen": {
+      n: "Das hat Folgen dafür, was der Haushalt zeigt und was er verschweigt.",
+      l: "Die Kameralistik hat Nachteile.",
+    },
+    "prob-abschreibung": {
+      n: "<strong>Keine Abschreibungen.</strong> Ein neu gebautes Schulgebäude taucht " +
+        "nur im Jahr des Baus als Ausgabe auf. Dass es danach über Jahrzehnte an Wert " +
+        "verliert und irgendwann saniert werden muss, zeigt der Haushalt nicht. Ein " +
+        "Sanierungsstau wird erst sichtbar, wenn er akut wird, nicht während er entsteht.",
+      l: "<strong>Keine Abschreibungen.</strong> Eine neue Schule kostet Geld. Dieses " +
+        "Geld steht nur einmal im Haushalt. Und zwar in dem Jahr, in dem die Schule " +
+        "gebaut wird. Später wird die Schule älter. Sie verliert an Wert. Irgendwann " +
+        "muss sie repariert werden. Das steht nirgends im Haushalt. Man sieht das " +
+        "Problem erst, wenn es zu spät ist.",
+    },
+    "prob-bilanz": {
+      n: "<strong>Keine Bilanz.</strong> Der Haushalt zeigt, was in einem Jahr an Geld " +
+        "rein- und rausfließt. Wie viel die Stadt insgesamt besitzt oder schuldet, zeigt " +
+        "er nicht. Ob Ingolstadt über die Jahre reicher oder ärmer wird, lässt sich " +
+        "daraus allein nicht ablesen.",
+      l: "<strong>Keine Bilanz.</strong> Der Haushalt zeigt nur ein Jahr. Er zeigt: Geld " +
+        "kommt rein, Geld geht raus. Er zeigt nicht, was die Stadt insgesamt besitzt. Er " +
+        "zeigt auch nicht, wie hoch die Schulden insgesamt sind. Ob Ingolstadt reicher " +
+        "oder ärmer wird, sieht man im Haushalt nicht.",
+    },
+    "prob-generationen": {
+      n: "<strong>Verschobene Generationengerechtigkeit.</strong> Investitionen werden " +
+        "nicht über ihre Nutzungsdauer verteilt. Deshalb zahlt nicht zwingend die " +
+        "Generation, die von einer Investition profitiert. Eine heute gebaute Straße " +
+        "kann komplett aus dem laufenden Haushalt oder mit Krediten von heute bezahlt " +
+        "werden, obwohl sie jahrzehntelang genutzt wird.",
+      l: "<strong>Nicht fair für später.</strong> Eine neue Straße wird heute gebaut. " +
+        "Aber sie wird noch lange genutzt, vielleicht 30 Jahre. Trotzdem zahlt oft nur " +
+        "die heutige Generation dafür. Die Kosten werden nicht auf die Jahre verteilt, " +
+        "in denen die Straße genutzt wird.",
+    },
+    "prob-ausgeglichen": {
+      n: "<strong>„Ausgeglichen“ heißt nicht gesund.</strong> Ein kameralistischer " +
+        "Haushalt muss per Gesetz ausgeglichen sein. Einnahmen und Ausgaben werden über " +
+        "Zuführungen, Rücklagen und Kredite so lange verrechnet, bis beide Summen genau " +
+        "übereinstimmen. In Ingolstadt gelingt das von 2023 bis 2025 bis auf den Cent. " +
+        "Der Entwurf für 2026 zeigt zum ersten Mal eine Lücke, die so nicht mehr " +
+        "ausgeglichen ist.",
+      l: "<strong>Ausgeglichen heißt nicht gesund.</strong> Ein Haushalt nach " +
+        "Kameralistik muss laut Gesetz ausgeglichen sein. Einnahmen und Ausgaben werden " +
+        "so lange verrechnet, bis sie gleich groß sind. Das klappt in Ingolstadt von " +
+        "2023 bis 2025. Für das Jahr 2026 zeigt der Entwurf zum ersten Mal eine Lücke.",
+    },
+    "prob-beispiel-h3": {
+      n: "Am Beispiel des aktuellen Haushalts",
+      l: "Ein Beispiel aus dem aktuellen Haushalt",
+    },
+    "diag-h2": { n: "Die Zahlen als Diagramm", l: "Die Zahlen als Bild" },
+  };
+
+  function texteAnwenden() {
+    Object.keys(TEXTE).forEach(function (id) {
+      var el = document.getElementById("txt-" + id);
+      if (el) el.innerHTML = TEXTE[id][leicht ? "l" : "n"];
+    });
+    baueBeispielKameralistik();
+    baueBeispielProbleme();
+    baueDiagrammHauptgruppen();
+    baueDiagrammReferate();
+  }
+
+  /* ---------------- Beispiel-Kasten: Kameralistik ---------------- */
+  function baueBeispielKameralistik() {
+    var el = document.getElementById("beispiel-kameralistik");
+    var zufuehrung = D.auswahl_untergruppen && D.auswahl_untergruppen["280"];
+    var einn = mio(vwh.verwaltungshaushalt_einnahmen);
+    var ausg = mio(vwh.verwaltungshaushalt_ausgaben);
+    var vmhWert = mio(vwh.vermoegenshaushalt_einnahmen);
+    var zufWert = zufuehrung ? mio(zufuehrung["ansatz_" + jahr]) : null;
+
+    if (leicht) {
+      el.innerHTML =
+        "<p>Im Jahr " + jahr + " hat der Verwaltungshaushalt <span class=\"kennzahl\">" +
+        einn + "</span> Einnahmen. Er hat <span class=\"kennzahl\">" + ausg + "</span> " +
+        "Ausgaben. Der Vermögenshaushalt hat auf beiden Seiten " + vmhWert + ". Das " +
+        "muss so sein. Das schreibt das Gesetz vor.</p>" +
+        (zufWert
+          ? "<p>Der Vermögenshaushalt gibt dem Verwaltungshaushalt " + zufWert +
+            ". Das nennt man Zuführung.</p>"
+          : "");
+    } else {
+      el.innerHTML =
+        "<p>Im Haushaltsjahr " + jahr + " stehen im Verwaltungshaushalt " +
+        "<span class=\"kennzahl\">" + einn + "</span> Einnahmen und " +
+        "<span class=\"kennzahl\">" + ausg + "</span> Ausgaben gegenüber. Der " +
+        "Vermögenshaushalt ist mit " + vmhWert + " auf beiden Seiten ausgeglichen. Das " +
+        "schreibt das Gesetz für ihn vor.</p>" +
+        (zufWert
+          ? "<p>Die Zuführung vom Vermögenshaushalt zum Verwaltungshaushalt beträgt " +
+            zufWert + ".</p>"
+          : "");
+    }
+  }
+
+  /* ---------------- Beispiel-Kasten: Probleme ---------------- */
+  function baueBeispielProbleme() {
+    var el = document.getElementById("beispiel-probleme");
+    var luecke = mio(vwh.zuschussbedarf);
+
+    if (leicht) {
+      el.innerHTML =
+        "<p>Der Verwaltungshaushalt " + jahr + " hat zu wenig eigenes Geld. Es fehlen " +
+        "<span class=\"kennzahl\">" + luecke + "</span>. Das steht so in der " +
+        "Haushaltssatzung. Als wir die Daten gesammelt haben, war das Dokument noch " +
+        "ein Entwurf.</p>" +
+        "<p>Die Stadt spart seit dem Jahr 2024. Am 18. Dezember 2025 hat der Stadtrat " +
+        "weitere Spar-Maßnahmen beschlossen. Frühere Spar-Pakete haben nicht " +
+        "gereicht.</p>";
+    } else {
+      el.innerHTML =
+        "<p>Der Verwaltungshaushalt " + jahr + " deckt seine laufenden Ausgaben nicht " +
+        "aus eigenen Einnahmen. Es bleibt ein Zuschussbedarf von " +
+        "<span class=\"kennzahl\">" + luecke + "</span>. Das steht so in der " +
+        "Haushaltssatzung, die zum Zeitpunkt der Datenerhebung noch als Entwurf " +
+        "markiert war.</p>" +
+        "<p>Die Stadt steckt laut eigenem Vorbericht seit 2024 in einem mehrstufigen " +
+        "Sparprozess. Am 18. Dezember 2025 hat der Stadtrat einen weiteren Beschluss " +
+        "zur Haushaltskonsolidierung gefasst, weil frühere Sparpakete nicht reichten, " +
+        "um den Haushalt dauerhaft auszugleichen.</p>";
+    }
+  }
+
+  /* ---------------- Diagramm-Bildunterschriften ---------------- */
+  var DIAGRAMM_FUESSE = {
+    "hauptgruppen-hinweis": {
+      n: "Auf einen Balken klicken oder mit Tab und Eingabetaste anspringen zeigt die " +
+        "einzelnen Untergruppen dahinter. Bei manchen Untergruppen erklärt das Symbol " +
+        "„i“, was sich dahinter verbirgt.",
+      l: "Klicken Sie auf einen Balken. Dann sehen Sie mehr Details dazu. Bei manchen " +
+        "Zeilen gibt es ein „i“. Klicken Sie darauf für eine Erklärung.",
+    },
+    "hauptgruppen": {
+      n: "Ansätze " + jahr + " nach Hauptgruppen, aus der Gruppierungsübersicht der " +
+        "Haushaltssatzung. Die Balkenlänge zeigt den Anteil an der jeweiligen Summe.",
+      l: "Zahlen für " + jahr + " aus der Haushaltssatzung. Ein langer Balken heißt: " +
+        "großer Anteil am Geld.",
+    },
+    "fluss": {
+      n: "Werte aus der Haushaltssatzung " + jahr + ". Der Vermögenshaushalt ist per " +
+        "Gesetz immer ausgeglichen. Ob der Verwaltungshaushalt es auch ist, zeigt der " +
+        "Zuschussbedarf darunter.",
+      l: "Zahlen aus der Haushaltssatzung " + jahr + ". Der Vermögenshaushalt ist immer " +
+        "ausgeglichen, das schreibt das Gesetz vor. Ob der Verwaltungshaushalt " +
+        "ausgeglichen ist, zeigt der Zuschussbedarf darunter.",
+    },
+    "zeitreihe": {
+      n: "Gefüllte Punkte zeigen das geprüfte Ist-Ergebnis. Helle Punkte zeigen den " +
+        "Ansatz, also die Planung, die noch nicht abgerechnet ist. Zusammengesetzt aus " +
+        "vier Gruppierungsübersichten (" + Object.keys(D.jahre).join(", ") + ").",
+      l: "Volle Punkte zeigen echte, geprüfte Zahlen. Helle Punkte zeigen die Planung. " +
+        "Die Planung ist noch nicht abgerechnet.",
+    },
+    "referate": {
+      n: "Referats-Budgets aus der Haushaltssatzung " + jahr + " (Anlage 1). Das sind " +
+        mio(referateSummeEinnahmen) + " von den " + mio(vwh.verwaltungshaushalt_einnahmen) +
+        " Einnahmen im gesamten Verwaltungshaushalt. Der Rest sind zentrale Eckwerte " +
+        "(zum Beispiel Steuern) und nicht budgetierte Posten, die keinem einzelnen " +
+        "Referat zugeordnet sind.",
+      l: "Zahlen aus der Haushaltssatzung " + jahr + ". Das zeigt nur einen Teil des " +
+        "Verwaltungshaushalts: den Teil, der einzelnen Referaten zugeordnet ist.",
+    },
+  };
+
+  function aktualisiereDiagrammFuesse() {
+    Object.keys(DIAGRAMM_FUESSE).forEach(function (id) {
+      var el = document.getElementById("fuss-" + id);
+      if (el) el.textContent = DIAGRAMM_FUESSE[id][leicht ? "l" : "n"];
+    });
+  }
+
+  // ---------- Glossar fuer Gruppen, die ohne Kontext schwer verstaendlich sind ----------
+  // Quelle: Anlage 2 zu Nr. 2.1 VVKommHSyst-Kameralistik ("Gruppierungsplan
+  // fuer die Haushalte der Gemeinden und Gemeindeverbaende"), Bayerisches
+  // Staatsministerium des Innern.
+  var GRUPPEN_GLOSSAR = {
+    "01": {
+      n: "Der Anteil der Stadt an Steuern, die Bund und Länder gemeinsam einnehmen, vor allem Einkommen- und Umsatzsteuer.",
+      l: "Der Anteil der Stadt an Steuern von Bund und Ländern.",
+    },
+    "03": {
+      n: "Abgaben, die wie Steuern wirken, aber keine sind, zum Beispiel Fremdenverkehrsbeiträge.",
+      l: "Geld, das wie eine Steuer wirkt, aber keine ist.",
+    },
+    "05": {
+      n: "Zusätzliches Geld vom Land für Kommunen mit besonderem Finanzbedarf.",
+      l: "Extra-Geld vom Land für Städte, die es besonders brauchen.",
+    },
+    "06": {
+      n: "Weiteres Geld von Bund, Land oder Gemeinden, das nicht für einen bestimmten Zweck gebunden ist.",
+      l: "Geld von anderen Stellen, das die Stadt frei verwenden darf.",
+    },
+    "08": {
+      n: "Einnahmen aus besonderen Abrechnungen, zum Beispiel abgetretene Bußgelder.",
+      l: "Geld aus besonderen Abrechnungen, zum Beispiel Bußgelder.",
+    },
+    "09": {
+      n: "Ausgleichszahlungen des Landes, unter anderem im Zusammenhang mit Arbeitsmarktreformen.",
+      l: "Ausgleichs-Geld vom Land.",
+    },
+    "16": {
+      n: "Geld, das die Stadt sich von anderen Stellen zurückholt, weil sie zuerst in Vorleistung gegangen ist.",
+      l: "Geld, das die Stadt zurückbekommt, weil sie zuerst gezahlt hat.",
+    },
+    "17": {
+      n: "Zuschüsse für den laufenden Betrieb, nicht für Investitionen, zum Beispiel für soziale Einrichtungen.",
+      l: "Geld für laufende Aufgaben, nicht für Bauprojekte.",
+    },
+    "19": {
+      n: "Der Bund beteiligt sich an bestimmten Sozialleistungen, etwa der Grundsicherung nach SGB II.",
+      l: "Geld vom Bund für bestimmte Sozial-Leistungen.",
+    },
+    "20": {
+      n: "Zinsen, die die Stadt für verliehenes Geld oder Guthaben bekommt.",
+      l: "Zinsen, die die Stadt bekommt.",
+    },
+    "27": {
+      n: "Interne Rechenposten, keine echten Geldflüsse. Sie dienen nur der eigenen Kostenrechnung.",
+      l: "Zahlen nur für die eigene Berechnung, kein echtes Geld.",
+    },
+    "28": {
+      n: "Geld, das der Vermögenshaushalt an den Verwaltungshaushalt überweist, damit dessen laufende Ausgaben gedeckt sind.",
+      l: "Geld, das der Vermögenshaushalt dem Verwaltungshaushalt gibt.",
+    },
+    "31": {
+      n: "Geld aus den Rücklagen der Stadt: Erspartes aus früheren Jahren, das jetzt verwendet wird.",
+      l: "Geld, das die Stadt vorher gespart hat und jetzt ausgibt.",
+    },
+    "32": {
+      n: "Zurückgezahlte Darlehen, die die Stadt früher selbst vergeben hat, zum Beispiel an eigene Unternehmen.",
+      l: "Geld, das die Stadt zurückbekommt. Sie hatte es früher selbst verliehen.",
+    },
+    "36": {
+      n: "Zuschüsse von Bund, Land oder anderen Stellen für ein bestimmtes Bauprojekt oder eine Anschaffung.",
+      l: "Geld von anderen Stellen für ein bestimmtes Bauprojekt.",
+    },
+    "37": {
+      n: "Neu aufgenommene Kredite. „Private Unternehmen“ steht hier laut dem offiziellen bayerischen Gruppierungsplan für Kreditinstitute, also Banken und Sparkassen.",
+      l: "Geld, das sich die Stadt neu leiht. Meistens von einer Bank.",
+    },
+    "56": {
+      n: "Zusätzliche Ausgaben für Beschäftigte, etwa Fortbildungen oder Arbeitskleidung.",
+      l: "Extra-Ausgaben für die Mitarbeitenden der Stadt.",
+    },
+    "67": {
+      n: "Ausgaben, die die Stadt sich von anderen Stellen zurückholt: technisch eine Ausgabe, wirtschaftlich eher eine Weiterverrechnung.",
+      l: "Geld, das die Stadt zuerst zahlt und sich danach zurückholt.",
+    },
+    "68": {
+      n: "Interne Rechenposten wie kalkulatorische Abschreibungen. Sie dienen nur der eigenen Kostenrechnung (etwa für Gebühren), nicht der Vermögensbuchführung, siehe „Wo es hakt“ oben.",
+      l: "Zahlen, die die Stadt nur für die eigene Berechnung braucht.",
+    },
+    "71": {
+      n: "Ausgaben, die die Stadt an andere für laufende Zwecke zahlt, nicht für Bauprojekte.",
+      l: "Geld, das die Stadt anderen für laufende Aufgaben gibt.",
+    },
+    "72": {
+      n: "Zuschüsse, mit denen die Stadt anderen bei der Rückzahlung von Krediten hilft.",
+      l: "Geld, mit dem die Stadt anderen bei Schulden hilft.",
+    },
+    "80": {
+      n: "Zinsen, die die Stadt für ihre eigenen Kredite zahlen muss.",
+      l: "Zinsen, die die Stadt für ihre Schulden zahlt.",
+    },
+    "81": {
+      n: "Anteile an der Gewerbesteuer, die die Stadt an Bund und Land abführen muss (Gewerbesteuerumlage).",
+      l: "Geld von der Gewerbesteuer, das die Stadt an Bund und Land weitergibt.",
+    },
+    "83": {
+      n: "Pflichtbeiträge, die die Stadt an Land oder Bezirk zahlen muss, zum Beispiel die Bezirksumlage.",
+      l: "Geld, das die Stadt an Land oder Bezirk zahlen muss.",
+    },
+    "86": {
+      n: "Geld, das der Verwaltungshaushalt an den Vermögenshaushalt abgibt, wenn dort mehr übrig ist, als für laufende Zwecke gebraucht wird.",
+      l: "Geld, das der Verwaltungshaushalt dem Vermögenshaushalt gibt.",
+    },
+    "90": {
+      n: "Geld, das der Vermögenshaushalt an den Verwaltungshaushalt überweist, damit dessen laufende Ausgaben gedeckt sind.",
+      l: "Geld, das der Vermögenshaushalt dem Verwaltungshaushalt gibt.",
+    },
+    "91": {
+      n: "Geld, das in die Rücklagen der Stadt eingezahlt wird: für später zurückgelegt.",
+      l: "Geld, das die Stadt zurücklegt, für später.",
+    },
+    "92": {
+      n: "Kredite, die die Stadt selbst an andere vergibt, zum Beispiel an ihre eigenen Unternehmen.",
+      l: "Geld, das die Stadt selbst verleiht.",
+    },
+    "93": {
+      n: "Käufe von dauerhaftem Vermögen wie Grundstücken oder größeren Anschaffungen.",
+      l: "Geld für Käufe, die lange halten, zum Beispiel Grundstücke.",
+    },
+    "97": {
+      n: "Rückzahlung von Krediten, die die Stadt in der Vergangenheit aufgenommen hat.",
+      l: "Geld, mit dem die Stadt alte Schulden zurückzahlt.",
+    },
+    "98": {
+      n: "Zuschüsse, die die Stadt selbst an andere Stellen für deren Bauprojekte zahlt.",
+      l: "Geld, das die Stadt anderen für ein Bauprojekt gibt.",
+    },
+    "99": {
+      n: "Sonstige Posten, zum Beispiel Kosten der Kreditbeschaffung.",
+      l: "Verschiedene kleinere Posten, zum Beispiel Kosten fürs Ausleihen von Geld.",
+    },
+  };
+
+  function wortUmbruch(text, maxZeichen) {
+    var woerter = text.split(" "), zeilen = [], aktuell = "";
+    woerter.forEach(function (wort) {
+      var versuch = aktuell ? aktuell + " " + wort : wort;
+      if (versuch.length > maxZeichen && aktuell) { zeilen.push(aktuell); aktuell = wort; }
+      else { aktuell = versuch; }
+    });
+    if (aktuell) zeilen.push(aktuell);
+    return zeilen;
+  }
+
+  // ---------- Diagramm 1: Hauptgruppen als Balken, aufklappbar ----------
+  var offeneHauptgruppe = null;
+  var offenesInfoCode = null;
+
+  function baueDiagrammHauptgruppen() {
+    var el = document.getElementById("diagramm-hauptgruppen");
+    var hg = jahresDaten.hauptgruppen;
+    var einnCodes = ["0", "1", "2", "3"];
+    var ausgCodes = ["4", "5", "6", "7", "8", "9"];
+    var einnFarben = ["var(--einnahmen-1)", "var(--einnahmen-2)", "var(--einnahmen-3)", "var(--einnahmen-4)"];
+    var ausgFarben = ["var(--ausgaben-1)", "var(--ausgaben-2)", "var(--ausgaben-3)",
+                       "var(--ausgaben-4)", "var(--ausgaben-5)", "var(--ausgaben-6)"];
+
+    var breite = 820, balkenHoehe = 30, unterHoehe = 16, luecke = 10, unterLuecke = 4;
+    var linksRand = 4, rechtsRand = 4, oben = 34, unterEinzug = 26;
+    var gruppenAbstand = 22;
+    var maxBreite = breite - linksRand - rechtsRand - 210;
+    // Die Info-Marke steht rechts neben der Zeile — deren Breite variiert
+    // (Bezeichnung + Gruppenkontext, unterschiedlich lang). Statt zu
+    // schaetzen, wird die tatsaechliche Textlaenge erst gemessen, nachdem
+    // die Zeile im DOM haengt (siehe messeMarkenPositionen unten).
+    var markenZuMessen = [];
+
+    // Hauptgruppen 5 und 6 teilen sich im Original einen Abschnitt (siehe
+    // haushalt_lesen.py) und werden hier zu einem Balken zusammengefasst.
+    function anzeigeListe(codes) {
+      var gesehen = {}, liste = [];
+      codes.forEach(function (code) {
+        if (gesehen[code]) return;
+        var w = hg[code];
+        if (!w) return;
+        gesehen[code] = true;
+        if (w.zusammengefasst_mit) {
+          var partner = hg[w.zusammengefasst_mit];
+          gesehen[w.zusammengefasst_mit] = true;
+          liste.push({ schluessel: [code, w.zusammengefasst_mit].sort().join("+"),
+            bezeichnung: w.bezeichnung, ansatz: w.ansatz + partner.ansatz,
+            untergruppen: w.untergruppen });
+        } else {
+          liste.push({ schluessel: code, bezeichnung: w.bezeichnung, ansatz: w.ansatz,
+            untergruppen: w.untergruppen });
+        }
+      });
+      return liste;
+    }
+
+    function balken(x, y, breiteBalken, hoeheBalken, farbe) {
+      return svgEl("rect", { x: x, y: y, width: Math.max(2, breiteBalken), height: hoeheBalken,
+        rx: 3, fill: farbe });
+    }
+
+    function gruppe(codes, farben, summe, startY, titel) {
+      var kinder = [text(linksRand, startY - 12, titel, "diagramm-titel")];
+      var y = startY;
+      anzeigeListe(codes).forEach(function (w, i) {
+        var offen = offeneHauptgruppe === w.schluessel;
+        var anteil = w.ansatz / summe;
+        var bw = anteil * maxBreite;
+        var rect = balken(linksRand, y, bw, balkenHoehe, farben[i % farben.length]);
+        var lbl = text(linksRand + Math.max(2, bw) + 10, y + balkenHoehe / 2 + 4,
+          w.bezeichnung + ": " + mio(w.ansatz) + " (" + pct(w.ansatz, summe) + ")", "balken-label");
+        var titelEl = svgEl("title", {}, []);
+        titelEl.textContent = (offen ? "Zuklappen: " : "Aufklappen: ") + w.bezeichnung;
+        var g = svgEl("g", { class: "balken-gruppe", tabindex: "0", role: "button",
+          "aria-expanded": offen ? "true" : "false" }, [rect, lbl, titelEl]);
+        g.addEventListener("click", function () {
+          offeneHauptgruppe = offen ? null : w.schluessel;
+          baueDiagrammHauptgruppen();
+        });
+        g.addEventListener("keydown", function (ev) {
+          if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); g.dispatchEvent(new Event("click")); }
+        });
+        kinder.push(g);
+        y += balkenHoehe + luecke;
+
+        if (offen && w.untergruppen) {
+          var untergeordnet = w.untergruppen.filter(function (u) { return u.ansatz !== 0; })
+            .sort(function (a, b) { return b.ansatz - a.ansatz; });
+          untergeordnet.forEach(function (u) {
+            var uAnteil = u.ansatz / w.ansatz;
+            var ubw = uAnteil * (maxBreite - unterEinzug);
+            var textX = linksRand + unterEinzug + Math.max(2, ubw) + 8;
+            var glossarCode = u.gruppe ? u.gruppe.code : u.code;
+            var glossar = GRUPPEN_GLOSSAR[glossarCode];
+
+            kinder.push(balken(linksRand + unterEinzug, y, ubw, unterHoehe, "var(--border-strong)"));
+            // Gruppenbezeichnung fett voran (die verstaendliche Kategorie),
+            // die konkrete Untergruppe mit Betrag normal dahinter — bei
+            // Ingolstadts eigenem PDF oft stark abgekuerzt und darum als
+            // Kontext statt als Hauptaussage besser aufgehoben.
+            var teile;
+            if (u.gruppe) {
+              teile = [
+                { text: u.gruppe.bezeichnung, klasse: "balken-label-fett" },
+                { text: "  ·  " + u.bezeichnung + ": " + mio(u.ansatz), klasse: "balken-label-klein" },
+              ];
+            } else {
+              teile = [
+                { text: u.bezeichnung, klasse: "balken-label-fett" },
+                { text: ": " + mio(u.ansatz), klasse: "balken-label-klein" },
+              ];
+            }
+            var zeile = textMitTeilen(textX, y + unterHoehe / 2 + 4, teile);
+            kinder.push(zeile);
+
+            if (glossar) {
+              var infoOffen = offenesInfoCode === u.code;
+              var kreisY = y + unterHoehe / 2;
+              var kreis = svgEl("circle", { cx: 0, cy: 0, r: 7 });
+              var kreisText = text(0, 1, "i");
+              var marke = svgEl("g", { class: "info-marke", tabindex: "0", role: "button",
+                "aria-expanded": infoOffen ? "true" : "false",
+                transform: "translate(0," + kreisY + ")" }, [kreis, kreisText]);
+              var infoTitel = svgEl("title", {}, []);
+              infoTitel.textContent = infoOffen ? "Erklärung schließen" : "Was bedeutet das?";
+              marke.appendChild(infoTitel);
+              marke.addEventListener("click", function (ev) {
+                ev.stopPropagation();
+                offenesInfoCode = infoOffen ? null : u.code;
+                baueDiagrammHauptgruppen();
+              });
+              marke.addEventListener("keydown", function (ev) {
+                if (ev.key === "Enter" || ev.key === " ") {
+                  ev.preventDefault(); ev.stopPropagation();
+                  marke.dispatchEvent(new Event("click"));
+                }
+              });
+              kinder.push(marke);
+              markenZuMessen.push({ marke: marke, zeile: zeile, y: kreisY });
+            }
+
+            y += unterHoehe + unterLuecke;
+
+            if (glossar && offenesInfoCode === u.code) {
+              var zeilen = wortUmbruch(glossar[leicht ? "l" : "n"], 92);
+              zeilen.forEach(function (zeilenText) {
+                kinder.push(text(linksRand + unterEinzug + 8, y + 10, zeilenText, "info-erklaerung"));
+                y += 15;
+              });
+              y += 4;
+            }
+          });
+          y += 6;
+        }
+      });
+      return { kinder: kinder, endY: y };
+    }
+
+    var e = gruppe(einnCodes, einnFarben, jahresDaten.summe_einnahmen, oben, "Einnahmen " + jahr + " nach Hauptgruppen");
+    var a = gruppe(ausgCodes, ausgFarben, jahresDaten.summe_ausgaben, e.endY + gruppenAbstand + 26,
+      "Ausgaben " + jahr + " nach Hauptgruppen");
+
+    var hoehe = a.endY + 20;
+    var svg = svgEl("svg", { viewBox: "0 0 " + breite + " " + hoehe, role: "img",
+      "aria-label": "Hauptgruppen der Einnahmen und Ausgaben " + jahr + ", anklickbar fuer Details" });
+    e.kinder.concat(a.kinder).forEach(function (k) { svg.appendChild(k); });
+
+    el.innerHTML = "";
+    var hinweis = document.createElement("p");
+    hinweis.className = "diagramm-fuss";
+    hinweis.id = "fuss-hauptgruppen-hinweis";
+    el.appendChild(hinweis);
+    el.appendChild(svg);
+
+    // Erst jetzt haengt die Zeile im DOM und hat eine gerenderte Breite —
+    // die Info-Marke direkt danach platzieren statt ihre Position zu raten.
+    markenZuMessen.forEach(function (eintrag) {
+      var laenge = eintrag.zeile.getComputedTextLength();
+      var startX = parseFloat(eintrag.zeile.getAttribute("x"));
+      eintrag.marke.setAttribute("transform", "translate(" + (startX + laenge + 11) + "," + eintrag.y + ")");
+    });
+
+    var fuss = document.createElement("p");
+    fuss.className = "diagramm-fuss";
+    fuss.id = "fuss-hauptgruppen";
+    el.appendChild(fuss);
+    aktualisiereDiagrammFuesse();
+  }
+
+  // baueDiagrammHauptgruppen() wird von texteAnwenden() aufgerufen (unten),
+  // damit sie beim Umschalten auf Leichte Sprache mit neu gebaut wird.
+
+  // ---------- Diagramm 2: Verwaltungshaushalt <-> Vermögenshaushalt ----------
+  (function () {
+    var el = document.getElementById("diagramm-fluss");
+    var breite = 760, hoehe = 260;
+    var boxBreite = 260, boxHoehe = 110;
+    var vwhX = 20, vmhX = breite - boxBreite - 20, boxY = 40;
+
+    var maxWert = Math.max(vwh.verwaltungshaushalt_ausgaben, vwh.verwaltungshaushalt_einnahmen,
+      vwh.vermoegenshaushalt_ausgaben);
+
+    function box(x, titel, einn, ausg, farbeEinn, farbeAusg) {
+      var g = svgEl("g", {}, []);
+      g.appendChild(svgEl("rect", { x: x, y: boxY, width: boxBreite, height: boxHoehe, rx: 8,
+        fill: "none", stroke: "var(--border-strong)" }));
+      g.appendChild(text(x + boxBreite / 2, boxY - 12, titel, "diagramm-titel", "middle"));
+      var bh = 16;
+      var ew = Math.max(2, (einn / maxWert) * (boxBreite - 20));
+      var aw = Math.max(2, (ausg / maxWert) * (boxBreite - 20));
+      g.appendChild(svgEl("rect", { x: x + 10, y: boxY + 20, width: ew, height: bh, rx: 3, fill: farbeEinn }));
+      g.appendChild(text(x + 10, boxY + 20 - 4, "Einnahmen " + mio(einn), "balken-label"));
+      g.appendChild(svgEl("rect", { x: x + 10, y: boxY + 60, width: aw, height: bh, rx: 3, fill: farbeAusg }));
+      g.appendChild(text(x + 10, boxY + 60 - 4, "Ausgaben " + mio(ausg), "balken-label"));
+      return g;
+    }
+
+    var vwhBox = box(vwhX, "Verwaltungshaushalt", vwh.verwaltungshaushalt_einnahmen,
+      vwh.verwaltungshaushalt_ausgaben, "var(--einnahmen-1)", "var(--ausgaben-1)");
+    var vmhBox = box(vmhX, "Vermögenshaushalt", vwh.vermoegenshaushalt_einnahmen,
+      vwh.vermoegenshaushalt_ausgaben, "var(--einnahmen-2)", "var(--ausgaben-2)");
+
+    var pfeilY = boxY + boxHoehe + 45;
+    var pfeil = svgEl("g", {}, [
+      svgEl("line", { x1: vmhX, y1: pfeilY, x2: vwhX + boxBreite, y2: pfeilY, class: "achse-linie",
+        "marker-end": "url(#pfeilspitze)" }),
+      text((vwhX + boxBreite + vmhX) / 2, pfeilY - 8, "Zuführung", "balken-label", "middle"),
+    ]);
+
+    var luecke = vwh.zuschussbedarf;
+    var luecketext = text(breite / 2, pfeilY + 30,
+      "Zuschussbedarf Verwaltungshaushalt: " + mio(luecke), "balken-wert", "middle");
+
+    var defs = svgEl("defs", {}, [
+      (function () {
+        var m = svgEl("marker", { id: "pfeilspitze", markerWidth: 8, markerHeight: 8,
+          refX: 6, refY: 3, orient: "auto" }, []);
+        var p = svgEl("path", { d: "M0,0 L6,3 L0,6 Z", fill: "var(--text-faint)" });
+        m.appendChild(p);
+        return m;
+      })(),
+    ]);
+
+    var svg = svgEl("svg", { viewBox: "0 0 " + breite + " " + hoehe, role: "img",
+      "aria-label": "Verwaltungshaushalt und Vermögenshaushalt im Vergleich" },
+      [defs, vwhBox, vmhBox, pfeil, luecketext]);
+
+    el.innerHTML = "";
+    el.appendChild(svg);
+    var fuss = document.createElement("p");
+    fuss.className = "diagramm-fuss";
+    fuss.id = "fuss-fluss";
+    el.appendChild(fuss);
+  })();
+
+  // ---------- Diagramm 3: Zeitreihe ----------
+  (function () {
+    var el = document.getElementById("diagramm-zeitreihe");
+    var reihe = D.zeitreihe;
+    if (!reihe || !reihe.length) { el.innerHTML = "<p>Keine Zeitreihe verfügbar.</p>"; return; }
+
+    var breite = 760, hoehe = 300, randL = 92, randR = 20, randO = 40, randU = 40;
+    var innenB = breite - randL - randR, innenH = hoehe - randO - randU;
+    var maxWert = Math.max.apply(null, reihe.map(function (z) { return Math.max(z.einnahmen, z.ausgaben); }));
+    var minWert = 0;
+
+    function px(i) { return randL + (i / (reihe.length - 1)) * innenB; }
+    function py(w) { return randO + innenH - ((w - minWert) / (maxWert - minWert)) * innenH; }
+
+    function linie(feld, klasse, punktKlasse) {
+      var d = reihe.map(function (z, i) { return (i === 0 ? "M" : "L") + px(i) + "," + py(z[feld]); }).join(" ");
+      var kinder = [svgEl("path", { d: d, class: klasse })];
+      reihe.forEach(function (z, i) {
+        var attrs = { cx: px(i), cy: py(z[feld]), r: 4, class: punktKlasse };
+        if (z.art === "ansatz") { attrs.class += " punkt-ansatz"; attrs.style = "stroke:" +
+          (feld === "einnahmen" ? "var(--einnahmen-1)" : "var(--ausgaben-1)"); }
+        var kreis = svgEl("circle", attrs, []);
+        var titelEl = svgEl("title", {}, []);
+        titelEl.textContent = z.jahr + " (" + (z.art === "ergebnis" ? "Ist-Ergebnis" : "Ansatz") + "): " + euro(z[feld]);
+        kreis.appendChild(titelEl);
+        kinder.push(kreis);
+      });
+      return kinder;
+    }
+
+    var achsen = [svgEl("line", { x1: randL, y1: randO + innenH, x2: randL + innenB, y2: randO + innenH,
+      class: "achse-linie" })];
+    reihe.forEach(function (z, i) {
+      achsen.push(text(px(i), randO + innenH + 20, String(z.jahr), "achse-text", "middle"));
+    });
+    [0, 0.5, 1].forEach(function (f) {
+      var w = minWert + f * (maxWert - minWert);
+      achsen.push(text(randL - 10, py(w) + 4, mio(w), "achse-text", "end"));
+    });
+
+    var svg = svgEl("svg", { viewBox: "0 0 " + breite + " " + hoehe, role: "img",
+      "aria-label": "Entwicklung von Einnahmen und Ausgaben über die Zeit" });
+    achsen.forEach(function (k) { svg.appendChild(k); });
+    linie("einnahmen", "linie-einnahmen", "punkt-einnahmen").forEach(function (k) { svg.appendChild(k); });
+    linie("ausgaben", "linie-ausgaben", "punkt-ausgaben").forEach(function (k) { svg.appendChild(k); });
+    svg.appendChild(text(randL, 16, "● Einnahmen", "balken-label"));
+    var ausgLabel = text(randL + 100, 16, "● Ausgaben", "balken-label");
+    ausgLabel.style.fill = "var(--ausgaben-1)";
+    svg.appendChild(ausgLabel);
+    var einnLabel = svg.querySelector("text");
+    einnLabel.style.fill = "var(--einnahmen-1)";
+
+    el.innerHTML = "";
+    el.appendChild(svg);
+    var fuss = document.createElement("p");
+    fuss.className = "diagramm-fuss";
+    fuss.id = "fuss-zeitreihe";
+    el.appendChild(fuss);
+  })();
+
+  // ---------- Diagramm 4: Zuschussbedarf je Referat ----------
+  function baueDiagrammReferate() {
+    var el = document.getElementById("diagramm-referate");
+    if (!referate.length) { el.innerHTML = ""; return; }
+
+    var breite = 820, balkenHoehe = 24, luecke = 12, linksRand = 4, rechtsRand = 4, oben = 12;
+    var maxBreite = breite - linksRand - rechtsRand - 260;
+    var sortiert = referate.slice().sort(function (a, b) { return b.zuschussbedarf - a.zuschussbedarf; });
+    var maxWert = Math.max.apply(null, sortiert.map(function (r) { return r.zuschussbedarf; }));
+
+    var kinder = [];
+    var y = oben;
+    sortiert.forEach(function (r) {
+      var anteil = r.zuschussbedarf / maxWert;
+      var bw = anteil * maxBreite;
+      var bezeichnung = "Referat " + r.code + (r.name ? "  " + r.name : "");
+      var rect = svgEl("rect", { x: linksRand, y: y, width: Math.max(2, bw), height: balkenHoehe,
+        rx: 3, fill: "var(--primary)" });
+      var teile = [
+        { text: bezeichnung, klasse: "balken-label-fett" },
+        { text: "  ·  " + mio(r.zuschussbedarf), klasse: "balken-label-klein" },
+      ];
+      var lbl = textMitTeilen(linksRand + Math.max(2, bw) + 10, y + balkenHoehe / 2 + 4, teile);
+      var titelEl = svgEl("title", {}, []);
+      titelEl.textContent = bezeichnung + ": " + euro(r.einnahmen) + " Einnahmen, " +
+        euro(r.ausgaben) + " Ausgaben, " + euro(r.zuschussbedarf) + " Zuschussbedarf";
+      kinder.push(svgEl("g", {}, [rect, lbl, titelEl]));
+      y += balkenHoehe + luecke;
+    });
+
+    var hoehe = y + 4;
+    var svg = svgEl("svg", { viewBox: "0 0 " + breite + " " + hoehe, role: "img",
+      "aria-label": "Zuschussbedarf je Referat " + jahr });
+    kinder.forEach(function (k) { svg.appendChild(k); });
+
+    el.innerHTML = "";
+    var titelWrapper = document.createElement("p");
+    titelWrapper.className = "diagramm-titel";
+    titelWrapper.textContent = "Zuschussbedarf je Referat " + jahr;
+    el.appendChild(titelWrapper);
+    el.appendChild(svg);
+    var fuss = document.createElement("p");
+    fuss.className = "diagramm-fuss";
+    fuss.id = "fuss-referate";
+    el.appendChild(fuss);
+    aktualisiereDiagrammFuesse();
+  }
+
+  // ---------- Quellen ----------
+  (function () {
+    var el = document.getElementById("quellen-block");
+    el.innerHTML = D.quelle_hinweis + " Stand der Daten: " + jahr + "er Haushaltssatzung.";
+  })();
+
+  /* ---------------- Leichte-Sprache-Umschalter ---------------- */
+  texteAnwenden();
+
+  var btnLeicht = document.getElementById("btn-leicht");
+  btnLeicht.setAttribute("aria-pressed", leicht ? "true" : "false");
+  btnLeicht.addEventListener("click", function () {
+    leicht = !leicht;
+    btnLeicht.setAttribute("aria-pressed", leicht ? "true" : "false");
+    try { localStorage.setItem(LS_KEY_LEICHT, leicht ? "1" : "0"); } catch (err) { /* Storage kann gesperrt sein */ }
+    texteAnwenden();
+  });
+})();
+</script>
+
+</body>
+</html>
