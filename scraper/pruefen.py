@@ -144,6 +144,29 @@ def p_nur_oeffentliche_tops(kur, index):
         fehlt(f"{len(fehlerhaft)} kuratierte Eintraege sind nicht oeffentlich: {fehlerhaft}")
 
 
+def p_beschluesse_belegt(beschluesse, index):
+    """
+    Jeder mechanisch extrahierte Beschluss muss zu einem echten TOP gehoeren,
+    und die im Text gefundene Vorlagen-Nummer muss mit der des TOPs
+    uebereinstimmen — schuetzt gegen einen kuenftigen Regex-Fehltreffer in
+    niederschriften_lesen.py, der eine Abstimmung der falschen Vorlage
+    zuordnet (siehe dessen Docstring: Vorlagen-Nummer ist der Schluessel).
+    """
+    ohne_top = [ref for ref in beschluesse if ref not in index]
+    if ohne_top:
+        fehlt(f"{len(ohne_top)} Beschluesse zeigen ins Leere: {ohne_top[:5]}")
+
+    falsche_vorlage = [
+        ref for ref, b in beschluesse.items()
+        if ref in index and index[ref][1].get("vorlage") != b.get("vorlage")
+    ]
+    if falsche_vorlage:
+        fehlt(
+            f"{len(falsche_vorlage)} Beschluesse nennen eine andere Vorlage "
+            f"als ihr TOP: {falsche_vorlage[:5]}"
+        )
+
+
 BEHAUPTET_BESCHLUSS = re.compile(
     r"\b(hat beschlossen|wurde beschlossen|ist beschlossen|"
     r"hat entschieden|wurde entschieden|beschloss)\b", re.I
@@ -268,6 +291,8 @@ def main():
     p_leichte_sprache(kur)
     p_nur_erlaubte_hosts(feed["eintraege"])
     p_nur_oeffentliche_tops(kur, index)
+    if os.path.exists(os.path.join(DATEN_VZ, "beschluesse.json")):
+        p_beschluesse_belegt(lade("beschluesse.json"), index)
     if os.path.exists(os.path.join(DATEN_VZ, "haushalt.json")):
         p_haushalt_summen(lade("haushalt.json"))
     gruende = p_abdeckung(roh, feed["eintraege"])

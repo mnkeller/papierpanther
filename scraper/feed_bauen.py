@@ -32,6 +32,8 @@ STAND_REIHENFOLGE = [
     "Entscheidung geplant",
     "Wird noch beraten",
     "Entscheidung angesetzt",
+    "Beschlossen",   # aus scraper/niederschriften_lesen.py::beschluesse.json
+    "Abgelehnt",     # — der Nachfolgezustand von "Entscheidung angesetzt"
     "Bekanntgabe",
     "Ohne Vorlage",
 ]
@@ -124,6 +126,16 @@ def main():
     eintraege_kuration = kuration["eintraege"]
     heute_iso = date.today().isoformat()
 
+    # Mechanisch aus Niederschriften extrahiert (scraper/niederschriften_lesen.py),
+    # bewusst getrennt von kuration.json — siehe pruefen.py::
+    # p_kein_behaupteter_beschluss. Optional: die Datei existiert erst, wenn
+    # niederschriften_lesen.py einmal gelaufen ist.
+    beschluesse_pfad = os.path.join(DATEN_VZ, "beschluesse.json")
+    beschluesse = {}
+    if os.path.exists(beschluesse_pfad):
+        with open(beschluesse_pfad, encoding="utf-8") as f:
+            beschluesse = json.load(f)
+
     # Index ueber alle Tagesordnungspunkte, Schluessel mit Quellen-Praefix.
     # top_ref() loest dabei blosse "Ö"-TOPs (Aenderungsantraege, "hierzu"-
     # Stellungnahmen) ueber ihre Position auf, siehe referenzen.py — sonst
@@ -195,6 +207,18 @@ def main():
         sitzung, top = leitstation(alle)
         stand, stand_datum = stand_ableiten(top, heute_iso)
 
+        # Liegt ein aus der Niederschrift extrahierter Beschluss zu genau
+        # dieser Station vor, ersetzt er den abgeleiteten Stand — er ist die
+        # eigentliche Beobachtung, "Entscheidung angesetzt" nur die Vermutung
+        # aus dem Beratungsweg davor.
+        beschluss_ref = top_ref(
+            sitzung.get("quelle", "stadt"), sitzung, top, bare_positionen(sitzung)
+        )
+        beschluss = beschluesse.get(beschluss_ref)
+        if beschluss:
+            stand = "Beschlossen" if beschluss["ergebnis"] == "beschlossen" else "Abgelehnt"
+            stand_datum = sitzung["datum_anzeige"]
+
         stationen = sorted(
             (
                 {
@@ -235,6 +259,12 @@ def main():
                 "stand": stand,
                 "stand_datum": stand_datum,
                 "niederschrift_url": niederschrift,
+                # Wörtlicher Beschlusstext, nur wenn beschluss_ref oben einen
+                # Treffer hatte — siehe niederschriften_lesen.py.
+                "beschluss": (
+                    {"formel": beschluss["formel"], "text": beschluss["text"]}
+                    if beschluss else None
+                ),
                 # --- unveraenderte Angaben aus der Quelle ---
                 "quelle": sitzung.get("quelle", "stadt"),
                 "amtlicher_titel": top["titel"],

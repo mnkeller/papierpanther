@@ -331,6 +331,22 @@
   .stand-entscheidung { background: #eef1f6; color: #2f4a70; border-color: #2f4a7030; }
   .stand-wird { background: #fdf3e0; color: #96551f; border-color: #96551f30; }
   .stand-bekanntgabe { background: #f0eef6; color: #55467e; border-color: #55467e30; }
+  .stand-beschlossen { background: #eaf4ec; color: #1e6b3a; border-color: #1e6b3a30; }
+  .stand-abgelehnt { background: #fbeaec; color: var(--accent); border-color: #b00e2b30; }
+
+  /* Woertlicher Beschlusstext aus der Niederschrift — bewusst optisch von
+     der redaktionellen Zusammenfassung (.card-text) abgesetzt, damit klar
+     bleibt: das ist Originalzitat, nicht unsere Formulierung. */
+  .beschluss-original {
+    margin-top: .6rem; padding: .7rem .9rem; border-radius: 8px;
+    background: var(--bg-warm); border-left: 3px solid var(--border-strong);
+    font-size: .86rem; color: var(--text-muted);
+  }
+  .beschluss-original summary {
+    cursor: pointer; font-size: .78rem; font-weight: 600;
+    color: var(--text-faint); text-transform: uppercase; letter-spacing: .03em;
+  }
+  .beschluss-original p { margin-top: .5rem; }
 
   .ortsvermerk { margin-top: .6rem; font-size: .84rem; color: var(--text-muted); }
 
@@ -740,6 +756,10 @@
       n: 'Wie abgestimmt wurde, steht in der Niederschrift der Sitzung. Sie erscheint meist vier bis acht Wochen später.',
       l: 'Wie der Stadt-Rat abgestimmt hat, steht im Protokoll. Das Protokoll kommt meist erst nach 4 bis 8 Wochen.'
     },
+    beschlussOriginalLabel: {
+      n: 'Amtlicher Beschlusstext (Niederschrift)',
+      l: 'So steht es im Protokoll',
+    },
     herkunftBza:     { n: 'Bezirksausschuss', l: 'Bezirks-Ausschuss' },
     herkunftBezirkObb: { n: 'Bezirk Oberbayern', l: 'Bezirk Oberbayern' },
     herkunftEntwurf: { n: 'automatisch verschlagwortet', l: 'automatisch sortiert' },
@@ -816,6 +836,8 @@
     'Wird noch beraten': 'Der Stadt-Rat bespricht das noch.',
     'Entscheidung geplant': 'Der Stadt-Rat will bald entscheiden.',
     'Entscheidung angesetzt': 'Der Stadt-Rat wollte jetzt entscheiden.',
+    'Beschlossen': 'Der Stadt-Rat hat das so beschlossen.',
+    'Abgelehnt': 'Der Stadt-Rat hat das abgelehnt.',
     'Bekanntgabe': 'Das ist nur eine Information.',
     'Ohne Vorlage': 'Es gibt kein Dokument dazu.'
   };
@@ -1189,6 +1211,16 @@
       var badge = el('div', 'stand stand-' + e.stand.split(' ')[0].toLowerCase());
       badge.appendChild(document.createTextNode(standText(e.stand, e.stand_datum)));
       c.appendChild(badge);
+    }
+
+    /* Woertlicher Beschlusstext aus der Niederschrift (scraper/
+       niederschriften_lesen.py) — optisch abgesetzt von der redaktionellen
+       Zusammenfassung oben, damit klar bleibt: das ist Originalzitat. */
+    if (e.beschluss) {
+      var bd = el('details', 'beschluss-original');
+      bd.appendChild(el('summary', null, txt('beschlussOriginalLabel')));
+      bd.appendChild(el('p', null, e.beschluss.text));
+      c.appendChild(bd);
     }
 
     /* Freier Ortsvermerk, kein Filter */
