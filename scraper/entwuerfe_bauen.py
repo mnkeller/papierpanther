@@ -33,7 +33,7 @@ HIER = os.path.dirname(os.path.abspath(__file__))
 DATEN_VZ = os.path.join(os.path.dirname(HIER), "data")
 
 sys.path.insert(0, HIER)
-from referenzen import bare_positionen, top_ref  # noqa: E402
+from referenzen import bare_positionen, ist_beteiligung, top_ref  # noqa: E402
 
 # Stichwort -> Lebenslage. Mehrere Treffer sind erlaubt.
 #
@@ -161,21 +161,6 @@ def klartext_titel(titel):
         schnitt = t[:110].rsplit(" ", 1)[0]
         t = schnitt + " …"
     return t
-
-
-# Gremien, die keine Buergerinformation im Sinne dieser Seite sind: Aufsichts-
-# und Verwaltungsraete staedtischer Gesellschaften, Zweckverbaende, Beiraete.
-# Ihre Tagesordnungen sind formal oeffentlich, aber inhaltlich Unternehmens-
-# steuerung — Jahresabschluesse, Beteiligungsberichte, Gremienbesetzungen.
-BETEILIGUNG_MUSTER = re.compile(
-    r"Aufsichtsrat|Verwaltungsrat|\bAöR\b|GmbH|Zweckverband|Verbandsversammlung|"
-    r"Beirat|Kommission|Gesellschafterversammlung",
-    re.I,
-)
-
-
-def ist_beteiligung(gremium):
-    return bool(BETEILIGUNG_MUSTER.search(gremium or ""))
 
 
 # Ein konkreter Punkt nennt fast immer einen Ort oder eine Sache:

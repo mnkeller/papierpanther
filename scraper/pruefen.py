@@ -26,8 +26,8 @@ HIER = os.path.dirname(os.path.abspath(__file__))
 DATEN_VZ = os.path.join(os.path.dirname(HIER), "data")
 
 sys.path.insert(0, HIER)
-from entwuerfe_bauen import ist_beteiligung, ist_sammelueberschrift  # noqa: E402
-from referenzen import bare_positionen, top_ref  # noqa: E402
+from entwuerfe_bauen import ist_sammelueberschrift  # noqa: E402
+from referenzen import bare_positionen, ist_beteiligung, top_ref  # noqa: E402
 
 fehler, warnungen = [], []
 

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'">
+<title>Anträge der Parteien — PapierPanther</title>
+<meta name="description" content="Was die Ingolstädter Stadtratsfraktionen beantragen — und was daraus geworden ist: eingereicht, in Beratung oder schon entschieden.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mnkeller.github.io/papierpanther/antraege.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PapierPanther Ingolstadt">
+<meta property="og:url" content="https://mnkeller.github.io/papierpanther/antraege.html">
+<meta property="og:title" content="Anträge der Parteien — PapierPanther">
+<meta property="og:description" content="Was die Ingolstädter Stadtratsfraktionen beantragen — und was daraus geworden ist: eingereicht, in Beratung oder schon entschieden.">
+<meta property="og:image" content="https://mnkeller.github.io/papierpanther/vorschau.png">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Anträge der Parteien — PapierPanther">
+<meta name="twitter:image" content="https://mnkeller.github.io/papierpanther/vorschau.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003E59'/%3E%3Cpath d='M18 30c0-8 5-15 14-15s14 7 14 15' fill='none' stroke='%23ffffff' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M17 22c-2-4-2-8 1-11 1 3 1 6 3 8z' fill='%23ffffff'/%3E%3Cpath d='M47 22c2-4 2-8-1-11-1 3-1 6-3 8z' fill='%23ffffff'/%3E%3Ccircle cx='25' cy='31' r='3' fill='%23ffffff'/%3E%3Ccircle cx='39' cy='31' r='3' fill='%23ffffff'/%3E%3Cpath d='M30 38l2 3 2-3z' fill='%23B00E2B'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --primary: #003e59;
+    --primary-dark: #00263a;
+    --accent: #b00e2b;
+    --text: #16232b;
+    --text-muted: #566a74;
+    --text-faint: #5c6a72;
+    --bg: #f8f7f4;
+    --bg-warm: #f1efe9;
+    --card: #ffffff;
+    --border: #e4e0d8;
+    --border-strong: #8f8779;
+    --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+    --radius: 10px;
+    --shadow: 0 1px 3px rgba(22,35,43,.06), 0 0 0 1px rgba(22,35,43,.04);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-body); color: var(--text); background: var(--bg);
+    line-height: 1.65; font-size: 16px; -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+  a { color: var(--accent); }
+
+  .site-header {
+    background: var(--primary); border-bottom: 3px solid var(--accent);
+    padding: .85rem 0; position: sticky; top: 0; z-index: 50;
+  }
+  .site-header .container { display: flex; align-items: center; gap: .65rem; flex-wrap: wrap; }
+  .logo-mark { flex: none; display: block; }
+  .brand {
+    font-family: var(--font-display); font-size: 1.28rem; font-weight: 700;
+    letter-spacing: -.01em; color: #fff; text-decoration: none;
+  }
+  .brand span { color: #a9c7d6; font-weight: 400; }
+  .header-spacer { margin-left: auto; }
+  .btn-zurueck {
+    font-size: .82rem; font-weight: 600; text-decoration: none; color: #fff;
+    background: none; border: 1px solid rgba(255,255,255,.5); border-radius: 999px;
+    padding: .3rem .85rem;
+  }
+  .btn-zurueck:hover { background: rgba(255,255,255,.14); }
+  .btn-leicht {
+    font: inherit; font-size: .82rem; cursor: pointer;
+    background: none; border: 1px solid rgba(255,255,255,.5); color: #fff;
+    padding: .3rem .75rem; border-radius: 999px;
+  }
+  .btn-leicht:hover { background: rgba(255,255,255,.14); }
+  .btn-leicht[aria-pressed="true"] {
+    background: #fff; color: var(--primary-dark); border-color: #fff; font-weight: 600;
+  }
+
+  main { padding: 3rem 0 3.5rem; }
+  h1 {
+    font-family: var(--font-display); font-size: clamp(1.75rem, 4.5vw, 2.4rem);
+    font-weight: 700; letter-spacing: -.02em; margin-bottom: .5rem; max-width: 24ch;
+  }
+  .lede { color: var(--text-muted); font-size: 1.05rem; max-width: 62ch; margin-bottom: 1.75rem; }
+  .hinweis {
+    background: #fdf6e7; border: 1px solid #e8d9b0; color: #7d6320;
+    border-radius: var(--radius); padding: 1rem 1.15rem; font-size: .92rem; margin-bottom: 2rem;
+  }
+  .hinweis strong { font-weight: 600; }
+
+  /* ---------- Kopfzahlen ---------- */
+  .stat-row {
+    display: flex; flex-wrap: wrap; gap: 0 2rem; margin-bottom: 2rem;
+    border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    padding: 1.1rem 0;
+  }
+  .stat-num { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--primary); }
+  .stat-label { font-size: .76rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: .05em; }
+
+  /* ---------- Partei-Filter ---------- */
+  .filter-row { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1.75rem; }
+  .chip-btn {
+    font: inherit; font-size: .84rem; cursor: pointer;
+    border-radius: 999px; padding: .28rem .7rem;
+    border: 1px solid var(--border-strong); background: #fff; color: var(--text-muted);
+    transition: all .12s ease;
+  }
+  .chip-btn:hover { border-color: var(--primary); color: var(--primary-dark); }
+  .chip-btn[aria-pressed="true"] {
+    background: var(--primary); border-color: var(--primary); color: #fff; font-weight: 500;
+  }
+  .chip-btn .count { font-size: .78em; margin-left: .3em; }
+
+  /* ---------- Antragskarten ---------- */
+  .partei-gruppe { margin-bottom: 2.25rem; }
+  .partei-gruppe h2 {
+    font-family: var(--font-display); font-size: 1.15rem; font-weight: 700;
+    margin-bottom: .9rem; color: var(--primary);
+  }
+  .antrag {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 1.1rem 1.3rem; margin-bottom: .9rem;
+  }
+  .antrag-kopf {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: .75rem; flex-wrap: wrap; margin-bottom: .3rem;
+  }
+  .antrag-art { font-size: .76rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: .04em; }
+  .antrag-datum { font-size: .78rem; color: var(--text-faint); white-space: nowrap; }
+  .antrag h3 { font-family: var(--font-display); font-size: 1.02rem; font-weight: 700; margin-bottom: .35rem; }
+  .antrag-text { font-size: .92rem; color: var(--text-muted); margin-bottom: .6rem; }
+  .antrag-hinweis-amtlich { font-size: .82rem; color: var(--text-faint); font-style: italic; margin-bottom: .6rem; }
+  .antrag-links { font-size: .82rem; }
+  .antrag-links a { margin-right: 1.1rem; text-decoration: none; }
+  .antrag-links a:hover { text-decoration: underline; }
+
+  /* Stand-Badges — dieselben Farben wie auf der Startseite (index.html),
+     damit ein "Beschlossen" ueberall gleich aussieht. */
+  .stand {
+    display: inline-block; margin-bottom: .5rem;
+    font-size: .8rem; font-weight: 500;
+    padding: .2rem .6rem; border-radius: 999px;
+    border: 1px solid transparent;
+  }
+  .stand-entscheidung { background: #eef1f6; color: #2f4a70; border-color: #2f4a7030; }
+  .stand-wird { background: #fdf3e0; color: #96551f; border-color: #96551f30; }
+  .stand-bekanntgabe { background: #f0eef6; color: #55467e; border-color: #55467e30; }
+  .stand-eingereicht { background: var(--bg-warm); color: var(--text-faint); border-color: var(--border-strong); }
+  .stand-unaufbereitet { background: var(--bg-warm); color: var(--text-faint); border-color: var(--border-strong); }
+
+  .stand.quellen {
+    margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--border-strong);
+    font-size: .82rem; color: var(--text-faint); display: block;
+  }
+
+  .site-footer {
+    border-top: 1px solid var(--border); background: var(--bg-warm);
+    padding: 1.75rem 0; font-size: .85rem; color: var(--text-muted);
+  }
+  .site-footer .container { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+  .site-footer a { color: var(--primary-dark); }
+
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .ladehinweis { color: var(--text-faint); font-size: .9rem; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <svg class="logo-mark" width="34" height="34" viewBox="0 0 40 40" aria-hidden="true">
+      <rect x="9" y="17" width="22" height="16" rx="2" fill="#f1efe9"/>
+      <path d="M27 17h4v4z" fill="#B00E2B"/>
+      <path d="M11 18c0-7.5 4-12 9-12s9 4.5 9 12" fill="#fff"/>
+      <path d="M13 15 L9.5 5 L17.5 11.5 Z" fill="#fff"/>
+      <path d="M27 15 L30.5 5 L22.5 11.5 Z" fill="#fff"/>
+      <circle cx="16.5" cy="15" r="1.7" fill="#003E59"/>
+      <circle cx="23.5" cy="15" r="1.7" fill="#003E59"/>
+      <path d="M18.6 18.2l1.4 1.9 1.4-1.9z" fill="#B00E2B"/>
+    </svg>
+    <a class="brand" href="index.html">PapierPanther <span>Ingolstadt</span></a>
+    <span class="header-spacer"></span>
+    <button class="btn-leicht" id="btn-leicht" type="button" aria-pressed="false">Leichte Sprache</button>
+    <a class="btn-zurueck" href="index.html">← Zurück zum PapierPanther</a>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <h1 id="txt-h1">Anträge der Stadtratsfraktionen</h1>
+    <p class="lede" id="txt-lede"></p>
+    <div class="hinweis" id="txt-hinweis"></div>
+
+    <div class="stat-row" id="stat-row"></div>
+    <div class="filter-row" id="partei-filter"></div>
+
+    <div id="antraege-liste">
+      <p class="ladehinweis">Lade Anträge …</p>
+    </div>
+
+    <div class="stand quellen" id="quellen-block"></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <a href="index.html">Übersicht</a>
+    <a href="haushalt.html">Haushalt</a>
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="https://github.com/mnkeller/papierpanther" rel="noopener noreferrer" target="_blank">Quellcode<span class="sr-only"> (öffnet in neuem Tab)</span></a>
+  </div>
+</footer>
+
+<!-- Die Anträge liegen in data/antraege.js und werden von
+     scraper/antraege_holen_lesen.py erzeugt. Klassisches <script src>, damit
+     die Seite auch per Doppelklick (file://) funktioniert. -->
+<script src="data/antraege.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  var D = window.ANTRAEGE_DATEN;
+  var listeEl = document.getElementById('antraege-liste');
+
+  if (!D || !D.parteien) {
+    listeEl.innerHTML =
+      '<p><strong>Die Daten konnten nicht geladen werden.</strong></p>' +
+      '<p>Fehlt <code>data/antraege.js</code> ganz, erzeugt ' +
+      '<code>cd scraper &amp;&amp; python3 antraege_holen_lesen.py</code> sie neu.</p>';
+  }
+
+  var LS_KEY_LEICHT = 'papierpanther-leichte-sprache';
+  var leicht = false;
+  try { leicht = localStorage.getItem(LS_KEY_LEICHT) === '1'; } catch (err) { /* Storage kann gesperrt sein */ }
+
+  function el(tag, klasse, text) {
+    var n = document.createElement(tag);
+    if (klasse) n.className = klasse;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+
+  function datumDe(iso) {
+    var t = String(iso).split('-');
+    return t.length === 3 ? t[2] + '.' + t[1] + '.' + t[0] : iso;
+  }
+
+  var TEXTE = {
+    lede: {
+      n: 'Was die Ingolstädter Stadtratsfraktionen beantragen — von der Einreichung bis zur ' +
+        'Entscheidung. Status und Zusammenfassung stammen, wo vorhanden, aus der laufenden ' +
+        'Aufbereitung dieser Seite.',
+      l: 'Was die Parteien im Stadtrat beantragen. Und was daraus wird.',
+    },
+    hinweis: {
+      n: '<strong>PapierPanther ist kein Angebot der Stadt Ingolstadt.</strong> Die Anträge ' +
+        'stammen aus dem Ratsinfoportal der Stadt Ingolstadt. Verbindlich ist immer das ' +
+        'Originaldokument — jeder Antrag verlinkt seine Quelle.',
+      l: '<strong>PapierPanther ist kein Angebot der Stadt Ingolstadt.</strong> Die Anträge ' +
+        'stehen im Rats-Info-Portal der Stadt. Das Original-Dokument gilt immer. Jeder Antrag ' +
+        'verlinkt dorthin.',
+    },
+  };
+
+  function txt(schluessel) {
+    var e = TEXTE[schluessel];
+    return e ? (leicht ? e.l : e.n) : '';
+  }
+
+  var STAND_LEICHT = {
+    'Entscheidung angesetzt': 'Entscheidung ist geplant',
+    'Entscheidung geplant': 'Entscheidung kommt noch',
+    'Wird noch beraten': 'Wird noch besprochen',
+    'Bekanntgabe': 'Wurde bekannt gegeben',
+  };
+
+  function standKlasse(stand) {
+    return 'stand stand-' + stand.split(' ')[0].toLowerCase();
+  }
+
+  function standBadge(a) {
+    if (a.ref && a.stand && a.stand !== 'Ohne Vorlage') {
+      return el('div', standKlasse(a.stand), leicht ? (STAND_LEICHT[a.stand] || a.stand) : a.stand);
+    }
+    if (a.in_beratung) {
+      return el('div', 'stand stand-unaufbereitet',
+        leicht ? 'Steht auf einer Tagesordnung' : 'Im Ratsinfoportal, noch nicht aufbereitet');
+    }
+    return el('div', 'stand stand-eingereicht',
+      leicht ? 'Eingereicht' : 'Eingereicht, noch nicht auf einer Tagesordnung');
+  }
+
+  function antragKarte(a) {
+    var c = el('article', 'antrag');
+
+    var kopf = el('div', 'antrag-kopf');
+    if (a.antragsart) kopf.appendChild(el('span', 'antrag-art', a.antragsart));
+    if (a.datum_anzeige) kopf.appendChild(el('span', 'antrag-datum', a.datum_anzeige));
+    c.appendChild(kopf);
+
+    c.appendChild(standBadge(a));
+
+    var titelLeicht = leicht && a.klartext_titel_leicht;
+    var titel = titelLeicht ? a.klartext_titel_leicht : (a.klartext_titel || a.titel);
+    c.appendChild(el('h3', null, titel));
+
+    var textLeicht = leicht && a.klartext_leicht;
+    if (textLeicht) {
+      c.appendChild(el('p', 'antrag-text', a.klartext_leicht));
+    } else if (a.klartext) {
+      c.appendChild(el('p', 'antrag-text', a.klartext));
+    } else {
+      c.appendChild(el('p', 'antrag-hinweis-amtlich',
+        leicht ? 'Dazu gibt es noch keine einfache Erklärung. Das ist der amtliche Titel.'
+               : 'Noch keine Zusammenfassung — das ist der amtliche Titel aus dem Ratsinfoportal.'));
+    }
+
+    var links = el('div', 'antrag-links');
+    var l1 = el('a', null, leicht ? 'Im Rats-Info-Portal ansehen' : 'Im Ratsinfoportal prüfen');
+    l1.href = a.vorlage_url;
+    l1.target = '_blank';
+    l1.rel = 'noopener';
+    links.appendChild(l1);
+    if (a.pdf_url) {
+      var l2 = el('a', null, leicht ? 'Original-Dokument' : 'Antragstext (PDF)');
+      l2.href = a.pdf_url;
+      l2.target = '_blank';
+      l2.rel = 'noopener';
+      links.appendChild(l2);
+    }
+    c.appendChild(links);
+
+    return c;
+  }
+
+  var aktivePartei = null;
+
+  function baueFilter() {
+    var box = document.getElementById('partei-filter');
+    box.textContent = '';
+    var alle = el('button', 'chip-btn', 'Alle Parteien');
+    alle.type = 'button';
+    alle.setAttribute('aria-pressed', aktivePartei === null ? 'true' : 'false');
+    alle.addEventListener('click', function () { aktivePartei = null; baueFilter(); baueListe(); });
+    box.appendChild(alle);
+
+    Object.keys(D.parteien).forEach(function (partei) {
+      var anzahl = D.parteien[partei].length;
+      if (!anzahl) return;
+      var btn = el('button', 'chip-btn');
+      btn.type = 'button';
+      btn.appendChild(document.createTextNode(partei));
+      btn.appendChild(el('span', 'count', ' ' + anzahl));
+      btn.setAttribute('aria-pressed', aktivePartei === partei ? 'true' : 'false');
+      btn.addEventListener('click', function () {
+        aktivePartei = aktivePartei === partei ? null : partei;
+        baueFilter();
+        baueListe();
+      });
+      box.appendChild(btn);
+    });
+  }
+
+  function baueListe() {
+    listeEl.textContent = '';
+    var parteien = aktivePartei ? [aktivePartei] : Object.keys(D.parteien);
+    var irgendwas = false;
+    parteien.forEach(function (partei) {
+      var antraege = D.parteien[partei];
+      if (!antraege || !antraege.length) return;
+      irgendwas = true;
+      var gruppe = el('section', 'partei-gruppe');
+      gruppe.appendChild(el('h2', null, partei + ' (' + antraege.length + ')'));
+      antraege.forEach(function (a) { gruppe.appendChild(antragKarte(a)); });
+      listeEl.appendChild(gruppe);
+    });
+    if (!irgendwas) {
+      listeEl.appendChild(el('p', 'ladehinweis', 'Keine Anträge gefunden.'));
+    }
+  }
+
+  function baueStatRow() {
+    var box = document.getElementById('stat-row');
+    box.textContent = '';
+    var st = D.statistik;
+    [
+      [st.gesamt, 'Anträge gesamt'],
+      [st.in_beratung, 'auf einer Tagesordnung'],
+      [st.kuratiert, 'davon aufbereitet'],
+      [st.nur_eingereicht, 'nur eingereicht'],
+    ].forEach(function (paar) {
+      var s = el('div');
+      s.appendChild(el('div', 'stat-num', String(paar[0])));
+      s.appendChild(el('div', 'stat-label', paar[1]));
+      box.appendChild(s);
+    });
+  }
+
+  function texteAnwenden() {
+    document.getElementById('txt-lede').textContent = txt('lede');
+    document.getElementById('txt-hinweis').innerHTML = txt('hinweis');
+    document.getElementById('quellen-block').textContent =
+      (D.quelle_hinweis || '') + ' Abgerufen am ' + datumDe(D.abgerufen_am) + '.';
+  }
+
+  if (D && D.parteien) {
+    baueStatRow();
+    baueFilter();
+    baueListe();
+  }
+  texteAnwenden();
+
+  var btnLeicht = document.getElementById('btn-leicht');
+  btnLeicht.setAttribute('aria-pressed', leicht ? 'true' : 'false');
+  btnLeicht.addEventListener('click', function () {
+    leicht = !leicht;
+    btnLeicht.setAttribute('aria-pressed', leicht ? 'true' : 'false');
+    try { localStorage.setItem(LS_KEY_LEICHT, leicht ? '1' : '0'); } catch (err) { /* Storage kann gesperrt sein */ }
+    texteAnwenden();
+    if (D && D.parteien) { baueFilter(); baueListe(); }
+  });
+})();
+</script>
+
+</body>
+</html>

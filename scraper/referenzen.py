@@ -22,6 +22,8 @@ innerhalb der Sitzung als Kennung, z. B. "Ö3" fuer den dritten. Das Format
 Portal-Nummer kollidieren — die hat immer ein Leerzeichen ("Ö 5", "Ö 35.1").
 """
 
+import re
+
 
 def bare_positionen(sitzung):
     """{id(top): laufende Nummer} fuer TOPs mit blosser 'Ö'-Nummer, in der
@@ -46,3 +48,22 @@ def top_ref(quelle, sitzung, top, bare_pos=None):
             bare_pos = bare_positionen(sitzung)
         nr = f"Ö{bare_pos[id(top)]}"
     return f'{quelle}:{sitzung["id"]}#{nr}'
+
+
+# Gremien, die keine Buergerinformation im Sinne dieser Seite sind: Aufsichts-
+# und Verwaltungsraete staedtischer Gesellschaften, Zweckverbaende, Beiraete.
+# Ihre Tagesordnungen sind formal oeffentlich, aber inhaltlich Unternehmens-
+# steuerung — Jahresabschluesse, Beteiligungsberichte, Gremienbesetzungen.
+#
+# Lebt hier statt in entwuerfe_bauen.py, weil auch ris_ingolstadt.py sie
+# braucht (Filter fuer kommende Termine ohne Tagesordnung) — und die unterste
+# Schicht darf nicht von einem hoeheren Skript importieren.
+BETEILIGUNG_MUSTER = re.compile(
+    r"Aufsichtsrat|Verwaltungsrat|\bAöR\b|GmbH|Zweckverband|Verbandsversammlung|"
+    r"Beirat|Kommission|Gesellschafterversammlung",
+    re.I,
+)
+
+
+def ist_beteiligung(gremium):
+    return bool(BETEILIGUNG_MUSTER.search(gremium or ""))
