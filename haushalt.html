@@ -64,8 +64,12 @@
   }
   .brand span { color: #a9c7d6; font-weight: 400; }
   .header-spacer { margin-left: auto; }
-  .header-link { font-size: .82rem; color: #cfe0e8; text-decoration: none; }
-  .header-link:hover { color: #fff; text-decoration: underline; }
+  .btn-zurueck {
+    font-size: .82rem; font-weight: 600; text-decoration: none; color: #fff;
+    background: none; border: 1px solid rgba(255,255,255,.5); border-radius: 999px;
+    padding: .3rem .85rem;
+  }
+  .btn-zurueck:hover { background: rgba(255,255,255,.14); }
   .btn-leicht {
     font: inherit; font-size: .82rem; cursor: pointer;
     background: none; border: 1px solid rgba(255,255,255,.5); color: #fff;
@@ -174,7 +178,7 @@
     <a class="brand" href="index.html">PapierPanther <span>Ingolstadt</span></a>
     <span class="header-spacer"></span>
     <button class="btn-leicht" id="btn-leicht" type="button" aria-pressed="false">Leichte Sprache</button>
-    <a class="header-link" href="index.html">Zurück zur Übersicht</a>
+    <a class="btn-zurueck" href="index.html">← Zurück zum PapierPanther</a>
   </div>
 </header>
 

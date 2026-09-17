@@ -139,29 +139,21 @@
   }
   .stat-label { font-size: .78rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: .05em; }
 
-  /* ---------- Im Fokus: Teaser auf Themenseiten (Haushalt, spaeter Bezirke) ----------
-     Bewusst mit einer konkreten, datengetriebenen Kennzahl statt eines
-     blossen Nav-Links — die Zahl kommt live aus data/haushalt.js, damit sie
-     nicht veraltet, wenn naechstes Jahr ein neuer Haushalt kommt. */
-  .im-fokus { padding: 0 0 2.25rem; }
-  .im-fokus-grid {
-    display: grid; gap: 1.1rem;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* ---------- Im-Fokus-Leiste: schmale Buttonreihe ueber dem Hero ----------
+     War zuerst eine Kachel zwischen Statistik und Feed — stand dort als
+     Fremdkoerper zwischen den beiden Kernelementen der Seite. Als schmale
+     Buttonreihe direkt ueber der Schlagzeile faellt sie auf, ohne den
+     eigentlichen Einstieg (Hero, Statistik, Filter) zu verdraengen. Zweiter
+     Button "Im Fokus: Die Bezirke" kommt hier dazu, sobald bezirke.html steht. */
+  .im-fokus-leiste { padding: 1.5rem 0 0; }
+  .im-fokus-buttons { display: flex; flex-wrap: wrap; gap: .6rem; }
+  .fokus-btn {
+    display: inline-block; font: inherit; font-size: .86rem; font-weight: 600;
+    text-decoration: none; color: var(--accent); background: #fff;
+    border: 1.5px solid var(--accent); border-radius: 999px;
+    padding: .5rem 1.15rem; transition: background .12s ease, color .12s ease;
   }
-  .fokus-card {
-    display: block; background: var(--card); border: 1px solid var(--border);
-    border-radius: var(--radius); box-shadow: var(--shadow);
-    padding: 1.25rem 1.4rem; text-decoration: none; color: inherit;
-    transition: box-shadow .15s, border-color .15s;
-  }
-  .fokus-card:hover { box-shadow: var(--shadow-hover); border-color: var(--primary); }
-  .fokus-card:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
-  .fokus-card-titel {
-    font-family: var(--font-display); font-size: 1.12rem; font-weight: 700;
-    color: var(--primary); margin-bottom: .4rem;
-  }
-  .fokus-card-text { font-size: .92rem; color: var(--text-muted); line-height: 1.5; }
-  .fokus-card-pfeil { color: var(--accent); font-weight: 700; white-space: nowrap; }
+  .fokus-btn:hover { background: var(--accent); color: #fff; }
 
   /* ---------- Arbeitsflaeche: Filterspalte neben dem Feed ----------
      Bewusst zweispaltig statt Filterband ueber der Liste: bei 880 Eintraegen
@@ -505,6 +497,14 @@
 </div>
 
 <main id="hauptinhalt">
+  <section class="im-fokus-leiste">
+    <div class="container">
+      <div class="im-fokus-buttons" id="im-fokus-buttons">
+        <a class="fokus-btn" href="haushalt.html">Im Fokus: Der Haushalt</a>
+      </div>
+    </div>
+  </section>
+
   <section class="hero">
     <div class="container">
       <svg class="hero-mascot" viewBox="0 0 120 120" aria-hidden="true">
@@ -536,12 +536,6 @@
         danach, wen sie betreffen. Suchen Sie einfach Ihren Stadtbezirk.
       </p>
       <div class="hero-stats" id="hero-stats"></div>
-    </div>
-  </section>
-
-  <section class="im-fokus">
-    <div class="container">
-      <div class="im-fokus-grid" id="im-fokus-grid"></div>
     </div>
   </section>
 
@@ -621,10 +615,6 @@
   </div>
 </footer>
 
-<!-- Fuer den "Im Fokus"-Teaser auf die Haushaltsseite: dieselbe Kennzahl,
-     die dort im Beispiel-Kasten steht, live aus data/haushalt.js statt
-     hier nochmal von Hand eingetragen (sonst veraltet sie naechstes Jahr). -->
-<script src="data/haushalt.js"></script>
 <!-- Die Feed-Daten liegen in data/feed.js und werden von
      scraper/feed_bauen.py erzeugt. Klassisches <script src>, damit die
      Seite auch per Doppelklick (file://) funktioniert. -->
@@ -949,58 +939,6 @@
     document.getElementById('footer-meta').textContent = txt2;
   }
 
-  /* Dieselbe Rundung wie haushalt.html::mio(), damit die Zahl auf beiden
-     Seiten gleich aussieht. */
-  function mio(n) {
-    return new Intl.NumberFormat('de-DE', { maximumFractionDigits: 1 }).format(n / 1e6) + ' Mio. €';
-  }
-
-  function fokusKarte(href, titel, textInhalt, pfeilText) {
-    var a = el('a', 'fokus-card');
-    a.href = href;
-    a.appendChild(el('div', 'fokus-card-titel', titel));
-    var p = el('p', 'fokus-card-text');
-    p.appendChild(document.createTextNode(textInhalt + ' '));
-    p.appendChild(el('span', 'fokus-card-pfeil', pfeilText));
-    a.appendChild(p);
-    return a;
-  }
-
-  /* "Im Fokus": Teaser mit einer echten Kennzahl statt blossem Nav-Link,
-     damit der Klick zur Haushaltsseite sich lohnt. Die Zahl kommt aus
-     data/haushalt.js — fehlt die Datei (z.B. auf einem Stand ohne
-     Haushalts-Build), verschwindet die Karte einfach, statt die Seite
-     kaputtzumachen. Naechster Ausbauschritt: eine zweite Karte "Im Fokus:
-     Die Bezirke", sobald bezirke.html steht. */
-  function baueImFokus() {
-    var box = document.getElementById('im-fokus-grid');
-    box.textContent = '';
-    var hh = window.HAUSHALT_DATEN;
-    if (!hh || !hh.verwaltungs_vermoegenshaushalt_aktuell) return;
-    var jahr = hh.aktuelles_jahr;
-    var luecke = mio(hh.verwaltungs_vermoegenshaushalt_aktuell.zuschussbedarf);
-    var karte;
-    if (!leicht) {
-      karte = fokusKarte(
-        'haushalt.html',
-        'Im Fokus: Der Haushalt',
-        'Der Verwaltungshaushalt ' + jahr + ' deckt seine laufenden Ausgaben nicht ' +
-        'aus eigenen Einnahmen — es bleibt ein Zuschussbedarf von ' + luecke + '. ' +
-        'Wie die städtische Kameralistik funktioniert und wo es klemmt, erklärt die Haushaltsseite.',
-        'Zur Haushaltsseite →'
-      );
-    } else {
-      karte = fokusKarte(
-        'haushalt.html',
-        'Im Fokus: Der Haushalt',
-        'Die Stadt gibt ' + jahr + ' mehr Geld aus, als sie selbst einnimmt. Es fehlen ' +
-        luecke + '. Auf der Haushalts-Seite steht, wie das Geld der Stadt funktioniert.',
-        'Zur Haushalts-Seite'
-      );
-    }
-    box.appendChild(karte);
-  }
-
   function texteAnwenden() {
     document.getElementById('header-tag').textContent = txt('headerTag');
     document.getElementById('header-link').textContent = txt('headerLink');
@@ -1137,7 +1075,6 @@
     baueHeroStats();
     baueFilter();
     baueFooterMeta();
-    baueImFokus();
     gezeigt = ERSTE_SEITE;
     zeichne();
   });
@@ -1364,7 +1301,6 @@
   baueHeroStats();
   baueFilter();
   baueFooterMeta();
-  baueImFokus();
   zeichne();
 })();
 </script>
