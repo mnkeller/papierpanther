@@ -1,6 +1,16 @@
 {
   "erzeugt_von": "scraper/haushalt_lesen.py",
   "quelle_hinweis": "Gruppierungsübersichten (Anlage 2) und Haushaltssatzung (Anlage 1) der Haushaltssatzungen 2023 bis 2026, Stadt Ingolstadt, aus dem Ratsinfoportal. Alle Zahlen wurden gegen die gedruckten Summenzeilen der Originaldokumente geprüft.",
+  "quellen": {
+    "anlage2_je_jahr": {
+      "2023": "https://www.ingolstadt.de/sessionnet/getfile.php?id=195353&type=do",
+      "2024": "https://www.ingolstadt.de/sessionnet/getfile.php?id=214659&type=do",
+      "2025": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234517&type=do",
+      "2026": "https://www.ingolstadt.de/sessionnet/getfile.php?id=246991&type=do"
+    },
+    "anlage1_aktuell": "https://www.ingolstadt.de/sessionnet/getfile.php?id=246990&type=do",
+    "anlage5_vorbericht_aktuell": "https://www.ingolstadt.de/sessionnet/getfile.php?id=246998&type=do"
+  },
   "aktuelles_jahr": 2026,
   "jahre": {
     "2023": {
@@ -8221,21 +8231,21 @@
     },
     {
       "jahr": 2022,
-      "art": "ansatz",
-      "einnahmen": 735605000,
-      "ausgaben": 735605000
+      "art": "ergebnis",
+      "einnahmen": 695206019.52,
+      "ausgaben": 695206019.52
     },
     {
       "jahr": 2023,
-      "art": "ansatz",
-      "einnahmen": 849784700,
-      "ausgaben": 849784700
+      "art": "ergebnis",
+      "einnahmen": 944395677.57,
+      "ausgaben": 944395677.57
     },
     {
       "jahr": 2024,
-      "art": "ansatz",
-      "einnahmen": 854526000,
-      "ausgaben": 854526000
+      "art": "ergebnis",
+      "einnahmen": 801737084.4,
+      "ausgaben": 801737084.4
     },
     {
       "jahr": 2025,

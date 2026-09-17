@@ -144,6 +144,11 @@
 
   .quellen { font-size: .82rem; color: var(--text-faint); }
   .quellen a { color: var(--primary-dark); }
+  .quellen-liste { display: flex; flex-wrap: wrap; gap: .3rem .9rem; margin-top: .5rem; padding: 0; list-style: none; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
   .stand {
     margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--border-strong);
     font-size: .82rem; color: var(--text-faint);
@@ -235,7 +240,7 @@
       </div>
     </section>
 
-    <p class="stand quellen" id="quellen-block">Lade Quellenangaben …</p>
+    <div class="stand quellen" id="quellen-block"><p>Lade Quellenangaben …</p></div>
   </div>
 </main>
 
@@ -515,20 +520,26 @@
         "ausgeglichen ist, zeigt der Zuschussbedarf darunter.",
     },
     "zeitreihe": {
-      n: "Gefüllte Punkte zeigen das geprüfte Ist-Ergebnis. Helle Punkte zeigen den " +
-        "Ansatz, also die Planung, die noch nicht abgerechnet ist. Zusammengesetzt aus " +
-        "vier Gruppierungsübersichten (" + Object.keys(D.jahre).join(", ") + ").",
-      l: "Volle Punkte zeigen echte, geprüfte Zahlen. Helle Punkte zeigen die Planung. " +
-        "Die Planung ist noch nicht abgerechnet.",
+      n: "Gefüllte Punkte zeigen das tatsächliche Ist-Ergebnis, also bereits abgerechnete " +
+        "Jahre. Helle Punkte zeigen den Ansatz, also die Planung, die noch nicht " +
+        "abgerechnet ist. Zusammengesetzt aus vier Gruppierungsübersichten (" +
+        Object.keys(D.jahre).join(", ") + ").",
+      l: "Volle Punkte zeigen die echten Zahlen. Diese Jahre sind schon fertig " +
+        "abgerechnet. Helle Punkte zeigen die Planung. Die Planung ist noch nicht " +
+        "abgerechnet.",
     },
     "referate": {
-      n: "Referats-Budgets aus der Haushaltssatzung " + jahr + " (Anlage 1). Das sind " +
-        mio(referateSummeEinnahmen) + " von den " + mio(vwh.verwaltungshaushalt_einnahmen) +
-        " Einnahmen im gesamten Verwaltungshaushalt. Der Rest sind zentrale Eckwerte " +
-        "(zum Beispiel Steuern) und nicht budgetierte Posten, die keinem einzelnen " +
-        "Referat zugeordnet sind.",
-      l: "Zahlen aus der Haushaltssatzung " + jahr + ". Das zeigt nur einen Teil des " +
-        "Verwaltungshaushalts: den Teil, der einzelnen Referaten zugeordnet ist.",
+      n: "Referats-Budgets aus der Haushaltssatzung " + jahr + " (Anlage 1) — nur der " +
+        "Verwaltungshaushalt, der laufende Betrieb. Der Vermögenshaushalt " +
+        "(Investitionen, Bauprojekte) wird den Referaten hier nicht einzeln zugeordnet. " +
+        "Das sind " + mio(referateSummeEinnahmen) + " von den " +
+        mio(vwh.verwaltungshaushalt_einnahmen) + " Einnahmen im gesamten " +
+        "Verwaltungshaushalt. Der Rest sind zentrale Eckwerte (zum Beispiel Steuern) " +
+        "und nicht budgetierte Posten, die keinem einzelnen Referat zugeordnet sind.",
+      l: "Zahlen aus der Haushaltssatzung " + jahr + ". Das zeigt nur den " +
+        "Verwaltungshaushalt, also den laufenden Betrieb. Der Vermögenshaushalt für " +
+        "Bauprojekte gehört nicht dazu. Und es zeigt nur einen Teil: den Teil, der " +
+        "einzelnen Referaten zugeordnet ist.",
     },
   };
 
@@ -1039,9 +1050,44 @@
   }
 
   // ---------- Quellen ----------
+  // Der Hinweistext oben verspricht "das Originaldokument, das unten
+  // verlinkt ist" — bis hierher stand da nur Fliesstext ohne einen einzigen
+  // Link. Jetzt tatsaechlich verlinkt, direkt auf die PDFs, aus denen
+  // geparst wurde (siehe scraper/haushalt_lesen.py::quellen).
   (function () {
     var el = document.getElementById("quellen-block");
-    el.innerHTML = D.quelle_hinweis + " Stand der Daten: " + jahr + "er Haushaltssatzung.";
+    el.innerHTML = "";
+    var p = document.createElement("p");
+    p.textContent = D.quelle_hinweis + " Stand der Daten: " + jahr + "er Haushaltssatzung.";
+    el.appendChild(p);
+
+    var q = D.quellen;
+    if (!q) return;
+    var liste = document.createElement("ul");
+    liste.className = "quellen-liste";
+    var eintraege = [];
+    Object.keys(q.anlage2_je_jahr).sort().forEach(function (j) {
+      eintraege.push(["Gruppierungsübersicht " + j, q.anlage2_je_jahr[j]]);
+    });
+    eintraege.push(["Haushaltssatzung " + jahr + " (Anlage 1)", q.anlage1_aktuell]);
+    eintraege.push(["Vorbericht " + jahr + " (Anlage 5)", q.anlage5_vorbericht_aktuell]);
+    eintraege.forEach(function (paar) {
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.href = paar[1];
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      a.textContent = paar[0];
+      a.appendChild((function () {
+        var sr = document.createElement("span");
+        sr.className = "sr-only";
+        sr.textContent = " (öffnet in neuem Tab, PDF)";
+        return sr;
+      })());
+      li.appendChild(a);
+      liste.appendChild(li);
+    });
+    el.appendChild(liste);
   })();
 
   /* ---------------- Leichte-Sprache-Umschalter ---------------- */

@@ -31,7 +31,7 @@ DATEN_VZ = os.path.join(os.path.dirname(HIER), "data")
 
 sys.path.insert(0, HIER)
 from haushalt_holen import (  # noqa: E402
-    ANLAGE2_JE_JAHR, ANLAGE1_AKTUELL, ANLAGE5_AKTUELL, AKTUELLES_JAHR, hole,
+    ANLAGE2_JE_JAHR, ANLAGE1_AKTUELL, ANLAGE5_AKTUELL, AKTUELLES_JAHR, BASIS, hole,
 )
 
 try:
@@ -549,19 +549,33 @@ def main():
     # Zeitreihe: je Jahr das aktuellste verfuegbare Ist-Ergebnis, sonst den
     # zuletzt bekannten Ansatz. Jede Anlage 2 liefert (aktuell, vorjahr,
     # vorvorjahr_ergebnis) fuer ihr eigenes Jahr.
+    #
+    # Ergebnis hat immer Vorrang vor Ansatz — unabhaengig davon, in welcher
+    # Reihenfolge die Jahrgaenge verarbeitet werden. Sortiert nach Jahr
+    # (2023 zuerst) traegt jede Anlage 2 fuer ihr eigenes Jahr zunaechst nur
+    # einen Ansatz ein; das echte Ergebnis fuer dasselbe Kalenderjahr liefert
+    # erst die Anlage 2 zwei Jahrgaenge spaeter (jahr-2). Ein blosses
+    # setdefault() haette diesen spaeteren, besseren Wert ignoriert, weil der
+    # Ansatz-Platzhalter das Jahr da schon belegt hatte — 2022-2024 waeren
+    # dauerhaft als "Ansatz" haengengeblieben, obwohl ihr Ist-Ergebnis laengst
+    # vorliegt. _setze() gleicht das aus: ein Ergebnis darf jeden bestehenden
+    # Ansatz ueberschreiben, aber niemals umgekehrt.
     zeitreihe = {}
+
+    def _setze(jahr_key, eintrag):
+        bestehend = zeitreihe.get(jahr_key)
+        if bestehend is not None and bestehend["art"] == "ergebnis" and eintrag["art"] != "ergebnis":
+            return
+        zeitreihe[jahr_key] = eintrag
+
     for jahr, d in jahre_daten.items():
         su = d["summen"]
-        zeitreihe.setdefault(jahr - 2, {"jahr": jahr - 2, "art": "ergebnis",
-                                         "einnahmen": su["Einnahmen"][2], "ausgaben": su["Ausgaben"][2]})
-        zeitreihe[jahr] = {"jahr": jahr, "art": "ansatz",
-                            "einnahmen": su["Einnahmen"][0], "ausgaben": su["Ausgaben"][0]}
-        # Ansatz-Wert des Vorjahres nur uebernehmen, wenn dieses Jahr noch
-        # kein Ist-Ergebnis hat (Ergebnis hat Vorrang vor Ansatz).
-        vj = jahr - 1
-        if vj not in zeitreihe or zeitreihe[vj]["art"] != "ergebnis":
-            zeitreihe[vj] = {"jahr": vj, "art": "ansatz",
-                              "einnahmen": su["Einnahmen"][1], "ausgaben": su["Ausgaben"][1]}
+        _setze(jahr - 2, {"jahr": jahr - 2, "art": "ergebnis",
+                           "einnahmen": su["Einnahmen"][2], "ausgaben": su["Ausgaben"][2]})
+        _setze(jahr, {"jahr": jahr, "art": "ansatz",
+                       "einnahmen": su["Einnahmen"][0], "ausgaben": su["Ausgaben"][0]})
+        _setze(jahr - 1, {"jahr": jahr - 1, "art": "ansatz",
+                           "einnahmen": su["Einnahmen"][1], "ausgaben": su["Ausgaben"][1]})
 
     pfad_a1 = hole(ANLAGE1_AKTUELL, f"Anlage 1 {AKTUELLES_JAHR}")
     print(f"Lese Anlage 1 {AKTUELLES_JAHR} ...")
@@ -625,6 +639,16 @@ def main():
             "Haushaltssatzungen 2023 bis 2026, Stadt Ingolstadt, aus dem Ratsinfoportal. "
             "Alle Zahlen wurden gegen die gedruckten Summenzeilen der Originaldokumente geprüft."
         ),
+        # Direktlinks auf genau die PDFs, aus denen geparst wurde — nicht auf
+        # eine Vorlagen-Uebersichtsseite, weil sich fuer 2023 (vor dem
+        # Scraper-Zeitraum ab November 2023) keine kvonr ermitteln liess.
+        "quellen": {
+            "anlage2_je_jahr": {
+                str(jahr): BASIS.format(id=id_) for jahr, id_ in sorted(ANLAGE2_JE_JAHR.items())
+            },
+            "anlage1_aktuell": BASIS.format(id=ANLAGE1_AKTUELL),
+            "anlage5_vorbericht_aktuell": BASIS.format(id=ANLAGE5_AKTUELL),
+        },
         "aktuelles_jahr": AKTUELLES_JAHR,
         "jahre": {
             str(jahr): {
