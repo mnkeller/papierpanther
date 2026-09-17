@@ -286,8 +286,17 @@ def main():
     im_feed_themen = set(je_thema.keys())
     im_feed_refs = {e["ref"] for e in feed}
     gruende = collections.Counter()
+    # Jahre mit noch offenem Rueckstand vs. bereits durcharbeiteten Jahren —
+    # die Fusszeile soll ehrlich sagen, fuer welchen Zeitraum "aufbereitet"
+    # tatsaechlich (fast) vollstaendig ist, statt den Gesamt-Zeitraum
+    # foelschlich als gleichmaessig bearbeitet erscheinen zu lassen.
+    alle_jahre = set()
+    offene_jahre = collections.Counter()
     for sitzung in roh["sitzungen"]:
         q = sitzung.get("quelle", "stadt")
+        jahr = (sitzung["datum"] or "")[:4]
+        if jahr:
+            alle_jahre.add(jahr)
         bare_pos = bare_positionen(sitzung)
         for top in sitzung["tops"]:
             ref = top_ref(q, sitzung, top, bare_pos)
@@ -304,7 +313,11 @@ def main():
                 gruende["sonstige"] += 1
             else:
                 gruende["offen"] += 1
+                if jahr:
+                    offene_jahre[jahr] += 1
     tops_abgedeckt = gruende["abgedeckt"]
+    jahre_vollstaendig = sorted(alle_jahre - set(offene_jahre))
+    jahre_rueckstand = sorted(offene_jahre)
 
     ausgabe = {
         "stadt": "Ingolstadt",
@@ -328,6 +341,8 @@ def main():
             "tops_sonstige": gruende["sonstige"],
             "tops_nicht_oeffentlich": gruende["nicht_oeffentlich"],
             "tops_offen": gruende["offen"],        # noch nicht kuratiert
+            "jahre_vollstaendig": jahre_vollstaendig,  # kein Rueckstand mehr
+            "jahre_rueckstand": jahre_rueckstand,      # noch offene TOPs
             "entwuerfe": sum(1 for e in feed if e["entwurf"]),
             "leichte_sprache": sum(1 for e in feed if e["klartext_leicht"]),
             "je_quelle": {
@@ -368,6 +383,10 @@ def main():
     )
     print(f"  je Quelle: {st['je_quelle']}")
     print(f"  Stand:     {st['stand']}")
+    print(
+        f"  Vollstaendig kuratiert: {', '.join(st['jahre_vollstaendig']) or '(keine)'} "
+        f"· Rueckstand: {', '.join(st['jahre_rueckstand']) or '(keiner)'}"
+    )
     print(
         f"  Achsen: {len(ausgabe['achsen']['lebenslage'])} Lebenslagen, "
         f"{len(ausgabe['achsen']['bezirk'])} Bezirke, "

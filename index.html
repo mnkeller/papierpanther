@@ -845,6 +845,19 @@
     return t.length === 3 ? t[2] + '.' + t[1] + '.' + t[0] : iso;
   }
 
+  /* Jahresliste als Text: "2025" · "2025 und 2026" · "2023–2024" bei
+     durchgehender Folge · sonst "2023, 2024 und 2026". */
+  function jahreText(jahre) {
+    if (!jahre || !jahre.length) return '';
+    if (jahre.length === 1) return jahre[0];
+    var zahlen = jahre.map(Number);
+    var durchgehend = zahlen.every(function (j, i) {
+      return i === 0 || j === zahlen[i - 1] + 1;
+    });
+    if (durchgehend) return jahre[0] + '–' + jahre[jahre.length - 1];
+    return jahre.slice(0, -1).join(', ') + ' und ' + jahre[jahre.length - 1];
+  }
+
   function baueFooterMeta() {
     var quellnamen = Object.keys(daten.quellen).map(function (k) {
       return daten.quellen[k].name;
@@ -855,12 +868,26 @@
        fuer die Luecke, nicht nur "Sitzungsroutine" (siehe scraper/pruefen.py). */
     var pct = Math.round((st.tops_abgedeckt / st.tops_ausgelesen) * 100);
     var sonstige = st.tops_sonstige + st.tops_nicht_oeffentlich;
+    /* "Aufbereitet: 84 %" klingt gleichmaessig ueber den ganzen Zeitraum —
+       ist es nicht: der Rueckstand steckt fast vollstaendig in den aeltesten
+       Jahren (siehe scraper/feed_bauen.py::jahre_vollstaendig/jahre_rueckstand).
+       Ohne diesen Hinweis wirkt die Luecke wie ein laufendes Problem statt
+       ein historischer Nachholbedarf aus der Rueckwaerts-Ausweitung der
+       Rohdaten bis November 2023. */
+    var jahreHinweis = '';
+    if (st.jahre_vollstaendig && st.jahre_vollstaendig.length) {
+      jahreHinweis = ' (' + jahreText(st.jahre_vollstaendig) + ' vollständig kuratiert';
+      if (st.jahre_rueckstand && st.jahre_rueckstand.length) {
+        jahreHinweis += ', Rückstand noch bei ' + jahreText(st.jahre_rueckstand);
+      }
+      jahreHinweis += ')';
+    }
     var txt2;
     if (!leicht) {
       txt2 = 'Quellen: ' + quellnamen.join(' · ') +
         ' · Software: Session (Somacos GmbH & Co. KG)' +
         ' · Daten abgerufen am ' + datumDe(daten.daten_abgerufen_am) +
-        ' · Zeitraum ' + daten.zeitraum.von + ' bis ' + daten.zeitraum.bis +
+        ' · Zeitraum ' + daten.zeitraum.von + ' bis ' + daten.zeitraum.bis + jahreHinweis +
         ' · Aufbereitet: ' + st.tops_abgedeckt + ' von ' + st.tops_ausgelesen +
         ' Tagesordnungspunkten (' + pct + ' %), zusammengefasst zu ' +
         st.tops_kuratiert + ' Themen' +
@@ -877,7 +904,13 @@
         st.tops_kuratiert + ' Karten. ' +
         st.tops_sitzungsroutine_offen + ' Themen waren nur Formalie. ' +
         st.tops_beteiligung + ' Themen gehören zu Aufsichtsräten, Zweckverbänden oder Beiräten. ' +
-        st.tops_offen + ' Themen sind noch nicht bearbeitet.';
+        st.tops_offen + ' Themen sind noch nicht bearbeitet. ' +
+        (st.jahre_vollstaendig && st.jahre_vollstaendig.length
+          ? 'Für ' + jahreText(st.jahre_vollstaendig) + ' ist schon alles bearbeitet. '
+          : '') +
+        (st.jahre_rueckstand && st.jahre_rueckstand.length
+          ? 'Bei ' + jahreText(st.jahre_rueckstand) + ' fehlt noch etwas.'
+          : '');
     }
     document.getElementById('footer-meta').textContent = txt2;
   }

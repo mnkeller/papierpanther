@@ -28,7 +28,7 @@
   },
   "hinweis": "Oeffentlich zugaengliche Seiten, ohne Anmeldung abgerufen.",
   "daten_abgerufen_am": "2026-08-23",
-  "feed_gebaut_am": "2026-08-23",
+  "feed_gebaut_am": "2026-09-17",
   "zeitraum": {
     "von": "2023-11",
     "bis": "2026-08"
@@ -44,6 +44,14 @@
     "tops_sonstige": 308,
     "tops_nicht_oeffentlich": 2,
     "tops_offen": 1276,
+    "jahre_vollstaendig": [
+      "2025",
+      "2026"
+    ],
+    "jahre_rueckstand": [
+      "2023",
+      "2024"
+    ],
     "entwuerfe": 155,
     "leichte_sprache": 2299,
     "je_quelle": {
