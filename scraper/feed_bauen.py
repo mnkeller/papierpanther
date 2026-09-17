@@ -357,6 +357,10 @@ def main():
             "stand": staende,
         },
         "eintraege": feed,
+        # Sitzungstermine ohne veroeffentlichte Tagesordnung — reine Fakten
+        # ohne Inhalt, deshalb ungekuratiert direkt durchgereicht (siehe
+        # ris_ingolstadt.py::kommende_termine_auslesen).
+        "kommende_termine": roh.get("kommende_termine", []),
     }
 
     ziel = os.path.join(DATEN_VZ, "feed.json")

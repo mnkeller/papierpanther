@@ -143,8 +143,7 @@
      War zuerst eine Kachel zwischen Statistik und Feed — stand dort als
      Fremdkoerper zwischen den beiden Kernelementen der Seite. Als schmale
      Buttonreihe direkt ueber der Schlagzeile faellt sie auf, ohne den
-     eigentlichen Einstieg (Hero, Statistik, Filter) zu verdraengen. Zweiter
-     Button "Im Fokus: Die Bezirke" kommt hier dazu, sobald bezirke.html steht. */
+     eigentlichen Einstieg (Hero, Statistik, Filter) zu verdraengen. */
   .im-fokus-leiste { padding: 1.5rem 0 0; }
   .im-fokus-buttons { display: flex; flex-wrap: wrap; gap: .6rem; }
   .fokus-btn {
@@ -154,6 +153,26 @@
     padding: .5rem 1.15rem; transition: background .12s ease, color .12s ease;
   }
   .fokus-btn:hover { background: var(--accent); color: #fff; }
+
+  /* ---------- Demnaechst: Termine ohne veroeffentlichte Tagesordnung ----------
+     Bewusst schlicht und ungekuratiert — reine Fakten (Gremium, Datum, Ort),
+     weil es noch keine Tagesordnung zu uebersetzen gibt. Genau hier kann man
+     als Buergerin noch einwirken, bevor entschieden wird. */
+  .demnaechst { padding: 1.1rem 0 0; }
+  .demnaechst-titel {
+    font-family: var(--font-display); font-size: .8rem; font-weight: 700;
+    color: var(--text-faint); text-transform: uppercase; letter-spacing: .06em;
+    margin-bottom: .5rem;
+  }
+  .demnaechst-liste { list-style: none; }
+  .demnaechst-item {
+    display: flex; flex-wrap: wrap; gap: 0 .75rem; align-items: baseline;
+    font-size: .86rem; padding: .45rem 0; border-bottom: 1px solid var(--border);
+  }
+  .demnaechst-item:last-child { border-bottom: none; }
+  .demnaechst-datum { font-weight: 700; color: var(--primary); white-space: nowrap; }
+  .demnaechst-gremium { color: var(--text); }
+  .demnaechst-info { color: var(--text-faint); font-size: .82rem; }
 
   /* ---------- Arbeitsflaeche: Filterspalte neben dem Feed ----------
      Bewusst zweispaltig statt Filterband ueber der Liste: bei 880 Eintraegen
@@ -506,6 +525,13 @@
     </div>
   </section>
 
+  <section class="demnaechst" id="demnaechst" hidden>
+    <div class="container">
+      <h2 class="demnaechst-titel" id="demnaechst-titel">Demnächst</h2>
+      <ul class="demnaechst-liste" id="demnaechst-liste"></ul>
+    </div>
+  </section>
+
   <section class="hero">
     <div class="container">
       <svg class="hero-mascot" viewBox="0 0 120 120" aria-hidden="true">
@@ -681,6 +707,11 @@
     heroP: {
       n: 'Ob Fahrradbügel, Kita-Plätze oder Gebühren: Der Stadtrat und die zwölf Bezirksausschüsse behandeln jede Woche Themen, die den Alltag in Ingolstadt betreffen. Alles steht öffentlich im Ratsinfoportal — nur eben verteilt über hunderte Einzelpunkte in Amtssprache. Der PapierPanther sammelt sie ein, fasst sie zusammen und sortiert sie danach, wen sie betreffen. Suchen Sie einfach Ihren Stadtbezirk.',
       l: 'Der Stadt-Rat trifft viele Entscheidungen. Die 12 Bezirks-Ausschüsse entscheiden mit. Es geht um Rad-Wege, Kita-Plätze oder Gebühren. Alle Infos stehen im Rats-Info-Portal der Stadt. Aber der Text dort ist schwer zu lesen. Der PapierPanther sammelt die Infos. Er schreibt sie einfacher auf. Er sortiert sie nach Thema. Suchen Sie einfach Ihren Stadt-Bezirk.'
+    },
+    demnaechstTitel: { n: 'Demnächst', l: 'Was bald passiert' },
+    demnaechstHinweis: {
+      n: 'Tagesordnung noch nicht veröffentlicht',
+      l: 'Es gibt noch keine Liste mit den Themen dafür.',
     },
     filtersHeadH2: { n: 'Wonach möchten Sie schauen?', l: 'Was möchten Sie sehen?' },
     filtersHint:   { n: 'Mehreres auswählbar', l: 'Sie können mehrere Themen wählen.' },
@@ -940,6 +971,34 @@
     document.getElementById('footer-meta').textContent = txt2;
   }
 
+  /* "Demnaechst": Sitzungstermine ohne veroeffentlichte Tagesordnung, siehe
+     ris_ingolstadt.py::kommende_termine_auslesen. Bewusst ungekuratiert und
+     ohne Filter — reine Fakten, weil es noch keine Tagesordnung gibt, die
+     man uebersetzen koennte. Genau hier kann man als Buergerin noch
+     einwirken, bevor entschieden wird. */
+  function baueDemnaechst() {
+    var sektion = document.getElementById('demnaechst');
+    var termine = daten.kommende_termine || [];
+    if (!termine.length) {
+      sektion.hidden = true;
+      return;
+    }
+    sektion.hidden = false;
+    document.getElementById('demnaechst-titel').textContent = txt('demnaechstTitel');
+
+    var liste = document.getElementById('demnaechst-liste');
+    liste.textContent = '';
+    termine.slice(0, 8).forEach(function (t) {
+      var li = el('li', 'demnaechst-item');
+      li.appendChild(el('span', 'demnaechst-datum', t.datum_anzeige));
+      li.appendChild(el('span', 'demnaechst-gremium', t.gremium));
+      var einzelheiten = [t.zeit, t.ort].filter(Boolean).join(' · ');
+      if (einzelheiten) li.appendChild(el('span', 'demnaechst-info', einzelheiten));
+      li.appendChild(el('span', 'demnaechst-info', txt('demnaechstHinweis')));
+      liste.appendChild(li);
+    });
+  }
+
   function texteAnwenden() {
     document.getElementById('header-tag').textContent = txt('headerTag');
     document.getElementById('header-link').textContent = txt('headerLink');
@@ -1076,6 +1135,7 @@
     baueHeroStats();
     baueFilter();
     baueFooterMeta();
+    baueDemnaechst();
     gezeigt = ERSTE_SEITE;
     zeichne();
   });
@@ -1302,6 +1362,7 @@
   baueHeroStats();
   baueFilter();
   baueFooterMeta();
+  baueDemnaechst();
   zeichne();
 })();
 </script>

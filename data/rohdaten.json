@@ -21,20 +21,161 @@
       "software": "Session (Somacos GmbH & Co. KG)",
       "basis_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de",
       "endung": "asp",
-      "anzahl_sitzungen": 73,
-      "anzahl_tops": 706
+      "anzahl_sitzungen": 74,
+      "anzahl_tops": 711
     }
   },
   "hinweis": "Oeffentlich zugaengliche Seiten, ohne Anmeldung abgerufen.",
-  "abgerufen_am": "2026-08-23",
+  "abgerufen_am": "2026-09-17",
   "zeitraum": {
     "von": "2023-11",
-    "bis": "2026-08"
+    "bis": "2026-09"
   },
-  "anzahl_sitzungen": 604,
-  "anzahl_tops": 5959,
-  "anzahl_verfahren": 819,
+  "anzahl_sitzungen": 605,
+  "anzahl_tops": 5964,
+  "anzahl_verfahren": 820,
   "sitzungen": [
+    {
+      "id": "4934",
+      "kennung": "PersA/005/2026",
+      "gremium": "Personalausschuss",
+      "raum": "Sitzungssaal im 5. OG des Verwaltungsgebäudes",
+      "datum": "2026-09-22",
+      "datum_anzeige": "22.09.2026",
+      "zeit": "14:00-16:00 Uhr",
+      "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4934",
+      "dokumente": [
+        {
+          "titel": "Öffentliche Bekanntmachung",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88197&type=do"
+        }
+      ],
+      "tops": [
+        {
+          "nr": "Ö 1",
+          "titel": "Genehmigung des Protokolls der letzten Sitzung",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": true,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 2",
+          "titel": "Zertifizierung des Bezirks Oberbayern als „Empfehlenswerter Arbeitgeber®“",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "14/BV/168/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14928",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88039&type=do"
+            },
+            {
+              "titel": "Anlage SV 14BV1682026 EmpfAG PA20260922",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88089&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-09-22",
+              "datum_anzeige": "22.09.2026",
+              "gremium": "Personalausschuss",
+              "top_nr": "2",
+              "oeffentlich": true,
+              "rolle": "Kenntnisnahme",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4934&toselect=27803"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 3",
+          "titel": "Vorstellung der Auswertungen zur Inanspruchnahme von Fortbildungsangeboten sowie zur Entwicklung der Fluktuation im Jahr 2025",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "14/BV/167/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14927",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=87904&type=do"
+            },
+            {
+              "titel": "Anlage SV 14BV1672026 Personalstatistik PA20260922",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88076&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-09-22",
+              "datum_anzeige": "22.09.2026",
+              "gremium": "Personalausschuss",
+              "top_nr": "3",
+              "oeffentlich": true,
+              "rolle": "Kenntnisnahme",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4934&toselect=27802"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 4",
+          "titel": "Auswertung der krankheitsbedingten Fehlzeiten 2025 und weiterer gesundheitsrelevanter Kennzahlen",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "94/BV/092/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14804",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88111&type=do"
+            },
+            {
+              "titel": "Liste Krankheitsquote 2025",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88106&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-09-22",
+              "datum_anzeige": "22.09.2026",
+              "gremium": "Personalausschuss",
+              "top_nr": "4",
+              "oeffentlich": true,
+              "rolle": "Kenntnisnahme",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4934&toselect=27863"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 5",
+          "titel": "Bekanntgaben und Sonstiges",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        }
+      ],
+      "quelle": "bezirk_obb"
+    },
     {
       "id": "13735",
       "kennung": "AGW/02/2026",
@@ -164865,6 +165006,256 @@
           "beratungen": []
         }
       ],
+      "quelle": "bezirk_obb"
+    }
+  ],
+  "kommende_termine": [
+    {
+      "gremium": "Unterausschusses Jugendhilfeplanung des Jugendhilfeausschusses",
+      "datum": "2026-09-17",
+      "datum_anzeige": "17.09.2026",
+      "zeit": "16:00 Uhr",
+      "ort": "Ingolstadt, Kantine des Sozialen Rathauses",
+      "quelle": "stadt"
+    },
+    {
+      "gremium": "Werkausschuss für das Kultur- und Bildungszentrum Kloster Seeon",
+      "datum": "2026-09-22",
+      "datum_anzeige": "22.09.2026",
+      "zeit": "09:30-11:00 Uhr",
+      "ort": "Kultur- und Bildungszentrum Kloster Seeon, Festsaal",
+      "quelle": "bezirk_obb"
+    },
+    {
+      "gremium": "Bürgerversammlung VII - Etting",
+      "datum": "2026-09-30",
+      "datum_anzeige": "30.09.2026",
+      "zeit": "18:30 Uhr",
+      "ort": "",
+      "quelle": "stadt"
+    },
+    {
+      "gremium": "Jugendhilfeausschusses",
+      "datum": "2026-10-01",
+      "datum_anzeige": "01.10.2026",
+      "zeit": "16:00 Uhr",
+      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt"
+    },
+    {
+      "gremium": "Bezirksausschuss",
+      "datum": "2026-10-01",
+      "datum_anzeige": "01.10.2026",
+      "zeit": "09:30-12:30 Uhr",
+      "ort": "Hybrid (Sitzungssaal 5. OG und Teams)",
+      "quelle": "bezirk_obb"
+    },
+    {
+      "gremium": "Ausschusses für Sport, Veranstaltungen und Freizeit",
+      "datum": "2026-10-06",
+      "datum_anzeige": "06.10.2026",
+      "zeit": "16:00 Uhr",
+      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt"
+    },
+    {
+      "gremium": "Ausschusses für Soziales, Gesundheit, Stiftungen und Familien",
+      "datum": "2026-10-08",
+      "datum_anzeige": "08.10.2026",
+      "zeit": "16:00 Uhr",
+      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt"
+    },
+    {
+      "gremium": "Bezirksausschusses IV-Südost",
+      "datum": "2026-10-08",
+      "datum_anzeige": "08.10.2026",
+      "zeit": "",
+      "ort": "- geplanter Sitzungstermin -",
+      "quelle": "bza"
+    },
+    {
+      "gremium": "Ausschusses für Kultur und Bildung",
+      "datum": "2026-10-13",
+      "datum_anzeige": "13.10.2026",
+      "zeit": "16:00 Uhr",
+      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt"
+    },
+    {
+      "gremium": "Bezirksausschusses II-Nordwest",
+      "datum": "2026-10-14",
+      "datum_anzeige": "14.10.2026",
+      "zeit": "19:00 Uhr",
+      "ort": "- geplanter Sitzungstermin -",
+      "quelle": "bza"
+    },
+    {
+      "gremium": "Ausschusses für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+      "datum": "2026-10-15",
+      "datum_anzeige": "15.10.2026",
+      "zeit": "16:00 Uhr",
+      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt"
+    },
+    {
+      "gremium": "Jugendparlamentes",
+      "datum": "2026-10-16",
+      "datum_anzeige": "16.10.2026",
+      "zeit": "17:30 Uhr",
+      "ort": "",
+      "quelle": "stadt"
+    },
+    {
+      "gremium": "Ausschuss für Kultur, Schulen und Museen",
+      "datum": "2026-10-20",
+      "datum_anzeige": "20.10.2026",
+      "zeit": "09:30-11:00 Uhr",
+      "ort": "Sitzungssaal im 5. OG des Verwaltungsgebäudes",
+      "quelle": "bezirk_obb"
+    },
+    {
+      "gremium": "Ausschusses für Finanzen und Personal",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "zeit": "16:00 Uhr",
+      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt"
+    },
+    {
+      "gremium": "Bezirksausschusses XI-Friedrichshofen/Hollerstauden",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "zeit": "",
+      "ort": "- geplanter Sitzungstermin -",
+      "quelle": "bza"
+    },
+    {
+      "gremium": "Personalausschuss",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "zeit": "09:30-11:30 Uhr",
+      "ort": "Sitzungssaal im 5. OG des Verwaltungsgebäudes",
+      "quelle": "bezirk_obb"
+    },
+    {
+      "gremium": "Ausschuss für Bau, Umwelt und Energie",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "zeit": "13:30-15:30 Uhr",
+      "ort": "Sitzungssaal im 5. OG des Verwaltungsgebäudes",
+      "quelle": "bezirk_obb"
+    },
+    {
+      "gremium": "Bezirksausschuss",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "zeit": "15:30-17:00 Uhr",
+      "ort": "Hybrid (Sitzungssaal 5. OG und Teams), Sitzung des Bezirksausschusses",
+      "quelle": "bezirk_obb"
+    },
+    {
+      "gremium": "Bezirkstag",
+      "datum": "2026-10-28",
+      "datum_anzeige": "28.10.2026",
+      "zeit": "09:30-11:30 Uhr",
+      "ort": "Hybrid (Sitzungssaal 5. OG und Teams), Sitzung des Bezirkstags",
+      "quelle": "bezirk_obb"
+    },
+    {
+      "gremium": "Stadtrates",
+      "datum": "2026-10-29",
+      "datum_anzeige": "29.10.2026",
+      "zeit": "13:00 Uhr",
+      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt"
+    },
+    {
+      "gremium": "Werkausschuss für das Kultur- und Bildungszentrum Kloster Seeon",
+      "datum": "2026-11-10",
+      "datum_anzeige": "10.11.2026",
+      "zeit": "09:30-11:00 Uhr",
+      "ort": "Kultur- und Bildungszentrum Kloster Seeon, Festsaal",
+      "quelle": "bezirk_obb"
+    },
+    {
+      "gremium": "Jugendhilfeausschusses",
+      "datum": "2026-11-12",
+      "datum_anzeige": "12.11.2026",
+      "zeit": "16:00 Uhr",
+      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt"
+    },
+    {
+      "gremium": "Ausschusses für Sport, Veranstaltungen und Freizeit",
+      "datum": "2026-11-17",
+      "datum_anzeige": "17.11.2026",
+      "zeit": "16:00 Uhr",
+      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt"
+    },
+    {
+      "gremium": "Ausschuss für Bau, Umwelt und Energie",
+      "datum": "2026-11-17",
+      "datum_anzeige": "17.11.2026",
+      "zeit": "09:30-11:30 Uhr",
+      "ort": "Sitzungssaal im 5. OG des Verwaltungsgebäudes",
+      "quelle": "bezirk_obb"
+    },
+    {
+      "gremium": "Ausschuss für Kultur, Schulen und Museen",
+      "datum": "2026-11-17",
+      "datum_anzeige": "17.11.2026",
+      "zeit": "13:30-15:30 Uhr",
+      "ort": "Sitzungssaal im 5. OG des Verwaltungsgebäudes",
+      "quelle": "bezirk_obb"
+    },
+    {
+      "gremium": "Ausschusses für Soziales, Gesundheit, Stiftungen und Familien",
+      "datum": "2026-11-19",
+      "datum_anzeige": "19.11.2026",
+      "zeit": "16:00 Uhr",
+      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt"
+    },
+    {
+      "gremium": "Ausschusses für Kultur und Bildung",
+      "datum": "2026-11-24",
+      "datum_anzeige": "24.11.2026",
+      "zeit": "16:00 Uhr",
+      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt"
+    },
+    {
+      "gremium": "Bürgerversammlung XII - Münchener Straße",
+      "datum": "2026-11-24",
+      "datum_anzeige": "24.11.2026",
+      "zeit": "18:30 Uhr",
+      "ort": "",
+      "quelle": "stadt"
+    },
+    {
+      "gremium": "Inklusionsrates",
+      "datum": "2026-11-25",
+      "datum_anzeige": "25.11.2026",
+      "zeit": "16:00 Uhr",
+      "ort": "",
+      "quelle": "stadt"
+    },
+    {
+      "gremium": "Ausschusses für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+      "datum": "2026-11-26",
+      "datum_anzeige": "26.11.2026",
+      "zeit": "16:00 Uhr",
+      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt"
+    },
+    {
+      "gremium": "Sozial- und Gesundheitsausschuss",
+      "datum": "2026-11-26",
+      "datum_anzeige": "26.11.2026",
+      "zeit": "09:30-11:00 Uhr",
+      "ort": "Sitzungssaal im 5. OG des Verwaltungsgebäudes",
       "quelle": "bezirk_obb"
     }
   ]

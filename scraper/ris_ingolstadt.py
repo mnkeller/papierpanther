@@ -65,6 +65,9 @@ HIER = os.path.dirname(os.path.abspath(__file__))
 CACHE_VZ = os.path.join(HIER, ".cache")
 DATEN_VZ = os.path.join(os.path.dirname(HIER), "data")
 
+sys.path.insert(0, HIER)
+from referenzen import ist_beteiligung  # noqa: E402
+
 MONATSNAMEN = {
     1: "Januar", 2: "Februar", 3: "Maerz", 4: "April", 5: "Mai", 6: "Juni",
     7: "Juli", 8: "August", 9: "September", 10: "Oktober", 11: "November",
@@ -214,6 +217,87 @@ def parse_kalender(seite, endung="php"):
         if treffer not in ids:
             ids.append(treffer)
     return ids
+
+
+def parse_kalender_ohne_tagesordnung(seite, jahr, monat, endung="php"):
+    """
+    Liefert Sitzungstermine aus einer Monatsansicht (si0040.<endung>), fuer
+    die noch keine Tagesordnung veroeffentlicht ist.
+
+    Erkennungsmerkmal: das Gremium steht als reiner Text in der Zelle
+    ('<div class="smc-el-h ">GREMIUM<!--SMCINFO...--></div>'), waehrend eine
+    veroeffentlichte Tagesordnung denselben Text als Link auf
+    si0056.<endung>?__ksinr=... einpackt. Nur der zuerst gesehene Kalendertag
+    fuellt die Tageszelle; Folgezeilen fuer denselben Tag lassen sie leer —
+    der Tag wird deshalb ueber die Zeilen hinweg fortgefuehrt.
+    """
+    if not seite:
+        return []
+    start = seite.find('id="smc_page_si0040_contenttable1"')
+    if start == -1:
+        return []
+    ende = seite.find("</table>", start)
+    tabelle = seite[start:ende]
+
+    ergebnis = []
+    tag = None
+    for zeile in re.findall(r"<tr>.*?</tr>", tabelle, re.S):
+        tag_treffer = re.search(r'<span class="weekday">(\d+)</span>', zeile)
+        if tag_treffer:
+            tag = int(tag_treffer.group(1))
+        if not tag:
+            continue
+
+        sitz = re.search(r'class="[^"]*\bsilink\b[^"]*">(.*?)</td>', zeile, re.S)
+        if not sitz:
+            continue
+        div = re.search(r'<div class="smc-el-h\s*">(.*?)</div>', sitz.group(1), re.S)
+        if not div:
+            continue
+        innen = div.group(1)
+        if f"si0056.{endung}" in innen:
+            continue  # Tagesordnung schon da — kein "kommender" Termin mehr
+
+        gremium = sauber(re.sub(r"<!--.*?-->", "", innen, flags=re.S))
+        if not gremium or ist_beteiligung(gremium):
+            continue
+        # Rein nicht-oeffentliche Sitzungen ausgenommen — man kaeme ohnehin
+        # nicht hinein. "oeffentliche/nicht oeffentliche" (gemischt) bleibt,
+        # weil dort ein oeffentlicher Teil existiert.
+        if gremium.startswith("nicht öffentliche"):
+            continue
+        # Die Floskel "oeffentliche(/nicht oeffentliche) Sitzung des/der"
+        # steht vor praktisch jedem Eintrag — in einer Liste wiederholt sie
+        # sich staendig, deshalb weg damit. Der Gremienname bleibt im
+        # Genitiv stehen (Portal-Originaltext), statt ihn falsch zu raten.
+        gremium = re.sub(
+            r"^(öffentliche(/nicht öffentliche)?|nicht öffentliche)\s+"
+            r"Sitzung\s+(des|der)\s+",
+            "",
+            gremium,
+        )
+
+        details = [sauber(d) for d in re.findall(
+            r'<li class="list-inline-item">(.*?)</li>', sitz.group(1), re.S
+        )]
+        zeit = details[0] if details and "Uhr" in details[0] else ""
+        ort = ", ".join(details[1:] if zeit else details)
+
+        try:
+            datum_iso = date(jahr, monat, tag).isoformat()
+        except ValueError:
+            continue
+
+        ergebnis.append(
+            {
+                "gremium": gremium,
+                "datum": datum_iso,
+                "datum_anzeige": f"{tag:02d}.{monat:02d}.{jahr:04d}",
+                "zeit": zeit,
+                "ort": ort,
+            }
+        )
+    return ergebnis
 
 
 def parse_beratungen(seite, basis, endung="php"):
@@ -430,6 +514,40 @@ def quelle_auslesen(kuerzel, zeitraum, cache, mit_beratungen):
     return sitzungen
 
 
+def kommende_termine_auslesen(kuerzel, cache):
+    """
+    Sitzungstermine ohne veroeffentlichte Tagesordnung, aktueller Monat plus
+    zwei Folgemonate — dort kann man als Buerger:in noch einwirken (siehe
+    PROTOTYP-INGOLSTADT.md, "Wenn es weitergeht"). Nur Termine ab heute:
+    ein Termin ohne Link in der Vergangenheit wurde meist einfach nie
+    veroeffentlicht (z.B. eine formlos gebliebene Aufsichtsratssitzung),
+    nicht "kommend".
+    """
+    basis = QUELLEN[kuerzel]["basis_url"]
+    endung = QUELLEN[kuerzel].get("endung", "php")
+    heute = date.today()
+    # monate() braucht Start UND Ende — hier immer "aktueller Monat + 2",
+    # deshalb direkt hochgezaehlt statt monate() zu bemuehen.
+    jahr, monat = heute.year, heute.month
+    monate_liste = []
+    for _ in range(3):
+        monate_liste.append((jahr, monat))
+        monat += 1
+        if monat > 12:
+            monat, jahr = 1, jahr + 1
+
+    ergebnis = []
+    for jahr, monat in monate_liste:
+        pfad = f"si0040.{endung}?__cjahr={jahr}&__cmonat={monat}&__canz=1&__cselect=0"
+        seite = hole(pfad, basis, cache=cache)
+        for termin in parse_kalender_ohne_tagesordnung(seite, jahr, monat, endung):
+            if termin["datum"] < heute.isoformat():
+                continue
+            termin["quelle"] = kuerzel
+            ergebnis.append(termin)
+    return ergebnis
+
+
 def main():
     heute = date.today()
     standard_bis = f"{heute.year:04d}-{heute.month:02d}"
@@ -471,6 +589,14 @@ def main():
 
     sitzungen.sort(key=lambda s: (s["datum"], s["kennung"]), reverse=True)
 
+    print("\n=== Kommende Termine ohne Tagesordnung ===")
+    kommende_termine = []
+    for kuerzel in gewaehlt:
+        neu = kommende_termine_auslesen(kuerzel, cache)
+        print(f"  {kuerzel:10} {len(neu)} Termine")
+        kommende_termine += neu
+    kommende_termine.sort(key=lambda t: t["datum"])
+
     je_quelle = {}
     for kuerzel in gewaehlt:
         eigene = [s for s in sitzungen if s["quelle"] == kuerzel]
@@ -491,6 +617,7 @@ def main():
             1 for s in sitzungen for t in s["tops"] if t["verfahren"]
         ),
         "sitzungen": sitzungen,
+        "kommende_termine": kommende_termine,
     }
 
     os.makedirs(DATEN_VZ, exist_ok=True)
@@ -509,6 +636,7 @@ def main():
         f"{ausgabe['anzahl_tops']:4} TOPs "
         f"({ausgabe['anzahl_verfahren']} davon Sitzungsroutine)"
     )
+    print(f"  {len(kommende_termine)} kommende Termine ohne Tagesordnung")
 
 
 if __name__ == "__main__":
