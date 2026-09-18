@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'">
+<title>Beteiligen — PapierPanther</title>
+<meta name="description" content="Wie Sie sich in Ingolstadt einbringen können: Kontakt zu Stadtrat, Bezirksausschüssen und Bezirkstag, plus aktuelle Beteiligungsprojekte der Stadt.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mnkeller.github.io/papierpanther/beteiligen.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PapierPanther Ingolstadt">
+<meta property="og:url" content="https://mnkeller.github.io/papierpanther/beteiligen.html">
+<meta property="og:title" content="Beteiligen — PapierPanther">
+<meta property="og:description" content="Wie Sie sich in Ingolstadt einbringen können: Kontakt zu Stadtrat, Bezirksausschüssen und Bezirkstag, plus aktuelle Beteiligungsprojekte der Stadt.">
+<meta property="og:image" content="https://mnkeller.github.io/papierpanther/vorschau.png">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Beteiligen — PapierPanther">
+<meta name="twitter:image" content="https://mnkeller.github.io/papierpanther/vorschau.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003E59'/%3E%3Cpath d='M18 30c0-8 5-15 14-15s14 7 14 15' fill='none' stroke='%23ffffff' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M17 22c-2-4-2-8 1-11 1 3 1 6 3 8z' fill='%23ffffff'/%3E%3Cpath d='M47 22c2-4 2-8-1-11-1 3-1 6-3 8z' fill='%23ffffff'/%3E%3Ccircle cx='25' cy='31' r='3' fill='%23ffffff'/%3E%3Ccircle cx='39' cy='31' r='3' fill='%23ffffff'/%3E%3Cpath d='M30 38l2 3 2-3z' fill='%23B00E2B'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --primary: #003e59;
+    --primary-dark: #00263a;
+    --accent: #b00e2b;
+    --text: #16232b;
+    --text-muted: #566a74;
+    --text-faint: #5c6a72;
+    --bg: #f8f7f4;
+    --bg-warm: #f1efe9;
+    --card: #ffffff;
+    --border: #e4e0d8;
+    --border-strong: #8f8779;
+    --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+    --radius: 10px;
+    --shadow: 0 1px 3px rgba(22,35,43,.06), 0 0 0 1px rgba(22,35,43,.04);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-body); color: var(--text); background: var(--bg);
+    line-height: 1.65; font-size: 16px; -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+  a { color: var(--accent); }
+
+  .site-header {
+    background: var(--primary); border-bottom: 3px solid var(--accent);
+    padding: .85rem 0; position: sticky; top: 0; z-index: 50;
+  }
+  .site-header .container { display: flex; align-items: center; gap: .65rem; flex-wrap: wrap; }
+  .logo-mark { flex: none; display: block; }
+  .brand {
+    font-family: var(--font-display); font-size: 1.28rem; font-weight: 700;
+    letter-spacing: -.01em; color: #fff; text-decoration: none;
+  }
+  .brand span { color: #a9c7d6; font-weight: 400; }
+  .header-spacer { margin-left: auto; }
+  .btn-zurueck {
+    font-size: .82rem; font-weight: 600; text-decoration: none; color: #fff;
+    background: none; border: 1px solid rgba(255,255,255,.5); border-radius: 999px;
+    padding: .3rem .85rem;
+  }
+  .btn-zurueck:hover { background: rgba(255,255,255,.14); }
+  .btn-leicht {
+    font: inherit; font-size: .82rem; cursor: pointer;
+    background: none; border: 1px solid rgba(255,255,255,.5); color: #fff;
+    padding: .3rem .75rem; border-radius: 999px;
+  }
+  .btn-leicht:hover { background: rgba(255,255,255,.14); }
+  .btn-leicht[aria-pressed="true"] {
+    background: #fff; color: var(--primary-dark); border-color: #fff; font-weight: 600;
+  }
+
+  .disclaimer {
+    background: #fdf6e7; border-bottom: 1px solid #e8d9b0; color: #7d6320;
+    font-size: .74rem; padding: .5rem 0;
+  }
+  .disclaimer strong { font-weight: 600; }
+  .disclaimer p { max-width: 680px; }
+
+  main { padding: 3rem 0 3.5rem; }
+  h1 {
+    font-family: var(--font-display); font-size: clamp(1.75rem, 4.5vw, 2.4rem);
+    font-weight: 700; letter-spacing: -.02em; margin-bottom: .5rem; max-width: 22ch;
+  }
+  .lede { color: var(--text-muted); font-size: 1.05rem; max-width: 62ch; margin-bottom: 1.75rem; }
+  h2 {
+    font-family: var(--font-display); font-size: 1.4rem; font-weight: 700;
+    margin: 2.75rem 0 .6rem; letter-spacing: -.01em;
+  }
+  h3 {
+    font-family: var(--font-display); font-size: 1.05rem; font-weight: 700;
+    margin: 0 0 .4rem;
+  }
+  p { margin-bottom: 1rem; max-width: 68ch; }
+
+  /* ---------- Kontakt-Karten: Vertreter:innen ansprechen ---------- */
+  .kontakt-liste {
+    display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    margin: 1.25rem 0 1rem;
+  }
+  .kontakt-karte {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 1.25rem 1.35rem; display: flex; flex-direction: column;
+  }
+  .kontakt-karte h3 { color: var(--primary); }
+  .kontakt-karte p { font-size: .92rem; color: var(--text-muted); flex: 1; margin-bottom: .9rem; }
+  .kontakt-link {
+    display: inline-block; align-self: flex-start; font-size: .86rem; font-weight: 600;
+    text-decoration: none; color: var(--accent); border: 1px solid var(--accent);
+    border-radius: 6px; padding: .4rem .8rem;
+  }
+  .kontakt-link:hover { background: var(--accent); color: #fff; }
+  .kontakt-link::after { content: ' ↗'; opacity: .7; font-size: .9em; }
+
+  /* ---------- Projekt-Karten: Beteiligungsprojekte der Stadt ---------- */
+  .projekt-liste {
+    display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    margin: 1.25rem 0 1.5rem;
+  }
+  .projekt-karte {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 1.25rem 1.35rem; display: flex; flex-direction: column;
+  }
+  .projekt-karte p { font-size: .92rem; color: var(--text-muted); flex: 1; margin-bottom: .9rem; }
+  .projekt-link {
+    display: inline-block; align-self: flex-start; font-size: .86rem; font-weight: 600;
+    text-decoration: none; color: var(--primary); border: 1px solid var(--primary);
+    border-radius: 6px; padding: .4rem .8rem;
+  }
+  .projekt-link:hover { background: var(--primary); color: #fff; }
+  .projekt-link::after { content: ' ↗'; opacity: .7; font-size: .9em; }
+
+  .portal-cta {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 1rem;
+    background: var(--bg-warm); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 1.1rem 1.3rem; margin-bottom: 1rem;
+  }
+  .portal-cta p { margin: 0; flex: 1; min-width: 220px; font-size: .95rem; color: var(--text-muted); }
+  .btn-portal {
+    display: inline-block; flex: none; font-size: .88rem; font-weight: 600; text-decoration: none;
+    color: #fff; background: var(--primary); border-radius: 999px; padding: .55rem 1.2rem;
+  }
+  .btn-portal:hover { background: var(--primary-dark); }
+  .btn-portal::after { content: ' ↗'; opacity: .8; font-size: .9em; }
+
+  .site-footer {
+    border-top: 1px solid var(--border); background: var(--bg-warm);
+    padding: 1.75rem 0; font-size: .85rem; color: var(--text-muted);
+  }
+  .site-footer .container { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+  .site-footer a { color: var(--primary-dark); }
+
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <svg class="logo-mark" width="34" height="34" viewBox="0 0 40 40" aria-hidden="true">
+      <rect x="9" y="17" width="22" height="16" rx="2" fill="#f1efe9"/>
+      <path d="M27 17h4v4z" fill="#B00E2B"/>
+      <path d="M11 18c0-7.5 4-12 9-12s9 4.5 9 12" fill="#fff"/>
+      <path d="M13 15 L9.5 5 L17.5 11.5 Z" fill="#fff"/>
+      <path d="M27 15 L30.5 5 L22.5 11.5 Z" fill="#fff"/>
+      <circle cx="16.5" cy="15" r="1.7" fill="#003E59"/>
+      <circle cx="23.5" cy="15" r="1.7" fill="#003E59"/>
+      <path d="M18.6 18.2l1.4 1.9 1.4-1.9z" fill="#B00E2B"/>
+    </svg>
+    <a class="brand" href="index.html">PapierPanther <span>Ingolstadt</span></a>
+    <span class="header-spacer"></span>
+    <button class="btn-leicht" id="btn-leicht" type="button" aria-pressed="false">Leichte Sprache</button>
+    <a class="btn-zurueck" href="index.html">← Zurück zum PapierPanther</a>
+  </div>
+</header>
+
+<div class="disclaimer">
+  <div class="container">
+    <p id="txt-hinweis"></p>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+    <h1 id="txt-h1">Beteiligen</h1>
+    <p class="lede" id="txt-lede"></p>
+
+    <section id="vertreter">
+      <h2 id="txt-vertreter-h2"></h2>
+      <p id="txt-vertreter-intro"></p>
+
+      <div class="kontakt-liste">
+        <div class="kontakt-karte">
+          <h3 id="txt-kontakt-stadtrat-titel"></h3>
+          <p id="txt-kontakt-stadtrat-text"></p>
+          <a class="kontakt-link" id="link-kontakt-stadtrat"
+             href="https://www.ingolstadt.de/sessionnet/kp0040.php?__kgrnr=1"
+             target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="kontakt-karte">
+          <h3 id="txt-kontakt-bza-titel"></h3>
+          <p id="txt-kontakt-bza-text"></p>
+          <a class="kontakt-link" id="link-kontakt-bza"
+             href="https://www.ingolstadt.de/sessionnetbza/kp0041.php"
+             target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="kontakt-karte">
+          <h3 id="txt-kontakt-bezirk-titel"></h3>
+          <p id="txt-kontakt-bezirk-text"></p>
+          <a class="kontakt-link" id="link-kontakt-bezirk"
+             href="https://buergerinfo-bezirk-obb.digitalfabrix.de/kp0040.asp?__kgrnr=1"
+             target="_blank" rel="noopener noreferrer"></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projekte">
+      <h2 id="txt-projekte-h2"></h2>
+      <p id="txt-projekte-intro"></p>
+
+      <div class="projekt-liste">
+        <div class="projekt-karte">
+          <h3 id="txt-projekt-mobilitaet-titel"></h3>
+          <p id="txt-projekt-mobilitaet-text"></p>
+          <a class="projekt-link" id="link-projekt-mobilitaet"
+             href="https://ingolstadt-macht-mit.de/mobilitaetsplan"
+             target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="projekt-karte">
+          <h3 id="txt-projekt-laerm-titel"></h3>
+          <p id="txt-projekt-laerm-text"></p>
+          <a class="projekt-link" id="link-projekt-laerm"
+             href="https://ingolstadt-macht-mit.de/group/16"
+             target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="projekt-karte">
+          <h3 id="txt-projekt-isek-titel"></h3>
+          <p id="txt-projekt-isek-text"></p>
+          <a class="projekt-link" id="link-projekt-isek"
+             href="https://ingolstadt-macht-mit.de/ISEK2040"
+             target="_blank" rel="noopener noreferrer"></a>
+        </div>
+      </div>
+
+      <div class="portal-cta">
+        <p id="txt-portal-cta-text"></p>
+        <a class="btn-portal" id="link-portal-cta"
+           href="https://ingolstadt-macht-mit.de" target="_blank" rel="noopener noreferrer"></a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <a href="index.html">Übersicht</a>
+    <a href="haushalt.html">Haushalt</a>
+    <a href="antraege.html">Anträge</a>
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="https://github.com/mnkeller/papierpanther" rel="noopener noreferrer" target="_blank">Quellcode<span class="sr-only"> (öffnet in neuem Tab)</span></a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  var LS_KEY_LEICHT = 'papierpanther-leichte-sprache';
+  var leicht = false;
+  try { leicht = localStorage.getItem(LS_KEY_LEICHT) === '1'; } catch (err) { /* Storage kann gesperrt sein */ }
+
+  var TEXTE = {
+    'h1': { n: 'Beteiligen', l: 'Mitmachen' },
+    'lede': {
+      n: 'Informieren, mitreden, Themen ansprechen oder Antworten holen: Demokratie lebt von Beteiligung und Austausch.',
+      l: 'Sie können sich informieren. Sie können mitreden. Sie können Fragen stellen. Demokratie braucht Beteiligung. Und sie braucht Austausch.',
+    },
+    'hinweis': {
+      n: '<strong>PapierPanther ist kein Angebot der Stadt Ingolstadt.</strong> Diese Seite sammelt nur Links zu offiziellen Kontakt- und Beteiligungsangeboten der Stadt Ingolstadt, des Bezirks Oberbayern und des Beteiligungsportals ingolstadt-macht-mit.de.',
+      l: '<strong>PapierPanther ist kein Angebot der Stadt Ingolstadt.</strong> Diese Seite sammelt nur Links. Die Links führen zu offiziellen Seiten: von der Stadt Ingolstadt, vom Bezirk Oberbayern und von der Seite ingolstadt-macht-mit.de.',
+    },
+    'vertreter-h2': {
+      n: 'Sprechen Sie Ihre gewählten Vertreter:innen an',
+      l: 'Sprechen Sie mit den gewählten Personen',
+    },
+    'vertreter-intro': {
+      n: 'Jede Ebene hat eigene Mitglieder mit eigenen Kontaktseiten im Ratsinfoportal — von dort lässt sich meist direkt eine Nachricht schreiben.',
+      l: 'Es gibt drei Gruppen von gewählten Personen. Jede Gruppe hat eine eigene Kontakt-Seite. Dort finden Sie die Namen. Oft können Sie dort auch eine Nachricht schreiben.',
+    },
+    'kontakt-stadtrat-titel': { n: 'Stadträtinnen und Stadträte', l: 'Der Stadtrat' },
+    'kontakt-stadtrat-text': {
+      n: 'Der Stadtrat entscheidet über die großen Linien der Stadtpolitik, vom Haushalt bis zur Bauleitplanung. Sagen Sie den Mitgliedern, was Ihnen wichtig ist.',
+      l: 'Der Stadtrat trifft die großen Entscheidungen für Ingolstadt. Zum Beispiel über Geld und über Bau-Pläne. Schreiben Sie den Mitgliedern, was Ihnen wichtig ist.',
+    },
+    'kontakt-bza-titel': { n: 'Bezirksausschuss-Vertreter:innen', l: 'Der Bezirksausschuss' },
+    'kontakt-bza-text': {
+      n: 'Die zwölf Bezirksausschüsse sind am nächsten an Ihrem Alltag dran. Sagen Sie Ihrem Ausschuss, was in Ihrem Stadtteil ansteht.',
+      l: 'Es gibt 12 Bezirks-Ausschüsse. Sie kümmern sich um Ihren Stadt-Teil. Sagen Sie Ihrem Bezirks-Ausschuss, was bei Ihnen los ist.',
+    },
+    'kontakt-bezirk-titel': { n: 'Bezirksrätinnen und Bezirksräte', l: 'Der Bezirkstag Oberbayern' },
+    'kontakt-bezirk-text': {
+      n: 'Der Bezirkstag Oberbayern entscheidet überregional unter anderem über Soziales, Kultur und Krankenhäuser. Auch dort können Sie sich direkt melden.',
+      l: 'Der Bezirkstag Oberbayern entscheidet für ganz Oberbayern. Zum Beispiel über Soziales, Kultur und Krankenhäuser. Auch dort können Sie sich melden.',
+    },
+    'projekte-h2': { n: 'Beteiligungsprojekte der Stadt', l: 'Mitmach-Projekte der Stadt' },
+    'projekte-intro': {
+      n: 'Über die direkte Kontaktaufnahme hinaus sammelt das städtische Portal <a href="https://ingolstadt-macht-mit.de" target="_blank" rel="noopener noreferrer">ingolstadt-macht-mit.de<span class="sr-only"> (öffnet in neuem Tab)</span></a> laufende Beteiligungsprojekte, oft mit Umfragen, Workshops oder Online-Karten. Drei aktuelle Beispiele:',
+      l: 'Es gibt noch mehr Wege mitzumachen. Die Seite <a href="https://ingolstadt-macht-mit.de" target="_blank" rel="noopener noreferrer">ingolstadt-macht-mit.de<span class="sr-only"> (öffnet in neuem Tab)</span></a> sammelt Mitmach-Projekte der Stadt. Hier sind drei Beispiele:',
+    },
+    'projekt-mobilitaet-titel': { n: 'Mobilitätsplan Ingolstadt 2040+', l: 'Mobilitäts-Plan Ingolstadt 2040+' },
+    'projekt-mobilitaet-text': {
+      n: 'Wie soll man sich 2040 in Ingolstadt fortbewegen? Der Mobilitätsplan sammelt dazu Ideen und Rückmeldungen aus der Bürgerschaft.',
+      l: 'Wie fahren wir im Jahr 2040 durch Ingolstadt? Bei diesem Projekt können Sie Ihre Ideen dazu sagen.',
+    },
+    'projekt-laerm-titel': { n: 'Lärmaktionsplanung Stadt Ingolstadt', l: 'Plan gegen Lärm' },
+    'projekt-laerm-text': {
+      n: 'Wo stört Verkehrslärm besonders? Die Lärmaktionsplanung sucht Problemstellen und schützt zugleich ruhige Gebiete vor mehr Lärm.',
+      l: 'Wo ist es zu laut durch Verkehr? Bei diesem Projekt sagen Sie, wo Lärm stört. Ruhige Orte sollen ruhig bleiben.',
+    },
+    'projekt-isek-titel': { n: 'ISEK 2040+', l: 'ISEK 2040+' },
+    'projekt-isek-text': {
+      n: 'Das Integrierte Städtebauliche Entwicklungskonzept bündelt, wie sich Ingolstadts Stadtteile langfristig weiterentwickeln sollen, mit eigenen Beteiligungsterminen.',
+      l: 'ISEK ist ein großer Plan für die Zukunft von Ingolstadts Stadt-Teilen. Es gibt eigene Termine, bei denen Sie mitreden können.',
+    },
+    'portal-cta-text': {
+      n: 'Alle laufenden und abgeschlossenen Beteiligungsprojekte der Stadt gibt es gesammelt auf ingolstadt-macht-mit.de.',
+      l: 'Alle Mitmach-Projekte der Stadt stehen auf ingolstadt-macht-mit.de.',
+    },
+  };
+
+  var LINKTEXTE = {
+    'link-kontakt-stadtrat': { n: 'Mitglieder des Stadtrats und ihre Kontaktdaten', l: 'Mitglieder vom Stadtrat finden' },
+    'link-kontakt-bza': { n: 'Mitglieder der Bezirksausschüsse und ihre Kontaktdaten', l: 'Mitglieder vom Bezirksausschuss finden' },
+    'link-kontakt-bezirk': { n: 'Mitglieder des Bezirkstags Oberbayern und ihre Kontaktdaten', l: 'Mitglieder vom Bezirkstag finden' },
+    'link-projekt-mobilitaet': { n: 'Zum Mobilitätsplan', l: 'Zum Mobilitäts-Plan' },
+    'link-projekt-laerm': { n: 'Zur Lärmaktionsplanung', l: 'Zum Lärm-Projekt' },
+    'link-projekt-isek': { n: 'Zu ISEK 2040+', l: 'Zu ISEK 2040+' },
+    'link-portal-cta': { n: 'Alle Beteiligungsprojekte ansehen', l: 'Alle Mitmach-Projekte ansehen' },
+  };
+
+  function setLinkText(id, paar) {
+    var a = document.getElementById(id);
+    if (!a) return;
+    a.textContent = paar[leicht ? 'l' : 'n'];
+    var sr = document.createElement('span');
+    sr.className = 'sr-only';
+    sr.textContent = ' (öffnet in neuem Tab)';
+    a.appendChild(sr);
+  }
+
+  function texteAnwenden() {
+    Object.keys(TEXTE).forEach(function (id) {
+      var el = document.getElementById('txt-' + id);
+      if (el) el.innerHTML = TEXTE[id][leicht ? 'l' : 'n'];
+    });
+    Object.keys(LINKTEXTE).forEach(function (id) {
+      setLinkText(id, LINKTEXTE[id]);
+    });
+  }
+
+  texteAnwenden();
+
+  var btnLeicht = document.getElementById('btn-leicht');
+  btnLeicht.setAttribute('aria-pressed', leicht ? 'true' : 'false');
+  btnLeicht.addEventListener('click', function () {
+    leicht = !leicht;
+    btnLeicht.setAttribute('aria-pressed', leicht ? 'true' : 'false');
+    try { localStorage.setItem(LS_KEY_LEICHT, leicht ? '1' : '0'); } catch (err) { /* Storage kann gesperrt sein */ }
+    texteAnwenden();
+  });
+})();
+</script>
+
+</body>
+</html>
