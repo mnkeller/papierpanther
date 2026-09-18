@@ -86,11 +86,13 @@
     font-weight: 700; letter-spacing: -.02em; margin-bottom: .5rem; max-width: 20ch;
   }
   .lede { color: var(--text-muted); font-size: 1.05rem; max-width: 62ch; margin-bottom: 1.75rem; }
-  .hinweis {
-    background: var(--warn-bg); border: 1px solid var(--warn-border); color: var(--warn-tx);
-    border-radius: var(--radius); padding: 1rem 1.15rem; font-size: .92rem; margin-bottom: 2.5rem;
+
+  .disclaimer {
+    background: var(--warn-bg); border-bottom: 1px solid var(--warn-border);
+    color: var(--warn-tx); font-size: .74rem; padding: .5rem 0;
   }
-  .hinweis strong { font-weight: 600; }
+  .disclaimer strong { font-weight: 600; }
+  .disclaimer p { max-width: 680px; }
 
   h2 {
     font-family: var(--font-display); font-size: 1.5rem; font-weight: 700;
@@ -112,12 +114,42 @@
   .beispiel p:last-child { margin-bottom: 0; }
   .kennzahl { font-family: var(--font-display); font-weight: 700; color: var(--accent); }
 
+  /* ---------- Aufklappbare Abschnitte: Ueberschrift + Unterschrift als Teaser ----------
+     "Was ist Kameralistik" und "Wo es hakt" sind Hintergrundwissen, nicht der
+     Kern der Seite (das sind die Diagramme mit dem aktuellen Haushalt) — als
+     Fliesstext nehmen sie trotzdem viel Platz vor den Zahlen weg. */
+  .aufklapp-abschnitt { margin: 3rem 0 .75rem; }
+  .aufklapp-abschnitt summary {
+    cursor: pointer; list-style: none; display: flex; flex-direction: column; gap: .35rem;
+    padding-left: 1.15rem; position: relative;
+  }
+  .aufklapp-abschnitt summary::-webkit-details-marker { display: none; }
+  .aufklapp-abschnitt summary::before {
+    content: '▸'; position: absolute; left: 0; top: .5rem; font-size: .85em;
+    color: var(--text-faint); transition: transform .15s;
+  }
+  .aufklapp-abschnitt[open] summary::before { transform: rotate(90deg); }
+  .aufklapp-abschnitt summary h2 { margin: 0; }
+  .aufklapp-abschnitt summary:hover h2 { color: var(--primary); }
+  .aufklapp-abschnitt summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .aufklapp-teaser { font-size: .95rem; font-weight: 400; color: var(--text-muted); max-width: 62ch; }
+  .aufklapp-inhalt { margin-top: 1.1rem; }
+
   .diagramm {
     background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
     box-shadow: var(--shadow); padding: 1.5rem 1.5rem 1.25rem; margin: 1.25rem 0 2rem;
     max-width: 100%; overflow-x: auto;
   }
   .diagramm svg { display: block; width: 100%; height: auto; font-family: var(--font-body); }
+  /* Unter ~640px wuerde die Schrift in den Diagrammen sonst mitschrumpfen,
+     bis sie unlesbar wird (die Balkentexte sind in SVG-Nutzereinheiten
+     definiert und skalieren mit der Breite). Stattdessen bleibt die
+     Originalbreite erhalten und der Kasten wird waagerecht scrollbar
+     (siehe overflow-x oben). */
+  @media (max-width: 640px) {
+    #diagramm-hauptgruppen svg, #diagramm-referate svg { width: 820px; }
+    #diagramm-fluss svg, #diagramm-zeitreihe svg { width: 760px; }
+  }
   .diagramm-titel { font-size: .95rem; font-weight: 600; color: var(--text); margin-bottom: .9rem; }
   .diagramm-fuss { font-size: .78rem; color: var(--text-faint); margin-top: .75rem; }
   .balken-label { font-size: 12.5px; fill: var(--text); }
@@ -187,37 +219,55 @@
   </div>
 </header>
 
+<div class="disclaimer">
+  <div class="container">
+    <p id="txt-hinweis"></p>
+  </div>
+</div>
+
 <main>
   <div class="container">
     <h1>Der Haushalt der Stadt Ingolstadt</h1>
     <p class="lede" id="txt-lede"></p>
 
-    <div class="hinweis" id="txt-hinweis"></div>
-
     <section id="was-ist-kameralistik">
-      <h2 id="txt-kam-h2"></h2>
-      <p id="txt-kam-p1"></p>
-      <p id="txt-kam-p2"></p>
+      <details class="aufklapp-abschnitt">
+        <summary>
+          <h2 id="txt-kam-h2"></h2>
+          <span class="aufklapp-teaser" id="txt-kam-teaser"></span>
+        </summary>
+        <div class="aufklapp-inhalt">
+          <p id="txt-kam-p1"></p>
+          <p id="txt-kam-p2"></p>
 
-      <div class="beispiel" id="beispiel-kameralistik">
-        <h3 id="txt-kam-beispiel-h3"></h3>
-        <p class="ladehinweis">Lade Zahlen …</p>
-      </div>
+          <div class="beispiel" id="beispiel-kameralistik">
+            <h3 id="txt-kam-beispiel-h3"></h3>
+            <p class="ladehinweis">Lade Zahlen …</p>
+          </div>
+        </div>
+      </details>
     </section>
 
     <section id="probleme">
-      <h2 id="txt-prob-h2"></h2>
-      <p id="txt-prob-intro"></p>
-      <p id="txt-prob-folgen"></p>
-      <p id="txt-prob-abschreibung"></p>
-      <p id="txt-prob-bilanz"></p>
-      <p id="txt-prob-generationen"></p>
-      <p id="txt-prob-ausgeglichen"></p>
+      <details class="aufklapp-abschnitt">
+        <summary>
+          <h2 id="txt-prob-h2"></h2>
+          <span class="aufklapp-teaser" id="txt-prob-teaser"></span>
+        </summary>
+        <div class="aufklapp-inhalt">
+          <p id="txt-prob-intro"></p>
+          <p id="txt-prob-folgen"></p>
+          <p id="txt-prob-abschreibung"></p>
+          <p id="txt-prob-bilanz"></p>
+          <p id="txt-prob-generationen"></p>
+          <p id="txt-prob-ausgeglichen"></p>
 
-      <div class="beispiel" id="beispiel-probleme">
-        <h3 id="txt-prob-beispiel-h3"></h3>
-        <p class="ladehinweis">Lade Zahlen …</p>
-      </div>
+          <div class="beispiel" id="beispiel-probleme">
+            <h3 id="txt-prob-beispiel-h3"></h3>
+            <p class="ladehinweis">Lade Zahlen …</p>
+          </div>
+        </div>
+      </details>
     </section>
 
     <section id="diagramme">
@@ -328,6 +378,10 @@
         "Wir zeigen die Zahlen auch als Bilder.",
     },
     "kam-h2": { n: "Was ist Kameralistik?", l: "Was ist Kameralistik?" },
+    "kam-teaser": {
+      n: "Der Haushalt der Stadt ist weder ein Privathaushalt noch eine Unternehmensbilanz.",
+      l: "Der Haushalt der Stadt ist anders als eine private Kasse oder eine Firmen-Bilanz.",
+    },
     "kam-p1": {
       n: "Ingolstadt führt seine Bücher kameralistisch. Das heißt: Der Haushalt zeigt, " +
         "was in einem Jahr an Geld reinkommt und rausgeht. Vermögen und Schulden zeigt " +
@@ -357,6 +411,10 @@
       l: "So ist es im Haushalt gerade",
     },
     "prob-h2": { n: "Wo es hakt", l: "Was nicht so gut ist" },
+    "prob-teaser": {
+      n: "Was diese Buchführung gegenüber der kaufmännischen, doppelten Buchführung schwieriger macht.",
+      l: "Das macht diese Art zu rechnen schwieriger als bei einer Firma.",
+    },
     "prob-intro": {
       n: "Bayerns Kommunen dürfen seit 2007 selbst wählen, ob sie kameralistisch oder " +
         "doppisch (nach kaufmännischer, doppelter Buchführung) haushalten. Eine " +

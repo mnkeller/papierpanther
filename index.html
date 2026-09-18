@@ -103,8 +103,8 @@
     background: var(--warn-bg);
     border-bottom: 1px solid var(--warn-border);
     color: var(--warn-tx);
-    font-size: .84rem;
-    padding: .6rem 0;
+    font-size: .74rem;
+    padding: .5rem 0;
   }
   .disclaimer strong { font-weight: 600; }
   /* Lesbare Zeilenlaenge, obwohl der Rahmen jetzt breiter ist */
@@ -132,12 +132,12 @@
     margin-top: 1.75rem; display: flex; flex-wrap: wrap; gap: 0 2.25rem;
     border-top: 1px solid var(--border); padding-top: 1.25rem;
   }
-  .stat { padding: .35rem 0; }
+  .stat { padding: .2rem 0; }
   .stat-num {
-    font-family: var(--font-display); font-size: 1.5rem; font-weight: 700;
+    font-family: var(--font-display); font-size: 1.15rem; font-weight: 700;
     color: var(--primary); line-height: 1.1;
   }
-  .stat-label { font-size: .78rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: .05em; }
+  .stat-label { font-size: .68rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: .05em; }
 
   /* ---------- Im-Fokus-Leiste: schmale Buttonreihe ueber dem Hero ----------
      War zuerst eine Kachel zwischen Statistik und Feed — stand dort als
@@ -157,16 +157,23 @@
   /* ---------- Demnaechst: Termine ohne veroeffentlichte Tagesordnung ----------
      Bewusst schlicht und ungekuratiert — reine Fakten (Gremium, Datum, Ort),
      weil es noch keine Tagesordnung zu uebersetzen gibt. Genau hier kann man
-     als Buergerin noch einwirken, bevor entschieden wird. */
+     als Buergerin noch einwirken, bevor entschieden wird. Als <details>
+     eingeklappt, weil die Liste auf schmalen Bildschirmen sonst laenger ist
+     als der Hero darunter. */
   .demnaechst { padding: 1.1rem 0 0; }
   .demnaechst-titel {
+    cursor: pointer; list-style: none; display: flex; align-items: center; gap: .4rem;
     font-family: var(--font-display); font-size: .8rem; font-weight: 700;
     color: var(--text-faint); text-transform: uppercase; letter-spacing: .06em;
-    margin-bottom: .5rem;
+    padding: .3rem 0;
   }
-  .demnaechst-liste { list-style: none; }
+  .demnaechst-titel::-webkit-details-marker { display: none; }
+  .demnaechst-titel::before { content: '▸'; font-size: .9em; transition: transform .15s; }
+  .demnaechst-details[open] > .demnaechst-titel::before { transform: rotate(90deg); }
+  .demnaechst-titel:hover { color: var(--primary); }
+  .demnaechst-liste { list-style: none; margin-top: .3rem; }
   .demnaechst-item {
-    display: flex; flex-wrap: wrap; gap: 0 .75rem; align-items: baseline;
+    display: flex; flex-wrap: wrap; gap: .3rem .6rem; align-items: baseline;
     font-size: .86rem; padding: .45rem 0; border-bottom: 1px solid var(--border);
   }
   .demnaechst-item:last-child { border-bottom: none; }
@@ -317,6 +324,7 @@
     font-size: .68rem; text-transform: uppercase; letter-spacing: .06em;
     padding: .1rem .4rem; border-radius: 4px; white-space: nowrap;
   }
+  .herkunft.stadt { background: #eef1f6; color: #2f4a70; }
   .herkunft.bza { background: #e6f0ea; color: #2c6146; }
   .herkunft.bezirk_obb { background: #ece6f7; color: #5a3d99; }
   .herkunft.entwurf { background: var(--warn-bg); color: var(--warn-tx); }
@@ -543,8 +551,10 @@
 
   <section class="demnaechst" id="demnaechst" hidden>
     <div class="container">
-      <h2 class="demnaechst-titel" id="demnaechst-titel">Demnächst</h2>
-      <ul class="demnaechst-liste" id="demnaechst-liste"></ul>
+      <details class="demnaechst-details">
+        <summary class="demnaechst-titel" id="demnaechst-titel">Nächste Termine</summary>
+        <ul class="demnaechst-liste" id="demnaechst-liste"></ul>
+      </details>
     </div>
   </section>
 
@@ -724,7 +734,7 @@
       n: 'Ob Fahrradbügel, Kita-Plätze oder Gebühren: Der Stadtrat und die zwölf Bezirksausschüsse behandeln jede Woche Themen, die den Alltag in Ingolstadt betreffen. Alles steht öffentlich im Ratsinfoportal — nur eben verteilt über hunderte Einzelpunkte in Amtssprache. Der PapierPanther sammelt sie ein, fasst sie zusammen und sortiert sie danach, wen sie betreffen. Suchen Sie einfach Ihren Stadtbezirk.',
       l: 'Der Stadt-Rat trifft viele Entscheidungen. Die 12 Bezirks-Ausschüsse entscheiden mit. Es geht um Rad-Wege, Kita-Plätze oder Gebühren. Alle Infos stehen im Rats-Info-Portal der Stadt. Aber der Text dort ist schwer zu lesen. Der PapierPanther sammelt die Infos. Er schreibt sie einfacher auf. Er sortiert sie nach Thema. Suchen Sie einfach Ihren Stadt-Bezirk.'
     },
-    demnaechstTitel: { n: 'Demnächst', l: 'Was bald passiert' },
+    demnaechstTitel: { n: 'Nächste Termine', l: 'Was bald passiert' },
     demnaechstHinweis: {
       n: 'Tagesordnung noch nicht veröffentlicht',
       l: 'Es gibt noch keine Liste mit den Themen dafür.',
@@ -760,6 +770,7 @@
       n: 'Amtlicher Beschlusstext (Niederschrift)',
       l: 'So steht es im Protokoll',
     },
+    herkunftStadt:   { n: 'Stadtrat/Ausschuss', l: 'Stadt-Rat' },
     herkunftBza:     { n: 'Bezirksausschuss', l: 'Bezirks-Ausschuss' },
     herkunftBezirkObb: { n: 'Bezirk Oberbayern', l: 'Bezirk Oberbayern' },
     herkunftEntwurf: { n: 'automatisch verschlagwortet', l: 'automatisch sortiert' },
@@ -998,6 +1009,12 @@
      ohne Filter — reine Fakten, weil es noch keine Tagesordnung gibt, die
      man uebersetzen koennte. Genau hier kann man als Buergerin noch
      einwirken, bevor entschieden wird. */
+  function herkunftLabel(quelle) {
+    if (quelle === 'bza') return txt('herkunftBza');
+    if (quelle === 'bezirk_obb') return txt('herkunftBezirkObb');
+    return txt('herkunftStadt');
+  }
+
   function baueDemnaechst() {
     var sektion = document.getElementById('demnaechst');
     var termine = daten.kommende_termine || [];
@@ -1006,12 +1023,15 @@
       return;
     }
     sektion.hidden = false;
-    document.getElementById('demnaechst-titel').textContent = txt('demnaechstTitel');
+    var gezeigtAnzahl = Math.min(termine.length, 8);
+    document.getElementById('demnaechst-titel').textContent =
+      txt('demnaechstTitel') + ' (' + gezeigtAnzahl + ')';
 
     var liste = document.getElementById('demnaechst-liste');
     liste.textContent = '';
     termine.slice(0, 8).forEach(function (t) {
       var li = el('li', 'demnaechst-item');
+      li.appendChild(el('span', 'herkunft ' + t.quelle, herkunftLabel(t.quelle)));
       li.appendChild(el('span', 'demnaechst-datum', t.datum_anzeige));
       li.appendChild(el('span', 'demnaechst-gremium', t.gremium));
       var einzelheiten = [t.zeit, t.ort].filter(Boolean).join(' · ');

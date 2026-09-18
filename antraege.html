@@ -80,20 +80,22 @@
     font-weight: 700; letter-spacing: -.02em; margin-bottom: .5rem; max-width: 24ch;
   }
   .lede { color: var(--text-muted); font-size: 1.05rem; max-width: 62ch; margin-bottom: 1.75rem; }
-  .hinweis {
-    background: #fdf6e7; border: 1px solid #e8d9b0; color: #7d6320;
-    border-radius: var(--radius); padding: 1rem 1.15rem; font-size: .92rem; margin-bottom: 2rem;
+
+  .disclaimer {
+    background: #fdf6e7; border-bottom: 1px solid #e8d9b0; color: #7d6320;
+    font-size: .74rem; padding: .5rem 0;
   }
-  .hinweis strong { font-weight: 600; }
+  .disclaimer strong { font-weight: 600; }
+  .disclaimer p { max-width: 680px; }
 
   /* ---------- Kopfzahlen ---------- */
   .stat-row {
-    display: flex; flex-wrap: wrap; gap: 0 2rem; margin-bottom: 2rem;
+    display: flex; flex-wrap: wrap; gap: 0 1.75rem; margin-bottom: 1.75rem;
     border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
-    padding: 1.1rem 0;
+    padding: .8rem 0;
   }
-  .stat-num { font-family: var(--font-display); font-size: 1.4rem; font-weight: 700; color: var(--primary); }
-  .stat-label { font-size: .76rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: .05em; }
+  .stat-num { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--primary); }
+  .stat-label { font-size: .68rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: .05em; }
 
   /* ---------- Partei-Filter ---------- */
   .filter-row { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1.75rem; }
@@ -187,11 +189,16 @@
   </div>
 </header>
 
+<div class="disclaimer">
+  <div class="container">
+    <p id="txt-hinweis"></p>
+  </div>
+</div>
+
 <main>
   <div class="container">
     <h1 id="txt-h1">Anträge der Stadtratsfraktionen</h1>
     <p class="lede" id="txt-lede"></p>
-    <div class="hinweis" id="txt-hinweis"></div>
 
     <div class="stat-row" id="stat-row"></div>
     <div class="filter-row" id="partei-filter"></div>
