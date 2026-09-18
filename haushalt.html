@@ -121,16 +121,18 @@
      mit Rahmen und Chevron gestaltet statt als blosse Ueberschrift mit
      kleinem Pfeil davor, damit auf den ersten Blick klar ist: hier laesst
      sich etwas aufklappen. */
-  .aufklapp-abschnitt { margin: 2.5rem 0; }
+  .aufklapp-abschnitt {
+    margin: 2.5rem 0; background: var(--card); border: 1px solid var(--border-strong);
+    border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden;
+  }
   .aufklapp-abschnitt summary {
     cursor: pointer; list-style: none; display: flex; align-items: center; gap: 1rem;
-    background: var(--card); border: 1px solid var(--border-strong); border-radius: var(--radius);
-    box-shadow: var(--shadow); padding: 1.1rem 1.3rem;
-    transition: border-color .12s ease, background .12s ease;
+    padding: 1.1rem 1.3rem; transition: background .12s ease;
   }
   .aufklapp-abschnitt summary::-webkit-details-marker { display: none; }
-  .aufklapp-abschnitt summary:hover { border-color: var(--primary); background: var(--bg-warm); }
-  .aufklapp-abschnitt summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .aufklapp-abschnitt summary:hover { background: var(--bg-warm); }
+  .aufklapp-abschnitt summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .aufklapp-abschnitt[open] summary { border-bottom: 1px solid var(--border); }
   .aufklapp-kopf { flex: 1; display: flex; flex-direction: column; gap: .35rem; }
   .aufklapp-abschnitt summary h2 { margin: 0; }
   .aufklapp-chevron {
@@ -139,7 +141,10 @@
   }
   .aufklapp-abschnitt[open] .aufklapp-chevron { transform: rotate(180deg); }
   .aufklapp-teaser { font-size: .95rem; font-weight: 400; color: var(--text-muted); max-width: 62ch; }
-  .aufklapp-inhalt { margin-top: 1.25rem; padding: 0 .2rem; }
+  /* Leicht wärmerer Ton als der weisse Kasten drumherum, damit die
+     verschachtelten .beispiel-Kaesten (ebenfalls weiss) sich weiterhin
+     sichtbar abheben. */
+  .aufklapp-inhalt { background: var(--bg-warm); padding: 1.25rem 1.3rem 1.4rem; }
 
   .diagramm {
     background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
