@@ -116,24 +116,30 @@
 
   /* ---------- Aufklappbare Abschnitte: Ueberschrift + Unterschrift als Teaser ----------
      "Was ist Kameralistik" und "Wo es hakt" sind Hintergrundwissen, nicht der
-     Kern der Seite (das sind die Diagramme mit dem aktuellen Haushalt) — als
-     Fliesstext nehmen sie trotzdem viel Platz vor den Zahlen weg. */
-  .aufklapp-abschnitt { margin: 3rem 0 .75rem; }
+     Kern der Seite (das sind die Diagramme mit dem aktuellen Haushalt), als
+     Fliesstext nehmen sie trotzdem viel Platz vor den Zahlen weg. Als Kasten
+     mit Rahmen und Chevron gestaltet statt als blosse Ueberschrift mit
+     kleinem Pfeil davor, damit auf den ersten Blick klar ist: hier laesst
+     sich etwas aufklappen. */
+  .aufklapp-abschnitt { margin: 2.5rem 0; }
   .aufklapp-abschnitt summary {
-    cursor: pointer; list-style: none; display: flex; flex-direction: column; gap: .35rem;
-    padding-left: 1.15rem; position: relative;
+    cursor: pointer; list-style: none; display: flex; align-items: center; gap: 1rem;
+    background: var(--card); border: 1px solid var(--border-strong); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 1.1rem 1.3rem;
+    transition: border-color .12s ease, background .12s ease;
   }
   .aufklapp-abschnitt summary::-webkit-details-marker { display: none; }
-  .aufklapp-abschnitt summary::before {
-    content: '▸'; position: absolute; left: 0; top: .5rem; font-size: .85em;
-    color: var(--text-faint); transition: transform .15s;
-  }
-  .aufklapp-abschnitt[open] summary::before { transform: rotate(90deg); }
-  .aufklapp-abschnitt summary h2 { margin: 0; }
-  .aufklapp-abschnitt summary:hover h2 { color: var(--primary); }
+  .aufklapp-abschnitt summary:hover { border-color: var(--primary); background: var(--bg-warm); }
   .aufklapp-abschnitt summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .aufklapp-kopf { flex: 1; display: flex; flex-direction: column; gap: .35rem; }
+  .aufklapp-abschnitt summary h2 { margin: 0; }
+  .aufklapp-chevron {
+    flex: none; font-size: 1.3rem; line-height: 1; color: var(--primary);
+    transition: transform .18s ease;
+  }
+  .aufklapp-abschnitt[open] .aufklapp-chevron { transform: rotate(180deg); }
   .aufklapp-teaser { font-size: .95rem; font-weight: 400; color: var(--text-muted); max-width: 62ch; }
-  .aufklapp-inhalt { margin-top: 1.1rem; }
+  .aufklapp-inhalt { margin-top: 1.25rem; padding: 0 .2rem; }
 
   .diagramm {
     background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
@@ -233,8 +239,11 @@
     <section id="was-ist-kameralistik">
       <details class="aufklapp-abschnitt">
         <summary>
-          <h2 id="txt-kam-h2"></h2>
-          <span class="aufklapp-teaser" id="txt-kam-teaser"></span>
+          <span class="aufklapp-kopf">
+            <h2 id="txt-kam-h2"></h2>
+            <span class="aufklapp-teaser" id="txt-kam-teaser"></span>
+          </span>
+          <span class="aufklapp-chevron" aria-hidden="true">▾</span>
         </summary>
         <div class="aufklapp-inhalt">
           <p id="txt-kam-p1"></p>
@@ -251,8 +260,11 @@
     <section id="probleme">
       <details class="aufklapp-abschnitt">
         <summary>
-          <h2 id="txt-prob-h2"></h2>
-          <span class="aufklapp-teaser" id="txt-prob-teaser"></span>
+          <span class="aufklapp-kopf">
+            <h2 id="txt-prob-h2"></h2>
+            <span class="aufklapp-teaser" id="txt-prob-teaser"></span>
+          </span>
+          <span class="aufklapp-chevron" aria-hidden="true">▾</span>
         </summary>
         <div class="aufklapp-inhalt">
           <p id="txt-prob-intro"></p>
@@ -273,8 +285,11 @@
     <section id="ausblick">
       <details class="aufklapp-abschnitt">
         <summary>
-          <h2 id="txt-ausblick-h2"></h2>
-          <span class="aufklapp-teaser" id="txt-ausblick-teaser"></span>
+          <span class="aufklapp-kopf">
+            <h2 id="txt-ausblick-h2"></h2>
+            <span class="aufklapp-teaser" id="txt-ausblick-teaser"></span>
+          </span>
+          <span class="aufklapp-chevron" aria-hidden="true">▾</span>
         </summary>
         <div class="aufklapp-inhalt">
           <h3 id="txt-ausblick-positiv-h3"></h3>
@@ -506,7 +521,7 @@
     },
     "ausblick-h2": { n: "Und zum Schluss?", l: "Und jetzt?" },
     "ausblick-teaser": {
-      n: "Ein positiver, ein konstruktiver und ein progressiver Gedanke — und eine Einordnung, wie realistisch das ist.",
+      n: "Ein positiver, ein konstruktiver und ein progressiver Gedanke, dazu eine Einordnung, wie realistisch das ist.",
       l: "Was schon gut ist. Was sich verbessern lässt. Was noch möglich wäre. Und warum das nicht so einfach ist.",
     },
     "ausblick-positiv-h3": { n: "Das Positive", l: "Was schon gut ist" },
@@ -524,7 +539,8 @@
       n: "Die Lücke bei Vermögen und Schulden lässt sich auch ohne Systemwechsel " +
         "verkleinern: Eine einfache, freiwillige Übersicht über Vermögenswerte, " +
         "Schulden und Sanierungsstau würde den kameralen Haushalt sinnvoll ergänzen, " +
-        "ohne ihn zu ersetzen — ein überschaubarer erster Schritt zu mehr Weitsicht.",
+        "ohne ihn zu ersetzen. Das wäre ein überschaubarer erster Schritt zu mehr " +
+        "Weitsicht.",
       l: "Man kann etwas verbessern, ohne alles zu ändern. Die Stadt könnte eine " +
         "einfache Liste veröffentlichen. Diese Liste zeigt: Was besitzt die Stadt? " +
         "Wie hoch sind die Schulden? Das würde den Haushalt sinnvoll ergänzen.",
@@ -533,7 +549,7 @@
     "ausblick-progressiv-text": {
       n: "Langfristig steht die Systemfrage im Raum: Andere Bundesländer verpflichten " +
         "ihre Kommunen längst zur Doppik, die genau die Schwächen der Kameralistik " +
-        "ausgleicht — Abschreibungen, Bilanz, Generationengerechtigkeit. Ob und wann " +
+        "ausgleicht: Abschreibungen, Bilanz, Generationengerechtigkeit. Ob und wann " +
         "auch Ingolstadt diesen Schritt geht, ist eine politische Entscheidung, über " +
         "die am Ende der Stadtrat mitentscheidet.",
       l: "Es gibt noch eine größere Idee. Andere Bundesländer nutzen schon die Doppik. " +
@@ -543,30 +559,32 @@
     },
     "ausblick-relativierung-h3": { n: "Die Relativierung", l: "Aber: Es ist nicht so einfach" },
     "ausblick-relativierung-p1": {
-      n: "Wie groß dieser Schritt tatsächlich wäre, zeigt ein Blick auf die Statistik: " +
-        "Die Wahl des Rechnungssystems hängt in Deutschland stark von der " +
-        "Gemeindegröße und dem Bundesland ab, nicht allein vom guten Willen einer " +
-        "Verwaltung. Größere Kommunen buchen bundesweit deutlich häufiger doppisch " +
-        "als kleinere: Landkreise und kreisfreie Städte kommen laut einer " +
+      n: "Wie groß dieser Schritt tatsächlich wäre, zeigt ein Blick auf die Statistik. " +
+        "Die Wahl des Rechnungssystems hängt in Deutschland stark vom Bundesland und " +
+        "von der Gemeindegröße ab, nicht allein vom guten Willen einer Verwaltung. " +
+        "Landkreise und kreisfreie Städte wie Ingolstadt buchen laut einer " +
         "<a href=\"https://www.haushaltssteuerung.de/weblog-verbreitung-der-kommunalen-doppik-in-deutschland.html\" " +
         "target=\"_blank\" rel=\"noopener noreferrer\">Erhebung von HaushaltsSteuerung.de" +
-        "<span class=\"sr-only\"> (öffnet in neuem Tab)</span></a> auf rund 77 bis 83 " +
-        "Prozent, kreisangehörige Städte und Gemeinden wie Ingolstadt auf rund 63 bis " +
-        "65 Prozent.",
+        "<span class=\"sr-only\"> (öffnet in neuem Tab)</span></a> zu rund 77 bis 83 " +
+        "Prozent doppisch, kreisangehörige Städte und Gemeinden nur zu rund 63 bis " +
+        "65 Prozent. Dass diese Werte insgesamt nicht näher an 100 Prozent liegen, " +
+        "liegt an nur zwei Bundesländern: Die meisten anderen verpflichten ihre " +
+        "Kommunen längst zur Doppik, nur in Bayern und Thüringen dürfen sie " +
+        "dauerhaft frei wählen.",
       l: "Ein Blick auf die Zahlen zeigt: Es ist nicht so einfach. Ob eine Stadt die " +
-        "Doppik nutzt, hängt oft von ihrer Größe ab. Große Städte und Landkreise " +
-        "nutzen in ganz Deutschland öfter die Doppik. Kleinere Städte nutzen sie " +
-        "seltener.",
+        "Doppik nutzt, hängt oft von ihrer Größe ab. Große Städte und Landkreise wie " +
+        "Ingolstadt nutzen in ganz Deutschland öfter die Doppik. Kleinere Städte " +
+        "nutzen sie seltener.",
     },
     "ausblick-relativierung-p2": {
-      n: "Noch deutlicher zeigt sich das im Vergleich der Bundesländer: Die meisten " +
-        "haben die Kameralistik per Gesetz abgeschafft oder ihre Übergangsfristen " +
-        "beendet — dort liegt die Doppik-Quote faktisch bei 100 Prozent, etwa in " +
-        "Nordrhein-Westfalen, Baden-Württemberg, Hessen, Niedersachsen oder Sachsen. " +
-        "Wo Kommunen wie in Bayern und Thüringen dauerhaft frei wählen dürfen, sieht " +
-        "es umgekehrt aus: In Bayern nutzen nur rund 4,6 bis 4,7 Prozent der über " +
-        "2.100 Kommunen die Doppik, in Thüringen ist die Quote ähnlich niedrig — weit " +
-        "über 90 Prozent rechnen dort weiterhin kameral " +
+      n: "Dort sieht es entsprechend anders aus: In Bayern nutzen laut einer " +
+        "<a href=\"https://www.haushaltssteuerung.de/weblog-die-kommunale-doppik-in-bayern.html\" " +
+        "target=\"_blank\" rel=\"noopener noreferrer\">weiteren Erhebung von " +
+        "HaushaltsSteuerung.de<span class=\"sr-only\"> (öffnet in neuem Tab)</span></a> " +
+        "nur rund 4,7 Prozent der über 2.100 Kommunen die Doppik, in Thüringen ist " +
+        "die Quote ähnlich niedrig. In den übrigen Flächenländern " +
+        "liegt sie dagegen faktisch bei 100 Prozent, etwa in Nordrhein-Westfalen, " +
+        "Baden-Württemberg, Hessen, Niedersachsen oder Sachsen " +
         "(<a href=\"https://www.wirtschaftsdienst.eu/inhalt/jahr/2020/heft/9/beitrag/bremst-die-doppik-oeffentliche-investitionen-ergebnisse-aus-drei-aktuellen-evaluationsstudien.html\" " +
         "target=\"_blank\" rel=\"noopener noreferrer\">Wirtschaftsdienst, 2020" +
         "<span class=\"sr-only\"> (öffnet in neuem Tab)</span></a>; " +
@@ -580,12 +598,12 @@
         "rechnen weiter mit der Kameralistik.",
     },
     "ausblick-relativierung-p3": {
-      n: "Dass Bayern beim kameralen System bleibt, ist dabei nicht nur Gewohnheit: " +
-        "Der Umstieg dauert oft mehrere Jahre und kann teuer werden. Die größte Hürde " +
-        "ist meist die sogenannte Eröffnungsbilanz — die einmalige, vollständige " +
-        "Bewertung aller Grundstücke, Gebäude und Straßen. Gerade weil kamerale " +
-        "Haushalte nie ein Vermögen ausgewiesen haben, ist über Jahrzehnte kaum " +
-        "dokumentiert, was wo wie viel wert ist.",
+      n: "Dass Bayern beim kameralen System bleibt, ist dabei nicht nur Gewohnheit. " +
+        "Der Umstieg dauert oft mehrere Jahre und kann teuer werden. Die größte " +
+        "Hürde ist meist die sogenannte Eröffnungsbilanz, die einmalige und " +
+        "vollständige Bewertung aller Grundstücke, Gebäude und Straßen. Gerade weil " +
+        "kamerale Haushalte nie ein Vermögen ausgewiesen haben, ist über Jahrzehnte " +
+        "kaum dokumentiert, was wo wie viel wert ist.",
       l: "Das hat auch einen Grund: Der Wechsel zur Doppik dauert lange. Er kann auch " +
         "teuer sein. Das Schwierigste ist die erste große Aufstellung: Was besitzt " +
         "die Stadt? Was ist es wert? Das musste bisher niemand genau aufschreiben. " +
