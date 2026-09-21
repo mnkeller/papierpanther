@@ -1,0 +1,2227 @@
+{
+  "hinweis": "Antraege ohne Sitzungstermin, aus der Liste 'Aktuelle Stadtratsantraege' im Ratsinfoportal der Stadt Ingolstadt. Sobald ein Antrag terminiert wird, verschwindet er von hier und taucht stattdessen ganz normal ueber ris_ingolstadt.py auf.",
+  "abgerufen_am": "2026-09-21",
+  "antraege": [
+    {
+      "quelle": "stadt",
+      "kvonr": "23312",
+      "titel": "Klarer Konsolidierungspfad für Ingolstadt – transparent, nachvollziehbar und messbar",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2026-09-15",
+      "antragsdatum_anzeige": "15.09.2026",
+      "vorlage": "V0556/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23312",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253407&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23314",
+      "titel": "Umsetzungsstand des Intelligente-Verkehrssysteme-Gesetzes (IVSG) und Berücksichtigung im Mobilitätsplan Ingolstadt 2040+",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2026-09-15",
+      "antragsdatum_anzeige": "15.09.2026",
+      "vorlage": "V0558/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23314",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253413&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23315",
+      "titel": "Transparente Kriterien für die Verleihung kommunaler Ehrentitel",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2026-09-15",
+      "antragsdatum_anzeige": "15.09.2026",
+      "vorlage": "V0559/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23315",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253416&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23310",
+      "titel": "Autoposing in der Altstadt wirksam eindämmen",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-09-10",
+      "antragsdatum_anzeige": "10.09.2026",
+      "vorlage": "V0554/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23310",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253388&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23301",
+      "titel": "Schattenspendendes Grün für unseren Rathausplatz",
+      "antragsteller": "ÖDP-Stadtratsgruppe",
+      "antragsdatum": "2026-09-09",
+      "antragsdatum_anzeige": "09.09.2026",
+      "vorlage": "V0545/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23301",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag ÖDP",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253330&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23302",
+      "titel": "Nachhaltige Haushaltskonsolidierung plus Klimaanpassung im Stadtgrün",
+      "antragsteller": "ÖDP-Stadtratsgruppe",
+      "antragsdatum": "2026-09-09",
+      "antragsdatum_anzeige": "09.09.2026",
+      "vorlage": "V0546/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23302",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag ÖDP",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253333&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23303",
+      "titel": "Erweiterung des Hitzeaktionsplans der Stadt Ingolstadt um ein Maßnahmenpaket zum Hitzeschutz im Öffentlichen Personennahverkehr",
+      "antragsteller": "ÖDP-Stadtratsgruppe",
+      "antragsdatum": "2026-09-09",
+      "antragsdatum_anzeige": "09.09.2026",
+      "vorlage": "V0547/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23303",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag ÖDP",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253336&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23298",
+      "titel": "Synergien nutzen – Doppelstrukturen bei Stadt und Beteiligungsunternehmen abbauen",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-09-08",
+      "antragsdatum_anzeige": "08.09.2026",
+      "vorlage": "V0542/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23298",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253307&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23297",
+      "titel": "Mängelmelder auswerten und digital weiterentwickeln",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-09-03",
+      "antragsdatum_anzeige": "03.09.2026",
+      "vorlage": "V0541/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23297",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253304&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23265",
+      "titel": "Ergänzung des Mobilitätsangebots in Ingolstadt mit fahrerlosen Diensten – Beteiligung an geplanten Robotaxi- und Level-4-Testbetrieben prüfen",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2026-08-18",
+      "antragsdatum_anzeige": "18.08.2026",
+      "vorlage": "V0509/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23265",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253022&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23249",
+      "titel": "Regelung für die Betreuung von Besuchen von oder bei Partnerstädten",
+      "antragsteller": "FW-Stadtratsfraktion",
+      "antragsdatum": "2026-07-28",
+      "antragsdatum_anzeige": "28.07.2026",
+      "vorlage": "V0494/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23249",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FW",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252557&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23251",
+      "titel": "Einführung eines zweistufigen Beratungsverfahrens für Stadtratsanträge",
+      "antragsteller": "FW-Stadtrratsfraktion",
+      "antragsdatum": "2026-07-28",
+      "antragsdatum_anzeige": "28.07.2026",
+      "vorlage": "V0496/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23251",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FW",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252563&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23243",
+      "titel": "Forschungsprojekt „Opfer des Nationalsozialismus in Ingolstadt“",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-07-24",
+      "antragsdatum_anzeige": "24.07.2026",
+      "vorlage": "V0488/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23243",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252488&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23239",
+      "titel": "Antrag auf Überprüfung der Einnahmesituation im Vermögenshaushalt; Erhebung des beitragsfähigen Aufwandes für Erschließungsanlagen nach dem Baugesetzbuch (BauGB) und der Erschließungsbeitragssatzung (EBS) der Stadt Ingolstadt",
+      "antragsteller": "AfD-Stadtratsfraktion",
+      "antragsdatum": "2026-07-22",
+      "antragsdatum_anzeige": "22.07.2026",
+      "vorlage": "V0484/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23239",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag AfD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252354&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23234",
+      "titel": "Potenziale für die Umnutzung von leerstehenden Flächen zu Wohnraum prüfen",
+      "antragsteller": "Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN",
+      "antragsdatum": "2026-07-21",
+      "antragsdatum_anzeige": "21.07.2026",
+      "vorlage": "V0479/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23234",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252212&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23183",
+      "titel": "Reduzierung von Gutachten und Machbarkeitsstudien",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2026-07-13",
+      "antragsdatum_anzeige": "13.07.2026",
+      "vorlage": "V0428/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23183",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251937&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23165",
+      "titel": "Öffentlich zugängliche klimatisierte, konsumfreie Räume in den Sommermonaten",
+      "antragsteller": "Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN",
+      "antragsdatum": "2026-07-03",
+      "antragsdatum_anzeige": "03.07.2026",
+      "vorlage": "V0412/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23165",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251613&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23141",
+      "titel": "Bauturbo nutzen – Wohnungsbaugipfel für Ingolstadt einberufen",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-07-01",
+      "antragsdatum_anzeige": "01.07.2026",
+      "vorlage": "V0388/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23141",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251448&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23135",
+      "titel": "Grundstücke der IFG",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2026-06-30",
+      "antragsdatum_anzeige": "30.06.2026",
+      "vorlage": "V0382/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23135",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251395&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23136",
+      "titel": "Antrag auf Einberufung einer Sondersitzung des Stadtrats nach Art. 46 Abs. 2 GO",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2026-06-30",
+      "antragsdatum_anzeige": "30.06.2026",
+      "vorlage": "V0383/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23136",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251398&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23122",
+      "titel": "Stadtbäume sichern, Straßenräume beschatten und Baumpflanzungen systematisch ausbauen",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2026-06-29",
+      "antragsdatum_anzeige": "29.06.2026",
+      "vorlage": "V0369/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23122",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251308&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23132",
+      "titel": "Vorlage der Entscheidungsgrundlagen zum baulichen Zustand des Hämerbaus und des Festsaals des Stadttheaters",
+      "antragsteller": "FW-Stadtratsfraktion",
+      "antragsdatum": "2026-06-29",
+      "antragsdatum_anzeige": "29.06.2026",
+      "vorlage": "V0379/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23132",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FW",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251384&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23133",
+      "titel": "Pressemitteilungen auch an den Stadtrat",
+      "antragsteller": "FW-Stadtratsfraktion",
+      "antragsdatum": "2026-06-29",
+      "antragsdatum_anzeige": "29.06.2026",
+      "vorlage": "V0380/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23133",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FW",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251387&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23123",
+      "titel": "Sonnencremespender",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-06-26",
+      "antragsdatum_anzeige": "26.06.2026",
+      "vorlage": "V0370/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23123",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251311&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23119",
+      "titel": "Sicherheit an besonders belasteten öffentlichen Orten stärken – Pilotprojekt für moderne, datenschutzkonforme Video- und Sensortechnik prüfen und umsetzen",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2026-06-24",
+      "antragsdatum_anzeige": "24.06.2026",
+      "vorlage": "V0366/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23119",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251201&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23118",
+      "titel": "Pilotprojekt „Baggersee-Ranger“ für den Naherholungsraum Baggersee und die Donauuferbereiche",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-06-24",
+      "antragsdatum_anzeige": "24.06.2026",
+      "vorlage": "V0365/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23118",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251195&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23121",
+      "titel": "Konzept für die Sanierung des Hämer-Buro-Baus mit Hochdruck entwickeln",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-06-24",
+      "antragsdatum_anzeige": "24.06.2026",
+      "vorlage": "V0368/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23121",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251205&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23117",
+      "titel": "Kommunaler Ordnungsdienst",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-06-23",
+      "antragsdatum_anzeige": "23.06.2026",
+      "vorlage": "V0364/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23117",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251192&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23115",
+      "titel": "Aufzeichnung und zeitversetzte Abrufbarkeit öffentlicher Stadtratssitzungen",
+      "antragsteller": "Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN",
+      "antragsdatum": "2026-06-23",
+      "antragsdatum_anzeige": "23.06.2026",
+      "vorlage": "V0362/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23115",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251028&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23073",
+      "titel": "Ergänzung der Gedenkstätte im Luitpoldpark um eine weitere Gedenktafel für im Dienst verstorbene Soldatinnen und Soldaten der Bundeswehr",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2026-06-15",
+      "antragsdatum_anzeige": "15.06.2026",
+      "vorlage": "V0322/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23073",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250775&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23063",
+      "titel": "Bericht zur Beschaffung BF-FF-Katastrophenschutz",
+      "antragsteller": "FW-Stadtratsfraktion",
+      "antragsdatum": "2026-06-09",
+      "antragsdatum_anzeige": "09.06.2026",
+      "vorlage": "V0312/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23063",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FW",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250497&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23039",
+      "titel": "Toilettenöffnung in Friedhöfen während der Öffnungszeiten gewährleisten",
+      "antragsteller": "FW-Stadtratsfraktion",
+      "antragsdatum": "2026-05-29",
+      "antragsdatum_anzeige": "29.05.2026",
+      "vorlage": "V0288/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23039",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FW",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250198&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22855",
+      "titel": "Auskunft zur Personalsituation der Ingolstädter Berufsfeuerwehr",
+      "antragsteller": "Stadtratsfraktionen SPD und FW",
+      "antragsdatum": "2026-02-24",
+      "antragsdatum_anzeige": "24.02.2026",
+      "vorlage": "V0111/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22855",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtrat Gemeinschaftsantrag",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=247560&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22854",
+      "titel": "Stärkung der Kreislaufwirtschaft als zukunftsfähiges Wirtschaftssystem in Ingolstadt",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-02-19",
+      "antragsdatum_anzeige": "19.02.2026",
+      "vorlage": "V0110/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22854",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=247539&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22838",
+      "titel": "Auflistung Sparmaßnahmen Wirksamkeit",
+      "antragsteller": "CSU und FW Stadtratsfraktionen",
+      "antragsdatum": "2026-02-11",
+      "antragsdatum_anzeige": "11.02.2026",
+      "vorlage": "V0094/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22838",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtrat Gemeinschaftsantrag",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=247224&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22825",
+      "titel": "Unverzügliche Einstellung und Digitalisierung der Druckpublikationen des Stadttheaters Ingolstadt",
+      "antragsteller": "AfD-Stadtratsfraktion",
+      "antragsdatum": "2026-02-02",
+      "antragsdatum_anzeige": "02.02.2026",
+      "vorlage": "V0083/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22825",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag AfD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=246934&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22793",
+      "titel": "Öffentlichkeitsarbeit",
+      "antragsteller": "FW-Stadtratsfraktion",
+      "antragsdatum": "2026-01-26",
+      "antragsdatum_anzeige": "26.01.2026",
+      "vorlage": "V0054/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22793",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FW",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=246553&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22788",
+      "titel": "Zwischennutzungen im Stadttheater-Gebäude",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-01-23",
+      "antragsdatum_anzeige": "23.01.2026",
+      "vorlage": "V0051/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22788",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=246491&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22747",
+      "titel": "Von Land und Bund an die Stadt übertragene staatliche Aufgaben, daraus entstehende Kosten für die Stadt und deren Deckung bzw. Refinanzierung durch den Freistaat und den Bund",
+      "antragsteller": "Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN",
+      "antragsdatum": "2026-01-13",
+      "antragsdatum_anzeige": "13.01.2026",
+      "vorlage": "V0021/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22747",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=246057&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22738",
+      "titel": "Harmonisierung des Ingolstädter Klimaziels mit dem Klimaziel der Bundesrepublik Deutschland und dem des Freistaats Bayern",
+      "antragsteller": "Ausschussgemeinschaft FDP/JU",
+      "antragsdatum": "2026-01-07",
+      "antragsdatum_anzeige": "07.01.2026",
+      "vorlage": "V0012/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22738",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FDP/JU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=245845&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22732",
+      "titel": "Anpassung der Klimaziele auf ein realistischeres und finanziell optimiertes Klimaziel 2045 statt 2035",
+      "antragsteller": "FW-Stadtratsfraktion",
+      "antragsdatum": "2025-12-23",
+      "antragsdatum_anzeige": "23.12.2025",
+      "vorlage": "V0006/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22732",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FW",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=245817&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22731",
+      "titel": "Prüfung weiterer Nutzung des Foyers im Stadttheater",
+      "antragsteller": "ödp-Stadtratsgruppe",
+      "antragsdatum": "2025-12-23",
+      "antragsdatum_anzeige": "23.12.2025",
+      "vorlage": "V0005/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22731",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag ÖDP",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=245800&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22726",
+      "titel": "Ehrenamtliches Engagement",
+      "antragsteller": "UWG-Stadtratsfraktion",
+      "antragsdatum": "2025-12-17",
+      "antragsdatum_anzeige": "17.12.2025",
+      "vorlage": "V0949/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22726",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag UWG",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=245456&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22725",
+      "titel": "Benennung einer Straße nach Karl Fröhlich",
+      "antragsteller": "Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN und der Stadtratsgruppe DIE LINKE",
+      "antragsdatum": "2025-12-16",
+      "antragsdatum_anzeige": "16.12.2025",
+      "vorlage": "V0948/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22725",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtrat Gemeinschaftsantrag",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=245452&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22654",
+      "titel": "Prüfung und ggf. Erklärung des Heimfalls des an den FC Fatih überlassenen Vereinsheim aufgrund vertragswidriger Nutzung",
+      "antragsteller": "Ausschussgemeinschaft FDP/JU",
+      "antragsdatum": "2025-11-21",
+      "antragsdatum_anzeige": "21.11.2025",
+      "vorlage": "V0879/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22654",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FDP/JU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=244389&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22502",
+      "titel": "Lechner-Museum",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2025-10-17",
+      "antragsdatum_anzeige": "17.10.2025",
+      "vorlage": "V0731/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22502",
+      "ziel_gremium": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=242674&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22458",
+      "titel": "Engstellenmanagement für Buslinien in der Innenstadt",
+      "antragsteller": "ödp-Stadtratsgruppe",
+      "antragsdatum": "2025-10-07",
+      "antragsdatum_anzeige": "07.10.2025",
+      "vorlage": "V0688/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22458",
+      "ziel_gremium": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag ÖDP",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=242334&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22420",
+      "titel": "Ansiedlung der Zentrale für Katastrophenschutz des Freistaates Bayern",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2025-09-25",
+      "antragsdatum_anzeige": "25.09.2025",
+      "vorlage": "V0650/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22420",
+      "ziel_gremium": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=241886&type=do"
+        },
+        {
+          "titel": "Antwort auf CSU-Antrag 'Ansiedelung der Zentrale für Katastrophenschutz des Freistaates Bayern' vom 24.09.25",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=247769&type=do"
+        },
+        {
+          "titel": "D4-2254-18-14 Ingolstadt Landesamt (Reinschrift)",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=248026&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22410",
+      "titel": "Souveränität bewahren, Handlungsfähigkeit demonstrieren: Maßnahmenpaket zur Konsolidierung des städtischen Haushalts Ingolstadt",
+      "antragsteller": "Ausschussgemeinschaft FDP/JU",
+      "antragsdatum": "2025-09-19",
+      "antragsdatum_anzeige": "19.09.2025",
+      "vorlage": "V0640/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22410",
+      "ziel_gremium": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FDP/JU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=241766&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22372",
+      "titel": "Ehrung von Alt-OB Peter Schnell – Umbenennung des Theaterplatzes in „Peter-Schnell-Platz“",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2025-09-08",
+      "antragsdatum_anzeige": "08.09.2025",
+      "vorlage": "V0602/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22372",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=241449&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22371",
+      "titel": "Universitäre Einrichtung für den Bereich Medizin in Ingolstadt",
+      "antragsteller": "ÖDP-Stadtratsgruppe",
+      "antragsdatum": "2025-09-08",
+      "antragsdatum_anzeige": "08.09.2025",
+      "vorlage": "V0601/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22371",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag ÖDP",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=241446&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "20231",
+      "titel": "Einführung eines digitalen Selbstbedienungsterminals („Amt-o-Mat“) zur Entlastung des Bürgeramts und zur Verbesserung des Bürgerservices",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2025-07-01",
+      "antragsdatum_anzeige": "01.07.2025",
+      "vorlage": "V0463/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20231",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237289&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "20244",
+      "titel": "Konzeptvorstellung kommunaler Ordnungsdienst sowie Einleitung von Maßnahmen gegen Vermüllung und Vandalismus",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2025-07-01",
+      "antragsdatum_anzeige": "01.07.2025",
+      "vorlage": "V0475/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20244",
+      "ziel_gremium": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237406&type=do"
+        },
+        {
+          "titel": "Anlage 1 Allgemeine Information an die BZAs bezueglich Wertstoffinseln auch Stellungnahme zu AZ 2024 05 1",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=237407&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "20187",
+      "titel": "Zukunft des Jungen Theater durch eine Ersatzspielstätte sichern",
+      "antragsteller": "Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN",
+      "antragsdatum": "2025-06-24",
+      "antragsdatum_anzeige": "24.06.2025",
+      "vorlage": "V0420/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20187",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236934&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "20188",
+      "titel": "Weichen stellen für die Einführung einer \"Kulturförderabgabe\" in Ingolstadt",
+      "antragsteller": "Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN",
+      "antragsdatum": "2025-06-24",
+      "antragsdatum_anzeige": "24.06.2025",
+      "vorlage": "V0421/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20188",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236937&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "20191",
+      "titel": "Beflaggung von öffentlichen Gebäuden in Ingolstadt",
+      "antragsteller": "AfD-Stadtratsfraktion",
+      "antragsdatum": "2025-06-24",
+      "antragsdatum_anzeige": "24.06.2025",
+      "vorlage": "V0424/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20191",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag AfD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236947&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "20149",
+      "titel": "Kippenfreies Ingolstadt",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2025-06-12",
+      "antragsdatum_anzeige": "12.06.2025",
+      "vorlage": "V0382/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20149",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=236739&type=do"
+        },
+        {
+          "titel": "Antwortschreiben",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=240037&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "20086",
+      "titel": "Sondervermögen Schanzer Festungsanlagen",
+      "antragsteller": "Stadtratsgruppe DIE LINKE",
+      "antragsdatum": "2025-05-14",
+      "antragsdatum_anzeige": "14.05.2025",
+      "vorlage": "V0319/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20086",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag Die Linke",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235735&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "20044",
+      "titel": "Bewerbung bei Radplus der Deutschen Bahn AG",
+      "antragsteller": "Stadtratsfraktionen UWG, GRÜNE und SPD",
+      "antragsdatum": "2025-04-25",
+      "antragsdatum_anzeige": "25.04.2025",
+      "vorlage": "V0277/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20044",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtrat Gemeinschaftsantrag",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=235138&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "20029",
+      "titel": "Barrierefreiheit | Schwerhörige",
+      "antragsteller": "Stadtratsgrupe DIE LINKE",
+      "antragsdatum": "2025-04-22",
+      "antragsdatum_anzeige": "22.04.2025",
+      "vorlage": "V0263/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20029",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag Die Linke",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234962&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19973",
+      "titel": "Auto-Poser ausbremsen",
+      "antragsteller": "ödp-Stadtratsgruppe",
+      "antragsdatum": "2025-04-03",
+      "antragsdatum_anzeige": "03.04.2025",
+      "vorlage": "V0208/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19973",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag ÖDP",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234270&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19922",
+      "titel": "Wohnungsbörse und „Wohnen für Hilfe“ für Ingolstadt",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2025-03-20",
+      "antragsdatum_anzeige": "20.03.2025",
+      "vorlage": "V0169/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19922",
+      "ziel_gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233698&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19916",
+      "titel": "Radweg zum Gymnasium Gaimersheim",
+      "antragsteller": "ödp-Stadtratsgruppe",
+      "antragsdatum": "2025-03-13",
+      "antragsdatum_anzeige": "13.03.2025",
+      "vorlage": "V0165/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19916",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag ÖDP",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233499&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19842",
+      "titel": "Katzenschutzverordnung",
+      "antragsteller": "Stadtratsfraktionen SPD, BÜNDNIS 90/DIE GRÜNEN, UWG, der Stadtratsgruppe DIE LINKE und der Ausschussgemeinschaft FDP/JU",
+      "antragsdatum": "2025-02-06",
+      "antragsdatum_anzeige": "06.02.2025",
+      "vorlage": "V0097/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19842",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtrat Gemeinschaftsantrag",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=231167&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19827",
+      "titel": "Beendigung der Kooperation mit Amnesty International beim Tag der Menschenrechte in Ingolstadt",
+      "antragsteller": "Ausschussgemeinschaft FDP/JU",
+      "antragsdatum": "2025-02-03",
+      "antragsdatum_anzeige": "03.02.2025",
+      "vorlage": "V0083/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19827",
+      "ziel_gremium": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FDP/JU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230875&type=do"
+        },
+        {
+          "titel": "(1) Brief FDPJU AI Kopie",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230877&type=do"
+        },
+        {
+          "titel": "(2)Das Existenzrecht Israels",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230878&type=do"
+        },
+        {
+          "titel": "(3)2024-12-20 PM Amnesty und Israel",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230879&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19798",
+      "titel": "Nutzung und Auslastung der Congressgarage – Leerstand vermeiden",
+      "antragsteller": "Stadtratsfraktionen CSU und FW",
+      "antragsdatum": "2025-01-22",
+      "antragsdatum_anzeige": "22.01.2025",
+      "vorlage": "V0054/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19798",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtrat Gemeinschaftsantrag",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230336&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19776",
+      "titel": "Alternative Finanzierungsmodelle für Ingolstadt",
+      "antragsteller": "Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN",
+      "antragsdatum": "2025-01-21",
+      "antragsdatum_anzeige": "21.01.2025",
+      "vorlage": "V0032/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19776",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230197&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19786",
+      "titel": "Ausgewiesene oberirdische Parkplätze für hohe Fahrzeuge",
+      "antragsteller": "FW-Stadtratsfraktion",
+      "antragsdatum": "2025-01-20",
+      "antragsdatum_anzeige": "20.01.2025",
+      "vorlage": "V0042/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19786",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FW",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230300&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19742",
+      "titel": "Prüfung der Durchführung eines „Bürgerfest Light“ in Ingolstadt",
+      "antragsteller": "Stadtratsgruppe DIE LINKE",
+      "antragsdatum": "2024-12-19",
+      "antragsdatum_anzeige": "19.12.2024",
+      "vorlage": "V0969/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19742",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag Die Linke",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=229591&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19741",
+      "titel": "Entwicklung einer \"Ingolstadt-App\"",
+      "antragsteller": "Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN",
+      "antragsdatum": "2024-12-17",
+      "antragsdatum_anzeige": "17.12.2024",
+      "vorlage": "V0968/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19741",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=229449&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19734",
+      "titel": "Durchführung eines Stiftertages 2025",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2024-12-13",
+      "antragsdatum_anzeige": "13.12.2024",
+      "vorlage": "V0962/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19734",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=229345&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19726",
+      "titel": "Familien-Notunterkünfte / Containeranlagen",
+      "antragsteller": "UWG-Stadtratsfraktion",
+      "antragsdatum": "2024-12-09",
+      "antragsdatum_anzeige": "09.12.2024",
+      "vorlage": "V0956/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19726",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag UWG",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=227187&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19727",
+      "titel": "Familien-Notwohnungen",
+      "antragsteller": "UWG-Stadtratsfraktion",
+      "antragsdatum": "2024-12-09",
+      "antragsdatum_anzeige": "09.12.2024",
+      "vorlage": "V0957/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19727",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag UWG",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=227190&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19728",
+      "titel": "Fahrradabstellanlagen an allen Bus-Wartehallen",
+      "antragsteller": "UWG-Stadtratsfraktion",
+      "antragsdatum": "2024-12-09",
+      "antragsdatum_anzeige": "09.12.2024",
+      "vorlage": "V0958/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19728",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag UWG",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=227193&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19720",
+      "titel": "Errichtung zusätzlicher Fahrradstellplätze vor dem Stadttheater",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2024-12-06",
+      "antragsdatum_anzeige": "06.12.2024",
+      "vorlage": "V0950/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19720",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=227070&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19689",
+      "titel": "Vandalismus-Erhebung als Grundlage für Präventionsmaßnahmen",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2024-12-02",
+      "antragsdatum_anzeige": "02.12.2024",
+      "vorlage": "V0920/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19689",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=226711&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19587",
+      "titel": "Nutzung und Auslastung der Congressgarage – Leerstand vermeiden",
+      "antragsteller": "Stadtratsfraktionen CSU und FW",
+      "antragsdatum": "2024-10-30",
+      "antragsdatum_anzeige": "30.10.2024",
+      "vorlage": "V0818/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19587",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtrat Gemeinschaftsantrag",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=225408&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19569",
+      "titel": "Darstellung der freiwilligen Leistungen",
+      "antragsteller": "CSU- und der FW-Stadtratsfraktionen",
+      "antragsdatum": "2024-10-23",
+      "antragsdatum_anzeige": "23.10.2024",
+      "vorlage": "V0800/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19569",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtrat Gemeinschaftsantrag",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=225200&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19560",
+      "titel": "Ehemaliges Rieter-Grundstück in kommunale Hand",
+      "antragsteller": "Stadtratsgruppe DIE LINKE",
+      "antragsdatum": "2024-10-22",
+      "antragsdatum_anzeige": "22.10.2024",
+      "vorlage": "V0792/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19560",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag Die Linke",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=225113&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19490",
+      "titel": "Sicherheit im ÖPNV",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2024-10-02",
+      "antragsdatum_anzeige": "02.10.2024",
+      "vorlage": "V0723/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19490",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=224201&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19488",
+      "titel": "Öffnung der städtischen Brückenbücher, Feststellung der Anzahl der Brückenbauwerke in der kommunalen Baulast der Stadt Ingolstadt und Nachweise der einfachen und Brückenhauptprüfungen",
+      "antragsteller": "AfD-Stadtratsfraktion",
+      "antragsdatum": "2024-10-01",
+      "antragsdatum_anzeige": "01.10.2024",
+      "vorlage": "V0721/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19488",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag AfD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=224169&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19486",
+      "titel": "Hitzeschuztaktionsplan für das Klinikum Ingolstadt",
+      "antragsteller": "Ausschussgemeinschaft FDP/JU und der FW-Stadtratsfraktion",
+      "antragsdatum": "2024-09-30",
+      "antragsdatum_anzeige": "30.09.2024",
+      "vorlage": "V0719/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19486",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtrat Gemeinschaftsantrag",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=224121&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19476",
+      "titel": "Bau von leistungsfähigen Photovoltaikanlagen",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2024-09-23",
+      "antragsdatum_anzeige": "23.09.2024",
+      "vorlage": "V0709/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19476",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=223879&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19452",
+      "titel": "Einsatz von Exoskeletten in der Pflege",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2024-09-17",
+      "antragsdatum_anzeige": "17.09.2024",
+      "vorlage": "V0685/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19452",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=223715&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19451",
+      "titel": "Entsiegelung und Begrünung von Pausenhöfen",
+      "antragsteller": "UWG-Stadtratsfraktion",
+      "antragsdatum": "2024-09-17",
+      "antragsdatum_anzeige": "17.09.2024",
+      "vorlage": "V0684/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19451",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag UWG",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=223707&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19445",
+      "titel": "Einsatz autonomer Kleinbusse für die Innenstadt",
+      "antragsteller": "ÖDP-Stadtratsgruppe",
+      "antragsdatum": "2024-09-14",
+      "antragsdatum_anzeige": "14.09.2024",
+      "vorlage": "V0678/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19445",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag ÖDP",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=223610&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19442",
+      "titel": "Starkregenereignis in Gerolfing I Prüfung Kanalausbau und Regenrückhaltebecken",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2024-09-07",
+      "antragsdatum_anzeige": "07.09.2024",
+      "vorlage": "V0675/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19442",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=223601&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19399",
+      "titel": "Mehr Grün in die Stadt",
+      "antragsteller": "ÖDP-Stadtratsgruppe",
+      "antragsdatum": "2024-08-28",
+      "antragsdatum_anzeige": "28.08.2024",
+      "vorlage": "V0634/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19399",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag ÖDP",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=223336&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19371",
+      "titel": "Radwegmarkierung Roßmühlstraße",
+      "antragsteller": "FW-Stadtratsfraktion",
+      "antragsdatum": "2024-08-05",
+      "antragsdatum_anzeige": "05.08.2024",
+      "vorlage": "V0606/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19371",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FW",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=222848&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19370",
+      "titel": "Deutsche Umwelthilfe - Hitzecheck Juli 2024",
+      "antragsteller": "FW-Stadtratsfraktio",
+      "antragsdatum": "2024-08-02",
+      "antragsdatum_anzeige": "02.08.2024",
+      "vorlage": "V0605/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19370",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FW",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=222842&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19367",
+      "titel": "Stadttheater Ingolstadt soll Staatstheater werden – Aufwertung der gesamten Region 10",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2024-07-23",
+      "antragsdatum_anzeige": "23.07.2024",
+      "vorlage": "V0602/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19367",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=222733&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19365",
+      "titel": "Stärkung des Wohnmobiltourismus II",
+      "antragsteller": "Ausschussgemeinschaft FDP/JU und der FW-Stadtratsfraktion",
+      "antragsdatum": "2024-07-18",
+      "antragsdatum_anzeige": "18.07.2024",
+      "vorlage": "V0601/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19365",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtrat Gemeinschaftsantrag",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=222463&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19350",
+      "titel": "Verstetigung und Ausbau der Antidiskriminierungsstelle",
+      "antragsteller": "Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN",
+      "antragsdatum": "2024-07-16",
+      "antragsdatum_anzeige": "16.07.2024",
+      "vorlage": "V0586/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19350",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=221165&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19339",
+      "titel": "Prozessautomatisierung zur Entlastung der Verwaltung",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2024-07-10",
+      "antragsdatum_anzeige": "10.07.2024",
+      "vorlage": "V0575/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19339",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=220995&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19294",
+      "titel": "Erwerb des Gebäudes ehemaliges Franziskanerkloster",
+      "antragsteller": "Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN",
+      "antragsdatum": "2024-07-02",
+      "antragsdatum_anzeige": "02.07.2024",
+      "vorlage": "V0530/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19294",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=220494&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19248",
+      "titel": "Sicherheitskonzept/Präventionsmaßnahmen gegen Messerstecher, Vergewaltiger und andere Kriminelle in den öffentlichen Bereichen der Stadt Ingolstadt",
+      "antragsteller": "AfD-Stadtratfraktion",
+      "antragsdatum": "2024-06-20",
+      "antragsdatum_anzeige": "20.06.2024",
+      "vorlage": "V0484/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19248",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag AfD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=220020&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19231",
+      "titel": "Installation von Überwachungskameras in öffentlichen Parks",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2024-06-19",
+      "antragsdatum_anzeige": "19.06.2024",
+      "vorlage": "V0472/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19231",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=220024&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19218",
+      "titel": "„Schanzer Markthalle“ in der Kaufhofimmobilie",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2024-06-17",
+      "antragsdatum_anzeige": "17.06.2024",
+      "vorlage": "V0459/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19218",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=219822&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19182",
+      "titel": "Behindertenparkplätze auf Google Maps eintragen",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2024-06-11",
+      "antragsdatum_anzeige": "11.06.2024",
+      "vorlage": "V0425/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19182",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=219471&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19153",
+      "titel": "Konzept \"Mitarbeiterwohnungen für Ingolstadt\"",
+      "antragsteller": "SPD-Stadtratfraktion",
+      "antragsdatum": "2024-05-16",
+      "antragsdatum_anzeige": "16.05.2024",
+      "vorlage": "V0396/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19153",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=218935&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19129",
+      "titel": "Nachverhandlungen des Mietpreises für an die Stadt Ingolstadt vermietete Liegenschaften",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2024-05-13",
+      "antragsdatum_anzeige": "13.05.2024",
+      "vorlage": "V0375/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19129",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=218385&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19102",
+      "titel": "Einführung von Chatbots bei der Stadtverwaltung",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2024-05-07",
+      "antragsdatum_anzeige": "07.05.2024",
+      "vorlage": "V0350/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19102",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=218018&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19103",
+      "titel": "Darstellung von Containern an Schulen in den kommenden Jahren",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2024-05-07",
+      "antragsdatum_anzeige": "07.05.2024",
+      "vorlage": "V0351/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19103",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=218021&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19094",
+      "titel": "Erstellung eines einheitlichen Konzeptes für Vermittlung und Präsentation der Geschichte der Stadt Ingolstadt",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2024-05-06",
+      "antragsdatum_anzeige": "06.05.2024",
+      "vorlage": "V0342/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19094",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=217965&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19107",
+      "titel": "Schaffung einer Auszeichnung für besonderes Engagement für Demokratie und Integration",
+      "antragsteller": "Stadtratsfraktionen SPD, FW, UWG und der ödp-Stadtratsgruppe",
+      "antragsdatum": "2024-05-06",
+      "antragsdatum_anzeige": "06.05.2024",
+      "vorlage": "V0355/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19107",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtrat Gemeinschaftsantrag",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=218076&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19091",
+      "titel": "Förderung Congresszentrum",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2024-05-05",
+      "antragsdatum_anzeige": "05.05.2024",
+      "vorlage": "V0339/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19091",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=217927&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19089",
+      "titel": "Abrutschen im Smart-City-Index",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2024-05-01",
+      "antragsdatum_anzeige": "01.05.2024",
+      "vorlage": "V0337/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19089",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=217914&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19080",
+      "titel": "Ingolstädter Klinikum als Maximalversorger in der Region 10",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2024-04-29",
+      "antragsdatum_anzeige": "29.04.2024",
+      "vorlage": "V0328/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19080",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=217735&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "18961",
+      "titel": "Angabe des Personalbedarfs für beantragte Aufgaben",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2024-03-12",
+      "antragsdatum_anzeige": "12.03.2024",
+      "vorlage": "V0214/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=18961",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=215980&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "18962",
+      "titel": "Bereitstellung von vergünstigten Park-Auslasstickets bei Firmen-/Verbandsveranstaltungen",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2024-03-12",
+      "antragsdatum_anzeige": "12.03.2024",
+      "vorlage": "V0215/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=18962",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=215983&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "18784",
+      "titel": "Aufenthaltsqualität an den Ingolstädter Schulen",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2024-01-18",
+      "antragsdatum_anzeige": "18.01.2024",
+      "vorlage": "V0047/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=18784",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=213836&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19773",
+      "titel": "Initiative für eine adäquate Bemessung der Gastschulbeiträge",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2024-01-16",
+      "antragsdatum_anzeige": "16.01.2024",
+      "vorlage": "V0029/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19773",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230164&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "18599",
+      "titel": "Zurückdrängen von Einwegmüll im öffentlichen Raum",
+      "antragsteller": "ödp-Stadtratsgruppe",
+      "antragsdatum": "2023-11-09",
+      "antragsdatum_anzeige": "09.11.2023",
+      "vorlage": "V1005/23",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=18599",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag ÖDP",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=211079&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "17489",
+      "titel": "Erhalt und Neubau der Schulschwimmbäder",
+      "antragsteller": "CSU-Stadtratsfraktion",
+      "antragsdatum": "2023-10-11",
+      "antragsdatum_anzeige": "11.10.2023",
+      "vorlage": "V0907/23",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=17489",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=208709&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "15744",
+      "titel": "Hochwasserschutz",
+      "antragsteller": "FW-Stadtratsfraktion",
+      "antragsdatum": "2022-03-30",
+      "antragsdatum_anzeige": "30.03.2022",
+      "vorlage": "V0281/22",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=15744",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FW",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=186620&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "15755",
+      "titel": "Flächensparende Gewerbegebietserweiterung / Höhenentwicklung zulassen",
+      "antragsteller": "Ausschussgemeinschaft FDP/JU",
+      "antragsdatum": "2022-03-29",
+      "antragsdatum_anzeige": "29.03.2022",
+      "vorlage": "V0292/22",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=15755",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FDP/JU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=186673&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23313",
+      "titel": "IT- und Datensicherheit der Stadt Ingolstadt überprüfen – Erkenntnisse aus dem Berliner Cyberangriff",
+      "antragsteller": "",
+      "antragsdatum": "",
+      "antragsdatum_anzeige": "",
+      "vorlage": "V0557/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23313",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253410&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23296",
+      "titel": "Digitales Baustellenmanagement für Ingolstadt –",
+      "antragsteller": "",
+      "antragsdatum": "",
+      "antragsdatum_anzeige": "",
+      "vorlage": "V0540/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23296",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253301&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23040",
+      "titel": "Eine Schule in unseren Kaufhof?",
+      "antragsteller": "",
+      "antragsdatum": "",
+      "antragsdatum_anzeige": "",
+      "vorlage": "V0289/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23040",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag ÖDP",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250201&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22552",
+      "titel": "Ersatzspielstätte Festsaal auf IN-Campus-Gelände",
+      "antragsteller": "",
+      "antragsdatum": "",
+      "antragsdatum_anzeige": "",
+      "vorlage": "V0779/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22552",
+      "ziel_gremium": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=243212&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22470",
+      "titel": "Gewerbesteuer senken – Grundsteuer B erhöhen",
+      "antragsteller": "",
+      "antragsdatum": "",
+      "antragsdatum_anzeige": "",
+      "vorlage": "V0699/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22470",
+      "ziel_gremium": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=242505&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19815",
+      "titel": "Einwegverpackungssteuer",
+      "antragsteller": "",
+      "antragsdatum": "",
+      "antragsdatum_anzeige": "",
+      "vorlage": "V0071/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19815",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=230740&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19672",
+      "titel": "Solarfaltdach als Option für Kläranlagen oder Großparkflächen",
+      "antragsteller": "",
+      "antragsdatum": "",
+      "antragsdatum_anzeige": "",
+      "vorlage": "V0903/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19672",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag ÖDP",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=226543&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19596",
+      "titel": "Einberufung einer Bürgerversammlung zur geplanten Umnutzung des ARA-Hotels zu einer Gemeinschaftsunterkunft",
+      "antragsteller": "",
+      "antragsdatum": "",
+      "antragsdatum_anzeige": "",
+      "vorlage": "V0827/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19596",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=226596&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19327",
+      "titel": "(Mehr und größere) Wohnmobilstellplätze für Ingolstadt",
+      "antragsteller": "",
+      "antragsdatum": "",
+      "antragsdatum_anzeige": "",
+      "vorlage": "V0563/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19327",
+      "ziel_gremium": "IFG Ingolstadt AöR, Verwaltungsrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=220812&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "19047",
+      "titel": "Modellkommune / Bezahlkarte für Asylbewerber",
+      "antragsteller": "",
+      "antragsdatum": "",
+      "antragsdatum_anzeige": "",
+      "vorlage": "V0295/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19047",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=217433&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "18862",
+      "titel": "Schaffung weiterer Aufenthaltsmöglichkeiten für Jugendliche im Stadtgebiet",
+      "antragsteller": "",
+      "antragsdatum": "",
+      "antragsdatum_anzeige": "",
+      "vorlage": "V0122/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=18862",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag UWG",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=214636&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "18845",
+      "titel": "Wandteppich und Fresko",
+      "antragsteller": "",
+      "antragsdatum": "",
+      "antragsdatum_anzeige": "",
+      "vorlage": "V0105/24",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=18845",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=214567&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "17527",
+      "titel": "Schutzplanken",
+      "antragsteller": "",
+      "antragsdatum": "",
+      "antragsdatum_anzeige": "",
+      "vorlage": "V0940/23",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=17527",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag UWG",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=209296&type=do"
+        }
+      ]
+    }
+  ]
+}
