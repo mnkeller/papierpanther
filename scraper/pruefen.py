@@ -48,8 +48,12 @@ def lade(name):
 # --------------------------------------------------------------- Zusicherungen
 
 def p_referenzen(kur, index):
-    """Jeder Kurationseintrag muss einen Tagesordnungspunkt haben."""
-    tot = [r for r in kur if r not in index]
+    """Jeder Kurationseintrag muss einen Tagesordnungspunkt haben.
+
+    Ausnahme: ':antrag:'-Refs (siehe antraege_offen.py) haben nie einen
+    Sitzungs-TOP -- das ist gerade ihr Sinn, solange sie nicht terminiert sind.
+    """
+    tot = [r for r in kur if r not in index and ":antrag:" not in r]
     if tot:
         fehlt(f"{len(tot)} Kurationseintraege zeigen ins Leere: {tot[:5]}")
 

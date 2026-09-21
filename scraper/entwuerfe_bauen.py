@@ -253,7 +253,27 @@ def main():
                 continue
             if ist_sammelueberschrift(top["titel"]):
                 continue
-            offen.append((ref, sitzung, top))
+            offen.append((ref, sitzung, top, quelle))
+
+    # Offene Stadtratsantraege ohne Sitzungstermin (siehe antraege_offen.py)
+    # zaehlen mit dazu, sonst blieben sie bis zur Terminierung ganz ohne
+    # Kurationseintrag unsichtbar (feed_bauen.py zeigt nur, was hier schon
+    # zumindest einen Entwurf hat).
+    if not args.quelle or args.quelle == "stadt":
+        antraege_pfad = os.path.join(DATEN_VZ, "offene_antraege.json")
+        if os.path.exists(antraege_pfad):
+            with open(antraege_pfad, encoding="utf-8") as f:
+                offene_antraege = json.load(f)["antraege"]
+            for antrag in offene_antraege:
+                ref = f"{antrag['quelle']}:antrag:{antrag['kvonr']}"
+                if ref in vorhanden:
+                    continue
+                sitzung = {
+                    "gremium": antrag["ziel_gremium"] or "Stadtrat",
+                    "datum_anzeige": antrag["antragsdatum_anzeige"] or "noch offen",
+                }
+                top = {"titel": antrag["titel"], "zusatz": "", "vorlage": antrag["vorlage"]}
+                offen.append((ref, sitzung, top, antrag["quelle"]))
 
     if args.max:
         offen = offen[: args.max]
@@ -263,7 +283,7 @@ def main():
         return
 
     neu = collections.OrderedDict()
-    for ref, sitzung, top in offen:
+    for ref, sitzung, top, quelle in offen:
         suchtext = " ".join(
             [top["titel"], ohne_personen(top.get("zusatz", "")), sitzung["gremium"]]
         )
@@ -314,7 +334,7 @@ def main():
                 "keine erfundenen Fakten) und 1-2 Saetze Klartext schreiben. "
                 "Nur umformulieren, was im amtlichen Titel steht.\n\n"
             )
-            for ref, sitzung, top in offen:
+            for ref, sitzung, top, _quelle in offen:
                 f.write(f"## {ref}\n")
                 f.write(f"- Gremium: {sitzung['gremium']} ({sitzung['datum_anzeige']})\n")
                 f.write(f"- Amtlicher Titel: {top['titel']}\n")

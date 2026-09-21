@@ -29,6 +29,7 @@ from referenzen import bare_positionen, ist_beteiligung, top_ref  # noqa: E402
 
 # Reihenfolge bestimmt die Sortierung der Filterachse "Stand"
 STAND_REIHENFOLGE = [
+    "Noch nicht terminiert",  # siehe antraege_offen.py — noch keiner Sitzung zugeteilt
     "Entscheidung geplant",
     "Wird noch beraten",
     "Entscheidung angesetzt",
@@ -186,6 +187,8 @@ def main():
     fehlend = []
     doppelt = []
     for ref, kur in eintraege_kuration.items():
+        if ":antrag:" in ref:
+            continue  # eigener Pfad weiter unten — hat keinen Sitzungs-TOP
         if ref not in index:
             fehlend.append(ref)
             continue
@@ -279,6 +282,72 @@ def main():
                 "sitzung_url": sitzung["url"],
                 "dokumente": top["dokumente"],
                 "beratungsweg": top.get("beratungen") or [],
+            }
+        )
+
+    # Offene Stadtratsantraege ohne Sitzungstermin (siehe antraege_offen.py).
+    # Eigener, einfacherer Pfad statt durch thema_schluessel()/leitstation():
+    # ohne Sitzung gibt es weder einen Beratungsweg zum Gruppieren noch eine
+    # "Leitstation", von der sich Datum oder Gremium ableiten liessen.
+    offene_antraege_pfad = os.path.join(DATEN_VZ, "offene_antraege.json")
+    if os.path.exists(offene_antraege_pfad):
+        with open(offene_antraege_pfad, encoding="utf-8") as f:
+            offene_antraege = json.load(f)["antraege"]
+    else:
+        offene_antraege = []
+
+    bekannte_kvonr = {
+        m.group(1)
+        for sitzung in roh["sitzungen"]
+        for top in sitzung["tops"]
+        for m in [re.search(r"__kvonr=(\d+)", top.get("vorlage_url") or "")]
+        if m
+    }
+    for antrag in offene_antraege:
+        if antrag["kvonr"] in bekannte_kvonr:
+            continue  # inzwischen terminiert, antraege_offen.py nur noch nicht neu gelaufen
+        ref = f"{antrag['quelle']}:antrag:{antrag['kvonr']}"
+        kur = eintraege_kuration.get(ref)
+        if not kur:
+            continue  # noch nicht mal ein Entwurf -- entwuerfe_bauen.py erst laufen lassen
+        gremium = (
+            f"Antrag an {antrag['ziel_gremium']}" if antrag["ziel_gremium"]
+            else "Antrag, Gremium noch offen"
+        )
+        feed.append(
+            {
+                "ref": ref,
+                "thema": ref,
+                "auftritte": [],
+                "klartext_titel": kur["klartext_titel"],
+                "klartext": kur["klartext"],
+                "klartext_titel_leicht": kur.get("klartext_titel_leicht", ""),
+                "klartext_leicht": kur.get("klartext_leicht", ""),
+                "lebenslage": kur.get("lebenslage", []),
+                "bezirk": kur.get("bezirk", []),
+                "anlass": kur.get("anlass", []),
+                "ort": kur.get("ort", []),
+                "entwurf": kur.get("entwurf", False),
+                # --- abgeleitet ---
+                "stand": "Noch nicht terminiert",
+                "stand_datum": "",
+                "niederschrift_url": "",
+                "beschluss": None,
+                # --- unveraenderte Angaben aus der Quelle ---
+                "quelle": antrag["quelle"],
+                "amtlicher_titel": antrag["titel"],
+                "top_nr": "",
+                "vorlage": antrag["vorlage"],
+                "vorlage_url": antrag["vorlage_url"],
+                "antragsteller": antrag["antragsteller"],
+                "gremium": gremium,
+                "sitzung_kennung": "",
+                "datum": antrag["antragsdatum"],
+                "datum_anzeige": antrag["antragsdatum_anzeige"],
+                # Ohne Sitzung ist die Vorlage selbst die Quelle.
+                "sitzung_url": antrag["vorlage_url"],
+                "dokumente": antrag["dokumente"],
+                "beratungsweg": [],
             }
         )
 

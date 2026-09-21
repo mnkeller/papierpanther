@@ -155,11 +155,32 @@ def main():
     )
     gewaehlt = sortiert[: args.max]
 
-    print(f"{len(themen)} Themen offen, {len(gewaehlt)} in dieser Portion")
+    # Offene Stadtratsantraege ohne Sitzungstermin (siehe antraege_offen.py) —
+    # eigener, einfacherer Zweig: kein Beratungsweg, keine "Leitstation",
+    # jeder Antrag hat sein eigenes Dokument schon direkt zur Hand.
+    offene_antraege = []
+    if args.quelle == "stadt":
+        antraege_pfad = os.path.join(DATEN_VZ, "offene_antraege.json")
+        if os.path.exists(antraege_pfad):
+            with open(antraege_pfad, encoding="utf-8") as f:
+                alle_antraege = json.load(f)["antraege"]
+            offene_antraege = [
+                a for a in alle_antraege
+                if f"stadt:antrag:{a['kvonr']}" not in erledigt
+            ]
+            offene_antraege.sort(key=lambda a: a["antragsdatum"] or "", reverse=True)
+    restplatz = max(args.max - len(gewaehlt), 0)
+    offene_antraege = offene_antraege[:restplatz]
+
+    print(f"{len(themen)} Themen offen, {len(gewaehlt)} in dieser Portion"
+          + (f" (+ {len(offene_antraege)} offene Antraege ohne Termin)" if offene_antraege else ""))
     if args.liste:
         for schluessel, auftritte in gewaehlt:
             s, t = leitstation(auftritte)
             print(f"  {s['datum']}  {len(auftritte)}x  {t['titel'][:74]}")
+        for antrag in offene_antraege:
+            print(f"  {antrag['antragsdatum'] or '?':10}  1x  "
+                  f"{antrag['titel'][:74]}  [noch nicht terminiert]")
         return 0
 
     charge = []
@@ -207,6 +228,37 @@ def main():
         print(f"  [{nummer}/{len(gewaehlt)}] {t['titel'][:56]:56} "
               f"{len(eintrag['text']):6} Zeichen {eintrag['hinweis']}")
 
+        charge.append(eintrag)
+
+    for antrag in offene_antraege:
+        ref = f"stadt:antrag:{antrag['kvonr']}"
+        haupt = [d for d in antrag["dokumente"] if not IST_ANLAGE.match(d["titel"])]
+        eintrag = {
+            "thema": ref,
+            "ref": ref,
+            "datum": antrag["antragsdatum"],
+            "gremium": antrag["ziel_gremium"] or "Stadtrat",
+            "amtlicher_titel": antrag["titel"],
+            "vorlage": antrag["vorlage"],
+            "vorlage_url": antrag["vorlage_url"],
+            "antragsteller": antrag["antragsteller"],
+            "auftritte": [
+                {"datum": antrag["antragsdatum_anzeige"], "gremium": "noch nicht terminiert"}
+            ],
+            "anlagen_uebersprungen": len(antrag["dokumente"]) - len(haupt),
+            "text": "",
+            "hinweis": "kein Hauptdokument" if not haupt else "",
+        }
+        if haupt:
+            text, seiten, hinweis = pdf_text(haupt[0]["url"])
+            eintrag["dokument"] = haupt[0]["titel"]
+            eintrag["seiten"] = seiten
+            eintrag["text"] = text
+            eintrag["hinweis"] = hinweis
+        if not eintrag["text"]:
+            ohne_text += 1
+        print(f"  [{len(charge) + 1}/{len(gewaehlt) + len(offene_antraege)}] "
+              f"{antrag['titel'][:56]:56} {len(eintrag['text']):6} Zeichen {eintrag['hinweis']}")
         charge.append(eintrag)
 
     ziel = os.path.join(DATEN_VZ, "vorlagen_charge.json")
