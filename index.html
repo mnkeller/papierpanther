@@ -337,6 +337,7 @@
     padding: .2rem .6rem; border-radius: 999px;
     border: 1px solid transparent;
   }
+  .stand-noch { background: #eeeeee; color: #555; border-color: #55555530; }
   .stand-entscheidung { background: #eef1f6; color: #2f4a70; border-color: #2f4a7030; }
   .stand-wird { background: #fdf3e0; color: #96551f; border-color: #96551f30; }
   .stand-bekanntgabe { background: #f0eef6; color: #55467e; border-color: #55467e30; }
@@ -757,6 +758,10 @@
     amtlicherWortlaut: { n: 'Amtlicher Wortlaut und Quellen', l: 'Mehr Infos und Links' },
     origLabelTitel: { n: 'Titel im Ratsinfoportal', l: 'So heißt das offiziell' },
     origLabelAntrag: { n: 'Antrag', l: 'Antrag von' },
+    origLabelOffenerAntrag: {
+      n: 'Antrag, noch keiner Sitzung zugeteilt',
+      l: 'Der Antrag hat noch keinen Termin.'
+    },
     origLabelWeg: { n: 'Beratungsweg', l: 'Diese Gruppen reden mit' },
     wegHinweis: {
       n: 'Die Rolle ist die geplante Rolle der Sitzung. Ob der Beschluss tatsächlich gefasst oder vertagt wurde, steht nicht in diesen Daten — das ergibt erst die Niederschrift.',
@@ -847,6 +852,7 @@
   };
   var BEZIRK_LEICHT = { 'stadtweit': 'in ganz Ingolstadt' };
   var STAND_LEICHT = {
+    'Noch nicht terminiert': 'Es gibt noch keinen Termin dafür.',
     'Wird noch beraten': 'Der Stadt-Rat bespricht das noch.',
     'Entscheidung geplant': 'Der Stadt-Rat will bald entscheiden.',
     'Entscheidung angesetzt': 'Der Stadt-Rat wollte jetzt entscheiden.',
@@ -1324,16 +1330,26 @@
       body.appendChild(el('div', 'weg-hinweis', txt('wegHinweis')));
     }
 
-    body.appendChild(el('span', 'orig-label',
-      leicht
-        ? 'Punkt ' + e.top_nr + ' in der Sitzung ' + e.sitzung_kennung
-        : 'Tagesordnungspunkt ' + e.top_nr + ' · Sitzung ' + e.sitzung_kennung));
+    /* Ein offener Antrag (siehe antraege_offen.py) hat keinen Sitzungs-TOP —
+       top_nr bleibt dann leer. Statt einer leeren "Tagesordnungspunkt ·
+       Sitzung"-Zeile und einem zweiten Link auf dieselbe Vorlage-URL gibt es
+       hier nur den erklärenden Hinweis. */
+    if (e.top_nr) {
+      body.appendChild(el('span', 'orig-label',
+        leicht
+          ? 'Punkt ' + e.top_nr + ' in der Sitzung ' + e.sitzung_kennung
+          : 'Tagesordnungspunkt ' + e.top_nr + ' · Sitzung ' + e.sitzung_kennung));
+    } else {
+      body.appendChild(el('span', 'orig-label', txt('origLabelOffenerAntrag')));
+    }
 
     var links = el('div', 'quellen');
-    var a1 = el('a', 'quelle-link', txt('quelleSitzung'));
-    a1.href = e.sitzung_url; a1.target = '_blank'; a1.rel = 'noopener';
-    neuerTabHinweis(a1);
-    links.appendChild(a1);
+    if (e.top_nr) {
+      var a1 = el('a', 'quelle-link', txt('quelleSitzung'));
+      a1.href = e.sitzung_url; a1.target = '_blank'; a1.rel = 'noopener';
+      neuerTabHinweis(a1);
+      links.appendChild(a1);
+    }
 
     if (e.vorlage_url) {
       var a2 = el('a', 'quelle-link', (leicht ? 'Dokument ' : 'Vorlage ') + e.vorlage);
