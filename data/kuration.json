@@ -39712,6 +39712,1386 @@
       "ort": [],
       "anlass": [],
       "entwurf": true
+    },
+    "stadt:antrag:18962": {
+      "klartext_titel": "Bereitstellung von vergünstigten Park-Auslasstickets bei Firmen-/Verbandsveranstaltungen",
+      "klartext": "",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:22458": {
+      "klartext_titel": "Engstellenmanagement für Buslinien in der Innenstadt",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19922": {
+      "klartext_titel": "Wohnungsbörse und „Wohnen für Hilfe“ für Ingolstadt",
+      "klartext": "",
+      "lebenslage": [
+        "Gesundheit & Pflege",
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23121": {
+      "klartext_titel": "Konzept für die Sanierung des Hämer-Buro-Baus mit Hochdruck entwickeln",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung",
+        "Baustelle"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:18845": {
+      "klartext_titel": "Wandteppich und Fresko",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:22732": {
+      "klartext_titel": "Anpassung der Klimaziele auf ein realistischeres und finanziell optimiertes Klimaziel 2045 statt 2035",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:23122": {
+      "klartext_titel": "Stadtbäume sichern, Straßenräume beschatten und Baumpflanzungen systematisch ausbauen",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:23297": {
+      "klartext_titel": "Mängelmelder auswerten und digital weiterentwickeln",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:20149": {
+      "klartext_titel": "Kippenfreies Ingolstadt",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19587": {
+      "klartext_titel": "Nutzung und Auslastung der Congressgarage",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19734": {
+      "klartext_titel": "Durchführung eines Stiftertages 2025",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19103": {
+      "klartext_titel": "Darstellung von Containern an Schulen in den kommenden Jahren",
+      "klartext": "",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:17527": {
+      "klartext_titel": "Schutzplanken",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19153": {
+      "klartext_titel": "Konzept \"Mitarbeiterwohnungen für Ingolstadt\"",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19218": {
+      "klartext_titel": "„Schanzer Markthalle“ in der Kaufhofimmobilie",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19476": {
+      "klartext_titel": "Bau von leistungsfähigen Photovoltaikanlagen",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:23123": {
+      "klartext_titel": "Sonnencremespender",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:22855": {
+      "klartext_titel": "Auskunft zur Personalsituation der Ingolstädter Berufsfeuerwehr",
+      "klartext": "Die SPD- und die FW-Stadtratsfraktion fordern den Oberbürgermeister auf, über die Personalsituation bei der Ingolstädter Berufsfeuerwehr zu berichten. Hintergrund ist ein Bericht der Verwaltung vom 29. Juli 2025, wonach sich unter anderem keine Bewerber für den Personalrat der Berufsfeuerwehr fanden. Seit dieser Sitzung ist trotz mehrfacher Nachfragen und einer fraktionsübergreifenden Initiative von FW, SPD, CSU, FDP, Bündnis 90/Die Grünen und der JU keine weitere Information von der Stadtspitze gekommen. Auch eine Anfrage der SPD-Fraktion zu den Ergebnissen blieb unbeantwortet.",
+      "klartext_titel_leicht": "SPD und FW fragen nach der Feuerwehr",
+      "klartext_leicht": "Die Berufs-Feuerwehr in Ingolstadt hat Personal-Probleme. Das hat die Stadt-Verwaltung im Juli 2025 berichtet. Zum Beispiel gab es keine Bewerbung für den Personal-Rat. Seitdem gibt es keine neuen Informationen dazu. Mehrere Fraktionen haben schon nachgefragt. Die SPD-Fraktion und die FW-Fraktion wollen jetzt eine Antwort vom Oberbürgermeister. Sie stellen dafür einen Antrag.",
+      "lebenslage": [
+        "Ehrenamt & Vereine"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "entwurf": false
+    },
+    "stadt:antrag:23265": {
+      "klartext_titel": "Ergänzung des Mobilitätsangebots in Ingolstadt mit fahrerlosen Diensten",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23310": {
+      "klartext_titel": "Autoposing in der Altstadt wirksam eindämmen",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19798": {
+      "klartext_titel": "Nutzung und Auslastung der Congressgarage",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23133": {
+      "klartext_titel": "Pressemitteilungen auch an den Stadtrat",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19842": {
+      "klartext_titel": "Katzenschutzverordnung",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:18862": {
+      "klartext_titel": "Schaffung weiterer Aufenthaltsmöglichkeiten für Jugendliche im Stadtgebiet",
+      "klartext": "",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23314": {
+      "klartext_titel": "Umsetzungsstand des Intelligente-Verkehrssysteme-Gesetzes (IVSG) und Berücksichtigung im Mobilitätsplan …",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:23315": {
+      "klartext_titel": "Transparente Kriterien für die Verleihung kommunaler Ehrentitel",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19371": {
+      "klartext_titel": "Radwegmarkierung Roßmühlstraße",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:23312": {
+      "klartext_titel": "Klarer Konsolidierungspfad für Ingolstadt",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:22788": {
+      "klartext_titel": "Zwischennutzungen im Stadttheater-Gebäude",
+      "klartext": "",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:22854": {
+      "klartext_titel": "Stärkung der Kreislaufwirtschaft als zukunftsfähiges Wirtschaftssystem in Ingolstadt",
+      "klartext": "",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:20086": {
+      "klartext_titel": "Sondervermögen Schanzer Festungsanlagen",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19689": {
+      "klartext_titel": "Vandalismus-Erhebung als Grundlage für Präventionsmaßnahmen",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:23249": {
+      "klartext_titel": "Regelung für die Betreuung von Besuchen von oder bei Partnerstädten",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23296": {
+      "klartext_titel": "Digitales Baustellenmanagement für Ingolstadt",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Baustelle"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19102": {
+      "klartext_titel": "Einführung von Chatbots bei der Stadtverwaltung",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:22371": {
+      "klartext_titel": "Universitäre Einrichtung für den Bereich Medizin in Ingolstadt",
+      "klartext": "",
+      "lebenslage": [
+        "Studierende"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:18599": {
+      "klartext_titel": "Zurückdrängen von Einwegmüll im öffentlichen Raum",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23039": {
+      "klartext_titel": "Toilettenöffnung in Friedhöfen während der Öffnungszeiten gewährleisten",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19047": {
+      "klartext_titel": "Modellkommune / Bezahlkarte für Asylbewerber",
+      "klartext": "",
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23135": {
+      "klartext_titel": "Grundstücke der IFG",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:22552": {
+      "klartext_titel": "Ersatzspielstätte Festsaal auf IN-Campus-Gelände",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19726": {
+      "klartext_titel": "Familien-Notunterkünfte / Containeranlagen",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19728": {
+      "klartext_titel": "Fahrradabstellanlagen an allen Bus-Wartehallen",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:22825": {
+      "klartext_titel": "Unverzügliche Einstellung und Digitalisierung der Druckpublikationen des Stadttheaters Ingolstadt",
+      "klartext": "",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:22410": {
+      "klartext_titel": "Souveränität bewahren, Handlungsfähigkeit demonstrieren: Maßnahmenpaket zur Konsolidierung des städtischen …",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:22502": {
+      "klartext_titel": "Lechner-Museum",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19294": {
+      "klartext_titel": "Erwerb des Gebäudes ehemaliges Franziskanerkloster",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23063": {
+      "klartext_titel": "Bericht zur Beschaffung BF-FF-Katastrophenschutz",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:22793": {
+      "klartext_titel": "Öffentlichkeitsarbeit",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19367": {
+      "klartext_titel": "Stadttheater Ingolstadt soll Staatstheater werden",
+      "klartext": "",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:20029": {
+      "klartext_titel": "Barrierefreiheit | Schwerhörige",
+      "klartext": "",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19827": {
+      "klartext_titel": "Beendigung der Kooperation mit Amnesty International beim Tag der Menschenrechte in Ingolstadt",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23117": {
+      "klartext_titel": "Kommunaler Ordnungsdienst",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23165": {
+      "klartext_titel": "Öffentlich zugängliche klimatisierte, konsumfreie Räume in den Sommermonaten",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19727": {
+      "klartext_titel": "Familien-Notwohnungen",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:20044": {
+      "klartext_titel": "Bewerbung bei Radplus der Deutschen Bahn AG",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19596": {
+      "klartext_titel": "Einberufung einer Bürgerversammlung zur geplanten Umnutzung des ARA-Hotels zu einer Gemeinschaftsunterkunft",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19231": {
+      "klartext_titel": "Installation von Überwachungskameras in öffentlichen Parks",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23141": {
+      "klartext_titel": "Bauturbo nutzen – Wohnungsbaugipfel für Ingolstadt einberufen",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23136": {
+      "klartext_titel": "Antrag auf Einberufung einer Sondersitzung des Stadtrats nach Art. 46 Abs. 2 GO",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19370": {
+      "klartext_titel": "Deutsche Umwelthilfe - Hitzecheck Juli 2024",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19327": {
+      "klartext_titel": "(Mehr und größere) Wohnmobilstellplätze für Ingolstadt",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19091": {
+      "klartext_titel": "Förderung Congresszentrum",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19089": {
+      "klartext_titel": "Abrutschen im Smart-City-Index",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19720": {
+      "klartext_titel": "Errichtung zusätzlicher Fahrradstellplätze vor dem Stadttheater",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs",
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:23303": {
+      "klartext_titel": "Erweiterung des Hitzeaktionsplans der Stadt Ingolstadt um ein Maßnahmenpaket zum Hitzeschutz im Öffentlichen …",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung",
+        "Klima & Umwelt"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19490": {
+      "klartext_titel": "Sicherheit im ÖPNV",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung",
+        "Sicherheit"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19399": {
+      "klartext_titel": "Mehr Grün in die Stadt",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19182": {
+      "klartext_titel": "Behindertenparkplätze auf Google Maps eintragen",
+      "klartext": "",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:22738": {
+      "klartext_titel": "Harmonisierung des Ingolstädter Klimaziels mit dem Klimaziel der Bundesrepublik Deutschland und dem des …",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:22731": {
+      "klartext_titel": "Prüfung weiterer Nutzung des Foyers im Stadttheater",
+      "klartext": "",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19488": {
+      "klartext_titel": "Öffnung der städtischen Brückenbücher, Feststellung der Anzahl der Brückenbauwerke in der kommunalen Baulast …",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19973": {
+      "klartext_titel": "Auto-Poser ausbremsen",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19248": {
+      "klartext_titel": "Sicherheitskonzept/Präventionsmaßnahmen gegen Messerstecher, Vergewaltiger und andere Kriminelle in den …",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Sicherheit",
+        "Konzept & Planung"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:22725": {
+      "klartext_titel": "Benennung einer Straße nach Karl Fröhlich",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:17489": {
+      "klartext_titel": "Erhalt und Neubau der Schulschwimmbäder",
+      "klartext": "",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23119": {
+      "klartext_titel": "Sicherheit an besonders belasteten öffentlichen Orten stärken",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19741": {
+      "klartext_titel": "Entwicklung einer \"Ingolstadt-App\"",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19569": {
+      "klartext_titel": "Darstellung der freiwilligen Leistungen",
+      "klartext": "",
+      "lebenslage": [
+        "Ehrenamt & Vereine"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23301": {
+      "klartext_titel": "Schattenspendendes Grün für unseren Rathausplatz",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:23115": {
+      "klartext_titel": "Aufzeichnung und zeitversetzte Abrufbarkeit öffentlicher Stadtratssitzungen",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23040": {
+      "klartext_titel": "Eine Schule in unseren Kaufhof?",
+      "klartext": "",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:22654": {
+      "klartext_titel": "Prüfung und ggf. Erklärung des Heimfalls des an den FC Fatih überlassenen Vereinsheim aufgrund …",
+      "klartext": "",
+      "lebenslage": [
+        "Ehrenamt & Vereine"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23298": {
+      "klartext_titel": "Synergien nutzen – Doppelstrukturen bei Stadt und Beteiligungsunternehmen abbauen",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19451": {
+      "klartext_titel": "Entsiegelung und Begrünung von Pausenhöfen",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:20188": {
+      "klartext_titel": "Weichen stellen für die Einführung einer \"Kulturförderabgabe\" in Ingolstadt",
+      "klartext": "",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:22470": {
+      "klartext_titel": "Gewerbesteuer senken – Grundsteuer B erhöhen",
+      "klartext": "",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19486": {
+      "klartext_titel": "Hitzeschuztaktionsplan für das Klinikum Ingolstadt",
+      "klartext": "",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19107": {
+      "klartext_titel": "Schaffung einer Auszeichnung für besonderes Engagement für Demokratie und Integration",
+      "klartext": "",
+      "lebenslage": [
+        "Zuwanderung & Integration"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19129": {
+      "klartext_titel": "Nachverhandlungen des Mietpreises für an die Stadt Ingolstadt vermietete Liegenschaften",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19916": {
+      "klartext_titel": "Radweg zum Gymnasium Gaimersheim",
+      "klartext": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19560": {
+      "klartext_titel": "Ehemaliges Rieter-Grundstück in kommunale Hand",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23183": {
+      "klartext_titel": "Reduzierung von Gutachten und Machbarkeitsstudien",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:23251": {
+      "klartext_titel": "Einführung eines zweistufigen Beratungsverfahrens für Stadtratsanträge",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23234": {
+      "klartext_titel": "Potenziale für die Umnutzung von leerstehenden Flächen zu Wohnraum prüfen",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19445": {
+      "klartext_titel": "Einsatz autonomer Kleinbusse für die Innenstadt",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:15744": {
+      "klartext_titel": "Hochwasserschutz",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19742": {
+      "klartext_titel": "Prüfung der Durchführung eines „Bürgerfest Light“ in Ingolstadt",
+      "klartext": "",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:15755": {
+      "klartext_titel": "Flächensparende Gewerbegebietserweiterung / Höhenentwicklung zulassen",
+      "klartext": "",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23239": {
+      "klartext_titel": "Antrag auf Überprüfung der Einnahmesituation im Vermögenshaushalt",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise",
+        "Satzung & Regeln"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:23073": {
+      "klartext_titel": "Ergänzung der Gedenkstätte im Luitpoldpark um eine weitere Gedenktafel für im Dienst verstorbene Soldatinnen …",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19786": {
+      "klartext_titel": "Ausgewiesene oberirdische Parkplätze für hohe Fahrzeuge",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19094": {
+      "klartext_titel": "Erstellung eines einheitlichen Konzeptes für Vermittlung und Präsentation der Geschichte der Stadt Ingolstadt",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:20191": {
+      "klartext_titel": "Beflaggung von öffentlichen Gebäuden in Ingolstadt",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:20244": {
+      "klartext_titel": "Konzeptvorstellung kommunaler Ordnungsdienst sowie Einleitung von Maßnahmen gegen Vermüllung und Vandalismus",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Sicherheit",
+        "Konzept & Planung",
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19672": {
+      "klartext_titel": "Solarfaltdach als Option für Kläranlagen oder Großparkflächen",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19776": {
+      "klartext_titel": "Alternative Finanzierungsmodelle für Ingolstadt",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:22372": {
+      "klartext_titel": "Ehrung von Alt-OB Peter Schnell",
+      "klartext": "",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:22747": {
+      "klartext_titel": "Von Land und Bund an die Stadt übertragene staatliche Aufgaben, daraus entstehende Kosten für die Stadt und …",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:23302": {
+      "klartext_titel": "Nachhaltige Haushaltskonsolidierung plus Klimaanpassung im Stadtgrün",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise",
+        "Klima & Umwelt",
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:20231": {
+      "klartext_titel": "Einführung eines digitalen Selbstbedienungsterminals („Amt-o-Mat“) zur Entlastung des Bürgeramts und zur …",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23243": {
+      "klartext_titel": "Forschungsprojekt „Opfer des Nationalsozialismus in Ingolstadt“",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19365": {
+      "klartext_titel": "Stärkung des Wohnmobiltourismus II",
+      "klartext": "",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:22420": {
+      "klartext_titel": "Ansiedlung der Zentrale für Katastrophenschutz des Freistaates Bayern",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19339": {
+      "klartext_titel": "Prozessautomatisierung zur Entlastung der Verwaltung",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19773": {
+      "klartext_titel": "Initiative für eine adäquate Bemessung der Gastschulbeiträge",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:20187": {
+      "klartext_titel": "Zukunft des Jungen Theater durch eine Ersatzspielstätte sichern",
+      "klartext": "",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:23118": {
+      "klartext_titel": "Pilotprojekt „Baggersee-Ranger“ für den Naherholungsraum Baggersee und die Donauuferbereiche",
+      "klartext": "",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23132": {
+      "klartext_titel": "Vorlage der Entscheidungsgrundlagen zum baulichen Zustand des Hämerbaus und des Festsaals des Stadttheaters",
+      "klartext": "",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:18784": {
+      "klartext_titel": "Aufenthaltsqualität an den Ingolstädter Schulen",
+      "klartext": "",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19350": {
+      "klartext_titel": "Verstetigung und Ausbau der Antidiskriminierungsstelle",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:23313": {
+      "klartext_titel": "IT- und Datensicherheit der Stadt Ingolstadt überprüfen",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19815": {
+      "klartext_titel": "Einwegverpackungssteuer",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:18961": {
+      "klartext_titel": "Angabe des Personalbedarfs für beantragte Aufgaben",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:22726": {
+      "klartext_titel": "Ehrenamtliches Engagement",
+      "klartext": "",
+      "lebenslage": [
+        "Ehrenamt & Vereine"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19080": {
+      "klartext_titel": "Ingolstädter Klinikum als Maximalversorger in der Region 10",
+      "klartext": "",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:22838": {
+      "klartext_titel": "Auflistung Sparmaßnahmen Wirksamkeit",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [],
+      "entwurf": true
+    },
+    "stadt:antrag:19442": {
+      "klartext_titel": "Starkregenereignis in Gerolfing I Prüfung Kanalausbau und Regenrückhaltebecken",
+      "klartext": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "entwurf": true
+    },
+    "stadt:antrag:19452": {
+      "klartext_titel": "Einsatz von Exoskeletten in der Pflege",
+      "klartext": "",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "ort": [],
+      "anlass": [
+        "Grün & Sauberkeit"
+      ],
+      "entwurf": true
     }
   }
 }
