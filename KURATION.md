@@ -32,9 +32,9 @@ Schlüssel ist `<quelle>:<sitzungs-id>#<top-nr>`, z. B. `stadt:13534#Ö 2`.
 | Feld | Pflicht | Bedeutung |
 |---|---|---|
 | `klartext_titel` | ja | Überschrift in normaler Sprache |
-| `klartext` | ja¹ | 1–3 Sätze, was der Punkt bedeutet |
+| `klartext` | ja¹ | 4–7 Sätze, was der Punkt bedeutet (siehe „Regeln für die normale Fassung“) |
 | `klartext_titel_leicht` | ja | Überschrift in Leichter Sprache |
-| `klartext_leicht` | ja¹ | dasselbe in Leichter Sprache |
+| `klartext_leicht` | ja¹ | dasselbe in Leichter Sprache, 5–9 Sätze |
 | `lebenslage`, `bezirk`, `anlass` | ja | Filterachsen, nur Werte aus `_achsen` |
 | `ort` | nein | freier Ortsvermerk, nur Anzeige, kein Filter |
 | `entwurf` | nein | `true` = maschinell vorgeschlagen, ungeprüft |
