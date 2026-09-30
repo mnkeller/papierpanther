@@ -28,7 +28,7 @@ DATEN_VZ = os.path.join(os.path.dirname(HIER), "data")
 sys.path.insert(0, HIER)
 from entwuerfe_bauen import ist_sammelueberschrift  # noqa: E402
 from referenzen import bare_positionen, ist_beteiligung, top_ref  # noqa: E402
-from feed_bauen import KEIN_STADTBEZIRK, STAND_REIHENFOLGE  # noqa: E402
+from feed_bauen import KEIN_STADTBEZIRK, STAND_REIHENFOLGE, STATUS_ALLE  # noqa: E402
 
 fehler, warnungen = [], []
 
@@ -201,6 +201,26 @@ def p_beschluesse_belegt(beschluesse, index):
             f"als ihr TOP: {falsche_vorlage[:5]}"
         )
 
+    # Befunde der Kontrolle 2026-09-30 als Zusicherung: bekannte Ergebnisse,
+    # keine Seitenfuesse/Sitzungsenden im Beschlusstext, und die Formel am
+    # Anfang des Texts ist dieselbe, die als "formel" gespeichert ist (sonst
+    # stammt sie aus einer anderen Abstimmung).
+    unbekannt = [r for r, b in beschluesse.items()
+                 if b.get("ergebnis") not in ("beschlossen", "abgelehnt", "teilweise")]
+    if unbekannt:
+        fehlt(f"{len(unbekannt)} Beschluesse mit unbekanntem Ergebnis: {unbekannt[:5]}")
+    reste = [r for r, b in beschluesse.items()
+             if re.search(r"Niederschrift Sitzung|Hiermit ist der (nicht)?öffentliche Teil", b["text"])]
+    if reste:
+        warnt(f"{len(reste)} Beschlusstexte mit Seitenfuss/Sitzungsende: {reste[:5]}")
+    formel_fremd = [
+        r for r, b in beschluesse.items()
+        if b.get("weg") in ("abstimmung", "vorlage-block")
+        and not re.match(r"\s*(?:Ziffer \d+:\s*)?" + re.escape(b["formel"]), b["text"])
+    ]
+    if formel_fremd:
+        fehlt(f"{len(formel_fremd)} Beschluesse, deren Formel nicht den Text eroeffnet: {formel_fremd[:5]}")
+
 
 BEHAUPTET_BESCHLUSS = re.compile(
     r"\b(hat beschlossen|wurde beschlossen|ist beschlossen|"
@@ -278,6 +298,19 @@ def p_oberflaeche(feed):
     )
     if fremd:
         fehlt(f"Unbekannte Staende auf Karten (fehlen im Filter): {dict(fremd)}")
+    ohne_status = collections.Counter(
+        e.get("status") for e in eintraege if e.get("status") not in STATUS_ALLE
+    )
+    if ohne_status:
+        fehlt(f"Eintraege ohne bekannten Status (Karten-Hinweis fehlt): {dict(ohne_status)}")
+    # "Entschieden" nur mit Beleg: woertlicher Beschlusstext und Link auf
+    # genau das Protokoll, aus dem er stammt.
+    unbelegt = [
+        e["ref"] for e in eintraege
+        if e.get("status") == "Entschieden" and not (e.get("beschluss") and e.get("niederschrift_url"))
+    ]
+    if unbelegt:
+        fehlt(f"{len(unbelegt)} Eintraege 'Entschieden' ohne Beschlusstext/Protokoll: {unbelegt[:3]}")
     falsch = [b for b in feed["achsen"]["bezirk"] if b in KEIN_STADTBEZIRK]
     if falsch:
         fehlt(f"Keine Stadtbezirke in der Bezirksachse: {falsch}")

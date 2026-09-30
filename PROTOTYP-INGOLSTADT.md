@@ -102,6 +102,15 @@ Die Rollen des Bezirks Oberbayern („beschließend nach § 7 GeschO",
 „vorberatend nach …", „Kenntnisnahme") werden über `feed_bauen.py::rolle_art`
 denselben Ständen zugeordnet.
 
+Auf der Seite erscheinen diese Stände nur noch als vier Hinweise („Noch offen",
+„Entschieden", „Ergebnis steht im Protokoll", „Nur zur Information") — Tabelle
+und Regeln in [KURATION.md](KURATION.md). „Entschieden" kommt aus
+`scraper/niederschriften_lesen.py`, das die Sitzungsprotokolle liest:
+Abstimmungszeilen, „Vorlage:"-Blöcke der SessionNet-Niederschriften und das
+TOP-Format des Bezirks Oberbayern. Hängt im Portal das Protokoll der
+vorherigen Sitzung an, ordnet das Skript es über Datum/Nummer im PDF der
+richtigen Sitzung zu (`data/niederschriften.json`).
+
 **Wichtige Einschränkung, bewusst so beschriftet:** Die Rolle ist die *geplante*
 Rolle. „Entscheidung angesetzt" heißt **nicht**, dass der Beschluss gefasst wurde —
 er kann vertagt worden sein. Deshalb steht dort nicht „entschieden", und die Karte

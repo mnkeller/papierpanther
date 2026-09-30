@@ -170,19 +170,40 @@ Punkte **nicht als eigene Karte**, sondern gebündelt je Sitzung als Liste
 - BZA-Punkte zuerst: Die Bezirksansicht ist der Einstieg der meisten
   Besucher, und dort ist der Anteil an Schablonen am höchsten.
 
-## Stand „Nur besprochen, nichts entschieden"
+## Stand: vier Hinweise statt sieben Verfahrensstände
 
-Punkte ohne Beschlussvorlage (mündliche Berichte, alle BZA-Punkte) heißen auf
-der Seite **„Nur besprochen, nichts entschieden"** (früher „Ohne Vorlage").
-Der Wortlaut steht an genau einer Stelle, `feed_bauen.py::STAND_OHNE_ENTSCHEIDUNG`.
-In Kurztexten deshalb nie „der Bezirksausschuss hat beschlossen", solange es
-dafür keinen Beleg in der Niederschrift gibt (siehe auch
-`pruefen.py::p_kein_behaupteter_beschluss`).
+`feed_bauen.py` leitet aus dem Beratungsweg weiterhin sieben Verfahrensstände
+ab (Feld `stand`). Auf der Seite erscheinen aber nur vier Hinweise (Feld
+`status`, `feed_bauen.py::status_aus_stand`), weil Bürgerinnen zwei Fragen
+haben — „Kann ich noch mitreden?" und „Was kam heraus?":
 
-`pruefen.py::p_oberflaeche` sichert nach jedem Bauen ab, dass kein Stand
-außerhalb der bekannten Liste auftaucht (etwa Paragrafentexte vom Bezirk
-Oberbayern), der Bezirk Oberbayern nicht als Stadtbezirk zählt und keine
-vergangenen Termine unter „Nächste Termine" stehen.
+| Hinweis | aus `stand` | Filter |
+|---|---|---|
+| Noch offen – Sie können mitreden | Noch nicht terminiert, Wird noch beraten, Entscheidung geplant | ja |
+| Entschieden: angenommen / teilweise angenommen / abgelehnt | Beschlossen, Teilweise beschlossen, Abgelehnt (nur mit Beleg aus der Niederschrift) | ja |
+| Ergebnis steht im Protokoll / kommt mit dem Protokoll | Entscheidung angesetzt | nein |
+| Nur zur Information, keine Entscheidung | Bekanntgabe, Nur besprochen, nichts entschieden | nein |
+
+„Entschieden" entsteht **nur** mechanisch aus `niederschriften_lesen.py`
+(`data/beschluesse.json`), nie aus dem Kurztext. In Kurztexten deshalb nie
+„hat beschlossen" schreiben (`pruefen.py::p_kein_behaupteter_beschluss`) —
+das Ergebnis zeigt der Hinweis, der Beschlusstext steht wörtlich darunter.
+Empfehlungen vorberatender Ausschüsse („Entsprechend dem Antrag befürwortet")
+zählen nicht als Entscheidung.
+
+Was `niederschriften_lesen.py` bewusst **nicht** als Beschluss wertet (Kontrolle
+vom 30.09.2026): Blöcke mit mehreren Abstimmungen ohne eindeutige Zuordnung,
+Vertagungen und Verweisungen („verweist … in die Fraktionen", „Beschlussfassung
+siehe V…"), Empfehlungen („empfiehlt", „wird empfohlen", „Antrag befürwortet")
+und Abstimmungen aus einer anderen Sitzung als der Entscheidungssitzung (Datum
+**und** Gremium müssen passen). Im Zweifel bleibt der Hinweis „Ergebnis steht
+im Protokoll" — lieber kein Ergebnis als ein falsches.
+
+`pruefen.py::p_oberflaeche` sichert nach jedem Bauen ab, dass jeder Eintrag
+einen der vier Hinweise hat, „Entschieden" immer einen Beschlusstext samt
+Protokoll-Link trägt, kein Stand außerhalb der bekannten Liste auftaucht,
+der Bezirk Oberbayern nicht als Stadtbezirk zählt und keine vergangenen
+Termine unter „Nächste Termine" stehen.
 
 ## Prüfliste vor dem Speichern
 

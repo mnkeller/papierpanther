@@ -147,6 +147,12 @@
   .stand-bekanntgabe { background: #f0eef6; color: #55467e; border-color: #55467e30; }
   .stand-eingereicht { background: var(--bg-warm); color: var(--text-faint); border-color: var(--border-strong); }
   .stand-unaufbereitet { background: var(--bg-warm); color: var(--text-faint); border-color: var(--border-strong); }
+  /* Dieselben vier Hinweise wie auf der Startseite (index.html::statusHinweis) */
+  .status-offen { background: #fdf3e0; color: #8a4a12; border-color: #96551f50; font-weight: 600; }
+  .status-entschieden { background: #eaf4ec; color: #1e6b3a; border-color: #1e6b3a30; }
+  .status-entschieden.abgelehnt { background: #fbeaec; color: var(--accent); border-color: #b00e2b30; }
+  .status-protokoll { background: #eef1f6; color: #2f4a70; border-color: #2f4a7030; }
+  .status-info { background: #f3f1ec; color: #4a4a4a; border-color: #4a4a4a40; }
 
   .stand.quellen {
     margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--border-strong);
@@ -277,20 +283,31 @@
     return e ? (leicht ? e.l : e.n) : '';
   }
 
-  var STAND_LEICHT = {
-    'Entscheidung angesetzt': 'Entscheidung ist geplant',
-    'Entscheidung geplant': 'Entscheidung kommt noch',
-    'Wird noch beraten': 'Wird noch besprochen',
-    'Bekanntgabe': 'Wurde bekannt gegeben',
+  /* Die sieben Verfahrensstaende aus feed.json in dieselben vier Hinweise
+     wie auf der Startseite uebersetzen (feed_bauen.py::status_aus_stand). */
+  var STATUS_TEXT = {
+    offen:       { n: 'Noch offen – Sie können mitreden', l: 'Noch nicht entschieden. Sie können mitreden.' },
+    angenommen:  { n: 'Entschieden: angenommen', l: 'Das ist entschieden: Ja.' },
+    abgelehnt:   { n: 'Entschieden: abgelehnt', l: 'Das ist entschieden: Nein.' },
+    teilweise:   { n: 'Entschieden: teilweise angenommen', l: 'Das ist entschieden: zum Teil Ja, zum Teil Nein.' },
+    protokoll:   { n: 'Ergebnis steht im Protokoll', l: 'Das Ergebnis steht im Protokoll.' },
+    info:        { n: 'Nur zur Information, keine Entscheidung', l: 'Nur eine Information. Es gibt keine Entscheidung.' }
+  };
+  var STAND_ZU_STATUS = {
+    'Noch nicht terminiert': ['offen', 'status-offen'],
+    'Wird noch beraten': ['offen', 'status-offen'],
+    'Entscheidung geplant': ['offen', 'status-offen'],
+    'Beschlossen': ['angenommen', 'status-entschieden'],
+    'Abgelehnt': ['abgelehnt', 'status-entschieden abgelehnt'],
+    'Teilweise beschlossen': ['teilweise', 'status-entschieden'],
+    'Entscheidung angesetzt': ['protokoll', 'status-protokoll'],
+    'Bekanntgabe': ['info', 'status-info']
   };
 
-  function standKlasse(stand) {
-    return 'stand stand-' + stand.split(' ')[0].toLowerCase();
-  }
-
   function standBadge(a) {
-    if (a.ref && a.stand && a.stand !== 'Ohne Vorlage' && a.stand !== 'Nur besprochen, nichts entschieden') {
-      return el('div', standKlasse(a.stand), leicht ? (STAND_LEICHT[a.stand] || a.stand) : a.stand);
+    var st = a.ref && STAND_ZU_STATUS[a.stand];
+    if (st) {
+      return el('div', 'stand ' + st[1], STATUS_TEXT[st[0]][leicht ? 'l' : 'n']);
     }
     if (a.in_beratung) {
       return el('div', 'stand stand-unaufbereitet',

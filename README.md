@@ -26,7 +26,8 @@ lokale Unterdateien nicht. Die Seite sagt es dann selbst und nennt den Ausweg.
 Daten neu holen und Feed neu bauen:
 
 ```bash
-cd scraper && python3 ris_ingolstadt.py --von 2026-01 --bis 2026-07 && python3 feed_bauen.py
+cd scraper && python3 ris_ingolstadt.py --von 2026-01 --bis 2026-07 \
+  && python3 niederschriften_lesen.py && python3 feed_bauen.py && python3 pruefen.py
 ```
 
 Nur Python-Standardbibliothek, keine Abhängigkeiten.
@@ -41,7 +42,10 @@ KURATION.md           wie die Kurztexte entstehen (inkl. Leichte Sprache)
 scraper/
   ris_ingolstadt.py   liest beide Portale aus       -> data/rohdaten.json
   entwuerfe_bauen.py  erzeugt Kurations-Vorschläge  -> data/kuration.json
+  niederschriften_lesen.py  Beschlüsse aus Protokollen -> data/beschluesse.json
+                            (+ data/niederschriften.json)
   feed_bauen.py       Rohdaten + Kuration           -> data/feed.json + feed.js
+  pruefen.py          Zusagen der Seite nachrechnen (Exit-Code)
   .cache/             HTML-Cache, schont das Portal bei Wiederholläufen
 data/
   rohdaten.json       unveränderte Auslesung beider Quellen

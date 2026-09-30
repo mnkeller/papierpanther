@@ -337,12 +337,14 @@
     padding: .2rem .6rem; border-radius: 999px;
     border: 1px solid transparent;
   }
-  .stand-noch { background: #eeeeee; color: #555; border-color: #55555530; }
-  .stand-entscheidung { background: #eef1f6; color: #2f4a70; border-color: #2f4a7030; }
-  .stand-wird { background: #fdf3e0; color: #96551f; border-color: #96551f30; }
-  .stand-bekanntgabe { background: #f0eef6; color: #55467e; border-color: #55467e30; }
-  .stand-beschlossen { background: #eaf4ec; color: #1e6b3a; border-color: #1e6b3a30; }
-  .stand-abgelehnt { background: #fbeaec; color: var(--accent); border-color: #b00e2b30; }
+  /* Vier Hinweise statt sieben Verfahrensstaende (feed_bauen.py::STATUS_*).
+     Farbe nach Handlungsrelevanz: offen = warm (man kann noch mitreden),
+     entschieden = gruen/rot, Protokoll = blau, Information = grau. */
+  .status-offen { background: #fdf3e0; color: #8a4a12; border-color: #96551f50; font-weight: 600; }
+  .status-entschieden { background: #eaf4ec; color: #1e6b3a; border-color: #1e6b3a30; }
+  .status-entschieden.abgelehnt { background: #fbeaec; color: var(--accent); border-color: #b00e2b30; }
+  .status-protokoll { background: #eef1f6; color: #2f4a70; border-color: #2f4a7030; }
+  .status-info { background: #f3f1ec; color: #4a4a4a; border-color: #4a4a4a40; }
 
   /* Woertlicher Beschlusstext aus der Niederschrift — bewusst optisch von
      der redaktionellen Zusammenfassung (.card-text) abgesetzt, damit klar
@@ -539,7 +541,6 @@
   .sammel-liste a:hover { text-decoration: underline; }
   .sammel-liste a::after { content: ' ↗'; opacity: .5; }
   .sammel-hinweis { font-size: .78rem; color: var(--text-faint); margin-top: .6rem; }
-  .stand-nur { background: #f3f1ec; color: #4a4a4a; border-color: #4a4a4a40; }
 
   .leicht-hinweis {
     font-size: .78rem; color: var(--text-faint); font-style: italic;
@@ -772,13 +773,13 @@
   var gezeigt = ERSTE_SEITE;
 
   var ACHSEN = [
+    { key: 'status',     textId: 'achseStatus' },
     { key: 'lebenslage', textId: 'achseLebenslage' },
     { key: 'bezirk',     textId: 'achseBezirk' },
     { key: 'anlass',     textId: 'achseAnlass' },
-    { key: 'ebene',      textId: 'achseEbene' },
-    { key: 'stand',      textId: 'achseStand' }
+    { key: 'ebene',      textId: 'achseEbene' }
   ];
-  var aktiv = { lebenslage: [], bezirk: [], anlass: [], ebene: [], stand: [] };
+  var aktiv = { status: [], lebenslage: [], bezirk: [], anlass: [], ebene: [] };
   var suchbegriff = '';
 
   /* ---------------- Leichte Sprache ----------------
@@ -910,7 +911,7 @@
     achseBezirk:     { n: 'Stadtbezirk', l: 'Ihr Stadt-Bezirk' },
     achseAnlass:     { n: 'Anlass', l: 'Das Thema' },
     achseEbene:      { n: 'Wer berät', l: 'Wer redet darüber?' },
-    achseStand:      { n: 'Stand', l: 'Wie weit ist es?' }
+    achseStatus:     { n: 'Stand', l: 'Wie weit ist es?' }
   };
 
   /* Schlagwortlisten in Leichter Sprache. Die Werte selbst (aus daten.achsen)
@@ -950,31 +951,58 @@
     'Bezirksausschüsse': 'Bezirks-Ausschüsse',
     'Bezirk Oberbayern': 'Bezirk Oberbayern'
   };
-  var STAND_LEICHT = {
-    'Noch nicht terminiert': 'Es gibt noch keinen Termin dafür.',
-    'Wird noch beraten': 'Der Stadt-Rat bespricht das noch.',
-    'Entscheidung geplant': 'Der Stadt-Rat will bald entscheiden.',
-    'Entscheidung angesetzt': 'Der Stadt-Rat wollte jetzt entscheiden.',
-    'Beschlossen': 'Der Stadt-Rat hat das so beschlossen.',
-    'Abgelehnt': 'Der Stadt-Rat hat das abgelehnt.',
-    'Bekanntgabe': 'Das ist nur eine Information.',
-    'Nur besprochen, nichts entschieden': 'Darüber wurde nur gesprochen. Es gibt keine Entscheidung.'
+  /* Filterchips der Achse "status": nur die zwei Fragen, nach denen man
+     sucht (feed_bauen.py::STATUS_FILTER). */
+  var STATUS_CHIP = {
+    'Noch offen': { n: 'Noch offen – hier können Sie mitreden', l: 'Noch nicht entschieden. Sie können mitreden.' },
+    'Entschieden': { n: 'Entschieden', l: 'Schon entschieden' }
   };
 
   function txt(id) { return TEXTE[id][leicht ? 'l' : 'n']; }
 
   function achsenwertText(achse, wert) {
+    if (achse === 'status' && STATUS_CHIP[wert]) return STATUS_CHIP[wert][leicht ? 'l' : 'n'];
     if (!leicht) return wert;
     if (achse === 'lebenslage') return LEBENSLAGE_LEICHT[wert] || wert;
     if (achse === 'anlass') return ANLASS_LEICHT[wert] || wert;
     if (achse === 'bezirk') return BEZIRK_LEICHT[wert] || wert;
     if (achse === 'ebene') return EBENE_LEICHT[wert] || wert;
+    if (achse === 'status' && STATUS_CHIP[wert]) return STATUS_CHIP[wert][leicht ? 'l' : 'n'];
     return wert;
   }
 
-  function standText(stand, datum) {
-    if (!leicht) return stand + (datum ? ' am ' + datum : '');
-    return (STAND_LEICHT[stand] || stand) + (datum ? ' (Termin: ' + datum + ')' : '');
+  /* Der Hinweis auf der Karte: einer von vier Zustaenden, mit Datum, wo
+     es eins gibt. Die feinen Verfahrensstaende (e.stand) bleiben in den
+     Daten, erscheinen aber nicht mehr als Text. */
+  function statusHinweis(e) {
+    var d = e.stand_datum;
+    var klasse = 'stand status-', text;
+    if (e.status === 'Noch offen') {
+      klasse += 'offen';
+      text = leicht ? 'Noch nicht entschieden. Sie können mitreden.'
+                    : 'Noch offen – Sie können mitreden';
+    } else if (e.status === 'Entschieden') {
+      var nein = e.stand === 'Abgelehnt';
+      var teils = e.stand === 'Teilweise beschlossen';
+      klasse += 'entschieden' + (nein ? ' abgelehnt' : '');
+      text = leicht
+        ? 'Das ist entschieden: ' + (nein ? 'Nein.' : teils ? 'zum Teil Ja, zum Teil Nein.' : 'Ja.') + (d ? ' (' + d + ')' : '')
+        : 'Entschieden: ' + (nein ? 'abgelehnt' : teils ? 'teilweise angenommen' : 'angenommen') + (d ? ' am ' + d : '');
+    } else if (e.status === 'Ergebnis steht im Protokoll') {
+      klasse += 'protokoll';
+      if (e.niederschrift_url) {
+        text = leicht ? 'Das Ergebnis steht im Protokoll.' + (d ? ' (Sitzung: ' + d + ')' : '')
+                      : 'Ergebnis steht im Protokoll' + (d ? ' (Sitzung am ' + d + ')' : '');
+      } else {
+        text = leicht ? 'Das Ergebnis steht bald im Protokoll.' + (d ? ' (Sitzung: ' + d + ')' : '')
+                      : 'Ergebnis kommt mit dem Protokoll' + (d ? ' (Sitzung am ' + d + ')' : '');
+      }
+    } else {
+      klasse += 'info';
+      text = leicht ? 'Nur eine Information. Es gibt keine Entscheidung.'
+                    : 'Nur zur Information, keine Entscheidung';
+    }
+    return el('div', klasse, text);
   }
 
   function el(tag, klasse, text) {
@@ -990,7 +1018,7 @@
     a.appendChild(el('span', 'sr-only', ' (öffnet in neuem Tab)'));
   }
 
-  /* 'stand' ist ein Einzelwert, die anderen Achsen sind Listen. */
+  /* 'status' ist ein Einzelwert, die anderen Achsen sind Listen. */
   function werte(eintrag, key) {
     var v = eintrag[key];
     if (v == null) return [];
@@ -1022,6 +1050,14 @@
   /* Aeltere feed.js ohne diese Felder (vor dem Nutzertest 2026-09-30):
      Achse und Buendelung aus dem vorhandenen ableiten, damit die Seite
      nicht bricht, bis feed_bauen.py wieder gelaufen ist. */
+  if (!daten.achsen.status) {
+    daten.eintraege.forEach(function (e) {
+      e.status = /^(Noch nicht terminiert|Wird noch beraten|Entscheidung geplant)$/.test(e.stand) ? 'Noch offen'
+        : /^(Beschlossen|Teilweise beschlossen|Abgelehnt)$/.test(e.stand) ? 'Entschieden'
+        : e.stand === 'Entscheidung angesetzt' ? 'Ergebnis steht im Protokoll' : 'Nur zur Information';
+    });
+    daten.achsen.status = ['Noch offen', 'Entschieden'];
+  }
   if (!daten.achsen.ebene) {
     var EBENE_AUS_QUELLE = { stadt: 'Stadtrat & Ausschüsse', bza: 'Bezirksausschüsse', bezirk_obb: 'Bezirk Oberbayern' };
     daten.eintraege.forEach(function (e) { e.ebene = [EBENE_AUS_QUELLE[e.quelle] || EBENE_AUS_QUELLE.stadt]; });
@@ -1422,13 +1458,9 @@
       if (leicht) c.appendChild(el('p', 'leicht-hinweis', txt('keineLeichteFassung')));
     }
 
-    /* Stand der Beratung — auch "Nur besprochen, nichts entschieden": dass
-       nichts entschieden wurde, ist selbst eine Information. */
-    if (e.stand) {
-      var badge = el('div', 'stand stand-' + e.stand.split(' ')[0].toLowerCase());
-      badge.appendChild(document.createTextNode(standText(e.stand, e.stand_datum)));
-      c.appendChild(badge);
-    }
+    /* Stand: einer von vier Hinweisen — auch "keine Entscheidung" ist eine
+       Information. */
+    if (e.status) c.appendChild(statusHinweis(e));
 
     /* Woertlicher Beschlusstext aus der Niederschrift (scraper/
        niederschriften_lesen.py) — optisch abgesetzt von der redaktionellen
@@ -1586,11 +1618,11 @@
 
     /* Stand nur zeigen, wenn er fuer alle Punkte gleich ist — sonst luegt er
        fuer einen Teil. */
-    var gleich = gruppe.every(function (e) { return e.stand === e0.stand; });
-    if (e0.stand && gleich) {
-      c.appendChild(el('div', 'stand stand-' + e0.stand.split(' ')[0].toLowerCase(),
-        standText(e0.stand, e0.stand_datum)));
-    }
+    var gleich = gruppe.every(function (e) {
+      return e.status === e0.status && e.stand_datum === e0.stand_datum &&
+        !!e.niederschrift_url === !!e0.niederschrift_url;
+    });
+    if (e0.status && gleich) c.appendChild(statusHinweis(e0));
     c.appendChild(el('p', 'sammel-hinweis', txt('sammelHinweis')));
     return c;
   }

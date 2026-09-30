@@ -41,10 +41,38 @@ STAND_REIHENFOLGE = [
     "Wird noch beraten",
     "Entscheidung angesetzt",
     "Beschlossen",   # aus scraper/niederschriften_lesen.py::beschluesse.json
+    "Teilweise beschlossen",  # einzelne Ziffern abgelehnt, andere genehmigt
     "Abgelehnt",     # — der Nachfolgezustand von "Entscheidung angesetzt"
     "Bekanntgabe",
     STAND_OHNE_ENTSCHEIDUNG,
 ]
+
+# Was Buergerinnen vom Stand wissen wollen, sind zwei Fragen: "Kann ich noch
+# mitreden?" und "Was kam heraus?". Die sieben Verfahrensstaende oben bleiben
+# in den Daten (fein genug fuer pruefen.py und die Anträge-Seite), die
+# Oberflaeche zeigt nur diese vier (Nutzerfeedback 2026-09-30). Gefiltert
+# wird nur nach den ersten beiden — die anderen beiden beantworten keine
+# Frage, nach der jemand suchen wuerde.
+STATUS_OFFEN = "Noch offen"
+STATUS_ENTSCHIEDEN = "Entschieden"
+STATUS_PROTOKOLL = "Ergebnis steht im Protokoll"
+STATUS_INFO = "Nur zur Information"
+STATUS_FILTER = [STATUS_OFFEN, STATUS_ENTSCHIEDEN]
+STATUS_ALLE = [STATUS_OFFEN, STATUS_ENTSCHIEDEN, STATUS_PROTOKOLL, STATUS_INFO]
+
+
+def status_aus_stand(stand):
+    if stand in ("Noch nicht terminiert", "Wird noch beraten", "Entscheidung geplant"):
+        return STATUS_OFFEN
+    if stand in ("Beschlossen", "Teilweise beschlossen", "Abgelehnt"):
+        return STATUS_ENTSCHIEDEN
+    if stand == "Entscheidung angesetzt":
+        # Die Sitzung ist vorbei, das Ergebnis steht in der Niederschrift —
+        # oder kommt mit ihr (4 bis 8 Wochen Verzug). Die Oberflaeche
+        # unterscheidet beides anhand von niederschrift_url.
+        return STATUS_PROTOKOLL
+    return STATUS_INFO
+
 
 # Der Bezirk Oberbayern (aelteres .asp-Portal) benennt die Rollen im
 # Beratungsweg nach seiner Geschaeftsordnung ("beschließend nach § 7 Abs. 1
@@ -226,6 +254,20 @@ def main():
             if re.search(r"niederschrift", dokument["titel"], re.I):
                 niederschrift_je_sitzung[sitzung["url"]] = dokument["url"]
                 break
+    # Das Portal haengt manchmal das Protokoll der VORHERIGEN Sitzung an.
+    # niederschriften_lesen.py prueft Datum/Nummer im PDF und schreibt die
+    # richtige Zuordnung — liegt sie vor, gilt nur sie (lieber kein Link als
+    # einer aufs falsche Protokoll).
+    zuordnung_pfad = os.path.join(DATEN_VZ, "niederschriften.json")
+    if os.path.exists(zuordnung_pfad):
+        with open(zuordnung_pfad, encoding="utf-8") as f:
+            geprueft = json.load(f)
+        gelesen = set(niederschrift_je_sitzung.values())
+        niederschrift_je_sitzung = {
+            s_url: n_url for s_url, n_url in niederschrift_je_sitzung.items()
+            if n_url not in gelesen or geprueft.get(s_url) == n_url
+        }
+        niederschrift_je_sitzung.update(geprueft)
 
     auftritte_je_thema = collections.defaultdict(list)
     for sitzung in roh["sitzungen"]:
@@ -283,8 +325,42 @@ def main():
             sitzung.get("quelle", "stadt"), sitzung, top, bare_positionen(sitzung)
         )
         beschluss = beschluesse.get(beschluss_ref)
+        # Nur ein Beschluss aus der Entscheidungssitzung selbst entscheidet
+        # den Stand. Die Empfehlung eines vorberatenden Ausschusses
+        # ("befuerwortet") ist keiner, und eine Leitstation, die nicht die
+        # angesetzte Entscheidungssitzung ist, auch nicht.
+        # Ausnahme: Vorlage ohne gelesenen Beratungsweg — dann gibt es keine
+        # "Entscheidungssitzung" zum Vergleichen, und die Abstimmung in genau
+        # dieser Sitzung ist der einzige Beleg. Sonst stuende dort "keine
+        # Entscheidung", obwohl das Protokoll eine nennt.
+        # Datum allein reicht nicht: beim Bezirk Oberbayern beraten
+        # Personalausschuss (vorberatend) und Bezirksausschuss (entscheidend)
+        # oft am selben Tag. Die Entscheidungsstation muss auch das Gremium
+        # dieser Sitzung sein.
+        def gleiches_gremium(a, b):
+            a, b = re.sub(r"\W", "", a or "").lower(), re.sub(r"\W", "", b or "").lower()
+            return bool(a) and bool(b) and (a == b or a.startswith(b) or b.startswith(a))
+
+        entscheidungssitzung = (
+            stand == "Entscheidung angesetzt"
+            and stand_datum == sitzung["datum_anzeige"]
+            and any(
+                rolle_art(b["rolle"]) == "entscheidung"
+                and b["datum_anzeige"] == sitzung["datum_anzeige"]
+                and gleiches_gremium(b["gremium"], sitzung["gremium"])
+                for b in top.get("beratungen") or []
+            )
+        ) or (
+            stand == STAND_OHNE_ENTSCHEIDUNG and top.get("vorlage") and not top.get("beratungen")
+        )
+        if beschluss and (beschluss.get("empfehlung") or not entscheidungssitzung):
+            beschluss = None
         if beschluss:
-            stand = "Beschlossen" if beschluss["ergebnis"] == "beschlossen" else "Abgelehnt"
+            stand = {
+                "beschlossen": "Beschlossen",
+                "teilweise": "Teilweise beschlossen",
+                "abgelehnt": "Abgelehnt",
+            }[beschluss["ergebnis"]]
             stand_datum = sitzung["datum_anzeige"]
 
         stationen = sorted(
@@ -328,6 +404,7 @@ def main():
                 # --- abgeleitet ---
                 "stand": stand,
                 "stand_datum": stand_datum,
+                "status": status_aus_stand(stand),
                 "niederschrift_url": niederschrift,
                 # Wörtlicher Beschlusstext, nur wenn beschluss_ref oben einen
                 # Treffer hatte — siehe niederschriften_lesen.py.
@@ -400,6 +477,7 @@ def main():
                 # --- abgeleitet ---
                 "stand": "Noch nicht terminiert",
                 "stand_datum": "",
+                "status": STATUS_OFFEN,
                 "niederschrift_url": "",
                 "beschluss": None,
                 # --- unveraenderte Angaben aus der Quelle ---
@@ -526,6 +604,7 @@ def main():
                 k: sum(1 for e in feed if e["quelle"] == k) for k in roh["quellen"]
             },
             "stand": stand_verteilung,
+            "status": dict(collections.Counter(e["status"] for e in feed)),
             # Echte Stadtbezirke (I bis XII) — ohne "stadtweit"; die Kopfzahl
             # hiess vorher "14 Stadtbezirke", weil beides mitgezaehlt wurde.
             "stadtbezirke": sum(1 for b in bezirke if re.match(r"^[IVX]+-", b)),
@@ -536,6 +615,7 @@ def main():
             "bezirk": bezirke,
             "anlass": achse("anlass"),
             "ebene": ebenen,
+            "status": [w for w in STATUS_FILTER if any(e["status"] == w for e in feed)],
             "stand": staende,
         },
         "eintraege": feed,
@@ -570,6 +650,7 @@ def main():
     )
     print(f"  je Quelle: {st['je_quelle']}")
     print(f"  Stand:     {st['stand']}")
+    print(f"  Status:    {st['status']}")
     print(
         f"  Vollstaendig kuratiert: {', '.join(st['jahre_vollstaendig']) or '(keine)'} "
         f"· Rueckstand: {', '.join(st['jahre_rueckstand']) or '(keiner)'}"
