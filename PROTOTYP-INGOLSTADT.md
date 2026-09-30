@@ -287,7 +287,8 @@ sie schon gefallen ist. Nur der Beschlusstext selbst fehlt.
 
 Die Seite läuft auf **GitHub Pages** aus dem Repository
 `github.com/mnkeller/papierpanther`, Branch `main`:
-<https://mnkeller.github.io/papierpanther/>
+<https://schanzer-papierpanther.de/> (eigene Domain per `CNAME`;
+`mnkeller.github.io/papierpanther/` leitet dorthin weiter)
 
 `index.html` ist eine einzige Datei ohne externe Unterressourcen — ein `git push`
 auf `main` genügt, um den Live-Stand zu aktualisieren.

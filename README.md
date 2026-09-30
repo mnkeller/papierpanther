@@ -10,7 +10,7 @@ normale Sprache und sortiert sie danach, wen sie betreffen.
 **Kein offizielles Angebot der Stadt Ingolstadt.** Verbindlich ist immer das
 Originaldokument — jeder Eintrag verlinkt seine Quelle.
 
-Live: https://mnkeller.github.io/papierpanther/
+Live: https://schanzer-papierpanther.de/
 
 ## Schnellstart
 

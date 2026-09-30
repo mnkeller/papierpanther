@@ -124,12 +124,42 @@ def p_nur_erlaubte_hosts(feed):
         urls = [e.get("vorlage_url"), e.get("sitzung_url"), e.get("niederschrift_url")]
         urls += [d.get("url") for d in e.get("dokumente") or []]
         urls += [s.get("sitzung_url") for s in e.get("beratungsweg") or []]
-        for url in filter(None, urls):
-            parsed = urllib.parse.urlparse(url)
-            if parsed.scheme not in ("https", "http") or parsed.netloc not in ERLAUBTE_HOSTS:
-                fehlerhaft.append(f"{e['ref']}: {url!r}")
+        fehlerhaft += [f"{e['ref']}: {url!r}" for url in _fremde_urls(urls)]
     if fehlerhaft:
         fehlt(f"{len(fehlerhaft)} URLs ausserhalb der erlaubten Hosts: {fehlerhaft[:5]}")
+
+
+def _fremde_urls(urls):
+    """Alle URLs, die nicht per http(s) auf einen ERLAUBTE_HOSTS zeigen
+    (leere Werte werden uebersprungen)."""
+    for url in filter(None, urls):
+        parsed = urllib.parse.urlparse(url)
+        if parsed.scheme not in ("https", "http") or parsed.netloc not in ERLAUBTE_HOSTS:
+            yield url
+
+
+def p_antraege_hosts(antraege):
+    """
+    Dieselbe Zusicherung wie p_nur_erlaubte_hosts, fuer antraege.html: dort
+    landen vorlage_url und pdf_url ungeprueft als href im Link.
+    """
+    fehlerhaft = []
+    for partei, liste in antraege["parteien"].items():
+        for a in liste:
+            urls = [a.get("vorlage_url"), a.get("pdf_url")]
+            fehlerhaft += [f"{partei} {a.get('vorlage')}: {url!r}" for url in _fremde_urls(urls)]
+    if fehlerhaft:
+        fehlt(f"antraege.json: {len(fehlerhaft)} URLs ausserhalb der erlaubten Hosts: {fehlerhaft[:5]}")
+
+
+def p_haushalt_hosts(haushalt):
+    """Die Quellenlinks der Haushaltsseite zeigen nur auf das Ratsinfoportal."""
+    q = haushalt.get("quellen") or {}
+    urls = list((q.get("anlage2_je_jahr") or {}).values())
+    urls += [q.get("anlage1_aktuell"), q.get("anlage5_vorbericht_aktuell")]
+    fehlerhaft = list(_fremde_urls(urls))
+    if fehlerhaft:
+        fehlt(f"haushalt.json: {len(fehlerhaft)} Quellen-URLs ausserhalb der erlaubten Hosts: {fehlerhaft[:5]}")
 
 
 def p_nur_oeffentliche_tops(kur, index):
@@ -298,7 +328,11 @@ def main():
     if os.path.exists(os.path.join(DATEN_VZ, "beschluesse.json")):
         p_beschluesse_belegt(lade("beschluesse.json"), index)
     if os.path.exists(os.path.join(DATEN_VZ, "haushalt.json")):
-        p_haushalt_summen(lade("haushalt.json"))
+        haushalt = lade("haushalt.json")
+        p_haushalt_summen(haushalt)
+        p_haushalt_hosts(haushalt)
+    if os.path.exists(os.path.join(DATEN_VZ, "antraege.json")):
+        p_antraege_hosts(lade("antraege.json"))
     gruende = p_abdeckung(roh, feed["eintraege"])
 
     print("Abdeckung aller Tagesordnungspunkte")
