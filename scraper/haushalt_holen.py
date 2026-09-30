@@ -48,7 +48,7 @@ ANLAGE2_JE_JAHR = {
 
 AKTUELLES_JAHR = max(ANLAGE2_JE_JAHR)
 ANLAGE1_AKTUELL = 246990  # Haushaltssatzung/Festsetzungen, fuer Zuschussbedarf
-ANLAGE5_AKTUELL = 246998  # Vorbericht, Prosa-Erklaerung der Deckung
+ANLAGE5_AKTUELL = 246998  # Vorbericht: Schulden, Ruecklage, Einwohner (lies_anlage5)
 
 
 def hole(id_, bezeichnung):

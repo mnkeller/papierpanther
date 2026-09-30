@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
 Liest die von haushalt_holen.py gecachten Gruppierungsuebersichten
-(Anlage 2) und die Anlage 1 des aktuellsten Jahrgangs, prueft sie gegen
-harte Summenproben und schreibt data/haushalt.json + data/haushalt.js.
+(Anlage 2) sowie Anlage 1 (Festsetzungen) und Anlage 5 (Vorbericht) des
+aktuellsten Jahrgangs, prueft sie gegen harte Summenproben und schreibt
+data/haushalt.json + data/haushalt.js.
 
     python3 haushalt_lesen.py
 
@@ -174,6 +175,15 @@ INTERESSANTE_CODES = {
     "37": "Einnahmen aus Krediten",
 }
 
+# Einzelposten, die auf der Seite als eigene Zeitreihe waehlbar sind (neben
+# den Hauptgruppen). Die Codes sind in allen Jahrgaengen 2023-2026 gleich.
+ZEITREIHE_POSTEN = {
+    "003": "Gewerbesteuer (brutto)",
+    "010": "Anteil an der Einkommensteuer",
+    "012": "Anteil an der Umsatzsteuer",
+    "001": "Grundsteuer B",
+}
+
 
 def _zahl(tok):
     tok = tok.strip()
@@ -295,13 +305,17 @@ def parse_detail_abschnitte(alle_zeilen, hauptgruppen):
     gruppen_kontext = None  # zweistellige Gruppe, der die naechsten Untergruppen angehoeren
 
     def schliessen(gruppe, erwartet):
-        summe = sum(z["werte"][0] for z in puffer)
-        if erwartet is not None and summe != erwartet:
-            sys.exit(
-                f"Hauptgruppe {gruppe}: Untergruppen summieren zu {summe}, "
-                f"aber die Abschluss-Zeile nennt {erwartet} — Pruefsumme "
-                f"fehlgeschlagen, moeglicherweise Wasserzeichen-Fehler."
-            )
+        # Alle drei Spalten pruefen (Ansatz, Vorjahr, Vorvorjahr-Ergebnis):
+        # die Zeitreihen einzelner Posten (ZEITREIHE_POSTEN) lesen auch die
+        # beiden hinteren Spalten.
+        for spalte in range(3):
+            summe = sum(z["werte"][spalte] for z in puffer)
+            if summe != erwartet[spalte]:
+                sys.exit(
+                    f"Hauptgruppe {gruppe} (Spalte {spalte}): Untergruppen summieren zu "
+                    f"{summe}, aber die Abschluss-Zeile nennt {erwartet[spalte]} — "
+                    f"Pruefsumme fehlgeschlagen, moeglicherweise Wasserzeichen-Fehler."
+                )
         untergruppen[gruppe] = list(puffer)
 
     def _ist_fortsetzung(z):
@@ -358,7 +372,7 @@ def parse_detail_abschnitte(alle_zeilen, hauptgruppen):
 
         m = HG_SCHLIESSEN.match(z)
         if m:
-            schliessen(m.group(1), _zahl(m.group(2)))
+            schliessen(m.group(1), (_zahl(m.group(2)), _zahl(m.group(3)), _zahl(m.group(4))))
             puffer, aktuell, gruppen_kontext = [], None, None
             i += 1
             continue
@@ -368,7 +382,7 @@ def parse_detail_abschnitte(alle_zeilen, hauptgruppen):
             _art, teil, werte = abschluss
             if teil == "vmh":
                 gruppe = "3" if _art == "Einnahmen" else "9"
-                schliessen(gruppe, werte[0])
+                schliessen(gruppe, werte)
                 puffer, aktuell, gruppen_kontext = [], None, None
             # die vwh-Zeilen sind nur Kontrollsummen ueber mehrere
             # Hauptgruppen hinweg, keine eigene Hauptgruppe zum Schliessen.
@@ -383,7 +397,8 @@ def parse_detail_abschnitte(alle_zeilen, hauptgruppen):
         m = HG_OEFFNEN.match(z)
         if m:
             if aktuell == "5_6":
-                erwartet = hauptgruppen["5"]["werte"][0] + hauptgruppen["6"]["werte"][0]
+                erwartet = tuple(hauptgruppen["5"]["werte"][s] + hauptgruppen["6"]["werte"][s]
+                                 for s in range(3))
                 schliessen("5_6", erwartet)
             puffer, aktuell, gruppen_kontext = [], m.group(1), None
             i += 1
@@ -534,6 +549,256 @@ def lies_anlage1(pfad):
     }, referate
 
 
+def _abschnitt(zeilen, start, ende):
+    """Zeilen zwischen der Ueberschrift `start` und `ende` (beides Regex,
+    per re.match). Inhaltsverzeichnis-Zeilen ("5.1 Schuldenstand .....36")
+    werden als Ueberschrift uebersprungen, sonst landete man im Verzeichnis
+    statt im Text."""
+    def _ist(z, muster):
+        return re.match(muster, z) and "..." not in z
+
+    try:
+        i = next(n for n, z in enumerate(zeilen) if _ist(z, start))
+    except StopIteration:
+        sys.exit(f"Anlage 5: Abschnitt {start!r} nicht gefunden")
+    j = next((n for n in range(i + 1, len(zeilen)) if _ist(zeilen[n], ende)), None)
+    if j is None:
+        sys.exit(f"Anlage 5: Ende von Abschnitt {start!r} ({ende!r}) nicht gefunden")
+    return zeilen[i + 1:j]
+
+
+def _pruefe(bedingung, meldung):
+    if not bedingung:
+        sys.exit(f"Anlage 5: {meldung} — Pruefung fehlgeschlagen, moeglicherweise Wasserzeichen-Fehler.")
+
+
+def lies_anlage5(pfad):
+    """
+    Finanzlage aus dem Vorbericht (Anlage 5): Schuldenstand des
+    Kernhaushalts, Schulden je Einwohner im Vergleich, allgemeine Ruecklage,
+    Schulden der Kommunalunternehmen und Schuldendienst. Die Kameralistik
+    selbst weist nichts davon aus (siehe haushalt.html, "Wo es hakt") — der
+    Vorbericht ist die einzige Stelle im Haushaltsplan, die es tut.
+
+    Der Vorbericht ist Fliesstext mit eingestreuten Tabellen, und das
+    "Entwurf"-Wasserzeichen schiebt Einzelbuchstaben auch mitten in Woerter
+    ("Krednitaufnahme", "Vnoraussichtlicher"). Jede Tabelle wird deshalb
+    gegen ihre eigene Arithmetik geprueft (Anfangsstand + Zugang - Abgang =
+    Endstand, Zunahme = Differenz der Staende, Schulden / Einwohner = pro
+    Kopf); bei Abweichung bricht das Skript ab.
+    """
+    with pdfplumber.open(pfad) as pdf:
+        text = "\n".join((s.extract_text() or "") for s in pdf.pages)
+    zeilen = list(_bereinigte_zeilen(text))
+    BETRAG = r"[\d.]+,\d{2}"
+    _betrag = _zahl
+
+    def _ganzzahl(tok):
+        return Decimal(tok.replace(".", ""))
+
+    # --- Einwohner (1.1), fuer Pro-Kopf-Werte auf der Seite ---
+    einwohner = {}
+    for z in _abschnitt(zeilen, r"1\.1 Bevölkerungsentwicklung", r"1\.2 Stadtgebiet"):
+        m = re.match(r"^(\d{4})\b.*?(\d{2,3}\.\d{3})$", z)
+        if m:
+            einwohner[int(m.group(1))] = _ganzzahl(m.group(2))
+    m = re.search(r"Amtlicher Einwohnerstand am 31\.12\.(\d{4}) \(aktuellster Stand\) = ([\d.]+)", text)
+    _pruefe(m, "Amtlicher Einwohnerstand nicht gefunden")
+    einwohner_jahr, einwohner_stichtag = int(m.group(1)), _ganzzahl(m.group(2))
+    _pruefe(einwohner.get(einwohner_jahr) == einwohner_stichtag,
+            f"Einwohner {einwohner_jahr}: Tabelle {einwohner.get(einwohner_jahr)} "
+            f"vs. Stichtag {einwohner_stichtag}")
+
+    # --- Schuldenstand Kernhaushalt (5.1) ---
+    abschnitt = _abschnitt(zeilen, r"5\.1 Schuldenstand des Kernhaushaltes",
+                           r"Schuldenstand Kernhaushalt am Jahresende")
+    schulden = []
+    for z in abschnitt:
+        m = re.match(r"^(\d{4})\s+(\*+\))?\s*([\d.]+)\s+(?:\*+\)\s*)?([+-]?[\d.]+)$", z)
+        if m:
+            schulden.append({
+                "jahr": int(m.group(1)),
+                "stand": _ganzzahl(m.group(3)),
+                "veraenderung": _ganzzahl(m.group(4)),
+                # *) Rechenergebnis, **) vorlaeufiges Rechenergebnis
+                "art": "vorlaeufig" if m.group(2) == "**)" else "ergebnis",
+            })
+    _pruefe(len(schulden) >= 2, f"nur {len(schulden)} Zeilen Schuldenstand gefunden")
+    for vorher, nachher in zip(schulden, schulden[1:]):
+        _pruefe(nachher["jahr"] == vorher["jahr"] + 1, f"Schuldenstand: Jahre nicht lueckenlos ({vorher['jahr']}, {nachher['jahr']})")
+        _pruefe(nachher["stand"] - vorher["stand"] == nachher["veraenderung"],
+                f"Schuldenstand {nachher['jahr']}: Differenz passt nicht zur Zunahme")
+
+    def _einzeln(muster):
+        treffer = [re.match(muster, z) for z in abschnitt]
+        treffer = [t for t in treffer if t]
+        _pruefe(len(treffer) == 1, f"{muster!r}: {len(treffer)} statt genau 1 Treffer")
+        return treffer[0]
+
+    kredit_neu = _ganzzahl(_einzeln(r"^vorgesehene Kreditaufnahme\s+\+([\d.]+)$").group(1))
+    # Steht im PDF allein auf einer Zeile zwischen dem umbrochenen Text
+    # "Kreditaufnahme aus noch verfuegbarer / Kreditermaechtigung <Vorjahr>".
+    kredit_rest = _ganzzahl(_einzeln(r"^\+([\d.]+)$").group(1))
+    tilgung = _ganzzahl(_einzeln(r"^vorgesehene Tilgung\s+-([\d.]+)$").group(1))
+    m = _einzeln(r"^vorauss\. Schuldenstand Ende (\d{4})\s+([\d.]+)$")
+    plan_jahr, plan_stand = int(m.group(1)), _ganzzahl(m.group(2))
+    _pruefe(plan_jahr == schulden[-1]["jahr"] + 1, "Planjahr des Schuldenstands folgt nicht auf das letzte Ist-Jahr")
+    _pruefe(schulden[-1]["stand"] + kredit_neu + kredit_rest - tilgung == plan_stand,
+            f"Schuldenstand {plan_jahr}: Vorjahr + Kredite - Tilgung ergibt nicht {plan_stand}")
+    schulden.append({"jahr": plan_jahr, "stand": plan_stand, "art": "plan"})
+    for s in schulden:
+        s.pop("veraenderung", None)
+
+    # --- Schuldendienst (5.2) ---
+    schuldendienst = []
+    for z in _abschnitt(zeilen, r"5\.2 Entwicklung des Schuldendienstes", r"5\.3 Verschuldung"):
+        m = re.match(rf"^(\d{{4}}) (Ergebnis|Haushaltsplan)\s+({BETRAG})\s+({BETRAG})\s+({BETRAG})$", z)
+        if m:
+            zinsen, tilg, gesamt = _betrag(m.group(3)), _betrag(m.group(4)), _betrag(m.group(5))
+            _pruefe(zinsen + tilg == gesamt, f"Schuldendienst {m.group(1)}: Zinsen + Tilgung != Gesamt")
+            schuldendienst.append({"jahr": int(m.group(1)),
+                                   "art": "ergebnis" if m.group(2) == "Ergebnis" else "plan",
+                                   "zinsen": zinsen, "tilgung": tilg})
+    _pruefe(schuldendienst, "keine Zeilen zum Schuldendienst gefunden")
+    sd_plan = next((s for s in schuldendienst if s["jahr"] == plan_jahr), None)
+    _pruefe(sd_plan and sd_plan["tilgung"] == tilgung,
+            f"Tilgung {plan_jahr}: Schuldendienst-Tabelle und Schuldenstand widersprechen sich")
+
+    # --- Schulden je Einwohner (5.3), mit Vergleichsgruppen ---
+    def _vergleich(tok):
+        return None if tok == "•" else _ganzzahl(tok)
+
+    je_einwohner = []
+    for z in _abschnitt(zeilen, r"5\.3 Verschuldung des Kernhaushaltes je Einwohner",
+                        r"5\.4 Verschuldung der Kommunalunternehmen"):
+        m = re.match(r"^31\.12\.(\d{4})\s*(p?\*\))?\s+([\d.]+)\s+(\S+)\s+(\S+)$", z)
+        if not m:
+            continue
+        # ohne Marke: amtliche Statistik; *) von der Stadt mit dem
+        # Einwohnerstand vom Stichtag gerechnet; p*) Planung.
+        art = {None: "amtlich", "*)": "berechnet", "p*)": "plan"}.get(m.group(2))
+        je_einwohner.append({"jahr": int(m.group(1)), "art": art, "ingolstadt": _ganzzahl(m.group(3)),
+                             "kreisfreie_staedte": _vergleich(m.group(4)),
+                             "staedte_100k_200k": _vergleich(m.group(5))})
+    _pruefe(len(je_einwohner) >= 5, f"nur {len(je_einwohner)} Zeilen Schulden je Einwohner gefunden")
+    stand_je_jahr = {s["jahr"]: s["stand"] for s in schulden}
+    for e in je_einwohner:
+        if e["art"] != "amtlich" and e["jahr"] in stand_je_jahr:
+            gerechnet = (stand_je_jahr[e["jahr"]] / einwohner_stichtag).quantize(Decimal("1"), rounding="ROUND_HALF_UP")
+            _pruefe(gerechnet == e["ingolstadt"],
+                    f"Schulden je Einwohner {e['jahr']}: {e['ingolstadt']} gedruckt, {gerechnet} gerechnet")
+
+    # --- Allgemeine Ruecklage (2.7 Rechnungsergebnis, 5.6 Planung) ---
+    ist = _abschnitt(zeilen, r"2\.7 Stand der Allgemeinen Rücklage", r"2\.8 ")
+    werte = {}
+    for z in ist:
+        for schluessel, muster in (("anfang", r"^Anfangsstand (\d{4})\s+(" + BETRAG + r") Euro$"),
+                                   ("ende", r"^Endstand (\d{4})\s+(" + BETRAG + r") Euro$")):
+            m = re.match(muster, z)
+            if m:
+                werte[schluessel] = (int(m.group(1)), _betrag(m.group(2)))
+        m = re.match(r"^\+ Rücklagenzuführung\s+(" + BETRAG + r") Euro$", z)
+        if m:
+            werte["zufuehrung"] = _betrag(m.group(1))
+        m = re.match(r"^- Rücklagenentnahme\s+(" + BETRAG + r") Euro$", z)
+        if m:
+            werte["entnahme"] = _betrag(m.group(1))
+    _pruefe(len(werte) == 4, f"Ruecklage (Ist): nur {sorted(werte)} gefunden")
+    _pruefe(werte["anfang"][1] + werte["zufuehrung"] - werte["entnahme"] == werte["ende"][1],
+            "Ruecklage (Ist): Anfang + Zufuehrung - Entnahme != Endstand")
+    ist_jahr = werte["ende"][0]
+    ruecklage = [
+        {"jahr": ist_jahr - 1, "stand": werte["anfang"][1], "art": "ergebnis"},
+        {"jahr": ist_jahr, "stand": werte["ende"][1], "art": "ergebnis"},
+    ]
+
+    plan = _abschnitt(zeilen, r"5\.6 Allgemeine Rücklage", r"6 Finanzplanung")
+    anfang, ende, zuf, entn, spaeter = {}, {}, {}, {}, []
+    mindest = None
+    for z in plan:
+        m = re.search(r"Anfangsstand (\d{4})\s+(" + BETRAG + r") Euro$", z)
+        if m:
+            anfang[int(m.group(1))] = _betrag(m.group(2))
+        m = re.search(r"Endstand (\d{4})\*?\s+(" + BETRAG + r") Euro$", z)
+        if m:
+            ende[int(m.group(1))] = _betrag(m.group(2))
+        m = re.search(r"Zuführung (\d{4})\s+(" + BETRAG + r") Euro$", z)
+        if m:
+            zuf[int(m.group(1))] = _betrag(m.group(2))
+        m = re.search(r"Entnahme (\d{4})\s+(" + BETRAG + r") Euro$", z)
+        if m:
+            entn[int(m.group(1))] = _betrag(m.group(2))
+        m = re.match(r"^(\d{4}) Entnahme\s+(" + BETRAG + r") Euro$", z)
+        if m:
+            spaeter.append((int(m.group(1)), _betrag(m.group(2))))
+        m = re.search(r"Mindesthöhe der Allgemeinen Rücklage\s+(" + BETRAG + r") Euro$", z)
+        if m:
+            mindest = _betrag(m.group(1))
+    _pruefe(anfang.get(ist_jahr + 1) == werte["ende"][1],
+            f"Ruecklage: Anfangsstand {ist_jahr + 1} passt nicht zum Endstand {ist_jahr}")
+    planjahr_r = ist_jahr + 2
+    _pruefe(planjahr_r in anfang and planjahr_r in zuf and planjahr_r in entn and planjahr_r in ende,
+            f"Ruecklage {planjahr_r}: Anfang/Zufuehrung/Entnahme/Ende unvollstaendig")
+    _pruefe(anfang[planjahr_r] + zuf[planjahr_r] - entn[planjahr_r] == ende[planjahr_r],
+            f"Ruecklage {planjahr_r}: Anfang + Zufuehrung - Entnahme != Endstand")
+    _pruefe(mindest is not None, "Mindesthoehe der Ruecklage nicht gefunden")
+    ruecklage += [
+        # Der voraussichtliche Anfangsstand des Planjahres ist der
+        # voraussichtliche Endstand des laufenden Jahres.
+        {"jahr": planjahr_r - 1, "stand": anfang[planjahr_r], "art": "vorlaeufig"},
+        {"jahr": planjahr_r, "stand": ende[planjahr_r], "art": "plan"},
+    ]
+    if spaeter:
+        letztes = max(j for j, _ in spaeter)
+        _pruefe(letztes in ende, f"Ruecklage: Endstand {letztes} fehlt")
+        _pruefe(ende[planjahr_r] - sum(b for _, b in spaeter) == ende[letztes],
+                f"Ruecklage {letztes}: Endstand passt nicht zu den geplanten Entnahmen")
+        ruecklage.append({"jahr": letztes, "stand": ende[letztes], "art": "plan"})
+
+    # --- Schulden der Kommunalunternehmen (5.4) ---
+    abschnitt = _abschnitt(zeilen, r"5\.4 Verschuldung der Kommunalunternehmen", r"5\.5 Steuerkraft")
+    kommunal = []
+    plan_start = None
+    for n, z in enumerate(abschnitt):
+        m = re.match(rf"^(\d{{4}})( \(Prognose\))?\s+({BETRAG})\s+([+-]{BETRAG})$", z)
+        if m:
+            kommunal.append({"jahr": int(m.group(1)), "stand": _betrag(m.group(3)),
+                             "veraenderung": _zahl(m.group(4)),
+                             "art": "vorlaeufig" if m.group(2) else "ergebnis"})
+        if re.match(r"^\d{4} \(Plan\)$", z):
+            plan_start = n
+    _pruefe(len(kommunal) >= 2 and plan_start is not None, "Tabelle Kommunalunternehmen unvollstaendig")
+    for vorher, nachher in zip(kommunal, kommunal[1:]):
+        _pruefe(nachher["stand"] - vorher["stand"] == nachher["veraenderung"],
+                f"Kommunalunternehmen {nachher['jahr']}: Differenz passt nicht zur Zu-/Abnahme")
+    plan_bewegungen, plan_ende = Decimal("0"), None
+    for z in abschnitt[plan_start + 1:]:
+        m = re.match(rf"^vorauss\. Schuldenstand Ende (\d{{4}})\s+({BETRAG})$", z)
+        if m:
+            plan_ende = (int(m.group(1)), _betrag(m.group(2)))
+            break
+        for tok in re.findall(rf"[+-]{BETRAG}", z):
+            plan_bewegungen += _zahl(tok)
+    _pruefe(plan_ende is not None, "Kommunalunternehmen: geplanter Endstand nicht gefunden")
+    _pruefe(kommunal[-1]["stand"] + plan_bewegungen == plan_ende[1],
+            "Kommunalunternehmen: Vorjahr + Kreditaufnahme - Tilgung != geplanter Endstand")
+    kommunal.append({"jahr": plan_ende[0], "stand": plan_ende[1], "art": "plan"})
+    for k in kommunal:
+        k.pop("veraenderung", None)
+
+    return {
+        "einwohner": {"jahr": einwohner_jahr, "anzahl": einwohner_stichtag},
+        "schulden_kernhaushalt": schulden,
+        "kredite_planjahr": {"jahr": plan_jahr, "neu": kredit_neu,
+                             "aus_ermaechtigung_vorjahr": kredit_rest, "tilgung": tilgung},
+        "schuldendienst": schuldendienst,
+        "schulden_je_einwohner": je_einwohner,
+        "ruecklage": ruecklage,
+        "ruecklage_mindesthoehe": mindest,
+        "schulden_kommunalunternehmen": kommunal,
+    }
+
+
 def main():
     jahre_daten = {}
     leaves_je_jahr = {}
@@ -568,14 +833,44 @@ def main():
             return
         zeitreihe[jahr_key] = eintrag
 
-    for jahr, d in jahre_daten.items():
-        su = d["summen"]
-        _setze(jahr - 2, {"jahr": jahr - 2, "art": "ergebnis",
-                           "einnahmen": su["Einnahmen"][2], "ausgaben": su["Ausgaben"][2]})
-        _setze(jahr, {"jahr": jahr, "art": "ansatz",
-                       "einnahmen": su["Einnahmen"][0], "ausgaben": su["Ausgaben"][0]})
-        _setze(jahr - 1, {"jahr": jahr - 1, "art": "ansatz",
-                           "einnahmen": su["Einnahmen"][1], "ausgaben": su["Ausgaben"][1]})
+    def _spalte(jahr_dok, spalte, kalenderjahr, art):
+        """Summen, Hauptgruppen und ZEITREIHE_POSTEN eines Kalenderjahres,
+        alle aus derselben Spalte desselben Dokuments — damit Gesamtwert und
+        Aufschluesselung nie aus verschiedenen Fassungen stammen."""
+        d = jahre_daten[jahr_dok]
+        leaves = leaves_je_jahr[jahr_dok]
+        return {
+            "jahr": kalenderjahr, "art": art,
+            "einnahmen": d["summen"]["Einnahmen"][spalte],
+            "ausgaben": d["summen"]["Ausgaben"][spalte],
+            "hauptgruppen": {c: v["werte"][spalte] for c, v in sorted(d["hauptgruppen"].items())},
+            "posten": {code: leaves[code]["werte"][spalte] for code in ZEITREIHE_POSTEN if code in leaves},
+        }
+
+    for jahr in jahre_daten:
+        _setze(jahr - 2, _spalte(jahr, 2, jahr - 2, "ergebnis"))
+        _setze(jahr, _spalte(jahr, 0, jahr, "ansatz"))
+        _setze(jahr - 1, _spalte(jahr, 1, jahr - 1, "ansatz"))
+
+    # Plan gegen Ergebnis: fuer jedes Kalenderjahr, dessen Ergebnis vorliegt
+    # (Anlage 2 von jahr+2) und dessen Ansatz in der Vorjahresspalte der
+    # Anlage 2 von jahr+1 steht. Bewusst diese Vorjahresspalte statt des
+    # Ansatzes aus dem eigenen Haushaltsplan des Jahres: sie ist fuer alle
+    # Jahre gleich verfuegbar (auch 2022, dessen eigener Plan hier fehlt) und
+    # zeigt den Ansatz so, wie ihn die Stadt ein Jahr spaeter ausweist.
+    plan_ergebnis = []
+    for jahr in range(min(jahre_daten) - 1, max(jahre_daten) - 1):
+        if jahr + 1 in jahre_daten and jahr + 2 in jahre_daten:
+            plan_ergebnis.append({
+                "jahr": jahr,
+                "plan_aus_haushalt": jahr + 1,
+                "plan": _spalte(jahr + 1, 1, jahr, "ansatz"),
+                "ergebnis": _spalte(jahr + 2, 2, jahr, "ergebnis"),
+            })
+    for eintrag in plan_ergebnis:
+        for teil in ("plan", "ergebnis"):
+            eintrag[teil].pop("jahr")
+            eintrag[teil].pop("art")
 
     pfad_a1 = hole(ANLAGE1_AKTUELL, f"Anlage 1 {AKTUELLES_JAHR}")
     print(f"Lese Anlage 1 {AKTUELLES_JAHR} ...")
@@ -596,8 +891,30 @@ def main():
     print(f"  OK — Anlage 1 stimmt mit Gruppierungsuebersicht ueberein "
           f"(Zuschussbedarf Verwaltungshaushalt: {anlage1['zuschussbedarf']:,} Euro)".replace(",", "."))
 
+    pfad_a5 = hole(ANLAGE5_AKTUELL, f"Anlage 5 {AKTUELLES_JAHR}")
+    print(f"Lese Anlage 5 (Vorbericht) {AKTUELLES_JAHR} ...")
+    vorbericht = lies_anlage5(pfad_a5)
+    kredite = vorbericht["kredite_planjahr"]
+    if kredite["jahr"] != AKTUELLES_JAHR or kredite["neu"] != anlage1["kreditaufnahme_investitionen"]:
+        sys.exit(
+            f"Anlage 5 und Anlage 1 widersprechen sich: Kreditaufnahme {kredite['jahr']} "
+            f"{kredite['neu']} vs. Festsetzung {anlage1['kreditaufnahme_investitionen']}"
+        )
+    print(f"  OK — Schulden, Ruecklage und Kommunalunternehmen rechnerisch stimmig, "
+          f"Kreditaufnahme {AKTUELLES_JAHR} deckt sich mit Anlage 1")
+
     def _dez_zu_zahl(x):
         return float(x) if x != x.to_integral_value() else int(x)
+
+    def _json_zahlen(obj):
+        """Decimal -> int/float, rekursiv durch Dicts und Listen."""
+        if isinstance(obj, Decimal):
+            return _dez_zu_zahl(obj)
+        if isinstance(obj, dict):
+            return {k: _json_zahlen(v) for k, v in obj.items()}
+        if isinstance(obj, list):
+            return [_json_zahlen(v) for v in obj]
+        return obj
 
     def _untergr_liste(eintraege):
         ausgabe = []
@@ -635,9 +952,10 @@ def main():
     ausgabe = {
         "erzeugt_von": "scraper/haushalt_lesen.py",
         "quelle_hinweis": (
-            "Gruppierungsübersichten (Anlage 2) und Haushaltssatzung (Anlage 1) der "
-            "Haushaltssatzungen 2023 bis 2026, Stadt Ingolstadt, aus dem Ratsinfoportal. "
-            "Alle Zahlen wurden gegen die gedruckten Summenzeilen der Originaldokumente geprüft."
+            "Gruppierungsübersichten (Anlage 2) der Haushaltssatzungen 2023 bis 2026 sowie "
+            f"Haushaltssatzung (Anlage 1) und Vorbericht (Anlage 5) {AKTUELLES_JAHR}, Stadt "
+            "Ingolstadt, aus dem Ratsinfoportal. Alle Zahlen wurden gegen die gedruckten "
+            "Summenzeilen der Originaldokumente geprüft."
         ),
         # Direktlinks auf genau die PDFs, aus denen geparst wurde — nicht auf
         # eine Vorlagen-Uebersichtsseite, weil sich fuer 2023 (vor dem
@@ -658,11 +976,10 @@ def main():
             }
             for jahr, d in jahre_daten.items()
         },
-        "zeitreihe": [
-            {"jahr": z["jahr"], "art": z["art"],
-             "einnahmen": _dez_zu_zahl(z["einnahmen"]), "ausgaben": _dez_zu_zahl(z["ausgaben"])}
-            for z in sorted(zeitreihe.values(), key=lambda x: x["jahr"])
-        ],
+        "zeitreihe": _json_zahlen(sorted(zeitreihe.values(), key=lambda x: x["jahr"])),
+        "zeitreihe_posten": ZEITREIHE_POSTEN,
+        "plan_ergebnis": _json_zahlen(plan_ergebnis),
+        "vorbericht_aktuell": _json_zahlen(vorbericht),
         "verwaltungs_vermoegenshaushalt_aktuell": {
             k: _dez_zu_zahl(v) for k, v in anlage1.items()
         },

@@ -1,6 +1,6 @@
 {
   "erzeugt_von": "scraper/haushalt_lesen.py",
-  "quelle_hinweis": "Gruppierungsübersichten (Anlage 2) und Haushaltssatzung (Anlage 1) der Haushaltssatzungen 2023 bis 2026, Stadt Ingolstadt, aus dem Ratsinfoportal. Alle Zahlen wurden gegen die gedruckten Summenzeilen der Originaldokumente geprüft.",
+  "quelle_hinweis": "Gruppierungsübersichten (Anlage 2) der Haushaltssatzungen 2023 bis 2026 sowie Haushaltssatzung (Anlage 1) und Vorbericht (Anlage 5) 2026, Stadt Ingolstadt, aus dem Ratsinfoportal. Alle Zahlen wurden gegen die gedruckten Summenzeilen der Originaldokumente geprüft.",
   "quellen": {
     "anlage2_je_jahr": {
       "2023": "https://www.ingolstadt.de/sessionnet/getfile.php?id=195353&type=do",
@@ -8227,39 +8227,475 @@
       "jahr": 2021,
       "art": "ergebnis",
       "einnahmen": 654510770.94,
-      "ausgaben": 654510770.94
+      "ausgaben": 654510770.94,
+      "hauptgruppen": {
+        "0": 281586647.38,
+        "1": 214796959.87,
+        "2": 41282653.99,
+        "3": 116844509.7,
+        "4": 160061816.07,
+        "5": 51099071.13,
+        "6": 97162564.45,
+        "7": 164964246.26,
+        "8": 64378563.33,
+        "9": 116844509.7
+      },
+      "posten": {
+        "003": 77333401.4,
+        "010": 107056522,
+        "012": 32268036,
+        "001": 30137515.5
+      }
     },
     {
       "jahr": 2022,
       "art": "ergebnis",
       "einnahmen": 695206019.52,
-      "ausgaben": 695206019.52
+      "ausgaben": 695206019.52,
+      "hauptgruppen": {
+        "0": 337403911.99,
+        "1": 242970678.06,
+        "2": 23357748.08,
+        "3": 91473681.39,
+        "4": 171469097.19,
+        "5": 57955780.42,
+        "6": 101410118.62,
+        "7": 162374227.74,
+        "8": 110523114.16,
+        "9": 91473681.39
+      },
+      "posten": {
+        "003": 104348844.06,
+        "010": 109543771,
+        "012": 29252376,
+        "001": 29525905.16
+      }
     },
     {
       "jahr": 2023,
       "art": "ergebnis",
       "einnahmen": 944395677.57,
-      "ausgaben": 944395677.57
+      "ausgaben": 944395677.57,
+      "hauptgruppen": {
+        "0": 429682984.3,
+        "1": 249267104.36,
+        "2": 80761023.48,
+        "3": 184684565.43,
+        "4": 183629889.92,
+        "5": 62481672.09,
+        "6": 105487209.06,
+        "7": 186899611.85,
+        "8": 221212729.22,
+        "9": 184684565.43
+      },
+      "posten": {
+        "003": 191512525.02,
+        "010": 119058462,
+        "012": 29707873,
+        "001": 31579218.68
+      }
     },
     {
       "jahr": 2024,
       "art": "ergebnis",
       "einnahmen": 801737084.4,
-      "ausgaben": 801737084.4
+      "ausgaben": 801737084.4,
+      "hauptgruppen": {
+        "0": 360718161.02,
+        "1": 273183964.89,
+        "2": 42145420.46,
+        "3": 125689538.03,
+        "4": 196340031.57,
+        "5": 69916898.34,
+        "6": 105662200.57,
+        "7": 236792223.88,
+        "8": 67336192.01,
+        "9": 125689538.03
+      },
+      "posten": {
+        "003": 112664992.23,
+        "010": 119317501,
+        "012": 26310419,
+        "001": 30569273.64
+      }
     },
     {
       "jahr": 2025,
       "art": "ansatz",
       "einnahmen": 1005862600,
-      "ausgaben": 1005862600
+      "ausgaben": 1005862600,
+      "hauptgruppen": {
+        "0": 306375400,
+        "1": 258334900,
+        "2": 141134000,
+        "3": 300018300,
+        "4": 201471000,
+        "5": 71830800,
+        "6": 110936000,
+        "7": 228784900,
+        "8": 92821600,
+        "9": 300018300
+      },
+      "posten": {
+        "003": 79115000,
+        "010": 124820300,
+        "012": 26541900,
+        "001": 32444000
+      }
     },
     {
       "jahr": 2026,
       "art": "ansatz",
       "einnahmen": 853724500,
-      "ausgaben": 919805100
+      "ausgaben": 919805100,
+      "hauptgruppen": {
+        "0": 352392400,
+        "1": 269633700,
+        "2": 52776500,
+        "3": 178921900,
+        "4": 230469600,
+        "5": 86064600,
+        "6": 112735400,
+        "7": 232724900,
+        "8": 78888700,
+        "9": 178921900
+      },
+      "posten": {
+        "003": 77647000,
+        "010": 129530500,
+        "012": 32481400,
+        "001": 31223000
+      }
     }
   ],
+  "zeitreihe_posten": {
+    "003": "Gewerbesteuer (brutto)",
+    "010": "Anteil an der Einkommensteuer",
+    "012": "Anteil an der Umsatzsteuer",
+    "001": "Grundsteuer B"
+  },
+  "plan_ergebnis": [
+    {
+      "jahr": 2022,
+      "plan_aus_haushalt": 2023,
+      "plan": {
+        "einnahmen": 735605000,
+        "ausgaben": 735605000,
+        "hauptgruppen": {
+          "0": 348729800,
+          "1": 228445800,
+          "2": 21310600,
+          "3": 137118800,
+          "4": 180426200,
+          "5": 63592000,
+          "6": 100747200,
+          "7": 170073200,
+          "8": 83647600,
+          "9": 137118800
+        },
+        "posten": {
+          "003": 119836000,
+          "010": 106618000,
+          "012": 31086000,
+          "001": 29568000
+        }
+      },
+      "ergebnis": {
+        "einnahmen": 695206019.52,
+        "ausgaben": 695206019.52,
+        "hauptgruppen": {
+          "0": 337403911.99,
+          "1": 242970678.06,
+          "2": 23357748.08,
+          "3": 91473681.39,
+          "4": 171469097.19,
+          "5": 57955780.42,
+          "6": 101410118.62,
+          "7": 162374227.74,
+          "8": 110523114.16,
+          "9": 91473681.39
+        },
+        "posten": {
+          "003": 104348844.06,
+          "010": 109543771,
+          "012": 29252376,
+          "001": 29525905.16
+        }
+      }
+    },
+    {
+      "jahr": 2023,
+      "plan_aus_haushalt": 2024,
+      "plan": {
+        "einnahmen": 849784700,
+        "ausgaben": 849784700,
+        "hauptgruppen": {
+          "0": 414914900,
+          "1": 231936600,
+          "2": 72234700,
+          "3": 130698500,
+          "4": 194483600,
+          "5": 68367500,
+          "6": 99462400,
+          "7": 193057100,
+          "8": 163715600,
+          "9": 130698500
+        },
+        "posten": {
+          "003": 176997000,
+          "010": 121059000,
+          "012": 30662000,
+          "001": 30013000
+        }
+      },
+      "ergebnis": {
+        "einnahmen": 944395677.57,
+        "ausgaben": 944395677.57,
+        "hauptgruppen": {
+          "0": 429682984.3,
+          "1": 249267104.36,
+          "2": 80761023.48,
+          "3": 184684565.43,
+          "4": 183629889.92,
+          "5": 62481672.09,
+          "6": 105487209.06,
+          "7": 186899611.85,
+          "8": 221212729.22,
+          "9": 184684565.43
+        },
+        "posten": {
+          "003": 191512525.02,
+          "010": 119058462,
+          "012": 29707873,
+          "001": 31579218.68
+        }
+      }
+    },
+    {
+      "jahr": 2024,
+      "plan_aus_haushalt": 2025,
+      "plan": {
+        "einnahmen": 854526000,
+        "ausgaben": 854526000,
+        "hauptgruppen": {
+          "0": 357282400,
+          "1": 249895500,
+          "2": 60497100,
+          "3": 186851000,
+          "4": 194843600,
+          "5": 69900500,
+          "6": 106147700,
+          "7": 227329300,
+          "8": 69453900,
+          "9": 186851000
+        },
+        "posten": {
+          "003": 117555000,
+          "010": 117755000,
+          "012": 26913200,
+          "001": 32028000
+        }
+      },
+      "ergebnis": {
+        "einnahmen": 801737084.4,
+        "ausgaben": 801737084.4,
+        "hauptgruppen": {
+          "0": 360718161.02,
+          "1": 273183964.89,
+          "2": 42145420.46,
+          "3": 125689538.03,
+          "4": 196340031.57,
+          "5": 69916898.34,
+          "6": 105662200.57,
+          "7": 236792223.88,
+          "8": 67336192.01,
+          "9": 125689538.03
+        },
+        "posten": {
+          "003": 112664992.23,
+          "010": 119317501,
+          "012": 26310419,
+          "001": 30569273.64
+        }
+      }
+    }
+  ],
+  "vorbericht_aktuell": {
+    "einwohner": {
+      "jahr": 2024,
+      "anzahl": 141185
+    },
+    "schulden_kernhaushalt": [
+      {
+        "jahr": 2023,
+        "stand": 0,
+        "art": "ergebnis"
+      },
+      {
+        "jahr": 2024,
+        "stand": 20000000,
+        "art": "ergebnis"
+      },
+      {
+        "jahr": 2025,
+        "stand": 44540612,
+        "art": "vorlaeufig"
+      },
+      {
+        "jahr": 2026,
+        "stand": 249626512,
+        "art": "plan"
+      }
+    ],
+    "kredite_planjahr": {
+      "jahr": 2026,
+      "neu": 97757800,
+      "aus_ermaechtigung_vorjahr": 110344600,
+      "tilgung": 3016500
+    },
+    "schuldendienst": [
+      {
+        "jahr": 2024,
+        "art": "ergebnis",
+        "zinsen": 67162.89,
+        "tilgung": 0
+      },
+      {
+        "jahr": 2025,
+        "art": "plan",
+        "zinsen": 2777700,
+        "tilgung": 330600
+      },
+      {
+        "jahr": 2026,
+        "art": "plan",
+        "zinsen": 5971600,
+        "tilgung": 3016500
+      }
+    ],
+    "schulden_je_einwohner": [
+      {
+        "jahr": 2020,
+        "art": "amtlich",
+        "ingolstadt": 0,
+        "kreisfreie_staedte": 1258,
+        "staedte_100k_200k": 852
+      },
+      {
+        "jahr": 2021,
+        "art": "amtlich",
+        "ingolstadt": 0,
+        "kreisfreie_staedte": 1254,
+        "staedte_100k_200k": 847
+      },
+      {
+        "jahr": 2022,
+        "art": "amtlich",
+        "ingolstadt": 0,
+        "kreisfreie_staedte": 1525,
+        "staedte_100k_200k": 776
+      },
+      {
+        "jahr": 2023,
+        "art": "amtlich",
+        "ingolstadt": 0,
+        "kreisfreie_staedte": 1925,
+        "staedte_100k_200k": 786
+      },
+      {
+        "jahr": 2024,
+        "art": "berechnet",
+        "ingolstadt": 142,
+        "kreisfreie_staedte": null,
+        "staedte_100k_200k": null
+      },
+      {
+        "jahr": 2025,
+        "art": "berechnet",
+        "ingolstadt": 315,
+        "kreisfreie_staedte": null,
+        "staedte_100k_200k": null
+      },
+      {
+        "jahr": 2026,
+        "art": "plan",
+        "ingolstadt": 1768,
+        "kreisfreie_staedte": null,
+        "staedte_100k_200k": null
+      },
+      {
+        "jahr": 2027,
+        "art": "plan",
+        "ingolstadt": 2356,
+        "kreisfreie_staedte": null,
+        "staedte_100k_200k": null
+      },
+      {
+        "jahr": 2028,
+        "art": "plan",
+        "ingolstadt": 2833,
+        "kreisfreie_staedte": null,
+        "staedte_100k_200k": null
+      },
+      {
+        "jahr": 2029,
+        "art": "plan",
+        "ingolstadt": 3327,
+        "kreisfreie_staedte": null,
+        "staedte_100k_200k": null
+      }
+    ],
+    "ruecklage": [
+      {
+        "jahr": 2023,
+        "stand": 215941646.98,
+        "art": "ergebnis"
+      },
+      {
+        "jahr": 2024,
+        "stand": 140515303.53,
+        "art": "ergebnis"
+      },
+      {
+        "jahr": 2025,
+        "stand": 38622677,
+        "art": "vorlaeufig"
+      },
+      {
+        "jahr": 2026,
+        "stand": 7138677,
+        "art": "plan"
+      },
+      {
+        "jahr": 2029,
+        "stand": 7138677,
+        "art": "plan"
+      }
+    ],
+    "ruecklage_mindesthoehe": 7138677,
+    "schulden_kommunalunternehmen": [
+      {
+        "jahr": 2023,
+        "stand": 403621101.79,
+        "art": "ergebnis"
+      },
+      {
+        "jahr": 2024,
+        "stand": 423742230.72,
+        "art": "ergebnis"
+      },
+      {
+        "jahr": 2025,
+        "stand": 459559153.31,
+        "art": "vorlaeufig"
+      },
+      {
+        "jahr": 2026,
+        "stand": 473750000,
+        "art": "plan"
+      }
+    ]
+  },
   "verwaltungs_vermoegenshaushalt_aktuell": {
     "verwaltungshaushalt_einnahmen": 674802600,
     "verwaltungshaushalt_ausgaben": 740883200,
