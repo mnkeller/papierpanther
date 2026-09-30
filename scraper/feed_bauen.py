@@ -27,6 +27,13 @@ sys.path.insert(0, HIER)
 from entwuerfe_bauen import ist_sammelueberschrift  # noqa: E402
 from referenzen import bare_positionen, ist_beteiligung, top_ref  # noqa: E402
 
+# Frueher "Ohne Vorlage" — ein Verwaltungsbegriff, der nichts ueber das
+# Ergebnis sagt. Gemeint sind muendliche Berichte und alle BZA-Punkte: Dazu
+# gibt es keine Beschlussvorlage, also auch keinen Beschluss. Das soll man
+# sehen (Nutzertest 2026-09-30). Oberflaeche und antraege.html zeigen genau
+# diesen Wortlaut, deshalb nur hier aendern.
+STAND_OHNE_ENTSCHEIDUNG = "Nur besprochen, nichts entschieden"
+
 # Reihenfolge bestimmt die Sortierung der Filterachse "Stand"
 STAND_REIHENFOLGE = [
     "Noch nicht terminiert",  # siehe antraege_offen.py — noch keiner Sitzung zugeteilt
@@ -36,8 +43,66 @@ STAND_REIHENFOLGE = [
     "Beschlossen",   # aus scraper/niederschriften_lesen.py::beschluesse.json
     "Abgelehnt",     # — der Nachfolgezustand von "Entscheidung angesetzt"
     "Bekanntgabe",
-    "Ohne Vorlage",
+    STAND_OHNE_ENTSCHEIDUNG,
 ]
+
+# Der Bezirk Oberbayern (aelteres .asp-Portal) benennt die Rollen im
+# Beratungsweg nach seiner Geschaeftsordnung ("beschließend nach § 7 Abs. 1
+# GeschO", "vorberatend nach ...", "Kenntnisnahme"). Ohne diese Zuordnung
+# landeten sie als Paragrafentext auf der Karte und fielen aus dem Stand-
+# Filter heraus.
+def rolle_art(rolle):
+    r = (rolle or "").lower()
+    if "entscheidung" in r or r.startswith("beschließend"):
+        return "entscheidung"
+    if "vorberatung" in r or r.startswith("vorberatend"):
+        return "vorberatung"
+    if "bekanntgabe" in r or "kenntnisnahme" in r:
+        return "bekanntgabe"
+    return ""
+
+
+# Karten, deren Text nur den amtlichen Titel wiederholt: kein Klartext, oder
+# die Schablone "Im Bezirksausschuss X war folgendes Thema: <Titel>." aus
+# frueheren Massen-Kurationen. Die Oberflaeche zeigt sie nicht als volle
+# Karte, sondern gebuendelt je Sitzung ("Weitere Themen dieser Sitzung").
+# Wer so einen Eintrag richtig aufbereitet, muss nichts umstellen — sobald
+# der Text die Schablone verlaesst, wird er wieder eine eigene Karte.
+SCHABLONE_DUENN = re.compile(r"^Im .{1,120}? (war|waren|ging es um) folgendes Thema: ", re.S)
+
+
+def ist_duenn(kur):
+    text = (kur.get("klartext") or "").strip()
+    return not text or bool(SCHABLONE_DUENN.match(text))
+
+
+# Wer berät? Eigene Filterachse statt "Bezirk Oberbayern" als 13. Stadtbezirk
+# — der Bezirk ist eine andere Verwaltungsebene, kein Stadtteil.
+EBENE = {
+    "stadt": "Stadtrat & Ausschüsse",
+    "bza": "Bezirksausschüsse",
+    "bezirk_obb": "Bezirk Oberbayern",
+}
+KEIN_STADTBEZIRK = {"Bezirk Oberbayern"}
+
+
+def termin_artikel(termin):
+    """
+    ris_ingolstadt.py schneidet "Sitzung des/der" vom Gremiennamen ab, der
+    Rest steht im Genitiv ("Ausschusses fuer Sport"). Neue Rohdaten tragen
+    den abgeschnittenen Artikel mit; fuer aeltere wird er hier nachgetragen:
+    Stadt- und BZA-Termine ohne Artikel hatten die Floskel, ausser
+    Buergerversammlungen und Eintraege, die schon im Nominativ stehen.
+    """
+    if "artikel" in termin:
+        return termin["artikel"]
+    if termin.get("quelle") == "bezirk_obb":
+        return ""
+    g = termin.get("gremium", "")
+    if g.startswith("Bürgerversammlung"):
+        return ""
+    erstes = g.split(" ")[0]
+    return "des" if erstes.endswith("s") else ""
 
 
 def lade(dateiname):
@@ -75,7 +140,7 @@ def leitstation(auftritte):
     """
     mit_entscheidung = [
         (s, t) for s, t in auftritte
-        if any(b["rolle"].startswith("Entscheidung") for b in t.get("beratungen") or [])
+        if any(rolle_art(b["rolle"]) == "entscheidung" for b in t.get("beratungen") or [])
     ]
     kandidaten = mit_entscheidung or auftritte
     return max(kandidaten, key=lambda st: st[0]["datum"] or "")
@@ -87,9 +152,9 @@ def stand_ableiten(top, heute_iso):
 
     if not top.get("vorlage"):
         # Muendliche Berichte und alle BZA-Punkte haben keine Vorlage.
-        return "Ohne Vorlage", ""
+        return STAND_OHNE_ENTSCHEIDUNG, ""
 
-    entscheidungen = [s for s in beratungen if "Entscheidung" in s["rolle"]]
+    entscheidungen = [s for s in beratungen if rolle_art(s["rolle"]) == "entscheidung"]
     if entscheidungen:
         letzte = max(entscheidungen, key=lambda s: s["datum"])
         stand = (
@@ -99,13 +164,13 @@ def stand_ableiten(top, heute_iso):
         )
         return stand, letzte["datum_anzeige"]
 
-    vorberatungen = [s for s in beratungen if "Vorberatung" in s["rolle"]]
+    vorberatungen = [s for s in beratungen if rolle_art(s["rolle"]) == "vorberatung"]
     if vorberatungen:
         return "Wird noch beraten", max(
             vorberatungen, key=lambda s: s["datum"]
         )["datum_anzeige"]
 
-    bekanntgaben = [s for s in beratungen if "Bekanntgabe" in s["rolle"]]
+    bekanntgaben = [s for s in beratungen if rolle_art(s["rolle"]) == "bekanntgabe"]
     if bekanntgaben:
         return "Bekanntgabe", max(
             bekanntgaben, key=lambda s: s["datum"]
@@ -113,12 +178,12 @@ def stand_ableiten(top, heute_iso):
 
     if beratungen:
         # Unbekannte Rolle (etwa "Anhoerung"): unveraendert durchreichen,
-        # damit sie sichtbar wird statt als "Ohne Vorlage" zu verschwinden.
+        # damit sie sichtbar wird statt im Sammelstand zu verschwinden.
         letzte = max(beratungen, key=lambda s: s["datum"])
         return letzte["rolle"], letzte["datum_anzeige"]
 
     # Vorlage vorhanden, aber kein Beratungsweg gelesen (--ohne-beratungen)
-    return "Ohne Vorlage", ""
+    return STAND_OHNE_ENTSCHEIDUNG, ""
 
 
 def main():
@@ -254,10 +319,12 @@ def main():
                 "klartext_titel_leicht": kur.get("klartext_titel_leicht", ""),
                 "klartext_leicht": kur.get("klartext_leicht", ""),
                 "lebenslage": kur.get("lebenslage", []),
-                "bezirk": kur.get("bezirk", []),
+                "bezirk": [b for b in kur.get("bezirk", []) if b not in KEIN_STADTBEZIRK],
+                "ebene": [EBENE.get(sitzung.get("quelle", "stadt"), EBENE["stadt"])],
                 "anlass": kur.get("anlass", []),
                 "ort": kur.get("ort", []),          # freier Vermerk, kein Filter
                 "entwurf": kur.get("entwurf", False),
+                "duenn": ist_duenn(kur),
                 # --- abgeleitet ---
                 "stand": stand,
                 "stand_datum": stand_datum,
@@ -324,10 +391,12 @@ def main():
                 "klartext_titel_leicht": kur.get("klartext_titel_leicht", ""),
                 "klartext_leicht": kur.get("klartext_leicht", ""),
                 "lebenslage": kur.get("lebenslage", []),
-                "bezirk": kur.get("bezirk", []),
+                "bezirk": [b for b in kur.get("bezirk", []) if b not in KEIN_STADTBEZIRK],
+                "ebene": [EBENE.get(antrag["quelle"], EBENE["stadt"])],
                 "anlass": kur.get("anlass", []),
                 "ort": kur.get("ort", []),
                 "entwurf": kur.get("entwurf", False),
+                "duenn": ist_duenn(kur),
                 # --- abgeleitet ---
                 "stand": "Noch nicht terminiert",
                 "stand_datum": "",
@@ -368,6 +437,15 @@ def main():
     bezirke += sorted(vorhanden - set(bezirke))
 
     staende = [s for s in STAND_REIHENFOLGE if any(e["stand"] == s for e in feed)]
+    ebenen = [w for w in EBENE.values() if any(w in e["ebene"] for e in feed)]
+
+    # Termine: nur ab dem Bautag (die Oberflaeche filtert zusaetzlich nach dem
+    # Tag des Besuchs — die Seite ist statisch und wird nicht taeglich gebaut).
+    kommende_termine = []
+    for t in roh.get("kommende_termine", []):
+        if (t.get("datum") or "") < heute_iso:
+            continue
+        kommende_termine.append({**t, "artikel": termin_artikel(t)})
 
     stand_verteilung = {}
     for e in feed:
@@ -448,18 +526,23 @@ def main():
                 k: sum(1 for e in feed if e["quelle"] == k) for k in roh["quellen"]
             },
             "stand": stand_verteilung,
+            # Echte Stadtbezirke (I bis XII) — ohne "stadtweit"; die Kopfzahl
+            # hiess vorher "14 Stadtbezirke", weil beides mitgezaehlt wurde.
+            "stadtbezirke": sum(1 for b in bezirke if re.match(r"^[IVX]+-", b)),
+            "duenn": sum(1 for e in feed if e["duenn"]),
         },
         "achsen": {
             "lebenslage": achse("lebenslage"),
             "bezirk": bezirke,
             "anlass": achse("anlass"),
+            "ebene": ebenen,
             "stand": staende,
         },
         "eintraege": feed,
         # Sitzungstermine ohne veroeffentlichte Tagesordnung — reine Fakten
         # ohne Inhalt, deshalb ungekuratiert direkt durchgereicht (siehe
         # ris_ingolstadt.py::kommende_termine_auslesen).
-        "kommende_termine": roh.get("kommende_termine", []),
+        "kommende_termine": kommende_termine,
     }
 
     ziel = os.path.join(DATEN_VZ, "feed.json")
@@ -482,7 +565,8 @@ def main():
         f"  {st['tops_kuratiert']} aufbereitete Eintraege "
         f"von {st['tops_ausgelesen']} TOPs "
         f"({st['tops_verfahren']} davon Sitzungsroutine), "
-        f"{st['entwuerfe']} noch Entwurf"
+        f"{st['entwuerfe']} noch Entwurf, "
+        f"{st['duenn']} nur mit Titel (gebuendelt angezeigt)"
     )
     print(f"  je Quelle: {st['je_quelle']}")
     print(f"  Stand:     {st['stand']}")

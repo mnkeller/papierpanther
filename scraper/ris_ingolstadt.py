@@ -269,13 +269,17 @@ def parse_kalender_ohne_tagesordnung(seite, jahr, monat, endung="php"):
         # Die Floskel "oeffentliche(/nicht oeffentliche) Sitzung des/der"
         # steht vor praktisch jedem Eintrag — in einer Liste wiederholt sie
         # sich staendig, deshalb weg damit. Der Gremienname bleibt im
-        # Genitiv stehen (Portal-Originaltext), statt ihn falsch zu raten.
-        gremium = re.sub(
+        # Genitiv stehen (Portal-Originaltext), statt ihn falsch zu raten —
+        # der Artikel wird mitgespeichert, damit die Oberflaeche daraus
+        # wieder "Sitzung des Ausschusses ..." machen kann.
+        floskel = re.match(
             r"^(öffentliche(/nicht öffentliche)?|nicht öffentliche)\s+"
             r"Sitzung\s+(des|der)\s+",
-            "",
             gremium,
         )
+        artikel = floskel.group(3) if floskel else ""
+        if floskel:
+            gremium = gremium[floskel.end():]
 
         details = [sauber(d) for d in re.findall(
             r'<li class="list-inline-item">(.*?)</li>', sitz.group(1), re.S
@@ -291,6 +295,7 @@ def parse_kalender_ohne_tagesordnung(seite, jahr, monat, endung="php"):
         ergebnis.append(
             {
                 "gremium": gremium,
+                "artikel": artikel,
                 "datum": datum_iso,
                 "datum_anzeige": f"{tag:02d}.{monat:02d}.{jahr:04d}",
                 "zeit": zeit,

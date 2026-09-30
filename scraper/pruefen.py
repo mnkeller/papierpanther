@@ -28,6 +28,7 @@ DATEN_VZ = os.path.join(os.path.dirname(HIER), "data")
 sys.path.insert(0, HIER)
 from entwuerfe_bauen import ist_sammelueberschrift  # noqa: E402
 from referenzen import bare_positionen, ist_beteiligung, top_ref  # noqa: E402
+from feed_bauen import KEIN_STADTBEZIRK, STAND_REIHENFOLGE  # noqa: E402
 
 fehler, warnungen = [], []
 
@@ -261,6 +262,37 @@ def p_haushalt_summen(haushalt):
               f"stimmt nicht mit Summe Ausgaben ({aktuell['summe_ausgaben']}) ueberein")
 
 
+def p_oberflaeche(feed):
+    """Zusagen aus dem Nutzertest 2026-09-30, die index.html voraussetzt.
+
+    - Jeder Stand ist einer der bekannten, verstaendlichen Werte — kein
+      "Ohne Vorlage" mehr, keine Paragrafentexte ("beschließend nach § 7").
+    - Der Bezirk Oberbayern ist kein Stadtbezirk (eigene Achse "ebene").
+    - Die Kopfzahl nennt die zwoelf echten Stadtbezirke.
+    - Keine Termine vor dem Bautag unter "Naechste Termine".
+    - Jeder Eintrag traegt "ebene" und "duenn" (Buendelung je Sitzung).
+    """
+    eintraege = feed["eintraege"]
+    fremd = collections.Counter(
+        e["stand"] for e in eintraege if e["stand"] not in STAND_REIHENFOLGE
+    )
+    if fremd:
+        fehlt(f"Unbekannte Staende auf Karten (fehlen im Filter): {dict(fremd)}")
+    falsch = [b for b in feed["achsen"]["bezirk"] if b in KEIN_STADTBEZIRK]
+    if falsch:
+        fehlt(f"Keine Stadtbezirke in der Bezirksachse: {falsch}")
+    n = feed["statistik"].get("stadtbezirke")
+    if n != 12:
+        warnt(f"Kopfzahl Stadtbezirke ist {n}, erwartet 12")
+    alt = [t for t in feed.get("kommende_termine", [])
+           if t["datum"] < feed["feed_gebaut_am"]]
+    if alt:
+        fehlt(f"{len(alt)} vergangene Termine unter 'Naechste Termine'")
+    ohne = [e["ref"] for e in eintraege if "ebene" not in e or "duenn" not in e]
+    if ohne:
+        fehlt(f"{len(ohne)} Eintraege ohne 'ebene'/'duenn': {ohne[:3]}")
+
+
 def p_abdeckung(roh, feed):
     """
     Jeder Sachpunkt ist entweder im Feed oder aus einem benannten Grund
@@ -333,6 +365,7 @@ def main():
         p_haushalt_hosts(haushalt)
     if os.path.exists(os.path.join(DATEN_VZ, "antraege.json")):
         p_antraege_hosts(lade("antraege.json"))
+    p_oberflaeche(feed)
     gruende = p_abdeckung(roh, feed["eintraege"])
 
     print("Abdeckung aller Tagesordnungspunkte")

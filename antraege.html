@@ -289,7 +289,7 @@
   }
 
   function standBadge(a) {
-    if (a.ref && a.stand && a.stand !== 'Ohne Vorlage') {
+    if (a.ref && a.stand && a.stand !== 'Ohne Vorlage' && a.stand !== 'Nur besprochen, nichts entschieden') {
       return el('div', standKlasse(a.stand), leicht ? (STAND_LEICHT[a.stand] || a.stand) : a.stand);
     }
     if (a.in_beratung) {

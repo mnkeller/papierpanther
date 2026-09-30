@@ -480,6 +480,67 @@
   }
   .header-link:focus-visible, .btn-leicht:focus-visible { outline-color: #fff; }
 
+  /* ---------- Bezirkswahl im Hero ----------
+     Der Hero verspricht "Suchen Sie einfach Ihren Stadtbezirk" — hier ist
+     die Stelle, an der man das tut, statt unter 13 Lebenslagen-Chips
+     (Nutzertest 2026-09-30). */
+  .bezirk-wahl { margin-top: 1.6rem; }
+  .bezirk-wahl h2 {
+    font-family: var(--font-display); font-size: 1.15rem; font-weight: 700;
+    margin-bottom: .6rem;
+  }
+  .bezirk-wahl-opts { display: flex; flex-wrap: wrap; gap: .45rem; max-width: 820px; }
+  .bezirk-btn {
+    font: inherit; font-size: .9rem; cursor: pointer;
+    background: #fff; color: var(--primary-dark);
+    border: 1.5px solid var(--primary); border-radius: 8px;
+    padding: .45rem .8rem; transition: all .12s ease;
+  }
+  .bezirk-btn .nr { font-weight: 700; margin-right: .3em; }
+  .bezirk-btn:hover { background: var(--bg-warm); }
+  .bezirk-btn[aria-pressed="true"] { background: var(--primary); color: #fff; }
+  .bezirk-btn.stadtweit { border-style: dashed; }
+  .bezirk-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* ---------- Bezirksansicht: Kopf ueber dem Feed ---------- */
+  .bezirk-kopf {
+    background: var(--card); border: 1px solid var(--border);
+    border-top: 4px solid var(--primary); border-radius: var(--radius);
+    padding: 1.2rem 1.4rem; margin-bottom: 1.25rem; box-shadow: var(--shadow);
+  }
+  .bezirk-kopf h2 {
+    font-family: var(--font-display); font-size: 1.45rem; line-height: 1.25;
+    font-weight: 700; margin-bottom: .35rem;
+  }
+  .bezirk-kopf h2:focus { outline: none; }
+  .bezirk-kopf p { color: var(--text-muted); font-size: .92rem; margin-top: .35rem; }
+  .bezirk-kopf .termin { color: var(--text); }
+  .bezirk-kopf-aktionen { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .9rem; }
+  .bezirk-kopf-aktionen button, .bezirk-kopf-aktionen a {
+    font: inherit; font-size: .82rem; cursor: pointer; text-decoration: none;
+    background: #fff; color: var(--primary-dark);
+    border: 1px solid var(--border-strong); border-radius: 999px; padding: .3rem .8rem;
+  }
+  .bezirk-kopf-aktionen button:hover, .bezirk-kopf-aktionen a:hover { border-color: var(--primary); }
+
+  /* ---------- Gebuendelte Titel-Eintraege ----------
+     Punkte, zu denen es nur den Titel aus der Tagesordnung gibt, stehen
+     nicht als volle Karte da (die versprach mehr, als sie hielt), sondern
+     als kompakte Liste je Sitzung. */
+  .card-sammel { padding: 1.1rem 1.5rem; }
+  .card-sammel h3 { font-size: 1.02rem; margin-bottom: .4rem; }
+  .sammel-liste { list-style: none; margin: .2rem 0 0; }
+  .sammel-liste li {
+    padding: .35rem 0; border-bottom: 1px solid var(--border);
+    font-size: .92rem; display: flex; justify-content: space-between; gap: .8rem;
+  }
+  .sammel-liste li:last-child { border-bottom: none; }
+  .sammel-liste a { color: var(--primary-dark); text-decoration: none; font-size: .8rem; white-space: nowrap; }
+  .sammel-liste a:hover { text-decoration: underline; }
+  .sammel-liste a::after { content: ' ↗'; opacity: .5; }
+  .sammel-hinweis { font-size: .78rem; color: var(--text-faint); margin-top: .6rem; }
+  .stand-nur { background: #f3f1ec; color: #4a4a4a; border-color: #4a4a4a40; }
+
   .leicht-hinweis {
     font-size: .78rem; color: var(--text-faint); font-style: italic;
     margin-top: .35rem;
@@ -582,6 +643,10 @@
         PapierPanther sammelt sie ein, fasst sie zusammen und sortiert sie
         danach, wen sie betreffen. Suchen Sie einfach Ihren Stadtbezirk.
       </p>
+      <div class="bezirk-wahl" id="bezirk-wahl" hidden>
+        <h2 id="bezirk-wahl-h2">Wo wohnen Sie?</h2>
+        <div class="bezirk-wahl-opts" id="bezirk-wahl-opts" role="group" aria-labelledby="bezirk-wahl-h2"></div>
+      </div>
       <div class="hero-stats" id="hero-stats"></div>
     </div>
   </section>
@@ -620,6 +685,7 @@
       </aside>
 
       <div class="feed-spalte">
+        <div class="bezirk-kopf" id="bezirk-kopf" hidden></div>
         <p class="feed-count" id="feed-count" aria-live="polite"></p>
         <div class="feed" id="feed"></div>
       </div>
@@ -709,9 +775,10 @@
     { key: 'lebenslage', textId: 'achseLebenslage' },
     { key: 'bezirk',     textId: 'achseBezirk' },
     { key: 'anlass',     textId: 'achseAnlass' },
+    { key: 'ebene',      textId: 'achseEbene' },
     { key: 'stand',      textId: 'achseStand' }
   ];
-  var aktiv = { lebenslage: [], bezirk: [], anlass: [], stand: [] };
+  var aktiv = { lebenslage: [], bezirk: [], anlass: [], ebene: [], stand: [] };
   var suchbegriff = '';
 
   /* ---------------- Leichte Sprache ----------------
@@ -738,6 +805,32 @@
       n: 'Ob Fahrradbügel, Kita-Plätze oder Gebühren: Der Stadtrat und die zwölf Bezirksausschüsse behandeln jede Woche Themen, die den Alltag in Ingolstadt betreffen. Alles steht öffentlich im Ratsinfoportal — nur eben verteilt über hunderte Einzelpunkte in Amtssprache. Der PapierPanther sammelt sie ein, fasst sie zusammen und sortiert sie danach, wen sie betreffen. Suchen Sie einfach Ihren Stadtbezirk.',
       l: 'Der Stadt-Rat trifft viele Entscheidungen. Die 12 Bezirks-Ausschüsse entscheiden mit. Es geht um Rad-Wege, Kita-Plätze oder Gebühren. Alle Infos stehen im Rats-Info-Portal der Stadt. Aber der Text dort ist schwer zu lesen. Der PapierPanther sammelt die Infos. Er schreibt sie einfacher auf. Er sortiert sie nach Thema. Suchen Sie einfach Ihren Stadt-Bezirk.'
     },
+    bezirkWahlH2: { n: 'Wo wohnen Sie?', l: 'Wo wohnen Sie?' },
+    bezirkStadtweit: { n: 'Ganz Ingolstadt', l: 'Ganz Ingolstadt' },
+    bezirkKopfTitel: { n: '{b}: Das ist hier los', l: '{b}: Das passiert hier' },
+    bezirkKopfAnzahl: {
+      n: '{n} Themen aus Ihrem Stadtbezirk, die neuesten zuerst.',
+      l: 'Hier gibt es {n} Themen. Die neuesten stehen oben.'
+    },
+    bezirkKopfTermin: {
+      n: 'Nächste Sitzung des Bezirksausschusses: ',
+      l: 'Der Bezirks-Ausschuss trifft sich wieder am: '
+    },
+    bezirkKopfKeinTermin: {
+      n: 'Der nächste Sitzungstermin des Bezirksausschusses ist noch nicht veröffentlicht.',
+      l: 'Der nächste Termin vom Bezirks-Ausschuss steht noch nicht fest.'
+    },
+    bezirkStadtweitDazu: { n: '+ Themen für ganz Ingolstadt', l: '+ Themen für ganz Ingolstadt' },
+    bezirkStadtweitWeg: { n: '− Nur mein Bezirk', l: '− Nur mein Bezirk' },
+    bezirkAlle: { n: 'Alle Bezirke', l: 'Alle Bezirke' },
+    bezirkMitmachen: { n: 'Bezirksausschuss ansprechen', l: 'Mit dem Bezirks-Ausschuss reden' },
+    sammelTitel: { n: 'Themen dieser Sitzung', l: 'Diese Themen gab es in der Sitzung' },
+    sammelTitelEins: { n: 'Thema dieser Sitzung', l: 'Dieses Thema gab es in der Sitzung' },
+    sammelHinweis: {
+      n: 'Zu diesen Punkten gibt es noch keine Zusammenfassung — nur den Titel aus der Tagesordnung. Der Link führt zum Original.',
+      l: 'Diese Themen sind noch nicht erklärt. Hier steht nur der Name. Der Link führt zum Original.'
+    },
+    sammelLink: { n: 'Original', l: 'Original' },
     demnaechstTitel: { n: 'Nächste Termine', l: 'Was bald passiert' },
     demnaechstHinweis: {
       n: 'Tagesordnung noch nicht veröffentlicht',
@@ -816,6 +909,7 @@
     achseLebenslage: { n: 'Lebenslage', l: 'Ihr Leben' },
     achseBezirk:     { n: 'Stadtbezirk', l: 'Ihr Stadt-Bezirk' },
     achseAnlass:     { n: 'Anlass', l: 'Das Thema' },
+    achseEbene:      { n: 'Wer berät', l: 'Wer redet darüber?' },
     achseStand:      { n: 'Stand', l: 'Wie weit ist es?' }
   };
 
@@ -851,6 +945,11 @@
     'Konzept & Planung': 'Plan für die Zukunft'
   };
   var BEZIRK_LEICHT = { 'stadtweit': 'in ganz Ingolstadt' };
+  var EBENE_LEICHT = {
+    'Stadtrat & Ausschüsse': 'Stadt-Rat',
+    'Bezirksausschüsse': 'Bezirks-Ausschüsse',
+    'Bezirk Oberbayern': 'Bezirk Oberbayern'
+  };
   var STAND_LEICHT = {
     'Noch nicht terminiert': 'Es gibt noch keinen Termin dafür.',
     'Wird noch beraten': 'Der Stadt-Rat bespricht das noch.',
@@ -859,7 +958,7 @@
     'Beschlossen': 'Der Stadt-Rat hat das so beschlossen.',
     'Abgelehnt': 'Der Stadt-Rat hat das abgelehnt.',
     'Bekanntgabe': 'Das ist nur eine Information.',
-    'Ohne Vorlage': 'Es gibt kein Dokument dazu.'
+    'Nur besprochen, nichts entschieden': 'Darüber wurde nur gesprochen. Es gibt keine Entscheidung.'
   };
 
   function txt(id) { return TEXTE[id][leicht ? 'l' : 'n']; }
@@ -869,6 +968,7 @@
     if (achse === 'lebenslage') return LEBENSLAGE_LEICHT[wert] || wert;
     if (achse === 'anlass') return ANLASS_LEICHT[wert] || wert;
     if (achse === 'bezirk') return BEZIRK_LEICHT[wert] || wert;
+    if (achse === 'ebene') return EBENE_LEICHT[wert] || wert;
     return wert;
   }
 
@@ -919,6 +1019,69 @@
     ].filter(Boolean).join(' ').toLowerCase();
   });
 
+  /* Aeltere feed.js ohne diese Felder (vor dem Nutzertest 2026-09-30):
+     Achse und Buendelung aus dem vorhandenen ableiten, damit die Seite
+     nicht bricht, bis feed_bauen.py wieder gelaufen ist. */
+  if (!daten.achsen.ebene) {
+    var EBENE_AUS_QUELLE = { stadt: 'Stadtrat & Ausschüsse', bza: 'Bezirksausschüsse', bezirk_obb: 'Bezirk Oberbayern' };
+    daten.eintraege.forEach(function (e) { e.ebene = [EBENE_AUS_QUELLE[e.quelle] || EBENE_AUS_QUELLE.stadt]; });
+    daten.achsen.ebene = ['Stadtrat & Ausschüsse', 'Bezirksausschüsse', 'Bezirk Oberbayern'];
+  }
+
+  /* Die zwoelf Stadtbezirke (I-Mitte ... XII-Muenchener Strasse), ohne
+     "stadtweit". Erkennbar an der roemischen Ziffer vorne. */
+  function stadtbezirke() {
+    return daten.achsen.bezirk.filter(function (b) { return /^[IVX]+-/.test(b); });
+  }
+  function bezirkNr(b) { var m = /^([IVX]+)-/.exec(b); return m ? m[1] : ''; }
+  function bezirkName(b) { return b.replace(/^[IVX]+-/, ''); }
+
+  /* Die Seite ist statisch und wird nicht taeglich neu gebaut — "heute"
+     ist deshalb der Tag des Besuchs, nicht der Bautag. */
+  function heuteIso() {
+    var d = new Date();
+    return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' +
+      String(d.getDate()).padStart(2, '0');
+  }
+
+  /* ---------------- Auswahl in der Adresse ----------------
+     Filter und Suche stehen in der URL (?bezirk=II&lebenslage=Jugend&q=Kita),
+     damit man "meinen Bezirk" als Lesezeichen speichern und weiterschicken
+     kann. Stadtbezirke kurz als roemische Ziffer; alles andere mit vollem
+     Wert, mehrfach wiederholt statt Komma-getrennt (Werte enthalten Kommas). */
+  function urlLesen() {
+    var p;
+    try { p = new URLSearchParams(location.search); } catch (err) { return; }
+    ACHSEN.forEach(function (a) {
+      var erlaubt = daten.achsen[a.key] || [];
+      aktiv[a.key] = [];
+      p.getAll(a.key).forEach(function (w) {
+        if (a.key === 'bezirk' && /^[IVX]+$/.test(w)) {
+          var voll = stadtbezirke().filter(function (b) { return bezirkNr(b) === w; })[0];
+          if (voll) w = voll;
+        }
+        if (erlaubt.indexOf(w) !== -1 && aktiv[a.key].indexOf(w) === -1) aktiv[a.key].push(w);
+      });
+    });
+    var q = p.get('q');
+    if (q) { suchbegriff = q.trim().toLowerCase(); document.getElementById('suche').value = q; }
+  }
+
+  function urlSchreiben() {
+    if (!window.history || !history.replaceState) return;
+    var teile = [];
+    ACHSEN.forEach(function (a) {
+      aktiv[a.key].forEach(function (w) {
+        var v = (a.key === 'bezirk' && bezirkNr(w)) ? bezirkNr(w) : w;
+        teile.push(a.key + '=' + encodeURIComponent(v));
+      });
+    });
+    var q = document.getElementById('suche').value.trim();
+    if (q) teile.push('q=' + encodeURIComponent(q));
+    var neu = location.pathname + (teile.length ? '?' + teile.join('&') : '') + location.hash;
+    try { history.replaceState(null, '', neu); } catch (err) { /* file:// o. ae. */ }
+  }
+
   /* ---------------- Kopfzahlen ---------------- */
   var st = daten.statistik;
 
@@ -929,7 +1092,7 @@
       [st.sitzungen_ausgelesen, txt('statSitzungen')],
       [st.tops_ausgelesen, txt('statTops')],
       [st.tops_kuratiert, txt('statKuratiert')],
-      [daten.achsen.bezirk.length, txt('statBezirke')]
+      [st.stadtbezirke || stadtbezirke().length, txt('statBezirke')]
     ].forEach(function (paar) {
       var box2 = el('div', 'stat');
       box2.appendChild(el('div', 'stat-num', String(paar[0])));
@@ -1024,9 +1187,31 @@
     return txt('herkunftStadt');
   }
 
+  /* Der Scraper schneidet "Sitzung des/der" ab; der Rest steht im Genitiv
+     ("Ausschusses fuer Sport"). Mit dem mitgelieferten Artikel wird daraus
+     wieder ein vollstaendiger Name. */
+  /* Das Portal setzt bei noch unbestaetigten Terminen "- geplanter
+     Sitzungstermin -" in das Ortsfeld — das ist kein Ort. */
+  function terminEinzelheiten(t) {
+    var ort = /^\s*-.*-\s*$/.test(t.ort || '') ? '' : t.ort;
+    return [t.zeit, ort].filter(Boolean);
+  }
+
+  function sitzungName(t) {
+    return t.artikel ? 'Sitzung ' + t.artikel + ' ' + t.gremium : t.gremium;
+  }
+
+  function naechsterBzaTermin(bezirk) {
+    var heute = heuteIso();
+    return (daten.kommende_termine || []).filter(function (t) {
+      return t.quelle === 'bza' && t.datum >= heute && t.gremium.indexOf(bezirk) !== -1;
+    })[0] || null;
+  }
+
   function baueDemnaechst() {
     var sektion = document.getElementById('demnaechst');
-    var termine = daten.kommende_termine || [];
+    var heute = heuteIso();
+    var termine = (daten.kommende_termine || []).filter(function (t) { return t.datum >= heute; });
     if (!termine.length) {
       sektion.hidden = true;
       return;
@@ -1042,8 +1227,8 @@
       var li = el('li', 'demnaechst-item');
       li.appendChild(el('span', 'herkunft ' + t.quelle, herkunftLabel(t.quelle)));
       li.appendChild(el('span', 'demnaechst-datum', t.datum_anzeige));
-      li.appendChild(el('span', 'demnaechst-gremium', t.gremium));
-      var einzelheiten = [t.zeit, t.ort].filter(Boolean).join(' · ');
+      li.appendChild(el('span', 'demnaechst-gremium', sitzungName(t)));
+      var einzelheiten = terminEinzelheiten(t).join(' · ');
       if (einzelheiten) li.appendChild(el('span', 'demnaechst-info', einzelheiten));
       li.appendChild(el('span', 'demnaechst-info', txt('demnaechstHinweis')));
       liste.appendChild(li);
@@ -1056,6 +1241,7 @@
     document.getElementById('disclaimer-text').innerHTML = txt('disclaimer');
     document.getElementById('hero-h1').innerHTML = txt('heroH1');
     document.getElementById('hero-p').textContent = txt('heroP');
+    document.getElementById('bezirk-wahl-h2').textContent = txt('bezirkWahlH2');
     document.getElementById('filters-head-h2').textContent = txt('filtersHeadH2');
     document.getElementById('filters-hint').textContent = txt('filtersHint');
     document.getElementById('btn-reset').textContent = txt('btnReset');
@@ -1184,6 +1370,7 @@
     try { localStorage.setItem(LS_KEY_LEICHT, leicht ? '1' : '0'); } catch (err) { /* Storage kann gesperrt sein */ }
     texteAnwenden();
     baueHeroStats();
+    baueBezirkWahl();
     baueFilter();
     baueFooterMeta();
     baueDemnaechst();
@@ -1235,8 +1422,9 @@
       if (leicht) c.appendChild(el('p', 'leicht-hinweis', txt('keineLeichteFassung')));
     }
 
-    /* Stand der Beratung */
-    if (e.stand && e.stand !== 'Ohne Vorlage') {
+    /* Stand der Beratung — auch "Nur besprochen, nichts entschieden": dass
+       nichts entschieden wurde, ist selbst eine Information. */
+    if (e.stand) {
       var badge = el('div', 'stand stand-' + e.stand.split(' ')[0].toLowerCase());
       badge.appendChild(document.createTextNode(standText(e.stand, e.stand_datum)));
       c.appendChild(badge);
@@ -1370,6 +1558,168 @@
     return c;
   }
 
+  /* Eine kompakte Karte fuer alle "duennen" Eintraege einer Sitzung (nur
+     Titel, keine Zusammenfassung; siehe feed_bauen.py::ist_duenn). */
+  function sammelkarte(gruppe) {
+    var e0 = gruppe[0];
+    var c = el('article', 'card card-sammel' + (e0.quelle !== 'stadt' ? ' quelle-' + e0.quelle : ''));
+    var kopf = el('div', 'card-head');
+    kopf.appendChild(el('span', 'card-date', e0.datum_anzeige));
+    kopf.appendChild(el('span', 'card-gremium', e0.gremium));
+    if (e0.quelle === 'bza') kopf.appendChild(el('span', 'herkunft bza', txt('herkunftBza')));
+    else if (e0.quelle === 'bezirk_obb') kopf.appendChild(el('span', 'herkunft bezirk_obb', txt('herkunftBezirkObb')));
+    c.appendChild(kopf);
+    c.appendChild(el('h3', null, txt(gruppe.length > 1 ? 'sammelTitel' : 'sammelTitelEins')));
+
+    var ul = el('ul', 'sammel-liste');
+    gruppe.forEach(function (e) {
+      var li = el('li');
+      li.appendChild(el('span', null, (leicht && e.klartext_titel_leicht) || e.klartext_titel));
+      var a = el('a', null, txt('sammelLink'));
+      a.href = e.vorlage_url || e.sitzung_url;
+      a.target = '_blank'; a.rel = 'noopener';
+      neuerTabHinweis(a);
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+    c.appendChild(ul);
+
+    /* Stand nur zeigen, wenn er fuer alle Punkte gleich ist — sonst luegt er
+       fuer einen Teil. */
+    var gleich = gruppe.every(function (e) { return e.stand === e0.stand; });
+    if (e0.stand && gleich) {
+      c.appendChild(el('div', 'stand stand-' + e0.stand.split(' ')[0].toLowerCase(),
+        standText(e0.stand, e0.stand_datum)));
+    }
+    c.appendChild(el('p', 'sammel-hinweis', txt('sammelHinweis')));
+    return c;
+  }
+
+  /* Duenne Eintraege derselben Sitzung zu einem Block zusammenfassen, an der
+     Stelle des ersten. Volle Karten bleiben einzeln. */
+  function anzeigeListe(treffer) {
+    var liste = [];
+    var gruppen = {};
+    treffer.forEach(function (e) {
+      if (!e.duenn) { liste.push({ eintrag: e }); return; }
+      var k = e.quelle + '|' + (e.sitzung_url || e.ref);
+      if (!gruppen[k]) { gruppen[k] = []; liste.push({ gruppe: gruppen[k] }); }
+      gruppen[k].push(e);
+    });
+    return liste;
+  }
+
+  /* ---------------- Bezirkswahl im Hero ---------------- */
+  function baueBezirkWahl() {
+    var bezirke = stadtbezirke();
+    var box = document.getElementById('bezirk-wahl');
+    if (!bezirke.length) { box.hidden = true; return; }
+    box.hidden = false;
+    var opts = document.getElementById('bezirk-wahl-opts');
+    opts.textContent = '';
+    bezirke.concat(daten.achsen.bezirk.indexOf('stadtweit') !== -1 ? ['stadtweit'] : [])
+      .forEach(function (b) {
+        var btn = el('button', 'bezirk-btn' + (b === 'stadtweit' ? ' stadtweit' : ''));
+        btn.type = 'button';
+        btn.setAttribute('data-bezirk', b);
+        if (b === 'stadtweit') {
+          btn.textContent = txt('bezirkStadtweit');
+        } else {
+          btn.appendChild(el('span', 'nr', bezirkNr(b)));
+          btn.appendChild(document.createTextNode(bezirkName(b)));
+          btn.setAttribute('aria-label', b);
+        }
+        btn.addEventListener('click', function () { waehleBezirk(b); });
+        opts.appendChild(btn);
+      });
+    aktualisiereBezirkWahl();
+  }
+
+  function aktualisiereBezirkWahl() {
+    var btns = document.querySelectorAll('.bezirk-btn');
+    for (var i = 0; i < btns.length; i++) {
+      var b = btns[i].getAttribute('data-bezirk');
+      btns[i].setAttribute('aria-pressed',
+        aktiv.bezirk.length && aktiv.bezirk[0] === b ? 'true' : 'false');
+    }
+  }
+
+  /* Die Kopfleiste klebt oben (auf dem Handy dreizeilig) — ohne Abzug
+     verschwaende die Ueberschrift des Ziels darunter. */
+  function scrolleZu(ziel) {
+    var kopf = document.querySelector('.site-header');
+    var abzug = (kopf ? kopf.getBoundingClientRect().height : 0) + 12;
+    var ruhig = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({
+      top: ziel.getBoundingClientRect().top + window.pageYOffset - abzug,
+      behavior: ruhig ? 'auto' : 'smooth'
+    });
+  }
+
+  function waehleBezirk(b) {
+    aktiv.bezirk = [b];
+    gezeigt = ERSTE_SEITE;
+    baueFilter();
+    zeichne();
+    var ziel = document.getElementById('bezirk-kopf');
+    if (ziel.hidden) ziel = document.getElementById('feed-count');
+    scrolleZu(ziel);
+    var h = ziel.querySelector('h2');
+    if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
+  }
+
+  /* Kopf der Bezirksansicht: genau ein Stadtbezirk gewaehlt (optional plus
+     "stadtweit"). Nennt, was dort los ist und wann der Bezirksausschuss als
+     Naechstes tagt — dort kann man hingehen. */
+  function zeichneBezirkKopf(treffer) {
+    var kopf = document.getElementById('bezirk-kopf');
+    var gewaehlt = aktiv.bezirk.filter(function (b) { return bezirkNr(b); });
+    if (gewaehlt.length !== 1) { kopf.hidden = true; kopf.textContent = ''; return; }
+    var b = gewaehlt[0];
+    kopf.hidden = false;
+    kopf.textContent = '';
+    kopf.appendChild(el('h2', null, txt('bezirkKopfTitel').replace('{b}', b)));
+    var anzahl = treffer.filter(function (e) { return werte(e, 'bezirk').indexOf(b) !== -1; }).length;
+    kopf.appendChild(el('p', null, txt('bezirkKopfAnzahl').replace('{n}', anzahl)));
+
+    var t = naechsterBzaTermin(b);
+    var tp = el('p', 'termin');
+    if (t) {
+      tp.appendChild(el('strong', null, txt('bezirkKopfTermin')));
+      tp.appendChild(document.createTextNode(
+        t.datum_anzeige + terminEinzelheiten(t).map(function (x) { return ' · ' + x; }).join('')));
+    } else {
+      tp.textContent = txt('bezirkKopfKeinTermin');
+    }
+    kopf.appendChild(tp);
+
+    var akt = el('div', 'bezirk-kopf-aktionen');
+    var mitStadt = aktiv.bezirk.indexOf('stadtweit') !== -1;
+    var bs = el('button', null, txt(mitStadt ? 'bezirkStadtweitWeg' : 'bezirkStadtweitDazu'));
+    bs.type = 'button';
+    bs.addEventListener('click', function () {
+      aktiv.bezirk = mitStadt ? [b] : [b, 'stadtweit'];
+      gezeigt = ERSTE_SEITE;
+      baueFilter();
+      zeichne();
+    });
+    akt.appendChild(bs);
+    var ba = el('button', null, txt('bezirkAlle'));
+    ba.type = 'button';
+    ba.addEventListener('click', function () {
+      aktiv.bezirk = [];
+      gezeigt = ERSTE_SEITE;
+      baueFilter();
+      zeichne();
+      scrolleZu(document.getElementById('bezirk-wahl'));
+    });
+    akt.appendChild(ba);
+    var bm = el('a', null, txt('bezirkMitmachen'));
+    bm.href = 'beteiligen.html';
+    akt.appendChild(bm);
+    kopf.appendChild(akt);
+  }
+
   /* Nach "Weitere anzeigen" baut zeichne() den kompletten Feed neu auf —
      der button verschwindet dabei aus dem DOM, und der Fokus faellt sonst
      kommentarlos auf <body>. Bis zu diesem Index wird nach dem naechsten
@@ -1380,6 +1730,9 @@
     var treffer = daten.eintraege.filter(passt);
     var feed = document.getElementById('feed');
     feed.textContent = '';
+    urlSchreiben();
+    aktualisiereBezirkWahl();
+    zeichneBezirkKopf(treffer);
 
     var gewaehlt = ACHSEN.reduce(function (n, a) { return n + aktiv[a.key].length; }, 0)
       + (suchbegriff ? 1 : 0);
@@ -1397,8 +1750,9 @@
       return;
     }
 
-    var karten = treffer.slice(0, gezeigt).map(function (e) {
-      var c = karte(e);
+    var anzeige = anzeigeListe(treffer);
+    var karten = anzeige.slice(0, gezeigt).map(function (x) {
+      var c = x.gruppe ? sammelkarte(x.gruppe) : karte(x.eintrag);
       feed.appendChild(c);
       return c;
     });
@@ -1413,8 +1767,8 @@
       fokusNachRender = null;
     }
 
-    if (treffer.length > gezeigt) {
-      var rest = treffer.length - gezeigt;
+    if (anzeige.length > gezeigt) {
+      var rest = anzeige.length - gezeigt;
       var mehrText = leicht
         ? Math.min(SEITE, rest) + ' mehr zeigen (' + rest + ' bleiben übrig)'
         : 'Weitere ' + Math.min(SEITE, rest) + ' anzeigen (' + rest + ' übrig)';
@@ -1429,8 +1783,10 @@
     }
   }
 
+  urlLesen();
   texteAnwenden();
   baueHeroStats();
+  baueBezirkWahl();
   baueFilter();
   baueFooterMeta();
   baueDemnaechst();

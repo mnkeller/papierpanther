@@ -96,7 +96,11 @@ erscheint:
 | Entscheidung geplant | Entscheidungsstation liegt in der Zukunft |
 | Entscheidung angesetzt | Entscheidungsstation liegt in der Vergangenheit |
 | Bekanntgabe | wird nur mitgeteilt, nicht beschlossen |
-| Ohne Vorlage | mündliche Berichte und alle BZA-Punkte |
+| Nur besprochen, nichts entschieden | mündliche Berichte und alle BZA-Punkte (früher „Ohne Vorlage") |
+
+Die Rollen des Bezirks Oberbayern („beschließend nach § 7 GeschO",
+„vorberatend nach …", „Kenntnisnahme") werden über `feed_bauen.py::rolle_art`
+denselben Ständen zugeordnet.
 
 **Wichtige Einschränkung, bewusst so beschriftet:** Die Rolle ist die *geplante*
 Rolle. „Entscheidung angesetzt" heißt **nicht**, dass der Beschluss gefasst wurde —

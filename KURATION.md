@@ -153,6 +153,37 @@ Orientierung: Netzwerk Leichte Sprache, Zielniveau etwa A1/A2. Die Fassung ist
 
 ---
 
+## Titel-Schablonen zählen nicht als Aufbereitung
+
+Texte nach dem Muster „Im Bezirksausschuss X war folgendes Thema: <Titel>."
+(oder „Im Stadtrat war folgendes Thema: …") sagen nichts, was der Titel nicht
+schon sagt. `feed_bauen.py::ist_duenn` erkennt sie — ebenso Einträge ganz ohne
+Klartext — und markiert sie mit `"duenn": true`. Die Startseite zeigt solche
+Punkte **nicht als eigene Karte**, sondern gebündelt je Sitzung als Liste
+„Themen dieser Sitzung" mit Link zum Original.
+
+- **Keine neuen Schablonentexte schreiben.** Lieber leer lassen (Entwurf) —
+  das Ergebnis auf der Seite ist dasselbe, und die Statistik bleibt ehrlich.
+- **Einen Schablonen-Eintrag aufwerten** heißt einfach: einen echten Text
+  eintragen. Sobald er nicht mehr mit der Schablone beginnt, erscheint er
+  wieder als volle Karte. Nichts sonst umstellen.
+- BZA-Punkte zuerst: Die Bezirksansicht ist der Einstieg der meisten
+  Besucher, und dort ist der Anteil an Schablonen am höchsten.
+
+## Stand „Nur besprochen, nichts entschieden"
+
+Punkte ohne Beschlussvorlage (mündliche Berichte, alle BZA-Punkte) heißen auf
+der Seite **„Nur besprochen, nichts entschieden"** (früher „Ohne Vorlage").
+Der Wortlaut steht an genau einer Stelle, `feed_bauen.py::STAND_OHNE_ENTSCHEIDUNG`.
+In Kurztexten deshalb nie „der Bezirksausschuss hat beschlossen", solange es
+dafür keinen Beleg in der Niederschrift gibt (siehe auch
+`pruefen.py::p_kein_behaupteter_beschluss`).
+
+`pruefen.py::p_oberflaeche` sichert nach jedem Bauen ab, dass kein Stand
+außerhalb der bekannten Liste auftaucht (etwa Paragrafentexte vom Bezirk
+Oberbayern), der Bezirk Oberbayern nicht als Stadtbezirk zählt und keine
+vergangenen Termine unter „Nächste Termine" stehen.
+
 ## Prüfliste vor dem Speichern
 
 - [ ] Beide Fassungen vorhanden, oder beide bewusst leer (Entwurf)?
@@ -162,6 +193,7 @@ Orientierung: Netzwerk Leichte Sprache, Zielniveau etwa A1/A2. Die Fassung ist
 - [ ] Zusammengesetzte Wörter mit Bindestrich getrennt?
 - [ ] Kein behauptetes Beschlussergebnis?
 - [ ] Schlagworte nur aus den erlaubten Achsenwerten?
+- [ ] Kein Schablonentext („… war folgendes Thema: …")?
 
 ---
 
