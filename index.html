@@ -7,7 +7,7 @@
      Drittressourcen, kein Nachladen von fremden Servern. Deckt auch den Fall
      ab, dass ein kuenftiger Datenfehler eine externe URL in href/src schleust
      — 'self' laesst nur Ressourcen von dieser Seite selbst zu. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://mnkeller.goatcounter.com; base-uri 'self'; form-action 'self'">
 <title>PapierPanther — Schanzer Stadtpolitik. Mit einem Klick. Auf einen Blick.</title>
 <meta name="description" content="Der PapierPanther schnüffelt durchs Ingolstädter Ratsinfoportal und sortiert Entscheidungen nach Lebenslage, Ort und Anlass.">
 <link rel="canonical" href="https://schanzer-papierpanther.de/">
@@ -1825,5 +1825,6 @@
   zeichne();
 })();
 </script>
+<script src="zaehler.js" defer></script>
 </body>
 </html>
