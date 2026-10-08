@@ -221,8 +221,10 @@
     <p>
       Um zu erfahren, welche Seiten genutzt werden und wie Besucherinnen und
       Besucher die Seite finden, zähle ich Seitenaufrufe mit dem Dienst
-      <strong>GoatCounter</strong> (betrieben von Martin Tournoij,
+      <strong>GoatCounter</strong> (betrieben von Martin Tournoij, Irland,
       <a href="https://www.goatcounter.com" rel="noopener noreferrer" target="_blank">goatcounter.com</a>).
+      Die Daten liegen auf Servern der Hetzner Online GmbH in Deutschland und
+      Finnland, also innerhalb der EU.
       Dafür sendet ein kleines, auf dieser Website selbst gehostetes Skript beim
       Aufruf einer Seite folgende Angaben an GoatCounter:
     </p>
@@ -232,11 +234,14 @@
     </ul>
     <p>
       Technisch bedingt erhält GoatCounter dabei außerdem Ihre IP-Adresse und die
-      Browserkennung (User-Agent). Daraus leitet GoatCounter grobe Angaben wie
-      Browser, Betriebssystem und Land ab. Die IP-Adresse wird nicht gespeichert.
-      Um mehrfache Aufrufe derselben Person nicht doppelt zu zählen, bildet
-      GoatCounter aus IP-Adresse und User-Agent einen Hashwert, der nach wenigen
-      Stunden verworfen wird. Es werden keine Cookies gesetzt, nichts auf Ihrem
+      Browserkennung (User-Agent). Daraus und aus der vom Browser mitgesendeten
+      Spracheinstellung leitet GoatCounter grobe Angaben wie Browser,
+      Betriebssystem, Sprache und Standort ab. IP-Adresse und vollständiger
+      User-Agent werden weder in der Datenbank noch auf der Festplatte
+      gespeichert. Damit mehrfache Aufrufe derselben Person nicht doppelt
+      gezählt werden, hält GoatCounter die Kombination aus IP-Adresse und
+      User-Agent höchstens acht Stunden lang im Arbeitsspeicher und verwirft sie
+      danach. Es werden keine Cookies gesetzt, nichts auf Ihrem
       Gerät gespeichert und keine Profile gebildet. Ich sehe nur zusammengefasste
       Zahlen und kann einzelne Besuche keiner Person zuordnen.
     </p>
