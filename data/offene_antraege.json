@@ -1,7 +1,160 @@
 {
   "hinweis": "Antraege ohne Sitzungstermin, aus der Liste 'Aktuelle Stadtratsantraege' im Ratsinfoportal der Stadt Ingolstadt. Sobald ein Antrag terminiert wird, verschwindet er von hier und taucht stattdessen ganz normal ueber ris_ingolstadt.py auf.",
-  "abgerufen_am": "2026-09-21",
+  "abgerufen_am": "2026-10-13",
   "antraege": [
+    {
+      "quelle": "stadt",
+      "kvonr": "23397",
+      "titel": "Regionale Arbeitsplatz- und Kompetenzbörse für Beschäftigte, Arbeitssuchende und Unternehmen zur Unterstützung des Strukturwandels",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-10-06",
+      "antragsdatum_anzeige": "06.10.2026",
+      "vorlage": "V0641/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23397",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254089&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23399",
+      "titel": "Prüfung eines Videochat-Services für Bürgerinnen und Bürger",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-10-06",
+      "antragsdatum_anzeige": "06.10.2026",
+      "vorlage": "V0643/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23399",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254092&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23393",
+      "titel": "Hitzeschutzmaßnahme: Fassadenbegrünungsoffensive für Ingolstadt",
+      "antragsteller": "Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN",
+      "antragsdatum": "2026-10-06",
+      "antragsdatum_anzeige": "06.10.2026",
+      "vorlage": "V0637/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23393",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254074&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23395",
+      "titel": "Offene Schnittstellen und nachvollziehbare Gremienarbeit",
+      "antragsteller": "Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN",
+      "antragsdatum": "2026-10-06",
+      "antragsdatum_anzeige": "06.10.2026",
+      "vorlage": "V0639/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23395",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254083&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23396",
+      "titel": "Transparenz und Nachvollziehbarkeit der Arbeit in den Bezirksausschüssen",
+      "antragsteller": "Stadtratsfraktion BÜNDNIS 90(/DIE GRÜNEN",
+      "antragsdatum": "2026-10-06",
+      "antragsdatum_anzeige": "06.10.2026",
+      "vorlage": "V0640/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23396",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254086&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23404",
+      "titel": "PFAS-Monitoring und Vorsorgemaßnahmen im Stadtgebiet Ingolstadt",
+      "antragsteller": "Stadtratsfraktion DIE LINKE",
+      "antragsdatum": "2026-10-06",
+      "antragsdatum_anzeige": "06.10.2026",
+      "vorlage": "V0648/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23404",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag Die Linke",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254123&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23412",
+      "titel": "Nachtfahrverbot für Mähroboter",
+      "antragsteller": "ödp-Stadtratsgruppe und der Stadtratsfraktionen DIE LINKE und BÜNDNIS90/DIE GRÜNEN",
+      "antragsdatum": "2026-10-06",
+      "antragsdatum_anzeige": "06.10.2026",
+      "vorlage": "V0655/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23412",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtrat Gemeinschaftsantrag",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254299&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23370",
+      "titel": "Prävention vor Unfällen mit E-Scootern",
+      "antragsteller": "Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN",
+      "antragsdatum": "2026-09-29",
+      "antragsdatum_anzeige": "29.09.2026",
+      "vorlage": "V0614/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23370",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253876&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23369",
+      "titel": "Verleihung kommunaler Ehrenbezeichnungen der Stadt Ingolstadt",
+      "antragsteller": "FW-Stadtratsfraktion",
+      "antragsdatum": "2026-09-28",
+      "antragsdatum_anzeige": "28.09.2026",
+      "vorlage": "V0613/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23369",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FW",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253873&type=do"
+        }
+      ]
+    },
     {
       "quelle": "stadt",
       "kvonr": "23312",
@@ -169,23 +322,6 @@
         {
           "titel": "Stadtratsantrag CSU",
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253022&type=do"
-        }
-      ]
-    },
-    {
-      "quelle": "stadt",
-      "kvonr": "23249",
-      "titel": "Regelung für die Betreuung von Besuchen von oder bei Partnerstädten",
-      "antragsteller": "FW-Stadtratsfraktion",
-      "antragsdatum": "2026-07-28",
-      "antragsdatum_anzeige": "28.07.2026",
-      "vorlage": "V0494/26",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23249",
-      "ziel_gremium": "Stadtrat",
-      "dokumente": [
-        {
-          "titel": "Stadtratsantrag FW",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252557&type=do"
         }
       ]
     },
@@ -599,23 +735,6 @@
     },
     {
       "quelle": "stadt",
-      "kvonr": "22825",
-      "titel": "Unverzügliche Einstellung und Digitalisierung der Druckpublikationen des Stadttheaters Ingolstadt",
-      "antragsteller": "AfD-Stadtratsfraktion",
-      "antragsdatum": "2026-02-02",
-      "antragsdatum_anzeige": "02.02.2026",
-      "vorlage": "V0083/26",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22825",
-      "ziel_gremium": "Stadtrat",
-      "dokumente": [
-        {
-          "titel": "Stadtratsantrag AfD",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=246934&type=do"
-        }
-      ]
-    },
-    {
-      "quelle": "stadt",
       "kvonr": "22793",
       "titel": "Öffentlichkeitsarbeit",
       "antragsteller": "FW-Stadtratsfraktion",
@@ -798,6 +917,23 @@
         {
           "titel": "Stadtratsantrag ÖDP",
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=242334&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "22435",
+      "titel": "Bessere ÖPNV-Anbindung für die THI und das Congress Centrum",
+      "antragsteller": "Ausschussgemeinschaft FDP/JU",
+      "antragsdatum": "2025-09-28",
+      "antragsdatum_anzeige": "28.09.2025",
+      "vorlage": "V0665/25",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22435",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FDP/JU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=242074&type=do"
         }
       ]
     },
@@ -1052,23 +1188,6 @@
         {
           "titel": "Stadtratsantrag ÖDP",
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=234270&type=do"
-        }
-      ]
-    },
-    {
-      "quelle": "stadt",
-      "kvonr": "19922",
-      "titel": "Wohnungsbörse und „Wohnen für Hilfe“ für Ingolstadt",
-      "antragsteller": "SPD-Stadtratsfraktion",
-      "antragsdatum": "2025-03-20",
-      "antragsdatum_anzeige": "20.03.2025",
-      "vorlage": "V0169/25",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19922",
-      "ziel_gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
-      "dokumente": [
-        {
-          "titel": "Stadtratsantrag SPD",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=233698&type=do"
         }
       ]
     },
@@ -2004,6 +2123,23 @@
     },
     {
       "quelle": "stadt",
+      "kvonr": "23403",
+      "titel": "Einheitliche digitale Erfassung des Ingolstädter Straßenraums und Straßenzustands",
+      "antragsteller": "",
+      "antragsdatum": "",
+      "antragsdatum_anzeige": "",
+      "vorlage": "V0647/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23403",
+      "ziel_gremium": "Stadtrat",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254120&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
       "kvonr": "23313",
       "titel": "IT- und Datensicherheit der Stadt Ingolstadt überprüfen – Erkenntnisse aus dem Berliner Cyberangriff",
       "antragsteller": "",
@@ -2050,23 +2186,6 @@
         {
           "titel": "Stadtratsantrag ÖDP",
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250201&type=do"
-        }
-      ]
-    },
-    {
-      "quelle": "stadt",
-      "kvonr": "22552",
-      "titel": "Ersatzspielstätte Festsaal auf IN-Campus-Gelände",
-      "antragsteller": "",
-      "antragsdatum": "",
-      "antragsdatum_anzeige": "",
-      "vorlage": "V0779/25",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22552",
-      "ziel_gremium": "",
-      "dokumente": [
-        {
-          "titel": "Stadtratsantrag B 90",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=243212&type=do"
         }
       ]
     },

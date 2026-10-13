@@ -1,4 +1,12 @@
 {
+  "bezirk_obb:4597#Ö 2": {
+    "formel": "Ja 17, Nein 0",
+    "ergebnis": "beschlossen",
+    "text": "Dem Bezirksausschuss wird empfohlen, die in der Anlage dargestellten Änderun- gen des Stellenplans 2026 zu beschließen.",
+    "vorlage": "81/BV/185/2025",
+    "empfehlung": true,
+    "weg": "obb-top"
+  },
   "bezirk_obb:4580#Ö 2": {
     "formel": "Ja 70, Nein 8",
     "ergebnis": "beschlossen",
@@ -142,6 +150,38 @@
     "vorlage": "92/BV/103/2026",
     "empfehlung": false,
     "weg": "obb-top"
+  },
+  "stadt:13526#Ö 5": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: 1. Die Verwaltung wird beauftragt, den Betrieb der Krippe „Schatztruhe“ bis zum 31.08.2027 zu ermöglichen und die Mietdauer der angemieteten Container und die Pachtverträge der Grundstücke entsprechend zu verlängern. 2. Die Durchführung der Maßnahme ist zwingend und unabweisbar, weswegen die erforderlichen Mittel in Höhe von 44.400 Euro für 2026 und 88.800 Euro für das Jahr 2027 auch im Rahmen der vorläufigen Haushaltsführung auf der Haushalts- stelle 464024.530000 (Kita/Krippe Schatztruhe Container, Eisvogelstraße 47, Mie- ten und Pachten) und Haushaltsstelle 881000.535000 (Allgem. Grundvermögen Grundstücksverkehr, Mieten und Pachten) bereitzustellen sind.",
+    "vorlage": "V0174/26",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:13525#Ö 6": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Die in der Anlage 1 rot dargestellte Straße wird zur Ortsstraße öffentlich gewidmet. Die Verwaltung wird beauftragt, das Widmungsverfahren durchzuführen und die ent- sprechenden Verfügungen zu erlassen.",
+    "vorlage": "V0182/26",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:13524#Ö 3": {
+    "formel": "Gegen 2 Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Gegen 2 Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0200/26",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:13524#Ö 7": {
+    "formel": "Gegen 2 Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Gegen 2 Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0181/26",
+    "empfehlung": false,
+    "weg": "vorlage-block"
   },
   "stadt:13519#Ö 4": {
     "formel": "Gegen 1 Stimme",
