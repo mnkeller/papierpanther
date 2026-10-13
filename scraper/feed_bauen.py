@@ -524,6 +524,25 @@ def main():
         if (t.get("datum") or "") < heute_iso:
             continue
         kommende_termine.append({**t, "artikel": termin_artikel(t)})
+    # Sitzungen MIT Tagesordnung gehoeren ebenso dazu: wer wissen will, was als
+    # Naechstes ansteht, will auch die Sitzung von heute oder uebermorgen sehen
+    # (Hinweis Nutzer 2026-10-13). Sie tragen den Link zur Tagesordnung.
+    for s in roh["sitzungen"]:
+        if (s.get("datum") or "") < heute_iso or ist_beteiligung(s["gremium"]):
+            continue
+        if not any(t["oeffentlich"] for t in s["tops"]):
+            continue
+        kommende_termine.append({
+            "gremium": s["gremium"],
+            "artikel": "",
+            "datum": s["datum"],
+            "datum_anzeige": s["datum_anzeige"],
+            "zeit": s.get("zeit") or "",
+            "ort": re.sub(r"\s*—\s*$", "", s.get("raum") or ""),
+            "quelle": s["quelle"],
+            "tagesordnung_url": s["url"],
+        })
+    kommende_termine.sort(key=lambda t: (t["datum"], t.get("zeit") or ""))
 
     stand_verteilung = {}
     for e in feed:
@@ -619,9 +638,9 @@ def main():
             "stand": staende,
         },
         "eintraege": feed,
-        # Sitzungstermine ohne veroeffentlichte Tagesordnung — reine Fakten
-        # ohne Inhalt, deshalb ungekuratiert direkt durchgereicht (siehe
-        # ris_ingolstadt.py::kommende_termine_auslesen).
+        # Sitzungstermine: ohne veroeffentlichte Tagesordnung reine Fakten
+        # (siehe ris_ingolstadt.py::kommende_termine_auslesen), mit
+        # Tagesordnung zusaetzlich "tagesordnung_url".
         "kommende_termine": kommende_termine,
     }
 

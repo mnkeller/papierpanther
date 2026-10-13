@@ -227855,6 +227855,76 @@
   ],
   "kommende_termine": [
     {
+      "gremium": "Ausschuss für Kultur und Bildung",
+      "artikel": "",
+      "datum": "2026-10-13",
+      "datum_anzeige": "13.10.2026",
+      "zeit": "16:00 Uhr",
+      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt",
+      "tagesordnung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543"
+    },
+    {
+      "gremium": "Bezirksausschuss XII-Münchener Straße",
+      "artikel": "",
+      "datum": "2026-10-13",
+      "datum_anzeige": "13.10.2026",
+      "zeit": "19:30 Uhr",
+      "ort": "Kulturzentrum neun, Elisabethstraße 9 a, 85051 Ingolstadt",
+      "quelle": "bza",
+      "tagesordnung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14248"
+    },
+    {
+      "gremium": "Bezirksausschuss I-Mitte",
+      "artikel": "",
+      "datum": "2026-10-13",
+      "datum_anzeige": "13.10.2026",
+      "zeit": "19:30 Uhr",
+      "ort": "Gemeindesaal St. Matthäus, Schrannenstraße 7, 85049 Ingolstadt",
+      "quelle": "bza",
+      "tagesordnung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14324"
+    },
+    {
+      "gremium": "Bezirksausschuss II-Nordwest",
+      "artikel": "",
+      "datum": "2026-10-14",
+      "datum_anzeige": "14.10.2026",
+      "zeit": "19:00 Uhr",
+      "ort": "Stadtteiltreff Piusviertel, Pfitznerstraße 19a, 85057 Ingolstadt",
+      "quelle": "bza",
+      "tagesordnung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14200"
+    },
+    {
+      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+      "artikel": "",
+      "datum": "2026-10-15",
+      "datum_anzeige": "15.10.2026",
+      "zeit": "16:00 Uhr",
+      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt",
+      "tagesordnung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13544"
+    },
+    {
+      "gremium": "Jugendparlament",
+      "artikel": "",
+      "datum": "2026-10-16",
+      "datum_anzeige": "16.10.2026",
+      "zeit": "17:30 Uhr",
+      "ort": "Ingolstadt,Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt",
+      "tagesordnung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13760"
+    },
+    {
+      "gremium": "Ausschuss für Kultur, Schulen und Museen",
+      "artikel": "",
+      "datum": "2026-10-20",
+      "datum_anzeige": "20.10.2026",
+      "zeit": "09:30-11:00 Uhr",
+      "ort": "Sitzungssaal im 5. OG des Verwaltungsgebäudes",
+      "quelle": "bezirk_obb",
+      "tagesordnung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5016"
+    },
+    {
       "gremium": "Ausschusses für Finanzen und Personal",
       "artikel": "des",
       "datum": "2026-10-22",
@@ -227862,6 +227932,16 @@
       "zeit": "16:00 Uhr",
       "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
       "quelle": "stadt"
+    },
+    {
+      "gremium": "Bezirksausschuss X-Süd",
+      "artikel": "",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "zeit": "19:30 Uhr",
+      "ort": "Sportcenter Zuchering, Seeweg 17, 85051 Ingolstadt",
+      "quelle": "bza",
+      "tagesordnung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14308"
     },
     {
       "gremium": "Bezirksausschusses XI-Friedrichshofen/Hollerstauden",
@@ -227909,15 +227989,6 @@
       "quelle": "bezirk_obb"
     },
     {
-      "gremium": "Stadtrates",
-      "artikel": "des",
-      "datum": "2026-10-29",
-      "datum_anzeige": "29.10.2026",
-      "zeit": "13:00 Uhr",
-      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
-      "quelle": "stadt"
-    },
-    {
       "gremium": "Bezirksausschusses VII-Etting",
       "artikel": "des",
       "datum": "2026-10-29",
@@ -227927,13 +227998,13 @@
       "quelle": "bza"
     },
     {
-      "gremium": "Bezirksausschusses III-Nordost",
+      "gremium": "Stadtrates",
       "artikel": "des",
-      "datum": "2026-11-10",
-      "datum_anzeige": "10.11.2026",
-      "zeit": "19:30 Uhr",
-      "ort": "- geplanter Sitzungstermin -",
-      "quelle": "bza"
+      "datum": "2026-10-29",
+      "datum_anzeige": "29.10.2026",
+      "zeit": "13:00 Uhr",
+      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt"
     },
     {
       "gremium": "Werkausschuss für das Kultur- und Bildungszentrum Kloster Seeon",
@@ -227945,19 +228016,19 @@
       "quelle": "bezirk_obb"
     },
     {
+      "gremium": "Bezirksausschusses III-Nordost",
+      "artikel": "des",
+      "datum": "2026-11-10",
+      "datum_anzeige": "10.11.2026",
+      "zeit": "19:30 Uhr",
+      "ort": "- geplanter Sitzungstermin -",
+      "quelle": "bza"
+    },
+    {
       "gremium": "Jugendhilfeausschusses",
       "artikel": "des",
       "datum": "2026-11-12",
       "datum_anzeige": "12.11.2026",
-      "zeit": "16:00 Uhr",
-      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
-      "quelle": "stadt"
-    },
-    {
-      "gremium": "Ausschusses für Sport, Veranstaltungen und Freizeit",
-      "artikel": "des",
-      "datum": "2026-11-17",
-      "datum_anzeige": "17.11.2026",
       "zeit": "16:00 Uhr",
       "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
       "quelle": "stadt"
@@ -227979,6 +228050,15 @@
       "zeit": "13:30-15:30 Uhr",
       "ort": "Sitzungssaal im 5. OG des Verwaltungsgebäudes",
       "quelle": "bezirk_obb"
+    },
+    {
+      "gremium": "Ausschusses für Sport, Veranstaltungen und Freizeit",
+      "artikel": "des",
+      "datum": "2026-11-17",
+      "datum_anzeige": "17.11.2026",
+      "zeit": "16:00 Uhr",
+      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt"
     },
     {
       "gremium": "Ausschusses für Soziales, Gesundheit, Stiftungen und Familien",
@@ -228017,15 +228097,6 @@
       "quelle": "stadt"
     },
     {
-      "gremium": "Ausschusses für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
-      "artikel": "des",
-      "datum": "2026-11-26",
-      "datum_anzeige": "26.11.2026",
-      "zeit": "16:00 Uhr",
-      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
-      "quelle": "stadt"
-    },
-    {
       "gremium": "Sozial- und Gesundheitsausschuss",
       "artikel": "",
       "datum": "2026-11-26",
@@ -228035,10 +228106,10 @@
       "quelle": "bezirk_obb"
     },
     {
-      "gremium": "Ausschusses für Finanzen und Personal",
+      "gremium": "Ausschusses für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
       "artikel": "des",
-      "datum": "2026-12-03",
-      "datum_anzeige": "03.12.2026",
+      "datum": "2026-11-26",
+      "datum_anzeige": "26.11.2026",
       "zeit": "16:00 Uhr",
       "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
       "quelle": "stadt"
@@ -228053,6 +228124,15 @@
       "quelle": "bezirk_obb"
     },
     {
+      "gremium": "Ausschusses für Finanzen und Personal",
+      "artikel": "des",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "zeit": "16:00 Uhr",
+      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt"
+    },
+    {
       "gremium": "Bezirksausschusses XI-Friedrichshofen/Hollerstauden",
       "artikel": "des",
       "datum": "2026-12-08",
@@ -228062,15 +228142,6 @@
       "quelle": "bza"
     },
     {
-      "gremium": "Stadtrates",
-      "artikel": "des",
-      "datum": "2026-12-10",
-      "datum_anzeige": "10.12.2026",
-      "zeit": "10:00 Uhr",
-      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
-      "quelle": "stadt"
-    },
-    {
       "gremium": "Bezirkstag",
       "artikel": "",
       "datum": "2026-12-10",
@@ -228078,6 +228149,15 @@
       "zeit": "09:30-13:30 Uhr",
       "ort": "Hybrid (Sitzungssaal 5. OG und Teams)",
       "quelle": "bezirk_obb"
+    },
+    {
+      "gremium": "Stadtrates",
+      "artikel": "des",
+      "datum": "2026-12-10",
+      "datum_anzeige": "10.12.2026",
+      "zeit": "10:00 Uhr",
+      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "quelle": "stadt"
     },
     {
       "gremium": "Jugendparlamentes",

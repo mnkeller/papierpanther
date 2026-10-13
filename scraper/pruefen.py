@@ -314,6 +314,9 @@ def p_oberflaeche(feed):
     falsch = [b for b in feed["achsen"]["bezirk"] if b in KEIN_STADTBEZIRK]
     if falsch:
         fehlt(f"Keine Stadtbezirke in der Bezirksachse: {falsch}")
+    fremd = list(_fremde_urls(t.get("tagesordnung_url") for t in feed.get("kommende_termine", [])))
+    if fremd:
+        fehlt(f"Termine mit Link ausserhalb der erlaubten Hosts: {fremd[:3]}")
     n = feed["statistik"].get("stadtbezirke")
     if n != 12:
         warnt(f"Kopfzahl Stadtbezirke ist {n}, erwartet 12")

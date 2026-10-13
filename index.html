@@ -837,6 +837,7 @@
       n: 'Tagesordnung noch nicht veröffentlicht',
       l: 'Es gibt noch keine Liste mit den Themen dafür.',
     },
+    demnaechstTagesordnung: { n: 'Tagesordnung ansehen', l: 'Die Themen ansehen' },
     filtersHeadH2: { n: 'Wonach möchten Sie schauen?', l: 'Was möchten Sie sehen?' },
     filtersHint:   { n: 'Mehreres auswählbar', l: 'Sie können mehrere Themen wählen.' },
     filterToggleAn:  { n: 'Filter anzeigen', l: 'Filter zeigen' },
@@ -1266,7 +1267,15 @@
       li.appendChild(el('span', 'demnaechst-gremium', sitzungName(t)));
       var einzelheiten = terminEinzelheiten(t).join(' · ');
       if (einzelheiten) li.appendChild(el('span', 'demnaechst-info', einzelheiten));
-      li.appendChild(el('span', 'demnaechst-info', txt('demnaechstHinweis')));
+      if (t.tagesordnung_url) {
+        var ta = el('a', 'demnaechst-info', txt('demnaechstTagesordnung'));
+        ta.href = t.tagesordnung_url;
+        ta.target = '_blank'; ta.rel = 'noopener';
+        neuerTabHinweis(ta);
+        li.appendChild(ta);
+      } else {
+        li.appendChild(el('span', 'demnaechst-info', txt('demnaechstHinweis')));
+      }
       liste.appendChild(li);
     });
   }
