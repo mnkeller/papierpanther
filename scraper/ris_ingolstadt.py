@@ -30,11 +30,29 @@ import html
 import json
 import os
 import re
+import socket
 import sys
 import time
 import urllib.error
 import urllib.request
 from datetime import date
+
+# IPv4 zuerst versuchen. www.ingolstadt.de hat auch eine IPv6-Adresse, die von
+# manchen Anschluessen aus nicht antwortet; urllib probiert sie zuerst und
+# wartet dann den vollen Timeout ab, bevor es auf IPv4 ausweicht — 30 Sekunden
+# je Abruf statt einer halben (beobachtet 2026-10-13). IPv6 bleibt als
+# Ausweichadresse erhalten. Gilt fuer alle Skripte, die dieses Modul
+# importieren, also auch fuer die PDF-Abrufe in niederschriften_lesen.py,
+# vorlagen_holen.py und haushalt_holen.py.
+_getaddrinfo = socket.getaddrinfo
+
+
+def _ipv4_zuerst(*args, **kwargs):
+    adressen = _getaddrinfo(*args, **kwargs)
+    return sorted(adressen, key=lambda a: a[0] != socket.AF_INET)
+
+
+socket.getaddrinfo = _ipv4_zuerst
 
 QUELLEN = {
     "stadt": {
