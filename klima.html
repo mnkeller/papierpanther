@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://mnkeller.goatcounter.com; base-uri 'self'; form-action 'self'">
+<title>Klima in Ingolstadt — PapierPanther</title>
+<meta name="description" content="Klima in Ingolstadt in Zahlen: Wie warm es geworden ist, wie viel Solarstrom dazukommt und wo die Stadt auf dem Weg zur Klimaneutralität 2035 steht.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://schanzer-papierpanther.de/klima.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PapierPanther Ingolstadt">
+<meta property="og:url" content="https://schanzer-papierpanther.de/klima.html">
+<meta property="og:title" content="Klima in Ingolstadt — PapierPanther">
+<meta property="og:description" content="Klima in Ingolstadt in Zahlen: Wie warm es geworden ist, wie viel Solarstrom dazukommt und wo die Stadt auf dem Weg zur Klimaneutralität 2035 steht.">
+<meta property="og:image" content="https://schanzer-papierpanther.de/vorschau.png">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Klima in Ingolstadt — PapierPanther">
+<meta name="twitter:image" content="https://schanzer-papierpanther.de/vorschau.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003E59'/%3E%3Cpath d='M18 30c0-8 5-15 14-15s14 7 14 15' fill='none' stroke='%23ffffff' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M17 22c-2-4-2-8 1-11 1 3 1 6 3 8z' fill='%23ffffff'/%3E%3Cpath d='M47 22c2-4 2-8-1-11-1 3-1 6-3 8z' fill='%23ffffff'/%3E%3Ccircle cx='25' cy='31' r='3' fill='%23ffffff'/%3E%3Ccircle cx='39' cy='31' r='3' fill='%23ffffff'/%3E%3Cpath d='M30 38l2 3 2-3z' fill='%23B00E2B'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --primary: #003e59;
+    --primary-dark: #00263a;
+    --accent: #b00e2b;
+    --text: #16232b;
+    --text-muted: #566a74;
+    --text-faint: #5c6a72;
+    --bg: #f8f7f4;
+    --bg-warm: #f1efe9;
+    --card: #ffffff;
+    --border: #e4e0d8;
+    --border-strong: #8f8779;
+    --warn-bg: #fdf6e7;
+    --warn-border: #e8d9b0;
+    --warn-tx: #7d6320;
+    /* Diagrammfarben: Waerme in den Ockertoenen der Haushaltsseite (Ausgaben),
+       Kaelte und Netz in den Petroltoenen (Einnahmen). */
+    --heiss: #b6752f;
+    --kalt: #2f7080;
+    --solar-dach: #cf9a55;
+    --solar-frei: #96551f;
+    --solar-stecker: #ddb989;
+    --speicher: #2f7080;
+    --laden: #14505c;
+    --soll: #8f8779;
+    --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+    --radius: 10px;
+    --shadow: 0 1px 3px rgba(22,35,43,.06), 0 0 0 1px rgba(22,35,43,.04);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-body); color: var(--text); background: var(--bg);
+    line-height: 1.65; font-size: 16px; -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
+  a { color: var(--accent); }
+
+  .site-header {
+    background: var(--primary); border-bottom: 3px solid var(--accent);
+    padding: .85rem 0; position: sticky; top: 0; z-index: 50;
+  }
+  .site-header .container { display: flex; align-items: center; gap: .65rem; flex-wrap: wrap; }
+  .logo-mark { flex: none; display: block; }
+  .brand {
+    font-family: var(--font-display); font-size: 1.28rem; font-weight: 700;
+    letter-spacing: -.01em; color: #fff; text-decoration: none;
+  }
+  .brand span { color: #a9c7d6; font-weight: 400; }
+  .header-spacer { margin-left: auto; }
+  .btn-zurueck {
+    font-size: .82rem; font-weight: 600; text-decoration: none; color: #fff;
+    background: none; border: 1px solid rgba(255,255,255,.5); border-radius: 999px;
+    padding: .3rem .85rem;
+  }
+  .btn-zurueck:hover { background: rgba(255,255,255,.14); }
+  .btn-leicht {
+    font: inherit; font-size: .82rem; cursor: pointer;
+    background: none; border: 1px solid rgba(255,255,255,.5); color: #fff;
+    padding: .3rem .75rem; border-radius: 999px;
+  }
+  .btn-leicht:hover { background: rgba(255,255,255,.14); }
+  .btn-leicht[aria-pressed="true"] {
+    background: #fff; color: var(--primary-dark); border-color: #fff; font-weight: 600;
+  }
+
+  main { padding: 3rem 0 3.5rem; }
+  h1 {
+    font-family: var(--font-display); font-size: clamp(1.75rem, 4.5vw, 2.4rem);
+    font-weight: 700; letter-spacing: -.02em; margin-bottom: .5rem; max-width: 20ch;
+  }
+  .lede { color: var(--text-muted); font-size: 1.05rem; max-width: 62ch; margin-bottom: 1.75rem; }
+
+  .disclaimer {
+    background: var(--warn-bg); border-bottom: 1px solid var(--warn-border);
+    color: var(--warn-tx); font-size: .74rem; padding: .5rem 0;
+  }
+  .disclaimer strong { font-weight: 600; }
+  .disclaimer p { max-width: 680px; }
+
+  h2 {
+    font-family: var(--font-display); font-size: 1.5rem; font-weight: 700;
+    margin: 3rem 0 .75rem; letter-spacing: -.01em;
+  }
+  p { margin-bottom: 1rem; max-width: 68ch; }
+
+  .diagramm {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 1.5rem 1.5rem 1.25rem; margin: 1.25rem 0 2rem;
+    max-width: 100%; overflow-x: auto;
+  }
+  .diagramm svg { display: block; width: 100%; height: auto; font-family: var(--font-body); }
+  /* Wie auf der Haushaltsseite: Unter ~640px bleibt die Diagrammbreite
+     erhalten und der Kasten scrollt waagerecht, statt die Schrift in den
+     SVGs unlesbar klein zu skalieren. Die Klimastreifen haben keine Schrift
+     im Bild und duerfen mitschrumpfen. */
+  @media (max-width: 640px) {
+    .diagramm svg { width: 760px; }
+    .diagramm svg.streifen { width: 100%; }
+  }
+
+  .kennzahlen {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: .75rem; margin: 0 0 1rem;
+  }
+  .kachel {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: .9rem 1rem 1rem;
+    min-width: 0; overflow-wrap: break-word; hyphens: auto;
+  }
+  .kachel p { margin: 0; }
+  .kachel-label { font-size: .8rem; font-weight: 600; color: var(--text-muted); line-height: 1.4; min-height: 2.8em; }
+  .kachel .kachel-wert {
+    font-family: var(--font-display); font-size: 1.4rem; font-weight: 700;
+    color: var(--text); line-height: 1.25; margin: .15rem 0 .3rem; white-space: nowrap;
+  }
+  .kachel-unter { font-size: .8rem; color: var(--text-faint); line-height: 1.45; }
+  @media (max-width: 480px) {
+    .kennzahlen { grid-template-columns: 1fr 1fr; gap: .5rem; }
+    .kachel { padding: .7rem .75rem .8rem; }
+    .kachel .kachel-wert { font-size: 1.2rem; }
+    .kachel-label, .kachel-unter { font-size: .74rem; }
+  }
+
+  /* Fortschrittsbalken "erreicht vs. noetig" */
+  .pfad { margin: .25rem 0 .5rem; }
+  .pfad-zeile { display: grid; grid-template-columns: 9.5rem 1fr; align-items: center; gap: .75rem; margin-bottom: .6rem; font-size: .88rem; }
+  .pfad-balken { height: 26px; background: var(--bg-warm); border-radius: 4px; position: relative; }
+  .pfad-balken span {
+    position: absolute; inset: 0 auto 0 0; border-radius: 4px; display: flex; align-items: center;
+    justify-content: flex-end; padding-right: .5rem; color: #fff; font-size: .8rem; font-weight: 600;
+    white-space: nowrap;
+  }
+  @media (max-width: 480px) { .pfad-zeile { grid-template-columns: 1fr; gap: .2rem; } }
+
+  .tabs {
+    display: flex; flex-wrap: wrap; gap: .25rem; border-bottom: 1px solid var(--border);
+    margin: -.4rem 0 1.1rem;
+  }
+  .tabs [role="tab"] {
+    font: inherit; font-size: .86rem; cursor: pointer; background: none; border: none;
+    border-bottom: 3px solid transparent; margin-bottom: -1px;
+    padding: .45rem .8rem .5rem; color: var(--text-muted);
+  }
+  .tabs [role="tab"]:hover { color: var(--text); background: var(--bg-warm); }
+  .tabs [role="tab"][aria-selected="true"] {
+    color: var(--primary); border-bottom-color: var(--accent); font-weight: 600;
+  }
+  .tabs [role="tab"]:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .diagramm-lead { font-size: .92rem; color: var(--text); margin-bottom: 1rem; max-width: 68ch; }
+  .legende { display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; font-size: .8rem; color: var(--text-muted); margin-bottom: .75rem; }
+  .legende span { display: inline-flex; align-items: center; gap: .4rem; }
+  .legende i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; }
+  .legende i.plan { background-image: repeating-linear-gradient(45deg, rgba(255,255,255,.55) 0 2px, transparent 2px 5px); }
+  .legende i.linie { height: 0; border-radius: 0; border-top: 2px dashed var(--soll); background: none !important; }
+  .diagramm-titel { font-size: .95rem; font-weight: 600; color: var(--text); margin-bottom: .9rem; }
+  .diagramm-fuss { font-size: .78rem; color: var(--text-faint); margin-top: .75rem; margin-bottom: 0; }
+  .achse-text { font-size: 11px; fill: var(--text-faint); }
+  .achse-linie { stroke: var(--border-strong); stroke-width: 1; }
+  .gitter { stroke: var(--border); stroke-width: 1; }
+  .ref-linie { stroke: var(--soll); stroke-width: 1.5; stroke-dasharray: 5 4; }
+  /* Heller Rand um die Schrift, damit sie ueber Saeulen lesbar bleibt. */
+  .ref-text { font-size: 11px; fill: var(--text-muted); paint-order: stroke; stroke: var(--card); stroke-width: 3px; stroke-linejoin: round; }
+  .wert-text { font-size: 11px; fill: var(--text); font-weight: 600; }
+  .saeule:hover { opacity: .8; }
+
+  .fehlt-liste { list-style: none; margin: .5rem 0 0; display: grid; gap: .5rem; }
+  .fehlt-liste li {
+    background: var(--card); border: 1px dashed var(--border-strong); border-radius: var(--radius);
+    padding: .65rem .9rem; font-size: .9rem;
+  }
+  .fehlt-liste strong { font-weight: 600; }
+  .fehlt-liste span { color: var(--text-muted); }
+
+  .quellen { font-size: .82rem; color: var(--text-faint); }
+  .quellen a { color: var(--primary-dark); }
+  .quellen ul { list-style: none; display: grid; gap: .25rem; margin-top: .5rem; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+  .stand {
+    margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--border-strong);
+  }
+  .site-footer {
+    border-top: 1px solid var(--border); background: var(--bg-warm);
+    padding: 1.75rem 0; font-size: .85rem; color: var(--text-muted);
+  }
+  .site-footer .container { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+  .site-footer a { color: var(--primary-dark); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .ladehinweis { color: var(--text-faint); font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <svg class="logo-mark" width="34" height="34" viewBox="0 0 40 40" aria-hidden="true">
+      <rect x="9" y="17" width="22" height="16" rx="2" fill="#f1efe9"/>
+      <path d="M27 17h4v4z" fill="#B00E2B"/>
+      <path d="M11 18c0-7.5 4-12 9-12s9 4.5 9 12" fill="#fff"/>
+      <path d="M13 15 L9.5 5 L17.5 11.5 Z" fill="#fff"/>
+      <path d="M27 15 L30.5 5 L22.5 11.5 Z" fill="#fff"/>
+      <circle cx="16.5" cy="15" r="1.7" fill="#003E59"/>
+      <circle cx="23.5" cy="15" r="1.7" fill="#003E59"/>
+      <path d="M18.6 18.2l1.4 1.9 1.4-1.9z" fill="#B00E2B"/>
+    </svg>
+    <a class="brand" href="index.html">PapierPanther <span>Ingolstadt</span></a>
+    <span class="header-spacer"></span>
+    <button class="btn-leicht" id="btn-leicht" type="button" aria-pressed="false">Leichte Sprache</button>
+    <a class="btn-zurueck" href="index.html">← Zurück zum PapierPanther</a>
+  </div>
+</header>
+
+<div class="disclaimer">
+  <div class="container">
+    <p id="txt-hinweis"></p>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+    <h1 id="txt-h1"></h1>
+    <p class="lede" id="txt-lede"></p>
+
+    <div class="kennzahlen" id="kennzahlen" aria-label="Kennzahlen"><p class="ladehinweis">Lade Zahlen …</p></div>
+
+    <section id="ziel">
+      <h2 id="txt-ziel-h2"></h2>
+      <p id="txt-ziel-p"></p>
+      <div class="diagramm" id="diagramm-pfad"><p class="ladehinweis">Lade Diagramm …</p></div>
+    </section>
+
+    <section id="klima">
+      <h2 id="txt-klima-h2"></h2>
+      <p id="txt-klima-p"></p>
+      <div class="diagramm" id="diagramm-streifen"><p class="ladehinweis">Lade Diagramm …</p></div>
+
+      <div class="diagramm">
+        <div class="tabs" role="tablist" aria-label="Kenntage">
+          <button type="button" role="tab" id="tab-heiss" aria-controls="diagramm-heiss" aria-selected="true"><span id="txt-tab-heiss"></span></button>
+          <button type="button" role="tab" id="tab-sommer" aria-controls="diagramm-sommer" aria-selected="false" tabindex="-1"><span id="txt-tab-sommer"></span></button>
+          <button type="button" role="tab" id="tab-tropen" aria-controls="diagramm-tropen" aria-selected="false" tabindex="-1"><span id="txt-tab-tropen"></span></button>
+          <button type="button" role="tab" id="tab-frost" aria-controls="diagramm-frost" aria-selected="false" tabindex="-1"><span id="txt-tab-frost"></span></button>
+        </div>
+        <div role="tabpanel" id="diagramm-heiss" aria-labelledby="tab-heiss"><p class="ladehinweis">Lade Diagramm …</p></div>
+        <div role="tabpanel" id="diagramm-sommer" aria-labelledby="tab-sommer" hidden></div>
+        <div role="tabpanel" id="diagramm-tropen" aria-labelledby="tab-tropen" hidden></div>
+        <div role="tabpanel" id="diagramm-frost" aria-labelledby="tab-frost" hidden></div>
+      </div>
+    </section>
+
+    <section id="strom">
+      <h2 id="txt-strom-h2"></h2>
+      <p id="txt-strom-p"></p>
+      <div class="diagramm">
+        <div class="tabs" role="tablist" aria-label="Solarstrom">
+          <button type="button" role="tab" id="tab-pv-bestand" aria-controls="diagramm-pv-bestand" aria-selected="true"><span id="txt-tab-pv-bestand"></span></button>
+          <button type="button" role="tab" id="tab-pv-zubau" aria-controls="diagramm-pv-zubau" aria-selected="false" tabindex="-1"><span id="txt-tab-pv-zubau"></span></button>
+          <button type="button" role="tab" id="tab-speicher" aria-controls="diagramm-speicher" aria-selected="false" tabindex="-1"><span id="txt-tab-speicher"></span></button>
+        </div>
+        <div role="tabpanel" id="diagramm-pv-bestand" aria-labelledby="tab-pv-bestand"><p class="ladehinweis">Lade Diagramm …</p></div>
+        <div role="tabpanel" id="diagramm-pv-zubau" aria-labelledby="tab-pv-zubau" hidden></div>
+        <div role="tabpanel" id="diagramm-speicher" aria-labelledby="tab-speicher" hidden></div>
+      </div>
+    </section>
+
+    <section id="mobilitaet">
+      <h2 id="txt-mob-h2"></h2>
+      <p id="txt-mob-p"></p>
+      <div class="diagramm" id="diagramm-laden"><p class="ladehinweis">Lade Diagramm …</p></div>
+    </section>
+
+    <section id="fehlt">
+      <h2 id="txt-fehlt-h2"></h2>
+      <p id="txt-fehlt-p"></p>
+      <ul class="fehlt-liste" id="fehlt-liste"></ul>
+    </section>
+
+    <div class="stand quellen" id="quellen-block"><p>Lade Quellenangaben …</p></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <a href="index.html">Übersicht</a>
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="https://github.com/mnkeller/papierpanther" rel="noopener noreferrer" target="_blank">Quellcode<span class="sr-only"> (öffnet in neuem Tab)</span></a>
+    <a href="https://2035.de/" rel="noopener noreferrer" target="_blank">Klimaschutz der Stadt: 2035.de<span class="sr-only"> (öffnet in neuem Tab)</span></a>
+  </div>
+</footer>
+
+<script src="data/klima.js"></script>
+<script>
+(function () {
+  "use strict";
+  var D = window.KLIMA_DATEN;
+  if (!D) {
+    document.querySelectorAll(".ladehinweis").forEach(function (el) {
+      el.textContent = "Klimadaten konnten nicht geladen werden.";
+    });
+    return;
+  }
+  var B = D.bericht;
+
+  /* ---------------- Formatierung ---------------- */
+  function zahl(n, stellen) {
+    return new Intl.NumberFormat("de-DE", {
+      minimumFractionDigits: stellen || 0, maximumFractionDigits: stellen || 0,
+    }).format(n);
+  }
+  function vz(n, stellen) { return (n > 0 ? "+" : n < 0 ? "−" : "±") + zahl(Math.abs(n), stellen); }
+  function mwp(kw) { return zahl(kw / 1000, 1) + " MWp"; }
+  function svgEl(tag, attrs, kinder) {
+    var el = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (var k in attrs) el.setAttribute(k, attrs[k]);
+    (kinder || []).forEach(function (kind) { el.appendChild(kind); });
+    return el;
+  }
+  function text(x, y, inhalt, klasse, anker) {
+    var t = svgEl("text", { x: x, y: y, class: klasse || "" });
+    if (anker) t.setAttribute("text-anchor", anker);
+    t.textContent = inhalt;
+    return t;
+  }
+  function titel(inhalt) { var t = svgEl("title", {}); t.textContent = inhalt; return t; }
+  function runderSchritt(maxWert) {
+    var basis = Math.pow(10, Math.floor(Math.log10(maxWert / 5)));
+    var faktoren = [1, 2, 2.5, 5, 10];
+    for (var i = 0; i < faktoren.length; i++) {
+      if (maxWert / (faktoren[i] * basis) <= 5) return faktoren[i] * basis;
+    }
+    return 10 * basis;
+  }
+  function absatz(klasse, inhalt) {
+    var p = document.createElement("p");
+    p.className = klasse;
+    p.innerHTML = inhalt;
+    return p;
+  }
+  function legende(eintraege) {
+    var div = document.createElement("div");
+    div.className = "legende";
+    eintraege.forEach(function (e) {
+      var span = document.createElement("span");
+      var i = document.createElement("i");
+      if (e.farbe) i.style.backgroundColor = e.farbe;
+      if (e.klasse) i.className = e.klasse;
+      span.appendChild(i);
+      span.appendChild(document.createTextNode(e.text));
+      div.appendChild(span);
+    });
+    return div;
+  }
+  function farbe(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
+  function schraffur(id, f) {
+    return svgEl("pattern", { id: id, width: 6, height: 6, patternUnits: "userSpaceOnUse",
+      patternTransform: "rotate(45)" }, [
+      svgEl("rect", { width: 6, height: 6, fill: f }),
+      svgEl("rect", { width: 2.2, height: 6, fill: "rgba(255,255,255,.55)" }),
+    ]);
+  }
+
+  /* ---------------- Daten vorbereiten ---------------- */
+  var klimaJahre = D.klima.jahre;
+  var REF = D.klima.referenz;
+  var volle = klimaJahre.filter(function (z) { return z.vollstaendig; });
+  var letztesVolles = volle[volle.length - 1];
+  var laufend = klimaJahre[klimaJahre.length - 1].vollstaendig ? null : klimaJahre[klimaJahre.length - 1];
+  var solar = D.solar.reihe;
+  var solarJetzt = solar[solar.length - 1];
+  var speicher = D.speicher.reihe;
+  var speicherJetzt = speicher[speicher.length - 1];
+  var aktuellesJahr = solarJetzt.jahr;
+
+  /* ---------------- Leichte Sprache ---------------- */
+  var LS_KEY_LEICHT = "papierpanther-leichte-sprache";
+  var leicht = false;
+  try { leicht = localStorage.getItem(LS_KEY_LEICHT) === "1"; } catch (err) { /* Storage kann gesperrt sein */ }
+  function t(normal, leichtText) { return leicht ? leichtText : normal; }
+
+  var TEXTE = {
+    "hinweis": {
+      n: "<strong>PapierPanther ist kein Angebot der Stadt Ingolstadt.</strong> " +
+        "Die Zahlen stammen aus offenen Daten des Deutschen Wetterdienstes und der " +
+        "Bundesnetzagentur sowie aus den Fortschrittsberichten der Stabsstelle Klima. " +
+        "Jede Zahl nennt unten ihre Quelle. Dies ist ein Prototyp.",
+      l: "<strong>PapierPanther ist kein Angebot der Stadt Ingolstadt.</strong> " +
+        "Die Zahlen kommen aus offenen Daten. Zum Beispiel vom Wetter-Dienst. " +
+        "Unten auf der Seite steht, woher jede Zahl kommt. Die Seite ist noch ein Test.",
+    },
+    "h1": { n: "Klima in Ingolstadt", l: "Klima in Ingolstadt" },
+    "lede": {
+      n: "Ingolstadt will bis 2035 klimaneutral sein. So hat es der Stadtrat im Juni 2022 " +
+        "beschlossen. Diese Seite zeigt, wie warm es in Ingolstadt schon geworden ist, " +
+        "wie schnell Solarstrom dazukommt und wo die Stadt auf ihrem Weg steht.",
+      l: "Ingolstadt will bis zum Jahr 2035 klima-neutral sein. Das heißt: Die Stadt " +
+        "soll dann fast keine schädlichen Gase mehr ausstoßen. Diese Seite zeigt: " +
+        "Wie warm ist es geworden? Wie viel Strom kommt von der Sonne? Ist die Stadt auf einem guten Weg?",
+    },
+    "ziel-h2": { n: "Auf dem Weg zu 2035", l: "Der Weg bis 2035" },
+    "ziel-p": {
+      n: "Um 2035 klimaneutral zu sein, muss Ingolstadt seine Treibhausgase jedes Jahr " +
+        "deutlich senken. Die Stabsstelle Klima rechnet nach, wie viel tatsächlich " +
+        "geschafft wurde und wie viel nötig wäre.",
+      l: "Treibhaus-Gase machen das Klima wärmer. Ingolstadt muss davon jedes Jahr " +
+        "weniger ausstoßen. Die Stadt rechnet nach: Wie viel weniger war es wirklich? " +
+        "Und wie viel weniger müsste es sein?",
+    },
+    "klima-h2": { n: "Es wird wärmer", l: "Es wird wärmer" },
+    "klima-p": {
+      n: "Jeder Streifen ist ein Jahr, gemessen an der Wetterstation Kösching nördlich " +
+        "von Ingolstadt. Blau war kälter, rot wärmer als im Durchschnitt der Jahre " +
+        REF.von + " bis " + REF.bis + ". Dieselbe Station nutzt auch die Stadt in ihrem Fortschrittsbericht.",
+      l: "Jeder Streifen ist ein Jahr. Blau heißt: Das Jahr war kälter als früher. " +
+        "Rot heißt: Das Jahr war wärmer als früher. Früher heißt hier: die Jahre " +
+        REF.von + " bis " + REF.bis + ". Gemessen wird in Kösching, gleich neben Ingolstadt.",
+    },
+    "tab-heiss": { n: "Heiße Tage", l: "Heiße Tage" },
+    "tab-sommer": { n: "Sommertage", l: "Sommer-Tage" },
+    "tab-tropen": { n: "Tropennächte", l: "Tropen-Nächte" },
+    "tab-frost": { n: "Frosttage", l: "Frost-Tage" },
+    "strom-h2": { n: "Strom von der Sonne", l: "Strom von der Sonne" },
+    "strom-p": {
+      n: "Fast der ganze erneuerbare Strom in Ingolstadt kommt aus Photovoltaik. " +
+        "Windräder gibt es im Stadtgebiet nicht. Jede Anlage muss im " +
+        "Marktstammdatenregister der Bundesnetzagentur gemeldet werden. Daraus " +
+        "stammen diese Zahlen, auch Balkonkraftwerke sind dabei.",
+      l: "Solar-Anlagen machen Strom aus Sonnen-Licht. In Ingolstadt kommt fast der " +
+        "ganze grüne Strom von Solar-Anlagen. Jede Anlage muss beim Staat gemeldet " +
+        "werden. Daher kennen wir die Zahlen. Auch kleine Anlagen am Balkon zählen mit.",
+    },
+    "tab-pv-bestand": { n: "Leistung", l: "Leistung" },
+    "tab-pv-zubau": { n: "Zubau je Jahr", l: "Neu pro Jahr" },
+    "tab-speicher": { n: "Stromspeicher", l: "Strom-Speicher" },
+    "mob-h2": { n: "Laden statt tanken", l: "Strom tanken" },
+    "mob-p": {
+      n: "Ingolstadt hat im Verhältnis zur Einwohnerzahl die meisten öffentlichen " +
+        "Ladepunkte in Bayern, so der Fortschrittsbericht. Auf den Straßen fahren " +
+        "trotzdem noch über 90 Prozent der Autos mit Verbrennungsmotor.",
+      l: "Elektro-Autos tanken Strom an Lade-Säulen. Ingolstadt hat viele Lade-Säulen. " +
+        "Aber die meisten Autos fahren noch mit Benzin oder Diesel.",
+    },
+    "fehlt-h2": { n: "Was hier noch fehlt", l: "Was noch fehlt" },
+    "fehlt-p": {
+      n: "Viele Zahlen, die für den Klimaschutz wichtig sind, liegen bei der Stadt oder " +
+        "den Stadtwerken, aber nicht als offene Daten. Diese Themen kommen dazu, " +
+        "sobald es Daten gibt:",
+      l: "Manche Zahlen sind noch nicht öffentlich. Diese Themen kommen später dazu:",
+    },
+  };
+
+  function texteAnwenden() {
+    Object.keys(TEXTE).forEach(function (id) {
+      var el = document.getElementById("txt-" + id);
+      if (el) el.innerHTML = TEXTE[id][leicht ? "l" : "n"];
+    });
+    baueKennzahlen();
+    bauePfad();
+    baueStreifen();
+    baueKenntage();
+    bauePV();
+    baueLaden();
+    baueFehlt();
+    baueQuellen();
+  }
+
+  /* ---------------- Kennzahlen ---------------- */
+  function baueKennzahlen() {
+    var thg = B.thg;
+    var kacheln = [
+      {
+        label: t("Jahresmittel " + letztesVolles.jahr, "So warm war " + letztesVolles.jahr),
+        wert: zahl(letztesVolles.mitteltemperatur, 1) + " °C",
+        unter: t(vz(letztesVolles.abweichung, 1) + " °C gegenüber " + REF.von + "–" + REF.bis,
+          zahl(letztesVolles.abweichung, 1) + " Grad wärmer als früher"),
+      },
+      {
+        label: t("Heiße Tage " + letztesVolles.jahr + " (über 30 °C)", "Heiße Tage " + letztesVolles.jahr),
+        wert: zahl(letztesVolles.heisse_tage),
+        unter: t("früher im Schnitt " + zahl(REF.heisse_tage, 0) + " im Jahr",
+          "Früher waren es " + zahl(REF.heisse_tage, 0) + " im Jahr"),
+      },
+      {
+        label: t("Solarleistung heute", "Strom von der Sonne"),
+        wert: mwp(solarJetzt.bestand_kw),
+        unter: t(zahl(solarJetzt.bestand_anzahl) + " Anlagen, Ende 2019: " + mwp(solar.filter(function (z) { return z.jahr === 2019; })[0].bestand_kw),
+          zahl(solarJetzt.bestand_anzahl) + " Anlagen"),
+      },
+      {
+        label: t("Öffentliche Ladepunkte", "Lade-Punkte für E-Autos"),
+        wert: zahl(D.laden.ladepunkte),
+        unter: t("davon " + zahl(D.laden.schnell) + " Schnellladepunkte", "Davon " + zahl(D.laden.schnell) + " schnelle"),
+      },
+      {
+        label: t("CO₂-Minderung pro Jahr", "Weniger CO₂ pro Jahr"),
+        wert: Math.round(thg.reduktion_erreicht_t_pro_jahr / thg.reduktion_erforderlich_t_pro_jahr * 100) + " %",
+        unter: t("des nötigen Tempos seit 2019 (Bilanz 2023)", "von dem, was nötig wäre"),
+      },
+    ];
+    var el = document.getElementById("kennzahlen");
+    el.innerHTML = "";
+    kacheln.forEach(function (k) {
+      var d = document.createElement("div");
+      d.className = "kachel";
+      d.appendChild(absatz("kachel-label", k.label));
+      d.appendChild(absatz("kachel-wert", k.wert));
+      d.appendChild(absatz("kachel-unter", k.unter));
+      el.appendChild(d);
+    });
+  }
+
+  /* ---------------- Reduktionspfad ---------------- */
+  function bauePfad() {
+    var el = document.getElementById("diagramm-pfad");
+    var thg = B.thg;
+    el.innerHTML = "";
+    el.appendChild(absatz("diagramm-titel", t(
+      "Durchschnittliche CO₂-Minderung pro Jahr seit 2019, in Tonnen",
+      "So viel weniger CO₂ pro Jahr, in Tonnen")));
+    var max = thg.reduktion_erforderlich_t_pro_jahr;
+    var pfad = document.createElement("div");
+    pfad.className = "pfad";
+    [
+      { label: t("nötig für 2035", "nötig"), wert: thg.reduktion_erforderlich_t_pro_jahr, farbe: farbe("--soll") },
+      { label: t("erreicht", "geschafft"), wert: thg.reduktion_erreicht_t_pro_jahr, farbe: farbe("--primary") },
+    ].forEach(function (z) {
+      var zeile = document.createElement("div");
+      zeile.className = "pfad-zeile";
+      var l = document.createElement("span");
+      l.textContent = z.label;
+      var b = document.createElement("div");
+      b.className = "pfad-balken";
+      var s = document.createElement("span");
+      s.style.width = (z.wert / max * 100) + "%";
+      s.style.background = z.farbe;
+      s.textContent = zahl(z.wert) + " t";
+      b.appendChild(s);
+      zeile.appendChild(l);
+      zeile.appendChild(b);
+      pfad.appendChild(zeile);
+    });
+    el.appendChild(pfad);
+
+    var e = B.endenergie;
+    var gesamt = e.gwh.reduce(function (s, x) { return s + x.gwh; }, 0);
+    el.appendChild(absatz("diagramm-titel", t(
+      "Wofür Ingolstadt " + e.jahr + " Energie verbraucht hat (rund " + zahl(gesamt) + " GWh)",
+      "Wofür die Stadt " + e.jahr + " Energie gebraucht hat")));
+    var farben = [farbe("--heiss"), farbe("--solar-dach"), farbe("--kalt")];
+    var W = 760, H = 34;
+    var svg = svgEl("svg", { viewBox: "0 0 " + W + " " + H, role: "img",
+      "aria-label": e.gwh.map(function (x) { return x.sektor + " " + zahl(x.gwh) + " GWh"; }).join(", ") });
+    var x = 0;
+    e.gwh.forEach(function (s, i) {
+      var b = s.gwh / gesamt * W;
+      svg.appendChild(svgEl("rect", { x: x, y: 0, width: Math.max(b - 2, 1), height: H, rx: 3, fill: farben[i] },
+        [titel(s.sektor + ": " + zahl(s.gwh) + " GWh")]));
+      var tx = text(x + 10, H / 2 + 4, s.sektor + " " + Math.round(s.gwh / gesamt * 100) + " %", "", "start");
+      tx.setAttribute("fill", "#fff");
+      tx.setAttribute("font-size", "13");
+      tx.setAttribute("font-weight", "600");
+      svg.appendChild(tx);
+      x += b;
+    });
+    el.appendChild(svg);
+
+    var w = thg.werte;
+    el.appendChild(absatz("diagramm-fuss", t(
+      "Bilanz nach BISKO-Standard, witterungsbereinigt. Ausstoß " + w[w.length - 1].jahr + ": " +
+      zahl(w[w.length - 1].t_co2 / 1e6, 2) + " Mio. t CO₂, davon " + thg.anteil_industrie_2021 +
+      " % aus der Industrie. Eine Bilanz braucht rund zwei Jahre, die neueste gilt für " + e.jahr +
+      ". Quelle: <a href=\"" + B.berichte["2025"].url + "\">Fortschrittsbericht 2025</a> und " +
+      "<a href=\"" + B.berichte["2023"].url + "\">2023</a> der Stabsstelle Klima.",
+      "Fast die Hälfte vom CO₂ kommt aus der Industrie. Die Zahlen sind immer etwa zwei Jahre alt. " +
+      "Quelle: <a href=\"" + B.berichte["2025"].url + "\">Bericht der Stadt</a>.")));
+  }
+
+  /* ---------------- Klimastreifen ---------------- */
+  var STREIFEN_FARBEN = ["#08306b", "#08519c", "#2171b5", "#4292c6", "#6baed6", "#9ecae1", "#c6dbef", "#deebf7",
+    "#fee0d2", "#fcbba1", "#fc9272", "#fb6a4a", "#ef3b2c", "#cb181d", "#a50f15", "#67000d"];
+  function streifenFarbe(abw) {
+    // 0,35 °C je Farbstufe: ±2,8 °C deckt die ganze Skala ab.
+    var i = Math.floor(abw / 0.35) + 8;
+    return STREIFEN_FARBEN[Math.max(0, Math.min(STREIFEN_FARBEN.length - 1, i))];
+  }
+  function baueStreifen() {
+    var el = document.getElementById("diagramm-streifen");
+    el.innerHTML = "";
+    el.appendChild(absatz("diagramm-titel", t(
+      "Jahresmitteltemperatur " + volle[0].jahr + " bis " + letztesVolles.jahr,
+      "Jedes Jahr ein Streifen, von " + volle[0].jahr + " bis " + letztesVolles.jahr)));
+    var W = 760, H = 140, unten = 18;
+    var b = W / volle.length;
+    var svg = svgEl("svg", { viewBox: "0 0 " + W + " " + (H + unten), class: "streifen", role: "img",
+      "aria-label": t("Klimastreifen: die Jahre werden von links nach rechts deutlich röter, also wärmer.",
+        "Die Streifen werden nach rechts immer röter. Das heißt: Es wird wärmer.") });
+    volle.forEach(function (z, i) {
+      svg.appendChild(svgEl("rect", { x: i * b, y: 0, width: b + 0.5, height: H, fill: streifenFarbe(z.abweichung) },
+        [titel(z.jahr + ": " + zahl(z.mitteltemperatur, 1) + " °C (" + vz(z.abweichung, 1) + " °C)")]));
+      if (z.jahr % 10 === 0) svg.appendChild(text(i * b + b / 2, H + 13, String(z.jahr), "achse-text", "middle"));
+    });
+    el.appendChild(svg);
+    var waermste = volle.slice().sort(function (a, b) { return b.mitteltemperatur - a.mitteltemperatur; }).slice(0, 5)
+      .map(function (z) { return z.jahr; });
+    var seit2000 = waermste.filter(function (j) { return j >= 2000; }).length;
+    el.appendChild(absatz("diagramm-fuss", t(
+      "Die fünf wärmsten Jahre seit " + volle[0].jahr + ": " + waermste.join(", ") +
+      (seit2000 === 5 ? " – alle nach 2000." : ".") + " Mittel " + REF.von + "–" + REF.bis + ": " +
+      zahl(REF.mitteltemperatur, 1) + " °C. Bewegen Sie die Maus über einen Streifen für den genauen Wert. " +
+      "Quelle: Deutscher Wetterdienst, Station " + D.klima.station + ".",
+      "Die wärmsten Jahre waren " + waermste.join(", ") + ". Früher war es im Jahr im Schnitt " +
+      zahl(REF.mitteltemperatur, 1) + " Grad warm.")));
+  }
+
+  /* ---------------- Saeulendiagramm (gestapelt) ----------------
+     reihe: [{jahr, werte: [..], vorlaeufig}], serien: [{name, farbe}]
+     optional: referenz {wert, text}, ziel {wert, text}, einheit, format */
+  function saeulen(opts) {
+    var W = 760, H = 280, L = 52, R = 16, O = 22, U = 26;
+    var innenB = W - L - R, innenH = H - O - U;
+    var reihe = opts.reihe;
+    var summen = reihe.map(function (z) { return z.werte.reduce(function (s, w) { return s + w; }, 0); });
+    var maxWert = Math.max.apply(null, summen.concat([opts.referenz ? opts.referenz.wert : 0, opts.ziel ? opts.ziel.wert : 0])) || 1;
+    var schritt = runderSchritt(maxWert);
+    var achsenMax = Math.ceil(maxWert / schritt) * schritt;
+    var fmt = opts.format || function (w) { return zahl(w); };
+    function py(w) { return O + innenH - (w / achsenMax) * innenH; }
+    var b = innenB / reihe.length;
+    var svg = svgEl("svg", { viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": opts.aria || "" });
+    var defs = svgEl("defs", {});
+    opts.serien.forEach(function (s, i) { defs.appendChild(schraffur(opts.id + "-v" + i, s.farbe)); });
+    svg.appendChild(defs);
+    for (var w = 0; w <= achsenMax + 1e-9; w += schritt) {
+      svg.appendChild(svgEl("line", { x1: L, x2: W - R, y1: py(w), y2: py(w), class: "gitter" }));
+      svg.appendChild(text(L - 6, py(w) + 4, fmt(w), "achse-text", "end"));
+    }
+    var beschriftungsAbstand = reihe.length > 40 ? 10 : reihe.length > 15 ? 5 : reihe.length > 8 ? 2 : 1;
+    reihe.forEach(function (z, i) {
+      var x = L + i * b;
+      var y = py(0);
+      var gruppe = svgEl("g", { class: "saeule" });
+      z.werte.forEach(function (wert, n) {
+        var h = (wert / achsenMax) * innenH;
+        if (h <= 0) return;
+        y -= h;
+        gruppe.appendChild(svgEl("rect", { x: x + b * 0.12, y: y, width: b * 0.76, height: h,
+          fill: z.vorlaeufig ? "url(#" + opts.id + "-v" + n + ")" : opts.serien[n].farbe }));
+      });
+      gruppe.appendChild(titel(z.jahr + (z.vorlaeufig ? " (bis " + z.bis + ", vorläufig)" : "") + ": " +
+        opts.serien.map(function (s, n) { return (opts.serien.length > 1 ? s.name + " " : "") + fmt(z.werte[n]) + (opts.einheit ? " " + opts.einheit : ""); }).join(", ")));
+      svg.appendChild(gruppe);
+      var letzte = i === reihe.length - 1;
+      var nahAmEnde = !letzte && reihe.length - 1 - i < Math.max(2, beschriftungsAbstand / 2);
+      if ((z.jahr % beschriftungsAbstand === 0 && !nahAmEnde) || letzte) {
+        svg.appendChild(text(x + b / 2, H - 8, String(z.jahr), "achse-text", "middle"));
+      }
+    });
+    if (opts.wertLetzte) {
+      var li = reihe.length - 1;
+      svg.appendChild(text(L + li * b + b / 2, py(summen[li]) - 5, fmt(summen[li]), "wert-text", "middle"));
+    }
+    [opts.referenz, opts.ziel].forEach(function (r) {
+      if (!r) return;
+      svg.appendChild(svgEl("line", { x1: L, x2: W - R, y1: py(r.wert), y2: py(r.wert), class: "ref-linie" }));
+      svg.appendChild(text(L + 6, py(r.wert) - 5, r.text, "ref-text", "start"));
+    });
+    svg.appendChild(svgEl("line", { x1: L, x2: W - R, y1: py(0), y2: py(0), class: "achse-linie" }));
+    return svg;
+  }
+
+  /* ---------------- Kenntage ---------------- */
+  var KENNTAGE = [
+    { id: "heiss", feld: "heisse_tage", farbe: "--heiss",
+      n: "Heiße Tage pro Jahr: Höchsttemperatur 30 °C oder mehr", l: "Heiße Tage: 30 Grad oder mehr" },
+    { id: "sommer", feld: "sommertage", farbe: "--heiss",
+      n: "Sommertage pro Jahr: Höchsttemperatur 25 °C oder mehr", l: "Sommer-Tage: 25 Grad oder mehr" },
+    { id: "tropen", feld: "tropennaechte", farbe: "--accent",
+      n: "Tropennächte pro Jahr: Tiefsttemperatur nicht unter 20 °C", l: "Tropen-Nächte: Auch nachts 20 Grad oder mehr" },
+    { id: "frost", feld: "frosttage", farbe: "--kalt",
+      n: "Frosttage pro Jahr: Tiefsttemperatur unter 0 °C", l: "Frost-Tage: Nachts unter 0 Grad" },
+  ];
+  function baueKenntage() {
+    KENNTAGE.forEach(function (k) {
+      var el = document.getElementById("diagramm-" + k.id);
+      el.innerHTML = "";
+      el.appendChild(absatz("diagramm-titel", t(k.n, k.l)));
+      var reihe = klimaJahre.map(function (z) {
+        return { jahr: z.jahr, werte: [z[k.feld]], vorlaeufig: !z.vollstaendig, bis: z.bis };
+      });
+      el.appendChild(legende([
+        { farbe: farbe(k.farbe), text: t("gemessen", "gemessen") },
+        { klasse: "linie", text: t("Durchschnitt " + REF.von + "–" + REF.bis, "Durchschnitt früher") },
+      ].concat(laufend ? [{ farbe: farbe(k.farbe), klasse: "plan", text: t(laufend.jahr + " bis " + laufend.bis + ", vorläufig", laufend.jahr + " bis jetzt") }] : [])));
+      el.appendChild(saeulen({
+        id: k.id, reihe: reihe, serien: [{ name: k.n, farbe: farbe(k.farbe) }],
+        referenz: { wert: REF[k.feld], text: "Ø " + REF.von + "–" + REF.bis + ": " + zahl(REF[k.feld], 1) },
+        einheit: "Tage", aria: k.n,
+      }));
+      if (k.id === "heiss") {
+        var rekord = volle.slice().sort(function (a, b) { return b.heisse_tage - a.heisse_tage; })[0];
+        var neuerRekord = laufend && laufend.heisse_tage > rekord.heisse_tage;
+        el.appendChild(absatz("diagramm-fuss", t(
+          (neuerRekord
+            ? laufend.jahr + " gab es bis zum " + laufend.bis + " schon " + laufend.heisse_tage +
+              " heiße Tage, mehr als im bisherigen Rekordjahr " + rekord.jahr + " (" + rekord.heisse_tage + "). "
+            : "Rekord: " + rekord.jahr + " mit " + rekord.heisse_tage + " heißen Tagen. ") +
+          "Werte des laufenden Jahres sind schraffiert, sie sind vom DWD teils noch nicht endgültig geprüft.",
+          (neuerRekord ? "Dieses Jahr gab es schon " + laufend.heisse_tage + " heiße Tage. So viele wie nie zuvor. "
+            : "Die meisten heißen Tage gab es " + rekord.jahr + ". ") + "Gestreifte Säulen: Das Jahr ist noch nicht vorbei.")));
+      }
+    });
+  }
+
+  /* ---------------- Photovoltaik und Speicher ---------------- */
+  function bauePV() {
+    var ab = 2005;
+    var pvReihe = solar.filter(function (z) { return z.jahr >= ab; });
+    var serien = [
+      { name: t("Dächer und Gebäude", "Auf Dächern"), farbe: farbe("--solar-dach"), feld: "dach" },
+      { name: t("Freiflächen", "Auf Feldern"), farbe: farbe("--solar-frei"), feld: "freiflaeche" },
+      { name: t("Balkonkraftwerke", "Am Balkon"), farbe: farbe("--solar-stecker"), feld: "stecker" },
+    ];
+    function mw(w) { return zahl(w / 1000, w < 10000 && w > 0 ? 1 : 0); }
+    var leg = function () {
+      return legende(serien.map(function (s) { return { farbe: s.farbe, text: s.name }; })
+        .concat([{ farbe: serien[0].farbe, klasse: "plan", text: t(aktuellesJahr + " bis heute", "Dieses Jahr bis jetzt") }]));
+    };
+
+    var el = document.getElementById("diagramm-pv-bestand");
+    el.innerHTML = "";
+    el.appendChild(absatz("diagramm-titel", t("Installierte Solarleistung am Jahresende, in Megawatt-Peak (MWp)",
+      "So viel Solar-Strom können die Anlagen machen, in Megawatt")));
+    el.appendChild(leg());
+    el.appendChild(saeulen({
+      id: "pvb", serien: serien, format: mw, einheit: "MWp", wertLetzte: true,
+      reihe: pvReihe.map(function (z) {
+        return { jahr: z.jahr, werte: serien.map(function (s) { return z["bestand_kw_" + s.feld]; }),
+          vorlaeufig: z.jahr === aktuellesJahr, bis: "heute" };
+      }),
+      aria: t("Solarleistung steigt von " + mwp(pvReihe[0].bestand_kw) + " auf " + mwp(solarJetzt.bestand_kw),
+        "Die Solar-Leistung steigt stark an"),
+    }));
+    var ziel = (B.strom.pv_ziel_2035_dach_kwp || 0) + (B.strom.pv_ziel_2035_freiflaeche_kwp || 0);
+    var z2019 = solar.filter(function (z) { return z.jahr === 2019; })[0];
+    el.appendChild(absatz("diagramm-fuss", t(
+      "Seit Ende 2019 hat sich die Leistung von " + mwp(z2019.bestand_kw) + " auf " + mwp(solarJetzt.bestand_kw) +
+      " mehr als verdoppelt. " +
+      (ziel ? "Der Fortschrittsbericht 2025 rechnet für 2035 mit rund " + zahl(ziel / 1000) +
+        " MWp aus (" + zahl(B.strom.pv_ziel_2035_dach_kwp / 1000) + " auf Dächern, " +
+        zahl(B.strom.pv_ziel_2035_freiflaeche_kwp / 1000) + " auf Freiflächen). Heute sind davon " +
+        Math.round(solarJetzt.bestand_kw / ziel * 100) + " % erreicht. " : "") +
+      "Zusätzlich sind " + mwp(D.solar.in_planung_kw) + " in Planung gemeldet. Quelle: Marktstammdatenregister.",
+      "Seit 2019 hat sich die Solar-Leistung mehr als verdoppelt. Bis 2035 soll sie noch viel größer werden.")));
+
+    el = document.getElementById("diagramm-pv-zubau");
+    el.innerHTML = "";
+    el.appendChild(absatz("diagramm-titel", t("Neu in Betrieb genommene Solarleistung je Jahr, in Kilowatt-Peak (kWp)",
+      "So viel Solar-Leistung kam jedes Jahr neu dazu")));
+    el.appendChild(leg());
+    var zubauReihe = pvReihe.filter(function (z) { return z.jahr >= 2010; });
+    el.appendChild(saeulen({
+      id: "pvz", serien: serien, einheit: "kWp", wertLetzte: true,
+      reihe: zubauReihe.map(function (z) {
+        return { jahr: z.jahr, werte: serien.map(function (s) { return z["zubau_kw_" + s.feld]; }),
+          vorlaeufig: z.jahr === aktuellesJahr, bis: "heute" };
+      }),
+      aria: t("Zubau an Solarleistung je Jahr", "Neue Solar-Leistung pro Jahr"),
+    }));
+    var stecker = zubauReihe.reduce(function (s, z) { return s + z.zubau_anzahl_stecker; }, 0);
+    el.appendChild(absatz("diagramm-fuss", t(
+      "Seit 2023 kommt jedes Jahr mehr als doppelt so viel Leistung dazu wie in den Jahren davor. " +
+      "Seit 2010 wurden " + zahl(stecker) + " Balkonkraftwerke angemeldet, sie sind zahlreich, aber klein.",
+      "Seit 2023 kommen viel mehr Anlagen dazu als früher.")));
+
+    el = document.getElementById("diagramm-speicher");
+    el.innerHTML = "";
+    el.appendChild(absatz("diagramm-titel", t("Nutzbare Speicherkapazität am Jahresende, in Megawattstunden (MWh)",
+      "So viel Strom können die Speicher aufheben, in Megawatt-Stunden")));
+    var spReihe = speicher.filter(function (z) { return z.jahr >= 2013; });
+    el.appendChild(saeulen({
+      id: "sp", serien: [{ name: "Speicher", farbe: farbe("--speicher") }], einheit: "MWh", wertLetzte: true,
+      format: function (w) { return zahl(w / 1000, w > 0 && w < 10000 ? 1 : 0); },
+      reihe: spReihe.map(function (z) { return { jahr: z.jahr, werte: [z.bestand_kwh], vorlaeufig: z.jahr === aktuellesJahr, bis: "heute" }; }),
+      aria: t("Speicherkapazität steigt", "Die Speicher werden mehr"),
+    }));
+    el.appendChild(absatz("diagramm-fuss", t(
+      zahl(speicherJetzt.bestand_anzahl) + " Stromspeicher mit zusammen " + zahl(speicherJetzt.bestand_kw / 1000, 1) +
+      " MW Leistung. Die meisten sind Heimspeicher neben einer Solaranlage: Sie heben Mittagsstrom für den Abend auf. " +
+      "Quelle: Marktstammdatenregister.",
+      zahl(speicherJetzt.bestand_anzahl) + " Strom-Speicher. Sie heben Sonnen-Strom für den Abend auf.")));
+  }
+
+  /* ---------------- Ladepunkte ---------------- */
+  function baueLaden() {
+    var el = document.getElementById("diagramm-laden");
+    var L = D.laden;
+    var v = B.verkehr;
+    el.innerHTML = "";
+    el.appendChild(absatz("diagramm-titel", t("Öffentliche Ladepunkte nach Jahr der Inbetriebnahme, heute in Betrieb",
+      "So viele öffentliche Lade-Punkte gibt es")));
+    var reihe = L.reihe.filter(function (z) { return z.jahr >= 2012; });
+    el.appendChild(saeulen({
+      id: "lp", serien: [{ name: "Ladepunkte", farbe: farbe("--laden") }], einheit: "Ladepunkte", wertLetzte: true,
+      reihe: reihe.map(function (z) { return { jahr: z.jahr, werte: [z.bestand], vorlaeufig: z.jahr === aktuellesJahr, bis: L.stand }; }),
+      aria: t("Ladepunkte in Ingolstadt: " + zahl(L.ladepunkte), "Lade-Punkte: " + zahl(L.ladepunkte)),
+    }));
+    var sprung = L.reihe.filter(function (z) { return z.jahr === 2023; })[0];
+    el.appendChild(absatz("diagramm-fuss", t(
+      (sprung ? "Der Sprung 2023 (+" + zahl(sprung.zubau) + ") kommt vor allem von Ladepunkten in öffentlichen Parkhäusern. " : "") +
+      "Gezählt werden nur Ladepunkte, die heute noch in Betrieb sind. Zum Vergleich: In Ingolstadt sind " +
+      zahl(v.pkw_bestand) + " Pkw zugelassen (" + v.pkw_bestand_stichtag + "), bis 2035 sollen " + zahl(v.e_fahrzeuge_ziel_2035) +
+      " davon elektrisch fahren. Von " + v.busflotte + " Stadtbussen fuhren " + v.e_busse_2023 + " im Jahr 2023 elektrisch, " +
+      v.e_busse_geplant + ". Quellen: Ladesäulenregister der Bundesnetzagentur (Stand " + L.stand + "), Fortschrittsbericht 2025.",
+      "2023 kamen viele Lade-Punkte in Park-Häusern dazu. Bis 2035 sollen " + zahl(v.e_fahrzeuge_ziel_2035) +
+      " Autos in Ingolstadt elektrisch fahren.")));
+  }
+
+  /* ---------------- Was fehlt ---------------- */
+  function baueFehlt() {
+    var el = document.getElementById("fehlt-liste");
+    el.innerHTML = "";
+    [
+      [t("Treibhausgase nach Sektoren als Zeitreihe", "CO₂ nach Bereichen"), t("liegt bei der Stabsstelle Klima, bisher nur als Grafik im Bericht", "Die Stadt hat die Zahlen")],
+      [t("Radverkehr", "Fahrrad"), t("Zählstellen-Daten gibt es bisher nicht öffentlich", "Es gibt noch keine Zahlen")],
+      [t("Energieverbrauch städtischer Gebäude", "Strom und Heizung in Gebäuden der Stadt"), t("Daten des Energiemanagements der Stadt", "Die Stadt hat die Zahlen")],
+      [t("Wärmepumpen und Fernwärme", "Neue Heizungen"), t("Ziel laut Wärmeplan: " + zahl(B.waerme.waermepumpen_ziel_2035) + " Wärmepumpen bis 2035", "Ziel: " + zahl(B.waerme.waermepumpen_ziel_2035) + " Wärme-Pumpen bis 2035")],
+      [t("Elektroautos im Bestand", "Elektro-Autos"), t("Zahlen des Kraftfahrt-Bundesamts, noch nicht eingebunden", "Kommt bald")],
+    ].forEach(function (paar) {
+      var li = document.createElement("li");
+      li.innerHTML = "<strong>" + paar[0] + "</strong> <span>– " + paar[1] + "</span>";
+      el.appendChild(li);
+    });
+  }
+
+  /* ---------------- Quellen ---------------- */
+  function baueQuellen() {
+    var el = document.getElementById("quellen-block");
+    el.innerHTML = "";
+    el.appendChild(absatz("", "<strong>" + t("Quellen", "Woher die Zahlen kommen") + "</strong>"));
+    var ul = document.createElement("ul");
+    [
+      ["Deutscher Wetterdienst, Climate Data Center: Tageswerte Station " + D.klima.station + " (" + D.klima.station_id + ")", D.klima.quelle],
+      ["Marktstammdatenregister der Bundesnetzagentur: Solaranlagen und Stromspeicher, Gemeindeschlüssel 09161000", D.solar.quelle],
+      ["Ladesäulenregister der Bundesnetzagentur, Stand " + D.laden.stand, D.laden.quelle],
+      [B.berichte["2025"].titel + ", Stabsstelle Klima, " + B.berichte["2025"].stand, B.berichte["2025"].url],
+      [B.berichte["2023"].titel + ", Stabsstelle Klima, " + B.berichte["2023"].stand, B.berichte["2023"].url],
+    ].forEach(function (q) {
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.href = q[1];
+      a.rel = "noopener noreferrer";
+      a.target = "_blank";
+      a.textContent = q[0];
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+    el.appendChild(ul);
+    el.appendChild(absatz("", t("Daten zuletzt aktualisiert am " +
+      new Date(D.erzeugt_am).toLocaleDateString("de-DE") + ". Erzeugt mit <code>scraper/klima_bauen.py</code>.",
+      "Zuletzt neu geladen: " + new Date(D.erzeugt_am).toLocaleDateString("de-DE") + ".")));
+  }
+
+  /* ---------------- Tabs ---------------- */
+  document.querySelectorAll('[role="tablist"]').forEach(function (leiste) {
+    var tabs = Array.prototype.slice.call(leiste.querySelectorAll('[role="tab"]'));
+    function aktiviere(tab, fokus) {
+      tabs.forEach(function (x) {
+        var an = x === tab;
+        x.setAttribute("aria-selected", an ? "true" : "false");
+        x.tabIndex = an ? 0 : -1;
+        document.getElementById(x.getAttribute("aria-controls")).hidden = !an;
+      });
+      if (fokus) tab.focus();
+    }
+    tabs.forEach(function (tab, i) {
+      tab.addEventListener("click", function () { aktiviere(tab); });
+      tab.addEventListener("keydown", function (ev) {
+        var ziel = null;
+        if (ev.key === "ArrowRight") ziel = tabs[(i + 1) % tabs.length];
+        if (ev.key === "ArrowLeft") ziel = tabs[(i - 1 + tabs.length) % tabs.length];
+        if (ev.key === "Home") ziel = tabs[0];
+        if (ev.key === "End") ziel = tabs[tabs.length - 1];
+        if (ziel) { ev.preventDefault(); aktiviere(ziel, true); }
+      });
+    });
+  });
+
+  /* ---------------- Leichte-Sprache-Umschalter ---------------- */
+  texteAnwenden();
+
+  var btnLeicht = document.getElementById("btn-leicht");
+  btnLeicht.setAttribute("aria-pressed", leicht ? "true" : "false");
+  btnLeicht.addEventListener("click", function () {
+    leicht = !leicht;
+    btnLeicht.setAttribute("aria-pressed", leicht ? "true" : "false");
+    try { localStorage.setItem(LS_KEY_LEICHT, leicht ? "1" : "0"); } catch (err) { /* Storage kann gesperrt sein */ }
+    texteAnwenden();
+  });
+})();
+</script>
+
+<script src="zaehler.js" defer></script>
+</body>
+</html>

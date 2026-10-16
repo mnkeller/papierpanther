@@ -67,6 +67,24 @@ stehen in [KURATION.md](KURATION.md).
 Hintergrund zur Datenlage, zum Beratungsstand und zu den offenen Fragen:
 [PROTOTYP-INGOLSTADT.md](PROTOTYP-INGOLSTADT.md).
 
+### Klima (`klima.html`)
+
+```bash
+cd scraper && python3 klima_bauen.py   # --neu, um den Cache zu umgehen
+```
+
+Holt offene Daten und schreibt `data/klima.json` + `data/klima.js`
+(window.KLIMA_DATEN). Der erste Lauf lädt rund 110 MB (vor allem das
+Ladesäulenregister) und dauert etwa zwei Minuten.
+
+- Deutscher Wetterdienst: Tageswerte der Station Kösching (seit 1961). Dieselbe
+  Station und Referenzperiode (1971–2000) wie im Fortschrittsbericht der Stadt.
+- Marktstammdatenregister: Solaranlagen und Stromspeicher, Gemeindeschlüssel
+  09161000. Gespeichert werden nur Jahressummen, keine Einzelanlagen.
+- Ladesäulenregister der Bundesnetzagentur: öffentliche Ladepunkte.
+- `data/klima_bericht.json`: von Hand gepflegte Werte aus den
+  Fortschrittsberichten der Stabsstelle Klima (THG-Bilanz, Ziele).
+
 ## Datenquelle
 
 Ratsinfoportal der Stadt Ingolstadt (SessionNet / Somacos „Session"), zwei
