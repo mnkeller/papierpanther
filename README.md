@@ -85,6 +85,22 @@ Ladesäulenregister) und dauert etwa zwei Minuten.
 - `data/klima_bericht.json`: von Hand gepflegte Werte aus den
   Fortschrittsberichten der Stabsstelle Klima (THG-Bilanz, Ziele).
 
+### Miete (`miete.html`)
+
+Kein Skript: `data/miete.js` (window.MIETE_DATEN) ist von Hand gepflegt.
+
+- Basismiete und Zu-/Abschläge aus der „Fortschreibung 2025 des qualifizierten
+  Mietspiegels 2023“ (DOMUS Consult, Tab. 2 und 3), gültig bis 31.10.2027.
+  Der Rechner läuft nur im Browser; die Eingaben bleiben im localStorage.
+- Mietpreisbremse und Kappungsgrenze laut Bayerischer Mieterschutzverordnung
+  (Ingolstadt: Anlage Nr. 1.1.1).
+- Ablauf, Ausnahmen, Zeitleiste, „Wer profitiert?“ und die Stadtratsvorgänge
+  zum Wohnen stehen ebenfalls in `data/miete.js`, jeweils in normaler und
+  Leichter Sprache.
+
+Beim neuen Mietspiegel (Befragung voraussichtlich 2. Quartal 2027) die Tabellen
+komplett ersetzen. Angebotsmieten fehlen bewusst: Dafür gibt es keine offenen Daten.
+
 ### Sparplan / Haushaltssicherungskonzept (`hsk.html`)
 
 ```bash
