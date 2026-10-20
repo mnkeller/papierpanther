@@ -163,6 +163,42 @@ def p_haushalt_hosts(haushalt):
         fehlt(f"haushalt.json: {len(fehlerhaft)} Quellen-URLs ausserhalb der erlaubten Hosts: {fehlerhaft[:5]}")
 
 
+def p_hsk(hsk):
+    """
+    Zweite Pruefsumme fuer data/hsk.json (Haushaltssicherungskonzept), aus
+    demselben Grund wie p_haushalt_summen: hsk_lesen.py prueft beim Lesen,
+    aber eine liegengebliebene oder von Hand angefasste Datei faellt nur hier
+    auf. Ausserdem landen vorlage_url und die Quellen als href auf hsk.html.
+    """
+    m = hsk["massnahmen"]
+    kzv = hsk["bericht"]["konsolidierungsziel"]
+    for i, j in enumerate(kzv["jahre"]):
+        summe = sum((x["teur"].get(j) or 0) for x in m["verwaltungshaushalt"])
+        gedruckt = m["summe_verwaltungshaushalt"][j]
+        if abs(summe - gedruckt) > 1:
+            fehlt(f"hsk.json {j}: Massnahmen summieren zu {summe:.1f}, Summe {gedruckt}")
+        if abs(kzv["kzv"][i] + gedruckt - kzv["differenz_gesamt"][i]) > 1:
+            fehlt(f"hsk.json {j}: Sparziel + Massnahmen ergibt nicht die gedruckte Differenz")
+    for x in m["verwaltungshaushalt"]:
+        if not x.get("titel") or not x.get("titel_leicht") or not x.get("bereich"):
+            warnt(f"hsk.json: Massnahme {x['nr']} ohne Klartext/Leichte Sprache/Bereich")
+        for satz in filter(None, (s.strip() for s in re.split(r"[.!?]", x.get("text_leicht") or ""))):
+            if len(satz.split()) > 14:
+                warnt(f"hsk.json {x['nr']}: Satz mit {len(satz.split())} Woertern (Leichte Sprache)")
+    fw = hsk["freiwillige_leistungen"]
+    summe = sum(p["euro"]["2026"] for p in fw["posten"])
+    if abs(summe - fw["summe_euro"]["2026"]) > 0.5 * len(fw["posten"]):
+        fehlt(f"hsk.json: freiwillige Leistungen 2026 summieren zu {summe}, gedruckt {fw['summe_euro']['2026']}")
+    urls = [v for k, v in hsk["quellen"].items() if k != "vorlage_nr"]
+    urls += [x.get("vorlage_url") for liste in ("verwaltungshaushalt", "personal", "vermoegenshaushalt")
+             for x in m[liste]]
+    urls += [e.get("url") for e in hsk["bericht"]["zeitleiste"]]
+    urls += [b.get("url") for b in hsk["bericht"]["beratung"]]
+    fehlerhaft = list(_fremde_urls(urls))
+    if fehlerhaft:
+        fehlt(f"hsk.json: {len(fehlerhaft)} URLs ausserhalb der erlaubten Hosts: {fehlerhaft[:5]}")
+
+
 def p_nur_oeffentliche_tops(kur, index):
     """
     Nicht-oeffentliche Tagesordnungspunkte duerfen nie kuratiert werden.
@@ -399,6 +435,8 @@ def main():
         haushalt = lade("haushalt.json")
         p_haushalt_summen(haushalt)
         p_haushalt_hosts(haushalt)
+    if os.path.exists(os.path.join(DATEN_VZ, "hsk.json")):
+        p_hsk(lade("hsk.json"))
     if os.path.exists(os.path.join(DATEN_VZ, "antraege.json")):
         p_antraege_hosts(lade("antraege.json"))
     p_oberflaeche(feed)

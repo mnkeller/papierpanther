@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://mnkeller.goatcounter.com; base-uri 'self'; form-action 'self'">
+<title>Der Sparplan der Stadt — PapierPanther</title>
+<meta name="description" content="Das Haushaltssicherungskonzept der Stadt Ingolstadt erklärt: wie groß die Finanzlücke ist, welche Maßnahmen geplant sind, was freiwillige Leistungen kosten und was das für die Schulden bedeutet.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://schanzer-papierpanther.de/hsk.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PapierPanther Ingolstadt">
+<meta property="og:url" content="https://schanzer-papierpanther.de/hsk.html">
+<meta property="og:title" content="Der Sparplan der Stadt — PapierPanther">
+<meta property="og:description" content="Das Haushaltssicherungskonzept der Stadt Ingolstadt erklärt: wie groß die Finanzlücke ist, welche Maßnahmen geplant sind, was freiwillige Leistungen kosten und was das für die Schulden bedeutet.">
+<meta property="og:image" content="https://schanzer-papierpanther.de/vorschau.png">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Der Sparplan der Stadt — PapierPanther">
+<meta name="twitter:image" content="https://schanzer-papierpanther.de/vorschau.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003E59'/%3E%3Cpath d='M18 30c0-8 5-15 14-15s14 7 14 15' fill='none' stroke='%23ffffff' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M17 22c-2-4-2-8 1-11 1 3 1 6 3 8z' fill='%23ffffff'/%3E%3Cpath d='M47 22c2-4 2-8-1-11-1 3-1 6-3 8z' fill='%23ffffff'/%3E%3Ccircle cx='25' cy='31' r='3' fill='%23ffffff'/%3E%3Ccircle cx='39' cy='31' r='3' fill='%23ffffff'/%3E%3Cpath d='M30 38l2 3 2-3z' fill='%23B00E2B'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --primary: #003e59;
+    --primary-dark: #00263a;
+    --accent: #b00e2b;
+    --text: #16232b;
+    --text-muted: #566a74;
+    --text-faint: #5c6a72;
+    --bg: #f8f7f4;
+    --bg-warm: #f1efe9;
+    --card: #ffffff;
+    --border: #e4e0d8;
+    --border-strong: #8f8779;
+    --warn-bg: #fdf6e7;
+    --warn-border: #e8d9b0;
+    --warn-tx: #7d6320;
+    /* Gedeckt = Petrol (wie Einnahmen auf der Haushaltsseite), offen = Rot
+       schraffiert, beeinflussbare Ausgaben in den Ockertoenen der Ausgaben. */
+    --gedeckt: #2f7080;
+    --einmalig: #93bcc5;
+    --offen: #b00e2b;
+    --offen-hell: #f6dfe3;
+    --aus-1: #96551f;
+    --aus-2: #b6752f;
+    --aus-3: #cf9a55;
+    --aus-fest: #d9d4ca;
+    --trend: #b6752f;
+    --konsol: #2f7080;
+    --soll: #8f8779;
+    --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+    --radius: 10px;
+    --shadow: 0 1px 3px rgba(22,35,43,.06), 0 0 0 1px rgba(22,35,43,.04);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-body); color: var(--text); background: var(--bg);
+    line-height: 1.65; font-size: 16px; -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
+  @media (max-width: 480px) { .container { padding: 0 1rem; } }
+  a { color: var(--accent); }
+
+  .site-header {
+    background: var(--primary); border-bottom: 3px solid var(--accent);
+    padding: .85rem 0; position: sticky; top: 0; z-index: 50;
+  }
+  .site-header .container { display: flex; align-items: center; gap: .65rem; flex-wrap: wrap; }
+  .logo-mark { flex: none; display: block; }
+  .brand {
+    font-family: var(--font-display); font-size: 1.28rem; font-weight: 700;
+    letter-spacing: -.01em; color: #fff; text-decoration: none;
+  }
+  .brand span { color: #a9c7d6; font-weight: 400; }
+  .header-spacer { margin-left: auto; }
+  .btn-zurueck {
+    font-size: .82rem; font-weight: 600; text-decoration: none; color: #fff;
+    background: none; border: 1px solid rgba(255,255,255,.5); border-radius: 999px;
+    padding: .3rem .85rem;
+  }
+  .btn-zurueck:hover { background: rgba(255,255,255,.14); }
+  .btn-leicht {
+    font: inherit; font-size: .82rem; cursor: pointer;
+    background: none; border: 1px solid rgba(255,255,255,.5); color: #fff;
+    padding: .3rem .75rem; border-radius: 999px;
+  }
+  .btn-leicht:hover { background: rgba(255,255,255,.14); }
+  .btn-leicht[aria-pressed="true"] {
+    background: #fff; color: var(--primary-dark); border-color: #fff; font-weight: 600;
+  }
+
+  main { padding: 3rem 0 3.5rem; }
+  h1 {
+    font-family: var(--font-display); font-size: clamp(1.75rem, 4.5vw, 2.4rem);
+    font-weight: 700; letter-spacing: -.02em; margin-bottom: .5rem; max-width: 24ch;
+  }
+  /* "Haushaltssicherungskonzept" passt auf dem Handy nicht in eine Zeile. */
+  h1, h2, h3 { overflow-wrap: break-word; hyphens: auto; -webkit-hyphens: auto; }
+  .lede { color: var(--text-muted); font-size: 1.05rem; max-width: 62ch; margin-bottom: 1.25rem; }
+
+  .disclaimer {
+    background: var(--warn-bg); border-bottom: 1px solid var(--warn-border);
+    color: var(--warn-tx); font-size: .74rem; padding: .5rem 0;
+  }
+  .disclaimer strong { font-weight: 600; }
+  .disclaimer p { max-width: 680px; margin: 0; }
+
+  h2 {
+    font-family: var(--font-display); font-size: 1.5rem; font-weight: 700;
+    margin: 3rem 0 .75rem; letter-spacing: -.01em;
+  }
+  h3 {
+    font-family: var(--font-display); font-size: 1.1rem; font-weight: 700;
+    margin: 1.5rem 0 .5rem;
+  }
+  p { margin-bottom: 1rem; max-width: 68ch; }
+  em { font-style: italic; }
+
+  .status-hinweis {
+    background: var(--warn-bg); border: 1px solid var(--warn-border); border-radius: var(--radius);
+    color: var(--warn-tx); font-size: .88rem; line-height: 1.55; padding: .75rem 1rem;
+    margin: 0 0 1.5rem; max-width: none; overflow-wrap: break-word; hyphens: auto;
+  }
+  .status-hinweis a { color: var(--warn-tx); }
+
+  /* ---------- Kennzahlen ---------- */
+  .kennzahlen {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+    gap: .75rem; margin: 0 0 1rem;
+  }
+  .kachel {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: .9rem 1rem 1rem;
+    min-width: 0; overflow-wrap: break-word; hyphens: auto;
+  }
+  .kachel p { margin: 0; }
+  .kachel-label { font-size: .8rem; font-weight: 600; color: var(--text-muted); line-height: 1.4; min-height: 2.8em; }
+  .kachel .kachel-wert {
+    font-family: var(--font-display); font-size: 1.4rem; font-weight: 700;
+    color: var(--text); line-height: 1.25; margin: .15rem 0 .3rem; white-space: nowrap;
+  }
+  .kachel.rot .kachel-wert { color: var(--accent); }
+  .kachel-unter { font-size: .8rem; color: var(--text-faint); line-height: 1.45; }
+  @media (max-width: 480px) {
+    .kennzahlen { grid-template-columns: 1fr 1fr; gap: .5rem; }
+    .kachel { padding: .7rem .75rem .8rem; }
+    .kachel .kachel-wert { font-size: 1.2rem; }
+    .kachel-label, .kachel-unter { font-size: .74rem; }
+  }
+
+  /* ---------- Aufklappbarer Erklaerkasten (wie auf der Haushaltsseite) ---------- */
+  .aufklapp-abschnitt {
+    margin: 2.5rem 0; background: var(--card); border: 1px solid var(--border-strong);
+    border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden;
+  }
+  .aufklapp-abschnitt summary {
+    cursor: pointer; list-style: none; display: flex; align-items: center; gap: 1rem;
+    padding: 1.1rem 1.3rem; transition: background .12s ease;
+  }
+  .aufklapp-abschnitt summary::-webkit-details-marker { display: none; }
+  .aufklapp-abschnitt summary:hover { background: var(--bg-warm); }
+  .aufklapp-abschnitt summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .aufklapp-abschnitt[open] summary { border-bottom: 1px solid var(--border); }
+  .aufklapp-kopf { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: .35rem; overflow-wrap: break-word; hyphens: auto; }
+  @media (max-width: 480px) { .aufklapp-abschnitt summary { padding: 1rem; gap: .6rem; } }
+  .aufklapp-abschnitt summary h2 { margin: 0; }
+  .aufklapp-chevron { flex: none; font-size: 1.3rem; line-height: 1; color: var(--primary); transition: transform .18s ease; }
+  .aufklapp-abschnitt[open] .aufklapp-chevron { transform: rotate(180deg); }
+  .aufklapp-teaser { font-size: .95rem; font-weight: 400; color: var(--text-muted); max-width: 62ch; }
+  .aufklapp-inhalt { background: var(--bg-warm); padding: 1.25rem 1.3rem 1.4rem; }
+  .aufklapp-inhalt h3:first-child { margin-top: 0; }
+
+  /* ---------- Diagramm-Karten ---------- */
+  .diagramm {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 1.5rem 1.5rem 1.25rem; margin: 1.25rem 0 2rem;
+    max-width: 100%;
+  }
+  @media (max-width: 480px) { .diagramm { padding: 1.1rem 1rem 1rem; } }
+  .diagramm svg { display: block; width: 100%; height: auto; font-family: var(--font-body); }
+  .svg-scroll { overflow-x: auto; }
+  @media (max-width: 640px) { .svg-scroll svg { width: 640px; } }
+  .diagramm-titel { font-size: .95rem; font-weight: 600; color: var(--text); margin-bottom: .9rem; }
+  .diagramm-lead { font-size: .92rem; color: var(--text); margin-bottom: 1rem; max-width: 68ch; }
+  .diagramm-fuss { font-size: .78rem; color: var(--text-faint); margin-top: .75rem; margin-bottom: 0; }
+  .legende { display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; font-size: .8rem; color: var(--text-muted); margin-bottom: .75rem; }
+  .legende span { display: inline-flex; align-items: center; gap: .4rem; }
+  .legende i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; }
+  .legende i.offen, .seg.offen {
+    background: repeating-linear-gradient(45deg, var(--offen-hell) 0 4px, #fff 4px 8px);
+    box-shadow: inset 0 0 0 1px var(--offen);
+  }
+  .legende i.linie { height: 0; border-radius: 0; border-top: 2px dashed var(--soll); background: none; }
+  .achse-text { font-size: 11px; fill: var(--text-faint); }
+  .achse-linie { stroke: var(--border-strong); stroke-width: 1; }
+  .gitter { stroke: var(--border); stroke-width: 1; }
+  .ref-linie { stroke: var(--soll); stroke-width: 1.5; stroke-dasharray: 5 4; }
+  .ref-text { font-size: 11px; fill: var(--text-muted); paint-order: stroke; stroke: var(--card); stroke-width: 3px; stroke-linejoin: round; }
+  .wert-text { font-size: 11px; fill: var(--text); font-weight: 600; paint-order: stroke; stroke: var(--card); stroke-width: 3px; stroke-linejoin: round; }
+
+  .tabs {
+    display: flex; flex-wrap: wrap; gap: .25rem; border-bottom: 1px solid var(--border);
+    margin: -.4rem 0 1.1rem;
+  }
+  .tabs [role="tab"] {
+    font: inherit; font-size: .86rem; cursor: pointer; background: none; border: none;
+    border-bottom: 3px solid transparent; margin-bottom: -1px;
+    padding: .45rem .8rem .5rem; color: var(--text-muted);
+  }
+  .tabs [role="tab"]:hover { color: var(--text); background: var(--bg-warm); }
+  .tabs [role="tab"][aria-selected="true"] { color: var(--primary); border-bottom-color: var(--accent); font-weight: 600; }
+  .tabs [role="tab"]:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+  /* ---------- Schalter, Chips, Regler ---------- */
+  .schalter-zeile { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; margin: 0 0 1rem; font-size: .88rem; }
+  .schalter-zeile label { display: inline-flex; align-items: center; gap: .45rem; cursor: pointer; }
+  .schalter-zeile input[type="checkbox"] { width: 1.05rem; height: 1.05rem; accent-color: var(--primary); }
+  .chips { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0 0 .9rem; }
+  .chip {
+    font: inherit; font-size: .82rem; cursor: pointer; background: var(--card); color: var(--text);
+    border: 1px solid var(--border-strong); border-radius: 999px; padding: .25rem .75rem;
+  }
+  .chip:hover { background: var(--bg-warm); }
+  .chip[aria-pressed="true"] { background: var(--primary); color: #fff; border-color: var(--primary); }
+  .chip:focus-visible, .segbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .segmentiert { display: inline-flex; border: 1px solid var(--border-strong); border-radius: 8px; overflow: hidden; }
+  .segbtn {
+    font: inherit; font-size: .84rem; cursor: pointer; background: var(--card); color: var(--text);
+    border: none; border-right: 1px solid var(--border); padding: .3rem .7rem;
+  }
+  .segbtn:last-child { border-right: none; }
+  .segbtn[aria-pressed="true"] { background: var(--primary); color: #fff; font-weight: 600; }
+  .steuer-zeile { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; margin-bottom: 1rem; font-size: .86rem; color: var(--text-muted); }
+
+  /* ---------- Zeitleiste ---------- */
+  .zeitleiste { list-style: none; position: relative; margin: 1rem 0 0; padding-left: 1.6rem; }
+  .zeitleiste::before { content: ""; position: absolute; left: .45rem; top: .4rem; bottom: .4rem; width: 2px; background: var(--border); }
+  .zeitleiste li { position: relative; margin-bottom: .35rem; }
+  .zeitleiste li::before {
+    content: ""; position: absolute; left: -1.38rem; top: .72rem; width: .8rem; height: .8rem;
+    border-radius: 50%; background: var(--primary); box-shadow: 0 0 0 3px var(--bg);
+  }
+  .zeitleiste li.zukunft::before { background: var(--card); border: 2px solid var(--primary); }
+  .zeitleiste li.heute-danach::before { background: var(--accent); }
+  .zl-knopf {
+    font: inherit; text-align: left; width: 100%; cursor: pointer; background: none; border: none;
+    border-radius: 8px; padding: .4rem .6rem; display: flex; flex-wrap: wrap; gap: .1rem .75rem; align-items: baseline;
+    color: var(--text);
+  }
+  .zl-knopf:hover { background: var(--bg-warm); }
+  .zl-knopf:focus-visible { outline: 2px solid var(--accent); outline-offset: 0; }
+  .zl-datum { font-size: .8rem; font-weight: 600; color: var(--text-muted); min-width: 6.8rem; font-variant-numeric: tabular-nums; }
+  .zl-titel { font-weight: 600; flex: 1; min-width: 12rem; }
+  .zl-text { font-size: .9rem; padding: 0 .6rem .6rem; margin: 0; }
+  .zl-text a { color: var(--primary-dark); }
+  .heute-marke { font-size: .72rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: .04em; margin: .4rem 0 .4rem -1.6rem; padding-left: 1.6rem; border-top: 1px dashed var(--accent); padding-top: .2rem; list-style: none; }
+  .heute-marke::before { display: none; }
+
+  /* ---------- Luecken-Balken ---------- */
+  .luecke-zeile { display: grid; grid-template-columns: 3.2rem 1fr; gap: .75rem; align-items: center; margin-bottom: .85rem; }
+  .luecke-jahr { font-weight: 700; font-variant-numeric: tabular-nums; }
+  .luecke-spur { position: relative; }
+  .luecke-balken { display: flex; height: 30px; border-radius: 5px; overflow: hidden; background: var(--bg-warm); }
+  .seg { height: 100%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: .76rem; font-weight: 600; white-space: nowrap; overflow: hidden; min-width: 0; }
+  .seg.gedeckt { background: var(--gedeckt); }
+  .seg.einmalig { background: var(--einmalig); color: var(--primary-dark); }
+  .seg.offen { color: var(--offen); }
+  .seg.ueber { background: #5c8f5a; }
+  .luecke-text { font-size: .8rem; color: var(--text-muted); margin-top: .25rem; }
+  .luecke-text strong { color: var(--text); }
+  @media (max-width: 480px) { .luecke-zeile { grid-template-columns: 2.6rem 1fr; gap: .5rem; } .seg { font-size: .7rem; } }
+
+  .rechenweg { width: 100%; border-collapse: collapse; font-size: .88rem; margin: .5rem 0 0; font-variant-numeric: tabular-nums; }
+  .rechenweg td { padding: .3rem .4rem; border-bottom: 1px solid var(--border); }
+  .rechenweg td:last-child { text-align: right; white-space: nowrap; }
+  .rechenweg tr.summe td { font-weight: 700; border-top: 2px solid var(--text); border-bottom: none; }
+  .rechenweg tr.abzug td { color: var(--text-muted); }
+  .rechenweg-wrap { overflow-x: auto; }
+
+  /* ---------- Massnahmen-Liste ---------- */
+  .m-summe { font-size: .9rem; margin-bottom: .75rem; color: var(--text-muted); }
+  .m-summe strong { color: var(--text); font-family: var(--font-display); font-size: 1.1rem; }
+  .m-liste { list-style: none; display: grid; gap: .45rem; }
+  .m-eintrag { border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
+  .m-eintrag.ohne-wert { background: #fcfbf9; }
+  .m-knopf {
+    font: inherit; color: inherit; text-align: left; width: 100%; cursor: pointer; background: none; border: none;
+    display: grid; grid-template-columns: 1fr minmax(90px, 34%) 5.6rem; gap: .35rem .9rem; align-items: center;
+    padding: .6rem .8rem; border-radius: 8px;
+  }
+  .m-knopf:hover { background: var(--bg-warm); }
+  .m-knopf:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .m-titel { font-size: .92rem; font-weight: 600; line-height: 1.35; }
+  .m-meta { display: flex; flex-wrap: wrap; gap: .3rem; margin-top: .25rem; }
+  .badge { font-size: .7rem; font-weight: 600; border-radius: 4px; padding: .05rem .4rem; background: var(--bg-warm); color: var(--text-muted); white-space: nowrap; }
+  .badge.beschlossen { background: #e3eef0; color: #14505c; }
+  .badge.beratung { background: var(--warn-bg); color: var(--warn-tx); }
+  .badge.offen, .badge.erwartet { background: #f3e9e9; color: #8a2a33; }
+  .m-bar { height: 14px; background: var(--bg-warm); border-radius: 3px; position: relative; }
+  .m-bar span { position: absolute; inset: 0 auto 0 0; background: var(--gedeckt); border-radius: 3px; min-width: 2px; }
+  .m-bar span.einmalig { background: var(--einmalig); }
+  .m-wert { text-align: right; font-variant-numeric: tabular-nums; font-size: .88rem; font-weight: 600; white-space: nowrap; }
+  .m-wert.leer { color: var(--text-faint); font-weight: 400; }
+  .m-details { padding: .2rem .8rem .9rem; font-size: .9rem; border-top: 1px solid var(--border); }
+  .m-details p { margin: .6rem 0 .4rem; }
+  .m-details dl { display: grid; grid-template-columns: max-content 1fr; gap: .2rem .9rem; font-size: .84rem; margin-top: .5rem; }
+  .m-details dt { color: var(--text-muted); }
+  .m-details dd { margin: 0; overflow-wrap: anywhere; }
+  .m-details dd a { color: var(--primary-dark); }
+  .m-jahre { display: grid; grid-template-columns: repeat(4, 1fr); gap: .3rem; margin-top: .6rem; max-width: 26rem; }
+  .m-jahre div { background: var(--bg-warm); border-radius: 6px; padding: .3rem .45rem; font-size: .78rem; text-align: center; }
+  .m-jahre b { display: block; font-size: .88rem; font-variant-numeric: tabular-nums; }
+  .m-original { font-size: .82rem; color: var(--text-muted); border-left: 3px solid var(--border); padding-left: .6rem; }
+  .m-unterliste { list-style: none; margin-top: .6rem; display: grid; gap: .3rem; }
+  .m-unterliste li { display: grid; grid-template-columns: 1fr auto; gap: .6rem; font-size: .84rem; padding: .35rem .5rem; background: var(--bg-warm); border-radius: 6px; }
+  .m-unterliste li small { display: block; color: var(--text-muted); font-size: .78rem; }
+  .m-unterliste .m-wert { font-size: .84rem; }
+  @media (max-width: 560px) {
+    .m-knopf { grid-template-columns: 1fr 5rem; }
+    .m-bar { grid-column: 1 / -1; grid-row: 2; }
+  }
+
+  /* ---------- Ausgabenstruktur ---------- */
+  .stapel { display: flex; height: 46px; border-radius: 6px; overflow: hidden; margin: .5rem 0 .4rem; }
+  .stapel button {
+    border: none; border-right: 1px solid #fff; cursor: pointer; padding: 0; min-width: 2px;
+    font: inherit; font-size: .72rem; font-weight: 600; color: #fff; overflow: hidden; white-space: nowrap;
+  }
+  .stapel button:last-child { border-right: none; }
+  .stapel button.fest { color: var(--text-muted); }
+  .stapel button:hover, .stapel button[aria-pressed="true"] { filter: brightness(.9); }
+  .stapel button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .klammer { display: flex; font-size: .78rem; color: var(--text-muted); margin-bottom: .6rem; }
+  .klammer div { border-top: 2px solid var(--aus-2); padding-top: .2rem; }
+  .stapel-info { font-size: .88rem; min-height: 2.8em; margin-bottom: .2rem; }
+
+  /* ---------- Rechner ---------- */
+  .rechner { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
+  @media (max-width: 720px) { .rechner { grid-template-columns: 1fr; } }
+  .regler { margin-bottom: 1.15rem; }
+  .regler-kopf { display: flex; justify-content: space-between; gap: .75rem; align-items: baseline; font-size: .9rem; }
+  .regler-kopf label { font-weight: 600; }
+  .regler-kopf output { font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
+  .regler input[type="range"] { width: 100%; accent-color: var(--primary); margin: .35rem 0 .1rem; }
+  .regler-unter { font-size: .78rem; color: var(--text-muted); line-height: 1.45; }
+  .regler-marken { position: relative; height: 1.1rem; font-size: .68rem; color: var(--text-faint); }
+  .regler-marken span { position: absolute; white-space: nowrap; line-height: 1.1; }
+  .regler-marken span.links { transform: translateX(calc(-100% + .3rem)); text-align: right; }
+  .regler-marken span.rechts { transform: translateX(-.3rem); }
+  .regler-marken span.links::after { content: " ▲"; font-size: .55rem; }
+  .regler-marken span.rechts::before { content: "▲ "; font-size: .55rem; }
+  #r-ziel { display: flex; flex-wrap: wrap; width: 100%; }
+  #r-ziel .segbtn { flex: 1 1 9rem; }
+  .ergebnis-mini {
+    display: none; position: sticky; bottom: 0; z-index: 5; margin: .5rem -.25rem 0;
+    background: var(--primary); color: #fff; border-radius: 8px; padding: .5rem .8rem;
+    font-size: .88rem; box-shadow: 0 -2px 8px rgba(0,0,0,.12);
+  }
+  .ergebnis-mini b { font-family: var(--font-display); font-size: 1.05rem; }
+  @media (max-width: 720px) {
+    .ergebnis { position: static; }
+    .ergebnis-mini { display: block; }
+  }
+  .ergebnis {
+    background: var(--bg-warm); border-radius: var(--radius); padding: 1rem 1.1rem 1.1rem; position: sticky; top: 5.5rem;
+  }
+  .ergebnis-zahl { font-family: var(--font-display); font-size: 1.9rem; font-weight: 700; line-height: 1.15; }
+  .ergebnis-ziel { font-size: .85rem; color: var(--text-muted); margin: .2rem 0 .6rem; }
+  .fortschritt { height: 16px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: inset 0 0 0 1px var(--border); }
+  .fortschritt span { display: block; height: 100%; background: var(--gedeckt); transition: width .2s ease; }
+  .fortschritt span.voll { background: #5c8f5a; }
+  .ergebnis ul { list-style: none; margin-top: .75rem; font-size: .84rem; display: grid; gap: .35rem; }
+  .ergebnis li { padding-left: .9rem; position: relative; }
+  .ergebnis li::before { content: "•"; position: absolute; left: 0; color: var(--text-faint); }
+  .btn-klein {
+    font: inherit; font-size: .8rem; cursor: pointer; background: var(--card); color: var(--primary-dark);
+    border: 1px solid var(--border-strong); border-radius: 999px; padding: .2rem .7rem; margin-top: .8rem;
+  }
+  .btn-klein:hover { background: #fff; }
+  .vorbehalt { margin-top: 1.25rem; font-size: .86rem; background: var(--warn-bg); border: 1px solid var(--warn-border); border-radius: var(--radius); padding: .8rem 1rem; color: var(--warn-tx); }
+  .vorbehalt strong { display: block; margin-bottom: .3rem; }
+  .vorbehalt ul { margin: 0 0 0 1.1rem; display: grid; gap: .25rem; }
+
+  /* ---------- Freiwillige Leistungen ---------- */
+  .suche { width: 100%; max-width: 26rem; font: inherit; font-size: .92rem; padding: .45rem .7rem; border: 1px solid var(--border-strong); border-radius: 8px; background: var(--card); margin-bottom: .9rem; }
+  .suche:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .fw-gruppe { border-bottom: 1px solid var(--border); }
+  .fw-kopf {
+    font: inherit; color: inherit; width: 100%; text-align: left; cursor: pointer; background: none; border: none;
+    display: grid; grid-template-columns: 1fr minmax(80px, 38%) 5.4rem 1rem; gap: .8rem; align-items: center; padding: .55rem .3rem;
+  }
+  .fw-kopf:hover { background: var(--bg-warm); }
+  .fw-kopf:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .fw-name { font-weight: 600; font-size: .92rem; }
+  .fw-name small { font-weight: 400; color: var(--text-muted); }
+  .fw-pfeil { color: var(--primary); transition: transform .15s ease; }
+  .fw-kopf[aria-expanded="true"] .fw-pfeil { transform: rotate(180deg); }
+  .fw-posten { list-style: none; padding: .1rem 0 .7rem; }
+  .fw-posten li { display: grid; grid-template-columns: 1fr minmax(60px, 30%) 5.4rem; gap: .8rem; align-items: center; font-size: .84rem; padding: .22rem .3rem .22rem 1rem; }
+  .fw-posten li .m-bar { height: 8px; }
+  .fw-posten li .m-bar span { background: var(--aus-3); }
+  .fw-trend { font-size: .72rem; color: var(--text-faint); display: block; }
+  mark { background: #fbe7a1; color: inherit; padding: 0 1px; border-radius: 2px; }
+  @media (max-width: 560px) {
+    .fw-kopf { grid-template-columns: 1fr 5rem 1rem; }
+    .fw-kopf .m-bar { display: none; }
+    .fw-posten li { grid-template-columns: 1fr 5rem; }
+    .fw-posten li .m-bar { display: none; }
+  }
+
+  /* ---------- Kreditrechner ---------- */
+  .kredit { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.25rem 1.5rem; align-items: center; }
+  @media (max-width: 640px) { .kredit { grid-template-columns: 1fr; } }
+  .kredit-ergebnis { background: var(--bg-warm); border-radius: var(--radius); padding: .9rem 1rem; }
+  .kredit-ergebnis p { margin: 0 0 .35rem; font-size: .9rem; }
+  .kredit-ergebnis .ergebnis-zahl { font-size: 1.6rem; }
+
+  .liste-schlicht { margin: .25rem 0 1rem 1.2rem; display: grid; gap: .4rem; max-width: 68ch; }
+  .bisher { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: .75rem; margin: 1rem 0 0; }
+  .bisher li { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: .8rem 1rem; font-size: .88rem; box-shadow: var(--shadow); }
+  .bisher b { display: block; font-size: .95rem; }
+  .bisher small { color: var(--text-muted); }
+
+  .quellen { font-size: .82rem; color: var(--text-faint); }
+  .quellen a { color: var(--primary-dark); }
+  .quellen ul { list-style: none; display: grid; gap: .25rem; margin-top: .5rem; }
+  .stand { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--border-strong); }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  .site-footer { border-top: 1px solid var(--border); background: var(--bg-warm); padding: 1.75rem 0; font-size: .85rem; color: var(--text-muted); }
+  .site-footer .container { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+  .site-footer a { color: var(--primary-dark); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .ladehinweis { color: var(--text-faint); font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <svg class="logo-mark" width="34" height="34" viewBox="0 0 40 40" aria-hidden="true">
+      <rect x="9" y="17" width="22" height="16" rx="2" fill="#f1efe9"/>
+      <path d="M27 17h4v4z" fill="#B00E2B"/>
+      <path d="M11 18c0-7.5 4-12 9-12s9 4.5 9 12" fill="#fff"/>
+      <path d="M13 15 L9.5 5 L17.5 11.5 Z" fill="#fff"/>
+      <path d="M27 15 L30.5 5 L22.5 11.5 Z" fill="#fff"/>
+      <circle cx="16.5" cy="15" r="1.7" fill="#003E59"/>
+      <circle cx="23.5" cy="15" r="1.7" fill="#003E59"/>
+      <path d="M18.6 18.2l1.4 1.9 1.4-1.9z" fill="#B00E2B"/>
+    </svg>
+    <a class="brand" href="index.html">PapierPanther <span>Ingolstadt</span></a>
+    <span class="header-spacer"></span>
+    <button class="btn-leicht" id="btn-leicht" type="button" aria-pressed="false">Leichte Sprache</button>
+    <a class="btn-zurueck" href="index.html">← Zurück zum PapierPanther</a>
+  </div>
+</header>
+
+<div class="disclaimer">
+  <div class="container">
+    <p id="txt-hinweis"></p>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+    <h1 id="txt-h1"></h1>
+    <p class="lede" id="txt-lede"></p>
+    <p class="status-hinweis" id="status-hinweis"></p>
+
+    <div class="kennzahlen" id="kennzahlen" aria-label="Kennzahlen"><p class="ladehinweis">Lade Zahlen …</p></div>
+
+    <section id="was-ist-ein-hsk">
+      <details class="aufklapp-abschnitt">
+        <summary>
+          <span class="aufklapp-kopf">
+            <h2 id="txt-was-h2"></h2>
+            <span class="aufklapp-teaser" id="txt-was-teaser"></span>
+          </span>
+          <span class="aufklapp-chevron" aria-hidden="true">▾</span>
+        </summary>
+        <div class="aufklapp-inhalt" id="was-inhalt"></div>
+      </details>
+    </section>
+
+    <section id="zeitleiste">
+      <h2 id="txt-zl-h2"></h2>
+      <p id="txt-zl-p"></p>
+      <div class="diagramm"><ol class="zeitleiste" id="zeitleiste-liste"></ol></div>
+    </section>
+
+    <section id="luecke">
+      <h2 id="txt-luecke-h2"></h2>
+      <p id="txt-luecke-p"></p>
+      <div class="diagramm">
+        <div class="schalter-zeile">
+          <label><input type="checkbox" id="schalter-klinikum"> <span id="txt-schalter-klinikum"></span></label>
+          <label><input type="checkbox" id="schalter-dauerhaft"> <span id="txt-schalter-dauerhaft"></span></label>
+        </div>
+        <div id="luecke-legende"></div>
+        <div id="luecke-balken" aria-live="polite"><p class="ladehinweis">Lade Diagramm …</p></div>
+        <p class="diagramm-fuss" id="luecke-fuss"></p>
+      </div>
+      <details class="aufklapp-abschnitt">
+        <summary>
+          <span class="aufklapp-kopf">
+            <h3 id="txt-rechenweg-h3" style="margin:0"></h3>
+            <span class="aufklapp-teaser" id="txt-rechenweg-teaser"></span>
+          </span>
+          <span class="aufklapp-chevron" aria-hidden="true">▾</span>
+        </summary>
+        <div class="aufklapp-inhalt" id="rechenweg"></div>
+      </details>
+    </section>
+
+    <section id="massnahmen">
+      <h2 id="txt-m-h2"></h2>
+      <p id="txt-m-p"></p>
+      <div class="diagramm">
+        <div class="tabs" role="tablist" aria-label="Ansicht der Maßnahmen">
+          <button type="button" role="tab" id="tab-m-liste" aria-controls="panel-m-liste" aria-selected="true"><span id="txt-tab-m-liste"></span></button>
+          <button type="button" role="tab" id="tab-m-personal" aria-controls="panel-m-personal" aria-selected="false" tabindex="-1"><span id="txt-tab-m-personal"></span></button>
+        </div>
+        <div role="tabpanel" id="panel-m-liste" aria-labelledby="tab-m-liste">
+          <div class="steuer-zeile">
+            <span id="txt-m-jahr"></span>
+            <div class="segmentiert" id="m-jahre" role="group"></div>
+            <span id="txt-m-sort"></span>
+            <div class="segmentiert" id="m-sort" role="group"></div>
+          </div>
+          <div class="chips" id="m-bereiche" role="group"></div>
+          <p class="m-summe" id="m-summe" aria-live="polite"></p>
+          <ul class="m-liste" id="m-liste"></ul>
+          <p class="diagramm-fuss" id="m-fuss"></p>
+        </div>
+        <div role="tabpanel" id="panel-m-personal" aria-labelledby="tab-m-personal" hidden></div>
+      </div>
+    </section>
+
+    <section id="spielraum">
+      <h2 id="txt-sp-h2"></h2>
+      <p id="txt-sp-p"></p>
+      <div class="diagramm">
+        <p class="diagramm-titel" id="txt-stapel-titel"></p>
+        <div class="stapel" id="stapel" role="group"></div>
+        <div class="klammer" id="klammer"></div>
+        <p class="stapel-info" id="stapel-info" aria-live="polite"></p>
+        <p class="diagramm-fuss" id="txt-stapel-fuss"></p>
+      </div>
+
+      <h3 id="txt-rechner-h3"></h3>
+      <p id="txt-rechner-p"></p>
+      <div class="diagramm">
+        <div class="rechner">
+          <div id="regler"></div>
+          <div class="ergebnis" id="ergebnis" aria-live="polite"></div>
+        </div>
+        <div class="vorbehalt" id="vorbehalt"></div>
+      </div>
+    </section>
+
+    <section id="freiwillig">
+      <h2 id="txt-fw-h2"></h2>
+      <p id="txt-fw-p"></p>
+      <div class="diagramm">
+        <label class="sr-only" for="fw-suche" id="txt-fw-suche-label"></label>
+        <input type="search" class="suche" id="fw-suche" autocomplete="off">
+        <p class="m-summe" id="fw-summe" aria-live="polite"></p>
+        <div id="fw-liste"><p class="ladehinweis">Lade Liste …</p></div>
+        <p class="diagramm-fuss" id="fw-fuss"></p>
+      </div>
+    </section>
+
+    <section id="schulden">
+      <h2 id="txt-sch-h2"></h2>
+      <p id="txt-sch-p"></p>
+      <div class="diagramm">
+        <p class="diagramm-titel" id="txt-sch-titel"></p>
+        <div id="sch-legende"></div>
+        <div class="svg-scroll" id="sch-diagramm"><p class="ladehinweis">Lade Diagramm …</p></div>
+        <p class="diagramm-fuss" id="sch-fuss"></p>
+      </div>
+      <h3 id="txt-kredit-h3"></h3>
+      <p id="txt-kredit-p"></p>
+      <div class="diagramm">
+        <div class="kredit">
+          <div>
+            <div class="regler">
+              <div class="regler-kopf"><label for="kredit-betrag" id="txt-kredit-betrag"></label><output id="kredit-betrag-out" for="kredit-betrag"></output></div>
+              <input type="range" id="kredit-betrag" min="1" max="150" step="1" value="10">
+            </div>
+            <div class="regler">
+              <div class="regler-kopf"><span id="txt-kredit-zins"></span></div>
+              <div class="segmentiert" id="kredit-zins" role="group" style="margin-top:.35rem"></div>
+            </div>
+          </div>
+          <div class="kredit-ergebnis" id="kredit-ergebnis" aria-live="polite"></div>
+        </div>
+        <p class="diagramm-fuss" id="kredit-fuss"></p>
+      </div>
+    </section>
+
+    <section id="bisher">
+      <h2 id="txt-bisher-h2"></h2>
+      <p id="txt-bisher-p"></p>
+      <ul class="bisher" id="bisher-liste"></ul>
+    </section>
+
+    <section id="weiter">
+      <h2 id="txt-weiter-h2"></h2>
+      <div id="weiter-inhalt"></div>
+    </section>
+
+    <div class="stand quellen" id="quellen-block"><p>Lade Quellenangaben …</p></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <a href="index.html">Übersicht</a>
+    <a href="haushalt.html">Der Haushalt</a>
+    <a href="beteiligen.html">Beteiligen</a>
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="https://github.com/mnkeller/papierpanther" rel="noopener noreferrer" target="_blank">Quellcode<span class="sr-only"> (öffnet in neuem Tab)</span></a>
+  </div>
+</footer>
+
+<script src="data/hsk.js"></script>
+<script>
+(function () {
+  "use strict";
+  var D = window.HSK_DATEN;
+  if (!D) {
+    document.querySelectorAll(".ladehinweis").forEach(function (el) {
+      el.textContent = "Die Daten zum Haushaltssicherungskonzept konnten nicht geladen werden.";
+    });
+    return;
+  }
+  var B = D.bericht;
+  var M = D.massnahmen;
+  var Q = D.quellen;
+  var KZV = B.konsolidierungsziel;
+  var JAHRE = KZV.jahre;
+
+  /* ---------------- Formatierung ---------------- */
+  function zahl(n, stellen) {
+    return new Intl.NumberFormat("de-DE", {
+      minimumFractionDigits: stellen || 0, maximumFractionDigits: stellen || 0,
+    }).format(n);
+  }
+  // TEUR -> "20,7 Mio. €"; unter 1 Mio. in Euro, auf Hunderter gerundet
+  // (die Tabellen der Stadt haben eine Nachkommastelle in TEUR).
+  function geld(teur, stellen) {
+    var a = Math.abs(teur);
+    if (a >= 999.95) return zahl(teur / 1000, stellen === undefined ? 1 : stellen) + " Mio. €";
+    if (a === 0) return "0 €";
+    return zahl(Math.round(teur * 10) * 100, 0) + " €";
+  }
+  function mio(teur, stellen) { return zahl(teur / 1000, stellen === undefined ? 1 : stellen); }
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+    });
+  }
+  function datumDe(iso) {
+    if (/^\d{4}$/.test(iso)) return iso;
+    var t = iso.split("-");
+    var monate = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August",
+      "September", "Oktober", "November", "Dezember"];
+    if (t.length === 2) return monate[+t[1] - 1] + " " + t[0];
+    return +t[2] + ". " + monate[+t[1] - 1] + " " + t[0];
+  }
+  function el(tag, attrs, html) {
+    var e = document.createElement(tag);
+    for (var k in (attrs || {})) {
+      if (k === "class") e.className = attrs[k];
+      else e.setAttribute(k, attrs[k]);
+    }
+    if (html !== undefined) e.innerHTML = html;
+    return e;
+  }
+  function svgEl(tag, attrs, kinder) {
+    var e = document.createElementNS("http://www.w3.org/2000/svg", tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    (kinder || []).forEach(function (kind) { e.appendChild(kind); });
+    return e;
+  }
+  function svgText(x, y, inhalt, klasse, anker) {
+    var t = svgEl("text", { x: x, y: y, class: klasse || "" });
+    if (anker) t.setAttribute("text-anchor", anker);
+    t.textContent = inhalt;
+    return t;
+  }
+  function svgTitel(inhalt) { var t = svgEl("title", {}); t.textContent = inhalt; return t; }
+  function extern(href, text) {
+    return "<a href=\"" + esc(href) + "\" target=\"_blank\" rel=\"noopener noreferrer\">" + text +
+      "<span class=\"sr-only\"> (öffnet in neuem Tab)</span></a>";
+  }
+  function legende(eintraege) {
+    var div = el("div", { class: "legende" });
+    eintraege.forEach(function (e) {
+      var span = el("span");
+      var i = el("i", e.klasse ? { class: e.klasse } : {});
+      if (e.farbe) i.style.backgroundColor = e.farbe;
+      span.appendChild(i);
+      span.appendChild(document.createTextNode(e.text));
+      div.appendChild(span);
+    });
+    return div;
+  }
+  function heute() { return new Date().toISOString().slice(0, 10); }
+
+  /* ---------------- Leichte Sprache ---------------- */
+  var LS_KEY_LEICHT = "papierpanther-leichte-sprache";
+  var leicht = false;
+  try { leicht = localStorage.getItem(LS_KEY_LEICHT) === "1"; } catch (err) { /* Storage kann gesperrt sein */ }
+  function t(normal, leichtText) { return leicht ? leichtText : normal; }
+
+  /* ---------------- Abgeleitete Zahlen ---------------- */
+  var VW = M.verwaltungshaushalt;
+  var SUMME = M.summe_verwaltungshaushalt;
+  function wert(m, j) { return m.teur[j] || 0; }
+  function summeVon(liste, j) { return liste.reduce(function (s, m) { return s + wert(m, j); }, 0); }
+  var EINMALIG = VW.filter(function (m) { return m.bereich === "einmalig"; });
+  var FW = D.freiwillige_leistungen;
+  var AUS = B.ausgaben_2026;
+  var ST = B.steuern;
+  var PERS = B.personal;
+
+  var BEREICHE = [
+    { id: "alle", n: "Alle", l: "Alle" },
+    { id: "steuern", n: "Steuern und Gebühren", l: "Steuern und Gebühren" },
+    { id: "bildung", n: "Kultur, Bildung, Betreuung", l: "Kultur und Schule" },
+    { id: "soziales", n: "Soziales und Treffpunkte", l: "Hilfe und Treff-Punkte" },
+    { id: "strasse", n: "Straßen und Stadtbild", l: "Straßen" },
+    { id: "verwaltung", n: "Verwaltung und Stadtrat", l: "Verwaltung" },
+    { id: "personal", n: "Personal der Stadt", l: "Mitarbeiter der Stadt" },
+    { id: "einmalig", n: "Einmaleffekte und Hilfen", l: "Geld nur für ein Jahr" },
+  ];
+  var STATUS = {
+    beschlossen: { n: "beschlossen", l: "beschlossen" },
+    beratung: { n: "in Beratung", l: "noch nicht entschieden" },
+    verwaltung: { n: "setzt die Verwaltung um", l: "macht die Verwaltung" },
+    geplant: { n: "geplant", l: "geplant" },
+    erwartet: { n: "Erwartung", l: "geschätzt" },
+    offen: { n: "offen", l: "offen" },
+  };
+
+  /* ---------------- Statische Texte ---------------- */
+  var TEXTE = {
+    "hinweis": {
+      n: "<strong>PapierPanther ist kein Angebot der Stadt Ingolstadt.</strong> Alle Zahlen stammen " +
+        "aus dem Haushaltssicherungskonzept der Stadtverwaltung (Stand " + B.stand + ") und seinen Anlagen. " +
+        "Verbindlich ist das Originaldokument, das unten verlinkt ist. Dies ist ein Prototyp.",
+      l: "<strong>PapierPanther ist kein Angebot der Stadt Ingolstadt.</strong> Die Zahlen kommen aus " +
+        "einem Papier der Stadt. Unten auf der Seite ist der Link zu dem Papier. Die Seite ist noch ein Test.",
+    },
+    "h1": { n: "Der Sparplan der Stadt: das Haushaltssicherungskonzept", l: "Der Spar-Plan der Stadt" },
+    "lede": {
+      n: "Ingolstadt gibt seit Jahren mehr Geld aus, als regelmäßig hereinkommt. Weil die Lücke zu groß " +
+        "geworden ist, hat die Regierung von Oberbayern die Kredite im Haushalt 2026 nicht genehmigt und " +
+        "einen verbindlichen Plan verlangt: das Haushaltssicherungskonzept, kurz HSK. Diese Seite erklärt, " +
+        "was drinsteht, wie groß die Lücke ist und was die Stadt dagegen tun will.",
+      l: "Die Stadt Ingolstadt hat zu wenig Geld. Sie gibt mehr aus, als sie einnimmt. " +
+        "Die Regierung von Ober-Bayern sagt: So geht es nicht weiter. Die Stadt muss einen Spar-Plan machen. " +
+        "Der Plan heißt Haushalts-Sicherungs-Konzept. Die Abkürzung ist HSK. Hier steht, was in dem Plan steht.",
+    },
+    "was-h2": { n: "Was ist ein Haushaltssicherungskonzept?", l: "Was ist ein Spar-Plan?" },
+    "was-teaser": {
+      n: "Ein Plan, wie eine Stadt aus den roten Zahlen kommt, und warum Ingolstadt einen braucht.",
+      l: "Und warum braucht Ingolstadt einen?",
+    },
+    "zl-h2": { n: "Wie es dazu kam", l: "So kam es zum Spar-Plan" },
+    "zl-p": {
+      n: "Gespart wird in Ingolstadt nicht erst seit dem HSK. Ein Klick auf einen Eintrag zeigt, was passiert ist.",
+      l: "Die Stadt spart schon länger. Klicken Sie auf einen Punkt. Dann sehen Sie mehr.",
+    },
+    "luecke-h2": { n: "Wie groß ist die Lücke?", l: "Wie viel Geld fehlt?" },
+    "luecke-p": {
+      n: "Das Sparziel heißt im HSK <em>Konsolidierungszielvolumen</em>. Es ist der geplante Fehlbetrag im " +
+        "laufenden Haushalt plus eine Reserve von 4 Mio. € im Jahr für Unvorhergesehenes. Die Balken zeigen, " +
+        "wie viel davon die Maßnahmen im Katalog bisher abdecken.",
+      l: "So viel Geld muss die Stadt jedes Jahr sparen. Oder mehr einnehmen. " +
+        "Der blaue Teil ist schon geplant. Der rote Teil fehlt noch.",
+    },
+    "schalter-klinikum": { n: "Klinikum-Defizit herausrechnen", l: "Ohne das Geld für das Klinikum" },
+    "schalter-dauerhaft": { n: "Nur dauerhafte Maßnahmen", l: "Nur Spar-Ideen, die lange wirken" },
+    "rechenweg-h3": { n: "So rechnet das HSK", l: "So wird gerechnet" },
+    "rechenweg-teaser": {
+      n: "Fehlbetrag, Reserve, Klinikum: die Rechnung Schritt für Schritt.",
+      l: "Die Rechnung Schritt für Schritt.",
+    },
+    "m-h2": { n: "Was die Stadt vorhat", l: "Was die Stadt tun will" },
+    "m-p": {
+      n: "Der Maßnahmenkatalog (Anlage 1 des HSK) listet 32 Maßnahmen mit ihrer erwarteten Wirkung auf den " +
+        "laufenden Haushalt. Wählen Sie ein Jahr und einen Lebensbereich. Ein Klick auf eine Maßnahme zeigt den " +
+        "Originalwortlaut und den Beschluss.",
+      l: "Die Stadt hat 32 Ideen zum Sparen. Hier sind alle Ideen. Klicken Sie auf eine Idee. Dann sehen Sie mehr.",
+    },
+    "tab-m-liste": { n: "Alle Maßnahmen", l: "Alle Ideen" },
+    "tab-m-personal": { n: "Personal im Detail", l: "Mitarbeiter der Stadt" },
+    "m-jahr": { n: "Jahr:", l: "Jahr:" },
+    "m-sort": { n: "Sortieren:", l: "Reihen-Folge:" },
+    "sp-h2": { n: "Warum Sparen so schwer ist", l: "Warum Sparen so schwer ist" },
+    "sp-p": {
+      n: "Der laufende Haushalt 2026 sieht " + geld(AUS.summe_teur) + " an Ausgaben vor. Vieles davon kann die " +
+        "Stadt kaum beeinflussen: Sozialleistungen sind gesetzlich festgelegt, die Bezirksumlage muss sie zahlen, " +
+        "innere Verrechnungen sind nur Buchungen zwischen Ämtern. Grundsätzlich beeinflussbar sind laut HSK drei " +
+        "Blöcke: Personal, Sachkosten und Zuschüsse.",
+      l: "Die Stadt gibt 2026 etwa " + mio(AUS.summe_teur, 0) + " Millionen Euro aus. Bei vielen Ausgaben " +
+        "kann sie nicht sparen. Zum Beispiel bei Hilfe für arme Menschen. Das steht so im Gesetz. " +
+        "Sparen kann die Stadt nur bei 3 Dingen: Mitarbeiter, Sachen und Zuschüsse.",
+    },
+    "stapel-titel": { n: "Ausgaben des Verwaltungshaushalts 2026 (Plan)", l: "Ausgaben 2026" },
+    "stapel-fuss": {
+      n: "Ein Klick auf einen Abschnitt zeigt Name und Betrag. Quelle: HSK, Seite " + AUS._seite + ".",
+      l: "Klicken Sie auf ein Stück. Dann sehen Sie, wofür das Geld ist.",
+    },
+    "rechner-h3": { n: "Probieren Sie es selbst", l: "Probieren Sie es selbst" },
+    "rechner-p": {
+      n: "Mit den Reglern können Sie ausprobieren, wie sich die Lücke schließen ließe, die nach allen " +
+        "Maßnahmen im Katalog für 2027 noch offen ist. Es ist eine grobe Überschlagsrechnung auf Basis der " +
+        "Planzahlen 2026, keine Prognose und keine Empfehlung.",
+      l: "Hier können Sie selbst sparen. Schieben Sie die Regler. Dann sehen Sie: So viel Geld kommt zusammen. " +
+        "Das ist nur ein Spiel. Es ist eine grobe Rechnung.",
+    },
+    "fw-h2": { n: "Wofür die Stadt freiwillig Geld ausgibt", l: "Freiwillige Ausgaben der Stadt" },
+    "fw-p": {
+      n: "Die Regierung von Oberbayern verlangt eine Liste aller freiwilligen Leistungen, also Ausgaben, " +
+        "zu denen kein Gesetz die Stadt verpflichtet. Für 2026 sind im laufenden Haushalt " +
+        geld(FW.summe_euro["2026"] / 1000) + " eingeplant, einschließlich der Defizite von Einrichtungen wie " +
+        "Theater, Museen oder Bädern. Suchen Sie nach einem Stichwort oder klappen Sie einen Bereich auf.",
+      l: "Manche Ausgaben muss die Stadt nicht machen. Sie macht sie freiwillig. Zum Beispiel für das Theater. " +
+        "Oder für Sport-Plätze. Das sind 2026 etwa " + mio(FW.summe_euro["2026"] / 1000, 0) + " Millionen Euro. " +
+        "Hier können Sie suchen.",
+    },
+    "fw-suche-label": { n: "Freiwillige Leistungen durchsuchen", l: "Suchen" },
+    "sch-h2": { n: "Was das für die Schulden bedeutet", l: "Schulden der Stadt" },
+    "sch-p": {
+      n: "Seit 2024 nimmt Ingolstadt wieder Kredite auf, um Schulen, Straßen und Gebäude zu bauen und zu " +
+        "sanieren: bis " + B.schulden.bestand_stand + " " + geld(B.schulden.bestand_teur, 0) + ". Das HSK " +
+        "rechnet zwei Szenarien bis 2036 durch. Der Abstand zwischen beiden zeigt, wie viel davon abhängt, " +
+        "welche Bauprojekte der Stadtrat weiterverfolgt.",
+      l: "Die Stadt leiht sich Geld. Damit baut sie zum Beispiel Schulen. Bis jetzt sind es 125 Millionen Euro. " +
+        "Es kann viel mehr werden. Das hängt davon ab, was die Stadt baut.",
+    },
+    "sch-titel": { n: "Aufgenommene Kredite der Stadt, kumuliert, in Mio. €", l: "Schulden der Stadt in Millionen Euro" },
+    "kredit-h3": { n: "Was kostet ein Kredit im Jahr?", l: "Was kostet geliehenes Geld?" },
+    "kredit-p": {
+      n: "Zinsen und Tilgung zahlt die Stadt aus dem laufenden Haushalt, also aus genau dem Teil, in dem " +
+        "schon jetzt Geld fehlt. Rechnen Sie selbst, mit einer Laufzeit von 30 Jahren wie im HSK.",
+      l: "Wer Geld leiht, muss es zurückzahlen. Dazu kommen Zinsen. Das kostet die Stadt jedes Jahr Geld. " +
+        "Hier können Sie es ausrechnen.",
+    },
+    "kredit-betrag": { n: "Kreditbetrag", l: "So viel Geld leihen" },
+    "kredit-zins": { n: "Zinssatz", l: "Zinsen" },
+    "bisher-h2": { n: "Was schon gespart wurde", l: "Was die Stadt schon gespart hat" },
+    "bisher-p": {
+      n: "Laut HSK haben die bisherigen Sparbeschlüsse den Haushalt 2026 gegenüber der ursprünglichen Planung " +
+        "um rund " + B.bisher.effekt_2026_mio + " Mio. € verbessert; ab 2027 wirken sie mit durchschnittlich rund " +
+        B.bisher.effekt_ab_2027_mio + " Mio. € im Jahr weiter. Trotzdem bleibt eine große Lücke.",
+      l: "Die Stadt hat schon viel gespart. 2026 sind es etwa " + B.bisher.effekt_2026_mio + " Millionen Euro. " +
+        "Trotzdem fehlt noch viel Geld.",
+    },
+    "weiter-h2": { n: "Wie es weitergeht, und wo Sie mitreden können", l: "Wie geht es weiter?" },
+  };
+
+  /* ---------------- Statushinweis + Kennzahlen ---------------- */
+  function zeigeStatus() {
+    var fa = B.beratung[0], sr = B.beratung[1];
+    var h = heute();
+    var vorlage = extern(Q.vorlage, "Vorlage " + Q.vorlage_nr);
+    var txt;
+    if (h <= sr.datum) {
+      txt = t(
+        "<strong>Noch ein Entwurf:</strong> Das HSK ist ein Vorschlag der Verwaltung (" + vorlage + "). " +
+          (h <= fa.datum ? "Der Finanzausschuss berät es am " + datumDe(fa.datum) + ", der " :
+            "Der Finanzausschuss hat es am " + datumDe(fa.datum) + " beraten, der ") +
+          "Stadtrat entscheidet am " + datumDe(sr.datum) + ". Danach legt die Stadt es der Regierung von Oberbayern vor.",
+        "<strong>Wichtig:</strong> Der Plan ist noch nicht beschlossen. Der Stadt-Rat entscheidet am " +
+          datumDe(sr.datum) + ".");
+    } else {
+      txt = t(
+        "<strong>Stand:</strong> Der Stadtrat hat am " + datumDe(sr.datum) + " über das HSK beraten (" + vorlage +
+          "). Die Zahlen auf dieser Seite sind die der Beschlussvorlage; Änderungen aus der Sitzung sind noch " +
+          "nicht eingearbeitet.",
+        "<strong>Wichtig:</strong> Der Stadt-Rat hat am " + datumDe(sr.datum) + " über den Plan gesprochen. " +
+          "Die Zahlen hier sind aus dem Plan vor der Sitzung.");
+    }
+    document.getElementById("status-hinweis").innerHTML = txt;
+  }
+
+  function zeigeKennzahlen() {
+    var i27 = JAHRE.indexOf("2027");
+    var offen27 = -KZV.differenz_gesamt[i27];
+    var offen27b = -KZV.differenz_bereinigt[i27];
+    var k = [
+      { wert: geld(-KZV.unterdeckung[0]), rot: true,
+        label: t("fehlen 2026 im laufenden Haushalt", "fehlen im Jahr 2026"),
+        unter: t("Plan; die laufenden Einnahmen decken die laufenden Ausgaben nicht", "Die Einnahmen reichen nicht.") },
+      { wert: geld(-KZV.durchschnitt_kzv),
+        label: t("Sparziel pro Jahr, Ø 2026–2029", "muss die Stadt jedes Jahr sparen"),
+        unter: t("Fehlbetrag plus 4 Mio. € Reserve", "im Durchschnitt") },
+      { wert: geld(SUMME["2027"]),
+        label: t("bringen die Maßnahmen 2027", "bringen die Spar-Ideen 2027"),
+        unter: t(VW.length + " Maßnahmen im Katalog", VW.length + " Ideen") },
+      { wert: geld(offen27), rot: true,
+        label: t("bleiben 2027 trotzdem offen", "fehlen 2027 dann noch"),
+        unter: t("ohne Klinikum-Defizit: " + geld(offen27b), "ohne Klinikum: " + geld(offen27b)) },
+      { wert: String(B.ziel_jahr),
+        label: t("soll der Haushalt wieder ausgeglichen sein", "soll wieder genug Geld da sein"),
+        unter: t("strukturell und genehmigungsfähig", "Einnahmen und Ausgaben sind dann gleich.") },
+    ];
+    var box = document.getElementById("kennzahlen");
+    box.innerHTML = "";
+    k.forEach(function (x) {
+      var d = el("div", { class: "kachel" + (x.rot ? " rot" : "") });
+      d.appendChild(el("p", { class: "kachel-label" }, esc(x.label)));
+      d.appendChild(el("p", { class: "kachel-wert" }, esc(x.wert)));
+      d.appendChild(el("p", { class: "kachel-unter" }, esc(x.unter)));
+      box.appendChild(d);
+    });
+  }
+
+  /* ---------------- Was ist ein HSK ---------------- */
+  function zeigeWasIst() {
+    var gew = ST.gewerbesteuer_plan_2026_teur;
+    var html = t(
+      "<p>Eine Stadt darf ihre laufenden Ausgaben, etwa Gehälter, Zuschüsse oder Energie, nicht dauerhaft mit " +
+        "Krediten bezahlen. Kredite sind nur für Investitionen erlaubt, also für Schulen, Brücken oder Gebäude. " +
+        "Reichen die laufenden Einnahmen nicht mehr aus, ist die <em>dauernde Leistungsfähigkeit</em> der Stadt " +
+        "gefährdet. Dann kann die Rechtsaufsicht, für Ingolstadt die Regierung von Oberbayern, Kredite im Haushalt " +
+        "verweigern.</p>" +
+        "<p>Genau das ist passiert: Am 31. März 2026 hat die Regierung die Kredite und Verpflichtungsermächtigungen " +
+        "im Haushalt 2026 nicht genehmigt. Sie verlangt ein Haushaltssicherungskonzept, das zeigt, <em>wie</em> und " +
+        "<em>bis wann</em> die Stadt wieder einen genehmigungsfähigen Haushalt aufstellen kann.</p>" +
+        "<p>Das HSK ist deshalb kein weiteres Sparpaket, sondern ein verbindlicher Rahmen. Es legt ein Sparziel fest, " +
+        "gibt Regeln für alle Ausgaben vor, sammelt die Maßnahmen in einer Liste und schreibt vor, dass regelmäßig " +
+        "nachgeprüft wird, was tatsächlich gespart wurde. Es bindet Stadtrat, Verwaltung und die städtischen " +
+        "Unternehmen.</p>" +
+        "<h3>Was heißt „vorläufige Haushaltsführung“?</h3>" +
+        "<p>Solange kein Haushalt in Kraft ist, gilt Artikel 69 der Gemeindeordnung. Die Stadt darf dann nur zahlen, " +
+        "wozu sie rechtlich verpflichtet ist oder was keinen Aufschub duldet, und bereits begonnene Bauprojekte " +
+        "fortführen. Neue freiwillige Ausgaben und neue Projekte sind nicht vorgesehen, auch keine " +
+        "Wirtschaftsförderung. In diesem Zustand ist Ingolstadt seit dem 1. Januar 2026.</p>" +
+        "<h3>Warum fehlt so viel Geld?</h3>" +
+        "<p>Die Gewerbesteuer ist eingebrochen: Für 2026 sind " + geld(gew) + " eingeplant, im Schnitt der Jahre " +
+        "2012 bis 2024 waren es " + zahl(ST.gewerbesteuer_schnitt_2012_2024_mio, 1) + " Mio. €. Gleichzeitig " +
+        "steigen Personal-, Sozial- und Baukosten. Und die Stadt trägt das Defizit des Klinikums: bis 2023 " +
+        "höchstens " + zahl(B.klinikum.zuschuss_bis_2023_max_mio, 1) + " Mio. € im Jahr, 2025 schon " +
+        zahl(B.klinikum.zuschuss_2025_mio, 1) + " Mio. €. Bis 2025 konnte die Stadt die Lücken noch aus ihren " +
+        "Rücklagen decken; dafür reichen sie nicht mehr.</p>" +
+        "<p>Das HSK spricht deshalb von einem <em>strukturellen</em> Defizit: Die regelmäßigen Einnahmen bleiben " +
+        "dauerhaft hinter den regelmäßigen Ausgaben zurück. Ein kurzer Engpass, der sich von selbst erledigt, ist " +
+        "es nicht.</p>",
+      "<p>Eine Stadt bezahlt jeden Tag viele Dinge. Zum Beispiel ihre Mitarbeiter. Dafür darf sie sich kein Geld " +
+        "leihen. Geld leihen darf sie nur zum Bauen. Zum Beispiel für eine neue Schule.</p>" +
+        "<p>Ingolstadt hat nicht mehr genug Geld für die täglichen Dinge. Die Regierung von Ober-Bayern passt " +
+        "auf die Stadt auf. Sie hat gesagt: Ihr dürft euch kein Geld mehr leihen. Erst müsst ihr einen Spar-Plan " +
+        "machen.</p>" +
+        "<p>Der Spar-Plan sagt: So viel Geld müssen wir sparen. Hier wollen wir sparen. Und: Jedes Jahr schauen " +
+        "wir nach, ob es geklappt hat.</p>" +
+        "<h3>Warum hat die Stadt zu wenig Geld?</h3>" +
+        "<p>Firmen zahlen Steuern an die Stadt. Diese Steuer heißt Gewerbe-Steuer. Früher waren das etwa " +
+        zahl(ST.gewerbesteuer_schnitt_2012_2024_mio, 0) + " Millionen Euro im Jahr. 2026 sind es nur noch etwa " +
+        mio(gew, 0) + " Millionen Euro. Gleichzeitig wird vieles teurer. Und das Klinikum braucht viel Geld von der " +
+        "Stadt.</p>" +
+        "<h3>Was darf die Stadt gerade?</h3>" +
+        "<p>Die Stadt hat seit Januar 2026 keinen gültigen Haushalt. Darum darf sie nur Geld für nötige Dinge " +
+        "ausgeben. Neue Projekte darf sie nicht anfangen.</p>");
+    document.getElementById("was-inhalt").innerHTML = html;
+  }
+
+  /* ---------------- Zeitleiste ---------------- */
+  var zlOffen = {};
+  function zeigeZeitleiste() {
+    var liste = document.getElementById("zeitleiste-liste");
+    liste.innerHTML = "";
+    var h = heute();
+    var markeGesetzt = false;
+    B.zeitleiste.forEach(function (e, i) {
+      var vergleich = e.datum.length === 4 ? e.datum + "-12-31" : (e.datum.length === 7 ? e.datum + "-28" : e.datum);
+      var zukunft = vergleich > h;
+      if (zukunft && !markeGesetzt) {
+        liste.appendChild(el("li", { class: "heute-marke", "aria-hidden": "true" }, t("Heute", "Heute")));
+        markeGesetzt = true;
+      }
+      var li = el("li", { class: zukunft ? "zukunft" : "" });
+      var id = "zl-text-" + i;
+      var knopf = el("button", { type: "button", class: "zl-knopf", "aria-expanded": zlOffen[i] ? "true" : "false", "aria-controls": id });
+      knopf.appendChild(el("span", { class: "zl-datum" }, esc(datumDe(e.datum))));
+      knopf.appendChild(el("span", { class: "zl-titel" }, esc(t(e.titel, e.titel_leicht))));
+      var text = el("p", { class: "zl-text", id: id },
+        esc(t(e.text, e.text_leicht)) +
+        (e.url ? " " + extern(e.url, e.vorlage ? t("Vorlage " + e.vorlage, "Mehr dazu") : t("Sitzung", "Mehr dazu")) : ""));
+      text.hidden = !zlOffen[i];
+      knopf.addEventListener("click", function () {
+        zlOffen[i] = !zlOffen[i];
+        text.hidden = !zlOffen[i];
+        knopf.setAttribute("aria-expanded", zlOffen[i] ? "true" : "false");
+      });
+      li.appendChild(knopf);
+      li.appendChild(text);
+      liste.appendChild(li);
+    });
+  }
+
+  /* ---------------- Luecke ---------------- */
+  var zustand = { ohneKlinikum: false, nurDauerhaft: false };
+  function zeigeLuecke() {
+    var box = document.getElementById("luecke-balken");
+    box.innerHTML = "";
+    var leg = document.getElementById("luecke-legende");
+    leg.innerHTML = "";
+    var eintraege = [{ farbe: "var(--gedeckt)", text: t("dauerhafte Maßnahmen", "Spar-Ideen") }];
+    if (!zustand.nurDauerhaft) eintraege.push({ farbe: "var(--einmalig)", text: t("Einmaleffekte (nur 2026)", "Geld nur für 2026") });
+    eintraege.push({ klasse: "offen", text: t("noch offen", "fehlt noch") });
+    leg.appendChild(legende(eintraege));
+
+    var ziele = JAHRE.map(function (j, i) { return -(zustand.ohneKlinikum ? KZV.bereinigt[i] : KZV.kzv[i]); });
+    var max = Math.max.apply(null, ziele.concat(JAHRE.map(function (j) { return SUMME[j]; })));
+    JAHRE.forEach(function (j, i) {
+      var ziel = ziele[i];
+      var einm = zustand.nurDauerhaft ? 0 : summeVon(EINMALIG, j);
+      var dauer = SUMME[j] - summeVon(EINMALIG, j);
+      var gedeckt = dauer + einm;
+      var offen = Math.max(0, ziel - gedeckt);
+      var ueber = Math.max(0, gedeckt - ziel);
+      var zeile = el("div", { class: "luecke-zeile" });
+      zeile.appendChild(el("div", { class: "luecke-jahr" }, j));
+      var spur = el("div", { class: "luecke-spur" });
+      var balken = el("div", { class: "luecke-balken", role: "img",
+        "aria-label": j + ": " + t("Ziel ", "Ziel ") + geld(ziel) + ", " + t("gedeckt ", "geplant ") + geld(Math.min(gedeckt, ziel)) +
+          ", " + t("offen ", "fehlt ") + geld(offen) });
+      function seg(klasse, betrag, beschrift) {
+        if (betrag <= 0) return;
+        var s = el("div", { class: "seg " + klasse, title: beschrift + ": " + geld(betrag) });
+        s.style.width = (betrag / max * 100) + "%";
+        if (betrag / max > 0.09) s.textContent = mio(betrag);
+        balken.appendChild(s);
+      }
+      var dauerSichtbar = Math.min(dauer, ziel);
+      seg("gedeckt", dauerSichtbar, t("dauerhafte Maßnahmen", "Spar-Ideen"));
+      seg("einmalig", Math.min(einm, ziel - dauerSichtbar), t("Einmaleffekte", "nur 2026"));
+      seg("offen", offen, t("offen", "fehlt"));
+      seg("ueber", ueber, t("über dem Ziel", "mehr als nötig"));
+      spur.appendChild(balken);
+      var satz;
+      if (offen > 0) {
+        satz = t("Ziel <strong>" + geld(ziel) + "</strong>, davon abgedeckt " + geld(gedeckt) +
+            " (" + zahl(gedeckt / ziel * 100) + " %), offen <strong>" + geld(offen) + "</strong>",
+          "Es fehlen <strong>" + geld(offen) + "</strong>. Geplant sind " + geld(gedeckt) + ".");
+      } else {
+        satz = t("Ziel " + geld(ziel) + ", rechnerisch erreicht (" + geld(gedeckt) + ")",
+          "Genug geplant: " + geld(gedeckt) + ".");
+      }
+      spur.appendChild(el("div", { class: "luecke-text" }, satz));
+      zeile.appendChild(spur);
+      box.appendChild(zeile);
+    });
+
+    var e26 = summeVon(EINMALIG, "2026");
+    document.getElementById("luecke-fuss").innerHTML = t(
+      "2026 sieht besser aus als die Folgejahre, vor allem wegen Einmaleffekten von zusammen " + geld(e26) +
+        " (geringere Klinikum-Umlage, Rücklage aus dem Jahresabschluss 2025, Ausgabensperre). Sie fallen 2027 weg. " +
+        (zustand.ohneKlinikum ? "Hinweis: Auch in der Ansicht ohne Klinikum rechnet die Tabelle der Stadt die geringere " +
+          "Klinikum-Umlage 2026 als Maßnahme mit. " : "") +
+        "Quelle: HSK Seite " + KZV._seite + " und Anlage 1.",
+      "2026 gibt es viel Geld, das es nur einmal gibt. 2027 fehlt dieses Geld wieder.");
+    zeigeRechenweg();
+  }
+
+  function zeigeRechenweg() {
+    var spalten = JAHRE.map(function (j, i) { return i; });
+    function zeile(label, werte, klasse) {
+      return "<tr" + (klasse ? " class=\"" + klasse + "\"" : "") + "><td>" + label + "</td>" +
+        werte.map(function (w) { return "<td>" + w + "</td>"; }).join("") + "</tr>";
+    }
+    var kopf = "<tr><td></td>" + JAHRE.map(function (j) { return "<td><strong>" + j + "</strong></td>"; }).join("") + "</tr>";
+    var tab = "<div class=\"rechenweg-wrap\"><table class=\"rechenweg\">" + kopf +
+      zeile(t("Fehlbetrag im Verwaltungshaushalt", "Es fehlen"), spalten.map(function (i) { return mio(-KZV.unterdeckung[i]); })) +
+      zeile(t("+ Reserve", "+ Reserve"), spalten.map(function (i) { return mio(-KZV.reserve[i]); })) +
+      zeile(t("= Sparziel (KZV)", "= Spar-Ziel"), spalten.map(function (i) { return mio(-KZV.kzv[i]); }), "summe") +
+      zeile(t("− Betriebskostenzuschuss Klinikum", "− Geld für das Klinikum"), spalten.map(function (i) { return mio(KZV.klinikum[i]); }), "abzug") +
+      zeile(t("= bereinigtes Sparziel", "= Spar-Ziel ohne Klinikum"), spalten.map(function (i) { return mio(-KZV.bereinigt[i]); }), "summe") +
+      "</table></div><p class=\"diagramm-fuss\">" + t("in Mio. €", "in Millionen Euro") + "</p>";
+    document.getElementById("rechenweg").innerHTML = t(
+      "<p>Das HSK legt die Zielgröße so fest: Fehlbetrag im Verwaltungshaushalt plus eventuell noch nicht gedeckte " +
+        "Fehlbeträge aus Vorjahren (derzeit null) plus eine Reserve für Kostensteigerungen, Einnahmeausfälle und " +
+        "Umsetzungsprobleme. Ab 2030 soll zusätzlich ein Überschuss für Investitionen dazukommen.</p>" + tab +
+        "<p>Das Klinikum wird gesondert ausgewiesen, weil der Zuschuss stark von der bundesweiten Krankenhausfinanzierung " +
+        "abhängt. Bezahlen muss die Stadt ihn trotzdem; er bleibt in der Planung vollständig enthalten.</p>" +
+        "<p>Zur Einordnung: Das Sparziel entspricht im Schnitt " + zahl(KZV.anteil_prozent_durchschnitt, 1) +
+        " % des bereinigten Verwaltungshaushalts, 2029 sogar " + zahl(KZV.anteil_prozent[3], 1) + " %. " +
+        "Das HSK betont außerdem, dass der Erfolg nicht allein am Fehlbetrag abzulesen ist: Neue Belastungen, etwa eine " +
+        "höhere Bezirksumlage, können erreichte Einsparungen überdecken.</p>",
+      "<p>Die Rechnung geht so: Es fehlt Geld. Dazu kommt eine Reserve. Das ist Geld für Not-Fälle. " +
+        "Das zusammen ist das Spar-Ziel.</p>" + tab +
+        "<p>Das Klinikum braucht viel Geld von der Stadt. Darum rechnet die Stadt es auch einmal ohne Klinikum.</p>");
+  }
+
+  /* ---------------- Massnahmen ---------------- */
+  var mz = { jahr: "2027", bereich: "alle", sort: "betrag", offen: {} };
+  function statusBadge(s) {
+    if (!s || !STATUS[s]) return "";
+    return "<span class=\"badge " + s + "\">" + esc(t(STATUS[s].n, STATUS[s].l)) + "</span>";
+  }
+  function bereichName(id) {
+    for (var i = 0; i < BEREICHE.length; i++) if (BEREICHE[i].id === id) return t(BEREICHE[i].n, BEREICHE[i].l);
+    return id;
+  }
+  function segButtons(boxId, optionen, aktiv, beiWahl) {
+    var box = document.getElementById(boxId);
+    box.innerHTML = "";
+    optionen.forEach(function (o) {
+      var b = el("button", { type: "button", class: "segbtn", "aria-pressed": o.wert === aktiv ? "true" : "false" }, esc(o.text));
+      b.addEventListener("click", function () { beiWahl(o.wert); });
+      box.appendChild(b);
+    });
+  }
+  function zeigeMassnahmenSteuerung() {
+    segButtons("m-jahre", JAHRE.map(function (j) { return { wert: j, text: j }; }), mz.jahr,
+      function (w) { mz.jahr = w; zeigeMassnahmenSteuerung(); zeigeMassnahmen(); });
+    segButtons("m-sort", [{ wert: "betrag", text: t("nach Betrag", "nach Geld") }, { wert: "nr", text: t("nach Nummer", "nach Nummer") }],
+      mz.sort, function (w) { mz.sort = w; zeigeMassnahmenSteuerung(); zeigeMassnahmen(); });
+    var chips = document.getElementById("m-bereiche");
+    chips.innerHTML = "";
+    chips.setAttribute("aria-label", t("Lebensbereich", "Bereich"));
+    BEREICHE.forEach(function (b) {
+      var anzahl = b.id === "alle" ? VW.length : VW.filter(function (m) { return m.bereich === b.id; }).length;
+      var c = el("button", { type: "button", class: "chip", "aria-pressed": mz.bereich === b.id ? "true" : "false" },
+        esc(t(b.n, b.l)) + " <small>(" + anzahl + ")</small>");
+      c.addEventListener("click", function () { mz.bereich = b.id; zeigeMassnahmenSteuerung(); zeigeMassnahmen(); });
+      chips.appendChild(c);
+    });
+  }
+  function jahreKacheln(m) {
+    return "<div class=\"m-jahre\">" + JAHRE.map(function (j) {
+      var v = m.teur[j];
+      return "<div>" + j + "<b>" + (v === null || v === undefined ? "–" : geld(v)) + "</b></div>";
+    }).join("") + "</div>";
+  }
+  function details(m) {
+    var hf = B.handlungsfelder[m.punkt];
+    var dl = "<dl>";
+    dl += "<dt>" + t("Originaltitel", "So steht es im Plan") + "</dt><dd>" + esc(m.art) + "</dd>";
+    if (m.beschluss) {
+      dl += "<dt>" + t("Beschluss", "Beschluss") + "</dt><dd>" +
+        (m.vorlage_url ? extern(m.vorlage_url, esc(m.beschluss)) : esc(m.beschluss)) + "</dd>";
+    }
+    if (m.ab) dl += "<dt>" + t("Wirksam ab", "Ab wann") + "</dt><dd>" + esc(m.ab) + "</dd>";
+    if (hf) dl += "<dt>" + t("Handlungsfeld", "Bereich im Plan") + "</dt><dd>" + m.punkt + " · " + esc(t(hf.name, hf.leicht)) + "</dd>";
+    dl += "<dt>" + t("Betrag", "Betrag") + "</dt><dd>" + (m.geschaetzt ? t("geschätzt", "geschätzt") : t("berechnet", "berechnet")) + "</dd>";
+    if (m.verantwortlich) dl += "<dt>" + t("Zuständig", "Zuständig") + "</dt><dd>" +
+      esc(/^[IVX]+$/.test(m.verantwortlich) ? "Referat " + m.verantwortlich :
+        m.verantwortlich === "BTM" ? "Beteiligungsmanagement" : "Amt " + m.verantwortlich) + "</dd>";
+    dl += "</dl>";
+    var orig = m.erlaeuterung ? "<p class=\"m-original\">" + t("Wortlaut der Tabelle: ", "Im Plan steht: ") +
+      "„" + esc(m.erlaeuterung) + "“" + (m.wirkungsanalyse ? " " + esc(m.wirkungsanalyse) : "") + "</p>" : "";
+    return "<p>" + esc(t(m.text || m.erlaeuterung, m.text_leicht || m.text || m.erlaeuterung)) + "</p>" +
+      jahreKacheln(m) + orig + dl;
+  }
+  function zeigeMassnahmen() {
+    var j = mz.jahr;
+    var liste = VW.filter(function (m) { return mz.bereich === "alle" || m.bereich === mz.bereich; });
+    if (mz.sort === "betrag") {
+      liste = liste.slice().sort(function (a, b) { return wert(b, j) - wert(a, j) || a.nr.localeCompare(b.nr); });
+    }
+    var max = Math.max.apply(null, VW.map(function (m) { return wert(m, j); }).concat([1]));
+    var summe = summeVon(liste, j);
+    document.getElementById("m-summe").innerHTML = t(
+      liste.length + " Maßnahmen, zusammen <strong>" + geld(summe) + "</strong> im Jahr " + j +
+        (mz.bereich === "alle" ? "" : " (von " + geld(SUMME[j]) + " insgesamt)"),
+      liste.length + " Ideen. Zusammen <strong>" + geld(summe) + "</strong> im Jahr " + j + ".");
+    var ul = document.getElementById("m-liste");
+    ul.innerHTML = "";
+    liste.forEach(function (m) {
+      var v = m.teur[j];
+      var hatWert = v !== null && v !== undefined && v !== 0;
+      var li = el("li", { class: "m-eintrag" + (hatWert ? "" : " ohne-wert") });
+      var id = "m-det-" + m.nr;
+      var knopf = el("button", { type: "button", class: "m-knopf", "aria-expanded": mz.offen[m.nr] ? "true" : "false", "aria-controls": id });
+      var links = el("div");
+      links.appendChild(el("div", { class: "m-titel" }, esc(t(m.titel || m.art, m.titel_leicht || m.titel || m.art))));
+      links.appendChild(el("div", { class: "m-meta" },
+        statusBadge(m.status) + "<span class=\"badge\">" + esc(bereichName(m.bereich)) + "</span>" +
+        (m.geschaetzt ? "<span class=\"badge\">" + t("geschätzt", "geschätzt") + "</span>" : "")));
+      knopf.appendChild(links);
+      var bar = el("div", { class: "m-bar", "aria-hidden": "true" });
+      if (hatWert) {
+        var span = el("span", m.bereich === "einmalig" ? { class: "einmalig" } : {});
+        span.style.width = Math.max(0, v) / max * 100 + "%";
+        bar.appendChild(span);
+      }
+      knopf.appendChild(bar);
+      knopf.appendChild(el("div", { class: "m-wert" + (hatWert ? "" : " leer") },
+        hatWert ? geld(v) : (v === 0 ? "0 €" : t("kein Betrag", "kein Betrag"))));
+      var det = el("div", { class: "m-details", id: id }, details(m));
+      if (m.nr === "001") det.appendChild(personalUnterliste(j));
+      det.hidden = !mz.offen[m.nr];
+      knopf.addEventListener("click", function () {
+        mz.offen[m.nr] = !mz.offen[m.nr];
+        det.hidden = !mz.offen[m.nr];
+        knopf.setAttribute("aria-expanded", mz.offen[m.nr] ? "true" : "false");
+      });
+      li.appendChild(knopf);
+      li.appendChild(det);
+      ul.appendChild(li);
+    });
+    if (!liste.length) ul.appendChild(el("li", {}, t("Keine Maßnahmen in diesem Bereich.", "Hier gibt es keine Ideen.")));
+
+    var v1 = M.vermoegenshaushalt[0];
+    document.getElementById("m-fuss").innerHTML = t(
+      "Beträge: Verbesserung des Verwaltungshaushalts gegenüber der Finanzplanung, laut Anlage 1. Maßnahmen ohne " +
+        "Betrag sind noch nicht beziffert und werden erst angerechnet, wenn sie belastbar sind. Zusätzlich im " +
+        "Vermögenshaushalt: " + esc(t(v1.titel, v1.titel_leicht)) + " mit " + geld(v1.teur["2026"]) + " (2026) bis " +
+        geld(v1.teur["2028"]) + " (2028).",
+      "Manche Ideen haben noch keinen Betrag. Die Stadt weiß noch nicht, wie viel sie bringen.");
+  }
+  function personalUnterliste(j) {
+    var box = el("div");
+    box.appendChild(el("p", {}, t(
+      "<strong>Davon einzeln ausgewiesen</strong> (Anlage 1, Blatt 2, nachrichtlich, also schon in der Summe oben enthalten):",
+      "<strong>Das sind Beispiele:</strong>")));
+    var ul = el("ul", { class: "m-unterliste" });
+    M.personal.forEach(function (p) {
+      var v = p.teur[j];
+      ul.appendChild(el("li", {},
+        "<span>" + esc(t(p.titel || p.art, p.titel_leicht || p.titel)) + "<small>" + esc(t(p.text || "", p.text_leicht || "")) + "</small></span>" +
+        "<span class=\"m-wert" + (v ? "" : " leer") + "\">" + (v ? geld(v) : "–") + "</span>"));
+    });
+    box.appendChild(ul);
+    return box;
+  }
+
+  function zeigePersonal() {
+    var panel = document.getElementById("panel-m-personal");
+    panel.innerHTML = "";
+    panel.appendChild(el("p", { class: "diagramm-lead" }, t(
+      "Personal ist mit " + zahl(PERS.ansatz_2026_mio, 1) + " Mio. € (Plan 2026) der größte Ausgabenblock, den die Stadt " +
+        "selbst steuern kann. Der Stadtrat hat im März 2026 einen Deckel beschlossen: höchstens " + PERS.deckel_2029_mio +
+        " Mio. € im Jahr 2029. Für 2027 soll ein Steuerungsziel von " + PERS.ziel_2027_mio + " Mio. € gelten, obwohl der " +
+        "rechnerische Bedarf bei " + PERS.bedarf_2027_mio + " Mio. € liegt. Dafür sollen im Schnitt mindestens " +
+        PERS.abbau_vzae_pro_jahr + " Vollzeitstellen im Jahr wegfallen, über Fluktuation, nicht über Kündigungen.",
+      "Die Stadt gibt viel Geld für ihre Mitarbeiter aus. 2026 sind es etwa " + zahl(PERS.ansatz_2026_mio, 0) +
+        " Millionen Euro. Diese Kosten sollen langsamer steigen. Darum fallen jedes Jahr etwa " + PERS.abbau_vzae_pro_jahr +
+        " Stellen weg. Niemand wird dafür gekündigt.")));
+    panel.appendChild(el("p", { class: "diagramm-titel" }, t("Wie stark die Personalkosten jährlich steigen", "So stark steigen die Kosten für Mitarbeiter")));
+    panel.appendChild(legende([
+      { farbe: "var(--aus-2)", text: t("Steigerung zum Vorjahr", "Steigerung") },
+      { farbe: "var(--gedeckt)", text: t("Ziel 2027 laut HSK", "Ziel für 2027") },
+    ]));
+    var reihe = PERS.steigerung;
+    var W = 640, H = 230, L = 36, R = 10, O = 18, U = 28;
+    var svg = svgEl("svg", { viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": t("Säulendiagramm Personalkostensteigerung", "Diagramm") });
+    var maxP = 8;
+    var y = function (p) { return O + (H - O - U) * (1 - p / maxP); };
+    [0, 2, 4, 6, 8].forEach(function (p) {
+      svg.appendChild(svgEl("line", { x1: L, x2: W - R, y1: y(p), y2: y(p), class: "gitter" }));
+      svg.appendChild(svgText(L - 6, y(p) + 4, p + " %", "achse-text", "end"));
+    });
+    var slot = (W - L - R) / reihe.length;
+    reihe.forEach(function (r, i) {
+      var x = L + i * slot;
+      var bw = r.ziel_prozent ? slot * .3 : slot * .55;
+      var x0 = x + (slot - (r.ziel_prozent ? bw * 2 + 4 : bw)) / 2;
+      var rect = svgEl("rect", { x: x0, y: y(r.prozent), width: bw, height: y(0) - y(r.prozent), fill: "var(--aus-2)",
+        opacity: r.plan ? .65 : 1 }, [svgTitel(r.jahr + ": " + zahl(r.prozent, 1) + " %" + (r.plan ? t(" (Plan/Prognose)", " (Plan)") : ""))]);
+      svg.appendChild(rect);
+      svg.appendChild(svgText(x0 + bw / 2, y(r.prozent) - 5, zahl(r.prozent, 1), "wert-text", "middle"));
+      if (r.ziel_prozent) {
+        var xz = x0 + bw + 4;
+        svg.appendChild(svgEl("rect", { x: xz, y: y(r.ziel_prozent), width: bw, height: y(0) - y(r.ziel_prozent), fill: "var(--gedeckt)" },
+          [svgTitel(t("Ziel 2027: ", "Ziel 2027: ") + zahl(r.ziel_prozent, 1) + " %")]));
+        svg.appendChild(svgText(xz + bw / 2, y(r.ziel_prozent) - 5, zahl(r.ziel_prozent, 1), "wert-text", "middle"));
+      }
+      svg.appendChild(svgText(x + slot / 2, H - 8, r.jahr + (r.plan ? "*" : ""), "achse-text", "middle"));
+    });
+    svg.appendChild(svgEl("line", { x1: L, x2: W - R, y1: y(0), y2: y(0), class: "achse-linie" }));
+    var wrap = el("div", { class: "svg-scroll" });
+    wrap.appendChild(svg);
+    panel.appendChild(wrap);
+    panel.appendChild(el("p", { class: "diagramm-fuss" }, t(
+      "* 2026 Prognose, 2027 rechnerischer Bedarf (" + PERS.bedarf_2027_mio + " Mio. €) und Ziel (" + PERS.ziel_2027_mio +
+        " Mio. €). Schon 2026 wurde der Stellenplan pauschal um " + PERS.kuerzung_2026_prozent + " % gekürzt, das waren rund " +
+        PERS.kuerzung_2026_vzae + " Vollzeitstellen. Quelle: HSK Seiten " + PERS._seite + "–" + PERS._seite_kuerzung + ".",
+      "* Plan. Quelle: Spar-Plan der Stadt.")));
+  }
+
+  /* ---------------- Ausgabenstruktur ---------------- */
+  var stapelAktiv = 0;
+  function zeigeStapel() {
+    var box = document.getElementById("stapel");
+    box.innerHTML = "";
+    box.setAttribute("aria-label", t("Ausgaben 2026 nach Gruppen", "Ausgaben 2026"));
+    var farben = ["var(--aus-1)", "var(--aus-2)", "var(--aus-3)"];
+    var fi = 0;
+    var posten = AUS.posten.slice().sort(function (a, b) { return (b.beeinflussbar - a.beeinflussbar) || (b.teur - a.teur); });
+    var beeinflussbar = 0;
+    posten.forEach(function (p, i) {
+      var anteil = p.teur / AUS.summe_teur;
+      var b = el("button", { type: "button", class: p.beeinflussbar ? "" : "fest", "aria-pressed": i === stapelAktiv ? "true" : "false",
+        "aria-label": p.name + ": " + geld(p.teur) });
+      b.style.width = anteil * 100 + "%";
+      b.style.background = p.beeinflussbar ? farben[fi++] : (i % 2 ? "#e4dfd5" : "var(--aus-fest)");
+      if (anteil > .1) b.textContent = p.kurz;
+      if (p.beeinflussbar) beeinflussbar += p.teur;
+      b.addEventListener("click", function () { stapelAktiv = i; zeigeStapel(); });
+      box.appendChild(b);
+    });
+    var akt = posten[stapelAktiv];
+    document.getElementById("stapel-info").innerHTML = "<strong>" + esc(akt.name) + "</strong> (" +
+      t("Gruppe ", "Gruppe ") + esc(akt.gr) + "): " + geld(akt.teur) + ", " + zahl(akt.teur / AUS.summe_teur * 100, 1) + " % · " +
+      (akt.beeinflussbar ? t("grundsätzlich beeinflussbar", "hier kann die Stadt sparen") :
+        t("kaum beeinflussbar", "hier kann die Stadt kaum sparen"));
+    var kl = document.getElementById("klammer");
+    kl.innerHTML = "";
+    var d = el("div", {}, t("beeinflussbar: " + geld(beeinflussbar, 0) + " (" + zahl(beeinflussbar / AUS.summe_teur * 100) + " %)",
+      "hier kann die Stadt sparen: " + geld(beeinflussbar, 0)));
+    d.style.width = beeinflussbar / AUS.summe_teur * 100 + "%";
+    kl.appendChild(d);
+    document.getElementById("txt-stapel-fuss").innerHTML = t(
+      "Ein Klick auf einen Abschnitt zeigt Name und Betrag. Um das Sparziel von durchschnittlich " + geld(-KZV.durchschnitt_kzv, 0) +
+        " allein aus den drei beeinflussbaren Blöcken zu holen, müssten sie laut HSK um rund " +
+        zahl(KZV.kuerzung_beeinflussbar_prozent, 0) + " % schrumpfen. Und auch darin stecken Pflichtaufgaben: Laut " +
+        "Aufgabenerhebung der Verwaltung fließen rund " + AUS.anteil_pflichtaufgaben_prozent + " % ihrer Mittel in Pflichtaufgaben. " +
+        "Quelle: HSK Seiten " + AUS._seite + "–" + AUS._seite_pflicht + ".",
+      "Klicken Sie auf ein Stück. Dann sehen Sie, wofür das Geld ist. Die Stadt müsste bei den 3 Dingen sehr viel sparen. " +
+        "Etwa jeden 6. Euro.");
+  }
+
+  /* ---------------- Rechner ---------------- */
+  var I27 = JAHRE.indexOf("2027");
+  var GST_PRO_PUNKT = ST.gewerbesteuer_plan_2026_teur / ST.gewerbesteuer_hebesatz;
+  var GRST_PRO_PUNKT = ST.grundsteuer_b_aufkommen_teur / ST.grundsteuer_b_hebesatz;
+  var VZAE_PRO_PROZENT = PERS.kuerzung_2026_vzae / PERS.kuerzung_2026_prozent;
+  var BLOCK = {};
+  AUS.posten.forEach(function (p) { BLOCK[p.kurz] = p.teur; });
+  var rz = { personal: 0, sach: 0, zuschuss: 0, gst: ST.gewerbesteuer_hebesatz, grst: ST.grundsteuer_b_hebesatz, klinikum: false };
+  var VERGLEICHE = [
+    { suche: /^ÖPNV$/, n: "der Zuschuss für den Busverkehr", l: "das Geld für die Busse" },
+    { suche: /^Stadttheater$/, n: "der Zuschuss für das Stadttheater", l: "das Geld für das Theater" },
+    { suche: /Bäder und Eishallen/, n: "der Zuschuss für Bäder und Eishallen", l: "das Geld für die Bäder" },
+    { suche: /^Sing- und Musikschule$/, n: "das Defizit der Musikschule", l: "das Geld für die Musik-Schule" },
+    { suche: /^Stadtbücherei/, n: "das Defizit der Stadtbücherei", l: "das Geld für die Bücherei" },
+  ].map(function (v) {
+    var p = FW.posten.filter(function (x) { return v.suche.test(x.name); })[0];
+    return p ? { n: v.n, l: v.l, teur: p.euro["2026"] / 1000 } : null;
+  }).filter(Boolean);
+
+  function regler(id, label, min, max, step, wert, unter, marken) {
+    var r = el("div", { class: "regler" });
+    r.appendChild(el("div", { class: "regler-kopf" },
+      "<label for=\"r-" + id + "\">" + label + "</label><output id=\"r-" + id + "-out\" for=\"r-" + id + "\"></output>"));
+    var inp = el("input", { type: "range", id: "r-" + id, min: min, max: max, step: step, value: wert });
+    r.appendChild(inp);
+    if (marken && marken.length) {
+      var mk = el("div", { class: "regler-marken", "aria-hidden": "true" });
+      marken.forEach(function (m) {
+        var s = el("span", { class: m.seite || "rechts" }, esc(m.text));
+        s.style.left = ((m.wert - min) / (max - min) * 100) + "%";
+        mk.appendChild(s);
+      });
+      r.appendChild(mk);
+    }
+    r.appendChild(el("div", { class: "regler-unter", id: "r-" + id + "-unter" }, unter));
+    return r;
+  }
+  function zeigeRechner() {
+    var box = document.getElementById("regler");
+    box.innerHTML = "";
+    var ziel = el("div", { class: "regler" });
+    ziel.appendChild(el("div", { class: "regler-kopf" }, "<span>" + t("Welche Lücke schließen?", "Welche Lücke?") + "</span>"));
+    var seg = el("div", { class: "segmentiert", id: "r-ziel", role: "group", style: "margin-top:.35rem" });
+    ziel.appendChild(seg);
+    box.appendChild(ziel);
+    box.appendChild(regler("personal", t("Personal kürzen", "Weniger Mitarbeiter"), 0, 10, 0.5, rz.personal,
+      t("von " + geld(BLOCK.Personal, 0) + " (Plan 2026)", "von " + mio(BLOCK.Personal, 0) + " Millionen Euro")));
+    box.appendChild(regler("sach", t("Sachkosten kürzen", "Weniger Sachen kaufen"), 0, 25, 1, rz.sach,
+      t("von " + geld(BLOCK.Sachkosten, 0) + ": Energie, Mieten, Material, Software, Unterhalt", "zum Beispiel Strom, Material, Computer")));
+    box.appendChild(regler("zuschuss", t("Zuschüsse kürzen", "Weniger Zuschüsse"), 0, 25, 1, rz.zuschuss,
+      t("von " + geld(BLOCK["Zuschüsse"], 0) + ": an Vereine, Träger, Verbände und städtische Unternehmen",
+        "Geld für Vereine und andere")));
+    box.appendChild(regler("gst", t("Gewerbesteuer-Hebesatz", "Gewerbe-Steuer"), ST.gewerbesteuer_hebesatz, 480, 1, rz.gst,
+      t("heute " + ST.gewerbesteuer_hebesatz + " Punkte; ein Punkt bringt rund " + geld(GST_PRO_PUNKT) + ", wenn die Betriebe gleich viel verdienen",
+        "Diese Steuer zahlen Firmen. Heute: " + ST.gewerbesteuer_hebesatz + " Punkte."),
+      [{ wert: ST.gewerbesteuer_abgelehnt, seite: "links", text: t(ST.gewerbesteuer_abgelehnt + " abgelehnt", String(ST.gewerbesteuer_abgelehnt)) },
+        { wert: ST.gewerbesteuer_durchschnitt, seite: "rechts", text: t("Ø Vergleichsstädte " + ST.gewerbesteuer_durchschnitt, "Durchschnitt") }]));
+    box.appendChild(regler("grst", t("Grundsteuer-B-Hebesatz", "Grund-Steuer"), ST.grundsteuer_b_hebesatz, 800, 10, rz.grst,
+      t("seit 2026 " + ST.grundsteuer_b_hebesatz + " Punkte (vorher " + ST.grundsteuer_b_vorher + "); ein Punkt bringt rund " + geld(GRST_PRO_PUNKT),
+        "Diese Steuer zahlen Haus-Besitzer. Und oft auch Mieter.")));
+    box.appendChild(el("div", { class: "ergebnis-mini", id: "ergebnis-mini", "aria-hidden": "true" }));
+    ["personal", "sach", "zuschuss", "gst", "grst"].forEach(function (k) {
+      document.getElementById("r-" + k).addEventListener("input", function (ev) {
+        rz[k] = parseFloat(ev.target.value);
+        rechne();
+      });
+    });
+    segButtons("r-ziel", [
+      { wert: false, text: t("offen 2027: " + geld(-KZV.differenz_gesamt[I27], 0), "2027: " + geld(-KZV.differenz_gesamt[I27], 0)) },
+      { wert: true, text: t("ohne Klinikum: " + geld(-KZV.differenz_bereinigt[I27], 0), "ohne Klinikum") },
+    ], rz.klinikum, function (w) { rz.klinikum = w; zeigeRechner(); });
+
+    document.getElementById("vorbehalt").innerHTML = t(
+      "<strong>Was der Rechner nicht weiß</strong><ul>" +
+        "<li>Pflichtaufgaben, Tarifverträge und laufende Verträge lassen sich nicht beliebig kürzen.</li>" +
+        "<li>Stellen fallen meist erst weg, wenn jemand geht. Ein Prozent Personal entspricht rund " + zahl(VZAE_PRO_PROZENT) +
+        " Vollzeitstellen (Maßstab: 2026 waren 3 % rund 76 Stellen).</li>" +
+        "<li>Höhere Steuersätze ändern das Verhalten. Eine Gewerbesteuer von 420 Punkten hat der Stadtrat im " +
+        ST.gewerbesteuer_abgelehnt_wann + " mit Blick auf den Wirtschaftsstandort abgelehnt. Für staatliche Hilfen erwartet " +
+        "der Freistaat dagegen Hebesätze mindestens auf dem Durchschnitt vergleichbarer Städte.</li>" +
+        "<li>Folgen für staatliche Zuweisungen und Umlagen sind nicht eingerechnet.</li>" +
+        "<li>Wer heute bei Unterhalt oder Sanierung spart, zahlt später oft mehr. Das HSK verlangt dafür ausdrücklich " +
+        "einen „Zukunftsfähigkeitscheck“.</li></ul>",
+      "<strong>Wichtig</strong><ul><li>Das ist nur eine grobe Rechnung.</li>" +
+        "<li>Viele Ausgaben muss die Stadt machen. Das steht im Gesetz.</li>" +
+        "<li>Höhere Steuern können Firmen vertreiben.</li></ul>");
+    rechne();
+  }
+  function rechne() {
+    var teile = {
+      personal: BLOCK.Personal * rz.personal / 100,
+      sach: BLOCK.Sachkosten * rz.sach / 100,
+      zuschuss: BLOCK["Zuschüsse"] * rz.zuschuss / 100,
+      gst: (rz.gst - ST.gewerbesteuer_hebesatz) * GST_PRO_PUNKT,
+      grst: (rz.grst - ST.grundsteuer_b_hebesatz) * GRST_PRO_PUNKT,
+    };
+    function out(k, text) { document.getElementById("r-" + k + "-out").textContent = text; }
+    out("personal", (rz.personal ? "−" + zahl(rz.personal, 1) + " %" : "0 %") + (teile.personal ? " · " + geld(teile.personal) : ""));
+    out("sach", (rz.sach ? "−" + rz.sach + " %" : "0 %") + (teile.sach ? " · " + geld(teile.sach) : ""));
+    out("zuschuss", (rz.zuschuss ? "−" + rz.zuschuss + " %" : "0 %") + (teile.zuschuss ? " · " + geld(teile.zuschuss) : ""));
+    out("gst", rz.gst + t(" Punkte", " Punkte") + (teile.gst ? " · +" + geld(teile.gst) : ""));
+    out("grst", rz.grst + t(" Punkte", " Punkte") + (teile.grst ? " · +" + geld(teile.grst) : ""));
+    var summe = teile.personal + teile.sach + teile.zuschuss + teile.gst + teile.grst;
+    var ziel = rz.klinikum ? -KZV.differenz_bereinigt[I27] : -KZV.differenz_gesamt[I27];
+    var anteil = Math.min(1, summe / ziel);
+    var e = document.getElementById("ergebnis");
+    document.getElementById("ergebnis-mini").innerHTML = "<b>" + (summe > 0 ? geld(summe) : "0 €") + "</b> " +
+      t("von " + geld(ziel), "von " + geld(ziel)) + " · " + (anteil >= 1 ? t("geschafft", "geschafft") : zahl(anteil * 100) + " %");
+    var folgen = [];
+    if (rz.personal) folgen.push(t("rund " + zahl(rz.personal * VZAE_PRO_PROZENT) + " Vollzeitstellen weniger",
+      "etwa " + zahl(rz.personal * VZAE_PRO_PROZENT) + " Stellen weniger"));
+    if (rz.gst > ST.gewerbesteuer_hebesatz) folgen.push(t("Gewerbesteuer " + (rz.gst > ST.gewerbesteuer_durchschnitt ? "über" :
+      rz.gst === ST.gewerbesteuer_durchschnitt ? "auf" : "unter") + " dem Durchschnitt vergleichbarer Städte (" + ST.gewerbesteuer_durchschnitt + ")",
+      "Firmen zahlen mehr Steuern"));
+    if (rz.grst > ST.grundsteuer_b_hebesatz) folgen.push(t("Grundsteuer B " + (rz.grst - ST.grundsteuer_b_durchschnitt) +
+      " Punkte über dem Durchschnitt (" + ST.grundsteuer_b_durchschnitt + ")", "Wohnen wird teurer"));
+    if (summe > 0 && VERGLEICHE.length) {
+      var v = VERGLEICHE.filter(function (x) { return x.teur <= summe; })[0] || VERGLEICHE[VERGLEICHE.length - 1];
+      var faktor = summe / v.teur;
+      var mal = faktor >= 1.05 ? zahl(faktor, 1) + "-mal so viel wie " : "etwa so viel wie ";
+      if (faktor >= 0.9) folgen.push(t(mal + v.n + " 2026 (" + geld(v.teur) + ")", mal + v.l));
+    }
+    e.innerHTML =
+      "<div class=\"ergebnis-zahl\">" + (summe > 0 ? geld(summe) : "0 €") + "</div>" +
+      "<div class=\"ergebnis-ziel\">" + t("von " + geld(ziel) + " offener Lücke 2027", "von " + geld(ziel)) + "</div>" +
+      "<div class=\"fortschritt\" role=\"img\" aria-label=\"" + zahl(anteil * 100) + " %\"><span class=\"" + (anteil >= 1 ? "voll" : "") +
+        "\" style=\"width:" + (anteil * 100) + "%\"></span></div>" +
+      "<p style=\"margin:.4rem 0 0;font-size:.85rem\">" + (anteil >= 1 ? t("Lücke rechnerisch geschlossen.", "Geschafft!") :
+        t("Es fehlen noch " + geld(ziel - summe) + ".", "Es fehlen noch " + geld(ziel - summe) + ".")) + "</p>" +
+      (folgen.length ? "<ul>" + folgen.map(function (f) { return "<li>" + esc(f) + "</li>"; }).join("") + "</ul>" : "") +
+      "<button type=\"button\" class=\"btn-klein\" id=\"r-reset\">" + t("Zurücksetzen", "Neu anfangen") + "</button>";
+    document.getElementById("r-reset").addEventListener("click", function () {
+      rz.personal = 0; rz.sach = 0; rz.zuschuss = 0; rz.gst = ST.gewerbesteuer_hebesatz; rz.grst = ST.grundsteuer_b_hebesatz;
+      zeigeRechner();
+    });
+  }
+
+  /* ---------------- Freiwillige Leistungen ---------------- */
+  var fw = { suche: "", offen: {} };
+  function markiere(text, suche) {
+    if (!suche) return esc(text);
+    var i = text.toLowerCase().indexOf(suche.toLowerCase());
+    if (i < 0) return esc(text);
+    return esc(text.slice(0, i)) + "<mark>" + esc(text.slice(i, i + suche.length)) + "</mark>" + esc(text.slice(i + suche.length));
+  }
+  function zeigeFreiwillig() {
+    var such = fw.suche.trim();
+    var posten = FW.posten.filter(function (p) {
+      return !such || p.name.toLowerCase().indexOf(such.toLowerCase()) >= 0 ||
+        (D.einzelplaene[p.einzelplan] || "").toLowerCase().indexOf(such.toLowerCase()) >= 0;
+    });
+    var gruppen = {};
+    posten.forEach(function (p) { (gruppen[p.einzelplan] = gruppen[p.einzelplan] || []).push(p); });
+    var reihen = Object.keys(gruppen).map(function (ep) {
+      var s = gruppen[ep].reduce(function (a, p) { return a + p.euro["2026"]; }, 0);
+      return { ep: ep, summe: s, posten: gruppen[ep].sort(function (a, b) { return b.euro["2026"] - a.euro["2026"]; }) };
+    }).sort(function (a, b) { return b.summe - a.summe; });
+    var gesamt = posten.reduce(function (a, p) { return a + p.euro["2026"]; }, 0);
+    document.getElementById("fw-summe").innerHTML = such
+      ? t(posten.length + " Treffer, zusammen <strong>" + geld(gesamt / 1000) + "</strong> im Plan 2026",
+        posten.length + " Treffer. Zusammen <strong>" + geld(gesamt / 1000) + "</strong>.")
+      : t(FW.posten.length + " Posten, zusammen <strong>" + geld(gesamt / 1000) + "</strong> im Plan 2026",
+        "Zusammen <strong>" + geld(gesamt / 1000) + "</strong> im Jahr 2026.");
+    var max = Math.max.apply(null, reihen.map(function (r) { return r.summe; }).concat([1]));
+    var maxPosten = Math.max.apply(null, FW.posten.map(function (p) { return p.euro["2026"]; }));
+    var box = document.getElementById("fw-liste");
+    box.innerHTML = "";
+    if (!reihen.length) { box.appendChild(el("p", {}, t("Keine Treffer.", "Nichts gefunden."))); }
+    reihen.forEach(function (r) {
+      var g = el("div", { class: "fw-gruppe" });
+      var offen = !!such || !!fw.offen[r.ep];
+      var id = "fw-g-" + r.ep;
+      var kopf = el("button", { type: "button", class: "fw-kopf", "aria-expanded": offen ? "true" : "false", "aria-controls": id });
+      kopf.innerHTML = "<span class=\"fw-name\">" + markiere(D.einzelplaene[r.ep], such) + " <small>(" + r.posten.length + ")</small></span>" +
+        "<span class=\"m-bar\" aria-hidden=\"true\"><span style=\"width:" + (r.summe / max * 100) + "%;background:var(--aus-2)\"></span></span>" +
+        "<span class=\"m-wert\">" + geld(r.summe / 1000) + "</span><span class=\"fw-pfeil\" aria-hidden=\"true\">▾</span>";
+      kopf.addEventListener("click", function () { fw.offen[r.ep] = !offen; zeigeFreiwillig(); });
+      g.appendChild(kopf);
+      var ul = el("ul", { class: "fw-posten", id: id });
+      ul.hidden = !offen;
+      r.posten.forEach(function (p) {
+        var v = p.euro["2026"], alt = p.euro["2023"];
+        var trend = alt > 0 && v > 0 ? (v >= alt ? "+" : "−") + zahl(Math.abs(v / alt - 1) * 100) + " % " + t("seit 2023", "seit 2023") : "";
+        ul.appendChild(el("li", {},
+          "<span>" + markiere(p.name, such) + (trend ? "<span class=\"fw-trend\">" + trend + "</span>" : "") + "</span>" +
+          "<span class=\"m-bar\" aria-hidden=\"true\"><span style=\"width:" + (Math.max(0, v) / maxPosten * 100) + "%\"></span></span>" +
+          "<span class=\"m-wert\">" + (Math.abs(v) >= 1e6 ? geld(v / 1000) : zahl(v) + " €") + "</span>"));
+      });
+      g.appendChild(ul);
+      box.appendChild(g);
+    });
+    var s = B.freiwillige_summen;
+    document.getElementById("fw-fuss").innerHTML = t(
+      "<strong>Wichtig:</strong> Diese Summe ist kein Sparpotenzial. Sie enthält Personalkosten und interne Verrechnungen, " +
+        "die nicht automatisch wegfallen, wenn eine Leistung wegfällt. „Freiwillig“ heißt laut HSK auch nicht „verzichtbar“: " +
+        "Selbst der Busverkehr ist rechtlich eine freiwillige Aufgabe. Negative Werte entstehen, wenn Einnahmen oder " +
+        "Verrechnungen die Kosten übersteigen. Im Vermögenshaushalt kommen für 2026 weitere " + geld(s.vermoegenshaushalt_teur[3]) +
+        " hinzu. Quelle: HSK Anlage 5 und Seite " + s._seite + "; Bereiche nach Gliederung des Haushalts.",
+      "<strong>Wichtig:</strong> Man kann dieses Geld nicht einfach sparen. Auch Busse sind freiwillig. " +
+        "Trotzdem braucht die Stadt sie.");
+  }
+
+  /* ---------------- Schulden ---------------- */
+  function kumuliert(sz) {
+    var stand = sz.start_stand, out = [];
+    sz.neu.forEach(function (n) { stand += n; out.push(stand / 1e6); });
+    return out;
+  }
+  function zeigeSchulden() {
+    var S = B.schulden;
+    var trend = kumuliert(S.szenarien.trend), kons = kumuliert(S.szenarien.konsolidierung);
+    var jahre = ["2025"].concat(S.szenarien.trend.jahre);
+    var start = S.szenarien.trend.start_stand / 1e6;
+    trend.unshift(start); kons.unshift(start);
+    var leg = document.getElementById("sch-legende");
+    leg.innerHTML = "";
+    leg.appendChild(legende([
+      { farbe: "var(--trend)", text: t("Trend: alle angemeldeten Investitionen", "Wenn die Stadt alles baut") },
+      { farbe: "var(--konsol)", text: t("Nur laufende, gebundene Projekte", "Wenn die Stadt nur Begonnenes fertig baut") },
+    ]));
+    var W = 680, H = 300, L = 46, R = 70, O = 16, U = 28;
+    var max = 900;
+    var x = function (i) { return L + i * (W - L - R) / (jahre.length - 1); };
+    var y = function (v) { return O + (H - O - U) * (1 - v / max); };
+    var svg = svgEl("svg", { viewBox: "0 0 " + W + " " + H, role: "img",
+      "aria-label": t("Liniendiagramm: Schulden bis 2036 in zwei Szenarien, " + zahl(trend[trend.length - 1]) + " oder " +
+        zahl(kons[kons.length - 1]) + " Mio. €", "Diagramm: Schulden bis 2036") });
+    [0, 200, 400, 600, 800].forEach(function (v) {
+      svg.appendChild(svgEl("line", { x1: L, x2: W - R, y1: y(v), y2: y(v), class: "gitter" }));
+      svg.appendChild(svgText(L - 6, y(v) + 4, zahl(v), "achse-text", "end"));
+    });
+    jahre.forEach(function (j, i) {
+      if (i % 2 === 0 || i === jahre.length - 1) svg.appendChild(svgText(x(i), H - 8, j.replace("2025", t("heute", "jetzt")), "achse-text", "middle"));
+    });
+    svg.appendChild(svgEl("line", { x1: L, x2: W - R, y1: y(0), y2: y(0), class: "achse-linie" }));
+    // Finanzplanung 2029 als Referenzpunkt
+    var i29 = jahre.indexOf("2029");
+    var fp = B.kredite_finanzplanung.schuldenstand_2029_mio;
+    svg.appendChild(svgEl("circle", { cx: x(i29), cy: y(fp), r: 4.5, fill: "var(--card)", stroke: "var(--soll)", "stroke-width": 2 },
+      [svgTitel(t("Finanzplanung zum Haushalt 2026: ", "Plan: ") + zahl(fp, 1) + " Mio. € im Jahr 2029")]));
+    // Unter dem Punkt, zwischen den beiden Kurven: rechts daneben laeuft die Trendlinie.
+    svg.appendChild(svgText(x(i29) + 6, y(fp) + 46, t("Finanzplan 2029: ", "Plan 2029: ") + zahl(fp, 0), "ref-text"));
+    svg.appendChild(svgEl("line", { x1: x(i29), y1: y(fp) + 5, x2: x(i29) + 4, y2: y(fp) + 34, class: "ref-linie" }));
+    function linie(werte, farbe, label) {
+      var d = werte.map(function (v, i) { return (i ? "L" : "M") + x(i).toFixed(1) + " " + y(v).toFixed(1); }).join(" ");
+      var flaeche = d + " L" + x(werte.length - 1) + " " + y(0) + " L" + x(0) + " " + y(0) + " Z";
+      svg.appendChild(svgEl("path", { d: flaeche, fill: farbe, opacity: .08 }));
+      svg.appendChild(svgEl("path", { d: d, fill: "none", stroke: farbe, "stroke-width": 2.5, "stroke-linejoin": "round" }));
+      werte.forEach(function (v, i) {
+        svg.appendChild(svgEl("circle", { cx: x(i), cy: y(v), r: 3.2, fill: farbe },
+          [svgTitel(label + " " + jahre[i] + ": " + zahl(v) + " Mio. €")]));
+      });
+      svg.appendChild(svgText(x(werte.length - 1) + 8, y(werte[werte.length - 1]) + 4, zahl(werte[werte.length - 1]) + " Mio.", "wert-text"));
+    }
+    linie(trend, "var(--trend)", t("Trend", "Alles bauen"));
+    linie(kons, "var(--konsol)", t("Konsolidierung", "Nur Begonnenes"));
+    var box = document.getElementById("sch-diagramm");
+    box.innerHTML = "";
+    box.appendChild(svg);
+    document.getElementById("sch-fuss").innerHTML = t(
+      "Summe der Kreditaufnahmen ab dem Bestand im September 2026, wie im HSK dargestellt; Tilgungen sind nicht abgezogen. " +
+        "Beide Kurven sind Szenarien aus den Anmeldungen zum Haushalt 2027, keine Beschlüsse. Beim Trend rechnet das HSK " +
+        "mit durchschnittlich " + zahl(S.trend_zinsen_mio, 1) + " Mio. € Zinsen und " + zahl(S.trend_tilgung_mio, 1) +
+        " Mio. € Tilgung im Jahr (4 % Zins). Für " + S.zinsbindung_betrag_mio + " Mio. € der bisherigen Kredite endet die " +
+        "Zinsbindung " + S.zinsbindung_ende + ". Quelle: HSK Seiten " + S._seite + "–" + S.szenarien.konsolidierung._seite + ".",
+      "Die orange Linie: Die Stadt baut alles, was geplant ist. Dann hat sie 2036 etwa " + zahl(trend[trend.length - 1]) +
+        " Millionen Euro Schulden. Die blaue Linie: Die Stadt baut nur fertig, was schon begonnen ist. " +
+        "Dann sind es etwa " + zahl(kons[kons.length - 1]) + " Millionen Euro.");
+  }
+
+  var kz = { betrag: 10, zins: 4 };
+  function zeigeKredit() {
+    var F = B.schulden.faustregel;
+    var inp = document.getElementById("kredit-betrag");
+    inp.value = kz.betrag;
+    segButtons("kredit-zins", [3, 4, 5].map(function (z) { return { wert: z, text: z + " %" }; }), kz.zins,
+      function (w) { kz.zins = w; zeigeKredit(); });
+    var r = kz.zins / 100, n = F.laufzeit_jahre;
+    var rate = kz.betrag * r / (1 - Math.pow(1 + r, -n));
+    var zinsen = rate * n - kz.betrag;
+    document.getElementById("kredit-betrag-out").textContent = zahl(kz.betrag) + " Mio. €";
+    document.getElementById("kredit-ergebnis").innerHTML = t(
+      "<p>Jedes Jahr, 30 Jahre lang:</p><div class=\"ergebnis-zahl\">" + zahl(rate, 2) + " Mio. €</div>" +
+        "<p>Insgesamt zahlt die Stadt " + zahl(rate * n, 1) + " Mio. € zurück, davon " + zahl(zinsen, 1) + " Mio. € Zinsen.</p>",
+      "<p>Das kostet jedes Jahr:</p><div class=\"ergebnis-zahl\">" + zahl(rate, 2) + " Mio. €</div>" +
+        "<p>30 Jahre lang. Davon sind " + zahl(zinsen, 1) + " Millionen Euro Zinsen.</p>");
+    document.getElementById("kredit-fuss").innerHTML = t(
+      "Gleichbleibende Jahresrate (Annuität). Das HSK nennt als Faustregel: " + F.kredit_mio + " Mio. € bei " + F.zins_prozent +
+        " % und " + F.laufzeit_jahre + " Jahren kosten rund " + zahl(F.schuldendienst_mio, 2) + " Mio. € im Jahr (Seite " + F._seite +
+        "); der kleine Unterschied zur Rechnung hier liegt am Rechenweg. Zum Vergleich: Für Kassenkredite, die kurzfristig " +
+        "Zahlungslücken überbrücken, stieg der Zins 2026 von " + zahl(B.schulden.kassenkredit_zins_von, 2) + " auf " +
+        zahl(B.schulden.kassenkredit_zins_bis, 2) + " %.",
+      "Das ist eine Beispiel-Rechnung.");
+  }
+
+  /* ---------------- Bisher + Weiter + Quellen ---------------- */
+  function zeigeBisher() {
+    var ul = document.getElementById("bisher-liste");
+    ul.innerHTML = "";
+    B.bisher.pakete.forEach(function (p) {
+      ul.appendChild(el("li", {}, "<b>" + esc(p.name) + "</b><small>" + esc(p.wann) + "</small><br>" + esc(t(p.text, p.text_leicht))));
+    });
+  }
+  function zeigeWeiter() {
+    var sr = B.beratung[1];
+    document.getElementById("weiter-inhalt").innerHTML = t(
+      "<ul class=\"liste-schlicht\">" +
+        "<li><strong>" + datumDe(sr.datum) + ":</strong> Der Stadtrat entscheidet in öffentlicher Sitzung über das HSK. " +
+        "Danach legt die Stadt es der Regierung von Oberbayern vor. Erst wenn die Regierung überzeugt ist, kann sie einen " +
+        "Haushalt mit Krediten wieder genehmigen.</li>" +
+        "<li><strong>Fortschreibung:</strong> Der Text des HSK wird mindestens mit jedem neuen Haushalt aktualisiert, der " +
+        "Maßnahmenkatalog auch zwischendurch. Das Sparziel wird jedes Jahr an die neue Finanzplanung angepasst.</li>" +
+        "<li><strong>Kontrolle in drei Stufen:</strong> beschlossenes Potenzial, Maßnahme in Umsetzung, tatsächlich erreichte " +
+        "Wirkung im Haushalt. Weicht etwas ab, muss die zuständige Stelle erklären, warum, und wie sie gegensteuert. " +
+        "Unsichere Einsparungen zählen erst, wenn sie belastbar beziffert sind.</li>" +
+        "<li><strong>Neue Ausgaben:</strong> Neue oder ausgeweitete freiwillige Leistungen und neue dauerhafte Verpflichtungen " +
+        "brauchen eine nachvollziehbare Begründung und eine gesicherte Finanzierung. Mehreinnahmen schaffen keinen neuen " +
+        "Spielraum, sie bleiben Konsolidierungsgewinne.</li></ul>" +
+        "<p>Stadtratssitzungen sind öffentlich. Wie Sie Fragen stellen, Ihren Bezirksausschuss ansprechen oder Anliegen in den " +
+        "Stadtrat bringen können, steht auf der Seite <a href=\"beteiligen.html\">Beteiligen</a>. Wie der Haushalt insgesamt " +
+        "aufgebaut ist, zeigt die Seite <a href=\"haushalt.html\">Der Haushalt</a>.</p>",
+      "<ul class=\"liste-schlicht\">" +
+        "<li>Am " + datumDe(sr.datum) + " entscheidet der Stadt-Rat. Jeder darf zuschauen.</li>" +
+        "<li>Dann bekommt die Regierung von Ober-Bayern den Plan.</li>" +
+        "<li>Jedes Jahr prüft die Stadt: Hat das Sparen geklappt?</li></ul>" +
+        "<p>Sie wollen mitreden? Auf der Seite <a href=\"beteiligen.html\">Beteiligen</a> steht, wie das geht.</p>");
+  }
+  function zeigeQuellen() {
+    var box = document.getElementById("quellen-block");
+    box.innerHTML = "<p><strong>" + t("Quellen", "Woher die Zahlen kommen") + "</strong></p>";
+    var ul = el("ul");
+    [
+      [t("Beschlussvorlage " + Q.vorlage_nr + " im Ratsinfoportal", "Das Papier im Rats-Info-Portal"), Q.vorlage],
+      [t("Haushaltssicherungskonzept, Stand " + B.stand + " (PDF, 71 Seiten)", "Der Spar-Plan (PDF)"), Q.konzept_pdf],
+      [t("Anlagen: Maßnahmenkatalog, Prüfmaßnahmen, freiwillige Leistungen (PDF, 19 Seiten)", "Die Listen zum Plan (PDF)"), Q.anlagen_pdf],
+    ].forEach(function (q) { ul.appendChild(el("li", {}, extern(q[1], esc(q[0])))); });
+    box.appendChild(ul);
+    box.appendChild(el("p", { style: "margin-top:.75rem" }, t(
+      "Die Tabellen der Anlagen liest <code>scraper/hsk_lesen.py</code> maschinell aus und prüft sie gegen die gedruckten " +
+        "Summenzeilen. Dabei fiel ein Fehler in der Quelle auf: Im Blatt „Personalkosten, 2 %-Ziel“ fehlen in der gedruckten " +
+        "Summe 2027 die 87,7 TEUR der Zeile 001.7. Die Zahlen aus dem Konzepttext stehen mit Seitenangabe in " +
+        "<code>data/hsk_bericht.json</code>. Stand der Daten: " + esc(D.erzeugt_am) + ".",
+      "Wir haben alle Zahlen nach-gerechnet. Stand: " + esc(D.erzeugt_am) + ".")));
+  }
+
+  /* ---------------- Alles zusammen ---------------- */
+  function texteAnwenden() {
+    document.documentElement.lang = "de";
+    Object.keys(TEXTE).forEach(function (k) {
+      var e = document.getElementById("txt-" + k);
+      if (e) e.innerHTML = t(TEXTE[k].n, TEXTE[k].l);
+    });
+    document.getElementById("fw-suche").placeholder = t("Suchen, z. B. Museum, Sport, Zuschuss …", "Suchen, zum Beispiel: Sport");
+    zeigeStatus();
+    zeigeKennzahlen();
+    zeigeWasIst();
+    zeigeZeitleiste();
+    zeigeLuecke();
+    zeigeMassnahmenSteuerung();
+    zeigeMassnahmen();
+    zeigePersonal();
+    zeigeStapel();
+    zeigeRechner();
+    zeigeFreiwillig();
+    zeigeSchulden();
+    zeigeKredit();
+    zeigeBisher();
+    zeigeWeiter();
+    zeigeQuellen();
+  }
+
+  document.getElementById("schalter-klinikum").addEventListener("change", function (ev) {
+    zustand.ohneKlinikum = ev.target.checked; zeigeLuecke();
+  });
+  document.getElementById("schalter-dauerhaft").addEventListener("change", function (ev) {
+    zustand.nurDauerhaft = ev.target.checked; zeigeLuecke();
+  });
+  var suchTimer;
+  document.getElementById("fw-suche").addEventListener("input", function (ev) {
+    clearTimeout(suchTimer);
+    suchTimer = setTimeout(function () { fw.suche = ev.target.value; zeigeFreiwillig(); }, 120);
+  });
+  document.getElementById("kredit-betrag").addEventListener("input", function (ev) {
+    kz.betrag = parseInt(ev.target.value, 10); zeigeKredit();
+  });
+
+  /* ---------------- Tabs ---------------- */
+  document.querySelectorAll('[role="tablist"]').forEach(function (leiste) {
+    var tabs = Array.prototype.slice.call(leiste.querySelectorAll('[role="tab"]'));
+    function aktiviere(tab, fokus) {
+      tabs.forEach(function (x) {
+        var an = x === tab;
+        x.setAttribute("aria-selected", an ? "true" : "false");
+        x.tabIndex = an ? 0 : -1;
+        document.getElementById(x.getAttribute("aria-controls")).hidden = !an;
+      });
+      if (fokus) tab.focus();
+    }
+    tabs.forEach(function (tab, i) {
+      tab.addEventListener("click", function () { aktiviere(tab); });
+      tab.addEventListener("keydown", function (ev) {
+        var ziel = null;
+        if (ev.key === "ArrowRight") ziel = tabs[(i + 1) % tabs.length];
+        if (ev.key === "ArrowLeft") ziel = tabs[(i - 1 + tabs.length) % tabs.length];
+        if (ev.key === "Home") ziel = tabs[0];
+        if (ev.key === "End") ziel = tabs[tabs.length - 1];
+        if (ziel) { ev.preventDefault(); aktiviere(ziel, true); }
+      });
+    });
+  });
+
+  /* ---------------- Leichte-Sprache-Umschalter ---------------- */
+  texteAnwenden();
+  var btnLeicht = document.getElementById("btn-leicht");
+  btnLeicht.setAttribute("aria-pressed", leicht ? "true" : "false");
+  btnLeicht.addEventListener("click", function () {
+    leicht = !leicht;
+    btnLeicht.setAttribute("aria-pressed", leicht ? "true" : "false");
+    try { localStorage.setItem(LS_KEY_LEICHT, leicht ? "1" : "0"); } catch (err) { /* Storage kann gesperrt sein */ }
+    texteAnwenden();
+  });
+})();
+</script>
+
+<script src="zaehler.js" defer></script>
+</body>
+</html>

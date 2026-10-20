@@ -85,6 +85,30 @@ Ladesäulenregister) und dauert etwa zwei Minuten.
 - `data/klima_bericht.json`: von Hand gepflegte Werte aus den
   Fortschrittsberichten der Stabsstelle Klima (THG-Bilanz, Ziele).
 
+### Sparplan / Haushaltssicherungskonzept (`hsk.html`)
+
+```bash
+cd scraper && python3 hsk_lesen.py
+```
+
+Liest das Haushaltssicherungskonzept (Vorlage V0652/26, Stadtrat 29.10.2026)
+und schreibt `data/hsk.json` + `data/hsk.js` (window.HSK_DATEN).
+
+- Aus den Anlagen maschinell gelesen: der Maßnahmenkatalog (Anlage 1, drei
+  Blätter) und die Liste der freiwilligen Leistungen (Anlage 5). Jede Tabelle
+  wird gegen ihre gedruckte Summenzeile geprüft; bei einer Abweichung bricht
+  das Skript ab. Ein Fehler in der Quelle selbst (Personal-Blatt, Summe 2027)
+  ist im Skript als bekannte Abweichung vermerkt.
+- `data/hsk_bericht.json`: von Hand gepflegte Werte aus dem Konzepttext
+  (Sparziel, Schuldenszenarien, Ausgabenstruktur, Zeitleiste), jeweils mit
+  Seitenangabe, plus die Klartexte zu jeder Maßnahme in normaler und Leichter
+  Sprache. Kommt in einer Fortschreibung eine Maßnahme dazu, warnt das Skript.
+- `pruefen.py` rechnet die Summen in `data/hsk.json` ein zweites Mal nach.
+
+Für eine Fortschreibung des HSK: neue Dokument-IDs in `DOK_IDS` eintragen,
+Seitenbereiche in `lies_anlage1`/`lies_anlage5` prüfen, `hsk_bericht.json`
+abgleichen.
+
 ## Datenquelle
 
 Ratsinfoportal der Stadt Ingolstadt (SessionNet / Somacos „Session"), zwei
