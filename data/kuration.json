@@ -55943,7 +55943,7 @@
    ],
    "entwurf": true
   },
-  "stadt:13543#Ö 2": {
+  "stadt:13543#Ö 3": {
    "klartext_titel": "Ersatzspielstätte Festsaal auf IN-Campus-Gelände",
    "klartext": "",
    "lebenslage": [
@@ -55969,7 +55969,7 @@
    ],
    "entwurf": true
   },
-  "stadt:13543#Ö 3": {
+  "stadt:13543#Ö 4": {
    "klartext_titel": "Unverzügliche Einstellung und Digitalisierung der Druckpublikationen des Stadttheaters Ingolstadt",
    "klartext": "",
    "lebenslage": [
@@ -55982,7 +55982,7 @@
    ],
    "entwurf": true
   },
-  "stadt:13543#Ö 7": {
+  "stadt:13543#Ö 8": {
    "klartext_titel": "Regelung für die Betreuung von Besuchen von oder bei Partnerstädten",
    "klartext": "",
    "lebenslage": [
@@ -55995,7 +55995,7 @@
    ],
    "entwurf": true
   },
-  "stadt:13543#Ö 9": {
+  "stadt:13543#Ö 2": {
    "klartext_titel": "Sachstandsbericht zu Schul- und Kulturbauten",
    "klartext": "",
    "lebenslage": [
@@ -56464,7 +56464,7 @@
     "Kultur & Bildung"
    ]
   },
-  "stadt:13543#Ö 4": {
+  "stadt:13543#Ö 5": {
    "klartext_titel": "Mittelschule Friedrichshofen soll 2027 in der Mittelschule Auf der Schanz aufgehen",
    "klartext": "Die Mittelschulsprengel Auf der Schanz und Friedrichshofen sollen schon zum Schuljahr 2027/28 zusammengelegt werden; die Mittelschule Friedrichshofen würde dann aufgelöst. Ursprünglich war das erst mit dem Neubau der Mittelschule Mitte-West vorgesehen, dessen Baubeginn der Stadtrat aus Spargründen auf 2030 oder später verschoben hat. An der Mittelschule Auf der Schanz rechnet die Verwaltung unabhängig davon mit einem Anstieg von 17 Klassen mit etwa 340 Schülerinnen und Schülern auf rund 20 Klassen mit 400. Mit der Zusammenlegung soll die Schule auf Wunsch der Schulfamilie den Namen „Magdalena-Herrle-Mittelschule Ingolstadt“ erhalten. Die Bezirksausschüsse Mitte, Nordwest, West und Friedrichshofen-Hollerstauden wurden angehört; ihre Stellungnahmen lagen bei Abgabe der Vorlage noch nicht vor. Der Stadtrat soll am 29. Oktober 2026 entscheiden.",
    "klartext_titel_leicht": "2 Mittel-Schulen sollen 2027 zu 1 Schule werden",
@@ -56485,7 +56485,7 @@
     "Schulbau"
    ]
   },
-  "stadt:13543#Ö 5": {
+  "stadt:13543#Ö 6": {
    "klartext_titel": "Mittagessen in städtischen Kitas und Schulen wird neu ausgeschrieben",
    "klartext": "Die Stadt will die Mittagsverpflegung in ihren Kitas und Schulen EU-weit neu ausschreiben und dafür einen Kostenrahmen von 2.830.200 Euro im Jahr genehmigen lassen. Derzeit werden jährlich rund 700.000 Mahlzeiten für etwa 4.000 Kinder täglich ausgegeben; die Hauptbestandteile kommen tiefgekühlt von drei Firmen und werden in den Einrichtungen fertig zubereitet. Eine Machbarkeitsstudie, an der Einrichtungen, Elternvertretungen und Stadträte beteiligt waren, hat vier Verpflegungssysteme verglichen; das bisherige Tiefkühl-System schnitt dabei am besten ab. Das Essen soll gesund und abwechslungsreich sein, Allergien sowie religiöse und ethische Vorgaben berücksichtigen und mehr vegetarische, möglichst regionale Bio-Lebensmittel enthalten. Der Ausschuss für Kultur und Bildung berät am 13. Oktober, der Stadtrat soll am 29. Oktober 2026 entscheiden.",
    "klartext_titel_leicht": "Neue Firmen für das Mittag-Essen in Kitas und Schulen",
@@ -56501,7 +56501,7 @@
     "Kinderbetreuung"
    ]
   },
-  "stadt:13543#Ö 6": {
+  "stadt:13543#Ö 7": {
    "klartext_titel": "Partnergemeinde Legmoin: Neues Zentrum in Betrieb, Wasserversorgung geplant",
    "klartext": "In Legmoin in Burkina Faso, mit dem Ingolstadt seit 2013 eine Projektpartnerschaft pflegt, ist ein Empfangs- und Unterbringungszentrum fertig geworden. Es bietet Auszubildenden und Betreuungspersonal der beiden dortigen Ausbildungszentren Übernachtungsplätze, Sanitäranlagen, einen Speisesaal und einen Erste-Hilfe-Bereich und ist seit dem Schuljahr 2025/2026 in Betrieb. Der Stadtrat soll den Abschlussbericht zur Kenntnis nehmen. Als Nächstes ist eine Wasserversorgung auf dem Gelände geplant, die 32.345 Euro kosten soll. Dafür will die Stadt beim Kleinprojektefonds von Engagement Global 29.110,50 Euro Förderung beantragen; den Eigenanteil von 10 Prozent, also 3.234,50 Euro, will sie aus vorhandenen Spenden bezahlen. Der Stadtrat soll am 29. Oktober 2026 entscheiden.",
    "klartext_titel_leicht": "Ingolstadt hilft der Partner-Gemeinde Legmoin in Afrika",
@@ -64056,6 +64056,812 @@
    ],
    "ort": [],
    "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13545#Ö 2": {
+   "klartext_titel": "Haushaltssicherungskonzept: Wie die Stadt aus den roten Zahlen kommen will",
+   "klartext": "Die Regierung von Oberbayern hat am 31. März 2026 vom Stadtrat ein Haushaltssicherungskonzept verlangt und die Haushaltssatzung 2026 nicht genehmigt; seitdem gilt die vorläufige Haushaltsführung. Grund ist laut Vorlage eine erhebliche strukturelle Unterdeckung des Verwaltungshaushalts: Die laufenden Einnahmen reichen auf Jahre nicht für die laufenden Ausgaben. Das Konzept fasst die bisherigen Sparbeschlüsse, den Dachbeschluss vom 18. Dezember 2025 und die Prüfungen von Aufgaben, Einrichtungen und Strukturen zusammen. Untersucht wurden alle wesentlichen Bereiche, etwa Personal, städtische Einrichtungen, Beteiligungen, Investitionen, Vermögen, Schulden und mögliche Einnahmen. Die Maßnahmen stehen in einer zentralen Übersicht und sollen laufend kontrolliert und fortgeschrieben werden. Der Finanzausschuss berät am 22. Oktober, der Stadtrat soll am 29. Oktober 2026 entscheiden; danach geht das Konzept an die Regierung von Oberbayern.",
+   "klartext_titel_leicht": "Die Stadt hat einen Plan zum Sparen",
+   "klartext_leicht": "Die Stadt Ingolstadt hat zu wenig Geld. Sie gibt jedes Jahr mehr aus, als sie einnimmt. Die Regierung von Oberbayern passt auf die Stadt auf. Sie hat gesagt: Die Stadt muss einen Spar-Plan machen. Jetzt gibt es diesen Plan. Darin steht, wo die Stadt sparen will. Zum Beispiel bei Personal und bei Gebäuden. Der Stadt-Rat soll am 29. Oktober 2026 entscheiden.",
+   "lebenslage": [
+    "Geld & Soziales"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Konzept & Planung",
+    "Gebühren & Preise"
+   ]
+  },
+  "stadt:13545#Ö 5": {
+   "klartext_titel": "500.000 Euro aus dem Topf „Digitales Klassenzimmer“ für Lehrer-Laptops",
+   "klartext": "Die Stadt hat Dienstgeräte für Lehrkräfte im Wert von 942.635,89 Euro bestellt. Auf der Haushaltsstelle dafür waren noch 334.363,68 Euro übrig, dazu kommen 108.272,21 Euro Reste aus Vorjahren; die fehlenden 500.000 Euro werden von der Haushaltsstelle für die IT-Ausstattung digitaler Klassenzimmer an Grundschulen umgeschichtet. Die Anschaffung wird laut Vorlage vollständig über das Förderprogramm SchulMobE gefördert. Das Schulverwaltungsamt hält sie für zwingend, weil das Förderprogramm ab 2027 durch eine jährliche Pauschale pro Schüler ersetzt wird. Weil es derzeit keinen genehmigten Haushalt gibt, wird der Finanzausschuss über die Umschichtung nur informiert.",
+   "klartext_titel_leicht": "Geld für Laptops für Lehrer",
+   "klartext_leicht": "Lehrer in Ingolstadt bekommen neue Laptops. Die Laptops kosten ungefähr 940.000 Euro. Ein Förder-Programm bezahlt sie. Die Stadt muss das Geld aber erst auslegen. Dafür nimmt sie 500.000 Euro aus einem anderen Topf. Dieser Topf war für Computer in Grund-Schulen. Der Finanz-Ausschuss bekommt dazu eine Information.",
+   "lebenslage": [
+    "Eltern & Kinder",
+    "Arbeit & Beruf"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Kultur & Bildung"
+   ]
+  },
+  "stadt:13545#Ö 11": {
+   "klartext_titel": "Neue Dienstgeräte für Lehrkräfte: Projekt über 1,03 Millionen Euro",
+   "klartext": "Der Kulturreferent hat am 2. Juli 2026 intern die Beschaffung von Dienstgeräten für Lehrerinnen und Lehrer genehmigt, als Ersatz und Ergänzung, im Umfang von 1.034.336,68 Euro. Die Beschaffung läuft über das Förderprogramm zur Beschaffung schulischer mobiler Endgeräte (SchulMobE). Projekte zwischen 250.000 Euro und 2 Millionen Euro darf die Verwaltung selbst genehmigen, muss sie aber in der nächsten Sitzung dem Finanzausschuss vorlegen. Der Ausschuss nimmt die Genehmigung am 22. Oktober 2026 zur Kenntnis.",
+   "klartext_titel_leicht": "Neue Laptops für Lehrer: Der Ausschuss bekommt eine Info",
+   "klartext_leicht": "Lehrer brauchen Computer für ihre Arbeit. Die Stadt kauft neue Geräte für Lehrer. Das kostet ungefähr 1 Million Euro. Das Geld kommt aus einem Förder-Programm. Die Verwaltung durfte das selbst entscheiden. Sie muss es aber dem Finanz-Ausschuss sagen. Das macht sie am 22. Oktober 2026.",
+   "lebenslage": [
+    "Arbeit & Beruf",
+    "Eltern & Kinder"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Kultur & Bildung"
+   ]
+  },
+  "stadt:13545#Ö 17": {
+   "klartext_titel": "Halbjahresbericht: Bauprojekte zwischen 250.000 Euro und 2 Millionen Euro",
+   "klartext": "Das Referat für Hoch- und Tiefbau legt dem Finanzausschuss den Bericht über die Programm- und Projektgenehmigungen für das erste Halbjahr 2026 vor. Darin stehen alle Vorhaben zwischen 250.000 Euro und 2 Millionen Euro netto, die die Verwaltung im Rahmen ihrer Befugnisse selbst genehmigt hat. Der Bericht erscheint zweimal im Jahr: nach der Sommerpause für das erste Halbjahr, im zweiten Sitzungslauf des Folgejahres für das zweite. Die einzelnen Projekte stehen in der Anlage. Der Ausschuss wird informiert, eine Entscheidung ist nicht vorgesehen.",
+   "klartext_titel_leicht": "Bericht über kleinere Bau-Projekte der Stadt",
+   "klartext_leicht": "Die Stadt baut und repariert viel. Manche Projekte kosten zwischen 250.000 Euro und 2 Millionen Euro. Diese Projekte darf die Verwaltung selbst erlauben. Sie muss dem Finanz-Ausschuss aber darüber berichten. Das passiert 2 Mal im Jahr. Jetzt geht es um die erste Hälfte von 2026.",
+   "lebenslage": [],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Baustelle"
+   ]
+  },
+  "stadt:antrag:23445": {
+   "klartext_titel": "Freie Wähler wollen Viktualienmarkt mit Befragung und Maßnahmenplan aufwerten",
+   "klartext": "Die FW-Stadtratsfraktion beantragt, zuerst Standbetreiber und Besucher des Viktualienmarkts strukturiert zu befragen, etwa zu Angebot, Aufenthaltsqualität, Sauberkeit, Sicherheitsgefühl und Öffnungszeiten. Die Verwaltung soll alle leeren oder nicht dauerhaft genutzten Stände erfassen und berichten, was aus der angekündigten Neukonzeption geworden ist, etwa bei Treppenanlage, Möblierung, Kulturbühne und Begrünung. Stadt und IFG sollen daraus ein Gesamtkonzept mit nachvollziehbarer Vergabe frei werdender Stände entwickeln. Außerdem soll die Verwaltung über Vermüllung, Ordnungsstörungen und von Besuchern und Händlern wahrgenommenen Drogenhandel berichten und mit den Standbetreibern Maßnahmen wie Reinigung, Beleuchtung und Kontrollen prüfen. Am Ende soll ein verbindlicher Maßnahmen- und Zeitplan stehen. Der Antrag stammt vom 19. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+   "klartext_titel_leicht": "Freie Wähler wollen den Viktualien-Markt verbessern",
+   "klartext_leicht": "Der Viktualien-Markt ist ein Markt in der Innenstadt. Dort stehen manche Verkaufs-Stände leer. Es gibt auch Beschwerden über Müll und Sicherheit. Die Partei Freie Wähler will das ändern. Zuerst sollen Händler und Besucher befragt werden. Dann soll die Stadt einen Plan machen. Darin steht, was bis wann besser wird. Es gibt noch keinen Termin für den Antrag.",
+   "lebenslage": [
+    "Gewerbe & Gastro",
+    "Freizeit & Sport"
+   ],
+   "bezirk": [
+    "I-Mitte"
+   ],
+   "ort": [
+    "Viktualienmarkt"
+   ],
+   "anlass": [
+    "Sicherheit",
+    "Konzept & Planung",
+    "Grün & Sauberkeit"
+   ]
+  },
+  "stadt:antrag:23432": {
+   "klartext_titel": "SPD will Aussichtspunkte wie den Dalwigk-Wasserturm für Führungen öffnen",
+   "klartext": "Die SPD-Stadtratsfraktion beantragt, dass die IFG ein Veranstaltungsformat „Über den Dächern von Ingolstadt“ entwickelt und mehrmals im Jahr anbietet. Dafür sollen Aussichtspunkte in Gebäuden der Stadt und ihrer Tochtergesellschaften zeitweise, etwa bei Führungen, zugänglich werden; geprüft werden sollen vor allem der Wasserturm im Dalwigk und das GWG-Hochhaus an der Stargarder Straße, bei Bereitschaft auch private Gebäude. Wo möglich, soll der Zugang barrierefrei sein. Bezahlt werden soll das vorrangig aus bestehenden IFG-Budgets, Sponsoring und Fördermitteln, ohne wesentliche Zusatzkosten für den Haushalt. Die Fraktion verweist auf die große Nachfrage nach den Führungen auf den Pfeifturm. Der Antrag stammt vom 16. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+   "klartext_titel_leicht": "Die SPD will besondere Aussichts-Punkte öffnen",
+   "klartext_leicht": "Vom Pfeif-Turm kann man weit über Ingolstadt schauen. Die Führungen dort sind sehr beliebt. Es gibt noch mehr hohe Gebäude mit schöner Aussicht. Zum Beispiel den Wasser-Turm im Dalwigk. Diese Orte sind meistens zu. Die Partei SPD will dort Führungen machen. Das soll ein paar Mal im Jahr sein. Die IFG soll das organisieren. Die IFG kümmert sich um Werbung und Tourismus für die Stadt.",
+   "lebenslage": [
+    "Freizeit & Sport"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [
+    "Dalwigk",
+    "Stargarder Straße"
+   ],
+   "anlass": [
+    "Kultur & Bildung"
+   ]
+  },
+  "stadt:antrag:23433": {
+   "klartext_titel": "SPD will jedes Jahr einen Stadtgeburtstag feiern",
+   "klartext": "Die SPD-Stadtratsfraktion beantragt einen jährlichen Stadtgeburtstag unter dem Motto „Ingolstadt feiert Geburtstag“, möglichst zeitgleich mit dem Herbstvolksfest. Anlass ist die erste urkundliche Erwähnung Ingolstadts im Jahr 806, also vor 1.220 Jahren. Die Stadt soll ein wirtschaftliches Veranstaltungskonzept erarbeiten und Sponsoring sowie Förderung aus Kultur- und Tourismusprogrammen nutzen, damit die Kosten gering bleiben. Das Stadtmuseum soll einen historischen Schwerpunkt übernehmen, etwa mit Führungen, Sonderpräsentationen, Mitmachangeboten und einem Tag der offenen Tür; Vereine und Kulturschaffende sollen eingebunden werden. Der Antrag stammt vom 16. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+   "klartext_titel_leicht": "Die SPD will einen Geburtstag für Ingolstadt feiern",
+   "klartext_leicht": "Ingolstadt ist eine sehr alte Stadt. Im Jahr 806 wurde die Stadt zum ersten Mal aufgeschrieben. Die Partei SPD will jedes Jahr einen Stadt-Geburtstag feiern. Das Fest soll zur gleichen Zeit wie das Herbst-Volksfest sein. Das Stadt-Museum soll dabei die Geschichte zeigen. Es soll Führungen und Angebote zum Mitmachen geben. Das Fest soll die Stadt wenig Geld kosten.",
+   "lebenslage": [
+    "Freizeit & Sport",
+    "Ehrenamt & Vereine"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Kultur & Bildung"
+   ]
+  },
+  "stadt:antrag:23434": {
+   "klartext_titel": "SPD will eine „Stille Stunde“ in der Innenstadt prüfen lassen",
+   "klartext": "Die SPD-Stadtratsfraktion beantragt zu prüfen, ob die Innenstadt eine „Silent Hour“ bekommt: ein fest angekündigtes Zeitfenster an einem bestimmten Wochentag, in dem teilnehmende Geschäfte Musik und Beleuchtung dämpfen. Auch städtische Veranstaltungen sollen reizärmere Zeitfenster bekommen, etwa einzelne leisere Auftritte ohne Verstärker. Ausgestaltet werden soll das mit Händlern, der IFG sowie Vertretungen von Menschen mit Autismus, Senioren und Familien; finanziert werden soll es über Kooperationen und Fördermittel, etwa aus dem Bundesprogramm „Zukunftsfähige Innenstädte und Zentren“. Profitieren sollen vor allem reizempfindliche Menschen, Ältere, Familien mit Kleinkindern und Menschen mit Angststörungen. Vorbild ist Wiesbaden, das seit Juli 2025 jeden Donnerstag von 15 bis 17 Uhr eine Stille Stunde mit über 20 Geschäften hat. Der Antrag stammt vom 16. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+   "klartext_titel_leicht": "Die SPD will eine ruhige Stunde in der Innenstadt",
+   "klartext_leicht": "In der Innenstadt ist es oft laut und hell. Für manche Menschen ist das sehr anstrengend. Zum Beispiel für Menschen mit Autismus. Die Partei SPD hat eine Idee. An einem festen Tag gibt es eine ruhige Stunde. Dann machen Geschäfte die Musik leiser. Und das Licht wird weniger hell. Die Stadt Wiesbaden macht das schon. Es gibt noch keinen Termin für den Antrag.",
+   "lebenslage": [
+    "Gesundheit & Pflege",
+    "Senior:innen",
+    "Eltern & Kinder"
+   ],
+   "bezirk": [
+    "I-Mitte"
+   ],
+   "ort": [],
+   "anlass": [
+    "Konzept & Planung"
+   ]
+  },
+  "stadt:antrag:23435": {
+   "klartext_titel": "SPD will mobile Großbäume für mehr Schatten in der Innenstadt",
+   "klartext": "Die SPD-Stadtratsfraktion beantragt ein Stadtbaum- und Schattenprogramm für die Innenstadt. Weil viele Leitungen im Boden liegen, sind feste Baumpflanzungen dort nur begrenzt möglich; geprüft werden sollen deshalb mobile Großbäume in Pflanzgefäßen, zusätzliche feste Baumstandorte und ein Pilotprojekt in einem geeigneten Bereich. Die Gefäße sollen Gehwege nicht versperren, ausgewählt werden sollen hitze- und trockenheitsverträgliche Arten. Bezahlt werden soll vor allem über Baumpatenschaften, Spenden, Sponsoring und Förderprogramme; außerdem soll das Gartenamt prüfen, ob es klimaresistente Bäume selbst heranziehen kann. Vorbild ist das Münchner Projekt „Schatten spenden“. Der Antrag stammt vom 16. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+   "klartext_titel_leicht": "Die SPD will mehr Bäume und Schatten in der Innenstadt",
+   "klartext_leicht": "Im Sommer ist es in der Innenstadt sehr heiß. Bäume geben Schatten. In der Innenstadt liegen aber viele Leitungen im Boden. Dort kann man nicht überall Bäume pflanzen. Die Partei SPD hat eine Idee. Große Bäume stehen in großen Töpfen. Diese Bäume kann man verschieben. Bezahlen sollen das Spenden und Paten.",
+   "lebenslage": [
+    "Gesundheit & Pflege",
+    "Freizeit & Sport"
+   ],
+   "bezirk": [
+    "I-Mitte"
+   ],
+   "ort": [],
+   "anlass": [
+    "Klima & Umwelt",
+    "Grün & Sauberkeit"
+   ]
+  },
+  "stadt:antrag:23436": {
+   "klartext_titel": "SPD will Holz-Sitzauflagen auf den Treppen am Theaterplatz",
+   "klartext": "Die SPD-Stadtratsfraktion beantragt zu prüfen, ob die Betontreppen am Theaterplatz im Sommer mit abnehmbaren, wetterfesten Sitzauflagen, etwa aus Holz, bequemer gemacht werden können. Einzelne Auflagen sollen Rücken- und Armlehnen für ältere und mobilitätseingeschränkte Menschen bekommen; im Winter sollen die Elemente eingelagert werden. Vorgeschlagen werden ein befristetes Pilotprojekt auf einem Treppenabschnitt, die Einbindung Jugendlicher über den Stadtjugendring sowie mobile Sitzgelegenheiten mit Pfandsystem am Rathaus- und Theaterplatz. Finanziert werden soll das vorrangig über Fördermittel und Sponsoring. Die Fraktion verweist auf die Jugendbefragung 2026 des Stadtjugendrings, nach der sich junge Menschen Treffpunkte ohne Konsumzwang wünschen. Der Antrag stammt vom 16. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+   "klartext_titel_leicht": "Die SPD will bequemere Sitz-Plätze am Theater-Platz",
+   "klartext_leicht": "Am Theater-Platz sitzen viele Menschen auf den Treppen. Die Treppen sind aus Beton. Darauf sitzt man nicht lange bequem. Die Partei SPD will Auflagen aus Holz auf die Treppen legen. Manche sollen eine Lehne haben. Das hilft älteren Menschen. Im Winter kommen die Auflagen weg. Jugendliche sollen bei der Planung mitreden.",
+   "lebenslage": [
+    "Freizeit & Sport",
+    "Senior:innen",
+    "Jugend"
+   ],
+   "bezirk": [
+    "I-Mitte"
+   ],
+   "ort": [
+    "Theaterplatz"
+   ],
+   "anlass": [
+    "Konzept & Planung"
+   ]
+  },
+  "stadt:antrag:23439": {
+   "klartext_titel": "SPD will regelmäßig Musik auf Plätzen in Innenstadt und Stadtteilen",
+   "klartext": "Die SPD-Stadtratsfraktion beantragt ein Aktionsprogramm „Musik in der Innenstadt und in den Stadtteilen“: Von Mai bis September sollen regelmäßig Konzerte auf öffentlichen Plätzen stattfinden, abends und auch als familienfreundliche Nachmittagstermine. Auftreten sollen vor allem lokale Laiengruppen, Chöre, Bands und Nachwuchsbands; laut Musikentwicklungsplan gibt es in Ingolstadt über 100 aktive Musikgruppen. Das Kulturreferat soll das Konzept verantworten, die IFG Organisation, Werbung und Sponsorensuche übernehmen; die Gruppen sollen ein symbolisches Dankeschön erhalten. Finanziert werden soll das möglichst über die IFG, Sponsoren und Förderprogramme, nicht über zusätzliche Haushaltsmittel. Bestehende Angebote wie in Etting sollen ausgebaut, nicht ersetzt werden. Der Antrag stammt vom 16. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+   "klartext_titel_leicht": "Die SPD will mehr Musik auf Plätzen in der Stadt",
+   "klartext_leicht": "In Ingolstadt gibt es über 100 Musik-Gruppen. Die Partei SPD will: Diese Gruppen spielen im Sommer auf Plätzen. Das soll von Mai bis September sein. In der Innenstadt und in den Stadt-Teilen. Es soll auch Konzerte am Nachmittag für Familien geben. Die Gruppen bekommen ein kleines Dankeschön. Bezahlen sollen das Firmen und Förder-Programme.",
+   "lebenslage": [
+    "Freizeit & Sport",
+    "Ehrenamt & Vereine"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Kultur & Bildung"
+   ]
+  },
+  "stadt:antrag:23440": {
+   "klartext_titel": "SPD will beleuchtete „Lichtschneisen“ durch die Innenstadt",
+   "klartext": "Die SPD-Stadtratsfraktion beantragt zu prüfen, ob in der Innenstadt gezielt „Lichtschneisen“ entstehen können: besser beleuchtete Wege, die wichtige Orte miteinander verbinden. Geprüft werden soll, welche Wege sich eignen, wie sie energieeffizient ausgeleuchtet werden können und wie dort durch Gastronomie, Kultur und Veranstaltungen mehr Leben entsteht. Die gesamte Innenstadt soll ausdrücklich nicht heller werden; die Maßnahme soll zum Lichtmasterplan passen und Lichtverschmutzung vermeiden. Die Fraktion begründet das damit, dass manche Bereiche abends als zu dunkel empfunden und deshalb gemieden werden. Der Antrag stammt vom 16. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+   "klartext_titel_leicht": "Die SPD will hellere Wege in der Innenstadt",
+   "klartext_leicht": "Abends sind manche Wege in der Innenstadt dunkel. Dort fühlen sich manche Menschen nicht sicher. Die Partei SPD will wichtige Wege heller machen. Nicht die ganze Innenstadt soll heller werden. Nur bestimmte Wege zwischen wichtigen Orten. Die Lampen sollen wenig Strom brauchen. Es gibt noch keinen Termin für den Antrag.",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "I-Mitte"
+   ],
+   "ort": [],
+   "anlass": [
+    "Sicherheit",
+    "Konzept & Planung"
+   ]
+  },
+  "stadt:antrag:23441": {
+   "klartext_titel": "SPD will einen jährlichen Fassadenpreis einführen",
+   "klartext": "Die SPD-Stadtratsfraktion beantragt einen jährlichen, undotierten Fassadenpreis für besonders gelungene Sanierungen, Restaurierungen, Umgestaltungen und gegebenenfalls Neubauten, die das Stadtbild aufwerten. Eine Fachjury soll auswählen; Vorschläge sollen sowohl von der Verwaltung als auch von Bürgerinnen und Bürgern kommen können. Die Preisträger bekommen eine Urkunde und eine Plakette für das Gebäude, aber kein Geld; die Kosten für Urkunden, Plaketten und Verleihung sollen möglichst Sponsoren tragen. Verliehen werden soll der Preis am Tag des offenen Denkmals. Vorbilder sind Passau und Memmingen. Der Antrag stammt vom 16. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+   "klartext_titel_leicht": "Die SPD will einen Preis für schöne Haus-Fassaden",
+   "klartext_leicht": "Die Fassade ist die Außen-Seite von einem Haus. Viele Menschen renovieren alte Häuser sehr schön. Die Partei SPD will dafür einen Preis. Den Preis gibt es jedes Jahr. Es gibt kein Geld, aber eine Urkunde und ein Schild am Haus. Auch Bürger können Häuser vorschlagen. Eine Gruppe von Fach-Leuten wählt aus.",
+   "lebenslage": [
+    "Wohnen & Miete"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Kultur & Bildung"
+   ]
+  },
+  "stadt:antrag:23443": {
+   "klartext_titel": "SPD will Trinkwasserbrunnen der Innenstadt in Google Maps eintragen lassen",
+   "klartext": "Die SPD-Stadtratsfraktion beantragt, dass alle öffentlichen Trinkwasserbrunnen und Trinkwasserstellen der Innenstadt in gängigen Kartendiensten, vor allem Google Maps, eindeutig und aktuell auffindbar sind. Dazu sollen die Brunnen vollständig erfasst, korrekt eingetragen, mit den Daten des städtischen Geoportals abgeglichen und regelmäßig überprüft werden. Bisher sind die Standorte unter anderem im Geoportal verzeichnet, das Gäste und Touristen unterwegs aber kaum nutzen. Die Fraktion erwartet, dass sich das vorhandene Angebot so mit geringem Aufwand besser nutzen lässt. Der Antrag stammt vom 16. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+   "klartext_titel_leicht": "Die SPD will: Trink-Brunnen sollen im Handy zu finden sein",
+   "klartext_leicht": "In der Innenstadt gibt es Brunnen mit Trink-Wasser. Dort kann man kostenlos Wasser trinken. Viele Menschen wissen aber nicht, wo die Brunnen sind. Die Partei SPD will die Brunnen in Karten im Internet eintragen. Zum Beispiel in Google Maps. Dann findet man sie leicht mit dem Handy.",
+   "lebenslage": [
+    "Freizeit & Sport",
+    "Gesundheit & Pflege"
+   ],
+   "bezirk": [
+    "I-Mitte"
+   ],
+   "ort": [],
+   "anlass": [
+    "Klima & Umwelt"
+   ]
+  },
+  "stadt:antrag:23427": {
+   "klartext_titel": "UWG und FDP wollen die Wunderlkasematte für Kunst und Führungen öffnen",
+   "klartext": "UWG und FDP beantragen gemeinsam ein Konzept zur behutsamen Aufwertung und kulturellen Nutzung der Wunderlkasematte, eigentlich Ziegelbastei, eines Festungswerks aus dem 16. Jahrhundert. In den Tonnengewölben und einem Raum im Viereckturm soll der Ingolstädter Künstler Markus Jordan sein Kunstlabor einrichten können, das er im Zeughaus des Neuen Schlosses aufgeben muss. Der bisher gesperrte Wehrgang soll bei begleiteten Führungen, etwa am Tag des offenen Denkmals und am Festungstag, zugänglich werden. Bis zum 200-jährigen Jubiläum des neuzeitlichen Festungsbaus 2028 sollen Sicherung und Pflege möglichst abgeschlossen sein. Größere bauliche Eingriffe sollen bewusst unterbleiben. Der Antrag stammt vom 14. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+   "klartext_titel_leicht": "UWG und FDP wollen ein altes Festungs-Gebäude öffnen",
+   "klartext_leicht": "Die Wunderl-Kasematte ist ein Teil der alten Festung. Sie ist ungefähr 500 Jahre alt. Viele Menschen kennen sie nicht. UWG und FDP wollen das ändern. Ein Künstler soll dort eine Werkstatt bekommen. Bei Führungen sollen Besucher auf die alte Mauer gehen können. Das Gebäude soll aber nicht stark umgebaut werden. Im Jahr 2028 feiert Ingolstadt ein Festungs-Jubiläum.",
+   "lebenslage": [
+    "Freizeit & Sport"
+   ],
+   "bezirk": [
+    "I-Mitte"
+   ],
+   "ort": [
+    "Ziegelbastei"
+   ],
+   "anlass": [
+    "Kultur & Bildung"
+   ]
+  },
+  "stadt:antrag:23452": {
+   "klartext_titel": "Linke fordert Regeln für den Einsatz von KI in der Stadtverwaltung",
+   "klartext": "Die Linke im Stadtrat beantragt eine verwaltungsweite Dienstanweisung für den Einsatz von KI-Systemen. Erarbeiten soll sie eine ämterübergreifende Arbeitsgruppe aus Digitalisierung, Informationssicherheit, Datenschutz und Ämtern, die schon Erfahrung mit KI haben. Regeln soll die Anweisung unter anderem Datenschutz und Sicherheit, welche KI-Systeme zugelassen sind, den Einsatz bei Verwaltungsentscheidungen, ein Freigabeverfahren für neue Anwendungen sowie Dokumentation und Überprüfung. Der Stadtrat soll halbjährlich über den KI-Einsatz in der Verwaltung informiert werden. Ohne klare Regeln sehen die Antragsteller das Risiko einer unkontrollierten Nutzung. Der Antrag stammt vom 2. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+   "klartext_titel_leicht": "Die Linke will Regeln für Künstliche Intelligenz in der Verwaltung",
+   "klartext_leicht": "Künstliche Intelligenz heißt kurz KI. Das sind Computer-Programme, die zum Beispiel Texte schreiben. Auch die Stadt-Verwaltung nutzt solche Programme. Die Partei Die Linke will dafür klare Regeln. Zum Beispiel: Welche Programme dürfen die Mitarbeiter nutzen? Und: Wie werden Daten geschützt? Der Stadt-Rat soll 2 Mal im Jahr einen Bericht bekommen.",
+   "lebenslage": [
+    "Arbeit & Beruf"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Satzung & Regeln"
+   ]
+  },
+  "bza:14355#Ö 3.1": {
+   "klartext_titel": "Resümee Bürgerversammlung",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "VII-Etting"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14355#Ö 3.2": {
+   "klartext_titel": "Benennung eines Jugendvertreter im BZA Etting",
+   "klartext": "",
+   "lebenslage": [
+    "Jugend"
+   ],
+   "bezirk": [
+    "VII-Etting"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14355#Ö 3.3": {
+   "klartext_titel": "Benennung eines Behindertenvertreter im BZA",
+   "klartext": "",
+   "lebenslage": [
+    "Gesundheit & Pflege"
+   ],
+   "bezirk": [
+    "VII-Etting"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14355#Ö 4": {
+   "klartext_titel": "Anträge / Wünsche / Verschiedenes",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "VII-Etting"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14355#Ö 4.1": {
+   "klartext_titel": "Verschiede E-Mails / Schreiben von Bürgern aus Etting",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "VII-Etting"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14355#Ö 4.2": {
+   "klartext_titel": "Antwortschreiben Mängelmelder",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "VII-Etting"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14209#Ö 3.1": {
+   "klartext_titel": "Parksituation Am Dachsberg (2026-11-005)",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "XI-Friedrichshofen/Hollerstauden"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14209#Ö 3.2": {
+   "klartext_titel": "Zone 30 An der Kühtränke (2026-11-007)",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "XI-Friedrichshofen/Hollerstauden"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14209#Ö 3.4": {
+   "klartext_titel": "Naturschutzfachkartierung",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "XI-Friedrichshofen/Hollerstauden"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14209#Ö 3.5": {
+   "klartext_titel": "Baubeginnanzeige Straßenbau „Samhof“",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "XI-Friedrichshofen/Hollerstauden"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14209#Ö 4.1": {
+   "klartext_titel": "TG Ausfahrt Albertus-Magnus-Straße",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "XI-Friedrichshofen/Hollerstauden"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14209#Ö 4.2": {
+   "klartext_titel": "Sperrung Aussegnungshalle",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "XI-Friedrichshofen/Hollerstauden"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14209#Ö 4.3": {
+   "klartext_titel": "Zone 30 An der Kühtränke",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "XI-Friedrichshofen/Hollerstauden"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14209#Ö 4.4": {
+   "klartext_titel": "Einmündung Ochsenmühlstraße / Pfingstäckerweg",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "XI-Friedrichshofen/Hollerstauden"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14209#Ö 4.5": {
+   "klartext_titel": "Fahrradaufstellfläche Friedrichshofener Straße",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "XI-Friedrichshofen/Hollerstauden"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14353#Ö 1": {
+   "klartext_titel": "Niederschrift vom 30.06.2026",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "V-Südwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14353#Ö 2": {
+   "klartext_titel": "Antwortschreiben der Stadt und Informationen aus der Verwaltung",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "V-Südwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14353#Ö 2.1": {
+   "klartext_titel": "Geschwindigkeitsreduzierung auf 30 km/h in der Straße Am Pulverl und der Maximilianstraße (2026-05-010)",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "V-Südwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14353#Ö 2.2": {
+   "klartext_titel": "Geschwindigkeit in der Ursula-Winter-Straße (2026-05-014)",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "V-Südwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14353#Ö 2.3": {
+   "klartext_titel": "Spielplatz Ottonenstraße (2024-05-001)",
+   "klartext": "",
+   "lebenslage": [
+    "Eltern & Kinder",
+    "Unterwegs",
+    "Freizeit & Sport"
+   ],
+   "bezirk": [
+    "V-Südwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14353#Ö 3": {
+   "klartext_titel": "Auswertung der Geschwindigkeitsmessanlage Knoglersfreude Hagauer Straße (Höhe Kreisel) Nord 22.06.",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "V-Südwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14353#Ö 4": {
+   "klartext_titel": "Jugendbeauftragter für den Stadtteil Südwest",
+   "klartext": "",
+   "lebenslage": [
+    "Jugend"
+   ],
+   "bezirk": [
+    "V-Südwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14353#Ö 5.1": {
+   "klartext_titel": "Hochwasserdamm (Radfahrer und Bewuchs)",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "V-Südwest"
+   ],
+   "ort": [],
+   "anlass": [
+    "Sicherheit"
+   ],
+   "entwurf": true
+  },
+  "bza:14353#Ö 5.2": {
+   "klartext_titel": "Sitzbänke am Edith-Stein-Weg",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "V-Südwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14353#Ö 5.3": {
+   "klartext_titel": "Verlängerung des Halteverbots in der Schrobenhausener Straße von Haunwöhrer Straße bis Oberringstraße",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "V-Südwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13545#Ö 1": {
+   "klartext_titel": "Finanzlagebericht von Herrn Fleckinger",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Konzept & Planung"
+   ],
+   "entwurf": true
+  },
+  "stadt:13545#Ö 3": {
+   "klartext_titel": "Weitere Maßnahmen zur Umsetzung des Dachbeschlusses",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13545#Ö1": {
+   "klartext_titel": "Ergebnisse und Optionen der Einrichtungsprüfung: Volkshochschule",
+   "klartext": "",
+   "lebenslage": [
+    "Studierende"
+   ],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Kultur & Bildung"
+   ],
+   "entwurf": true
+  },
+  "stadt:13545#Ö2": {
+   "klartext_titel": "Ergebnisse und Optionen der Einrichtungsprüfung: Technikerschule",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13545#Ö3": {
+   "klartext_titel": "Ergebnisse und Optionen der Einrichtungsprüfung: Stadtbücherei",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Kultur & Bildung"
+   ],
+   "entwurf": true
+  },
+  "stadt:13545#Ö 4": {
+   "klartext_titel": "Neuerlass/Neufassung einer Satzung für die Erhebung der Hundesteuer",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Gebühren & Preise",
+    "Satzung & Regeln"
+   ],
+   "entwurf": true
+  },
+  "stadt:13545#Ö 6": {
+   "klartext_titel": "Beteiligungsbericht 2026",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Konzept & Planung"
+   ],
+   "entwurf": true
+  },
+  "stadt:13545#Ö 7": {
+   "klartext_titel": "Wirtschaftspläne für das Wirtschaftsjahr Oktober 2026 bis September 2027",
+   "klartext": "",
+   "lebenslage": [
+    "Gewerbe & Gastro",
+    "Unterwegs",
+    "Freizeit & Sport"
+   ],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Verkehrsplanung",
+    "Konzept & Planung"
+   ],
+   "entwurf": true
+  },
+  "stadt:13545#Ö 8": {
+   "klartext_titel": "Altersteilzeit für Tarifbeschäftigte; Regelung ab 01.01.2027",
+   "klartext": "",
+   "lebenslage": [
+    "Arbeit & Beruf"
+   ],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Gebühren & Preise"
+   ],
+   "entwurf": true
+  },
+  "stadt:13545#Ö 9": {
+   "klartext_titel": "Projektgenehmigung für die Verlängerung der Microsoft-Lizenzverträge (2027 bis 2029 und Option für 2030)",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13545#Ö 10": {
+   "klartext_titel": "Halbjahresbericht 2026 zum operativen Geschäft der Waisenhausstiftung Ingolstadt",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Konzept & Planung"
+   ],
+   "entwurf": true
+  },
+  "stadt:13545#Ö 12": {
+   "klartext_titel": "Abschlussbericht Empfangs- und Unterbringungszentrum CAR",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Konzept & Planung"
+   ],
+   "entwurf": true
+  },
+  "stadt:13545#Ö 13": {
+   "klartext_titel": "Kammerphilharmonie Ingolstadt GmbH",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13545#Ö 14": {
+   "klartext_titel": "Rückforderung von Fördermitteln von der Heilig-Geist-Stiftung aufgrund der Aufgabe der stationären …",
+   "klartext": "",
+   "lebenslage": [
+    "Wohnen & Miete"
+   ],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13545#Ö 15": {
+   "klartext_titel": "Gebühren für die Benutzung der Obdachlosenunterkünfte",
+   "klartext": "",
+   "lebenslage": [
+    "Geld & Soziales"
+   ],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Gebühren & Preise",
+    "Sicherheit",
+    "Satzung & Regeln",
+    "Konzept & Planung"
+   ],
+   "entwurf": true
+  },
+  "stadt:13545#Ö 16": {
+   "klartext_titel": "Sanierung Technisches Rathaus Bürogebäude und Tiefgarage, Spitalstraße 3, 85049 Ingolstadt / …",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Baustelle"
+   ],
+   "entwurf": true
+  },
+  "stadt:13545#Ö 18": {
+   "klartext_titel": "Gotthold-Ephraim-Lessing-Grundschule - Erweiterung / 1. Ergänzende Projektgenehmigung",
+   "klartext": "",
+   "lebenslage": [
+    "Eltern & Kinder"
+   ],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13543#Ö 9": {
+   "klartext_titel": "Gotthold-Ephraim-Lessing-Grundschule - Erweiterung / 1. Ergänzende Projektgenehmigung",
+   "klartext": "",
+   "lebenslage": [
+    "Eltern & Kinder",
+    "Freizeit & Sport"
+   ],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Kultur & Bildung"
+   ],
+   "entwurf": true
+  },
+  "stadt:13542#Ö 1": {
+   "klartext_titel": "Erstellung des Mietspiegels 2027, Indexfortschreibung 2029 und Schlüssiges Konzept für Mietobergrenzen im SGB …",
+   "klartext": "",
+   "lebenslage": [
+    "Gesundheit & Pflege",
+    "Wohnen & Miete"
+   ],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Konzept & Planung"
+   ],
    "entwurf": true
   }
  }

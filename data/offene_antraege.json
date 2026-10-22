@@ -1,7 +1,205 @@
 {
-  "hinweis": "Antraege ohne Sitzungstermin, aus der Liste 'Aktuelle Stadtratsantraege' im Ratsinfoportal der Stadt Ingolstadt. Sobald ein Antrag terminiert wird, verschwindet er von hier und taucht stattdessen ganz normal ueber ris_ingolstadt.py auf.",
-  "abgerufen_am": "2026-10-13",
+  "hinweis": "Antraege ohne Sitzungstermin, aus der Liste 'Aktuelle Stadtratsantraege' im Ratsinfoportal der Stadt Ingolstadt. Sobald die Tagesordnung seiner Sitzung veroeffentlicht ist, verschwindet ein Antrag von hier und taucht stattdessen ganz normal ueber ris_ingolstadt.py auf. Bis dahin steht ein schon angesetzter Termin im Feld 'termin'.",
+  "abgerufen_am": "2026-10-22",
   "antraege": [
+    {
+      "quelle": "stadt",
+      "kvonr": "23445",
+      "titel": "Zukunft des Viktualienmarkts",
+      "antragsteller": "FW-Stadtratsfraktion",
+      "antragsdatum": "2026-10-19",
+      "antragsdatum_anzeige": "19.10.2026",
+      "vorlage": "V0685/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23445",
+      "ziel_gremium": "Stadtrat",
+      "termin": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FW",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254693&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23432",
+      "titel": "„Über den Dächern von Ingolstadt“",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-10-16",
+      "antragsdatum_anzeige": "16.10.2026",
+      "vorlage": "V0673/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23432",
+      "ziel_gremium": "Stadtrat",
+      "termin": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254608&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23433",
+      "titel": "Stadtgeburtstag „Ingolstadt feiert Geburtstag“",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-10-16",
+      "antragsdatum_anzeige": "16.10.2026",
+      "vorlage": "V0674/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23433",
+      "ziel_gremium": "Stadtrat",
+      "termin": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254611&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23434",
+      "titel": "Silent Hour in der Ingolstädter Innenstadt",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-10-16",
+      "antragsdatum_anzeige": "16.10.2026",
+      "vorlage": "V0675/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23434",
+      "ziel_gremium": "Stadtrat",
+      "termin": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254618&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23435",
+      "titel": "Stadtbaum- und Schattenprogramm",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-10-16",
+      "antragsdatum_anzeige": "16.10.2026",
+      "vorlage": "V0676/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23435",
+      "ziel_gremium": "Stadtrat",
+      "termin": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254626&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23436",
+      "titel": "Sitzmöglichkeiten Theaterplatz",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-10-16",
+      "antragsdatum_anzeige": "16.10.2026",
+      "vorlage": "V0677/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23436",
+      "ziel_gremium": "Stadtrat",
+      "termin": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254629&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23439",
+      "titel": "Musik in der Innenstadt und in den Stadtteilen",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-10-16",
+      "antragsdatum_anzeige": "16.10.2026",
+      "vorlage": "V0680/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23439",
+      "ziel_gremium": "Stadtrat",
+      "termin": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254653&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23440",
+      "titel": "Lichtschneisen für die Innenstadt",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-10-16",
+      "antragsdatum_anzeige": "16.10.2026",
+      "vorlage": "V0681/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23440",
+      "ziel_gremium": "Stadtrat",
+      "termin": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254656&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23441",
+      "titel": "Fassadenpreis",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-10-16",
+      "antragsdatum_anzeige": "16.10.2026",
+      "vorlage": "V0682/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23441",
+      "ziel_gremium": "Stadtrat",
+      "termin": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254660&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23443",
+      "titel": "Auffindbarkeit der Trinkwasserbrunnen in der Innenstadt verbessern",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "antragsdatum": "2026-10-16",
+      "antragsdatum_anzeige": "16.10.2026",
+      "vorlage": "V0684/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23443",
+      "ziel_gremium": "Stadtrat",
+      "termin": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254668&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23427",
+      "titel": "Wunderlkasematte aus dem Dornröschenschlaf wecken – Historisches Festungswerk behutsam aufwerten und kulturell nutzen",
+      "antragsteller": "UWG-Stadtratsfraktionund der FDP-Stadtratsgruppe",
+      "antragsdatum": "2026-10-14",
+      "antragsdatum_anzeige": "14.10.2026",
+      "vorlage": "V0669/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23427",
+      "ziel_gremium": "Stadtrat",
+      "termin": "",
+      "dokumente": [
+        {
+          "titel": "Stadtrat Gemeinschaftsantrag",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254455&type=do"
+        }
+      ]
+    },
     {
       "quelle": "stadt",
       "kvonr": "23397",
@@ -12,6 +210,7 @@
       "vorlage": "V0641/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23397",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -29,6 +228,7 @@
       "vorlage": "V0643/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23399",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -46,6 +246,7 @@
       "vorlage": "V0637/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23393",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag B 90",
@@ -63,6 +264,7 @@
       "vorlage": "V0639/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23395",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag B 90",
@@ -80,6 +282,7 @@
       "vorlage": "V0640/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23396",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag B 90",
@@ -97,6 +300,7 @@
       "vorlage": "V0648/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23404",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag Die Linke",
@@ -114,10 +318,29 @@
       "vorlage": "V0655/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23412",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtrat Gemeinschaftsantrag",
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254299&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23452",
+      "titel": "KI-Dienstanweisung",
+      "antragsteller": "Stadtratsfraktion DIE LINKE",
+      "antragsdatum": "2026-10-02",
+      "antragsdatum_anzeige": "02.10.2026",
+      "vorlage": "V0691/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23452",
+      "ziel_gremium": "Stadtrat",
+      "termin": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag Die Linke",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254774&type=do"
         }
       ]
     },
@@ -131,6 +354,7 @@
       "vorlage": "V0614/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23370",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag B 90",
@@ -148,6 +372,7 @@
       "vorlage": "V0613/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23369",
       "ziel_gremium": "Stadtrat",
+      "termin": "2026-10-29",
       "dokumente": [
         {
           "titel": "Stadtratsantrag FW",
@@ -165,6 +390,7 @@
       "vorlage": "V0556/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23312",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -182,6 +408,7 @@
       "vorlage": "V0558/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23314",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -199,6 +426,7 @@
       "vorlage": "V0559/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23315",
       "ziel_gremium": "Stadtrat",
+      "termin": "2026-10-29",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -216,6 +444,7 @@
       "vorlage": "V0554/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23310",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -233,6 +462,7 @@
       "vorlage": "V0545/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23301",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag ÖDP",
@@ -250,6 +480,7 @@
       "vorlage": "V0546/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23302",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag ÖDP",
@@ -267,6 +498,7 @@
       "vorlage": "V0547/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23303",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag ÖDP",
@@ -284,6 +516,7 @@
       "vorlage": "V0542/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23298",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -301,6 +534,7 @@
       "vorlage": "V0541/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23297",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -318,6 +552,7 @@
       "vorlage": "V0509/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23265",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -335,6 +570,7 @@
       "vorlage": "V0496/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23251",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag FW",
@@ -352,6 +588,7 @@
       "vorlage": "V0488/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23243",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -369,6 +606,7 @@
       "vorlage": "V0484/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23239",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag AfD",
@@ -386,6 +624,7 @@
       "vorlage": "V0479/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23234",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag B 90",
@@ -403,6 +642,7 @@
       "vorlage": "V0428/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23183",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -420,6 +660,7 @@
       "vorlage": "V0412/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23165",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag B 90",
@@ -437,6 +678,7 @@
       "vorlage": "V0388/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23141",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -454,6 +696,7 @@
       "vorlage": "V0382/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23135",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -471,6 +714,7 @@
       "vorlage": "V0383/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23136",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -488,6 +732,7 @@
       "vorlage": "V0369/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23122",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -505,6 +750,7 @@
       "vorlage": "V0379/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23132",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag FW",
@@ -522,6 +768,7 @@
       "vorlage": "V0380/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23133",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag FW",
@@ -539,6 +786,7 @@
       "vorlage": "V0370/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23123",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -556,6 +804,7 @@
       "vorlage": "V0366/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23119",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -573,6 +822,7 @@
       "vorlage": "V0365/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23118",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -590,6 +840,7 @@
       "vorlage": "V0368/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23121",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -607,6 +858,7 @@
       "vorlage": "V0364/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23117",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -624,6 +876,7 @@
       "vorlage": "V0362/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23115",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag B 90",
@@ -641,6 +894,7 @@
       "vorlage": "V0322/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23073",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -658,6 +912,7 @@
       "vorlage": "V0312/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23063",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag FW",
@@ -675,6 +930,7 @@
       "vorlage": "V0288/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23039",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag FW",
@@ -692,6 +948,7 @@
       "vorlage": "V0111/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22855",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtrat Gemeinschaftsantrag",
@@ -709,6 +966,7 @@
       "vorlage": "V0110/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22854",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -726,6 +984,7 @@
       "vorlage": "V0094/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22838",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtrat Gemeinschaftsantrag",
@@ -743,6 +1002,7 @@
       "vorlage": "V0054/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22793",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag FW",
@@ -760,6 +1020,7 @@
       "vorlage": "V0051/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22788",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -777,6 +1038,7 @@
       "vorlage": "V0021/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22747",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag B 90",
@@ -794,6 +1056,7 @@
       "vorlage": "V0012/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22738",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag FDP/JU",
@@ -811,6 +1074,7 @@
       "vorlage": "V0006/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22732",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag FW",
@@ -828,6 +1092,7 @@
       "vorlage": "V0005/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22731",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag ÖDP",
@@ -845,6 +1110,7 @@
       "vorlage": "V0949/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22726",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag UWG",
@@ -862,6 +1128,7 @@
       "vorlage": "V0948/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22725",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtrat Gemeinschaftsantrag",
@@ -879,6 +1146,7 @@
       "vorlage": "V0879/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22654",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag FDP/JU",
@@ -896,6 +1164,7 @@
       "vorlage": "V0731/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22502",
       "ziel_gremium": "",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -913,6 +1182,7 @@
       "vorlage": "V0688/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22458",
       "ziel_gremium": "",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag ÖDP",
@@ -930,6 +1200,7 @@
       "vorlage": "V0665/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22435",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag FDP/JU",
@@ -947,6 +1218,7 @@
       "vorlage": "V0650/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22420",
       "ziel_gremium": "",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -972,6 +1244,7 @@
       "vorlage": "V0640/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22410",
       "ziel_gremium": "",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag FDP/JU",
@@ -989,6 +1262,7 @@
       "vorlage": "V0602/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22372",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -1006,6 +1280,7 @@
       "vorlage": "V0601/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22371",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag ÖDP",
@@ -1023,6 +1298,7 @@
       "vorlage": "V0463/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20231",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -1040,6 +1316,7 @@
       "vorlage": "V0475/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20244",
       "ziel_gremium": "",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -1061,6 +1338,7 @@
       "vorlage": "V0420/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20187",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag B 90",
@@ -1078,6 +1356,7 @@
       "vorlage": "V0421/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20188",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag B 90",
@@ -1095,6 +1374,7 @@
       "vorlage": "V0424/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20191",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag AfD",
@@ -1112,6 +1392,7 @@
       "vorlage": "V0382/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20149",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -1133,6 +1414,7 @@
       "vorlage": "V0319/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20086",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag Die Linke",
@@ -1150,6 +1432,7 @@
       "vorlage": "V0277/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20044",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtrat Gemeinschaftsantrag",
@@ -1167,6 +1450,7 @@
       "vorlage": "V0263/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=20029",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag Die Linke",
@@ -1184,6 +1468,7 @@
       "vorlage": "V0208/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19973",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag ÖDP",
@@ -1201,6 +1486,7 @@
       "vorlage": "V0165/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19916",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag ÖDP",
@@ -1218,6 +1504,7 @@
       "vorlage": "V0097/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19842",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtrat Gemeinschaftsantrag",
@@ -1235,6 +1522,7 @@
       "vorlage": "V0083/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19827",
       "ziel_gremium": "",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag FDP/JU",
@@ -1264,6 +1552,7 @@
       "vorlage": "V0054/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19798",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtrat Gemeinschaftsantrag",
@@ -1281,6 +1570,7 @@
       "vorlage": "V0032/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19776",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag B 90",
@@ -1298,6 +1588,7 @@
       "vorlage": "V0042/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19786",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag FW",
@@ -1315,6 +1606,7 @@
       "vorlage": "V0969/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19742",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag Die Linke",
@@ -1332,6 +1624,7 @@
       "vorlage": "V0968/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19741",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag B 90",
@@ -1349,6 +1642,7 @@
       "vorlage": "V0962/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19734",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -1366,6 +1660,7 @@
       "vorlage": "V0956/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19726",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag UWG",
@@ -1383,6 +1678,7 @@
       "vorlage": "V0957/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19727",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag UWG",
@@ -1400,6 +1696,7 @@
       "vorlage": "V0958/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19728",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag UWG",
@@ -1417,6 +1714,7 @@
       "vorlage": "V0950/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19720",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -1434,6 +1732,7 @@
       "vorlage": "V0920/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19689",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -1451,6 +1750,7 @@
       "vorlage": "V0818/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19587",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtrat Gemeinschaftsantrag",
@@ -1468,6 +1768,7 @@
       "vorlage": "V0800/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19569",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtrat Gemeinschaftsantrag",
@@ -1485,6 +1786,7 @@
       "vorlage": "V0792/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19560",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag Die Linke",
@@ -1502,6 +1804,7 @@
       "vorlage": "V0723/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19490",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -1519,6 +1822,7 @@
       "vorlage": "V0721/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19488",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag AfD",
@@ -1536,6 +1840,7 @@
       "vorlage": "V0719/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19486",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtrat Gemeinschaftsantrag",
@@ -1553,6 +1858,7 @@
       "vorlage": "V0709/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19476",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -1570,6 +1876,7 @@
       "vorlage": "V0685/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19452",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -1587,6 +1894,7 @@
       "vorlage": "V0684/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19451",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag UWG",
@@ -1604,6 +1912,7 @@
       "vorlage": "V0678/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19445",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag ÖDP",
@@ -1621,6 +1930,7 @@
       "vorlage": "V0675/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19442",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -1638,6 +1948,7 @@
       "vorlage": "V0634/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19399",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag ÖDP",
@@ -1655,6 +1966,7 @@
       "vorlage": "V0606/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19371",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag FW",
@@ -1672,6 +1984,7 @@
       "vorlage": "V0605/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19370",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag FW",
@@ -1689,6 +2002,7 @@
       "vorlage": "V0602/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19367",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -1706,6 +2020,7 @@
       "vorlage": "V0601/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19365",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtrat Gemeinschaftsantrag",
@@ -1723,6 +2038,7 @@
       "vorlage": "V0586/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19350",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag B 90",
@@ -1740,6 +2056,7 @@
       "vorlage": "V0575/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19339",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -1757,6 +2074,7 @@
       "vorlage": "V0530/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19294",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag B 90",
@@ -1774,6 +2092,7 @@
       "vorlage": "V0484/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19248",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag AfD",
@@ -1791,6 +2110,7 @@
       "vorlage": "V0472/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19231",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -1808,6 +2128,7 @@
       "vorlage": "V0459/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19218",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -1825,6 +2146,7 @@
       "vorlage": "V0425/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19182",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -1842,6 +2164,7 @@
       "vorlage": "V0396/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19153",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -1859,6 +2182,7 @@
       "vorlage": "V0375/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19129",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -1876,6 +2200,7 @@
       "vorlage": "V0350/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19102",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -1893,6 +2218,7 @@
       "vorlage": "V0351/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19103",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -1910,6 +2236,7 @@
       "vorlage": "V0342/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19094",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -1927,6 +2254,7 @@
       "vorlage": "V0355/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19107",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtrat Gemeinschaftsantrag",
@@ -1944,6 +2272,7 @@
       "vorlage": "V0339/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19091",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -1961,6 +2290,7 @@
       "vorlage": "V0337/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19089",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -1978,6 +2308,7 @@
       "vorlage": "V0328/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19080",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -1995,6 +2326,7 @@
       "vorlage": "V0214/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=18961",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -2012,6 +2344,7 @@
       "vorlage": "V0215/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=18962",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -2029,6 +2362,7 @@
       "vorlage": "V0047/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=18784",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -2046,6 +2380,7 @@
       "vorlage": "V0029/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19773",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -2063,6 +2398,7 @@
       "vorlage": "V1005/23",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=18599",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag ÖDP",
@@ -2080,6 +2416,7 @@
       "vorlage": "V0907/23",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=17489",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -2097,6 +2434,7 @@
       "vorlage": "V0281/22",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=15744",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag FW",
@@ -2114,6 +2452,7 @@
       "vorlage": "V0292/22",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=15755",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag FDP/JU",
@@ -2131,6 +2470,7 @@
       "vorlage": "V0647/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23403",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -2148,6 +2488,7 @@
       "vorlage": "V0557/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23313",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -2165,6 +2506,7 @@
       "vorlage": "V0540/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23296",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -2182,6 +2524,7 @@
       "vorlage": "V0289/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23040",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag ÖDP",
@@ -2199,6 +2542,7 @@
       "vorlage": "V0699/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22470",
       "ziel_gremium": "",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag B 90",
@@ -2216,6 +2560,7 @@
       "vorlage": "V0071/25",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19815",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag B 90",
@@ -2233,6 +2578,7 @@
       "vorlage": "V0903/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19672",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag ÖDP",
@@ -2250,6 +2596,7 @@
       "vorlage": "V0827/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19596",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -2267,6 +2614,7 @@
       "vorlage": "V0563/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19327",
       "ziel_gremium": "IFG Ingolstadt AöR, Verwaltungsrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag B 90",
@@ -2284,6 +2632,7 @@
       "vorlage": "V0295/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19047",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag CSU",
@@ -2301,6 +2650,7 @@
       "vorlage": "V0122/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=18862",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag UWG",
@@ -2318,6 +2668,7 @@
       "vorlage": "V0105/24",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=18845",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -2335,6 +2686,7 @@
       "vorlage": "V0940/23",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=17527",
       "ziel_gremium": "Stadtrat",
+      "termin": "",
       "dokumente": [
         {
           "titel": "Stadtratsantrag UWG",

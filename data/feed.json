@@ -6,16 +6,16 @@
       "software": "Session (Somacos GmbH & Co. KG)",
       "basis_url": "https://www.ingolstadt.de/sessionnet",
       "endung": "php",
-      "anzahl_sitzungen": 377,
-      "anzahl_tops": 3193
+      "anzahl_sitzungen": 381,
+      "anzahl_tops": 3223
     },
     "bza": {
       "name": "Ratsinfoportal der Bezirksausschuesse der Stadt Ingolstadt",
       "software": "Session (Somacos GmbH & Co. KG)",
       "basis_url": "https://www.ingolstadt.de/sessionnetbza",
       "endung": "php",
-      "anzahl_sitzungen": 174,
-      "anzahl_tops": 2260
+      "anzahl_sitzungen": 177,
+      "anzahl_tops": 2297
     },
     "bezirk_obb": {
       "name": "Buergerinfoportal des Bezirks Oberbayern",
@@ -27,22 +27,22 @@
     }
   },
   "hinweis": "Oeffentlich zugaengliche Seiten, ohne Anmeldung abgerufen.",
-  "daten_abgerufen_am": "2026-10-13",
-  "feed_gebaut_am": "2026-10-13",
+  "daten_abgerufen_am": "2026-10-22",
+  "feed_gebaut_am": "2026-10-22",
   "zeitraum": {
     "von": "2023-11",
-    "bis": "2026-12"
+    "bis": "2027-01"
   },
   "statistik": {
-    "sitzungen_ausgelesen": 627,
-    "tops_ausgelesen": 6177,
-    "tops_verfahren": 858,
-    "tops_kuratiert": 3775,
-    "tops_abgedeckt": 4419,
-    "tops_sitzungsroutine_offen": 856,
-    "tops_beteiligung": 576,
-    "tops_sonstige": 325,
-    "tops_nicht_oeffentlich": 1,
+    "sitzungen_ausgelesen": 634,
+    "tops_ausgelesen": 6244,
+    "tops_verfahren": 866,
+    "tops_kuratiert": 3826,
+    "tops_abgedeckt": 4467,
+    "tops_sitzungsroutine_offen": 864,
+    "tops_beteiligung": 583,
+    "tops_sonstige": 328,
+    "tops_nicht_oeffentlich": 2,
     "tops_offen": 0,
     "jahre_vollstaendig": [
       "2023",
@@ -51,32 +51,32 @@
       "2026"
     ],
     "jahre_rueckstand": [],
-    "entwuerfe": 1306,
-    "leichte_sprache": 2469,
+    "entwuerfe": 1341,
+    "leichte_sprache": 2485,
     "je_quelle": {
-      "stadt": 1767,
-      "bza": 1485,
+      "stadt": 1793,
+      "bza": 1510,
       "bezirk_obb": 523
     },
     "stand": {
-      "Nur besprochen, nichts entschieden": 2437,
-      "Entscheidung geplant": 3,
-      "Wird noch beraten": 48,
-      "Bekanntgabe": 297,
-      "Noch nicht terminiert": 136,
-      "Entscheidung angesetzt": 290,
+      "Nur besprochen, nichts entschieden": 2468,
+      "Entscheidung angesetzt": 295,
+      "Bekanntgabe": 301,
+      "Wird noch beraten": 50,
+      "Noch nicht terminiert": 146,
+      "Entscheidung geplant": 2,
       "Beschlossen": 552,
       "Abgelehnt": 11,
       "Teilweise beschlossen": 1
     },
     "status": {
-      "Nur zur Information": 2734,
-      "Noch offen": 187,
-      "Ergebnis steht im Protokoll": 290,
+      "Nur zur Information": 2769,
+      "Ergebnis steht im Protokoll": 295,
+      "Noch offen": 198,
       "Entschieden": 564
     },
     "stadtbezirke": 12,
-    "duenn": 2273
+    "duenn": 2308
   },
   "achsen": {
     "lebenslage": [
@@ -145,6 +145,1360 @@
     ]
   },
   "eintraege": [
+    {
+      "ref": "bza:14355#Ö 3.1",
+      "thema": "bza:14355#Ö 3.1",
+      "auftritte": [
+        {
+          "datum": "2026-10-29",
+          "datum_anzeige": "29.10.2026",
+          "gremium": "Bezirksausschuss VII-Etting",
+          "top_nr": "Ö 3.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14355"
+        }
+      ],
+      "klartext_titel": "Resümee Bürgerversammlung",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [
+        "VII-Etting"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Resümee Bürgerversammlung",
+      "top_nr": "Ö 3.1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss VII-Etting",
+      "sitzung_kennung": "BZA-VII/05/2026",
+      "datum": "2026-10-29",
+      "datum_anzeige": "29.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14355",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14355#Ö 3.2",
+      "thema": "bza:14355#Ö 3.2",
+      "auftritte": [
+        {
+          "datum": "2026-10-29",
+          "datum_anzeige": "29.10.2026",
+          "gremium": "Bezirksausschuss VII-Etting",
+          "top_nr": "Ö 3.2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14355"
+        }
+      ],
+      "klartext_titel": "Benennung eines Jugendvertreter im BZA Etting",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "VII-Etting"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Benennung eines Jugendvertreter im BZA Etting",
+      "top_nr": "Ö 3.2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss VII-Etting",
+      "sitzung_kennung": "BZA-VII/05/2026",
+      "datum": "2026-10-29",
+      "datum_anzeige": "29.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14355",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14355#Ö 3.3",
+      "thema": "bza:14355#Ö 3.3",
+      "auftritte": [
+        {
+          "datum": "2026-10-29",
+          "datum_anzeige": "29.10.2026",
+          "gremium": "Bezirksausschuss VII-Etting",
+          "top_nr": "Ö 3.3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14355"
+        }
+      ],
+      "klartext_titel": "Benennung eines Behindertenvertreter im BZA",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [
+        "VII-Etting"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Benennung eines Behindertenvertreter im BZA",
+      "top_nr": "Ö 3.3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss VII-Etting",
+      "sitzung_kennung": "BZA-VII/05/2026",
+      "datum": "2026-10-29",
+      "datum_anzeige": "29.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14355",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14355#Ö 4",
+      "thema": "bza:14355#Ö 4",
+      "auftritte": [
+        {
+          "datum": "2026-10-29",
+          "datum_anzeige": "29.10.2026",
+          "gremium": "Bezirksausschuss VII-Etting",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14355"
+        }
+      ],
+      "klartext_titel": "Anträge / Wünsche / Verschiedenes",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [
+        "VII-Etting"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Anträge / Wünsche / Verschiedenes",
+      "top_nr": "Ö 4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss VII-Etting",
+      "sitzung_kennung": "BZA-VII/05/2026",
+      "datum": "2026-10-29",
+      "datum_anzeige": "29.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14355",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14355#Ö 4.1",
+      "thema": "bza:14355#Ö 4.1",
+      "auftritte": [
+        {
+          "datum": "2026-10-29",
+          "datum_anzeige": "29.10.2026",
+          "gremium": "Bezirksausschuss VII-Etting",
+          "top_nr": "Ö 4.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14355"
+        }
+      ],
+      "klartext_titel": "Verschiede E-Mails / Schreiben von Bürgern aus Etting",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [
+        "VII-Etting"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Verschiede E-Mails / Schreiben von Bürgern aus Etting",
+      "top_nr": "Ö 4.1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss VII-Etting",
+      "sitzung_kennung": "BZA-VII/05/2026",
+      "datum": "2026-10-29",
+      "datum_anzeige": "29.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14355",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14355#Ö 4.2",
+      "thema": "bza:14355#Ö 4.2",
+      "auftritte": [
+        {
+          "datum": "2026-10-29",
+          "datum_anzeige": "29.10.2026",
+          "gremium": "Bezirksausschuss VII-Etting",
+          "top_nr": "Ö 4.2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14355"
+        }
+      ],
+      "klartext_titel": "Antwortschreiben Mängelmelder",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [
+        "VII-Etting"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Antwortschreiben Mängelmelder",
+      "top_nr": "Ö 4.2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss VII-Etting",
+      "sitzung_kennung": "BZA-VII/05/2026",
+      "datum": "2026-10-29",
+      "datum_anzeige": "29.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14355",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13529#Ö 12",
+      "thema": "stadt:vorlage:22991",
+      "auftritte": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 12",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
+        },
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Kommission für Brand- und Katastrophenschutz sowie Rettungswesen",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13764"
+        }
+      ],
+      "klartext_titel": "Feuerwehr Mailing/Feldkirchen: Kommandant bestätigt",
+      "klartext": "Jakob Bücherl wird als Kommandant der Freiwilligen Feuerwehr Ingolstadt-Mailing/Feldkirchen bestätigt. Wie bei allen Freiwilligen Feuerwehren wählen die Mitglieder ihren Kommandanten selbst, die Bestätigung ist aber Sache des Stadtrats. Die Aufwandsentschädigung beträgt 220,56 Euro im Monat. Sie richtet sich nach der Größe der jeweiligen Feuerwehr und ist im Bayerischen Feuerwehrgesetz geregelt.",
+      "klartext_titel_leicht": "Ein neuer Chef für die Feuerwehr Mailing",
+      "klartext_leicht": "Die Freiwillige Feuerwehr hilft bei Bränden und Unfällen. In Mailing und Feldkirchen gibt es auch eine. Ihr Chef heißt Kommandant. Die Mitglieder haben ihn gewählt. Der Stadt-Rat bestätigt die Wahl. Der neue Chef heißt Jakob Bücherl. Er bekommt 220 Euro im Monat dafür.",
+      "lebenslage": [
+        "Ehrenamt & Vereine"
+      ],
+      "bezirk": [
+        "IX-Mailing/Feldkirchen"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "24.06.2026",
+      "status": "Ergebnis steht im Protokoll",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Bestätigung des Kommandanten der Freiwilligen Feuerwehr Ingolstadt-Mailing/Feldkirchen",
+      "top_nr": "Ö 2",
+      "vorlage": "V0241/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22991",
+      "antragsteller": "",
+      "gremium": "Kommission für Brand- und Katastrophenschutz sowie Rettungswesen",
+      "sitzung_kennung": "BKR/01/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13764",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249652&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "12",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529&toselect=88583"
+        },
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Kommission für Brand- und Katastrophenschutz sowie Rettungswesen",
+          "top_nr": "2",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13764&toselect=90229"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13529#Ö3",
+      "thema": "stadt:vorlage:23096",
+      "auftritte": [
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
+        },
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Kommission für Brand- und Katastrophenschutz sowie Rettungswesen",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13764"
+        }
+      ],
+      "klartext_titel": "Martin von Kap-herr bleibt Kommandant der Feuerwehr Stadtmitte",
+      "klartext": "Der Stadtrat bestätigt die Wiederwahl von Martin Freiherr von Kap-herr zum Kommandanten der Freiwilligen Feuerwehr Ingolstadt-Stadtmitte für weitere sechs Jahre ab Oktober 2026. Er wird zugleich zum Stadtbrandrat bestimmt und erhält eine monatliche Entschädigung von 268,56 Euro.",
+      "klartext_titel_leicht": "Feuerwehr-Chef Stadtmitte bleibt im Amt",
+      "klartext_leicht": "Die Freiwillige Feuerwehr Stadtmitte hat einen Chef gewählt. Er heißt Martin von Kap-herr. Er macht diese Arbeit schon länger. Jetzt wird er für 6 weitere Jahre bestätigt. Er bekommt dafür monatlich Geld. Er wird auch Stadt-Brandrat.",
+      "lebenslage": [],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "27.10.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Bestätigung des Kommandanten der Freiwilligen Feuerwehr Ingolstadt-Stadtmitte",
+      "top_nr": "Ö 1",
+      "vorlage": "V0231/26/1",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23096",
+      "antragsteller": "",
+      "gremium": "Kommission für Brand- und Katastrophenschutz sowie Rettungswesen",
+      "sitzung_kennung": "BKR/01/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13764",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250925&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Kommission für Brand- und Katastrophenschutz sowie Rettungswesen",
+          "top_nr": "1",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13764&toselect=90228"
+        }
+      ]
+    },
+    {
+      "ref": "bza:14209#Ö 3.1",
+      "thema": "bza:14209#Ö 3.1",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+          "top_nr": "Ö 3.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209"
+        }
+      ],
+      "klartext_titel": "Parksituation Am Dachsberg (2026-11-005)",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [
+        "XI-Friedrichshofen/Hollerstauden"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Parksituation Am Dachsberg (2026-11-005)",
+      "top_nr": "Ö 3.1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+      "sitzung_kennung": "BZA-XI/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209",
+      "dokumente": [
+        {
+          "titel": "2026-11-005",
+          "url": "https://www.ingolstadt.de/sessionnetbza/getfile.php?id=254765&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14209#Ö 3.2",
+      "thema": "bza:14209#Ö 3.2",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+          "top_nr": "Ö 3.2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209"
+        }
+      ],
+      "klartext_titel": "Zone 30 An der Kühtränke (2026-11-007)",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [
+        "XI-Friedrichshofen/Hollerstauden"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Zone 30 An der Kühtränke (2026-11-007)",
+      "top_nr": "Ö 3.2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+      "sitzung_kennung": "BZA-XI/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209",
+      "dokumente": [
+        {
+          "titel": "2026-11-007",
+          "url": "https://www.ingolstadt.de/sessionnetbza/getfile.php?id=254771&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14209#Ö 3.4",
+      "thema": "bza:14209#Ö 3.4",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+          "top_nr": "Ö 3.4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209"
+        }
+      ],
+      "klartext_titel": "Naturschutzfachkartierung",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [
+        "XI-Friedrichshofen/Hollerstauden"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Naturschutzfachkartierung",
+      "top_nr": "Ö 3.4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+      "sitzung_kennung": "BZA-XI/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14209#Ö 3.5",
+      "thema": "bza:14209#Ö 3.5",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+          "top_nr": "Ö 3.5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209"
+        }
+      ],
+      "klartext_titel": "Baubeginnanzeige Straßenbau „Samhof“",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XI-Friedrichshofen/Hollerstauden"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Baubeginnanzeige Straßenbau „Samhof“",
+      "top_nr": "Ö 3.5",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+      "sitzung_kennung": "BZA-XI/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14209#Ö 4.1",
+      "thema": "bza:14209#Ö 4.1",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+          "top_nr": "Ö 4.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209"
+        }
+      ],
+      "klartext_titel": "TG Ausfahrt Albertus-Magnus-Straße",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XI-Friedrichshofen/Hollerstauden"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "TG Ausfahrt Albertus-Magnus-Straße",
+      "top_nr": "Ö 4.1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+      "sitzung_kennung": "BZA-XI/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14209#Ö 4.2",
+      "thema": "bza:14209#Ö 4.2",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+          "top_nr": "Ö 4.2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209"
+        }
+      ],
+      "klartext_titel": "Sperrung Aussegnungshalle",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [
+        "XI-Friedrichshofen/Hollerstauden"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Sperrung Aussegnungshalle",
+      "top_nr": "Ö 4.2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+      "sitzung_kennung": "BZA-XI/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14209#Ö 4.3",
+      "thema": "bza:14209#Ö 4.3",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+          "top_nr": "Ö 4.3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209"
+        }
+      ],
+      "klartext_titel": "Zone 30 An der Kühtränke",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [
+        "XI-Friedrichshofen/Hollerstauden"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Zone 30 An der Kühtränke",
+      "top_nr": "Ö 4.3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+      "sitzung_kennung": "BZA-XI/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14209#Ö 4.4",
+      "thema": "bza:14209#Ö 4.4",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+          "top_nr": "Ö 4.4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209"
+        }
+      ],
+      "klartext_titel": "Einmündung Ochsenmühlstraße / Pfingstäckerweg",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XI-Friedrichshofen/Hollerstauden"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Einmündung Ochsenmühlstraße / Pfingstäckerweg",
+      "top_nr": "Ö 4.4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+      "sitzung_kennung": "BZA-XI/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14209#Ö 4.5",
+      "thema": "bza:14209#Ö 4.5",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+          "top_nr": "Ö 4.5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209"
+        }
+      ],
+      "klartext_titel": "Fahrradaufstellfläche Friedrichshofener Straße",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "XI-Friedrichshofen/Hollerstauden"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Fahrradaufstellfläche Friedrichshofener Straße",
+      "top_nr": "Ö 4.5",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+      "sitzung_kennung": "BZA-XI/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14353#Ö 1",
+      "thema": "bza:14353#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss V-Südwest",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353"
+        }
+      ],
+      "klartext_titel": "Niederschrift vom 30.06.2026",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Niederschrift vom 30.06.2026",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss V-Südwest",
+      "sitzung_kennung": "BZA-V/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14353#Ö 2",
+      "thema": "bza:14353#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss V-Südwest",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353"
+        }
+      ],
+      "klartext_titel": "Antwortschreiben der Stadt und Informationen aus der Verwaltung",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Antwortschreiben der Stadt und Informationen aus der Verwaltung",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss V-Südwest",
+      "sitzung_kennung": "BZA-V/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14353#Ö 2.1",
+      "thema": "bza:14353#Ö 2.1",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss V-Südwest",
+          "top_nr": "Ö 2.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353"
+        }
+      ],
+      "klartext_titel": "Geschwindigkeitsreduzierung auf 30 km/h in der Straße Am Pulverl und der Maximilianstraße (2026-05-010)",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Geschwindigkeitsreduzierung auf 30 km/h in der Straße Am Pulverl und der Maximilianstraße (2026-05-010)",
+      "top_nr": "Ö 2.1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss V-Südwest",
+      "sitzung_kennung": "BZA-V/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353",
+      "dokumente": [
+        {
+          "titel": "2026-05-010",
+          "url": "https://www.ingolstadt.de/sessionnetbza/getfile.php?id=254734&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14353#Ö 2.2",
+      "thema": "bza:14353#Ö 2.2",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss V-Südwest",
+          "top_nr": "Ö 2.2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353"
+        }
+      ],
+      "klartext_titel": "Geschwindigkeit in der Ursula-Winter-Straße (2026-05-014)",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Geschwindigkeit in der Ursula-Winter-Straße (2026-05-014)",
+      "top_nr": "Ö 2.2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss V-Südwest",
+      "sitzung_kennung": "BZA-V/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353",
+      "dokumente": [
+        {
+          "titel": "2026-05-014",
+          "url": "https://www.ingolstadt.de/sessionnetbza/getfile.php?id=254735&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14353#Ö 2.3",
+      "thema": "bza:14353#Ö 2.3",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss V-Südwest",
+          "top_nr": "Ö 2.3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353"
+        }
+      ],
+      "klartext_titel": "Spielplatz Ottonenstraße (2024-05-001)",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Eltern & Kinder",
+        "Unterwegs",
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Spielplatz Ottonenstraße (2024-05-001)",
+      "top_nr": "Ö 2.3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss V-Südwest",
+      "sitzung_kennung": "BZA-V/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353",
+      "dokumente": [
+        {
+          "titel": "Stellungnahme AZ 2024-05-001 Spielplatz Ottonenstraße",
+          "url": "https://www.ingolstadt.de/sessionnetbza/getfile.php?id=254741&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14353#Ö 3",
+      "thema": "bza:14353#Ö 3",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss V-Südwest",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353"
+        }
+      ],
+      "klartext_titel": "Auswertung der Geschwindigkeitsmessanlage Knoglersfreude Hagauer Straße (Höhe Kreisel) Nord 22.06.",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Auswertung der Geschwindigkeitsmessanlage Knoglersfreude Hagauer Straße (Höhe Kreisel) Nord 22.06. – 18.08.2026",
+      "top_nr": "Ö 3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss V-Südwest",
+      "sitzung_kennung": "BZA-V/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14353#Ö 4",
+      "thema": "bza:14353#Ö 4",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss V-Südwest",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353"
+        }
+      ],
+      "klartext_titel": "Jugendbeauftragter für den Stadtteil Südwest",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Jugend"
+      ],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Jugendbeauftragter für den Stadtteil Südwest",
+      "top_nr": "Ö 4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss V-Südwest",
+      "sitzung_kennung": "BZA-V/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14353#Ö 5.1",
+      "thema": "bza:14353#Ö 5.1",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss V-Südwest",
+          "top_nr": "Ö 5.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353"
+        }
+      ],
+      "klartext_titel": "Hochwasserdamm (Radfahrer und Bewuchs)",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Hochwasserdamm (Radfahrer und Bewuchs)",
+      "top_nr": "Ö 5.1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss V-Südwest",
+      "sitzung_kennung": "BZA-V/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14353#Ö 5.2",
+      "thema": "bza:14353#Ö 5.2",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss V-Südwest",
+          "top_nr": "Ö 5.2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353"
+        }
+      ],
+      "klartext_titel": "Sitzbänke am Edith-Stein-Weg",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Sitzbänke am Edith-Stein-Weg",
+      "top_nr": "Ö 5.2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss V-Südwest",
+      "sitzung_kennung": "BZA-V/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bza:14353#Ö 5.3",
+      "thema": "bza:14353#Ö 5.3",
+      "auftritte": [
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss V-Südwest",
+          "top_nr": "Ö 5.3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353"
+        }
+      ],
+      "klartext_titel": "Verlängerung des Halteverbots in der Schrobenhausener Straße von Haunwöhrer Straße bis Oberringstraße",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "V-Südwest"
+      ],
+      "ebene": [
+        "Bezirksausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bza",
+      "amtlicher_titel": "Verlängerung des Halteverbots in der Schrobenhausener Straße von Haunwöhrer Straße bis Oberringstraße",
+      "top_nr": "Ö 5.3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss V-Südwest",
+      "sitzung_kennung": "BZA-V/04/2026",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353",
+      "dokumente": [],
+      "beratungsweg": []
+    },
     {
       "ref": "bza:14308#Ö 2",
       "thema": "bza:14308#Ö 2",
@@ -282,6 +1636,1314 @@
       "datum": "2026-10-22",
       "datum_anzeige": "22.10.2026",
       "sitzung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14308",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13544#Ö 8",
+      "thema": "stadt:vorlage:23320",
+      "auftritte": [
+        {
+          "datum": "2026-10-15",
+          "datum_anzeige": "15.10.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 8",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13544"
+        },
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 16",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Sanierung Technisches Rathaus Bürogebäude und Tiefgarage, Spitalstraße 3, 85049 Ingolstadt / …",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Baustelle",
+        "Klima & Umwelt"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Wird noch beraten",
+      "stand_datum": "22.10.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Sanierung Technisches Rathaus Bürogebäude und Tiefgarage, Spitalstraße 3, 85049 Ingolstadt / Projektgenehmigung",
+      "top_nr": "Ö 16",
+      "vorlage": "V0564/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23320",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254428&type=do"
+        },
+        {
+          "titel": "Anlage1 Lageplan",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254430&type=do"
+        },
+        {
+          "titel": "Anlage2 Erdgeschoss und Systemschnitt (002)",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254431&type=do"
+        },
+        {
+          "titel": "Anlage3 Obergeschosse1+2",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254432&type=do"
+        },
+        {
+          "titel": "Anlage4 Obergeschosse3+4",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254433&type=do"
+        },
+        {
+          "titel": "Anlage5 Ansichten",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254434&type=do"
+        },
+        {
+          "titel": "Anlage6 Grundrisse+Systemschnitt Nachverdichtung",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254435&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-10-15",
+          "datum_anzeige": "15.10.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "8",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13544&toselect=90300"
+        },
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "16",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545&toselect=90506"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13544#Ö 6",
+      "thema": "stadt:vorlage:23321",
+      "auftritte": [
+        {
+          "datum": "2026-10-13",
+          "datum_anzeige": "13.10.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 9",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543"
+        },
+        {
+          "datum": "2026-10-15",
+          "datum_anzeige": "15.10.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13544"
+        },
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 18",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Neubau der Lessing-Grundschule wird 7,59 Millionen Euro teurer",
+      "klartext": "Für den Ersatzneubau der Gotthold-Ephraim-Lessing-Grundschule waren 2018 Kosten von 29,8 Millionen Euro genehmigt. Jetzt sollen weitere 7,59 Millionen Euro freigegeben werden, die Gesamtkosten steigen damit auf 37,39 Millionen Euro. Als Gründe nennt die Vorlage unter anderem eine stark verzögerte Bauzeit: Estricharbeiten mussten neu ausgeschrieben werden, und zum Jahreswechsel 2021/2022 gab es einen massiven Schimmelbefall, nach dem bereits eingebaute Decken, Wände und Estriche wieder entfernt werden mussten. Bis Ende 2025 wurden rund 25,79 Millionen Euro ausgegeben, ab 2026 werden noch 11,6 Millionen Euro benötigt. Die Schule wird auf 16 Klassen im gebundenen Ganztag mit dem Schulprofil Inklusion ausgelegt. Die Genehmigung gilt nur, wenn die Finanzierung gesichert ist; der Stadtrat soll am 29. Oktober 2026 entscheiden.",
+      "klartext_titel_leicht": "Die neue Lessing-Grundschule kostet mehr Geld",
+      "klartext_leicht": "Die Stadt baut die Lessing-Grundschule neu. Geplant waren ungefähr 30 Millionen Euro. Jetzt kostet der Bau ungefähr 37 Millionen Euro. Das sind ungefähr 7,5 Millionen Euro mehr. Ein Grund: Der Bau hat viel länger gedauert. Im Gebäude gab es Schimmel. Deshalb mussten Arbeiter fertige Teile wieder herausnehmen. Die Schule bekommt Platz für 16 Klassen. Der Stadt-Rat soll am 29. Oktober 2026 über das Geld entscheiden.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "III-Nordost"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Schulbau",
+        "Baustelle"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Wird noch beraten",
+      "stand_datum": "22.10.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Gotthold-Ephraim-Lessing-Grundschule - Erweiterung / 1. Ergänzende Projektgenehmigung",
+      "top_nr": "Ö 18",
+      "vorlage": "V0565/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23321",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254006&type=do"
+        },
+        {
+          "titel": "Liegenschaftsplan (Anlage 1)",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254244&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-10-13",
+          "datum_anzeige": "13.10.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "9",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543&toselect=90260"
+        },
+        {
+          "datum": "2026-10-15",
+          "datum_anzeige": "15.10.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "6",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13544&toselect=90301"
+        },
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "18",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545&toselect=90492"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13543#Ö 7",
+      "thema": "stadt:vorlage:23317",
+      "auftritte": [
+        {
+          "datum": "2026-10-13",
+          "datum_anzeige": "13.10.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543"
+        },
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 12",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Partnergemeinde Legmoin: Neues Zentrum in Betrieb, Wasserversorgung geplant",
+      "klartext": "In Legmoin in Burkina Faso, mit dem Ingolstadt seit 2013 eine Projektpartnerschaft pflegt, ist ein Empfangs- und Unterbringungszentrum fertig geworden. Es bietet Auszubildenden und Betreuungspersonal der beiden dortigen Ausbildungszentren Übernachtungsplätze, Sanitäranlagen, einen Speisesaal und einen Erste-Hilfe-Bereich und ist seit dem Schuljahr 2025/2026 in Betrieb. Der Stadtrat soll den Abschlussbericht zur Kenntnis nehmen. Als Nächstes ist eine Wasserversorgung auf dem Gelände geplant, die 32.345 Euro kosten soll. Dafür will die Stadt beim Kleinprojektefonds von Engagement Global 29.110,50 Euro Förderung beantragen; den Eigenanteil von 10 Prozent, also 3.234,50 Euro, will sie aus vorhandenen Spenden bezahlen. Der Stadtrat soll am 29. Oktober 2026 entscheiden.",
+      "klartext_titel_leicht": "Ingolstadt hilft der Partner-Gemeinde Legmoin in Afrika",
+      "klartext_leicht": "Legmoin ist eine Gemeinde im Land Burkina Faso. Das Land liegt in Afrika. Ingolstadt arbeitet seit 2013 mit Legmoin zusammen. Dort gibt es jetzt ein neues Haus. Junge Menschen in Ausbildung können dort schlafen und essen. Jetzt soll das Gelände Wasser-Leitungen bekommen. Das kostet ungefähr 32.000 Euro. Das meiste Geld soll aus einem Förder-Programm kommen. Den Rest zahlt die Stadt aus Spenden.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Wird noch beraten",
+      "stand_datum": "22.10.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Abschlussbericht Empfangs- und Unterbringungszentrum CAR — und Projektgenehmigung Einrichtung Wasserversorgung",
+      "top_nr": "Ö 12",
+      "vorlage": "V0561/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23317",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253429&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-10-13",
+          "datum_anzeige": "13.10.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "7",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543&toselect=90259"
+        },
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "12",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545&toselect=90489"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13542#Ö 5",
+      "thema": "stadt:vorlage:23277",
+      "auftritte": [
+        {
+          "datum": "2026-10-08",
+          "datum_anzeige": "08.10.2026",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13542"
+        },
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 15",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Obdachlosenunterkünfte: Gebühren sollen neu berechnet werden, Sicherheitsdienst bleibt",
+      "klartext": "Die Stadt muss Menschen ohne Wohnung eine Notunterkunft stellen und erhebt dafür Gebühren. Laut Gebührenbericht deckten die Einnahmen 2025 nur 52,55 Prozent der Kosten, nach 40,04 Prozent im Jahr davor; die Gebühr war zum 1. Mai 2025 von 166,43 Euro auf 254,80 Euro gestiegen und wird seither schon für Kinder ab zwei statt ab sechs Jahren erhoben. Rechnet man den Sicherheitsdienst mit ein, liegt die Deckung bei 39,59 Prozent. Wegen gestiegener Miet- und Unterhaltskosten sollen die Gebühren nun neu kalkuliert und die Satzung geändert werden; für 2027 rechnet die Verwaltung mit rund 398.900 Euro Mehreinnahmen. Die Erhöhung soll Teil des Haushaltssicherungskonzepts werden. Der Sicherheitsdienst in den Unterkünften Am Franziskanerwasser soll im bisherigen Umfang weiterarbeiten, das kostet 2027 geschätzt 531.480 Euro. Der Stadtrat soll am 29. Oktober 2026 entscheiden.",
+      "klartext_titel_leicht": "Not-Unterkünfte für Menschen ohne Wohnung sollen teurer werden",
+      "klartext_leicht": "Manche Menschen haben keine Wohnung. Die Stadt muss ihnen einen Schlaf-Platz geben. Das heißt Not-Unterkunft. Die Menschen zahlen dafür eine Gebühr. Die Gebühr deckt nur ungefähr die Hälfte von den Kosten. Deshalb soll die Gebühr steigen. In den Unterkünften arbeitet ein Sicherheits-Dienst. Er soll bleiben. Der Stadt-Rat soll am 29. Oktober 2026 entscheiden.",
+      "lebenslage": [
+        "Geld & Soziales",
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Satzung & Regeln",
+        "Sicherheit"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Wird noch beraten",
+      "stand_datum": "22.10.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Gebühren für die Benutzung der Obdachlosenunterkünfte; Gebührenbericht 2025, Weiterbeauftragung des Sicherheitsdienstes, Änderung der Satzung über die Gebührenerhebung und Aufnahme der Maßnahme in das HSK",
+      "top_nr": "Ö 15",
+      "vorlage": "V0521/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23277",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253280&type=do"
+        },
+        {
+          "titel": "Anlage 4 HSK",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253474&type=do"
+        },
+        {
+          "titel": "V0521-26 Anlage 1 Gebührenbericht Obdachlosenwesen 2025",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253271&type=do"
+        },
+        {
+          "titel": "V0521-26 Anlage 2 Satzung zur Änderung der Gebührensatzung",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253250&type=do"
+        },
+        {
+          "titel": "V0521-26 Anlage 3 Gebuehrenkalkulation Obdachlosenunterbringung",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253254&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-10-08",
+          "datum_anzeige": "08.10.2026",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13542&toselect=90208"
+        },
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "15",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545&toselect=90490"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13542#Ö 6",
+      "thema": "stadt:vorlage:23308",
+      "auftritte": [
+        {
+          "datum": "2026-10-08",
+          "datum_anzeige": "08.10.2026",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13542"
+        },
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 10",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Waisenhausstiftung: Verlust von rund 76.500 Euro im ersten Halbjahr 2026",
+      "klartext": "Die Waisenhausstiftung betreibt das Peter-Steuart-Haus mit vier Wohngruppen für bis zu 36 Kinder und Jugendliche, 130 Kita-Plätzen, ambulanten Hilfen für etwa 100 Familien und sieben Plätzen im teilbetreuten Wohnen. Im ersten Halbjahr 2026 erzielte die Stiftung selbst einen Gewinn von 19.004,83 Euro. Der Einrichtungsbetrieb schloss dagegen mit einem Minus von 95.515,42 Euro ab, geplant waren 149.750 Euro Verlust. Zusammen ergibt sich ein Verlust von 76.510,59 Euro. Die Wohngruppen waren im Durchschnitt zu 98,8 Prozent belegt. Der Bericht wird den Ausschüssen bekannt gegeben, eine Entscheidung ist nicht vorgesehen.",
+      "klartext_titel_leicht": "Bericht über die Waisenhaus-Stiftung",
+      "klartext_leicht": "Die Waisenhaus-Stiftung gehört zur Stadt Ingolstadt. Sie hilft Kindern und Jugendlichen. Zur Stiftung gehört das Peter-Steuart-Haus. Dort wohnen bis zu 36 Kinder und Jugendliche. Es gibt dort auch eine Kita mit 130 Plätzen. Von Januar bis Juni 2026 gab es einen Verlust. Es fehlen ungefähr 76.500 Euro. Das ist weniger Verlust als geplant. Die Wohn-Gruppen waren fast immer voll.",
+      "lebenslage": [
+        "Eltern & Kinder",
+        "Jugend",
+        "Geld & Soziales"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Kinderbetreuung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "22.10.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Halbjahresbericht 2026 zum operativen Geschäft der Waisenhausstiftung Ingolstadt",
+      "top_nr": "Ö 10",
+      "vorlage": "V0552/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23308",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253836&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-10-08",
+          "datum_anzeige": "08.10.2026",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "6",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13542&toselect=90215"
+        },
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "10",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545&toselect=90487"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13545#Ö 2",
+      "thema": "stadt:vorlage:23409",
+      "auftritte": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Haushaltssicherungskonzept: Wie die Stadt aus den roten Zahlen kommen will",
+      "klartext": "Die Regierung von Oberbayern hat am 31. März 2026 vom Stadtrat ein Haushaltssicherungskonzept verlangt und die Haushaltssatzung 2026 nicht genehmigt; seitdem gilt die vorläufige Haushaltsführung. Grund ist laut Vorlage eine erhebliche strukturelle Unterdeckung des Verwaltungshaushalts: Die laufenden Einnahmen reichen auf Jahre nicht für die laufenden Ausgaben. Das Konzept fasst die bisherigen Sparbeschlüsse, den Dachbeschluss vom 18. Dezember 2025 und die Prüfungen von Aufgaben, Einrichtungen und Strukturen zusammen. Untersucht wurden alle wesentlichen Bereiche, etwa Personal, städtische Einrichtungen, Beteiligungen, Investitionen, Vermögen, Schulden und mögliche Einnahmen. Die Maßnahmen stehen in einer zentralen Übersicht und sollen laufend kontrolliert und fortgeschrieben werden. Der Finanzausschuss berät am 22. Oktober, der Stadtrat soll am 29. Oktober 2026 entscheiden; danach geht das Konzept an die Regierung von Oberbayern.",
+      "klartext_titel_leicht": "Die Stadt hat einen Plan zum Sparen",
+      "klartext_leicht": "Die Stadt Ingolstadt hat zu wenig Geld. Sie gibt jedes Jahr mehr aus, als sie einnimmt. Die Regierung von Oberbayern passt auf die Stadt auf. Sie hat gesagt: Die Stadt muss einen Spar-Plan machen. Jetzt gibt es diesen Plan. Darin steht, wo die Stadt sparen will. Zum Beispiel bei Personal und bei Gebäuden. Der Stadt-Rat soll am 29. Oktober 2026 entscheiden.",
+      "lebenslage": [
+        "Geld & Soziales"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Konzept & Planung",
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Wird noch beraten",
+      "stand_datum": "22.10.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Haushaltssicherungskonzept (HSK)",
+      "top_nr": "Ö 2",
+      "vorlage": "V0652/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23409",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254276&type=do"
+        },
+        {
+          "titel": "Anlagen",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254468&type=do"
+        },
+        {
+          "titel": "Haushaltssicherungskonzept 2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254467&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "2",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545&toselect=90586"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13545#Ö 5",
+      "thema": "stadt:vorlage:23293",
+      "auftritte": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "500.000 Euro aus dem Topf „Digitales Klassenzimmer“ für Lehrer-Laptops",
+      "klartext": "Die Stadt hat Dienstgeräte für Lehrkräfte im Wert von 942.635,89 Euro bestellt. Auf der Haushaltsstelle dafür waren noch 334.363,68 Euro übrig, dazu kommen 108.272,21 Euro Reste aus Vorjahren; die fehlenden 500.000 Euro werden von der Haushaltsstelle für die IT-Ausstattung digitaler Klassenzimmer an Grundschulen umgeschichtet. Die Anschaffung wird laut Vorlage vollständig über das Förderprogramm SchulMobE gefördert. Das Schulverwaltungsamt hält sie für zwingend, weil das Förderprogramm ab 2027 durch eine jährliche Pauschale pro Schüler ersetzt wird. Weil es derzeit keinen genehmigten Haushalt gibt, wird der Finanzausschuss über die Umschichtung nur informiert.",
+      "klartext_titel_leicht": "Geld für Laptops für Lehrer",
+      "klartext_leicht": "Lehrer in Ingolstadt bekommen neue Laptops. Die Laptops kosten ungefähr 940.000 Euro. Ein Förder-Programm bezahlt sie. Die Stadt muss das Geld aber erst auslegen. Dafür nimmt sie 500.000 Euro aus einem anderen Topf. Dieser Topf war für Computer in Grund-Schulen. Der Finanz-Ausschuss bekommt dazu eine Information.",
+      "lebenslage": [
+        "Eltern & Kinder",
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "22.10.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Bekanntgabe einer Mittelumsetzung für Mehrausgaben bzw. zusätzliche Ausgaben in der haushaltslosen Zeit für das Haushaltsjahr 2026",
+      "top_nr": "Ö 5",
+      "vorlage": "V0537/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23293",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253248&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545&toselect=90486"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13545#Ö 11",
+      "thema": "stadt:vorlage:23261",
+      "auftritte": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 11",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Neue Dienstgeräte für Lehrkräfte: Projekt über 1,03 Millionen Euro",
+      "klartext": "Der Kulturreferent hat am 2. Juli 2026 intern die Beschaffung von Dienstgeräten für Lehrerinnen und Lehrer genehmigt, als Ersatz und Ergänzung, im Umfang von 1.034.336,68 Euro. Die Beschaffung läuft über das Förderprogramm zur Beschaffung schulischer mobiler Endgeräte (SchulMobE). Projekte zwischen 250.000 Euro und 2 Millionen Euro darf die Verwaltung selbst genehmigen, muss sie aber in der nächsten Sitzung dem Finanzausschuss vorlegen. Der Ausschuss nimmt die Genehmigung am 22. Oktober 2026 zur Kenntnis.",
+      "klartext_titel_leicht": "Neue Laptops für Lehrer: Der Ausschuss bekommt eine Info",
+      "klartext_leicht": "Lehrer brauchen Computer für ihre Arbeit. Die Stadt kauft neue Geräte für Lehrer. Das kostet ungefähr 1 Million Euro. Das Geld kommt aus einem Förder-Programm. Die Verwaltung durfte das selbst entscheiden. Sie muss es aber dem Finanz-Ausschuss sagen. Das macht sie am 22. Oktober 2026.",
+      "lebenslage": [
+        "Arbeit & Beruf",
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "22.10.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Förderprogramm zur Beschaffung schulischer mobiler Endgeräte (SchulMobE); — Beschaffung von Lehrerdienstgeräten als Ersatz- und Ergänzungsbeschaffung",
+      "top_nr": "Ö 11",
+      "vorlage": "V0505/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23261",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252947&type=do"
+        },
+        {
+          "titel": "Anlage 1 - Interne Projektgenehmigung Förderprogr.SchulMobE-Lehrerdienstgeräte",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252981&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "11",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545&toselect=90488"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13545#Ö 17",
+      "thema": "stadt:vorlage:23295",
+      "auftritte": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 17",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Halbjahresbericht: Bauprojekte zwischen 250.000 Euro und 2 Millionen Euro",
+      "klartext": "Das Referat für Hoch- und Tiefbau legt dem Finanzausschuss den Bericht über die Programm- und Projektgenehmigungen für das erste Halbjahr 2026 vor. Darin stehen alle Vorhaben zwischen 250.000 Euro und 2 Millionen Euro netto, die die Verwaltung im Rahmen ihrer Befugnisse selbst genehmigt hat. Der Bericht erscheint zweimal im Jahr: nach der Sommerpause für das erste Halbjahr, im zweiten Sitzungslauf des Folgejahres für das zweite. Die einzelnen Projekte stehen in der Anlage. Der Ausschuss wird informiert, eine Entscheidung ist nicht vorgesehen.",
+      "klartext_titel_leicht": "Bericht über kleinere Bau-Projekte der Stadt",
+      "klartext_leicht": "Die Stadt baut und repariert viel. Manche Projekte kosten zwischen 250.000 Euro und 2 Millionen Euro. Diese Projekte darf die Verwaltung selbst erlauben. Sie muss dem Finanz-Ausschuss aber darüber berichten. Das passiert 2 Mal im Jahr. Jetzt geht es um die erste Hälfte von 2026.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Baustelle"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "22.10.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht Programm- und Projektgenehmigungen",
+      "top_nr": "Ö 17",
+      "vorlage": "V0539/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23295",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253278&type=do"
+        },
+        {
+          "titel": "V0539 26 Q1 Q2 Berichterstattung FPA Programm PG",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253420&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "17",
+          "oeffentlich": true,
+          "rolle": "Bekanntgabe",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545&toselect=90491"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13545#Ö 1",
+      "thema": "stadt:13545#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Finanzlagebericht von Herrn Fleckinger",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Finanzlagebericht von Herrn Fleckinger",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13545#Ö 3",
+      "thema": "stadt:13545#Ö 3",
+      "auftritte": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Weitere Maßnahmen zur Umsetzung des Dachbeschlusses",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Weitere Maßnahmen zur Umsetzung des Dachbeschlusses",
+      "top_nr": "Ö 3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13545#Ö1",
+      "thema": "stadt:13545#Ö1",
+      "auftritte": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Ergebnisse und Optionen der Einrichtungsprüfung: Volkshochschule",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Studierende"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Ergebnisse und Optionen der Einrichtungsprüfung: Volkshochschule",
+      "top_nr": "Ö",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13545#Ö2",
+      "thema": "stadt:13545#Ö2",
+      "auftritte": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Ergebnisse und Optionen der Einrichtungsprüfung: Technikerschule",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Ergebnisse und Optionen der Einrichtungsprüfung: Technikerschule",
+      "top_nr": "Ö",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13545#Ö3",
+      "thema": "stadt:13545#Ö3",
+      "auftritte": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Ergebnisse und Optionen der Einrichtungsprüfung: Stadtbücherei",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Ergebnisse und Optionen der Einrichtungsprüfung: Stadtbücherei",
+      "top_nr": "Ö",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13545#Ö 4",
+      "thema": "stadt:13545#Ö 4",
+      "auftritte": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Neuerlass/Neufassung einer Satzung für die Erhebung der Hundesteuer",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Neuerlass/Neufassung einer Satzung für die Erhebung der Hundesteuer — Maßnahme zur Aufnahme in das HSK",
+      "top_nr": "Ö 4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13545#Ö 6",
+      "thema": "stadt:13545#Ö 6",
+      "auftritte": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Beteiligungsbericht 2026",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Beteiligungsbericht 2026",
+      "top_nr": "Ö 6",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13545#Ö 7",
+      "thema": "stadt:13545#Ö 7",
+      "auftritte": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Wirtschaftspläne für das Wirtschaftsjahr Oktober 2026 bis September 2027",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Gewerbe & Gastro",
+        "Unterwegs",
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Verkehrsplanung",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Wirtschaftspläne für das Wirtschaftsjahr Oktober 2026 bis September 2027 — einschl. Mittelfristplanung bis 2029/30 — der Ingolstädter Kommunalbetriebe AöR, der Stadtwerke Ingolstadt Freizeitanlagen GmbH und der Ingolstädter Verkehrsgesellschaft mbH",
+      "top_nr": "Ö 7",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13545#Ö 8",
+      "thema": "stadt:13545#Ö 8",
+      "auftritte": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 8",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Altersteilzeit für Tarifbeschäftigte; Regelung ab 01.01.2027",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Altersteilzeit für Tarifbeschäftigte; Regelung ab 01.01.2027; — Maßnahme zur Aufnahme in das HSK",
+      "top_nr": "Ö 8",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13545#Ö 9",
+      "thema": "stadt:13545#Ö 9",
+      "auftritte": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 9",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Projektgenehmigung für die Verlängerung der Microsoft-Lizenzverträge (2027 bis 2029 und Option für 2030)",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Projektgenehmigung für die Verlängerung der Microsoft-Lizenzverträge (2027 bis 2029 und Option für 2030)",
+      "top_nr": "Ö 9",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13545#Ö 13",
+      "thema": "stadt:vorlage:23326",
+      "auftritte": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 13",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Kammerphilharmonie Ingolstadt GmbH",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Kammerphilharmonie Ingolstadt GmbH; — Ausübung der Gesellschafterrechte zum Jahresabschluss 2025",
+      "top_nr": "Ö 13",
+      "vorlage": "V0570/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23326",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253746&type=do"
+        },
+        {
+          "titel": "Anlagen Bilanz, GuV, Anhang",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254241&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13545#Ö 14",
+      "thema": "stadt:13545#Ö 14",
+      "auftritte": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 14",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        }
+      ],
+      "klartext_titel": "Rückforderung von Fördermitteln von der Heilig-Geist-Stiftung aufgrund der Aufgabe der stationären …",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Rückforderung von Fördermitteln von der Heilig-Geist-Stiftung aufgrund der Aufgabe der stationären Pflegeeinrichtung in der Fechtgasse und Umnutzung zu Service Wohnen",
+      "top_nr": "Ö 14",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/03/2026",
+      "datum": "2026-10-22",
+      "datum_anzeige": "22.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545",
       "dokumente": [],
       "beratungsweg": []
     },
@@ -513,9 +3175,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "20.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "bezirk_obb",
@@ -574,9 +3236,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "20.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "bezirk_obb",
@@ -751,6 +3413,58 @@
           "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5016&toselect=27984"
         }
       ]
+    },
+    {
+      "ref": "stadt:antrag:23445",
+      "thema": "stadt:antrag:23445",
+      "auftritte": [],
+      "klartext_titel": "Freie Wähler wollen Viktualienmarkt mit Befragung und Maßnahmenplan aufwerten",
+      "klartext": "Die FW-Stadtratsfraktion beantragt, zuerst Standbetreiber und Besucher des Viktualienmarkts strukturiert zu befragen, etwa zu Angebot, Aufenthaltsqualität, Sauberkeit, Sicherheitsgefühl und Öffnungszeiten. Die Verwaltung soll alle leeren oder nicht dauerhaft genutzten Stände erfassen und berichten, was aus der angekündigten Neukonzeption geworden ist, etwa bei Treppenanlage, Möblierung, Kulturbühne und Begrünung. Stadt und IFG sollen daraus ein Gesamtkonzept mit nachvollziehbarer Vergabe frei werdender Stände entwickeln. Außerdem soll die Verwaltung über Vermüllung, Ordnungsstörungen und von Besuchern und Händlern wahrgenommenen Drogenhandel berichten und mit den Standbetreibern Maßnahmen wie Reinigung, Beleuchtung und Kontrollen prüfen. Am Ende soll ein verbindlicher Maßnahmen- und Zeitplan stehen. Der Antrag stammt vom 19. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+      "klartext_titel_leicht": "Freie Wähler wollen den Viktualien-Markt verbessern",
+      "klartext_leicht": "Der Viktualien-Markt ist ein Markt in der Innenstadt. Dort stehen manche Verkaufs-Stände leer. Es gibt auch Beschwerden über Müll und Sicherheit. Die Partei Freie Wähler will das ändern. Zuerst sollen Händler und Besucher befragt werden. Dann soll die Stadt einen Plan machen. Darin steht, was bis wann besser wird. Es gibt noch keinen Termin für den Antrag.",
+      "lebenslage": [
+        "Gewerbe & Gastro",
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Sicherheit",
+        "Konzept & Planung",
+        "Grün & Sauberkeit"
+      ],
+      "ort": [
+        "Viktualienmarkt"
+      ],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Noch nicht terminiert",
+      "stand_datum": "",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Zukunft des Viktualienmarkts",
+      "top_nr": "",
+      "vorlage": "V0685/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23445",
+      "antragsteller": "FW-Stadtratsfraktion",
+      "gremium": "Antrag an Stadtrat",
+      "sitzung_kennung": "",
+      "datum": "2026-10-19",
+      "datum_anzeige": "19.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23445",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FW",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254693&type=do"
+        }
+      ],
+      "beratungsweg": []
     },
     {
       "ref": "stadt:13760#Ö 2",
@@ -1083,52 +3797,441 @@
       "beratungsweg": []
     },
     {
-      "ref": "stadt:13544#Ö 8",
-      "thema": "stadt:13544#Ö 8",
-      "auftritte": [
-        {
-          "datum": "2026-10-15",
-          "datum_anzeige": "15.10.2026",
-          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
-          "top_nr": "Ö 8",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13544"
-        }
-      ],
-      "klartext_titel": "Sanierung Technisches Rathaus Bürogebäude und Tiefgarage, Spitalstraße 3, 85049 Ingolstadt / …",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
+      "ref": "stadt:antrag:23432",
+      "thema": "stadt:antrag:23432",
+      "auftritte": [],
+      "klartext_titel": "SPD will Aussichtspunkte wie den Dalwigk-Wasserturm für Führungen öffnen",
+      "klartext": "Die SPD-Stadtratsfraktion beantragt, dass die IFG ein Veranstaltungsformat „Über den Dächern von Ingolstadt“ entwickelt und mehrmals im Jahr anbietet. Dafür sollen Aussichtspunkte in Gebäuden der Stadt und ihrer Tochtergesellschaften zeitweise, etwa bei Führungen, zugänglich werden; geprüft werden sollen vor allem der Wasserturm im Dalwigk und das GWG-Hochhaus an der Stargarder Straße, bei Bereitschaft auch private Gebäude. Wo möglich, soll der Zugang barrierefrei sein. Bezahlt werden soll das vorrangig aus bestehenden IFG-Budgets, Sponsoring und Fördermitteln, ohne wesentliche Zusatzkosten für den Haushalt. Die Fraktion verweist auf die große Nachfrage nach den Führungen auf den Pfeifturm. Der Antrag stammt vom 16. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+      "klartext_titel_leicht": "Die SPD will besondere Aussichts-Punkte öffnen",
+      "klartext_leicht": "Vom Pfeif-Turm kann man weit über Ingolstadt schauen. Die Führungen dort sind sehr beliebt. Es gibt noch mehr hohe Gebäude mit schöner Aussicht. Zum Beispiel den Wasser-Turm im Dalwigk. Diese Orte sind meistens zu. Die Partei SPD will dort Führungen machen. Das soll ein paar Mal im Jahr sein. Die IFG soll das organisieren. Die IFG kümmert sich um Werbung und Tourismus für die Stadt.",
       "lebenslage": [
-        "Unterwegs"
+        "Freizeit & Sport"
       ],
-      "bezirk": [],
+      "bezirk": [
+        "stadtweit"
+      ],
       "ebene": [
         "Stadtrat & Ausschüsse"
       ],
       "anlass": [
-        "Baustelle",
-        "Klima & Umwelt"
+        "Kultur & Bildung"
       ],
-      "ort": [],
-      "entwurf": true,
-      "duenn": true,
-      "stand": "Nur besprochen, nichts entschieden",
+      "ort": [
+        "Dalwigk",
+        "Stargarder Straße"
+      ],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Noch nicht terminiert",
       "stand_datum": "",
-      "status": "Nur zur Information",
+      "status": "Noch offen",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
-      "amtlicher_titel": "Sanierung Technisches Rathaus Bürogebäude und Tiefgarage, Spitalstraße 3, 85049 Ingolstadt / Projektgenehmigung",
-      "top_nr": "Ö 8",
-      "vorlage": "",
-      "vorlage_url": "",
-      "antragsteller": "",
-      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
-      "sitzung_kennung": "PLA/03/2026",
-      "datum": "2026-10-15",
-      "datum_anzeige": "15.10.2026",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13544",
-      "dokumente": [],
+      "amtlicher_titel": "„Über den Dächern von Ingolstadt“",
+      "top_nr": "",
+      "vorlage": "V0673/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23432",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "gremium": "Antrag an Stadtrat",
+      "sitzung_kennung": "",
+      "datum": "2026-10-16",
+      "datum_anzeige": "16.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23432",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254608&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:antrag:23433",
+      "thema": "stadt:antrag:23433",
+      "auftritte": [],
+      "klartext_titel": "SPD will jedes Jahr einen Stadtgeburtstag feiern",
+      "klartext": "Die SPD-Stadtratsfraktion beantragt einen jährlichen Stadtgeburtstag unter dem Motto „Ingolstadt feiert Geburtstag“, möglichst zeitgleich mit dem Herbstvolksfest. Anlass ist die erste urkundliche Erwähnung Ingolstadts im Jahr 806, also vor 1.220 Jahren. Die Stadt soll ein wirtschaftliches Veranstaltungskonzept erarbeiten und Sponsoring sowie Förderung aus Kultur- und Tourismusprogrammen nutzen, damit die Kosten gering bleiben. Das Stadtmuseum soll einen historischen Schwerpunkt übernehmen, etwa mit Führungen, Sonderpräsentationen, Mitmachangeboten und einem Tag der offenen Tür; Vereine und Kulturschaffende sollen eingebunden werden. Der Antrag stammt vom 16. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+      "klartext_titel_leicht": "Die SPD will einen Geburtstag für Ingolstadt feiern",
+      "klartext_leicht": "Ingolstadt ist eine sehr alte Stadt. Im Jahr 806 wurde die Stadt zum ersten Mal aufgeschrieben. Die Partei SPD will jedes Jahr einen Stadt-Geburtstag feiern. Das Fest soll zur gleichen Zeit wie das Herbst-Volksfest sein. Das Stadt-Museum soll dabei die Geschichte zeigen. Es soll Führungen und Angebote zum Mitmachen geben. Das Fest soll die Stadt wenig Geld kosten.",
+      "lebenslage": [
+        "Freizeit & Sport",
+        "Ehrenamt & Vereine"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Noch nicht terminiert",
+      "stand_datum": "",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Stadtgeburtstag „Ingolstadt feiert Geburtstag“",
+      "top_nr": "",
+      "vorlage": "V0674/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23433",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "gremium": "Antrag an Stadtrat",
+      "sitzung_kennung": "",
+      "datum": "2026-10-16",
+      "datum_anzeige": "16.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23433",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254611&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:antrag:23434",
+      "thema": "stadt:antrag:23434",
+      "auftritte": [],
+      "klartext_titel": "SPD will eine „Stille Stunde“ in der Innenstadt prüfen lassen",
+      "klartext": "Die SPD-Stadtratsfraktion beantragt zu prüfen, ob die Innenstadt eine „Silent Hour“ bekommt: ein fest angekündigtes Zeitfenster an einem bestimmten Wochentag, in dem teilnehmende Geschäfte Musik und Beleuchtung dämpfen. Auch städtische Veranstaltungen sollen reizärmere Zeitfenster bekommen, etwa einzelne leisere Auftritte ohne Verstärker. Ausgestaltet werden soll das mit Händlern, der IFG sowie Vertretungen von Menschen mit Autismus, Senioren und Familien; finanziert werden soll es über Kooperationen und Fördermittel, etwa aus dem Bundesprogramm „Zukunftsfähige Innenstädte und Zentren“. Profitieren sollen vor allem reizempfindliche Menschen, Ältere, Familien mit Kleinkindern und Menschen mit Angststörungen. Vorbild ist Wiesbaden, das seit Juli 2025 jeden Donnerstag von 15 bis 17 Uhr eine Stille Stunde mit über 20 Geschäften hat. Der Antrag stammt vom 16. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+      "klartext_titel_leicht": "Die SPD will eine ruhige Stunde in der Innenstadt",
+      "klartext_leicht": "In der Innenstadt ist es oft laut und hell. Für manche Menschen ist das sehr anstrengend. Zum Beispiel für Menschen mit Autismus. Die Partei SPD hat eine Idee. An einem festen Tag gibt es eine ruhige Stunde. Dann machen Geschäfte die Musik leiser. Und das Licht wird weniger hell. Die Stadt Wiesbaden macht das schon. Es gibt noch keinen Termin für den Antrag.",
+      "lebenslage": [
+        "Gesundheit & Pflege",
+        "Senior:innen",
+        "Eltern & Kinder"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Noch nicht terminiert",
+      "stand_datum": "",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Silent Hour in der Ingolstädter Innenstadt",
+      "top_nr": "",
+      "vorlage": "V0675/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23434",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "gremium": "Antrag an Stadtrat",
+      "sitzung_kennung": "",
+      "datum": "2026-10-16",
+      "datum_anzeige": "16.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23434",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254618&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:antrag:23435",
+      "thema": "stadt:antrag:23435",
+      "auftritte": [],
+      "klartext_titel": "SPD will mobile Großbäume für mehr Schatten in der Innenstadt",
+      "klartext": "Die SPD-Stadtratsfraktion beantragt ein Stadtbaum- und Schattenprogramm für die Innenstadt. Weil viele Leitungen im Boden liegen, sind feste Baumpflanzungen dort nur begrenzt möglich; geprüft werden sollen deshalb mobile Großbäume in Pflanzgefäßen, zusätzliche feste Baumstandorte und ein Pilotprojekt in einem geeigneten Bereich. Die Gefäße sollen Gehwege nicht versperren, ausgewählt werden sollen hitze- und trockenheitsverträgliche Arten. Bezahlt werden soll vor allem über Baumpatenschaften, Spenden, Sponsoring und Förderprogramme; außerdem soll das Gartenamt prüfen, ob es klimaresistente Bäume selbst heranziehen kann. Vorbild ist das Münchner Projekt „Schatten spenden“. Der Antrag stammt vom 16. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+      "klartext_titel_leicht": "Die SPD will mehr Bäume und Schatten in der Innenstadt",
+      "klartext_leicht": "Im Sommer ist es in der Innenstadt sehr heiß. Bäume geben Schatten. In der Innenstadt liegen aber viele Leitungen im Boden. Dort kann man nicht überall Bäume pflanzen. Die Partei SPD hat eine Idee. Große Bäume stehen in großen Töpfen. Diese Bäume kann man verschieben. Bezahlen sollen das Spenden und Paten.",
+      "lebenslage": [
+        "Gesundheit & Pflege",
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Klima & Umwelt",
+        "Grün & Sauberkeit"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Noch nicht terminiert",
+      "stand_datum": "",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Stadtbaum- und Schattenprogramm",
+      "top_nr": "",
+      "vorlage": "V0676/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23435",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "gremium": "Antrag an Stadtrat",
+      "sitzung_kennung": "",
+      "datum": "2026-10-16",
+      "datum_anzeige": "16.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23435",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254626&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:antrag:23436",
+      "thema": "stadt:antrag:23436",
+      "auftritte": [],
+      "klartext_titel": "SPD will Holz-Sitzauflagen auf den Treppen am Theaterplatz",
+      "klartext": "Die SPD-Stadtratsfraktion beantragt zu prüfen, ob die Betontreppen am Theaterplatz im Sommer mit abnehmbaren, wetterfesten Sitzauflagen, etwa aus Holz, bequemer gemacht werden können. Einzelne Auflagen sollen Rücken- und Armlehnen für ältere und mobilitätseingeschränkte Menschen bekommen; im Winter sollen die Elemente eingelagert werden. Vorgeschlagen werden ein befristetes Pilotprojekt auf einem Treppenabschnitt, die Einbindung Jugendlicher über den Stadtjugendring sowie mobile Sitzgelegenheiten mit Pfandsystem am Rathaus- und Theaterplatz. Finanziert werden soll das vorrangig über Fördermittel und Sponsoring. Die Fraktion verweist auf die Jugendbefragung 2026 des Stadtjugendrings, nach der sich junge Menschen Treffpunkte ohne Konsumzwang wünschen. Der Antrag stammt vom 16. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+      "klartext_titel_leicht": "Die SPD will bequemere Sitz-Plätze am Theater-Platz",
+      "klartext_leicht": "Am Theater-Platz sitzen viele Menschen auf den Treppen. Die Treppen sind aus Beton. Darauf sitzt man nicht lange bequem. Die Partei SPD will Auflagen aus Holz auf die Treppen legen. Manche sollen eine Lehne haben. Das hilft älteren Menschen. Im Winter kommen die Auflagen weg. Jugendliche sollen bei der Planung mitreden.",
+      "lebenslage": [
+        "Freizeit & Sport",
+        "Senior:innen",
+        "Jugend"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [
+        "Theaterplatz"
+      ],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Noch nicht terminiert",
+      "stand_datum": "",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Sitzmöglichkeiten Theaterplatz",
+      "top_nr": "",
+      "vorlage": "V0677/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23436",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "gremium": "Antrag an Stadtrat",
+      "sitzung_kennung": "",
+      "datum": "2026-10-16",
+      "datum_anzeige": "16.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23436",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254629&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:antrag:23439",
+      "thema": "stadt:antrag:23439",
+      "auftritte": [],
+      "klartext_titel": "SPD will regelmäßig Musik auf Plätzen in Innenstadt und Stadtteilen",
+      "klartext": "Die SPD-Stadtratsfraktion beantragt ein Aktionsprogramm „Musik in der Innenstadt und in den Stadtteilen“: Von Mai bis September sollen regelmäßig Konzerte auf öffentlichen Plätzen stattfinden, abends und auch als familienfreundliche Nachmittagstermine. Auftreten sollen vor allem lokale Laiengruppen, Chöre, Bands und Nachwuchsbands; laut Musikentwicklungsplan gibt es in Ingolstadt über 100 aktive Musikgruppen. Das Kulturreferat soll das Konzept verantworten, die IFG Organisation, Werbung und Sponsorensuche übernehmen; die Gruppen sollen ein symbolisches Dankeschön erhalten. Finanziert werden soll das möglichst über die IFG, Sponsoren und Förderprogramme, nicht über zusätzliche Haushaltsmittel. Bestehende Angebote wie in Etting sollen ausgebaut, nicht ersetzt werden. Der Antrag stammt vom 16. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+      "klartext_titel_leicht": "Die SPD will mehr Musik auf Plätzen in der Stadt",
+      "klartext_leicht": "In Ingolstadt gibt es über 100 Musik-Gruppen. Die Partei SPD will: Diese Gruppen spielen im Sommer auf Plätzen. Das soll von Mai bis September sein. In der Innenstadt und in den Stadt-Teilen. Es soll auch Konzerte am Nachmittag für Familien geben. Die Gruppen bekommen ein kleines Dankeschön. Bezahlen sollen das Firmen und Förder-Programme.",
+      "lebenslage": [
+        "Freizeit & Sport",
+        "Ehrenamt & Vereine"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Noch nicht terminiert",
+      "stand_datum": "",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Musik in der Innenstadt und in den Stadtteilen",
+      "top_nr": "",
+      "vorlage": "V0680/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23439",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "gremium": "Antrag an Stadtrat",
+      "sitzung_kennung": "",
+      "datum": "2026-10-16",
+      "datum_anzeige": "16.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23439",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254653&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:antrag:23440",
+      "thema": "stadt:antrag:23440",
+      "auftritte": [],
+      "klartext_titel": "SPD will beleuchtete „Lichtschneisen“ durch die Innenstadt",
+      "klartext": "Die SPD-Stadtratsfraktion beantragt zu prüfen, ob in der Innenstadt gezielt „Lichtschneisen“ entstehen können: besser beleuchtete Wege, die wichtige Orte miteinander verbinden. Geprüft werden soll, welche Wege sich eignen, wie sie energieeffizient ausgeleuchtet werden können und wie dort durch Gastronomie, Kultur und Veranstaltungen mehr Leben entsteht. Die gesamte Innenstadt soll ausdrücklich nicht heller werden; die Maßnahme soll zum Lichtmasterplan passen und Lichtverschmutzung vermeiden. Die Fraktion begründet das damit, dass manche Bereiche abends als zu dunkel empfunden und deshalb gemieden werden. Der Antrag stammt vom 16. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+      "klartext_titel_leicht": "Die SPD will hellere Wege in der Innenstadt",
+      "klartext_leicht": "Abends sind manche Wege in der Innenstadt dunkel. Dort fühlen sich manche Menschen nicht sicher. Die Partei SPD will wichtige Wege heller machen. Nicht die ganze Innenstadt soll heller werden. Nur bestimmte Wege zwischen wichtigen Orten. Die Lampen sollen wenig Strom brauchen. Es gibt noch keinen Termin für den Antrag.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Sicherheit",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Noch nicht terminiert",
+      "stand_datum": "",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Lichtschneisen für die Innenstadt",
+      "top_nr": "",
+      "vorlage": "V0681/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23440",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "gremium": "Antrag an Stadtrat",
+      "sitzung_kennung": "",
+      "datum": "2026-10-16",
+      "datum_anzeige": "16.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23440",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254656&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:antrag:23441",
+      "thema": "stadt:antrag:23441",
+      "auftritte": [],
+      "klartext_titel": "SPD will einen jährlichen Fassadenpreis einführen",
+      "klartext": "Die SPD-Stadtratsfraktion beantragt einen jährlichen, undotierten Fassadenpreis für besonders gelungene Sanierungen, Restaurierungen, Umgestaltungen und gegebenenfalls Neubauten, die das Stadtbild aufwerten. Eine Fachjury soll auswählen; Vorschläge sollen sowohl von der Verwaltung als auch von Bürgerinnen und Bürgern kommen können. Die Preisträger bekommen eine Urkunde und eine Plakette für das Gebäude, aber kein Geld; die Kosten für Urkunden, Plaketten und Verleihung sollen möglichst Sponsoren tragen. Verliehen werden soll der Preis am Tag des offenen Denkmals. Vorbilder sind Passau und Memmingen. Der Antrag stammt vom 16. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+      "klartext_titel_leicht": "Die SPD will einen Preis für schöne Haus-Fassaden",
+      "klartext_leicht": "Die Fassade ist die Außen-Seite von einem Haus. Viele Menschen renovieren alte Häuser sehr schön. Die Partei SPD will dafür einen Preis. Den Preis gibt es jedes Jahr. Es gibt kein Geld, aber eine Urkunde und ein Schild am Haus. Auch Bürger können Häuser vorschlagen. Eine Gruppe von Fach-Leuten wählt aus.",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Noch nicht terminiert",
+      "stand_datum": "",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Fassadenpreis",
+      "top_nr": "",
+      "vorlage": "V0682/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23441",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "gremium": "Antrag an Stadtrat",
+      "sitzung_kennung": "",
+      "datum": "2026-10-16",
+      "datum_anzeige": "16.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23441",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254660&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:antrag:23443",
+      "thema": "stadt:antrag:23443",
+      "auftritte": [],
+      "klartext_titel": "SPD will Trinkwasserbrunnen der Innenstadt in Google Maps eintragen lassen",
+      "klartext": "Die SPD-Stadtratsfraktion beantragt, dass alle öffentlichen Trinkwasserbrunnen und Trinkwasserstellen der Innenstadt in gängigen Kartendiensten, vor allem Google Maps, eindeutig und aktuell auffindbar sind. Dazu sollen die Brunnen vollständig erfasst, korrekt eingetragen, mit den Daten des städtischen Geoportals abgeglichen und regelmäßig überprüft werden. Bisher sind die Standorte unter anderem im Geoportal verzeichnet, das Gäste und Touristen unterwegs aber kaum nutzen. Die Fraktion erwartet, dass sich das vorhandene Angebot so mit geringem Aufwand besser nutzen lässt. Der Antrag stammt vom 16. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+      "klartext_titel_leicht": "Die SPD will: Trink-Brunnen sollen im Handy zu finden sein",
+      "klartext_leicht": "In der Innenstadt gibt es Brunnen mit Trink-Wasser. Dort kann man kostenlos Wasser trinken. Viele Menschen wissen aber nicht, wo die Brunnen sind. Die Partei SPD will die Brunnen in Karten im Internet eintragen. Zum Beispiel in Google Maps. Dann findet man sie leicht mit dem Handy.",
+      "lebenslage": [
+        "Freizeit & Sport",
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Noch nicht terminiert",
+      "stand_datum": "",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Auffindbarkeit der Trinkwasserbrunnen in der Innenstadt verbessern",
+      "top_nr": "",
+      "vorlage": "V0684/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23443",
+      "antragsteller": "SPD-Stadtratsfraktion",
+      "gremium": "Antrag an Stadtrat",
+      "sitzung_kennung": "",
+      "datum": "2026-10-16",
+      "datum_anzeige": "16.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23443",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag SPD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254668&type=do"
+        }
+      ],
       "beratungsweg": []
     },
     {
@@ -1166,9 +4269,9 @@
       ],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "15.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -1655,92 +4758,6 @@
           "oeffentlich": true,
           "rolle": "Bekanntgabe",
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13544&toselect=90285"
-        }
-      ]
-    },
-    {
-      "ref": "stadt:13544#Ö 6",
-      "thema": "stadt:vorlage:23321",
-      "auftritte": [
-        {
-          "datum": "2026-10-13",
-          "datum_anzeige": "13.10.2026",
-          "gremium": "Ausschuss für Kultur und Bildung",
-          "top_nr": "Ö 8",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543"
-        },
-        {
-          "datum": "2026-10-15",
-          "datum_anzeige": "15.10.2026",
-          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
-          "top_nr": "Ö 6",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13544"
-        }
-      ],
-      "klartext_titel": "Neubau der Lessing-Grundschule wird 7,59 Millionen Euro teurer",
-      "klartext": "Für den Ersatzneubau der Gotthold-Ephraim-Lessing-Grundschule waren 2018 Kosten von 29,8 Millionen Euro genehmigt. Jetzt sollen weitere 7,59 Millionen Euro freigegeben werden, die Gesamtkosten steigen damit auf 37,39 Millionen Euro. Als Gründe nennt die Vorlage unter anderem eine stark verzögerte Bauzeit: Estricharbeiten mussten neu ausgeschrieben werden, und zum Jahreswechsel 2021/2022 gab es einen massiven Schimmelbefall, nach dem bereits eingebaute Decken, Wände und Estriche wieder entfernt werden mussten. Bis Ende 2025 wurden rund 25,79 Millionen Euro ausgegeben, ab 2026 werden noch 11,6 Millionen Euro benötigt. Die Schule wird auf 16 Klassen im gebundenen Ganztag mit dem Schulprofil Inklusion ausgelegt. Die Genehmigung gilt nur, wenn die Finanzierung gesichert ist; der Stadtrat soll am 29. Oktober 2026 entscheiden.",
-      "klartext_titel_leicht": "Die neue Lessing-Grundschule kostet mehr Geld",
-      "klartext_leicht": "Die Stadt baut die Lessing-Grundschule neu. Geplant waren ungefähr 30 Millionen Euro. Jetzt kostet der Bau ungefähr 37 Millionen Euro. Das sind ungefähr 7,5 Millionen Euro mehr. Ein Grund: Der Bau hat viel länger gedauert. Im Gebäude gab es Schimmel. Deshalb mussten Arbeiter fertige Teile wieder herausnehmen. Die Schule bekommt Platz für 16 Klassen. Der Stadt-Rat soll am 29. Oktober 2026 über das Geld entscheiden.",
-      "lebenslage": [
-        "Eltern & Kinder"
-      ],
-      "bezirk": [
-        "III-Nordost"
-      ],
-      "ebene": [
-        "Stadtrat & Ausschüsse"
-      ],
-      "anlass": [
-        "Schulbau",
-        "Baustelle"
-      ],
-      "ort": [],
-      "entwurf": false,
-      "duenn": false,
-      "stand": "Wird noch beraten",
-      "stand_datum": "15.10.2026",
-      "status": "Noch offen",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "stadt",
-      "amtlicher_titel": "Gotthold-Ephraim-Lessing-Grundschule - Erweiterung / 1. Ergänzende Projektgenehmigung",
-      "top_nr": "Ö 6",
-      "vorlage": "V0565/26",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23321",
-      "antragsteller": "",
-      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
-      "sitzung_kennung": "PLA/03/2026",
-      "datum": "2026-10-15",
-      "datum_anzeige": "15.10.2026",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13544",
-      "dokumente": [
-        {
-          "titel": "Vorlage",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254006&type=do"
-        },
-        {
-          "titel": "Liegenschaftsplan (Anlage 1)",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254244&type=do"
-        }
-      ],
-      "beratungsweg": [
-        {
-          "datum": "2026-10-13",
-          "datum_anzeige": "13.10.2026",
-          "gremium": "Ausschuss für Kultur und Bildung",
-          "top_nr": "8",
-          "oeffentlich": true,
-          "rolle": "Vorberatung",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543&toselect=90260"
-        },
-        {
-          "datum": "2026-10-15",
-          "datum_anzeige": "15.10.2026",
-          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
-          "top_nr": "6",
-          "oeffentlich": true,
-          "rolle": "Vorberatung",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13544&toselect=90301"
         }
       ]
     },
@@ -2781,6 +5798,55 @@
       "beratungsweg": []
     },
     {
+      "ref": "stadt:antrag:23427",
+      "thema": "stadt:antrag:23427",
+      "auftritte": [],
+      "klartext_titel": "UWG und FDP wollen die Wunderlkasematte für Kunst und Führungen öffnen",
+      "klartext": "UWG und FDP beantragen gemeinsam ein Konzept zur behutsamen Aufwertung und kulturellen Nutzung der Wunderlkasematte, eigentlich Ziegelbastei, eines Festungswerks aus dem 16. Jahrhundert. In den Tonnengewölben und einem Raum im Viereckturm soll der Ingolstädter Künstler Markus Jordan sein Kunstlabor einrichten können, das er im Zeughaus des Neuen Schlosses aufgeben muss. Der bisher gesperrte Wehrgang soll bei begleiteten Führungen, etwa am Tag des offenen Denkmals und am Festungstag, zugänglich werden. Bis zum 200-jährigen Jubiläum des neuzeitlichen Festungsbaus 2028 sollen Sicherung und Pflege möglichst abgeschlossen sein. Größere bauliche Eingriffe sollen bewusst unterbleiben. Der Antrag stammt vom 14. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+      "klartext_titel_leicht": "UWG und FDP wollen ein altes Festungs-Gebäude öffnen",
+      "klartext_leicht": "Die Wunderl-Kasematte ist ein Teil der alten Festung. Sie ist ungefähr 500 Jahre alt. Viele Menschen kennen sie nicht. UWG und FDP wollen das ändern. Ein Künstler soll dort eine Werkstatt bekommen. Bei Führungen sollen Besucher auf die alte Mauer gehen können. Das Gebäude soll aber nicht stark umgebaut werden. Im Jahr 2028 feiert Ingolstadt ein Festungs-Jubiläum.",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [
+        "Ziegelbastei"
+      ],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Noch nicht terminiert",
+      "stand_datum": "",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Wunderlkasematte aus dem Dornröschenschlaf wecken – Historisches Festungswerk behutsam aufwerten und kulturell nutzen",
+      "top_nr": "",
+      "vorlage": "V0669/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23427",
+      "antragsteller": "UWG-Stadtratsfraktionund der FDP-Stadtratsgruppe",
+      "gremium": "Antrag an Stadtrat",
+      "sitzung_kennung": "",
+      "datum": "2026-10-14",
+      "datum_anzeige": "14.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23427",
+      "dokumente": [
+        {
+          "titel": "Stadtrat Gemeinschaftsantrag",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254455&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
       "ref": "bza:14248#Ö 2",
       "thema": "bza:14248#Ö 2",
       "auftritte": [
@@ -3796,14 +6862,14 @@
       "beratungsweg": []
     },
     {
-      "ref": "stadt:13543#Ö 2",
-      "thema": "stadt:13543#Ö 2",
+      "ref": "stadt:13543#Ö 3",
+      "thema": "stadt:13543#Ö 3",
       "auftritte": [
         {
           "datum": "2026-10-13",
           "datum_anzeige": "13.10.2026",
           "gremium": "Ausschuss für Kultur und Bildung",
-          "top_nr": "Ö 2",
+          "top_nr": "Ö 3",
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543"
         }
       ],
@@ -3831,7 +6897,7 @@
       "beschluss": null,
       "quelle": "stadt",
       "amtlicher_titel": "Ersatzspielstätte Festsaal auf IN-Campus-Gelände",
-      "top_nr": "Ö 2",
+      "top_nr": "Ö 3",
       "vorlage": "",
       "vorlage_url": "",
       "antragsteller": "",
@@ -3897,14 +6963,14 @@
       "beratungsweg": []
     },
     {
-      "ref": "stadt:13543#Ö 3",
-      "thema": "stadt:13543#Ö 3",
+      "ref": "stadt:13543#Ö 4",
+      "thema": "stadt:13543#Ö 4",
       "auftritte": [
         {
           "datum": "2026-10-13",
           "datum_anzeige": "13.10.2026",
           "gremium": "Ausschuss für Kultur und Bildung",
-          "top_nr": "Ö 3",
+          "top_nr": "Ö 4",
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543"
         }
       ],
@@ -3932,7 +6998,7 @@
       "beschluss": null,
       "quelle": "stadt",
       "amtlicher_titel": "Unverzügliche Einstellung und Digitalisierung der Druckpublikationen des Stadttheaters Ingolstadt",
-      "top_nr": "Ö 3",
+      "top_nr": "Ö 4",
       "vorlage": "",
       "vorlage_url": "",
       "antragsteller": "",
@@ -3945,14 +7011,14 @@
       "beratungsweg": []
     },
     {
-      "ref": "stadt:13543#Ö 7",
-      "thema": "stadt:13543#Ö 7",
+      "ref": "stadt:13543#Ö 8",
+      "thema": "stadt:13543#Ö 8",
       "auftritte": [
         {
           "datum": "2026-10-13",
           "datum_anzeige": "13.10.2026",
           "gremium": "Ausschuss für Kultur und Bildung",
-          "top_nr": "Ö 7",
+          "top_nr": "Ö 8",
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543"
         }
       ],
@@ -3980,7 +7046,7 @@
       "beschluss": null,
       "quelle": "stadt",
       "amtlicher_titel": "Regelung für die Betreuung von Besuchen von oder bei Partnerstädten",
-      "top_nr": "Ö 7",
+      "top_nr": "Ö 8",
       "vorlage": "",
       "vorlage_url": "",
       "antragsteller": "",
@@ -3993,14 +7059,14 @@
       "beratungsweg": []
     },
     {
-      "ref": "stadt:13543#Ö 9",
-      "thema": "stadt:13543#Ö 9",
+      "ref": "stadt:13543#Ö 2",
+      "thema": "stadt:13543#Ö 2",
       "auftritte": [
         {
           "datum": "2026-10-13",
           "datum_anzeige": "13.10.2026",
           "gremium": "Ausschuss für Kultur und Bildung",
-          "top_nr": "Ö 9",
+          "top_nr": "Ö 2",
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543"
         }
       ],
@@ -4030,7 +7096,7 @@
       "beschluss": null,
       "quelle": "stadt",
       "amtlicher_titel": "Sachstandsbericht zu Schul- und Kulturbauten",
-      "top_nr": "Ö 9",
+      "top_nr": "Ö 2",
       "vorlage": "",
       "vorlage_url": "",
       "antragsteller": "",
@@ -4263,14 +7329,14 @@
       "beratungsweg": []
     },
     {
-      "ref": "stadt:13543#Ö 4",
+      "ref": "stadt:13543#Ö 5",
       "thema": "stadt:vorlage:23260",
       "auftritte": [
         {
           "datum": "2026-10-13",
           "datum_anzeige": "13.10.2026",
           "gremium": "Ausschuss für Kultur und Bildung",
-          "top_nr": "Ö 4",
+          "top_nr": "Ö 5",
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543"
         }
       ],
@@ -4305,7 +7371,7 @@
       "beschluss": null,
       "quelle": "stadt",
       "amtlicher_titel": "1. Vorgezogene Zusammenführung der Mittelschulsprengel Auf der Schanz und Friedrichshofen sowie Auflösung der Mittelschule Friedrichshofen; — Änderung der Sprengelorganisation — — 2. Änderung der amtlichen Bezeichnung der „Mittelschule Ingolstadt, Aufder Schanz\" in die amtliche Bezeichnung mit Schulnamen „Magdalena-Herrle-Mittelschule Ingolstadt“",
-      "top_nr": "Ö 4",
+      "top_nr": "Ö 5",
       "vorlage": "V0504/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23260",
       "antragsteller": "",
@@ -4337,7 +7403,7 @@
           "datum": "2026-10-13",
           "datum_anzeige": "13.10.2026",
           "gremium": "Ausschuss für Kultur und Bildung",
-          "top_nr": "4",
+          "top_nr": "5",
           "oeffentlich": true,
           "rolle": "Vorberatung",
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543&toselect=90239"
@@ -4345,14 +7411,14 @@
       ]
     },
     {
-      "ref": "stadt:13543#Ö 5",
+      "ref": "stadt:13543#Ö 6",
       "thema": "stadt:vorlage:23299",
       "auftritte": [
         {
           "datum": "2026-10-13",
           "datum_anzeige": "13.10.2026",
           "gremium": "Ausschuss für Kultur und Bildung",
-          "top_nr": "Ö 5",
+          "top_nr": "Ö 6",
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543"
         }
       ],
@@ -4382,7 +7448,7 @@
       "beschluss": null,
       "quelle": "stadt",
       "amtlicher_titel": "Neuausschreibung der Mittagsverpflegung an Kitas und Schulen in städtischer Sachaufwandsträgerschaft – Projektgenehmigung",
-      "top_nr": "Ö 5",
+      "top_nr": "Ö 6",
       "vorlage": "V0543/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23299",
       "antragsteller": "",
@@ -4406,73 +7472,10 @@
           "datum": "2026-10-13",
           "datum_anzeige": "13.10.2026",
           "gremium": "Ausschuss für Kultur und Bildung",
-          "top_nr": "5",
-          "oeffentlich": true,
-          "rolle": "Vorberatung",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543&toselect=90240"
-        }
-      ]
-    },
-    {
-      "ref": "stadt:13543#Ö 6",
-      "thema": "stadt:vorlage:23317",
-      "auftritte": [
-        {
-          "datum": "2026-10-13",
-          "datum_anzeige": "13.10.2026",
-          "gremium": "Ausschuss für Kultur und Bildung",
-          "top_nr": "Ö 6",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543"
-        }
-      ],
-      "klartext_titel": "Partnergemeinde Legmoin: Neues Zentrum in Betrieb, Wasserversorgung geplant",
-      "klartext": "In Legmoin in Burkina Faso, mit dem Ingolstadt seit 2013 eine Projektpartnerschaft pflegt, ist ein Empfangs- und Unterbringungszentrum fertig geworden. Es bietet Auszubildenden und Betreuungspersonal der beiden dortigen Ausbildungszentren Übernachtungsplätze, Sanitäranlagen, einen Speisesaal und einen Erste-Hilfe-Bereich und ist seit dem Schuljahr 2025/2026 in Betrieb. Der Stadtrat soll den Abschlussbericht zur Kenntnis nehmen. Als Nächstes ist eine Wasserversorgung auf dem Gelände geplant, die 32.345 Euro kosten soll. Dafür will die Stadt beim Kleinprojektefonds von Engagement Global 29.110,50 Euro Förderung beantragen; den Eigenanteil von 10 Prozent, also 3.234,50 Euro, will sie aus vorhandenen Spenden bezahlen. Der Stadtrat soll am 29. Oktober 2026 entscheiden.",
-      "klartext_titel_leicht": "Ingolstadt hilft der Partner-Gemeinde Legmoin in Afrika",
-      "klartext_leicht": "Legmoin ist eine Gemeinde im Land Burkina Faso. Das Land liegt in Afrika. Ingolstadt arbeitet seit 2013 mit Legmoin zusammen. Dort gibt es jetzt ein neues Haus. Junge Menschen in Ausbildung können dort schlafen und essen. Jetzt soll das Gelände Wasser-Leitungen bekommen. Das kostet ungefähr 32.000 Euro. Das meiste Geld soll aus einem Förder-Programm kommen. Den Rest zahlt die Stadt aus Spenden.",
-      "lebenslage": [],
-      "bezirk": [
-        "stadtweit"
-      ],
-      "ebene": [
-        "Stadtrat & Ausschüsse"
-      ],
-      "anlass": [
-        "Kultur & Bildung"
-      ],
-      "ort": [],
-      "entwurf": false,
-      "duenn": false,
-      "stand": "Wird noch beraten",
-      "stand_datum": "13.10.2026",
-      "status": "Noch offen",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "stadt",
-      "amtlicher_titel": "Abschlussbericht Empfangs- und Unterbringungszentrum CAR — und Projektgenehmigung Einrichtung Wasserversorgung",
-      "top_nr": "Ö 6",
-      "vorlage": "V0561/26",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23317",
-      "antragsteller": "",
-      "gremium": "Ausschuss für Kultur und Bildung",
-      "sitzung_kennung": "KBA/03/2026",
-      "datum": "2026-10-13",
-      "datum_anzeige": "13.10.2026",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543",
-      "dokumente": [
-        {
-          "titel": "Vorlage",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253429&type=do"
-        }
-      ],
-      "beratungsweg": [
-        {
-          "datum": "2026-10-13",
-          "datum_anzeige": "13.10.2026",
-          "gremium": "Ausschuss für Kultur und Bildung",
           "top_nr": "6",
           "oeffentlich": true,
           "rolle": "Vorberatung",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543&toselect=90259"
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543&toselect=90240"
         }
       ]
     },
@@ -5231,11 +8234,11 @@
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253196&type=do"
         },
         {
-          "titel": "Satzungsnovelle Integrationsbeirat und Integrationsbeauftragte 02.10.2026",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253962&type=do"
+          "titel": "Anlage 1 - Satzungsnovelle Integrationsbeirat und Integrationsbeauftragte 13.10.2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254349&type=do"
         },
         {
-          "titel": "Satzung Migrationsrat und Integrationsbeauftragte 21.07.2021",
+          "titel": "Anlage 2 - Satzung Migrationsrat und Integrationsbeauftragte 21.07.2021",
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253510&type=do"
         }
       ],
@@ -5369,157 +8372,6 @@
           "oeffentlich": true,
           "rolle": "Vorberatung",
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13542&toselect=90221"
-        }
-      ]
-    },
-    {
-      "ref": "stadt:13542#Ö 5",
-      "thema": "stadt:vorlage:23277",
-      "auftritte": [
-        {
-          "datum": "2026-10-08",
-          "datum_anzeige": "08.10.2026",
-          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
-          "top_nr": "Ö 5",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13542"
-        }
-      ],
-      "klartext_titel": "Obdachlosenunterkünfte: Gebühren sollen neu berechnet werden, Sicherheitsdienst bleibt",
-      "klartext": "Die Stadt muss Menschen ohne Wohnung eine Notunterkunft stellen und erhebt dafür Gebühren. Laut Gebührenbericht deckten die Einnahmen 2025 nur 52,55 Prozent der Kosten, nach 40,04 Prozent im Jahr davor; die Gebühr war zum 1. Mai 2025 von 166,43 Euro auf 254,80 Euro gestiegen und wird seither schon für Kinder ab zwei statt ab sechs Jahren erhoben. Rechnet man den Sicherheitsdienst mit ein, liegt die Deckung bei 39,59 Prozent. Wegen gestiegener Miet- und Unterhaltskosten sollen die Gebühren nun neu kalkuliert und die Satzung geändert werden; für 2027 rechnet die Verwaltung mit rund 398.900 Euro Mehreinnahmen. Die Erhöhung soll Teil des Haushaltssicherungskonzepts werden. Der Sicherheitsdienst in den Unterkünften Am Franziskanerwasser soll im bisherigen Umfang weiterarbeiten, das kostet 2027 geschätzt 531.480 Euro. Der Stadtrat soll am 29. Oktober 2026 entscheiden.",
-      "klartext_titel_leicht": "Not-Unterkünfte für Menschen ohne Wohnung sollen teurer werden",
-      "klartext_leicht": "Manche Menschen haben keine Wohnung. Die Stadt muss ihnen einen Schlaf-Platz geben. Das heißt Not-Unterkunft. Die Menschen zahlen dafür eine Gebühr. Die Gebühr deckt nur ungefähr die Hälfte von den Kosten. Deshalb soll die Gebühr steigen. In den Unterkünften arbeitet ein Sicherheits-Dienst. Er soll bleiben. Der Stadt-Rat soll am 29. Oktober 2026 entscheiden.",
-      "lebenslage": [
-        "Geld & Soziales",
-        "Wohnen & Miete"
-      ],
-      "bezirk": [
-        "stadtweit"
-      ],
-      "ebene": [
-        "Stadtrat & Ausschüsse"
-      ],
-      "anlass": [
-        "Gebühren & Preise",
-        "Satzung & Regeln",
-        "Sicherheit"
-      ],
-      "ort": [],
-      "entwurf": false,
-      "duenn": false,
-      "stand": "Wird noch beraten",
-      "stand_datum": "08.10.2026",
-      "status": "Noch offen",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "stadt",
-      "amtlicher_titel": "Gebühren für die Benutzung der Obdachlosenunterkünfte; Gebührenbericht 2025, Weiterbeauftragung des Sicherheitsdienstes, Änderung der Satzung über die Gebührenerhebung und Aufnahme der Maßnahme in das HSK",
-      "top_nr": "Ö 5",
-      "vorlage": "V0521/26",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23277",
-      "antragsteller": "",
-      "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
-      "sitzung_kennung": "SGA/02/2026",
-      "datum": "2026-10-08",
-      "datum_anzeige": "08.10.2026",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13542",
-      "dokumente": [
-        {
-          "titel": "Vorlage",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253280&type=do"
-        },
-        {
-          "titel": "Anlage 4 HSK",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253474&type=do"
-        },
-        {
-          "titel": "V0521-26 Anlage 1 Gebührenbericht Obdachlosenwesen 2025",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253271&type=do"
-        },
-        {
-          "titel": "V0521-26 Anlage 2 Satzung zur Änderung der Gebührensatzung",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253250&type=do"
-        },
-        {
-          "titel": "V0521-26 Anlage 3 Gebuehrenkalkulation Obdachlosenunterbringung",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253254&type=do"
-        }
-      ],
-      "beratungsweg": [
-        {
-          "datum": "2026-10-08",
-          "datum_anzeige": "08.10.2026",
-          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
-          "top_nr": "5",
-          "oeffentlich": true,
-          "rolle": "Vorberatung",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13542&toselect=90208"
-        }
-      ]
-    },
-    {
-      "ref": "stadt:13542#Ö 6",
-      "thema": "stadt:vorlage:23308",
-      "auftritte": [
-        {
-          "datum": "2026-10-08",
-          "datum_anzeige": "08.10.2026",
-          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
-          "top_nr": "Ö 6",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13542"
-        }
-      ],
-      "klartext_titel": "Waisenhausstiftung: Verlust von rund 76.500 Euro im ersten Halbjahr 2026",
-      "klartext": "Die Waisenhausstiftung betreibt das Peter-Steuart-Haus mit vier Wohngruppen für bis zu 36 Kinder und Jugendliche, 130 Kita-Plätzen, ambulanten Hilfen für etwa 100 Familien und sieben Plätzen im teilbetreuten Wohnen. Im ersten Halbjahr 2026 erzielte die Stiftung selbst einen Gewinn von 19.004,83 Euro. Der Einrichtungsbetrieb schloss dagegen mit einem Minus von 95.515,42 Euro ab, geplant waren 149.750 Euro Verlust. Zusammen ergibt sich ein Verlust von 76.510,59 Euro. Die Wohngruppen waren im Durchschnitt zu 98,8 Prozent belegt. Der Bericht wird den Ausschüssen bekannt gegeben, eine Entscheidung ist nicht vorgesehen.",
-      "klartext_titel_leicht": "Bericht über die Waisenhaus-Stiftung",
-      "klartext_leicht": "Die Waisenhaus-Stiftung gehört zur Stadt Ingolstadt. Sie hilft Kindern und Jugendlichen. Zur Stiftung gehört das Peter-Steuart-Haus. Dort wohnen bis zu 36 Kinder und Jugendliche. Es gibt dort auch eine Kita mit 130 Plätzen. Von Januar bis Juni 2026 gab es einen Verlust. Es fehlen ungefähr 76.500 Euro. Das ist weniger Verlust als geplant. Die Wohn-Gruppen waren fast immer voll.",
-      "lebenslage": [
-        "Eltern & Kinder",
-        "Jugend",
-        "Geld & Soziales"
-      ],
-      "bezirk": [
-        "stadtweit"
-      ],
-      "ebene": [
-        "Stadtrat & Ausschüsse"
-      ],
-      "anlass": [
-        "Kinderbetreuung"
-      ],
-      "ort": [],
-      "entwurf": false,
-      "duenn": false,
-      "stand": "Bekanntgabe",
-      "stand_datum": "08.10.2026",
-      "status": "Nur zur Information",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "stadt",
-      "amtlicher_titel": "Halbjahresbericht 2026 zum operativen Geschäft der Waisenhausstiftung Ingolstadt",
-      "top_nr": "Ö 6",
-      "vorlage": "V0552/26",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23308",
-      "antragsteller": "",
-      "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
-      "sitzung_kennung": "SGA/02/2026",
-      "datum": "2026-10-08",
-      "datum_anzeige": "08.10.2026",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13542",
-      "dokumente": [
-        {
-          "titel": "Vorlage",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253836&type=do"
-        }
-      ],
-      "beratungsweg": [
-        {
-          "datum": "2026-10-08",
-          "datum_anzeige": "08.10.2026",
-          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
-          "top_nr": "6",
-          "oeffentlich": true,
-          "rolle": "Bekanntgabe",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13542&toselect=90215"
         }
       ]
     },
@@ -6455,6 +9307,53 @@
       "beratungsweg": []
     },
     {
+      "ref": "stadt:antrag:23452",
+      "thema": "stadt:antrag:23452",
+      "auftritte": [],
+      "klartext_titel": "Linke fordert Regeln für den Einsatz von KI in der Stadtverwaltung",
+      "klartext": "Die Linke im Stadtrat beantragt eine verwaltungsweite Dienstanweisung für den Einsatz von KI-Systemen. Erarbeiten soll sie eine ämterübergreifende Arbeitsgruppe aus Digitalisierung, Informationssicherheit, Datenschutz und Ämtern, die schon Erfahrung mit KI haben. Regeln soll die Anweisung unter anderem Datenschutz und Sicherheit, welche KI-Systeme zugelassen sind, den Einsatz bei Verwaltungsentscheidungen, ein Freigabeverfahren für neue Anwendungen sowie Dokumentation und Überprüfung. Der Stadtrat soll halbjährlich über den KI-Einsatz in der Verwaltung informiert werden. Ohne klare Regeln sehen die Antragsteller das Risiko einer unkontrollierten Nutzung. Der Antrag stammt vom 2. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+      "klartext_titel_leicht": "Die Linke will Regeln für Künstliche Intelligenz in der Verwaltung",
+      "klartext_leicht": "Künstliche Intelligenz heißt kurz KI. Das sind Computer-Programme, die zum Beispiel Texte schreiben. Auch die Stadt-Verwaltung nutzt solche Programme. Die Partei Die Linke will dafür klare Regeln. Zum Beispiel: Welche Programme dürfen die Mitarbeiter nutzen? Und: Wie werden Daten geschützt? Der Stadt-Rat soll 2 Mal im Jahr einen Bericht bekommen.",
+      "lebenslage": [
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Noch nicht terminiert",
+      "stand_datum": "",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "KI-Dienstanweisung",
+      "top_nr": "",
+      "vorlage": "V0691/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23452",
+      "antragsteller": "Stadtratsfraktion DIE LINKE",
+      "gremium": "Antrag an Stadtrat",
+      "sitzung_kennung": "",
+      "datum": "2026-10-02",
+      "datum_anzeige": "02.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23452",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag Die Linke",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254774&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
       "ref": "bezirk_obb:4981#Ö 4",
       "thema": "bezirk_obb:4981#Ö 4",
       "auftritte": [
@@ -6698,8 +9597,8 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Noch nicht terminiert",
-      "stand_datum": "",
+      "stand": "Entscheidung geplant",
+      "stand_datum": "29.10.2026",
       "status": "Noch offen",
       "niederschrift_url": "",
       "beschluss": null,
@@ -7403,8 +10302,8 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Noch nicht terminiert",
-      "stand_datum": "",
+      "stand": "Entscheidung geplant",
+      "stand_datum": "29.10.2026",
       "status": "Noch offen",
       "niederschrift_url": "",
       "beschluss": null,
@@ -21341,6 +24240,112 @@
       ]
     },
     {
+      "ref": "stadt:13525#Ö 4",
+      "thema": "stadt:vorlage:22966",
+      "auftritte": [
+        {
+          "datum": "2026-06-11",
+          "datum_anzeige": "11.06.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525"
+        },
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 14",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
+        }
+      ],
+      "klartext_titel": "Überschwemmungsgebiet an der Sandrach wird festgesetzt",
+      "klartext": "Für die Sandrach soll ein Überschwemmungsgebiet per Verordnung festgesetzt werden — auf einer Länge von Fluss-Kilometer 1,026 bis 13,516. Detailkarten und ein Erläuterungsbericht liegen vor.",
+      "klartext_titel_leicht": "Überschwemmungsgebiet an der Sandrach wird festgelegt",
+      "klartext_leicht": "An der Sandrach soll ein Überschwemmungsgebiet festgelegt werden. Das ist ein Gebiet, das bei Hochwasser unter Wasser stehen darf. Karten und ein Bericht dazu liegen vor.",
+      "lebenslage": [
+        "Wohnen & Miete"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Satzung & Regeln",
+        "Sicherheit"
+      ],
+      "ort": [
+        "Sandrach"
+      ],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "24.06.2026",
+      "status": "Ergebnis steht im Protokoll",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Festsetzung einer Überschwemmungsgebietsverordung zum Überschwemmungsgebiet Sandrach im Stadtgebiet Ingolstadt von Fluss-km 1,026 - 13,516 (Gewässer II. Ordnung).",
+      "top_nr": "Ö 14",
+      "vorlage": "V0217/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22966",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/03/2026",
+      "datum": "2026-06-24",
+      "datum_anzeige": "24.06.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249507&type=do"
+        },
+        {
+          "titel": "Vorberatung PLA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250547&type=do"
+        },
+        {
+          "titel": "Anlage 3 (Detailkarten)",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249510&type=do"
+        },
+        {
+          "titel": "Erläuterung Vorgehen bei Ermittlung Ü-Gebiete",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249512&type=do"
+        },
+        {
+          "titel": "Erläuterungsbericht",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249663&type=do"
+        },
+        {
+          "titel": "Übersichtskarte",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249511&type=do"
+        },
+        {
+          "titel": "ÜSG-Verordnung",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249681&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-06-11",
+          "datum_anzeige": "11.06.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525&toselect=88466"
+        },
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "14",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529&toselect=88587"
+        }
+      ]
+    },
+    {
       "ref": "stadt:13529#Ö 7",
       "thema": "stadt:vorlage:23027",
       "auftritte": [
@@ -21849,71 +24854,6 @@
           "oeffentlich": true,
           "rolle": "Entscheidung",
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529&toselect=88582"
-        }
-      ]
-    },
-    {
-      "ref": "stadt:13529#Ö 12",
-      "thema": "stadt:vorlage:22991",
-      "auftritte": [
-        {
-          "datum": "2026-06-24",
-          "datum_anzeige": "24.06.2026",
-          "gremium": "Stadtrat",
-          "top_nr": "Ö 12",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
-        }
-      ],
-      "klartext_titel": "Feuerwehr Mailing/Feldkirchen: Kommandant bestätigt",
-      "klartext": "Jakob Bücherl wird als Kommandant der Freiwilligen Feuerwehr Ingolstadt-Mailing/Feldkirchen bestätigt. Wie bei allen Freiwilligen Feuerwehren wählen die Mitglieder ihren Kommandanten selbst, die Bestätigung ist aber Sache des Stadtrats. Die Aufwandsentschädigung beträgt 220,56 Euro im Monat. Sie richtet sich nach der Größe der jeweiligen Feuerwehr und ist im Bayerischen Feuerwehrgesetz geregelt.",
-      "klartext_titel_leicht": "Ein neuer Chef für die Feuerwehr Mailing",
-      "klartext_leicht": "Die Freiwillige Feuerwehr hilft bei Bränden und Unfällen. In Mailing und Feldkirchen gibt es auch eine. Ihr Chef heißt Kommandant. Die Mitglieder haben ihn gewählt. Der Stadt-Rat bestätigt die Wahl. Der neue Chef heißt Jakob Bücherl. Er bekommt 220 Euro im Monat dafür.",
-      "lebenslage": [
-        "Ehrenamt & Vereine"
-      ],
-      "bezirk": [
-        "IX-Mailing/Feldkirchen"
-      ],
-      "ebene": [
-        "Stadtrat & Ausschüsse"
-      ],
-      "anlass": [
-        "Sicherheit"
-      ],
-      "ort": [],
-      "entwurf": false,
-      "duenn": false,
-      "stand": "Entscheidung angesetzt",
-      "stand_datum": "24.06.2026",
-      "status": "Ergebnis steht im Protokoll",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "stadt",
-      "amtlicher_titel": "Bestätigung des Kommandanten der Freiwilligen Feuerwehr Ingolstadt-Mailing/Feldkirchen",
-      "top_nr": "Ö 12",
-      "vorlage": "V0241/26",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22991",
-      "antragsteller": "",
-      "gremium": "Stadtrat",
-      "sitzung_kennung": "StR/03/2026",
-      "datum": "2026-06-24",
-      "datum_anzeige": "24.06.2026",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
-      "dokumente": [
-        {
-          "titel": "Vorlage",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249652&type=do"
-        }
-      ],
-      "beratungsweg": [
-        {
-          "datum": "2026-06-24",
-          "datum_anzeige": "24.06.2026",
-          "gremium": "Stadtrat",
-          "top_nr": "12",
-          "oeffentlich": true,
-          "rolle": "Entscheidung",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529&toselect=88583"
         }
       ]
     },
@@ -22485,8 +25425,15 @@
     },
     {
       "ref": "stadt:13529#Ö 17",
-      "thema": "stadt:13529#Ö 17",
+      "thema": "stadt:vorlage:22994",
       "auftritte": [
+        {
+          "datum": "2026-06-11",
+          "datum_anzeige": "11.06.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525"
+        },
         {
           "datum": "2026-06-24",
           "datum_anzeige": "24.06.2026",
@@ -22515,24 +25462,60 @@
       "ort": [],
       "entwurf": false,
       "duenn": true,
-      "stand": "Nur besprochen, nichts entschieden",
-      "stand_datum": "",
-      "status": "Nur zur Information",
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "24.06.2026",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
       "amtlicher_titel": "Zwischenbericht zum Mobilitätsplan Ingolstadt 2040+ und Endbericht zur Erhebung „Mobilität in Deutschland – MiD 2023“",
       "top_nr": "Ö 17",
-      "vorlage": "",
-      "vorlage_url": "",
+      "vorlage": "V0244/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22994",
       "antragsteller": "",
       "gremium": "Stadtrat",
       "sitzung_kennung": "StR/03/2026",
       "datum": "2026-06-24",
       "datum_anzeige": "24.06.2026",
       "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
-      "dokumente": [],
-      "beratungsweg": []
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249688&type=do"
+        },
+        {
+          "titel": "Vorberatung PLA",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252264&type=do"
+        },
+        {
+          "titel": "Anlage 1 V0244-26 MiD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249712&type=do"
+        },
+        {
+          "titel": "Anlage 2 V0244-26",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249778&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-06-11",
+          "datum_anzeige": "11.06.2026",
+          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
+          "top_nr": "1",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525&toselect=88193"
+        },
+        {
+          "datum": "2026-06-24",
+          "datum_anzeige": "24.06.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "17",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529&toselect=88588"
+        }
+      ]
     },
     {
       "ref": "stadt:13529#Ö 22.1",
@@ -22954,59 +25937,6 @@
       "beratungsweg": []
     },
     {
-      "ref": "stadt:13529#Ö3",
-      "thema": "stadt:vorlage:23096",
-      "auftritte": [
-        {
-          "datum": "2026-06-24",
-          "datum_anzeige": "24.06.2026",
-          "gremium": "Stadtrat",
-          "top_nr": "Ö",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
-        }
-      ],
-      "klartext_titel": "Martin von Kap-herr bleibt Kommandant der Feuerwehr Stadtmitte",
-      "klartext": "Der Stadtrat bestätigt die Wiederwahl von Martin Freiherr von Kap-herr zum Kommandanten der Freiwilligen Feuerwehr Ingolstadt-Stadtmitte für weitere sechs Jahre ab Oktober 2026. Er wird zugleich zum Stadtbrandrat bestimmt und erhält eine monatliche Entschädigung von 268,56 Euro.",
-      "klartext_titel_leicht": "Feuerwehr-Chef Stadtmitte bleibt im Amt",
-      "klartext_leicht": "Die Freiwillige Feuerwehr Stadtmitte hat einen Chef gewählt. Er heißt Martin von Kap-herr. Er macht diese Arbeit schon länger. Jetzt wird er für 6 weitere Jahre bestätigt. Er bekommt dafür monatlich Geld. Er wird auch Stadt-Brandrat.",
-      "lebenslage": [],
-      "bezirk": [
-        "I-Mitte"
-      ],
-      "ebene": [
-        "Stadtrat & Ausschüsse"
-      ],
-      "anlass": [
-        "Sicherheit"
-      ],
-      "ort": [],
-      "entwurf": false,
-      "duenn": false,
-      "stand": "Nur besprochen, nichts entschieden",
-      "stand_datum": "",
-      "status": "Nur zur Information",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "stadt",
-      "amtlicher_titel": "hierzu liegt eine überarbeitete Beschlussvorlage vor.",
-      "top_nr": "Ö",
-      "vorlage": "V0231/26/1",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23096",
-      "antragsteller": "",
-      "gremium": "Stadtrat",
-      "sitzung_kennung": "StR/03/2026",
-      "datum": "2026-06-24",
-      "datum_anzeige": "24.06.2026",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
-      "dokumente": [
-        {
-          "titel": "Vorlage",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=250925&type=do"
-        }
-      ],
-      "beratungsweg": []
-    },
-    {
       "ref": "stadt:13529#Ö4",
       "thema": "stadt:vorlage:23066",
       "auftritte": [
@@ -23267,52 +26197,6 @@
       "quelle": "stadt",
       "amtlicher_titel": "hierzu: mündlicher Bericht Herr Kuch",
       "top_nr": "Ö",
-      "vorlage": "",
-      "vorlage_url": "",
-      "antragsteller": "",
-      "gremium": "Stadtrat",
-      "sitzung_kennung": "StR/03/2026",
-      "datum": "2026-06-24",
-      "datum_anzeige": "24.06.2026",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529",
-      "dokumente": [],
-      "beratungsweg": []
-    },
-    {
-      "ref": "stadt:13529#Ö 14",
-      "thema": "stadt:13529#Ö 14",
-      "auftritte": [
-        {
-          "datum": "2026-06-24",
-          "datum_anzeige": "24.06.2026",
-          "gremium": "Stadtrat",
-          "top_nr": "Ö 14",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13529"
-        }
-      ],
-      "klartext_titel": "Festsetzung einer Überschwemmungsgebietsverordung zum Überschwemmungsgebiet Sandrach im Stadtgebiet …",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [],
-      "bezirk": [],
-      "ebene": [
-        "Stadtrat & Ausschüsse"
-      ],
-      "anlass": [
-        "Sicherheit"
-      ],
-      "ort": [],
-      "entwurf": true,
-      "duenn": true,
-      "stand": "Nur besprochen, nichts entschieden",
-      "stand_datum": "",
-      "status": "Nur zur Information",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "stadt",
-      "amtlicher_titel": "Festsetzung einer Überschwemmungsgebietsverordung zum Überschwemmungsgebiet Sandrach im Stadtgebiet Ingolstadt von Fluss-km 1,026 - 13,516 (Gewässer II. Ordnung).",
-      "top_nr": "Ö 14",
       "vorlage": "",
       "vorlage_url": "",
       "antragsteller": "",
@@ -25543,57 +28427,6 @@
       ]
     },
     {
-      "ref": "stadt:13525#Ö 4",
-      "thema": "stadt:13525#Ö 4",
-      "auftritte": [
-        {
-          "datum": "2026-06-11",
-          "datum_anzeige": "11.06.2026",
-          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
-          "top_nr": "Ö 4",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525"
-        }
-      ],
-      "klartext_titel": "Überschwemmungsgebiet an der Sandrach wird festgesetzt",
-      "klartext": "Für die Sandrach soll ein Überschwemmungsgebiet per Verordnung festgesetzt werden — auf einer Länge von Fluss-Kilometer 1,026 bis 13,516. Detailkarten und ein Erläuterungsbericht liegen vor.",
-      "klartext_titel_leicht": "Überschwemmungsgebiet an der Sandrach wird festgelegt",
-      "klartext_leicht": "An der Sandrach soll ein Überschwemmungsgebiet festgelegt werden. Das ist ein Gebiet, das bei Hochwasser unter Wasser stehen darf. Karten und ein Bericht dazu liegen vor.",
-      "lebenslage": [
-        "Wohnen & Miete"
-      ],
-      "bezirk": [],
-      "ebene": [
-        "Stadtrat & Ausschüsse"
-      ],
-      "anlass": [
-        "Satzung & Regeln",
-        "Sicherheit"
-      ],
-      "ort": [
-        "Sandrach"
-      ],
-      "entwurf": false,
-      "duenn": false,
-      "stand": "Nur besprochen, nichts entschieden",
-      "stand_datum": "",
-      "status": "Nur zur Information",
-      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252411&type=do",
-      "beschluss": null,
-      "quelle": "stadt",
-      "amtlicher_titel": "Festsetzung einer Überschwemmungsgebietsverordung zum Überschwemmungsgebiet Sandrach im Stadtgebiet Ingolstadt von Fluss-km 1,026 - 13,516 (Gewässer II. Ordnung).",
-      "top_nr": "Ö 4",
-      "vorlage": "",
-      "vorlage_url": "",
-      "antragsteller": "",
-      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
-      "sitzung_kennung": "PLA/01/2026",
-      "datum": "2026-06-11",
-      "datum_anzeige": "11.06.2026",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525",
-      "dokumente": [],
-      "beratungsweg": []
-    },
-    {
       "ref": "bza:14010#Ö 1",
       "thema": "bza:14010#Ö 1",
       "auftritte": [
@@ -25967,53 +28800,6 @@
       "quelle": "stadt",
       "amtlicher_titel": "Sicherheitsgutachten Baggersee",
       "top_nr": "Ö",
-      "vorlage": "",
-      "vorlage_url": "",
-      "antragsteller": "",
-      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
-      "sitzung_kennung": "PLA/01/2026",
-      "datum": "2026-06-11",
-      "datum_anzeige": "11.06.2026",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525",
-      "dokumente": [],
-      "beratungsweg": []
-    },
-    {
-      "ref": "stadt:13525#Ö 1",
-      "thema": "stadt:13525#Ö 1",
-      "auftritte": [
-        {
-          "datum": "2026-06-11",
-          "datum_anzeige": "11.06.2026",
-          "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
-          "top_nr": "Ö 1",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13525"
-        }
-      ],
-      "klartext_titel": "Zwischenbericht zum Mobilitätsplan Ingolstadt 2040+ und Endbericht zur Erhebung „Mobilität in Deutschland",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [],
-      "bezirk": [],
-      "ebene": [
-        "Stadtrat & Ausschüsse"
-      ],
-      "anlass": [
-        "Konzept & Planung",
-        "Klima & Umwelt"
-      ],
-      "ort": [],
-      "entwurf": true,
-      "duenn": true,
-      "stand": "Nur besprochen, nichts entschieden",
-      "stand_datum": "",
-      "status": "Nur zur Information",
-      "niederschrift_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=252411&type=do",
-      "beschluss": null,
-      "quelle": "stadt",
-      "amtlicher_titel": "Zwischenbericht zum Mobilitätsplan Ingolstadt 2040+ und Endbericht zur Erhebung „Mobilität in Deutschland – MiD 2023“",
-      "top_nr": "Ö 1",
       "vorlage": "",
       "vorlage_url": "",
       "antragsteller": "",
@@ -227855,83 +230641,14 @@
   ],
   "kommende_termine": [
     {
-      "gremium": "Ausschuss für Kultur und Bildung",
+      "gremium": "Ausschuss für Finanzen und Personal",
       "artikel": "",
-      "datum": "2026-10-13",
-      "datum_anzeige": "13.10.2026",
-      "zeit": "16:00 Uhr",
-      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
-      "quelle": "stadt",
-      "tagesordnung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13543"
-    },
-    {
-      "gremium": "Bezirksausschuss XII-Münchener Straße",
-      "artikel": "",
-      "datum": "2026-10-13",
-      "datum_anzeige": "13.10.2026",
-      "zeit": "19:30 Uhr",
-      "ort": "Kulturzentrum neun, Elisabethstraße 9 a, 85051 Ingolstadt",
-      "quelle": "bza",
-      "tagesordnung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14248"
-    },
-    {
-      "gremium": "Bezirksausschuss I-Mitte",
-      "artikel": "",
-      "datum": "2026-10-13",
-      "datum_anzeige": "13.10.2026",
-      "zeit": "19:30 Uhr",
-      "ort": "Gemeindesaal St. Matthäus, Schrannenstraße 7, 85049 Ingolstadt",
-      "quelle": "bza",
-      "tagesordnung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14324"
-    },
-    {
-      "gremium": "Bezirksausschuss II-Nordwest",
-      "artikel": "",
-      "datum": "2026-10-14",
-      "datum_anzeige": "14.10.2026",
-      "zeit": "19:00 Uhr",
-      "ort": "Stadtteiltreff Piusviertel, Pfitznerstraße 19a, 85057 Ingolstadt",
-      "quelle": "bza",
-      "tagesordnung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14200"
-    },
-    {
-      "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
-      "artikel": "",
-      "datum": "2026-10-15",
-      "datum_anzeige": "15.10.2026",
-      "zeit": "16:00 Uhr",
-      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
-      "quelle": "stadt",
-      "tagesordnung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13544"
-    },
-    {
-      "gremium": "Jugendparlament",
-      "artikel": "",
-      "datum": "2026-10-16",
-      "datum_anzeige": "16.10.2026",
-      "zeit": "17:30 Uhr",
-      "ort": "Ingolstadt,Neues Rathaus, Großer Sitzungssaal, II. OG",
-      "quelle": "stadt",
-      "tagesordnung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13760"
-    },
-    {
-      "gremium": "Ausschuss für Kultur, Schulen und Museen",
-      "artikel": "",
-      "datum": "2026-10-20",
-      "datum_anzeige": "20.10.2026",
-      "zeit": "09:30-11:00 Uhr",
-      "ort": "Sitzungssaal im 5. OG des Verwaltungsgebäudes",
-      "quelle": "bezirk_obb",
-      "tagesordnung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5016"
-    },
-    {
-      "gremium": "Ausschusses für Finanzen und Personal",
-      "artikel": "des",
       "datum": "2026-10-22",
       "datum_anzeige": "22.10.2026",
       "zeit": "16:00 Uhr",
       "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
-      "quelle": "stadt"
+      "quelle": "stadt",
+      "tagesordnung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
     },
     {
       "gremium": "Bezirksausschuss X-Süd",
@@ -227942,15 +230659,6 @@
       "ort": "Sportcenter Zuchering, Seeweg 17, 85051 Ingolstadt",
       "quelle": "bza",
       "tagesordnung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14308"
-    },
-    {
-      "gremium": "Bezirksausschusses XI-Friedrichshofen/Hollerstauden",
-      "artikel": "des",
-      "datum": "2026-10-27",
-      "datum_anzeige": "27.10.2026",
-      "zeit": "",
-      "ort": "- geplanter Sitzungstermin -",
-      "quelle": "bza"
     },
     {
       "gremium": "Personalausschuss",
@@ -227980,6 +230688,26 @@
       "quelle": "bezirk_obb"
     },
     {
+      "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
+      "artikel": "",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "zeit": "19:00 Uhr",
+      "ort": "Thomaskirche, Buchenweg 4, 85049 Ingolstadt",
+      "quelle": "bza",
+      "tagesordnung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209"
+    },
+    {
+      "gremium": "Bezirksausschuss V-Südwest",
+      "artikel": "",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "zeit": "19:30 Uhr",
+      "ort": "Jugendheim Hundszell, Klausenweg, 85051 Ingolstadt",
+      "quelle": "bza",
+      "tagesordnung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353"
+    },
+    {
       "gremium": "Bezirkstag",
       "artikel": "",
       "datum": "2026-10-28",
@@ -227989,22 +230717,23 @@
       "quelle": "bezirk_obb"
     },
     {
-      "gremium": "Bezirksausschusses VII-Etting",
-      "artikel": "des",
-      "datum": "2026-10-29",
-      "datum_anzeige": "29.10.2026",
-      "zeit": "",
-      "ort": "- geplanter Sitzungstermin -",
-      "quelle": "bza"
-    },
-    {
       "gremium": "Stadtrates",
       "artikel": "des",
       "datum": "2026-10-29",
       "datum_anzeige": "29.10.2026",
-      "zeit": "13:00 Uhr",
+      "zeit": "11:00 Uhr",
       "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
       "quelle": "stadt"
+    },
+    {
+      "gremium": "Bezirksausschuss VII-Etting",
+      "artikel": "",
+      "datum": "2026-10-29",
+      "datum_anzeige": "29.10.2026",
+      "zeit": "19:30 Uhr",
+      "ort": "Sportheim Etting, Retzbachweg 10, 85055 Ingolstadt —",
+      "quelle": "bza",
+      "tagesordnung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14355"
     },
     {
       "gremium": "Werkausschuss für das Kultur- und Bildungszentrum Kloster Seeon",
