@@ -35,7 +35,10 @@ Nur Python-Standardbibliothek, keine Abhängigkeiten.
 ## Aufbau
 
 ```
-index.html            Oberfläche (27 KB, ohne Daten)
+index.html            Startseite: Auf einen Blick, Themen-Kacheln, alle Einträge
+themen.html           Themen im Überblick (Kacheln mit je einer Kernzahl)
+kopf.js               gemeinsame Kopfzeile aller Seiten (Start · Themen · So funktioniert's)
+themen-kacheln.js     zeichnet die Themen-Kacheln aus data/themen.js
 impressum.html        Impressum (§ 5 DDG)
 datenschutz.html      Datenschutzerklärung
 KURATION.md           wie die Kurztexte entstehen (inkl. Leichte Sprache)
@@ -46,6 +49,7 @@ scraper/
                             (+ data/niederschriften.json)
   feed_bauen.py       Rohdaten + Kuration           -> data/feed.json + feed.js
   pruefen.py          Zusagen der Seite nachrechnen (Exit-Code)
+  themen_bauen.py     Kennzahlen für die Themen-Kacheln -> data/themen.js
   .cache/             HTML-Cache, schont das Portal bei Wiederholläufen
 data/
   rohdaten.json       unveränderte Auslesung beider Quellen
@@ -66,6 +70,17 @@ stehen in [KURATION.md](KURATION.md).
 
 Hintergrund zur Datenlage, zum Beratungsstand und zu den offenen Fragen:
 [PROTOTYP-INGOLSTADT.md](PROTOTYP-INGOLSTADT.md).
+
+### Navigation und Themen-Kacheln
+
+Alle Seiten laden `kopf.js`, das die Navigation in die Kopfzeile setzt; neue
+Themenseiten dort in `THEMEN` eintragen (und in `scraper/themen_bauen.py`,
+falls sie eine Kachel bekommen). Die Kacheln auf der Startseite und auf
+`themen.html` zeigen je eine Zahl aus den Datendateien der Themenseiten:
+
+```bash
+cd scraper && python3 themen_bauen.py   # nach jedem Daten-Update
+```
 
 ### Klima (`klima.html`)
 

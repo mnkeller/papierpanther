@@ -139,49 +139,6 @@
   }
   .stat-label { font-size: .68rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: .05em; }
 
-  /* ---------- Im-Fokus-Leiste: schmale Buttonreihe ueber dem Hero ----------
-     War zuerst eine Kachel zwischen Statistik und Feed — stand dort als
-     Fremdkoerper zwischen den beiden Kernelementen der Seite. Als schmale
-     Buttonreihe direkt ueber der Schlagzeile faellt sie auf, ohne den
-     eigentlichen Einstieg (Hero, Statistik, Filter) zu verdraengen. */
-  .im-fokus-leiste { padding: 1.5rem 0 0; }
-  .im-fokus-buttons { display: flex; flex-wrap: wrap; gap: .6rem; }
-  .fokus-btn {
-    display: inline-block; font: inherit; font-size: .86rem; font-weight: 600;
-    text-decoration: none; color: var(--accent); background: #fff;
-    border: 1.5px solid var(--accent); border-radius: 999px;
-    padding: .5rem 1.15rem; transition: background .12s ease, color .12s ease;
-  }
-  .fokus-btn:hover { background: var(--accent); color: #fff; }
-
-  /* ---------- Demnaechst: Termine ohne veroeffentlichte Tagesordnung ----------
-     Bewusst schlicht und ungekuratiert — reine Fakten (Gremium, Datum, Ort),
-     weil es noch keine Tagesordnung zu uebersetzen gibt. Genau hier kann man
-     als Buergerin noch einwirken, bevor entschieden wird. Als <details>
-     eingeklappt, weil die Liste auf schmalen Bildschirmen sonst laenger ist
-     als der Hero darunter. Steht zwischen Statistik und Feed, mit eigenem
-     Trenner nach oben. */
-  .demnaechst { padding: 1.5rem 0 2rem; border-top: 1px solid var(--border); }
-  .demnaechst-titel {
-    cursor: pointer; list-style: none; display: flex; align-items: center; gap: .5rem;
-    font-family: var(--font-display); font-size: 1.1rem; font-weight: 700;
-    color: var(--text);
-    padding: .3rem 0;
-  }
-  .demnaechst-titel::-webkit-details-marker { display: none; }
-  .demnaechst-titel::before { content: '▸'; font-size: .8em; color: var(--text-faint); transition: transform .15s; }
-  .demnaechst-details[open] > .demnaechst-titel::before { transform: rotate(90deg); }
-  .demnaechst-titel:hover { color: var(--primary); }
-  .demnaechst-liste { list-style: none; margin-top: .5rem; }
-  .demnaechst-item {
-    display: flex; flex-wrap: wrap; gap: .3rem .6rem; align-items: baseline;
-    font-size: .86rem; padding: .45rem 0; border-bottom: 1px solid var(--border);
-  }
-  .demnaechst-item:last-child { border-bottom: none; }
-  .demnaechst-datum { font-weight: 700; color: var(--primary); white-space: nowrap; }
-  .demnaechst-gremium { color: var(--text); }
-  .demnaechst-info { color: var(--text-faint); font-size: .82rem; }
-
   /* ---------- Arbeitsflaeche: Filterspalte neben dem Feed ----------
      Bewusst zweispaltig statt Filterband ueber der Liste: bei 880 Eintraegen
      will man beim Blaettern nachjustieren, ohne nach oben zu springen. */
@@ -482,28 +439,6 @@
   }
   .header-link:focus-visible, .btn-leicht:focus-visible { outline-color: #fff; }
 
-  /* ---------- Bezirkswahl im Hero ----------
-     Der Hero verspricht "Suchen Sie einfach Ihren Stadtbezirk" — hier ist
-     die Stelle, an der man das tut, statt unter 13 Lebenslagen-Chips
-     (Nutzertest 2026-09-30). */
-  .bezirk-wahl { margin-top: 1.6rem; }
-  .bezirk-wahl h2 {
-    font-family: var(--font-display); font-size: 1.15rem; font-weight: 700;
-    margin-bottom: .6rem;
-  }
-  .bezirk-wahl-opts { display: flex; flex-wrap: wrap; gap: .45rem; max-width: 820px; }
-  .bezirk-btn {
-    font: inherit; font-size: .9rem; cursor: pointer;
-    background: #fff; color: var(--primary-dark);
-    border: 1.5px solid var(--primary); border-radius: 8px;
-    padding: .45rem .8rem; transition: all .12s ease;
-  }
-  .bezirk-btn .nr { font-weight: 700; margin-right: .3em; }
-  .bezirk-btn:hover { background: var(--bg-warm); }
-  .bezirk-btn[aria-pressed="true"] { background: var(--primary); color: #fff; }
-  .bezirk-btn.stadtweit { border-style: dashed; }
-  .bezirk-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-
   /* ---------- Bezirksansicht: Kopf ueber dem Feed ---------- */
   .bezirk-kopf {
     background: var(--card); border: 1px solid var(--border);
@@ -565,6 +500,55 @@
   .skip-link:focus {
     top: 0;
   }
+
+  /* ---------- Auf einen Blick, Themen, Liste ---------- */
+  .hero { padding: 2.6rem 0 1.6rem; }
+  .hero p { font-size: 1.08rem; }
+  .site-footer .hero-stats { margin: 1rem 0 1.5rem; }
+  .blick { padding: .5rem 0 2.2rem; }
+  .blick-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+  @media (max-width: 900px) { .blick-grid { grid-template-columns: 1fr; } }
+  .blick-spalte { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow);
+    padding: 1.1rem 1.2rem 1rem; display: flex; flex-direction: column; border-top: 4px solid var(--primary); }
+  #blick-offen { border-top-color: #2e7d4f; }
+  #blick-entschieden { border-top-color: var(--accent); }
+  .blick-spalte h2 { font-family: var(--font-display); font-size: 1.2rem; color: var(--primary-dark); }
+  .blick-unter { font-size: .82rem; color: var(--text-faint); margin: .1rem 0 .6rem; }
+  .blick-liste { list-style: none; flex: 1; }
+  .blick-liste > li { border-top: 1px solid var(--border); padding: .5rem 0; font-size: .9rem; }
+  .blick-liste > li:first-child { border-top: none; }
+  .blick-meta { display: block; font-size: .76rem; color: var(--text-faint); }
+  .blick-meta.ja { color: #2e7d4f; font-weight: 600; }
+  .blick-meta.nein { color: var(--accent); font-weight: 600; }
+  .blick-liste details summary { cursor: pointer; font-weight: 600; color: var(--text); list-style: none; }
+  .blick-liste details summary::-webkit-details-marker { display: none; }
+  .blick-liste details summary::before { content: '▸ '; color: var(--text-faint); font-size: .8em; }
+  .blick-liste details[open] summary::before { content: '▾ '; }
+  .blick-liste details p { font-size: .84rem; color: var(--text-muted); margin: .35rem 0; }
+  .blick-liste details a { font-size: .8rem; }
+  .blick-termin { display: grid; grid-template-columns: 4.6rem 1fr; gap: .1rem .6rem; }
+  .blick-termin .tag { font-weight: 700; color: var(--primary); font-size: .85rem; }
+  .blick-termin .wer { font-size: .88rem; }
+  .blick-termin .to { grid-column: 2; font-size: .76rem; }
+  .blick-mehr { margin-top: .7rem; align-self: flex-start; background: none; border: 1px solid var(--border-strong);
+    border-radius: 999px; padding: .35rem .9rem; font: inherit; font-size: .82rem; cursor: pointer; color: var(--primary-dark); }
+  .blick-mehr:hover { background: var(--bg-warm); }
+  .titel-umschalter { background: none; border: none; padding: 0; font: inherit; font-size: .84rem;
+    color: var(--primary-dark); text-decoration: underline; cursor: pointer; margin: -.4rem 0 1rem; }
+
+  .themen-start { padding: 0 0 2.4rem; }
+  .abschnitt-titel { font-family: var(--font-display); font-size: 1.5rem; color: var(--primary-dark); margin-bottom: .8rem; }
+  .liste-kopf { display: block !important; padding-top: 1.2rem; }
+  .liste-kopf .abschnitt-titel { margin-bottom: .1rem; }
+  .liste-unter { color: var(--text-muted); font-size: .92rem; margin-bottom: 1.1rem; }
+  .btn-mehr-filter { align-self: flex-start; background: none; border: 1px dashed var(--border-strong);
+    border-radius: 999px; padding: .4rem .9rem; font: inherit; font-size: .84rem; cursor: pointer; color: var(--primary-dark); }
+  .btn-mehr-filter:hover { background: var(--bg-warm); }
+  .filter-mehr { display: flex; flex-direction: column; gap: 1.35rem; }
+  .filter-mehr[hidden] { display: none; }
+  .chip-btn .nr { font-weight: 700; margin-right: .25em; }
+  /* Auf dem Handy stehen die Themen schon im Menue */
+  @media (max-width: 760px) { .themen-start { display: none; } }
 </style>
 </head>
 <body>
@@ -583,42 +567,18 @@
       <circle cx="23.5" cy="15" r="1.7" fill="#003E59"/>
       <path d="M18.6 18.2l1.4 1.9 1.4-1.9z" fill="#B00E2B"/>
     </svg>
-    <div class="wordmark">PapierPanther <span>Ingolstadt</span></div>
-    <span class="header-tag" id="header-tag">Prototyp</span>
-    <span class="header-spacer"></span>
+    <a class="wordmark" href="index.html">PapierPanther <span>Ingolstadt</span></a>
     <button class="btn-leicht" id="btn-leicht" type="button" aria-pressed="false">Leichte Sprache</button>
-    <a class="header-link" href="haushalt.html">Haushalt</a>
-    <a class="header-link" href="hsk.html">Sparplan</a>
-    <a class="header-link" href="klima.html">Klima</a>
-    <a class="header-link" href="miete.html">Miete</a>
-    <a class="header-link" id="header-link" href="#transparenz">Wie das hier funktioniert</a>
   </div>
 </header>
 
 <div class="disclaimer">
   <div class="container">
-    <p id="disclaimer-text">
-      <strong>Ein privates Projekt, kein Angebot der Stadt.</strong>
-      Die Zusammenfassungen entstehen automatisiert und mit KI-Unterstützung —
-      das geht schnell, kann aber Fehler enthalten. Jeder Eintrag verlinkt sein
-      Originaldokument im Ratsinfoportal; dort steht, was gilt.
-    </p>
+    <p id="disclaimer-text"><strong>Privates Projekt, kein Angebot der Stadt.</strong> Die Zusammenfassungen entstehen mit KI-Unterstützung und können Fehler enthalten – verbindlich ist das verlinkte Original. <a href="#transparenz">Mehr dazu</a></p>
   </div>
 </div>
 
 <main id="hauptinhalt">
-  <section class="im-fokus-leiste">
-    <div class="container">
-      <div class="im-fokus-buttons" id="im-fokus-buttons">
-        <a class="fokus-btn" href="antraege.html">Im Fokus: Anträge der Parteien</a>
-        <a class="fokus-btn" href="haushalt.html">Im Fokus: Der Haushalt</a>
-        <a class="fokus-btn" href="hsk.html">Im Fokus: Der Sparplan der Stadt</a>
-        <a class="fokus-btn" href="klima.html">Im Fokus: Klima</a>
-        <a class="fokus-btn" href="miete.html">Im Fokus: Miete</a>
-        <a class="fokus-btn" href="beteiligen.html">Im Fokus: Beteiligen</a>
-      </div>
-    </div>
-  </section>
 
   <section class="hero">
     <div class="container">
@@ -650,24 +610,31 @@
         PapierPanther sammelt sie ein, fasst sie zusammen und sortiert sie
         danach, wen sie betreffen. Suchen Sie einfach Ihren Stadtbezirk.
       </p>
-      <div class="bezirk-wahl" id="bezirk-wahl" hidden>
-        <h2 id="bezirk-wahl-h2">Wo wohnen Sie?</h2>
-        <div class="bezirk-wahl-opts" id="bezirk-wahl-opts" role="group" aria-labelledby="bezirk-wahl-h2"></div>
-      </div>
-      <div class="hero-stats" id="hero-stats"></div>
     </div>
   </section>
 
-  <section class="demnaechst" id="demnaechst" hidden>
+  <section class="blick" id="demnaechst" hidden>
     <div class="container">
-      <details class="demnaechst-details">
-        <summary class="demnaechst-titel" id="demnaechst-titel">Nächste Termine</summary>
-        <ul class="demnaechst-liste" id="demnaechst-liste"></ul>
-      </details>
+      <div class="blick-grid">
+        <div class="blick-spalte" id="blick-termine"></div>
+        <div class="blick-spalte" id="blick-offen"></div>
+        <div class="blick-spalte" id="blick-entschieden"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="themen-start">
+    <div class="container">
+      <h2 class="abschnitt-titel" id="themen-titel">Themen im Überblick</h2>
+      <div class="kompakt" data-themen-kacheln></div>
     </div>
   </section>
 
   <section class="arbeitsflaeche" id="filter">
+    <div class="container liste-kopf">
+      <h2 class="abschnitt-titel" id="liste-titel">Alle Einträge</h2>
+      <p class="liste-unter" id="liste-unter"></p>
+    </div>
     <div class="container">
       <aside class="filter-spalte">
         <div class="search-box">
@@ -703,6 +670,7 @@
 <footer class="site-footer" id="transparenz">
   <div class="container">
     <h2 id="footer-h2">Wie das hier funktioniert</h2>
+    <div class="hero-stats" id="hero-stats"></div>
     <p id="footer-p1">
       Alles auf dieser Seite stammt aus dem Ratsinfoportal der Stadt Ingolstadt
       — den öffentlich einsehbaren Sitzungskalendern, Tagesordnungen und
@@ -777,14 +745,19 @@
   var ERSTE_SEITE = 8;
   var SEITE = 20;
   var gezeigt = ERSTE_SEITE;
+  /* Eintraege ohne Zusammenfassung (nur Titel) blendet die Liste standardmaessig
+     aus -- ausser in der Bezirksansicht, wo sie bei den BZA der Grossteil sind.
+     null = automatisch, true/false = vom Nutzer umgeschaltet. */
+  var mitTiteln = null;
 
   var ACHSEN = [
-    { key: 'status',     textId: 'achseStatus' },
-    { key: 'lebenslage', textId: 'achseLebenslage' },
     { key: 'bezirk',     textId: 'achseBezirk' },
-    { key: 'anlass',     textId: 'achseAnlass' },
-    { key: 'ebene',      textId: 'achseEbene' }
+    { key: 'status',     textId: 'achseStatus' },
+    { key: 'lebenslage', textId: 'achseLebenslage', mehr: true },
+    { key: 'anlass',     textId: 'achseAnlass', mehr: true },
+    { key: 'ebene',      textId: 'achseEbene', mehr: true }
   ];
+  var mehrFilterOffen = false;
   var aktiv = { status: [], lebenslage: [], bezirk: [], anlass: [], ebene: [] };
   var suchbegriff = '';
 
@@ -798,11 +771,9 @@
   try { leicht = localStorage.getItem(LS_KEY_LEICHT) === '1'; } catch (err) { /* Storage kann gesperrt sein */ }
 
   var TEXTE = {
-    headerTag:    { n: 'Prototyp', l: 'Test-Version' },
-    headerLink:   { n: 'Wie das hier funktioniert', l: 'So funktioniert diese Seite' },
     disclaimer: {
-      n: '<strong>Ein privates Projekt, kein Angebot der Stadt.</strong> Die Zusammenfassungen entstehen automatisiert und mit KI-Unterstützung — das geht schnell, kann aber Fehler enthalten. Jeder Eintrag verlinkt sein Originaldokument im Ratsinfoportal; dort steht, was gilt.',
-      l: '<strong>Diese Seite ist nicht von der Stadt Ingolstadt.</strong> Ein Computer-Programm schreibt die Texte. Es nutzt Künstliche Intelligenz. Das geht schnell. Aber es können Fehler passieren. Jeder Eintrag hat einen Link zum Original-Dokument. Dort steht die richtige Information.'
+      n: '<strong>Privates Projekt, kein Angebot der Stadt.</strong> Die Zusammenfassungen entstehen mit KI-Unterstützung und können Fehler enthalten – verbindlich ist das verlinkte Original. <a href="#transparenz">Mehr dazu</a>',
+      l: '<strong>Diese Seite ist nicht von der Stadt.</strong> Ein Computer schreibt die Texte. Dabei können Fehler passieren. Das Original ist immer verlinkt. <a href="#transparenz">Mehr dazu</a>'
     },
     heroH1: {
       n: 'Schanzer Stadtpolitik —<br><em>mit einem Klick. Auf einen Blick.</em>',
@@ -812,7 +783,6 @@
       n: 'Ob Fahrradbügel, Kita-Plätze oder Gebühren: Der Stadtrat und die zwölf Bezirksausschüsse behandeln jede Woche Themen, die den Alltag in Ingolstadt betreffen. Alles steht öffentlich im Ratsinfoportal — nur eben verteilt über hunderte Einzelpunkte in Amtssprache. Der PapierPanther sammelt sie ein, fasst sie zusammen und sortiert sie danach, wen sie betreffen. Suchen Sie einfach Ihren Stadtbezirk.',
       l: 'Der Stadt-Rat trifft viele Entscheidungen. Die 12 Bezirks-Ausschüsse entscheiden mit. Es geht um Rad-Wege, Kita-Plätze oder Gebühren. Alle Infos stehen im Rats-Info-Portal der Stadt. Aber der Text dort ist schwer zu lesen. Der PapierPanther sammelt die Infos. Er schreibt sie einfacher auf. Er sortiert sie nach Thema. Suchen Sie einfach Ihren Stadt-Bezirk.'
     },
-    bezirkWahlH2: { n: 'Wo wohnen Sie?', l: 'Wo wohnen Sie?' },
     bezirkStadtweit: { n: 'Ganz Ingolstadt', l: 'Ganz Ingolstadt' },
     bezirkKopfTitel: { n: '{b}: Das ist hier los', l: '{b}: Das passiert hier' },
     bezirkKopfAnzahl: {
@@ -838,12 +808,25 @@
       l: 'Diese Themen sind noch nicht erklärt. Hier steht nur der Name. Der Link führt zum Original.'
     },
     sammelLink: { n: 'Original', l: 'Original' },
-    demnaechstTitel: { n: 'Nächste Termine', l: 'Was bald passiert' },
-    demnaechstHinweis: {
-      n: 'Tagesordnung noch nicht veröffentlicht',
-      l: 'Es gibt noch keine Liste mit den Themen dafür.',
-    },
-    demnaechstTagesordnung: { n: 'Tagesordnung ansehen', l: 'Die Themen ansehen' },
+    blickTermine: { n: 'Demnächst', l: 'Bald gibt es diese Treffen' },
+    blickTermineU: { n: 'Die nächsten Sitzungen', l: 'Hier wird beraten' },
+    blickOffen: { n: 'Hier können Sie mitreden', l: 'Hier können Sie mitreden' },
+    blickOffenU: { n: 'Noch nicht entschieden – die nächsten zuerst', l: 'Das ist noch nicht entschieden' },
+    blickEnt: { n: 'Zuletzt entschieden', l: 'Das wurde entschieden' },
+    blickEntU: { n: 'Aus den Protokollen – die erscheinen 4 bis 8 Wochen nach der Sitzung', l: 'Das Protokoll kommt erst einige Wochen nach dem Treffen' },
+    blickAlleTermine: { n: 'Alle Termine ({n})', l: 'Alle Termine ({n})' },
+    blickAlleOffen: { n: 'Alle offenen Punkte ({n})', l: 'Alle offenen Themen ({n})' },
+    blickAlleEnt: { n: 'Alle Entscheidungen ({n})', l: 'Alle Entscheidungen ({n})' },
+    blickTO: { n: 'Tagesordnung', l: 'Die Themen' },
+    blickTOfolgt: { n: 'Tagesordnung folgt', l: 'Themen kommen noch' },
+    blickOriginal: { n: 'Original ansehen', l: 'Original ansehen' },
+    mehrFilterAn: { n: 'Mehr Filter: Lebenslage, Anlass, Gremium ▾', l: 'Mehr Auswahl zeigen ▾' },
+    mehrFilterAus: { n: 'Weniger Filter ▴', l: 'Weniger Auswahl zeigen ▴' },
+    listeTitel: { n: 'Alle Einträge', l: 'Alle Themen' },
+    listeUnter: { n: 'Nach Stadtbezirk, Stand oder Stichwort filtern – die neuesten zuerst.', l: 'Hier können Sie suchen. Zum Beispiel nach Ihrem Stadt-Bezirk.' },
+    themenTitel: { n: 'Themen im Überblick', l: 'Themen' },
+    titelZeigen: { n: 'Auch {n} Punkte ohne Zusammenfassung zeigen (nur Titel)', l: 'Auch {n} Themen ohne Erklärung zeigen' },
+    titelVerbergen: { n: 'Nur Einträge mit Zusammenfassung zeigen', l: 'Nur Themen mit Erklärung zeigen' },
     filtersHeadH2: { n: 'Wonach möchten Sie schauen?', l: 'Was möchten Sie sehen?' },
     filtersHint:   { n: 'Mehreres auswählbar', l: 'Sie können mehrere Themen wählen.' },
     filterToggleAn:  { n: 'Filter anzeigen', l: 'Filter zeigen' },
@@ -1219,11 +1202,11 @@
     document.getElementById('footer-meta').textContent = txt2;
   }
 
-  /* "Demnaechst": Sitzungstermine ohne veroeffentlichte Tagesordnung, siehe
-     ris_ingolstadt.py::kommende_termine_auslesen. Bewusst ungekuratiert und
-     ohne Filter — reine Fakten, weil es noch keine Tagesordnung gibt, die
-     man uebersetzen koennte. Genau hier kann man als Buergerin noch
-     einwirken, bevor entschieden wird. */
+  /* "Auf einen Blick" (Nutzerfeedback 2026-10-22): drei Fragen statt einer
+     langen Liste -- Was steht an? (Termine, siehe ris_ingolstadt.py::
+     kommende_termine_auslesen und feed_bauen.py), Wo kann ich mitreden?
+     Was wurde entschieden? Die beiden letzten nur Stadt und Bezirks-
+     ausschuesse; Bezirk-Oberbayern-Themen haetten sie sonst gefuellt. */
   function herkunftLabel(quelle) {
     if (quelle === 'bza') return txt('herkunftBza');
     if (quelle === 'bezirk_obb') return txt('herkunftBezirkObb');
@@ -1251,48 +1234,124 @@
     })[0] || null;
   }
 
+  function isoAus(d) { var m = /(\d\d)\.(\d\d)\.(\d{4})/.exec(d || ''); return m ? m[3] + '-' + m[2] + '-' + m[1] : ''; }
+  var WOCHENTAG = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
+  function kurzDatum(iso) {
+    var d = new Date(iso + 'T12:00:00');
+    return WOCHENTAG[d.getDay()] + ' ' + iso.slice(8, 10) + '.' + iso.slice(5, 7) + '.';
+  }
+  function zeigeAlle(status) {
+    aktiv.status = [status];
+    mitTiteln = null;
+    gezeigt = ERSTE_SEITE;
+    baueFilter();
+    zeichne();
+    scrolleZu(document.getElementById('feed-count'));
+  }
+  function spaltenKopf(box, titel, unter) {
+    box.textContent = '';
+    box.appendChild(el('h2', null, titel));
+    box.appendChild(el('p', 'blick-unter', unter));
+  }
+  function eintragDetails(e, meta, metaKlasse) {
+    var li = el('li');
+    var d = el('details');
+    d.appendChild(el('summary', null, (leicht && e.klartext_titel_leicht) || e.klartext_titel));
+    var text = (leicht && e.klartext_leicht) || e.klartext;
+    if (text) d.appendChild(el('p', null, text));
+    var a = el('a', null, txt('blickOriginal'));
+    a.href = e.vorlage_url || e.sitzung_url; a.target = '_blank'; a.rel = 'noopener';
+    neuerTabHinweis(a);
+    d.appendChild(a);
+    li.appendChild(d);
+    if (meta) li.appendChild(el('span', 'blick-meta ' + (metaKlasse || ''), meta));
+    return li;
+  }
+
   function baueDemnaechst() {
     var sektion = document.getElementById('demnaechst');
-    var heute = heuteIso();
-    var termine = (daten.kommende_termine || []).filter(function (t) { return t.datum >= heute; });
-    if (!termine.length) {
-      sektion.hidden = true;
-      return;
-    }
     sektion.hidden = false;
-    var gezeigtAnzahl = Math.min(termine.length, 8);
-    document.getElementById('demnaechst-titel').textContent =
-      txt('demnaechstTitel') + ' (' + gezeigtAnzahl + ')';
+    var heute = heuteIso();
 
-    var liste = document.getElementById('demnaechst-liste');
-    liste.textContent = '';
-    termine.slice(0, 8).forEach(function (t) {
-      var li = el('li', 'demnaechst-item');
-      li.appendChild(el('span', 'herkunft ' + t.quelle, herkunftLabel(t.quelle)));
-      li.appendChild(el('span', 'demnaechst-datum', t.datum_anzeige));
-      li.appendChild(el('span', 'demnaechst-gremium', sitzungName(t)));
-      var einzelheiten = terminEinzelheiten(t).join(' · ');
-      if (einzelheiten) li.appendChild(el('span', 'demnaechst-info', einzelheiten));
+    /* 1. Termine */
+    var tb = document.getElementById('blick-termine');
+    spaltenKopf(tb, txt('blickTermine'), txt('blickTermineU'));
+    var termine = (daten.kommende_termine || []).filter(function (t) { return t.datum >= heute; });
+    function terminLi(t) {
+      var li = el('li', 'blick-termin');
+      li.appendChild(el('span', 'tag', kurzDatum(t.datum)));
+      li.appendChild(el('span', 'wer', sitzungName(t)));
       if (t.tagesordnung_url) {
-        var ta = el('a', 'demnaechst-info', txt('demnaechstTagesordnung'));
-        ta.href = t.tagesordnung_url;
-        ta.target = '_blank'; ta.rel = 'noopener';
-        neuerTabHinweis(ta);
-        li.appendChild(ta);
+        var a = el('a', 'to', txt('blickTO'));
+        a.href = t.tagesordnung_url; a.target = '_blank'; a.rel = 'noopener';
+        neuerTabHinweis(a);
+        li.appendChild(a);
       } else {
-        li.appendChild(el('span', 'demnaechst-info', txt('demnaechstHinweis')));
+        li.appendChild(el('span', 'to blick-meta', txt('blickTOfolgt')));
       }
-      liste.appendChild(li);
+      return li;
+    }
+    var ul = el('ul', 'blick-liste');
+    termine.slice(0, 5).forEach(function (t) { ul.appendChild(terminLi(t)); });
+    tb.appendChild(ul);
+    if (termine.length > 5) {
+      var mb = el('button', 'blick-mehr', txt('blickAlleTermine').replace('{n}', termine.length));
+      mb.type = 'button';
+      mb.addEventListener('click', function () {
+        termine.slice(5).forEach(function (t) { ul.appendChild(terminLi(t)); });
+        mb.remove();
+      });
+      tb.appendChild(mb);
+    }
+
+    /* 2. Noch offen: mit festem Termin zuerst, naechster zuerst */
+    var ob = document.getElementById('blick-offen');
+    spaltenKopf(ob, txt('blickOffen'), txt('blickOffenU'));
+    var offen = daten.eintraege.filter(function (e) { return e.status === 'Noch offen' && !e.duenn && e.quelle !== 'bezirk_obb'; });
+    var mitTermin = offen.filter(function (e) { return isoAus(e.stand_datum) >= heute; })
+      .sort(function (a, b) { return isoAus(a.stand_datum) < isoAus(b.stand_datum) ? -1 : 1; });
+    var auswahl = mitTermin.concat(offen.filter(function (e) { return mitTermin.indexOf(e) === -1; })).slice(0, 4);
+    var ul2 = el('ul', 'blick-liste');
+    auswahl.forEach(function (e) {
+      var d = isoAus(e.stand_datum);
+      var meta = d >= heute
+        ? (e.stand === 'Entscheidung geplant' ? 'Entscheidung am ' : (leicht ? 'Besprechung am ' : 'Beratung am ')) + e.stand_datum + ' · ' + e.gremium
+        : e.gremium;
+      ul2.appendChild(eintragDetails(e, meta));
     });
+    ob.appendChild(ul2);
+    var b2 = el('button', 'blick-mehr', txt('blickAlleOffen').replace('{n}', offen.length));
+    b2.type = 'button';
+    b2.addEventListener('click', function () { zeigeAlle('Noch offen'); });
+    ob.appendChild(b2);
+
+    /* 3. Zuletzt entschieden */
+    var eb = document.getElementById('blick-entschieden');
+    spaltenKopf(eb, txt('blickEnt'), txt('blickEntU'));
+    var ent = daten.eintraege.filter(function (e) { return e.status === 'Entschieden' && !e.duenn && e.quelle !== 'bezirk_obb'; })
+      .sort(function (a, b) { return isoAus(a.stand_datum) > isoAus(b.stand_datum) ? -1 : 1; });
+    var ul3 = el('ul', 'blick-liste');
+    ent.slice(0, 4).forEach(function (e) {
+      var nein = e.stand === 'Abgelehnt';
+      var teils = e.stand === 'Teilweise beschlossen';
+      var meta = (leicht ? (nein ? 'Nein' : teils ? 'Zum Teil Ja' : 'Ja') : (nein ? 'Abgelehnt' : teils ? 'Teilweise angenommen' : 'Angenommen'))
+        + ' am ' + e.stand_datum;
+      ul3.appendChild(eintragDetails(e, meta, nein ? 'nein' : 'ja'));
+    });
+    eb.appendChild(ul3);
+    var b3 = el('button', 'blick-mehr', txt('blickAlleEnt').replace('{n}', ent.length));
+    b3.type = 'button';
+    b3.addEventListener('click', function () { zeigeAlle('Entschieden'); });
+    eb.appendChild(b3);
   }
 
   function texteAnwenden() {
-    document.getElementById('header-tag').textContent = txt('headerTag');
-    document.getElementById('header-link').textContent = txt('headerLink');
     document.getElementById('disclaimer-text').innerHTML = txt('disclaimer');
     document.getElementById('hero-h1').innerHTML = txt('heroH1');
     document.getElementById('hero-p').textContent = txt('heroP');
-    document.getElementById('bezirk-wahl-h2').textContent = txt('bezirkWahlH2');
+    document.getElementById('liste-titel').textContent = txt('listeTitel');
+    document.getElementById('liste-unter').textContent = txt('listeUnter');
+    document.getElementById('themen-titel').textContent = txt('themenTitel');
     document.getElementById('filters-head-h2').textContent = txt('filtersHeadH2');
     document.getElementById('filters-hint').textContent = txt('filtersHint');
     document.getElementById('btn-reset').textContent = txt('btnReset');
@@ -1324,6 +1383,10 @@
   function baueFilter() {
     var grid = document.getElementById('filter-grid');
     grid.textContent = '';
+    var mehrAktiv = ACHSEN.some(function (a) { return a.mehr && aktiv[a.key].length; });
+    var mehrBox = el('div', 'filter-mehr');
+    mehrBox.id = 'filter-mehr';
+    mehrBox.hidden = !(mehrFilterOffen || mehrAktiv);
     ACHSEN.forEach(function (achse) {
       var gruppe = el('div', 'filter-group');
       var ueberschrift = el('h3', null, txt(achse.textId));
@@ -1336,12 +1399,25 @@
       opts.setAttribute('role', 'group');
       opts.setAttribute('aria-labelledby', ueberschrift.id);
 
-      daten.achsen[achse.key].forEach(function (wert) {
+      var werteListe = daten.achsen[achse.key].slice();
+      if (achse.key === 'bezirk') {
+        /* "Ganz Ingolstadt" ans Ende, wie frueher bei der Bezirkswahl */
+        werteListe.sort(function (x, y) { return (x === 'stadtweit') - (y === 'stadtweit'); });
+      }
+      werteListe.forEach(function (wert) {
         var b = el('button', 'chip-btn');
         b.type = 'button';
         var gedrueckt = aktiv[achse.key].indexOf(wert) !== -1;
         b.setAttribute('aria-pressed', gedrueckt ? 'true' : 'false');
-        b.appendChild(document.createTextNode(achsenwertText(achse.key, wert)));
+        if (achse.key === 'bezirk' && wert === 'stadtweit') {
+          b.appendChild(document.createTextNode(txt('bezirkStadtweit')));
+        } else if (achse.key === 'bezirk' && bezirkNr(wert)) {
+          b.appendChild(el('span', 'nr', bezirkNr(wert)));
+          b.appendChild(document.createTextNode(bezirkName(wert)));
+          b.setAttribute('aria-label', wert);
+        } else {
+          b.appendChild(document.createTextNode(achsenwertText(achse.key, wert)));
+        }
         b.appendChild(el('span', 'count', String(anzahlFuer(achse.key, wert))));
         b.addEventListener('click', function () {
           var liste = aktiv[achse.key];
@@ -1356,8 +1432,20 @@
       });
 
       gruppe.appendChild(opts);
-      grid.appendChild(gruppe);
+      (achse.mehr ? mehrBox : grid).appendChild(gruppe);
     });
+    var mb = el('button', 'btn-mehr-filter', txt(mehrBox.hidden ? 'mehrFilterAn' : 'mehrFilterAus'));
+    mb.type = 'button';
+    mb.setAttribute('aria-expanded', mehrBox.hidden ? 'false' : 'true');
+    mb.setAttribute('aria-controls', 'filter-mehr');
+    mb.addEventListener('click', function () {
+      mehrFilterOffen = mehrBox.hidden;
+      mehrBox.hidden = !mehrBox.hidden;
+      mb.setAttribute('aria-expanded', mehrBox.hidden ? 'false' : 'true');
+      mb.textContent = txt(mehrBox.hidden ? 'mehrFilterAn' : 'mehrFilterAus');
+    });
+    grid.appendChild(mb);
+    grid.appendChild(mehrBox);
     aktualisiereFilterZusammenfassung();
   }
 
@@ -1421,7 +1509,6 @@
     try { localStorage.setItem(LS_KEY_LEICHT, leicht ? '1' : '0'); } catch (err) { /* Storage kann gesperrt sein */ }
     texteAnwenden();
     baueHeroStats();
-    baueBezirkWahl();
     baueFilter();
     baueFooterMeta();
     baueDemnaechst();
@@ -1656,41 +1743,6 @@
     return liste;
   }
 
-  /* ---------------- Bezirkswahl im Hero ---------------- */
-  function baueBezirkWahl() {
-    var bezirke = stadtbezirke();
-    var box = document.getElementById('bezirk-wahl');
-    if (!bezirke.length) { box.hidden = true; return; }
-    box.hidden = false;
-    var opts = document.getElementById('bezirk-wahl-opts');
-    opts.textContent = '';
-    bezirke.concat(daten.achsen.bezirk.indexOf('stadtweit') !== -1 ? ['stadtweit'] : [])
-      .forEach(function (b) {
-        var btn = el('button', 'bezirk-btn' + (b === 'stadtweit' ? ' stadtweit' : ''));
-        btn.type = 'button';
-        btn.setAttribute('data-bezirk', b);
-        if (b === 'stadtweit') {
-          btn.textContent = txt('bezirkStadtweit');
-        } else {
-          btn.appendChild(el('span', 'nr', bezirkNr(b)));
-          btn.appendChild(document.createTextNode(bezirkName(b)));
-          btn.setAttribute('aria-label', b);
-        }
-        btn.addEventListener('click', function () { waehleBezirk(b); });
-        opts.appendChild(btn);
-      });
-    aktualisiereBezirkWahl();
-  }
-
-  function aktualisiereBezirkWahl() {
-    var btns = document.querySelectorAll('.bezirk-btn');
-    for (var i = 0; i < btns.length; i++) {
-      var b = btns[i].getAttribute('data-bezirk');
-      btns[i].setAttribute('aria-pressed',
-        aktiv.bezirk.length && aktiv.bezirk[0] === b ? 'true' : 'false');
-    }
-  }
-
   /* Die Kopfleiste klebt oben (auf dem Handy dreizeilig) — ohne Abzug
      verschwaende die Ueberschrift des Ziels darunter. */
   function scrolleZu(ziel) {
@@ -1701,18 +1753,6 @@
       top: ziel.getBoundingClientRect().top + window.pageYOffset - abzug,
       behavior: ruhig ? 'auto' : 'smooth'
     });
-  }
-
-  function waehleBezirk(b) {
-    aktiv.bezirk = [b];
-    gezeigt = ERSTE_SEITE;
-    baueFilter();
-    zeichne();
-    var ziel = document.getElementById('bezirk-kopf');
-    if (ziel.hidden) ziel = document.getElementById('feed-count');
-    scrolleZu(ziel);
-    var h = ziel.querySelector('h2');
-    if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
   }
 
   /* Kopf der Bezirksansicht: genau ein Stadtbezirk gewaehlt (optional plus
@@ -1758,7 +1798,7 @@
       gezeigt = ERSTE_SEITE;
       baueFilter();
       zeichne();
-      scrolleZu(document.getElementById('bezirk-wahl'));
+      scrolleZu(document.getElementById('filter'));
     });
     akt.appendChild(ba);
     var bm = el('a', null, txt('bezirkMitmachen'));
@@ -1774,11 +1814,14 @@
   var fokusNachRender = null;
 
   function zeichne() {
-    var treffer = daten.eintraege.filter(passt);
+    var alleTreffer = daten.eintraege.filter(passt);
+    var einBezirk = aktiv.bezirk.filter(function (b) { return bezirkNr(b); }).length === 1;
+    var zeigeTitel = mitTiteln === null ? einBezirk : mitTiteln;
+    var titelAnzahl = alleTreffer.filter(function (e) { return e.duenn; }).length;
+    var treffer = zeigeTitel ? alleTreffer : alleTreffer.filter(function (e) { return !e.duenn; });
     var feed = document.getElementById('feed');
     feed.textContent = '';
     urlSchreiben();
-    aktualisiereBezirkWahl();
     zeichneBezirkKopf(treffer);
 
     var gewaehlt = ACHSEN.reduce(function (n, a) { return n + aktiv[a.key].length; }, 0)
@@ -1787,10 +1830,18 @@
       gewaehlt === 0
         ? (leicht
             ? treffer.length + ' Einträge. Das sind alle Themen.'
-            : treffer.length + ' Einträge — alle aufbereiteten Tagesordnungspunkte')
+            : treffer.length + ' Einträge mit Zusammenfassung, die neuesten zuerst')
         : (leicht
-            ? treffer.length + ' von ' + daten.eintraege.length + ' Einträgen passen zu Ihrer Wahl.'
-            : treffer.length + ' von ' + daten.eintraege.length + ' Einträgen passen zu Ihrer Auswahl');
+            ? treffer.length + ' Einträge passen zu Ihrer Wahl.'
+            : treffer.length + ' Einträge passen zu Ihrer Auswahl');
+
+    if (titelAnzahl) {
+      var um = el('button', 'titel-umschalter',
+        zeigeTitel ? txt('titelVerbergen') : txt('titelZeigen').replace('{n}', titelAnzahl));
+      um.type = 'button';
+      um.addEventListener('click', function () { mitTiteln = !zeigeTitel; gezeigt = ERSTE_SEITE; zeichne(); });
+      feed.appendChild(um);
+    }
 
     if (!treffer.length) {
       feed.appendChild(el('div', 'leer', txt('leerFilter')));
@@ -1833,13 +1884,15 @@
   urlLesen();
   texteAnwenden();
   baueHeroStats();
-  baueBezirkWahl();
   baueFilter();
   baueFooterMeta();
   baueDemnaechst();
   zeichne();
 })();
 </script>
+<script src="data/themen.js" defer></script>
+<script src="themen-kacheln.js" defer></script>
+<script src="kopf.js" defer></script>
 <script src="zaehler.js" defer></script>
 </body>
 </html>
