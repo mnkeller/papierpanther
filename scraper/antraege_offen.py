@@ -88,6 +88,17 @@ def hat_termin(beratungsseite):
     return bool(re.search(r"\d\d\.\d\d\.\d{4}(?!\s*\d\d:\d\d:\d\d)", fragment))
 
 
+def termin_aus(beratungsseite):
+    """Erster echter Beratungstermin als JJJJ-MM-TT (siehe hat_termin)."""
+    start = beratungsseite.find('id="smcaccordion"')
+    if start == -1:
+        return ""
+    ende = beratungsseite.find("Letzte", start)
+    fragment = beratungsseite[start:ende] if ende != -1 else beratungsseite[start:start + 3000]
+    m = re.search(r"(\d\d)\.(\d\d)\.(\d{4})(?!\s*\d\d:\d\d:\d\d)", fragment)
+    return f"{m.group(3)}-{m.group(2)}-{m.group(1)}" if m else ""
+
+
 def ziel_gremium(beratungsseite):
     """Zielgremium aus dem Beratungsweg-Header, z. B. 'Stadtrat' aus
     'Stadtrat oeffentlich - Entscheidung'."""
@@ -98,7 +109,16 @@ def ziel_gremium(beratungsseite):
     ende = beratungsseite.find("Letzte", start)
     fragment = sauber(beratungsseite[start:ende] if ende != -1 else beratungsseite[start:start + 2000])
     treffer = re.search(r"^\s*(.+?)\s+öffentlich\s*-\s*Entscheidung", fragment)
-    return treffer.group(1).strip() if treffer else ""
+    if not treffer:
+        return ""
+    # Bei terminierten Antraegen steht davor Datum und Sitzungsname:
+    # "29.10.2026 Stadtrat Stadtrat oeffentlich - Entscheidung".
+    name = re.sub(r"^\d\d\.\d\d\.\d{4}\s+", "", treffer.group(1).strip())
+    woerter = name.split()
+    haelfte = len(woerter) // 2
+    if len(woerter) % 2 == 0 and woerter[:haelfte] == woerter[haelfte:]:
+        name = " ".join(woerter[:haelfte])
+    return name
 
 
 def betreff_lesen(fragment_html):
@@ -121,8 +141,18 @@ def antrag_lesen(kvonr, cache):
     info = hole(f"vo0050.{ENDUNG}?__kvonr={kvonr}", BASIS, cache=cache)
     beratung = hole(f"vo0053.{ENDUNG}?__kvonr={kvonr}", BASIS, cache=cache)
 
+    # Schon terminiert, aber die Tagesordnung dieser Sitzung ist noch nicht
+    # veroeffentlicht: dann taucht der Antrag in rohdaten.json noch nirgends
+    # auf und waere ohne diesen Zweig bis dahin von der Seite verschwunden
+    # (passiert am 22.10.2026 mit zwei Antraegen fuer den Stadtrat am
+    # 29.10.). Er bleibt deshalb hier, mit dem Termin. Liegt der Termin schon
+    # zurueck und steht der Antrag trotzdem in keiner Tagesordnung, ist er
+    # wahrscheinlich nichtoeffentlich beraten worden -- dann weglassen.
+    termin = ""
     if hat_termin(beratung):
-        return None  # inzwischen terminiert -- gehoert in den normalen Lauf
+        termin = termin_aus(beratung)
+        if not termin or termin < date.today().isoformat():
+            return None
 
     betreff_m = re.search(r'class="smc-table-cell vobetr">(.*?)</div>', info)
     if not betreff_m:
@@ -149,6 +179,7 @@ def antrag_lesen(kvonr, cache):
         "vorlage": vorlage,
         "vorlage_url": absolut(f"vo0050.{ENDUNG}?__kvonr={kvonr}", BASIS),
         "ziel_gremium": ziel_gremium(beratung),
+        "termin": termin,
         "dokumente": dokumente_aus(info, BASIS),
     }
 
@@ -178,7 +209,7 @@ def main():
             print(f"  [{i}/{len(neu)}] {kvonr}  {eintrag['titel'][:55]}")
         else:
             uebersprungen += 1
-            print(f"  [{i}/{len(neu)}] {kvonr}  uebersprungen (terminiert oder ungueltig)")
+            print(f"  [{i}/{len(neu)}] {kvonr}  uebersprungen (Termin vorbei oder ungueltig)")
 
     antraege.sort(key=lambda a: a["antragsdatum"] or "", reverse=True)
 
@@ -186,8 +217,10 @@ def main():
         "hinweis": (
             "Antraege ohne Sitzungstermin, aus der Liste 'Aktuelle "
             "Stadtratsantraege' im Ratsinfoportal der Stadt Ingolstadt. "
-            "Sobald ein Antrag terminiert wird, verschwindet er von hier "
-            "und taucht stattdessen ganz normal ueber ris_ingolstadt.py auf."
+            "Sobald die Tagesordnung seiner Sitzung veroeffentlicht ist, "
+            "verschwindet ein Antrag von hier und taucht stattdessen ganz "
+            "normal ueber ris_ingolstadt.py auf. Bis dahin steht ein schon "
+            "angesetzter Termin im Feld 'termin'."
         ),
         "abgerufen_am": date.today().isoformat(),
         "antraege": antraege,
@@ -198,7 +231,8 @@ def main():
         json.dump(ausgabe, f, ensure_ascii=False, indent=2)
 
     print(f"\nGeschrieben: {ziel}")
-    print(f"  {len(antraege)} offene Antraege ohne Termin, {uebersprungen} uebersprungen")
+    mit_termin = sum(1 for a in antraege if a["termin"])
+    print(f"  {len(antraege)} offene Antraege ({mit_termin} schon angesetzt), {uebersprungen} uebersprungen")
 
 
 if __name__ == "__main__":

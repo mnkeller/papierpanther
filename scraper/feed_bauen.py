@@ -475,8 +475,12 @@ def main():
                 "entwurf": kur.get("entwurf", False),
                 "duenn": ist_duenn(kur),
                 # --- abgeleitet ---
-                "stand": "Noch nicht terminiert",
-                "stand_datum": "",
+                # Termin angesetzt, Tagesordnung aber noch nicht online
+                # (antraege_offen.py, Feld "termin").
+                "stand": "Entscheidung geplant" if antrag.get("termin") else "Noch nicht terminiert",
+                "stand_datum": (
+                    ".".join(reversed(antrag["termin"].split("-"))) if antrag.get("termin") else ""
+                ),
                 "status": STATUS_OFFEN,
                 "niederschrift_url": "",
                 "beschluss": None,
