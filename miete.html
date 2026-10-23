@@ -299,6 +299,8 @@
   .wert-text { font-size: 11px; fill: var(--text); font-weight: 600; }
   .halo { paint-order: stroke; stroke: var(--card); stroke-width: 3px; stroke-linejoin: round; }
 
+  .raus-teil + .raus-teil { margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
+  #diagramm-raus .stimmen { margin-top: 1.5rem; }
   .zeitleiste { list-style: none; margin: .5rem 0 0; display: grid; gap: 0; }
   .zeitleiste li {
     display: grid; grid-template-columns: 6.2rem 5.2rem 1fr; gap: .5rem; align-items: baseline;
@@ -450,6 +452,10 @@
         <div id="check-ergebnis"></div>
         <button type="button" class="btn-text" id="check-zuruecksetzen"></button>
       </div>
+
+      <h3 id="txt-raus-h3"></h3>
+      <p id="txt-raus-p"></p>
+      <div class="diagramm" id="diagramm-raus"></div>
     </section>
 
     <!-- B: Ablauf -->
@@ -625,10 +631,10 @@
     "rechner-p": {
       n: "Geben Sie Größe, Baujahr, Lage und Ausstattung ein. Der Rechner ermittelt die ortsübliche Vergleichsmiete " +
         "(netto kalt, ohne Nebenkosten) nach dem Mietspiegel und daraus die Obergrenze der Mietpreisbremse. " +
-        "Ihre Eingaben bleiben im Browser.",
+        "Ihre Eingaben bleiben bei Ihnen im Browser und werden nicht gespeichert oder übermittelt.",
       l: "Geben Sie ein: Wie groß ist die Wohnung? Wann wurde das Haus gebaut? Was gibt es in der Wohnung? " +
         "Der Rechner zeigt: So viel Miete ist üblich. Gemeint ist die Kalt-Miete. Das ist die Miete ohne Heizung und Wasser. " +
-        "Ihre Angaben werden nicht verschickt.",
+        "Ihre Angaben bleiben bei Ihnen. Sie werden nicht gespeichert und nicht verschickt.",
     },
     "f-modus": { n: "Worum geht es?", l: "Was möchten Sie wissen?" },
     "f-flaeche": { n: "Wohnfläche", l: "Wie groß ist die Wohnung?" },
@@ -645,6 +651,12 @@
     "check-p": {
       n: "Die Obergrenze gilt nicht für jede Wohnung. Beantworten Sie die Fragen, um zu sehen, an welcher Stelle eine Ausnahme greift.",
       l: "Die Bremse gilt nicht für jede Wohnung. Beantworten Sie die Fragen mit Ja oder Nein.",
+    },
+    "raus-h3": { n: "Wie viele Wohnungen fallen raus?", l: "Für wie viele Wohnungen gilt die Bremse nicht?" },
+    "raus-p": {
+      n: "Wie viele Wohnungen unter eine Ausnahme fallen, zählt niemand. Die amtliche Statistik und die Münchner " +
+        "Anzeigenauswertung erlauben aber eine Annäherung.",
+      l: "Das zählt niemand genau. Aber es gibt Zahlen, die einen Eindruck geben.",
     },
     "ablauf-h2": { n: "Vom Fragebogen zur Obergrenze", l: "So entsteht der Mietspiegel" },
     "ablauf-p": {
@@ -690,20 +702,10 @@
   };
 
   /* ---------------- Zustand ---------------- */
-  var LS_KEY_RECHNER = "papierpanther-mietrechner";
+  /* Die Eingaben werden bewusst nirgends gespeichert. Den Schluessel einer
+     frueheren Fassung, die sie im localStorage abgelegt hat, raeumen wir weg. */
+  try { localStorage.removeItem("papierpanther-mietrechner"); } catch (err) { /* Storage kann gesperrt sein */ }
   var zustand = { modus: "neu", flaeche: 65, baujahr: "b1980", lage: "normal", haus: "mfh", merkmale: {}, miete: "" };
-  try {
-    var gespeichert = JSON.parse(localStorage.getItem(LS_KEY_RECHNER) || "null");
-    if (gespeichert && typeof gespeichert === "object") {
-      ["modus", "flaeche", "baujahr", "lage", "haus", "miete"].forEach(function (k) {
-        if (gespeichert[k] !== undefined) zustand[k] = gespeichert[k];
-      });
-      if (gespeichert.merkmale && typeof gespeichert.merkmale === "object") zustand.merkmale = gespeichert.merkmale;
-    }
-  } catch (err) { /* Storage kann gesperrt sein */ }
-  function speichern() {
-    try { localStorage.setItem(LS_KEY_RECHNER, JSON.stringify(zustand)); } catch (err) { /* egal */ }
-  }
   var antworten = {};
 
   /* ---------------- Berechnung ---------------- */
@@ -1049,7 +1051,7 @@
     });
     box.appendChild(svg);
     box.appendChild(absatz("diagramm-fuss", t(
-      "Die Zu- und Abschläge werden addiert (zusammen " + proz(r.summe) + ") und dann auf die Basismiete angewendet. Quelle: Mietspiegel Ingolstadt 2025, Tabellen 2 und 3.",
+      "Die Zu- und Abschläge werden addiert (zusammen " + proz(r.summe) + ") und dann auf die Basismiete angewendet. Quelle: Mietspiegel Ingolstadt 2025, Tabellen 1 und 2.",
       "Alle Prozente werden zusammengezählt: " + proz(r.summe) + ".")));
   }
 
@@ -1130,6 +1132,110 @@
     document.getElementById("check-zuruecksetzen").textContent = t("Antworten zurücksetzen", "Noch mal von vorn");
   }
   document.getElementById("check-zuruecksetzen").addEventListener("click", function () { antworten = {}; baueCheck(); });
+
+  /* ---------------- Wie viele fallen raus? ---------------- */
+  function gestapelt(titelText, segmente, fuss, musterId) {
+    var teil = el("div", "raus-teil");
+    teil.appendChild(absatz("diagramm-titel", titelText));
+    teil.appendChild(legende(segmente.map(function (s) {
+      return { farbe: s.farbe, klasse: s.schraffur ? "schraffur" : "", text: s.text };
+    })));
+    var W = 760, H = 54, BH = 36;
+    var summe = segmente.reduce(function (a, s) { return a + s.wert; }, 0);
+    var svg = svgEl("svg", { viewBox: "0 0 " + W + " " + H, role: "img",
+      "aria-label": segmente.map(function (s) { return s.text + ": " + zahl(s.wert / summe * 100) + " %"; }).join(", ") });
+    var defs = svgEl("defs", {});
+    svg.appendChild(defs);
+    var x = 0;
+    segmente.forEach(function (s, i) {
+      var w = s.wert / summe * W;
+      var fill = s.farbe;
+      if (s.schraffur) {
+        var id = musterId + "-" + i;
+        defs.appendChild(schraffur(id, s.farbe));
+        fill = "url(#" + id + ")";
+      }
+      svg.appendChild(svgEl("rect", { x: x, y: 4, width: Math.max(w - 2, 1), height: BH, rx: 3, fill: fill }, [
+        titel(s.text + ": " + zahl(s.wert) + " (" + zahl(s.wert / summe * 100) + " %)") ]));
+      if (w > 60) {
+        var tx = text(x + w / 2, 4 + BH / 2 + 5, zahl(s.wert / summe * 100) + " %", "wert-text halo", "middle");
+        svg.appendChild(tx);
+      }
+      x += w;
+    });
+    teil.appendChild(svg);
+    if (fuss) teil.appendChild(absatz("diagramm-fuss", fuss));
+    return teil;
+  }
+
+  function baueRaus() {
+    var Z = D.ausnahmen_zahlen;
+    var box = document.getElementById("diagramm-raus");
+    box.innerHTML = "";
+    var IN = Z.ingolstadt;
+    var neu = IN.fertig.reduce(function (a, z) { return a + z[1]; }, 0);
+    var von = IN.fertig[0][0], bis = IN.fertig[IN.fertig.length - 1][0];
+    box.appendChild(gestapelt(
+      t("Ingolstadt: alle Wohnungen, Stand " + IN.bestand_stand, "Ingolstadt: alle Wohnungen"),
+      [
+        { wert: neu, farbe: farbe("--zuschlag"), schraffur: true,
+          text: t("gebaut " + von + "–" + bis + " (" + zahl(neu) + "): Bremse gilt nicht", "neu gebaut seit " + von + ": Bremse gilt nicht") },
+        { wert: IN.bestand - neu, farbe: farbe("--spanne"),
+          text: t("älter (" + zahl(IN.bestand - neu) + ")", "ältere Wohnungen") },
+      ],
+      t("Etwa jede siebte Wohnung in Ingolstadt ist seit " + von + " fertig geworden und bei jeder Vermietung von der Bremse ausgenommen. " +
+        "Das ist eine Annäherung: Mitgezählt sind auch selbst genutzte Eigenheime und Umbauten in bestehenden Gebäuden. " +
+        "Unter den Neuvermietungen dürfte der Anteil höher sein, weil jede neue Wohnung mindestens einmal erstvermietet wird. " +
+        "Zahlen zu möblierten, befristeten oder Index-Mietverträgen gibt es für Ingolstadt nicht.",
+        "Etwa jede siebte Wohnung ist neu. Für neue Wohnungen gilt die Bremse nicht."),
+      "muster-ing"));
+
+    var M = Z.muenchen;
+    var mSumme = M.moebliert + M.erstbezug + M.wiedervermietung;
+    box.appendChild(gestapelt(
+      t("München: Mietwohnungen in Online-Anzeigen " + M.jahr + " (rund " + zahl(mSumme) + ")", "München: Wohnungs-Anzeigen " + M.jahr),
+      [
+        { wert: M.erstbezug, farbe: farbe("--zuschlag"), schraffur: true,
+          text: t("Neubau, Erstbezug unmöbliert: Bremse gilt nicht", "Neubau: Bremse gilt nicht") },
+        { wert: M.moebliert, farbe: farbe("--zuschlag"),
+          text: t("möbliert, oft auf Zeit: Bremse kaum prüfbar", "mit Möbeln: schwer zu prüfen") },
+        { wert: M.wiedervermietung, farbe: farbe("--spanne"),
+          text: t("unmöbliert, Wiedervermietung: Bremse gilt", "ohne Möbel, schon vorher vermietet: Bremse gilt") },
+      ],
+      t("Fast jede zweite Mietanzeige in München ist möbliert oder ein Neubau. Möblierte Bestandswohnungen wurden " + M.jahr +
+        " rund 28 % teurer angeboten als unmöblierte. Portale zeigen eher den teureren Teil des Marktes; " +
+        "unter den Wiedervermietungen stecken zudem Wohnungen ab 2015, " +
+        "für die die Bremse ebenfalls nicht gilt – wie viele, weist die Auswertung nicht aus.",
+        "Fast jede zweite Anzeige in München ist eine neue Wohnung oder eine Wohnung mit Möbeln."),
+      "muster-muc"));
+
+    var B = Z.befragung, BM = Z.bestand_moebliert;
+    var ul = el("ul", "stimmen");
+    var li1 = document.createElement("li");
+    var w1 = el("span", "wer"); w1.appendChild(lnk(B.url, t("Befragung in München " + B.jahr, "Umfrage in München")));
+    li1.appendChild(w1);
+    li1.appendChild(document.createTextNode(t(
+      "Von rund " + zahl(B.befragte) + " befragten Münchner Mieterinnen und Mietern hatten nur " + zahl(B.anteil, 1) +
+      " % die Mietpreisbremse geltend gemacht; viele fürchteten Ärger mit dem Vermieter. (Quelle: " + B.quelle + ".)",
+      "Nur etwa 2 von 100 Mietern haben sich auf die Bremse berufen. Viele haben Angst vor Ärger.")));
+    ul.appendChild(li1);
+    var li2 = document.createElement("li");
+    var w2 = el("span", "wer"); w2.appendChild(lnk(BM.url, t("Gegenposition: Haus & Grund", "Der Vermieter-Verein sagt")));
+    li2.appendChild(w2);
+    li2.appendChild(document.createTextNode(t(
+      "Bezogen auf alle bestehenden Mietverhältnisse waren " + BM.jahr + " höchstens " + zahl(BM.anteil_max, 1) +
+      " % möbliert auf Zeit vermietet. Das widerspricht den Anzeigen nicht unbedingt: Solche Wohnungen wechseln oft den Mieter " +
+      "und tauchen deshalb im Angebot viel häufiger auf als im Bestand.",
+      "Nur wenige Wohnungen sind insgesamt mit Möbeln auf Zeit vermietet. Aber sie werden oft neu angeboten.")));
+    ul.appendChild(li2);
+    box.appendChild(ul);
+    var q = el("p", "diagramm-fuss");
+    q.appendChild(document.createTextNode(t("Quellen: ", "Woher die Zahlen kommen: ")));
+    q.appendChild(lnk(IN.url, IN.quelle));
+    q.appendChild(document.createTextNode("; "));
+    q.appendChild(lnk(M.url, M.quelle));
+    box.appendChild(q);
+  }
 
   /* ---------------- Ablauf, Zeitleiste, Akteure ---------------- */
   function baueStationen() {
@@ -1358,7 +1464,7 @@
     });
     box.appendChild(ul);
     box.appendChild(absatz("", t("Stand der Angaben: " + datumDE(D.stand) + ". Die Mietspiegel-Werte sind von Hand aus dem Bericht übernommen (<code>data/miete.js</code>); " +
-      "gerechnet wird nur im Browser, Eingaben werden nicht übertragen.",
+      "gerechnet wird nur im Browser, Eingaben werden weder gespeichert noch übermittelt.",
       "Stand: " + datumDE(D.stand) + ".")));
   }
 
@@ -1391,7 +1497,6 @@
   /* nurWerte: Formular nicht neu aufbauen (sonst verliert ein Textfeld beim
      Tippen den Fokus). */
   function aktualisiere(nurWerte) {
-    speichern();
     if (!nurWerte) baueFormular();
     formularWerteSetzen();
     var r = rechne();
@@ -1410,6 +1515,7 @@
     baueKennzahlen();
     aktualisiere();
     baueCheck();
+    baueRaus();
     baueStationen();
     baueZeitleiste();
     baueAkteure();

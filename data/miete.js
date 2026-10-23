@@ -2,10 +2,13 @@
    Quelle der Mietspiegel-Werte: "Fortschreibung 2025 des qualifizierten
    Mietspiegels 2023 fuer die Stadt Ingolstadt", DOMUS Consult, Bericht vom
    06.05.2025, Tab. 2 (Basismiete) und Tab. 3 (Zu- und Abschlaege), Abschnitt
-   4.2 (Spanne). Bei einem neuen Mietspiegel (Befragung voraussichtlich
+   4.2 (Spanne). Massgeblich ist die amtliche Broschuere "Qualifizierter
+   Mietspiegel fuer nicht preisgebundenen Wohnraum November 2025" (Tabelle 1
+   und 2); sie weicht beim Aufzug ab (+6 % statt +5 % im Bericht), hier gilt
+   der Wert der Broschuere. Bei einem neuen Mietspiegel (Befragung voraussichtlich
    2. Quartal 2027) diese Datei komplett abgleichen. */
 window.MIETE_DATEN = {
-  stand: "2026-10-20",
+  stand: "2026-10-23",
   mietspiegel: {
     titel: "Qualifizierter Mietspiegel Ingolstadt 2025–2027",
     gueltig_ab: "01.11.2025",
@@ -64,7 +67,7 @@ window.MIETE_DATEN = {
       { id: "elektro", gruppe: "mod", n: "Elektroinstallation nach 2009 erneuert", l: "Neue Strom-Leitungen nach 2009", wert: 5 },
       { id: "sanitaer", gruppe: "mod", n: "Bad nach 2009 erneuert (Fliesen, WC, Wanne/Dusche, Waschbecken)", l: "Neues Bad nach 2009", wert: 8 },
       { id: "ebk", gruppe: "aus", n: "Einbauküche (Schränke, Spüle, Herd, Kühlschrank)", l: "Küche ist schon eingebaut", wert: 9 },
-      { id: "aufzug", gruppe: "aus", n: "Aufzug", l: "Es gibt einen Aufzug", wert: 5 },
+      { id: "aufzug", gruppe: "aus", n: "Aufzug", l: "Es gibt einen Aufzug", wert: 6 },
       { id: "dusche", gruppe: "aus", n: "Bodengleiche Dusche", l: "Dusche ohne Stufe", wert: 5 },
       { id: "keineheizung", gruppe: "aus", n: "Keine Zentral- oder Etagenheizung (z. B. Nachtspeicher, Einzelöfen)", l: "Keine Zentral-Heizung", wert: -14 },
       { id: "durchgang", gruppe: "aus", n: "Durchgangszimmer", l: "Man muss durch ein Zimmer gehen, um in ein anderes zu kommen", wert: -9 },
@@ -202,6 +205,37 @@ window.MIETE_DATEN = {
     { datum: "2029-12-31", ebene: "bund", n: "Mietpreisbremse läuft aus, wenn nicht verlängert", l: "Die Bremse endet, wenn nichts passiert" }
   ],
 
+  /* Wie viele Wohnungen fallen aus der Bremse? Eine direkte Zahl gibt es
+     nicht; das sind die besten Naeherungen. */
+  ausnahmen_zahlen: {
+    ingolstadt: {
+      /* Baufertigstellungen: Wohnungen in Wohn- und Nichtwohngebaeuden,
+         einschl. Baumassnahmen an bestehenden Gebaeuden (Tab. 18).
+         2015/2016 aus der Ausgabe 2019, 2017-2024 aus der Ausgabe 2025.
+         Bestand 31.12.2024 aus Tab. 16 der Ausgabe 2025. */
+      fertig: [[2015, 1208], [2016, 1477], [2017, 1050], [2018, 1373], [2019, 1020],
+               [2020, 1127], [2021, 814], [2022, 931], [2023, 709], [2024, 763]],
+      bestand: 73859, bestand_stand: "31.12.2024",
+      quelle: "Bayerisches Landesamt für Statistik, Statistik kommunal 2025 und 2019, Kreisfreie Stadt Ingolstadt",
+      url: "https://www.statistik.bayern.de/mam/produkte/statistik_kommunal/2025/09161.pdf"
+    },
+    muenchen: {
+      jahr: 2025, moebliert: 10600, erstbezug: 3500, wiedervermietung: 16200,
+      quelle: "Landeshauptstadt München, Wohnungsmarktbarometer 2025 (Auswertung der Anzeigen auf ImmoScout24)",
+      url: "https://stadt.muenchen.de/dam/jcr:aad6e9c7-87b7-411e-ade8-8c83d72bc6a9/LHM_Wohnungsmarktbarometer2025_RZ-01.pdf"
+    },
+    befragung: {
+      anteil: 2.4, befragte: 10000, jahr: 2024,
+      quelle: "Finanztip über eine Befragung der LMU München (Originalbericht nicht auffindbar)",
+      url: "https://www.finanztip.de/mietpreisbremse/"
+    },
+    bestand_moebliert: {
+      anteil_max: 0.8, jahr: 2022,
+      quelle: "Haus & Grund Deutschland: Studie zu möbliertem Wohnen auf Zeit",
+      url: "https://www.hausundgrund-verband.de/aktuelles/einzelansicht/studie-zeigt-hoechstens-08-prozent-der-wohnungen-moebliert-auf-zeit-vermietet/"
+    }
+  },
+
   /* Wer profitiert? Bewusst knapp und mit Beleg. */
   akteure: [
     { wer: { n: "Neue Mieter", l: "Neue Mieter" }, plus: { n: "Haben einen Anspruch auf die Grenze und können zu viel Gezahltes zurückfordern.", l: "Sie können zu viel bezahltes Geld zurückholen." },
@@ -282,6 +316,7 @@ window.MIETE_DATEN = {
 
   quellen: [
     { text: "Stadt Ingolstadt: Qualifizierter Mietspiegel (Broschüre, Fortschreibung 2025, Methodenbericht, Straßen- und Wohnlagenverzeichnis)", url: "https://www.ingolstadt.de/mietspiegel" },
+    { text: "Stadt Ingolstadt: Qualifizierter Mietspiegel für nicht preisgebundenen Wohnraum, November 2025 (Broschüre, Tabellen 1 und 2)", url: "https://www.ingolstadt.de/output/download.php?fid=3052.9046.1.PDF" },
     { text: "DOMUS Consult: Fortschreibung 2025 des qualifizierten Mietspiegels 2023, Bericht vom 06.05.2025", url: "https://www.ingolstadt.de/output/download.php?fid=3052.9049.1.PDF" },
     { text: "Bayerische Mieterschutzverordnung (MiSchuV) vom 16.12.2025", url: "https://www.gesetze-bayern.de/Content/Document/BayMiSchuV2025/true" },
     { text: "Bürgerliches Gesetzbuch §§ 556d–556g (Mietpreisbremse), § 558 (Mieterhöhung, Kappungsgrenze), §§ 558c–558d (Mietspiegel)", url: "https://www.gesetze-im-internet.de/bgb/__556d.html" },

@@ -104,9 +104,10 @@ Ladesäulenregister) und dauert etwa zwei Minuten.
 
 Kein Skript: `data/miete.js` (window.MIETE_DATEN) ist von Hand gepflegt.
 
-- Basismiete und Zu-/Abschläge aus der „Fortschreibung 2025 des qualifizierten
-  Mietspiegels 2023“ (DOMUS Consult, Tab. 2 und 3), gültig bis 31.10.2027.
-  Der Rechner läuft nur im Browser; die Eingaben bleiben im localStorage.
+- Basismiete und Zu-/Abschläge aus der amtlichen Mietspiegel-Broschüre
+  November 2025 (Tabellen 1 und 2), gültig bis 31.10.2027. Der Bericht zur
+  Fortschreibung weicht beim Aufzug ab (+5 statt +6 %); es gilt die Broschüre.
+  Der Rechner läuft nur im Browser; Eingaben werden weder gespeichert noch übermittelt.
 - Mietpreisbremse und Kappungsgrenze laut Bayerischer Mieterschutzverordnung
   (Ingolstadt: Anlage Nr. 1.1.1).
 - Ablauf, Ausnahmen, Zeitleiste, „Wer profitiert?“ und die Stadtratsvorgänge
