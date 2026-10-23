@@ -50,6 +50,11 @@ def main():
         miete = f.read()
     gueltig_bis = re.search(r'gueltig_bis: "([^"]+)"', miete).group(1)
 
+    with open(os.path.join(DATEN_VZ, "wohnen.js"), encoding="utf-8") as f:
+        wohnen = f.read()
+    hh = re.search(r'haushalte: \{\s*2022: \{ gesamt: (\d+), eigentum: (\d+), miete: (\d+)', wohnen)
+    miet_anteil = int(hh.group(3)) / int(hh.group(1)) * 100
+
     kacheln = [
         dict(href="antraege.html", farbe="#5b4b8a",
              titel="Anträge der Parteien", titel_l="Anträge der Parteien",
@@ -74,6 +79,11 @@ def main():
              text=f"gibt es in Ingolstadt ({solar['jahr']}), dazu {de(ladepunkte)} öffentliche Ladepunkte. "
                   "Plus: Wetter seit 1961.",
              text_l="So viele Anlagen machen in Ingolstadt Strom aus Sonne."),
+        dict(href="wohnen.html", farbe="#4d5a1f",
+             titel="Wohnen", titel_l="Wohnen",
+             zahl=f"{de(miet_anteil, 1)} %",
+             text="der Haushalte wohnen zur Miete. Wem die Wohnungen gehören und wie viele leer stehen (Zensus 2022).",
+             text_l="So viele Haushalte wohnen zur Miete. Und: Wem gehören die Wohnungen?"),
         dict(href="miete.html", farbe="#96551f",
              titel="Miete", titel_l="Miete",
              zahl=f"bis {gueltig_bis}",

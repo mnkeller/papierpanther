@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://mnkeller.goatcounter.com; base-uri 'self'; form-action 'self'">
+<title>Wohnen in Ingolstadt — PapierPanther</title>
+<meta name="description" content="Wie Ingolstadt wohnt: Wer mietet, wer besitzt, wem die Wohnungen gehören und wie viele leer stehen – mit den Zahlen aus dem Zensus 2022.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://schanzer-papierpanther.de/wohnen.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PapierPanther Ingolstadt">
+<meta property="og:url" content="https://schanzer-papierpanther.de/wohnen.html">
+<meta property="og:title" content="Wohnen in Ingolstadt — PapierPanther">
+<meta property="og:description" content="Mieten oder besitzen, Eigentümer, Leerstand: die Ingolstädter Zahlen aus dem Zensus 2022.">
+<meta property="og:image" content="https://schanzer-papierpanther.de/vorschau.png">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Wohnen in Ingolstadt — PapierPanther">
+<meta name="twitter:image" content="https://schanzer-papierpanther.de/vorschau.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003E59'/%3E%3Cpath d='M18 30c0-8 5-15 14-15s14 7 14 15' fill='none' stroke='%23ffffff' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M17 22c-2-4-2-8 1-11 1 3 1 6 3 8z' fill='%23ffffff'/%3E%3Cpath d='M47 22c2-4 2-8-1-11-1 3-1 6-3 8z' fill='%23ffffff'/%3E%3Ccircle cx='25' cy='31' r='3' fill='%23ffffff'/%3E%3Ccircle cx='39' cy='31' r='3' fill='%23ffffff'/%3E%3Cpath d='M30 38l2 3 2-3z' fill='%23B00E2B'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --primary: #003e59;
+    --primary-dark: #00263a;
+    --accent: #b00e2b;
+    --text: #16232b;
+    --text-muted: #566a74;
+    --text-faint: #5c6a72;
+    --bg: #f8f7f4;
+    --bg-warm: #f1efe9;
+    --card: #ffffff;
+    --border: #e4e0d8;
+    --border-strong: #8f8779;
+    --warn-bg: #fdf6e7;
+    --warn-border: #e8d9b0;
+    --warn-tx: #7d6320;
+    /* Balken: Ingolstadt in Petrol, Vergleichsstaedte in Grau, der
+       "sofort vermietbare" Teil des Leerstands in Ocker wie auf der Mieteseite. */
+    --ingolstadt: #003e59;
+    --vergleich: #b9b2a5;
+    --leer: #d5e3e7;
+    --marktaktiv: #b6752f;
+    --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+    --radius: 10px;
+    --shadow: 0 1px 3px rgba(22,35,43,.06), 0 0 0 1px rgba(22,35,43,.04);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-body); color: var(--text); background: var(--bg);
+    line-height: 1.65; font-size: 16px; -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
+  a { color: var(--accent); }
+
+  .site-header {
+    background: var(--primary); border-bottom: 3px solid var(--accent);
+    padding: .85rem 0; position: sticky; top: 0; z-index: 50;
+  }
+  .site-header .container { display: flex; align-items: center; gap: .65rem; flex-wrap: wrap; }
+  .logo-mark { flex: none; display: block; }
+  .brand {
+    font-family: var(--font-display); font-size: 1.28rem; font-weight: 700;
+    letter-spacing: -.01em; color: #fff; text-decoration: none;
+  }
+  .brand span { color: #a9c7d6; font-weight: 400; }
+  .btn-leicht {
+    font: inherit; font-size: .82rem; cursor: pointer;
+    background: none; border: 1px solid rgba(255,255,255,.5); color: #fff;
+    padding: .3rem .75rem; border-radius: 999px;
+  }
+  .btn-leicht:hover { background: rgba(255,255,255,.14); }
+  .btn-leicht[aria-pressed="true"] {
+    background: #fff; color: var(--primary-dark); border-color: #fff; font-weight: 600;
+  }
+
+  main { padding: 3rem 0 3.5rem; }
+  h1 {
+    font-family: var(--font-display); font-size: clamp(1.75rem, 4.5vw, 2.4rem);
+    font-weight: 700; letter-spacing: -.02em; margin-bottom: .5rem; max-width: 20ch;
+  }
+  .lede { color: var(--text-muted); font-size: 1.05rem; max-width: 62ch; margin-bottom: 1.75rem; }
+  .sprungmarken { display: flex; flex-wrap: wrap; gap: .4rem; margin: -.75rem 0 1.75rem; }
+  .sprungmarken a {
+    font-size: .82rem; text-decoration: none; color: var(--primary-dark);
+    border: 1px solid var(--border-strong); border-radius: 999px; padding: .2rem .75rem; background: var(--card);
+  }
+  .sprungmarken a:hover { background: var(--bg-warm); }
+
+  .disclaimer {
+    background: var(--warn-bg); border-bottom: 1px solid var(--warn-border);
+    color: var(--warn-tx); font-size: .74rem; padding: .5rem 0;
+  }
+  .disclaimer strong { font-weight: 600; }
+  .disclaimer p { max-width: 680px; }
+
+  h2 {
+    font-family: var(--font-display); font-size: 1.5rem; font-weight: 700;
+    margin: 3rem 0 .75rem; letter-spacing: -.01em;
+  }
+  h3 { font-size: 1.05rem; font-weight: 700; margin: 2rem 0 .5rem; }
+  p { margin-bottom: 1rem; max-width: 68ch; }
+
+  .diagramm, .karte {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: 1.5rem 1.5rem 1.25rem; margin: 1.25rem 0 2rem;
+    max-width: 100%;
+  }
+  @media (max-width: 640px) { .diagramm, .karte { padding: 1.1rem 1rem 1rem; } }
+  .diagramm-titel { font-size: .95rem; font-weight: 600; color: var(--text); margin-bottom: .9rem; }
+  .diagramm-fuss { font-size: .78rem; color: var(--text-faint); margin-top: .9rem; margin-bottom: 0; }
+  .legende { display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; font-size: .8rem; color: var(--text-muted); margin-bottom: .75rem; }
+  .legende span { display: inline-flex; align-items: center; gap: .4rem; }
+  .legende i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; }
+
+  .kennzahlen {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: .75rem; margin: 0 0 .5rem;
+  }
+  .kachel {
+    background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+    box-shadow: var(--shadow); padding: .9rem 1rem 1rem;
+    min-width: 0; overflow-wrap: break-word; hyphens: auto;
+  }
+  .kachel p { margin: 0; }
+  .kachel-label { font-size: .8rem; font-weight: 600; color: var(--text-muted); line-height: 1.4; min-height: 2.8em; }
+  .kachel .kachel-wert {
+    font-family: var(--font-display); font-size: 1.4rem; font-weight: 700;
+    color: var(--text); line-height: 1.25; margin: .15rem 0 .3rem; white-space: nowrap;
+  }
+  .kachel-unter { font-size: .8rem; color: var(--text-faint); line-height: 1.45; }
+  .stichtag { font-size: .8rem; color: var(--text-faint); margin: .25rem 0 0; }
+  @media (max-width: 480px) {
+    .kennzahlen { grid-template-columns: 1fr 1fr; gap: .5rem; }
+    .kachel { padding: .7rem .75rem .8rem; }
+    .kachel .kachel-wert { font-size: 1.2rem; }
+    .kachel-label, .kachel-unter { font-size: .74rem; }
+  }
+
+  /* ---------- Balken (HTML statt SVG, damit sie auf dem Handy umbrechen) ---------- */
+  .balken { display: grid; gap: .55rem; --skala: .78; }
+  .b-zeile { display: grid; grid-template-columns: minmax(8rem, 15rem) 1fr; gap: .2rem .9rem; align-items: center; }
+  .b-label { font-size: .86rem; line-height: 1.35; }
+  .b-zeile.betont .b-label { font-weight: 700; }
+  .b-spuren { display: grid; gap: .2rem; }
+  .b-spur { display: flex; align-items: center; gap: .5rem; min-width: 0; }
+  .b-balken { height: 1.05rem; border-radius: 3px; background: var(--vergleich); flex: none; min-width: 2px; }
+  .b-balken.ingolstadt { background: var(--ingolstadt); }
+  .b-balken.leer { background: var(--leer); }
+  .b-balken.marktaktiv { background: var(--marktaktiv); height: .7rem; }
+  .b-zahl { font-size: .8rem; font-weight: 600; font-variant-numeric: tabular-nums; min-width: 0; line-height: 1.3; }
+  .b-zahl small { font-weight: 400; color: var(--text-faint); font-size: .76rem; }
+  @media (max-width: 560px) {
+    .b-zeile { grid-template-columns: 1fr; }
+    .balken { --skala: .5; }
+  }
+
+  .kasten {
+    background: var(--bg-warm); border-left: 3px solid var(--primary); border-radius: 0 var(--radius) var(--radius) 0;
+    padding: .9rem 1.1rem; margin: 1.25rem 0 2rem; max-width: 68ch;
+  }
+  .kasten h3 { margin: 0 0 .35rem; font-size: 1rem; }
+  .kasten p { font-size: .92rem; margin-bottom: .5rem; }
+  .kasten p:last-child { margin-bottom: 0; }
+
+  .weiter { font-size: .92rem; }
+
+  .fehlt-liste { list-style: none; margin: .5rem 0 0; display: grid; gap: .5rem; }
+  .fehlt-liste li {
+    background: var(--card); border: 1px dashed var(--border-strong); border-radius: var(--radius);
+    padding: .65rem .9rem; font-size: .9rem;
+  }
+  .fehlt-liste strong { font-weight: 600; }
+  .fehlt-liste span { color: var(--text-muted); }
+
+  .quellen { font-size: .82rem; color: var(--text-faint); }
+  .quellen a { color: var(--primary-dark); }
+  .quellen ul { list-style: none; display: grid; gap: .25rem; margin-top: .5rem; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+  .stand { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--border-strong); }
+  .site-footer {
+    border-top: 1px solid var(--border); background: var(--bg-warm);
+    padding: 1.75rem 0; font-size: .85rem; color: var(--text-muted);
+  }
+  .site-footer .container { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+  .site-footer a { color: var(--primary-dark); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .ladehinweis { color: var(--text-faint); font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <svg class="logo-mark" width="34" height="34" viewBox="0 0 40 40" aria-hidden="true">
+      <rect x="9" y="17" width="22" height="16" rx="2" fill="#f1efe9"/>
+      <path d="M27 17h4v4z" fill="#B00E2B"/>
+      <path d="M11 18c0-7.5 4-12 9-12s9 4.5 9 12" fill="#fff"/>
+      <path d="M13 15 L9.5 5 L17.5 11.5 Z" fill="#fff"/>
+      <path d="M27 15 L30.5 5 L22.5 11.5 Z" fill="#fff"/>
+      <circle cx="16.5" cy="15" r="1.7" fill="#003E59"/>
+      <circle cx="23.5" cy="15" r="1.7" fill="#003E59"/>
+      <path d="M18.6 18.2l1.4 1.9 1.4-1.9z" fill="#B00E2B"/>
+    </svg>
+    <a class="brand" href="index.html">PapierPanther <span>Ingolstadt</span></a>
+    <button class="btn-leicht" id="btn-leicht" type="button" aria-pressed="false">Leichte Sprache</button>
+  </div>
+</header>
+
+<div class="disclaimer">
+  <div class="container">
+    <p id="txt-hinweis"></p>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+    <h1 id="txt-h1"></h1>
+    <p class="lede" id="txt-lede"></p>
+    <nav class="sprungmarken" aria-label="Abschnitte">
+      <a href="#wohnform" id="txt-sprung-wohnform"></a>
+      <a href="#eigentum" id="txt-sprung-eigentum"></a>
+      <a href="#leerstand" id="txt-sprung-leerstand"></a>
+      <a href="miete.html" id="txt-sprung-miete"></a>
+    </nav>
+
+    <!-- 0: Auf einen Blick -->
+    <section id="blick" aria-labelledby="txt-blick-h2">
+      <h2 class="sr-only" id="txt-blick-h2"></h2>
+      <div class="kennzahlen" id="kennzahlen"><p class="ladehinweis">Lade Zahlen …</p></div>
+      <p class="stichtag" id="txt-stichtag"></p>
+    </section>
+
+    <!-- 1: Mieten oder besitzen? -->
+    <section id="wohnform">
+      <h2 id="txt-wohnform-h2"></h2>
+      <p id="txt-wohnform-p1"></p>
+      <div class="diagramm" id="diagramm-wohnform"></div>
+      <p id="txt-wohnform-p2"></p>
+      <p class="weiter" id="txt-wohnform-weiter"></p>
+    </section>
+
+    <!-- 2: Wem gehoeren die Wohnungen? -->
+    <section id="eigentum">
+      <h2 id="txt-eigentum-h2"></h2>
+      <p id="txt-eigentum-p1"></p>
+      <div class="diagramm" id="diagramm-eigentum"></div>
+      <div class="kasten" id="kasten-gwg"></div>
+      <h3 id="txt-miete-h3"></h3>
+      <p id="txt-miete-p"></p>
+      <div class="diagramm" id="diagramm-miete"></div>
+    </section>
+
+    <!-- 3: Leerstand -->
+    <section id="leerstand">
+      <h2 id="txt-leer-h2"></h2>
+      <p id="txt-leer-p1"></p>
+      <p id="txt-leer-p2"></p>
+      <div class="diagramm" id="diagramm-leer"></div>
+      <h3 id="txt-leer-wer-h3"></h3>
+      <p id="txt-leer-wer-p"></p>
+      <div class="diagramm" id="diagramm-leer-wer"></div>
+      <h3 id="txt-leer-nicht-h3"></h3>
+      <p id="txt-leer-nicht-p"></p>
+    </section>
+
+    <section id="fehlt">
+      <h2 id="txt-fehlt-h2"></h2>
+      <p id="txt-fehlt-p"></p>
+      <ul class="fehlt-liste" id="fehlt-liste"></ul>
+    </section>
+
+    <div class="stand quellen" id="quellen-block"><p>Lade Quellenangaben …</p></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <a href="index.html">Übersicht</a>
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="https://github.com/mnkeller/papierpanther" rel="noopener noreferrer" target="_blank">Quellcode<span class="sr-only"> (öffnet in neuem Tab)</span></a>
+    <a href="https://ergebnisse.zensus2022.de/datenbank/online/" rel="noopener noreferrer" target="_blank">Zensusdatenbank<span class="sr-only"> (öffnet in neuem Tab)</span></a>
+  </div>
+</footer>
+
+<script src="data/wohnen.js"></script>
+<script>
+(function () {
+  "use strict";
+  var D = window.WOHNEN_DATEN;
+  if (!D) {
+    document.querySelectorAll(".ladehinweis").forEach(function (el) {
+      el.textContent = "Die Wohndaten konnten nicht geladen werden.";
+    });
+    return;
+  }
+  var Z = D.zensus;
+  var N22 = Z.nutzung[2022], N11 = Z.nutzung[2011];
+  var H22 = Z.haushalte[2022], H11 = Z.haushalte[2011];
+  var IN = Z.vergleich.filter(function (v) { return v.stadt === "Ingolstadt"; })[0];
+
+  /* ---------------- Formatierung ---------------- */
+  function zahl(n, stellen) {
+    return new Intl.NumberFormat("de-DE", {
+      minimumFractionDigits: stellen || 0, maximumFractionDigits: stellen || 0,
+    }).format(n);
+  }
+  function pz(n) { return zahl(n, 1) + "\u00a0%"; }
+  function euro(n) { return zahl(n, 2) + "\u00a0€"; }
+  function el(tag, klasse, inhalt) {
+    var e = document.createElement(tag);
+    if (klasse) e.className = klasse;
+    if (inhalt !== undefined) e.textContent = inhalt;
+    return e;
+  }
+  function absatz(klasse, inhalt) {
+    var p = document.createElement("p");
+    p.className = klasse;
+    p.innerHTML = inhalt;
+    return p;
+  }
+  function lnk(url, inhalt) {
+    return "<a href=\"" + url + "\" rel=\"noopener noreferrer\" target=\"_blank\">" + inhalt + "</a>";
+  }
+  function datumDE(iso) {
+    var p = iso.split("-");
+    return p[2] + "." + p[1] + "." + p[0];
+  }
+  function rund100(n) { return Math.round(n / 100) * 100; }
+
+  /* ---------------- Leichte Sprache ---------------- */
+  var LS_KEY_LEICHT = "papierpanther-leichte-sprache";
+  var leicht = false;
+  try { leicht = localStorage.getItem(LS_KEY_LEICHT) === "1"; } catch (err) { /* Storage kann gesperrt sein */ }
+  function t(normal, leichtText) { return leicht ? leichtText : normal; }
+  function nl(o) { return o ? (leicht ? o.l : o.n) : ""; }
+
+  /* Abgeleitete Zahlen fuer die Texte: alles aus data/wohnen.js, nichts von Hand. */
+  var mieteAnteil = 100 - IN.haushalte_eigentum;
+  var eigentumAnteil11 = Math.round(H11.eigentum / H11.gesamt * 1000) / 10;
+  var mehrHaushalte = H22.gesamt - H11.gesamt;
+  var mehrMiete = H22.miete - H11.miete;
+  var mehrEigentum = H22.eigentum - H11.eigentum;
+  var leer11 = Math.round(N11.leer / N11.gesamt * 1000) / 10;
+  var kommunal = Z.eigentum.filter(function (e) { return e.id === "kommunal"; })[0];
+  var genossen = Z.eigentum.filter(function (e) { return e.id === "genossenschaft"; })[0];
+  var weg = Z.eigentum.filter(function (e) { return e.id === "weg"; })[0];
+  var andere = Z.vergleich.filter(function (v) { return v.stadt !== "Ingolstadt"; });
+  var maxAndere = andere.reduce(function (m, v) { return v.haushalte_eigentum > m.haushalte_eigentum ? v : m; });
+  var hoeherMarkt = andere.filter(function (v) { return v.leer_marktaktiv > IN.leer_marktaktiv; });
+
+  var TEXTE = {
+    "hinweis": {
+      n: "<strong>PapierPanther ist kein Angebot der Stadt Ingolstadt.</strong> " +
+        "Die Zahlen stammen aus dem Zensus 2022 der Statistischen Ämter des Bundes und der Länder. Dies ist ein Prototyp.",
+      l: "<strong>PapierPanther ist kein Angebot der Stadt Ingolstadt.</strong> " +
+        "Die Zahlen kommen aus einer großen Zählung vom Staat. Die Seite ist noch ein Test.",
+    },
+    "h1": { n: "Wohnen in Ingolstadt", l: "Wohnen in Ingolstadt" },
+    "lede": {
+      n: "Wer in Ingolstadt zur Miete wohnt und wer im Eigentum, wem die Wohnungen gehören und wie viele leer stehen. " +
+        "Die Antworten stammen aus dem Zensus 2022, der bisher genauesten Zählung aller Wohnungen. " +
+        "Was eine Wohnung kosten darf, steht auf der <a href=\"miete.html\">Mieteseite</a>.",
+      l: "Wer wohnt zur Miete? Wem gehören die Wohnungen? Wie viele Wohnungen sind leer? " +
+        "Das steht auf dieser Seite. Die Zahlen kommen aus einer großen Zählung von 2022. " +
+        "Wie viel Miete normal ist, steht auf der <a href=\"miete.html\">Seite zur Miete</a>.",
+    },
+    "sprung-wohnform": { n: "Mieten oder besitzen?", l: "Miete oder Eigentum?" },
+    "sprung-eigentum": { n: "Wem gehören die Wohnungen?", l: "Wem gehören die Wohnungen?" },
+    "sprung-leerstand": { n: "Leerstand", l: "Leere Wohnungen" },
+    "sprung-miete": { n: "Zur Mieteseite →", l: "Zur Seite über Miete →" },
+    "blick-h2": { n: "Auf einen Blick", l: "Das Wichtigste" },
+    "stichtag": {
+      n: "Stand aller Zahlen: Zensus-Stichtag " + Z.stichtag + ". Neuere Zählungen dieser Art gibt es nicht.",
+      l: "Die Zahlen sind vom " + Z.stichtag + ". Neuere Zahlen gibt es nicht.",
+    },
+
+    "wohnform-h2": { n: "Mieten oder besitzen?", l: "Wohnen zur Miete oder im Eigentum?" },
+    "wohnform-p1": {
+      n: "Rund 6 von 10 Haushalten in Ingolstadt wohnen zur Miete (" + zahl(H22.miete) + "), rund 4 von 10 in der eigenen Wohnung " +
+        "oder im eigenen Haus (" + zahl(H22.eigentum) + "). " + (IN.haushalte_eigentum > maxAndere.haushalte_eigentum
+          ? "Damit wohnen in Ingolstadt anteilig mehr Haushalte im Eigentum als in jeder anderen bayerischen Großstadt; am nächsten kommt " +
+            maxAndere.stadt + " mit " + pz(maxAndere.haushalte_eigentum) + "."
+          : "Unter den bayerischen Großstädten liegt " + maxAndere.stadt + " mit " + pz(maxAndere.haushalte_eigentum) + " vorn."),
+      l: "In Ingolstadt wohnen ungefähr 6 von 10 Haushalten zur Miete. " +
+        "4 von 10 Haushalten wohnen in einer eigenen Wohnung. Oder in einem eigenen Haus. " +
+        (IN.haushalte_eigentum > maxAndere.haushalte_eigentum ? "Das sind mehr als in allen anderen großen Städten in Bayern." : ""),
+    },
+    "wohnform-p2": {
+      n: "Der Anteil sinkt allerdings: 2011 wohnten noch " + pz(eigentumAnteil11) + " der Haushalte im Eigentum, 2022 " + pz(IN.haushalte_eigentum) + ". " +
+        "In diesen elf Jahren kamen rund " + zahl(rund100(mehrHaushalte)) + " Haushalte dazu. Davon wohnen rund " + zahl(rund100(mehrMiete)) +
+        " zur Miete und rund " + zahl(rund100(mehrEigentum)) + " im Eigentum. " +
+        "Warum Ingolstadt mehr Eigentum hat als andere Großstädte, lässt sich aus den Zensus-Zahlen nicht ablesen.",
+      l: "2011 hatten mehr Haushalte eine eigene Wohnung als heute. " +
+        "Seit 2011 sind viele Haushalte dazu-gekommen. Die meisten davon wohnen zur Miete.",
+    },
+    "wohnform-weiter": {
+      n: "Ein Haushalt sind alle Menschen, die zusammen in einer Wohnung leben. Wohnheime und Gemeinschaftsunterkünfte zählen hier nicht mit.",
+      l: "Ein Haushalt: Das sind alle Menschen, die zusammen in einer Wohnung leben.",
+    },
+
+    "eigentum-h2": { n: "Wem gehören die Wohnungen?", l: "Wem gehören die Wohnungen?" },
+    "eigentum-p1": {
+      n: "Der größte Teil der " + zahl(N22.gesamt) + " Wohnungen gehört Privatleuten: entweder als ganzes Haus oder als Eigentumswohnung " +
+        "in einem Haus, das sich mehrere Eigentümer teilen. Zusammen sind das fast vier von fünf Wohnungen. " +
+        "Gut jede neunte Wohnung gehört der Stadt oder ihrer Wohnungsgesellschaft GWG. Genossenschaften spielen in Ingolstadt kaum eine Rolle: " +
+        "Ihnen gehören " + zahl(genossen.wohnungen) + " Wohnungen, etwa jede hundertste.",
+      l: "Die meisten Wohnungen gehören einzelnen Menschen. " +
+        "Ungefähr jede 9. Wohnung gehört der Stadt. Oder der Wohnungs-Firma der Stadt. Sie heißt GWG. " +
+        "Eine Genossenschaft ist ein Verein, dem die Häuser gehören. Die Mieter sind selbst Mitglied. " +
+        "In Ingolstadt gibt es nur wenige solche Wohnungen.",
+    },
+    "miete-h3": { n: "Was die Wohnungen im Schnitt kosten", l: "Wie viel Miete die Menschen zahlen" },
+    "miete-p": {
+      n: "Der Zensus hat auch die Miete erfragt: im Durchschnitt aller laufenden Mietverträge " + euro(Z.gesamt.miete) + " je Quadratmeter, netto kalt. " +
+        "Je nach Eigentümer liegen die Durchschnitte weit auseinander – von " + euro(genossen.miete) + " bei Genossenschaften bis " +
+        euro(weg.miete) + " bei vermieteten Eigentumswohnungen. Woran das liegt – am Alter der Verträge, an geförderten Wohnungen, an Lage " +
+        "oder Ausstattung –, zeigt der Zensus nicht.",
+      l: "Die Menschen haben auch gesagt, wie viel Miete sie zahlen. " +
+        "Im Durchschnitt sind es " + euro(Z.gesamt.miete) + " pro Quadrat-Meter. Gemeint ist die Kalt-Miete. " +
+        "Bei Genossenschaften und bei der Stadt ist die Miete am niedrigsten.",
+    },
+
+    "leer-h2": { n: "Wie viele Wohnungen stehen leer?", l: "Wie viele Wohnungen sind leer?" },
+    "leer-p1": {
+      n: "Am Stichtag standen " + zahl(N22.leer) + " Wohnungen leer, " + pz(N22.leer / N22.gesamt * 100) + " aller Wohnungen. " +
+        "2011 waren es " + zahl(N11.leer) + " (" + pz(leer11) + "). Als leer zählt jede Wohnung, in der am Stichtag niemand gewohnt hat – " +
+        "egal warum: zwischen zwei Mietern, wegen einer Renovierung, weil sie verkauft werden soll oder weil sie dauerhaft nicht genutzt wird. " +
+        "Ein Teil des Leerstands gehört also einfach dazu, damit Menschen umziehen können.",
+      l: "Im Mai 2022 waren " + zahl(N22.leer) + " Wohnungen leer. Das ist ungefähr jede 25. Wohnung. " +
+        "Eine Wohnung kann aus vielen Gründen leer sein. Zum Beispiel: Der alte Mieter ist weg, der neue noch nicht da. " +
+        "Oder die Wohnung wird gerade renoviert.",
+    },
+    "leer-p2": {
+      n: "Deshalb weist der Zensus eine zweite Zahl aus: den „marktaktiven“ Leerstand. Gemeint sind Wohnungen, die kurzfristig vermietet werden könnten, " +
+        "also ohne die, die etwa wegen Sanierung oder Abriss leer stehen. Gezählt wird nur in Häusern mit drei oder mehr Wohnungen. " +
+        "In Ingolstadt sind das " + pz(Z.gesamt.leer_marktaktiv) + " – " + (hoeherMarkt.length === 0
+          ? "mehr als in jeder anderen bayerischen Großstadt."
+          : "mehr als in den meisten bayerischen Großstädten; höher ist der Anteil nur in " +
+            hoeherMarkt.map(function (v) { return v.stadt + " (" + pz(v.leer_marktaktiv) + ")"; }).join(" und ") + "."),
+      l: "Manche leeren Wohnungen kann man sofort vermieten. Andere nicht, weil sie zum Beispiel kaputt sind. " +
+        "Sofort vermieten kann man in Ingolstadt ungefähr 2 von 100 Wohnungen. " +
+        (hoeherMarkt.length === 0 ? "Das ist mehr als in den anderen großen Städten." : "Das ist mehr als in den meisten anderen großen Städten."),
+    },
+    "leer-wer-h3": { n: "Bei welchen Eigentümern Wohnungen leer stehen", l: "Wem die leeren Wohnungen gehören" },
+    "leer-wer-p": {
+      n: "Am häufigsten leer stehen Wohnungen privatwirtschaftlicher Wohnungsunternehmen und kirchlicher oder gemeinnütziger Organisationen – " +
+        "beides kleine Gruppen. In absoluten Zahlen gehören die meisten leeren Wohnungen Privatleuten und Eigentümergemeinschaften, weil ihnen " +
+        "auch die meisten Wohnungen gehören. Bei der Stadt und der GWG steht etwa jede hundertste Wohnung leer.",
+      l: "Die meisten leeren Wohnungen gehören einzelnen Menschen. Denn ihnen gehören auch die meisten Wohnungen. " +
+        "Bei der Stadt und der GWG sind nur sehr wenige Wohnungen leer.",
+    },
+    "leer-nicht-h3": { n: "Was die Zahlen nicht sagen", l: "Was wir nicht wissen" },
+    "leer-nicht-p": {
+      n: "Wie lange die Wohnungen leer stehen und warum, geht aus den veröffentlichten Tabellen nicht hervor. Und die Zahlen sind von 2022: " +
+        "Laut " + lnk(D.fortschreibung.url, "Verwaltung") + " ist die Zahl der Wohnungen seither von rund " + zahl(D.fortschreibung.wohnungen_2022) +
+        " auf rund " + zahl(D.fortschreibung.wohnungen_2025) + " (2025) gestiegen; wie viele davon leer stehen, zählt niemand. " +
+        "Ferienwohnungen spielen in Ingolstadt kaum eine Rolle: " + zahl(N22.ferien) + " Wohnungen werden privat als Ferien- oder Freizeitwohnung genutzt. " +
+        "Ob die Stadt gegen Leerstand vorgehen darf, hat der Stadtentwicklungsausschuss im Juli 2026 beraten – " +
+        "anlässlich eines Antrags auf eine Zweckentfremdungssatzung. Das erklärt ein späterer Abschnitt dieser Seite.",
+      l: "Wir wissen nicht: Wie lange sind die Wohnungen schon leer? Und warum? " +
+        "Die Zahlen sind von 2022. Neuere Zahlen zu leeren Wohnungen gibt es nicht. " +
+        "Ferien-Wohnungen gibt es in Ingolstadt nur sehr wenige.",
+    },
+
+    "fehlt-h2": { n: "Was hier noch fehlt", l: "Was noch fehlt" },
+    "fehlt-p": {
+      n: "Diese Seite wächst. Als Nächstes kommt, was die Stadt beim Wohnen tun kann und was nicht, und was Wohnen mit dem städtischen Haushalt zu tun hat. " +
+        "Für einige Fragen haben wir noch keine offenen Daten gefunden:",
+      l: "Diese Seite ist noch nicht fertig. Für manche Fragen haben wir noch keine Zahlen:",
+    },
+  };
+
+  /* Die "fehlt"-Eintraege aus data/wohnen.js haben nur eine normale Fassung. */
+  var FEHLT_LEICHT = {
+    "Aktuelle Leerstandszahlen": ["Neue Zahlen zu leeren Wohnungen", "Niemand zählt das regelmäßig."],
+    "Dauer und Gründe des Leerstands": ["Warum Wohnungen leer sind", "Diese Zahlen haben wir nicht gefunden."],
+    "Zahlen nach Stadtbezirken": ["Zahlen für Ihren Stadt-Teil", "Diese Zahlen haben wir noch nicht."],
+    "Sozialwohnungen und auslaufende Bindungen": ["Sozial-Wohnungen", "Das haben wir noch nicht geprüft."],
+  };
+
+  /* ---------------- Bausteine ---------------- */
+  function kacheln() {
+    var box = document.getElementById("kennzahlen");
+    box.innerHTML = "";
+    [
+      { label: t("Wohnungen", "Wohnungen"), wert: zahl(N22.gesamt),
+        unter: t("in Wohngebäuden und anderen Gebäuden mit Wohnraum", "in ganz Ingolstadt") },
+      { label: t("Haushalte zur Miete", "Haushalte wohnen zur Miete"), wert: pz(mieteAnteil),
+        unter: t(zahl(H22.miete) + " Haushalte; " + zahl(H22.eigentum) + " wohnen im Eigentum", "ungefähr 6 von 10 Haushalten") },
+      { label: t("Leer stehend", "Leere Wohnungen"), wert: pz(N22.leer / N22.gesamt * 100),
+        unter: t(zahl(N22.leer) + " Wohnungen; kurzfristig vermietbar: " + pz(Z.gesamt.leer_marktaktiv), zahl(N22.leer) + " Wohnungen") },
+      { label: t("Durchschnittliche Kaltmiete", "Miete im Durchschnitt"), wert: euro(Z.gesamt.miete) + "/m²",
+        unter: t("über alle laufenden Mietverträge, netto kalt", "pro Quadrat-Meter, ohne Heizung und Wasser") },
+    ].forEach(function (k) {
+      var d = el("div", "kachel");
+      d.appendChild(absatz("kachel-label", k.label));
+      d.appendChild(absatz("kachel-wert", k.wert));
+      d.appendChild(absatz("kachel-unter", k.unter));
+      box.appendChild(d);
+    });
+  }
+
+  /* zeilen: [{ label, betont, spuren: [{ wert, klasse, anzeige }] }]; max: Skalenende */
+  function balken(container, titel, zeilen, max, legende, fuss) {
+    container.innerHTML = "";
+    container.appendChild(el("p", "diagramm-titel", titel));
+    if (legende) {
+      var lg = el("div", "legende");
+      legende.forEach(function (e) {
+        var s = document.createElement("span");
+        var i = document.createElement("i");
+        i.style.background = getComputedStyle(document.documentElement).getPropertyValue(e.farbe).trim();
+        s.appendChild(i);
+        s.appendChild(document.createTextNode(e.text));
+        lg.appendChild(s);
+      });
+      container.appendChild(lg);
+    }
+    var liste = el("div", "balken");
+    liste.setAttribute("role", "list");
+    zeilen.forEach(function (z) {
+      var zeile = el("div", "b-zeile" + (z.betont ? " betont" : ""));
+      zeile.setAttribute("role", "listitem");
+      zeile.appendChild(el("span", "b-label", z.label));
+      var spuren = el("div", "b-spuren");
+      z.spuren.forEach(function (s) {
+        var spur = el("div", "b-spur");
+        var b = el("span", "b-balken " + (s.klasse || ""));
+        /* Der Balken teilt sich die Zeile mit der Zahl; --skala laesst ihr Platz. */
+        b.style.width = "calc(var(--skala) * " + (s.wert / max * 100) + "%)";
+        b.setAttribute("aria-hidden", "true");
+        spur.appendChild(b);
+        var zahlEl = el("span", "b-zahl");
+        zahlEl.innerHTML = s.anzeige;
+        spur.appendChild(zahlEl);
+        spuren.appendChild(spur);
+      });
+      zeile.appendChild(spuren);
+      liste.appendChild(zeile);
+    });
+    container.appendChild(liste);
+    if (fuss) container.appendChild(absatz("diagramm-fuss", fuss));
+  }
+
+  function diagrammWohnform() {
+    var zeilen = Z.vergleich.slice().sort(function (a, b) { return b.haushalte_eigentum - a.haushalte_eigentum; })
+      .map(function (v) {
+        var istIN = v.stadt === "Ingolstadt";
+        return { label: v.stadt, betont: istIN,
+          spuren: [{ wert: v.haushalte_eigentum, klasse: istIN ? "ingolstadt" : "", anzeige: pz(v.haushalte_eigentum) }] };
+      });
+    balken(document.getElementById("diagramm-wohnform"),
+      t("Anteil der Haushalte, die in der eigenen Wohnung oder im eigenen Haus wohnen, 2022",
+        "So viele Haushalte wohnen im Eigentum (2022)"),
+      zeilen, 40, null,
+      t("Die acht bayerischen Großstädte (über 100.000 Einwohner). Quelle: Zensus 2022, Tabelle 5000H-1017.",
+        "Quelle: Zensus 2022."));
+  }
+
+  function diagrammEigentum() {
+    var zeilen = Z.eigentum.slice().sort(function (a, b) { return b.wohnungen - a.wohnungen; }).map(function (e) {
+      var anteil = e.wohnungen / N22.gesamt * 100;
+      return { label: nl(e), spuren: [{ wert: anteil, klasse: "ingolstadt",
+        anzeige: zahl(e.wohnungen) + " <small>(" + (anteil < 1 ? "unter 1 %" : zahl(anteil, 1) + " %") + ")</small>" }] };
+    });
+    balken(document.getElementById("diagramm-eigentum"),
+      t("Wohnungen in Ingolstadt nach Eigentümer des Gebäudes, 2022", "Wem gehören die Wohnungen? (2022)"),
+      zeilen, 45, null,
+      t("Quelle: Zensus 2022, Tabelle 4000W-1011. Die Einzelwerte ergeben zusammen " + zahl(Z.eigentum.reduce(function (s, e) { return s + e.wohnungen; }, 0)) +
+        " statt " + zahl(N22.gesamt) + " Wohnungen, weil der Zensus Einzelwerte zur Geheimhaltung minimal verändert. " +
+        "Ein Vergleich mit 2011 ist hier nicht sinnvoll: Damals zählte der Zensus nur " + zahl(222) + " kommunale Wohnungen, " +
+        "sehr wahrscheinlich, weil die GWG anders eingeordnet wurde.",
+        "Quelle: Zensus 2022."));
+  }
+
+  function kastenGWG() {
+    var g = D.gwg;
+    var box = document.getElementById("kasten-gwg");
+    box.innerHTML = "";
+    box.appendChild(el("h3", "", t("Was ist die GWG?", "Was ist die GWG?")));
+    box.appendChild(absatz("", t(
+      "Die " + g.name + " ist die Wohnungsgesellschaft der Stadt; die Stadt hält die Mehrheit. Sie baut und vermietet Wohnungen, " +
+      "die bezahlbar sein sollen. Im Zensus steht sie unter „Kommune oder kommunales Wohnungsunternehmen“ – " +
+      "zusammen mit Wohnungen, die der Stadt direkt gehören: " + zahl(kommunal.wohnungen) + " Wohnungen, Durchschnittsmiete " + euro(kommunal.miete) + " je m².",
+      "Die GWG ist eine Firma. Sie gehört zum größten Teil der Stadt. " +
+      "Die GWG baut Wohnungen und vermietet sie. Die Miete soll nicht zu hoch sein.")));
+    box.appendChild(absatz("", t(
+      "Für " + g.jahr + " weist die GWG einen " + lnk(g.url_abschluss, "Jahresüberschuss von " + zahl(g.ueberschuss_mio, 2) + " Mio. €") +
+      " aus. Er bleibt im Unternehmen und fließt nicht in den städtischen Haushalt. Eine zweite, ganz städtische Wohnungsgesellschaft hat die Verwaltung " +
+      lnk(g.url_gesellschaft, "2025 nach Prüfung verworfen") + ".",
+      "Die GWG hat " + g.jahr + " Gewinn gemacht: " + zahl(g.ueberschuss_mio, 2) + " Millionen Euro. Das Geld bleibt in der Firma.")));
+  }
+
+  function diagrammMiete() {
+    var zeilen = Z.eigentum.filter(function (e) { return e.id !== "bund_land"; })
+      .slice().sort(function (a, b) { return b.miete - a.miete; })
+      .map(function (e) {
+        return { label: nl(e), spuren: [{ wert: e.miete, klasse: "ingolstadt", anzeige: euro(e.miete) }] };
+      });
+    balken(document.getElementById("diagramm-miete"),
+      t("Durchschnittliche Nettokaltmiete je m² nach Eigentümer, 2022", "Miete pro Quadrat-Meter (2022)"),
+      zeilen, 12, null,
+      t("Durchschnitt aller laufenden Mietverträge, ohne Nebenkosten. Wohnungen von Bund oder Land (" +
+        zahl(Z.eigentum.filter(function (e) { return e.id === "bund_land"; })[0].wohnungen) +
+        " Stück) sind zu wenige für einen aussagekräftigen Durchschnitt. Quelle: Zensus 2022, Tabelle 4000W-0006.",
+        "Quelle: Zensus 2022."));
+  }
+
+  function diagrammLeer() {
+    var zeilen = Z.vergleich.slice().sort(function (a, b) { return b.leer_marktaktiv - a.leer_marktaktiv; })
+      .map(function (v) {
+        return { label: v.stadt, betont: v.stadt === "Ingolstadt", spuren: [
+          { wert: v.leer, klasse: "leer", anzeige: pz(v.leer) + " <small>" + t("leer", "leer") + "</small>" },
+          { wert: v.leer_marktaktiv, klasse: "marktaktiv", anzeige: pz(v.leer_marktaktiv) + " <small>" + t("kurzfristig vermietbar", "sofort zu vermieten") + "</small>" },
+        ] };
+      });
+    balken(document.getElementById("diagramm-leer"),
+      t("Leerstand im Städtevergleich, 2022", "Leere Wohnungen in anderen Städten (2022)"),
+      zeilen, Math.max.apply(null, Z.vergleich.map(function (v) { return v.leer; })),
+      [{ farbe: "--leer", text: t("alle leeren Wohnungen", "alle leeren Wohnungen") },
+       { farbe: "--marktaktiv", text: t("kurzfristig vermietbar, nur Häuser ab drei Wohnungen", "sofort zu vermieten") }],
+      t("Sortiert nach kurzfristig vermietbarem Leerstand. Die beiden Werte beziehen sich auf verschiedene Grundmengen: " +
+        "alle Wohnungen bzw. nur Wohnungen in Häusern ab drei Wohnungen. Quelle: Zensus 2022, Tabellen 4000W-1001 und 4000W-0026.",
+        "Quelle: Zensus 2022."));
+  }
+
+  function diagrammLeerWer() {
+    var bl = Z.eigentum.filter(function (e) { return e.id === "bund_land"; })[0];
+    var zeilen = Z.eigentum.filter(function (e) { return e.id !== "bund_land"; })
+      .slice().sort(function (a, b) { return b.leer_quote - a.leer_quote; })
+      .map(function (e) {
+        return { label: nl(e), spuren: [{ wert: e.leer_quote, klasse: "ingolstadt",
+          anzeige: pz(e.leer_quote) + " <small>(" + zahl(e.leer) + " " + t("Wohnungen", "Wohnungen") + ")</small>" }] };
+      });
+    balken(document.getElementById("diagramm-leer-wer"),
+      t("Anteil leerer Wohnungen nach Eigentümer, Ingolstadt 2022", "So viele Wohnungen sind leer (2022)"),
+      zeilen, 10, null,
+      t("Nicht im Diagramm: Bund oder Land, " + zahl(bl.leer) + " von " + zahl(bl.wohnungen) + " Wohnungen leer – zu wenige für einen Vergleich. " +
+        "Quelle: Zensus 2022, Tabellen 4000W-0018 (Anteil) und 4000W-2002 (Anzahl).",
+        "Quelle: Zensus 2022."));
+  }
+
+  function baueFehlt() {
+    var ul = document.getElementById("fehlt-liste");
+    ul.innerHTML = "";
+    D.fehlt.forEach(function (f) {
+      var li = document.createElement("li");
+      var ls = FEHLT_LEICHT[f.n];
+      li.appendChild(el("strong", "", (leicht && ls ? ls[0] : f.n) + ": "));
+      li.appendChild(el("span", "", leicht && ls ? ls[1] : f.d));
+      ul.appendChild(li);
+    });
+  }
+
+  function baueQuellen() {
+    var box = document.getElementById("quellen-block");
+    box.innerHTML = "";
+    box.appendChild(absatz("", "<strong>" + t("Quellen", "Woher die Zahlen kommen") + "</strong>"));
+    var ul = document.createElement("ul");
+    D.quellen.forEach(function (q) {
+      var li = document.createElement("li");
+      li.innerHTML = lnk(q.url, q.text);
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+    box.appendChild(absatz("", t(
+      "Stand der Angaben: " + datumDE(D.stand) + ". Die Zensuszahlen sind von Hand aus der Zensusdatenbank übernommen (<code>data/wohnen.js</code>). " +
+      "© Statistische Ämter des Bundes und der Länder, Deutschland, 2026, Datenlizenz Deutschland – Namensnennung – Version 2.0.",
+      "Stand: " + datumDE(D.stand) + ".")));
+  }
+
+  function texteAnwenden() {
+    Object.keys(TEXTE).forEach(function (id) {
+      var e = document.getElementById("txt-" + id);
+      if (e) e.innerHTML = TEXTE[id][leicht ? "l" : "n"];
+    });
+    kacheln();
+    diagrammWohnform();
+    diagrammEigentum();
+    kastenGWG();
+    diagrammMiete();
+    diagrammLeer();
+    diagrammLeerWer();
+    baueFehlt();
+    baueQuellen();
+  }
+
+  texteAnwenden();
+
+  var btnLeicht = document.getElementById("btn-leicht");
+  btnLeicht.setAttribute("aria-pressed", leicht ? "true" : "false");
+  btnLeicht.addEventListener("click", function () {
+    leicht = !leicht;
+    btnLeicht.setAttribute("aria-pressed", leicht ? "true" : "false");
+    try { localStorage.setItem(LS_KEY_LEICHT, leicht ? "1" : "0"); } catch (err) { /* Storage kann gesperrt sein */ }
+    texteAnwenden();
+  });
+})();
+</script>
+
+<script src="kopf.js" defer></script>
+<script src="zaehler.js" defer></script>
+</body>
+</html>

@@ -37,6 +37,15 @@ window.THEMEN_DATEN = [
   "text_l": "So viele Anlagen machen in Ingolstadt Strom aus Sonne."
  },
  {
+  "href": "wohnen.html",
+  "farbe": "#4d5a1f",
+  "titel": "Wohnen",
+  "titel_l": "Wohnen",
+  "zahl": "62,6 %",
+  "text": "der Haushalte wohnen zur Miete. Wem die Wohnungen gehören und wie viele leer stehen (Zensus 2022).",
+  "text_l": "So viele Haushalte wohnen zur Miete. Und: Wem gehören die Wohnungen?"
+ },
+ {
   "href": "miete.html",
   "farbe": "#96551f",
   "titel": "Miete",

@@ -11,6 +11,7 @@
     ['haushalt.html', 'Haushalt', 'Woher das Geld kommt und wohin es geht', 'Das Geld der Stadt', 'Wie viel Geld die Stadt hat'],
     ['hsk.html', 'Sparplan', 'Wo die Stadt sparen will', 'Spar-Plan', 'Wo die Stadt sparen will'],
     ['klima.html', 'Klima', 'Wetter, Solarstrom, Ladepunkte', 'Klima', 'Wetter und Strom aus Sonne'],
+    ['wohnen.html', 'Wohnen', 'Mieten oder besitzen, Eigentümer, Leerstand', 'Wohnen', 'Wem gehören die Wohnungen?'],
     ['miete.html', 'Miete', 'Mietspiegel-Rechner, Mietpreisbremse', 'Miete', 'Wie viel Miete ist üblich?'],
     ['beteiligen.html', 'Beteiligen', 'Wie Sie mitreden können', 'Mitmachen', 'So können Sie mitreden']
   ];
