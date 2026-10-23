@@ -139,6 +139,21 @@
     kopf.appendChild(menue);
   }
 
+  /* KI-Hinweis ueber der Fusszeile der Themenseiten (Transparenzpflicht AI Act). */
+  var fuss = document.querySelector('.site-footer');
+  var istThema = THEMEN.some(function (th) { return th[0] === seite; });
+  if (fuss && istThema) {
+    var hinweis = document.createElement('p');
+    hinweis.className = 'ki-hinweis';
+    hinweis.style.cssText = 'max-width: 860px; margin: 2rem auto 0; padding: 0 1.5rem; box-sizing: border-box; font-size: .85rem; color: var(--text-faint);';
+    var ki = ['<strong>Hinweis:</strong> Die Texte entstehen mit KI-Unterstützung. Ich sehe sie vor der Veröffentlichung durch, trotzdem können Fehler vorkommen. Maßgeblich sind die verlinkten Originalquellen. Fehler dürfen Sie mir gern melden, siehe <a href="impressum.html">Impressum</a>.',
+      '<strong>Hinweis:</strong> Die Texte schreibt eine KI mit. Ich lese sie vor dem Veröffentlichen durch. Trotzdem kann ein Fehler drin sein. Richtig ist immer die Original-Quelle. Haben Sie einen Fehler gefunden? Schreiben Sie mir. Die Adresse steht im <a href="impressum.html">Impressum</a>.'];
+    var setzeHinweis = function () { hinweis.innerHTML = ki[leicht() ? 1 : 0]; };
+    setzeHinweis();
+    fuss.parentNode.insertBefore(hinweis, fuss);
+    if (btn) new MutationObserver(setzeHinweis).observe(btn, { attributes: true, attributeFilter: ['aria-pressed'] });
+  }
+
   /* Aufklapper schliessen bei Klick daneben oder Escape */
   document.addEventListener('click', function (ev) {
     document.querySelectorAll('.site-header details[open]').forEach(function (d) {
