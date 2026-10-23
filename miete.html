@@ -301,6 +301,12 @@
 
   .raus-teil + .raus-teil { margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid var(--border); }
   #diagramm-raus .stimmen { margin-top: 1.5rem; }
+  #diagramm-raus > .ampel { margin: 0 0 1.25rem; }
+  .legende i.offen { background-color: var(--spanne); border: 1.5px dashed var(--border-strong); }
+  .bekannt-liste { list-style: none; display: grid; gap: .45rem; margin: 0; }
+  .bekannt-liste li { display: grid; grid-template-columns: 11rem 1fr; gap: .75rem; font-size: .86rem; padding: .4rem 0; border-bottom: 1px solid var(--border); }
+  .bekannt-liste strong { font-weight: 600; }
+  @media (max-width: 560px) { .bekannt-liste li { grid-template-columns: 1fr; gap: .1rem; } }
   .zeitleiste { list-style: none; margin: .5rem 0 0; display: grid; gap: 0; }
   .zeitleiste li {
     display: grid; grid-template-columns: 6.2rem 5.2rem 1fr; gap: .5rem; align-items: baseline;
@@ -654,9 +660,9 @@
     },
     "raus-h3": { n: "Wie viele Wohnungen fallen raus?", l: "Für wie viele Wohnungen gilt die Bremse nicht?" },
     "raus-p": {
-      n: "Wie viele Wohnungen unter eine Ausnahme fallen, zählt niemand. Die amtliche Statistik und die Münchner " +
-        "Anzeigenauswertung erlauben aber eine Annäherung.",
-      l: "Das zählt niemand genau. Aber es gibt Zahlen, die einen Eindruck geben.",
+      n: "Wie viele Wohnungen unter eine Ausnahme fallen, zählt niemand. Für eine einzige Ausnahme, den Neubau, " +
+        "erlaubt die amtliche Statistik eine Annäherung. Für alle anderen gibt es in Ingolstadt keine Daten.",
+      l: "Das zählt niemand genau. Nur für neue Häuser gibt es Zahlen.",
     },
     "ablauf-h2": { n: "Vom Fragebogen zur Obergrenze", l: "So entsteht der Mietspiegel" },
     "ablauf-p": {
@@ -1134,11 +1140,14 @@
   document.getElementById("check-zuruecksetzen").addEventListener("click", function () { antworten = {}; baueCheck(); });
 
   /* ---------------- Wie viele fallen raus? ---------------- */
+  /* Gezaehlt werden kann nur die Neubau-Ausnahme. Segmente mit offen: true
+     enthalten weitere, nicht gezaehlte Ausnahmen und bekommen einen
+     gestrichelten Rand, damit sie nicht als "hier greift die Bremse" lesen. */
   function gestapelt(titelText, segmente, fuss, musterId) {
     var teil = el("div", "raus-teil");
     teil.appendChild(absatz("diagramm-titel", titelText));
     teil.appendChild(legende(segmente.map(function (s) {
-      return { farbe: s.farbe, klasse: s.schraffur ? "schraffur" : "", text: s.text };
+      return { farbe: s.farbe, klasse: s.schraffur ? "schraffur" : (s.offen ? "offen" : ""), text: s.text };
     })));
     var W = 760, H = 54, BH = 36;
     var summe = segmente.reduce(function (a, s) { return a + s.wert; }, 0);
@@ -1155,11 +1164,12 @@
         defs.appendChild(schraffur(id, s.farbe));
         fill = "url(#" + id + ")";
       }
-      svg.appendChild(svgEl("rect", { x: x, y: 4, width: Math.max(w - 2, 1), height: BH, rx: 3, fill: fill }, [
-        titel(s.text + ": " + zahl(s.wert) + " (" + zahl(s.wert / summe * 100) + " %)") ]));
+      var attrs = { x: x + 1, y: 5, width: Math.max(w - 3, 1), height: BH - 2, rx: 3, fill: fill };
+      if (s.offen) { attrs.stroke = farbe("--border-strong"); attrs["stroke-width"] = 1.5; attrs["stroke-dasharray"] = "5 4"; }
+      svg.appendChild(svgEl("rect", attrs, [ titel(s.text + ": " + zahl(s.wert) + " (" + zahl(s.wert / summe * 100) + " %)") ]));
       if (w > 60) {
-        var tx = text(x + w / 2, 4 + BH / 2 + 5, zahl(s.wert / summe * 100) + " %", "wert-text halo", "middle");
-        svg.appendChild(tx);
+        var inhalt = zahl(s.wert / summe * 100) + " %" + (s.offen && w > 300 ? t(" – darin weitere Ausnahmen, Anteil unbekannt", " – davon einige mit anderen Ausnahmen") : "");
+        svg.appendChild(text(x + w / 2, 4 + BH / 2 + 5, inhalt, "wert-text halo", "middle"));
       }
       x += w;
     });
@@ -1172,6 +1182,17 @@
     var Z = D.ausnahmen_zahlen;
     var box = document.getElementById("diagramm-raus");
     box.innerHTML = "";
+
+    var warn = el("div", "ampel teil");
+    warn.appendChild(absatz("", t(
+      "<strong>Nur eine der sechs Ausnahmen lässt sich zählen: der Neubau.</strong> Für Vormiete, umfassende Modernisierung, " +
+      "Möblierung, Kurzzeitvermietung und Indexmiete gibt es für Ingolstadt keine Zahlen. Der helle Teil der Balken heißt deshalb " +
+      "<em>nicht</em>, dass dort die Bremse greift – nur, dass dort keine Neubau-Ausnahme vorliegt. Wie viele dieser Wohnungen " +
+      "unter eine andere Ausnahme fallen, weiß niemand.",
+      "<strong>Nur eine Ausnahme kann man zählen: neue Häuser.</strong> Für die anderen Ausnahmen gibt es keine Zahlen. " +
+      "Der helle Teil heißt also nicht: Hier gilt die Bremse sicher.")));
+    box.appendChild(warn);
+
     var IN = Z.ingolstadt;
     var neu = IN.fertig.reduce(function (a, z) { return a + z[1]; }, 0);
     var von = IN.fertig[0][0], bis = IN.fertig[IN.fertig.length - 1][0];
@@ -1179,14 +1200,14 @@
       t("Ingolstadt: alle Wohnungen, Stand " + IN.bestand_stand, "Ingolstadt: alle Wohnungen"),
       [
         { wert: neu, farbe: farbe("--zuschlag"), schraffur: true,
-          text: t("gebaut " + von + "–" + bis + " (" + zahl(neu) + "): Bremse gilt nicht", "neu gebaut seit " + von + ": Bremse gilt nicht") },
-        { wert: IN.bestand - neu, farbe: farbe("--spanne"),
-          text: t("älter (" + zahl(IN.bestand - neu) + ")", "ältere Wohnungen") },
+          text: t("gebaut " + von + "–" + bis + " (" + zahl(neu) + "): Neubau-Ausnahme", "neu gebaut seit " + von + ": Bremse gilt nicht") },
+        { wert: IN.bestand - neu, farbe: farbe("--spanne"), offen: true,
+          text: t("vor " + von + " gebaut (" + zahl(IN.bestand - neu) + "): Bremse gilt nur ohne weitere Ausnahme – nicht gezählt",
+            "ältere Wohnungen: Bremse gilt nur, wenn es keine andere Ausnahme gibt") },
       ],
-      t("Etwa jede siebte Wohnung in Ingolstadt ist seit " + von + " fertig geworden und bei jeder Vermietung von der Bremse ausgenommen. " +
-        "Das ist eine Annäherung: Mitgezählt sind auch selbst genutzte Eigenheime und Umbauten in bestehenden Gebäuden. " +
-        "Unter den Neuvermietungen dürfte der Anteil höher sein, weil jede neue Wohnung mindestens einmal erstvermietet wird. " +
-        "Zahlen zu möblierten, befristeten oder Index-Mietverträgen gibt es für Ingolstadt nicht.",
+      t("Etwa jede siebte Wohnung ist seit " + von + " fertig geworden und bei jeder Vermietung ausgenommen. Mitgezählt sind auch selbst " +
+        "genutzte Eigenheime und Umbauten in bestehenden Gebäuden. Für selbst genutzte Wohnungen spielt die Bremse ohnehin keine Rolle: " +
+        "Laut Zensus 2022 waren in Ingolstadt rund " + zahl(Math.round(IN.vermietet_2022 / 100) * 100) + " Wohnungen vermietet, und auch bei ihnen greift die Bremse nur beim Mieterwechsel.",
         "Etwa jede siebte Wohnung ist neu. Für neue Wohnungen gilt die Bremse nicht."),
       "muster-ing"));
 
@@ -1196,43 +1217,53 @@
       t("München: Mietwohnungen in Online-Anzeigen " + M.jahr + " (rund " + zahl(mSumme) + ")", "München: Wohnungs-Anzeigen " + M.jahr),
       [
         { wert: M.erstbezug, farbe: farbe("--zuschlag"), schraffur: true,
-          text: t("Neubau, Erstbezug unmöbliert: Bremse gilt nicht", "Neubau: Bremse gilt nicht") },
+          text: t("Neubau, Erstbezug unmöbliert: Neubau-Ausnahme", "Neubau: Bremse gilt nicht") },
         { wert: M.moebliert, farbe: farbe("--zuschlag"),
           text: t("möbliert, oft auf Zeit: Bremse kaum prüfbar", "mit Möbeln: schwer zu prüfen") },
-        { wert: M.wiedervermietung, farbe: farbe("--spanne"),
-          text: t("unmöbliert, Wiedervermietung: Bremse gilt", "ohne Möbel, schon vorher vermietet: Bremse gilt") },
+        { wert: M.wiedervermietung, farbe: farbe("--spanne"), offen: true,
+          text: t("unmöbliert, Wiedervermietung: weitere Ausnahmen nicht ausgewiesen", "ohne Möbel, schon vorher vermietet: andere Ausnahmen nicht gezählt") },
       ],
       t("Fast jede zweite Mietanzeige in München ist möbliert oder ein Neubau. Möblierte Bestandswohnungen wurden " + M.jahr +
-        " rund 28 % teurer angeboten als unmöblierte. Portale zeigen eher den teureren Teil des Marktes; " +
-        "unter den Wiedervermietungen stecken zudem Wohnungen ab 2015, " +
-        "für die die Bremse ebenfalls nicht gilt – wie viele, weist die Auswertung nicht aus.",
+        " rund 28 % teurer angeboten als unmöblierte. Portale zeigen eher den teureren Teil des Marktes. Unter den Wiedervermietungen " +
+        "stecken Wohnungen ab 2015, Wohnungen mit hoher Vormiete, frisch modernisierte Wohnungen und Indexmieten – wie viele, weist die Auswertung nicht aus.",
         "Fast jede zweite Anzeige in München ist eine neue Wohnung oder eine Wohnung mit Möbeln."),
       "muster-muc"));
 
-    var B = Z.befragung, BM = Z.bestand_moebliert;
+    /* Was ueber die anderen Ausnahmen bekannt ist */
+    var bekannt = el("div", "raus-teil");
+    bekannt.appendChild(absatz("diagramm-titel", t("Was über die anderen Ausnahmen bekannt ist", "Was man über die anderen Ausnahmen weiß")));
+    var tab = el("ul", "bekannt-liste");
+    Z.andere.forEach(function (a) {
+      var li = document.createElement("li");
+      li.appendChild(el("strong", "", nl(a.name)));
+      var p = el("span", "");
+      p.appendChild(document.createTextNode(nl(a.text) + " "));
+      if (a.url) p.appendChild(lnk(a.url, t("Quelle", "Quelle")));
+      li.appendChild(p);
+      tab.appendChild(li);
+    });
+    bekannt.appendChild(tab);
+    box.appendChild(bekannt);
+
+    var B = Z.befragung;
     var ul = el("ul", "stimmen");
     var li1 = document.createElement("li");
-    var w1 = el("span", "wer"); w1.appendChild(lnk(B.url, t("Befragung in München " + B.jahr, "Umfrage in München")));
+    var w1 = el("span", "wer"); w1.appendChild(lnk(B.url, t("Und selbst wo sie greift: Befragung in München " + B.jahr, "Umfrage in München")));
     li1.appendChild(w1);
     li1.appendChild(document.createTextNode(t(
       "Von rund " + zahl(B.befragte) + " befragten Münchner Mieterinnen und Mietern hatten nur " + zahl(B.anteil, 1) +
       " % die Mietpreisbremse geltend gemacht; viele fürchteten Ärger mit dem Vermieter. (Quelle: " + B.quelle + ".)",
       "Nur etwa 2 von 100 Mietern haben sich auf die Bremse berufen. Viele haben Angst vor Ärger.")));
     ul.appendChild(li1);
-    var li2 = document.createElement("li");
-    var w2 = el("span", "wer"); w2.appendChild(lnk(BM.url, t("Gegenposition: Haus & Grund", "Der Vermieter-Verein sagt")));
-    li2.appendChild(w2);
-    li2.appendChild(document.createTextNode(t(
-      "Bezogen auf alle bestehenden Mietverhältnisse waren " + BM.jahr + " höchstens " + zahl(BM.anteil_max, 1) +
-      " % möbliert auf Zeit vermietet. Das widerspricht den Anzeigen nicht unbedingt: Solche Wohnungen wechseln oft den Mieter " +
-      "und tauchen deshalb im Angebot viel häufiger auf als im Bestand.",
-      "Nur wenige Wohnungen sind insgesamt mit Möbeln auf Zeit vermietet. Aber sie werden oft neu angeboten.")));
-    ul.appendChild(li2);
     box.appendChild(ul);
+
     var q = el("p", "diagramm-fuss");
     q.appendChild(document.createTextNode(t("Quellen: ", "Woher die Zahlen kommen: ")));
     q.appendChild(lnk(IN.url, IN.quelle));
-    q.appendChild(document.createTextNode("; "));
+    q.appendChild(document.createTextNode("; Zensus 2022 (Zensusdatenbank, siehe "));
+    var aw = document.createElement("a"); aw.href = "wohnen.html"; aw.textContent = t("Seite Wohnen", "Seite Wohnen");
+    q.appendChild(aw);
+    q.appendChild(document.createTextNode("); "));
     q.appendChild(lnk(M.url, M.quelle));
     box.appendChild(q);
   }

@@ -216,6 +216,8 @@ window.MIETE_DATEN = {
       fertig: [[2015, 1208], [2016, 1477], [2017, 1050], [2018, 1373], [2019, 1020],
                [2020, 1127], [2021, 814], [2022, 931], [2023, 709], [2024, 763]],
       bestand: 73859, bestand_stand: "31.12.2024",
+      /* Zensus 2022, vermietete Wohnungen (wie data/wohnen.js) */
+      vermietet_2022: 43184,
       quelle: "Bayerisches Landesamt für Statistik, Statistik kommunal 2025 und 2019, Kreisfreie Stadt Ingolstadt",
       url: "https://www.statistik.bayern.de/mam/produkte/statistik_kommunal/2025/09161.pdf"
     },
@@ -229,6 +231,21 @@ window.MIETE_DATEN = {
       quelle: "Finanztip über eine Befragung der LMU München (Originalbericht nicht auffindbar)",
       url: "https://www.finanztip.de/mietpreisbremse/"
     },
+    /* Was es zu den uebrigen Ausnahmen gibt. Fuer Ingolstadt: nichts. */
+    andere: [
+      { name: { n: "Vormiete über der Grenze", l: "Alte Miete war schon hoch" },
+        text: { n: "Keine Zahlen – weder für Ingolstadt noch bundesweit.", l: "Dazu gibt es keine Zahlen." } },
+      { name: { n: "Umfassende Modernisierung", l: "Große Erneuerung" },
+        text: { n: "Keine Zahlen – weder für Ingolstadt noch bundesweit.", l: "Dazu gibt es keine Zahlen." } },
+      { name: { n: "Möbliert und auf Zeit", l: "Mit Möbeln, auf Zeit" },
+        text: { n: "Für Ingolstadt keine Zahlen. In München sind es rund 35 % der Mietanzeigen (siehe oben), aber höchstens 0,8 % aller bestehenden Mietverhältnisse bundesweit (Haus & Grund, Daten 2022): Solche Wohnungen wechseln oft den Mieter und sind im Angebot viel häufiger als im Bestand.",
+          l: "Für Ingolstadt keine Zahlen. In München hat jede dritte Anzeige Möbel." },
+        url: "https://www.hausundgrund-verband.de/aktuelles/einzelansicht/studie-zeigt-hoechstens-08-prozent-der-wohnungen-moebliert-auf-zeit-vermietet/" },
+      { name: { n: "Indexmiete", l: "Miete steigt mit den Preisen" },
+        text: { n: "Für Ingolstadt keine Zahlen. Bundesweit sind 2,6 % aller Mietverträge Indexmieten, in den sieben größten Städten 4,1 % (IW Köln). In Großstadt-Neubauten ab 2014 sind es 18,8 % – die sind aber ohnehin ausgenommen. Wie oft bei Neuvermietungen im Bestand Indexmieten vereinbart werden, ist nicht erhoben.",
+          l: "Für Ingolstadt keine Zahlen. In ganz Deutschland sind es etwa 3 von 100 Verträgen." },
+        url: "https://www.iwkoeln.de/presse/pressemitteilungen/ralph-henger-christian-oberst-jan-buechel-nur-26-prozent-aller-mietvertraege-sind-indexmietvertraege.html" }
+    ],
     bestand_moebliert: {
       anteil_max: 0.8, jahr: 2022,
       quelle: "Haus & Grund Deutschland: Studie zu möbliertem Wohnen auf Zeit",
