@@ -139,6 +139,8 @@
   "faustregel": {"kredit_mio": 10, "zins_prozent": 4, "laufzeit_jahre": 30, "schuldendienst_mio": 0.57, "_seite": 48},
   "trend_zinsen_mio": 17.94,
   "trend_tilgung_mio": 11.91,
+  "beteiligungen_nicht_rentierlich_mio": 97,
+  "_seite_beteiligungen": 42,
   "buergschaften_euro": 38272010.96,
   "_seite_buergschaften": 54,
   "szenarien": {

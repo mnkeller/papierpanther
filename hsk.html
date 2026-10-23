@@ -379,6 +379,32 @@
     border: 1px solid var(--border-strong); border-radius: 999px; padding: .2rem .7rem; margin-top: .8rem;
   }
   .btn-klein:hover { background: #fff; }
+  /* Info-Hinweis: Tooltip per title beim Ueberfahren, Klick klappt auf (auch auf dem Handy). */
+  details.info { font-size: .86rem; margin: -.4rem 0 .9rem; }
+  details.info summary {
+    display: inline-flex; align-items: center; gap: .35rem; cursor: pointer; list-style: none;
+    color: var(--primary-dark); font-weight: 600; border-radius: 6px; padding: .1rem .3rem; margin-left: -.3rem;
+  }
+  details.info summary::-webkit-details-marker { display: none; }
+  details.info summary:hover { background: var(--bg-warm); }
+  details.info summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .info-i {
+    display: inline-flex; align-items: center; justify-content: center; width: 1.15rem; height: 1.15rem;
+    border-radius: 50%; background: var(--primary); color: #fff; font-size: .72rem; font-style: normal; font-weight: 700;
+  }
+  details.info[open] summary { margin-bottom: .4rem; }
+  .info-kasten {
+    background: #eef4f6; border: 1px solid #c9dde3; border-radius: 8px; padding: .7rem .9rem; max-width: 68ch;
+  }
+  .info-kasten p { margin: 0 0 .5rem; }
+  .info-kasten p:last-child { margin-bottom: 0; }
+  .hinweis-kasten {
+    background: var(--warn-bg); border: 1px solid var(--warn-border); border-left: 4px solid var(--aus-2);
+    border-radius: var(--radius); padding: .8rem 1rem; margin: 0 0 1.25rem; font-size: .9rem;
+  }
+  .hinweis-kasten strong:first-child { display: block; margin-bottom: .25rem; }
+  .hinweis-kasten p { margin: 0 0 .5rem; }
+  .hinweis-kasten p:last-child { margin-bottom: 0; }
   .vorbehalt { margin-top: 1.25rem; font-size: .86rem; background: var(--warn-bg); border: 1px solid var(--warn-border); border-radius: var(--radius); padding: .8rem 1rem; color: var(--warn-tx); }
   .vorbehalt strong { display: block; margin-bottom: .3rem; }
   .vorbehalt ul { margin: 0 0 0 1.1rem; display: grid; gap: .25rem; }
@@ -495,6 +521,7 @@
           <label><input type="checkbox" id="schalter-klinikum"> <span id="txt-schalter-klinikum"></span></label>
           <label><input type="checkbox" id="schalter-dauerhaft"> <span id="txt-schalter-dauerhaft"></span></label>
         </div>
+        <div id="info-klinikum-luecke"></div>
         <div id="luecke-legende"></div>
         <div id="luecke-balken" aria-live="polite"><p class="ladehinweis">Lade Diagramm …</p></div>
         <p class="diagramm-fuss" id="luecke-fuss"></p>
@@ -596,6 +623,16 @@
         </div>
         <p class="diagramm-fuss" id="kredit-fuss"></p>
       </div>
+      <details class="aufklapp-abschnitt" id="schulden-einordnung">
+        <summary>
+          <span class="aufklapp-kopf">
+            <h3 id="txt-einordnung-h3" style="margin:0"></h3>
+            <span class="aufklapp-teaser" id="txt-einordnung-teaser"></span>
+          </span>
+          <span class="aufklapp-chevron" aria-hidden="true">▾</span>
+        </summary>
+        <div class="aufklapp-inhalt" id="einordnung-inhalt"></div>
+      </details>
     </section>
 
     <section id="bisher">
@@ -624,7 +661,7 @@
   </div>
 </footer>
 
-<script src="data/hsk.js"></script>
+<script src="data/hsk.js?v=2026-10-23"></script>
 <script>
 (function () {
   "use strict";
@@ -708,6 +745,38 @@
     return div;
   }
   function heute() { return new Date().toISOString().slice(0, 10); }
+  // Aufklappbarer Hinweis mit Tooltip. Der Zustand (offen/zu) bleibt beim Neuzeichnen erhalten.
+  var infoOffen = {};
+  function infoHinweis(id, frage, kurz, html) {
+    var d = el("details", { class: "info", id: id });
+    if (infoOffen[id]) d.open = true;
+    var sum = el("summary", { title: kurz }, "<i class=\"info-i\" aria-hidden=\"true\">i</i>" + esc(frage));
+    d.appendChild(sum);
+    d.appendChild(el("div", { class: "info-kasten" }, html));
+    d.addEventListener("toggle", function () { infoOffen[id] = d.open; });
+    return d;
+  }
+  function klinikumHinweis(id) {
+    var K = B.klinikum;
+    return infoHinweis(id, t("Warum das Klinikum extra?", "Warum das Klinikum?"),
+      t("Die Stadt zahlt einen Teil des Klinikum-Defizits. Das HSK weist das Sparziel deshalb auch ohne diesen Zuschuss aus. " +
+          "Bezahlen muss die Stadt ihn trotzdem.",
+        "Die Stadt gibt dem Klinikum viel Geld. Darum wird es auch einmal heraus-gerechnet."),
+      t("<p>Die Stadt trägt über eine Umlage an den Krankenhauszweckverband einen Teil des Betriebsdefizits des Klinikums " +
+          "Ingolstadt. Bis 2023 waren das höchstens " + zahl(K.zuschuss_bis_2023_max_mio, 1) + " Mio. € im Jahr, 2025 schon " +
+          zahl(K.zuschuss_2025_mio, 1) + " Mio. €, für 2026 sind " + geld(KZV.klinikum[0]) + " eingeplant.</p>" +
+          "<p>Diese Belastung hängt laut HSK wesentlich an der Krankenhausfinanzierung in Deutschland: Dass kommunale Träger " +
+          "hohe laufende Verluste ihrer Kliniken ausgleichen müssen, ist kein Ingolstädter Sonderfall. Das HSK weist deshalb " +
+          "zusätzlich ein <em>bereinigtes</em> Sparziel ohne diesen Zuschuss aus. So wird sichtbar, welcher Teil der Lücke aus dem " +
+          "übrigen städtischen Haushalt stammt.</p>" +
+          "<p><strong>Herausrechnen heißt nicht wegsparen.</strong> Die Stadt muss den Zuschuss weiter zahlen; er bleibt in der " +
+          "Planung vollständig enthalten. Das Klinikum hat bereits Teilbereiche geschlossen, prüft sein Leistungsangebot und " +
+          "einen Zusammenschluss mit den Kliniken der Landkreise. Quelle: HSK Seiten " + K._seite + " und 41.</p>",
+        "<p>Die Stadt gibt dem Klinikum jedes Jahr Geld. Früher war das wenig. Heute sind es etwa 20 Millionen Euro im Jahr.</p>" +
+          "<p>Viele Kranken-Häuser in Deutschland haben zu wenig Geld. Das liegt an den Regeln für alle Kranken-Häuser.</p>" +
+          "<p>Darum rechnet die Stadt das Klinikum auch einmal heraus. Dann sieht man: So viel fehlt ohne das Klinikum. " +
+          "Bezahlen muss die Stadt das Geld trotzdem.</p>"));
+  }
 
   /* ---------------- Leichte Sprache ---------------- */
   var LS_KEY_LEICHT = "papierpanther-leichte-sprache";
@@ -853,6 +922,11 @@
     },
     "kredit-betrag": { n: "Kreditbetrag", l: "So viel Geld leihen" },
     "kredit-zins": { n: "Zinssatz", l: "Zinsen" },
+    "einordnung-h3": { n: "Schulden: Belastung und Gegenwert", l: "Schulden: Was sie kosten und was sie bringen" },
+    "einordnung-teaser": {
+      n: "Worauf es bei Krediten ankommt, nach den Maßstäben des HSK und der Gemeindeordnung.",
+      l: "Darauf kommt es bei geliehenem Geld an.",
+    },
     "bisher-h2": { n: "Was schon gespart wurde", l: "Was die Stadt schon gespart hat" },
     "bisher-p": {
       n: "Laut HSK haben die bisherigen Sparbeschlüsse den Haushalt 2026 gegenüber der ursprünglichen Planung " +
@@ -1007,6 +1081,9 @@
   /* ---------------- Luecke ---------------- */
   var zustand = { ohneKlinikum: false, nurDauerhaft: false };
   function zeigeLuecke() {
+    var ib = document.getElementById("info-klinikum-luecke");
+    ib.innerHTML = "";
+    ib.appendChild(klinikumHinweis("info-klinikum-1"));
     var box = document.getElementById("luecke-balken");
     box.innerHTML = "";
     var leg = document.getElementById("luecke-legende");
@@ -1047,7 +1124,7 @@
       var satz;
       if (offen > 0) {
         satz = t("Ziel <strong>" + geld(ziel) + "</strong>, davon abgedeckt " + geld(gedeckt) +
-            " (" + zahl(gedeckt / ziel * 100) + " %), offen <strong>" + geld(offen) + "</strong>",
+            " (" + zahl(Math.floor(gedeckt / ziel * 100)) + " %), offen <strong>" + geld(offen) + "</strong>",
           "Es fehlen <strong>" + geld(offen) + "</strong>. Geplant sind " + geld(gedeckt) + ".");
       } else {
         satz = t("Ziel " + geld(ziel) + ", rechnerisch erreicht (" + geld(gedeckt) + ")",
@@ -1232,6 +1309,25 @@
     return box;
   }
 
+  function personalHinweis() {
+    return el("div", { class: "hinweis-kasten" }, t(
+      "<strong>Weniger Stellen heißt auch weniger Leistung</strong>" +
+        "<p>Hinter jeder Stelle stehen Aufgaben: Anträge bearbeiten, Bürgerinnen und Bürger beraten, Kinder betreuen, " +
+        "Bauvorhaben prüfen, Grünanlagen pflegen. Fällt eine Stelle weg, verschwindet die Arbeit nicht von selbst. " +
+        "Andere übernehmen sie zusätzlich, sie dauert länger, wird seltener gemacht oder ganz eingestellt.</p>" +
+        "<p>Das zeigt schon der Maßnahmenkatalog: Das Seniorenbüro im Bürgerhaus stellt seine Beratung ein, beim Stadttheater " +
+        "sind laut Tabelle „Einschränkungen des Theaterbetriebs möglich“. Für die geprüften Einrichtungen warnt das HSK, weitere " +
+        "pauschale Kürzungen würden „zunehmend die Funktionsfähigkeit“ beeinträchtigen. Die Arbeitsfähigkeit der Verwaltung " +
+        "soll über bessere Abläufe und Digitalisierung gesichert werden.</p>" +
+        "<p>Wie gut das gelingt, entscheidet mit darüber, wie handlungsfähig die Stadt bleibt: bei Dienstleistungen für die " +
+        "Bürgerschaft ebenso wie bei Genehmigungen, auf die Unternehmen und Bauherren warten.</p>",
+      "<strong>Weniger Mitarbeiter heißt: weniger Hilfe</strong>" +
+        "<p>Die Mitarbeiter der Stadt machen viel Arbeit für die Menschen. Zum Beispiel: Anträge bearbeiten. Oder beraten.</p>" +
+        "<p>Gibt es weniger Mitarbeiter, bleibt Arbeit liegen. Oder sie dauert länger. Manches gibt es dann gar nicht mehr. " +
+        "Im Bürger-Haus gibt es bald keine Beratung für ältere Menschen mehr.</p>" +
+        "<p>Die Stadt will mit besseren Abläufen und mit Computern helfen.</p>"));
+  }
+
   function zeigePersonal() {
     var panel = document.getElementById("panel-m-personal");
     panel.innerHTML = "";
@@ -1244,6 +1340,7 @@
       "Die Stadt gibt viel Geld für ihre Mitarbeiter aus. 2026 sind es etwa " + zahl(PERS.ansatz_2026_mio, 0) +
         " Millionen Euro. Diese Kosten sollen langsamer steigen. Darum fallen jedes Jahr etwa " + PERS.abbau_vzae_pro_jahr +
         " Stellen weg. Niemand wird dafür gekündigt.")));
+    panel.appendChild(personalHinweis());
     panel.appendChild(el("p", { class: "diagramm-titel" }, t("Wie stark die Personalkosten jährlich steigen", "So stark steigen die Kosten für Mitarbeiter")));
     panel.appendChild(legende([
       { farbe: "var(--aus-2)", text: t("Steigerung zum Vorjahr", "Steigerung") },
@@ -1372,6 +1469,9 @@
     ziel.appendChild(el("div", { class: "regler-kopf" }, "<span>" + t("Welche Lücke schließen?", "Welche Lücke?") + "</span>"));
     var seg = el("div", { class: "segmentiert", id: "r-ziel", role: "group", style: "margin-top:.35rem" });
     ziel.appendChild(seg);
+    var zi = klinikumHinweis("info-klinikum-2");
+    zi.style.margin = ".5rem 0 0";
+    ziel.appendChild(zi);
     box.appendChild(ziel);
     box.appendChild(regler("personal", t("Personal kürzen", "Weniger Mitarbeiter"), 0, 10, 0.5, rz.personal,
       t("von " + geld(BLOCK.Personal, 0) + " (Plan 2026)", "von " + mio(BLOCK.Personal, 0) + " Millionen Euro")));
@@ -1404,7 +1504,8 @@
       "<strong>Was der Rechner nicht weiß</strong><ul>" +
         "<li>Pflichtaufgaben, Tarifverträge und laufende Verträge lassen sich nicht beliebig kürzen.</li>" +
         "<li>Stellen fallen meist erst weg, wenn jemand geht. Ein Prozent Personal entspricht rund " + zahl(VZAE_PRO_PROZENT) +
-        " Vollzeitstellen (Maßstab: 2026 waren 3 % rund 76 Stellen).</li>" +
+        " Vollzeitstellen (Maßstab: 2026 waren 3 % rund 76 Stellen). Mit den Stellen fallen Leistungen weg: Beratung, " +
+        "Bearbeitung, Betreuung. Was das für Bürgerinnen, Bürger und Betriebe bedeutet, kann der Rechner nicht abbilden.</li>" +
         "<li>Höhere Steuersätze ändern das Verhalten. Eine Gewerbesteuer von 420 Punkten hat der Stadtrat im " +
         ST.gewerbesteuer_abgelehnt_wann + " mit Blick auf den Wirtschaftsstandort abgelehnt. Für staatliche Hilfen erwartet " +
         "der Freistaat dagegen Hebesätze mindestens auf dem Durchschnitt vergleichbarer Städte.</li>" +
@@ -1437,8 +1538,9 @@
     document.getElementById("ergebnis-mini").innerHTML = "<b>" + (summe > 0 ? geld(summe) : "0 €") + "</b> " +
       t("von " + geld(ziel), "von " + geld(ziel)) + " · " + (anteil >= 1 ? t("geschafft", "geschafft") : zahl(anteil * 100) + " %");
     var folgen = [];
-    if (rz.personal) folgen.push(t("rund " + zahl(rz.personal * VZAE_PRO_PROZENT) + " Vollzeitstellen weniger",
-      "etwa " + zahl(rz.personal * VZAE_PRO_PROZENT) + " Stellen weniger"));
+    if (rz.personal) folgen.push(t("rund " + zahl(rz.personal * VZAE_PRO_PROZENT) + " Vollzeitstellen weniger, deren Aufgaben " +
+        "wegfallen, länger dauern oder auf andere verteilt werden",
+      "etwa " + zahl(rz.personal * VZAE_PRO_PROZENT) + " Stellen weniger. Manche Arbeit bleibt dann liegen."));
     if (rz.gst > ST.gewerbesteuer_hebesatz) folgen.push(t("Gewerbesteuer " + (rz.gst > ST.gewerbesteuer_durchschnitt ? "über" :
       rz.gst === ST.gewerbesteuer_durchschnitt ? "auf" : "unter") + " dem Durchschnitt vergleichbarer Städte (" + ST.gewerbesteuer_durchschnitt + ")",
       "Firmen zahlen mehr Steuern"));
@@ -1623,6 +1725,53 @@
       "Das ist eine Beispiel-Rechnung.");
   }
 
+  function zeigeEinordnung() {
+    var S = B.schulden;
+    var trend = S.szenarien.trend.stand_2036 / 1e6, kons = S.szenarien.konsolidierung.stand_2036 / 1e6;
+    document.getElementById("einordnung-inhalt").innerHTML = t(
+      "<h3>Was Kredite kosten</h3>" +
+      "<p>Zinsen und Tilgung zahlt die Stadt aus dem laufenden Haushalt, in dem schon heute Geld fehlt. Steigen die Zinsen, " +
+        "wird es teurer; das HSK rechnet deshalb Szenarien mit 3 und 5 % durch. Für " + S.zinsbindung_betrag_mio + " Mio. € der " +
+        "bisherigen Kredite endet die Zinsbindung " + S.zinsbindung_ende + ", dann muss neu verhandelt werden. Das HSK empfiehlt " +
+        "deshalb lange und ausgewogene Zinsbindungen und eine Begrenzung zusätzlicher Kredite (Seite 50).</p>" +
+      "<h3>Was Kredite ermöglichen</h3>" +
+      "<p>Nach der Gemeindeordnung darf eine Stadt Kredite nur für Investitionen aufnehmen, also für Schulen, Straßen oder " +
+        "Gebäude, und nur, wenn sie Zins und Tilgung dauerhaft tragen kann (Art. 71). Solche Anlagen werden Jahrzehnte genutzt; " +
+        "über einen Kredit verteilen sich die Kosten auf die Jahre der Nutzung.</p>" +
+      "<p>Auch Nicht-Investieren hat Kosten. Laut HSK wäre für den Erhalt der städtischen Gebäude inzwischen ein Mehrfaches " +
+        "dessen nötig, was im Haushalt steht (Seite 44). Jede Sparmaßnahme muss deshalb einen „Zukunftsfähigkeitscheck“ " +
+        "bestehen: Sie darf notwendige Investitionen nicht nur in die Zukunft verschieben und dadurch verteuern (Seiten 61–62).</p>" +
+      "<h3>Nicht jede Schuld belastet den Haushalt gleich</h3>" +
+      "<p>Das HSK unterscheidet bei den städtischen Unternehmen zwischen <em>rentierlichen</em> und <em>nicht rentierlichen</em> " +
+        "Schulden. Rentierlich heißt: Zins und Tilgung werden aus eigenen Einnahmen bezahlt, etwa aus Gebühren für Wasser und " +
+        "Abwasser, aus dem Energieverkauf oder aus Mieten der Wohnungsbaugesellschaft. Nicht rentierlich, also vom städtischen " +
+        "Haushalt zu tragen, sind laut HSK rund " + S.beteiligungen_nicht_rentierlich_mio + " Mio. €, vor allem bei Bädern und " +
+        "Busverkehr (Seite 42).</p>" +
+      "<h3>Wie das HSK die Kredite steuern will</h3>" +
+      "<ul class=\"liste-schlicht\">" +
+        "<li>Vor jeder Investition sind Notwendigkeit, Folgekosten und die Wirtschaftlichkeit über den ganzen Lebenszyklus " +
+        "darzustellen; billiger bauen darf nicht zu deutlich höheren Betriebskosten führen (Seiten 11, 26).</li>" +
+        "<li>Zins und Tilgung, die aus einem Kredit folgen, werden bei jeder Investitionsentscheidung als eigenes Kriterium " +
+        "offen ausgewiesen (Seite 52).</li>" +
+        "<li>Förderdarlehen und Förderprogramme werden vorrangig genutzt, soweit sie wirtschaftlich vorteilhaft sind (Seite 53).</li>" +
+        "<li>Erlöse aus Grundstücks- und Gebäudeverkäufen senken vollständig die nötigen Kredite (Seite 45).</li>" +
+        "<li>Die Investitionsplanung reicht künftig zehn Jahre voraus, und eine Finanzierungsstrategie legt Laufzeiten, " +
+        "Zinsbindungen und Refinanzierung fest. Das soll Planungssicherheit schaffen (Seiten 47, 53).</li>" +
+      "</ul>" +
+      "<p>Den Abstand zwischen den beiden Szenarien, " + zahl(kons) + " oder " + zahl(trend) + " Mio. € Schulden im Jahr 2036, " +
+        "beschreibt das HSK selbst als „erheblichen politischen Steuerungs- und Priorisierungsbedarf“ (Seite 11). Welche " +
+        "Projekte die Stadt umsetzt, entscheidet der Stadtrat.</p>",
+      "<p>Geliehenes Geld kostet Zinsen. Und die Stadt muss es zurückzahlen. Das Geld fehlt dann für andere Dinge.</p>" +
+      "<p>Die Stadt darf sich nur Geld leihen, um etwas zu bauen. Zum Beispiel eine Schule. Eine Schule hält viele Jahre. " +
+        "So wird sie über viele Jahre bezahlt.</p>" +
+      "<p>Wenn die Stadt nichts repariert, wird es später teurer. Auch das steht im Spar-Plan.</p>" +
+      "<p>Manche Schulden bezahlen die Firmen der Stadt selbst. Zum Beispiel mit dem Geld für Wasser. " +
+        "Andere Schulden muss die Stadt bezahlen. Zum Beispiel für die Bäder und die Busse.</p>" +
+      "<p>Die Stadt will genau prüfen: Was kostet ein Bau in vielen Jahren? Sie will Förder-Geld nutzen. " +
+        "Und sie plant 10 Jahre im Voraus.</p>" +
+      "<p>Was gebaut wird, entscheidet der Stadt-Rat.</p>");
+  }
+
   /* ---------------- Bisher + Weiter + Quellen ---------------- */
   function zeigeBisher() {
     var ul = document.getElementById("bisher-liste");
@@ -1694,6 +1843,7 @@
     zeigeFreiwillig();
     zeigeSchulden();
     zeigeKredit();
+    zeigeEinordnung();
     zeigeBisher();
     zeigeWeiter();
     zeigeQuellen();
