@@ -32,3 +32,7 @@ Lizenzen
 - Das MeinBezirk-Toolkit von Igor Schwarzmann selbst ist dual lizenziert:
   sein `index.html` unter MIT, seine `.md`-Dokumentation unter CC-BY-4.0.
   Quelle: https://github.com/igor/meinbezirk
+- Die Überschriftenschrift Source Serif 4 im Ordner `schrift/` stammt von
+  Adobe (© 2014–2021 Adobe Systems Incorporated, Reserved Font Name „Source“)
+  und steht unter der SIL Open Font License 1.1, siehe `schrift/OFL.txt`.
+  Die Web-Teilmengen kommen aus dem Fontsource-Paket @fontsource/source-serif-4.

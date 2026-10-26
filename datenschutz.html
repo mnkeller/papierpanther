@@ -19,6 +19,8 @@
 <meta name="twitter:title" content="Datenschutz — PapierPanther">
 <meta name="twitter:image" content="https://schanzer-papierpanther.de/vorschau.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003E59'/%3E%3Cpath d='M18 30c0-8 5-15 14-15s14 7 14 15' fill='none' stroke='%23ffffff' stroke-width='2.4' stroke-linecap='round'/%3E%3Cpath d='M17 22c-2-4-2-8 1-11 1 3 1 6 3 8z' fill='%23ffffff'/%3E%3Cpath d='M47 22c2-4 2-8-1-11-1 3-1 6-3 8z' fill='%23ffffff'/%3E%3Ccircle cx='25' cy='31' r='3' fill='%23ffffff'/%3E%3Ccircle cx='39' cy='31' r='3' fill='%23ffffff'/%3E%3Cpath d='M30 38l2 3 2-3z' fill='%23B00E2B'/%3E%3C/svg%3E">
+<link rel="preload" href="schrift/source-serif-4-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="schrift.css">
 <style>
   :root {
     --primary: #003e59;
@@ -31,7 +33,7 @@
     --bg-warm: #f1efe9;
     --border: #e4e0d8;
     --border-strong: #8f8779;
-    --font-display: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+    --font-display: 'Source Serif 4', 'Iowan Old Style', Georgia, serif;
     --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -62,6 +64,9 @@
   h1 {
     font-family: var(--font-display); font-size: clamp(1.6rem, 4vw, 2.1rem);
     font-weight: 700; letter-spacing: -.02em; margin-bottom: .4rem;
+    /* Ohne eigene Zeilenhoehe erbte die Ueberschrift 1.65 vom Fliesstext und
+       zerfiel in zwei weit auseinanderstehende Zeilen. */
+    line-height: 1.18; max-width: 30ch; text-wrap: balance;
   }
   .lede { color: var(--text-muted); margin-bottom: 2rem; }
   h2 {
