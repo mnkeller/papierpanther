@@ -184,6 +184,14 @@ def hole(pfad, basis, cache=True):
         return ""
 
     text = rohdaten.decode("utf-8", errors="replace")
+    # Voruebergehende Fehlerseite des Portals (HTTP 200, aber "SessionNet
+    # Fehlermeldung") nicht cachen -- sonst bleibt sie fuer immer und der
+    # Antrag oder die Sitzung faellt bei jedem Lauf heraus (2026-10-26:
+    # Antrag 19916 verschwand so von der Seite).
+    if "SessionNet Fehlermeldung" in text:
+        print(f"  ! Fehlerseite statt Inhalt bei {url} (nicht gecacht)", file=sys.stderr)
+        time.sleep(PAUSE_SEKUNDEN)
+        return ""
     with open(cache_datei, "w", encoding="utf-8") as f:
         f.write(text)
     time.sleep(PAUSE_SEKUNDEN)
