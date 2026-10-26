@@ -1,6 +1,6 @@
 {
  "erzeugt_von": "scraper/klima_bauen.py",
- "erzeugt_am": "2026-10-22",
+ "erzeugt_am": "2026-10-26",
  "klima": {
   "station": "Kösching",
   "station_id": "02700",
@@ -862,14 +862,14 @@
    {
     "jahr": 2026,
     "vollstaendig": false,
-    "bis": "21.10.2026",
+    "bis": "25.10.2026",
     "mitteltemperatur": null,
     "heisse_tage": 40,
     "sommertage": 84,
     "tropennaechte": 4,
     "frosttage": 45,
     "eistage": 11,
-    "niederschlag_mm": 397,
+    "niederschlag_mm": 418,
     "abweichung": null
    }
   ],
@@ -3021,14 +3021,14 @@
    },
    {
     "jahr": 2026,
-    "zubau_anzahl": 1267,
-    "zubau_kw": 17832,
-    "bestand_anzahl": 9612,
-    "bestand_kw": 123788,
+    "zubau_anzahl": 1277,
+    "zubau_kw": 17969,
+    "bestand_anzahl": 9622,
+    "bestand_kw": 123925,
     "bestand_kwh": 0,
-    "zubau_kw_dach": 9499,
-    "bestand_kw_dach": 104532,
-    "zubau_anzahl_dach": 624,
+    "zubau_kw_dach": 9637,
+    "bestand_kw_dach": 104669,
+    "zubau_anzahl_dach": 634,
     "zubau_kw_freiflaeche": 7496,
     "bestand_kw_freiflaeche": 16399,
     "zubau_anzahl_freiflaeche": 2,
@@ -3037,7 +3037,7 @@
     "zubau_anzahl_stecker": 641
    }
   ],
-  "in_planung_kw": 14438,
+  "in_planung_kw": 14464,
   "quelle": "https://www.marktstammdatenregister.de/MaStR/Einheit/Einheiten/ErweiterteOeffentlicheEinheitenuebersicht"
  },
  "speicher": {
@@ -3628,35 +3628,35 @@
    },
    {
     "jahr": 2023,
-    "zubau_anzahl": 942,
-    "zubau_kw": 6853,
-    "bestand_anzahl": 1806,
-    "bestand_kw": 12016,
-    "bestand_kwh": 17936
+    "zubau_anzahl": 943,
+    "zubau_kw": 6861,
+    "bestand_anzahl": 1807,
+    "bestand_kw": 12024,
+    "bestand_kwh": 17950
    },
    {
     "jahr": 2024,
     "zubau_anzahl": 900,
     "zubau_kw": 6000,
-    "bestand_anzahl": 2704,
-    "bestand_kw": 18012,
-    "bestand_kwh": 26183
+    "bestand_anzahl": 2705,
+    "bestand_kw": 18020,
+    "bestand_kwh": 26197
    },
    {
     "jahr": 2025,
     "zubau_anzahl": 853,
     "zubau_kw": 4656,
-    "bestand_anzahl": 3547,
-    "bestand_kw": 22472,
-    "bestand_kwh": 33158
+    "bestand_anzahl": 3548,
+    "bestand_kw": 22480,
+    "bestand_kwh": 33172
    },
    {
     "jahr": 2026,
-    "zubau_anzahl": 917,
-    "zubau_kw": 4736,
-    "bestand_anzahl": 4450,
-    "bestand_kw": 27194,
-    "bestand_kwh": 40430
+    "zubau_anzahl": 929,
+    "zubau_kw": 4827,
+    "bestand_anzahl": 4463,
+    "bestand_kw": 27292,
+    "bestand_kwh": 40572
    }
   ],
   "quelle": "https://www.marktstammdatenregister.de/MaStR/Einheit/Einheiten/ErweiterteOeffentlicheEinheitenuebersicht"

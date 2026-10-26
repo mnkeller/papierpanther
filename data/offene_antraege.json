@@ -1,6 +1,6 @@
 {
   "hinweis": "Antraege ohne Sitzungstermin, aus der Liste 'Aktuelle Stadtratsantraege' im Ratsinfoportal der Stadt Ingolstadt. Sobald die Tagesordnung seiner Sitzung veroeffentlicht ist, verschwindet ein Antrag von hier und taucht stattdessen ganz normal ueber ris_ingolstadt.py auf. Bis dahin steht ein schon angesetzter Termin im Feld 'termin'.",
-  "abgerufen_am": "2026-10-22",
+  "abgerufen_am": "2026-10-26",
   "antraege": [
     {
       "quelle": "stadt",
@@ -186,7 +186,7 @@
       "quelle": "stadt",
       "kvonr": "23427",
       "titel": "Wunderlkasematte aus dem Dornröschenschlaf wecken – Historisches Festungswerk behutsam aufwerten und kulturell nutzen",
-      "antragsteller": "UWG-Stadtratsfraktionund der FDP-Stadtratsgruppe",
+      "antragsteller": "UWG-Stadtratsfraktion und der FDP-Stadtratsgruppe",
       "antragsdatum": "2026-10-14",
       "antragsdatum_anzeige": "14.10.2026",
       "vorlage": "V0669/26",
@@ -364,24 +364,6 @@
     },
     {
       "quelle": "stadt",
-      "kvonr": "23369",
-      "titel": "Verleihung kommunaler Ehrenbezeichnungen der Stadt Ingolstadt",
-      "antragsteller": "FW-Stadtratsfraktion",
-      "antragsdatum": "2026-09-28",
-      "antragsdatum_anzeige": "28.09.2026",
-      "vorlage": "V0613/26",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23369",
-      "ziel_gremium": "Stadtrat",
-      "termin": "2026-10-29",
-      "dokumente": [
-        {
-          "titel": "Stadtratsantrag FW",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253873&type=do"
-        }
-      ]
-    },
-    {
-      "quelle": "stadt",
       "kvonr": "23312",
       "titel": "Klarer Konsolidierungspfad für Ingolstadt – transparent, nachvollziehbar und messbar",
       "antragsteller": "CSU-Stadtratsfraktion",
@@ -413,24 +395,6 @@
         {
           "titel": "Stadtratsantrag CSU",
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253413&type=do"
-        }
-      ]
-    },
-    {
-      "quelle": "stadt",
-      "kvonr": "23315",
-      "titel": "Transparente Kriterien für die Verleihung kommunaler Ehrentitel",
-      "antragsteller": "CSU-Stadtratsfraktion",
-      "antragsdatum": "2026-09-15",
-      "antragsdatum_anzeige": "15.09.2026",
-      "vorlage": "V0559/26",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23315",
-      "ziel_gremium": "Stadtrat",
-      "termin": "2026-10-29",
-      "dokumente": [
-        {
-          "titel": "Stadtratsantrag CSU",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253416&type=do"
         }
       ]
     },
@@ -2457,6 +2421,24 @@
         {
           "titel": "Stadtratsantrag FDP/JU",
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=186673&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23458",
+      "titel": "Sanierung des Technischen Rathauses - externes Gutachten",
+      "antragsteller": "",
+      "antragsdatum": "",
+      "antragsdatum_anzeige": "",
+      "vorlage": "V0697/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23458",
+      "ziel_gremium": "Stadtrat",
+      "termin": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag AfD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254860&type=do"
         }
       ]
     },

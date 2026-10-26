@@ -1,7 +1,7 @@
 {
   "erzeugt_von": "scraper/antraege_holen_lesen.py",
   "quelle_hinweis": "Anträge der Stadtratsfraktionen aus dem Ratsinfoportal der Stadt Ingolstadt, laufende Wahlperiode. Status stammt aus den bereits gescrapten Tagesordnungen und dem kuratierten Feed dieser Seite, nicht aus einer eigenen Recherche.",
-  "abgerufen_am": "2026-10-22",
+  "abgerufen_am": "2026-10-26",
   "parteien": {
     "CSU": [
       {
@@ -32,13 +32,13 @@
         "vorlage": "V0559/26",
         "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23315",
         "pdf_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253416&type=do",
-        "in_beratung": false,
-        "stand": null,
-        "ref": null,
-        "klartext_titel": null,
-        "klartext": null,
-        "klartext_titel_leicht": null,
-        "klartext_leicht": null
+        "in_beratung": true,
+        "stand": "Nur besprochen, nichts entschieden",
+        "ref": "stadt:13548#Ö12",
+        "klartext_titel": "Klare Kriterien für Ehrenbürgerwürde und Ehrentitel gefordert",
+        "klartext": "Die CSU-Stadtratsfraktion beantragt, gemeinsam mit den Fraktionen transparente, personenunabhängige Kriterien für die Verleihung kommunaler Ehrentitel zu erarbeiten – insbesondere für die Bezeichnungen „Altoberbürgermeister:in“, „Altbürgermeister:in“ sowie die Ehrenbürgerwürde als höchste Auszeichnung der Stadt. Ziel ist, künftige Entscheidungen nachvollziehbar zu machen, ohne die Ehrenbürgerwürde auf ein bloßes politisches Amt zu reduzieren.",
+        "klartext_titel_leicht": "Klare Regeln für Ehrentitel der Stadt",
+        "klartext_leicht": "Die Stadt vergibt besondere Ehrentitel, zum Beispiel die Ehrenbürgerwürde. Bisher gibt es dafür keine festen Regeln. Die CSU-Fraktion möchte, dass der Stadtrat gemeinsam klare Kriterien festlegt, wer solche Titel bekommen kann."
       },
       {
         "kvonr": "23314",
@@ -167,6 +167,24 @@
         "klartext_leicht": "Roboter und Computer-Programme werden immer wichtiger. Ingolstadt soll ein Zentrum dafür bekommen. Firmen können dort neue Technik ausprobieren. Die Stadt soll jedes Jahr 500.000 Euro dazu geben. Das soll 5 Jahre lang so sein."
       },
       {
+        "kvonr": "23127",
+        "titel": "Wiedererrichtung des Badestegs am Baggersee an einem alternativen Standort",
+        "antragsart": "Antrag",
+        "zusatzzeile": "-Antrag der CSU-Stadtratsfraktion vom 30.06.2026-",
+        "datum": "2026-06-30",
+        "datum_anzeige": "30.06.2026",
+        "vorlage": "V0374/26",
+        "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23127",
+        "pdf_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251347&type=do",
+        "in_beratung": true,
+        "stand": "Nur besprochen, nichts entschieden",
+        "ref": "stadt:13538#Ö2",
+        "klartext_titel": "CSU beantragt neuen Badesteg am Baggersee",
+        "klartext": "Die CSU-Stadtratsfraktion beantragt, den im Zuge des Sicherheitskonzepts entfernten Badesteg beim Wildgehege am Baggersee an einem anderen, nahegelegenen Standort wieder zu errichten. Die Verwaltung soll dafür die rechtlichen, wasserrechtlichen, naturschutzfachlichen und sicherheitsrelevanten Voraussetzungen prüfen und die Kosten ermitteln, bevor der Stadtrat informiert wird. Begründet wird der Antrag mit der hohen Bedeutung des Baggersees als Naherholungsgebiet und dem Wunsch vieler Besucherinnen und Besucher nach einem attraktiven Wasserzugang an dieser Stelle.",
+        "klartext_titel_leicht": "CSU will neuen Steg zum Baden am Baggersee",
+        "klartext_leicht": "Am Baggersee gab es einen Steg zum Baden. Die Stadt hat ihn wegen der Sicherheit entfernt. Die CSU im Stadtrat möchte einen neuen Steg an einer anderen Stelle. Die Verwaltung soll das prüfen. Sie soll auch die Kosten ausrechnen. Der Baggersee ist ein beliebter Ort zum Baden. Viele Menschen wünschen sich einen Steg an dieser Stelle."
+      },
+      {
         "kvonr": "23136",
         "titel": "Antrag auf Einberufung einer Sondersitzung des Stadtrats nach Art. 46 Abs. 2 GO",
         "antragsart": "Antrag",
@@ -201,24 +219,6 @@
         "klartext": null,
         "klartext_titel_leicht": null,
         "klartext_leicht": null
-      },
-      {
-        "kvonr": "23127",
-        "titel": "Wiedererrichtung des Badestegs am Baggersee an einem alternativen Standort",
-        "antragsart": "Antrag",
-        "zusatzzeile": "-Antrag der CSU-Stadtratsfraktion vom 30.06.2026-",
-        "datum": "2026-06-30",
-        "datum_anzeige": "30.06.2026",
-        "vorlage": "V0374/26",
-        "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23127",
-        "pdf_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=251347&type=do",
-        "in_beratung": true,
-        "stand": "Nur besprochen, nichts entschieden",
-        "ref": "stadt:13538#Ö2",
-        "klartext_titel": "CSU beantragt neuen Badesteg am Baggersee",
-        "klartext": "Die CSU-Stadtratsfraktion beantragt, den im Zuge des Sicherheitskonzepts entfernten Badesteg beim Wildgehege am Baggersee an einem anderen, nahegelegenen Standort wieder zu errichten. Die Verwaltung soll dafür die rechtlichen, wasserrechtlichen, naturschutzfachlichen und sicherheitsrelevanten Voraussetzungen prüfen und die Kosten ermitteln, bevor der Stadtrat informiert wird. Begründet wird der Antrag mit der hohen Bedeutung des Baggersees als Naherholungsgebiet und dem Wunsch vieler Besucherinnen und Besucher nach einem attraktiven Wasserzugang an dieser Stelle.",
-        "klartext_titel_leicht": "CSU will neuen Steg zum Baden am Baggersee",
-        "klartext_leicht": "Am Baggersee gab es einen Steg zum Baden. Die Stadt hat ihn wegen der Sicherheit entfernt. Die CSU im Stadtrat möchte einen neuen Steg an einer anderen Stelle. Die Verwaltung soll das prüfen. Sie soll auch die Kosten ausrechnen. Der Baggersee ist ein beliebter Ort zum Baden. Viele Menschen wünschen sich einen Steg an dieser Stelle."
       },
       {
         "kvonr": "23122",
@@ -311,24 +311,6 @@
         "klartext_leicht": "Die CSU macht sich Sorgen um Sicherheit in Krisenzeiten. Sie will eine neue Arbeitsgruppe für die Stadt. Die Gruppe soll prüfen: Ist Ingolstadt auf eine Krise vorbereitet? Welche Mitarbeitenden werden dann gebraucht? Auch freiwillige Helfer:innen bei Feuerwehr und THW sollen befragt werden. Grund ist die unsichere Lage in Europa."
       },
       {
-        "kvonr": "22539",
-        "titel": "Verschiebung der Referentenwahlen in die nächste Wahlperiode / Sicherung einer geordneten Übergangs- und Konsolidierungsphase",
-        "antragsart": "Dringlichkeitsantrag",
-        "zusatzzeile": "-Dringlichkeitsantrag der CSU-Stadtratsfraktion vom 27.10.2025-",
-        "datum": "2025-10-27",
-        "datum_anzeige": "27.10.2025",
-        "vorlage": "V0766/25",
-        "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22539",
-        "pdf_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=243186&type=do",
-        "in_beratung": true,
-        "stand": "Nur besprochen, nichts entschieden",
-        "ref": "stadt:11853#Ö3",
-        "klartext_titel": "CSU will Wahl der Referenten auf nächste Wahlperiode verschieben",
-        "klartext": "Die CSU-Stadtratsfraktion beantragt per Dringlichkeitsantrag, die anstehenden Wahlen des Wirtschafts- und Personalreferenten auf die nächste Wahlperiode zu verschieben und den Baureferenten-Posten zunächst kommissarisch zu besetzen. Bis zur konstituierenden Sitzung des neuen Stadtrats soll die Verwaltung ein Konzept zur möglichen Neuordnung der Referatsstruktur samt möglicher Zusammenlegungen vorlegen. Hintergrund ist die angespannte Haushaltslage, die aus Sicht der Fraktion keine langfristigen Personalfestlegungen vor einer grundsätzlichen Strukturentscheidung erlaubt.",
-        "klartext_titel_leicht": "CSU will Amts-Wahlen verschieben",
-        "klartext_leicht": "In Ingolstadt sollen bald wichtige Ämter neu besetzt werden. Zum Beispiel der Wirtschafts- und der Personal-Referent. Die CSU will das verschieben. Erst soll der neue Stadtrat entscheiden, wie die Ämter überhaupt aufgeteilt werden. Grund ist die schwierige Geld-Lage der Stadt."
-      },
-      {
         "kvonr": "22524",
         "titel": "Arbeitsgelegenheiten für Asylbewerber",
         "antragsart": "Antrag",
@@ -345,6 +327,24 @@
         "klartext": "Die CSU-Stadtratsfraktion beantragt, ein Konzept zu erarbeiten, um anerkannte und suchende Asylbewerber verstärkt in gemeinnützige Arbeitsgelegenheiten einzubinden — etwa bei Straßenreinigung, Schneeräumung oder Grünanlagenpflege. Bei unentschuldigtem Fernbleiben soll geprüft werden, ob Leistungen gekürzt werden können. Die Fraktion begründet dies mit einer Gesetzesänderung, die solche Arbeitsgelegenheiten seit 2024 erleichtert, und erhofft sich davon auch einen Integrationsbeitrag.",
         "klartext_titel_leicht": "CSU will mehr gemeinnützige Arbeit für Asylbewerber:innen",
         "klartext_leicht": "Manche Asylbewerber:innen dürfen jetzt gemeinnützig arbeiten. Zum Beispiel Straßen kehren oder Schnee räumen. Die CSU will das in Ingolstadt stärker nutzen. Wer ohne Grund nicht mitmacht, könnte weniger Geld bekommen. Die CSU sagt: Das hilft der Stadt und den Menschen selbst."
+      },
+      {
+        "kvonr": "22539",
+        "titel": "Verschiebung der Referentenwahlen in die nächste Wahlperiode / Sicherung einer geordneten Übergangs- und Konsolidierungsphase",
+        "antragsart": "Dringlichkeitsantrag",
+        "zusatzzeile": "-Dringlichkeitsantrag der CSU-Stadtratsfraktion vom 27.10.2025-",
+        "datum": "2025-10-27",
+        "datum_anzeige": "27.10.2025",
+        "vorlage": "V0766/25",
+        "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=22539",
+        "pdf_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=243186&type=do",
+        "in_beratung": true,
+        "stand": "Nur besprochen, nichts entschieden",
+        "ref": "stadt:11853#Ö3",
+        "klartext_titel": "CSU will Wahl der Referenten auf nächste Wahlperiode verschieben",
+        "klartext": "Die CSU-Stadtratsfraktion beantragt per Dringlichkeitsantrag, die anstehenden Wahlen des Wirtschafts- und Personalreferenten auf die nächste Wahlperiode zu verschieben und den Baureferenten-Posten zunächst kommissarisch zu besetzen. Bis zur konstituierenden Sitzung des neuen Stadtrats soll die Verwaltung ein Konzept zur möglichen Neuordnung der Referatsstruktur samt möglicher Zusammenlegungen vorlegen. Hintergrund ist die angespannte Haushaltslage, die aus Sicht der Fraktion keine langfristigen Personalfestlegungen vor einer grundsätzlichen Strukturentscheidung erlaubt.",
+        "klartext_titel_leicht": "CSU will Amts-Wahlen verschieben",
+        "klartext_leicht": "In Ingolstadt sollen bald wichtige Ämter neu besetzt werden. Zum Beispiel der Wirtschafts- und der Personal-Referent. Die CSU will das verschieben. Erst soll der neue Stadtrat entscheiden, wie die Ämter überhaupt aufgeteilt werden. Grund ist die schwierige Geld-Lage der Stadt."
       },
       {
         "kvonr": "22523",
@@ -3674,13 +3674,13 @@
         "vorlage": "V0613/26",
         "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23369",
         "pdf_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253873&type=do",
-        "in_beratung": false,
-        "stand": null,
-        "ref": null,
-        "klartext_titel": null,
-        "klartext": null,
-        "klartext_titel_leicht": null,
-        "klartext_leicht": null
+        "in_beratung": true,
+        "stand": "Nur besprochen, nichts entschieden",
+        "ref": "stadt:13548#Ö13",
+        "klartext_titel": "Freie Wähler wollen klare Regeln für die Ehrentitel „Altbürgermeister“ und „Altoberbürgermeister“",
+        "klartext": "Die FW-Stadtratsfraktion beantragt, dass die Verwaltung gemeinsam mit den Fraktionen und Gruppen des Stadtrats transparente Grundsätze für die Verleihung der Ehrenbezeichnungen „Altbürgermeisterin/Altbürgermeister“ und „Altoberbürgermeisterin/Altoberbürgermeister“ erarbeitet. Aus dem Amt allein soll kein regelmäßiger Anspruch auf den Titel folgen; maßgeblich sollen Dauer und Bedeutung der Amtszeit und besondere Verdienste sein, die über die normale Amtsführung hinausgehen. Bis sich der Stadtrat auf Kriterien verständigt hat, sollen keine weiteren Titel verliehen werden. Die Fraktion betont, dass damit keine Ablehnung der früheren Bürgermeisterinnen Dorothea Deneke-Stoll und Petra Kleine verbunden sei, und verweist auf einen CSU-Antrag mit ähnlichem Ansatz. Der Antrag stammt vom 28. September 2026 und ist noch keiner Sitzung zugeteilt.",
+        "klartext_titel_leicht": "Freie Wähler wollen Regeln für Ehren-Titel",
+        "klartext_leicht": "Frühere Bürger-Meister können einen Ehren-Titel bekommen. Der Titel heißt zum Beispiel Alt-Bürgermeister. Die Partei Freie Wähler sagt: Dafür fehlen klare Regeln. Nicht jeder soll den Titel automatisch bekommen. Die Person soll besonders viel für Ingolstadt getan haben. Der Stadt-Rat soll zuerst Regeln machen. Bis dahin soll niemand den Titel bekommen. Es gibt noch keinen Termin für den Antrag."
       },
       {
         "kvonr": "23367",
@@ -4296,6 +4296,24 @@
       }
     ],
     "AfD": [
+      {
+        "kvonr": "23458",
+        "titel": "Sanierung des Technischen Rathauses - externes Gutachten",
+        "antragsart": "Dringlichkeitsantrag",
+        "zusatzzeile": "-Dringlichkeitsantrag der AfD-Stadtratsfraktion vom 22.10.2026-",
+        "datum": "2026-10-22",
+        "datum_anzeige": "22.10.2026",
+        "vorlage": "V0697/26",
+        "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23458",
+        "pdf_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254860&type=do",
+        "in_beratung": false,
+        "stand": null,
+        "ref": null,
+        "klartext_titel": null,
+        "klartext": null,
+        "klartext_titel_leicht": null,
+        "klartext_leicht": null
+      },
       {
         "kvonr": "23239",
         "titel": "Antrag auf Überprüfung der Einnahmesituation im Vermögenshaushalt; Erhebung des beitragsfähigen Aufwandes für Erschließungsanlagen nach dem Baugesetzbuch (BauGB) und der Erschließungsbeitragssatzung (EBS) der Stadt Ingolstadt",
@@ -5619,6 +5637,42 @@
     ],
     "ÖDP": [
       {
+        "kvonr": "23455",
+        "titel": "PFAS",
+        "antragsart": "Dringlichkeitsantrag",
+        "zusatzzeile": "-Dringlichkeitsantrag der ödp-Stadtratsgruppe vom 22.10.2026-",
+        "datum": "2026-10-22",
+        "datum_anzeige": "22.10.2026",
+        "vorlage": "V0694/26",
+        "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23455",
+        "pdf_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254822&type=do",
+        "in_beratung": false,
+        "stand": null,
+        "ref": null,
+        "klartext_titel": null,
+        "klartext": null,
+        "klartext_titel_leicht": null,
+        "klartext_leicht": null
+      },
+      {
+        "kvonr": "23303",
+        "titel": "Erweiterung des Hitzeaktionsplans der Stadt Ingolstadt um ein Maßnahmenpaket zum Hitzeschutz im Öffentlichen Personennahverkehr",
+        "antragsart": "Antrag",
+        "zusatzzeile": "- Antrag der ÖDP-Stadtratsgruppe vom 09.09.2026 -",
+        "datum": "2026-09-09",
+        "datum_anzeige": "09.09.2026",
+        "vorlage": "V0547/26",
+        "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23303",
+        "pdf_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253336&type=do",
+        "in_beratung": false,
+        "stand": null,
+        "ref": null,
+        "klartext_titel": null,
+        "klartext": null,
+        "klartext_titel_leicht": null,
+        "klartext_leicht": null
+      },
+      {
         "kvonr": "23302",
         "titel": "Nachhaltige Haushaltskonsolidierung plus Klimaanpassung im Stadtgrün",
         "antragsart": "Antrag",
@@ -5646,24 +5700,6 @@
         "vorlage": "V0545/26",
         "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23301",
         "pdf_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253330&type=do",
-        "in_beratung": false,
-        "stand": null,
-        "ref": null,
-        "klartext_titel": null,
-        "klartext": null,
-        "klartext_titel_leicht": null,
-        "klartext_leicht": null
-      },
-      {
-        "kvonr": "23303",
-        "titel": "Erweiterung des Hitzeaktionsplans der Stadt Ingolstadt um ein Maßnahmenpaket zum Hitzeschutz im Öffentlichen Personennahverkehr",
-        "antragsart": "Antrag",
-        "zusatzzeile": "- Antrag der ÖDP-Stadtratsgruppe vom 09.09.2026 -",
-        "datum": "2026-09-09",
-        "datum_anzeige": "09.09.2026",
-        "vorlage": "V0547/26",
-        "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23303",
-        "pdf_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253336&type=do",
         "in_beratung": false,
         "stand": null,
         "ref": null,
@@ -5961,24 +5997,6 @@
         "klartext_leicht": "Die ÖDP-Gruppe stellt einen Antrag. Es geht um sehr starken Regen. Das nennt man Starkregen. Die ÖDP will eine Studie dazu. Die Studie soll zeigen: Was passiert bei ganz starkem Regen in Ingolstadt? Grund dafür sind Unwetter in Nachbar-Ländern. Auch früher gab es solche starken Fluten. Die ÖDP findet: Man sollte sich darauf vorbereiten."
       },
       {
-        "kvonr": "19445",
-        "titel": "Einsatz autonomer Kleinbusse für die Innenstadt",
-        "antragsart": "Antrag",
-        "zusatzzeile": "- Antrag der ÖDP-Stadtratsgruppe vom 14.09.2024 -",
-        "datum": "2024-09-14",
-        "datum_anzeige": "14.09.2024",
-        "vorlage": "V0678/24",
-        "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19445",
-        "pdf_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=223610&type=do",
-        "in_beratung": false,
-        "stand": null,
-        "ref": null,
-        "klartext_titel": null,
-        "klartext": null,
-        "klartext_titel_leicht": null,
-        "klartext_leicht": null
-      },
-      {
         "kvonr": "19443",
         "titel": "Bahnanschluss für Gewerbegebiet Manchinger Straße",
         "antragsart": "Antrag",
@@ -6013,6 +6031,24 @@
         "klartext": "Die ÖDP-Stadtratsgruppe beantragt, dass die Stadt bei allen neuen Baugebieten prüft, ob eine Angebotslücke für Seniorenwohnungen und Kita-Plätze besteht, wünschenswert etwa in Form eines „Hauses für Jung und Alt“. Der Stadtrat soll zudem jährlich informiert werden, in welchen Stadtteilen Lücken bei wohnortnahen Seniorenwohnungen bestehen und welche Optionen zur Behebung gesehen werden. Begründet wird der Antrag damit, dass ältere Menschen oft in vertrauter Umgebung wohnen bleiben möchten, aber teils in Seniorenheime außerhalb ausweichen müssen.",
         "klartext_titel_leicht": "ÖDP will mehr Wohnungen für Senioren in der Nähe",
         "klartext_leicht": "Manche ältere Menschen finden keine passende Wohnung in ihrem Viertel. Sie müssen deshalb weit wegziehen. Die ÖDP will das ändern. Bei neuen Baugebieten soll geprüft werden: Fehlen hier Senioren-Wohnungen? Der Stadt-Rat soll dazu jedes Jahr einen Bericht bekommen."
+      },
+      {
+        "kvonr": "19445",
+        "titel": "Einsatz autonomer Kleinbusse für die Innenstadt",
+        "antragsart": "Antrag",
+        "zusatzzeile": "- Antrag der ÖDP-Stadtratsgruppe vom 14.09.2024 -",
+        "datum": "2024-09-14",
+        "datum_anzeige": "14.09.2024",
+        "vorlage": "V0678/24",
+        "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=19445",
+        "pdf_url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=223610&type=do",
+        "in_beratung": false,
+        "stand": null,
+        "ref": null,
+        "klartext_titel": null,
+        "klartext": null,
+        "klartext_titel_leicht": null,
+        "klartext_leicht": null
       },
       {
         "kvonr": "19402",
@@ -6764,7 +6800,7 @@
         "kvonr": "23427",
         "titel": "Wunderlkasematte aus dem Dornröschenschlaf wecken – Historisches Festungswerk behutsam aufwerten und kulturell nutzen",
         "antragsart": "Gemeinschaftsantrag",
-        "zusatzzeile": "-Gemeinschaftsantrag der UWG-Stadtratsfraktionund der FDP-Stadtratsgruppe vom 14.10.2026-",
+        "zusatzzeile": "-Gemeinschaftsantrag der UWG-Stadtratsfraktion und der FDP-Stadtratsgruppe vom 14.10.2026-",
         "datum": "2026-10-14",
         "datum_anzeige": "14.10.2026",
         "vorlage": "V0669/26",
@@ -7429,9 +7465,9 @@
     ]
   },
   "statistik": {
-    "gesamt": 411,
-    "in_beratung": 214,
-    "kuratiert": 209,
+    "gesamt": 413,
+    "in_beratung": 216,
+    "kuratiert": 211,
     "nur_eingereicht": 197
   }
 }
