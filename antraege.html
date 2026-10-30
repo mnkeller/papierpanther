@@ -102,6 +102,21 @@
   .stat-num { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; color: var(--primary); }
   .stat-label { font-size: .68rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: .05em; }
 
+  /* ---------- Freitextsuche ---------- */
+  .search-box { margin-bottom: 1.25rem; }
+  .search-box label {
+    display: block; font-size: .7rem; text-transform: uppercase; letter-spacing: .09em;
+    color: var(--text-faint); margin-bottom: .4rem; font-weight: 600;
+  }
+  .search-input {
+    width: 100%; font: inherit; font-size: .92rem; padding: .55rem .7rem;
+    border: 1px solid var(--border-strong); border-radius: 8px;
+    background: #fff; color: var(--text);
+  }
+  .search-input::placeholder { color: var(--text-faint); }
+  .search-input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .such-status { font-size: .84rem; color: var(--text-faint); margin: -.9rem 0 1.5rem; min-height: 1.2em; }
+
   /* ---------- Partei-Filter ---------- */
   .filter-row { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1.75rem; }
   .chip-btn {
@@ -210,7 +225,13 @@
     <p class="lede" id="txt-lede"></p>
 
     <div class="stat-row" id="stat-row"></div>
+    <div class="search-box">
+      <label for="suche" id="suche-label">Suchen</label>
+      <input type="search" id="suche" name="suche" class="search-input"
+             placeholder="z. B. Tempo 30, Radweg, Kita" autocomplete="off">
+    </div>
     <div class="filter-row" id="partei-filter"></div>
+    <p class="such-status" id="such-status" role="status" aria-live="polite"></p>
 
     <div id="antraege-liste">
       <p class="ladehinweis">Lade Anträge …</p>
@@ -271,6 +292,8 @@
         'Aufbereitung dieser Seite.',
       l: 'Was die Parteien im Stadtrat beantragen. Und was daraus wird.',
     },
+    sucheLabel:       { n: 'Suchen', l: 'Wort suchen' },
+    suchePlaceholder: { n: 'z. B. Tempo 30, Radweg, Kita', l: 'zum Beispiel: Kita' },
     hinweis: {
       n: '<strong>PapierPanther ist kein Angebot der Stadt Ingolstadt.</strong> Die Anträge ' +
         'stammen aus dem Ratsinfoportal der Stadt Ingolstadt. Verbindlich ist immer das ' +
@@ -364,6 +387,32 @@
   }
 
   var aktivePartei = null;
+  var suchwoerter = [];
+
+  /* Suchtext je Antrag einmalig vorberechnen: normale und leichte Fassung,
+     amtlicher Titel, Partei, Vorlagennummer — unabhaengig vom Sprachmodus. */
+  if (D && D.parteien) {
+    Object.keys(D.parteien).forEach(function (partei) {
+      D.parteien[partei].forEach(function (a) {
+        a._suchtext = [
+          partei, a.klartext_titel, a.klartext, a.klartext_titel_leicht, a.klartext_leicht,
+          a.titel, a.antragsart, a.vorlage
+        ].filter(Boolean).join(' ').toLowerCase();
+      });
+    });
+  }
+
+  /* Mehrere Suchwoerter gelten zusammen (UND), in beliebiger Reihenfolge. */
+  function passt(a) {
+    for (var i = 0; i < suchwoerter.length; i++) {
+      if (a._suchtext.indexOf(suchwoerter[i]) === -1) return false;
+    }
+    return true;
+  }
+
+  function treffer(partei) {
+    return (D.parteien[partei] || []).filter(passt);
+  }
 
   function baueFilter() {
     var box = document.getElementById('partei-filter');
@@ -375,8 +424,8 @@
     box.appendChild(alle);
 
     Object.keys(D.parteien).forEach(function (partei) {
-      var anzahl = D.parteien[partei].length;
-      if (!anzahl) return;
+      var anzahl = treffer(partei).length;
+      if (!anzahl && aktivePartei !== partei) return;
       var btn = el('button', 'chip-btn');
       btn.type = 'button';
       btn.appendChild(document.createTextNode(partei));
@@ -395,10 +444,12 @@
     listeEl.textContent = '';
     var parteien = aktivePartei ? [aktivePartei] : Object.keys(D.parteien);
     var irgendwas = false;
+    var summe = 0;
     parteien.forEach(function (partei) {
-      var antraege = D.parteien[partei];
-      if (!antraege || !antraege.length) return;
+      var antraege = treffer(partei);
+      if (!antraege.length) return;
       irgendwas = true;
+      summe += antraege.length;
       var gruppe = el('section', 'partei-gruppe');
       gruppe.appendChild(el('h2', null, partei + ' (' + antraege.length + ')'));
       antraege.forEach(function (a) { gruppe.appendChild(antragKarte(a)); });
@@ -407,6 +458,9 @@
     if (!irgendwas) {
       listeEl.appendChild(el('p', 'ladehinweis', 'Keine Anträge gefunden.'));
     }
+    document.getElementById('such-status').textContent = suchwoerter.length
+      ? (summe === 1 ? '1 Antrag passt zur Suche.' : summe + ' Anträge passen zur Suche.')
+      : '';
   }
 
   function baueStatRow() {
@@ -429,6 +483,8 @@
   function texteAnwenden() {
     document.getElementById('txt-lede').textContent = txt('lede');
     document.getElementById('txt-hinweis').innerHTML = txt('hinweis');
+    document.getElementById('suche-label').textContent = txt('sucheLabel');
+    document.getElementById('suche').setAttribute('placeholder', txt('suchePlaceholder'));
     document.getElementById('quellen-block').textContent =
       (D.quelle_hinweis || '') + ' Abgerufen am ' + datumDe(D.abgerufen_am) + '.';
   }
@@ -439,6 +495,18 @@
     baueListe();
   }
   texteAnwenden();
+
+  var sucheInput = document.getElementById('suche');
+  var sucheTimer = null;
+  sucheInput.addEventListener('input', function () {
+    var wert = sucheInput.value;
+    clearTimeout(sucheTimer);
+    sucheTimer = setTimeout(function () {
+      var begriff = wert.trim().toLowerCase();
+      suchwoerter = begriff ? begriff.split(/\s+/) : [];
+      if (D && D.parteien) { baueFilter(); baueListe(); }
+    }, 120);
+  });
 
   var btnLeicht = document.getElementById('btn-leicht');
   btnLeicht.setAttribute('aria-pressed', leicht ? 'true' : 'false');

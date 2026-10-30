@@ -1518,8 +1518,22 @@
   });
 
   /* ---------------- Karten ---------------- */
+  /* Mehrere Suchwoerter gelten zusammen (UND): "gruene tempo 30" findet
+     Eintraege, in denen "gruene", "tempo" und "30" irgendwo vorkommen. */
+  var suchwoerterFuer = null, suchwoerter = [];
+  function suchwoerterAktuell() {
+    if (suchwoerterFuer !== suchbegriff) {
+      suchwoerterFuer = suchbegriff;
+      suchwoerter = suchbegriff ? suchbegriff.split(/\s+/) : [];
+    }
+    return suchwoerter;
+  }
+
   function passt(eintrag) {
-    if (suchbegriff && eintrag._suchtext.indexOf(suchbegriff) === -1) return false;
+    var woerter = suchwoerterAktuell();
+    for (var i = 0; i < woerter.length; i++) {
+      if (eintrag._suchtext.indexOf(woerter[i]) === -1) return false;
+    }
     return ACHSEN.every(function (a) {
       var gewaehlt = aktiv[a.key];
       if (!gewaehlt.length) return true;
