@@ -1,10 +1,146 @@
 {
-  "bezirk_obb:4597#Ö 2": {
-    "formel": "Ja 17, Nein 0",
+  "bezirk_obb:4983#Ö 5": {
+    "formel": "Ja 73, Nein 3",
     "ergebnis": "beschlossen",
-    "text": "Dem Bezirksausschuss wird empfohlen, die in der Anlage dargestellten Änderun- gen des Stellenplans 2026 zu beschließen.",
-    "vorlage": "81/BV/185/2025",
-    "empfehlung": true,
+    "text": "Der Bezirkstag beschließt, unter Aufhebung des Beschlusses vom 11.12.2025 zur Anpassung der Entschädigung für den Bezirkstagspräsidenten die monatliche Ent- schädigung des Bezirkstagspräsidenten rückwirkend ab dem 1.5.2026 entspre- chend des Höchstbetrages nach Art. 53 Abs. 3 Satz 2 i.V.m. Anlage 3 auf derzeit 12.117,11 € festzusetzen.",
+    "vorlage": "11/BV/127/2026",
+    "empfehlung": false,
+    "weg": "obb-top"
+  },
+  "bezirk_obb:4983#Ö 6": {
+    "formel": "Ja 9, Nein 65",
+    "ergebnis": "abgelehnt",
+    "text": "Der Bezirkstag stimmt über den Antrag der AfD vom 13.03.2026 ab.",
+    "vorlage": "11/AN/002/2026",
+    "empfehlung": false,
+    "weg": "obb-top"
+  },
+  "bezirk_obb:4983#Ö 7": {
+    "formel": "Ja 8, Nein 67",
+    "ergebnis": "abgelehnt",
+    "text": "Der Bezirkstag stimmt über den Antrag der AfD vom 21.5.2026 ab.",
+    "vorlage": "11/AN/016/2026",
+    "empfehlung": false,
+    "weg": "obb-top"
+  },
+  "bezirk_obb:4983#Ö 8": {
+    "formel": "Ja 74, Nein 0",
+    "ergebnis": "beschlossen",
+    "text": "Der Bezirk Oberbayern bewilligt dem Gehörlosenverband München und Umland e.V. einen Zuschuss zu den Sanierungskosten des Hauptdaches des Gehörlosen- zentrums München in Höhe von 230.688 Euro. Der Betrag wird aufgeteilt auf die Haushaltsjahre 2026 (100.000 Euro) und 2027 (130.688 Euro). Ein Nachweis über sämtliche Kosten ist nach Abschluss der Maßnahmen dem Zuschusswesen vorzu- legen.",
+    "vorlage": "27/BV/135/2026",
+    "empfehlung": false,
+    "weg": "obb-top"
+  },
+  "bezirk_obb:4983#Ö 9": {
+    "formel": "Ja 75, Nein 0",
+    "ergebnis": "beschlossen",
+    "text": "Der Bezirkstag beschließt die „Verordnung zur Aufhebung der Verordnung des Be- zirks Oberbayern über den Schutz von Bodendenkmälern in der Gemarkung Lan- gengeisling, Stadt Erding“ zu erlassen.",
+    "vorlage": "32/BV/034/2026",
+    "empfehlung": false,
+    "weg": "obb-top"
+  },
+  "bezirk_obb:4983#Ö 10": {
+    "formel": "Ja 75, Nein 0",
+    "ergebnis": "beschlossen",
+    "text": "Der Bezirkstag nimmt von der Überschreitung der Plandefizite 2025 bei Kloster Seeon Kenntnis und beschließt das operative Defizit 2025 in Höhe von 1.562.248,87 € auszugleichen. Der Bezirkstag beschließt die im Bezirkshaushalt 2026 auf der Haushaltsstelle 1.87100.71500 (Kloster Seeon – Zuschüsse für lfd. Zwecke) entstehenden Mehr- ausgaben in Höhe von 200.048,87 € zu genehmigen und zur Deckung dieser Mehrausgaben Mittel der allgemeinen Deckungsreserve zu verwenden.",
+    "vorlage": "82/BV/137/2026",
+    "empfehlung": false,
+    "weg": "obb-top"
+  },
+  "bezirk_obb:4983#Ö 11": {
+    "formel": "Ja 76, Nein 0",
+    "ergebnis": "beschlossen",
+    "text": "Der Bezirkstag erteilt der Verwaltung den Auftrag, die Beitrittsverhandlungen mit der ANLEI-Service GmbH aufzunehmen.",
+    "vorlage": "82/BV/156/2026",
+    "empfehlung": false,
+    "weg": "obb-top"
+  },
+  "bezirk_obb:4983#Ö 12": {
+    "formel": "Ja 75, Nein 0",
+    "ergebnis": "beschlossen",
+    "text": "Der Bezirkstag beschließt die „Satzung des Bezirks Oberbayern über die Patien- tenfürsprache an den Kliniken des Bezirks Oberbayern – Kommunalunternehmen (kbo)“ mit Wirkung zum 01.01.2027 in der Fassung vom 02.06.2026.",
+    "vorlage": "83/BV/081/2026",
+    "empfehlung": false,
+    "weg": "obb-top"
+  },
+  "bezirk_obb:4983#Ö 13": {
+    "formel": "Ja 76, Nein 0",
+    "ergebnis": "beschlossen",
+    "text": "Der Bezirkstag beschließt die Neufassung der „Richtlinien für das Prüfungswesen des Bezirks Oberbayern“ in der vorgelegten geänderten Fassung.",
+    "vorlage": "92/BV/103/2026",
+    "empfehlung": false,
+    "weg": "obb-top"
+  },
+  "bezirk_obb:4983#Ö 14": {
+    "formel": "Ja 74, Nein 0",
+    "ergebnis": "beschlossen",
+    "text": "Der Bezirkstag beschließt die kbo-Unternehmenssatzung für das „Kliniken des Be- zirks Oberbayern – Kommunalunternehmen“ (kbo-KU) in der Fassung vom 01.07.2026 (Inkrafttreten 1.1.2027).",
+    "vorlage": "83/BV/142/2026",
+    "empfehlung": false,
+    "weg": "obb-top"
+  },
+  "bezirk_obb:4983#Ö 15": {
+    "formel": "Ja 75, Nein 0",
+    "ergebnis": "beschlossen",
+    "text": "Der Bezirkstag von Oberbayern beschließt, sich der beigefügten Resolution anzu- schließen und fordert alle Mitglieder des Bezirkstags sowie die Beschäftigten der Bezirksverwaltung und aller bezirklichen Einrichtungen auf, sich gegen alle For- men von Antisemitismus aktiv einzusetzen.",
+    "vorlage": "32/BV/154/2026",
+    "empfehlung": false,
+    "weg": "obb-top"
+  },
+  "bezirk_obb:4981#Ö 3": {
+    "formel": "Ja 11, Nein 0",
+    "ergebnis": "beschlossen",
+    "text": "Der Bezirksausschuss beschließt: 1. Der Durchführung des Vorhabens „Schaffung der Grundlagen für Monito- ring, Früherkennung und Prävention der invasiven Quaggamuschel in oberbayerischen Seen“ mit einem Gesamtvolumen von 60.000 € wird zu- gestimmt. 2. Die Verwaltung wird beauftragt, bei der Regierung von Oberbayern die Gewährung einer Zuwendung aus Mitteln der Fraktionsinitiative zur Prä- vention der Quaggamuschel in Oberbayern in Höhe von 54.000 € zu bean- tragen und die zur Umsetzung des Vorhabens erforderlichen Maßnahmen durchzuführen. 3. Der Bezirk Oberbayern stellt für das Vorhaben Eigenmittel in Höhe von 6.000 € bereit. 4. Der außerplanmäßigen Bereitstellung der zur Abwicklung des Vorhabens erforderlichen Einnahmen und Ausgaben im Verwaltungs- und Vermögens- haushalt der Haushaltsjahre 2026 und 2027 wird zugestimmt. Hierfür wer- den überplanmäßige Ausgaben in Höhe von 33.000 € auf der Haushaltstel- le 2.78010.93500.999 genehmigt. Die Deckung erfolgt aus der Haushalts- stelle 2.88910.93200 (Erwerb von Grundstücken und baulichen Anlagen). Im Haushaltsplan 2027 werden auf der Haushaltsstelle 2.78010.93500.999 weitere 12.000 € bereitgestellt. Im Verwaltungshaushalt 2027 werden auf der Haushaltsstelle 1.78010.63202 (Quagga-Muschel) 15.000 € bereitge- stellt. 5. Die Verwaltung wird ermächtigt, im Rahmen des bewilligten Gesamtvolu- mens notwendige Anpassungen bei der Umsetzung und Mittelverwendung vorzunehmen, soweit hierdurch der Förderzweck und der Eigenmittelanteil des Bezi",
+    "vorlage": "15/BV/182/2026",
+    "empfehlung": false,
+    "weg": "obb-top"
+  },
+  "bezirk_obb:4937#Ö 2": {
+    "formel": "Ja 15, Nein 0",
+    "ergebnis": "beschlossen",
+    "text": "Der Ausschuss für Bau, Umwelt und Energie nimmt den vorgestellten Sachverhalt zur Kenntnis und beschließt, die Verwaltung zu ermächtigen, für die Umbaumaßnahmen im Bereich der Feintäschnerei die erforderlichen Planungs- und Bauleistungen anzubahnen und zu beauftragen.",
+    "vorlage": "12/BV/085/2026",
+    "empfehlung": false,
+    "weg": "obb-top"
+  },
+  "bezirk_obb:4937#Ö 3": {
+    "formel": "Ja 15, Nein 0",
+    "ergebnis": "beschlossen",
+    "text": "Der Ausschuss für Bau, Umwelt und Energie nimmt den vorgestellten Sachverhalt zur Kenntnis und gibt die Entwurfsplanung innerhalb des Gesamtkostenrahmens inklusiv Planungskosten und Risikozuschlag von bis zu 65.500.000 Euro frei und beschließt, die Verwaltung zu ermächtigen, für den Neubau des Johann-Nepomuk- von-Kurz-Zentrums die Genehmigungsplanung zu beauftragen.",
+    "vorlage": "12/BV/084/2026",
+    "empfehlung": false,
+    "weg": "obb-top"
+  },
+  "bezirk_obb:4937#Ö 4": {
+    "formel": "Ja 15, Nein 0",
+    "ergebnis": "beschlossen",
+    "text": "Der Ausschuss für Bau, Umwelt und Energie nimmt den vorgestellten Sachverhalt zur Kenntnis und beschließt, die Verwaltung zu ermächtigen, für die Instandsetzung der anlagentechnischen Regelstruktur die erforderlichen Planungs- und Bauleistungen anzubahnen und zu beauftragen.",
+    "vorlage": "12/BV/086/2026",
+    "empfehlung": false,
+    "weg": "obb-top"
+  },
+  "bezirk_obb:4937#Ö 5": {
+    "formel": "Ja 15, Nein 0",
+    "ergebnis": "beschlossen",
+    "text": "Der Ausschuss für Bau, Umwelt und Energie nimmt den vorgestellten Sachverhalt zur Kenntnis, gibt die Entwurfsplanung frei und beschließt, die Verwaltung zu ermächtigen, für die Dachaufstockung Bauteil B die weiteren Planungsleistungen (Leistungsphase 5 bis 9) zu beauftragen. Zudem wird die Verwaltung ermächtigt, eine Vergabe der Bauleistungen an einen Generalunternehmer innerhalb des Gesamtkostenrahmens bis zu 5.320.000 Euro vorzubereiten.",
+    "vorlage": "12/BV/083/2026",
+    "empfehlung": false,
+    "weg": "obb-top"
+  },
+  "bezirk_obb:4937#Ö 6": {
+    "formel": "Ja 15, Nein 0",
+    "ergebnis": "beschlossen",
+    "text": "Der Ausschuss für Bau, Umwelt und Energie nimmt den vorgestellten Sachverhalt zur Kenntnis und beschließt, die Verwaltung zu ermächtigen, für die PV- Anlagenerweiterung über dem Casino die erforderlichen Planungs- und Bauleistungen anzubahnen und zu beauftragen.",
+    "vorlage": "12/BV/089/2026",
+    "empfehlung": false,
+    "weg": "obb-top"
+  },
+  "bezirk_obb:4937#Ö 7": {
+    "formel": "Ja 14, Nein 0",
+    "ergebnis": "beschlossen",
+    "text": "Der Ausschuss für Bau, Umwelt und Energie nimmt den vorgestellten Sachverhalt zur Kenntnis, gibt die Entwurfsplanung frei und beschließt, die Verwaltung zu ermächtigen, für die Erneuerung der Sprinkleranlage in der Hauptverwaltung des Bezirks Oberbayern die erforderlichen Planungs- und Bauleistungen anzubahnen und zu beauftragen.",
+    "vorlage": "12/BV/087/2026",
+    "empfehlung": false,
     "weg": "obb-top"
   },
   "bezirk_obb:4580#Ö 2": {

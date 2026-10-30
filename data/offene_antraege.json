@@ -1,7 +1,43 @@
 {
   "hinweis": "Antraege ohne Sitzungstermin, aus der Liste 'Aktuelle Stadtratsantraege' im Ratsinfoportal der Stadt Ingolstadt. Sobald die Tagesordnung seiner Sitzung veroeffentlicht ist, verschwindet ein Antrag von hier und taucht stattdessen ganz normal ueber ris_ingolstadt.py auf. Bis dahin steht ein schon angesetzter Termin im Feld 'termin'.",
-  "abgerufen_am": "2026-10-26",
+  "abgerufen_am": "2026-10-30",
   "antraege": [
+    {
+      "quelle": "stadt",
+      "kvonr": "23467",
+      "titel": "Digitale Parkraumkontrolle in Ingolstadt prüfen",
+      "antragsteller": "FW-Stadtratsfraktion",
+      "antragsdatum": "2026-10-28",
+      "antragsdatum_anzeige": "28.10.2026",
+      "vorlage": "V0704/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23467",
+      "ziel_gremium": "Stadtrat",
+      "termin": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FW",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255079&type=do"
+        }
+      ]
+    },
+    {
+      "quelle": "stadt",
+      "kvonr": "23469",
+      "titel": "Einführung einer Compliance-Ordnung für Stadtratsmitglieder",
+      "antragsteller": "Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN",
+      "antragsdatum": "2026-10-27",
+      "antragsdatum_anzeige": "27.10.2026",
+      "vorlage": "V0706/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23469",
+      "ziel_gremium": "Stadtrat",
+      "termin": "",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255085&type=do"
+        }
+      ]
+    },
     {
       "quelle": "stadt",
       "kvonr": "23445",
@@ -2372,24 +2408,6 @@
     },
     {
       "quelle": "stadt",
-      "kvonr": "17489",
-      "titel": "Erhalt und Neubau der Schulschwimmbäder",
-      "antragsteller": "CSU-Stadtratsfraktion",
-      "antragsdatum": "2023-10-11",
-      "antragsdatum_anzeige": "11.10.2023",
-      "vorlage": "V0907/23",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=17489",
-      "ziel_gremium": "Stadtrat",
-      "termin": "",
-      "dokumente": [
-        {
-          "titel": "Stadtratsantrag CSU",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=208709&type=do"
-        }
-      ]
-    },
-    {
-      "quelle": "stadt",
       "kvonr": "15744",
       "titel": "Hochwasserschutz",
       "antragsteller": "FW-Stadtratsfraktion",
@@ -2421,24 +2439,6 @@
         {
           "titel": "Stadtratsantrag FDP/JU",
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=186673&type=do"
-        }
-      ]
-    },
-    {
-      "quelle": "stadt",
-      "kvonr": "23458",
-      "titel": "Sanierung des Technischen Rathauses - externes Gutachten",
-      "antragsteller": "",
-      "antragsdatum": "",
-      "antragsdatum_anzeige": "",
-      "vorlage": "V0697/26",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23458",
-      "ziel_gremium": "Stadtrat",
-      "termin": "",
-      "dokumente": [
-        {
-          "titel": "Stadtratsantrag AfD",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254860&type=do"
         }
       ]
     },
@@ -2655,24 +2655,6 @@
         {
           "titel": "Stadtratsantrag SPD",
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=214567&type=do"
-        }
-      ]
-    },
-    {
-      "quelle": "stadt",
-      "kvonr": "17527",
-      "titel": "Schutzplanken",
-      "antragsteller": "",
-      "antragsdatum": "",
-      "antragsdatum_anzeige": "",
-      "vorlage": "V0940/23",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=17527",
-      "ziel_gremium": "Stadtrat",
-      "termin": "",
-      "dokumente": [
-        {
-          "titel": "Stadtratsantrag UWG",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=209296&type=do"
         }
       ]
     }

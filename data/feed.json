@@ -6,8 +6,8 @@
       "software": "Session (Somacos GmbH & Co. KG)",
       "basis_url": "https://www.ingolstadt.de/sessionnet",
       "endung": "php",
-      "anzahl_sitzungen": 382,
-      "anzahl_tops": 3283
+      "anzahl_sitzungen": 383,
+      "anzahl_tops": 3294
     },
     "bza": {
       "name": "Ratsinfoportal der Bezirksausschuesse der Stadt Ingolstadt",
@@ -27,21 +27,21 @@
     }
   },
   "hinweis": "Oeffentlich zugaengliche Seiten, ohne Anmeldung abgerufen.",
-  "daten_abgerufen_am": "2026-10-26",
-  "feed_gebaut_am": "2026-10-26",
+  "daten_abgerufen_am": "2026-10-30",
+  "feed_gebaut_am": "2026-10-30",
   "zeitraum": {
     "von": "2023-11",
     "bis": "2027-01"
   },
   "statistik": {
-    "sitzungen_ausgelesen": 639,
-    "tops_ausgelesen": 6328,
-    "tops_verfahren": 874,
-    "tops_kuratiert": 3872,
-    "tops_abgedeckt": 4544,
-    "tops_sitzungsroutine_offen": 872,
+    "sitzungen_ausgelesen": 640,
+    "tops_ausgelesen": 6339,
+    "tops_verfahren": 875,
+    "tops_kuratiert": 3874,
+    "tops_abgedeckt": 4551,
+    "tops_sitzungsroutine_offen": 873,
     "tops_beteiligung": 580,
-    "tops_sonstige": 330,
+    "tops_sonstige": 333,
     "tops_nicht_oeffentlich": 2,
     "tops_offen": 0,
     "jahre_vollstaendig": [
@@ -51,32 +51,31 @@
       "2026"
     ],
     "jahre_rueckstand": [],
-    "entwuerfe": 1365,
-    "leichte_sprache": 2507,
+    "entwuerfe": 1361,
+    "leichte_sprache": 2513,
     "je_quelle": {
-      "stadt": 1824,
+      "stadt": 1830,
       "bza": 1510,
-      "bezirk_obb": 538
+      "bezirk_obb": 534
     },
     "stand": {
-      "Entscheidung angesetzt": 293,
-      "Entscheidung geplant": 31,
-      "Nur besprochen, nichts entschieden": 2491,
+      "Entscheidung angesetzt": 316,
+      "Nur besprochen, nichts entschieden": 2490,
       "Bekanntgabe": 304,
+      "Noch nicht terminiert": 146,
       "Wird noch beraten": 38,
-      "Noch nicht terminiert": 147,
-      "Beschlossen": 556,
-      "Abgelehnt": 11,
+      "Beschlossen": 566,
+      "Abgelehnt": 13,
       "Teilweise beschlossen": 1
     },
     "status": {
-      "Ergebnis steht im Protokoll": 293,
-      "Noch offen": 216,
-      "Nur zur Information": 2795,
-      "Entschieden": 568
+      "Ergebnis steht im Protokoll": 316,
+      "Nur zur Information": 2794,
+      "Noch offen": 184,
+      "Entschieden": 580
     },
     "stadtbezirke": 12,
-    "duenn": 2332
+    "duenn": 2328
   },
   "achsen": {
     "lebenslage": [
@@ -134,7 +133,6 @@
     ],
     "stand": [
       "Noch nicht terminiert",
-      "Entscheidung geplant",
       "Wird noch beraten",
       "Entscheidung angesetzt",
       "Beschlossen",
@@ -262,9 +260,9 @@
       "ort": [],
       "entwurf": true,
       "duenn": true,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -306,6 +304,10 @@
         {
           "titel": "Anlage6 Grundrisse+Systemschnitt Nachverdichtung",
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254435&type=do"
+        },
+        {
+          "titel": "Anlage7 Nutzungskonzept Technisches Rathaus (NEU)",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255056&type=do"
         }
       ],
       "beratungsweg": [
@@ -377,9 +379,9 @@
       ],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -491,9 +493,9 @@
       ],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -643,9 +645,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -875,9 +877,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -968,9 +970,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -1058,9 +1060,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -1268,9 +1270,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -1290,8 +1292,8 @@
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253196&type=do"
         },
         {
-          "titel": "Anlage 1 - Satzungsnovelle Integrationsbeirat und Integrationsbeauftragte 13.10.2026",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254349&type=do"
+          "titel": "Anlage 1 - Satzungsnovelle Integrationsbeirat und Integrationsbeauftragte 26.10.2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255010&type=do"
         },
         {
           "titel": "Anlage 2 - Satzung Migrationsrat und Integrationsbeauftragte 21.07.2021",
@@ -1420,9 +1422,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -1511,9 +1513,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -1533,10 +1535,6 @@
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253280&type=do"
         },
         {
-          "titel": "Anlage 4 HSK",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253474&type=do"
-        },
-        {
           "titel": "V0521-26 Anlage 1 Gebührenbericht Obdachlosenwesen 2025",
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253271&type=do"
         },
@@ -1547,6 +1545,10 @@
         {
           "titel": "V0521-26 Anlage 3 Gebuehrenkalkulation Obdachlosenunterbringung",
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253254&type=do"
+        },
+        {
+          "titel": "Anlage 4 HSK",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253474&type=do"
         }
       ],
       "beratungsweg": [
@@ -1622,9 +1624,9 @@
       ],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -1716,9 +1718,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -1736,6 +1738,14 @@
         {
           "titel": "Vorlage",
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254276&type=do"
+        },
+        {
+          "titel": "NEU Haushaltssicherungskonzept 2026 V2",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255062&type=do"
+        },
+        {
+          "titel": "NEU 2026.10.27 HSK PPT Kämmerei - überarb 2030",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255061&type=do"
         },
         {
           "titel": "Anlagen - alte Fassung",
@@ -2296,9 +2306,9 @@
       "ort": [],
       "entwurf": true,
       "duenn": true,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -2318,12 +2328,12 @@
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254485&type=do"
         },
         {
-          "titel": "Anlage 1 Satzung für die Erhebung der Hundesteuer ab 2027",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254486&type=do"
+          "titel": "NEU Anlage 1 Satzung für die Erhebung der Hundesteuer ab 2027",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254991&type=do"
         },
         {
-          "titel": "Anlage 2 Synopse Hundesteuersatzung 2021 - 2027",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254487&type=do"
+          "titel": "NEU Anlage 2 Synopse Hundesteuersatzung 2021 - 2027",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254992&type=do"
         },
         {
           "titel": "Anlage 3 Maßnahmenmeldung zum HSK",
@@ -2471,9 +2481,9 @@
       "ort": [],
       "entwurf": true,
       "duenn": true,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -2519,7 +2529,7 @@
       ]
     },
     {
-      "ref": "stadt:13548#Ö12",
+      "ref": "stadt:13548#Ö14",
       "thema": "stadt:vorlage:23315",
       "auftritte": [
         {
@@ -2570,7 +2580,7 @@
       "beratungsweg": []
     },
     {
-      "ref": "stadt:13548#Ö13",
+      "ref": "stadt:13548#Ö15",
       "thema": "stadt:vorlage:23369",
       "auftritte": [
         {
@@ -2651,9 +2661,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -2718,9 +2728,9 @@
       ],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -2785,9 +2795,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -2848,9 +2858,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -2914,9 +2924,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -2991,9 +3001,9 @@
       ],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -3057,9 +3067,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -3129,9 +3139,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -3196,9 +3206,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -3277,9 +3287,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -3367,9 +3377,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "29.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
@@ -3467,6 +3477,10 @@
         {
           "titel": "Anfrage der ÖDP-Stadtratsgruppe vom 20.07.2026 zum Thema Gewalt an Schulen",
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254632&type=do"
+        },
+        {
+          "titel": "Stellungnahme Stadtratsanfrage ÖPD Gewalt an Schule",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255030&type=do"
         }
       ],
       "beratungsweg": []
@@ -3768,7 +3782,7 @@
     },
     {
       "ref": "stadt:13548#Ö 10",
-      "thema": "stadt:13548#Ö 10",
+      "thema": "stadt:vorlage:23425",
       "auftritte": [
         {
           "datum": "2026-10-29",
@@ -3793,24 +3807,39 @@
       "ort": [],
       "entwurf": true,
       "duenn": true,
-      "stand": "Nur besprochen, nichts entschieden",
-      "stand_datum": "",
-      "status": "Nur zur Information",
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "29.10.2026",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
       "amtlicher_titel": "Besetzung der Stelle der Leitung des Referates VIII – Umwelt, Nachhaltigkeit und Transformation; Wahl eines berufsmäßigen Stadtratsmitglieds",
       "top_nr": "Ö 10",
-      "vorlage": "",
-      "vorlage_url": "",
+      "vorlage": "V0668/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23425",
       "antragsteller": "",
       "gremium": "Stadtrat",
       "sitzung_kennung": "StR/05/2026",
       "datum": "2026-10-29",
       "datum_anzeige": "29.10.2026",
       "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548",
-      "dokumente": [],
-      "beratungsweg": []
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254406&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-10-29",
+          "datum_anzeige": "29.10.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "10",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548&toselect=91066"
+        }
+      ]
     },
     {
       "ref": "stadt:13548#Ö5",
@@ -3989,8 +4018,8 @@
       "beratungsweg": []
     },
     {
-      "ref": "stadt:13548#Ö11",
-      "thema": "stadt:13548#Ö11",
+      "ref": "stadt:13548#Ö12",
+      "thema": "stadt:13548#Ö12",
       "auftritte": [
         {
           "datum": "2026-10-29",
@@ -4161,8 +4190,8 @@
       "beratungsweg": []
     },
     {
-      "ref": "stadt:13548#Ö14",
-      "thema": "stadt:13548#Ö14",
+      "ref": "stadt:13548#Ö16",
+      "thema": "stadt:vorlage:23453",
       "auftritte": [
         {
           "datum": "2026-10-29",
@@ -4193,15 +4222,28 @@
       "quelle": "stadt",
       "amtlicher_titel": "Stellungnahme der Verwaltung",
       "top_nr": "Ö",
-      "vorlage": "",
-      "vorlage_url": "",
+      "vorlage": "V0692/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23453",
       "antragsteller": "",
       "gremium": "Stadtrat",
       "sitzung_kennung": "StR/05/2026",
       "datum": "2026-10-29",
       "datum_anzeige": "29.10.2026",
       "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548",
-      "dokumente": [],
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254793&type=do"
+        },
+        {
+          "titel": "Anlage 1 Änderungssatzung",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254912&type=do"
+        },
+        {
+          "titel": "Anlage 2 Synopse",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254913&type=do"
+        }
+      ],
       "beratungsweg": []
     },
     {
@@ -4298,7 +4340,7 @@
     },
     {
       "ref": "stadt:13548#Ö 37",
-      "thema": "stadt:13548#Ö 37",
+      "thema": "stadt:vorlage:23446",
       "auftritte": [
         {
           "datum": "2026-10-29",
@@ -4323,14 +4365,342 @@
       "ort": [],
       "entwurf": true,
       "duenn": true,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "29.10.2026",
+      "status": "Ergebnis steht im Protokoll",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Erteilung einer Baugenehmigung zum Neubau eines Logistikzentrums mit Parkhaus und Nebenanlagen in der Carl-Benz-Straße 14",
+      "top_nr": "Ö 37",
+      "vorlage": "V0686/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23446",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/05/2026",
+      "datum": "2026-10-29",
+      "datum_anzeige": "29.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254704&type=do"
+        },
+        {
+          "titel": "Anlage 1 Lageplan",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255012&type=do"
+        },
+        {
+          "titel": "Anlage 2 Luftbild",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255013&type=do"
+        },
+        {
+          "titel": "Anlage 3 Grundrisse",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255014&type=do"
+        },
+        {
+          "titel": "Anlage 4 Ansichten",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255015&type=do"
+        },
+        {
+          "titel": "Anlage 5 Freiflächenplan",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255016&type=do"
+        },
+        {
+          "titel": "Anlage 6 Betriebsbeschreibung vom 20.04.2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255017&type=do"
+        },
+        {
+          "titel": "Anlage 7 Verkehrsstudie vom 01.04.2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255018&type=do"
+        },
+        {
+          "titel": "Anlage 8 Schalltechniches Gutachten vom 28.04.2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255019&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-10-29",
+          "datum_anzeige": "29.10.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "37",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548&toselect=91045"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13548#Ö10",
+      "thema": "stadt:vorlage:23458",
+      "auftritte": [
+        {
+          "datum": "2026-10-29",
+          "datum_anzeige": "29.10.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548"
+        }
+      ],
+      "klartext_titel": "AfD fordert Bodengutachten vor der Sanierung des Technischen Rathauses",
+      "klartext": "Die AfD-Stadtratsfraktion beantragt als Dringlichkeitsantrag, vor der Projektgenehmigung und Vergabe der nächsten Planungsstufe für die Sanierung des Technischen Rathauses eine Bodengrunduntersuchung in Auftrag zu geben. Ein externer Gutachter soll klären, ob die geplanten Mikropfähle und die Reprofilierung der Fundamentbalken überhaupt eine ausreichende Standsicherheit des Gebäudes herstellen können. Die Fraktion will vermeiden, dass die Sanierung teurer wird als ein Neubau oder die Kosten wie beim Museum für Konkrete Kunst und Design aus dem Ruder laufen. Die eingeplanten Risikokosten von 2 Millionen Euro hält sie für viel zu gering. Der Antrag vom 22. Oktober 2026 soll in der Stadtratssitzung am 29. Oktober behandelt werden.",
+      "klartext_titel_leicht": "Die AfD will ein Gutachten zum Technischen Rathaus",
+      "klartext_leicht": "Das Technische Rathaus muss repariert werden. Das Gebäude steht nicht mehr sicher genug. Die Partei AfD will vorher den Boden untersuchen lassen. Ein Fach-Mann soll prüfen: Hält der Plan das Gebäude wirklich sicher? Die AfD hat Angst, dass die Reparatur zu teuer wird.",
+      "lebenslage": [],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Baustelle"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
       "stand": "Nur besprochen, nichts entschieden",
       "stand_datum": "",
       "status": "Nur zur Information",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "stadt",
-      "amtlicher_titel": "Erteilung einer Baugenehmigung zum Neubau eines Logistikzentrums mit Parkhaus und Nebenanlagen in der Carl-Benz-Straße 14",
-      "top_nr": "Ö 37",
+      "amtlicher_titel": "Hierzu liegt vor: — Dringlichkeitsantrag der AfD-Stadtratsfraktion vom 22.10.2026 — - Sanierung des Technischen Rathauses - externes Gutachten",
+      "top_nr": "Ö",
+      "vorlage": "V0697/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23458",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/05/2026",
+      "datum": "2026-10-29",
+      "datum_anzeige": "29.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag AfD",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254860&type=do"
+        },
+        {
+          "titel": "Beantwortung AfD-Dringlichkeitsantrag zur Sanierung des Technischen Rathauses",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255060&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13548#Ö13",
+      "thema": "stadt:vorlage:23465",
+      "auftritte": [
+        {
+          "datum": "2026-10-29",
+          "datum_anzeige": "29.10.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548"
+        }
+      ],
+      "klartext_titel": "Feuerwehrbedarfsplan: überarbeitete Vorlage mit ersten konkreten Schritten",
+      "klartext": "Einen Tag vor der Stadtratssitzung hat die Verwaltung die Vorlage zum Feuerwehrbedarfsplan überarbeitet. Wie zuvor soll Variante 2 des Umsetzungskonzepts als Orientierungsrahmen dienen und schrittweise im Rahmen der Haushaltslage umgesetzt werden; Entscheidungen daraus soll jeweils der Stadtrat treffen. Neu ist, dass bereits beschlossene Bauvorhaben jetzt zeitnah umgesetzt werden sollen: die Sanierung der Hauptfeuerwache innen, der Masterplan zur Sanierung der Feuerwehrgerätehäuser und der Neubau des Gerätehauses Südost. Auch die Beschaffung von Fahrzeugen soll in einer reduzierten und zeitlich gestreckten Variante parallel beginnen. Über mehr Personal wird dagegen jetzt nicht entschieden; dazu soll es erst nach einer Organisationsuntersuchung eigene Beschlüsse geben. Der Stadtrat sollte am 29. Oktober 2026 entscheiden.",
+      "klartext_titel_leicht": "Neuer Vorschlag für die Feuerwehr",
+      "klartext_leicht": "Die Verwaltung hat ihren Plan für die Feuerwehr geändert. Einige Bau-Projekte sollen jetzt bald starten. Zum Beispiel die Sanierung der Haupt-Feuerwache. Und ein neues Feuerwehr-Haus im Süd-Osten. Die Feuerwehr bekommt auch neue Fahrzeuge. Es werden aber weniger als geplant. Über mehr Personal wird später entschieden. Der Stadt-Rat sollte am 29. Oktober 2026 entscheiden.",
+      "lebenslage": [
+        "Ehrenamt & Vereine"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Sicherheit",
+        "Baustelle"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Hierzu liegt eine überarbeitete Beschlussvorlage vor.",
+      "top_nr": "Ö",
+      "vorlage": "V0692/25/1",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23465",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/05/2026",
+      "datum": "2026-10-29",
+      "datum_anzeige": "29.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255053&type=do"
+        },
+        {
+          "titel": "Anlage 1 V0692-25",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255054&type=do"
+        },
+        {
+          "titel": "Anlage 2 V0692-25",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255055&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13548#Ö19",
+      "thema": "stadt:vorlage:23470",
+      "auftritte": [
+        {
+          "datum": "2026-10-29",
+          "datum_anzeige": "29.10.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548"
+        }
+      ],
+      "klartext_titel": "CSU will mehr Mitsprache der Stadträte bei den Städtepartnerschaften",
+      "klartext": "Die CSU-Stadtratsfraktion unterstützt den Antrag der Freien Wähler zu den Städtepartnerschaften und will den Vorschlag der Verwaltung, in jeder Fraktion eine Ansprechperson zu benennen, verbindlicher machen. Der Oberbürgermeister soll nach Abstimmung mit den Fraktionen aus diesem Kreis eine zentrale politische Ansprechperson und eine Stellvertretung benennen, die den Austausch koordinieren. Die Ansprechpersonen sollen früh über wesentliche Vorhaben informiert und vor größeren Projekten angehört werden, eigene Projekte vorschlagen dürfen und innerhalb von sechs Wochen eine Rückmeldung bekommen. Mindestens zweimal im Jahr soll es Gespräche mit der zuständigen Amtsleitung geben. Neue Ämter oder Verwaltungsstrukturen sollen dadurch laut Antrag nicht entstehen. Der Ergänzungsantrag lag dem Stadtrat am 29. Oktober 2026 vor.",
+      "klartext_titel_leicht": "Die CSU will mehr Mitreden bei den Partner-Städten",
+      "klartext_leicht": "Ingolstadt hat Partner-Städte in anderen Ländern. Jede Partei soll dafür eine Ansprech-Person haben. Die Partei CSU will diesen Personen mehr Rechte geben. Sie sollen früh informiert werden. Sie sollen eigene Ideen vorschlagen dürfen. Eine Person soll alles zusammen-führen. Der Antrag stand am 29. Oktober 2026 auf der Tages-Ordnung.",
+      "lebenslage": [
+        "Ehrenamt & Vereine"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Hierzu liegt vor: — Ergänzungsantrag zu V0494/26 und V0562/26: Verbindliche Beteiligung und aktive Mitwirkung der Ansprechpersonen für internationale Beziehungen und Städtepartnerschaften",
+      "top_nr": "Ö",
+      "vorlage": "V0707/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23470",
+      "antragsteller": "Antrag der CSU-Stadtratsantrag vom 19.10.2026-",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/05/2026",
+      "datum": "2026-10-29",
+      "datum_anzeige": "29.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag CSU",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255091&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13548#Ö 38.1",
+      "thema": "stadt:vorlage:23455",
+      "auftritte": [
+        {
+          "datum": "2026-10-29",
+          "datum_anzeige": "29.10.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 38.1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548"
+        }
+      ],
+      "klartext_titel": "ÖDP fordert schnelle Prüfung von Haftungsansprüchen wegen PFAS",
+      "klartext": "Ergänzend zum PFAS-Antrag der Linken hat die ÖDP-Stadtratsgruppe einen Dringlichkeitsantrag gestellt. In den geforderten Sachstandsbericht sollen auch betriebsinterne Untersuchungen einfließen, namentlich die Altlastenbearbeitung, die die Firma Gunvor für die Jahre 2022 bis 2024 veranlasst hat. Mit einer Fachkanzlei soll die Stadt sofort klären, ob sie vom Unternehmen einen Verzicht auf die Verjährung von Ansprüchen einholen sollte. Außerdem sollen mögliche Haftungsansprüche gegen alle in Frage kommenden Verursacher, Voreigentümer und Nachfolger umfassend geprüft werden. Die ÖDP begründet die Eile mit geänderten Eigentümerstrukturen und drohenden Fristabläufen und verweist auf Burghausen und den Landkreis Altötting, die gegen einen PFAS-Verursacher klagen. Der Antrag lag dem Stadtrat am 29. Oktober 2026 vor.",
+      "klartext_titel_leicht": "Die ÖDP will wegen PFAS schnell rechtlich handeln",
+      "klartext_leicht": "PFAS sind Stoffe aus der Chemie. Sie bleiben sehr lange im Boden und im Wasser. Auf einem Firmen-Gelände in Ingolstadt gibt es Untersuchungen dazu. Die Partei ÖDP will eine schnelle Prüfung. Wer muss für die Schäden zahlen? Sonst könnten Ansprüche zu spät kommen. Der Antrag stand am 29. Oktober 2026 auf der Tages-Ordnung.",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "PFAS — -Dringlichkeitsantrag der ödp-Stadtratsgruppe vom 22.10.2026-",
+      "top_nr": "Ö 38.1",
+      "vorlage": "V0694/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23455",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/05/2026",
+      "datum": "2026-10-29",
+      "datum_anzeige": "29.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag ÖDP",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254822&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13548#Ö 40.3",
+      "thema": "stadt:13548#Ö 40.3",
+      "auftritte": [
+        {
+          "datum": "2026-10-29",
+          "datum_anzeige": "29.10.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 40.3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548"
+        }
+      ],
+      "klartext_titel": "Waffenkontrollen: So schützt die Stadt ihre Beschäftigten",
+      "klartext": "Nach einem Vorfall bei einer Waffenkontrolle in Berngau im Landkreis Neumarkt hatten die Grünen nach der Sicherheit städtischer Beschäftigter bei Außenterminen gefragt. Der Sicherheitsreferent antwortet, dass Waffenkontrollen in Ingolstadt angekündigt und unangekündigt stattfinden und die Kontrolleure stets deeskalierend auftreten. Individuelle Gefährdungsbeurteilungen gebe es nur, wenn Tatsachen auf ein Risiko hindeuten; steht der Entzug einer Waffenerlaubnis an oder sind Drohungen bekannt, wird die Polizei hinzugezogen. Schusssichere Westen tragen die Mitarbeiter bisher nicht, um die Kontrollierten nicht zu stigmatisieren. Der Vorfall soll im November in einer Dienstbesprechung des Innenministeriums mit den Regierungen besprochen werden.",
+      "klartext_titel_leicht": "Wie die Stadt ihre Mitarbeiter bei Waffen-Kontrollen schützt",
+      "klartext_leicht": "Manche Menschen haben eine Waffe, zum Beispiel Jäger. Die Stadt kontrolliert, ob sie die Waffe sicher aufbewahren. In einem anderen Ort ist bei so einer Kontrolle etwas Schlimmes passiert. Die Grünen haben gefragt: Sind die Mitarbeiter der Stadt sicher? Die Stadt sagt: Die Mitarbeiter bleiben ruhig und freundlich. Bei Gefahr kommt die Polizei mit.",
+      "lebenslage": [
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage der Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN vom 13.10.2026 zum Thema Sicherheit der Beschäftigten der Stadt Ingolstadt bei Außendienstterminen",
+      "top_nr": "Ö 40.3",
       "vorlage": "",
       "vorlage_url": "",
       "antragsteller": "",
@@ -4339,8 +4709,347 @@
       "datum": "2026-10-29",
       "datum_anzeige": "29.10.2026",
       "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548",
-      "dokumente": [],
+      "dokumente": [
+        {
+          "titel": "Beantwortung Sicherheit Beschäftigte im Außendienst",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254998&type=do"
+        },
+        {
+          "titel": "Sicherheit Beschäftige Außendiensttermine Anfrage MS",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254993&type=do"
+        }
+      ],
       "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13548#Ö 40.4",
+      "thema": "stadt:13548#Ö 40.4",
+      "auftritte": [
+        {
+          "datum": "2026-10-29",
+          "datum_anzeige": "29.10.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 40.4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548"
+        }
+      ],
+      "klartext_titel": "Audi beendet Sponsoring: Kultur- und Sportveranstaltungen unter Druck",
+      "klartext": "Auf eine AfD-Anfrage antwortet die Verwaltung vorläufig zu den Folgen des Endes des Audi-Sponsorings. Halbmarathon und Triathlon sollen laut Gesprächen mit den Veranstaltern auch 2027 stattfinden; andere Förderer und Geschäftsleute hätten Unterstützung signalisiert. Die Stadt ist dort nicht Veranstalterin und wird sie nicht aus eigenen Mitteln finanzieren. Im Kulturbereich hat Audi 2025 städtische Angebote mit 143.943,23 Euro gesponsert, darunter die Spielzeitpartnerschaft des Stadttheaters, das Fest der Kulturen, die Jazztage und Reihen des Museums für Konkrete Kunst; dazu kamen die Stiftung für Konkrete Kunst und Design und die Kammerphilharmonie. Diese Angebote können laut Verwaltung künftig nicht mehr im bisherigen Umfang stattfinden, Kürzungen oder der Wegfall einzelner Formate sind nicht ausgeschlossen. Die Stadt versucht, andere Geldgeber zu gewinnen.",
+      "klartext_titel_leicht": "Audi gibt kein Geld mehr für Feste und Kultur",
+      "klartext_leicht": "Audi hat viele Veranstaltungen in Ingolstadt bezahlt. Zum Beispiel Konzerte und Theater. Das hört jetzt auf. Im Jahr 2025 waren es für die Kultur ungefähr 144.000 Euro. Halb-Marathon und Triathlon sollen trotzdem 2027 stattfinden. Bei der Kultur kann es weniger Angebote geben. Die Stadt sucht neue Geld-Geber.",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage der AfD-Stadtratsfraktion vom 24.10.2026 zum Thema Auswirkung des Endes der Audi-Förderung",
+      "top_nr": "Ö 40.4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/05/2026",
+      "datum": "2026-10-29",
+      "datum_anzeige": "29.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548",
+      "dokumente": [
+        {
+          "titel": "Frage - Auswirkung des Endes der Audi-Förderung",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254995&type=do"
+        },
+        {
+          "titel": "Stellungnahme zur AfD Stadtratsanfrage Ende Sponsoring Audi AG",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255040&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13548#Ö 40.5",
+      "thema": "stadt:13548#Ö 40.5",
+      "auftritte": [
+        {
+          "datum": "2026-10-29",
+          "datum_anzeige": "29.10.2026",
+          "gremium": "Stadtrat",
+          "top_nr": "Ö 40.5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548"
+        }
+      ],
+      "klartext_titel": "Überhitzte Klassenzimmer: Stadt nennt bekannte Heizungsprobleme an Schulen",
+      "klartext": "Die SPD hatte gefragt, ob Klassenzimmer wegen defekter Heizungen überhitzen und über offene Fenster gekühlt werden müssen. Laut Baureferat liegen dazu derzeit keine Meldungen vor, Mehrkosten seien daher nicht bezifferbar; Hinweise sollten zuerst an den Hausmeister gehen. Bekannt sind Probleme an der Christoph-Kolumbus-Grundschule, der alten Turnhalle Zuchering, dem Apian-Gymnasium, dem Katharinen-Gymnasium, wo die Raumregelung stark veraltet ist, und dem Reuchlin-Gymnasium, wo eine Reparatur beauftragt ist. Nach dem regelmäßigen Stoßlüften könnten Heizkörper vorübergehend überhitzen; Lüftungsanlagen mit Wärmerückgewinnung seien derzeit nicht finanzierbar. Eine breite Modernisierung der Heiztechnik wäre über ein Energiesparcontracting möglich, dazu sind aber noch haushaltsrechtliche Fragen offen.",
+      "klartext_titel_leicht": "Zu warme Klassen-Zimmer: Die Stadt antwortet",
+      "klartext_leicht": "Die Partei SPD hat gefragt: Sind manche Klassen-Zimmer zu warm? Die Stadt sagt: Dazu gibt es gerade keine Meldungen. An einigen Schulen gibt es aber Probleme mit der Heizung. Manche wurden schon repariert. Viele Heizungen der Stadt sind alt. Neue Technik ist im Moment zu teuer.",
+      "lebenslage": [
+        "Eltern & Kinder",
+        "Jugend"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Schulbau",
+        "Klima & Umwelt"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Nur besprochen, nichts entschieden",
+      "stand_datum": "",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Anfrage der SPD-Stadtratsfraktion vom 26.10.2026 zum Thema Heizungsregulierung an städtischen Schulen: Sachstand und Kosten",
+      "top_nr": "Ö 40.5",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Stadtrat",
+      "sitzung_kennung": "StR/05/2026",
+      "datum": "2026-10-29",
+      "datum_anzeige": "29.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548",
+      "dokumente": [
+        {
+          "titel": "Frage - Heizungsregulierung an städt. Schulen",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254996&type=do"
+        },
+        {
+          "titel": "SPD-Anfrage Fragestunde Stadtrat Heizungsregulierung Beantwortung",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255059&type=do"
+        }
+      ],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bezirk_obb:5016#Ö 6",
+      "thema": "bezirk_obb:vorlage:14961",
+      "auftritte": [
+        {
+          "datum": "2026-10-20",
+          "datum_anzeige": "20.10.2026",
+          "gremium": "Ausschuss für Kultur, Schulen und Museen",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5016"
+        },
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5163"
+        },
+        {
+          "datum": "2026-10-28",
+          "datum_anzeige": "28.10.2026",
+          "gremium": "Bezirkstag",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162"
+        }
+      ],
+      "klartext_titel": "Finanzierung Kulturgesellschaft des Bezirks Oberbayern gGmbH 2026 und 2027",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Eltern & Kinder",
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "28.10.2026",
+      "status": "Ergebnis steht im Protokoll",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Kulturgesellschaft/außerplanmäßige Mittel im Zusammenhang mit der Gründung einer gemeinnützigen GmbH",
+      "top_nr": "Ö 3",
+      "vorlage": "30/BV/192/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14961",
+      "antragsteller": "",
+      "gremium": "Bezirkstag",
+      "sitzung_kennung": "BezT/002/2026",
+      "datum": "2026-10-28",
+      "datum_anzeige": "28.10.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88222&type=do"
+        },
+        {
+          "titel": "Wirtschaftsplan Kulturgesellschaft 2026",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88611&type=do"
+        },
+        {
+          "titel": "Wirtschaftsplan Kulturgesellschaft 2027",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88612&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-10-20",
+          "datum_anzeige": "20.10.2026",
+          "gremium": "Ausschuss für Kultur, Schulen und Museen",
+          "top_nr": "6",
+          "oeffentlich": true,
+          "rolle": "vorberatend nach § 12 Abs. 1 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5016&toselect=27982"
+        },
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "vorberatend nach § 7 Abs. 2 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5163&toselect=27941"
+        },
+        {
+          "datum": "2026-10-28",
+          "datum_anzeige": "28.10.2026",
+          "gremium": "Bezirkstag",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 2 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162&toselect=27962"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:5016#Ö 7",
+      "thema": "bezirk_obb:vorlage:14929",
+      "auftritte": [
+        {
+          "datum": "2026-10-20",
+          "datum_anzeige": "20.10.2026",
+          "gremium": "Ausschuss für Kultur, Schulen und Museen",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5016"
+        },
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5163"
+        },
+        {
+          "datum": "2026-10-28",
+          "datum_anzeige": "28.10.2026",
+          "gremium": "Bezirkstag",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162"
+        }
+      ],
+      "klartext_titel": "DiaTon - Förderpreis Dialekt und Musik",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Eltern & Kinder",
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Satzung & Regeln",
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Entscheidung angesetzt",
+      "stand_datum": "28.10.2026",
+      "status": "Ergebnis steht im Protokoll",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "DiaTon - Förderpreis Dialekt und Musik; Änderung der Satzung mit Richtlinie",
+      "top_nr": "Ö 4",
+      "vorlage": "33/BV/169/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14929",
+      "antragsteller": "",
+      "gremium": "Bezirkstag",
+      "sitzung_kennung": "BezT/002/2026",
+      "datum": "2026-10-28",
+      "datum_anzeige": "28.10.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=87859&type=do"
+        },
+        {
+          "titel": "2026-08-18 Diaton Satzung Richtlinie Änderungsmodus",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88031&type=do"
+        },
+        {
+          "titel": "2026-08-18 Diaton Satzung Richtlinie Reinschrift",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88032&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-10-20",
+          "datum_anzeige": "20.10.2026",
+          "gremium": "Ausschuss für Kultur, Schulen und Museen",
+          "top_nr": "7",
+          "oeffentlich": true,
+          "rolle": "vorberatend nach § 12 Abs. 1 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5016&toselect=27986"
+        },
+        {
+          "datum": "2026-10-27",
+          "datum_anzeige": "27.10.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "vorberatend nach § 7 Abs. 2 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5163&toselect=27944"
+        },
+        {
+          "datum": "2026-10-28",
+          "datum_anzeige": "28.10.2026",
+          "gremium": "Bezirkstag",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 2 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162&toselect=27964"
+        }
+      ]
     },
     {
       "ref": "bezirk_obb:5016#Ö 5",
@@ -4385,9 +5094,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "28.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "bezirk_obb",
@@ -4474,9 +5183,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "28.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "bezirk_obb",
@@ -4511,102 +5220,6 @@
           "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162&toselect=28131"
         }
       ]
-    },
-    {
-      "ref": "bezirk_obb:5162#Ö 3",
-      "thema": "bezirk_obb:5162#Ö 3",
-      "auftritte": [
-        {
-          "datum": "2026-10-28",
-          "datum_anzeige": "28.10.2026",
-          "gremium": "Bezirkstag",
-          "top_nr": "Ö 3",
-          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162"
-        }
-      ],
-      "klartext_titel": "Kulturgesellschaft/außerplanmäßige Mittel im Zusammenhang mit der Gründung einer gemeinnützigen GmbH",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [
-        "Freizeit & Sport"
-      ],
-      "bezirk": [],
-      "ebene": [
-        "Bezirk Oberbayern"
-      ],
-      "anlass": [
-        "Kultur & Bildung",
-        "Grün & Sauberkeit"
-      ],
-      "ort": [],
-      "entwurf": true,
-      "duenn": true,
-      "stand": "Nur besprochen, nichts entschieden",
-      "stand_datum": "",
-      "status": "Nur zur Information",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "bezirk_obb",
-      "amtlicher_titel": "Kulturgesellschaft/außerplanmäßige Mittel im Zusammenhang mit der Gründung einer gemeinnützigen GmbH",
-      "top_nr": "Ö 3",
-      "vorlage": "",
-      "vorlage_url": "",
-      "antragsteller": "",
-      "gremium": "Bezirkstag",
-      "sitzung_kennung": "BezT/002/2026",
-      "datum": "2026-10-28",
-      "datum_anzeige": "28.10.2026",
-      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162",
-      "dokumente": [],
-      "beratungsweg": []
-    },
-    {
-      "ref": "bezirk_obb:5162#Ö 4",
-      "thema": "bezirk_obb:5162#Ö 4",
-      "auftritte": [
-        {
-          "datum": "2026-10-28",
-          "datum_anzeige": "28.10.2026",
-          "gremium": "Bezirkstag",
-          "top_nr": "Ö 4",
-          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162"
-        }
-      ],
-      "klartext_titel": "DiaTon - Förderpreis Dialekt und Musik",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [],
-      "bezirk": [],
-      "ebene": [
-        "Bezirk Oberbayern"
-      ],
-      "anlass": [
-        "Gebühren & Preise",
-        "Satzung & Regeln"
-      ],
-      "ort": [],
-      "entwurf": true,
-      "duenn": true,
-      "stand": "Nur besprochen, nichts entschieden",
-      "stand_datum": "",
-      "status": "Nur zur Information",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "bezirk_obb",
-      "amtlicher_titel": "DiaTon - Förderpreis Dialekt und Musik; Änderung der Satzung mit Richtlinie",
-      "top_nr": "Ö 4",
-      "vorlage": "",
-      "vorlage_url": "",
-      "antragsteller": "",
-      "gremium": "Bezirkstag",
-      "sitzung_kennung": "BezT/002/2026",
-      "datum": "2026-10-28",
-      "datum_anzeige": "28.10.2026",
-      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162",
-      "dokumente": [],
-      "beratungsweg": []
     },
     {
       "ref": "bezirk_obb:5162#Ö 7",
@@ -4650,6 +5263,53 @@
       "datum_anzeige": "28.10.2026",
       "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162",
       "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:antrag:23467",
+      "thema": "stadt:antrag:23467",
+      "auftritte": [],
+      "klartext_titel": "Freie Wähler wollen digitale Parkkontrolle mit Scan-Fahrzeugen prüfen lassen",
+      "klartext": "Die FW-Stadtratsfraktion beantragt zu prüfen, ob kennzeichenbasiertes Parken und Scan-Fahrzeuge zur Kontrolle von Parkberechtigungen für Ingolstadt sinnvoll sind. Die Verwaltung soll geeignete Gebiete, Anpassungen an Parkautomaten, Apps und Anwohnerparkausweisen sowie die Kosten für Technik, Software und Betrieb dem heutigen Kontrollverfahren gegenüberstellen. Auch Datenschutz, Löschfristen und eine menschliche Nachprüfung sind zu klären; Parken müsse auch ohne Smartphone möglich bleiben. Als Vorbilder nennt die Fraktion Versuche in Heidelberg, Mannheim, Freiburg, Waldshut-Tiengen und Hamburg; in Heidelberg wurden in knapp 33 Stunden Befahrung 2.886 ahndbare Parkverstöße erkannt. Bei positiver Bewertung soll dem Ausschuss ein befristeter Pilotversuch vorgeschlagen werden. Der Antrag stammt vom 28. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+      "klartext_titel_leicht": "Freie Wähler: Park-Kontrolle mit Kamera-Autos prüfen",
+      "klartext_leicht": "Die Stadt kontrolliert, ob Autos richtig parken. Das machen bisher Mitarbeiter zu Fuß. Die Partei Freie Wähler hat eine Idee. Ein Auto mit Kamera fährt durch die Straßen. Es liest die Nummern-Schilder. So sieht es, wer ein Park-Ticket hat. Die Stadt soll prüfen: Lohnt sich das? Parken soll auch ohne Handy möglich bleiben.",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Verkehrsplanung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Noch nicht terminiert",
+      "stand_datum": "",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Digitale Parkraumkontrolle in Ingolstadt prüfen",
+      "top_nr": "",
+      "vorlage": "V0704/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23467",
+      "antragsteller": "FW-Stadtratsfraktion",
+      "gremium": "Antrag an Stadtrat",
+      "sitzung_kennung": "",
+      "datum": "2026-10-28",
+      "datum_anzeige": "28.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23467",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag FW",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255079&type=do"
+        }
+      ],
       "beratungsweg": []
     },
     {
@@ -5845,9 +6505,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "27.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "bezirk_obb",
@@ -5906,9 +6566,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "27.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "bezirk_obb",
@@ -5973,9 +6633,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "27.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "bezirk_obb",
@@ -6034,9 +6694,9 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung geplant",
+      "stand": "Entscheidung angesetzt",
       "stand_datum": "27.10.2026",
-      "status": "Noch offen",
+      "status": "Ergebnis steht im Protokoll",
       "niederschrift_url": "",
       "beschluss": null,
       "quelle": "bezirk_obb",
@@ -6174,101 +6834,6 @@
       "beratungsweg": []
     },
     {
-      "ref": "bezirk_obb:5163#Ö 4",
-      "thema": "bezirk_obb:5163#Ö 4",
-      "auftritte": [
-        {
-          "datum": "2026-10-27",
-          "datum_anzeige": "27.10.2026",
-          "gremium": "Bezirksausschuss",
-          "top_nr": "Ö 4",
-          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5163"
-        }
-      ],
-      "klartext_titel": "Finanzierung Kulturgesellschaft des Bezirks Oberbayern gGmbH 2026 und 2027",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [
-        "Freizeit & Sport"
-      ],
-      "bezirk": [],
-      "ebene": [
-        "Bezirk Oberbayern"
-      ],
-      "anlass": [
-        "Kultur & Bildung"
-      ],
-      "ort": [],
-      "entwurf": true,
-      "duenn": true,
-      "stand": "Nur besprochen, nichts entschieden",
-      "stand_datum": "",
-      "status": "Nur zur Information",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "bezirk_obb",
-      "amtlicher_titel": "Finanzierung Kulturgesellschaft des Bezirks Oberbayern gGmbH 2026 und 2027",
-      "top_nr": "Ö 4",
-      "vorlage": "",
-      "vorlage_url": "",
-      "antragsteller": "",
-      "gremium": "Bezirksausschuss",
-      "sitzung_kennung": "BezA/006/2026",
-      "datum": "2026-10-27",
-      "datum_anzeige": "27.10.2026",
-      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5163",
-      "dokumente": [],
-      "beratungsweg": []
-    },
-    {
-      "ref": "bezirk_obb:5163#Ö 5",
-      "thema": "bezirk_obb:5163#Ö 5",
-      "auftritte": [
-        {
-          "datum": "2026-10-27",
-          "datum_anzeige": "27.10.2026",
-          "gremium": "Bezirksausschuss",
-          "top_nr": "Ö 5",
-          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5163"
-        }
-      ],
-      "klartext_titel": "DiaTon - Förderpreis Dialekt und Musik",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [],
-      "bezirk": [],
-      "ebene": [
-        "Bezirk Oberbayern"
-      ],
-      "anlass": [
-        "Gebühren & Preise",
-        "Satzung & Regeln"
-      ],
-      "ort": [],
-      "entwurf": true,
-      "duenn": true,
-      "stand": "Nur besprochen, nichts entschieden",
-      "stand_datum": "",
-      "status": "Nur zur Information",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "bezirk_obb",
-      "amtlicher_titel": "DiaTon - Förderpreis Dialekt und Musik; Änderung der Satzung mit Richtlinie",
-      "top_nr": "Ö 5",
-      "vorlage": "",
-      "vorlage_url": "",
-      "antragsteller": "",
-      "gremium": "Bezirksausschuss",
-      "sitzung_kennung": "BezA/006/2026",
-      "datum": "2026-10-27",
-      "datum_anzeige": "27.10.2026",
-      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5163",
-      "dokumente": [],
-      "beratungsweg": []
-    },
-    {
       "ref": "bezirk_obb:5163#Ö 10",
       "thema": "bezirk_obb:5163#Ö 10",
       "auftritte": [
@@ -6356,6 +6921,51 @@
       "datum_anzeige": "27.10.2026",
       "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4938",
       "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:antrag:23469",
+      "thema": "stadt:antrag:23469",
+      "auftritte": [],
+      "klartext_titel": "Grüne wollen Verhaltensregeln für Geschenke an Stadträte",
+      "klartext": "Die Stadtratsfraktion der Grünen beantragt eine eigene Compliance-Ordnung für die ehrenamtlichen Mitglieder des Stadtrats. Sie soll feste Wertgrenzen für Geschenke, Einladungen und Bewirtungen festlegen, und zwar nach denselben Maßstäben wie für die Beschäftigten der Stadt. Der Besuch offizieller städtischer Veranstaltungen soll als Teil des Mandats erlaubt bleiben und klar geregelt werden. Für Stadträte in Aufsichtsräten städtischer Gesellschaften sollen strengere Regeln gelten, weil sie dort eine Kontrollfunktion haben. Anlass war laut Antrag eine Einladung der Stadtwerke-Beteiligungsgesellschaft an Aufsichtsratsmitglieder in eine Firmenloge beim FC Ingolstadt, die die städtische Compliance-Stelle als kritisch bewertete. Der Antrag stammt vom 27. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+      "klartext_titel_leicht": "Die Grünen wollen Regeln für Geschenke an Stadt-Räte",
+      "klartext_leicht": "Stadt-Räte bekommen manchmal Geschenke oder Einladungen. Für Mitarbeiter der Stadt gibt es dafür feste Regeln. Für Stadt-Räte gibt es solche Regeln noch nicht. Die Partei Die Grünen will das ändern. Stadt-Räte sollen dieselben Regeln haben wie Mitarbeiter. Offizielle Feiern der Stadt dürfen sie weiter besuchen.",
+      "lebenslage": [],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Noch nicht terminiert",
+      "stand_datum": "",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Einführung einer Compliance-Ordnung für Stadtratsmitglieder",
+      "top_nr": "",
+      "vorlage": "V0706/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23469",
+      "antragsteller": "Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN",
+      "gremium": "Antrag an Stadtrat",
+      "sitzung_kennung": "",
+      "datum": "2026-10-27",
+      "datum_anzeige": "27.10.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23469",
+      "dokumente": [
+        {
+          "titel": "Stadtratsantrag B 90",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255085&type=do"
+        }
+      ],
       "beratungsweg": []
     },
     {
@@ -7137,106 +7747,6 @@
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Schafhof - Europäisches Kunstforum Oberbayern",
       "top_nr": "Ö 2",
-      "vorlage": "",
-      "vorlage_url": "",
-      "antragsteller": "",
-      "gremium": "Ausschuss für Kultur, Schulen und Museen",
-      "sitzung_kennung": "KultA/004/2026",
-      "datum": "2026-10-20",
-      "datum_anzeige": "20.10.2026",
-      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5016",
-      "dokumente": [],
-      "beratungsweg": []
-    },
-    {
-      "ref": "bezirk_obb:5016#Ö 6",
-      "thema": "bezirk_obb:5016#Ö 6",
-      "auftritte": [
-        {
-          "datum": "2026-10-20",
-          "datum_anzeige": "20.10.2026",
-          "gremium": "Ausschuss für Kultur, Schulen und Museen",
-          "top_nr": "Ö 6",
-          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5016"
-        }
-      ],
-      "klartext_titel": "Finanzierung Kulturgesellschaft des Bezirks Oberbayern gGmbH 2026 und 2027",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [
-        "Eltern & Kinder",
-        "Freizeit & Sport"
-      ],
-      "bezirk": [],
-      "ebene": [
-        "Bezirk Oberbayern"
-      ],
-      "anlass": [
-        "Kultur & Bildung"
-      ],
-      "ort": [],
-      "entwurf": true,
-      "duenn": true,
-      "stand": "Nur besprochen, nichts entschieden",
-      "stand_datum": "",
-      "status": "Nur zur Information",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "bezirk_obb",
-      "amtlicher_titel": "Finanzierung Kulturgesellschaft des Bezirks Oberbayern gGmbH 2026 und 2027",
-      "top_nr": "Ö 6",
-      "vorlage": "",
-      "vorlage_url": "",
-      "antragsteller": "",
-      "gremium": "Ausschuss für Kultur, Schulen und Museen",
-      "sitzung_kennung": "KultA/004/2026",
-      "datum": "2026-10-20",
-      "datum_anzeige": "20.10.2026",
-      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5016",
-      "dokumente": [],
-      "beratungsweg": []
-    },
-    {
-      "ref": "bezirk_obb:5016#Ö 7",
-      "thema": "bezirk_obb:5016#Ö 7",
-      "auftritte": [
-        {
-          "datum": "2026-10-20",
-          "datum_anzeige": "20.10.2026",
-          "gremium": "Ausschuss für Kultur, Schulen und Museen",
-          "top_nr": "Ö 7",
-          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5016"
-        }
-      ],
-      "klartext_titel": "DiaTon - Förderpreis Dialekt und Musik",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [
-        "Eltern & Kinder",
-        "Freizeit & Sport"
-      ],
-      "bezirk": [],
-      "ebene": [
-        "Bezirk Oberbayern"
-      ],
-      "anlass": [
-        "Gebühren & Preise",
-        "Satzung & Regeln",
-        "Kultur & Bildung"
-      ],
-      "ort": [],
-      "entwurf": true,
-      "duenn": true,
-      "stand": "Nur besprochen, nichts entschieden",
-      "stand_datum": "",
-      "status": "Nur zur Information",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "bezirk_obb",
-      "amtlicher_titel": "DiaTon - Förderpreis Dialekt und Musik; Änderung der Satzung mit Richtlinie",
-      "top_nr": "Ö 7",
       "vorlage": "",
       "vorlage_url": "",
       "antragsteller": "",
@@ -12599,7 +13109,7 @@
       "stand": "Nur besprochen, nichts entschieden",
       "stand_datum": "",
       "status": "Nur zur Information",
-      "niederschrift_url": "",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89000&type=do",
       "beschluss": null,
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Bekanntgaben und Sonstiges",
@@ -12647,7 +13157,7 @@
       "stand": "Bekanntgabe",
       "stand_datum": "01.10.2026",
       "status": "Nur zur Information",
-      "niederschrift_url": "",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89000&type=do",
       "beschluss": null,
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Entwicklung im Haushaltsjahr 2026 und Ausblick auf die Haushaltsplanung 2027",
@@ -12711,11 +13221,14 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung angesetzt",
+      "stand": "Beschlossen",
       "stand_datum": "01.10.2026",
-      "status": "Ergebnis steht im Protokoll",
-      "niederschrift_url": "",
-      "beschluss": null,
+      "status": "Entschieden",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89000&type=do",
+      "beschluss": {
+        "formel": "Ja 11, Nein 0",
+        "text": "Der Bezirksausschuss beschließt: 1. Der Durchführung des Vorhabens „Schaffung der Grundlagen für Monito- ring, Früherkennung und Prävention der invasiven Quaggamuschel in oberbayerischen Seen“ mit einem Gesamtvolumen von 60.000 € wird zu- gestimmt. 2. Die Verwaltung wird beauftragt, bei der Regierung von Oberbayern die Gewährung einer Zuwendung aus Mitteln der Fraktionsinitiative zur Prä- vention der Quaggamuschel in Oberbayern in Höhe von 54.000 € zu bean- tragen und die zur Umsetzung des Vorhabens erforderlichen Maßnahmen durchzuführen. 3. Der Bezirk Oberbayern stellt für das Vorhaben Eigenmittel in Höhe von 6.000 € bereit. 4. Der außerplanmäßigen Bereitstellung der zur Abwicklung des Vorhabens erforderlichen Einnahmen und Ausgaben im Verwaltungs- und Vermögens- haushalt der Haushaltsjahre 2026 und 2027 wird zugestimmt. Hierfür wer- den überplanmäßige Ausgaben in Höhe von 33.000 € auf der Haushaltstel- le 2.78010.93500.999 genehmigt. Die Deckung erfolgt aus der Haushalts- stelle 2.88910.93200 (Erwerb von Grundstücken und baulichen Anlagen). Im Haushaltsplan 2027 werden auf der Haushaltsstelle 2.78010.93500.999 weitere 12.000 € bereitgestellt. Im Verwaltungshaushalt 2027 werden auf der Haushaltsstelle 1.78010.63202 (Quagga-Muschel) 15.000 € bereitge- stellt. 5. Die Verwaltung wird ermächtigt, im Rahmen des bewilligten Gesamtvolu- mens notwendige Anpassungen bei der Umsetzung und Mittelverwendung vorzunehmen, soweit hierdurch der Förderzweck und der Eigenmittelanteil des Bezi"
+      },
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Förderung für Maßnahmen zur Prävention und zum Monitoring der Quaggamuschel in Oberbayern – außerplanmäßige Bereitstellung von Haushaltsmitteln 2026 / 2027",
       "top_nr": "Ö 3",
@@ -12822,7 +13335,7 @@
       "stand": "Nur besprochen, nichts entschieden",
       "stand_datum": "",
       "status": "Nur zur Information",
-      "niederschrift_url": "",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88369&type=do",
       "beschluss": null,
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Bekanntgaben und Sonstiges",
@@ -12868,7 +13381,7 @@
       "stand": "Bekanntgabe",
       "stand_datum": "22.09.2026",
       "status": "Nur zur Information",
-      "niederschrift_url": "",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88369&type=do",
       "beschluss": null,
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Zertifizierung des Bezirks Oberbayern als „Empfehlenswerter Arbeitgeber®“",
@@ -12933,7 +13446,7 @@
       "stand": "Bekanntgabe",
       "stand_datum": "22.09.2026",
       "status": "Nur zur Information",
-      "niederschrift_url": "",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88369&type=do",
       "beschluss": null,
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Vorstellung der Auswertungen zur Inanspruchnahme von Fortbildungsangeboten sowie zur Entwicklung der Fluktuation im Jahr 2025",
@@ -12999,7 +13512,7 @@
       "stand": "Bekanntgabe",
       "stand_datum": "22.09.2026",
       "status": "Nur zur Information",
-      "niederschrift_url": "",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88369&type=do",
       "beschluss": null,
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Auswertung der krankheitsbedingten Fehlzeiten 2025 und weiterer gesundheitsrelevanter Kennzahlen",
@@ -21689,7 +22202,7 @@
       "stand": "Bekanntgabe",
       "stand_datum": "16.07.2026",
       "status": "Nur zur Information",
-      "niederschrift_url": "",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88960&type=do",
       "beschluss": null,
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Tätigkeitsbericht der Inklusionsbeauftragten des Bezirks Oberbayern",
@@ -21750,7 +22263,7 @@
       "stand": "Entscheidung angesetzt",
       "stand_datum": "16.07.2026",
       "status": "Ergebnis steht im Protokoll",
-      "niederschrift_url": "",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88960&type=do",
       "beschluss": null,
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Neubesetzung der Gremien und Funktionen",
@@ -21816,11 +22329,14 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung angesetzt",
+      "stand": "Beschlossen",
       "stand_datum": "16.07.2026",
-      "status": "Ergebnis steht im Protokoll",
-      "niederschrift_url": "",
-      "beschluss": null,
+      "status": "Entschieden",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88960&type=do",
+      "beschluss": {
+        "formel": "Ja 73, Nein 3",
+        "text": "Der Bezirkstag beschließt, unter Aufhebung des Beschlusses vom 11.12.2025 zur Anpassung der Entschädigung für den Bezirkstagspräsidenten die monatliche Ent- schädigung des Bezirkstagspräsidenten rückwirkend ab dem 1.5.2026 entspre- chend des Höchstbetrages nach Art. 53 Abs. 3 Satz 2 i.V.m. Anlage 3 auf derzeit 12.117,11 € festzusetzen."
+      },
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Entschädigung für den Bezirkstagspräsidenten ab dem 1.5.2026, rückwirkende Anpassung",
       "top_nr": "Ö 5",
@@ -21890,11 +22406,14 @@
       ],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung angesetzt",
+      "stand": "Abgelehnt",
       "stand_datum": "16.07.2026",
-      "status": "Ergebnis steht im Protokoll",
-      "niederschrift_url": "",
-      "beschluss": null,
+      "status": "Entschieden",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88960&type=do",
+      "beschluss": {
+        "formel": "Ja 9, Nein 65",
+        "text": "Der Bezirkstag stimmt über den Antrag der AfD vom 13.03.2026 ab."
+      },
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Antrag der AfD vom 13.03.2026: JERWA-Station",
       "top_nr": "Ö 6",
@@ -21971,11 +22490,14 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung angesetzt",
+      "stand": "Abgelehnt",
       "stand_datum": "16.07.2026",
-      "status": "Ergebnis steht im Protokoll",
-      "niederschrift_url": "",
-      "beschluss": null,
+      "status": "Entschieden",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88960&type=do",
+      "beschluss": {
+        "formel": "Ja 8, Nein 67",
+        "text": "Der Bezirkstag stimmt über den Antrag der AfD vom 21.5.2026 ab."
+      },
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Antrag der AfD vom 21.5.2026: Neubewertung Klimaschutzmaßnahmen",
       "top_nr": "Ö 7",
@@ -22047,11 +22569,14 @@
       ],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung angesetzt",
+      "stand": "Beschlossen",
       "stand_datum": "16.07.2026",
-      "status": "Ergebnis steht im Protokoll",
-      "niederschrift_url": "",
-      "beschluss": null,
+      "status": "Entschieden",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88960&type=do",
+      "beschluss": {
+        "formel": "Ja 74, Nein 0",
+        "text": "Der Bezirk Oberbayern bewilligt dem Gehörlosenverband München und Umland e.V. einen Zuschuss zu den Sanierungskosten des Hauptdaches des Gehörlosen- zentrums München in Höhe von 230.688 Euro. Der Betrag wird aufgeteilt auf die Haushaltsjahre 2026 (100.000 Euro) und 2027 (130.688 Euro). Ein Nachweis über sämtliche Kosten ist nach Abschluss der Maßnahmen dem Zuschusswesen vorzu- legen."
+      },
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Sonderfinanzierung Sanierung Hauptdach des GMU",
       "top_nr": "Ö 8",
@@ -22136,11 +22661,14 @@
       ],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung angesetzt",
+      "stand": "Beschlossen",
       "stand_datum": "16.07.2026",
-      "status": "Ergebnis steht im Protokoll",
-      "niederschrift_url": "",
-      "beschluss": null,
+      "status": "Entschieden",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88960&type=do",
+      "beschluss": {
+        "formel": "Ja 75, Nein 0",
+        "text": "Der Bezirkstag beschließt die „Verordnung zur Aufhebung der Verordnung des Be- zirks Oberbayern über den Schutz von Bodendenkmälern in der Gemarkung Lan- gengeisling, Stadt Erding“ zu erlassen."
+      },
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Verordnung zur Aufhebung der Verordnung des Bezirks Oberbayern über den Schutz von Bodendenkmälern in der Gemarkung Langengeisling, Stadt Erding",
       "top_nr": "Ö 9",
@@ -22228,11 +22756,14 @@
       ],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung angesetzt",
+      "stand": "Beschlossen",
       "stand_datum": "16.07.2026",
-      "status": "Ergebnis steht im Protokoll",
-      "niederschrift_url": "",
-      "beschluss": null,
+      "status": "Entschieden",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88960&type=do",
+      "beschluss": {
+        "formel": "Ja 75, Nein 0",
+        "text": "Der Bezirkstag nimmt von der Überschreitung der Plandefizite 2025 bei Kloster Seeon Kenntnis und beschließt das operative Defizit 2025 in Höhe von 1.562.248,87 € auszugleichen. Der Bezirkstag beschließt die im Bezirkshaushalt 2026 auf der Haushaltsstelle 1.87100.71500 (Kloster Seeon – Zuschüsse für lfd. Zwecke) entstehenden Mehr- ausgaben in Höhe von 200.048,87 € zu genehmigen und zur Deckung dieser Mehrausgaben Mittel der allgemeinen Deckungsreserve zu verwenden."
+      },
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Ausgleich des operativen Defizites 2025 bei Kloster Seeon - Kultur- und Bildungsstätte des Bezirks Oberbayern, Genehmigung von Mehrausgaben",
       "top_nr": "Ö 10",
@@ -22307,11 +22838,14 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung angesetzt",
+      "stand": "Beschlossen",
       "stand_datum": "16.07.2026",
-      "status": "Ergebnis steht im Protokoll",
-      "niederschrift_url": "",
-      "beschluss": null,
+      "status": "Entschieden",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88960&type=do",
+      "beschluss": {
+        "formel": "Ja 76, Nein 0",
+        "text": "Der Bezirkstag erteilt der Verwaltung den Auftrag, die Beitrittsverhandlungen mit der ANLEI-Service GmbH aufzunehmen."
+      },
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Beteiligung des Bezirks Oberbayern an der ANLEI-Service GmbH",
       "top_nr": "Ö 11",
@@ -22388,11 +22922,14 @@
       ],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung angesetzt",
+      "stand": "Beschlossen",
       "stand_datum": "16.07.2026",
-      "status": "Ergebnis steht im Protokoll",
-      "niederschrift_url": "",
-      "beschluss": null,
+      "status": "Entschieden",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88960&type=do",
+      "beschluss": {
+        "formel": "Ja 75, Nein 0",
+        "text": "Der Bezirkstag beschließt die „Satzung des Bezirks Oberbayern über die Patien- tenfürsprache an den Kliniken des Bezirks Oberbayern – Kommunalunternehmen (kbo)“ mit Wirkung zum 01.01.2027 in der Fassung vom 02.06.2026."
+      },
       "quelle": "bezirk_obb",
       "amtlicher_titel": "kbo; Patientenfürsprache in den kbo-Kliniken des Bezirks Oberbayern, Aktualisierung der Satzung",
       "top_nr": "Ö 12",
@@ -22473,11 +23010,14 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung angesetzt",
+      "stand": "Beschlossen",
       "stand_datum": "16.07.2026",
-      "status": "Ergebnis steht im Protokoll",
-      "niederschrift_url": "",
-      "beschluss": null,
+      "status": "Entschieden",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88960&type=do",
+      "beschluss": {
+        "formel": "Ja 76, Nein 0",
+        "text": "Der Bezirkstag beschließt die Neufassung der „Richtlinien für das Prüfungswesen des Bezirks Oberbayern“ in der vorgelegten geänderten Fassung."
+      },
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Änderung der \"Richtlinien für das Prüfungswesen des Bezirks Oberbayern\"",
       "top_nr": "Ö 13",
@@ -22558,11 +23098,14 @@
       ],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung angesetzt",
+      "stand": "Beschlossen",
       "stand_datum": "16.07.2026",
-      "status": "Ergebnis steht im Protokoll",
-      "niederschrift_url": "",
-      "beschluss": null,
+      "status": "Entschieden",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88960&type=do",
+      "beschluss": {
+        "formel": "Ja 74, Nein 0",
+        "text": "Der Bezirkstag beschließt die kbo-Unternehmenssatzung für das „Kliniken des Be- zirks Oberbayern – Kommunalunternehmen“ (kbo-KU) in der Fassung vom 01.07.2026 (Inkrafttreten 1.1.2027)."
+      },
       "quelle": "bezirk_obb",
       "amtlicher_titel": "kbo; Unternehmenssatzung der Kliniken des Bezirks Oberbayern - Kommunalunternehmen; Aktualisierung",
       "top_nr": "Ö 14",
@@ -22648,11 +23191,14 @@
       "ort": [],
       "entwurf": false,
       "duenn": false,
-      "stand": "Entscheidung angesetzt",
+      "stand": "Beschlossen",
       "stand_datum": "16.07.2026",
-      "status": "Ergebnis steht im Protokoll",
-      "niederschrift_url": "",
-      "beschluss": null,
+      "status": "Entschieden",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88960&type=do",
+      "beschluss": {
+        "formel": "Ja 75, Nein 0",
+        "text": "Der Bezirkstag von Oberbayern beschließt, sich der beigefügten Resolution anzu- schließen und fordert alle Mitglieder des Bezirkstags sowie die Beschäftigten der Bezirksverwaltung und aller bezirklichen Einrichtungen auf, sich gegen alle For- men von Antisemitismus aktiv einzusetzen."
+      },
       "quelle": "bezirk_obb",
       "amtlicher_titel": "„Nicht bei uns, nicht mit uns“ – Resolution gegen Antisemitismus",
       "top_nr": "Ö 15",
@@ -22739,7 +23285,7 @@
       "stand": "Bekanntgabe",
       "stand_datum": "16.07.2026",
       "status": "Nur zur Information",
-      "niederschrift_url": "",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88960&type=do",
       "beschluss": null,
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Beteiligungsbericht 2024",
@@ -22820,7 +23366,7 @@
       "stand": "Bekanntgabe",
       "stand_datum": "16.07.2026",
       "status": "Nur zur Information",
-      "niederschrift_url": "",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88960&type=do",
       "beschluss": null,
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Projektbericht 2026 Perspektive Oberbayern",
@@ -22892,7 +23438,7 @@
       "stand": "Nur besprochen, nichts entschieden",
       "stand_datum": "",
       "status": "Nur zur Information",
-      "niederschrift_url": "",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88960&type=do",
       "beschluss": null,
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Bekanntgaben und Sonstiges",
@@ -34535,7 +35081,7 @@
       "stand": "Nur besprochen, nichts entschieden",
       "stand_datum": "",
       "status": "Nur zur Information",
-      "niederschrift_url": "",
+      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88171&type=do",
       "beschluss": null,
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Bekanntgaben und Sonstiges",
@@ -73795,7 +74341,7 @@
       "stand": "Entscheidung angesetzt",
       "stand_datum": "28.10.2025",
       "status": "Ergebnis steht im Protokoll",
-      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=86574&type=do",
+      "niederschrift_url": "",
       "beschluss": null,
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Änderungen Stellenplan 2026",
@@ -73875,7 +74421,7 @@
       "stand": "Nur besprochen, nichts entschieden",
       "stand_datum": "",
       "status": "Nur zur Information",
-      "niederschrift_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=86574&type=do",
+      "niederschrift_url": "",
       "beschluss": null,
       "quelle": "bezirk_obb",
       "amtlicher_titel": "Bekanntgaben und Sonstiges",
@@ -232964,51 +233510,6 @@
       "beratungsweg": []
     },
     {
-      "ref": "stadt:antrag:17489",
-      "thema": "stadt:antrag:17489",
-      "auftritte": [],
-      "klartext_titel": "Schulschwimmbäder sanieren und neu bauen",
-      "klartext": "Die CSU-Stadtratsfraktion fordert, marode Lehrschwimmbecken an mehreren Grundschulen zu ersetzen: An der Christoph-Columbus-Grundschule soll wegen kurzer Restnutzungsdauer sofort ein Neubau geplant werden, an der Gotthold-Ephraim-Lessig-Grundschule soll die Nutzung kurzfristig wiederhergestellt und ebenfalls ein Neubau mit der Schulturnhalle geplant werden. Das wegen statischer Mängel nicht mehr nutzbare Becken an der Grundschule Pestalozzistraße soll komplett neu gebaut werden. Zusätzlich soll die Verwaltung ein Gesamtkonzept mit Zeitplan vorlegen, wie der schulübergreifende Schwimmunterricht wiederhergestellt wird.",
-      "klartext_titel_leicht": "Schwimmbäder an Grundschulen sollen repariert und neu gebaut werden",
-      "klartext_leicht": "An mehreren Grundschulen in Ingolstadt gibt es Schwimmbäder für den Schwimm-Unterricht. Einige davon sind kaputt oder bald zu alt. Die CSU-Fraktion möchte, dass die Stadt neue Schwimmbäder baut. Und dass ein Plan erstellt wird: Wie kann der Schwimm-Unterricht für alle Kinder wieder funktionieren?",
-      "lebenslage": [
-        "Eltern & Kinder"
-      ],
-      "bezirk": [],
-      "ebene": [
-        "Stadtrat & Ausschüsse"
-      ],
-      "anlass": [
-        "Schulbau"
-      ],
-      "ort": [],
-      "entwurf": false,
-      "duenn": false,
-      "stand": "Noch nicht terminiert",
-      "stand_datum": "",
-      "status": "Noch offen",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "stadt",
-      "amtlicher_titel": "Erhalt und Neubau der Schulschwimmbäder",
-      "top_nr": "",
-      "vorlage": "V0907/23",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=17489",
-      "antragsteller": "CSU-Stadtratsfraktion",
-      "gremium": "Antrag an Stadtrat",
-      "sitzung_kennung": "",
-      "datum": "2023-10-11",
-      "datum_anzeige": "11.10.2023",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=17489",
-      "dokumente": [
-        {
-          "titel": "Stadtratsantrag CSU",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=208709&type=do"
-        }
-      ],
-      "beratungsweg": []
-    },
-    {
       "ref": "stadt:antrag:15744",
       "thema": "stadt:antrag:15744",
       "auftritte": [],
@@ -233102,51 +233603,6 @@
         {
           "titel": "Stadtratsantrag FDP/JU",
           "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=186673&type=do"
-        }
-      ],
-      "beratungsweg": []
-    },
-    {
-      "ref": "stadt:antrag:23458",
-      "thema": "stadt:antrag:23458",
-      "auftritte": [],
-      "klartext_titel": "AfD fordert Bodengutachten vor der Sanierung des Technischen Rathauses",
-      "klartext": "Die AfD-Stadtratsfraktion beantragt als Dringlichkeitsantrag, vor der Projektgenehmigung und Vergabe der nächsten Planungsstufe für die Sanierung des Technischen Rathauses eine Bodengrunduntersuchung in Auftrag zu geben. Ein externer Gutachter soll klären, ob die geplanten Mikropfähle und die Reprofilierung der Fundamentbalken überhaupt eine ausreichende Standsicherheit des Gebäudes herstellen können. Die Fraktion will vermeiden, dass die Sanierung teurer wird als ein Neubau oder die Kosten wie beim Museum für Konkrete Kunst und Design aus dem Ruder laufen. Die eingeplanten Risikokosten von 2 Millionen Euro hält sie für viel zu gering. Der Antrag vom 22. Oktober 2026 soll in der Stadtratssitzung am 29. Oktober behandelt werden.",
-      "klartext_titel_leicht": "Die AfD will ein Gutachten zum Technischen Rathaus",
-      "klartext_leicht": "Das Technische Rathaus muss repariert werden. Das Gebäude steht nicht mehr sicher genug. Die Partei AfD will vorher den Boden untersuchen lassen. Ein Fach-Mann soll prüfen: Hält der Plan das Gebäude wirklich sicher? Die AfD hat Angst, dass die Reparatur zu teuer wird.",
-      "lebenslage": [],
-      "bezirk": [
-        "I-Mitte"
-      ],
-      "ebene": [
-        "Stadtrat & Ausschüsse"
-      ],
-      "anlass": [
-        "Baustelle"
-      ],
-      "ort": [],
-      "entwurf": false,
-      "duenn": false,
-      "stand": "Noch nicht terminiert",
-      "stand_datum": "",
-      "status": "Noch offen",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "stadt",
-      "amtlicher_titel": "Sanierung des Technischen Rathauses - externes Gutachten",
-      "top_nr": "",
-      "vorlage": "V0697/26",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23458",
-      "antragsteller": "",
-      "gremium": "Antrag an Stadtrat",
-      "sitzung_kennung": "",
-      "datum": "",
-      "datum_anzeige": "",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23458",
-      "dokumente": [
-        {
-          "titel": "Stadtratsantrag AfD",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254860&type=do"
         }
       ],
       "beratungsweg": []
@@ -233709,138 +234165,9 @@
         }
       ],
       "beratungsweg": []
-    },
-    {
-      "ref": "stadt:antrag:17527",
-      "thema": "stadt:antrag:17527",
-      "auftritte": [],
-      "klartext_titel": "Sicherheit der Schutzplanke an der Friedrichshofener Straße prüfen",
-      "klartext": "Die UWG-Stadtratsfraktion stellt einen Prüfantrag zu einer älteren Schutzplanke an der Friedrichshofener Straße, die vermutlich Ende der 1970er/Anfang der 1980er Jahre errichtet wurde. Gefragt wird unter anderem, ob sie noch der aktuellen Norm (DIN EN 1317) entspricht, ob ein Unterfahrschutz für Krafträder fehlt, ob sie modernen SUVs und Lkw standhält und ob sie den tieferliegenden, parallel verlaufenden Rad- und Gehweg ausreichend schützt. Auch eine mögliche Kombination mit Lärmschutz und Photovoltaik bei einer Erneuerung wird angefragt.",
-      "klartext_titel_leicht": "Ist die alte Leitplanke an der Friedrichshofener Straße noch sicher?",
-      "klartext_leicht": "An der Friedrichshofener Straße steht eine alte Leitplanke. Sie wurde vor über 40 Jahren gebaut. Die UWG-Fraktion fragt die Stadt: Ist diese Leitplanke noch sicher genug? Schützt sie Autos, Motorräder und den Rad- und Gehweg dahinter gut genug? Soll sie erneuert werden?",
-      "lebenslage": [
-        "Unterwegs"
-      ],
-      "bezirk": [
-        "XI-Friedrichshofen/Hollerstauden"
-      ],
-      "ebene": [
-        "Stadtrat & Ausschüsse"
-      ],
-      "anlass": [
-        "Sicherheit"
-      ],
-      "ort": [
-        "Friedrichshofener Straße"
-      ],
-      "entwurf": false,
-      "duenn": false,
-      "stand": "Noch nicht terminiert",
-      "stand_datum": "",
-      "status": "Noch offen",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "stadt",
-      "amtlicher_titel": "Schutzplanken",
-      "top_nr": "",
-      "vorlage": "V0940/23",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=17527",
-      "antragsteller": "",
-      "gremium": "Antrag an Stadtrat",
-      "sitzung_kennung": "",
-      "datum": "",
-      "datum_anzeige": "",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=17527",
-      "dokumente": [
-        {
-          "titel": "Stadtratsantrag UWG",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=209296&type=do"
-        }
-      ],
-      "beratungsweg": []
     }
   ],
   "kommende_termine": [
-    {
-      "gremium": "Personalausschuss",
-      "artikel": "",
-      "datum": "2026-10-27",
-      "datum_anzeige": "27.10.2026",
-      "zeit": "09:30-11:30 Uhr",
-      "ort": "Sitzungssaal im 5. OG des Verwaltungsgebäudes",
-      "quelle": "bezirk_obb",
-      "tagesordnung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4935"
-    },
-    {
-      "gremium": "Ausschuss für Bau, Umwelt und Energie",
-      "artikel": "",
-      "datum": "2026-10-27",
-      "datum_anzeige": "27.10.2026",
-      "zeit": "13:30-15:30 Uhr",
-      "ort": "Sitzungssaal im 5. OG des Verwaltungsgebäudes",
-      "quelle": "bezirk_obb",
-      "tagesordnung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4938"
-    },
-    {
-      "gremium": "Bezirksausschuss",
-      "artikel": "",
-      "datum": "2026-10-27",
-      "datum_anzeige": "27.10.2026",
-      "zeit": "15:30-17:00 Uhr",
-      "ort": "Hybrid (Sitzungssaal 5. OG und Teams), Sitzung des Bezirksausschusses",
-      "quelle": "bezirk_obb",
-      "tagesordnung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5163"
-    },
-    {
-      "gremium": "Bezirksausschuss XI-Friedrichshofen/Hollerstauden",
-      "artikel": "",
-      "datum": "2026-10-27",
-      "datum_anzeige": "27.10.2026",
-      "zeit": "19:00 Uhr",
-      "ort": "Thomaskirche, Buchenweg 4, 85049 Ingolstadt",
-      "quelle": "bza",
-      "tagesordnung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14209"
-    },
-    {
-      "gremium": "Bezirksausschuss V-Südwest",
-      "artikel": "",
-      "datum": "2026-10-27",
-      "datum_anzeige": "27.10.2026",
-      "zeit": "19:30 Uhr",
-      "ort": "Jugendheim Hundszell, Klausenweg, 85051 Ingolstadt",
-      "quelle": "bza",
-      "tagesordnung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14353"
-    },
-    {
-      "gremium": "Bezirkstag",
-      "artikel": "",
-      "datum": "2026-10-28",
-      "datum_anzeige": "28.10.2026",
-      "zeit": "09:30-11:30 Uhr",
-      "ort": "Hybrid (Sitzungssaal 5. OG und Teams), Sitzung des Bezirkstags",
-      "quelle": "bezirk_obb",
-      "tagesordnung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162"
-    },
-    {
-      "gremium": "Stadtrat",
-      "artikel": "",
-      "datum": "2026-10-29",
-      "datum_anzeige": "29.10.2026",
-      "zeit": "11:00 Uhr",
-      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
-      "quelle": "stadt",
-      "tagesordnung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548"
-    },
-    {
-      "gremium": "Bezirksausschuss VII-Etting",
-      "artikel": "",
-      "datum": "2026-10-29",
-      "datum_anzeige": "29.10.2026",
-      "zeit": "19:30 Uhr",
-      "ort": "Sportheim Etting, Retzbachweg 10, 85055 Ingolstadt —",
-      "quelle": "bza",
-      "tagesordnung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14355"
-    },
     {
       "gremium": "Werkausschuss für das Kultur- und Bildungszentrum Kloster Seeon",
       "artikel": "",
@@ -233856,7 +234183,7 @@
       "datum": "2026-11-10",
       "datum_anzeige": "10.11.2026",
       "zeit": "19:30 Uhr",
-      "ort": "- geplanter Sitzungstermin -",
+      "ort": "Aula der Grundschule G.E.Lessing, Unterer Taubentalweg 26, 85055 Ingolstadt",
       "quelle": "bza"
     },
     {
@@ -233924,12 +234251,13 @@
     },
     {
       "gremium": "Bürgerversammlung XII - Münchener Straße",
-      "artikel": "der",
+      "artikel": "",
       "datum": "2026-11-24",
       "datum_anzeige": "24.11.2026",
       "zeit": "18:30 Uhr",
-      "ort": "",
-      "quelle": "stadt"
+      "ort": "Gasthof zum Peterwirt, Dorfstraße 2, 85051 Ingolstadt",
+      "quelle": "stadt",
+      "tagesordnung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13872"
     },
     {
       "gremium": "Inklusionsrates",

@@ -5,8 +5,8 @@
       "software": "Session (Somacos GmbH & Co. KG)",
       "basis_url": "https://www.ingolstadt.de/sessionnet",
       "endung": "php",
-      "anzahl_sitzungen": 382,
-      "anzahl_tops": 3283
+      "anzahl_sitzungen": 383,
+      "anzahl_tops": 3294
     },
     "bza": {
       "name": "Ratsinfoportal der Bezirksausschuesse der Stadt Ingolstadt",
@@ -26,15 +26,86 @@
     }
   },
   "hinweis": "Oeffentlich zugaengliche Seiten, ohne Anmeldung abgerufen.",
-  "abgerufen_am": "2026-10-26",
+  "abgerufen_am": "2026-10-30",
   "zeitraum": {
     "von": "2023-11",
     "bis": "2027-01"
   },
-  "anzahl_sitzungen": 639,
-  "anzahl_tops": 6328,
-  "anzahl_verfahren": 874,
+  "anzahl_sitzungen": 640,
+  "anzahl_tops": 6339,
+  "anzahl_verfahren": 875,
   "sitzungen": [
+    {
+      "id": "13872",
+      "kennung": "BV-XII/01/2026",
+      "gremium": "Bürgerversammlung XII - Münchener Straße",
+      "raum": "Gasthof zum Peterwirt, Dorfstraße 2, 85051 Ingolstadt",
+      "datum": "2026-11-24",
+      "datum_anzeige": "24.11.2026",
+      "zeit": "18:30 Uhr",
+      "url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13872",
+      "dokumente": [
+        {
+          "titel": "Öffentliche Bekanntmachung BV",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255004&type=do"
+        }
+      ],
+      "tops": [
+        {
+          "nr": "Ö 1",
+          "titel": "Begrüßung",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": true,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 2",
+          "titel": "Rück- und Ausblick",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 3",
+          "titel": "Themen des BZA",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 4",
+          "titel": "Offene Fragerunde",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        }
+      ],
+      "quelle": "stadt"
+    },
     {
       "id": "13548",
       "kennung": "StR/05/2026",
@@ -123,6 +194,10 @@
             {
               "titel": "Anfrage der ÖDP-Stadtratsgruppe vom 20.07.2026 zum Thema Gewalt an Schulen",
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254632&type=do"
+            },
+            {
+              "titel": "Stellungnahme Stadtratsanfrage ÖPD Gewalt an Schule",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255030&type=do"
             }
           ],
           "beratungen": []
@@ -175,8 +250,8 @@
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253196&type=do"
             },
             {
-              "titel": "Anlage 1 - Satzungsnovelle Integrationsbeirat und Integrationsbeauftragte 13.10.2026",
-              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254349&type=do"
+              "titel": "Anlage 1 - Satzungsnovelle Integrationsbeirat und Integrationsbeauftragte 26.10.2026",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255010&type=do"
             },
             {
               "titel": "Anlage 2 - Satzung Migrationsrat und Integrationsbeauftragte 21.07.2021",
@@ -371,10 +446,25 @@
           "nachtrag": "",
           "oeffentlich": true,
           "verfahren": false,
-          "vorlage": "",
-          "vorlage_url": "",
-          "dokumente": [],
-          "beratungen": []
+          "vorlage": "V0668/26",
+          "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23425",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254406&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-10-29",
+              "datum_anzeige": "29.10.2026",
+              "gremium": "Stadtrat",
+              "top_nr": "10",
+              "oeffentlich": true,
+              "rolle": "Entscheidung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548&toselect=91066"
+            }
+          ]
         },
         {
           "nr": "Ö",
@@ -452,6 +542,14 @@
             {
               "titel": "Vorlage",
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254276&type=do"
+            },
+            {
+              "titel": "NEU Haushaltssicherungskonzept 2026 V2",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255062&type=do"
+            },
+            {
+              "titel": "NEU 2026.10.27 HSK PPT Kämmerei - überarb 2030",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255061&type=do"
             },
             {
               "titel": "Anlagen - alte Fassung",
@@ -606,12 +704,12 @@
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254485&type=do"
             },
             {
-              "titel": "Anlage 1 Satzung für die Erhebung der Hundesteuer ab 2027",
-              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254486&type=do"
+              "titel": "NEU Anlage 1 Satzung für die Erhebung der Hundesteuer ab 2027",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254991&type=do"
             },
             {
-              "titel": "Anlage 2 Synopse Hundesteuersatzung 2021 - 2027",
-              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254487&type=do"
+              "titel": "NEU Anlage 2 Synopse Hundesteuersatzung 2021 - 2027",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254992&type=do"
             },
             {
               "titel": "Anlage 3 Maßnahmenmeldung zum HSK",
@@ -677,6 +775,10 @@
             {
               "titel": "Anlage6 Grundrisse+Systemschnitt Nachverdichtung",
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254435&type=do"
+            },
+            {
+              "titel": "Anlage7 Nutzungskonzept Technisches Rathaus (NEU)",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255056&type=do"
             }
           ],
           "beratungen": [
@@ -708,6 +810,28 @@
               "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548&toselect=90861"
             }
           ]
+        },
+        {
+          "nr": "Ö",
+          "titel": "Hierzu liegt vor: — Dringlichkeitsantrag der AfD-Stadtratsfraktion vom 22.10.2026 — - Sanierung des Technischen Rathauses - externes Gutachten",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "V0697/26",
+          "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23458",
+          "dokumente": [
+            {
+              "titel": "Stadtratsantrag AfD",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254860&type=do"
+            },
+            {
+              "titel": "Beantwortung AfD-Dringlichkeitsantrag zur Sanierung des Technischen Rathauses",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255060&type=do"
+            }
+          ],
+          "beratungen": []
         },
         {
           "nr": "Ö 16",
@@ -1113,6 +1237,32 @@
           ]
         },
         {
+          "nr": "Ö",
+          "titel": "Hierzu liegt eine überarbeitete Beschlussvorlage vor.",
+          "zusatz": "Referent: Herr Müller",
+          "antragsteller": "",
+          "nachtrag": "28.10.2026",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "V0692/25/1",
+          "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23465",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255053&type=do"
+            },
+            {
+              "titel": "Anlage 1 V0692-25",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255054&type=do"
+            },
+            {
+              "titel": "Anlage 2 V0692-25",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255055&type=do"
+            }
+          ],
+          "beratungen": []
+        },
+        {
           "nr": "Ö 26",
           "titel": "Änderung der Satzung über Aufwendungs- und Kostenersatz für Einsätze und andere Leistungen der Feuerwehren der Stadt Ingolstadt (Feuerwehraufwendungs- und Kostenersatzsatzung - FwKS) — hier: Anpassung an das neue Umsatzsteuerrecht für Kommunen ab 2027(§2b UStG)",
           "zusatz": "Referent: Herr Müller",
@@ -1210,9 +1360,22 @@
           "nachtrag": "",
           "oeffentlich": true,
           "verfahren": false,
-          "vorlage": "",
-          "vorlage_url": "",
-          "dokumente": [],
+          "vorlage": "V0692/26",
+          "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23453",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254793&type=do"
+            },
+            {
+              "titel": "Anlage 1 Änderungssatzung",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254912&type=do"
+            },
+            {
+              "titel": "Anlage 2 Synopse",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254913&type=do"
+            }
+          ],
           "beratungen": []
         },
         {
@@ -1355,6 +1518,24 @@
           "beratungen": []
         },
         {
+          "nr": "Ö",
+          "titel": "Hierzu liegt vor: — Ergänzungsantrag zu V0494/26 und V0562/26: Verbindliche Beteiligung und aktive Mitwirkung der Ansprechpersonen für internationale Beziehungen und Städtepartnerschaften",
+          "zusatz": "",
+          "antragsteller": "Antrag der CSU-Stadtratsantrag vom 19.10.2026-",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "V0707/26",
+          "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23470",
+          "dokumente": [
+            {
+              "titel": "Stadtratsantrag CSU",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255091&type=do"
+            }
+          ],
+          "beratungen": []
+        },
+        {
           "nr": "Ö 31",
           "titel": "Unverzügliche Einstellung und Digitalisierung der Druckpublikationen des Stadttheaters Ingolstadt",
           "zusatz": "",
@@ -1465,10 +1646,6 @@
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253280&type=do"
             },
             {
-              "titel": "Anlage 4 HSK",
-              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253474&type=do"
-            },
-            {
               "titel": "V0521-26 Anlage 1 Gebührenbericht Obdachlosenwesen 2025",
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253271&type=do"
             },
@@ -1479,6 +1656,10 @@
             {
               "titel": "V0521-26 Anlage 3 Gebuehrenkalkulation Obdachlosenunterbringung",
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253254&type=do"
+            },
+            {
+              "titel": "Anlage 4 HSK",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253474&type=do"
             }
           ],
           "beratungen": [
@@ -1740,10 +1921,57 @@
           "nachtrag": "",
           "oeffentlich": true,
           "verfahren": false,
-          "vorlage": "",
-          "vorlage_url": "",
-          "dokumente": [],
-          "beratungen": []
+          "vorlage": "V0686/26",
+          "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23446",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254704&type=do"
+            },
+            {
+              "titel": "Anlage 1 Lageplan",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255012&type=do"
+            },
+            {
+              "titel": "Anlage 2 Luftbild",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255013&type=do"
+            },
+            {
+              "titel": "Anlage 3 Grundrisse",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255014&type=do"
+            },
+            {
+              "titel": "Anlage 4 Ansichten",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255015&type=do"
+            },
+            {
+              "titel": "Anlage 5 Freiflächenplan",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255016&type=do"
+            },
+            {
+              "titel": "Anlage 6 Betriebsbeschreibung vom 20.04.2026",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255017&type=do"
+            },
+            {
+              "titel": "Anlage 7 Verkehrsstudie vom 01.04.2026",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255018&type=do"
+            },
+            {
+              "titel": "Anlage 8 Schalltechniches Gutachten vom 28.04.2026",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255019&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-10-29",
+              "datum_anzeige": "29.10.2026",
+              "gremium": "Stadtrat",
+              "top_nr": "37",
+              "oeffentlich": true,
+              "rolle": "Entscheidung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13548&toselect=91045"
+            }
+          ]
         },
         {
           "nr": "Ö 38",
@@ -1756,6 +1984,24 @@
           "vorlage": "",
           "vorlage_url": "",
           "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 38.1",
+          "titel": "PFAS — -Dringlichkeitsantrag der ödp-Stadtratsgruppe vom 22.10.2026-",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "V0694/26",
+          "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23455",
+          "dokumente": [
+            {
+              "titel": "Stadtratsantrag ÖDP",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254822&type=do"
+            }
+          ],
           "beratungen": []
         },
         {
@@ -1824,6 +2070,72 @@
             {
               "titel": "Fragestunde der Stadtratssitzung am 29.10.2026 Wahrung des sakralen Charakters von Gotteshäusern bei Protestaktionen",
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254620&type=do"
+            }
+          ],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 40.3",
+          "titel": "Anfrage der Stadtratsfraktion BÜNDNIS 90/DIE GRÜNEN vom 13.10.2026 zum Thema Sicherheit der Beschäftigten der Stadt Ingolstadt bei Außendienstterminen",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [
+            {
+              "titel": "Beantwortung Sicherheit Beschäftigte im Außendienst",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254998&type=do"
+            },
+            {
+              "titel": "Sicherheit Beschäftige Außendiensttermine Anfrage MS",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254993&type=do"
+            }
+          ],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 40.4",
+          "titel": "Anfrage der AfD-Stadtratsfraktion vom 24.10.2026 zum Thema Auswirkung des Endes der Audi-Förderung",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [
+            {
+              "titel": "Frage - Auswirkung des Endes der Audi-Förderung",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254995&type=do"
+            },
+            {
+              "titel": "Stellungnahme zur AfD Stadtratsanfrage Ende Sponsoring Audi AG",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255040&type=do"
+            }
+          ],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 40.5",
+          "titel": "Anfrage der SPD-Stadtratsfraktion vom 26.10.2026 zum Thema Heizungsregulierung an städtischen Schulen: Sachstand und Kosten",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [
+            {
+              "titel": "Frage - Heizungsregulierung an städt. Schulen",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254996&type=do"
+            },
+            {
+              "titel": "SPD-Anfrage Fragestunde Stadtrat Heizungsregulierung Beantwortung",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255059&type=do"
             }
           ],
           "beratungen": []
@@ -2116,6 +2428,10 @@
         {
           "titel": "Öffentliche Bekanntmachung",
           "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88998&type=do"
+        },
+        {
+          "titel": "2026 07 16 Niederschrift ö",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88960&type=do"
         }
       ],
       "tops": [
@@ -2198,10 +2514,51 @@
           "nachtrag": "",
           "oeffentlich": true,
           "verfahren": false,
-          "vorlage": "",
-          "vorlage_url": "",
-          "dokumente": [],
-          "beratungen": []
+          "vorlage": "30/BV/192/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14961",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88222&type=do"
+            },
+            {
+              "titel": "Wirtschaftsplan Kulturgesellschaft 2026",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88611&type=do"
+            },
+            {
+              "titel": "Wirtschaftsplan Kulturgesellschaft 2027",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88612&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-10-20",
+              "datum_anzeige": "20.10.2026",
+              "gremium": "Ausschuss für Kultur, Schulen und Museen",
+              "top_nr": "6",
+              "oeffentlich": true,
+              "rolle": "vorberatend nach § 12 Abs. 1 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5016&toselect=27982"
+            },
+            {
+              "datum": "2026-10-27",
+              "datum_anzeige": "27.10.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "4",
+              "oeffentlich": true,
+              "rolle": "vorberatend nach § 7 Abs. 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5163&toselect=27941"
+            },
+            {
+              "datum": "2026-10-28",
+              "datum_anzeige": "28.10.2026",
+              "gremium": "Bezirkstag",
+              "top_nr": "3",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162&toselect=27962"
+            }
+          ]
         },
         {
           "nr": "Ö 4",
@@ -2211,10 +2568,51 @@
           "nachtrag": "",
           "oeffentlich": true,
           "verfahren": false,
-          "vorlage": "",
-          "vorlage_url": "",
-          "dokumente": [],
-          "beratungen": []
+          "vorlage": "33/BV/169/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14929",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=87859&type=do"
+            },
+            {
+              "titel": "2026-08-18 Diaton Satzung Richtlinie Änderungsmodus",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88031&type=do"
+            },
+            {
+              "titel": "2026-08-18 Diaton Satzung Richtlinie Reinschrift",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88032&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-10-20",
+              "datum_anzeige": "20.10.2026",
+              "gremium": "Ausschuss für Kultur, Schulen und Museen",
+              "top_nr": "7",
+              "oeffentlich": true,
+              "rolle": "vorberatend nach § 12 Abs. 1 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5016&toselect=27986"
+            },
+            {
+              "datum": "2026-10-27",
+              "datum_anzeige": "27.10.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "5",
+              "oeffentlich": true,
+              "rolle": "vorberatend nach § 7 Abs. 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5163&toselect=27944"
+            },
+            {
+              "datum": "2026-10-28",
+              "datum_anzeige": "28.10.2026",
+              "gremium": "Bezirkstag",
+              "top_nr": "4",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162&toselect=27964"
+            }
+          ]
         },
         {
           "nr": "Ö 5",
@@ -2312,12 +2710,16 @@
       "raum": "Sitzungssaal im 5. OG des Verwaltungsgebäudes",
       "datum": "2026-10-27",
       "datum_anzeige": "27.10.2026",
-      "zeit": "09:30-11:30 Uhr",
+      "zeit": "09:30-10:36 Uhr",
       "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4935",
       "dokumente": [
         {
           "titel": "Öffentliche Bekanntmachung",
           "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88940&type=do"
+        },
+        {
+          "titel": "Niederschrift 22.09.26 ö",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88928&type=do"
         }
       ],
       "tops": [
@@ -2406,12 +2808,16 @@
       "raum": "Hybrid (Sitzungssaal 5. OG und Teams), Sitzung des Bezirksausschusses",
       "datum": "2026-10-27",
       "datum_anzeige": "27.10.2026",
-      "zeit": "15:30-17:00 Uhr",
+      "zeit": "15:30-16:58 Uhr",
       "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5163",
       "dokumente": [
         {
           "titel": "Öffentliche Bekanntmachung",
           "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88968&type=do"
+        },
+        {
+          "titel": "2026 10 01 Niederschrift ö",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89000&type=do"
         }
       ],
       "tops": [
@@ -2543,10 +2949,51 @@
           "nachtrag": "",
           "oeffentlich": true,
           "verfahren": false,
-          "vorlage": "",
-          "vorlage_url": "",
-          "dokumente": [],
-          "beratungen": []
+          "vorlage": "30/BV/192/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14961",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88222&type=do"
+            },
+            {
+              "titel": "Wirtschaftsplan Kulturgesellschaft 2026",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88611&type=do"
+            },
+            {
+              "titel": "Wirtschaftsplan Kulturgesellschaft 2027",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88612&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-10-20",
+              "datum_anzeige": "20.10.2026",
+              "gremium": "Ausschuss für Kultur, Schulen und Museen",
+              "top_nr": "6",
+              "oeffentlich": true,
+              "rolle": "vorberatend nach § 12 Abs. 1 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5016&toselect=27982"
+            },
+            {
+              "datum": "2026-10-27",
+              "datum_anzeige": "27.10.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "4",
+              "oeffentlich": true,
+              "rolle": "vorberatend nach § 7 Abs. 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5163&toselect=27941"
+            },
+            {
+              "datum": "2026-10-28",
+              "datum_anzeige": "28.10.2026",
+              "gremium": "Bezirkstag",
+              "top_nr": "3",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162&toselect=27962"
+            }
+          ]
         },
         {
           "nr": "Ö 5",
@@ -2556,10 +3003,51 @@
           "nachtrag": "",
           "oeffentlich": true,
           "verfahren": false,
-          "vorlage": "",
-          "vorlage_url": "",
-          "dokumente": [],
-          "beratungen": []
+          "vorlage": "33/BV/169/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14929",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=87859&type=do"
+            },
+            {
+              "titel": "2026-08-18 Diaton Satzung Richtlinie Änderungsmodus",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88031&type=do"
+            },
+            {
+              "titel": "2026-08-18 Diaton Satzung Richtlinie Reinschrift",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88032&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-10-20",
+              "datum_anzeige": "20.10.2026",
+              "gremium": "Ausschuss für Kultur, Schulen und Museen",
+              "top_nr": "7",
+              "oeffentlich": true,
+              "rolle": "vorberatend nach § 12 Abs. 1 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5016&toselect=27986"
+            },
+            {
+              "datum": "2026-10-27",
+              "datum_anzeige": "27.10.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "5",
+              "oeffentlich": true,
+              "rolle": "vorberatend nach § 7 Abs. 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5163&toselect=27944"
+            },
+            {
+              "datum": "2026-10-28",
+              "datum_anzeige": "28.10.2026",
+              "gremium": "Bezirkstag",
+              "top_nr": "4",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162&toselect=27964"
+            }
+          ]
         },
         {
           "nr": "Ö 6",
@@ -2719,6 +3207,10 @@
         {
           "titel": "Öffentliche Bekanntmachung",
           "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88939&type=do"
+        },
+        {
+          "titel": "Niederschrift vom 12.05.26 ö",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88171&type=do"
         }
       ],
       "tops": [
@@ -3228,7 +3720,7 @@
       "raum": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
       "datum": "2026-10-27",
       "datum_anzeige": "27.10.2026",
-      "zeit": "16:00 Uhr",
+      "zeit": "16:00-18:42 Uhr",
       "url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13764",
       "dokumente": [
         {
@@ -3556,6 +4048,14 @@
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254276&type=do"
             },
             {
+              "titel": "NEU Haushaltssicherungskonzept 2026 V2",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255062&type=do"
+            },
+            {
+              "titel": "NEU 2026.10.27 HSK PPT Kämmerei - überarb 2030",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255061&type=do"
+            },
+            {
               "titel": "Anlagen - alte Fassung",
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254468&type=do"
             },
@@ -3605,10 +4105,6 @@
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253280&type=do"
             },
             {
-              "titel": "Anlage 4 HSK",
-              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253474&type=do"
-            },
-            {
               "titel": "V0521-26 Anlage 1 Gebührenbericht Obdachlosenwesen 2025",
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253271&type=do"
             },
@@ -3619,6 +4115,10 @@
             {
               "titel": "V0521-26 Anlage 3 Gebuehrenkalkulation Obdachlosenunterbringung",
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253254&type=do"
+            },
+            {
+              "titel": "Anlage 4 HSK",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253474&type=do"
             }
           ],
           "beratungen": [
@@ -3774,12 +4274,12 @@
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254485&type=do"
             },
             {
-              "titel": "Anlage 1 Satzung für die Erhebung der Hundesteuer ab 2027",
-              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254486&type=do"
+              "titel": "NEU Anlage 1 Satzung für die Erhebung der Hundesteuer ab 2027",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254991&type=do"
             },
             {
-              "titel": "Anlage 2 Synopse Hundesteuersatzung 2021 - 2027",
-              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254487&type=do"
+              "titel": "NEU Anlage 2 Synopse Hundesteuersatzung 2021 - 2027",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254992&type=do"
             },
             {
               "titel": "Anlage 3 Maßnahmenmeldung zum HSK",
@@ -4160,6 +4660,10 @@
             {
               "titel": "Anlage6 Grundrisse+Systemschnitt Nachverdichtung",
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254435&type=do"
+            },
+            {
+              "titel": "Anlage7 Nutzungskonzept Technisches Rathaus (NEU)",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255056&type=do"
             }
           ],
           "beratungen": [
@@ -4619,10 +5123,51 @@
           "nachtrag": "",
           "oeffentlich": true,
           "verfahren": false,
-          "vorlage": "",
-          "vorlage_url": "",
-          "dokumente": [],
-          "beratungen": []
+          "vorlage": "30/BV/192/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14961",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88222&type=do"
+            },
+            {
+              "titel": "Wirtschaftsplan Kulturgesellschaft 2026",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88611&type=do"
+            },
+            {
+              "titel": "Wirtschaftsplan Kulturgesellschaft 2027",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88612&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-10-20",
+              "datum_anzeige": "20.10.2026",
+              "gremium": "Ausschuss für Kultur, Schulen und Museen",
+              "top_nr": "6",
+              "oeffentlich": true,
+              "rolle": "vorberatend nach § 12 Abs. 1 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5016&toselect=27982"
+            },
+            {
+              "datum": "2026-10-27",
+              "datum_anzeige": "27.10.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "4",
+              "oeffentlich": true,
+              "rolle": "vorberatend nach § 7 Abs. 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5163&toselect=27941"
+            },
+            {
+              "datum": "2026-10-28",
+              "datum_anzeige": "28.10.2026",
+              "gremium": "Bezirkstag",
+              "top_nr": "3",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162&toselect=27962"
+            }
+          ]
         },
         {
           "nr": "Ö 7",
@@ -4632,10 +5177,51 @@
           "nachtrag": "",
           "oeffentlich": true,
           "verfahren": false,
-          "vorlage": "",
-          "vorlage_url": "",
-          "dokumente": [],
-          "beratungen": []
+          "vorlage": "33/BV/169/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14929",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=87859&type=do"
+            },
+            {
+              "titel": "2026-08-18 Diaton Satzung Richtlinie Änderungsmodus",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88031&type=do"
+            },
+            {
+              "titel": "2026-08-18 Diaton Satzung Richtlinie Reinschrift",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88032&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-10-20",
+              "datum_anzeige": "20.10.2026",
+              "gremium": "Ausschuss für Kultur, Schulen und Museen",
+              "top_nr": "7",
+              "oeffentlich": true,
+              "rolle": "vorberatend nach § 12 Abs. 1 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5016&toselect=27986"
+            },
+            {
+              "datum": "2026-10-27",
+              "datum_anzeige": "27.10.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "5",
+              "oeffentlich": true,
+              "rolle": "vorberatend nach § 7 Abs. 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5163&toselect=27944"
+            },
+            {
+              "datum": "2026-10-28",
+              "datum_anzeige": "28.10.2026",
+              "gremium": "Bezirkstag",
+              "top_nr": "4",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5162&toselect=27964"
+            }
+          ]
         },
         {
           "nr": "Ö 8",
@@ -5329,6 +5915,10 @@
             {
               "titel": "Anlage6 Grundrisse+Systemschnitt Nachverdichtung",
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254435&type=do"
+            },
+            {
+              "titel": "Anlage7 Nutzungskonzept Technisches Rathaus (NEU)",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255056&type=do"
             }
           ],
           "beratungen": [
@@ -5368,10 +5958,10 @@
       "id": "14200",
       "kennung": "BZA-II/04/2026",
       "gremium": "Bezirksausschuss II-Nordwest",
-      "raum": "Stadtteiltreff Piusviertel, Pfitznerstraße 19a, 85057 Ingolstadt —",
+      "raum": "Stadtteiltreff Piusviertel, Pfitznerstraße 19a, 85057 Ingolstadt",
       "datum": "2026-10-14",
       "datum_anzeige": "14.10.2026",
-      "zeit": "19:00 Uhr",
+      "zeit": "19:00-21:45 Uhr",
       "url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14200",
       "dokumente": [
         {
@@ -6882,8 +7472,8 @@
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253196&type=do"
             },
             {
-              "titel": "Anlage 1 - Satzungsnovelle Integrationsbeirat und Integrationsbeauftragte 13.10.2026",
-              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254349&type=do"
+              "titel": "Anlage 1 - Satzungsnovelle Integrationsbeirat und Integrationsbeauftragte 26.10.2026",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255010&type=do"
             },
             {
               "titel": "Anlage 2 - Satzung Migrationsrat und Integrationsbeauftragte 21.07.2021",
@@ -6982,10 +7572,6 @@
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253280&type=do"
             },
             {
-              "titel": "Anlage 4 HSK",
-              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253474&type=do"
-            },
-            {
               "titel": "V0521-26 Anlage 1 Gebührenbericht Obdachlosenwesen 2025",
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253271&type=do"
             },
@@ -6996,6 +7582,10 @@
             {
               "titel": "V0521-26 Anlage 3 Gebuehrenkalkulation Obdachlosenunterbringung",
               "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253254&type=do"
+            },
+            {
+              "titel": "Anlage 4 HSK",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253474&type=do"
             }
           ],
           "beratungen": [
@@ -7593,6 +8183,10 @@
         {
           "titel": "Öffentliche Bekanntmachung",
           "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88304&type=do"
+        },
+        {
+          "titel": "2026 07 09 BezA Protokoll ö",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88138&type=do"
         }
       ],
       "tops": [
@@ -8357,6 +8951,10 @@
         {
           "titel": "Öffentliche Bekanntmachung",
           "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88197&type=do"
+        },
+        {
+          "titel": "Niederschrift öffentlich",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88369&type=do"
         },
         {
           "titel": "Niederschrift PerA 28.10.25 ö",
@@ -173822,7 +174420,7 @@
       "datum": "2026-11-10",
       "datum_anzeige": "10.11.2026",
       "zeit": "19:30 Uhr",
-      "ort": "- geplanter Sitzungstermin -",
+      "ort": "Aula der Grundschule G.E.Lessing, Unterer Taubentalweg 26, 85055 Ingolstadt",
       "quelle": "bza"
     },
     {
@@ -173895,15 +174493,6 @@
       "datum_anzeige": "24.11.2026",
       "zeit": "16:00 Uhr",
       "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
-      "quelle": "stadt"
-    },
-    {
-      "gremium": "Bürgerversammlung XII - Münchener Straße",
-      "artikel": "der",
-      "datum": "2026-11-24",
-      "datum_anzeige": "24.11.2026",
-      "zeit": "18:30 Uhr",
-      "ort": "",
       "quelle": "stadt"
     },
     {

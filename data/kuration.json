@@ -64837,7 +64837,7 @@
    ],
    "entwurf": true
   },
-  "stadt:13548#Ö12": {
+  "stadt:13548#Ö14": {
    "klartext_titel": "Klare Kriterien für Ehrenbürgerwürde und Ehrentitel gefordert",
    "klartext": "Die CSU-Stadtratsfraktion beantragt, gemeinsam mit den Fraktionen transparente, personenunabhängige Kriterien für die Verleihung kommunaler Ehrentitel zu erarbeiten – insbesondere für die Bezeichnungen „Altoberbürgermeister:in“, „Altbürgermeister:in“ sowie die Ehrenbürgerwürde als höchste Auszeichnung der Stadt. Ziel ist, künftige Entscheidungen nachvollziehbar zu machen, ohne die Ehrenbürgerwürde auf ein bloßes politisches Amt zu reduzieren.",
    "klartext_titel_leicht": "Klare Regeln für Ehrentitel der Stadt",
@@ -64850,7 +64850,7 @@
    "ort": [],
    "entwurf": false
   },
-  "stadt:13548#Ö13": {
+  "stadt:13548#Ö15": {
    "klartext_titel": "Freie Wähler wollen klare Regeln für die Ehrentitel „Altbürgermeister“ und „Altoberbürgermeister“",
    "klartext": "Die FW-Stadtratsfraktion beantragt, dass die Verwaltung gemeinsam mit den Fraktionen und Gruppen des Stadtrats transparente Grundsätze für die Verleihung der Ehrenbezeichnungen „Altbürgermeisterin/Altbürgermeister“ und „Altoberbürgermeisterin/Altoberbürgermeister“ erarbeitet. Aus dem Amt allein soll kein regelmäßiger Anspruch auf den Titel folgen; maßgeblich sollen Dauer und Bedeutung der Amtszeit und besondere Verdienste sein, die über die normale Amtsführung hinausgehen. Bis sich der Stadtrat auf Kriterien verständigt hat, sollen keine weiteren Titel verliehen werden. Die Fraktion betont, dass damit keine Ablehnung der früheren Bürgermeisterinnen Dorothea Deneke-Stoll und Petra Kleine verbunden sei, und verweist auf einen CSU-Antrag mit ähnlichem Ansatz. Der Antrag stammt vom 28. September 2026 und ist noch keiner Sitzung zugeteilt.",
    "klartext_titel_leicht": "Freie Wähler wollen Regeln für Ehren-Titel",
@@ -65087,20 +65087,6 @@
    "ort": [],
    "anlass": [
     "Sicherheit"
-   ]
-  },
-  "stadt:antrag:23458": {
-   "klartext_titel": "AfD fordert Bodengutachten vor der Sanierung des Technischen Rathauses",
-   "klartext": "Die AfD-Stadtratsfraktion beantragt als Dringlichkeitsantrag, vor der Projektgenehmigung und Vergabe der nächsten Planungsstufe für die Sanierung des Technischen Rathauses eine Bodengrunduntersuchung in Auftrag zu geben. Ein externer Gutachter soll klären, ob die geplanten Mikropfähle und die Reprofilierung der Fundamentbalken überhaupt eine ausreichende Standsicherheit des Gebäudes herstellen können. Die Fraktion will vermeiden, dass die Sanierung teurer wird als ein Neubau oder die Kosten wie beim Museum für Konkrete Kunst und Design aus dem Ruder laufen. Die eingeplanten Risikokosten von 2 Millionen Euro hält sie für viel zu gering. Der Antrag vom 22. Oktober 2026 soll in der Stadtratssitzung am 29. Oktober behandelt werden.",
-   "klartext_titel_leicht": "Die AfD will ein Gutachten zum Technischen Rathaus",
-   "klartext_leicht": "Das Technische Rathaus muss repariert werden. Das Gebäude steht nicht mehr sicher genug. Die Partei AfD will vorher den Boden untersuchen lassen. Ein Fach-Mann soll prüfen: Hält der Plan das Gebäude wirklich sicher? Die AfD hat Angst, dass die Reparatur zu teuer wird.",
-   "lebenslage": [],
-   "bezirk": [
-    "I-Mitte"
-   ],
-   "ort": [],
-   "anlass": [
-    "Baustelle"
    ]
   },
   "bezirk_obb:5162#Ö 6": {
@@ -65419,7 +65405,7 @@
    "anlass": [],
    "entwurf": true
   },
-  "stadt:13548#Ö10": {
+  "stadt:13548#Ö11": {
    "klartext_titel": "Antrag der CSU-Stadtratsfraktion vom 07.07.2026",
    "klartext": "",
    "lebenslage": [],
@@ -65428,7 +65414,7 @@
    "anlass": [],
    "entwurf": true
   },
-  "stadt:13548#Ö11": {
+  "stadt:13548#Ö12": {
    "klartext_titel": "Stellungnahme der Verwaltung",
    "klartext": "",
    "lebenslage": [],
@@ -65476,7 +65462,7 @@
    ],
    "entwurf": true
   },
-  "stadt:13548#Ö14": {
+  "stadt:13548#Ö16": {
    "klartext_titel": "Stellungnahme der Verwaltung",
    "klartext": "",
    "lebenslage": [],
@@ -65518,7 +65504,7 @@
    "anlass": [],
    "entwurf": true
   },
-  "stadt:13548#Ö15": {
+  "stadt:13548#Ö17": {
    "klartext_titel": "Antrag der FW-Stadtratsfraktion vom 28.07.2026",
    "klartext": "",
    "lebenslage": [],
@@ -65527,7 +65513,7 @@
    "anlass": [],
    "entwurf": true
   },
-  "stadt:13548#Ö16": {
+  "stadt:13548#Ö18": {
    "klartext_titel": "Stellungnahme der Verwaltung",
    "klartext": "",
    "lebenslage": [],
@@ -65549,7 +65535,7 @@
    ],
    "entwurf": true
   },
-  "stadt:13548#Ö17": {
+  "stadt:13548#Ö20": {
    "klartext_titel": "Antrag der AfD-Stadtratsfraktion vom 02.02.2026",
    "klartext": "",
    "lebenslage": [],
@@ -65558,7 +65544,7 @@
    "anlass": [],
    "entwurf": true
   },
-  "stadt:13548#Ö18": {
+  "stadt:13548#Ö21": {
    "klartext_titel": "Stellungnahme der Verwaltung",
    "klartext": "",
    "lebenslage": [],
@@ -65798,6 +65784,149 @@
     "Klima & Umwelt"
    ],
    "entwurf": true
+  },
+  "stadt:13548#Ö10": {
+   "klartext_titel": "AfD fordert Bodengutachten vor der Sanierung des Technischen Rathauses",
+   "klartext": "Die AfD-Stadtratsfraktion beantragt als Dringlichkeitsantrag, vor der Projektgenehmigung und Vergabe der nächsten Planungsstufe für die Sanierung des Technischen Rathauses eine Bodengrunduntersuchung in Auftrag zu geben. Ein externer Gutachter soll klären, ob die geplanten Mikropfähle und die Reprofilierung der Fundamentbalken überhaupt eine ausreichende Standsicherheit des Gebäudes herstellen können. Die Fraktion will vermeiden, dass die Sanierung teurer wird als ein Neubau oder die Kosten wie beim Museum für Konkrete Kunst und Design aus dem Ruder laufen. Die eingeplanten Risikokosten von 2 Millionen Euro hält sie für viel zu gering. Der Antrag vom 22. Oktober 2026 soll in der Stadtratssitzung am 29. Oktober behandelt werden.",
+   "klartext_titel_leicht": "Die AfD will ein Gutachten zum Technischen Rathaus",
+   "klartext_leicht": "Das Technische Rathaus muss repariert werden. Das Gebäude steht nicht mehr sicher genug. Die Partei AfD will vorher den Boden untersuchen lassen. Ein Fach-Mann soll prüfen: Hält der Plan das Gebäude wirklich sicher? Die AfD hat Angst, dass die Reparatur zu teuer wird.",
+   "lebenslage": [],
+   "bezirk": [
+    "I-Mitte"
+   ],
+   "ort": [],
+   "anlass": [
+    "Baustelle"
+   ]
+  },
+  "stadt:13548#Ö13": {
+   "klartext_titel": "Feuerwehrbedarfsplan: überarbeitete Vorlage mit ersten konkreten Schritten",
+   "klartext": "Einen Tag vor der Stadtratssitzung hat die Verwaltung die Vorlage zum Feuerwehrbedarfsplan überarbeitet. Wie zuvor soll Variante 2 des Umsetzungskonzepts als Orientierungsrahmen dienen und schrittweise im Rahmen der Haushaltslage umgesetzt werden; Entscheidungen daraus soll jeweils der Stadtrat treffen. Neu ist, dass bereits beschlossene Bauvorhaben jetzt zeitnah umgesetzt werden sollen: die Sanierung der Hauptfeuerwache innen, der Masterplan zur Sanierung der Feuerwehrgerätehäuser und der Neubau des Gerätehauses Südost. Auch die Beschaffung von Fahrzeugen soll in einer reduzierten und zeitlich gestreckten Variante parallel beginnen. Über mehr Personal wird dagegen jetzt nicht entschieden; dazu soll es erst nach einer Organisationsuntersuchung eigene Beschlüsse geben. Der Stadtrat sollte am 29. Oktober 2026 entscheiden.",
+   "klartext_titel_leicht": "Neuer Vorschlag für die Feuerwehr",
+   "klartext_leicht": "Die Verwaltung hat ihren Plan für die Feuerwehr geändert. Einige Bau-Projekte sollen jetzt bald starten. Zum Beispiel die Sanierung der Haupt-Feuerwache. Und ein neues Feuerwehr-Haus im Süd-Osten. Die Feuerwehr bekommt auch neue Fahrzeuge. Es werden aber weniger als geplant. Über mehr Personal wird später entschieden. Der Stadt-Rat sollte am 29. Oktober 2026 entscheiden.",
+   "lebenslage": [
+    "Ehrenamt & Vereine"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Sicherheit",
+    "Baustelle"
+   ]
+  },
+  "stadt:13548#Ö19": {
+   "klartext_titel": "CSU will mehr Mitsprache der Stadträte bei den Städtepartnerschaften",
+   "klartext": "Die CSU-Stadtratsfraktion unterstützt den Antrag der Freien Wähler zu den Städtepartnerschaften und will den Vorschlag der Verwaltung, in jeder Fraktion eine Ansprechperson zu benennen, verbindlicher machen. Der Oberbürgermeister soll nach Abstimmung mit den Fraktionen aus diesem Kreis eine zentrale politische Ansprechperson und eine Stellvertretung benennen, die den Austausch koordinieren. Die Ansprechpersonen sollen früh über wesentliche Vorhaben informiert und vor größeren Projekten angehört werden, eigene Projekte vorschlagen dürfen und innerhalb von sechs Wochen eine Rückmeldung bekommen. Mindestens zweimal im Jahr soll es Gespräche mit der zuständigen Amtsleitung geben. Neue Ämter oder Verwaltungsstrukturen sollen dadurch laut Antrag nicht entstehen. Der Ergänzungsantrag lag dem Stadtrat am 29. Oktober 2026 vor.",
+   "klartext_titel_leicht": "Die CSU will mehr Mitreden bei den Partner-Städten",
+   "klartext_leicht": "Ingolstadt hat Partner-Städte in anderen Ländern. Jede Partei soll dafür eine Ansprech-Person haben. Die Partei CSU will diesen Personen mehr Rechte geben. Sie sollen früh informiert werden. Sie sollen eigene Ideen vorschlagen dürfen. Eine Person soll alles zusammen-führen. Der Antrag stand am 29. Oktober 2026 auf der Tages-Ordnung.",
+   "lebenslage": [
+    "Ehrenamt & Vereine"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Kultur & Bildung"
+   ]
+  },
+  "stadt:13548#Ö 38.1": {
+   "klartext_titel": "ÖDP fordert schnelle Prüfung von Haftungsansprüchen wegen PFAS",
+   "klartext": "Ergänzend zum PFAS-Antrag der Linken hat die ÖDP-Stadtratsgruppe einen Dringlichkeitsantrag gestellt. In den geforderten Sachstandsbericht sollen auch betriebsinterne Untersuchungen einfließen, namentlich die Altlastenbearbeitung, die die Firma Gunvor für die Jahre 2022 bis 2024 veranlasst hat. Mit einer Fachkanzlei soll die Stadt sofort klären, ob sie vom Unternehmen einen Verzicht auf die Verjährung von Ansprüchen einholen sollte. Außerdem sollen mögliche Haftungsansprüche gegen alle in Frage kommenden Verursacher, Voreigentümer und Nachfolger umfassend geprüft werden. Die ÖDP begründet die Eile mit geänderten Eigentümerstrukturen und drohenden Fristabläufen und verweist auf Burghausen und den Landkreis Altötting, die gegen einen PFAS-Verursacher klagen. Der Antrag lag dem Stadtrat am 29. Oktober 2026 vor.",
+   "klartext_titel_leicht": "Die ÖDP will wegen PFAS schnell rechtlich handeln",
+   "klartext_leicht": "PFAS sind Stoffe aus der Chemie. Sie bleiben sehr lange im Boden und im Wasser. Auf einem Firmen-Gelände in Ingolstadt gibt es Untersuchungen dazu. Die Partei ÖDP will eine schnelle Prüfung. Wer muss für die Schäden zahlen? Sonst könnten Ansprüche zu spät kommen. Der Antrag stand am 29. Oktober 2026 auf der Tages-Ordnung.",
+   "lebenslage": [
+    "Gesundheit & Pflege"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Klima & Umwelt"
+   ]
+  },
+  "stadt:13548#Ö 40.3": {
+   "klartext_titel": "Waffenkontrollen: So schützt die Stadt ihre Beschäftigten",
+   "klartext": "Nach einem Vorfall bei einer Waffenkontrolle in Berngau im Landkreis Neumarkt hatten die Grünen nach der Sicherheit städtischer Beschäftigter bei Außenterminen gefragt. Der Sicherheitsreferent antwortet, dass Waffenkontrollen in Ingolstadt angekündigt und unangekündigt stattfinden und die Kontrolleure stets deeskalierend auftreten. Individuelle Gefährdungsbeurteilungen gebe es nur, wenn Tatsachen auf ein Risiko hindeuten; steht der Entzug einer Waffenerlaubnis an oder sind Drohungen bekannt, wird die Polizei hinzugezogen. Schusssichere Westen tragen die Mitarbeiter bisher nicht, um die Kontrollierten nicht zu stigmatisieren. Der Vorfall soll im November in einer Dienstbesprechung des Innenministeriums mit den Regierungen besprochen werden.",
+   "klartext_titel_leicht": "Wie die Stadt ihre Mitarbeiter bei Waffen-Kontrollen schützt",
+   "klartext_leicht": "Manche Menschen haben eine Waffe, zum Beispiel Jäger. Die Stadt kontrolliert, ob sie die Waffe sicher aufbewahren. In einem anderen Ort ist bei so einer Kontrolle etwas Schlimmes passiert. Die Grünen haben gefragt: Sind die Mitarbeiter der Stadt sicher? Die Stadt sagt: Die Mitarbeiter bleiben ruhig und freundlich. Bei Gefahr kommt die Polizei mit.",
+   "lebenslage": [
+    "Arbeit & Beruf"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Sicherheit"
+   ]
+  },
+  "stadt:13548#Ö 40.4": {
+   "klartext_titel": "Audi beendet Sponsoring: Kultur- und Sportveranstaltungen unter Druck",
+   "klartext": "Auf eine AfD-Anfrage antwortet die Verwaltung vorläufig zu den Folgen des Endes des Audi-Sponsorings. Halbmarathon und Triathlon sollen laut Gesprächen mit den Veranstaltern auch 2027 stattfinden; andere Förderer und Geschäftsleute hätten Unterstützung signalisiert. Die Stadt ist dort nicht Veranstalterin und wird sie nicht aus eigenen Mitteln finanzieren. Im Kulturbereich hat Audi 2025 städtische Angebote mit 143.943,23 Euro gesponsert, darunter die Spielzeitpartnerschaft des Stadttheaters, das Fest der Kulturen, die Jazztage und Reihen des Museums für Konkrete Kunst; dazu kamen die Stiftung für Konkrete Kunst und Design und die Kammerphilharmonie. Diese Angebote können laut Verwaltung künftig nicht mehr im bisherigen Umfang stattfinden, Kürzungen oder der Wegfall einzelner Formate sind nicht ausgeschlossen. Die Stadt versucht, andere Geldgeber zu gewinnen.",
+   "klartext_titel_leicht": "Audi gibt kein Geld mehr für Feste und Kultur",
+   "klartext_leicht": "Audi hat viele Veranstaltungen in Ingolstadt bezahlt. Zum Beispiel Konzerte und Theater. Das hört jetzt auf. Im Jahr 2025 waren es für die Kultur ungefähr 144.000 Euro. Halb-Marathon und Triathlon sollen trotzdem 2027 stattfinden. Bei der Kultur kann es weniger Angebote geben. Die Stadt sucht neue Geld-Geber.",
+   "lebenslage": [
+    "Freizeit & Sport"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Kultur & Bildung"
+   ]
+  },
+  "stadt:13548#Ö 40.5": {
+   "klartext_titel": "Überhitzte Klassenzimmer: Stadt nennt bekannte Heizungsprobleme an Schulen",
+   "klartext": "Die SPD hatte gefragt, ob Klassenzimmer wegen defekter Heizungen überhitzen und über offene Fenster gekühlt werden müssen. Laut Baureferat liegen dazu derzeit keine Meldungen vor, Mehrkosten seien daher nicht bezifferbar; Hinweise sollten zuerst an den Hausmeister gehen. Bekannt sind Probleme an der Christoph-Kolumbus-Grundschule, der alten Turnhalle Zuchering, dem Apian-Gymnasium, dem Katharinen-Gymnasium, wo die Raumregelung stark veraltet ist, und dem Reuchlin-Gymnasium, wo eine Reparatur beauftragt ist. Nach dem regelmäßigen Stoßlüften könnten Heizkörper vorübergehend überhitzen; Lüftungsanlagen mit Wärmerückgewinnung seien derzeit nicht finanzierbar. Eine breite Modernisierung der Heiztechnik wäre über ein Energiesparcontracting möglich, dazu sind aber noch haushaltsrechtliche Fragen offen.",
+   "klartext_titel_leicht": "Zu warme Klassen-Zimmer: Die Stadt antwortet",
+   "klartext_leicht": "Die Partei SPD hat gefragt: Sind manche Klassen-Zimmer zu warm? Die Stadt sagt: Dazu gibt es gerade keine Meldungen. An einigen Schulen gibt es aber Probleme mit der Heizung. Manche wurden schon repariert. Viele Heizungen der Stadt sind alt. Neue Technik ist im Moment zu teuer.",
+   "lebenslage": [
+    "Eltern & Kinder",
+    "Jugend"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Schulbau",
+    "Klima & Umwelt"
+   ]
+  },
+  "stadt:antrag:23467": {
+   "klartext_titel": "Freie Wähler wollen digitale Parkkontrolle mit Scan-Fahrzeugen prüfen lassen",
+   "klartext": "Die FW-Stadtratsfraktion beantragt zu prüfen, ob kennzeichenbasiertes Parken und Scan-Fahrzeuge zur Kontrolle von Parkberechtigungen für Ingolstadt sinnvoll sind. Die Verwaltung soll geeignete Gebiete, Anpassungen an Parkautomaten, Apps und Anwohnerparkausweisen sowie die Kosten für Technik, Software und Betrieb dem heutigen Kontrollverfahren gegenüberstellen. Auch Datenschutz, Löschfristen und eine menschliche Nachprüfung sind zu klären; Parken müsse auch ohne Smartphone möglich bleiben. Als Vorbilder nennt die Fraktion Versuche in Heidelberg, Mannheim, Freiburg, Waldshut-Tiengen und Hamburg; in Heidelberg wurden in knapp 33 Stunden Befahrung 2.886 ahndbare Parkverstöße erkannt. Bei positiver Bewertung soll dem Ausschuss ein befristeter Pilotversuch vorgeschlagen werden. Der Antrag stammt vom 28. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+   "klartext_titel_leicht": "Freie Wähler: Park-Kontrolle mit Kamera-Autos prüfen",
+   "klartext_leicht": "Die Stadt kontrolliert, ob Autos richtig parken. Das machen bisher Mitarbeiter zu Fuß. Die Partei Freie Wähler hat eine Idee. Ein Auto mit Kamera fährt durch die Straßen. Es liest die Nummern-Schilder. So sieht es, wer ein Park-Ticket hat. Die Stadt soll prüfen: Lohnt sich das? Parken soll auch ohne Handy möglich bleiben.",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Verkehrsplanung"
+   ]
+  },
+  "stadt:antrag:23469": {
+   "klartext_titel": "Grüne wollen Verhaltensregeln für Geschenke an Stadträte",
+   "klartext": "Die Stadtratsfraktion der Grünen beantragt eine eigene Compliance-Ordnung für die ehrenamtlichen Mitglieder des Stadtrats. Sie soll feste Wertgrenzen für Geschenke, Einladungen und Bewirtungen festlegen, und zwar nach denselben Maßstäben wie für die Beschäftigten der Stadt. Der Besuch offizieller städtischer Veranstaltungen soll als Teil des Mandats erlaubt bleiben und klar geregelt werden. Für Stadträte in Aufsichtsräten städtischer Gesellschaften sollen strengere Regeln gelten, weil sie dort eine Kontrollfunktion haben. Anlass war laut Antrag eine Einladung der Stadtwerke-Beteiligungsgesellschaft an Aufsichtsratsmitglieder in eine Firmenloge beim FC Ingolstadt, die die städtische Compliance-Stelle als kritisch bewertete. Der Antrag stammt vom 27. Oktober 2026. Der Antrag ist noch keiner Sitzung zugeteilt.",
+   "klartext_titel_leicht": "Die Grünen wollen Regeln für Geschenke an Stadt-Räte",
+   "klartext_leicht": "Stadt-Räte bekommen manchmal Geschenke oder Einladungen. Für Mitarbeiter der Stadt gibt es dafür feste Regeln. Für Stadt-Räte gibt es solche Regeln noch nicht. Die Partei Die Grünen will das ändern. Stadt-Räte sollen dieselben Regeln haben wie Mitarbeiter. Offizielle Feiern der Stadt dürfen sie weiter besuchen.",
+   "lebenslage": [],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Satzung & Regeln"
+   ]
   }
  }
 }
