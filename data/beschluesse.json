@@ -279,6 +279,22 @@
     "empfehlung": false,
     "weg": "obb-top"
   },
+  "stadt:13531#Ö 3": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0281/26",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
+  "stadt:13531#Ö 4": {
+    "formel": "Gegen 1 Stimme",
+    "ergebnis": "beschlossen",
+    "text": "Gegen 1 Stimme: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0168/26",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "bezirk_obb:5010#Ö 2": {
     "formel": "Ja 15, Nein 0",
     "ergebnis": "beschlossen",
@@ -383,6 +399,14 @@
     "empfehlung": false,
     "weg": "obb-top"
   },
+  "stadt:13526#Ö 3": {
+    "formel": "Mit 16:0 Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit 16:0 Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0239/26",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
   "stadt:13526#Ö 5": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -407,11 +431,27 @@
     "empfehlung": false,
     "weg": "vorlage-block"
   },
+  "stadt:13524#Ö 5": {
+    "formel": "Gegen 2 Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Gegen 2 Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0270/26",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
   "stadt:13524#Ö 7": {
     "formel": "Gegen 2 Stimmen",
     "ergebnis": "beschlossen",
     "text": "Gegen 2 Stimmen: Entsprechend dem Antrag genehmigt.",
     "vorlage": "V0181/26",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:13519#Ö 3": {
+    "formel": "Gegen 12 Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Gegen 12 Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0219/26",
     "empfehlung": false,
     "weg": "vorlage-block"
   },
@@ -444,6 +484,14 @@
     "ergebnis": "beschlossen",
     "text": "Mit 50:0 Stimmen: (1) Der Stadtrat der Stadt Ingolstadt verpflichtet die aus seiner Mitte bestellten Mitglieder in der nächstfolgenden Sitzung des Stiftungsrates der Heilig-Geist- Spital-Stiftung Ingolstadt für eine Änderung des § 10 Abs. 1 der Satzung der Heilig-Geist-Spital-Stiftung Ingolstadt zu erwirken, mit dem Ziel, die Zahl der vom Stadtrat zu bestellenden Mitglieder des Stiftungsrates auf fünfzehn Mit- glieder zu erhöhen, damit vom Stadtrat je Fraktion oder Wählergruppe min- destens ein, dem Stadtrat angehörendes Mitglied bestellt werden kann. (2) Der Stiftungsvorstand wird gebeten, für die nächstfolgende Sitzung des Stif- tungsrates folgende Beschlussfassung vorzubereiten: Art. 10 Abs. 1 der Satzung der Heilig-Geist-Spital-Stiftung Ingolstadt wird wie folgt geändert: Der Stiftungsrat besteht aus dem Oberbürgermeister der Stadt Ingolstadt als Vorsitzenden (geborenes Mitglied) und aus mindestens acht und höchstens fünfzehn weiteren vom Stadtrat der Stadt Ingolstadt zu bestellenden Mitglie- dern. Es können bis zu fünf Mitglieder mit besonderer Fachkunde bestellt werden, die nicht dem Stadtrat der Stadt Ingolstadt angehören. Die Mitglie- der sollen die Umsetzung des Stiftungszwecks im Sinne der Bürger der Stadt Ingolstadt gewährleisten. (3) Für die vom Stiftungsrat der Heilig-Geist-Spital-Stiftung Ingolstadt noch zu be- schließende Satzungsänderung wird die Zustimmung gem. § 11 Abs. 4 Nr. der Stiftungssatzung erteilt.",
     "vorlage": "V0232/26",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:13519#Ö 10": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag, mit der Ergänzung von Oberbürgermeister Dr. Kern, ge- nehmigt.",
+    "vorlage": "V0108/26",
     "empfehlung": false,
     "weg": "vorlage-block"
   },
@@ -791,6 +839,22 @@
     "empfehlung": false,
     "weg": "vorlage-block"
   },
+  "stadt:13513#Ö 4": {
+    "formel": "Mit 49:0 Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit 49:0 Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0115/26",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:13513#Ö 5": {
+    "formel": "Mit 49:0 Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit 49:0 Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0117/26",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "stadt:13513#Ö 6": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -804,6 +868,14 @@
     "ergebnis": "beschlossen",
     "text": "Mit allen Stimmen: Der Stadtrat der Stadt Ingolstadt beauftragt die Herbeiführung der Neufassung des Gesellschaftsvertrages der Ingolstädter Verkehrsgesellschaft mbH in der beigefügten Fassung zur Auflösung des Aufsichtsrates zum Ablauf der Wahlzeit der kommunalen Mandatsträger.",
     "vorlage": "V0114/26",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:13513#Ö2": {
+    "formel": "Gegen 1 Stimme",
+    "ergebnis": "beschlossen",
+    "text": "Gegen 1 Stimme: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0135/26/1",
     "empfehlung": false,
     "weg": "vorlage-block"
   },
@@ -828,6 +900,14 @@
     "ergebnis": "beschlossen",
     "text": "Mit allen Stimmen: 1. Der Stadtrat ermächtigt die Verwaltung im Rahmen der vorläufigen Haushalts- führung nach Art. 69 Abs. 2 und 4 GO bei der Regierung von Oberbayern fol- gende Kreditermächtigungen zu beantragen und die notwendigen Kommunal- darlehen zur Finanzierung der im Kurzvortrag näher dargestellten städtischen Investitionen und Investitionsförderungsmaßnahmen aufzunehmen: 2026 = 42.902.799,63 Euro 2027 = 13.083.582,09 Euro 2028 = 2.855.976,37 Euro 2029 = 2.500.000,00 Euro 2. Die Auswahl des Kreditgebers erfolgt entsprechend des wirtschaftlichsten An- gebotes. 3. Die Verwaltung berichtet dem Stadtrat, in welchem Umfang und zu welchen Konditionen sie hiervon Gebrauch gemacht hat.",
     "vorlage": "V0125/26",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:13513#Ö5": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0140/26",
     "empfehlung": false,
     "weg": "vorlage-block"
   },
@@ -863,6 +943,14 @@
     "empfehlung": false,
     "weg": "vorlage-block"
   },
+  "stadt:13513#Ö14": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0098/26",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "stadt:13513#Ö16": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -895,6 +983,14 @@
     "empfehlung": false,
     "weg": "vorlage-block"
   },
+  "stadt:13513#Ö 23": {
+    "formel": "Mit 38:3 Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit 38:3 Stimmen: 1. Über die im Rahmen der Öffentlichkeitsbeteiligung und der Beteiligung der Behör- den und sonstigen Träger öffentliche Belange eingegangenen Anregungen wird entsprechend der Beschlussempfehlung der Verwaltung entschieden. 2. Die Stadt Ingolstadt erlässt gemäß § 2 Abs. 1 und § 10 Abs. 1 BauGB i.V.m. Art. 81 Abs. 2 und Abs. 3 BayBO, der Planzeichenverordnung, der BauNVO und Art. 23 GO den Bebauungs- und Grünordnungsplan Nr. 122 A „Lindberghstraße“ als Satzung.",
+    "vorlage": "V0075/26",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "stadt:13513#Ö 24": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -916,6 +1012,14 @@
     "ergebnis": "beschlossen",
     "text": "Mit 41:0 Stimmen: Der Stadtrat beschließt die Satzung zur Änderung der Gebührensatzung für Benutzung von städtischen öffentlichen Grünanlagen der Stadt Ingolstadt entsprechend der An- lage 1 zu dieser Sitzungsvorlage.",
     "vorlage": "V0093/26",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:13513#Ö17": {
+    "formel": "Gegen 7 Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Gegen 7 Stimmen: Entsprechend dem Antrag genehmigt, mit der Maßgabe, dass Herr Dr. Frank schnellstmöglich den Bezirksausschuss West besucht und dessen Meinung eingeholt wird.",
+    "vorlage": "V0138/26",
     "empfehlung": false,
     "weg": "vorlage-block"
   },
@@ -959,12 +1063,36 @@
     "empfehlung": false,
     "weg": "vorlage-block"
   },
+  "stadt:13510#Ö 6": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0125/26",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
+  "stadt:13510#Ö2": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0048/26/1",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "stadt:13510#Ö 8": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
     "text": "Mit allen Stimmen: 1. Der bereits am 24.04.2017 erfolgte Abschluss des öffentlich-rechtlichen Vertra- ges zur Regelung der Trägerschaft für den Schulaufwand bei der August-Horch- Schule – Sonderpädagogisches Förderzentrum I in Ingolstadt, zwischen der Stadt Ingolstadt und dem Landkreis Eichstätt wird genehmigt. 2. Der Nachtrag zum öffentlich-rechtlichen Vertrag unter Nr. 1 wird genehmigt.",
     "vorlage": "V0101/26",
     "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:13510#Ö 9": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0105/26",
+    "empfehlung": true,
     "weg": "vorlage-block"
   },
   "stadt:13509#Ö 2": {
@@ -983,11 +1111,35 @@
     "empfehlung": true,
     "weg": "vorlage-block"
   },
+  "stadt:13509#Ö 5": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet. am 12.03.2026",
+    "vorlage": "V0100/26",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
+  "stadt:13509#Ö 6": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet. am 12.03.2026",
+    "vorlage": "V0087/26",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
   "stadt:13509#Ö 10": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
     "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
     "vorlage": "V0105/26",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
+  "stadt:13508#Ö2": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0098/26",
     "empfehlung": true,
     "weg": "vorlage-block"
   },
@@ -1071,6 +1223,14 @@
     "empfehlung": false,
     "weg": "vorlage-block"
   },
+  "stadt:13504#Ö6": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt",
+    "vorlage": "V0941/25",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "stadt:13504#Ö 14": {
     "formel": "Gegen 2 Stimmen",
     "ergebnis": "beschlossen",
@@ -1094,6 +1254,14 @@
     "vorlage": "V0053/26",
     "weg": "abstimmung",
     "empfehlung": false
+  },
+  "stadt:13502#Ö3": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet",
+    "vorlage": "V0053/26",
+    "empfehlung": true,
+    "weg": "vorlage-block"
   },
   "stadt:13501#Ö 7": {
     "formel": "Gegen 1 Stimme",
@@ -1183,6 +1351,14 @@
     "empfehlung": false,
     "weg": "vorlage-block"
   },
+  "stadt:11862#Ö 16": {
+    "formel": "Gegen 3 Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Gegen 3 Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0910/25",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "stadt:11862#Ö 18": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -1215,11 +1391,35 @@
     "empfehlung": false,
     "weg": "vorlage-block"
   },
+  "stadt:11862#Ö 24": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0881/25",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:11862#Ö 25": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0909/25",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "stadt:11862#Ö 26": {
     "formel": "Gegen 2 Stimmen",
     "ergebnis": "beschlossen",
     "text": "Gegen 2 Stimmen: 1. Aufgrund von Nachträgen steigen die Baukosten der Neugestaltung der Fuß- gängerzone von 6.725.000 Euro um 800.000 Euro auf 7.525.000 Euro. Im Bau- projektcontrolling Bericht Q2/2025 wurde die Kostenprognose bereits auf 7.200.000 Euro angepasst. 2. Die bisher genehmigten Kosten in Höhe von 6.725.000 Euro werden um zu- sätzliche Kosten in Höhe von 800.000 Euro ergänzt und genehmigt. Somit er- geben sich Gesamtkosten von 7.525.000 Euro. Die zusätzlich erforderlichen Mittel in Höhe von 600.000 Euro für das Jahr 2025 auf der Haushaltsstelle 630000.951000 (Gemeindestraßen, -wege, -plätze, Tiefbaumaßnahmen, Sanierung Fußgängerzone) stehen über den Deckungs- ring 667 (Groß- und Sonderprojekte FB 66) zur Verfügung. Die zusätzlich erforderlichen Mittel in Höhe von 200.000 Euro für das Jahr 2026 wurden zum Haushalt 2026 neu angemeldet. 3. Aufgrund von Ausgleichszahlungen für Ausbaubeiträge durch die Regierung von Oberbayern reduziert sich der Anteil der Stadt erheblich. Die Kostenerhö- hung von 800.000 Euro reduziert sich um ca. 700.000 Euro auf 100.000 Euro, die bei der Stadt verbleiben.",
     "vorlage": "V0789/25",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:11862#Ö 27": {
+    "formel": "Gegen 3 Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Gegen 3 Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0745/25",
     "empfehlung": false,
     "weg": "vorlage-block"
   },
@@ -1236,6 +1436,14 @@
     "ergebnis": "beschlossen",
     "text": "Mit 47:0 Stimmen: 1. Über die im Rahmen der Öffentlichkeitsbeteiligung nach § 3 BauGB sowie der Beteiligung der Behörden und sonstigen Träger öffentlicher Belange gem. § 4 BauGB eingegangenen Anregungen wird entsprechend der Beschluss- empfehlung der Verwaltung in der beiliegenden Abwägung entschieden. 2. Die Stadt Ingolstadt erlässt gem. § 2 Abs. 1 und § 10 Abs. 1 BauGB i.V.m. Art. 81 Abs. 2 und Abs. 3 BayBO, der Planzeichenverordnung, der BauNVO und Art. 23 GO den vorhabenbezogenen Bebauungs- und Grünordnungsplan Nr. 120 C Ä I „Wohnen an der Weningstraße“ als Satzung.",
     "vorlage": "V0749/25",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:11862#Ö 30": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt, mit dem Hinweis, dass im Baugenehmigungs- verfahren die Bauwerber den zweiten Rettungsweg nicht mittels Drehleiter sicherstel- len können.",
+    "vorlage": "V0738/25",
     "empfehlung": false,
     "weg": "vorlage-block"
   },
@@ -1279,6 +1487,14 @@
     "empfehlung": true,
     "weg": "vorlage-block"
   },
+  "stadt:11860#Ö 2": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0888/25",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
   "stadt:11860#Ö 4": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -1295,6 +1511,14 @@
     "empfehlung": true,
     "weg": "vorlage-block"
   },
+  "stadt:11860#Ö 8": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0784/25",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
   "stadt:11860#Ö2": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -1302,6 +1526,14 @@
     "vorlage": "V0820/25",
     "weg": "abstimmung",
     "empfehlung": true
+  },
+  "stadt:11860#Ö 13": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0902/25",
+    "empfehlung": false,
+    "weg": "vorlage-block"
   },
   "bezirk_obb:4576#Ö 2": {
     "formel": "Ja 12, Nein 1",
@@ -1447,6 +1679,14 @@
     "empfehlung": true,
     "weg": "obb-top"
   },
+  "stadt:13613#Ö 1": {
+    "formel": "Mit 47:0 Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit 47:0 Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0790/25",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "stadt:13613#Ö 4": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -1460,6 +1700,14 @@
     "ergebnis": "beschlossen",
     "text": "Mit 48:0 Stimmen: Der Stadtrat erlässt die beigefügte Änderungssatzung für das Kommunalunternehmen „IFG Ingolstadt, Anstalt des öffentlichen Rechts der Stadt Ingolstadt“.",
     "vorlage": "V0781/25",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:13613#Ö 6": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0809/25",
     "empfehlung": false,
     "weg": "vorlage-block"
   },
@@ -1500,6 +1748,14 @@
     "ergebnis": "beschlossen",
     "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt. Bürgermeisterin Dr. Deneke-Stoll merkt zur Analyse an, dass man weiterhin in Ge- sprächen mit den Wirten bleibe und versucht werde, über das Programm das Volks- fest zu beleben. Heute wolle man lediglich Klarheit für die Wirte für das nächste Jahr schaffen.",
     "vorlage": "V0785/25",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:11855#Ö 3": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem geänderten Antrag genehmigt, mit der Maßgabe, dass der Stadt- rat sich für das Folgejahr ab 01.01.2027 rechtzeitig mit dem Thema befasse und der Betreiber unterstützt werde, einen neuen Standort zu finden. 1. Dem Betreiber des Imbisscontainers (Dönerstand) am Schliffelmarkt wird die Sondernutzungserlaubnis für den bestehenden Standort für ein wei- teres Jahr wie beantragt erteilt. 2. Eine Verlängerung für die Jahre 2027 und 2028 begrenzt kann auf erneu- ten Antrag des Betreibers gewährt werden, sofern dann keine städtebau- lichen oder verkehrlichen Gründe entgegenstehen. 3. Die Genehmigung erlischt, sobald mit der Sanierung der Fußgängerzone am Schliffelmarkt, dem Standort des Containers, begonnen wird.",
+    "vorlage": "V0787/25",
     "empfehlung": false,
     "weg": "vorlage-block"
   },
@@ -1855,6 +2111,14 @@
     "empfehlung": true,
     "weg": "vorlage-block"
   },
+  "stadt:11851#Ö 6": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0641/25",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
   "stadt:11850#Ö6": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -1903,6 +2167,14 @@
     "empfehlung": false,
     "weg": "vorlage-block"
   },
+  "stadt:11850#Ö13": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt, mit der Maßgabe, dass die Ziffer 2 in den Satz „Die Verwaltung wird beauftragt, an zwei Grundschulen die Planungen für eine Schulstraße als zeitlich beschränkten Verkehrsversuch weiterzuführen.“ geändert wird.",
+    "vorlage": "V0557/25",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "stadt:11850#Ö15": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -1926,6 +2198,14 @@
     "vorlage": "V0657/25",
     "weg": "abstimmung",
     "empfehlung": false
+  },
+  "stadt:13585#Ö 2": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag der Verwaltung genehmigt. hierzu vorliegende Anträge: Funktionierende Notaufnahme für die Ingolstädter Bevölkerung -Antrag der SPD-Stadtratsfraktion vom 27.07.2025-",
+    "vorlage": "V0658/25",
+    "empfehlung": false,
+    "weg": "vorlage-block"
   },
   "stadt:11847#Ö 4": {
     "formel": "Mit allen Stimmen",
@@ -1958,6 +2238,14 @@
     "vorlage": "V0394/25",
     "weg": "abstimmung",
     "empfehlung": false
+  },
+  "stadt:11844#Ö 4": {
+    "formel": "Gegen vier Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Gegen vier Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0440/25",
+    "empfehlung": false,
+    "weg": "vorlage-block"
   },
   "stadt:11844#Ö 5": {
     "formel": "Mit allen Stimmen",
@@ -2511,6 +2799,14 @@
     "empfehlung": false,
     "weg": "vorlage-block"
   },
+  "stadt:11836#Ö 12": {
+    "formel": "Gegen 1 Stimme",
+    "ergebnis": "beschlossen",
+    "text": "Gegen 1 Stimme: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0240/25/1",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "stadt:11833#Ö 1": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -2668,6 +2964,22 @@
     "ergebnis": "beschlossen",
     "text": "Mit allen Stimmen: 1. Der Stadtrat stellt die Jahresrechnung 2023 gemäß der durchgeführten örtlichen Prüfung durch den Rechnungsprüfungsausschuss fest. 2. Die Entlastung für das Haushaltsjahr 2023 wird beschlossen.",
     "vorlage": "V0099/25/1",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:11825#Ö 10": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: 1. Die Verwaltung wird beauftragt, über pauschale Kürzungen bei den Personal- ressourcen im Haushalt 2026 kostenwirksam 6 Mio. € (ca. 75 bis 80 VZÄ) an Personalausgaben einzusparen. Die Koordination erfolgt durch die Organisa- tions- und Personalentwicklung, die dem Stadtrat erstmalig im Kontext mit den Beschlüssen zum personalwirtschaftlichen Stellenplan im Oktober 2025 über das Ergebnis berichtet. 2. Die Verwaltung wird beauftragt, dem Stadtrat über eine systematische Aufga- benkritik regelmäßig (erstmalig zeitnah im Laufe des Jahres 2025) weitere Einsparvorschläge durch den Wegfall bzw. der qualitativen Reduzierung von Aufgaben, der Prozessoptimierung und Automatisierung im Zusammenhang mit der Erledigung von Aufgaben, zur Entscheidung vorzulegen. 3. Die Deckung zusätzlicher unabdingbarer Bedarfe ist zukünftig bis auf wenige Ausnahmetatbestände (Ziffer 4) nur noch im Rahmen eines konsolidierten Planstellenverfahrens möglich. Über das Ergebnis dieses Verfahrens (stellenplanneutrale referatsübergreifende Umschichtungen) entscheidet der Stadtrat jeweils im Juli eines Jahres. Die Möglichkeit referatsinterner Um- schichtungen zur Deckung solcher Bedarfe bleibt davon unberührt. 4. […]",
+    "vorlage": "V0190/25",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:11825#Ö 11": {
+    "formel": "Gegen 4 Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Gegen 4 Stimmen: Entsprechend dem Antrag genehmigt mit der Maßgabe, dass die Mittelfristplanung genehmigt werde, sofern die Konsolidierungsziele erreicht werden.",
+    "vorlage": "V0129/25",
     "empfehlung": false,
     "weg": "vorlage-block"
   },
@@ -2831,6 +3143,14 @@
     "weg": "abstimmung",
     "empfehlung": false
   },
+  "stadt:11822#Ö 9": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0109/25",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
   "stadt:11822#Ö 10": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -2967,6 +3287,14 @@
     "empfehlung": false,
     "weg": "vorlage-block"
   },
+  "stadt:11817#Ö 14": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0877/24",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "stadt:11817#Ö 15": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -3079,6 +3407,14 @@
     "empfehlung": true,
     "weg": "obb-top"
   },
+  "stadt:11816#Ö 1": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0877/24",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
   "stadt:11816#Ö 2": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -3092,6 +3428,30 @@
     "ergebnis": "beschlossen",
     "text": "Mit 12: 1 Stimmen: Entsprechend dem Antrag befürwortet.",
     "vorlage": "V0093/25",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
+  "stadt:11815#Ö 2": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet. 06.02.2025",
+    "vorlage": "V0001/25",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
+  "stadt:11815#Ö 5": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0030/25",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
+  "stadt:11815#Ö 7": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0002/25",
     "empfehlung": true,
     "weg": "vorlage-block"
   },
@@ -3599,6 +3959,14 @@
     "empfehlung": false,
     "weg": "vorlage-block"
   },
+  "stadt:10141#Ö1": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt. am 28.11.2024",
+    "vorlage": "V0834/24",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "stadt:10141#Ö 1": {
     "formel": "Gegen 1 Stimme",
     "ergebnis": "beschlossen",
@@ -3614,6 +3982,22 @@
     "vorlage": "V0782/24",
     "weg": "abstimmung",
     "empfehlung": false
+  },
+  "stadt:10141#Ö 3": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0789/24",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
+  "stadt:10141#Ö 4": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0820/24",
+    "empfehlung": true,
+    "weg": "vorlage-block"
   },
   "stadt:10141#Ö 6": {
     "formel": "Mit allen Stimmen",
@@ -4039,6 +4423,14 @@
     "empfehlung": false,
     "weg": "vorlage-block"
   },
+  "stadt:10136#Ö 12": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0648/24",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "stadt:10136#Ö 15": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -4215,6 +4607,14 @@
     "empfehlung": false,
     "weg": "vorlage-block"
   },
+  "stadt:10135#Ö 8": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet, mit der Maßgabe, dass die Planstelle zum Ausstellungs-, Veranstaltungs- und Medientechniker, 0,5 VZÄ (EG 7) verwaltungsin- tern gegenfinanziert wird. Dem Stadtrat ist eine geänderte Beschlussvorlage vorzule- gen.",
+    "vorlage": "V0702/24",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
   "stadt:10135#Ö 9": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -4230,6 +4630,14 @@
     "vorlage": "81/BV/228/2024",
     "empfehlung": true,
     "weg": "obb-top"
+  },
+  "stadt:10133#Ö2": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0618/24",
+    "empfehlung": false,
+    "weg": "vorlage-block"
   },
   "stadt:10133#Ö 5": {
     "formel": "Mit allen Stimmen",
@@ -4308,6 +4716,14 @@
     "ergebnis": "beschlossen",
     "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
     "vorlage": "V0623/24",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
+  "stadt:10130#Ö 2": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0698/24",
     "empfehlung": true,
     "weg": "vorlage-block"
   },
@@ -4404,6 +4820,14 @@
     "ergebnis": "beschlossen",
     "text": "Mit allen Stimmen: 1. Der Leiter des Stadtdirektoriums, Herr Wolfgang Huber, wird mit sofortiger Wirkung kommissarisch zum Vertreter des Referenten Herrn Bernd Kuch be- stellt. 2. Frau Adelinde Schmidt wird im Bereich des Schul- und KITA-Bereiches und Herr Tobias Klein (befristet bis 30.06.2027) für den Bereich Kultur zum Vertre- ter des Referenten Herrn Marc Grandmontagne bestellt. Die geänderten Vertretungsregelungen wurden im beigefügten Referatsverteilungs- plan berücksichtigt.",
     "vorlage": "V0485/24",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:10127#Ö 19.2": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0445/24",
     "empfehlung": false,
     "weg": "vorlage-block"
   },
@@ -4532,6 +4956,14 @@
     "ergebnis": "beschlossen",
     "text": "Mit allen Stimmen: Der Gemeinschaftszweckvereinbarung und der Geschäftsordnung für den VHS-Ver- band Ingolstadt-Eichstätt wird zugestimmt.",
     "vorlage": "V0428/24",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:10127#Ö 28": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0404/24",
     "empfehlung": false,
     "weg": "vorlage-block"
   },
@@ -4719,6 +5151,14 @@
     "empfehlung": false,
     "weg": "obb-top"
   },
+  "stadt:10124#Ö 2": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0412/24",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
   "stadt:10124#Ö2": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -4887,6 +5327,14 @@
     "empfehlung": true,
     "weg": "obb-top"
   },
+  "stadt:10123#Ö 1": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0474/24",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
   "stadt:10123#Ö 4": {
     "formel": "Gegen 3 Stimmen (Stadträtin Leininger, Stadträtin Krumwiede, Stadtrat Over)",
     "ergebnis": "beschlossen",
@@ -4916,6 +5364,14 @@
     "ergebnis": "beschlossen",
     "text": "Gegen 1 Stimme: Entsprechend dem Antrag befürwortet.",
     "vorlage": "V0401/24",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
+  "stadt:10122#Ö 3": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0402/24",
     "empfehlung": true,
     "weg": "vorlage-block"
   },
@@ -5127,6 +5583,14 @@
     "empfehlung": false,
     "weg": "vorlage-block"
   },
+  "stadt:10119#Ö 8": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0241/24",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "stadt:10119#Ö 9.1": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -5156,6 +5620,22 @@
     "ergebnis": "beschlossen",
     "text": "Mit allen Stimmen: 1. Der Kommandant der Freiwilligen Feuerwehr Ingolstadt-Hundszell, Herr Rei- ner Schneider, und der stellvertretende Kommandant der Freiwilligen Feuer- wehr Ingolstadt-Hundszell, Herr Stefan Stark, werden bestätigt. 2. Der Entschädigung des Kommandanten der Freiwilligen Feuerwehr In- golstadt-Hundszell in Höhe von monatlich 45,44 Euro und der Entschädigung des stellvertretenden Kommandanten der Freiwilligen Feuerwehr Ingolstadt- Hundszell in Höhe von monatlich 22,72 Euro wird zugestimmt (gemäß Bayeri- schem Feuerwehrgesetz in der aktuellen Fassung). Die erforderlichen Mittel werden auf der Haushaltsstelle 130000.416000 Be- schäftigungsentgelte bereitgestellt.",
     "vorlage": "V0332/24",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:10119#Ö 11": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0369/24",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:10119#Ö15": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt mit der Maßgabe, dass vorab einige Entwürfe von verschiedenen Varianten eingeholt und dann im Kulturausschuss vorgestellt werde.",
+    "vorlage": "V0248/24",
     "empfehlung": false,
     "weg": "vorlage-block"
   },
@@ -5261,6 +5741,14 @@
     "text": "Mit allen Stimmen: 1. Die Stadt Ingolstadt erhöht ihren jährlichen Mitgliedsbeitrag ab 2024 auf 0,12 Euro pro Einwohner. 2. Eine erneute Prüfung über die Höhe des Mitgliedsbeitrags erfolgt nach Ablauf von 5 Jahren. 14.05.2024",
     "vorlage": "V0177/24",
     "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:10117#Ö 3.3": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0255/24",
+    "empfehlung": true,
     "weg": "vorlage-block"
   },
   "stadt:10117#Ö 5": {
@@ -5412,6 +5900,14 @@
     "ergebnis": "beschlossen",
     "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
     "vorlage": "V0211/24",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
+  "stadt:10114#Ö 4": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet. 30.04.2024",
+    "vorlage": "V0218/24",
     "empfehlung": true,
     "weg": "vorlage-block"
   },
@@ -5751,6 +6247,22 @@
     "empfehlung": true,
     "weg": "vorlage-block"
   },
+  "stadt:10108#Ö 7": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0042/24",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
+  "stadt:10108#Ö 8": {
+    "formel": "Mit 13:0 Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit 13:0 Stimmen: Entsprechend dem Antrag befürwortet. am 14.03.2024",
+    "vorlage": "V0067/24",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
   "stadt:10108#Ö 10": {
     "formel": "Gegen 3 Stimmen",
     "ergebnis": "beschlossen",
@@ -5863,6 +6375,14 @@
     "empfehlung": true,
     "weg": "vorlage-block"
   },
+  "stadt:10105#Ö 1": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0089/24",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "stadt:10105#Ö3": {
     "formel": "Mit 9:3 Stimmen",
     "ergebnis": "beschlossen",
@@ -5959,6 +6479,14 @@
     "empfehlung": false,
     "weg": "vorlage-block"
   },
+  "stadt:10103#Ö 15": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0052/24",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "stadt:10103#Ö 17": {
     "formel": "Mit 50:0 Stimmen",
     "ergebnis": "beschlossen",
@@ -5999,6 +6527,14 @@
     "empfehlung": false,
     "weg": "vorlage-block"
   },
+  "stadt:10103#Ö 25": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V1135/23",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "stadt:10103#Ö 26": {
     "formel": "Mit allen Stimmen",
     "ergebnis": "beschlossen",
@@ -6014,6 +6550,14 @@
     "vorlage": "V0031/24",
     "weg": "abstimmung",
     "empfehlung": false
+  },
+  "stadt:10102#Ö 1": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0025/24",
+    "empfehlung": true,
+    "weg": "vorlage-block"
   },
   "stadt:10102#Ö 2": {
     "formel": "Mit allen Stimmen",
@@ -6108,6 +6652,14 @@
     "ergebnis": "beschlossen",
     "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt. Stadtrat Achhammer findet es gut, dass man immer einen jährlichen Bericht zum Baustellenmanagement sowie zu den kommunalen Straßenbaumaßnahmen be- komme. Solch einen Plan habe die CSU-Stadtratsfraktion letztens auch für die Schu- len gefordert. Eine Vorlage dieser Art dem Stadtrat ab und zu zu präsentieren, hält er für förderlich, da man so einen Überblick über die großen anstehenden beziehungs- weise auch laufenden Maßnahmen behalten könne. Nichtsdestotrotz seien an die Fraktion einige Themen herangetragen worden, wie zum Beispiel die Baustelle „Asamstraße“. Seit 2020 würden dort verallgemeinernd Baumaßnahmen im Tiefbau, am 07.02.2024 beispielsweise Kanalarbeiten, Fernwärme und Straßenbeleuchtung, laufen. Die Spannungsnetze seien im Jahr 2020 gemacht worden. Damals seien die Straßen durch Umbauten und Aufbrüche sehr beansprucht worden. Nun komme 2023 die Fernwärme. In der heutigen Vorlage sei eine Baumaßnahme von der „Südlichen Ringstraße“ bis zum „Am Konkordiaweiher“ enthalten. Für die Anwohner und Nutzer der Straße sei eine Baustelle von vier oder fünf Jahren jedoch eine Zumutung, so Stadtrat Achhammer. So gebe es bereits Beschwerden seitens der Anlieger aus dem Bezirksausschuss. Gerade die Anwohner würden darüber zu spät informiert werden. Vielleicht könne das Ganze besser koordiniert werden. Diese Maßnahmen liefen seit dem Jahr 2020 und die Endbaumaßnahmen würden nun erst auf das Jahr 2025 an- gesetzt werden. […]",
     "vorlage": "V0002/24",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:10100#Ö 3": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0014/24",
     "empfehlung": false,
     "weg": "vorlage-block"
   },
@@ -6231,6 +6783,14 @@
     "empfehlung": false,
     "weg": "obb-top"
   },
+  "stadt:9471#Ö 3": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0307/23",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
   "stadt:9471#Ö 4": {
     "formel": "Mit 48:0 Stimmen",
     "ergebnis": "beschlossen",
@@ -6246,6 +6806,14 @@
     "vorlage": "V0929/23",
     "weg": "abstimmung",
     "empfehlung": false
+  },
+  "stadt:9471#Ö 8": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V1030/23",
+    "empfehlung": false,
+    "weg": "vorlage-block"
   },
   "stadt:9471#Ö 10": {
     "formel": "Gegen 2 Stimmen (Stadtrat Semle, Stadtrat Köstler)",
@@ -6276,6 +6844,14 @@
     "ergebnis": "beschlossen",
     "text": "Mit allen Stimmen: Der Stadtrat genehmigt den Wirtschaftsplan für die Jahre 2024 und 2025 der in Liqui- dation befindlichen Landesgartenschau Ingolstadt 2020 GmbH. Zur Deckung des Finanzbedarfs gewährt die Stadt Ingolstadt in 2024 Mittel im Hin- blick - auf die Geländeübertragung an die Stadt TEUR 300 - auf Nachtragsforderungen zur Durchführung der Gartenschau und Rückbau- maßnahmen TEUR 400",
     "vorlage": "V1079/23",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:9471#Ö 15": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V1095/23",
     "empfehlung": false,
     "weg": "vorlage-block"
   },
@@ -6380,6 +6956,14 @@
     "ergebnis": "beschlossen",
     "text": "Gegen 1 Stimme (Stadtrat Semle): Entsprechend dem Antrag genehmigt.",
     "vorlage": "V1003/23",
+    "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:9471#Ö 39": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
+    "vorlage": "V0948/23",
     "empfehlung": false,
     "weg": "vorlage-block"
   },
@@ -6493,6 +7077,14 @@
     "text": "Mit allen Stimmen: Entsprechend dem Antrag genehmigt.",
     "vorlage": "V0944/23",
     "empfehlung": false,
+    "weg": "vorlage-block"
+  },
+  "stadt:9469#Ö 2": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet mit der Maßgabe, die Sanierung des Kathari- nen-Gymnasiums so zeitnah wie möglich zu beginnen und die Dachsanierung auf je- den Fall vorzuziehen. 29.11.2023",
+    "vorlage": "V1041/23",
+    "empfehlung": true,
     "weg": "vorlage-block"
   },
   "stadt:9469#Ö 3": {
@@ -6652,6 +7244,14 @@
     "ergebnis": "beschlossen",
     "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
     "vorlage": "V0906/23",
+    "empfehlung": true,
+    "weg": "vorlage-block"
+  },
+  "stadt:9466#Ö6": {
+    "formel": "Mit allen Stimmen",
+    "ergebnis": "beschlossen",
+    "text": "Mit allen Stimmen: Entsprechend dem Antrag befürwortet.",
+    "vorlage": "V0927/23",
     "empfehlung": true,
     "weg": "vorlage-block"
   },

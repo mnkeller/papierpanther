@@ -122,6 +122,19 @@ KEIN_BESCHLUSS = re.compile(
     r"|von der Tagesordnung abgesetzt|Beschlussfassung siehe|siehe V\d{4}",
     re.I,
 )
+# In der Diskussion VOR der Abstimmungsformel zaehlt nur eine echte
+# Verweisung ("in die Stadtratssitzung vom 10.04.2025 verwiesen", "verweist
+# den Antrag an den Stadtrat"). "Stadtrat X verweist auf ..." oder "Es werde
+# auf Erfahrungen aus Muenchen verwiesen" ist ein Hinweis, kein
+# Verfahrensschritt (Kontrolle 2026-10-30, u. a. V0557/25: 76 Beschluesse
+# fielen deshalb weg).
+VERWEISUNG_VORSPANN = re.compile(
+    r"\bvertagt\b|zur\s+(weiteren\s+)?Beratung\s+in\s+die|von\s+der\s+Tagesordnung\s+abgesetzt"
+    r"|Beschlussfassung\s+siehe|siehe\s+V\d{4}"
+    r"|\b(?:in|an)\s+(?:die|den)\s+(?:\S+\s+){0,6}?(?:zurück)?verwiesen\b"
+    r"|\bverweist\b(?:\s+(?!(?:auf|darauf)\b)\S+){0,6}?\s+(?:in|an)\s+(?:die|den)\b",
+    re.I,
+)
 JA_WORTE = re.compile(
     r"genehmigt|beschlossen|zugestimmt|\bstimmt\b[^.]{0,200}?\bzu\b|freigegeben|beauftragt",
     re.I,
@@ -258,10 +271,16 @@ def ergebnis_aus_block(block, vorlage_nr):
     Steht im Block eine "Abstimmung ueber ..."-Zeile, gab es mehrere
     Abstimmungen (Aenderungsantraege, Ziffern) — dann ist Weg 1 zustaendig,
     und findet der nichts, wird nicht geraten."""
-    if re.search(r"\bAbstimmung\b", block) or KEIN_BESCHLUSS.search(block):
+    if re.search(r"\bAbstimmung\b", block):
         return None
     formeln = list(FORMEL_ZEILE.finditer(block))
     if len(formeln) != 1:
+        return None
+    # Ab der Formel gilt KEIN_BESCHLUSS wie in Weg 1, davor nur eine echte
+    # Verweisung. "siehe <eigene Nummer>" zeigt auf genau diesen Block
+    # ("Diskussion und Beschlussfassung siehe V0618/24" im Block V0618/24).
+    vorspann = re.sub(r"siehe\s+" + re.escape(vorlage_nr) + r"(?![/\d])", "", block[:formeln[0].start()])
+    if KEIN_BESCHLUSS.search(block[formeln[0].start():]) or VERWEISUNG_VORSPANN.search(vorspann):
         return None
     rest = SITZUNGSENDE.sub("", block[formeln[0].start():]).strip()
     voll = rest
