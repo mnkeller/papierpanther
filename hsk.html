@@ -184,9 +184,10 @@
 
   /* ---------- Diagramm-Karten ---------- */
   .diagramm {
-    /* Diagramme ohne Karte, nur mit Linie oben wie eine Grafik in der Zeitung.
-       Kaesten bleiben dem Bedienbaren vorbehalten (Designrunde 2026-10-26). */
-    border-top: 2px solid var(--text); padding: .9rem 0 0; margin: 1.5rem 0 2.25rem;
+    /* Weisse Flaeche mit Linie oben wie eine Grafik in der Zeitung, ohne Rahmen
+       und Schatten. Auf dem Papiergrau wirkten die Diagramme blass. */
+    background: var(--card); border-top: 2px solid var(--text);
+    padding: .9rem 1.25rem 1.1rem; margin: 1.5rem 0 2.25rem;
     max-width: 100%;
   }
     .diagramm svg { display: block; width: 100%; height: auto; font-family: var(--font-body); }
