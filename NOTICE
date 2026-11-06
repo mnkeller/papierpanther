@@ -40,3 +40,10 @@ Lizenzen
   stammt aus dem npm-Paket `three` (© 2010–2023 three.js authors) und steht
   unter der MIT-Lizenz, siehe `vendor/three/LICENSE.txt`. Sie wird nur auf
   `so-funktionierts.html` für die Fabrik-Animation geladen, selbst gehostet.
+- Die Diagramm-Bibliothek d3 (Version 7.9.0, Datei d3.min.js) im Ordner `vendor/d3/`
+  (© 2010–2023 Mike Bostock) steht unter der ISC-Lizenz, siehe `vendor/d3/LICENSE`.
+  Sie wird nur für die grafische Fassung der Seiten geladen, selbst gehostet.
+- Die Altstadt-Karte in `data/altstadt.js` (grafische Fassung der Klimaseite)
+  beruht auf Daten von OpenStreetMap, © OpenStreetMap-Mitwirkende, verfügbar
+  unter der Open Database License (ODbL) 1.0, https://www.openstreetmap.org/copyright.
+  Gebäudehöhen sind dort, wo OpenStreetMap keine angibt, geschätzt.

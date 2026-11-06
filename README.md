@@ -50,6 +50,8 @@ scraper/
   feed_bauen.py       Rohdaten + Kuration           -> data/feed.json + feed.js
   pruefen.py          Zusagen der Seite nachrechnen (Exit-Code)
   themen_bauen.py     Kennzahlen für die Themen-Kacheln -> data/themen.js
+  grafik_bauen.py     Daten der grafischen Fassung  -> data/grafik.js
+  altstadt_bauen.py   Altstadt aus OpenStreetMap    -> data/altstadt.js
   .cache/             HTML-Cache, schont das Portal bei Wiederholläufen
 data/
   rohdaten.json       unveränderte Auslesung beider Quellen
@@ -81,6 +83,22 @@ falls sie eine Kachel bekommen). Die Kacheln auf der Startseite und auf
 ```bash
 cd scraper && python3 themen_bauen.py   # nach jedem Daten-Update
 ```
+
+### Grafische Fassung (`grafik/`)
+
+Neben „Leichte Sprache“ hat jede Themenseite und die Startseite einen Knopf
+„Grafisch“. `grafik/kern.js` blendet dann den Inhalt aus und lädt erst jetzt die
+Szenen aus `grafik/<name>.js`, dazu `vendor/d3/` und `data/grafik.js`. Welche
+Seite welche Szenen zeigt, steht oben in `grafik/kern.js` (`SEITEN`). Die Wahl
+bleibt gespeichert; `#grafisch` in der Adresse öffnet eine Seite direkt grafisch.
+
+```bash
+python3 scraper/grafik_bauen.py      # nach jedem Daten-Update, nach themen_bauen.py
+python3 scraper/altstadt_bauen.py    # nur selten, --neu holt OpenStreetMap frisch
+```
+
+`grafik_bauen.py` fasst nur zusammen, was schon in `data/` liegt. Die Szenen für
+Wohnen und Miete lesen direkt `data/wohnen.js` und `data/miete.js`.
 
 ### Klima (`klima.html`)
 
