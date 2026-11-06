@@ -113,12 +113,19 @@ GRAFIK.szene({
         [[x0, y0 + e], [x0 + e, y0 + e], [x0 + e, y0]].forEach(function (c) { var a = P(c[0], c[1], z), b = P(c[0], c[1], h); ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke(); });
       }
     }
-    function drahtwuerfel(x0, y0, e, farbe) {
-      ctx.strokeStyle = farbe; ctx.lineWidth = 2; ctx.setLineDash([7, 5]);
-      var ecken = [[0, 0], [e, 0], [e, e], [0, e]];
-      [0, e].forEach(function (z) { pfad(ecken.map(function (c) { return [x0 + c[0], y0 + c[1], z]; })); ctx.stroke(); });
-      ecken.forEach(function (c) { var a = P(x0 + c[0], y0 + c[1], 0), b = P(x0 + c[0], y0 + c[1], e); ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke(); });
-      ctx.setLineDash([]);
+    /* Glaswürfel: hauchdünn gefüllte Seiten, nur die sichtbaren Kanten kräftig. Die drei verdeckten Kanten
+       hinten unten bleiben zart, so liest man ihn als Würfel und sieht den grünen darin trotzdem. */
+    function glaswuerfel(x0, y0, e) {
+      function kante(a, b) { var p = P(a[0], a[1], a[2]), q = P(b[0], b[1], b[2]); ctx.beginPath(); ctx.moveTo(p[0], p[1]); ctx.lineTo(q[0], q[1]); ctx.stroke(); }
+      ctx.strokeStyle = 'rgba(176,14,43,.35)'; ctx.lineWidth = 1;
+      kante([x0, y0, 0], [x0 + e, y0, 0]); kante([x0, y0, 0], [x0, y0 + e, 0]); kante([x0, y0, 0], [x0, y0, e]);
+      ctx.fillStyle = 'rgba(176,14,43,.07)'; pfad([[x0, y0 + e, 0], [x0 + e, y0 + e, 0], [x0 + e, y0 + e, e], [x0, y0 + e, e]]); ctx.fill();
+      ctx.fillStyle = 'rgba(176,14,43,.11)'; pfad([[x0 + e, y0, 0], [x0 + e, y0 + e, 0], [x0 + e, y0 + e, e], [x0 + e, y0, e]]); ctx.fill();
+      ctx.fillStyle = 'rgba(176,14,43,.04)'; pfad([[x0, y0, e], [x0 + e, y0, e], [x0 + e, y0 + e, e], [x0, y0 + e, e]]); ctx.fill();
+      ctx.strokeStyle = '#b00e2b'; ctx.lineWidth = 2.2; ctx.lineJoin = 'round';
+      pfad([[x0, y0, e], [x0 + e, y0, e], [x0 + e, y0 + e, e], [x0, y0 + e, e]]); ctx.stroke();
+      kante([x0, y0 + e, 0], [x0, y0 + e, e]); kante([x0 + e, y0 + e, 0], [x0 + e, y0 + e, e]); kante([x0 + e, y0, 0], [x0 + e, y0, e]);
+      kante([x0, y0 + e, 0], [x0 + e, y0 + e, 0]); kante([x0 + e, y0 + e, 0], [x0 + e, y0, 0]);
     }
     var GAS = ['rgba(150,170,184,.5)', 'rgba(92,116,133,.5)', 'rgba(64,86,102,.55)'];
     var GRUENG = ['rgba(127,174,106,.65)', 'rgba(66,128,80,.65)', 'rgba(46,105,64,.7)'];
@@ -156,7 +163,7 @@ GRAFIK.szene({
       stadt('hinten', x0, y0, ziel ? e + 160 + eg : e);
       if (ziel) {
         kubus(x0, y0, e2 * wuerfel.voll, e2 * wuerfel.voll, GRUENG, 'rgba(30,80,50,.6)');
-        drahtwuerfel(x0, y0, e * Math.min(1, wuerfel.voll * 1.05), '#b00e2b');
+        glaswuerfel(x0, y0, e * Math.min(1, wuerfel.voll * 1.05));
         kubus(xg, y0, eg * wuerfel.voll, eg * wuerfel.voll, ROT, 'rgba(120,10,30,.7)');
       } else if (e > 0) {
         if (industrie) {
@@ -184,7 +191,7 @@ GRAFIK.szene({
           etikett(-376, -127, 0, ['Münster'], 'center', 0, 16);
         }
         if (ziel) {
-          etikett(x0, y0, e, ['Müsste jedes Jahr wegfallen', NF.zahl(SCHRITTE.ziel.t) + ' t · gestrichelt, ' + NF.zahl(e) + ' m Kante'], 'center', 0, -34);
+          etikett(x0, y0 + e, e, ['Müsste jedes Jahr wegfallen', NF.zahl(SCHRITTE.ziel.t) + ' t · rot umrandet, ' + NF.zahl(e) + ' m Kante'], 'right', -14, 4);
           etikett(x0, y0 + e, 0, ['Fällt im Schnitt weg', NF.zahl(SCHRITTE.ziel.innen) + ' t · grün, ' + NF.zahl(e2) + ' m Kante'], 'right', -14, 8);
           etikett(xg + eg, y0, eg * .7, ['Bleibt jedes Jahr zu viel', NF.zahl(SCHRITTE.ziel.t - SCHRITTE.ziel.innen) + ' t · ' + NF.zahl(eg) + ' m Kante'], 'left', 16, 0);
         } else if (e > 0) {

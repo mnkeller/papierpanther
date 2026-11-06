@@ -6,7 +6,7 @@ GRAFIK.szene({
   titel: 'Was die Fraktionen beantragen',
   idee: 'Alle Anträge der Fraktionen als Zeitung: Jede Fraktion hat ihre Spalte, der neueste Antrag ist der Aufmacher, der Stand kommt als Stempel. Unten liegen die Anträge, die nie auf eine Tagesordnung kamen.',
   notizen: [
-    ['Bedienung', 'Schlagzeile anklicken: Der Artikel klappt als Karte auf, der Stempel knallt drauf. „Neu setzen“ spielt den Aufbau noch einmal ab.'],
+    ['Bedienung', 'Schlagzeile anklicken: Der Artikel klappt als Karte auf, der Stempel knallt drauf. „Titelseite neu setzen“ holt einen anderen Antrag als Aufmacher nach vorn.'],
     ['Wow-Moment', 'Beim Laden wird die Titelseite Zeile für Zeile gesetzt. Die Rubrik „Liegt noch“ wirkt vergilbt und zählt die Tage, die ein Antrag schon wartet.'],
     ['Mobil', 'Die Spalten stehen untereinander wie in einer Zeitungs-App, der Laufband-Ticker bleibt.'],
     ['Daten', 'data/antraege.json: Klartext-Titel und -Text, Datum und Stand je Antrag. Gezeigt werden je Fraktion die sechs neuesten.']
@@ -68,7 +68,14 @@ GRAFIK.szene({
     var alle = [];
     A.parteien.forEach(function (p) { p.artikel.forEach(function (a) { alle.push(Object.assign({ partei: p.name }, a)); }); });
     alle.sort(function (a, b) { return b.datum < a.datum ? -1 : 1; });
-    var auf = alle.filter(function (a) { return a.x; })[0] || alle[0];
+    // Der Aufmacher wechselt bei jedem Laden und bei „Titelseite neu setzen“, unter den zwölf neuesten mit Klartext
+    var kandidaten = alle.filter(function (a) { return a.x; }).slice(0, 12); if (!kandidaten.length) kandidaten = alle.slice(0, 1);
+    var auf = null;
+    function neuerAufmacher() {
+      var rest = kandidaten.filter(function (a) { return a !== auf; });
+      auf = (rest.length ? rest : kandidaten)[Math.floor(Math.random() * (rest.length || kandidaten.length))];
+    }
+    neuerAufmacher();
     var liegen = [];
     A.parteien.forEach(function (p) { p.liegen.forEach(function (a) { liegen.push(Object.assign({ partei: p.name }, a)); }); });
     liegen.sort(function (a, b) { return a.datum < b.datum ? -1 : 1; }); liegen = liegen.slice(0, 3);
@@ -85,8 +92,8 @@ GRAFIK.szene({
       '<div class="zt-kopf"><div class="zt-zeile"><span>Ingolstadt, ' + heute.toLocaleDateString('de-DE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }) + '</span><span>Wahlperiode 2026–2032</span><span>' + S.gesamt + ' Anträge</span></div>' +
       '<div class="zt-titel">Die Rathaus-Zeitung</div><div class="zt-unter">Was die Fraktionen im Stadtrat beantragen</div><button class="gf-chip zt-knopf" type="button" id="zt-neu">Titelseite neu setzen</button></div>' +
       '<div class="ticker" aria-hidden="true"><span>' + alle.slice(0, 14).map(function (a) { return '<b>' + NF.esc(a.partei) + '</b>' + NF.esc(a.t); }).join('') + '</span></div>' +
-      '<div class="zt-auf"><div><small style="font-family:var(--font-body);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:#5b4b8a;font-weight:700">Aufmacher · ' + NF.esc(auf.partei) + ' · ' + auf.d + '</small>' +
-      '<h2 class="setz" data-auf="1">' + NF.esc(auf.t) + '</h2><p>' + NF.esc(auf.x) + '</p></div>' +
+      '<div class="zt-auf"><div><small id="zt-auf-kopf" style="font-family:var(--font-body);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;color:#5b4b8a;font-weight:700"></small>' +
+      '<h2 class="setz" data-auf="1"></h2><p id="zt-auf-text"></p></div>' +
       '<div class="zt-zahlen"><div><strong data-zahl="' + S.gesamt + '">0</strong>Anträge in dieser Wahlperiode</div>' +
       '<div><strong data-zahl="' + S.in_beratung + '">0</strong>davon schon in einer Sitzung</div>' +
       '<div><strong data-zahl="' + S.nur_eingereicht + '" style="color:#8a2b1a">0</strong>noch auf keiner Tagesordnung</div></div></div>' +
@@ -103,13 +110,17 @@ GRAFIK.szene({
       var a = h ? auf : (ev.target.closest('.zt-art') ? verzeichnis[+ev.target.closest('.zt-art').dataset.i] : null);
       if (!a) return;
       var s = stempel(a.stand);
+      var ziel = h || ev.target.closest('.zt-art');
       api.karte('<div class="meta">' + NF.esc(a.partei) + ' · ' + a.d + '</div><h3>' + NF.esc(a.t) + '</h3>' +
         '<div class="stempel knall" style="color:' + s[1] + '">' + s[0] + '</div><p>' + NF.esc(a.x || 'Für diesen Antrag gibt es noch keinen Klartext.') + '</p>' +
         (a.url ? '<p><a href="' + a.url + '" target="_blank" rel="noopener">Antrag im Ratsinfoportal</a></p>' : '') +
-        '<p class="gf-quelle">Klartext: PapierPanther. Verbindlich ist das Originaldokument.</p>');
+        '<p class="gf-quelle">Klartext: PapierPanther. Verbindlich ist das Originaldokument.</p>', ziel);
     });
 
     function setzen() {
+      zt.querySelector('#zt-auf-kopf').textContent = 'Aufmacher · ' + auf.partei + ' · ' + auf.d;
+      zt.querySelector('[data-auf]').dataset.voll = auf.t;
+      zt.querySelector('#zt-auf-text').textContent = auf.x;
       var zeilen = Array.prototype.slice.call(zt.querySelectorAll('.setz'));
       zeilen.forEach(function (z) { z.dataset.voll = z.dataset.voll || z.textContent; z.style.visibility = 'hidden'; });
       zeilen.forEach(function (z, k) {
@@ -124,7 +135,7 @@ GRAFIK.szene({
         (function lauf(now) { var k = Math.min(1, (now - t0) / 1400); z.textContent = NF.zahl(Math.round(ziel * (1 - Math.pow(1 - k, 3)))); if (k < 1) requestAnimationFrame(lauf); })(t0);
       });
     }
-    zt.querySelector('#zt-neu').addEventListener('click', function (ev) { ev.stopPropagation(); setzen(); });
+    zt.querySelector('#zt-neu').addEventListener('click', function (ev) { ev.stopPropagation(); api.karteZu(); neuerAufmacher(); setzen(); });
     setzen();
     api.sag(S.nur_eingereicht + ' von ' + S.gesamt + ' Anträgen kamen noch auf keine Tagesordnung. Klicken Sie eine Schlagzeile an.');
   }

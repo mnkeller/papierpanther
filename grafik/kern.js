@@ -66,8 +66,8 @@
     '.gf-szene-inhalt svg { display: block; width: 100%; height: auto; }',
     '.gf-karte { position: absolute; top: 18px; right: 18px; width: min(360px, calc(100% - 36px)); max-height: calc(100% - 36px); overflow: auto;',
     '  background: #fff; border: 1px solid var(--linie-stark); border-radius: 6px; box-shadow: 0 4px 14px rgba(22,35,43,.18); padding: 16px 18px 18px; z-index: 20;',
-    '  transform: translateX(calc(100% + 40px)); visibility: hidden; transition: transform .45s cubic-bezier(.2,.8,.2,1), visibility 0s .45s; }',
-    '.gf-karte.offen { transform: none; visibility: visible; transition: transform .45s cubic-bezier(.2,.8,.2,1); }',
+    '  opacity: 0; transform: translateY(10px); visibility: hidden; pointer-events: none; transition: opacity .25s, transform .3s cubic-bezier(.2,.8,.2,1), visibility 0s .3s; }',
+    '.gf-karte.offen { opacity: 1; transform: none; visibility: visible; pointer-events: auto; transition: opacity .25s, transform .3s cubic-bezier(.2,.8,.2,1); }',
     '.gf-karte h3 { font-family: var(--font-display); font-size: 1.2rem; line-height: 1.25; margin: 0 28px 8px 0; color: var(--navy-dark); text-wrap: balance; }',
     '.gf-karte .zu { position: absolute; top: 8px; right: 8px; width: 30px; height: 30px; border: 0; border-radius: 50%; background: var(--papier-warm); cursor: pointer; font-size: 1.1rem; line-height: 1; }',
     '.gf-karte p { margin: 0 0 10px; }',
@@ -141,7 +141,36 @@
   btn.innerHTML = '<svg viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="8" width="3" height="7" rx="1" fill="currentColor"/><rect x="6.5" y="4" width="3" height="11" rx="1" fill="currentColor"/><rect x="12" y="1" width="3" height="14" rx="1" fill="currentColor"/></svg><span class="gf-wort">Grafisch</span>';
   btnLeicht.parentNode.insertBefore(btn, btnLeicht);
 
-  var bereich = null, geladen = null, aktiv = false, beobachter = null;
+  var bereich = null, geladen = null, aktiv = false, beobachter = null, offeneKarten = [];
+
+  /* Die Karte erscheint im sichtbaren Teil der Bühne, unter der Kopfzeile und unter allem, was in der
+     Szene oben klebt (data-gf-frei). Mit „neben“ steht sie auf Höhe des Elements, auf der Seite mit Platz. */
+  function platziere(karte, buehne, neben) {
+    karte.style.top = karte.style.left = karte.style.right = karte.style.maxHeight = '';
+    if (getComputedStyle(karte).position !== 'absolute') return;
+    var b = buehne.getBoundingClientRect(), w = karte.offsetWidth, rand = 18;
+    var oben = 12, kopf = document.querySelector('.site-header');
+    if (kopf) oben = Math.max(oben, kopf.getBoundingClientRect().bottom + 12);
+    buehne.querySelectorAll('[data-gf-frei]').forEach(function (f) { var r = f.getBoundingClientRect(); if (r.bottom > 0 && r.top < innerHeight) oben = Math.max(oben, r.bottom + 12); });
+    var y = oben, links = b.width - w - rand;
+    if (neben) {
+      var n = neben.getBoundingClientRect();
+      y = Math.max(oben, n.top);
+      if (b.right - n.right >= w + 2 * rand) links = n.right - b.left + rand;
+      else if (n.left - b.left >= w + 2 * rand) links = n.left - b.left - w - rand;
+      else links = (n.left + n.right) / 2 - b.left > b.width / 2 ? rand : b.width - w - rand;
+    }
+    var hoch = Math.max(220, innerHeight - oben - 16);
+    karte.style.maxHeight = Math.min(hoch, b.height - 2 * rand) + 'px';
+    var h = Math.min(karte.offsetHeight, hoch);
+    if (y + h > innerHeight - 16) y = Math.max(oben, innerHeight - 16 - h);
+    var top = Math.max(rand, Math.min(y - b.top, b.height - h - rand));
+    karte.style.top = top + 'px'; karte.style.left = Math.max(rand, links) + 'px'; karte.style.right = 'auto';
+  }
+  // Jeder Klick außerhalb einer offenen Karte schließt sie. Öffnet derselbe Klick eine neue, geht sie gleich wieder auf.
+  document.addEventListener('click', function (ev) {
+    offeneKarten.forEach(function (k) { if (k.classList.contains('offen') && !k.contains(ev.target)) k.classList.remove('offen'); });
+  }, true);
   function ladeSkript(src) {
     return new Promise(function (ok, fehler) {
       var s = document.createElement('script'); s.src = src; s.onload = ok; s.onerror = function () { fehler(new Error(src)); };
@@ -171,11 +200,13 @@
         '<div class="gf-panther"><svg viewBox="0 0 120 120" aria-hidden="true"><use href="#gf-panther"></use></svg><div class="gf-blase" aria-live="polite"></div></div></div>' +
         '<div class="gf-fuss"><p><strong>So geht’s:</strong> ' + hinweis + '</p><p><strong>Daten:</strong> ' + daten + '</p></div>';
       bereich.appendChild(s);
-      var karte = s.querySelector('.gf-karte'), panther = s.querySelector('.gf-panther');
+      var karte = s.querySelector('.gf-karte'), panther = s.querySelector('.gf-panther'), buehne = s.querySelector('.gf-buehne');
       karte.querySelector('.zu').addEventListener('click', function () { karte.classList.remove('offen'); });
+      offeneKarten.push(karte);
       var api = {
-        szene: s.querySelector('.gf-szene-inhalt'), buehne: s.querySelector('.gf-buehne'), farbe: d.farbe,
-        karte: function (html) { karte.querySelector('.gf-karten-inhalt').innerHTML = html; karte.classList.add('offen'); },
+        szene: s.querySelector('.gf-szene-inhalt'), buehne: buehne, farbe: d.farbe,
+        // neben: das angeklickte Element; die Karte legt sich daneben statt darüber
+        karte: function (html, neben) { karte.querySelector('.gf-karten-inhalt').innerHTML = html; platziere(karte, buehne, neben); karte.classList.add('offen'); },
         karteZu: function () { karte.classList.remove('offen'); },
         sag: function (text) {
           panther.querySelector('.gf-blase').innerHTML = text || '';

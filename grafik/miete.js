@@ -26,6 +26,8 @@ GRAFIK.szene({
       '.mi-teil:hover,.mi-teil.zeigen{filter:drop-shadow(0 0 5px rgba(242,181,44,.95)) drop-shadow(0 0 2px rgba(242,181,44,.9))}',
       '.mi-seite{display:grid;gap:12px;padding-top:6px}',
       '.mi-zahl{text-align:center;margin-top:-14px}',
+      '.mi-zeiger-kopf{text-align:center;font-size:.82rem;font-weight:700;color:#00263a;margin-bottom:-8px}',
+      '.mi-zeiger-kopf span{color:#b00e2b}',
       '.mi-zahl strong{display:block;font-family:var(--font-display);font-weight:900;font-size:2.5rem;line-height:1;color:#96551f;font-variant-numeric:tabular-nums}',
       '.mi-zahl span{font-size:.9rem}',
       '.mi-zahl small{display:block;font-size:.78rem;color:var(--grau);margin-top:2px}',
@@ -45,7 +47,7 @@ GRAFIK.szene({
     document.head.appendChild(css);
 
     api.szene.innerHTML = '<div class="mi"><div class="mi-bild"><svg viewBox="0 0 720 540" role="img" aria-label="Aufgeschnittene Wohnung mit schaltbarer Ausstattung"></svg></div>' +
-      '<div class="mi-seite"><svg class="mi-zeiger" viewBox="0 0 380 214" aria-hidden="true"></svg>' +
+      '<div class="mi-seite"><div><div class="mi-zeiger-kopf">Übliche Miete laut Mietspiegel, netto kalt je m²<br><span>Rote Marke: Grenze der Mietpreisbremse</span></div><svg class="mi-zeiger" viewBox="-30 -20 440 234" aria-hidden="true"></svg></div>' +
       '<div class="mi-zahl" aria-live="polite"><strong id="mi-ovm"></strong><span id="mi-monat"></span><small id="mi-spanne"></small></div>' +
       '<div class="mi-feld"><label for="mi-fl">Fläche</label><div><input id="mi-fl" type="range" min="' + MS.flaeche_min + '" max="' + MS.flaeche_max + '" value="65" style="width:100%;accent-color:#96551f"></div>' +
       '<label for="mi-bj">Baujahr</label><select id="mi-bj" style="font:inherit;padding:4px 8px;border:1px solid var(--linie-stark);border-radius:6px;background:#fff">' +
@@ -136,6 +138,9 @@ GRAFIK.szene({
       linie(an, [8.6, .06, 2.32], [8.6, .06, .4], { stroke: '#8a8a8a', 'stroke-width': 3.2 });
       [3.6, 8.6].forEach(function (x) { flach(an, [[x - .15, .05, .3], [x + .15, .05, .3], [x + .15, .05, .55], [x - .15, .05, .55]], { fill: '#d8d8d8', stroke: '#8a8a8a' }); });
       linie(aus, [.1, .06, 2.3], [9, .06, 2.3], { stroke: '#8f8779', 'stroke-width': 1.2, 'stroke-dasharray': '4 3' });
+      // Die Leitungen sind nur ein paar Pixel dick: eine breite, unsichtbare Fläche fängt den Klick
+      var treffer = { stroke: 'transparent', 'stroke-width': 22, 'stroke-linecap': 'round', 'pointer-events': 'stroke' };
+      [[[.1, .08, 2.25], [9, .08, 2.25]], [[3.6, .06, 2.32], [3.6, .06, .3]], [[8.6, .06, 2.32], [8.6, .06, .3]]].forEach(function (l) { linie(an.parentNode, l[0], l[1], Object.assign({}, treffer)); });
     });
 
     /* Küche */
@@ -299,11 +304,12 @@ GRAFIK.szene({
     var spanne = el('path', { fill: 'none', stroke: '#e8c59a', 'stroke-width': 22 }, gz);
     var bremse = el('line', { stroke: '#b00e2b', 'stroke-width': 3 }, gz);
     var bremseT = el('text', { 'font-size': 11, fill: '#b00e2b', 'font-weight': 700, 'text-anchor': 'middle' }, gz);
+    var bremseT1 = el('tspan', {}, bremseT), bremseT2 = el('tspan', { 'font-size': 12.5, 'font-weight': 900 }, bremseT);
+    bremseT1.textContent = 'Bremse';
     for (var v = lo; v <= hi; v += 4) { var a = winkel(v); var t = el('text', { x: Math.cos(a) * (R - 30), y: Math.sin(a) * (R - 30) + 4, 'text-anchor': 'middle', 'font-size': 11, fill: '#8f8779' }, gz); t.textContent = v + ' €'; }
     var nadel = el('g', {}, gz);
     el('polygon', { points: '0,-4.5 ' + (R - 6) + ',0 0,4.5', fill: '#00263a' }, nadel); el('circle', { r: 9, fill: '#00263a' }, gz);
     nadel.style.transition = bewegungAus ? '' : 'transform .9s cubic-bezier(.3,1.6,.5,1)';
-    var kopf = el('text', { x: 0, y: -R - 18, 'text-anchor': 'middle', 'font-size': 12.5, 'font-weight': 700, fill: '#00263a' }, gz); kopf.textContent = 'Übliche Miete laut Mietspiegel, netto kalt je m²';
 
     function basismiete(fl) { var f = Math.floor(fl); for (var i = 0; i < MS.basismiete.length; i++) { var b = MS.basismiete[i]; if (f >= b[0] && f <= b[1]) return b[2]; } return null; }
     function rechne() {
@@ -315,11 +321,13 @@ GRAFIK.szene({
       spanne.setAttribute('d', bogen(winkel(u0), winkel(o0), R));
       var ga = winkel(grenze);
       bremse.setAttribute('x1', Math.cos(ga) * (R - 14)); bremse.setAttribute('y1', Math.sin(ga) * (R - 14)); bremse.setAttribute('x2', Math.cos(ga) * (R + 14)); bremse.setAttribute('y2', Math.sin(ga) * (R + 14));
-      bremseT.setAttribute('x', Math.cos(ga) * (R + 28)); bremseT.setAttribute('y', Math.sin(ga) * (R + 28) + 4); bremseT.textContent = 'Bremse';
+      var bx = Math.cos(ga) * (R + 34), by = Math.sin(ga) * (R + 30);
+      bremseT1.setAttribute('x', bx); bremseT1.setAttribute('y', by - 3); bremseT2.setAttribute('x', bx); bremseT2.setAttribute('y', by + 11);
+      bremseT2.textContent = NF.zahl(grenze, 2) + ' €';
       nadel.style.transform = 'rotate(' + (winkel(ovm) * 180 / Math.PI) + 'deg)';
       api.szene.querySelector('#mi-ovm').textContent = NF.zahl(ovm, 2) + ' € je m²';
       api.szene.querySelector('#mi-monat').textContent = 'rund ' + NF.zahl(ovm * zustand.flaeche) + ' € im Monat für ' + zustand.flaeche + ' m²';
-      api.szene.querySelector('#mi-spanne').textContent = 'Spanne ' + NF.zahl(u0, 2) + ' bis ' + NF.zahl(o0, 2) + ' € · Zu- und Abschläge zusammen ' + (summe >= 0 ? '+' : '−') + Math.abs(summe) + ' %';
+      api.szene.querySelector('#mi-spanne').textContent = 'Spanne ' + NF.zahl(u0, 2) + ' bis ' + NF.zahl(o0, 2) + ' € · Zu- und Abschläge zusammen ' + (summe >= 0 ? '+' : '−') + Math.abs(summe) + ' % · Mietpreisbremse: höchstens ' + NF.zahl(grenze, 2) + ' € je m²';
       return { ovm: ovm, grenze: grenze };
     }
     var fl = api.szene.querySelector('#mi-fl');

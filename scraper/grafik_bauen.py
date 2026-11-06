@@ -22,14 +22,23 @@ STATUS = ['Entschieden', 'Ergebnis steht im Protokoll', 'Noch offen', 'Nur zur I
 def kurz(s, n):
     s = (s or '').strip()
     return s if len(s) <= n else s[:n-1].rsplit(' ', 1)[0] + '…'
-# Start: ein Eintrag = [bezirk-index (-1 ohne), lebenslage-bitmaske, anlass-bitmaske, status, titel, datum, gremium]
+# Start: ein Eintrag = [bezirk-index (-1 ohne), lebenslage-bitmaske, anlass-bitmaske, status, titel, datum, gremium, link]
+# Der Link zeigt auf die Vorlage, sonst auf die Sitzung. Er wird als 'praefix-index|rest' gespeichert, das spart gut 200 KB.
+praefixe = []
+def link(e):
+    u = e.get('vorlage_url') or e.get('sitzung_url') or ''
+    if '=' not in u: return u
+    p, r = u.rsplit('=', 1)
+    p += '='
+    if p not in praefixe: praefixe.append(p)
+    return str(praefixe.index(p)) + '|' + r
 start = []
 for e in E:
     b = e['bezirk'][0] if e['bezirk'] else None
     bi = BZ.index(b) if b in BZ else -1
     lm = sum(1 << LL.index(x) for x in e['lebenslage'] if x in LL)
     am = sum(1 << AN.index(x) for x in e['anlass'] if x in AN)
-    start.append([bi, lm, am, STATUS.index(e['status']), kurz(e['klartext_titel'] or e.get('amtlicher_titel'), 90), e.get('datum_anzeige') or '', e.get('gremium') or ''])
+    start.append([bi, lm, am, STATUS.index(e['status']), kurz(e['klartext_titel'] or e.get('amtlicher_titel'), 90), e.get('datum_anzeige') or '', e.get('gremium') or '', link(e)])
 # Themen-Netz: Schlagworte + Ko-Vorkommen
 tags = [('l', x) for x in LL] + [('a', x) for x in AN]
 cnt = collections.Counter(); co = collections.Counter()
@@ -103,7 +112,7 @@ klima = {'referenz': k['klima']['referenz'],
          'speicher': [{'jahr': r['jahr'], 'n': r['bestand_anzahl'], 'kw': r['bestand_kw'], 'kwh': r['bestand_kwh']} for r in k['speicher']['reihe'] if r['jahr'] >= 2018],
          'endenergie': k['bericht']['endenergie']}
 open(OUT, 'w', encoding='utf-8').write('/* Erzeugt von scraper/grafik_bauen.py aus data/*.json, nicht von Hand aendern */\nwindow.GRAFIK_DATEN = ' + json.dumps(
-    {'start': {'achsen': {'lebenslage': LL, 'bezirk': BZ, 'anlass': AN, 'status': STATUS}, 'e': start, 'sitzungen': f['statistik']['sitzungen_ausgelesen']},
+    {'start': {'achsen': {'lebenslage': LL, 'bezirk': BZ, 'anlass': AN, 'status': STATUS}, 'e': start, 'praefixe': praefixe, 'sitzungen': f['statistik']['sitzungen_ausgelesen']},
      'netz': {'knoten': knoten, 'kanten': kanten}, 'antraege': antraege, 'haushalt': haushalt, 'sparplan': sparplan, 'klima': klima},
     ensure_ascii=False, separators=(',', ':')) + ';\n')
 print('data/grafik.js:', round(os.path.getsize(OUT) / 1024), 'KB')

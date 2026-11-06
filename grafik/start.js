@@ -207,11 +207,14 @@ GRAFIK.szene({
       var p = finde(ev); if (!p) return;
       var e = p.e, ll = A.lebenslage.filter(function (n, b) { return e[1] & (1 << b); });
       var an = A.anlass.filter(function (n, b) { return e[2] & (1 << b); });
+      var url = e[7] || '', teil = url.split('|');
+      if (teil.length === 2) url = SK.start.praefixe[+teil[0]] + teil[1];
       api.karte('<div class="meta">' + NF.esc(e[6]) + ' · ' + NF.esc(e[5]) + '</div><h3>' + NF.esc(e[4]) + '</h3>' +
         '<dl><dt>Stand</dt><dd style="color:' + FARBE[e[3]] + '">' + A.status[e[3]] + '</dd>' +
         '<dt>Ort</dt><dd>' + (e[0] >= 0 ? A.bezirk[e[0]] : 'ohne Ortsbezug') + '</dd>' +
         (ll.length ? '<dt>Lebenslage</dt><dd>' + ll.join(', ') + '</dd>' : '') +
-        (an.length ? '<dt>Anlass</dt><dd>' + an.join(', ') + '</dd>' : '') + '</dl>');
+        (an.length ? '<dt>Anlass</dt><dd>' + an.join(', ') + '</dd>' : '') + '</dl>' +
+        (url ? '<p><a href="' + NF.esc(url) + '" target="_blank" rel="noopener">' + (/vo0050/.test(url) ? 'Zur Vorlage im Ratsinfoportal' : 'Zur Sitzung im Ratsinfoportal') + '</a></p>' : ''));
     });
 
     /* Bedienleisten */

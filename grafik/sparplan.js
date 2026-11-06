@@ -99,7 +99,7 @@ GRAFIK.szene({
       return '<button type="button" class="sp-karte" ' + (fw ? 'aria-expanded="false"' : 'aria-pressed="false"') + ' data-id="' + k.id + '" style="--k:' + FARBE[k.art] + '"><b>' + NF.esc(k.t) + '</b><span class="betrag">' + NF.teurMio(k.teur) + '</span><small>' + (fw ? k.posten.length + ' Posten · aufklappen' : NAME[k.art]) + (k.status ? ' · ' + k.status : '') + '</small></button>';
     }
     api.szene.innerHTML = '<div class="sp">' +
-      '<div class="sp-luecke"><div class="sp-kopf"><div><div class="augenbraue">Noch offen pro Jahr</div><div class="sp-offen" id="sp-offen">' + NF.teurMio(L) + '</div><small id="sp-kopf" style="color:var(--grau)"></small></div>' +
+      '<div class="sp-luecke" data-gf-frei><div class="sp-kopf"><div><div class="augenbraue">Noch offen pro Jahr</div><div class="sp-offen" id="sp-offen">' + NF.teurMio(L) + '</div><small id="sp-kopf" style="color:var(--grau)"></small></div>' +
       '<div class="sp-geschafft"><strong id="sp-prozent">0 %</strong>der Lücke geschlossen</div></div>' +
       '<div class="sp-balken" id="sp-balken"><span class="sp-ziel">Ziel: ' + NF.teurMio(L) + '</span></div>' +
       '<div class="sp-skala"><span>0</span><span>20 Mio.</span><span>40 Mio.</span><span>60 Mio.</span><span>79 Mio. €</span></div>' +
@@ -158,7 +158,7 @@ GRAFIK.szene({
       setTimeout(function () { f.remove(); }, 700);
     }
     function schalte(id, an, mitFlug) {
-      var k = api.szene.querySelector('[data-id="' + id + '"]');
+      var k = api.szene.querySelector('.sp-karte[data-id="' + id + '"]');
       var ist = reihe.indexOf(id) >= 0;
       if (an === undefined) an = !ist;
       if (an === ist) return;
@@ -205,7 +205,9 @@ GRAFIK.szene({
         var m = nachId[k.dataset.id];
         if (m.art === 'freiwillig') { klappe(k); return; }
         schalte(k.dataset.id);
-        api.karte('<div class="meta">' + (m.art === 'freiwillig' ? 'Freiwillige Leistungen' : 'Maßnahme · ' + NAME[m.art]) + '</div><h3>' + NF.esc(m.t) + '</h3><div class="zahl">' + NF.teurMio(m.teur) + '</div><p class="meta">im Jahr, Mittel 2026–2029</p><p>' + NF.esc(m.x) + '</p><p class="gf-quelle">Haushaltssicherungskonzept, Vorlage V0652/26</p>');
+        // Zurückgenommen: keine Karte, die Maßnahme ist wieder frei
+        if (k.getAttribute('aria-pressed') !== 'true') { api.karteZu(); return; }
+        api.karte('<div class="meta">' + (m.art === 'freiwillig' ? 'Freiwillige Leistungen' : 'Maßnahme · ' + NAME[m.art]) + '</div><h3>' + NF.esc(m.t) + '</h3><div class="zahl">' + NF.teurMio(m.teur) + '</div><p class="meta">im Jahr, Mittel 2026–2029</p><p>' + NF.esc(m.x) + '</p><p class="gf-quelle">Haushaltssicherungskonzept, Vorlage V0652/26</p>', k);
       });
     });
     var reglerG = api.szene.querySelector('#sp-gew'), reglerB = api.szene.querySelector('#sp-gst');
@@ -217,7 +219,7 @@ GRAFIK.szene({
     api.szene.querySelector('#sp-stadt').addEventListener('click', function () {
       timer.forEach(clearTimeout); timer = [];
       reihe.slice().forEach(function (id) { if (nachId[id].art === 'freiwillig') reihe.splice(reihe.indexOf(id), 1); else schalte(id, false, false); });
-      frei.forEach(function (f) { wahl[f.id] = {}; var b = api.szene.querySelector('[data-id="' + f.id + '"] .betrag'); if (b) b.textContent = NF.teurMio(f.teur); });
+      frei.forEach(function (f) { wahl[f.id] = {}; var b = api.szene.querySelector('.sp-karte[data-id="' + f.id + '"] .betrag'); if (b) b.textContent = NF.teurMio(f.teur); });
       api.szene.querySelectorAll('.sp-auf').forEach(function (d) { d.remove(); });
       api.szene.querySelectorAll('[aria-expanded]').forEach(function (b) { b.setAttribute('aria-expanded', 'false'); });
       gew = SP.gewst.hebesatz; gst = SP.grundst.hebesatz; reglerG.value = gew; reglerB.value = gst;
@@ -231,7 +233,7 @@ GRAFIK.szene({
     api.szene.querySelector('#sp-null').addEventListener('click', function () {
       timer.forEach(clearTimeout); timer = [];
       reihe.slice().forEach(function (id) { if (nachId[id].art === 'freiwillig') reihe.splice(reihe.indexOf(id), 1); else schalte(id, false, false); });
-      frei.forEach(function (f) { wahl[f.id] = {}; var b = api.szene.querySelector('[data-id="' + f.id + '"] .betrag'); if (b) b.textContent = NF.teurMio(f.teur); });
+      frei.forEach(function (f) { wahl[f.id] = {}; var b = api.szene.querySelector('.sp-karte[data-id="' + f.id + '"] .betrag'); if (b) b.textContent = NF.teurMio(f.teur); });
       api.szene.querySelectorAll('.sp-auf').forEach(function (d) { d.remove(); });
       api.szene.querySelectorAll('[aria-expanded]').forEach(function (b) { b.setAttribute('aria-expanded', 'false'); });
       gew = SP.gewst.hebesatz; gst = SP.grundst.hebesatz; reglerG.value = gew; reglerB.value = gst;

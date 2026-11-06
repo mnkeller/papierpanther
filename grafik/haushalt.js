@@ -68,6 +68,8 @@ GRAFIK.szene({
 
     HAUS.slice().sort(function (a, b) { return (a.x + a.y) - (b.x + b.y); }).forEach(function (b) {
       b.el = el('g', { style: 'cursor:pointer', tabindex: 0, role: 'button', 'aria-label': b.kurz + ', ' + NF.mio(b.euro) }, gB);
+      // Das Bild wird beim Überfahren neu gezeichnet. Die Klickfläche darüber bleibt stehen, sonst geht der Klick verloren
+      b.bild = el('g', {}, b.el); b.hit = el('polygon', { fill: 'transparent' }, b.el);
       b.el.addEventListener('mouseenter', function () { b.an = true; zeichneHaus(b); });
       b.el.addEventListener('mouseleave', function () { b.an = false; zeichneHaus(b); });
       b.el.addEventListener('click', function () { karteHaus(b); });
@@ -82,9 +84,11 @@ GRAFIK.szene({
     });
 
     function zeichneHaus(b) {
-      var x = b.x, y = b.y, w = b.w, d = b.d, h = b.jetzt, g = b.el, f = b.f;
+      var x = b.x, y = b.y, w = b.w, d = b.d, h = b.jetzt, g = b.bild, f = b.f;
       g.innerHTML = '';
-      if (h <= .02) { b.schild.style.opacity = 0; return; }
+      if (h <= .02) { b.schild.style.opacity = 0; b.hit.setAttribute('points', ''); return; }
+      var hh = h + (b.form === 'sozial' ? 1.3 : b.form === 'halle' ? .8 : 0);
+      b.hit.setAttribute('points', [[x, y + d, 0], [x + w, y + d, 0], [x + w, y, 0], [x + w, y, hh], [x, y, hh], [x, y + d, hh]].map(function (q) { return iso(q[0], q[1], q[2]).join(','); }).join(' '));
       var bau = b.form === 'baustelle';
       // Wände
       quad(g, [[x, y + d, 0], [x + w, y + d, 0], [x + w, y + d, h], [x, y + d, h]], { fill: f[1], opacity: bau ? .55 : 1 });
@@ -130,22 +134,29 @@ GRAFIK.szene({
         }
         for (var k = 0; k <= w; k += 1) { var p1 = iso(x + k, y + d, 0), p2 = iso(x + k, y + d, h); el('line', { x1: p1[0], y1: p1[1], x2: p2[0], y2: p2[1], stroke: '#8a5d14', 'stroke-width': .9 }, g); }
         for (var k2 = 0; k2 < d; k2 += 1) { var q1 = iso(x + w, y + k2, 0), q2 = iso(x + w, y + k2, h); el('line', { x1: q1[0], y1: q1[1], x2: q2[0], y2: q2[1], stroke: '#8a5d14', 'stroke-width': .9 }, g); }
-        // Kran
-        var fuss = iso(x - .6, y - .6, 0), spitze = iso(x - .6, y - .6, h + 3.2);
-        el('line', { x1: fuss[0], y1: fuss[1], x2: spitze[0], y2: spitze[1], stroke: '#d39b21', 'stroke-width': 5 }, g);
-        var wk = b.kranWinkel || 0, len = 4.2;
-        var ausleger = iso(x - .6 + Math.cos(wk) * len, y - .6 + Math.sin(wk) * len, h + 3.2), gegen = iso(x - .6 - Math.cos(wk) * 1.4, y - .6 - Math.sin(wk) * 1.4, h + 3.2);
-        el('line', { x1: gegen[0], y1: gegen[1], x2: ausleger[0], y2: ausleger[1], stroke: '#d39b21', 'stroke-width': 4 }, g);
-        el('rect', { x: gegen[0] - 6, y: gegen[1] - 3, width: 12, height: 9, fill: '#6b6b6b' }, g);
-        var haken = iso(x - .6 + Math.cos(wk) * len * .8, y - .6 + Math.sin(wk) * len * .8, h + 3.2);
-        el('line', { x1: haken[0], y1: haken[1], x2: haken[0], y2: haken[1] + 34, stroke: '#4d4d4d', 'stroke-width': 1 }, g);
-        el('rect', { x: haken[0] - 9, y: haken[1] + 34, width: 18, height: 9, fill: b.an ? '#b00e2b' : '#a7b4bb' }, g);
+        // Der Kran hat eine eigene Gruppe: Nur sie wird beim Drehen neu gezeichnet, sonst kommt kein Klick auf dem Haus an
+        b.kranG = el('g', { 'pointer-events': 'none' }, g);
+        zeichneKran(b);
       }
       // Schild
       var top = b.oben ? iso(x + w / 2, y + d / 2, h + (b.form === 'sozial' ? 1.3 : 0) + (b.form === 'buero' ? 1.5 : 0)) : iso(x + w, y + d, 0);
       if (b.oben) { b.t1.setAttribute('x', top[0]); b.t1.setAttribute('y', top[1] - 30); b.t2.setAttribute('x', top[0]); b.t2.setAttribute('y', top[1] - 14); }
       else { b.t1.setAttribute('x', top[0]); b.t1.setAttribute('y', top[1] + 30); b.t2.setAttribute('x', top[0]); b.t2.setAttribute('y', top[1] + 46); }
       b.schild.style.opacity = h > .3 ? 1 : 0;
+    }
+    function zeichneKran(b) {
+      var k = b.kranG, x = b.x, y = b.y, h = b.jetzt;
+      if (!k) return;
+      k.innerHTML = '';
+      var fuss = iso(x - .6, y - .6, 0), spitze = iso(x - .6, y - .6, h + 3.2);
+      el('line', { x1: fuss[0], y1: fuss[1], x2: spitze[0], y2: spitze[1], stroke: '#d39b21', 'stroke-width': 5 }, k);
+      var wk = b.kranWinkel || 0, len = 4.2;
+      var ausleger = iso(x - .6 + Math.cos(wk) * len, y - .6 + Math.sin(wk) * len, h + 3.2), gegen = iso(x - .6 - Math.cos(wk) * 1.4, y - .6 - Math.sin(wk) * 1.4, h + 3.2);
+      el('line', { x1: gegen[0], y1: gegen[1], x2: ausleger[0], y2: ausleger[1], stroke: '#d39b21', 'stroke-width': 4 }, k);
+      el('rect', { x: gegen[0] - 6, y: gegen[1] - 3, width: 12, height: 9, fill: '#6b6b6b' }, k);
+      var haken = iso(x - .6 + Math.cos(wk) * len * .8, y - .6 + Math.sin(wk) * len * .8, h + 3.2);
+      el('line', { x1: haken[0], y1: haken[1], x2: haken[0], y2: haken[1] + 34, stroke: '#4d4d4d', 'stroke-width': 1 }, k);
+      el('rect', { x: haken[0] - 9, y: haken[1] + 34, width: 18, height: 9, fill: b.an ? '#b00e2b' : '#a7b4bb' }, k);
     }
     function karteHaus(b) {
       var g = b.g0, proKopf = b.euro / EW, max = g.unter.length ? g.unter[0][1] : 1, delta = g.euro - g.vorjahr;
@@ -157,7 +168,7 @@ GRAFIK.szene({
           return '<div style="font-size:.84rem"><div style="display:flex;justify-content:space-between;gap:10px"><span>' + NF.esc(x[0].length > 60 ? x[0].slice(0, 58) + '…' : x[0]) + '</span><b style="white-space:nowrap">' + NF.mio(x[1]) + '</b></div>' +
             '<div style="height:5px;border-radius:3px;background:#ece8df;margin-top:3px"><div style="height:5px;border-radius:3px;background:' + b.f[2] + ';width:' + (x[1] / max * 100) + '%"></div></div></div>';
         }).join('') + '</div>' +
-        '<p class="gf-quelle">Gruppierungsübersicht Haushalt 2026 (data/haushalt.json), dieselben Gruppen wie im ersten Diagramm auf haushalt.html. ' + NF.zahl(EW) + ' Einwohner (2024).</p>');
+        '<p class="gf-quelle">Gruppierungsübersicht Haushalt 2026 (data/haushalt.json), dieselben Gruppen wie im ersten Diagramm auf haushalt.html. ' + NF.zahl(EW) + ' Einwohner (2024).</p>', b.el);
     }
 
     /* Münze, die sich auf die Häuser verteilt */
@@ -210,7 +221,7 @@ GRAFIK.szene({
       (function dreh(now) {
         if (!kranAn) return;
         b.kranWinkel = .6 + Math.sin((now - t0) / 2600) * .9;
-        if (gStadt.style.display !== 'none') zeichneHaus(b);
+        if (gStadt.style.display !== 'none') zeichneKran(b);
         requestAnimationFrame(dreh);
       })(t0);
     }

@@ -192,8 +192,7 @@ GRAFIK.szene({
             '<span>' + NF.esc(o.k.name) + '</span><b style="font-variant-numeric:tabular-nums">' + NF.zahl(o.n) + '</b>' +
             '<span style="grid-column:1/-1;height:5px;border-radius:3px;background:#ece8df"><span style="display:block;height:5px;border-radius:3px;width:' + (o.n / max * 100) + '%;background:' + FARBE[k.art][1] + '"></span></span></button>';
         }).join('') + '</div>' +
-        '<p style="margin:14px 0 4px;font-weight:600" id="th-bsp-kopf">Zuletzt auf der Tagesordnung</p><ul id="th-bsp" style="margin:0;padding-left:18px;display:grid;gap:6px;font-size:.86rem">' + beispiele(eintraegeVon[k.id], 4) + '</ul>' +
-        '<p class="gf-quelle">Gemeinsames Vorkommen im selben Tagesordnungspunkt, data/feed.json</p>');
+        '<p style="margin:14px 0 4px;font-weight:600" id="th-bsp-kopf">Zuletzt auf der Tagesordnung</p><ul id="th-bsp" style="margin:0;padding-left:18px;display:grid;gap:6px;font-size:.86rem">' + beispiele(eintraegeVon[k.id], 4) + '</ul>');
       document.querySelectorAll('[data-paar]').forEach(function (b) {
         b.addEventListener('click', function () {
           var o = nachId[b.dataset.paar];
