@@ -297,7 +297,7 @@
     'sehen': ['Die Seite zeigt, worüber beraten wird und wo entschieden werden soll. Wie eine Abstimmung ausgegangen ist, steht in der Niederschrift der Sitzung. Die wird erst etwa vier bis acht Wochen später veröffentlicht. Sobald sie vorliegt, verlinkt der Eintrag sie. Nicht-öffentliche Sitzungsteile sind naturgemäß nicht dabei.',
               'Die Seite zeigt, worüber der Stadt-Rat redet. Sie zeigt, wo er bald entscheiden will. Wie die Abstimmung ausging, steht im Protokoll. Das Protokoll kommt erst 4 bis 8 Wochen später. Dann gibt es einen Link dazu. Manche Sitzungs-Teile sind nicht öffentlich. Die zeigt diese Seite nicht.'],
     'h-beispiel': ['Das Beispiel im Original', 'Das Beispiel zum Nachlesen'],
-    'beispiel': ['Das Beispiel ist ein Punkt unter Tausenden. Wir haben es genommen, weil man daran den ganzen Weg gut sieht: Die Antwort steht verteilt in drei Dokumenten mit zusammen 68 Seiten. Für jeden anderen Tagesordnungspunkt läuft es genauso. Hier können Sie die drei Dokumente selbst nachlesen.',
+    'beispiel': ['Das Beispiel ist ein Punkt unter Tausenden. Ich habe es ausgewählt, weil man daran den ganzen Weg gut sieht: Die Antwort steht verteilt in drei Dokumenten mit zusammen 68 Seiten. Für jeden anderen Tagesordnungspunkt läuft es genauso. Hier können Sie die drei Dokumente selbst nachlesen.',
                  'Das Beispiel ist ein Thema von vielen. Daran sieht man jeden Schritt gut. Die Antwort steht in 3 Dokumenten. Zusammen sind das 68 Seiten. Bei jedem anderen Thema geht es genauso. Hier können Sie die Dokumente lesen.'],
     'beleg1': ['Antrag vom 9. Juli 2024, 2 Seiten', 'Der Antrag, 2 Seiten'],
     'beleg2': ['Vorlage der Verwaltung, 6 Seiten', 'Die Antwort der Verwaltung, 6 Seiten'],
@@ -447,11 +447,13 @@
 })();
 </script>
 
-<script type="importmap">
-{ "imports": { "three": "./vendor/three/three.module.min.js" } }
-</script>
-<script type="module">
-import * as THREE from 'three';
+<!-- Klassisches <script src> statt ES-Modul: Module laden ueber file:// nicht,
+     so laeuft die Fabrik auch, wenn die Seite per Doppelklick geoeffnet wird. -->
+<script src="vendor/three/three.min.js"></script>
+<script>
+(function () {
+const THREE = window.THREE;
+if (!THREE) { document.getElementById('stage').classList.add('nogl'); return; }
 
 const stage = document.getElementById('stage');
 const canvas = document.getElementById('fabrik-canvas');
@@ -917,6 +919,7 @@ function bauen(){
   }, { rootMargin: '120px 0px' }).observe(fab);
   groesse();
 }
+})();
 </script>
 <script src="kopf.js" defer></script>
 <script src="zaehler.js" defer></script>

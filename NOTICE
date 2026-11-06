@@ -36,7 +36,7 @@ Lizenzen
   Adobe (© 2014–2021 Adobe Systems Incorporated, Reserved Font Name „Source“)
   und steht unter der SIL Open Font License 1.1, siehe `schrift/OFL.txt`.
   Die Web-Teilmengen kommen aus dem Fontsource-Paket @fontsource/source-serif-4.
-- Die 3D-Bibliothek three.js (Version 0.160.0) im Ordner `vendor/three/`
+- Die 3D-Bibliothek three.js (Version 0.160.0, Datei build/three.min.js) im Ordner `vendor/three/`
   stammt aus dem npm-Paket `three` (© 2010–2023 three.js authors) und steht
   unter der MIT-Lizenz, siehe `vendor/three/LICENSE.txt`. Sie wird nur auf
   `so-funktionierts.html` für die Fabrik-Animation geladen, selbst gehostet.
