@@ -662,6 +662,7 @@ def main():
         f.write("/* Automatisch erzeugt von scraper/feed_bauen.py — nicht haendisch aendern. */\n")
         f.write("window.FEED = " + json.dumps(ausgabe, ensure_ascii=False) + ";\n")
     print(f"Geschrieben: {js_pfad} ({os.path.getsize(js_pfad) // 1024} KB)")
+    fabrik_js_schreiben(ausgabe)
 
     st = ausgabe["statistik"]
     print(
@@ -727,6 +728,30 @@ def main():
         f"\n  {len(unkuratiert)} oeffentliche TOPs sind noch nicht aufbereitet "
         f"— 'python3 entwuerfe_bauen.py' erzeugt Vorschlaege dafuer."
     )
+
+
+def fabrik_js_schreiben(ausgabe):
+    """Die Zahlen fuer die Fabrik auf so-funktionierts.html als eigene kleine
+    Datei: die Seite soll nicht die ganze feed.js (mehrere MB) laden, nur um
+    neun Zahlen anzuzeigen."""
+    st = ausgabe["statistik"]
+    feed = ausgabe["eintraege"]
+    zahlen = {
+        "stand": ausgabe["daten_abgerufen_am"],
+        "tops": st["tops_ausgelesen"],
+        "sitzungen": st["sitzungen_ausgelesen"],
+        "routine": st["tops_verfahren"],
+        "mit_dokument": sum(1 for e in feed if e.get("dokumente")),
+        "leichte_sprache": sum(1 for e in feed if e.get("klartext_leicht")),
+        "entschieden": st["status"].get("Entschieden", 0),
+        "stadtbezirke": st["stadtbezirke"],
+        "themen": st["tops_kuratiert"],
+    }
+    pfad = os.path.join(DATEN_VZ, "fabrik.js")
+    with open(pfad, "w", encoding="utf-8") as f:
+        f.write("/* Automatisch erzeugt von scraper/feed_bauen.py — nicht haendisch aendern. */\n")
+        f.write("window.FABRIK_ZAHLEN = " + json.dumps(zahlen, ensure_ascii=False) + ";\n")
+    print(f"Geschrieben: {pfad}")
 
 
 if __name__ == "__main__":

@@ -110,7 +110,8 @@
     d.appendChild(s); d.appendChild(panel());
     nav.appendChild(d);
     var wie = document.createElement('a');
-    wie.href = 'index.html#transparenz'; wie.textContent = t('wie');
+    wie.href = 'so-funktionierts.html'; wie.textContent = t('wie');
+    if (seite === 'so-funktionierts.html') wie.setAttribute('aria-current', 'page');
     nav.appendChild(wie);
 
     menue.textContent = '';
@@ -122,7 +123,7 @@
     ms1.innerHTML = '<strong></strong>'; ms1.firstChild.textContent = t('start');
     mp.insertBefore(ms1, hr);
     var hr2 = document.createElement('hr'); mp.appendChild(hr2);
-    var mw = document.createElement('a'); mw.href = 'index.html#transparenz';
+    var mw = document.createElement('a'); mw.href = 'so-funktionierts.html';
     mw.innerHTML = '<strong></strong>'; mw.firstChild.textContent = t('wie');
     mp.appendChild(mw);
     menue.appendChild(mp);
