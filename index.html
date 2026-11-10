@@ -749,9 +749,9 @@
   var ACHSEN = [
     { key: 'bezirk',     textId: 'achseBezirk' },
     { key: 'status',     textId: 'achseStatus' },
+    { key: 'ebene',      textId: 'achseEbene', mehr: true },
     { key: 'lebenslage', textId: 'achseLebenslage', mehr: true },
-    { key: 'anlass',     textId: 'achseAnlass', mehr: true },
-    { key: 'ebene',      textId: 'achseEbene', mehr: true }
+    { key: 'anlass',     textId: 'achseAnlass', mehr: true }
   ];
   var mehrFilterOffen = false;
   var aktiv = { status: [], lebenslage: [], bezirk: [], anlass: [], ebene: [] };
@@ -816,7 +816,7 @@
     blickTO: { n: 'Tagesordnung', l: 'Die Themen' },
     blickTOfolgt: { n: 'Tagesordnung folgt', l: 'Themen kommen noch' },
     blickOriginal: { n: 'Original ansehen', l: 'Original ansehen' },
-    mehrFilterAn: { n: 'Mehr Filter: Lebenslage, Anlass, Gremium ▾', l: 'Mehr Auswahl zeigen ▾' },
+    mehrFilterAn: { n: 'Mehr Filter: Gremium, Lebenslage, Anlass ▾', l: 'Mehr Auswahl zeigen ▾' },
     mehrFilterAus: { n: 'Weniger Filter ▴', l: 'Weniger Auswahl zeigen ▴' },
     listeTitel: { n: 'Alle Einträge', l: 'Alle Themen' },
     listeUnter: { n: 'Nach Stadtbezirk, Stand oder Stichwort filtern – die neuesten zuerst.', l: 'Hier können Sie suchen. Zum Beispiel nach Ihrem Stadt-Bezirk.' },
