@@ -55997,18 +55997,6 @@
    ],
    "entwurf": true
   },
-  "stadt:13542#Ö 2": {
-   "klartext_titel": "Wohnungsbörse und „Wohnen für Hilfe“ für Ingolstadt",
-   "klartext": "",
-   "lebenslage": [
-    "Gesundheit & Pflege",
-    "Wohnen & Miete"
-   ],
-   "bezirk": [],
-   "ort": [],
-   "anlass": [],
-   "entwurf": true
-  },
   "stadt:14325#Ö 2.2": {
    "klartext_titel": "Unterhaunstädter Weg",
    "klartext": "",
@@ -56529,73 +56517,6 @@
    "ort": [],
    "anlass": [
     "Kultur & Bildung"
-   ]
-  },
-  "stadt:13542#Ö1": {
-   "klartext_titel": "Wohnungsbörse und „Wohnen für Hilfe“ für Ingolstadt",
-   "klartext": "Die SPD-Stadtratsfraktion beantragt, zusammen mit der GWG eine „Wohnungsbörse“ nach Münchner Vorbild einzuführen, über die Mietwohnungen kostenlos getauscht werden können, sowie das Projekt „Wohnen für Hilfe“ mit der THI und der KU Eichstätt-Ingolstadt umzusetzen, bei dem ältere Menschen Wohnraum gegen Alltagshilfe an Studierende abgeben können. Ziel ist es, vorhandenen Wohnraum effizienter zu nutzen, ohne neu zu bauen.",
-   "klartext_titel_leicht": "Wohnungen tauschen und Wohnraum mit Hilfe teilen",
-   "klartext_leicht": "Manche Menschen haben eine zu große Wohnung, andere finden keine passende. Die SPD-Fraktion schlägt zwei Ideen vor: Erstens eine „Wohnungsbörse“, bei der man Wohnungen tauschen kann. Zweitens „Wohnen für Hilfe“: Ältere Menschen vermieten günstig ein Zimmer an Studierende, die dafür im Alltag helfen.",
-   "lebenslage": [
-    "Wohnen & Miete",
-    "Senior:innen",
-    "Studierende"
-   ],
-   "anlass": [
-    "Konzept & Planung"
-   ],
-   "bezirk": [],
-   "ort": [],
-   "entwurf": false
-  },
-  "stadt:13542#Ö2": {
-   "klartext_titel": "Wohnungstausch und „Wohnen für Hilfe“: Stadt will vorerst nur informieren",
-   "klartext": "Zum SPD-Antrag schlägt die Verwaltung vor, die Entscheidung über eine eigene Vermittlungsstelle für „Wohnen für Hilfe“ aus Haushaltsgründen zurückzustellen. Stattdessen soll das Sozialreferat online und gedruckt Informationen für Menschen bereitstellen, die Wohnraum gegen Hilfe anbieten oder suchen. Bei solchen Projekten leisten Studierende üblicherweise eine Stunde Hilfe im Monat je Quadratmeter Wohnraum; Pflege ist ausgeschlossen. Auch eine stadteigene digitale Tauschplattform für Mietwohnungen wird aus Haushaltsgründen derzeit nicht eingerichtet. Die Stadt will aber über den Wohnungstausch informieren, auf bestehende Tauschbörsen im Internet verweisen und die Unterstützungsangebote der GWG bekannt geben. Der Sozialausschuss sollte darüber am 8. Oktober 2026 entscheiden.",
-   "klartext_titel_leicht": "Wohnungen tauschen: Die Stadt will erst einmal nur informieren",
-   "klartext_leicht": "Die Partei SPD will eine Tausch-Börse für Wohnungen. Und sie will das Projekt Wohnen für Hilfe. Die Verwaltung von der Stadt antwortet darauf. Sie sagt: Dafür ist im Moment kein Geld da. Die Stadt baut keine eigene Tausch-Börse im Internet. Die Stadt macht aber Infos zu beiden Themen. Die Infos gibt es im Internet und auf Papier. Der Sozial-Ausschuss wollte am 8. Oktober 2026 darüber entscheiden.",
-   "lebenslage": [
-    "Wohnen & Miete",
-    "Studierende",
-    "Senior:innen"
-   ],
-   "bezirk": [
-    "stadtweit"
-   ],
-   "ort": [],
-   "anlass": [
-    "Konzept & Planung"
-   ]
-  },
-  "stadt:13542#Ö 3": {
-   "klartext_titel": "Aus dem Migrationsrat wird der Integrationsbeirat – ohne Wahl",
-   "klartext": "Die Satzung des Migrationsrats von 1979 soll durch eine völlig neue Satzung ersetzt werden; das Gremium heißt künftig Integrationsbeirat. Es soll 36 Mitglieder haben: den Vorsitz, die oder den Integrationsbeauftragten, 18 Mitglieder aus einem Bewerbungsverfahren, vier aus der Verwaltung, drei aus nichtstaatlichen Organisationen und neun aus dem Stadtrat. Den Vorsitz übernimmt der dritte Bürgermeister. Die bisherige Wahl der Mitglieder entfällt: Wegen der niedrigen Wahlbeteiligung von zuletzt 4 und 6 Prozent und wegen der Sparvorgaben hat die Geschäftsordnungskommission des Stadtrats festgelegt, die 18 Mitglieder künftig über Bewerbung und Berufung zu bestimmen. Der Sozialausschuss berät am 8. Oktober, der Stadtrat soll am 29. Oktober 2026 entscheiden.",
-   "klartext_titel_leicht": "Der Migrations-Rat bekommt einen neuen Namen und neue Regeln",
-   "klartext_leicht": "Der Migrations-Rat berät die Stadt. Es geht um Menschen, die aus anderen Ländern kommen. Der Migrations-Rat soll jetzt Integrations-Beirat heißen. Er soll 36 Mitglieder haben. Bisher wurden Mitglieder gewählt. Aber nur sehr wenige Menschen haben gewählt. Deshalb gibt es keine Wahl mehr. 18 Mitglieder müssen sich jetzt bewerben. Der Stadt-Rat soll am 29. Oktober 2026 über die neuen Regeln entscheiden.",
-   "lebenslage": [
-    "Zuwanderung & Integration"
-   ],
-   "bezirk": [
-    "stadtweit"
-   ],
-   "ort": [],
-   "anlass": [
-    "Satzung & Regeln"
-   ]
-  },
-  "stadt:13542#Ö3": {
-   "klartext_titel": "Grüne: Nur Menschen mit Migrationshintergrund sollen sich für den Integrationsbeirat bewerben können",
-   "klartext": "Die Stadtratsfraktion der Grünen will die geplante Satzung des Integrationsbeirats an zwei Stellen ändern. Bewerben sollen sich nur Ingolstädterinnen und Ingolstädter mit Migrationshintergrund können, nach der Definition des Statistischen Bundesamts; die Fraktion begründet das mit der Aufgabe des Gremiums, die Interessen von Menschen mit Einwanderungsgeschichte zu vertreten. Außerdem soll das Punktesystem für die Auswahl angepasst werden: 5 Punkte für Fachkunde, 4 Punkte für Motivation und 1 Punkt für persönliche Migrationserfahrung. Im Entwurf der Verwaltung wird aus Sicht der Fraktion die ehrenamtliche Fachkunde zu stark gewichtet. Der Änderungsantrag vom 8. Oktober 2026 soll mit der Satzung im Sozialausschuss und am 29. Oktober 2026 im Stadtrat behandelt werden.",
-   "klartext_titel_leicht": "Die Grünen wollen andere Regeln für den Integrations-Beirat",
-   "klartext_leicht": "Der Integrations-Beirat soll neue Regeln bekommen. Menschen können sich als Mitglied bewerben. Die Partei Die Grünen will 2 Dinge ändern. Nur Menschen mit Migrations-Hintergrund sollen sich bewerben können. Das heißt: Sie oder ihre Eltern kommen aus einem anderen Land. Bei der Auswahl gibt es Punkte. Die Grünen wollen mehr Punkte für die Motivation. Motivation heißt: Die Person will sich wirklich einsetzen.",
-   "lebenslage": [
-    "Zuwanderung & Integration"
-   ],
-   "bezirk": [
-    "stadtweit"
-   ],
-   "ort": [],
-   "anlass": [
-    "Satzung & Regeln"
    ]
   },
   "stadt:13542#Ö 4": {
@@ -64823,47 +64744,6 @@
    ],
    "entwurf": true
   },
-  "stadt:13542#Ö 1": {
-   "klartext_titel": "Erstellung des Mietspiegels 2027, Indexfortschreibung 2029 und Schlüssiges Konzept für Mietobergrenzen im SGB …",
-   "klartext": "",
-   "lebenslage": [
-    "Gesundheit & Pflege",
-    "Wohnen & Miete"
-   ],
-   "bezirk": [],
-   "ort": [],
-   "anlass": [
-    "Konzept & Planung"
-   ],
-   "entwurf": true
-  },
-  "stadt:13548#Ö14": {
-   "klartext_titel": "Klare Kriterien für Ehrenbürgerwürde und Ehrentitel gefordert",
-   "klartext": "Die CSU-Stadtratsfraktion beantragt, gemeinsam mit den Fraktionen transparente, personenunabhängige Kriterien für die Verleihung kommunaler Ehrentitel zu erarbeiten – insbesondere für die Bezeichnungen „Altoberbürgermeister:in“, „Altbürgermeister:in“ sowie die Ehrenbürgerwürde als höchste Auszeichnung der Stadt. Ziel ist, künftige Entscheidungen nachvollziehbar zu machen, ohne die Ehrenbürgerwürde auf ein bloßes politisches Amt zu reduzieren.",
-   "klartext_titel_leicht": "Klare Regeln für Ehrentitel der Stadt",
-   "klartext_leicht": "Die Stadt vergibt besondere Ehrentitel, zum Beispiel die Ehrenbürgerwürde. Bisher gibt es dafür keine festen Regeln. Die CSU-Fraktion möchte, dass der Stadtrat gemeinsam klare Kriterien festlegt, wer solche Titel bekommen kann.",
-   "lebenslage": [],
-   "anlass": [
-    "Satzung & Regeln"
-   ],
-   "bezirk": [],
-   "ort": [],
-   "entwurf": false
-  },
-  "stadt:13548#Ö15": {
-   "klartext_titel": "Freie Wähler wollen klare Regeln für die Ehrentitel „Altbürgermeister“ und „Altoberbürgermeister“",
-   "klartext": "Die FW-Stadtratsfraktion beantragt, dass die Verwaltung gemeinsam mit den Fraktionen und Gruppen des Stadtrats transparente Grundsätze für die Verleihung der Ehrenbezeichnungen „Altbürgermeisterin/Altbürgermeister“ und „Altoberbürgermeisterin/Altoberbürgermeister“ erarbeitet. Aus dem Amt allein soll kein regelmäßiger Anspruch auf den Titel folgen; maßgeblich sollen Dauer und Bedeutung der Amtszeit und besondere Verdienste sein, die über die normale Amtsführung hinausgehen. Bis sich der Stadtrat auf Kriterien verständigt hat, sollen keine weiteren Titel verliehen werden. Die Fraktion betont, dass damit keine Ablehnung der früheren Bürgermeisterinnen Dorothea Deneke-Stoll und Petra Kleine verbunden sei, und verweist auf einen CSU-Antrag mit ähnlichem Ansatz. Der Antrag stammt vom 28. September 2026 und ist noch keiner Sitzung zugeteilt.",
-   "klartext_titel_leicht": "Freie Wähler wollen Regeln für Ehren-Titel",
-   "klartext_leicht": "Frühere Bürger-Meister können einen Ehren-Titel bekommen. Der Titel heißt zum Beispiel Alt-Bürgermeister. Die Partei Freie Wähler sagt: Dafür fehlen klare Regeln. Nicht jeder soll den Titel automatisch bekommen. Die Person soll besonders viel für Ingolstadt getan haben. Der Stadt-Rat soll zuerst Regeln machen. Bis dahin soll niemand den Titel bekommen. Es gibt noch keinen Termin für den Antrag.",
-   "lebenslage": [],
-   "bezirk": [
-    "stadtweit"
-   ],
-   "ort": [],
-   "anlass": [
-    "Satzung & Regeln"
-   ]
-  },
   "stadt:13548#Ö 1": {
    "klartext_titel": "Eva Susanka verlässt den Stadtrat, Bernhard Krämer rückt nach",
    "klartext": "Stadträtin Eva Susanka hat mit Schreiben vom 7. September 2026 erklärt, dass sie ihr Mandat niederlegt. Der Stadtrat muss das förmlich feststellen; einen besonderen Grund braucht es dafür nach dem Wahlgesetz nicht. Mit dem Ausscheiden enden auch ihre Sitze in mehreren Ausschüssen und Kommissionen sowie in Zweckverbänden wie Krankenhauszweckverband und Sparkasse; deren Nachbesetzung regelt eine eigene Vorlage. Als Listennachfolger auf dem Wahlvorschlag der AfD rückt Bernhard Krämer in den Stadtrat nach; maßgeblich ist die Reihenfolge der Stimmen bei der Stadtratswahl vom 8. März 2026. Der Stadtrat soll am 29. Oktober 2026 entscheiden.",
@@ -65248,24 +65128,6 @@
    ],
    "entwurf": true
   },
-  "stadt:13548#Ö3": {
-   "klartext_titel": "Bildung des Wahlausschusses",
-   "klartext": "",
-   "lebenslage": [],
-   "bezirk": [],
-   "ort": [],
-   "anlass": [],
-   "entwurf": true
-  },
-  "stadt:13548#Ö4": {
-   "klartext_titel": "Wahl des berufsmäßigen Stadtratsmitgliedes für die Leitung des Referates V",
-   "klartext": "",
-   "lebenslage": [],
-   "bezirk": [],
-   "ort": [],
-   "anlass": [],
-   "entwurf": true
-  },
   "stadt:13548#Ö 10": {
    "klartext_titel": "Besetzung der Stelle der Leitung des Referates VIII – Umwelt, Nachhaltigkeit und Transformation",
    "klartext": "",
@@ -65275,24 +65137,6 @@
    "anlass": [
     "Klima & Umwelt"
    ],
-   "entwurf": true
-  },
-  "stadt:13548#Ö5": {
-   "klartext_titel": "Bildung des Wahlausschusses",
-   "klartext": "",
-   "lebenslage": [],
-   "bezirk": [],
-   "ort": [],
-   "anlass": [],
-   "entwurf": true
-  },
-  "stadt:13548#Ö6": {
-   "klartext_titel": "Wahl des berufsmäßigen Stadtratsmitgliedes für die Leitung des Referates VIII",
-   "klartext": "",
-   "lebenslage": [],
-   "bezirk": [],
-   "ort": [],
-   "anlass": [],
    "entwurf": true
   },
   "stadt:13548#Ö 12": {
@@ -65309,39 +65153,6 @@
   },
   "stadt:13548#Ö 13": {
    "klartext_titel": "Weitere Maßnahmen zur Umsetzung des Dachbeschlusses",
-   "klartext": "",
-   "lebenslage": [],
-   "bezirk": [],
-   "ort": [],
-   "anlass": [],
-   "entwurf": true
-  },
-  "stadt:13548#Ö7": {
-   "klartext_titel": "Ergebnisse und Optionen der Einrichtungsprüfung: Stadtbücherei",
-   "klartext": "",
-   "lebenslage": [],
-   "bezirk": [],
-   "ort": [],
-   "anlass": [
-    "Kultur & Bildung"
-   ],
-   "entwurf": true
-  },
-  "stadt:13548#Ö8": {
-   "klartext_titel": "Ergebnisse und Optionen der Einrichtungsprüfung: Volkshochschule",
-   "klartext": "",
-   "lebenslage": [
-    "Studierende"
-   ],
-   "bezirk": [],
-   "ort": [],
-   "anlass": [
-    "Kultur & Bildung"
-   ],
-   "entwurf": true
-  },
-  "stadt:13548#Ö9": {
-   "klartext_titel": "Ergebnisse und Optionen der Einrichtungsprüfung: Technikerschule",
    "klartext": "",
    "lebenslage": [],
    "bezirk": [],
@@ -65405,24 +65216,6 @@
    "anlass": [],
    "entwurf": true
   },
-  "stadt:13548#Ö11": {
-   "klartext_titel": "Antrag der CSU-Stadtratsfraktion vom 07.07.2026",
-   "klartext": "",
-   "lebenslage": [],
-   "bezirk": [],
-   "ort": [],
-   "anlass": [],
-   "entwurf": true
-  },
-  "stadt:13548#Ö12": {
-   "klartext_titel": "Stellungnahme der Verwaltung",
-   "klartext": "",
-   "lebenslage": [],
-   "bezirk": [],
-   "ort": [],
-   "anlass": [],
-   "entwurf": true
-  },
   "stadt:13548#Ö 23": {
    "klartext_titel": "Wirtschaftspläne für das Wirtschaftsjahr Oktober 2026 bis September 2027",
    "klartext": "",
@@ -65462,15 +65255,6 @@
    ],
    "entwurf": true
   },
-  "stadt:13548#Ö16": {
-   "klartext_titel": "Stellungnahme der Verwaltung",
-   "klartext": "",
-   "lebenslage": [],
-   "bezirk": [],
-   "ort": [],
-   "anlass": [],
-   "entwurf": true
-  },
   "stadt:13548#Ö 28": {
    "klartext_titel": "1. Vorgezogene Zusammenführung der Mittelschulsprengel Auf der Schanz und Friedrichshofen sowie Auflösung der …",
    "klartext": "",
@@ -65504,24 +65288,6 @@
    "anlass": [],
    "entwurf": true
   },
-  "stadt:13548#Ö17": {
-   "klartext_titel": "Antrag der FW-Stadtratsfraktion vom 28.07.2026",
-   "klartext": "",
-   "lebenslage": [],
-   "bezirk": [],
-   "ort": [],
-   "anlass": [],
-   "entwurf": true
-  },
-  "stadt:13548#Ö18": {
-   "klartext_titel": "Stellungnahme der Verwaltung",
-   "klartext": "",
-   "lebenslage": [],
-   "bezirk": [],
-   "ort": [],
-   "anlass": [],
-   "entwurf": true
-  },
   "stadt:13548#Ö 31": {
    "klartext_titel": "Unverzügliche Einstellung und Digitalisierung der Druckpublikationen des Stadttheaters Ingolstadt",
    "klartext": "",
@@ -65533,24 +65299,6 @@
    "anlass": [
     "Kultur & Bildung"
    ],
-   "entwurf": true
-  },
-  "stadt:13548#Ö20": {
-   "klartext_titel": "Antrag der AfD-Stadtratsfraktion vom 02.02.2026",
-   "klartext": "",
-   "lebenslage": [],
-   "bezirk": [],
-   "ort": [],
-   "anlass": [],
-   "entwurf": true
-  },
-  "stadt:13548#Ö21": {
-   "klartext_titel": "Stellungnahme der Verwaltung",
-   "klartext": "",
-   "lebenslage": [],
-   "bezirk": [],
-   "ort": [],
-   "anlass": [],
    "entwurf": true
   },
   "stadt:13548#Ö 32": {
@@ -65785,53 +65533,6 @@
    ],
    "entwurf": true
   },
-  "stadt:13548#Ö10": {
-   "klartext_titel": "AfD fordert Bodengutachten vor der Sanierung des Technischen Rathauses",
-   "klartext": "Die AfD-Stadtratsfraktion beantragt als Dringlichkeitsantrag, vor der Projektgenehmigung und Vergabe der nächsten Planungsstufe für die Sanierung des Technischen Rathauses eine Bodengrunduntersuchung in Auftrag zu geben. Ein externer Gutachter soll klären, ob die geplanten Mikropfähle und die Reprofilierung der Fundamentbalken überhaupt eine ausreichende Standsicherheit des Gebäudes herstellen können. Die Fraktion will vermeiden, dass die Sanierung teurer wird als ein Neubau oder die Kosten wie beim Museum für Konkrete Kunst und Design aus dem Ruder laufen. Die eingeplanten Risikokosten von 2 Millionen Euro hält sie für viel zu gering. Der Antrag vom 22. Oktober 2026 soll in der Stadtratssitzung am 29. Oktober behandelt werden.",
-   "klartext_titel_leicht": "Die AfD will ein Gutachten zum Technischen Rathaus",
-   "klartext_leicht": "Das Technische Rathaus muss repariert werden. Das Gebäude steht nicht mehr sicher genug. Die Partei AfD will vorher den Boden untersuchen lassen. Ein Fach-Mann soll prüfen: Hält der Plan das Gebäude wirklich sicher? Die AfD hat Angst, dass die Reparatur zu teuer wird.",
-   "lebenslage": [],
-   "bezirk": [
-    "I-Mitte"
-   ],
-   "ort": [],
-   "anlass": [
-    "Baustelle"
-   ]
-  },
-  "stadt:13548#Ö13": {
-   "klartext_titel": "Feuerwehrbedarfsplan: überarbeitete Vorlage mit ersten konkreten Schritten",
-   "klartext": "Einen Tag vor der Stadtratssitzung hat die Verwaltung die Vorlage zum Feuerwehrbedarfsplan überarbeitet. Wie zuvor soll Variante 2 des Umsetzungskonzepts als Orientierungsrahmen dienen und schrittweise im Rahmen der Haushaltslage umgesetzt werden; Entscheidungen daraus soll jeweils der Stadtrat treffen. Neu ist, dass bereits beschlossene Bauvorhaben jetzt zeitnah umgesetzt werden sollen: die Sanierung der Hauptfeuerwache innen, der Masterplan zur Sanierung der Feuerwehrgerätehäuser und der Neubau des Gerätehauses Südost. Auch die Beschaffung von Fahrzeugen soll in einer reduzierten und zeitlich gestreckten Variante parallel beginnen. Über mehr Personal wird dagegen jetzt nicht entschieden; dazu soll es erst nach einer Organisationsuntersuchung eigene Beschlüsse geben. Der Stadtrat sollte am 29. Oktober 2026 entscheiden.",
-   "klartext_titel_leicht": "Neuer Vorschlag für die Feuerwehr",
-   "klartext_leicht": "Die Verwaltung hat ihren Plan für die Feuerwehr geändert. Einige Bau-Projekte sollen jetzt bald starten. Zum Beispiel die Sanierung der Haupt-Feuerwache. Und ein neues Feuerwehr-Haus im Süd-Osten. Die Feuerwehr bekommt auch neue Fahrzeuge. Es werden aber weniger als geplant. Über mehr Personal wird später entschieden. Der Stadt-Rat sollte am 29. Oktober 2026 entscheiden.",
-   "lebenslage": [
-    "Ehrenamt & Vereine"
-   ],
-   "bezirk": [
-    "stadtweit"
-   ],
-   "ort": [],
-   "anlass": [
-    "Sicherheit",
-    "Baustelle"
-   ]
-  },
-  "stadt:13548#Ö19": {
-   "klartext_titel": "CSU will mehr Mitsprache der Stadträte bei den Städtepartnerschaften",
-   "klartext": "Die CSU-Stadtratsfraktion unterstützt den Antrag der Freien Wähler zu den Städtepartnerschaften und will den Vorschlag der Verwaltung, in jeder Fraktion eine Ansprechperson zu benennen, verbindlicher machen. Der Oberbürgermeister soll nach Abstimmung mit den Fraktionen aus diesem Kreis eine zentrale politische Ansprechperson und eine Stellvertretung benennen, die den Austausch koordinieren. Die Ansprechpersonen sollen früh über wesentliche Vorhaben informiert und vor größeren Projekten angehört werden, eigene Projekte vorschlagen dürfen und innerhalb von sechs Wochen eine Rückmeldung bekommen. Mindestens zweimal im Jahr soll es Gespräche mit der zuständigen Amtsleitung geben. Neue Ämter oder Verwaltungsstrukturen sollen dadurch laut Antrag nicht entstehen. Der Ergänzungsantrag lag dem Stadtrat am 29. Oktober 2026 vor.",
-   "klartext_titel_leicht": "Die CSU will mehr Mitreden bei den Partner-Städten",
-   "klartext_leicht": "Ingolstadt hat Partner-Städte in anderen Ländern. Jede Partei soll dafür eine Ansprech-Person haben. Die Partei CSU will diesen Personen mehr Rechte geben. Sie sollen früh informiert werden. Sie sollen eigene Ideen vorschlagen dürfen. Eine Person soll alles zusammen-führen. Der Antrag stand am 29. Oktober 2026 auf der Tages-Ordnung.",
-   "lebenslage": [
-    "Ehrenamt & Vereine"
-   ],
-   "bezirk": [
-    "stadtweit"
-   ],
-   "ort": [],
-   "anlass": [
-    "Kultur & Bildung"
-   ]
-  },
   "stadt:13548#Ö 38.1": {
    "klartext_titel": "ÖDP fordert schnelle Prüfung von Haftungsansprüchen wegen PFAS",
    "klartext": "Ergänzend zum PFAS-Antrag der Linken hat die ÖDP-Stadtratsgruppe einen Dringlichkeitsantrag gestellt. In den geforderten Sachstandsbericht sollen auch betriebsinterne Untersuchungen einfließen, namentlich die Altlastenbearbeitung, die die Firma Gunvor für die Jahre 2022 bis 2024 veranlasst hat. Mit einer Fachkanzlei soll die Stadt sofort klären, ob sie vom Unternehmen einen Verzicht auf die Verjährung von Ansprüchen einholen sollte. Außerdem sollen mögliche Haftungsansprüche gegen alle in Frage kommenden Verursacher, Voreigentümer und Nachfolger umfassend geprüft werden. Die ÖDP begründet die Eile mit geänderten Eigentümerstrukturen und drohenden Fristabläufen und verweist auf Burghausen und den Landkreis Altötting, die gegen einen PFAS-Verursacher klagen. Der Antrag lag dem Stadtrat am 29. Oktober 2026 vor.",
@@ -65927,6 +65628,1121 @@
    "anlass": [
     "Satzung & Regeln"
    ]
+  },
+  "stadt:13548#Ö4": {
+   "klartext_titel": "Bildung des Wahlausschusses",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13548#Ö6": {
+   "klartext_titel": "Bildung des Wahlausschusses",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13548#Ö5": {
+   "klartext_titel": "Wahl des berufsmäßigen Stadtratsmitgliedes für die Leitung des Referates V",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13548#Ö7": {
+   "klartext_titel": "Wahl des berufsmäßigen Stadtratsmitgliedes für die Leitung des Referates VIII",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13548#Ö8": {
+   "klartext_titel": "Ergebnisse und Optionen der Einrichtungsprüfung: Stadtbücherei",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Kultur & Bildung"
+   ],
+   "entwurf": true
+  },
+  "stadt:13548#Ö9": {
+   "klartext_titel": "Ergebnisse und Optionen der Einrichtungsprüfung: Volkshochschule",
+   "klartext": "",
+   "lebenslage": [
+    "Studierende"
+   ],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Kultur & Bildung"
+   ],
+   "entwurf": true
+  },
+  "stadt:13548#Ö10": {
+   "klartext_titel": "Ergebnisse und Optionen der Einrichtungsprüfung: Technikerschule",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13548#Ö11": {
+   "klartext_titel": "AfD fordert Bodengutachten vor der Sanierung des Technischen Rathauses",
+   "klartext": "Die AfD-Stadtratsfraktion beantragt als Dringlichkeitsantrag, vor der Projektgenehmigung und Vergabe der nächsten Planungsstufe für die Sanierung des Technischen Rathauses eine Bodengrunduntersuchung in Auftrag zu geben. Ein externer Gutachter soll klären, ob die geplanten Mikropfähle und die Reprofilierung der Fundamentbalken überhaupt eine ausreichende Standsicherheit des Gebäudes herstellen können. Die Fraktion will vermeiden, dass die Sanierung teurer wird als ein Neubau oder die Kosten wie beim Museum für Konkrete Kunst und Design aus dem Ruder laufen. Die eingeplanten Risikokosten von 2 Millionen Euro hält sie für viel zu gering. Der Antrag vom 22. Oktober 2026 soll in der Stadtratssitzung am 29. Oktober behandelt werden.",
+   "klartext_titel_leicht": "Die AfD will ein Gutachten zum Technischen Rathaus",
+   "klartext_leicht": "Das Technische Rathaus muss repariert werden. Das Gebäude steht nicht mehr sicher genug. Die Partei AfD will vorher den Boden untersuchen lassen. Ein Fach-Mann soll prüfen: Hält der Plan das Gebäude wirklich sicher? Die AfD hat Angst, dass die Reparatur zu teuer wird.",
+   "lebenslage": [],
+   "bezirk": [
+    "I-Mitte"
+   ],
+   "ort": [],
+   "anlass": [
+    "Baustelle"
+   ]
+  },
+  "stadt:13548#Ö12": {
+   "klartext_titel": "Antrag der CSU-Stadtratsfraktion vom 07.07.2026",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13548#Ö14": {
+   "klartext_titel": "Feuerwehrbedarfsplan: überarbeitete Vorlage mit ersten konkreten Schritten",
+   "klartext": "Einen Tag vor der Stadtratssitzung hat die Verwaltung die Vorlage zum Feuerwehrbedarfsplan überarbeitet. Wie zuvor soll Variante 2 des Umsetzungskonzepts als Orientierungsrahmen dienen und schrittweise im Rahmen der Haushaltslage umgesetzt werden; Entscheidungen daraus soll jeweils der Stadtrat treffen. Neu ist, dass bereits beschlossene Bauvorhaben jetzt zeitnah umgesetzt werden sollen: die Sanierung der Hauptfeuerwache innen, der Masterplan zur Sanierung der Feuerwehrgerätehäuser und der Neubau des Gerätehauses Südost. Auch die Beschaffung von Fahrzeugen soll in einer reduzierten und zeitlich gestreckten Variante parallel beginnen. Über mehr Personal wird dagegen jetzt nicht entschieden; dazu soll es erst nach einer Organisationsuntersuchung eigene Beschlüsse geben. Der Stadtrat sollte am 29. Oktober 2026 entscheiden.",
+   "klartext_titel_leicht": "Neuer Vorschlag für die Feuerwehr",
+   "klartext_leicht": "Die Verwaltung hat ihren Plan für die Feuerwehr geändert. Einige Bau-Projekte sollen jetzt bald starten. Zum Beispiel die Sanierung der Haupt-Feuerwache. Und ein neues Feuerwehr-Haus im Süd-Osten. Die Feuerwehr bekommt auch neue Fahrzeuge. Es werden aber weniger als geplant. Über mehr Personal wird später entschieden. Der Stadt-Rat sollte am 29. Oktober 2026 entscheiden.",
+   "lebenslage": [
+    "Ehrenamt & Vereine"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Sicherheit",
+    "Baustelle"
+   ]
+  },
+  "stadt:13548#Ö15": {
+   "klartext_titel": "Klare Kriterien für Ehrenbürgerwürde und Ehrentitel gefordert",
+   "klartext": "Die CSU-Stadtratsfraktion beantragt, gemeinsam mit den Fraktionen transparente, personenunabhängige Kriterien für die Verleihung kommunaler Ehrentitel zu erarbeiten – insbesondere für die Bezeichnungen „Altoberbürgermeister:in“, „Altbürgermeister:in“ sowie die Ehrenbürgerwürde als höchste Auszeichnung der Stadt. Ziel ist, künftige Entscheidungen nachvollziehbar zu machen, ohne die Ehrenbürgerwürde auf ein bloßes politisches Amt zu reduzieren.",
+   "klartext_titel_leicht": "Klare Regeln für Ehrentitel der Stadt",
+   "klartext_leicht": "Die Stadt vergibt besondere Ehrentitel, zum Beispiel die Ehrenbürgerwürde. Bisher gibt es dafür keine festen Regeln. Die CSU-Fraktion möchte, dass der Stadtrat gemeinsam klare Kriterien festlegt, wer solche Titel bekommen kann.",
+   "lebenslage": [],
+   "anlass": [
+    "Satzung & Regeln"
+   ],
+   "bezirk": [],
+   "ort": [],
+   "entwurf": false
+  },
+  "stadt:13548#Ö16": {
+   "klartext_titel": "Freie Wähler wollen klare Regeln für die Ehrentitel „Altbürgermeister“ und „Altoberbürgermeister“",
+   "klartext": "Die FW-Stadtratsfraktion beantragt, dass die Verwaltung gemeinsam mit den Fraktionen und Gruppen des Stadtrats transparente Grundsätze für die Verleihung der Ehrenbezeichnungen „Altbürgermeisterin/Altbürgermeister“ und „Altoberbürgermeisterin/Altoberbürgermeister“ erarbeitet. Aus dem Amt allein soll kein regelmäßiger Anspruch auf den Titel folgen; maßgeblich sollen Dauer und Bedeutung der Amtszeit und besondere Verdienste sein, die über die normale Amtsführung hinausgehen. Bis sich der Stadtrat auf Kriterien verständigt hat, sollen keine weiteren Titel verliehen werden. Die Fraktion betont, dass damit keine Ablehnung der früheren Bürgermeisterinnen Dorothea Deneke-Stoll und Petra Kleine verbunden sei, und verweist auf einen CSU-Antrag mit ähnlichem Ansatz. Der Antrag stammt vom 28. September 2026 und ist noch keiner Sitzung zugeteilt.",
+   "klartext_titel_leicht": "Freie Wähler wollen Regeln für Ehren-Titel",
+   "klartext_leicht": "Frühere Bürger-Meister können einen Ehren-Titel bekommen. Der Titel heißt zum Beispiel Alt-Bürgermeister. Die Partei Freie Wähler sagt: Dafür fehlen klare Regeln. Nicht jeder soll den Titel automatisch bekommen. Die Person soll besonders viel für Ingolstadt getan haben. Der Stadt-Rat soll zuerst Regeln machen. Bis dahin soll niemand den Titel bekommen. Es gibt noch keinen Termin für den Antrag.",
+   "lebenslage": [],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Satzung & Regeln"
+   ]
+  },
+  "stadt:13548#Ö17": {
+   "klartext_titel": "Stellungnahme der Verwaltung",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13548#Ö19": {
+   "klartext_titel": "Antrag der FW-Stadtratsfraktion vom 28.07.2026",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13548#Ö20": {
+   "klartext_titel": "Stellungnahme der Verwaltung",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13548#Ö21": {
+   "klartext_titel": "CSU will mehr Mitsprache der Stadträte bei den Städtepartnerschaften",
+   "klartext": "Die CSU-Stadtratsfraktion unterstützt den Antrag der Freien Wähler zu den Städtepartnerschaften und will den Vorschlag der Verwaltung, in jeder Fraktion eine Ansprechperson zu benennen, verbindlicher machen. Der Oberbürgermeister soll nach Abstimmung mit den Fraktionen aus diesem Kreis eine zentrale politische Ansprechperson und eine Stellvertretung benennen, die den Austausch koordinieren. Die Ansprechpersonen sollen früh über wesentliche Vorhaben informiert und vor größeren Projekten angehört werden, eigene Projekte vorschlagen dürfen und innerhalb von sechs Wochen eine Rückmeldung bekommen. Mindestens zweimal im Jahr soll es Gespräche mit der zuständigen Amtsleitung geben. Neue Ämter oder Verwaltungsstrukturen sollen dadurch laut Antrag nicht entstehen. Der Ergänzungsantrag lag dem Stadtrat am 29. Oktober 2026 vor.",
+   "klartext_titel_leicht": "Die CSU will mehr Mitreden bei den Partner-Städten",
+   "klartext_leicht": "Ingolstadt hat Partner-Städte in anderen Ländern. Jede Partei soll dafür eine Ansprech-Person haben. Die Partei CSU will diesen Personen mehr Rechte geben. Sie sollen früh informiert werden. Sie sollen eigene Ideen vorschlagen dürfen. Eine Person soll alles zusammen-führen. Der Antrag stand am 29. Oktober 2026 auf der Tages-Ordnung.",
+   "lebenslage": [
+    "Ehrenamt & Vereine"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Kultur & Bildung"
+   ]
+  },
+  "stadt:13548#Ö22": {
+   "klartext_titel": "Antrag der AfD-Stadtratsfraktion vom 02.02.2026",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13548#Ö23": {
+   "klartext_titel": "Stellungnahme der Verwaltung",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13548#Ö13": {
+   "klartext_titel": "Stellungnahme der Verwaltung",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13542#Ö 2": {
+   "klartext_titel": "Erstellung des Mietspiegels 2027, Indexfortschreibung 2029 und Schlüssiges Konzept für Mietobergrenzen im SGB …",
+   "klartext": "",
+   "lebenslage": [
+    "Gesundheit & Pflege",
+    "Wohnen & Miete"
+   ],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Konzept & Planung"
+   ],
+   "entwurf": true
+  },
+  "stadt:13542#Ö 3": {
+   "klartext_titel": "Wohnungsbörse und „Wohnen für Hilfe“ für Ingolstadt",
+   "klartext": "",
+   "lebenslage": [
+    "Gesundheit & Pflege",
+    "Wohnen & Miete"
+   ],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:13542#Ö2": {
+   "klartext_titel": "Wohnungsbörse und „Wohnen für Hilfe“ für Ingolstadt",
+   "klartext": "Die SPD-Stadtratsfraktion beantragt, zusammen mit der GWG eine „Wohnungsbörse“ nach Münchner Vorbild einzuführen, über die Mietwohnungen kostenlos getauscht werden können, sowie das Projekt „Wohnen für Hilfe“ mit der THI und der KU Eichstätt-Ingolstadt umzusetzen, bei dem ältere Menschen Wohnraum gegen Alltagshilfe an Studierende abgeben können. Ziel ist es, vorhandenen Wohnraum effizienter zu nutzen, ohne neu zu bauen.",
+   "klartext_titel_leicht": "Wohnungen tauschen und Wohnraum mit Hilfe teilen",
+   "klartext_leicht": "Manche Menschen haben eine zu große Wohnung, andere finden keine passende. Die SPD-Fraktion schlägt zwei Ideen vor: Erstens eine „Wohnungsbörse“, bei der man Wohnungen tauschen kann. Zweitens „Wohnen für Hilfe“: Ältere Menschen vermieten günstig ein Zimmer an Studierende, die dafür im Alltag helfen.",
+   "lebenslage": [
+    "Wohnen & Miete",
+    "Senior:innen",
+    "Studierende"
+   ],
+   "anlass": [
+    "Konzept & Planung"
+   ],
+   "bezirk": [],
+   "ort": [],
+   "entwurf": false
+  },
+  "stadt:13542#Ö3": {
+   "klartext_titel": "Wohnungstausch und „Wohnen für Hilfe“: Stadt will vorerst nur informieren",
+   "klartext": "Zum SPD-Antrag schlägt die Verwaltung vor, die Entscheidung über eine eigene Vermittlungsstelle für „Wohnen für Hilfe“ aus Haushaltsgründen zurückzustellen. Stattdessen soll das Sozialreferat online und gedruckt Informationen für Menschen bereitstellen, die Wohnraum gegen Hilfe anbieten oder suchen. Bei solchen Projekten leisten Studierende üblicherweise eine Stunde Hilfe im Monat je Quadratmeter Wohnraum; Pflege ist ausgeschlossen. Auch eine stadteigene digitale Tauschplattform für Mietwohnungen wird aus Haushaltsgründen derzeit nicht eingerichtet. Die Stadt will aber über den Wohnungstausch informieren, auf bestehende Tauschbörsen im Internet verweisen und die Unterstützungsangebote der GWG bekannt geben. Der Sozialausschuss sollte darüber am 8. Oktober 2026 entscheiden.",
+   "klartext_titel_leicht": "Wohnungen tauschen: Die Stadt will erst einmal nur informieren",
+   "klartext_leicht": "Die Partei SPD will eine Tausch-Börse für Wohnungen. Und sie will das Projekt Wohnen für Hilfe. Die Verwaltung von der Stadt antwortet darauf. Sie sagt: Dafür ist im Moment kein Geld da. Die Stadt baut keine eigene Tausch-Börse im Internet. Die Stadt macht aber Infos zu beiden Themen. Die Infos gibt es im Internet und auf Papier. Der Sozial-Ausschuss wollte am 8. Oktober 2026 darüber entscheiden.",
+   "lebenslage": [
+    "Wohnen & Miete",
+    "Studierende",
+    "Senior:innen"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Konzept & Planung"
+   ]
+  },
+  "stadt:13542#Ö 1": {
+   "klartext_titel": "Aus dem Migrationsrat wird der Integrationsbeirat – ohne Wahl",
+   "klartext": "Die Satzung des Migrationsrats von 1979 soll durch eine völlig neue Satzung ersetzt werden; das Gremium heißt künftig Integrationsbeirat. Es soll 36 Mitglieder haben: den Vorsitz, die oder den Integrationsbeauftragten, 18 Mitglieder aus einem Bewerbungsverfahren, vier aus der Verwaltung, drei aus nichtstaatlichen Organisationen und neun aus dem Stadtrat. Den Vorsitz übernimmt der dritte Bürgermeister. Die bisherige Wahl der Mitglieder entfällt: Wegen der niedrigen Wahlbeteiligung von zuletzt 4 und 6 Prozent und wegen der Sparvorgaben hat die Geschäftsordnungskommission des Stadtrats festgelegt, die 18 Mitglieder künftig über Bewerbung und Berufung zu bestimmen. Der Sozialausschuss berät am 8. Oktober, der Stadtrat soll am 29. Oktober 2026 entscheiden.",
+   "klartext_titel_leicht": "Der Migrations-Rat bekommt einen neuen Namen und neue Regeln",
+   "klartext_leicht": "Der Migrations-Rat berät die Stadt. Es geht um Menschen, die aus anderen Ländern kommen. Der Migrations-Rat soll jetzt Integrations-Beirat heißen. Er soll 36 Mitglieder haben. Bisher wurden Mitglieder gewählt. Aber nur sehr wenige Menschen haben gewählt. Deshalb gibt es keine Wahl mehr. 18 Mitglieder müssen sich jetzt bewerben. Der Stadt-Rat soll am 29. Oktober 2026 über die neuen Regeln entscheiden.",
+   "lebenslage": [
+    "Zuwanderung & Integration"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Satzung & Regeln"
+   ]
+  },
+  "stadt:13542#Ö1": {
+   "klartext_titel": "Grüne: Nur Menschen mit Migrationshintergrund sollen sich für den Integrationsbeirat bewerben können",
+   "klartext": "Die Stadtratsfraktion der Grünen will die geplante Satzung des Integrationsbeirats an zwei Stellen ändern. Bewerben sollen sich nur Ingolstädterinnen und Ingolstädter mit Migrationshintergrund können, nach der Definition des Statistischen Bundesamts; die Fraktion begründet das mit der Aufgabe des Gremiums, die Interessen von Menschen mit Einwanderungsgeschichte zu vertreten. Außerdem soll das Punktesystem für die Auswahl angepasst werden: 5 Punkte für Fachkunde, 4 Punkte für Motivation und 1 Punkt für persönliche Migrationserfahrung. Im Entwurf der Verwaltung wird aus Sicht der Fraktion die ehrenamtliche Fachkunde zu stark gewichtet. Der Änderungsantrag vom 8. Oktober 2026 soll mit der Satzung im Sozialausschuss und am 29. Oktober 2026 im Stadtrat behandelt werden.",
+   "klartext_titel_leicht": "Die Grünen wollen andere Regeln für den Integrations-Beirat",
+   "klartext_leicht": "Der Integrations-Beirat soll neue Regeln bekommen. Menschen können sich als Mitglied bewerben. Die Partei Die Grünen will 2 Dinge ändern. Nur Menschen mit Migrations-Hintergrund sollen sich bewerben können. Das heißt: Sie oder ihre Eltern kommen aus einem anderen Land. Bei der Auswahl gibt es Punkte. Die Grünen wollen mehr Punkte für die Motivation. Motivation heißt: Die Person will sich wirklich einsetzen.",
+   "lebenslage": [
+    "Zuwanderung & Integration"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Satzung & Regeln"
+   ]
+  },
+  "stadt:13550#Ö 2": {
+   "klartext_titel": "Dönerstand am Schliffelmarkt soll noch ein Jahr bleiben dürfen",
+   "klartext": "Der Betreiber des Imbisscontainers am Schliffelmarkt hat beantragt, seine Sondernutzungserlaubnis über das Jahr 2026 hinaus zu verlängern. Die Verwaltung schlägt vor, den Stand am bisherigen Platz für ein weiteres Jahr, also 2027, zu genehmigen. Die Erlaubnis soll widerrufen werden können, sobald die Sanierung der Fußgängerzone am Schliffelmarkt beginnt. Der Betreiber zahlt die höchste Gebühr nach der Sondernutzungssatzung und soll sich weiter einen anderen Standort suchen; nach dem Beschluss von 2025 ist eine Verlängerung höchstens bis 2028 möglich. Die Verwaltung hat ihm Plätze außerhalb der Altstadt angeboten, eine Hütte am Viktualienmarkt käme nur mit einem anderen Angebot in Frage, weil dort schon ein Dönerimbiss ist. Der Bezirksausschuss Mitte hatte den Stand 2025 mit 7 zu 4 Stimmen abgelehnt. Der Sportausschuss soll am 17. November 2026 entscheiden.",
+   "klartext_titel_leicht": "Der Döner-Stand am Schliffelmarkt soll bleiben dürfen",
+   "klartext_leicht": "Am Schliffelmarkt steht ein Döner-Stand. Der Stand ist in einem Container. Der Besitzer möchte dort bis 2027 bleiben. Die Stadt-Verwaltung ist dafür. Aber: Die Fußgänger-Zone dort wird bald neu gebaut. Dann muss der Stand weg. Der Besitzer soll sich einen neuen Platz suchen. Spätestens 2028 ist Schluss. Ein Ausschuss vom Stadt-Rat entscheidet am 17. November 2026.",
+   "lebenslage": [
+    "Gewerbe & Gastro"
+   ],
+   "bezirk": [
+    "I-Mitte"
+   ],
+   "ort": [
+    "Schliffelmarkt"
+   ],
+   "anlass": [
+    "Satzung & Regeln"
+   ]
+  },
+  "stadt:14372#Ö 2": {
+   "klartext_titel": "KI-Robotik-Zentrum KIRIN: Stadt soll bis zu 3 Millionen Euro geben",
+   "klartext": "Die Technische Hochschule Ingolstadt will mit der AININ gGmbH und dem Gründerzentrum brigk ein Transferzentrum für humanoide Robotik und Künstliche Intelligenz aufbauen, genannt KIRIN. Es soll Firmen aus der Region helfen, solche Technik zu prüfen und einzusetzen, unter anderem mit einer Robotik-Trainingsumgebung, einem Showroom, Pilotprojekten und Weiterbildung. Die Stadt soll dafür von 2027 bis 2031 bis zu 600.000 Euro im Jahr geben, insgesamt höchstens 3,0 Millionen Euro. Abwickeln und überwachen soll das die IFG Ingolstadt, die das Geld 2027 als Kapitaleinlage bekommt, finanziert aus einer Kreditermächtigung von 2025. Weil die Stadt auf absehbare Zeit keinen genehmigten Haushalt hat, soll der Stadtrat die Ausgabe als unaufschiebbar anerkennen. In Aussicht gestellt hatte er die Förderung bereits im Juli 2026, die Entscheidung war am 29. Oktober abgesetzt worden. Nun soll der Stadtrat am 13. November 2026 entscheiden.",
+   "klartext_titel_leicht": "Die Stadt soll Geld für ein Roboter-Zentrum geben",
+   "klartext_leicht": "Die Technische Hoch-Schule Ingolstadt plant ein neues Zentrum. Es heißt KIRIN. Dort geht es um Roboter und Künstliche Intelligenz. Künstliche Intelligenz sind Computer-Programme, die selbst lernen. Firmen aus der Gegend sollen dort lernen, wie sie diese Technik nutzen. Die Stadt soll dafür Geld geben. Das sind bis zu 600.000 Euro pro Jahr. Insgesamt sind es höchstens 3 Millionen Euro bis 2031. Die Stadt hat gerade sehr wenig Geld. Trotzdem soll das Projekt nicht warten. Der Stadt-Rat entscheidet am 13. November 2026.",
+   "lebenslage": [
+    "Arbeit & Beruf"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Konzept & Planung"
+   ]
+  },
+  "stadt:14372#Ö2": {
+   "klartext_titel": "ÖDP will KIRIN-Geld nur in Raten und unter strengen Bedingungen",
+   "klartext": "Die ÖDP-Stadtratsgruppe hat einen Änderungsantrag zur Förderung des KI-Robotik-Zentrums KIRIN gestellt. Die Stadt soll zwar bis zu 3,0 Millionen Euro für 2027 bis 2031 in Aussicht stellen, höchstens 600.000 Euro im Jahr, aber in jährlichen Raten. Vor der ersten Zahlung sollen die Partner einen bereinigten Finanzplan vorlegen; die ÖDP verweist auf Widersprüche, etwa Jahresbeträge von 635.700 Euro für 2027 und 673.600 Euro für 2029 über der Obergrenze. Außerdem verlangt sie schriftliche Zusagen von Firmen, davon mindestens die Hälfte aus Ingolstadt, und einen Antrag beim Landesprogramm „Hightech Transfer Bayern“. Ab 2029 soll nur weiter gezahlt werden, wenn ein Zwischenbericht Ende 2028 die Ziele bestätigt; Einnahmen des Zentrums sollen den Zuschuss mindern. Die Verwaltung soll zudem prüfen, ob ein Schwerpunkt bei Klima und Umwelt bessere Chancen hätte, und die Nachbarlandkreise um eine Kostenbeteiligung bitten. Der Antrag liegt dem Stadtrat am 13. November 2026 vor.",
+   "klartext_titel_leicht": "Die ÖDP will strenge Regeln für das Roboter-Zentrum",
+   "klartext_leicht": "Die Stadt soll Geld für ein Roboter-Zentrum geben. Es heißt KIRIN. Die Partei ÖDP hat dazu einen Antrag gestellt. Das Geld soll nur Stück für Stück fließen. Zuerst sollen die Zahlen im Plan stimmen. Die ÖDP hat dort Fehler gefunden. Firmen sollen schriftlich zusagen, dass sie mitmachen. Mindestens die Hälfte soll aus Ingolstadt sein. Auch das Land Bayern soll um Geld gefragt werden. Ende 2028 soll es einen Bericht geben. Erst danach gibt es weiteres Geld. Der Stadt-Rat berät am 13. November 2026.",
+   "lebenslage": [
+    "Arbeit & Beruf"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Konzept & Planung"
+   ]
+  },
+  "stadt:13549#Ö 1": {
+   "klartext_titel": "Jahresbericht 2025 des Jugendamts",
+   "klartext": "Das Amt für Jugend und Familie legt dem Jugendhilfeausschuss seinen Jahresbericht für 2025 vor. Er ist ein Rechenschaftsbericht über die Leistungen, die das Amt im vergangenen Jahr erbracht hat. Nicht enthalten sind die Leistungen, die freie Träger für die Stadt übernehmen; sie berichten in eigenen Vorlagen. Der Bericht selbst liegt als Anlage im Ratsinformationssystem. Der Ausschuss nimmt ihn am 12. November 2026 zur Kenntnis, eine Entscheidung ist nicht vorgesehen.",
+   "klartext_titel_leicht": "Das Jugend-Amt berichtet über das Jahr 2025",
+   "klartext_leicht": "Das Jugend-Amt hilft Kindern, Jugendlichen und Familien. Jedes Jahr schreibt es einen Bericht. Darin steht, was das Amt gemacht hat. Jetzt gibt es den Bericht für das Jahr 2025. Ein Ausschuss vom Stadt-Rat hört den Bericht am 12. November 2026. Der Ausschuss muss dabei nichts entscheiden. Den ganzen Bericht können Sie im Internet lesen.",
+   "lebenslage": [
+    "Eltern & Kinder",
+    "Jugend"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": []
+  },
+  "stadt:13549#Ö 2": {
+   "klartext_titel": "Jugendparlament bekommt eine neue Geschäftsordnung",
+   "klartext": "Das Jugendparlament Ingolstadt hat am 16. Oktober 2026 Änderungen an seiner Geschäftsordnung verabschiedet, die der Stadtrat nun bestätigen soll. Künftig soll zu Sitzungen 7 statt 10 Tage vorher eingeladen werden. Abstimmungen richten sich nach der Mehrheit der anwesenden stimmberechtigten Mitglieder, und Enthaltungen sind nicht mehr zulässig. Wer gegen die Geschäftsordnung, die demokratische Grundordnung oder den Verhaltenskodex verstößt, wird vom Vorstand ermahnt; die Ermahnung kann im Protokoll vermerkt werden. Der Jugendhilfeausschuss hört die Neufassung am 12. November 2026, entscheiden soll der Stadtrat am 10. Dezember 2026.",
+   "klartext_titel_leicht": "Neue Regeln für das Jugend-Parlament",
+   "klartext_leicht": "Im Jugend-Parlament reden junge Menschen über Politik in Ingolstadt. Das Jugend-Parlament hat eigene Regeln. Diese Regeln sollen sich ändern. Die Einladung zum Treffen kommt dann 7 Tage vorher. Bisher waren es 10 Tage. Bei Abstimmungen muss jedes Mitglied Ja oder Nein sagen. Wer sich nicht an die Regeln hält, bekommt eine Ermahnung. Der Stadt-Rat entscheidet am 10. Dezember 2026.",
+   "lebenslage": [
+    "Jugend",
+    "Ehrenamt & Vereine"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Satzung & Regeln"
+   ]
+  },
+  "stadt:13549#Ö 3": {
+   "klartext_titel": "Kita-Kinder durften selbst sagen, wie zufrieden sie sind",
+   "klartext": "In den städtischen Kitas gibt es jedes Jahr eine Elternbefragung; nun hat die Stadt in einem Pilotprojekt auch die Kinder selbst gefragt. Befragt wurden an zwei Vormittagen 115 Kinder aus sechs Gruppen in den Kindergärten Grüne Insel und Siebenstein. Die Kinder antworteten in Kleingruppen, indem sie Steinchen auf Smileys legten, etwa zu Ausstattung, Garten, Mittagessen, Sicherheit, Betreuungszeiten und Mitbestimmung. Rund 89 Prozent bewerteten die Fragen zur Zufriedenheit mit gut oder sehr gut. Die Verwaltung schlägt vor, die Kinderbefragung künftig neben der Elternbefragung durchzuführen, jedes Jahr in einem Teil der Kindergärten, sodass in vier Jahren alle einmal dran sind. Der Jugendhilfeausschuss nimmt das am 12. November 2026 zur Kenntnis.",
+   "klartext_titel_leicht": "Kinder in der Kita wurden nach ihrer Meinung gefragt",
+   "klartext_leicht": "Jedes Jahr fragt die Stadt die Eltern von Kita-Kindern. Die Eltern sagen, wie gut die Kita ist. Jetzt hat die Stadt auch Kinder gefragt. Das war in 2 Kinder-Gärten. 115 Kinder haben mitgemacht. Die Kinder haben Steine auf lachende oder traurige Gesichter gelegt. Die meisten Kinder sind zufrieden. Das sind ungefähr 9 von 10 Kindern. Die Stadt will das jetzt öfter machen.",
+   "lebenslage": [
+    "Eltern & Kinder"
+   ],
+   "bezirk": [
+    "stadtweit"
+   ],
+   "ort": [],
+   "anlass": [
+    "Kinderbetreuung"
+   ]
+  },
+  "bza:14357#Ö 3": {
+   "klartext_titel": "Bebauungsplan „Südlich der Stinnesstraße“: Unterlagen bis 30. November einsehbar",
+   "klartext": "Das Stadtplanungsamt informiert den Bezirksausschuss Nordwest über den Entwurf des Bebauungs- und Grünordnungsplans Nr. 114 M Ä II „Südlich der Stinnesstraße“, den der Stadtrat am 26. März 2026 gebilligt hat. Die Unterlagen sind vom 30. Oktober bis 30. November 2026 im Internet unter ingolstadt.de/bauleitplanverfahren und im Portal DiPlan Beteiligung veröffentlicht. Während dieser Zeit liegen sie auch im 1. Stock des Neuen Rathauses am Infoscreen aus. Der Bezirksausschuss kann bis 30. November Anregungen geben. Weil es um Innenentwicklung auf weniger als 20.000 Quadratmetern Grundfläche geht, entfällt eine Umweltprüfung. Eine frühe Beteiligung der Öffentlichkeit gab es bereits im Juni und Juli 2024.",
+   "klartext_titel_leicht": "Neuer Bau-Plan an der Stinnesstraße: Sie können mitreden",
+   "klartext_leicht": "Die Stadt plant ein Gebiet südlich der Stinnesstraße neu. Dafür gibt es einen Bebauungs-Plan. Ein Bebauungs-Plan legt fest: Was darf man dort bauen? Sie können den Plan im Internet ansehen. Der Plan liegt auch im Neuen Rathaus aus. Das geht vom 30. Oktober bis zum 30. November 2026. Bis dahin können Sie auch Ihre Meinung sagen. Der Bezirks-Ausschuss bespricht den Plan am 18. November 2026.",
+   "lebenslage": [],
+   "bezirk": [
+    "II-Nordwest"
+   ],
+   "ort": [
+    "Stinnesstraße"
+   ],
+   "anlass": [
+    "Bauleitplanung"
+   ]
+  },
+  "bezirk_obb:5018#Ö 2": {
+   "bezirk": [
+    "Bezirk Oberbayern"
+   ],
+   "ort": [],
+   "klartext_titel": "Bezirkshaushalt 2027: Budgets für Schulen, Kultur und Museen",
+   "klartext": "Der Kulturausschuss des Bezirks Oberbayern berät die Budgets für 2027 in seinem Bereich vor. Dazu gehören die Förderschulen, darunter das Johann-Nepomuk-von-Kurz-Zentrum in Ingolstadt, und die beruflichen Schulen wie das Agrarbildungszentrum Landsberg und die Schulen für Holz und Gestaltung in Garmisch-Partenkirchen. Hinzu kommen die Schülerbeförderung, die Freilichtmuseen Glentleiten und Amerang und der Schafhof – Europäisches Kunstforum Oberbayern sowie Volksmusik, Literatur, Popularmusik und Projekte der Kultur- und Denkmalpflege. Der Ausschuss soll den Budgetvereinbarungen und Haushaltsentwürfen zustimmen. Endgültig berät der Bezirksausschuss am 3. Dezember 2026 über den Haushalt.",
+   "klartext_titel_leicht": "Wie viel Geld der Bezirk 2027 für Schulen und Museen plant",
+   "klartext_leicht": "Der Bezirk Oberbayern hat eigene Schulen und Museen. Eine davon ist eine Förder-Schule in Ingolstadt. Für das Jahr 2027 plant der Bezirk das Geld dafür. Das nennt man Haushalt. Ein Ausschuss vom Bezirk bespricht den Plan am 17. November 2026. Am 3. Dezember 2026 berät der Bezirks-Ausschuss weiter.",
+   "lebenslage": [
+    "Eltern & Kinder"
+   ],
+   "anlass": [
+    "Kultur & Bildung"
+   ]
+  },
+  "bezirk_obb:4939#Ö 2": {
+   "bezirk": [
+    "Bezirk Oberbayern"
+   ],
+   "ort": [],
+   "klartext_titel": "Naturschutz-Betreuung im Ampertal und auf den Heiden nördlich von München verlängert",
+   "klartext": "In wertvollen Naturräumen arbeiten in Bayern Gebietsbetreuer, die Besucher informieren, Umweltbildung anbieten und seltene Arten beobachten; der Bezirk Oberbayern zahlt seit 2001 mit. Zwei dieser Stellen, im Ampertal und auf den Heideflächen und Lohwäldern nördlich von München, laufen bis 31. März 2027 und sollen um zwei Jahre bis 31. März 2029 verlängert werden. Damit enden sie gleichzeitig mit den 19 anderen der insgesamt 21 Gebietsbetreuungen. Im Ampertal kostet die Betreuung rund 80.600 Euro, davon trägt der Bezirk 5 Prozent, also rund 4.030 Euro, den Großteil zahlt der Bayerische Naturschutzfonds. Die Landkreise beteiligen sich mindestens in gleicher Höhe wie der Bezirk. Der Bauausschuss des Bezirks entscheidet am 17. November 2026.",
+   "klartext_titel_leicht": "Der Bezirk zahlt weiter für Natur-Schutz bei München",
+   "klartext_leicht": "An manchen Orten gibt es sehr seltene Tiere und Pflanzen. Dort arbeiten Menschen, die sich um die Natur kümmern. Sie erklären Besuchern die Natur. Sie zählen auch seltene Tiere. Der Bezirk Oberbayern zahlt einen kleinen Teil dafür. Es geht um das Amper-Tal und um Heide-Flächen bei München. Die Arbeit soll bis 2029 weitergehen. Ein Ausschuss vom Bezirk entscheidet am 17. November 2026.",
+   "lebenslage": [],
+   "anlass": [
+    "Klima & Umwelt"
+   ]
+  },
+  "bezirk_obb:4939#Ö 3": {
+   "bezirk": [
+    "Bezirk Oberbayern"
+   ],
+   "ort": [],
+   "klartext_titel": "Neubau für die Holzschule in Garmisch-Partenkirchen soll 29,5 Millionen Euro kosten",
+   "klartext": "Die Schulen für Holz und Gestaltung des Bezirks in Garmisch-Partenkirchen bekommen einen Erweiterungsbau, das „Kompetenzzentrum für digitale Holzbearbeitung“, auf dem früheren Minigolfplatz neben der Schule. Geplant sind unter anderem eine Werkstatt mit moderner Maschinenausstattung, Räume für Fachakademie und Meisterausbildung sowie im Keller Metallwerkstatt und Lackiererei; ab dem Erdgeschoss wird in Holz gebaut. Die Entwurfsplanung ist fertig, die Kostenberechnung liegt bei rund 29,5 Millionen Euro einschließlich 13 Prozent Risikoaufschlag. 2021 waren noch 11 bis 14,3 Millionen Euro geschätzt worden. Förderfähig sind nach den staatlichen Richtwerten mindestens rund 12 Millionen Euro, gut 13 Millionen Euro entfallen auf Sonderkosten für die besondere Schulart, das Grundstück und ökologische Ziele. Der Bauausschuss berät am 17. November 2026 vor, freigeben soll die Haushaltsunterlage Bau der Bezirksausschuss am 3. Dezember 2026.",
+   "klartext_titel_leicht": "Der Bezirk baut für eine Holz-Schule für 29,5 Millionen Euro",
+   "klartext_leicht": "Der Bezirk Oberbayern hat eine Schule für Holz in Garmisch-Partenkirchen. Dort lernen Menschen, mit Holz zu arbeiten. Die Schule braucht mehr Platz. Deshalb soll es einen neuen Bau geben. Dort gibt es große Werk-Stätten mit neuen Maschinen. Das Haus wird zum großen Teil aus Holz gebaut. Der Bau kostet ungefähr 29,5 Millionen Euro. Früher hat man mit viel weniger Geld gerechnet. Der Bezirks-Ausschuss entscheidet am 3. Dezember 2026.",
+   "lebenslage": [
+    "Arbeit & Beruf"
+   ],
+   "anlass": [
+    "Schulbau"
+   ]
+  },
+  "bezirk_obb:4939#Ö 4": {
+   "bezirk": [
+    "Bezirk Oberbayern"
+   ],
+   "ort": [],
+   "klartext_titel": "Freilichtmuseum Glentleiten: Kramerladen bekommt eine neue Küche",
+   "klartext": "Im Freilichtmuseum an der Glentleiten gibt es im Mesnerhof aus Siegertsbrunn einen Kramerladen mit Kiosk, der warme Gerichte, Brotzeiten, Kaffee und Kuchen verkauft. Das Gebäude hat Mängel beim Brandschutz, die Küche erfüllt die Hygiene- und Arbeitsschutzvorgaben nicht mehr, und die Kühltechnik und Elektrik sind veraltet. Eine Machbarkeitsstudie zeigt, dass eine neue Küche, Toiletten für Besucher und Personal sowie Lagerräume im bestehenden Gebäude Platz finden; am denkmalgeschützten Wohnteil von 1796 ändert sich nur wenig. Die Sanierung soll grob geschätzt rund 811.000 Euro kosten, für die Entwurfsplanung und Voruntersuchungen sind rund 80.000 Euro nötig. Bis Mai 2027 soll eine genaue Kostenberechnung vorliegen, für den Bau selbst sind rund fünf Monate angesetzt. Der Bauausschuss berät am 17. November 2026, die Planungsmittel freigeben soll der Bezirksausschuss am 3. Dezember 2026.",
+   "klartext_titel_leicht": "Das Museum Glentleiten bekommt eine neue Küche",
+   "klartext_leicht": "Die Glentleiten ist ein Museum unter freiem Himmel. Dort stehen alte Bauern-Häuser. In einem alten Haus gibt es einen Laden mit Essen. Die Küche dort ist zu alt. Sie erfüllt die Regeln für Sauberkeit nicht mehr. Auch der Schutz vor Feuer ist nicht gut genug. Der Bezirk will die Küche neu bauen. Das kostet ungefähr 811.000 Euro. Der Bezirks-Ausschuss entscheidet am 3. Dezember 2026 über das Geld für die Planung.",
+   "lebenslage": [
+    "Freizeit & Sport"
+   ],
+   "anlass": [
+    "Kultur & Bildung"
+   ]
+  },
+  "bezirk_obb:4939#Ö 5": {
+   "bezirk": [
+    "Bezirk Oberbayern"
+   ],
+   "ort": [],
+   "klartext_titel": "Grüne wollen weitere Moorflächen des Bezirks wieder vernässen",
+   "klartext": "Die Fraktion BÜNDNIS 90/DIE GRÜNEN im Bezirkstag beantragt, alle Flächen der Bezirksgüter nach weiteren Stellen zu durchsuchen, die sich zur Renaturierung oder Wiedervernässung eignen. Vorbild ist das schon umgesetzte Projekt im Hilgermoos bei Taufkirchen an der Vils. Wiedervernässte Flächen speichern CO₂ und bieten seltenen Tieren und Pflanzen Lebensraum. Laut Verwaltung arbeitet sie seit Januar 2026 bereits daran und hat das Röhrmoos bei Gabersee in Wasserburg als nächstes Vorhaben ausgewählt. Der Bauausschuss berät am 17. November 2026 vor, abstimmen soll der Bezirksausschuss am 3. Dezember 2026.",
+   "klartext_titel_leicht": "Die Grünen wollen mehr nasse Moore beim Bezirk",
+   "klartext_leicht": "Ein Moor ist ein sehr nasser Boden. Nasse Moore speichern schädliche Gase aus der Luft. Viele Moore wurden früher trocken gelegt. Der Bezirk Oberbayern hat eigene Bauern-Höfe mit viel Land. Die Partei Die Grünen hat einen Wunsch. Der Bezirk soll dort mehr Moore nass machen. Der Bezirk hat schon ein Moor gefunden. Es liegt bei Wasserburg. Der Bezirks-Ausschuss stimmt am 3. Dezember 2026 ab.",
+   "lebenslage": [],
+   "anlass": [
+    "Klima & Umwelt"
+   ]
+  },
+  "bezirk_obb:4939#Ö 6": {
+   "bezirk": [
+    "Bezirk Oberbayern"
+   ],
+   "ort": [],
+   "klartext_titel": "Überblick über alle Solaranlagen des Bezirks mit Kosten und Amortisation",
+   "klartext": "Auf Antrag der Grünen vom 13. April 2026 legt das Baureferat des Bezirks Oberbayern eine Übersicht über die Photovoltaikanlagen auf seinen Gebäuden und Flächen vor. Sie schreibt eine Aufstellung von 2014 fort und nennt für die Anlagen die Investitionskosten und wie weit sie sich bereits bezahlt gemacht haben. Ergänzt wurde die bereits vorgestellte Priorisierungsliste für neue Anlagen um alle Anlagen, die schon in Betrieb sind. Die Liste selbst liegt als Anlage bei. Der Bauausschuss nimmt sie am 17. November 2026 zur Kenntnis.",
+   "klartext_titel_leicht": "Eine Liste über die Solar-Anlagen vom Bezirk",
+   "klartext_leicht": "Solar-Anlagen machen Strom aus Sonnen-Licht. Der Bezirk Oberbayern hat Solar-Anlagen auf seinen Häusern. Die Partei Die Grünen wollte eine Übersicht. Jetzt gibt es eine Liste. Darin steht: Wie viel hat jede Anlage gekostet? Hat sich die Anlage schon bezahlt gemacht? Ein Ausschuss vom Bezirk hört die Liste am 17. November 2026.",
+   "lebenslage": [],
+   "anlass": [
+    "Klima & Umwelt"
+   ]
+  },
+  "bezirk_obb:5017#Ö 2": {
+   "bezirk": [
+    "Bezirk Oberbayern"
+   ],
+   "ort": [],
+   "klartext_titel": "Kloster Seeon: Stellenplan 2027 mit etwas weniger Stellen",
+   "klartext": "Das Kultur- und Bildungszentrum Kloster Seeon ist ein Eigenbetrieb des Bezirks Oberbayern und braucht für 2027 einen neuen Stellenplan. Vorgesehen sind 87,69 Vollzeitstellen, nach 88,84 im Jahr 2026 und 90,73 im Jahr 2025. Der Personalrat hat dem Stellenplan zugestimmt. Der Werkausschuss soll Stellenplan und Stellenbewirtschaftungsplan am 10. November 2026 in der vorgelegten Fassung billigen.",
+   "klartext_titel_leicht": "Kloster Seeon plant etwas weniger Arbeits-Stellen",
+   "klartext_leicht": "Das Kloster Seeon gehört dem Bezirk Oberbayern. Dort gibt es Tagungen mit Übernachtung und Kultur. Für das Jahr 2027 gibt es einen Plan für die Arbeits-Stellen. Es sind etwas weniger Stellen als vorher. Die Vertretung der Mitarbeiter ist einverstanden. Ein Ausschuss vom Bezirk berät am 10. November 2026.",
+   "lebenslage": [
+    "Arbeit & Beruf"
+   ],
+   "anlass": []
+  },
+  "bezirk_obb:5017#Ö 3": {
+   "bezirk": [
+    "Bezirk Oberbayern"
+   ],
+   "ort": [],
+   "klartext_titel": "Kloster Seeon plant 2027 mit 1,55 Millionen Euro Minus",
+   "klartext": "Der Werkausschuss berät den Wirtschaftsplan 2027 des Kultur- und Bildungszentrums Kloster Seeon. Vor Abschreibungen rechnet der Betrieb mit einem Ergebnis von minus 1.554.600 Euro, nach minus 1.474.000 Euro im Plan für 2026. Den Erträgen von rund 5,96 Millionen Euro stehen Aufwendungen von rund 9,26 Millionen Euro gegenüber. Tagungen und Gaststätte erwirtschaften zusammen ein kleines Plus, der Denkmal- und Kulturbereich verursacht das Defizit. Im Vermögensplan sind 150.000 Euro für Ausstattung und 2,5 Millionen Euro für die Klostergaststätte mit Seeterrasse vorgesehen. Der Werkausschuss berät am 10. November 2026 vor.",
+   "klartext_titel_leicht": "Kloster Seeon gibt 2027 mehr Geld aus, als es einnimmt",
+   "klartext_leicht": "Das Kloster Seeon gehört dem Bezirk Oberbayern. Dort gibt es Tagungen, Kultur und eine Gast-Stätte. Für das Jahr 2027 gibt es einen Plan für das Geld. Das Kloster nimmt ungefähr 6 Millionen Euro ein. Es gibt aber mehr Geld aus. Es fehlen ungefähr 1,5 Millionen Euro. Das liegt vor allem an den alten Gebäuden und an der Kultur. Für die Gast-Stätte am See sind 2,5 Millionen Euro geplant.",
+   "lebenslage": [],
+   "anlass": []
+  },
+  "bezirk_obb:5017#Ö 4": {
+   "bezirk": [
+    "Bezirk Oberbayern"
+   ],
+   "ort": [],
+   "klartext_titel": "Kloster Seeon steht bis August besser da als im Vorjahr",
+   "klartext": "Die Werkleitung des Kultur- und Bildungszentrums Kloster Seeon berichtet dem Werkausschuss halbjährlich über Erträge, Aufwendungen und Investitionen. Bis 31. August 2026 lag das operative Ergebnis bei minus 715.353 Euro, im Vorjahr waren es zu diesem Zeitpunkt minus 904.664 Euro. Für das ganze Jahr 2026 erwartet der Betrieb minus 1,40 Millionen Euro statt der geplanten minus 1,47 Millionen Euro. Von 88,84 Vollzeitstellen im Stellenplan waren Ende August 82,10 besetzt. Die Zimmerbelegung für 2026 liegt nach der Vorschau mit 19.869 etwa auf dem Stand von 2025 mit 19.853. Der Ausschuss nimmt den Bericht am 10. November 2026 zur Kenntnis.",
+   "klartext_titel_leicht": "Bericht über das Geld vom Kloster Seeon",
+   "klartext_leicht": "Das Kloster Seeon gehört dem Bezirk Oberbayern. Zweimal im Jahr gibt es einen Bericht über das Geld. Das Kloster gibt mehr Geld aus, als es einnimmt. Im Jahr 2026 ist das Minus aber kleiner als geplant. Es fehlen ungefähr 1,4 Millionen Euro. Es gab ungefähr so viele Gäste wie im Jahr davor. Ein Ausschuss vom Bezirk hört den Bericht am 10. November 2026.",
+   "lebenslage": [],
+   "anlass": []
+  },
+  "bezirk_obb:5017#Ö 5": {
+   "bezirk": [
+    "Bezirk Oberbayern"
+   ],
+   "ort": [],
+   "klartext_titel": "Kloster Seeon: Wege werden barrierefrei, Kegelbahn wird abgerissen",
+   "klartext": "Das Baureferat des Bezirks berichtet über die laufenden Bauprojekte am Kloster Seeon. Bei den Außenanlagen fehlen noch der Vorplatz, der Zugangshof und das westliche Nordufer; die Ausschreibung ist für Ende November 2026 geplant, gebaut werden soll ab Mitte März 2027. Danach sollen alle Wege rund um das Kloster rollstuhlgerecht sein. Für die Außenanlagen wurden bisher 2.745.000 Euro freigegeben, die Kosten werden auf rund 2.551.000 Euro geschätzt. Die Kegelbahn soll im ersten Quartal 2027 abgerissen werden, für die Sanierung von Klostergaststätte und Seepavillon sucht der Bezirk ein Planungsteam. Der Werkausschuss nimmt den Bericht am 10. November 2026 zur Kenntnis.",
+   "klartext_titel_leicht": "Am Kloster Seeon werden die Wege für Roll-Stühle gebaut",
+   "klartext_leicht": "Das Kloster Seeon gehört dem Bezirk Oberbayern. Dort wird gerade viel gebaut. Rund um das Kloster entstehen neue Wege. Die Wege sind dann gut mit dem Roll-Stuhl zu fahren. Die Bau-Arbeiten beginnen im März 2027. Die alte Kegel-Bahn wird abgerissen. Auch die Gast-Stätte soll erneuert werden. Ein Ausschuss vom Bezirk hört den Bericht am 10. November 2026.",
+   "lebenslage": [
+    "Freizeit & Sport"
+   ],
+   "anlass": [
+    "Baustelle"
+   ]
+  },
+  "bza:14378#Ö 3": {
+   "klartext_titel": "Protokoll der BZA-Sitzung 04/2026 vom 17.September 2026",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "VIII-Oberhaunstadt"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14378#Ö 4": {
+   "klartext_titel": "Konzeptstudie Wohnquartier am Hochweg, Unterhaunstadt",
+   "klartext": "",
+   "lebenslage": [
+    "Wohnen & Miete"
+   ],
+   "bezirk": [
+    "VIII-Oberhaunstadt"
+   ],
+   "ort": [],
+   "anlass": [
+    "Konzept & Planung"
+   ],
+   "entwurf": true
+  },
+  "bza:14357#Ö 4": {
+   "klartext_titel": "Antrag eines BZA-Mitglieds die Senefelderstraße betreffend",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "II-Nordwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14357#Ö 5": {
+   "klartext_titel": "Antrag eines Stadtteilbewohners zu Carsharing",
+   "klartext": "",
+   "lebenslage": [
+    "Wohnen & Miete"
+   ],
+   "bezirk": [
+    "II-Nordwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14357#Ö 6": {
+   "klartext_titel": "Gegenseitige Information im Nachgang zur letzten Sitzung zu den Themen",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "II-Nordwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14357#Ö 6.1": {
+   "klartext_titel": "Brucknerstraße",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "II-Nordwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14357#Ö 6.2": {
+   "klartext_titel": "Bolzplatz zwischen Gustav-Mahler- und Richard-Wagner-Straße",
+   "klartext": "",
+   "lebenslage": [
+    "Jugend",
+    "Unterwegs",
+    "Freizeit & Sport"
+   ],
+   "bezirk": [
+    "II-Nordwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14357#Ö 7": {
+   "klartext_titel": "Bericht aus dem gemeinsamen Workshop aller Bezirksausschüsse am 20.10.2026",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "II-Nordwest"
+   ],
+   "ort": [],
+   "anlass": [
+    "Konzept & Planung"
+   ],
+   "entwurf": true
+  },
+  "bza:14357#Ö 8": {
+   "klartext_titel": "Bericht aus der Kommission Quartiersentwicklung Piusviertel am 28.10.2026",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "II-Nordwest"
+   ],
+   "ort": [],
+   "anlass": [
+    "Konzept & Planung"
+   ],
+   "entwurf": true
+  },
+  "bza:14357#Ö 9": {
+   "klartext_titel": "Informationen und Stellungnahmen der Verwaltung",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "II-Nordwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14357#Ö 9.1": {
+   "klartext_titel": "Baubeginnsanzeige Nordbahnhof",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "II-Nordwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14357#Ö 9.2": {
+   "klartext_titel": "Einladung der Jugendbeauftragten aller Bezirksausschüsse zum Austauschtreffen",
+   "klartext": "",
+   "lebenslage": [
+    "Jugend"
+   ],
+   "bezirk": [
+    "II-Nordwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14357#Ö 10.2": {
+   "klartext_titel": "Sanierung der Sitzbänke am Stadtteiltreff",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "II-Nordwest"
+   ],
+   "ort": [],
+   "anlass": [
+    "Baustelle"
+   ],
+   "entwurf": true
+  },
+  "bza:14357#Ö 10.3": {
+   "klartext_titel": "Erweiterung der Tempo 30-Strecke",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "II-Nordwest"
+   ],
+   "ort": [],
+   "anlass": [
+    "Verkehrsplanung"
+   ],
+   "entwurf": true
+  },
+  "bza:14357#Ö 10.4": {
+   "klartext_titel": "Ampelschaltung an der Piuskirche",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "II-Nordwest"
+   ],
+   "ort": [],
+   "anlass": [
+    "Verkehrsplanung"
+   ],
+   "entwurf": true
+  },
+  "bza:14357#Ö 11": {
+   "klartext_titel": "Ergebnisse des Workshops zur Zusammenarbeit mit Stadtteiltreff und Bürgerverein e.V., Diskussion und ggf. …",
+   "klartext": "",
+   "lebenslage": [
+    "Ehrenamt & Vereine"
+   ],
+   "bezirk": [
+    "II-Nordwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14357#Ö 12": {
+   "klartext_titel": "Öffentlichkeitsarbeit und Vernetzung im Stadtteil: Sprechstunde, Stände, Social Media",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "II-Nordwest"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bezirk_obb:5018#Ö 3": {
+   "klartext_titel": "Bekanntgaben und Sonstiges",
+   "klartext": "",
+   "lebenslage": [
+    "Eltern & Kinder",
+    "Freizeit & Sport"
+   ],
+   "bezirk": [
+    "Bezirk Oberbayern"
+   ],
+   "ort": [],
+   "anlass": [
+    "Kultur & Bildung"
+   ],
+   "entwurf": true
+  },
+  "bezirk_obb:4939#Ö 7": {
+   "klartext_titel": "Bekanntgaben und Sonstiges",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "Bezirk Oberbayern"
+   ],
+   "ort": [],
+   "anlass": [
+    "Klima & Umwelt"
+   ],
+   "entwurf": true
+  },
+  "bza:14377#Ö 3": {
+   "klartext_titel": "Stellungnahmen der Verwaltung",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "IX-Mailing/Feldkirchen"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14377#Ö 3.4": {
+   "klartext_titel": "„Better place“ Brittingstr., Ortstermin 21.10.2026",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "IX-Mailing/Feldkirchen"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14377#Ö 4": {
+   "klartext_titel": "Sachstand und weiteres Vorgehen PFAS im Mailinger Bach durch Umweltamt",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "IX-Mailing/Feldkirchen"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14377#Ö 7": {
+   "klartext_titel": "weitere Anträge, sonstiges",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "IX-Mailing/Feldkirchen"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14377#Ö 7.1": {
+   "klartext_titel": "Modellvorhaben LANDSTADT BESTAND",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "IX-Mailing/Feldkirchen"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "stadt:14372#Ö 1": {
+   "klartext_titel": "Überblick zur Wirtschafts- und Wissenschaftsförderung der Stadt Ingolstadt",
+   "klartext": "",
+   "lebenslage": [
+    "Gewerbe & Gastro"
+   ],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Konzept & Planung"
+   ],
+   "entwurf": true
+  },
+  "stadt:14372#Ö1": {
+   "klartext_titel": "Hierzu liegt vor: — Anfrage der SPD-Stadtratsfraktion vom 04.11.2026 zum Thema Finanzierung, Steuerung und …",
+   "klartext": "",
+   "lebenslage": [
+    "Gewerbe & Gastro"
+   ],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Gebühren & Preise"
+   ],
+   "entwurf": true
+  },
+  "stadt:13549#Ö 4": {
+   "klartext_titel": "Ganztag an Ingolstädter Grundschulen - strategische Weiterentwicklung der bestehenden Ganztagsangebote an …",
+   "klartext": "",
+   "lebenslage": [
+    "Eltern & Kinder",
+    "Jugend"
+   ],
+   "bezirk": [],
+   "ort": [],
+   "anlass": [
+    "Kinderbetreuung",
+    "Konzept & Planung"
+   ],
+   "entwurf": true
+  },
+  "bezirk_obb:5017#Ö 7": {
+   "klartext_titel": "Bekanntgaben und Sonstiges",
+   "klartext": "",
+   "lebenslage": [
+    "Freizeit & Sport"
+   ],
+   "bezirk": [
+    "Bezirk Oberbayern"
+   ],
+   "ort": [],
+   "anlass": [
+    "Kultur & Bildung"
+   ],
+   "entwurf": true
+  },
+  "bza:14371#Ö 3": {
+   "klartext_titel": "BZA-Workshop am 20.10.26",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "XII-Münchener Straße"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14371#Ö 3.2": {
+   "klartext_titel": "Veröffentlichung der Beschlüsse (Stadtratsantrag Bündnis 90/Die Grünen)",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "XII-Münchener Straße"
+   ],
+   "ort": [],
+   "anlass": [
+    "Grün & Sauberkeit"
+   ],
+   "entwurf": true
+  },
+  "bza:14371#Ö 4": {
+   "klartext_titel": "Anliegen von BZA-Mitgliedern",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "XII-Münchener Straße"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14371#Ö 4.1": {
+   "klartext_titel": "Kürzungen bei der Stadtbücherei",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "XII-Münchener Straße"
+   ],
+   "ort": [],
+   "anlass": [
+    "Kultur & Bildung"
+   ],
+   "entwurf": true
+  },
+  "bza:14371#Ö 5": {
+   "klartext_titel": "Auswertung der Geschwindigkeitsmessanlage Haunwöhrer Straße",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "XII-Münchener Straße"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14371#Ö 6": {
+   "klartext_titel": "Informationen zur BayernBox",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "XII-Münchener Straße"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14336#Ö 3.1": {
+   "klartext_titel": "Gartenamt Umsetzung Sparmaßnahmen",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "III-Nordost"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14336#Ö 3.2": {
+   "klartext_titel": "Bolzplatz Lessingstr.",
+   "klartext": "",
+   "lebenslage": [
+    "Jugend",
+    "Unterwegs",
+    "Freizeit & Sport"
+   ],
+   "bezirk": [
+    "III-Nordost"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14336#Ö 3.4": {
+   "klartext_titel": "Naturschutzfachkartierung",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "III-Nordost"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14336#Ö 5.2": {
+   "klartext_titel": "Ampeln Schneller Weg",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "III-Nordost"
+   ],
+   "ort": [],
+   "anlass": [
+    "Verkehrsplanung"
+   ],
+   "entwurf": true
+  },
+  "bza:14336#Ö 5.3": {
+   "klartext_titel": "Fahrbahnbeleg Feldkirchener Str.",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "III-Nordost"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14336#Ö 5.4": {
+   "klartext_titel": "E-Scooter Am Nordbahnhof",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "III-Nordost"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14336#Ö 5.6": {
+   "klartext_titel": "Lärmschutzwall Autobahnausfahrt Nord",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "III-Nordost"
+   ],
+   "ort": [],
+   "anlass": [
+    "Klima & Umwelt"
+   ],
+   "entwurf": true
+  },
+  "bza:14336#Ö 6.1": {
+   "klartext_titel": "Geschwindigkeitskontrollen",
+   "klartext": "",
+   "lebenslage": [
+    "Unterwegs"
+   ],
+   "bezirk": [
+    "III-Nordost"
+   ],
+   "ort": [],
+   "anlass": [],
+   "entwurf": true
+  },
+  "bza:14336#Ö 6.3": {
+   "klartext_titel": "Bericht BZA im Viertel",
+   "klartext": "",
+   "lebenslage": [],
+   "bezirk": [
+    "III-Nordost"
+   ],
+   "ort": [],
+   "anlass": [
+    "Konzept & Planung"
+   ],
+   "entwurf": true
   }
  }
 }

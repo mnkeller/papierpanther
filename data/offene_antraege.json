@@ -1,6 +1,6 @@
 {
   "hinweis": "Antraege ohne Sitzungstermin, aus der Liste 'Aktuelle Stadtratsantraege' im Ratsinfoportal der Stadt Ingolstadt. Sobald die Tagesordnung seiner Sitzung veroeffentlicht ist, verschwindet ein Antrag von hier und taucht stattdessen ganz normal ueber ris_ingolstadt.py auf. Bis dahin steht ein schon angesetzter Termin im Feld 'termin'.",
-  "abgerufen_am": "2026-10-30",
+  "abgerufen_am": "2026-11-10",
   "antraege": [
     {
       "quelle": "stadt",
@@ -173,7 +173,7 @@
       "antragsdatum_anzeige": "16.10.2026",
       "vorlage": "V0681/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23440",
-      "ziel_gremium": "Stadtrat",
+      "ziel_gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
       "termin": "",
       "dokumente": [
         {
@@ -587,8 +587,8 @@
       "antragsdatum_anzeige": "24.07.2026",
       "vorlage": "V0488/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23243",
-      "ziel_gremium": "Stadtrat",
-      "termin": "",
+      "ziel_gremium": "",
+      "termin": "2026-11-24",
       "dokumente": [
         {
           "titel": "Stadtratsantrag SPD",
@@ -2505,8 +2505,8 @@
       "antragsdatum_anzeige": "",
       "vorlage": "V0289/26",
       "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23040",
-      "ziel_gremium": "Stadtrat",
-      "termin": "",
+      "ziel_gremium": "Ausschuss für Kultur und Bildung Ausschuss für Kultur und Bildung öffentlich - Vorberatung Stadtrat",
+      "termin": "2026-11-24",
       "dokumente": [
         {
           "titel": "Stadtratsantrag ÖDP",
