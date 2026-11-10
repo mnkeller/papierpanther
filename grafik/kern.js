@@ -125,13 +125,18 @@
   // Der Panther der Startseite als Erzähler
   var sym = document.createElement('div');
   sym.innerHTML = '<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="gf-panther" viewBox="0 0 120 120">' +
-    '<path d="M84 73c11 1 22 9 24 23-2-1-16-19-24-23z" fill="#B00E2B"/><ellipse cx="58" cy="80" rx="34" ry="29" fill="#003E59"/>' +
-    '<rect x="34" y="88" width="46" height="30" rx="4" fill="#f1efe9"/><line x1="41" y1="97" x2="73" y2="97" stroke="#cfc9be" stroke-width="2.5"/>' +
-    '<line x1="41" y1="104" x2="73" y2="104" stroke="#cfc9be" stroke-width="2.5"/><line x1="41" y1="111" x2="63" y2="111" stroke="#cfc9be" stroke-width="2.5"/>' +
-    '<ellipse cx="34" cy="98" rx="8" ry="6" fill="#003E59"/><ellipse cx="82" cy="98" rx="8" ry="6" fill="#003E59"/><circle cx="58" cy="42" r="27" fill="#003E59"/>' +
-    '<path d="M38 24 L31 9 L48 20 Z" fill="#003E59"/><path d="M78 24 L85 9 L68 20 Z" fill="#003E59"/><ellipse cx="58" cy="52" rx="14" ry="10" fill="#f1efe9"/>' +
-    '<ellipse cx="46" cy="40" rx="5.5" ry="6.5" fill="#f1efe9"/><ellipse cx="70" cy="40" rx="5.5" ry="6.5" fill="#f1efe9"/>' +
-    '<circle cx="47" cy="41" r="2.6" fill="#003E59"/><circle cx="69" cy="41" r="2.6" fill="#003E59"/><path d="M55 51l3 4 3-4z" fill="#B00E2B"/></symbol></svg>';
+    '<path d="M85 106 C100 106 107 95 104 79 L109 77 C114 97 104 113 85 112 Z" fill="#B00E2B"/>' +
+    '<path d="M30 118 L27 93 L39 64 H77 L89 93 L86 118 Z" fill="#003E59"/>' +
+    '<path d="M34 88 H72 L80 96 V118 H34 Z" fill="#f1efe9"/>' +
+    '<path d="M72 88 V96 H80 Z" fill="#B00E2B"/>' +
+    '<line x1="41" y1="102" x2="73" y2="102" stroke="#cfc9be" stroke-width="2.5"/>' +
+    '<line x1="41" y1="109" x2="65" y2="109" stroke="#cfc9be" stroke-width="2.5"/>' +
+    '<path d="M26 97 L34 91 L42 95 L40 103 L29 103 Z" fill="#003E59"/>' +
+    '<path d="M90 97 L82 91 L74 95 L76 103 L87 103 Z" fill="#003E59"/>' +
+    '<g transform="translate(16 -3.5) scale(2.1)"><path d="M7.5 5.5 L15 12 H25 L32.5 5.5 L31.5 19.5 L27.5 29 L20 34.5 L12.5 29 L8.5 19.5 Z" fill="#003E59"/><path d="M10 9.2 L13.2 12.4 L10.6 15 Z M30 9.2 L26.8 12.4 L29.4 15 Z" fill="#f1efe9" opacity=".4"/><path d="M11.8 17.6 L18.2 19.6 L13.4 20.8 Z M28.2 17.6 L21.8 19.6 L26.6 20.8 Z" fill="#f1efe9"/><path d="M18.3 24.2 H21.7 L20 26.4 Z" fill="#B00E2B"/><path d="M20 26.4 V28.6 M17.2 29.4 L20 28.6 L22.8 29.4" stroke="#f1efe9" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>' +
+    '</symbol><symbol id="panther-kopf" viewBox="0 0 40 40">' +
+    '<path d="M7.5 5.5 L15 12 H25 L32.5 5.5 L31.5 19.5 L27.5 29 L20 34.5 L12.5 29 L8.5 19.5 Z" fill="#003E59"/><path d="M10 9.2 L13.2 12.4 L10.6 15 Z M30 9.2 L26.8 12.4 L29.4 15 Z" fill="#f1efe9" opacity=".4"/><path d="M11.8 17.6 L18.2 19.6 L13.4 20.8 Z M28.2 17.6 L21.8 19.6 L26.6 20.8 Z" fill="#f1efe9"/><path d="M18.3 24.2 H21.7 L20 26.4 Z" fill="#B00E2B"/><path d="M20 26.4 V28.6 M17.2 29.4 L20 28.6 L22.8 29.4" stroke="#f1efe9" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '</symbol></svg>';
   document.body.appendChild(sym.firstChild);
 
   /* Knopf in der Kopfzeile, direkt vor „Leichte Sprache“ */
