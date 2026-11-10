@@ -29,10 +29,13 @@ GRAFIK.szene({
       '.mi-zeiger-kopf{text-align:center;font-size:.82rem;font-weight:700;color:#00263a;margin-bottom:-8px}',
       '.mi-zeiger-kopf span{color:#b00e2b}',
       '.mi-zahl strong{display:block;font-family:var(--font-display);font-weight:900;font-size:2.5rem;line-height:1;color:#96551f;font-variant-numeric:tabular-nums}',
-      '.mi-zahl span{font-size:.9rem}',
+      '.mi-zahl span{display:block;margin-top:6px;font-size:1.1rem;font-weight:700;color:#00263a}',
+      '.mi-zahl span b{color:#96551f}',
       '.mi-zahl small{display:block;font-size:.78rem;color:var(--grau);margin-top:2px}',
       '.mi-feld{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 12px;align-items:center;font-size:.86rem;border-top:1px solid var(--linie);padding-top:10px}',
       '.mi-feld label{font-weight:600}',
+      '.mi-fl-zeile{display:flex;align-items:center;gap:12px}',
+      '.mi-fl-wert{flex:none;min-width:4.4rem;text-align:right;font-family:var(--font-display);font-weight:900;font-size:1.3rem;line-height:1;color:#96551f;font-variant-numeric:tabular-nums}',
       '.mi-feld .reihe{display:flex;gap:5px;flex-wrap:wrap}',
       '.mi-liste{border-top:1px solid var(--linie);padding-top:10px;display:grid;gap:6px}',
       '.mi-liste h4{margin:4px 0 0;font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:var(--grau)}',
@@ -49,7 +52,7 @@ GRAFIK.szene({
     api.szene.innerHTML = '<div class="mi"><div class="mi-bild"><svg viewBox="0 0 720 540" role="img" aria-label="Aufgeschnittene Wohnung mit schaltbarer Ausstattung"></svg></div>' +
       '<div class="mi-seite"><div><div class="mi-zeiger-kopf">Übliche Miete laut Mietspiegel, netto kalt je m²<br><span>Rote Marke: Grenze der Mietpreisbremse</span></div><svg class="mi-zeiger" viewBox="-30 -20 440 234" aria-hidden="true"></svg></div>' +
       '<div class="mi-zahl" aria-live="polite"><strong id="mi-ovm"></strong><span id="mi-monat"></span><small id="mi-spanne"></small></div>' +
-      '<div class="mi-feld"><label for="mi-fl">Fläche</label><div><input id="mi-fl" type="range" min="' + MS.flaeche_min + '" max="' + MS.flaeche_max + '" value="65" style="width:100%;accent-color:#96551f"></div>' +
+      '<div class="mi-feld"><label for="mi-fl">Fläche</label><div class="mi-fl-zeile"><input id="mi-fl" type="range" min="' + MS.flaeche_min + '" max="' + MS.flaeche_max + '" value="65" style="flex:1;min-width:0;accent-color:#96551f"><output id="mi-fl-wert" class="mi-fl-wert" for="mi-fl" aria-live="off">65 m²</output></div>' +
       '<label for="mi-bj">Baujahr</label><select id="mi-bj" style="font:inherit;padding:4px 8px;border:1px solid var(--linie-stark);border-radius:6px;background:#fff">' +
       MS.baujahr.map(function (b) { return '<option value="' + b.id + '"' + (b.id === zustand.baujahr ? ' selected' : '') + '>' + b.n + ' (' + (b.wert > 0 ? '+' : b.wert < 0 ? '−' : '±') + Math.abs(b.wert) + ' %)</option>'; }).join('') + '</select>' +
       '<label>Lage</label><div class="reihe">' + MS.lage.map(function (l) { return '<button type="button" class="gf-chip klein" data-lage="' + l.id + '" aria-pressed="' + (l.id === 'normal') + '">' + l.l.replace(' Lage', '') + '</button>'; }).join('') + '</div>' +
@@ -326,7 +329,8 @@ GRAFIK.szene({
       bremseT2.textContent = NF.zahl(grenze, 2) + ' €';
       nadel.style.transform = 'rotate(' + (winkel(ovm) * 180 / Math.PI) + 'deg)';
       api.szene.querySelector('#mi-ovm').textContent = NF.zahl(ovm, 2) + ' € je m²';
-      api.szene.querySelector('#mi-monat').textContent = 'rund ' + NF.zahl(ovm * zustand.flaeche) + ' € im Monat für ' + zustand.flaeche + ' m²';
+      api.szene.querySelector('#mi-fl-wert').textContent = zustand.flaeche + ' m²';
+      api.szene.querySelector('#mi-monat').innerHTML = 'rund <b>' + NF.zahl(ovm * zustand.flaeche) + ' €</b> im Monat für ' + zustand.flaeche + ' m²';
       api.szene.querySelector('#mi-spanne').textContent = 'Spanne ' + NF.zahl(u0, 2) + ' bis ' + NF.zahl(o0, 2) + ' € · Zu- und Abschläge zusammen ' + (summe >= 0 ? '+' : '−') + Math.abs(summe) + ' % · Mietpreisbremse: höchstens ' + NF.zahl(grenze, 2) + ' € je m²';
       return { ovm: ovm, grenze: grenze };
     }

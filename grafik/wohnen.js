@@ -52,7 +52,18 @@ GRAFIK.szene({
     var nachY = fenster.slice().sort(function (a, b) { return a.y - b.y || a.x - b.x; });
     function anzahl(n) { return Math.round(n / 100); }
     var timer = [];
-    function leeren() { timer.forEach(clearTimeout); timer = []; gLeg.innerHTML = ''; gVgl.innerHTML = ''; api.karteZu(); fenster.forEach(function (f) { f.el.style.opacity = 1; f.el.style.animation = ''; }); }
+    /* Die Legende beginnt bei x = 610. Ein langer Titel (44 px) liefe in sie hinein und wird deshalb
+       verkleinert. Gemessen wird erst, wenn die Schrift geladen ist; vorher stimmt die Breite nicht. */
+    var TITEL_MAX = 540;
+    function titelPassen() {
+      titel.setAttribute('font-size', 44);
+      if (!gLeg.firstChild) return;
+      var w = 0;
+      try { w = titel.getComputedTextLength(); } catch (e) { /* Szene gerade nicht sichtbar */ }
+      if (w > TITEL_MAX) titel.setAttribute('font-size', Math.max(28, Math.floor(44 * TITEL_MAX / w)));
+    }
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(titelPassen);
+    function leeren() { timer.forEach(clearTimeout); timer = []; gLeg.innerHTML = ''; gVgl.innerHTML = ''; titel.setAttribute('font-size', 44); api.karteZu(); fenster.forEach(function (f) { f.el.style.opacity = 1; f.el.style.animation = ''; }); }
     function baender(gruppen, mitLegende) {
       var i = 0;
       gruppen.forEach(function (g) {
@@ -73,6 +84,7 @@ GRAFIK.szene({
         t.textContent = g.name + ' · ' + NF.zahl(g.wohnungen);
         if (klick) it.addEventListener('click', function () { klick(g); });
       });
+      titelPassen();
     }
 
     var MODI = {
