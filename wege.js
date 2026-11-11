@@ -8,27 +8,72 @@
 import * as maplibregl from './vendor/maplibre-gl/maplibre-gl.mjs';
 
 /* ------------------------------------------------------------- Konstanten
-   Startwerte, auf der Seite unter „So rechnet die Karte“ offengelegt. */
+   Startwerte, auf der Seite unter „So rechnet die Karte“ als Tabelle offengelegt.
+   treppe_s: null = Treppen gesperrt. faktor_*: Zeit auf solchen Kanten mal diesem Wert. */
 const PERSONEN = {
-  erwachsene: { name: 'Erwachsene', name_l: 'Erwachsene', kmh: 5.0, ampel_s: 30, treppe_s: 0, bank_s: 0 },
-  aeltere: { name: 'Ältere Person', name_l: 'Ältere Menschen', kmh: 3.2, ampel_s: 30, treppe_s: 60, bank_s: 30 },
+  erwachsene: {
+    name: 'Erwachsene', name_l: 'Erwachsene', farbe: '#2f5f86',
+    kmh: 5.0, ampel_s: 30, treppe_s: 0, bank_s: 0,
+    warum: 'Maßstab: 5 km/h, wartet nur an Ampeln', warum_l: 'Erwachsene gehen schnell.',
+    ziele: ['supermarkt', 'baecker', 'apotheke', 'hausarzt', 'grundschule', 'kita', 'spielplatz',
+      'park', 'haltestelle', 'bank_post', 'buecherei', 'toilette'],
+  },
+  kind: {
+    name: 'Kind (allein, 6–10 Jahre)', name_l: 'Kind', farbe: '#c4553a',
+    kmh: 3.6, ampel_s: 30, treppe_s: 0, bank_s: 0, nur_gesichert_queren: true, gehweg_noetig: true, nachts_gesperrt: true,
+    warum: 'geht langsamer und quert große Straßen nur an Ampel oder Zebrastreifen',
+    warum_l: 'Kinder gehen nur an der Ampel oder am Zebra-Streifen über große Straßen.',
+    ziele: ['grundschule', 'spielplatz', 'bolzplatz', 'eis', 'baecker', 'buecherei'],
+  },
+  aeltere: {
+    name: 'Ältere Person', name_l: 'Ältere Menschen', farbe: '#2a8f7f',
+    kmh: 3.2, ampel_s: 30, treppe_s: 60, bank_s: 30,
+    warum: 'geht 3,2 km/h und braucht Pausen, wo keine Bank steht',
+    warum_l: 'Ältere Menschen gehen langsam. Sie brauchen Pausen.',
+    ziele: ['apotheke', 'hausarzt', 'supermarkt', 'bank_post', 'haltestelle', 'kirche', 'toilette'],
+  },
+  rollstuhl: {
+    name: 'Rollstuhl oder Kinderwagen', name_l: 'Rollstuhl oder Kinder-Wagen', farbe: '#7a5aa6',
+    kmh: 4.0, ampel_s: 30, treppe_s: null, bank_s: 0, hindernisse_gesperrt: true,
+    faktor_unbefestigt: 1.5, faktor_pflaster: 1.3,
+    warum: 'Treppen und hohe Bordsteine versperren den Weg, Kies und Pflaster bremsen',
+    warum_l: 'Treppen und hohe Bord-Steine gehen nicht.',
+    ziele: ['supermarkt', 'baecker', 'apotheke', 'hausarzt', 'grundschule', 'kita', 'spielplatz',
+      'park', 'haltestelle', 'bank_post', 'buecherei', 'toilette'],
+  },
+  besucher: {
+    name: 'Besucher:in', name_l: 'Besucher', farbe: '#c9962c',
+    kmh: 4.5, ampel_s: 30, treppe_s: 0, bank_s: 0, faktor_unbenannt: 2.0, faktor_unbenannt_zufahrt: 1.5,
+    warum: 'kennt keine Abkürzungen und bleibt auf Straßen mit Namen',
+    warum_l: 'Besucher kennen die Abkürzungen nicht.',
+    ziele: ['bahnhof', 'touristinfo', 'toilette', 'cafe', 'sehenswuerdigkeit', 'hotel', 'apotheke', 'haltestelle'],
+  },
+};
+const REIHE = ['erwachsene', 'kind', 'aeltere', 'rollstuhl', 'besucher'];
+const BEDINGUNGEN = {
+  nacht: { faktor_unbeleuchtet: 1.5 },   // Kind: unbeleuchtete Wege gesperrt
+  hitze: { faktor_ohne_schatten: 1.3 },  // dazu Trinkwasser als Ziel
 };
 const BANK_ABSTAND_M = 300;   // Ältere: alle 300 m ohne Bank +bank_s Sekunden
 const BANK_NAEHE_M = 40;      // eine Bank so nah an der Kante zählt als Rastplatz
 const STUFEN_MIN = [5, 10, 15];
 const PUFFER_M = 40;          // erreichbare Fläche: so weit links und rechts des Wegs
 const RASTER_M = 12;          // Zellgröße der Fläche
+const GLAETTEN_M = 70;        // Rand mit runden Ecken: Flächen werden um so viel geschlossen
+const LOCH_MIN_M2 = 40000;    // kleinere Löcher füllen
+const INSEL_MIN_M2 = 10000;   // kleinere Inseln weglassen
 const EINRASTEN_M = 300;      // weiter weg vom nächsten Weg rechnet die Karte nicht
 const START = { lat: 48.76338, lon: 11.42514, name: 'Rathausplatz' };
-const LISTE = ['supermarkt', 'baecker', 'apotheke', 'hausarzt', 'grundschule', 'kita', 'spielplatz',
-  'park', 'haltestelle', 'bank_post', 'buecherei', 'toilette'];
 const NAMEN_LEICHT = {
   supermarkt: 'Supermarkt', baecker: 'Bäcker', apotheke: 'Apotheke', hausarzt: 'Haus-Arzt',
   grundschule: 'Grund-Schule', kita: 'Kita', spielplatz: 'Spiel-Platz', park: 'Park',
   haltestelle: 'Halte-Stelle', bank_post: 'Bank oder Post', buecherei: 'Bücherei', toilette: 'Toilette',
+  bolzplatz: 'Bolz-Platz', eis: 'Eis-Diele', kirche: 'Kirche', bahnhof: 'Bahnhof', touristinfo: 'Touristen-Info',
+  cafe: 'Café', sehenswuerdigkeit: 'Sehens-Wertes', hotel: 'Hotel', trinkwasser: 'Trink-Wasser',
 };
-const FARBEN = [[0, 95, 130, 118], [40, 140, 175, 84], [120, 190, 215, 72]];   // 5, 10, 15 Minuten (RGBA)
-const UMRISS = '#b00e2b';
+const ALPHA_STUFEN = [0.3, 0.2, 0.22];    // Einzelansicht: 5, 10, 15 Minuten, liegen uebereinander
+const ALPHA_SCHICHT = 0.36;               // Schichtbild: Fläche (die oberste Schicht deckt)
+const ALPHA_RAND = 0.9;                   // Schichtbild: Rand jeder Fläche in ihrer Farbe
 
 /* ------------------------------------------------------- Leichte Sprache */
 const LS_KEY_LEICHT = 'papierpanther-leichte-sprache';
@@ -67,15 +112,46 @@ const von = new Int32Array(nE), nach = new Int32Array(nE), laenge = new Float32A
     von[e] = v; nach[e] = v + NETZ.nach[e]; laenge[e] = NETZ.laenge[e]; typ[e] = NETZ.typ[e];
   }
 }
-const FELD = (name) => NETZ.kanten_felder.indexOf(name);
-const istTreppe = NETZ.kanten_typen.map((tt) => tt[FELD('treppe')] === 1);
-const istGesperrt = NETZ.kanten_typen.map((tt) => tt[FELD('gesperrt')] === 1);
-const AMPEL = NETZ.codes.querung.indexOf('ampel');
-const ampel = new Uint8Array(nK);
+
+/* Merkmale je Kantentyp (wenige hundert Typen) als Zahlenfelder, damit die
+   Gewichte je Person in einem Durchlauf entstehen. */
+const C = NETZ.codes;
+const code = (feld, wert) => C[feld].indexOf(wert);
+const wert = (tt, feld) => tt[NETZ.kanten_felder.indexOf(feld)];
+const KLASSE = (k) => code('klasse', k);
+const HAUPT = new Set([KLASSE('sammelstrasse'), KLASSE('hauptstrasse')]);
+const PFADE = new Set([KLASSE('fussweg'), KLASSE('pfad'), KLASSE('feldweg')]);
+const DUNKEL_OHNE_TAG = new Set([KLASSE('pfad'), KLASSE('feldweg')]);
+const GESICHERT = new Set([code('querung', 'ampel'), code('querung', 'zebrastreifen')]);
+const TYPEN = NETZ.kanten_typen.map((tt) => {
+  const klasse = wert(tt, 'klasse'), lit = wert(tt, 'lit'), benannt = wert(tt, 'benannt') === 1;
+  return {
+    gesperrt: wert(tt, 'gesperrt') === 1,
+    treppe: wert(tt, 'treppe') === 1,
+    haupt: HAUPT.has(klasse),
+    ohneGehweg: HAUPT.has(klasse) && [code('gehweg', 'nein'), code('gehweg', 'separat')].includes(wert(tt, 'gehweg')),
+    gesicherteQuerung: GESICHERT.has(wert(tt, 'querung')),
+    dunkel: lit === code('lit', 'nein') || (lit === code('lit', 'unbekannt') && DUNKEL_OHNE_TAG.has(klasse)),
+    schatten: wert(tt, 'schatten') === 1,
+    rollstuhlNein: wert(tt, 'rollstuhl') === code('rollstuhl', 'nein'),
+    unbefestigt: wert(tt, 'oberflaeche') === code('oberflaeche', 'unbefestigt'),
+    pflaster: wert(tt, 'oberflaeche') === code('oberflaeche', 'pflaster_grob'),
+    unbenannterPfad: PFADE.has(klasse) && !benannt,
+    unbenannteZufahrt: klasse === KLASSE('erschliessung') && !benannt,
+  };
+});
+
+const KN = (feld) => NETZ.knoten_felder.indexOf(feld);
+const querungKnoten = new Uint8Array(nK), bordsteinHoch = new Uint8Array(nK), barriere = new Uint8Array(nK);
 for (let i = 0, k = 0; i < NETZ.knoten_merkmale.length; i += 2) {
   k += NETZ.knoten_merkmale[i];
-  ampel[k] = NETZ.knoten_typen[NETZ.knoten_merkmale[i + 1]][0] === AMPEL ? 1 : 0;
+  const tt = NETZ.knoten_typen[NETZ.knoten_merkmale[i + 1]];
+  querungKnoten[k] = tt[KN('querung')];
+  bordsteinHoch[k] = tt[KN('bordstein')] === code('bordstein', 'hoch') ? 1 : 0;
+  barriere[k] = tt[KN('barriere')];
 }
+const AMPEL = code('querung', 'ampel');
+
 // Nachbarschaft als kompakte Liste (CSR): je Knoten die Kanten, die ihn beruehren
 const adjStart = new Int32Array(nK + 1), adjKante = new Int32Array(2 * nE);
 for (let e = 0; e < nE; e++) { adjStart[von[e] + 1]++; adjStart[nach[e] + 1]++; }
@@ -84,28 +160,36 @@ for (let i = 0; i < nK; i++) adjStart[i + 1] += adjStart[i];
   const pos = adjStart.slice(0, nK);
   for (let e = 0; e < nE; e++) { adjKante[pos[von[e]]++] = e; adjKante[pos[nach[e]]++] = e; }
 }
+// Je Knoten: wie viele Haupt-/Sammelstrassen-Kanten ihn beruehren, eine davon als Bezugsrichtung
+const hauptGrad = new Uint8Array(nK), hauptBezug = new Int32Array(nK).fill(-1);
+for (let k = 0; k < nK; k++) {
+  for (let i = adjStart[k]; i < adjStart[k + 1]; i++) {
+    const e = adjKante[i];
+    if (TYPEN[typ[e]].haupt) { hauptGrad[k]++; if (hauptBezug[k] < 0) hauptBezug[k] = e; }
+  }
+}
+const anderes = (e, k) => (von[e] === k ? nach[e] : von[e]);
+// Seite des Punktes q, von a in Richtung b gesehen: 0 links, 1 rechts
+const seite = (a, b, qx, qy) => ((kx[b] - kx[a]) * (qy - ky[a]) - (ky[b] - ky[a]) * (qx - kx[a]) > 0 ? 0 : 1);
 
 /* Gitter fuer „naechster Punkt“: Kanten (zum Einrasten) und Baenke */
 const MASCHE = 50;
 const schluessel = (i, j) => i * 100003 + j;
-function gitterKanten() {
-  const g = new Map();
-  for (let e = 0; e < nE; e++) {
-    if (istGesperrt[typ[e]]) continue;
-    const a = von[e], b = nach[e];
-    for (let i = Math.floor(Math.min(kx[a], kx[b]) / MASCHE); i <= Math.floor(Math.max(kx[a], kx[b]) / MASCHE); i++) {
-      for (let j = Math.floor(Math.min(ky[a], ky[b]) / MASCHE); j <= Math.floor(Math.max(ky[a], ky[b]) / MASCHE); j++) {
-        const s = schluessel(i, j);
-        if (!g.has(s)) g.set(s, []);
-        g.get(s).push(e);
-      }
+const kantenGitter = new Map();
+for (let e = 0; e < nE; e++) {
+  if (TYPEN[typ[e]].gesperrt) continue;
+  const a = von[e], b = nach[e];
+  for (let i = Math.floor(Math.min(kx[a], kx[b]) / MASCHE); i <= Math.floor(Math.max(kx[a], kx[b]) / MASCHE); i++) {
+    for (let j = Math.floor(Math.min(ky[a], ky[b]) / MASCHE); j <= Math.floor(Math.max(ky[a], ky[b]) / MASCHE); j++) {
+      const s = schluessel(i, j);
+      if (!kantenGitter.has(s)) kantenGitter.set(s, []);
+      kantenGitter.get(s).push(e);
     }
   }
-  return g;
 }
-const kantenGitter = gitterKanten();
 
-function naechsteKante(x, y) {
+/* Naechste Kante, die fuer diese Person begehbar ist (endliche Kosten). */
+function naechsteKante(x, y, kosten) {
   const ci = Math.floor(x / MASCHE), cj = Math.floor(y / MASCHE);
   let best = { d: EINRASTEN_M, e: -1, f: 0 };
   for (let r = 0; r <= EINRASTEN_M / MASCHE + 1; r++) {
@@ -114,6 +198,7 @@ function naechsteKante(x, y) {
       for (let j = cj - r; j <= cj + r; j++) {
         if (Math.max(Math.abs(i - ci), Math.abs(j - cj)) !== r) continue;
         for (const e of kantenGitter.get(schluessel(i, j)) || []) {
+          if (kosten && kosten[e] === Infinity) continue;
           const a = von[e], b = nach[e];
           const dx = kx[b] - kx[a], dy = ky[b] - ky[a], q = dx * dx + dy * dy;
           const f = q === 0 ? 0 : Math.max(0, Math.min(1, ((x - kx[a]) * dx + (y - ky[a]) * dy) / q));
@@ -154,25 +239,39 @@ const ohneBank = new Uint8Array(nE).fill(1);
 /* Orte je Kategorie */
 const KAT = {};
 ORTE.kategorien.forEach((k, i) => { KAT[k.id] = { ...k, nr: i, orte: [] }; });
-ORTE.orte.forEach((o, i) => { const k = ORTE.kategorien[o[0]].id; KAT[k].orte.push(i); });
+ORTE.orte.forEach((o, i) => { KAT[ORTE.kategorien[o[0]].id].orte.push(i); });
+const HBF = (() => {
+  const o = KAT.bahnhof.orte.map((i) => ORTE.orte[i]).find((x) => /hbf|hauptbahnhof/i.test(x[1]));
+  return o ? { lat: o[2], lon: o[3] } : { lat: 48.74439, lon: 11.43741 };
+})();
 
 /* ----------------------------------------------------------- Wegsuche */
-function gewichte(person) {
+function gewichte(person, bed) {
   const p = PERSONEN[person], v = p.kmh / 3.6;
   const kante = new Float32Array(nE), knoten = new Float32Array(nK);
   for (let e = 0; e < nE; e++) {
-    const tt = typ[e];
-    if (istGesperrt[tt]) { kante[e] = Infinity; continue; }
+    const m = TYPEN[typ[e]];
+    if (m.gesperrt || (m.treppe && p.treppe_s === null) || (p.hindernisse_gesperrt && m.rollstuhlNein)
+      || (p.gehweg_noetig && m.ohneGehweg) || (bed.nacht && m.dunkel && p.nachts_gesperrt)) { kante[e] = Infinity; continue; }
     let s = laenge[e] / v;
-    if (istTreppe[tt]) s += p.treppe_s;
+    if (p.faktor_unbefestigt && m.unbefestigt) s *= p.faktor_unbefestigt;
+    if (p.faktor_pflaster && m.pflaster) s *= p.faktor_pflaster;
+    if (p.faktor_unbenannt && m.unbenannterPfad) s *= p.faktor_unbenannt;
+    if (p.faktor_unbenannt_zufahrt && m.unbenannteZufahrt) s *= p.faktor_unbenannt_zufahrt;
+    if (bed.nacht && m.dunkel) s *= BEDINGUNGEN.nacht.faktor_unbeleuchtet;
+    if (bed.hitze && !m.schatten) s *= BEDINGUNGEN.hitze.faktor_ohne_schatten;
+    if (m.treppe && p.treppe_s) s += p.treppe_s;
     if (p.bank_s && ohneBank[e]) s += laenge[e] / BANK_ABSTAND_M * p.bank_s;
     kante[e] = s;
   }
-  for (let i = 0; i < nK; i++) knoten[i] = ampel[i] ? p.ampel_s : 0;
-  return { v, kante, knoten };
+  for (let i = 0; i < nK; i++) {
+    knoten[i] = (p.hindernisse_gesperrt && (bordsteinHoch[i] || barriere[i])) ? Infinity
+      : querungKnoten[i] === AMPEL ? p.ampel_s : 0;
+  }
+  return { v, kante, knoten, abbiegen: !!p.nur_gesichert_queren };
 }
 
-class Haufen {   // Minimum-Heap fuer (Zeit, Knoten)
+class Haufen {   // Minimum-Heap fuer (Zeit, Nummer)
   constructor() { this.z = []; this.k = []; }
   get leer() { return this.z.length === 0; }
   rein(z, k) {
@@ -203,28 +302,80 @@ class Haufen {   // Minimum-Heap fuer (Zeit, Knoten)
   }
 }
 
-function suche(g, start, grenze) {
-  const zeit = new Float64Array(nK).fill(Infinity);
+/* Dijkstra ueber Knoten (alle Personen ohne Abbiegeregel). */
+function sucheKnoten(g, start, grenze) {
+  const zeit = new Float64Array(nK).fill(Infinity), besucht = [];
   const h = new Haufen();
   const e = start.e, a = von[e], b = nach[e], weg = start.d / g.v;
   zeit[a] = weg + start.f * g.kante[e];
-  zeit[b] = weg + (1 - start.f) * g.kante[e];
+  zeit[b] = Math.min(zeit[b], weg + (1 - start.f) * g.kante[e]);
   h.rein(zeit[a], a); h.rein(zeit[b], b);
   while (!h.leer) {
     const z = h.raus(), k = h.zuletzt;
     if (z > zeit[k]) continue;
+    besucht.push(k);
     for (let i = adjStart[k]; i < adjStart[k + 1]; i++) {
       const kante = adjKante[i], m = von[kante] === k ? nach[kante] : von[kante];
       const nz = z + g.kante[kante] + g.knoten[m];
       if (nz < zeit[m] && nz <= grenze) { zeit[m] = nz; h.rein(nz, m); }
     }
   }
-  return zeit;
+  return { zeit, besucht };
 }
 
-function naechsteOrte(g, zeit) {
+/* Dijkstra ueber gerichtete Kanten mit Strassenseite (Kind). Haupt- und
+   Sammelstrassen sind oft nur als Mittellinie eingetragen; wer auf ihr
+   entlanggeht, ist auf einer Seite (links/rechts der Laufrichtung). Auf die
+   andere Seite wechseln — also die Strasse queren — darf das Kind nur an einem
+   Knoten mit Ampel oder Zebrastreifen; danach ist die Seite frei waehlbar.
+   Zustand: (Kante, Richtung, Seite), Seite 0 links, 1 rechts, 2 frei/abseits. */
+function sucheKanten(g, start, grenze, sx, sy) {
+  const zs = new Float64Array(6 * nE).fill(Infinity);
+  const zeit = new Float64Array(nK).fill(Infinity), besucht = [];
+  const h = new Haufen();
+  const rein = (e, rueck, sei, z) => {   // rueck 0: bei nach[e] angekommen, 1: bei von[e]
+    const s = (2 * e + rueck) * 3 + sei;
+    if (z < zs[s] && z <= grenze) { zs[s] = z; h.rein(z, s); }
+  };
+  const e0 = start.e, weg = start.d / g.v, haupt0 = TYPEN[typ[e0]].haupt;
+  const s0 = haupt0 ? seite(von[e0], nach[e0], sx, sy) : 2;
+  rein(e0, 0, s0, weg + (1 - start.f) * g.kante[e0]);
+  rein(e0, 1, s0 === 2 ? 2 : 1 - s0, weg + start.f * g.kante[e0]);
+  while (!h.leer) {
+    const z = h.raus(), s = h.zuletzt;
+    if (z > zs[s]) continue;
+    const sei = s % 3, ed = (s - sei) / 3, e = ed >> 1, n = ed & 1 ? von[e] : nach[e], vor = anderes(e, n);
+    if (z < zeit[n]) { if (zeit[n] === Infinity) besucht.push(n); zeit[n] = z; }
+    const te = TYPEN[typ[e]], knotenFrei = GESICHERT.has(querungKnoten[n]);
+    for (let i = adjStart[n]; i < adjStart[n + 1]; i++) {
+      const f = adjKante[i];
+      if (f === e) continue;
+      const nz = z + g.kante[f], m = anderes(f, n);
+      if (nz === Infinity) continue;
+      const tf = TYPEN[typ[f]], frei = knotenFrei || te.gesicherteQuerung || tf.gesicherteQuerung;
+      let neu = 2;
+      if (!te.haupt && !tf.haupt) {
+        // ueber einen Strassenknoten hinweg: nur auf derselben Seite der Strasse
+        if (hauptGrad[n] && !frei) {
+          const r = hauptBezug[n], b = anderes(r, n);
+          if (seite(n, b, kx[vor], ky[vor]) !== seite(n, b, kx[m], ky[m])) continue;
+        }
+      } else if (!te.haupt && tf.haupt) {
+        neu = frei ? 2 : seite(n, m, kx[vor], ky[vor]);           // von der Seite, aus der man kommt
+      } else if (te.haupt && tf.haupt) {
+        neu = frei || sei === 2 ? 2 : hauptGrad[n] === 2 ? sei : seite(n, m, kx[vor], ky[vor]);
+      } else if (!frei && sei !== 2 && seite(vor, n, kx[m], ky[m]) !== sei) {
+        continue;                                                  // Abbiegen auf die andere Strassenseite
+      }
+      rein(f, von[f] === n ? 0 : 1, neu, nz + g.knoten[m]);
+    }
+  }
+  return { zeit, besucht };
+}
+
+function naechsteOrte(g, zeit, ziele) {
   const aus = {};
-  for (const kat of LISTE) {
+  for (const kat of ziele) {
     let best = null;
     for (const oi of KAT[kat].orte) {
       const o = ORTE.orte[oi];
@@ -238,87 +389,196 @@ function naechsteOrte(g, zeit) {
   return aus;
 }
 
-/* Erreichbare Flaeche: Kanten alle 10 m abtasten, jede Probe faerbt die Zellen
-   bis PUFFER_M daneben, mit dem Fussweg dorthin als Zuschlag. */
-function flaeche(g, zeit, sx, sy) {
+/* ------------------------------------------------------------ Flaechen
+   Ein gemeinsames Raster um den Startpunkt, gross genug fuer die schnellste
+   Person samt Puffer und Glaettung. */
+const R_MAX = 5.0 / 3.6 * STUFEN_MIN[2] * 60 + PUFFER_M + GLAETTEN_M + 4 * RASTER_M;
+const N = Math.ceil(2 * R_MAX / RASTER_M);
+const PUNKTE = (() => {   // Zellversatz im Puffer mit Abstand
+  const r = Math.ceil(PUFFER_M / RASTER_M), aus = [];
+  for (let dj = -r; dj <= r; dj++) for (let di = -r; di <= r; di++) {
+    const d = Math.hypot(di, dj) * RASTER_M;
+    if (d <= PUFFER_M) aus.push([di, dj, d]);
+  }
+  return aus;
+})();
+
+function zeitRaster(g, such, sx, sy) {
   const grenze = STUFEN_MIN[2] * 60;
-  const R = g.v * grenze + PUFFER_M + 2 * RASTER_M;
-  const x0 = sx - R, y1 = sy + R, n = Math.ceil(2 * R / RASTER_M);
-  const z = new Float32Array(n * n).fill(Infinity);
-  const r = Math.ceil(PUFFER_M / RASTER_M);
+  const x0 = sx - R_MAX, y1 = sy + R_MAX;
+  const z = new Float32Array(N * N).fill(Infinity);
   const tupfe = (x, y, t0) => {
     const ci = Math.floor((x - x0) / RASTER_M), cj = Math.floor((y1 - y) / RASTER_M);
-    for (let j = Math.max(0, cj - r); j <= Math.min(n - 1, cj + r); j++) {
-      const cy = y1 - (j + 0.5) * RASTER_M;
-      for (let i = Math.max(0, ci - r); i <= Math.min(n - 1, ci + r); i++) {
-        const d = Math.hypot(x0 + (i + 0.5) * RASTER_M - x, cy - y);
-        if (d > PUFFER_M) continue;
-        const tt = t0 + d / g.v, c = j * n + i;
-        if (tt < z[c]) z[c] = tt;
-      }
+    for (const [di, dj, d] of PUNKTE) {
+      const i = ci + di, j = cj + dj;
+      if (i < 0 || j < 0 || i >= N || j >= N) continue;
+      const tt = t0 + d / g.v, c = j * N + i;
+      if (tt < z[c]) z[c] = tt;
     }
   };
-  for (let e = 0; e < nE; e++) {
-    const a = von[e], b = nach[e], za = zeit[a], zb = zeit[b];
-    if ((za > grenze && zb > grenze) || g.kante[e] === Infinity) continue;
-    const ce = g.kante[e], schritte = Math.max(1, Math.ceil(Math.hypot(kx[b] - kx[a], ky[b] - ky[a]) / 10));
-    for (let s = 0; s <= schritte; s++) {
-      const f = s / schritte, tt = Math.min(za + f * ce, zb + (1 - f) * ce);
-      if (tt <= grenze) tupfe(kx[a] + f * (kx[b] - kx[a]), ky[a] + f * (ky[b] - ky[a]), tt);
+  const fertig = new Uint8Array(nE), { zeit } = such;
+  for (const k of such.besucht) {
+    for (let i = adjStart[k]; i < adjStart[k + 1]; i++) {
+      const e = adjKante[i];
+      if (fertig[e]) continue;
+      fertig[e] = 1;
+      const ce = g.kante[e];
+      if (ce === Infinity) continue;
+      const a = von[e], b = nach[e], za = zeit[a], zb = zeit[b];
+      const schritte = Math.max(1, Math.ceil(Math.hypot(kx[b] - kx[a], ky[b] - ky[a]) / 12));
+      for (let s = 0; s <= schritte; s++) {
+        const f = s / schritte, tt = Math.min(za + f * ce, zb + (1 - f) * ce);
+        if (tt <= grenze) tupfe(kx[a] + f * (kx[b] - kx[a]), ky[a] + f * (ky[b] - ky[a]), tt);
+      }
     }
   }
   tupfe(sx, sy, 0);
-  return { z, n, x0, y1 };
+  return { z, x0, y1 };
 }
 
-function zeichne(fl, leinwand) {
-  leinwand.width = fl.n; leinwand.height = fl.n;
-  const ctx = leinwand.getContext('2d'), bild = ctx.createImageData(fl.n, fl.n), d = bild.data;
-  for (let c = 0; c < fl.z.length; c++) {
-    const m = fl.z[c] / 60;
-    const st = m <= STUFEN_MIN[0] ? 0 : m <= STUFEN_MIN[1] ? 1 : m <= STUFEN_MIN[2] ? 2 : -1;
-    if (st < 0) continue;
-    d.set(FARBEN[st], c * 4);
+/* Quadrierter Abstand jeder Zelle zur naechsten Zelle mit maske == 1
+   (Felzenszwalb/Huttenlocher, zwei Durchlaeufe zu je einer Dimension). */
+const GROSS = 1e20;
+const _f = new Float64Array(N), _d = new Float64Array(N), _v = new Int32Array(N), _zz = new Float64Array(N + 1);
+function abstand1(n) {
+  let k = 0; _v[0] = 0; _zz[0] = -GROSS; _zz[1] = GROSS;
+  for (let q = 1; q < n; q++) {
+    let s = ((_f[q] + q * q) - (_f[_v[k]] + _v[k] * _v[k])) / (2 * q - 2 * _v[k]);
+    while (s <= _zz[k]) { k--; s = ((_f[q] + q * q) - (_f[_v[k]] + _v[k] * _v[k])) / (2 * q - 2 * _v[k]); }
+    k++; _v[k] = q; _zz[k] = s; _zz[k + 1] = GROSS;
   }
-  ctx.putImageData(bild, 0, 0);
+  k = 0;
+  for (let q = 0; q < n; q++) {
+    while (_zz[k + 1] < q) k++;
+    _d[q] = (q - _v[k]) * (q - _v[k]) + _f[_v[k]];
+  }
+}
+function abstand2(maske) {
+  const d = new Float64Array(N * N);
+  for (let i = 0; i < N; i++) {
+    for (let j = 0; j < N; j++) _f[j] = maske[j * N + i] ? 0 : GROSS;
+    abstand1(N);
+    for (let j = 0; j < N; j++) d[j * N + i] = _d[j];
+  }
+  for (let j = 0; j < N; j++) {
+    for (let i = 0; i < N; i++) _f[i] = d[j * N + i];
+    abstand1(N);
+    for (let i = 0; i < N; i++) d[j * N + i] = _d[i];
+  }
+  return d;
 }
 
-function ecken(fl) {
-  const x1 = fl.x0 + fl.n * RASTER_M, y0 = fl.y1 - fl.n * RASTER_M;
-  return [zuGeo(fl.x0, fl.y1), zuGeo(x1, fl.y1), zuGeo(x1, y0), zuGeo(fl.x0, y0)];
+/* Zusammenhaengende Gebiete (4er-Nachbarschaft) mit wert: zu kleine umschalten.
+   Bei Loechern zaehlen nur Gebiete, die den Rand nicht beruehren. */
+const _schlange = new Int32Array(N * N);
+function kleineGebiete(maske, wert, minZellen, behalte) {
+  const gesehen = new Uint8Array(N * N);
+  for (let s = 0; s < N * N; s++) {
+    if (gesehen[s] || maske[s] !== wert) continue;
+    let kopf = 0, ende = 0, rand = false, haltet = false;
+    _schlange[ende++] = s; gesehen[s] = 1;
+    while (kopf < ende) {
+      const c = _schlange[kopf++], i = c % N, j = (c / N) | 0;
+      if (i === 0 || j === 0 || i === N - 1 || j === N - 1) rand = true;
+      if (c === behalte) haltet = true;
+      if (i > 0 && !gesehen[c - 1] && maske[c - 1] === wert) { gesehen[c - 1] = 1; _schlange[ende++] = c - 1; }
+      if (i < N - 1 && !gesehen[c + 1] && maske[c + 1] === wert) { gesehen[c + 1] = 1; _schlange[ende++] = c + 1; }
+      if (j > 0 && !gesehen[c - N] && maske[c - N] === wert) { gesehen[c - N] = 1; _schlange[ende++] = c - N; }
+      if (j < N - 1 && !gesehen[c + N] && maske[c + N] === wert) { gesehen[c + N] = 1; _schlange[ende++] = c + N; }
+    }
+    if (ende < minZellen && !rand && !haltet) for (let k = 0; k < ende; k++) maske[_schlange[k]] = 1 - wert;
+  }
 }
 
-/* Umriss einer Stufe: Marching Squares auf den Zellmitten, als lose Linienstuecke. */
-function umriss(fl, grenzeS) {
-  const { z, n, x0, y1 } = fl, linien = [];
-  const w = (i, j) => Math.min(z[j * n + i], grenzeS * 3);
-  const pt = (i, j) => zuGeo(x0 + (i + 0.5) * RASTER_M, y1 - (j + 0.5) * RASTER_M);
-  const zw = (i1, j1, i2, j2) => {
-    const a = w(i1, j1), b = w(i2, j2), f = a === b ? 0.5 : (grenzeS - a) / (b - a);
-    const p = pt(i1, j1), q = pt(i2, j2);
-    return [p[0] + f * (q[0] - p[0]), p[1] + f * (q[1] - p[1])];
-  };
-  for (let j = 0; j < n - 1; j++) {
-    for (let i = 0; i < n - 1; i++) {
-      const fall = (w(i, j) <= grenzeS ? 8 : 0) | (w(i + 1, j) <= grenzeS ? 4 : 0)
-        | (w(i + 1, j + 1) <= grenzeS ? 2 : 0) | (w(i, j + 1) <= grenzeS ? 1 : 0);
-      if (fall === 0 || fall === 15) continue;
-      const oben = () => zw(i, j, i + 1, j), rechts = () => zw(i + 1, j, i + 1, j + 1);
-      const unten = () => zw(i, j + 1, i + 1, j + 1), links = () => zw(i, j, i, j + 1);
-      switch (fall) {
-        case 1: case 14: linien.push([links(), unten()]); break;
-        case 2: case 13: linien.push([unten(), rechts()]); break;
-        case 3: case 12: linien.push([links(), rechts()]); break;
-        case 4: case 11: linien.push([oben(), rechts()]); break;
-        case 6: case 9: linien.push([oben(), unten()]); break;
-        case 7: case 8: linien.push([links(), oben()]); break;
-        case 5: linien.push([links(), oben()], [unten(), rechts()]); break;
-        case 10: linien.push([oben(), rechts()], [links(), unten()]); break;
-        default: break;
-      }
+/* Maske glaetten: schliessen (Rand mit runden Ecken), kleine Loecher fuellen,
+   kleine Inseln weglassen. Die Insel mit dem Startpunkt bleibt immer. */
+function glaette(maske, startZelle) {
+  const r2 = (GLAETTEN_M / RASTER_M) ** 2;
+  const zu = abstand2(maske), dil = new Uint8Array(N * N);
+  for (let c = 0; c < N * N; c++) dil[c] = zu[c] <= r2 ? 0 : 1;   // dil = 1 heisst: ausserhalb der Erweiterung
+  const weg = abstand2(dil), aus = new Uint8Array(N * N);
+  for (let c = 0; c < N * N; c++) aus[c] = weg[c] > r2 ? 1 : 0;
+  const zelle = RASTER_M * RASTER_M;
+  kleineGebiete(aus, 0, LOCH_MIN_M2 / zelle, -1);
+  kleineGebiete(aus, 1, INSEL_MIN_M2 / zelle, startZelle);
+  return aus;
+}
+
+function stufenMasken(raster, grenzenS) {
+  const startZelle = Math.floor(N / 2) * N + Math.floor(N / 2);
+  const masken = grenzenS.map((g) => {
+    const m = new Uint8Array(N * N);
+    for (let c = 0; c < N * N; c++) m[c] = raster.z[c] <= g ? 1 : 0;
+    return glaette(m, startZelle);
+  });
+  for (let k = masken.length - 2; k >= 0; k--) {   // innere Stufe liegt immer in der aeusseren
+    for (let c = 0; c < N * N; c++) masken[k][c] &= masken[k + 1][c];
+  }
+  return masken;
+}
+
+const hexRGB = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
+
+/* Bild im Rastermass auf die Kartenleinwand: dreifach vergroessert und
+   weich gezeichnet, damit der Rand nicht in 12-m-Stufen erscheint. */
+const ROH = document.createElement('canvas');
+const AUFLOESUNG = 3;
+function aufLeinwand(leinwand, bild) {
+  ROH.width = N; ROH.height = N;
+  ROH.getContext('2d').putImageData(bild, 0, 0);
+  leinwand.width = N * AUFLOESUNG; leinwand.height = N * AUFLOESUNG;
+  const ctx = leinwand.getContext('2d');
+  ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high';
+  ctx.filter = 'blur(' + AUFLOESUNG * 0.6 + 'px)';
+  ctx.drawImage(ROH, 0, 0, leinwand.width, leinwand.height);
+  ctx.filter = 'none';
+}
+
+/* Schichten von unten nach oben ueber einander legen (Alpha-Mischung). */
+function male(leinwand, schichten) {
+  const bild = new ImageData(N, N), d = bild.data;
+  const r = new Float32Array(N * N), gg = new Float32Array(N * N), b = new Float32Array(N * N), a = new Float32Array(N * N);
+  for (const s of schichten) {
+    const [cr, cg, cb] = hexRGB(s.farbe), al = s.alpha;
+    for (let c = 0; c < N * N; c++) {
+      if (!s.maske[c]) continue;
+      const neu = al + a[c] * (1 - al);
+      r[c] = (cr * al + r[c] * a[c] * (1 - al)) / neu;
+      gg[c] = (cg * al + gg[c] * a[c] * (1 - al)) / neu;
+      b[c] = (cb * al + b[c] * a[c] * (1 - al)) / neu;
+      a[c] = neu;
     }
   }
-  return { type: 'Feature', properties: { minuten: grenzeS / 60 }, geometry: { type: 'MultiLineString', coordinates: linien } };
+  for (let c = 0; c < N * N; c++) {
+    if (!a[c]) continue;
+    d[4 * c] = r[c]; d[4 * c + 1] = gg[c]; d[4 * c + 2] = b[c]; d[4 * c + 3] = Math.round(a[c] * 255);
+  }
+  aufLeinwand(leinwand, bild);
+}
+
+/* Schichtbild: Jede Zelle zeigt die oberste (kleinste) Flaeche, die sie
+   bedeckt; jede Flaeche bekommt einen schmalen Rand in ihrer Farbe. So bleibt
+   die Mitte hell und jede Person auch dort sichtbar, wo Flaechen sich kreuzen. */
+function maleSchichten(leinwand, schichten) {
+  const bild = new ImageData(N, N), d = bild.data;
+  const setze = (c, rgb, al) => { d[4 * c] = rgb[0]; d[4 * c + 1] = rgb[1]; d[4 * c + 2] = rgb[2]; d[4 * c + 3] = Math.round(al * 255); };
+  for (const s of schichten) {
+    const rgb = hexRGB(s.farbe);
+    for (let c = 0; c < N * N; c++) if (s.maske[c]) setze(c, rgb, ALPHA_SCHICHT);
+  }
+  for (const s of schichten) {
+    const rgb = hexRGB(s.farbe), m = s.maske;
+    for (let j = 1; j < N - 1; j++) for (let i = 1; i < N - 1; i++) {
+      const c = j * N + i;
+      if (m[c] && (!m[c - 1] || !m[c + 1] || !m[c - N] || !m[c + N])) setze(c, rgb, ALPHA_RAND);
+    }
+  }
+  aufLeinwand(leinwand, bild);
+}
+
+function ecken(raster) {
+  const x1 = raster.x0 + N * RASTER_M, y0 = raster.y1 - N * RASTER_M;
+  return [zuGeo(raster.x0, raster.y1), zuGeo(x1, raster.y1), zuGeo(x1, y0), zuGeo(raster.x0, y0)];
 }
 
 /* -------------------------------------------------------------- Bezirke */
@@ -369,115 +629,174 @@ function adressVorschlaege(eingabe) {
 }
 
 /* ------------------------------------------------------------- Zustand */
-const zustand = { start: { lat: START.lat, lon: START.lon, name: START.name }, person: 'erwachsene', vergleich: false };
+const zustand = {
+  start: { lat: START.lat, lon: START.lon, name: START.name },
+  ansicht: 'eine', person: 'erwachsene', bed: { nacht: false, hitze: false },
+};
 let karte = null, kartenBereit = false, letztes = null;
+const leinwand = document.createElement('canvas');
+leinwand.width = leinwand.height = 1;
+
+function rechnePerson(person, sx, sy) {
+  const g = gewichte(person, zustand.bed);
+  const einstieg = naechsteKante(sx, sy, g.kante);
+  if (!einstieg) return null;
+  const grenze = STUFEN_MIN[2] * 60 + 1;
+  const such = g.abbiegen ? sucheKanten(g, einstieg, grenze, sx, sy) : sucheKnoten(g, einstieg, grenze);
+  return { g, such, raster: zeitRaster(g, such, sx, sy) };
+}
+
+function zieleVon(person) {
+  return PERSONEN[person].ziele.concat(zustand.bed.hitze ? ['trinkwasser'] : []);
+}
 
 function rechne() {
   const t0 = performance.now();
   const { lat, lon } = zustand.start;
   const [sx, sy] = zuXY(lat, lon);
-  const einstieg = naechsteKante(sx, sy);
   const bez = bezirkVon(lat, lon);
-  if (!einstieg) {
-    letztes = { fehler: true, bez };
-    zeigeListe();
-    zeichneKarte(null, null);
-    return;
+  if (zustand.ansicht === 'eine') {
+    const r = rechnePerson(zustand.person, sx, sy);
+    if (!r) {
+      letztes = { fehler: true, bez };
+    } else {
+      const masken = stufenMasken(r.raster, STUFEN_MIN.map((m) => m * 60));
+      const farbe = PERSONEN[zustand.person].farbe;
+      male(leinwand, masken.slice().reverse().map((m, k) => ({ maske: m, farbe, alpha: ALPHA_STUFEN[2 - k] })));
+      letztes = { bez, raster: r.raster, orte: naechsteOrte(r.g, r.such.zeit, zieleVon(zustand.person)) };
+    }
+  } else {
+    const schichten = [];
+    for (const p of REIHE) {
+      const r = rechnePerson(p, sx, sy);
+      if (!r) continue;
+      const maske = stufenMasken(r.raster, [STUFEN_MIN[2] * 60])[0];
+      let zellen = 0;
+      for (let c = 0; c < N * N; c++) zellen += maske[c];
+      schichten.push({ person: p, maske, farbe: PERSONEN[p].farbe, alpha: ALPHA_SCHICHT, km2: zellen * RASTER_M * RASTER_M / 1e6, raster: r.raster });
+    }
+    schichten.sort((a, b) => b.km2 - a.km2);   // groesste Flaeche unten
+    if (schichten.length) maleSchichten(leinwand, schichten);
+    letztes = schichten.length ? { bez, raster: schichten[0].raster, schichten } : { fehler: true, bez };
   }
-  const grenze = STUFEN_MIN[2] * 60 + 1;
-  const ergebnis = {};
-  const personen = zustand.vergleich && zustand.person !== 'erwachsene' ? [zustand.person, 'erwachsene'] : [zustand.person];
-  for (const p of personen) {
-    const g = gewichte(p), zeit = suche(g, einstieg, grenze);
-    ergebnis[p] = { orte: naechsteOrte(g, zeit), flaeche: flaeche(g, zeit, sx, sy) };
-  }
-  letztes = { ergebnis, personen, bez };
-  zeigeListe();
-  zeichneKarte(ergebnis[zustand.person].flaeche, personen[1] ? ergebnis[personen[1]].flaeche : null);
-  const ms = Math.round(performance.now() - t0);
-  $('panel').dataset.rechenzeitMs = String(ms);
+  zeigePanel();
+  zeichneKarte();
+  $('panel').dataset.rechenzeitMs = String(Math.round(performance.now() - t0));
 }
 
 const minText = (z) => Math.max(1, Math.ceil(z / 60 - 1e-9)) + ' Min';
+const katName = (kat) => (leicht ? NAMEN_LEICHT[kat] : KAT[kat].name);
+const personName = (p) => t(PERSONEN[p].name, PERSONEN[p].name_l);
 
-function zeigeListe() {
-  const ul = $('ziele');
-  ul.innerHTML = '';
+function zeigePanel() {
   const r = letztes;
   $('start-ort').textContent = zustand.start.name || t('Gewählter Punkt', 'Ihr Punkt');
   $('start-bezirk').textContent = r.bez
     ? t('Bezirk ' + r.bez.bezname, 'Stadt-Bezirk ' + r.bez.bezname)
     : t('außerhalb der Stadtbezirke', 'nicht in Ingolstadt');
+  const eine = zustand.ansicht === 'eine';
+  $('einzel').hidden = !eine;
+  $('schicht').hidden = eine;
+  document.querySelectorAll('[data-ansicht]').forEach((b) => b.setAttribute('aria-pressed', b.dataset.ansicht === zustand.ansicht ? 'true' : 'false'));
+  if (eine) zeigeListe(); else zeigeSchichten();
+  $('hinweis-bed').innerHTML = [
+    zustand.bed.nacht ? t('Nacht: Ob ein Weg beleuchtet ist, steht nur an etwa 3.200 von 17.000 Wegen. Pfade und Feldwege ohne Angabe gelten als dunkel.',
+      'Nachts: Die Karte weiß oft nicht, ob ein Weg Licht hat.') : '',
+    zustand.bed.hitze ? t('Hitze: Schatten ist aus Bäumen, Wald und Parks geschätzt; viele Straßenbäume fehlen in OpenStreetMap.',
+      'Hitze: Die Karte schätzt, wo Schatten ist.') : '',
+  ].filter(Boolean).join(' ');
+}
+
+function zeigeListe() {
+  const ul = $('ziele');
+  ul.innerHTML = '';
+  const r = letztes;
+  // Legende: so dunkel wie die uebereinanderliegenden Stufen auf der Karte
+  const [cr, cg, cb] = hexRGB(PERSONEN[zustand.person].farbe);
+  let a = 0;
+  for (let k = 2; k >= 0; k--) {
+    a = ALPHA_STUFEN[k] + a * (1 - ALPHA_STUFEN[k]);
+    $('leg-' + STUFEN_MIN[k]).style.background = 'rgba(' + cr + ',' + cg + ',' + cb + ',' + a.toFixed(2) + ')';
+  }
   if (r.fehler) {
     const li = document.createElement('li');
     li.className = 'ziel-fehler';
-    li.textContent = t('Hier ist kein Fußweg in der Nähe. Bitte einen Punkt näher an einer Straße wählen.',
+    li.textContent = t('Hier ist kein begehbarer Weg in der Nähe. Bitte einen Punkt näher an einer Straße wählen.',
       'Hier ist kein Weg. Bitte tippen Sie näher an eine Straße.');
     ul.appendChild(li);
-    $('ziele-kopf').hidden = true;
+    $('ziele-summe').textContent = '';
     return;
   }
-  const [p1, p2] = r.personen;
-  $('ziele-kopf').hidden = !p2;
-  if (p2) {
-    $('ziele-kopf-1').textContent = t(PERSONEN[p1].name, PERSONEN[p1].name_l);
-    $('ziele-kopf-2').textContent = t(PERSONEN[p2].name, PERSONEN[p2].name_l);
-  }
+  const ziele = zieleVon(zustand.person);
   let erreicht = 0;
-  for (const kat of LISTE) {
-    const a = r.ergebnis[p1].orte[kat], b = p2 ? r.ergebnis[p2].orte[kat] : null;
+  for (const kat of ziele) {
+    const a = r.orte[kat];
     if (a) erreicht++;
     const li = document.createElement('li');
     li.className = a ? 'ziel' : 'ziel ziel-fehlt';
     const name = document.createElement('span');
     name.className = 'ziel-kat';
-    name.textContent = leicht ? NAMEN_LEICHT[kat] : KAT[kat].name;
+    name.textContent = katName(kat);
     const was = document.createElement('span');
     was.className = 'ziel-was';
-    was.textContent = a ? (ORTE.orte[a.oi][1] || (leicht ? NAMEN_LEICHT[kat] : KAT[kat].name)) : t('nicht in 15 Min', 'nicht in 15 Minuten');
+    was.textContent = a ? (ORTE.orte[a.oi][1] || katName(kat)) : t('nicht in 15 Min', 'nicht in 15 Minuten');
     const min = document.createElement('span');
     min.className = 'ziel-min';
     min.textContent = a ? minText(a.z) : '–';
     li.append(name, was, min);
-    if (p2) {
-      const m2 = document.createElement('span');
-      m2.className = 'ziel-min ziel-min-2';
-      m2.textContent = b ? minText(b.z) : '–';
-      li.appendChild(m2);
-    }
     ul.appendChild(li);
   }
   $('ziele-summe').textContent = t(
-    erreicht + ' von ' + LISTE.length + ' Alltagszielen liegen in 15 Minuten (' + PERSONEN[p1].name + ').',
-    erreicht + ' von ' + LISTE.length + ' Zielen sind nah. Nah heißt: in 15 Minuten zu Fuß.');
+    erreicht + ' von ' + ziele.length + ' Zielen liegen in 15 Minuten (' + personName(zustand.person) + ').',
+    erreicht + ' von ' + ziele.length + ' Zielen sind nah. Nah heißt: in 15 Minuten zu Fuß.');
+}
+
+function zeigeSchichten() {
+  const ul = $('schichten');
+  ul.innerHTML = '';
+  const r = letztes;
+  if (r.fehler) {
+    ul.innerHTML = '<li class="ziel-fehler">' + t('Hier ist kein begehbarer Weg in der Nähe.', 'Hier ist kein Weg.') + '</li>';
+    return;
+  }
+  const flaeche = Object.fromEntries(r.schichten.map((s) => [s.person, s.km2]));
+  for (const p of REIHE) {
+    const li = document.createElement('li');
+    const farbe = document.createElement('i');
+    farbe.style.background = PERSONEN[p].farbe;
+    const text = document.createElement('span');
+    text.innerHTML = '<strong>' + personName(p) + '</strong> ' + t(PERSONEN[p].warum, PERSONEN[p].warum_l);
+    const km = document.createElement('span');
+    km.className = 'schicht-km';
+    km.textContent = flaeche[p] !== undefined ? flaeche[p].toLocaleString('de-DE', { maximumFractionDigits: 1, minimumFractionDigits: 1 }) + ' km²' : '–';
+    li.append(farbe, text, km);
+    ul.appendChild(li);
+  }
 }
 
 /* --------------------------------------------------------------- Karte */
-const leinwand = document.createElement('canvas');
-leinwand.width = leinwand.height = 1;
-
-function zeichneKarte(fl, vergleich) {
+function zeichneKarte() {
   if (!kartenBereit) return;
-  const startPunkt = { type: 'Feature', geometry: { type: 'Point', coordinates: [zustand.start.lon, zustand.start.lat] }, properties: {} };
-  karte.getSource('start').setData({ type: 'FeatureCollection', features: [startPunkt] });
+  karte.getSource('start').setData({ type: 'FeatureCollection', features: [
+    { type: 'Feature', geometry: { type: 'Point', coordinates: [zustand.start.lon, zustand.start.lat] }, properties: {} }] });
   const orte = [];
-  if (letztes && letztes.ergebnis) {
-    const r = letztes.ergebnis[zustand.person].orte;
-    for (const kat of LISTE) {
-      if (!r[kat]) continue;
-      const o = ORTE.orte[r[kat].oi];
+  if (letztes && letztes.orte) {
+    for (const kat of zieleVon(zustand.person)) {
+      const a = letztes.orte[kat];
+      if (!a) continue;
+      const o = ORTE.orte[a.oi];
       orte.push({ type: 'Feature', geometry: { type: 'Point', coordinates: [o[3], o[2]] },
-        properties: { name: (leicht ? NAMEN_LEICHT[kat] : KAT[kat].name) + (o[1] ? ': ' + o[1] : '') } });
+        properties: { name: katName(kat) + (o[1] ? ': ' + o[1] : '') } });
     }
   }
   karte.getSource('ziele').setData({ type: 'FeatureCollection', features: orte });
-  karte.getSource('umriss').setData({ type: 'FeatureCollection',
-    features: vergleich ? STUFEN_MIN.map((m) => umriss(vergleich, m * 60)) : [] });
-  const quelle = karte.getSource('flaeche');
-  if (!fl) { karte.setLayoutProperty('flaeche', 'visibility', 'none'); return; }
-  zeichne(fl, leinwand);
+  const wasser = zustand.bed.hitze ? KAT.trinkwasser.orte.map((i) => ORTE.orte[i]).map((o) => ({ type: 'Feature',
+    geometry: { type: 'Point', coordinates: [o[3], o[2]] }, properties: { name: katName('trinkwasser') + (o[1] ? ': ' + o[1] : '') } })) : [];
+  karte.getSource('wasser').setData({ type: 'FeatureCollection', features: wasser });
+  if (!letztes || letztes.fehler) { karte.setLayoutProperty('flaeche', 'visibility', 'none'); return; }
   karte.setLayoutProperty('flaeche', 'visibility', 'visible');
-  quelle.setCoordinates(ecken(fl));
+  const quelle = karte.getSource('flaeche');
+  quelle.setCoordinates(ecken(letztes.raster));
   quelle.play(); quelle.pause();   // statische Leinwand: einmal neu einlesen
 }
 
@@ -522,20 +841,19 @@ function baueKarte() {
     karte.addLayer({ id: 'bezirke-flaeche', type: 'fill', source: 'bezirke', paint: { 'fill-color': '#000', 'fill-opacity': 0 } }, vor);
     karte.addLayer({ id: 'bezirke-linie', type: 'line', source: 'bezirke',
       paint: { 'line-color': '#3d4f59', 'line-width': 1, 'line-opacity': 0.55, 'line-dasharray': [3, 2] } }, vor);
-    karte.addSource('umriss', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
-    karte.addLayer({ id: 'umriss', type: 'line', source: 'umriss', layout: { 'line-cap': 'round', 'line-join': 'round' },
-      paint: { 'line-color': UMRISS, 'line-width': ['match', ['get', 'minuten'], 15, 2.6, 1.4],
-        'line-dasharray': ['match', ['get', 'minuten'], 15, ['literal', [1, 0]], ['literal', [2, 1.5]]] } });
+    karte.addSource('wasser', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+    karte.addLayer({ id: 'wasser', type: 'circle', source: 'wasser',
+      paint: { 'circle-radius': 5, 'circle-color': '#1f8fd1', 'circle-stroke-color': '#fff', 'circle-stroke-width': 2 } });
     karte.addSource('ziele', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
     karte.addLayer({ id: 'ziele', type: 'circle', source: 'ziele',
       paint: { 'circle-radius': 5, 'circle-color': '#fff', 'circle-stroke-color': '#00263a', 'circle-stroke-width': 2 } });
     karte.addSource('start', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
     karte.addLayer({ id: 'start', type: 'circle', source: 'start',
-      paint: { 'circle-radius': 8, 'circle-color': UMRISS, 'circle-stroke-color': '#fff', 'circle-stroke-width': 3 } });
+      paint: { 'circle-radius': 8, 'circle-color': '#b00e2b', 'circle-stroke-color': '#fff', 'circle-stroke-width': 3 } });
 
     const tipp = new maplibregl.Popup({ closeButton: false, closeOnClick: false, className: 'karten-tipp', offset: 12 });
     karte.on('mousemove', (e) => {
-      const z = karte.queryRenderedFeatures(e.point, { layers: ['ziele'] })[0];
+      const z = karte.queryRenderedFeatures(e.point, { layers: ['ziele', 'wasser'] })[0];
       const b = z ? null : karte.queryRenderedFeatures(e.point, { layers: ['bezirke-flaeche'] })[0];
       const text = z ? z.properties.name : b ? t('Bezirk ' + b.properties.bezname, 'Stadt-Bezirk ' + b.properties.bezname) : '';
       if (text) tipp.setLngLat(e.lngLat).setText(text).addTo(karte); else tipp.remove();
@@ -543,7 +861,7 @@ function baueKarte() {
     karte.getCanvas().addEventListener('mouseleave', () => tipp.remove());
     karte.on('click', (e) => setzeStart(e.lngLat.lat, e.lngLat.lng, null));
     kartenBereit = true;
-    rechne();
+    zeichneKarte();
   });
 }
 
@@ -554,17 +872,25 @@ function setzeStart(lat, lon, name) {
 
 /* ------------------------------------------------------- Bedienelemente */
 function baueBedienung() {
-  document.querySelectorAll('input[name="person"]').forEach((r) => {
-    r.checked = r.value === zustand.person;
-    r.addEventListener('change', () => {
-      zustand.person = r.value;
-      $('vergleich').disabled = zustand.person === 'erwachsene';
-      if (zustand.person === 'erwachsene') { $('vergleich').checked = false; zustand.vergleich = false; }
-      rechne();
-    });
-  });
-  $('vergleich').disabled = true;
-  $('vergleich').addEventListener('change', (e) => { zustand.vergleich = e.target.checked; rechne(); });
+  const wahl = $('personen');
+  for (const p of REIHE) {
+    const label = document.createElement('label');
+    const r = document.createElement('input');
+    r.type = 'radio'; r.name = 'person'; r.value = p; r.checked = p === zustand.person;
+    r.addEventListener('change', () => { zustand.person = p; rechne(); });
+    const farbe = document.createElement('i');
+    farbe.className = 'punkt'; farbe.style.background = PERSONEN[p].farbe;
+    const text = document.createElement('span');
+    text.dataset.person = p;
+    label.append(r, farbe, text);
+    wahl.appendChild(label);
+  }
+  document.querySelectorAll('[data-ansicht]').forEach((b) => b.addEventListener('click', () => {
+    zustand.ansicht = b.dataset.ansicht; rechne();
+  }));
+  for (const k of Object.keys(zustand.bed)) {
+    $('bed-' + k).addEventListener('change', (e) => { zustand.bed[k] = e.target.checked; rechne(); });
+  }
 
   const feld = $('adresse'), vorschlag = $('vorschlaege');
   let aktuell = [];
@@ -590,6 +916,10 @@ function baueBedienung() {
     if (e.key === 'Escape') { vorschlag.hidden = true; }
   });
 
+  $('hbf').addEventListener('click', () => {
+    setzeStart(HBF.lat, HBF.lon, t('Hauptbahnhof', 'Haupt-Bahnhof'));
+    if (karte) karte.easeTo({ center: [HBF.lon, HBF.lat], zoom: Math.max(karte.getZoom(), 13.6) });
+  });
   $('standort').addEventListener('click', () => {
     const meldung = $('standort-meldung');
     if (!navigator.geolocation) { meldung.textContent = t('Ihr Browser kann den Standort nicht bestimmen.', 'Das geht mit Ihrem Browser nicht.'); return; }
@@ -618,70 +948,92 @@ const TEXTE = {
   },
   h1: { n: 'Deine 15 Minuten', l: 'Deine 15 Minuten' },
   lede: {
-    n: 'Was erreichen Sie von Ihrer Haustür aus zu Fuß in 5, 10 und 15 Minuten? Und was erreicht jemand, der langsamer geht und öfter rasten muss? Klicken Sie auf die Karte, suchen Sie eine Adresse oder nehmen Sie Ihren Standort.',
-    l: 'Wie weit kommen Sie zu Fuß? In 5 Minuten, in 10 Minuten, in 15 Minuten. Das zeigt die Karte. Tippen Sie auf die Karte. Oder suchen Sie Ihre Adresse.',
+    n: 'Dieselben 15 Minuten sind für ein Kind, eine ältere Frau, einen Vater mit Kinderwagen und eine Besucherin vier verschiedene Städte. Wählen Sie einen Punkt und sehen Sie, wie weit wer zu Fuß kommt, auch nachts oder bei Hitze.',
+    l: 'Wie weit kommen Sie zu Fuß in 15 Minuten? Das ist für jeden Menschen anders. Kinder kommen weniger weit. Ältere Menschen auch. Tippen Sie auf die Karte. Oder suchen Sie Ihre Adresse.',
   },
   'start-h': { n: 'Startpunkt', l: 'Wo starten Sie?' },
   'adresse-label': { n: 'Adresse suchen', l: 'Ihre Adresse' },
   standort: { n: 'Mein Standort', l: 'Mein Standort' },
+  hbf: { n: 'Ab Hauptbahnhof', l: 'Ab Haupt-Bahnhof' },
   'start-tipp': { n: 'Oder auf die Karte klicken bzw. tippen.', l: 'Oder tippen Sie auf die Karte.' },
+  'ansicht-eine': { n: 'Eine Person', l: 'Eine Person' },
+  'ansicht-alle': { n: 'Alle Personen', l: 'Alle Personen' },
   'person-h': { n: 'Wer geht?', l: 'Wer geht zu Fuß?' },
-  'person-erwachsene': { n: 'Erwachsene (5 km/h)', l: 'Erwachsene' },
-  'person-aeltere': { n: 'Ältere Person (3,2 km/h, mit Pausen)', l: 'Ältere Menschen. Sie gehen langsamer.' },
-  'vergleich-label': { n: 'Mit Erwachsenen vergleichen', l: 'Mit Erwachsenen vergleichen' },
+  'bed-h': { n: 'Bedingungen', l: 'Wann?' },
+  'bed-nacht-label': { n: 'Nacht', l: 'In der Nacht' },
+  'bed-hitze-label': { n: 'Hitze', l: 'Wenn es heiß ist' },
   'legende-5': { n: '5 Min', l: '5 Minuten' },
   'legende-10': { n: '10 Min', l: '10 Minuten' },
   'legende-15': { n: '15 Min', l: '15 Minuten' },
-  'legende-umriss': { n: 'Erwachsene (Vergleich)', l: 'So weit kommen Erwachsene' },
   'ziele-h': { n: 'Was liegt in Reichweite?', l: 'Was ist in der Nähe?' },
   'ziele-fuss': {
     n: 'Gehminuten zum nächsten Ort, aufgerundet. Der Weg vom Startpunkt bis zum nächsten Weg zählt mit.',
     l: 'So viele Minuten gehen Sie bis dorthin.',
   },
+  'schicht-h': { n: 'Wie weit kommt wer in 15 Minuten?', l: 'Wie weit kommt wer in 15 Minuten?' },
+  'schicht-fuss': {
+    n: 'Jede Farbe ist die Fläche einer Person. Die größte liegt unten, die kleinste oben. km²: Größe der Fläche.',
+    l: 'Jede Farbe zeigt einen Menschen. Je kleiner die Farbe, desto weniger weit kommt er.',
+  },
   'wie-h2': { n: 'So rechnet die Karte', l: 'So rechnet die Karte' },
   'wie-p1': {
-    n: 'Grundlage ist das Fußwegenetz aus OpenStreetMap: Gehwege, Pfade, Treppen und alle Straßen außer Autobahnen und Kraftfahrstraßen. Ihr Browser sucht von Ihrem Startpunkt aus die kürzesten Wege, wie ein Navigationsgerät, nur rückwärts in alle Richtungen. Wege, auf denen Fußgänger ausdrücklich nicht gehen dürfen, bleiben gesperrt.',
+    n: 'Grundlage ist das Fußwegenetz aus OpenStreetMap: Gehwege, Pfade, Treppen und alle Straßen außer Autobahnen und Kraftfahrstraßen. Ihr Browser sucht von Ihrem Startpunkt aus die kürzesten Wege, wie ein Navigationsgerät, nur in alle Richtungen zugleich. Wege, auf denen Fußgänger ausdrücklich nicht gehen dürfen, bleiben für alle gesperrt.',
     l: 'Die Karte kennt alle Fuß-Wege in Ingolstadt. Ihr Handy oder Computer rechnet: Wie lange dauert der kürzeste Weg? Das passiert nur auf Ihrem Gerät.',
   },
   'wie-p2': {
-    n: 'Jede Person bekommt eigene Werte. Die Tabelle zeigt sie; es sind Startwerte, die sich an Fachliteratur zu Gehgeschwindigkeiten orientieren und keine Messung in Ingolstadt.',
+    n: 'Jede Person bekommt eigene Werte. Es sind Startwerte, angelehnt an Fachliteratur zu Gehgeschwindigkeiten, keine Messung in Ingolstadt. „×1,5“ heißt: Ein solcher Weg dauert anderthalbmal so lang.',
     l: 'Menschen gehen verschieden schnell. Das steht in der Tabelle.',
   },
   'wie-p3': {
-    n: 'Die farbige Fläche reicht bis 40 Meter neben den erreichten Wegen: so weit, wie man von einem Weg bis zu einer Haustür ungefähr geht.',
+    n: 'Die Fläche reicht bis 40 Meter neben die erreichten Wege. Danach wird sie geglättet: Lücken zwischen Straßen bis etwa 140 Meter schließen sich, Ecken werden rund, Löcher unter 4 Hektar füllen sich, Inseln unter 1 Hektar fallen weg. So zeigt die Karte ein Viertel statt eines Straßenabdrucks. Die Minuten in der Liste sind davon unberührt.',
     l: 'Die Farbe zeigt: Bis hier kommen Sie.',
   },
   'luecken-h2': { n: 'Was die Karte nicht weiß', l: 'Was die Karte nicht weiß' },
   'luecken-liste': {
     n: '<li><strong>Fehlende Orte:</strong> Nur was in OpenStreetMap steht, kommt vor. Von den Ingolstädter Grundschulen sind dort nur 14 als solche erkennbar, viele Arztpraxen ohne Fachrichtung; Praxen ohne Angabe zählen hier als Hausarzt.</li>' +
       '<li><strong>Stadtgrenze:</strong> Orte in Nachbargemeinden, etwa ein Supermarkt in Gaimersheim, fehlen. Am Stadtrand sieht die Lage deshalb schlechter aus, als sie ist.</li>' +
+      '<li><strong>Kind:</strong> Die Karte erkennt eine Querung nur an Knoten, an denen ein Weg eine Haupt- oder Sammelstraße kreuzt. Wo eine Straße nur als Mittellinie eingetragen ist, kann sie das Queren übersehen. Ob es einen Gehweg gibt, steht nur an rund 2.000 Straßen; ohne Angabe nimmt die Karte einen an.</li>' +
+      '<li><strong>Rollstuhl und Kinderwagen:</strong> Ob ein Weg befahrbar ist, steht nur an 86 Wegen, hohe Bordsteine an wenigen Stellen. Treppen sind dagegen fast vollständig eingetragen. Aufzüge an Unterführungen fehlen meist.</li>' +
+      '<li><strong>Nacht:</strong> Beleuchtung steht nur an etwa 3.200 von 17.000 Wegen. Ohne Angabe gelten Straßen und Gehwege als hell, Pfade und Feldwege als dunkel.</li>' +
+      '<li><strong>Hitze:</strong> Schatten ist geschätzt: Ein Weg gilt als schattig, wenn er durch Wald oder Park führt oder nah an eingetragenen Bäumen. Viele Straßenbäume fehlen in OpenStreetMap; Trinkwasserbrunnen sind dort nur 8 eingetragen.</li>' +
       '<li><strong>Öffnungszeiten:</strong> Die Karte rechnet, als hätte alles offen.</li>' +
-      '<li><strong>Bänke und Ampeln:</strong> Sitzbänke sind in OpenStreetMap lückenhaft; wo keine eingetragen ist, rechnet die Karte für ältere Menschen mit Pausen. Ampeln zählen, wo sie eingetragen sind.</li>' +
-      '<li><strong>Steigungen und Wetter:</strong> Ingolstadt ist flach; Brückenrampen, Dunkelheit und Hitze kommen in einer späteren Ausbaustufe dazu.</li>',
+      '<li><strong>Bänke und Ampeln:</strong> Sitzbänke sind lückenhaft; wo keine eingetragen ist, rechnet die Karte für ältere Menschen mit Pausen. Ampeln zählen, wo sie eingetragen sind.</li>',
     l: '<li>Manche Orte fehlen auf der Karte. Zum Beispiel Schulen oder Ärzte.</li>' +
       '<li>Orte außerhalb von Ingolstadt fehlen.</li>' +
-      '<li>Die Karte weiß nicht, wann ein Geschäft offen ist.</li>' +
-      '<li>Manche Bänke fehlen auf der Karte.</li>',
+      '<li>Die Karte weiß nicht überall, wo Licht ist. Und wo Schatten ist.</li>' +
+      '<li>Die Karte weiß nicht überall, wo ein Rollstuhl fahren kann.</li>' +
+      '<li>Die Karte weiß nicht, wann ein Geschäft offen ist.</li>',
   },
-  'mithelfen': {
-    n: 'Fehlt etwas? Orte und Wege lassen sich in <a href="https://www.openstreetmap.org" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> selbst eintragen; nach dem nächsten Daten-Update erscheinen sie hier. Mehr zum Mitmachen auf der Seite <a href="beteiligen.html">Beteiligen</a>.',
+  mithelfen: {
+    n: 'Fehlt etwas? Orte und Wege lassen sich in <a href="https://www.openstreetmap.org" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> selbst eintragen, auch Beleuchtung, Gehwege und Bordsteine; nach dem nächsten Daten-Update erscheinen sie hier. Mehr zum Mitmachen auf der Seite <a href="beteiligen.html">Beteiligen</a>.',
     l: 'Fehlt etwas? Sie können es bei <a href="https://www.openstreetmap.org" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> eintragen. Mehr dazu auf der Seite <a href="beteiligen.html">Mitmachen</a>.',
   },
 };
 
+const zahlDE = (x) => x.toLocaleString('de-DE');
 function tabelle() {
+  const faktor = (x) => (x ? '×' + zahlDE(x) : '–');
   const zeilen = [
-    [t('Gehtempo', 'So schnell'), (p) => p.kmh.toLocaleString('de-DE') + ' km/h'],
+    [t('Gehtempo', 'So schnell'), (p) => zahlDE(p.kmh) + ' km/h'],
     [t('Ampel', 'Ampel'), (p) => '+' + p.ampel_s + ' s'],
-    [t('Treppe', 'Treppe'), (p) => (p.treppe_s ? '+' + p.treppe_s + ' s' : '–')],
+    [t('Treppe', 'Treppe'), (p) => (p.treppe_s === null ? t('gesperrt', 'geht nicht') : p.treppe_s ? '+' + p.treppe_s + ' s' : '–')],
     [t('Ohne Bank', 'Keine Bank'), (p) => (p.bank_s ? '+' + p.bank_s + ' s je ' + BANK_ABSTAND_M + ' m' : '–')],
+    [t('Haupt- und Sammelstraßen queren', 'Über große Straßen'), (p) => (p.nur_gesichert_queren ? t('nur Ampel, Zebrastreifen', 'nur Ampel, Zebra-Streifen') : t('überall', 'überall'))],
+    [t('Große Straße ohne Gehweg', 'Große Straße ohne Geh-Weg'), (p) => (p.gehweg_noetig ? t('gesperrt', 'geht nicht') : '–')],
+    [t('Hoher Bordstein, Drängelgitter, „nicht rollstuhlgerecht“', 'Hoher Bord-Stein'), (p) => (p.hindernisse_gesperrt ? t('gesperrt', 'geht nicht') : '–')],
+    [t('Kies, Schotter, Erde', 'Kies-Weg'), (p) => faktor(p.faktor_unbefestigt)],
+    [t('Kopfsteinpflaster', 'Pflaster-Steine'), (p) => faktor(p.faktor_pflaster)],
+    [t('Fußweg oder Pfad ohne Namen', 'Weg ohne Namen'), (p) => faktor(p.faktor_unbenannt)],
+    [t('Zufahrt ohne Namen', 'Zufahrt ohne Namen'), (p) => faktor(p.faktor_unbenannt_zufahrt)],
+    [t('Nacht: unbeleuchteter Weg', 'Nachts: Weg ohne Licht'), (p) => (p.nachts_gesperrt ? t('gesperrt', 'geht nicht') : '×' + zahlDE(BEDINGUNGEN.nacht.faktor_unbeleuchtet))],
+    [t('Hitze: Weg ohne Schatten', 'Hitze: Weg ohne Schatten'), () => '×' + zahlDE(BEDINGUNGEN.hitze.faktor_ohne_schatten)],
   ];
-  const keys = Object.keys(PERSONEN);
-  let html = '<table class="werte"><thead><tr><th></th>' + keys.map((k) => '<th>' + t(PERSONEN[k].name, PERSONEN[k].name_l) + '</th>').join('') + '</tr></thead><tbody>';
-  for (const [label, f] of zeilen) html += '<tr><th>' + label + '</th>' + keys.map((k) => '<td>' + f(PERSONEN[k]) + '</td>').join('') + '</tr>';
-  html += '</tbody></table>';
+  let html = '<div class="tabelle-rahmen"><table class="werte"><thead><tr><th></th>' +
+    REIHE.map((k) => '<th><i class="punkt" style="background:' + PERSONEN[k].farbe + '"></i>' + personName(k) + '</th>').join('') + '</tr></thead><tbody>';
+  for (const [label, f] of zeilen) html += '<tr><th>' + label + '</th>' + REIHE.map((k) => '<td>' + f(PERSONEN[k]) + '</td>').join('') + '</tr>';
+  html += '</tbody></table></div>';
   $('werte').innerHTML = html + '<p class="fuss">' + t(
-    '„Ohne Bank“: auf Wegstücken, an denen in ' + BANK_NAEHE_M + ' m Umkreis keine Sitzbank eingetragen ist. Ampel: an jedem Knoten mit Fußgängerampel oder Ampelkreuzung. Diese Werte stehen oben in <code>wege.js</code>.',
+    '„Ohne Bank“: auf Wegstücken, an denen in ' + BANK_NAEHE_M + ' m Umkreis keine Sitzbank eingetragen ist. Ampel: an jedem Knoten mit Fußgängerampel oder Ampelkreuzung. Die Besucherin startet vom selben Punkt wie alle; „Ab Hauptbahnhof“ setzt den Startpunkt dorthin. Diese Werte stehen oben in <code>wege.js</code>.',
     'Die Werte sind geschätzt.') + '</p>';
 }
 
@@ -701,11 +1053,14 @@ function texteAnwenden() {
     const e = $('txt-' + id);
     if (e) e.innerHTML = TEXTE[id][leicht ? 'l' : 'n'];
   }
+  document.querySelectorAll('[data-person]').forEach((e) => {
+    const p = PERSONEN[e.dataset.person];
+    e.textContent = t(p.name + ' (' + zahlDE(p.kmh) + ' km/h)', p.name_l);
+  });
   $('adresse').placeholder = t('z. B. Theresienstraße 22', 'zum Beispiel: Theresienstraße 22');
   tabelle();
   quellen();
-  if (letztes) { zeigeListe(); zeichneKarte(letztes.ergebnis ? letztes.ergebnis[zustand.person].flaeche : null,
-    letztes.personen && letztes.personen[1] ? letztes.ergebnis[letztes.personen[1]].flaeche : null); }
+  if (letztes) { zeigePanel(); zeichneKarte(); }
 }
 
 /* ---------------------------------------------------------------- Start */
@@ -720,9 +1075,13 @@ if (!NETZ || !ORTE || !BEZ || !ADR || !window.pmtiles || !window.basemaps) {
     try { localStorage.setItem(LS_KEY_LEICHT, leicht ? '1' : '0'); } catch (err) { /* Storage kann gesperrt sein */ }
     texteAnwenden();
   });
-  texteAnwenden();
   baueBedienung();
+  texteAnwenden();
   rechne();       // Liste sofort, die Karte zeichnet nach, sobald sie geladen ist
   baueKarte();
-  window.WEGE_TEST = { setzeStart, rechne, zustand, karte: () => karte };   // fuer Pruefungen in der Vorschau
+  window.WEGE_TEST = {   // fuer Pruefungen in der Vorschau
+    setzeStart, rechne, zustand, PERSONEN, karte: () => karte,
+    zeiten: (person, lat, lon) => rechnePerson(person, ...zuXY(lat, lon)).such.zeit,
+    treppen: () => Array.from({ length: nE }, (_, e) => e).filter((e) => TYPEN[typ[e]].treppe).map((e) => [e, von[e], nach[e], zuGeo(kx[von[e]], ky[von[e]])]),
+  };   // fuer Pruefungen in der Vorschau
 }

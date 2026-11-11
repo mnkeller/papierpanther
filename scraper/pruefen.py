@@ -238,11 +238,30 @@ def p_wege():
         fehlt("wege-netz: Feldlaengen passen nicht zu knoten_anzahl/kanten_anzahl")
     if os.path.getsize(os.path.join(DATEN_VZ, "wege-netz.js")) > 2 * 1024 * 1024:
         fehlt("wege-netz.js ist groesser als 2 MB")
+    # wege.js rechnet Personen und Bedingungen aus diesen Feldern und Codes
+    for feld in ("klasse", "lit", "treppe", "oberflaeche", "gehweg", "querung", "schatten",
+                 "gesperrt", "rollstuhl", "benannt"):
+        if feld not in netz["kanten_felder"]:
+            fehlt(f"wege-netz: Kantenfeld {feld} fehlt (braucht wege.js)")
+    for feld in ("querung", "bordstein", "barriere"):
+        if feld not in netz["knoten_felder"]:
+            fehlt(f"wege-netz: Knotenfeld {feld} fehlt (braucht wege.js)")
+    codes = netz["codes"]
+    for feld, werte in (("klasse", ("sammelstrasse", "hauptstrasse", "fussweg", "pfad", "feldweg", "erschliessung")),
+                        ("querung", ("ampel", "zebrastreifen")), ("gehweg", ("nein", "separat")),
+                        ("lit", ("nein", "unbekannt")), ("oberflaeche", ("unbefestigt", "pflaster_grob")),
+                        ("rollstuhl", ("nein",)), ("bordstein", ("hoch",))):
+        for w in werte:
+            if w not in codes.get(feld, []):
+                fehlt(f"wege-netz: Code {feld}={w} fehlt (braucht wege.js)")
     n = netz["knoten_anzahl"]
     if any(o[5] and max(o[5]) >= n for o in orte["orte"]):
         fehlt("wege-orte: Einstiegsknoten ausserhalb des Netzes")
     pflicht = ("supermarkt", "apotheke", "hausarzt", "grundschule", "spielplatz", "haltestelle")
     zahl = {k["id"]: k["anzahl"] for k in orte["kategorien"]}
+    for k in ("bolzplatz", "eis", "bahnhof", "touristinfo", "cafe", "hotel", "kirche", "trinkwasser", "sitzbank"):
+        if zahl.get(k, 0) < 1:
+            warnt(f"wege-orte: keine Orte der Kategorie {k} (Zielliste einer Person in wege.js)")
     for k in pflicht:
         if zahl.get(k, 0) < 5:
             fehlt(f"wege-orte: nur {zahl.get(k, 0)} Orte der Kategorie {k}")

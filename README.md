@@ -169,10 +169,16 @@ python3 scraper/karte_bauen.py         # Grundkarte, nur selten (z. B. zweimal i
 ```
 
 Die Seite zeigt, was man von einem Punkt aus in 5, 10 und 15 Minuten zu Fuß
-erreicht, für Erwachsene und ältere Menschen, auf Wunsch übereinander. Die
-Wegsuche (Dijkstra) läuft in `wege.js` im Browser; die Werte je Person stehen
-oben in `wege.js` (`PERSONEN`) und werden auf der Seite als Tabelle gezeigt.
-Adresssuche und Standort bleiben im Browser.
+erreicht, für fünf Personen (Erwachsene, Kind, ältere Person, Rollstuhl oder
+Kinderwagen, Besucher:in) und unter zwei Bedingungen (Nacht, Hitze). Die
+Ansicht „Alle Personen“ legt die fünf 15-Minuten-Flächen als Schichtbild
+übereinander, die größte unten. Die Wegsuche (Dijkstra) läuft in `wege.js` im
+Browser; für das Kind über gerichtete Kanten mit Straßenseite, damit es Haupt-
+und Sammelstraßen nur an Ampel oder Zebrastreifen quert. Alle Werte je Person
+und Bedingung stehen oben in `wege.js` (`PERSONEN`, `BEDINGUNGEN`) und werden
+auf der Seite als Tabelle gezeigt. Die Flächen werden geglättet (Schließen mit
+70 m, Löcher unter 4 ha gefüllt, Inseln unter 1 ha weggelassen). Adresssuche
+und Standort bleiben im Browser.
 
 Alles kommt von der eigenen Domain, kein Kartendienst:
 
