@@ -47,3 +47,19 @@ Lizenzen
   beruht auf Daten von OpenStreetMap, © OpenStreetMap-Mitwirkende, verfügbar
   unter der Open Database License (ODbL) 1.0, https://www.openstreetmap.org/copyright.
   Gebäudehöhen sind dort, wo OpenStreetMap keine angibt, geschätzt.
+- Die Daten der Erreichbarkeitskarte „Deine 15 Minuten“ (`data/wege-netz.*`,
+  `data/wege-orte.*`, `data/wege-zellen.*`, erzeugt von `scraper/wege_bauen.py`):
+  - Fußwegenetz und Alltagsorte beruhen auf OpenStreetMap, © OpenStreetMap-
+    Mitwirkende, verfügbar unter der Open Database License (ODbL) 1.0,
+    https://www.openstreetmap.org/copyright. Die Dateien sind eine daraus
+    abgeleitete Datenbank und stehen ihrerseits unter der ODbL 1.0.
+  - Einwohnerzahlen und Altersanteile je 100-m-Gitterzelle: Zensus 2022,
+    © Statistische Ämter des Bundes und der Länder, 2024
+    (https://www.zensus2022.de, Gitterdaten über destatis.de).
+    „Vervielfältigung und Verbreitung, auch auszugsweise, mit Quellenangabe
+    gestattet.“ Die Gehminuten je Zelle sind eigene Berechnung.
+- Die Stadtbezirke in `data/bezirke.*` stammen von der Stadt Ingolstadt
+  (Stadtbezirke Ingolstadt, https://www.ingolstadt.de/openbydata/GIS/,
+  über open.bydata.de) unter der Lizenz Creative Commons Namensnennung 3.0
+  Deutschland (CC BY 3.0 DE), https://creativecommons.org/licenses/by/3.0/de/.
+  Verändert: von EPSG:25832 nach WGS84 umgerechnet und auf etwa 5 m vereinfacht.

@@ -199,6 +199,55 @@ def p_hsk(hsk):
         fehlt(f"hsk.json: {len(fehlerhaft)} URLs ausserhalb der erlaubten Hosts: {fehlerhaft[:5]}")
 
 
+WEGE_DATEIEN = ("wege-netz", "wege-orte", "wege-zellen", "bezirke")
+
+
+def p_wege():
+    """
+    Kontrollzahlen fuer die Erreichbarkeitskarte (scraper/wege_bauen.py).
+
+    Ein halber Overpass-Abruf oder ein falsch umgerechnetes Zensus-Gitter
+    liefert Dateien, die gut aussehen: weniger Knoten, Zellen ohne Bezirk,
+    zu wenige Einwohner. Deshalb die Groessenordnungen nachzaehlen.
+    """
+    da = [n for n in WEGE_DATEIEN if os.path.exists(os.path.join(DATEN_VZ, n + ".json"))]
+    if not da:
+        return
+    for n in WEGE_DATEIEN:
+        for endung in (".json", ".js"):
+            if not os.path.exists(os.path.join(DATEN_VZ, n + endung)):
+                fehlt(f"{n}{endung} fehlt (wege_bauen.py schreibt alle vier Dateien gemeinsam)")
+    if len(da) < len(WEGE_DATEIEN):
+        return
+    netz, orte, zellen, bezirke = (lade(n + ".json") for n in WEGE_DATEIEN)
+    if not 20000 <= netz["knoten_anzahl"] <= 200000:
+        fehlt(f"wege-netz: {netz['knoten_anzahl']} Knoten, erwartet 20.000 bis 200.000")
+    if len(netz["lat"]) != netz["knoten_anzahl"] or len(netz["von"]) != netz["kanten_anzahl"]:
+        fehlt("wege-netz: Feldlaengen passen nicht zu knoten_anzahl/kanten_anzahl")
+    if os.path.getsize(os.path.join(DATEN_VZ, "wege-netz.js")) > 2 * 1024 * 1024:
+        fehlt("wege-netz.js ist groesser als 2 MB")
+    n = netz["knoten_anzahl"]
+    if any(o[5] and max(o[5]) >= n for o in orte["orte"]):
+        fehlt("wege-orte: Einstiegsknoten ausserhalb des Netzes")
+    pflicht = ("supermarkt", "apotheke", "hausarzt", "grundschule", "spielplatz", "haltestelle")
+    zahl = {k["id"]: k["anzahl"] for k in orte["kategorien"]}
+    for k in pflicht:
+        if zahl.get(k, 0) < 5:
+            fehlt(f"wege-orte: nur {zahl.get(k, 0)} Orte der Kategorie {k}")
+    nrs = {int(f["properties"]["beznr"]) for f in bezirke["features"]}
+    if nrs != set(range(1, 13)):
+        fehlt(f"bezirke: Bezirksnummern {sorted(nrs)}, erwartet 1 bis 12")
+    ohne = sum(1 for b in zellen["bezirk"] if b not in nrs)
+    if ohne:
+        fehlt(f"wege-zellen: {ohne} Zellen ohne gueltigen Bezirk")
+    ew = sum(zellen["einwohner"])
+    if not 130000 <= ew <= 145000:
+        fehlt(f"wege-zellen: {ew} Einwohner, erwartet 130.000 bis 145.000")
+    for kat in pflicht:
+        if kat not in zellen["minuten"]["erwachsene"]:
+            fehlt(f"wege-zellen: keine Minuten fuer {kat}")
+
+
 def p_nur_oeffentliche_tops(kur, index):
     """
     Nicht-oeffentliche Tagesordnungspunkte duerfen nie kuratiert werden.
@@ -439,6 +488,7 @@ def main():
         p_hsk(lade("hsk.json"))
     if os.path.exists(os.path.join(DATEN_VZ, "antraege.json")):
         p_antraege_hosts(lade("antraege.json"))
+    p_wege()
     p_oberflaeche(feed)
     gruende = p_abdeckung(roh, feed["eintraege"])
 

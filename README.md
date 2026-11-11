@@ -52,6 +52,7 @@ scraper/
   themen_bauen.py     Kennzahlen für die Themen-Kacheln -> data/themen.js
   grafik_bauen.py     Daten der grafischen Fassung  -> data/grafik.js
   altstadt_bauen.py   Altstadt aus OpenStreetMap    -> data/altstadt.js
+  wege_bauen.py       Fußnetz, Orte, Zensus, Bezirke -> data/wege-*.js, data/bezirke.js
   .cache/             HTML-Cache, schont das Portal bei Wiederholläufen
 data/
   rohdaten.json       unveränderte Auslesung beider Quellen
@@ -158,6 +159,40 @@ und schreibt `data/hsk.json` + `data/hsk.js` (window.HSK_DATEN).
 Für eine Fortschreibung des HSK: neue Dokument-IDs in `DOK_IDS` eintragen,
 Seitenbereiche in `lies_anlage1`/`lies_anlage5` prüfen, `hsk_bericht.json`
 abgleichen.
+
+### Deine 15 Minuten (Erreichbarkeitskarte, im Aufbau)
+
+```bash
+python3 scraper/wege_bauen.py          # --neu holt OpenStreetMap und Bezirke frisch
+```
+
+Plan und Rechenmodell: [WEGE-KARTE-PLAN.md](WEGE-KARTE-PLAN.md). Phase 1 (nur
+Daten, noch keine Seite) schreibt je eine `.json` und `.js`:
+
+- `data/wege-netz` (window.WEGE_NETZ): Fußwegenetz aus OpenStreetMap, als
+  Differenzen gepackte Zahlenfelder. Jede Kante trägt Länge, Wegeklasse,
+  Beleuchtung, Treppe, Oberfläche, Gehweg, Querung, Schatten, Sperrung
+  (`foot=no` bleibt markiert im Netz), Rollstuhl, Name und Brücke/Tunnel;
+  Knoten tragen Querungsart, Bordstein und Barrieren. Zwischenpunkte ohne
+  Merkmal fallen weg, solange die Linie um höchstens 3 m abweicht. Nur die
+  größte zusammenhängende Komponente bleibt. Grenze: 2 MB als `.js`.
+- `data/wege-orte` (window.WEGE_ORTE): Alltagsorte in 26 Kategorien mit
+  Einstiegsknoten; Flächen (Parks, Spielplätze, Sportanlagen, Schulhöfe)
+  hängen über Randpunkte alle 20 m am Netz, nicht über ihren Mittelpunkt.
+- `data/wege-zellen` (window.WEGE_ZELLEN): bewohnte Zensus-2022-Zellen
+  (100 m) im Stadtgebiet mit Einwohnern, Anteil unter 18 und ab 65, Bezirk und
+  je Kategorie den Gehminuten zum nächsten und zweitnächsten Ort (Person
+  „Erwachsene“: 5 km/h, Ampel +30 s, aufgerundet, 255 = nicht in 60 Minuten).
+- `data/bezirke` (window.BEZIRKE): die 12 Stadtbezirke, auf etwa 5 m vereinfacht.
+
+Das Zensus-Gitter liegt in ETRS89-LAEA (EPSG:3035), die Bezirke der Stadt in
+UTM 32 (EPSG:25832). Beide Umrechnungen nach WGS84 stehen im Skript (mit
+Prüfwert aus der EPSG-Anleitung), ohne Zusatzbibliothek. Der erste Lauf lädt
+rund 60 MB Zensus-Zips und drei Overpass-Abfragen; alles bleibt in
+`scraper/.cache/wege/`. Am Ende druckt das Skript je Bezirk den Anteil der
+Einwohner, die Supermarkt, Apotheke, Hausarzt, Grundschule, Spielplatz und
+Haltestelle in 15 Minuten erreichen. `pruefen.py` zählt Knoten, Bezirke und
+Einwohner nach.
 
 ## Datenquelle
 
