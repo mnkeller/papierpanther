@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; worker-src 'self' blob:; child-src 'self' blob:; connect-src 'self' https://mnkeller.goatcounter.com; base-uri 'self'; form-action 'self'">
+<title>Deine 15 Minuten — PapierPanther</title>
+<meta name="description" content="Was erreichen Sie in Ingolstadt zu Fuß in 5, 10 und 15 Minuten? Eine Karte für Ihre Haustür – für Erwachsene und für ältere Menschen.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://schanzer-papierpanther.de/wege.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PapierPanther Ingolstadt">
+<meta property="og:url" content="https://schanzer-papierpanther.de/wege.html">
+<meta property="og:title" content="Deine 15 Minuten — PapierPanther">
+<meta property="og:description" content="Supermarkt, Apotheke, Spielplatz: Was liegt von Ihrer Haustür aus in 15 Minuten zu Fuß?">
+<meta property="og:image" content="https://schanzer-papierpanther.de/vorschau.png">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Deine 15 Minuten — PapierPanther">
+<meta name="twitter:image" content="https://schanzer-papierpanther.de/vorschau.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23003E59'/%3E%3Cg transform='translate%286 8%29 scale%281.3%29'%3E%3Cpath d='M12.6 15 L9 4.5 L18.2 10.4 Z' fill='%23fff'/%3E%3Cpath d='M27.4 15 L31 4.5 L21.8 10.4 Z' fill='%23fff'/%3E%3Cellipse cx='20' cy='21' rx='11.5' ry='11' fill='%23fff'/%3E%3Ccircle cx='16' cy='19.5' r='2' fill='%23003E59'/%3E%3Ccircle cx='24' cy='19.5' r='2' fill='%23003E59'/%3E%3Cpath d='M18.4 24.2l1.6 2.2 1.6-2.2z' fill='%23B00E2B'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preload" href="schrift/source-serif-4-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="schrift.css">
+<link rel="stylesheet" href="vendor/maplibre-gl/maplibre-gl.css">
+<style>
+  :root {
+    --primary: #003e59;
+    --primary-dark: #00263a;
+    --accent: #b00e2b;
+    --text: #16232b;
+    --text-muted: #566a74;
+    --text-faint: #5c6a72;
+    --bg: #f8f7f4;
+    --bg-warm: #f1efe9;
+    --card: #ffffff;
+    --border: #e4e0d8;
+    --border-strong: #8f8779;
+    --warn-bg: #fdf6e7;
+    --warn-border: #e8d9b0;
+    --warn-tx: #7d6320;
+    /* Balken: Ingolstadt in Petrol, Vergleichsstaedte in Grau, der
+       "sofort vermietbare" Teil des Leerstands in Ocker wie auf der Mieteseite. */
+    --ingolstadt: #003e59;
+    --vergleich: #b9b2a5;
+    --leer: #d5e3e7;
+    --marktaktiv: #b6752f;
+    --font-display: 'Source Serif 4', 'Iowan Old Style', Georgia, serif;
+    --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+    --radius: 10px;
+    --shadow: 0 1px 3px rgba(22,35,43,.06), 0 0 0 1px rgba(22,35,43,.04);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-body); color: var(--text); background: var(--bg);
+    line-height: 1.65; font-size: 16px; -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
+  a { color: var(--accent); }
+
+  .site-header {
+    background: var(--primary); border-bottom: 3px solid var(--accent);
+    padding: .85rem 0; position: sticky; top: 0; z-index: 50;
+  }
+  .site-header .container { display: flex; align-items: center; gap: .65rem; flex-wrap: wrap; }
+  .logo-mark { flex: none; display: block; }
+  .brand {
+    font-family: var(--font-display); font-size: 1.28rem; font-weight: 700;
+    letter-spacing: -.01em; color: #fff; text-decoration: none;
+  }
+  .brand span { color: #a9c7d6; font-weight: 400; }
+  .btn-leicht {
+    font: inherit; font-size: .82rem; cursor: pointer;
+    background: none; border: 1px solid rgba(255,255,255,.5); color: #fff;
+    padding: .3rem .75rem; border-radius: 999px;
+  }
+  .btn-leicht:hover { background: rgba(255,255,255,.14); }
+  .btn-leicht[aria-pressed="true"] {
+    background: #fff; color: var(--primary-dark); border-color: #fff; font-weight: 600;
+  }
+
+  main { padding: 3rem 0 3.5rem; }
+  h1 {
+    font-family: var(--font-display); font-size: clamp(1.75rem, 4.5vw, 2.4rem);
+    font-weight: 700; letter-spacing: -.02em; margin-bottom: .5rem;
+    /* Ohne eigene Zeilenhoehe erbte die Ueberschrift 1.65 vom Fliesstext und
+       zerfiel in zwei weit auseinanderstehende Zeilen. */
+    line-height: 1.18; max-width: 30ch; text-wrap: balance;
+  }
+  .lede { color: var(--text-muted); font-size: 1.05rem; max-width: 62ch; margin-bottom: 1.75rem; }
+  .sprungmarken { display: flex; flex-wrap: wrap; gap: .4rem; margin: -.75rem 0 1.75rem; }
+  .sprungmarken a {
+    font-size: .82rem; text-decoration: none; color: var(--primary-dark);
+    border: 1px solid var(--border-strong); border-radius: 999px; padding: .2rem .75rem; background: var(--card);
+  }
+  .sprungmarken a:hover { background: var(--bg-warm); }
+
+  .disclaimer {
+    background: var(--warn-bg); border-bottom: 1px solid var(--warn-border);
+    color: var(--warn-tx); font-size: .74rem; padding: .5rem 0;
+  }
+  .disclaimer strong { font-weight: 600; }
+  .disclaimer p { max-width: 680px; }
+
+  h2 {
+    font-family: var(--font-display); font-size: 1.5rem; font-weight: 700;
+    margin: 3rem 0 .75rem; letter-spacing: -.01em;
+  }
+  h3 { font-size: 1.05rem; font-weight: 700; margin: 2rem 0 .5rem; }
+  p { margin-bottom: 1rem; max-width: 68ch; }
+
+  /* Die Karte braucht Breite; Fliesstext bleibt schmal (p max-width). */
+  .container.breit { max-width: 1180px; }
+  .karten-bereich { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 1rem; margin: 0 0 2.5rem; }
+  #karte { height: min(74vh, 720px); min-height: 420px; border: 1px solid var(--border); border-radius: var(--radius); background: #eef0ec; }
+  #panel { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow);
+    padding: 1rem 1.1rem 1.1rem; font-size: .92rem; align-self: start; }
+  #panel h2 { font-family: var(--font-body); font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em;
+    color: var(--text-muted); margin: 1.1rem 0 .45rem; }
+  #panel h2:first-child { margin-top: 0; }
+  .suche { position: relative; }
+  .suche label { display: block; font-size: .82rem; color: var(--text-muted); margin-bottom: .2rem; }
+  .suche input { width: 100%; font: inherit; padding: .45rem .6rem; border: 1px solid var(--border-strong); border-radius: 7px; }
+  #vorschlaege { list-style: none; position: absolute; left: 0; right: 0; top: 100%; z-index: 20; background: #fff;
+    border: 1px solid var(--border-strong); border-radius: 7px; box-shadow: 0 8px 20px rgba(0,0,0,.12); max-height: 260px; overflow: auto; }
+  #vorschlaege button { display: block; width: 100%; text-align: left; font: inherit; background: none; border: 0; padding: .4rem .6rem; cursor: pointer; }
+  #vorschlaege button:hover, #vorschlaege button:focus-visible { background: var(--bg-warm); }
+  .knopf { font: inherit; font-size: .85rem; cursor: pointer; background: var(--bg-warm); border: 1px solid var(--border-strong);
+    border-radius: 999px; padding: .3rem .8rem; margin-top: .5rem; color: var(--primary-dark); }
+  .knopf:hover { background: #e6e2d8; }
+  .klein { font-size: .8rem; color: var(--text-faint); margin: .35rem 0 0; }
+  .start-zeile { margin: .6rem 0 0; font-size: .86rem; }
+  .start-zeile strong { color: var(--primary-dark); }
+  .wahl { display: grid; gap: .3rem; }
+  .wahl label { display: flex; gap: .45rem; align-items: baseline; cursor: pointer; }
+  .wahl label.aus { color: var(--text-faint); cursor: default; }
+  .legende-karte { display: flex; flex-wrap: wrap; gap: .3rem .8rem; font-size: .8rem; color: var(--text-muted); margin-top: .7rem; }
+  .legende-karte span { display: inline-flex; align-items: center; gap: .35rem; }
+  .legende-karte i { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
+  .legende-karte b { font-weight: 400; }
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+  .legende-karte i.umriss { background: none; border: 2.5px solid #b00e2b; border-radius: 3px; width: 14px; height: 14px; }
+  #ziele-kopf { display: grid; grid-template-columns: 1fr auto auto; gap: .6rem; font-size: .72rem; color: var(--text-faint); text-align: right; margin-bottom: .2rem; }
+  #ziele-kopf span:first-child { text-align: left; }
+  #ziele-kopf[hidden] { display: none; }
+  #ziele { list-style: none; display: grid; gap: 0; }
+  .ziel { display: grid; grid-template-columns: 6.6rem minmax(0, 1fr) auto auto; gap: .1rem .6rem; align-items: baseline;
+    padding: .32rem 0; border-bottom: 1px solid var(--border); }
+  .ziel-kat { font-weight: 600; font-size: .84rem; }
+  .ziel-was { font-size: .84rem; color: var(--text-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .ziel-min { font-variant-numeric: tabular-nums; font-weight: 700; font-size: .86rem; text-align: right; min-width: 3.4em; }
+  .ziel-min-2 { color: #b00e2b; font-weight: 600; }
+  .ziel-fehlt .ziel-was { color: #b00e2b; font-weight: 600; white-space: normal; }
+  .ziel-fehler { color: #b00e2b; padding: .4rem 0; }
+  #ziele-summe { font-size: .84rem; margin: .6rem 0 .2rem; font-weight: 600; }
+  .karten-tipp .maplibregl-popup-content { font: 600 .8rem var(--font-body); padding: .3rem .55rem; border-radius: 6px; }
+  table.werte { border-collapse: collapse; font-size: .9rem; margin: .5rem 0 .6rem; }
+  table.werte th, table.werte td { padding: .35rem .9rem .35rem 0; border-bottom: 1px solid var(--border); text-align: left; }
+  table.werte thead th { font-size: .8rem; color: var(--text-muted); }
+  .fuss { font-size: .8rem; color: var(--text-faint); }
+  .luecken { margin: .5rem 0 1rem 1.1rem; max-width: 68ch; display: grid; gap: .4rem; font-size: .93rem; }
+  @media (max-width: 860px) {
+    .karten-bereich { grid-template-columns: minmax(0, 1fr); }
+    #karte { height: 58vh; min-height: 340px; }
+  }
+  .stand { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--border-strong); }
+  .site-footer {
+    border-top: 1px solid var(--border); background: var(--bg-warm);
+    padding: 1.75rem 0; font-size: .85rem; color: var(--text-muted);
+  }
+  .site-footer .container { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+  .site-footer a { color: var(--primary-dark); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .ladehinweis { color: var(--text-faint); font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <svg class="logo-mark" width="34" height="34" viewBox="0 0 40 40" aria-hidden="true">
+      <path d="M12.6 15 L9 4.5 L18.2 10.4 Z" fill="#fff"/>
+      <path d="M27.4 15 L31 4.5 L21.8 10.4 Z" fill="#fff"/>
+      <ellipse cx="20" cy="21" rx="11.5" ry="11" fill="#fff"/>
+      <circle cx="16" cy="19.5" r="2" fill="#003E59"/>
+      <circle cx="24" cy="19.5" r="2" fill="#003E59"/>
+      <path d="M18.4 24.2l1.6 2.2 1.6-2.2z" fill="#B00E2B"/>
+    </svg>
+    <a class="brand" href="index.html">PapierPanther <span>Ingolstadt</span></a>
+    <button class="btn-leicht" id="btn-leicht" type="button" aria-pressed="false">Leichte Sprache</button>
+  </div>
+</header>
+
+<div class="disclaimer">
+  <div class="container breit">
+    <p id="txt-hinweis"></p>
+  </div>
+</div>
+
+<main>
+  <div class="container breit">
+    <h1 id="txt-h1"></h1>
+    <p class="lede" id="txt-lede"></p>
+
+    <section class="karten-bereich" aria-label="Karte und Ergebnis">
+      <div id="karte" role="region" aria-label="Karte von Ingolstadt mit der erreichbaren Fläche"></div>
+      <div id="panel">
+        <h2 id="txt-start-h"></h2>
+        <div class="suche">
+          <label for="adresse" id="txt-adresse-label"></label>
+          <input id="adresse" type="search" autocomplete="off" spellcheck="false">
+          <ul id="vorschlaege" hidden></ul>
+        </div>
+        <button class="knopf" type="button" id="standort"><span id="txt-standort"></span></button>
+        <p class="klein" id="standort-meldung" aria-live="polite"></p>
+        <p class="klein" id="txt-start-tipp"></p>
+        <p class="start-zeile"><strong id="start-ort"></strong> · <span id="start-bezirk"></span></p>
+
+        <h2 id="txt-person-h"></h2>
+        <div class="wahl">
+          <label><input type="radio" name="person" value="erwachsene"> <span id="txt-person-erwachsene"></span></label>
+          <label><input type="radio" name="person" value="aeltere"> <span id="txt-person-aeltere"></span></label>
+          <label><input type="checkbox" id="vergleich"> <span id="txt-vergleich-label"></span></label>
+        </div>
+        <div class="legende-karte" aria-hidden="true">
+          <span><i style="background: rgba(0,95,130,.46)"></i><b id="txt-legende-5"></b></span>
+          <span><i style="background: rgba(40,140,175,.33)"></i><b id="txt-legende-10"></b></span>
+          <span><i style="background: rgba(120,190,215,.28)"></i><b id="txt-legende-15"></b></span>
+          <span><i class="umriss"></i><b id="txt-legende-umriss"></b></span>
+        </div>
+
+        <h2 id="txt-ziele-h"></h2>
+        <div id="ziele-kopf" hidden><span></span><span id="ziele-kopf-1"></span><span id="ziele-kopf-2"></span></div>
+        <ul id="ziele" aria-live="polite"><li class="ladehinweis">Lade Karte …</li></ul>
+        <p id="ziele-summe"></p>
+        <p class="klein" id="txt-ziele-fuss"></p>
+      </div>
+    </section>
+
+    <section id="wie">
+      <h2 id="txt-wie-h2"></h2>
+      <p id="txt-wie-p1"></p>
+      <p id="txt-wie-p2"></p>
+      <div id="werte"></div>
+      <p id="txt-wie-p3"></p>
+    </section>
+
+    <section id="luecken">
+      <h2 id="txt-luecken-h2"></h2>
+      <ul class="luecken" id="txt-luecken-liste"></ul>
+      <p id="txt-mithelfen"></p>
+    </section>
+
+    <div class="stand quellen" id="quellen-block"><p>Lade Quellenangaben …</p></div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container breit">
+    <a href="index.html">Übersicht</a>
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="https://github.com/mnkeller/papierpanther" rel="noopener noreferrer" target="_blank">Quellcode<span class="sr-only"> (öffnet in neuem Tab)</span></a>
+  </div>
+</footer>
+
+<script src="data/wege-netz.js"></script>
+<script src="data/wege-orte.js"></script>
+<script src="data/bezirke.js"></script>
+<script src="data/wege-adressen.js"></script>
+<script src="vendor/pmtiles/pmtiles.js"></script>
+<script src="vendor/protomaps/basemaps.js"></script>
+<script type="module" src="wege.js"></script>
+<script src="kopf.js" defer></script>
+<script src="zaehler.js" defer></script>
+</body>
+</html>

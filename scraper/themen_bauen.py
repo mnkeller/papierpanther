@@ -12,6 +12,7 @@ neu laufen lassen; feed_bauen.py tut das nicht.
 Ergebnis: ../data/themen.js (window.THEMEN_DATEN)
 """
 
+import base64
 import json
 import os
 import re
@@ -55,6 +56,13 @@ def main():
     hh = re.search(r'haushalte: \{\s*2022: \{ gesamt: (\d+), eigentum: (\d+), miete: (\d+)', wohnen)
     miet_anteil = int(hh.group(3)) / int(hh.group(1)) * 100
 
+    # Erreichbarkeit: Anteil der Einwohner mit Supermarkt in 15 Gehminuten (Person Erwachsene),
+    # dieselbe Rechnung wie die Bezirkstabelle von wege_bauen.py
+    zellen = lade("wege-zellen.json")
+    n1 = base64.b64decode(zellen["minuten"]["erwachsene"]["supermarkt"]["n1"])
+    ew = zellen["einwohner"]
+    supermarkt_anteil = sum(e for e, m in zip(ew, n1) if m <= 15) / sum(ew) * 100
+
     kacheln = [
         dict(href="antraege.html", farbe="#5b4b8a",
              titel="Anträge der Parteien", titel_l="Anträge der Parteien",
@@ -90,6 +98,12 @@ def main():
              text="gilt der Mietspiegel. Rechnen Sie nach, was für Ihre Wohnung üblich ist – "
                   "und wo die Mietpreisbremse greift.",
              text_l="Wie viel Miete ist üblich? Hier können Sie es ausrechnen."),
+        dict(href="wege.html", farbe="#1d6a6f",
+             titel="Deine 15 Minuten", titel_l="Deine 15 Minuten",
+             zahl=f"{de(supermarkt_anteil)} %",
+             text="der Ingolstädter erreichen einen Supermarkt in 15 Minuten zu Fuß. "
+                  "Was liegt von Ihrer Haustür aus in Reichweite?",
+             text_l="So viele Menschen haben einen Supermarkt in der Nähe. Wie ist es bei Ihnen?"),
         dict(href="beteiligen.html", farbe="#14505c",
              titel="Beteiligen", titel_l="Mitmachen",
              zahl="12 Bezirksausschüsse",

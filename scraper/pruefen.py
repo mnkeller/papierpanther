@@ -199,7 +199,8 @@ def p_hsk(hsk):
         fehlt(f"hsk.json: {len(fehlerhaft)} URLs ausserhalb der erlaubten Hosts: {fehlerhaft[:5]}")
 
 
-WEGE_DATEIEN = ("wege-netz", "wege-orte", "wege-zellen", "bezirke")
+WEGE_DATEIEN = ("wege-netz", "wege-orte", "wege-zellen", "bezirke", "wege-adressen")
+KARTE = os.path.join(os.path.dirname(HIER), "karten", "ingolstadt.pmtiles")
 
 
 def p_wege():
@@ -219,7 +220,18 @@ def p_wege():
                 fehlt(f"{n}{endung} fehlt (wege_bauen.py schreibt alle vier Dateien gemeinsam)")
     if len(da) < len(WEGE_DATEIEN):
         return
-    netz, orte, zellen, bezirke = (lade(n + ".json") for n in WEGE_DATEIEN)
+    netz, orte, zellen, bezirke, adressen = (lade(n + ".json") for n in WEGE_DATEIEN)
+    if adressen["anzahl"] < 20000:
+        fehlt(f"wege-adressen: nur {adressen['anzahl']} Adressen, erwartet ueber 20.000")
+    # Grundkarte fuer wege.html: vorhanden, PMTiles v3, unter 50 MB (GitHub-Grenze je Datei)
+    if not os.path.exists(KARTE):
+        fehlt("karten/ingolstadt.pmtiles fehlt (scraper/karte_bauen.py)")
+    else:
+        with open(KARTE, "rb") as f:
+            if f.read(8) != b"PMTiles\x03":
+                fehlt("karten/ingolstadt.pmtiles ist kein PMTiles-v3-Archiv")
+        if os.path.getsize(KARTE) > 50 * 1024 * 1024:
+            fehlt("karten/ingolstadt.pmtiles ist groesser als 50 MB")
     if not 20000 <= netz["knoten_anzahl"] <= 200000:
         fehlt(f"wege-netz: {netz['knoten_anzahl']} Knoten, erwartet 20.000 bis 200.000")
     if len(netz["lat"]) != netz["knoten_anzahl"] or len(netz["von"]) != netz["kanten_anzahl"]:

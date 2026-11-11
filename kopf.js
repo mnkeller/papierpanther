@@ -13,6 +13,7 @@
     ['klima.html', 'Klima', 'Wetter, Solarstrom, Ladepunkte', 'Klima', 'Wetter und Strom aus Sonne'],
     ['wohnen.html', 'Wohnen', 'Mieten oder besitzen, Eigentümer, Leerstand', 'Wohnen', 'Wem gehören die Wohnungen?'],
     ['miete.html', 'Miete', 'Mietspiegel-Rechner, Mietpreisbremse', 'Miete', 'Wie viel Miete ist üblich?'],
+    ['wege.html', 'Deine 15 Minuten', 'Was Sie zu Fuß erreichen', 'Deine 15 Minuten', 'Wie weit Sie zu Fuß kommen'],
     ['beteiligen.html', 'Beteiligen', 'Wie Sie mitreden können', 'Mitmachen', 'So können Sie mitreden']
   ];
   var TEXT = {

@@ -53,6 +53,7 @@ scraper/
   grafik_bauen.py     Daten der grafischen Fassung  -> data/grafik.js
   altstadt_bauen.py   Altstadt aus OpenStreetMap    -> data/altstadt.js
   wege_bauen.py       Fußnetz, Orte, Zensus, Bezirke -> data/wege-*.js, data/bezirke.js
+  karte_bauen.py      Grundkarte aus Protomaps      -> karten/ingolstadt.pmtiles
   .cache/             HTML-Cache, schont das Portal bei Wiederholläufen
 data/
   rohdaten.json       unveränderte Auslesung beider Quellen
@@ -160,14 +161,39 @@ Für eine Fortschreibung des HSK: neue Dokument-IDs in `DOK_IDS` eintragen,
 Seitenbereiche in `lies_anlage1`/`lies_anlage5` prüfen, `hsk_bericht.json`
 abgleichen.
 
-### Deine 15 Minuten (Erreichbarkeitskarte, im Aufbau)
+### Deine 15 Minuten (`wege.html`)
 
 ```bash
 python3 scraper/wege_bauen.py          # --neu holt OpenStreetMap und Bezirke frisch
+python3 scraper/karte_bauen.py         # Grundkarte, nur selten (z. B. zweimal im Jahr)
 ```
 
-Plan und Rechenmodell: [WEGE-KARTE-PLAN.md](WEGE-KARTE-PLAN.md). Phase 1 (nur
-Daten, noch keine Seite) schreibt je eine `.json` und `.js`:
+Die Seite zeigt, was man von einem Punkt aus in 5, 10 und 15 Minuten zu Fuß
+erreicht, für Erwachsene und ältere Menschen, auf Wunsch übereinander. Die
+Wegsuche (Dijkstra) läuft in `wege.js` im Browser; die Werte je Person stehen
+oben in `wege.js` (`PERSONEN`) und werden auf der Seite als Tabelle gezeigt.
+Adresssuche und Standort bleiben im Browser.
+
+Alles kommt von der eigenen Domain, kein Kartendienst:
+
+- `vendor/maplibre-gl/` MapLibre GL JS 6.16.0 (ESM, der Worker lädt als Modul
+  von derselben Domain), `vendor/pmtiles/` pmtiles 4.5.0,
+  `vendor/protomaps/` Protomaps-Basemap-Stil 5.7.2 (`basemaps.js`, Stil „light“,
+  deutsch beschriftet) mit Sprites und Glyphen (Noto Sans, nur die Bereiche für
+  lateinische Schrift). Lizenzen liegen jeweils daneben.
+- `karten/ingolstadt.pmtiles` (rund 9 MB): Ausschnitt aus dem täglichen
+  Protomaps-Build, Stadtgebiet plus 2 km, Zoom 10 bis 15. `karte_bauen.py`
+  liest dafür per HTTP-Bereichsabfrage nur die nötigen Kacheln aus dem
+  weltweiten Archiv und schreibt eine eigene PMTiles-Datei; das ersetzt
+  `pmtiles extract`, ein Zusatzwerkzeug ist nicht nötig.
+- Der Server muss Bereichsabfragen (`Range`) beantworten; GitHub Pages tut das.
+  `python3 -m http.server` kann es nicht, für die lokale Vorschau also einen
+  Server mit Range-Unterstützung nehmen.
+
+Die Daten dazu baut `wege_bauen.py`:
+
+Plan und Rechenmodell: [WEGE-KARTE-PLAN.md](WEGE-KARTE-PLAN.md). Das Skript
+schreibt je eine `.json` und `.js`:
 
 - `data/wege-netz` (window.WEGE_NETZ): Fußwegenetz aus OpenStreetMap, als
   Differenzen gepackte Zahlenfelder. Jede Kante trägt Länge, Wegeklasse,
@@ -184,6 +210,8 @@ Daten, noch keine Seite) schreibt je eine `.json` und `.js`:
   je Kategorie den Gehminuten zum nächsten und zweitnächsten Ort (Person
   „Erwachsene“: 5 km/h, Ampel +30 s, aufgerundet, 255 = nicht in 60 Minuten).
 - `data/bezirke` (window.BEZIRKE): die 12 Stadtbezirke, auf etwa 5 m vereinfacht.
+- `data/wege-adressen` (window.WEGE_ADRESSEN): rund 27.000 Hausadressen aus
+  OpenStreetMap für die Adresssuche, je Straße gepackt (rund 300 KB).
 
 Das Zensus-Gitter liegt in ETRS89-LAEA (EPSG:3035), die Bezirke der Stadt in
 UTM 32 (EPSG:25832). Beide Umrechnungen nach WGS84 stehen im Skript (mit

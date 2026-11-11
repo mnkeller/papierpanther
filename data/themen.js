@@ -55,6 +55,15 @@ window.THEMEN_DATEN = [
   "text_l": "Wie viel Miete ist üblich? Hier können Sie es ausrechnen."
  },
  {
+  "href": "wege.html",
+  "farbe": "#1d6a6f",
+  "titel": "Deine 15 Minuten",
+  "titel_l": "Deine 15 Minuten",
+  "zahl": "87 %",
+  "text": "der Ingolstädter erreichen einen Supermarkt in 15 Minuten zu Fuß. Was liegt von Ihrer Haustür aus in Reichweite?",
+  "text_l": "So viele Menschen haben einen Supermarkt in der Nähe. Wie ist es bei Ihnen?"
+ },
+ {
   "href": "beteiligen.html",
   "farbe": "#14505c",
   "titel": "Beteiligen",

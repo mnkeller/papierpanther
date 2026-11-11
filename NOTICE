@@ -58,6 +58,25 @@ Lizenzen
     (https://www.zensus2022.de, Gitterdaten über destatis.de).
     „Vervielfältigung und Verbreitung, auch auszugsweise, mit Quellenangabe
     gestattet.“ Die Gehminuten je Zelle sind eigene Berechnung.
+- Die Hausadressen in `data/wege-adressen.*` stammen ebenfalls aus OpenStreetMap
+  (© OpenStreetMap-Mitwirkende, ODbL 1.0).
+- Die Kartenbibliothek MapLibre GL JS (Version 6.16.0, Dateien maplibre-gl.mjs,
+  maplibre-gl-worker.mjs, maplibre-gl.css) im Ordner `vendor/maplibre-gl/`
+  (© MapLibre contributors, © Mapbox) steht unter der BSD-3-Clause-Lizenz, siehe
+  `vendor/maplibre-gl/LICENSE.txt`. Sie wird nur auf `wege.html` geladen, selbst gehostet.
+- Die Bibliothek pmtiles (Version 4.5.0) in `vendor/pmtiles/` (© Protomaps LLC)
+  steht unter der BSD-3-Clause-Lizenz, siehe `vendor/pmtiles/LICENSE`.
+- Der Kartenstil `vendor/protomaps/basemaps.js` (@protomaps/basemaps 5.7.2,
+  © Protomaps LLC, Kelso Cartography) steht unter der BSD-3-Clause-Lizenz, die
+  Gestaltung des Stils unter CC0, siehe `vendor/protomaps/LICENSE.md`. Die
+  Symbole in `vendor/protomaps/sprites/` gehen auf die MIT-lizenzierten
+  Mapzen-Icons (tangrams/icons) zurück, siehe `LICENSE-icons.md` dort. Die
+  Glyphen in `vendor/protomaps/fonts/` sind aus Noto Sans erzeugt (SIL Open Font
+  License 1.1, siehe `vendor/protomaps/fonts/OFL.txt`); übernommen sind nur die
+  Zeichenbereiche für lateinische Schrift.
+- Die Grundkarte `karten/ingolstadt.pmtiles` ist ein Ausschnitt aus dem
+  Protomaps-Basemap-Build (https://maps.protomaps.com/builds/) und beruht auf
+  OpenStreetMap-Daten, © OpenStreetMap-Mitwirkende, ODbL 1.0.
 - Die Stadtbezirke in `data/bezirke.*` stammen von der Stadt Ingolstadt
   (Stadtbezirke Ingolstadt, https://www.ingolstadt.de/openbydata/GIS/,
   über open.bydata.de) unter der Lizenz Creative Commons Namensnennung 3.0

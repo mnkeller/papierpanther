@@ -20,6 +20,7 @@ Ergebnis (je .json und .js):
 - data/wege-zellen.*  window.WEGE_ZELLEN  Zensus-Zellen mit Minuten zum naechsten
                                           und zweitnaechsten Ort je Kategorie
 - data/bezirke.*      window.BEZIRKE      12 Stadtbezirke, WGS84, auf ~5 m vereinfacht
+- data/wege-adressen.* window.WEGE_ADRESSEN Hausadressen aus OSM fuer die Suche im Browser
 
 Das Netz wird verdichtet: Zwischenpunkte ohne Merkmal fallen weg, solange die
 Linie um hoechstens 3 m abweicht; die Kantenlaenge bleibt die echte Weglaenge.
@@ -127,6 +128,8 @@ ABFRAGEN = {
                 'node["natural"="tree"](area.a);way["natural"="tree_row"](area.a);'
                 'nwr["natural"="wood"](area.a);nwr["landuse"="forest"](area.a);nwr["leisure"="park"](area.a);'
                 ');out tags geom;',
+    'adressen': '[out:json][timeout:600];' + GEMEINDE
+                + 'nwr["addr:housenumber"]["addr:street"](area.a);out tags center;',
 }
 
 
@@ -862,6 +865,43 @@ def orte_ausgabe(orte):
 
 # ------------------------------------------------------------------- Zensus
 
+def hausnummer_schluessel(nr):
+    """12 vor 12a vor 13, Bereiche wie 3-5 nach der ersten Zahl."""
+    ziffern = ''
+    for c in nr:
+        if not c.isdigit():
+            break
+        ziffern += c
+    return (int(ziffern) if ziffern else 99999, nr[len(ziffern):].strip().lower())
+
+
+def adressen_bauen():
+    strassen = collections.defaultdict(dict)
+    for e in overpass('adressen')['elements']:
+        t = e.get('tags', {})
+        p = e if e['type'] == 'node' else e.get('center')
+        if not p:
+            continue
+        for nr in t['addr:housenumber'].replace(',', ';').split(';'):
+            nr = nr.strip()
+            if nr and nr not in strassen[t['addr:street'].strip()]:
+                strassen[t['addr:street'].strip()][nr] = (round(p['lat'] * 1e5), round(p['lon'] * 1e5))
+    liste = []
+    for name in sorted(strassen, key=lambda n: n.lower()):
+        nummern = sorted(strassen[name], key=hausnummer_schluessel)
+        lat = [strassen[name][n][0] for n in nummern]
+        lon = [strassen[name][n][1] for n in nummern]
+        liste.append([name, '|'.join(nummern), [lat[0]] + [b - a for a, b in zip(lat, lat[1:])],
+                      [lon[0]] + [b - a for a, b in zip(lon, lon[1:])]])
+    return {
+        'erzeugt_von': 'scraper/wege_bauen.py', 'erzeugt_am': date.today().isoformat(),
+        'quelle': '© OpenStreetMap-Mitwirkende, ODbL 1.0 (openstreetmap.org/copyright)',
+        'format': ('strassen: [name, hausnummern mit | getrennt, lat, lon]. lat/lon in 1e-5 Grad, erster Wert '
+                   'absolut, danach Differenz zur vorigen Hausnummer. Gebaeude als Mittelpunkt.'),
+        'anzahl': sum(len(s[1].split('|')) for s in liste), 'strassen': liste,
+    }
+
+
 def zensus_lesen(bezirke):
     """Bewohnte 100-m-Zellen, deren Mittelpunkt im Stadtgebiet liegt."""
     xs = [b['bbox'][0] for b in bezirke] + [b['bbox'][2] for b in bezirke]
@@ -1017,6 +1057,7 @@ def main():
     netz = netz_bauen()
     raster = Kantenraster(netz)
     orte = orte_bauen(raster)
+    adressen = adressen_bauen()
     zellen = zensus_lesen(bezirke)
     ergebnis = zellen_rechnen(netz, raster, orte, zellen)
 
@@ -1032,6 +1073,8 @@ def main():
                                    'Zensus 2022 (Statistische Ämter des Bundes und der Länder) mit Gehminuten; erzeugt von scraper/wege_bauen.py'),
         'bezirke.js': schreibe('bezirke', 'BEZIRKE', bez_geo,
                                'Stadtbezirke Ingolstadt, Stadt Ingolstadt, CC BY 3.0 DE; erzeugt von scraper/wege_bauen.py'),
+        'wege-adressen.js': schreibe('wege-adressen', 'WEGE_ADRESSEN', adressen,
+                                     'Hausadressen Ingolstadt, © OpenStreetMap-Mitwirkende, ODbL 1.0; erzeugt von scraper/wege_bauen.py'),
     }
 
     kanten_gesperrt = sum(1 for k in netz['kanten'] if k[3][7])
@@ -1040,6 +1083,7 @@ def main():
     zaehl = collections.Counter(o['kat'] for o in orte)
     print('Orte:', ' · '.join('%s %d' % (n, zaehl[KAT_NR[k]]) for k, n in KATEGORIEN))
     print('Zellen %d · Einwohner %d' % (len(zellen), sum(z['einwohner'] for z in zellen)))
+    print('Adressen %d in %d Strassen' % (adressen['anzahl'], len(adressen['strassen'])))
 
     spalten = ['supermarkt', 'apotheke', 'hausarzt', 'grundschule', 'spielplatz', 'haltestelle']
     print('\nAnteil der Einwohner, die den naechsten Ort in 15 Minuten zu Fuss erreichen (Person: Erwachsene)\n')
