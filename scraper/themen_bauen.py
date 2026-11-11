@@ -56,12 +56,25 @@ def main():
     hh = re.search(r'haushalte: \{\s*2022: \{ gesamt: (\d+), eigentum: (\d+), miete: (\d+)', wohnen)
     miet_anteil = int(hh.group(3)) / int(hh.group(1)) * 100
 
-    # Erreichbarkeit: Anteil der Einwohner mit Supermarkt in 15 Gehminuten (Person Erwachsene),
-    # dieselbe Rechnung wie die Bezirkstabelle von wege_bauen.py
+    # Erreichbarkeit: „Aeltere Person, Apotheke“. Warum: Der Supermarkt fuer Erwachsene (87 %)
+    # klingt beruhigend und verdeckt, fuer wen die 15 Minuten nicht reichen. Aeltere gehen
+    # langsamer und brauchen die Apotheke oft. Als Zahl der Stadtwert, der schwaechste Bezirk im
+    # Text: Ein Bezirkswert von 0 % haengt allein daran, ob OpenStreetMap dort eine Apotheke
+    # kennt, und ist als Schlagzeile zu anfaellig. Gezaehlt werden die Einwohner ab 65, wie in der
+    # Bezirksansicht von wege.html (Mein Bezirk).
     zellen = lade("wege-zellen.json")
-    n1 = base64.b64decode(zellen["minuten"]["erwachsene"]["supermarkt"]["n1"])
-    ew = zellen["einwohner"]
-    supermarkt_anteil = sum(e for e, m in zip(ew, n1) if m <= 15) / sum(ew) * 100
+    n1 = base64.b64decode(lade("wege-zellen-aeltere.json")["kategorien"]["apotheke"]["n1"])
+    bekannt = [(e, a) for e, a in zip(zellen["einwohner"], zellen["ue65"]) if a != 255]
+    mittel = sum(e * a for e, a in bekannt) / sum(e for e, _ in bekannt)
+    ab65 = [e * (a if a != 255 else mittel) / 100 for e, a in zip(zellen["einwohner"], zellen["ue65"])]
+    namen = {int(f["properties"]["beznr"]): f["properties"]["bezname"] for f in lade("bezirke.json")["features"]}
+    je_bezirk = {}
+    for b, w, m in zip(zellen["bezirk"], ab65, n1):
+        summe, gut = je_bezirk.get(b, (0, 0))
+        je_bezirk[b] = (summe + w, gut + (w if m <= 15 else 0))
+    apo_nr, (apo_summe, apo_gut) = min(je_bezirk.items(), key=lambda kv: kv[1][1] / kv[1][0])
+    apo_anteil, apo_bezirk = apo_gut / apo_summe * 100, namen[apo_nr]
+    apo_stadt = sum(w for w, m in zip(ab65, n1) if m <= 15) / sum(ab65) * 100
 
     kacheln = [
         dict(href="antraege.html", farbe="#5b4b8a",
@@ -100,10 +113,10 @@ def main():
              text_l="Wie viel Miete ist üblich? Hier können Sie es ausrechnen."),
         dict(href="wege.html", farbe="#1d6a6f",
              titel="Deine 15 Minuten", titel_l="Deine 15 Minuten",
-             zahl=f"{de(supermarkt_anteil)} %",
-             text="der Ingolstädter erreichen einen Supermarkt in 15 Minuten zu Fuß. "
-                  "Was liegt von Ihrer Haustür aus in Reichweite?",
-             text_l="So viele Menschen haben einen Supermarkt in der Nähe. Wie ist es bei Ihnen?"),
+             zahl=f"{de(apo_stadt)} %",
+             text=f"der Menschen ab 65 erreichen in ihrem Tempo eine Apotheke in 15 Minuten zu Fuß, "
+                  f"in {apo_bezirk} {de(apo_anteil)} %. Wie ist es bei Ihnen?",
+             text_l="So viele ältere Menschen haben eine Apotheke in der Nähe. Wie ist es bei Ihnen?"),
         dict(href="beteiligen.html", farbe="#14505c",
              titel="Beteiligen", titel_l="Mitmachen",
              zahl="12 Bezirksausschüsse",

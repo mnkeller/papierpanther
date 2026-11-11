@@ -15,6 +15,7 @@ unvollstaendig. Dagegen helfen Zusicherungen, die nachrechnen.
 """
 
 import argparse
+import base64
 import collections
 import json
 import os
@@ -274,9 +275,65 @@ def p_wege():
     ew = sum(zellen["einwohner"])
     if not 130000 <= ew <= 145000:
         fehlt(f"wege-zellen: {ew} Einwohner, erwartet 130.000 bis 145.000")
-    for kat in pflicht:
-        if kat not in zellen["minuten"]["erwachsene"]:
-            fehlt(f"wege-zellen: keine Minuten fuer {kat}")
+    p_wege_personen(zellen, orte)
+
+
+def p_wege_personen(zellen, orte):
+    """
+    Minuten je Person (wege-zellen-<person>), gemeinsame Werte (wege-personen)
+    und Sparplan-Massnahmen (wege-massnahmen). Python und wege.js rechnen mit
+    derselben Personendatei; laeuft die .js hinter der .json her, rechnet die
+    Seite mit anderen Werten als die Zellen.
+    """
+    personen = lade("wege-personen.json")
+    with open(os.path.join(DATEN_VZ, "wege-personen.js"), encoding="utf-8") as f:
+        js = f.read()
+    try:
+        im_js = json.loads(js[js.index("=") + 1:].strip().rstrip(";"))
+    except ValueError:
+        im_js = None
+    if im_js != personen:
+        fehlt("wege-personen.js passt nicht zu wege-personen.json (wege_bauen.py neu laufen lassen)")
+    kats = {k["id"] for k in orte["kategorien"]}
+    n_orte = len(orte["orte"])
+    for pid in personen["reihe"]:
+        p = personen["personen"][pid]
+        for k in p["ziele"]:
+            if k not in kats:
+                fehlt(f"wege-personen: {pid} hat unbekanntes Ziel {k}")
+        name = f"wege-zellen-{pid}"
+        if not os.path.exists(os.path.join(DATEN_VZ, name + ".json")):
+            fehlt(f"{name}.json fehlt")
+            continue
+        daten = lade(name + ".json")
+        for k in p["ziele"]:
+            if k not in daten["kategorien"]:
+                fehlt(f"{name}: keine Minuten fuer {k}")
+                continue
+            felder = daten["kategorien"][k]
+            n1 = base64.b64decode(felder["n1"])
+            o1 = base64.b64decode(felder["ort1"])
+            if len(n1) != zellen["anzahl"] or len(o1) != 2 * zellen["anzahl"]:
+                fehlt(f"{name} {k}: {len(n1)} Werte fuer {zellen['anzahl']} Zellen")
+                continue
+            orte_idx = {int.from_bytes(o1[i:i + 2], "little") for i in range(0, len(o1), 2)}
+            if any(o != 65535 and o >= n_orte for o in orte_idx):
+                fehlt(f"{name} {k}: Ortsindex ausserhalb von wege-orte (Dateien aus verschiedenen Laeufen?)")
+    m = lade("wege-massnahmen.json")
+    osm = {o[8] for o in orte["orte"] if len(o) > 8}
+    for x in m["massnahmen"]:
+        for o in x["orte"]:
+            if o["osm"] not in osm:
+                fehlt(f"wege-massnahmen {x['hsk_nr']}: Ort {o['name']} ({o['osm']}) nicht in wege-orte")
+        if x["person"] not in personen["personen"] or x["wirkung"] not in ("naechster", "erreichbar"):
+            fehlt(f"wege-massnahmen {x['hsk_nr']}: Person oder Wirkung unbekannt")
+    hsk = lade("hsk.json")["massnahmen"]
+    nrs = {(liste, y["nr"]) for liste in ("verwaltungshaushalt", "personal", "vermoegenshaushalt") for y in hsk[liste]}
+    for x in m["massnahmen"]:
+        if (x["hsk_liste"], x["hsk_nr"]) not in nrs:
+            fehlt(f"wege-massnahmen: Massnahme {x['hsk_liste']} {x['hsk_nr']} steht nicht in hsk.json")
+    if not os.path.exists(os.path.join(DATEN_VZ, "wege-massnahmen.js")):
+        fehlt("wege-massnahmen.js fehlt (wege_bauen.py)")
 
 
 def p_nur_oeffentliche_tops(kur, index):

@@ -17,8 +17,13 @@ Ergebnis (je .json und .js):
 - data/wege-netz.*    window.WEGE_NETZ    Knoten und Kanten mit allen Merkmalen,
                                           die Personen und Bedingungen brauchen
 - data/wege-orte.*    window.WEGE_ORTE    Alltagsorte mit Einstiegsknoten
-- data/wege-zellen.*  window.WEGE_ZELLEN  Zensus-Zellen mit Minuten zum naechsten
-                                          und zweitnaechsten Ort je Kategorie
+- data/wege-zellen.*  window.WEGE_ZELLEN  bewohnte Zensus-Zellen (Lage, Einwohner, Alter, Bezirk)
+- data/wege-zellen-<person>.*             je Person Minuten zum naechsten und zweitnaechsten
+                                          Ort je Kategorie (window.WEGE_ZELLEN_<PERSON>)
+- data/wege-personen.js window.WEGE_PERSONEN  Werte je Person aus data/wege-personen.json
+                                          (von Hand gepflegt, gilt fuer Python und wege.js)
+- data/wege-massnahmen.js window.WEGE_MASSNAHMEN  Sparplan-Massnahmen mit Ortsbezug aus
+                                          data/wege-massnahmen.json (von Hand) plus Betroffene
 - data/bezirke.*      window.BEZIRKE      12 Stadtbezirke, WGS84, auf ~5 m vereinfacht
 - data/wege-adressen.* window.WEGE_ADRESSEN Hausadressen aus OSM fuer die Suche im Browser
 
@@ -50,9 +55,9 @@ ZENSUS = {  # Kurzname: (Zip, Spalte im 100-m-CSV)
 BEZIRKE_URL = 'https://www.ingolstadt.de/openbydata/GIS/Stadtbezirke_Ingolstadt.geojson'
 OVERPASS_URL = 'https://overpass-api.de/api/interpreter'
 
-# Startwerte der Person „Erwachsene“ (WEGE-KARTE-PLAN.md, Abschnitt 4)
-TEMPO = 5.0 / 3.6          # m/s
-AMPEL_S = 30               # Zuschlag je Ampel
+# Werte je Person: data/wege-personen.json, dieselbe Datei liest wege.js (als wege-personen.js)
+PERSONEN_DATEI = os.path.join(DATEN, 'wege-personen.json')
+MASSNAHMEN_DATEI = os.path.join(DATEN, 'wege-massnahmen.json')
 GRENZE_S = 60 * 60         # weiter wird nicht gerechnet
 UNERREICHBAR = 255
 KEIN_ORT = 65535
@@ -116,7 +121,7 @@ ABFRAGEN = {
     'orte': '[out:json][timeout:600];' + GEMEINDE + '('
             'nwr["shop"~"^(supermarket|bakery|pastry|ice_cream)$"](area.a);'
             'nwr["amenity"~"^(pharmacy|doctors|hospital|school|kindergarten|childcare|library|bank|post_office|'
-            'place_of_worship|toilets|cafe|ice_cream|drinking_water|bench)$"](area.a);'
+            'place_of_worship|toilets|cafe|ice_cream|drinking_water|bench|community_centre|social_centre)$"](area.a);'
             'nwr["healthcare"~"^(doctor|pharmacy)$"](area.a);'
             'nwr["post_office"="post_partner"](area.a);'
             'nwr["leisure"~"^(playground|park|pitch|sports_centre|stadium)$"](area.a);'
@@ -674,7 +679,7 @@ class Kantenraster:
                 for j in range(int(math.floor(min(ya, yb) / self.M)), int(math.floor(max(ya, yb) / self.M)) + 1):
                     self.zellen[(i, j)].append(k)
 
-    def naechste(self, x, y, maxd):
+    def naechste(self, x, y, maxd, kosten=None):
         ci, cj = int(math.floor(x / self.M)), int(math.floor(y / self.M))
         best = (maxd, None, 0.0)
         for r in range(int(maxd / self.M) + 2):
@@ -685,6 +690,8 @@ class Kantenraster:
                     if max(abs(i - ci), abs(j - cj)) != r:
                         continue
                     for k in self.zellen.get((i, j), ()):
+                        if kosten is not None and kosten[k] == INF:
+                            continue
                         a, b = self.netz['kanten'][k][:2]
                         (xa, ya), (xb, yb) = self.netz['xy'][a], self.netz['xy'][b]
                         dx, dy = xb - xa, yb - ya
@@ -714,10 +721,9 @@ KATEGORIEN = [  # id, Bezeichnung
     ('sportanlage', 'Sportanlage'), ('park', 'Park'), ('bahnhof', 'Bahnhof'), ('buecherei', 'Bücherei'),
     ('bank_post', 'Bank/Post'), ('kirche', 'Kirche/Gebetshaus'), ('toilette', 'Toilette'), ('cafe', 'Café'),
     ('hotel', 'Hotel'), ('touristinfo', 'Tourist-Info'), ('sehenswuerdigkeit', 'Sehenswürdigkeit'),
-    ('trinkwasser', 'Trinkwasser'), ('sitzbank', 'Sitzbank'),
+    ('trinkwasser', 'Trinkwasser'), ('sitzbank', 'Sitzbank'), ('treff', 'Treffpunkt'),
 ]
 KAT_NR = {k: i for i, (k, _) in enumerate(KATEGORIEN)}
-OHNE_MINUTEN = {'sitzbank'}   # Merkmal fuer Personen (Baenke), kein Ziel
 
 
 def ist_hausarzt(t):
@@ -775,7 +781,7 @@ def kategorien(t):
         k.append('haltestelle')
     if t.get('railway') in ('station', 'halt') and t.get('usage') != 'industrial':
         k.append('bahnhof')
-    if a == 'library':
+    if a == 'library' and not any(w in t.get('name', '') for w in FACHBIBLIOTHEK):
         k.append('buecherei')
     if a in ('bank', 'post_office') or t.get('post_office') == 'post_partner':
         k.append('bank_post')
@@ -795,7 +801,13 @@ def kategorien(t):
         k.append('trinkwasser')
     if a == 'bench':
         k.append('sitzbank')
+    if a in ('community_centre', 'social_centre') and t.get('community_centre') != 'club_home':
+        k.append('treff')
     return k
+
+
+# Hochschul-, Fach- und Archivbibliotheken sind keine Buecherei fuer den Alltag
+FACHBIBLIOTHEK = ('Universit', 'Hochschul', 'Armeebibliothek', 'Stadtarchiv', 'Wissenschaftliche')
 
 
 def orte_bauen(raster):
@@ -840,7 +852,7 @@ def orte_bauen(raster):
             orte.append({'kat': KAT_NR[kat], 'name': t.get('name', ''), 'lat': round(LAT0 + my / MY, 5),
                          'lon': round(LON0 + mx / MX, 5), 'merkmale': merkmale,
                          'knoten': [kn for kn, _ in knoten], 'abstand': [round(d) for _, d in knoten],
-                         'oeffnungszeiten': t.get('opening_hours', '')})
+                         'oeffnungszeiten': t.get('opening_hours', ''), 'osm': e['type'][0] + str(e['id'])})
     orte.sort(key=lambda o: (o['kat'], o['lat'], o['lon']))
     if ohne:
         print('Orte ohne Weg in 300 m (ausgelassen):', dict(ohne))
@@ -852,14 +864,15 @@ def orte_ausgabe(orte):
     return {
         'erzeugt_von': 'scraper/wege_bauen.py', 'erzeugt_am': date.today().isoformat(),
         'quelle': '© OpenStreetMap-Mitwirkende, ODbL 1.0 (openstreetmap.org/copyright)',
-        'format': ('orte: [kategorie, name, lat, lon, merkmale, knoten, abstand, oeffnungszeiten]. '
+        'format': ('orte: [kategorie, name, lat, lon, merkmale, knoten, abstand, oeffnungszeiten, osm]. '
                    'merkmale: Bits 1 Flaeche, 2 Oeffnungszeiten bekannt, 4 rollstuhlgerecht, 8 nicht rollstuhlgerecht. '
                    'knoten: Einstiegsknoten in WEGE_NETZ (Flaechen ueber ihren Rand angebunden), '
                    'abstand: Meter vom Ort bis zum jeweiligen Knoten. lat/lon: Punkt bzw. Mitte der Flaeche. '
+                   'osm: Kennung in OpenStreetMap (n/w/r + Nummer). '
                    'Praxen ohne Fachrichtung in OSM zaehlen als Hausarzt.'),
         'kategorien': [{'id': k, 'name': n, 'anzahl': anzahl[i]} for i, (k, n) in enumerate(KATEGORIEN)],
-        'orte': [[o['kat'], o['name'], o['lat'], o['lon'], o['merkmale'], o['knoten'], o['abstand'], o['oeffnungszeiten']]
-                 for o in orte],
+        'orte': [[o['kat'], o['name'], o['lat'], o['lon'], o['merkmale'], o['knoten'], o['abstand'], o['oeffnungszeiten'],
+                  o['osm']] for o in orte],
     }
 
 
@@ -942,10 +955,116 @@ def zensus_lesen(bezirke):
 
 
 # ----------------------------------------------------------------- Wegsuche
+# Gleiche Regeln wie wege.js (Funktionen gewichte, sucheKnoten, sucheKanten).
+# Hier laeuft die Suche umgekehrt: von allen Orten einer Kategorie zugleich zu
+# den Zellen. Gehwege sind in beide Richtungen gleich; das Queren einer Strasse
+# ist es auch, deshalb gilt die Seitenregel des Kindes in beiden Richtungen.
 
-def zwei_naechste(quellen, adj, strafe, anzahl):
-    """Dijkstra von allen Orten zugleich; je Knoten die zwei naechsten verschiedenen Orte."""
-    marke = [None] * anzahl
+INF = float('inf')
+
+
+def lade_personen():
+    with open(PERSONEN_DATEI, encoding='utf-8') as f:
+        return json.load(f)
+
+
+class Typen:
+    """Merkmale je Kante und Knoten, wie TYPEN in wege.js."""
+
+    def __init__(self, netz):
+        c = lambda feld, w: CODES[feld].index(w)
+        haupt = {c('klasse', 'sammelstrasse'), c('klasse', 'hauptstrasse')}
+        pfade = {c('klasse', 'fussweg'), c('klasse', 'pfad'), c('klasse', 'feldweg')}
+        gesichert = {c('querung', 'ampel'), c('querung', 'zebrastreifen')}
+        self.haupt, self.gesicherte_querung, self.attr = [], [], []
+        for a, b, lang, m in netz['kanten']:
+            self.haupt.append(m[0] in haupt)
+            self.gesicherte_querung.append(m[5] in gesichert)
+            self.attr.append({
+                'gesperrt': m[7] == 1, 'treppe': m[2] == 1,
+                'ohne_gehweg': m[0] in haupt and m[4] in (c('gehweg', 'nein'), c('gehweg', 'separat')),
+                'rollstuhl_nein': m[8] == c('rollstuhl', 'nein'),
+                'unbefestigt': m[3] == c('oberflaeche', 'unbefestigt'),
+                'pflaster': m[3] == c('oberflaeche', 'pflaster_grob'),
+                'unbenannter_pfad': m[0] in pfade and not m[9],
+                'unbenannte_zufahrt': m[0] == c('klasse', 'erschliessung') and not m[9],
+                'laenge': round(lang),   # wie in der Datei, die wege.js liest
+            })
+        self.knoten_gesichert = [km[0] in gesichert for km in netz['merkmale']]
+        self.ampel = [km[0] == c('querung', 'ampel') for km in netz['merkmale']]
+        self.hindernis = [km[1] == c('bordstein', 'hoch') or km[2] == 1 for km in netz['merkmale']]
+        n = len(netz['knoten'])
+        self.adj = [[] for _ in range(n)]
+        for e, (a, b, _, _) in enumerate(netz['kanten']):
+            self.adj[a].append(e)
+            self.adj[b].append(e)
+        self.haupt_grad = [sum(1 for e in self.adj[k] if self.haupt[e]) for k in range(n)]
+        self.haupt_bezug = [next((e for e in self.adj[k] if self.haupt[e]), -1) for k in range(n)]
+
+
+def ohne_bank(netz, orte, naehe_m):
+    """Je Kante: keine Sitzbank in naehe_m um Anfang, Ende oder Mitte."""
+    gitter = collections.defaultdict(list)
+    for o in orte:
+        if o['kat'] == KAT_NR['sitzbank']:
+            x, y = xy(o['lat'], o['lon'])
+            gitter[(int(x // 50), int(y // 50))].append((x, y))
+
+    def nahe(x, y):
+        ci, cj = int(x // 50), int(y // 50)
+        return any(math.hypot(px - x, py - y) <= naehe_m
+                   for i in (ci - 1, ci, ci + 1) for j in (cj - 1, cj, cj + 1) for px, py in gitter.get((i, j), ()))
+    aus = []
+    for a, b, _, _ in netz['kanten']:
+        (xa, ya), (xb, yb) = netz['xy'][a], netz['xy'][b]
+        aus.append(not (nahe(xa, ya) or nahe(xb, yb) or nahe((xa + xb) / 2, (ya + yb) / 2)))
+    return aus
+
+
+def gewichte(typen, ohne_bank_kante, person, allgemein):
+    """Sekunden je Kante (INF = gesperrt) und Zuschlag je Knoten, wie gewichte() in wege.js (bei Tag)."""
+    p, v = person, person['kmh'] / 3.6
+    kante = []
+    for e, m in enumerate(typen.attr):
+        if m['gesperrt'] or (m['treppe'] and p['treppe_s'] is None) or (p.get('hindernisse_gesperrt') and m['rollstuhl_nein']) \
+                or (p.get('gehweg_noetig') and m['ohne_gehweg']):
+            kante.append(INF)
+            continue
+        s = m['laenge'] / v
+        if p.get('faktor_unbefestigt') and m['unbefestigt']:
+            s *= p['faktor_unbefestigt']
+        if p.get('faktor_pflaster') and m['pflaster']:
+            s *= p['faktor_pflaster']
+        if p.get('faktor_unbenannt') and m['unbenannter_pfad']:
+            s *= p['faktor_unbenannt']
+        if p.get('faktor_unbenannt_zufahrt') and m['unbenannte_zufahrt']:
+            s *= p['faktor_unbenannt_zufahrt']
+        if m['treppe'] and p['treppe_s']:
+            s += p['treppe_s']
+        if p['bank_s'] and ohne_bank_kante[e]:
+            s += m['laenge'] / allgemein['bank_abstand_m'] * p['bank_s']
+        kante.append(s)
+    knoten = [INF if (p.get('hindernisse_gesperrt') and typen.hindernis[k]) else (p['ampel_s'] if typen.ampel[k] else 0)
+              for k in range(len(typen.ampel))]
+    return {'v': v, 'kante': kante, 'knoten': knoten, 'abbiegen': bool(p.get('nur_gesichert_queren'))}
+
+
+def _eintragen(marke, k, t, o):
+    """Zwei beste verschiedene Orte je Knoten fuehren."""
+    m = marke[k]
+    if m is None:
+        marke[k] = [(t, o)]
+    elif len(m) == 1 and m[0][1] != o:
+        m.append((t, o))
+    elif len(m) == 2 and o not in (m[0][1], m[1][1]) and t < m[1][0]:
+        m[1] = (t, o)
+        m.sort()
+
+
+def zwei_naechste(quellen, netz, typen, g):
+    """Dijkstra von allen Orten zugleich (Knoten); je Knoten die zwei naechsten verschiedenen Orte."""
+    kanten, n = netz['kanten'], len(netz['knoten'])
+    marke = [None] * n
     heap = list(quellen)
     heapq.heapify(heap)
     while heap:
@@ -957,59 +1076,179 @@ def zwei_naechste(quellen, adj, strafe, anzahl):
             m.append((t, o))
         else:
             continue
-        for n, dt in adj[k]:
-            tn = t + dt + strafe[n]
+        for e in typen.adj[k]:
+            ce = g['kante'][e]
+            if ce == INF:
+                continue
+            a, b = kanten[e][0], kanten[e][1]
+            nb = b if a == k else a
+            tn = t + ce + g['knoten'][nb]
             if tn > GRENZE_S:
                 continue
-            mn = marke[n]
+            mn = marke[nb]
             if mn is not None and (len(mn) == 2 or mn[0][1] == o):
                 continue
-            heapq.heappush(heap, (tn, n, o))
+            heapq.heappush(heap, (tn, nb, o))
     return marke
+
+
+def zwei_naechste_kind(quellen, netz, typen, g):
+    """Wie zwei_naechste, aber ueber (Kante, Richtung, Strassenseite) wie sucheKanten() in wege.js.
+    Zustand (2e + r) * 3 + seite; r = 0: bei nach angekommen, 1: bei von; seite 0 links, 1 rechts, 2 frei.
+    Startzustand am Ort: 6 * Kantenzahl + Knoten (keine Herkunftskante, Seite frei)."""
+    kanten, n_k = netz['kanten'], len(netz['knoten'])
+    pos = netz['xy']
+    basis = 6 * len(kanten)
+    zmarke, knoten = {}, [None] * n_k
+
+    def seite(a, b, q):
+        (xa, ya), (xb, yb), (qx, qy) = pos[a], pos[b], pos[q]
+        return 0 if (xb - xa) * (qy - ya) - (yb - ya) * (qx - xa) > 0 else 1
+
+    heap = [(t, basis + k, o) for t, k, o in quellen]
+    heapq.heapify(heap)
+    while heap:
+        t, s, o = heapq.heappop(heap)
+        m = zmarke.get(s)
+        if m is None:
+            zmarke[s] = [(t, o)]
+        elif len(m) == 1 and m[0][1] != o:
+            m.append((t, o))
+        else:
+            continue
+        if s >= basis:
+            e, n, sei = -1, s - basis, 2
+        else:
+            sei = s % 3
+            ed = s // 3
+            e = ed >> 1
+            n = kanten[e][0] if ed & 1 else kanten[e][1]
+        _eintragen(knoten, n, t, o)
+        vor = -1 if e < 0 else (kanten[e][1] if kanten[e][0] == n else kanten[e][0])
+        te_haupt = e >= 0 and typen.haupt[e]
+        te_ges = e >= 0 and typen.gesicherte_querung[e]
+        knoten_frei = typen.knoten_gesichert[n]
+        for f in typen.adj[n]:
+            if f == e:
+                continue
+            cf = g['kante'][f]
+            if cf == INF:
+                continue
+            a, b = kanten[f][0], kanten[f][1]
+            mk = b if a == n else a
+            frei = knoten_frei or te_ges or typen.gesicherte_querung[f]
+            tf_haupt = typen.haupt[f]
+            neu = 2
+            if not te_haupt and not tf_haupt:
+                if vor >= 0 and typen.haupt_grad[n] and not frei:
+                    r_ = typen.haupt_bezug[n]
+                    bz = kanten[r_][1] if kanten[r_][0] == n else kanten[r_][0]
+                    if seite(n, bz, vor) != seite(n, bz, mk):
+                        continue
+            elif not te_haupt and tf_haupt:
+                neu = 2 if (frei or vor < 0) else seite(n, mk, vor)
+            elif te_haupt and tf_haupt:
+                neu = 2 if (frei or sei == 2) else (sei if typen.haupt_grad[n] == 2 else seite(n, mk, vor))
+            elif not frei and sei != 2 and seite(vor, n, mk) != sei:
+                continue
+            tn = t + cf + g['knoten'][mk]
+            if tn > GRENZE_S:
+                continue
+            ns = (2 * f + (0 if a == n else 1)) * 3 + neu
+            mn = zmarke.get(ns)
+            if mn is not None and (len(mn) == 2 or mn[0][1] == o):
+                continue
+            heapq.heappush(heap, (tn, ns, o))
+    return knoten
 
 
 def minuten(t):
     return UNERREICHBAR if t is None or t > GRENZE_S else math.ceil(t / 60 - 1e-9)
 
 
-def zellen_rechnen(netz, raster, orte, zellen):
-    anzahl = len(netz['knoten'])
-    adj = [[] for _ in range(anzahl)]
-    for a, b, lang, m in netz['kanten']:
-        if not m[7]:
-            adj[a].append((b, lang / TEMPO))
-            adj[b].append((a, lang / TEMPO))
-    strafe = [AMPEL_S if m[0] == 1 else 0 for m in netz['merkmale']]
-    einstieg = [raster.einstieg(z['px'], z['py'], 300) for z in zellen]
-    print('Zellen ohne Weg in 300 m:', sum(1 for e in einstieg if not e))
-    ergebnis = {}
-    for kat, _ in KATEGORIEN:
-        if kat in OHNE_MINUTEN:
+def einstiege(raster, zellen, g):
+    """Je Zelle {knoten: Sekunden bis dorthin} ueber die naechste fuer diese Person begehbare Kante."""
+    aus = []
+    for z in zellen:
+        d, k, t = raster.naechste(z['px'], z['py'], 300, g['kante'])
+        if k is None:
+            aus.append({})
             continue
-        nr = KAT_NR[kat]
-        quellen = [(d / TEMPO, kn, oi) for oi, o in enumerate(orte) if o['kat'] == nr
-                   for kn, d in zip(o['knoten'], o['abstand'])]
-        marke = zwei_naechste(quellen, adj, strafe, anzahl)
-        n1, n2, o1, o2 = bytearray(), bytearray(), [], []
-        for e in einstieg:
-            best = {}
-            for kn, d in e.items():
-                for t, o in marke[kn] or ():
-                    t += d / TEMPO
-                    if t < best.get(o, 1e18):
-                        best[o] = t
-            rang = sorted((t, o) for o, t in best.items() if t <= GRENZE_S)[:2] + [(None, KEIN_ORT)] * 2
-            n1.append(minuten(rang[0][0]))
-            n2.append(minuten(rang[1][0]))
-            o1.append(rang[0][1])
-            o2.append(rang[1][1])
-        b64 = lambda b: base64.b64encode(bytes(b)).decode('ascii')
-        u16 = lambda liste: b64(b''.join(v.to_bytes(2, 'little') for v in liste))
-        ergebnis[kat] = {'n1': b64(n1), 'n2': b64(n2), 'ort1': u16(o1), 'ort2': u16(o2), '_n1': list(n1)}
-    return ergebnis
+        a, b, _, _ = raster.netz['kanten'][k]
+        ce = g['kante'][k]
+        aus.append({a: d / g['v'] + t * ce, b: d / g['v'] + (1 - t) * ce})
+    return aus
 
 
-def zellen_ausgabe(zellen, ergebnis):
+def zellen_minuten(quellen, netz, typen, g, einstieg):
+    """Je Zelle (t1, ort1, t2, ort2) in Sekunden bzw. None."""
+    marke = (zwei_naechste_kind if g['abbiegen'] else zwei_naechste)(quellen, netz, typen, g)
+    aus = []
+    for e in einstieg:
+        best = {}
+        for kn, d in e.items():
+            for t, o in marke[kn] or ():
+                t += d
+                if t < best.get(o, INF):
+                    best[o] = t
+        rang = sorted((t, o) for o, t in best.items() if t <= GRENZE_S)[:2] + [(None, KEIN_ORT)] * 2
+        aus.append((rang[0][0], rang[0][1], rang[1][0], rang[1][1]))
+    return aus
+
+
+def quellen_von(orte, indizes, v):
+    return [(d / v, kn, oi) for oi in indizes for kn, d in zip(orte[oi]['knoten'], orte[oi]['abstand'])]
+
+
+def personen_rechnen(netz, raster, orte, zellen, personen, massnahmen):
+    """Minuten je Person, Kategorie und Zelle; dazu die Wirkung der Sparplan-Massnahmen."""
+    typen = Typen(netz)
+    bank = ohne_bank(netz, orte, personen['allgemein']['bank_naehe_m'])
+    je_kat = collections.defaultdict(list)
+    for oi, o in enumerate(orte):
+        je_kat[o['kat']].append(oi)
+    ergebnis, gewichte_je = {}, {}
+    for pid in personen['reihe']:
+        t0 = time.time()
+        g = gewichte(typen, bank, personen['personen'][pid], personen['allgemein'])
+        gewichte_je[pid] = g
+        einstieg = einstiege(raster, zellen, g)
+        kats = list(personen['personen'][pid]['ziele'])
+        kats += [m['kategorie'] for m in massnahmen if m['person'] == pid and m['wirkung'] == 'naechster'
+                 and m['kategorie'] not in kats]
+        ergebnis[pid] = {'_einstieg': einstieg}
+        for kat in kats:
+            ergebnis[pid][kat] = zellen_minuten(quellen_von(orte, je_kat[KAT_NR[kat]], g['v']), netz, typen, g, einstieg)
+        print('Person %-11s %2d Kategorien, %d Zellen ohne Weg, %d s'
+              % (pid, len(kats), sum(1 for e in einstieg if not e), time.time() - t0))
+    wirkung = []
+    for m in massnahmen:
+        osm = {o['osm'] for o in m['orte']}
+        idx = [oi for oi, o in enumerate(orte) if o['osm'] in osm and o['kat'] == KAT_NR[m['kategorie']]]
+        g = gewichte_je[m['person']]
+        einstieg = ergebnis[m['person']]['_einstieg']
+        if m['wirkung'] == 'naechster':
+            alt = ergebnis[m['person']][m['kategorie']]
+            rest = [oi for oi in je_kat[KAT_NR[m['kategorie']]] if oi not in idx]
+            neu = zellen_minuten(quellen_von(orte, rest, g['v']), netz, typen, g, einstieg)
+            betroffen = [i for i, x in enumerate(alt) if x[1] in idx]
+        else:
+            neu = zellen_minuten(quellen_von(orte, idx, g['v']), netz, typen, g, einstieg)
+            alt, betroffen = None, [i for i, x in enumerate(neu) if x[0] is not None and x[0] <= 15 * 60]
+        wirkung.append({'orte': idx, 'zellen': betroffen, 'alt': alt, 'neu': neu})
+    return ergebnis, wirkung
+
+
+def gewicht_je_zelle(zellen, art):
+    """Einwohner oder die passende Altersgruppe je Zelle; ohne Wert (geheim) das Stadtmittel."""
+    if art == 'einwohner':
+        return [z['einwohner'] for z in zellen]
+    bekannt = [(z['einwohner'], z[art]) for z in zellen if z[art] != UNERREICHBAR]
+    mittel = sum(e * a for e, a in bekannt) / max(1, sum(e for e, _ in bekannt))
+    return [z['einwohner'] * (z[art] if z[art] != UNERREICHBAR else mittel) / 100 for z in zellen]
+
+
+def zellen_ausgabe(zellen, personen):
     # Ecken einer Zelle als Versatz zum Mittelpunkt (in der Stadtmitte gerechnet; im Stadtgebiet
     # weicht das um weniger als 0,1 m ab). Die Zellen sind gegen Norden um gut 1 Grad gedreht.
     mx, my = wgs84_nach_laea(LAT0, LON0)
@@ -1026,40 +1265,109 @@ def zellen_ausgabe(zellen, ergebnis):
         'format': ('Je Zelle ein Eintrag in jedem Feld. laea_x/laea_y: Mittelpunkt in EPSG:3035 geteilt durch 100 '
                    '(ganzzahlig abgerundet), lat/lon: Mittelpunkt WGS84, ecken: [dlat, dlon] der vier Ecken. '
                    'u18/ue65: Anteil in Prozent, 255 = kein Wert (geheim gehalten). bezirk: beznr. '
-                   'minuten[person][kategorie]: n1/n2 Base64 Uint8, Gehminuten (aufgerundet) zum naechsten bzw. '
-                   'zweitnaechsten Ort, 255 = nicht in 60 Minuten. ort1/ort2: Base64 Uint16 little-endian, Index in '
-                   'WEGE_ORTE.orte, 65535 = keiner. Weg von der Zellmitte zur naechsten Kante zaehlt mit.'),
-        'personen': {'erwachsene': {'tempo_kmh': round(TEMPO * 3.6, 1), 'ampel_s': AMPEL_S}},
+                   'Die Minuten je Person stehen in wege-zellen-<person>.js.'),
+        'personen': personen['reihe'],
         'anzahl': len(zellen), 'ecken': ecken,
         'laea_x': [z['x'] // 100 for z in zellen], 'laea_y': [z['y'] // 100 for z in zellen],
         'lat': [round(z['lat'], 5) for z in zellen], 'lon': [round(z['lon'], 5) for z in zellen],
         'einwohner': [z['einwohner'] for z in zellen], 'u18': [z['u18'] for z in zellen],
         'ue65': [z['ue65'] for z in zellen], 'bezirk': [z['bezirk'] for z in zellen],
-        'minuten': {'erwachsene': {k: {f: v for f, v in e.items() if not f.startswith('_')} for k, e in ergebnis.items()}},
     }
+
+
+def b64(werte):
+    return base64.b64encode(bytes(werte)).decode('ascii')
+
+
+def u16(werte):
+    return b64(b''.join(v.to_bytes(2, 'little') for v in werte))
+
+
+def person_ausgabe(pid, erg, personen):
+    kats = {}
+    for kat, liste in erg.items():
+        if kat.startswith('_'):
+            continue
+        kats[kat] = {'n1': b64(minuten(x[0]) for x in liste), 'n2': b64(minuten(x[2]) for x in liste),
+                     'ort1': u16(x[1] for x in liste), 'ort2': u16(x[3] for x in liste)}
+    p = personen['personen'][pid]
+    return {
+        'erzeugt_von': 'scraper/wege_bauen.py', 'erzeugt_am': date.today().isoformat(),
+        'format': ('kategorien[kat]: n1/n2 Base64 Uint8, Gehminuten (aufgerundet) zum naechsten bzw. zweitnaechsten '
+                   'Ort, 255 = nicht in 60 Minuten. ort1/ort2: Base64 Uint16 little-endian, Index in WEGE_ORTE.orte, '
+                   '65535 = keiner. Reihenfolge der Zellen wie in WEGE_ZELLEN. Bei Tag, ohne Nacht und Hitze.'),
+        'person': pid, 'werte': {k: p[k] for k in p if k not in ('name_l', 'warum', 'warum_l', 'farbe')},
+        'kategorien': kats,
+    }
+
+
+def massnahmen_ausgabe(roh, wirkung, zellen, orte):
+    ew = [z['einwohner'] for z in zellen]
+    ue65 = gewicht_je_zelle(zellen, 'ue65')
+    u18 = gewicht_je_zelle(zellen, 'u18')
+    aus = dict(roh)
+    aus.update({'erzeugt_von': 'scraper/wege_bauen.py (Zahlen) aus data/wege-massnahmen.json (Text)',
+                'erzeugt_am': date.today().isoformat()})
+    aus['massnahmen'] = []
+    for m, w in zip(roh['massnahmen'], wirkung):
+        z = w['zellen']
+        zahl = {'einwohner': round(sum(ew[i] for i in z)), 'ab65': round(sum(ue65[i] for i in z)),
+                'unter18': round(sum(u18[i] for i in z))}
+        if m['wirkung'] == 'naechster':
+            mehr = [(ew[i], minuten(w['neu'][i][0]) - minuten(w['alt'][i][0])) for i in z if w['neu'][i][0] is not None]
+            zahl['mehr_min'] = round(sum(e * d for e, d in mehr) / max(1, sum(e for e, _ in mehr)), 1)
+            zahl['aus_15_min'] = round(sum(ew[i] for i in z if w['alt'][i][0] <= 900
+                                           and (w['neu'][i][0] is None or w['neu'][i][0] > 900)))
+        mm = dict(m)
+        mm['ort_index'] = w['orte']
+        mm['zahlen'] = zahl
+        aus['massnahmen'].append(mm)
+    return aus
 
 
 # ------------------------------------------------------------------ Ausgabe
 
-def schreibe(name, variable, daten, kommentar):
+def schreibe(name, variable, daten, kommentar, nur_js=False):
     text = json.dumps(daten, ensure_ascii=False, separators=(',', ':'))
-    with open(os.path.join(DATEN, name + '.json'), 'w', encoding='utf-8') as f:
-        f.write(text + '\n')
+    if not nur_js:   # bei von Hand gepflegten Dateien bleibt die .json unangetastet
+        with open(os.path.join(DATEN, name + '.json'), 'w', encoding='utf-8') as f:
+            f.write(text + '\n')
     pfad = os.path.join(DATEN, name + '.js')
     with open(pfad, 'w', encoding='utf-8') as f:
         f.write('/* %s */\nwindow.%s = %s;\n' % (kommentar, variable, text))
     return os.path.getsize(pfad)
 
 
+def bezirkstabelle(bezirke, zellen, ergebnis, personen):
+    """Je Person: Anteil (Einwohner bzw. Altersgruppe), der den naechsten Ort in 15 Minuten erreicht."""
+    for pid in personen['reihe']:
+        p = personen['personen'][pid]
+        w = gewicht_je_zelle(zellen, p['gewicht'])
+        spalten = p['ziele'][:7]
+        wer = {'einwohner': 'Einwohner', 'ue65': 'Einwohner ab 65', 'u18': 'Einwohner unter 18'}[p['gewicht']]
+        print('\n%s (%s km/h) — Anteil der %s mit Ziel in 15 Minuten\n' % (p['name'], p['kmh'], wer))
+        print('%-3s %-26s %8s ' % ('Nr', 'Bezirk', 'Gewicht') + ' '.join('%11s' % s[:11] for s in spalten))
+        for b in bezirke + [{'nr': 0, 'name': 'Stadt'}]:
+            idx = [i for i, z in enumerate(zellen) if b['nr'] in (0, z['bezirk'])]
+            summe = sum(w[i] for i in idx) or 1
+            anteile = [100 * sum(w[i] for i in idx if ergebnis[pid][s][i][0] is not None
+                                 and ergebnis[pid][s][i][0] <= 900) / summe for s in spalten]
+            print('%-3s %-26s %8d ' % ('%02d' % b['nr'] if b['nr'] else '', b['name'], summe)
+                  + ' '.join('%10.0f%%' % x for x in anteile))
+
+
 def main():
     t0 = time.time()
+    personen = lade_personen()
+    with open(MASSNAHMEN_DATEI, encoding='utf-8') as f:
+        massnahmen_roh = json.load(f)
     bez_geo, bezirke = bezirke_bauen()
     netz = netz_bauen()
     raster = Kantenraster(netz)
     orte = orte_bauen(raster)
     adressen = adressen_bauen()
     zellen = zensus_lesen(bezirke)
-    ergebnis = zellen_rechnen(netz, raster, orte, zellen)
+    ergebnis, wirkung = personen_rechnen(netz, raster, orte, zellen, personen, massnahmen_roh['massnahmen'])
 
     drin = sum(1 for x, y in netz['xy'][::20] if bezirk_von(x, y, bezirke))
     print('Kontrolle Projektion: %d %% der Netzknoten liegen in einem Stadtbezirk' % round(100 * drin / len(netz['xy'][::20])))
@@ -1069,13 +1377,23 @@ def main():
                                  'Fusswegenetz Ingolstadt, © OpenStreetMap-Mitwirkende, ODbL 1.0; erzeugt von scraper/wege_bauen.py'),
         'wege-orte.js': schreibe('wege-orte', 'WEGE_ORTE', orte_ausgabe(orte),
                                  'Alltagsorte Ingolstadt, © OpenStreetMap-Mitwirkende, ODbL 1.0; erzeugt von scraper/wege_bauen.py'),
-        'wege-zellen.js': schreibe('wege-zellen', 'WEGE_ZELLEN', zellen_ausgabe(zellen, ergebnis),
-                                   'Zensus 2022 (Statistische Ämter des Bundes und der Länder) mit Gehminuten; erzeugt von scraper/wege_bauen.py'),
+        'wege-zellen.js': schreibe('wege-zellen', 'WEGE_ZELLEN', zellen_ausgabe(zellen, personen),
+                                   'Zensus 2022 (Statistische Ämter des Bundes und der Länder); erzeugt von scraper/wege_bauen.py'),
         'bezirke.js': schreibe('bezirke', 'BEZIRKE', bez_geo,
                                'Stadtbezirke Ingolstadt, Stadt Ingolstadt, CC BY 3.0 DE; erzeugt von scraper/wege_bauen.py'),
         'wege-adressen.js': schreibe('wege-adressen', 'WEGE_ADRESSEN', adressen,
                                      'Hausadressen Ingolstadt, © OpenStreetMap-Mitwirkende, ODbL 1.0; erzeugt von scraper/wege_bauen.py'),
+        'wege-personen.js': schreibe('wege-personen', 'WEGE_PERSONEN', personen,
+                                     'Werte je Person aus data/wege-personen.json (von Hand gepflegt); erzeugt von scraper/wege_bauen.py',
+                                     nur_js=True),
+        'wege-massnahmen.js': schreibe('wege-massnahmen', 'WEGE_MASSNAHMEN', massnahmen_ausgabe(massnahmen_roh, wirkung, zellen, orte),
+                                       'Sparplan-Massnahmen mit Ortsbezug aus data/wege-massnahmen.json, Betroffene berechnet; '
+                                       'erzeugt von scraper/wege_bauen.py', nur_js=True),
     }
+    for pid in personen['reihe']:
+        groessen['wege-zellen-%s.js' % pid] = schreibe(
+            'wege-zellen-' + pid, 'WEGE_ZELLEN_' + pid.upper(), person_ausgabe(pid, ergebnis[pid], personen),
+            'Gehminuten je Zensus-Zelle, Person %s; Zensus 2022 und © OpenStreetMap-Mitwirkende; erzeugt von scraper/wege_bauen.py' % pid)
 
     kanten_gesperrt = sum(1 for k in netz['kanten'] if k[3][7])
     print('\nKnoten %d · Kanten %d (davon gesperrt %d) · aus %d OSM-Wegen'
@@ -1084,22 +1402,13 @@ def main():
     print('Orte:', ' · '.join('%s %d' % (n, zaehl[KAT_NR[k]]) for k, n in KATEGORIEN))
     print('Zellen %d · Einwohner %d' % (len(zellen), sum(z['einwohner'] for z in zellen)))
     print('Adressen %d in %d Strassen' % (adressen['anzahl'], len(adressen['strassen'])))
-
-    spalten = ['supermarkt', 'apotheke', 'hausarzt', 'grundschule', 'spielplatz', 'haltestelle']
-    print('\nAnteil der Einwohner, die den naechsten Ort in 15 Minuten zu Fuss erreichen (Person: Erwachsene)\n')
-    print('%-3s %-26s %8s ' % ('Nr', 'Bezirk', 'Einw.') + ' '.join('%11s' % s[:11] for s in spalten))
-    for b in bezirke:
-        idx = [i for i, z in enumerate(zellen) if z['bezirk'] == b['nr']]
-        ew = sum(zellen[i]['einwohner'] for i in idx) or 1
-        anteile = [100 * sum(zellen[i]['einwohner'] for i in idx if ergebnis[s]['_n1'][i] <= 15) / ew for s in spalten]
-        print('%02d  %-26s %8d ' % (b['nr'], b['name'], ew) + ' '.join('%10.0f%%' % a for a in anteile))
-    ew = sum(z['einwohner'] for z in zellen)
-    print('    %-26s %8d ' % ('Stadt', ew) + ' '.join(
-        '%10.0f%%' % (100 * sum(z['einwohner'] for i, z in enumerate(zellen) if ergebnis[s]['_n1'][i] <= 15) / ew)
-        for s in spalten))
+    bezirkstabelle(bezirke, zellen, ergebnis, personen)
+    print('\nSparplan-Massnahmen:')
+    for m in massnahmen_ausgabe(massnahmen_roh, wirkung, zellen, orte)['massnahmen']:
+        print('  %-7s %-48s Orte %s  %s' % (m['hsk_nr'], m['titel'][:48], m['ort_index'], m['zahlen']))
     print()
     for name, g in groessen.items():
-        print('%-15s %7d KB' % (name, round(g / 1024)))
+        print('%-24s %7d KB' % (name, round(g / 1024)))
     if groessen['wege-netz.js'] > 2 * 1024 * 1024:
         print('WARNUNG: wege-netz.js ist groesser als 2 MB')
     print('fertig in %d s' % (time.time() - t0))

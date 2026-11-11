@@ -192,13 +192,31 @@ Alles kommt von der eigenen Domain, kein Kartendienst:
   liest dafür per HTTP-Bereichsabfrage nur die nötigen Kacheln aus dem
   weltweiten Archiv und schreibt eine eigene PMTiles-Datei; das ersetzt
   `pmtiles extract`, ein Zusatzwerkzeug ist nicht nötig.
-- Der Server muss Bereichsabfragen (`Range`) beantworten; GitHub Pages tut das.
-  `python3 -m http.server` kann es nicht, für die lokale Vorschau also einen
+- Der Server muss Bereichsabfragen (`Range`) beantworten. GitHub Pages tut das
+  (geprüft am 11.11.2026: `curl -s -r 0-1023 -D - -o /dev/null
+  https://schanzer-papierpanther.de/data/feed.js` liefert `206` mit
+  `Content-Range`). Achtung: Textdateien wie `.js` liefert Pages gzip-komprimiert,
+  der Bereich bezieht sich dann auf die komprimierte Fassung; PNG und WOFF2 kommen
+  unkomprimiert. Nach dem ersten Push deshalb einmal prüfen, dass die Kartendatei
+  ohne `content-encoding` kommt:
+  `curl -s -r 0-1023 -H "Accept-Encoding: gzip" -D - -o /dev/null https://schanzer-papierpanther.de/karten/ingolstadt.pmtiles`.
+  `python3 -m http.server` kann Range nicht, für die lokale Vorschau also einen
   Server mit Range-Unterstützung nehmen.
 
-Die Daten dazu baut `wege_bauen.py`:
+Die Ansicht „Mein Bezirk“ färbt die zwölf Bezirke nach dem Anteil, der ein Ziel
+in 15 Minuten erreicht (je Person; beim Kind zählen die unter 18-Jährigen, bei
+der älteren Person die ab 65-Jährigen), zeigt auf Wunsch die bewohnten Zellen,
+in denen es Menschen trifft, und je Bezirk die letzten fünf Einträge des
+Bezirksausschusses aus `data/feed.js` (erst beim Anklicken geladen). In der
+Einzelansicht rechnet „Wenn dieser Ort schließt“ vor Ort neu und stadtweit über
+die zweitnächsten Orte der Zellen. Darunter steht „Was der Sparplan für Wege
+bedeutet“ aus `data/wege-massnahmen.json` (von Hand gepflegt: Maßnahmen aus
+`data/hsk.json` mit eindeutigem Ort, Text in beiden Sprachen, Quelle).
 
-Plan und Rechenmodell: [WEGE-KARTE-PLAN.md](WEGE-KARTE-PLAN.md). Das Skript
+Plan und Rechenmodell: [WEGE-KARTE-PLAN.md](WEGE-KARTE-PLAN.md). Die Werte je
+Person und Bedingung stehen nur in `data/wege-personen.json` (von Hand
+gepflegt); `wege_bauen.py` rechnet damit und legt sie als `data/wege-personen.js`
+für `wege.js` bei, damit Seite und Zellen nie auseinanderlaufen. Das Skript
 schreibt je eine `.json` und `.js`:
 
 - `data/wege-netz` (window.WEGE_NETZ): Fußwegenetz aus OpenStreetMap, als
@@ -212,9 +230,14 @@ schreibt je eine `.json` und `.js`:
   Einstiegsknoten; Flächen (Parks, Spielplätze, Sportanlagen, Schulhöfe)
   hängen über Randpunkte alle 20 m am Netz, nicht über ihren Mittelpunkt.
 - `data/wege-zellen` (window.WEGE_ZELLEN): bewohnte Zensus-2022-Zellen
-  (100 m) im Stadtgebiet mit Einwohnern, Anteil unter 18 und ab 65, Bezirk und
-  je Kategorie den Gehminuten zum nächsten und zweitnächsten Ort (Person
-  „Erwachsene“: 5 km/h, Ampel +30 s, aufgerundet, 255 = nicht in 60 Minuten).
+  (100 m) im Stadtgebiet mit Einwohnern, Anteil unter 18 und ab 65 und Bezirk.
+- `data/wege-zellen-<person>` (window.WEGE_ZELLEN_<PERSON>): je Person und
+  Ziel ihrer Liste die Gehminuten zum nächsten und zweitnächsten Ort samt
+  Ortsindex (aufgerundet, 255 = nicht in 60 Minuten), mit denselben Regeln wie
+  `wege.js`, auch der Straßenseiten-Regel des Kindes. Die Seite lädt nur die
+  Datei der gewählten Person.
+- `data/wege-massnahmen.js` (nur `.js`): die von Hand gepflegten Maßnahmen plus
+  berechnete Betroffene.
 - `data/bezirke` (window.BEZIRKE): die 12 Stadtbezirke, auf etwa 5 m vereinfacht.
 - `data/wege-adressen` (window.WEGE_ADRESSEN): rund 27.000 Hausadressen aus
   OpenStreetMap für die Adresssuche, je Straße gepackt (rund 300 KB).
@@ -223,10 +246,12 @@ Das Zensus-Gitter liegt in ETRS89-LAEA (EPSG:3035), die Bezirke der Stadt in
 UTM 32 (EPSG:25832). Beide Umrechnungen nach WGS84 stehen im Skript (mit
 Prüfwert aus der EPSG-Anleitung), ohne Zusatzbibliothek. Der erste Lauf lädt
 rund 60 MB Zensus-Zips und drei Overpass-Abfragen; alles bleibt in
-`scraper/.cache/wege/`. Am Ende druckt das Skript je Bezirk den Anteil der
-Einwohner, die Supermarkt, Apotheke, Hausarzt, Grundschule, Spielplatz und
-Haltestelle in 15 Minuten erreichen. `pruefen.py` zählt Knoten, Bezirke und
-Einwohner nach.
+`scraper/.cache/wege/`. Am Ende druckt das Skript für jede der fünf Personen
+eine Bezirkstabelle (Anteil mit Ziel in 15 Minuten) und die Betroffenen der
+Sparplan-Maßnahmen. `pruefen.py` zählt Knoten, Bezirke und Einwohner nach und
+prüft, dass `wege-personen.js` zur `.json` passt, jede Person ihre Zellendatei
+hat und jede Maßnahme auf einen Ort in `wege-orte` und eine Nummer in
+`hsk.json` zeigt.
 
 ## Datenquelle
 

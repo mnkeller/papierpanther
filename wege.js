@@ -8,68 +8,28 @@
 import * as maplibregl from './vendor/maplibre-gl/maplibre-gl.mjs';
 
 /* ------------------------------------------------------------- Konstanten
-   Startwerte, auf der Seite unter „So rechnet die Karte“ als Tabelle offengelegt.
-   treppe_s: null = Treppen gesperrt. faktor_*: Zeit auf solchen Kanten mal diesem Wert. */
-const PERSONEN = {
-  erwachsene: {
-    name: 'Erwachsene', name_l: 'Erwachsene', farbe: '#2f5f86',
-    kmh: 5.0, ampel_s: 30, treppe_s: 0, bank_s: 0,
-    warum: 'Maßstab: 5 km/h, wartet nur an Ampeln', warum_l: 'Erwachsene gehen schnell.',
-    ziele: ['supermarkt', 'baecker', 'apotheke', 'hausarzt', 'grundschule', 'kita', 'spielplatz',
-      'park', 'haltestelle', 'bank_post', 'buecherei', 'toilette'],
-  },
-  kind: {
-    name: 'Kind (allein, 6–10 Jahre)', name_l: 'Kind', farbe: '#c4553a',
-    kmh: 3.6, ampel_s: 30, treppe_s: 0, bank_s: 0, nur_gesichert_queren: true, gehweg_noetig: true, nachts_gesperrt: true,
-    warum: 'geht langsamer und quert große Straßen nur an Ampel oder Zebrastreifen',
-    warum_l: 'Kinder gehen nur an der Ampel oder am Zebra-Streifen über große Straßen.',
-    ziele: ['grundschule', 'spielplatz', 'bolzplatz', 'eis', 'baecker', 'buecherei'],
-  },
-  aeltere: {
-    name: 'Ältere Person', name_l: 'Ältere Menschen', farbe: '#2a8f7f',
-    kmh: 3.2, ampel_s: 30, treppe_s: 60, bank_s: 30,
-    warum: 'geht 3,2 km/h und braucht Pausen, wo keine Bank steht',
-    warum_l: 'Ältere Menschen gehen langsam. Sie brauchen Pausen.',
-    ziele: ['apotheke', 'hausarzt', 'supermarkt', 'bank_post', 'haltestelle', 'kirche', 'toilette'],
-  },
-  rollstuhl: {
-    name: 'Rollstuhl oder Kinderwagen', name_l: 'Rollstuhl oder Kinder-Wagen', farbe: '#7a5aa6',
-    kmh: 4.0, ampel_s: 30, treppe_s: null, bank_s: 0, hindernisse_gesperrt: true,
-    faktor_unbefestigt: 1.5, faktor_pflaster: 1.3,
-    warum: 'Treppen und hohe Bordsteine versperren den Weg, Kies und Pflaster bremsen',
-    warum_l: 'Treppen und hohe Bord-Steine gehen nicht.',
-    ziele: ['supermarkt', 'baecker', 'apotheke', 'hausarzt', 'grundschule', 'kita', 'spielplatz',
-      'park', 'haltestelle', 'bank_post', 'buecherei', 'toilette'],
-  },
-  besucher: {
-    name: 'Besucher:in', name_l: 'Besucher', farbe: '#c9962c',
-    kmh: 4.5, ampel_s: 30, treppe_s: 0, bank_s: 0, faktor_unbenannt: 2.0, faktor_unbenannt_zufahrt: 1.5,
-    warum: 'kennt keine Abkürzungen und bleibt auf Straßen mit Namen',
-    warum_l: 'Besucher kennen die Abkürzungen nicht.',
-    ziele: ['bahnhof', 'touristinfo', 'toilette', 'cafe', 'sehenswuerdigkeit', 'hotel', 'apotheke', 'haltestelle'],
-  },
-};
-const REIHE = ['erwachsene', 'kind', 'aeltere', 'rollstuhl', 'besucher'];
-const BEDINGUNGEN = {
-  nacht: { faktor_unbeleuchtet: 1.5 },   // Kind: unbeleuchtete Wege gesperrt
-  hitze: { faktor_ohne_schatten: 1.3 },  // dazu Trinkwasser als Ziel
-};
-const BANK_ABSTAND_M = 300;   // Ältere: alle 300 m ohne Bank +bank_s Sekunden
-const BANK_NAEHE_M = 40;      // eine Bank so nah an der Kante zählt als Rastplatz
-const STUFEN_MIN = [5, 10, 15];
+   Werte je Person und Bedingung stehen in data/wege-personen.json (von Hand
+   gepflegt); scraper/wege_bauen.py rechnet mit derselben Datei die Minuten je
+   Zensus-Zelle und legt sie als data/wege-personen.js bei. Auf der Seite unter
+   „So rechnet die Karte“ als Tabelle offengelegt. */
+const WP = window.WEGE_PERSONEN || { personen: {}, reihe: [], bedingungen: {}, allgemein: {} };
+const PERSONEN = WP.personen, REIHE = WP.reihe, BEDINGUNGEN = WP.bedingungen;
+const BANK_ABSTAND_M = WP.allgemein.bank_abstand_m;   // Ältere: alle 300 m ohne Bank +bank_s Sekunden
+const BANK_NAEHE_M = WP.allgemein.bank_naehe_m;       // eine Bank so nah an der Kante zählt als Rastplatz
+const STUFEN_MIN = WP.allgemein.stufen_min;
+const EINRASTEN_M = WP.allgemein.einrasten_m;         // weiter weg vom nächsten Weg rechnet die Karte nicht
 const PUFFER_M = 40;          // erreichbare Fläche: so weit links und rechts des Wegs
 const RASTER_M = 12;          // Zellgröße der Fläche
 const GLAETTEN_M = 70;        // Rand mit runden Ecken: Flächen werden um so viel geschlossen
 const LOCH_MIN_M2 = 40000;    // kleinere Löcher füllen
 const INSEL_MIN_M2 = 10000;   // kleinere Inseln weglassen
-const EINRASTEN_M = 300;      // weiter weg vom nächsten Weg rechnet die Karte nicht
 const START = { lat: 48.76338, lon: 11.42514, name: 'Rathausplatz' };
 const NAMEN_LEICHT = {
   supermarkt: 'Supermarkt', baecker: 'Bäcker', apotheke: 'Apotheke', hausarzt: 'Haus-Arzt',
   grundschule: 'Grund-Schule', kita: 'Kita', spielplatz: 'Spiel-Platz', park: 'Park',
   haltestelle: 'Halte-Stelle', bank_post: 'Bank oder Post', buecherei: 'Bücherei', toilette: 'Toilette',
   bolzplatz: 'Bolz-Platz', eis: 'Eis-Diele', kirche: 'Kirche', bahnhof: 'Bahnhof', touristinfo: 'Touristen-Info',
-  cafe: 'Café', sehenswuerdigkeit: 'Sehens-Wertes', hotel: 'Hotel', trinkwasser: 'Trink-Wasser',
+  cafe: 'Café', sehenswuerdigkeit: 'Sehens-Wertes', hotel: 'Hotel', trinkwasser: 'Trink-Wasser', treff: 'Treff-Punkt',
 };
 const ALPHA_STUFEN = [0.3, 0.2, 0.22];    // Einzelansicht: 5, 10, 15 Minuten, liegen uebereinander
 const ALPHA_SCHICHT = 0.36;               // Schichtbild: Fläche (die oberste Schicht deckt)
@@ -373,11 +333,12 @@ function sucheKanten(g, start, grenze, sx, sy) {
   return { zeit, besucht };
 }
 
-function naechsteOrte(g, zeit, ziele) {
+function naechsteOrte(g, zeit, ziele, ohne) {
   const aus = {};
   for (const kat of ziele) {
     let best = null;
     for (const oi of KAT[kat].orte) {
+      if (oi === ohne) continue;
       const o = ORTE.orte[oi];
       for (let j = 0; j < o[5].length; j++) {
         const z = zeit[o[5][j]] + o[6][j] / g.v;
@@ -632,6 +593,8 @@ function adressVorschlaege(eingabe) {
 const zustand = {
   start: { lat: START.lat, lon: START.lon, name: START.name },
   ansicht: 'eine', person: 'erwachsene', bed: { nacht: false, hitze: false },
+  bezirk: { person: 'aeltere', kat: 'apotheke', luecken: false, nr: null },
+  wenn: null,   // Ort (Index), dessen Schliessung in der Einzelansicht durchgespielt wird
 };
 let karte = null, kartenBereit = false, letztes = null;
 const leinwand = document.createElement('canvas');
@@ -655,6 +618,13 @@ function rechne() {
   const { lat, lon } = zustand.start;
   const [sx, sy] = zuXY(lat, lon);
   const bez = bezirkVon(lat, lon);
+  if (zustand.ansicht === 'bezirk') {
+    letztes = { bez, bezirk: true };
+    zeigePanel();
+    zeichneKarte();
+    rechneBezirke();
+    return;
+  }
   if (zustand.ansicht === 'eine') {
     const r = rechnePerson(zustand.person, sx, sy);
     if (!r) {
@@ -663,7 +633,7 @@ function rechne() {
       const masken = stufenMasken(r.raster, STUFEN_MIN.map((m) => m * 60));
       const farbe = PERSONEN[zustand.person].farbe;
       male(leinwand, masken.slice().reverse().map((m, k) => ({ maske: m, farbe, alpha: ALPHA_STUFEN[2 - k] })));
-      letztes = { bez, raster: r.raster, orte: naechsteOrte(r.g, r.such.zeit, zieleVon(zustand.person)) };
+      letztes = { bez, raster: r.raster, g: r.g, zeit: r.such.zeit, orte: naechsteOrte(r.g, r.such.zeit, zieleVon(zustand.person)) };
     }
   } else {
     const schichten = [];
@@ -694,11 +664,14 @@ function zeigePanel() {
   $('start-bezirk').textContent = r.bez
     ? t('Bezirk ' + r.bez.bezname, 'Stadt-Bezirk ' + r.bez.bezname)
     : t('außerhalb der Stadtbezirke', 'nicht in Ingolstadt');
-  const eine = zustand.ansicht === 'eine';
-  $('einzel').hidden = !eine;
-  $('schicht').hidden = eine;
-  document.querySelectorAll('[data-ansicht]').forEach((b) => b.setAttribute('aria-pressed', b.dataset.ansicht === zustand.ansicht ? 'true' : 'false'));
-  if (eine) zeigeListe(); else zeigeSchichten();
+  const ans = zustand.ansicht;
+  $('einzel').hidden = ans !== 'eine';
+  $('schicht').hidden = ans !== 'alle';
+  $('bezirk-ansicht').hidden = ans !== 'bezirk';
+  $('start-block').hidden = ans === 'bezirk';
+  $('bed-block').hidden = ans === 'bezirk';
+  document.querySelectorAll('[data-ansicht]').forEach((b) => b.setAttribute('aria-pressed', b.dataset.ansicht === ans ? 'true' : 'false'));
+  if (ans === 'eine') zeigeListe(); else if (ans === 'alle') zeigeSchichten();
   $('hinweis-bed').innerHTML = [
     zustand.bed.nacht ? t('Nacht: Ob ein Weg beleuchtet ist, steht nur an etwa 3.200 von 17.000 Wegen. Pfade und Feldwege ohne Angabe gelten als dunkel.',
       'Nachts: Die Karte weiß oft nicht, ob ein Weg Licht hat.') : '',
@@ -744,6 +717,16 @@ function zeigeListe() {
     min.className = 'ziel-min';
     min.textContent = a ? minText(a.z) : '–';
     li.append(name, was, min);
+    if (a && kat !== 'trinkwasser') {
+      const knopf = document.createElement('button');
+      knopf.type = 'button';
+      knopf.className = 'wenn-knopf';
+      knopf.textContent = zustand.wenn === a.oi ? t('Zurück', 'Zurück') : t('Wenn dieser Ort schließt', 'Was ist, wenn er zu macht?');
+      knopf.setAttribute('aria-pressed', zustand.wenn === a.oi ? 'true' : 'false');
+      knopf.addEventListener('click', () => { zustand.wenn = zustand.wenn === a.oi ? null : a.oi; zeigeListe(); });
+      li.appendChild(knopf);
+      if (zustand.wenn === a.oi) li.appendChild(wennZeile(kat, a));
+    }
     ul.appendChild(li);
   }
   $('ziele-summe').textContent = t(
@@ -774,9 +757,283 @@ function zeigeSchichten() {
   }
 }
 
+/* ------------------------------------------------------ Daten nachladen
+   Die Minuten je Zensus-Zelle liegen je Person in einer eigenen Datei und
+   kommen erst, wenn eine Ansicht sie braucht; der Feed nur fuer die
+   Beschluesse eines angeklickten Bezirks. */
+const geladen = {};
+function ladeSkript(pfad) {
+  if (!geladen[pfad]) {
+    geladen[pfad] = new Promise((ok, fehler) => {
+      const el = document.createElement('script');
+      el.src = pfad;
+      el.onload = ok;
+      el.onerror = () => { delete geladen[pfad]; fehler(new Error(pfad)); };
+      document.head.appendChild(el);
+    });
+  }
+  return geladen[pfad];
+}
+const zellDaten = (person) => window['WEGE_ZELLEN_' + person.toUpperCase()];
+async function ladeZellen(person) {
+  await ladeSkript('data/wege-zellen.js');
+  await ladeSkript('data/wege-zellen-' + person + '.js');
+  return zellDaten(person);
+}
+const _dekodiert = {};
+function zellFeld(person, kat, feld) {   // n1/n2: Minuten (Uint8), ort1/ort2: Ortsindex (Uint16)
+  const k = person + '|' + kat + '|' + feld;
+  if (!_dekodiert[k]) {
+    const roh = atob(zellDaten(person).kategorien[kat][feld]), b = new Uint8Array(roh.length);
+    for (let i = 0; i < roh.length; i++) b[i] = roh.charCodeAt(i);
+    _dekodiert[k] = feld.startsWith('ort') ? new Uint16Array(b.buffer) : b;
+  }
+  return _dekodiert[k];
+}
+/* Gewicht je Zelle: Einwohner, beim Kind die unter 18-Jaehrigen, bei der
+   aelteren Person die ab 65-Jaehrigen (geheim gehaltene Anteile: Stadtmittel). */
+const _gewicht = {};
+function zellGewicht(art) {
+  if (!_gewicht[art]) {
+    const Z = window.WEGE_ZELLEN;
+    if (art === 'einwohner') {
+      _gewicht[art] = Z.einwohner.slice();
+    } else {
+      let summe = 0, n = 0;
+      Z[art].forEach((a, i) => { if (a !== 255) { summe += a * Z.einwohner[i]; n += Z.einwohner[i]; } });
+      const mittel = summe / n;
+      _gewicht[art] = Z.einwohner.map((e, i) => e * (Z[art][i] === 255 ? mittel : Z[art][i]) / 100);
+    }
+  }
+  return _gewicht[art];
+}
+const zahlRund = (x) => Math.round(x).toLocaleString('de-DE');
+const gewichtWort = (art) => ({
+  einwohner: t('Einwohner', 'Menschen'),
+  ue65: t('Menschen ab 65', 'ältere Menschen'),
+  u18: t('Kinder und Jugendliche unter 18', 'Kinder'),
+})[art];
+
+/* ---------------------------------------------------------- Was-waere-wenn
+   Vor Ort: dieselbe Wegsuche ohne den Ort. Stadtweit: jede Zelle kennt den
+   naechsten und zweitnaechsten Ort; wer diesen Ort als naechsten hat, muesste
+   zum zweitnaechsten. Gerechnet bei Tag, ohne Nacht und Hitze. */
+function wennStadt(person, kat, oi) {
+  const n1 = zellFeld(person, kat, 'n1'), n2 = zellFeld(person, kat, 'n2'), o1 = zellFeld(person, kat, 'ort1');
+  const ew = window.WEGE_ZELLEN.einwohner, ab65 = zellGewicht('ue65');
+  let N = 0, M = 0, mehr = 0, mitErsatz = 0, raus = 0;
+  for (let i = 0; i < o1.length; i++) {
+    if (o1[i] !== oi) continue;
+    N += ew[i]; M += ab65[i];
+    if (n2[i] !== 255) { mehr += ew[i] * (n2[i] - n1[i]); mitErsatz += ew[i]; }
+    if (n1[i] <= 15 && n2[i] > 15) raus += ew[i];
+  }
+  return { N, M, raus, mehr: mitErsatz ? mehr / mitErsatz : null, ohneErsatz: N - mitErsatz };
+}
+
+function wennZeile(kat, a) {
+  const box = document.createElement('div');
+  box.className = 'wenn';
+  const neu = naechsteOrte(letztes.g, letztes.zeit, [kat], a.oi)[kat];
+  const alt = ORTE.orte[a.oi][1] || katName(kat);
+  const vorOrt = document.createElement('p');
+  vorOrt.innerHTML = neu
+    ? t('Ohne <strong>' + alt + '</strong>: ' + (ORTE.orte[neu.oi][1] || katName(kat)) + ', <strong>' + minText(neu.z) + '</strong> statt ' + minText(a.z) + '.',
+      'Ohne ' + alt + ': ' + minText(neu.z) + ' statt ' + minText(a.z) + '.')
+    : t('Ohne <strong>' + alt + '</strong> liegt kein solcher Ort mehr in 15 Minuten.', 'Ohne ' + alt + ' ist nichts mehr in der Nähe.');
+  const stadt = document.createElement('p');
+  stadt.className = 'klein';
+  stadt.textContent = t('Rechne stadtweit …', 'Bitte warten …');
+  box.append(vorOrt, stadt);
+  const person = zustand.person;
+  ladeZellen(person).then((P) => {
+    if (!P.kategorien[kat]) { stadt.textContent = ''; return; }
+    const w = wennStadt(person, kat, a.oi);
+    if (!w.N) { stadt.textContent = t('Für keine bewohnte Zelle ist dies der nächste Ort.', 'Für niemanden ist das der nächste Ort.'); return; }
+    stadt.innerHTML = t(
+      'Stadtweit ist dieser Ort für <strong>' + zahlRund(w.N) + ' Menschen</strong> der nächste (davon ' + zahlRund(w.M) + ' ab 65). ' +
+      (w.mehr !== null ? 'Ohne ihn wäre ihr Weg im Mittel <strong>' + w.mehr.toLocaleString('de-DE', { maximumFractionDigits: 1 }) + ' Minuten</strong> länger' : 'Ohne ihn') +
+      (w.raus ? '; <strong>' + zahlRund(w.raus) + '</strong> erreichten keinen in 15 Minuten mehr.' : '.') +
+      (w.ohneErsatz ? ' ' + zahlRund(w.ohneErsatz) + ' fänden in 60 Minuten keinen anderen.' : '') +
+      ' Gerechnet für „' + PERSONEN[person].name + '“ bei Tag.',
+      zahlRund(w.N) + ' Menschen haben diesen Ort am nächsten. ' +
+      (w.raus ? zahlRund(w.raus) + ' Menschen hätten dann keinen in der Nähe.' : 'Sie hätten dann einen etwas weiteren Weg.'));
+  }).catch(() => { stadt.textContent = t('Die Stadtdaten konnten nicht geladen werden.', 'Das geht gerade nicht.'); });
+  return box;
+}
+
+/* ------------------------------------------------------------ Mein Bezirk */
+const ROEMISCH = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
+// hell = gut versorgt, dunkel = schlecht; eine Farbe, fuenf Helligkeiten (auch ohne Farbsehen lesbar)
+const STUFEN_ANTEIL = [[90, '#eef4f5'], [75, '#cfe1e7'], [60, '#a6c6d3'], [45, '#78a5b8'], [30, '#4a7e97'], [0, '#1e4d64']];
+const STUFEN_LUECKE = [[40, '#9c3f28'], [15, '#c9733a'], [5, '#e3ad66'], [0.5, '#f2dfb5']];
+const stufenAusdruck = (feld, stufen) => ['step', ['get', feld]].concat(
+  stufen.slice().reverse().flatMap(([g, f], k) => (k === 0 ? [f] : [g, f])));
+let bezirkWerte = null;
+
+async function rechneBezirke() {
+  const b = zustand.bezirk;
+  $('bz-status').textContent = t('Lade Daten …', 'Bitte warten …');
+  try { await ladeZellen(b.person); } catch (err) {
+    $('bz-status').textContent = t('Die Daten konnten nicht geladen werden.', 'Das geht gerade nicht.');
+    return;
+  }
+  $('bz-status').textContent = '';
+  if (zustand.ansicht !== 'bezirk') return;
+  const t0 = performance.now();
+  const P = zellDaten(b.person), Z = window.WEGE_ZELLEN;
+  if (!P.kategorien[b.kat]) b.kat = PERSONEN[b.person].ziele.find((k) => P.kategorien[k]);
+  const w = zellGewicht(PERSONEN[b.person].gewicht), n1 = zellFeld(b.person, b.kat, 'n1');
+  const je = {};
+  for (const f of BEZ.features) je[+f.properties.beznr] = { name: f.properties.bezname, summe: 0, gut: 0, betroffen: 0, einwohner: 0 };
+  for (let i = 0; i < Z.anzahl; i++) {
+    const x = je[Z.bezirk[i]];
+    if (!x) continue;
+    x.summe += w[i]; x.einwohner += Z.einwohner[i];
+    if (n1[i] <= 15) x.gut += w[i]; else x.betroffen += w[i];
+  }
+  for (const x of Object.values(je)) x.anteil = x.summe ? 100 * x.gut / x.summe : 0;
+  bezirkWerte = je;
+  zeigeBezirke();
+  zeichneBezirke();
+  $('panel').dataset.rechenzeitMs = String(Math.round(performance.now() - t0));
+}
+
+function baueBezirkWahl() {
+  const b = zustand.bezirk;
+  $('bz-person').innerHTML = REIHE.map((p) => '<option value="' + p + '"' + (p === b.person ? ' selected' : '') + '>' + personName(p) + '</option>').join('');
+  $('bz-kat').innerHTML = PERSONEN[b.person].ziele.map((k) => '<option value="' + k + '"' + (k === b.kat ? ' selected' : '') + '>' + katName(k) + '</option>').join('');
+  $('bz-luecken').checked = b.luecken;
+}
+
+function zeigeBezirke() {
+  const b = zustand.bezirk, je = bezirkWerte;
+  baueBezirkWahl();
+  if (!je) return;
+  const art = PERSONEN[b.person].gewicht;
+  $('bz-legende').innerHTML = b.luecken
+    ? '<span class="leg-titel">' + t('Betroffene je Zelle (100 × 100 m)', 'So viele Menschen trifft es') + '</span>' +
+      STUFEN_LUECKE.slice().reverse().map(([g, f], k, arr) => '<span><i style="background:' + f + '"></i>' +
+        (k < arr.length - 1 ? Math.max(1, g) + '–' + (arr[k + 1][0] - 1) : 'ab ' + g) + '</span>').join('')
+    : '<span class="leg-titel">' + t('Anteil, der es in 15 Minuten erreicht', 'So viele kommen in 15 Minuten hin') + '</span>' +
+      STUFEN_ANTEIL.map(([g, f], k) => '<span><i style="background:' + f + '"></i>' +
+        (k === 0 ? 'ab ' + g + ' %' : g + '–' + STUFEN_ANTEIL[k - 1][0] + ' %') + '</span>').join('');
+  const reihe = Object.entries(je).sort((x, y) => (b.luecken ? y[1].betroffen - x[1].betroffen : y[1].anteil - x[1].anteil));
+  const max = Math.max(...reihe.map(([, x]) => x.betroffen), 1);
+  $('bz-rang').innerHTML = reihe.map(([nr, x]) => {
+    const wert = b.luecken ? zahlRund(x.betroffen) : Math.round(x.anteil) + ' %';
+    const breite = b.luecken ? 100 * x.betroffen / max : x.anteil;
+    return '<li><button type="button" data-nr="' + nr + '" aria-pressed="' + (+nr === b.nr ? 'true' : 'false') + '">' +
+      '<span class="rang-name">' + x.name + '</span><span class="rang-balken"><i style="width:' + breite.toFixed(1) + '%"></i></span>' +
+      '<span class="rang-wert">' + wert + '</span></button></li>';
+  }).join('');
+  $('bz-rang').querySelectorAll('button').forEach((k) => k.addEventListener('click', () => waehleBezirk(+k.dataset.nr)));
+  $('txt-bz-fuss').innerHTML = t(
+    'Gezählt: ' + gewichtWort(art) + ' in bewohnten 100-m-Zellen (Zensus 2022), mit Tempo und Regeln der Person „' +
+    PERSONEN[b.person].name + '“, bei Tag. ' + (b.luecken ? 'Betroffen: wer das Ziel nicht in 15 Minuten erreicht.' : ''),
+    'Die Zahlen kommen aus der Volks-Zählung 2022.');
+  zeigeBezirkDetail();
+}
+
+function zeigeBezirkDetail() {
+  const b = zustand.bezirk, box = $('bz-detail');
+  if (!b.nr || !bezirkWerte) {
+    box.innerHTML = '<p class="klein">' + t('Klicken Sie auf einen Bezirk in der Karte oder in der Rangliste.', 'Tippen Sie auf einen Stadt-Bezirk.') + '</p>';
+    return;
+  }
+  const x = bezirkWerte[b.nr], art = PERSONEN[b.person].gewicht, Z = window.WEGE_ZELLEN;
+  const w = zellGewicht(art), P = zellDaten(b.person);
+  const zeilen = PERSONEN[b.person].ziele.filter((k) => P.kategorien[k]).map((k) => {
+    const n1 = zellFeld(b.person, k, 'n1');
+    let gut = 0;
+    for (let i = 0; i < Z.anzahl; i++) if (Z.bezirk[i] === b.nr && n1[i] <= 15) gut += w[i];
+    const anteil = x.summe ? 100 * gut / x.summe : 0;
+    return '<li' + (k === b.kat ? ' class="aktiv"' : '') + '><span class="rang-name">' + katName(k) + '</span><span class="rang-balken"><i style="width:' +
+      anteil.toFixed(1) + '%"></i></span><span class="rang-wert">' + Math.round(anteil) + ' %</span></li>';
+  }).join('');
+  box.innerHTML = '<h3>' + t('Bezirk ', 'Stadt-Bezirk ') + x.name + '</h3>' +
+    '<p class="klein">' + zahlRund(x.einwohner) + ' ' + t('Einwohner', 'Menschen') +
+    (art !== 'einwohner' ? ', ' + t('davon etwa ', 'davon etwa ') + zahlRund(x.summe) + ' ' + gewichtWort(art) : '') + '. ' +
+    (b.luecken ? t('Betroffen bei „' + katName(b.kat) + '“: ', 'Ohne ' + katName(b.kat) + ' in der Nähe: ') + '<strong>' + zahlRund(x.betroffen) + '</strong>.' : '') + '</p>' +
+    '<ul class="bz-kats">' + zeilen + '</ul>' +
+    '<h3>' + t('Zuletzt im Bezirksausschuss', 'Neues aus dem Bezirks-Ausschuss') + '</h3><ul class="bz-feed" id="bz-feed"><li class="klein">' + t('Lade …', 'Bitte warten …') + '</li></ul>' +
+    '<p class="klein"><a href="index.html?bezirk=' + ROEMISCH[b.nr] + '">' + t('Alle Einträge des Bezirks auf der Startseite', 'Mehr zu diesem Stadt-Bezirk') + ' →</a></p>';
+  zeigeBeschluesse(b.nr);
+}
+
+async function zeigeBeschluesse(nr) {
+  try { await ladeSkript('data/feed.js'); } catch (err) { if ($('bz-feed')) $('bz-feed').innerHTML = ''; return; }
+  if (zustand.bezirk.nr !== nr || !$('bz-feed')) return;
+  const kennung = ROEMISCH[nr] + '-';
+  const liste = ((window.FEED && window.FEED.eintraege) || [])
+    .filter((e) => (e.bezirk || []).some((b) => b.startsWith(kennung)) && /^Bezirksausschuss/.test(e.gremium || ''))
+    .sort((a, b) => (b.datum || '').localeCompare(a.datum || '')).slice(0, 5);
+  const esc = (x) => String(x).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  $('bz-feed').innerHTML = liste.length ? liste.map((e) => '<li><span class="feed-datum">' + esc(e.datum_anzeige || e.datum || '') + '</span> ' +
+    esc((leicht && e.klartext_titel_leicht) || e.klartext_titel || e.amtlicher_titel || '') + '</li>').join('')
+    : '<li class="klein">' + t('Keine Einträge gefunden.', 'Keine Einträge.') + '</li>';
+}
+
+function waehleBezirk(nr) {
+  zustand.bezirk.nr = nr;
+  zeigeBezirke();
+  zeichneBezirke();
+}
+
+function zeichneBezirke() {
+  if (!kartenBereit || !bezirkWerte) return;
+  const b = zustand.bezirk;
+  karte.getSource('bezirke-werte').setData({ type: 'FeatureCollection', features: BEZ.features.map((f) => ({
+    type: 'Feature', geometry: f.geometry,
+    properties: { nr: +f.properties.beznr, name: f.properties.bezname, anteil: bezirkWerte[+f.properties.beznr].anteil } })) });
+  karte.setFilter('bezirk-auswahl', ['==', ['get', 'nr'], b.nr || -1]);
+  const zellen = [];
+  if (b.luecken) {
+    const Z = window.WEGE_ZELLEN, w = zellGewicht(PERSONEN[b.person].gewicht), n1 = zellFeld(b.person, b.kat, 'n1');
+    for (let i = 0; i < Z.anzahl; i++) {
+      if (n1[i] <= 15 || w[i] < 0.5) continue;
+      const ring = Z.ecken.map(([dla, dlo]) => [Z.lon[i] + dlo, Z.lat[i] + dla]);
+      zellen.push({ type: 'Feature', geometry: { type: 'Polygon', coordinates: [ring.concat([ring[0]])] }, properties: { wert: w[i] } });
+    }
+  }
+  karte.getSource('zellen').setData({ type: 'FeatureCollection', features: zellen });
+  karte.setLayoutProperty('bezirke-farbe', 'visibility', b.luecken ? 'none' : 'visible');
+  karte.setLayoutProperty('zellen', 'visibility', b.luecken ? 'visible' : 'none');
+}
+
+/* ------------------------------------------------- Sparplan und Wege */
+function sparplan() {
+  const M = window.WEGE_MASSNAHMEN, ul = $('sparplan-liste');
+  if (!M || !ul) return;
+  ul.innerHTML = M.massnahmen.map((m) => {
+    const z = m.zahlen, p = PERSONEN[m.person];
+    const orte = m.ort_index.map((i) => ORTE.orte[i] && ORTE.orte[i][1]).filter(Boolean).join(', ');
+    let zahl;
+    if (m.wirkung === 'naechster') {
+      zahl = t('Für <strong>' + zahlRund(z.einwohner) + ' Menschen</strong> (davon ' + zahlRund(z.ab65) + ' ab 65 und ' + zahlRund(z.unter18) +
+        ' unter 18) ist eine davon die nächste ' + katName(m.kategorie) + '. Gäbe es beide nicht, wäre ihr Weg im Mittel ' +
+        z.mehr_min.toLocaleString('de-DE') + ' Minuten länger; ' + zahlRund(z.aus_15_min) + ' kämen nicht mehr in 15 Minuten hin.',
+        zahlRund(z.einwohner) + ' Menschen haben diese ' + katName(m.kategorie) + ' am nächsten.');
+    } else if (p.gewicht === 'ue65') {
+      zahl = t('<strong>' + zahlRund(z.ab65) + ' Menschen ab 65</strong> wohnen so nah, dass sie es in ihrem Tempo (' + zahlDE(p.kmh) + ' km/h) in 15 Minuten zu Fuß erreichen.',
+        zahlRund(z.ab65) + ' ältere Menschen wohnen nah genug, um zu Fuß hinzugehen.');
+    } else {
+      zahl = t('<strong>' + zahlRund(z.einwohner) + ' Menschen</strong> (davon ' + zahlRund(z.ab65) + ' ab 65) erreichen es in 15 Minuten zu Fuß.',
+        zahlRund(z.einwohner) + ' Menschen wohnen nah genug, um zu Fuß hinzugehen.');
+    }
+    return '<li><h3>' + t(m.titel, m.titel_leicht) + '</h3><p>' + t(m.text, m.text_leicht) + '</p><p class="sparplan-zahl">' + zahl + '</p>' +
+      '<p class="klein">' + t('Ort: ', 'Ort: ') + orte + ' · ' + t('Quelle: ', 'Quelle: ') + m.quelle +
+      ' · <a href="hsk.html">' + t('Zum Sparplan', 'Zum Spar-Plan') + ' →</a></p></li>';
+  }).join('');
+}
+
 /* --------------------------------------------------------------- Karte */
 function zeichneKarte() {
   if (!kartenBereit) return;
+  const bezirk = zustand.ansicht === 'bezirk';
+  for (const id of ['bezirke-farbe', 'zellen', 'bezirk-auswahl']) karte.setLayoutProperty(id, 'visibility', bezirk ? 'visible' : 'none');
+  for (const id of ['start', 'ziele', 'wasser']) karte.setLayoutProperty(id, 'visibility', bezirk ? 'none' : 'visible');
+  if (bezirk) { karte.setLayoutProperty('flaeche', 'visibility', 'none'); zeichneBezirke(); return; }
   karte.getSource('start').setData({ type: 'FeatureCollection', features: [
     { type: 'Feature', geometry: { type: 'Point', coordinates: [zustand.start.lon, zustand.start.lat] }, properties: {} }] });
   const orte = [];
@@ -837,10 +1094,18 @@ function baueKarte() {
     karte.addSource('flaeche', { type: 'canvas', canvas: leinwand, animate: false,
       coordinates: [[START.lon, START.lat], [START.lon + 0.001, START.lat], [START.lon + 0.001, START.lat - 0.001], [START.lon, START.lat - 0.001]] });
     karte.addLayer({ id: 'flaeche', type: 'raster', source: 'flaeche', paint: { 'raster-opacity': 1, 'raster-resampling': 'linear', 'raster-fade-duration': 0 } }, vor);
+    karte.addSource('bezirke-werte', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+    karte.addLayer({ id: 'bezirke-farbe', type: 'fill', source: 'bezirke-werte', layout: { visibility: 'none' },
+      paint: { 'fill-color': stufenAusdruck('anteil', STUFEN_ANTEIL), 'fill-opacity': 0.72 } }, vor);
+    karte.addSource('zellen', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+    karte.addLayer({ id: 'zellen', type: 'fill', source: 'zellen', layout: { visibility: 'none' },
+      paint: { 'fill-color': stufenAusdruck('wert', STUFEN_LUECKE), 'fill-opacity': 0.85 } }, vor);
     karte.addSource('bezirke', { type: 'geojson', data: BEZ });
     karte.addLayer({ id: 'bezirke-flaeche', type: 'fill', source: 'bezirke', paint: { 'fill-color': '#000', 'fill-opacity': 0 } }, vor);
     karte.addLayer({ id: 'bezirke-linie', type: 'line', source: 'bezirke',
       paint: { 'line-color': '#3d4f59', 'line-width': 1, 'line-opacity': 0.55, 'line-dasharray': [3, 2] } }, vor);
+    karte.addLayer({ id: 'bezirk-auswahl', type: 'line', source: 'bezirke-werte', layout: { visibility: 'none' },
+      filter: ['==', ['get', 'nr'], -1], paint: { 'line-color': '#00263a', 'line-width': 3 } }, vor);
     karte.addSource('wasser', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
     karte.addLayer({ id: 'wasser', type: 'circle', source: 'wasser',
       paint: { 'circle-radius': 5, 'circle-color': '#1f8fd1', 'circle-stroke-color': '#fff', 'circle-stroke-width': 2 } });
@@ -855,11 +1120,22 @@ function baueKarte() {
     karte.on('mousemove', (e) => {
       const z = karte.queryRenderedFeatures(e.point, { layers: ['ziele', 'wasser'] })[0];
       const b = z ? null : karte.queryRenderedFeatures(e.point, { layers: ['bezirke-flaeche'] })[0];
-      const text = z ? z.properties.name : b ? t('Bezirk ' + b.properties.bezname, 'Stadt-Bezirk ' + b.properties.bezname) : '';
+      let text = z ? z.properties.name : b ? t('Bezirk ' + b.properties.bezname, 'Stadt-Bezirk ' + b.properties.bezname) : '';
+      if (b && zustand.ansicht === 'bezirk' && bezirkWerte) {
+        const x = bezirkWerte[+b.properties.beznr];
+        if (x) text += ': ' + (zustand.bezirk.luecken ? zahlRund(x.betroffen) + ' ' + t('betroffen', 'Menschen') : Math.round(x.anteil) + ' %');
+      }
       if (text) tipp.setLngLat(e.lngLat).setText(text).addTo(karte); else tipp.remove();
     });
     karte.getCanvas().addEventListener('mouseleave', () => tipp.remove());
-    karte.on('click', (e) => setzeStart(e.lngLat.lat, e.lngLat.lng, null));
+    karte.on('click', (e) => {
+      if (zustand.ansicht === 'bezirk') {
+        const b = bezirkVon(e.lngLat.lat, e.lngLat.lng);
+        if (b) waehleBezirk(+b.beznr);
+        return;
+      }
+      setzeStart(e.lngLat.lat, e.lngLat.lng, null);
+    });
     kartenBereit = true;
     zeichneKarte();
   });
@@ -867,6 +1143,7 @@ function baueKarte() {
 
 function setzeStart(lat, lon, name) {
   zustand.start = { lat, lon, name };
+  zustand.wenn = null;
   rechne();
 }
 
@@ -877,7 +1154,7 @@ function baueBedienung() {
     const label = document.createElement('label');
     const r = document.createElement('input');
     r.type = 'radio'; r.name = 'person'; r.value = p; r.checked = p === zustand.person;
-    r.addEventListener('change', () => { zustand.person = p; rechne(); });
+    r.addEventListener('change', () => { zustand.person = p; zustand.wenn = null; rechne(); });
     const farbe = document.createElement('i');
     farbe.className = 'punkt'; farbe.style.background = PERSONEN[p].farbe;
     const text = document.createElement('span');
@@ -888,6 +1165,14 @@ function baueBedienung() {
   document.querySelectorAll('[data-ansicht]').forEach((b) => b.addEventListener('click', () => {
     zustand.ansicht = b.dataset.ansicht; rechne();
   }));
+  $('bz-person').addEventListener('change', (e) => {
+    const b = zustand.bezirk;
+    b.person = e.target.value;
+    if (!PERSONEN[b.person].ziele.includes(b.kat)) b.kat = PERSONEN[b.person].ziele[0];
+    rechneBezirke();
+  });
+  $('bz-kat').addEventListener('change', (e) => { zustand.bezirk.kat = e.target.value; rechneBezirke(); });
+  $('bz-luecken').addEventListener('change', (e) => { zustand.bezirk.luecken = e.target.checked; rechneBezirke(); });
   for (const k of Object.keys(zustand.bed)) {
     $('bed-' + k).addEventListener('change', (e) => { zustand.bed[k] = e.target.checked; rechne(); });
   }
@@ -958,6 +1243,17 @@ const TEXTE = {
   'start-tipp': { n: 'Oder auf die Karte klicken bzw. tippen.', l: 'Oder tippen Sie auf die Karte.' },
   'ansicht-eine': { n: 'Eine Person', l: 'Eine Person' },
   'ansicht-alle': { n: 'Alle Personen', l: 'Alle Personen' },
+  'ansicht-bezirk': { n: 'Mein Bezirk', l: 'Mein Bezirk' },
+  'bz-h': { n: 'Wer kommt hin – je Bezirk', l: 'Wie gut ist mein Stadt-Bezirk?' },
+  'bz-person-label': { n: 'Person', l: 'Wer geht?' },
+  'bz-kat-label': { n: 'Ziel', l: 'Wohin?' },
+  'bz-luecken-label': { n: 'Wo trifft es Menschen?', l: 'Wo fehlt etwas?' },
+  'bz-rang-h': { n: 'Rangliste der Bezirke', l: 'Alle Stadt-Bezirke' },
+  'sparplan-h2': { n: 'Was der Sparplan für Wege bedeutet', l: 'Was der Spar-Plan für Wege bedeutet' },
+  'sparplan-p': {
+    n: 'Das Haushaltssicherungskonzept der Stadt (<a href="hsk.html">Sparplan</a>) betrifft auch Orte, zu denen Menschen zu Fuß gehen. Hier die Maßnahmen, die sich eindeutig einem Ort zuordnen lassen, und wie viele Menschen in seiner Nähe wohnen. Keine dieser Maßnahmen schließt einen Ort.',
+    l: 'Die Stadt muss Geld sparen. Das steht im <a href="hsk.html">Spar-Plan</a>. Manches davon betrifft Orte in der Stadt. Hier steht, wie viele Menschen in der Nähe wohnen.',
+  },
   'person-h': { n: 'Wer geht?', l: 'Wer geht zu Fuß?' },
   'bed-h': { n: 'Bedingungen', l: 'Wann?' },
   'bed-nacht-label': { n: 'Nacht', l: 'In der Nacht' },
@@ -1060,7 +1356,9 @@ function texteAnwenden() {
   $('adresse').placeholder = t('z. B. Theresienstraße 22', 'zum Beispiel: Theresienstraße 22');
   tabelle();
   quellen();
+  sparplan();
   if (letztes) { zeigePanel(); zeichneKarte(); }
+  if (zustand.ansicht === 'bezirk') zeigeBezirke();
 }
 
 /* ---------------------------------------------------------------- Start */

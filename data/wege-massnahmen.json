@@ -1,0 +1,39 @@
+{
+ "_hinweis": "Von Hand gepflegt, nach dem Muster von hsk_bericht.json. Maßnahmen aus dem Haushaltssicherungskonzept (data/hsk.json), die sich eindeutig einem Ort in data/wege-orte zuordnen lassen. orte: OSM-Kennung (n/w/r + Nummer) und Name zur Kontrolle. wirkung: 'naechster' = Einwohner, für die einer dieser Orte der nächste seiner Kategorie ist, und was sich änderte, wenn es sie nicht gäbe; 'erreichbar' = Einwohner, die den Ort in 15 Minuten zu Fuß erreichen. person: wessen Tempo und Regeln gelten (data/wege-personen.json). scraper/wege_bauen.py rechnet die Zahlen und schreibt data/wege-massnahmen.js. Nicht aufgenommen, weil nicht eindeutig zuzuordnen: Nr. 012 Stadtteiltreffs (Piusviertel und Augustinviertel fehlen in OpenStreetMap), Nr. 018/001.12 Bücherbus (keine feste Haltestellenliste), Nr. 015 Jugendherberge (betrifft Gäste, keine Einwohner).",
+ "quelle": {
+  "titel": "Haushaltssicherungskonzept der Stadt Ingolstadt, Vorlage V0652/26, Anlage 1 (Maßnahmenkatalog)",
+  "url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23409"
+ },
+ "massnahmen": [
+  {
+   "hsk_nr": "018", "hsk_liste": "verwaltungshaushalt",
+   "titel": "Stadtbücherei: höhere Gebühren, weniger Reinigung",
+   "titel_leicht": "Stadt-Bücherei: höhere Gebühren",
+   "text": "Die Stadtbücherei im Herzogskasten und die Stadtteilbücherei Südwest sollen höhere Gebühren nehmen und weniger für Reinigung ausgeben (Beratung im Finanzausschuss). Geschlossen wird keine der beiden. Die Zahl zeigt, für wie viele Menschen eine der beiden die nächste Bücherei ist und wie viel weiter der Weg ohne sie wäre.",
+   "text_leicht": "Die Stadt-Bücherei soll mehr Geld für das Ausleihen nehmen. Die Bücherei bleibt offen. Die Zahl zeigt: So viele Menschen haben diese Bücherei am nächsten.",
+   "orte": [{"osm": "n289881749", "name": "Stadtbücherei"}, {"osm": "n1423171359", "name": "Stadtbücherei Südwest"}],
+   "kategorie": "buecherei", "person": "erwachsene", "wirkung": "naechster",
+   "quelle": "V0652/26, Anlage 1, Nr. 018; Einzelvorlage V0622/26"
+  },
+  {
+   "hsk_nr": "014", "hsk_liste": "verwaltungshaushalt",
+   "titel": "Bürgerhaus: Räume teurer, weniger Sachkosten",
+   "titel_leicht": "Bürger-Haus: Räume werden teurer",
+   "text": "Im Bürgerhaus sollen Raumvermietung und kostenpflichtige Angebote mehr einbringen, die Sachkosten sinken, die Stellen im Bundesfreiwilligendienst fallen weg (beschlossen am 29.07.2026). Die Zahl zeigt, wie viele Menschen das Bürgerhaus in 15 Minuten zu Fuß erreichen.",
+   "text_leicht": "Räume im Bürger-Haus kosten bald mehr. Die Zahl zeigt: So viele Menschen wohnen nah am Bürger-Haus.",
+   "orte": [{"osm": "n7347032863", "name": "Bürgerhaus"}],
+   "kategorie": "treff", "person": "erwachsene", "wirkung": "erreichbar",
+   "quelle": "V0652/26, Anlage 1, Nr. 014; Einzelvorlage V0429/26"
+  },
+  {
+   "hsk_nr": "001.2", "hsk_liste": "personal",
+   "titel": "Seniorenbüro im Bürgerhaus halbiert",
+   "titel_leicht": "Weniger Beratung für ältere Menschen",
+   "text": "Das Seniorenbüro im Bürgerhaus stellt die Beratung als erste Anlaufstelle ein und verringert seine Angebote für ältere Menschen. Die Zahl zeigt, wie viele Menschen ab 65 das Bürgerhaus in ihrem Tempo in 15 Minuten zu Fuß erreichen.",
+   "text_leicht": "Im Bürger-Haus gibt es ein Büro für ältere Menschen. Dort gibt es bald keine Beratung mehr. Die Zahl zeigt: So viele ältere Menschen wohnen nah am Bürger-Haus.",
+   "orte": [{"osm": "n7347032863", "name": "Bürgerhaus"}],
+   "kategorie": "treff", "person": "aeltere", "wirkung": "erreichbar",
+   "quelle": "V0652/26, Anlage 1 (Personal), Nr. 001.2; Einzelvorlage V0429/26"
+  }
+ ]
+}
