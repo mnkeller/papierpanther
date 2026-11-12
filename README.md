@@ -197,9 +197,17 @@ Alles kommt von der eigenen Domain, kein Kartendienst:
   https://schanzer-papierpanther.de/data/feed.js` liefert `206` mit
   `Content-Range`). Achtung: Textdateien wie `.js` liefert Pages gzip-komprimiert,
   der Bereich bezieht sich dann auf die komprimierte Fassung; PNG und WOFF2 kommen
-  unkomprimiert. Nach dem ersten Push deshalb einmal prüfen, dass die Kartendatei
-  ohne `content-encoding` kommt:
-  `curl -s -r 0-1023 -H "Accept-Encoding: gzip" -D - -o /dev/null https://schanzer-papierpanther.de/karten/ingolstadt.pmtiles`.
+  unkomprimiert. Befund nach dem ersten Push (12.11.2026): Auch die Kartendatei
+  (`application/octet-stream`) komprimiert Pages, sobald der Client
+  `Accept-Encoding: gzip` schickt; der Bereich bezieht sich dann auf den
+  Gzip-Strom und ist für PMTiles unbrauchbar. Es funktioniert trotzdem, weil
+  Browser bei Bereichsabfragen `Accept-Encoding: identity` schicken (Fetch-Standard;
+  Chrome und Safari schon lange, Firefox erst ab Version 148, ältere Firefox
+  bekommen Decodierfehler oder 416). Prüfen deshalb so, wie ein Browser fragt:
+  `curl -s -r 0-1023 -H "Accept-Encoding: identity" -D - -o /dev/null https://schanzer-papierpanther.de/karten/ingolstadt.pmtiles`
+  muss `206` ohne `content-encoding` und `Content-Range: bytes 0-1023/<Dateigröße>`
+  liefern. Dieselbe Abfrage mit `Accept-Encoding: gzip` zeigt den komprimierten
+  Fall und ist kein Fehler.
   `python3 -m http.server` kann Range nicht, für die lokale Vorschau also einen
   Server mit Range-Unterstützung nehmen.
 
