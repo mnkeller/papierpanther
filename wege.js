@@ -838,8 +838,11 @@ function wennZeile(kat, a) {
   const alt = ORTE.orte[a.oi][1] || katName(kat);
   const vorOrt = document.createElement('p');
   vorOrt.innerHTML = neu
-    ? t('Ohne <strong>' + alt + '</strong>: ' + (ORTE.orte[neu.oi][1] || katName(kat)) + ', <strong>' + minText(neu.z) + '</strong> statt ' + minText(a.z) + '.',
-      'Ohne ' + alt + ': ' + minText(neu.z) + ' statt ' + minText(a.z) + '.')
+    ? (minText(neu.z) === minText(a.z)
+      ? t('Ohne <strong>' + alt + '</strong>: ' + (ORTE.orte[neu.oi][1] || katName(kat)) + ', ebenfalls <strong>' + minText(neu.z) + '</strong>.',
+        'Ohne ' + alt + ': ' + (ORTE.orte[neu.oi][1] || katName(kat)) + '. Das ist genauso nah.')
+      : t('Ohne <strong>' + alt + '</strong>: ' + (ORTE.orte[neu.oi][1] || katName(kat)) + ', <strong>' + minText(neu.z) + '</strong> statt ' + minText(a.z) + '.',
+        'Ohne ' + alt + ': ' + minText(neu.z) + ' statt ' + minText(a.z) + '.'))
     : t('Ohne <strong>' + alt + '</strong> liegt kein solcher Ort mehr in 15 Minuten.', 'Ohne ' + alt + ' ist nichts mehr in der Nähe.');
   const stadt = document.createElement('p');
   stadt.className = 'klein';
@@ -1010,10 +1013,12 @@ function sparplan() {
     const orte = m.ort_index.map((i) => ORTE.orte[i] && ORTE.orte[i][1]).filter(Boolean).join(', ');
     let zahl;
     if (m.wirkung === 'naechster') {
-      zahl = t('Für <strong>' + zahlRund(z.einwohner) + ' Menschen</strong> (davon ' + zahlRund(z.ab65) + ' ab 65 und ' + zahlRund(z.unter18) +
-        ' unter 18) ist eine davon die nächste ' + katName(m.kategorie) + '. Gäbe es beide nicht, wäre ihr Weg im Mittel ' +
-        z.mehr_min.toLocaleString('de-DE') + ' Minuten länger; ' + zahlRund(z.aus_15_min) + ' kämen nicht mehr in 15 Minuten hin.',
-        zahlRund(z.einwohner) + ' Menschen haben diese ' + katName(m.kategorie) + ' am nächsten.');
+      zahl = t('<strong>' + zahlRund(z.in_15_min) + ' Menschen</strong> (davon ' + zahlRund(z.in_15_min_ab65) + ' ab 65 und ' +
+        zahlRund(z.in_15_min_unter18) + ' unter 18) erreichen eine der beiden in 15 Minuten zu Fuß.' +
+        '<br><span class="gedankenspiel">Nur als Gedankenspiel, geplant ist keine Schließung: Für ' + zahlRund(z.einwohner) +
+        ' Menschen ist eine der beiden die nächste ' + katName(m.kategorie) + '. Gäbe es beide nicht, wäre ihr Weg im Mittel ' +
+        z.mehr_min.toLocaleString('de-DE') + ' Minuten länger.</span>',
+        zahlRund(z.in_15_min) + ' Menschen wohnen nah an einer der beiden Büchereien. Sie können zu Fuß hingehen.');
     } else if (p.gewicht === 'ue65') {
       zahl = t('<strong>' + zahlRund(z.ab65) + ' Menschen ab 65</strong> wohnen so nah, dass sie es in ihrem Tempo (' + zahlDE(p.kmh) + ' km/h) in 15 Minuten zu Fuß erreichen.',
         zahlRund(z.ab65) + ' ältere Menschen wohnen nah genug, um zu Fuß hinzugehen.');
@@ -1141,6 +1146,13 @@ function baueKarte() {
   });
 }
 
+function grenzenVon(punkte) {   // [[lon, lat], ...] -> [[west, sued], [ost, nord]]
+  const lo = punkte.map((p) => p[0]), la = punkte.map((p) => p[1]);
+  return [[Math.min(...lo), Math.min(...la)], [Math.max(...lo), Math.max(...la)]];
+}
+const GRENZEN_STADT = grenzenVon(BEZ.features.flatMap((f) => (f.geometry.type === 'Polygon' ? [f.geometry.coordinates]
+  : f.geometry.coordinates).flatMap((p) => p[0])));
+
 function setzeStart(lat, lon, name) {
   zustand.start = { lat, lon, name };
   zustand.wenn = null;
@@ -1163,7 +1175,12 @@ function baueBedienung() {
     wahl.appendChild(label);
   }
   document.querySelectorAll('[data-ansicht]').forEach((b) => b.addEventListener('click', () => {
-    zustand.ansicht = b.dataset.ansicht; rechne();
+    const vorher = zustand.ansicht;
+    zustand.ansicht = b.dataset.ansicht;
+    rechne();
+    if (!karte || vorher === zustand.ansicht) return;
+    if (zustand.ansicht === 'bezirk') karte.fitBounds(GRENZEN_STADT, { padding: 24, duration: 600 });
+    else if (vorher === 'bezirk' && letztes && letztes.raster) karte.fitBounds(grenzenVon(ecken(letztes.raster)), { padding: 12, duration: 600 });
   }));
   $('bz-person').addEventListener('change', (e) => {
     const b = zustand.bezirk;
@@ -1288,7 +1305,7 @@ const TEXTE = {
   'luecken-liste': {
     n: '<li><strong>Fehlende Orte:</strong> Nur was in OpenStreetMap steht, kommt vor. Von den Ingolstädter Grundschulen sind dort nur 14 als solche erkennbar, viele Arztpraxen ohne Fachrichtung; Praxen ohne Angabe zählen hier als Hausarzt.</li>' +
       '<li><strong>Stadtgrenze:</strong> Orte in Nachbargemeinden, etwa ein Supermarkt in Gaimersheim, fehlen. Am Stadtrand sieht die Lage deshalb schlechter aus, als sie ist.</li>' +
-      '<li><strong>Kind:</strong> Die Karte erkennt eine Querung nur an Knoten, an denen ein Weg eine Haupt- oder Sammelstraße kreuzt. Wo eine Straße nur als Mittellinie eingetragen ist, kann sie das Queren übersehen. Ob es einen Gehweg gibt, steht nur an rund 2.000 Straßen; ohne Angabe nimmt die Karte einen an.</li>' +
+      '<li><strong>Kind:</strong> Haupt- und Sammelstraßen sind oft nur als Mittellinie eingetragen. Die Karte merkt sich deshalb, auf welcher Straßenseite das Kind geht, und lässt es nur an einer eingetragenen Ampel oder einem Zebrastreifen auf die andere Seite wechseln. Fehlt dort die Angabe zur Querung, sperrt die Karte zu viel; liegt ein Gehweg nur auf einer Seite, merkt sie das nicht. Ob es einen Gehweg gibt, steht nur an rund 2.000 Straßen; ohne Angabe nimmt die Karte einen an.</li>' +
       '<li><strong>Rollstuhl und Kinderwagen:</strong> Ob ein Weg befahrbar ist, steht nur an 86 Wegen, hohe Bordsteine an wenigen Stellen. Treppen sind dagegen fast vollständig eingetragen. Aufzüge an Unterführungen fehlen meist.</li>' +
       '<li><strong>Nacht:</strong> Beleuchtung steht nur an etwa 3.200 von 17.000 Wegen. Ohne Angabe gelten Straßen und Gehwege als hell, Pfade und Feldwege als dunkel.</li>' +
       '<li><strong>Hitze:</strong> Schatten ist geschätzt: Ein Weg gilt als schattig, wenn er durch Wald oder Park führt oder nah an eingetragenen Bäumen. Viele Straßenbäume fehlen in OpenStreetMap; Trinkwasserbrunnen sind dort nur 8 eingetragen.</li>' +
@@ -1297,6 +1314,7 @@ const TEXTE = {
     l: '<li>Manche Orte fehlen auf der Karte. Zum Beispiel Schulen oder Ärzte.</li>' +
       '<li>Orte außerhalb von Ingolstadt fehlen.</li>' +
       '<li>Die Karte weiß nicht überall, wo Licht ist. Und wo Schatten ist.</li>' +
+      '<li>Kinder gehen auf der Karte nur an der Ampel oder am Zebra-Streifen über große Straßen. Manche Ampeln fehlen auf der Karte.</li>' +
       '<li>Die Karte weiß nicht überall, wo ein Rollstuhl fahren kann.</li>' +
       '<li>Die Karte weiß nicht, wann ein Geschäft offen ist.</li>',
   },

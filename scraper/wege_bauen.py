@@ -53,6 +53,13 @@ ZENSUS = {  # Kurzname: (Zip, Spalte im 100-m-CSV)
     'ue65': ('Anteil_ab_65-jaehrige_in_Gitterzellen.zip', 'AnteilUeber65'),
 }
 BEZIRKE_URL = 'https://www.ingolstadt.de/openbydata/GIS/Stadtbezirke_Ingolstadt.geojson'
+# Trinkwasserbrunnen der Stadt (open.bydata, CC BY 4.0), ergaenzt die Brunnen aus OpenStreetMap
+BRUNNEN_URL = 'https://www.ingolstadt.de/openbydata/GIS/Trinkwasserbrunnen_Ingolstadt.geojson'
+# Grosse Ziele, die meist nur mit Bus Sinn ergeben (Plan, Phase 5); OSM-Kennungen von Hand geprueft.
+# Das Audi-Werk hat kein als Haupttor benanntes Tor; stellvertretend das Audi Forum (Punkt im Forum).
+GROSSE_ZIELE = [('Klinikum', 'w894974428'), ('Hauptbahnhof', 'n3543804400'), ('Nordbahnhof', 'n925360247'),
+                ('THI', 'w135548926'), ('Audi Forum', 'n2268039752'), ('Stadttheater', 'w25643773'),
+                ('Westpark', 'w28013665'), ('Klenzepark', 'w32592151')]
 OVERPASS_URL = 'https://overpass-api.de/api/interpreter'
 
 # Werte je Person: data/wege-personen.json, dieselbe Datei liest wege.js (als wege-personen.js)
@@ -133,6 +140,8 @@ ABFRAGEN = {
                 'node["natural"="tree"](area.a);way["natural"="tree_row"](area.a);'
                 'nwr["natural"="wood"](area.a);nwr["landuse"="forest"](area.a);nwr["leisure"="park"](area.a);'
                 ');out tags geom;',
+    'grosse': '[out:json][timeout:120];(' + ''.join('%s(%s);' % ({'n': 'node', 'w': 'way', 'r': 'relation'}[k[0]], k[1:])
+                                                       for _, k in GROSSE_ZIELE) + ');out tags geom;',
     'adressen': '[out:json][timeout:600];' + GEMEINDE
                 + 'nwr["addr:housenumber"]["addr:street"](area.a);out tags center;',
 }
@@ -810,6 +819,32 @@ def kategorien(t):
 FACHBIBLIOTHEK = ('Universit', 'Hochschul', 'Armeebibliothek', 'Stadtarchiv', 'Wissenschaftliche')
 
 
+def anbinden(e, raster):
+    """Punkte und Einstiegsknoten eines Overpass-Elements; Flaechen ueber ihren Rand."""
+    if e['type'] == 'node':
+        punkte = [xy(e['lat'], e['lon'])]
+        einstieg = raster.einstieg(punkte[0][0], punkte[0][1], 300)
+        flaeche = False
+    else:
+        teile = [p for p in geometrie_teile(e) if p]
+        punkte = [q for p in teile for q in p]
+        if not punkte:
+            return None
+        # Flaechen ueber den Rand anbinden: alle 20 m ein Punkt, jeder sucht die naechste Kante.
+        einstieg = {}
+        for p in teile:
+            for (xa, ya), (xb, yb) in zip(p, p[1:] or p):
+                n = max(1, int(math.hypot(xb - xa, yb - ya) / 20))
+                for k in range(n):
+                    for kn, d in raster.einstieg(xa + (xb - xa) * k / n, ya + (yb - ya) * k / n, 30).items():
+                        einstieg[kn] = min(d, einstieg.get(kn, 1e9))
+        if not einstieg:   # Rand liegt abseits: naechste Kante zum naechsten Randpunkt
+            best = min((raster.naechste(x, y, 300)[0], x, y) for x, y in punkte[::max(1, len(punkte) // 40)])
+            einstieg = raster.einstieg(best[1], best[2], 300)
+        flaeche = len(punkte) > 2
+    return punkte, einstieg, flaeche
+
+
 def orte_bauen(raster):
     orte, ohne = [], collections.Counter()
     for e in overpass('orte')['elements']:
@@ -817,27 +852,10 @@ def orte_bauen(raster):
         kats = kategorien(t)
         if not kats:
             continue
-        if e['type'] == 'node':
-            punkte = [xy(e['lat'], e['lon'])]
-            einstieg = raster.einstieg(punkte[0][0], punkte[0][1], 300)
-            flaeche = False
-        else:
-            teile = [p for p in geometrie_teile(e) if p]
-            punkte = [q for p in teile for q in p]
-            if not punkte:
-                continue
-            # Flaechen ueber den Rand anbinden: alle 20 m ein Punkt, jeder sucht die naechste Kante.
-            einstieg = {}
-            for p in teile:
-                for (xa, ya), (xb, yb) in zip(p, p[1:] or p):
-                    n = max(1, int(math.hypot(xb - xa, yb - ya) / 20))
-                    for k in range(n):
-                        for kn, d in raster.einstieg(xa + (xb - xa) * k / n, ya + (yb - ya) * k / n, 30).items():
-                            einstieg[kn] = min(d, einstieg.get(kn, 1e9))
-            if not einstieg:   # Rand liegt abseits: naechste Kante zum naechsten Randpunkt
-                best = min((raster.naechste(x, y, 300)[0], x, y) for x, y in punkte[::max(1, len(punkte) // 40)])
-                einstieg = raster.einstieg(best[1], best[2], 300)
-            flaeche = len(punkte) > 2
+        aus = anbinden(e, raster)
+        if aus is None:
+            continue
+        punkte, einstieg, flaeche = aus
         if not einstieg:
             ohne.update(kats)
             continue
@@ -1232,10 +1250,13 @@ def personen_rechnen(netz, raster, orte, zellen, personen, massnahmen):
             rest = [oi for oi in je_kat[KAT_NR[m['kategorie']]] if oi not in idx]
             neu = zellen_minuten(quellen_von(orte, rest, g['v']), netz, typen, g, einstieg)
             betroffen = [i for i, x in enumerate(alt) if x[1] in idx]
+            nah = zellen_minuten(quellen_von(orte, idx, g['v']), netz, typen, g, einstieg)
+            in15 = [i for i, x in enumerate(nah) if x[0] is not None and x[0] <= 15 * 60]
         else:
             neu = zellen_minuten(quellen_von(orte, idx, g['v']), netz, typen, g, einstieg)
             alt, betroffen = None, [i for i, x in enumerate(neu) if x[0] is not None and x[0] <= 15 * 60]
-        wirkung.append({'orte': idx, 'zellen': betroffen, 'alt': alt, 'neu': neu})
+            in15 = betroffen
+        wirkung.append({'orte': idx, 'zellen': betroffen, 'alt': alt, 'neu': neu, 'in15': in15})
     return ergebnis, wirkung
 
 
@@ -1312,7 +1333,9 @@ def massnahmen_ausgabe(roh, wirkung, zellen, orte):
     for m, w in zip(roh['massnahmen'], wirkung):
         z = w['zellen']
         zahl = {'einwohner': round(sum(ew[i] for i in z)), 'ab65': round(sum(ue65[i] for i in z)),
-                'unter18': round(sum(u18[i] for i in z))}
+                'unter18': round(sum(u18[i] for i in z)),
+                'in_15_min': round(sum(ew[i] for i in w['in15'])), 'in_15_min_ab65': round(sum(ue65[i] for i in w['in15'])),
+                'in_15_min_unter18': round(sum(u18[i] for i in w['in15']))}
         if m['wirkung'] == 'naechster':
             mehr = [(ew[i], minuten(w['neu'][i][0]) - minuten(w['alt'][i][0])) for i in z if w['neu'][i][0] is not None]
             zahl['mehr_min'] = round(sum(e * d for e, d in mehr) / max(1, sum(e for e, _ in mehr)), 1)

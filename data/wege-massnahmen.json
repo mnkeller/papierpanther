@@ -1,5 +1,5 @@
 {
- "_hinweis": "Von Hand gepflegt, nach dem Muster von hsk_bericht.json. Maßnahmen aus dem Haushaltssicherungskonzept (data/hsk.json), die sich eindeutig einem Ort in data/wege-orte zuordnen lassen. orte: OSM-Kennung (n/w/r + Nummer) und Name zur Kontrolle. wirkung: 'naechster' = Einwohner, für die einer dieser Orte der nächste seiner Kategorie ist, und was sich änderte, wenn es sie nicht gäbe; 'erreichbar' = Einwohner, die den Ort in 15 Minuten zu Fuß erreichen. person: wessen Tempo und Regeln gelten (data/wege-personen.json). scraper/wege_bauen.py rechnet die Zahlen und schreibt data/wege-massnahmen.js. Nicht aufgenommen, weil nicht eindeutig zuzuordnen: Nr. 012 Stadtteiltreffs (Piusviertel und Augustinviertel fehlen in OpenStreetMap), Nr. 018/001.12 Bücherbus (keine feste Haltestellenliste), Nr. 015 Jugendherberge (betrifft Gäste, keine Einwohner).",
+ "_hinweis": "Von Hand gepflegt, nach dem Muster von hsk_bericht.json. Maßnahmen aus dem Haushaltssicherungskonzept (data/hsk.json), die sich eindeutig einem Ort in data/wege-orte zuordnen lassen. orte: OSM-Kennung (n/w/r + Nummer) und Name zur Kontrolle. wirkung: 'naechster' = Einwohner, die einen dieser Orte in 15 Minuten erreichen, dazu als Gedankenspiel, für wen er der nächste ist und was sich änderte, wenn es ihn nicht gäbe; 'erreichbar' = Einwohner, die den Ort in 15 Minuten zu Fuß erreichen. person: wessen Tempo und Regeln gelten (data/wege-personen.json). scraper/wege_bauen.py rechnet die Zahlen und schreibt data/wege-massnahmen.js. Nicht aufgenommen, weil nicht eindeutig zuzuordnen: Nr. 012 Stadtteiltreffs (Piusviertel und Augustinviertel fehlen in OpenStreetMap), Nr. 018/001.12 Bücherbus (keine feste Haltestellenliste), Nr. 015 Jugendherberge (betrifft Gäste, keine Einwohner).",
  "quelle": {
   "titel": "Haushaltssicherungskonzept der Stadt Ingolstadt, Vorlage V0652/26, Anlage 1 (Maßnahmenkatalog)",
   "url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23409"
@@ -9,8 +9,8 @@
    "hsk_nr": "018", "hsk_liste": "verwaltungshaushalt",
    "titel": "Stadtbücherei: höhere Gebühren, weniger Reinigung",
    "titel_leicht": "Stadt-Bücherei: höhere Gebühren",
-   "text": "Die Stadtbücherei im Herzogskasten und die Stadtteilbücherei Südwest sollen höhere Gebühren nehmen und weniger für Reinigung ausgeben (Beratung im Finanzausschuss). Geschlossen wird keine der beiden. Die Zahl zeigt, für wie viele Menschen eine der beiden die nächste Bücherei ist und wie viel weiter der Weg ohne sie wäre.",
-   "text_leicht": "Die Stadt-Bücherei soll mehr Geld für das Ausleihen nehmen. Die Bücherei bleibt offen. Die Zahl zeigt: So viele Menschen haben diese Bücherei am nächsten.",
+   "text": "Die Stadtbücherei im Herzogskasten und die Stadtteilbücherei Südwest sollen höhere Gebühren nehmen und weniger für Reinigung ausgeben (Beratung im Finanzausschuss). Geschlossen wird keine der beiden. Die Zahl zeigt, wie viele Menschen eine der beiden in 15 Minuten zu Fuß erreichen.",
+   "text_leicht": "Die Stadt-Bücherei soll mehr Geld für das Ausleihen nehmen. Die Bücherei bleibt offen. Die Zahl zeigt: So viele Menschen wohnen nah an der Bücherei.",
    "orte": [{"osm": "n289881749", "name": "Stadtbücherei"}, {"osm": "n1423171359", "name": "Stadtbücherei Südwest"}],
    "kategorie": "buecherei", "person": "erwachsene", "wirkung": "naechster",
    "quelle": "V0652/26, Anlage 1, Nr. 018; Einzelvorlage V0622/26"
