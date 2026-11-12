@@ -20,10 +20,13 @@
     'klima.html': ['klima', 'sonne'],
     'wohnen.html': ['wohnen'],
     'miete.html': ['miete'],
-    'beteiligen.html': ['beteiligen']
+    'beteiligen.html': ['beteiligen'],
+    'wege.html': ['wege', 'wege-apotheke']
   };
   // Zusätzliche Daten je Szene; data/wohnen.js und data/miete.js laden die Seiten selbst
   var EXTRA = { klima: ['data/altstadt.js'] };
+  // Szenen, die in der Datei einer anderen Szene stehen
+  var DATEI = { 'wege-apotheke': 'wege' };
   var KEY = 'papierpanther-grafisch';
 
   var seite = location.pathname.split('/').pop() || 'index.html';
@@ -180,7 +183,11 @@
   function ladeAlles() {
     if (geladen) return geladen;
     var dateien = ['vendor/d3/d3.min.js', 'data/grafik.js'];
-    liste.forEach(function (id) { (EXTRA[id] || []).forEach(function (f) { dateien.push(f); }); dateien.push('grafik/' + id + '.js'); });
+    liste.forEach(function (id) {
+      (EXTRA[id] || []).forEach(function (f) { dateien.push(f); });
+      var f = 'grafik/' + (DATEI[id] || id) + '.js';
+      if (dateien.indexOf(f) === -1) dateien.push(f);
+    });
     geladen = dateien.reduce(function (kette, f) { return kette.then(function () { return ladeSkript(f); }); }, Promise.resolve());
     return geladen;
   }

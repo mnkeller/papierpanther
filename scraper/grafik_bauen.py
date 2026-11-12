@@ -5,13 +5,13 @@ Baut die Daten fuer die grafische Fassung der Seiten (grafik/*.js).
     python3 scraper/grafik_bauen.py
 
 Liest nur, was schon in data/ liegt (feed.json, antraege.json, haushalt.json,
-hsk.json, klima.json) und fasst es knapp zusammen: Die Startseite braucht je
+hsk.json, klima.json, wege-*.json) und fasst es knapp zusammen: Die Startseite braucht je
 Tagesordnungspunkt nur Bezirk, Schlagworte, Stand und Titel. Nach jedem
 Daten-Update am Ende laufen lassen, zusammen mit themen_bauen.py.
 
 Ergebnis: data/grafik.js (window.GRAFIK_DATEN).
 """
-import json, collections, itertools, os
+import base64, json, collections, itertools, os
 DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'data')
 OUT = os.path.join(DATA, 'grafik.js')
 def laden(name): return json.load(open(os.path.join(DATA, name), encoding='utf-8'))
@@ -111,8 +111,35 @@ klima = {'referenz': k['klima']['referenz'],
          'solar_zubau': [{'jahr': r['jahr'], 'kw': r['zubau_kw'], 'bestand': r['bestand_kw']} for r in k['solar']['reihe'] if r['jahr'] >= 2018],
          'speicher': [{'jahr': r['jahr'], 'n': r['bestand_anzahl'], 'kw': r['bestand_kw'], 'kwh': r['bestand_kwh']} for r in k['speicher']['reihe'] if r['jahr'] >= 2018],
          'endenergie': k['bericht']['endenergie']}
+# Wege: fuenf Personen ab dem Rathausplatz (von wege_bauen.py gerechnet) und je Bezirk der Anteil,
+# der eine Apotheke in 15 Minuten erreicht. Aeltere Person gewichtet mit den Einwohnern ab 65,
+# Erwachsene mit allen Einwohnern, wie in der Bezirksansicht von wege.html.
+wp = laden('wege-personen.json'); rh = laden('wege-rathausplatz.json'); zl = laden('wege-zellen.json')
+def anteile(person, kat, art):
+    n1 = base64.b64decode(laden('wege-zellen-%s.json' % person)['kategorien'][kat]['n1'])
+    if art == 'einwohner':
+        w = zl['einwohner']
+    else:
+        bekannt = [(e, x) for e, x in zip(zl['einwohner'], zl[art]) if x != 255]
+        mittel = sum(e * x for e, x in bekannt) / sum(e for e, _ in bekannt)
+        w = [e * (x if x != 255 else mittel) / 100 for e, x in zip(zl['einwohner'], zl[art])]
+    je = collections.defaultdict(lambda: [0.0, 0.0])
+    for b, g, m in zip(zl['bezirk'], w, n1):
+        je[b][0] += g
+        je[b][1] += g if m <= 15 else 0
+    return {b: (round(100 * gut / summe, 1), round(summe)) for b, (summe, gut) in je.items()}
+bez_namen = {int(x['properties']['beznr']): x['properties']['bezname'] for x in laden('bezirke.json')['features']}
+alt, erw = anteile('aeltere', 'apotheke', 'ue65'), anteile('erwachsene', 'apotheke', 'einwohner')
+wege = {
+    'start': rh['start']['name'],
+    'personen': [dict(id=pid, name=wp['personen'][pid]['name'], farbe=wp['personen'][pid]['farbe'], kmh=wp['personen'][pid]['kmh'],
+                      warum=wp['personen'][pid]['warum'], **rh['personen'][pid]) for pid in wp['reihe']],
+    'apotheke': sorted([{'nr': b, 'name': bez_namen[b], 'aeltere': alt[b][0], 'ab65': alt[b][1], 'erwachsene': erw[b][0], 'einwohner': erw[b][1]}
+                        for b in bez_namen], key=lambda x: -x['aeltere']),
+}
 open(OUT, 'w', encoding='utf-8').write('/* Erzeugt von scraper/grafik_bauen.py aus data/*.json, nicht von Hand aendern */\nwindow.GRAFIK_DATEN = ' + json.dumps(
     {'start': {'achsen': {'lebenslage': LL, 'bezirk': BZ, 'anlass': AN, 'status': STATUS}, 'e': start, 'praefixe': praefixe, 'sitzungen': f['statistik']['sitzungen_ausgelesen']},
-     'netz': {'knoten': knoten, 'kanten': kanten}, 'antraege': antraege, 'haushalt': haushalt, 'sparplan': sparplan, 'klima': klima},
+     'netz': {'knoten': knoten, 'kanten': kanten}, 'antraege': antraege, 'haushalt': haushalt, 'sparplan': sparplan, 'klima': klima,
+     'wege': wege},
     ensure_ascii=False, separators=(',', ':')) + ';\n')
 print('data/grafik.js:', round(os.path.getsize(OUT) / 1024), 'KB')

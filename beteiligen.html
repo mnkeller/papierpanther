@@ -120,6 +120,8 @@
     text-decoration: underline; text-underline-offset: .18em; text-decoration-thickness: 1px;
   }
   .kontakt-link:hover, .projekt-link:hover { text-decoration-thickness: 2px; }
+  .projekt-karte code { font-size: .8rem; background: var(--bg-warm); padding: .05rem .3rem; border-radius: 4px; white-space: nowrap; }
+  .klein-hinweis { font-size: .82rem; color: var(--text-faint); max-width: 68ch; }
   .kontakt-link::after, .projekt-link::after { content: ' ↗'; opacity: .7; font-size: .9em; }
   @media (max-width: 640px) {
     .kontakt-karte, .projekt-karte { grid-template-columns: minmax(0, 1fr); gap: .35rem; }
@@ -220,6 +222,76 @@
       </div>
     </section>
 
+    <section id="wege-eintragen">
+      <h2 id="txt-osm-h2"></h2>
+      <p id="txt-osm-intro"></p>
+      <p id="txt-osm-wie"></p>
+
+      <div class="projekt-liste">
+        <div class="projekt-karte">
+          <h3 id="txt-osm-bank-titel"></h3>
+          <p><span id="txt-osm-bank-text"></span> <code>amenity=bench</code></p>
+          <a class="projekt-link" id="link-osm-bank" href="https://wiki.openstreetmap.org/wiki/DE:Tag:amenity=bench"
+             target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="projekt-karte">
+          <h3 id="txt-osm-bordstein-titel"></h3>
+          <p><span id="txt-osm-bordstein-text"></span> <code>kerb=lowered / kerb=raised</code></p>
+          <a class="projekt-link" id="link-osm-bordstein" href="https://wiki.openstreetmap.org/wiki/DE:Key:kerb"
+             target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="projekt-karte">
+          <h3 id="txt-osm-licht-titel"></h3>
+          <p><span id="txt-osm-licht-text"></span> <code>lit=yes / lit=no</code></p>
+          <a class="projekt-link" id="link-osm-licht" href="https://wiki.openstreetmap.org/wiki/DE:Key:lit"
+             target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="projekt-karte">
+          <h3 id="txt-osm-treppe-titel"></h3>
+          <p><span id="txt-osm-treppe-text"></span> <code>highway=steps</code></p>
+          <a class="projekt-link" id="link-osm-treppe" href="https://wiki.openstreetmap.org/wiki/DE:Tag:highway=steps"
+             target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="projekt-karte">
+          <h3 id="txt-osm-querung-titel"></h3>
+          <p><span id="txt-osm-querung-text"></span> <code>crossing=traffic_signals / crossing=zebra</code></p>
+          <a class="projekt-link" id="link-osm-querung" href="https://wiki.openstreetmap.org/wiki/DE:Key:crossing"
+             target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="projekt-karte">
+          <h3 id="txt-osm-gehweg-titel"></h3>
+          <p><span id="txt-osm-gehweg-text"></span> <code>sidewalk=both / left / right / no</code></p>
+          <a class="projekt-link" id="link-osm-gehweg" href="https://wiki.openstreetmap.org/wiki/DE:Key:sidewalk"
+             target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="projekt-karte">
+          <h3 id="txt-osm-schule-titel"></h3>
+          <p><span id="txt-osm-schule-text"></span> <code>school=primary</code></p>
+          <a class="projekt-link" id="link-osm-schule" href="https://wiki.openstreetmap.org/wiki/DE:Tag:amenity=school"
+             target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="projekt-karte">
+          <h3 id="txt-osm-praxis-titel"></h3>
+          <p><span id="txt-osm-praxis-text"></span> <code>healthcare:speciality=general</code></p>
+          <a class="projekt-link" id="link-osm-praxis" href="https://wiki.openstreetmap.org/wiki/DE:Key:healthcare:speciality"
+             target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <div class="projekt-karte">
+          <h3 id="txt-osm-wasser-titel"></h3>
+          <p><span id="txt-osm-wasser-text"></span> <code>amenity=drinking_water</code></p>
+          <a class="projekt-link" id="link-osm-wasser" href="https://wiki.openstreetmap.org/wiki/DE:Tag:amenity=drinking_water"
+             target="_blank" rel="noopener noreferrer"></a>
+        </div>
+      </div>
+
+      <div class="portal-cta">
+        <p id="txt-osm-cta-text"></p>
+        <a class="btn-portal" id="link-osm-notiz"
+           href="https://www.openstreetmap.org/note/new#map=15/48.7634/11.4251" target="_blank" rel="noopener noreferrer"></a>
+      </div>
+      <p class="klein-hinweis" id="txt-osm-lizenz"></p>
+    </section>
+
     <section id="projekte">
       <h2 id="txt-projekte-h2"></h2>
       <p id="txt-projekte-intro"></p>
@@ -287,6 +359,80 @@
   try { leicht = localStorage.getItem(LS_KEY_LEICHT) === '1'; } catch (err) { /* Storage kann gesperrt sein */ }
 
   var TEXTE = {
+    'osm-h2': { n: 'Wege und Orte eintragen', l: 'Wege und Orte eintragen' },
+    'osm-intro': {
+      n: 'Die Karte „<a href="wege.html">Deine 15 Minuten</a>“ ist nur so gut wie OpenStreetMap, die freie Weltkarte, ' +
+        'die Freiwillige pflegen. Was dort fehlt, fehlt auch hier: eine Bank, ein abgesenkter Bordstein, eine Ampel. ' +
+        'Jede und jeder kann solche Lücken schließen. Nach dem nächsten Daten-Update erscheinen die Einträge auf der Karte.',
+      l: 'Die Karte „<a href="wege.html">Deine 15 Minuten</a>“ kommt von OpenStreetMap. ' +
+        'Das ist eine freie Karte im Internet. Viele Menschen tragen dort etwas ein. ' +
+        'Fehlt etwas auf der Karte? Dann können Sie es eintragen.',
+    },
+    'osm-wie': {
+      n: 'So geht es: Auf <a href="https://www.openstreetmap.org" target="_blank" rel="noopener noreferrer">openstreetmap.org</a> ' +
+        'die Stelle suchen und „Bearbeiten“ wählen; dafür braucht es ein kostenloses Konto. Am Handy geht es einfacher mit der App ' +
+        '<a href="https://streetcomplete.app" target="_blank" rel="noopener noreferrer">StreetComplete</a>, die in der Nähe gezielt ' +
+        'nach fehlenden Angaben fragt. Ganz ohne Konto lässt sich ein Hinweis als Notiz auf der Karte hinterlassen, den Freiwillige ' +
+        'dann prüfen und eintragen. Diese Angaben helfen der Karte am meisten (mit dem Eintrag in OpenStreetMap):',
+      l: 'So geht es: Gehen Sie auf <a href="https://www.openstreetmap.org" target="_blank" rel="noopener noreferrer">openstreetmap.org</a>. ' +
+        'Dafür brauchen Sie ein Konto. Das kostet nichts. Mit dem Handy geht es leichter. Dafür gibt es die App ' +
+        '<a href="https://streetcomplete.app" target="_blank" rel="noopener noreferrer">StreetComplete</a>. ' +
+        'Ohne Konto können Sie eine Notiz schreiben. Andere Menschen tragen es dann ein. Das hilft der Karte am meisten:',
+    },
+    'osm-cta-text': {
+      n: 'Kein Konto, keine Zeit? Eine Notiz an der richtigen Stelle genügt.',
+      l: 'Sie haben kein Konto? Schreiben Sie eine Notiz.',
+    },
+    'osm-lizenz': {
+      n: 'Was Sie in OpenStreetMap eintragen, steht unter der Open Database License (ODbL) und darf von allen genutzt werden, ' +
+        'auch von dieser Seite. Bitte nur eintragen, was Sie selbst vor Ort gesehen haben.',
+      l: 'Was Sie eintragen, dürfen alle benutzen. Tragen Sie nur ein, was Sie selbst gesehen haben.',
+    },
+    'osm-bank-titel': { n: 'Sitzbänke', l: 'Bänke' },
+    'osm-bank-text': {
+      n: 'Wo eine Bank steht, rechnet die Karte für ältere Menschen keine Pause ein. In OpenStreetMap fehlen viele Bänke.',
+      l: 'Ältere Menschen brauchen Bänke zum Ausruhen. Viele Bänke fehlen auf der Karte.',
+    },
+    'osm-bordstein-titel': { n: 'Bordsteine an Querungen', l: 'Bord-Steine' },
+    'osm-bordstein-text': {
+      n: 'Ein hoher Bordstein sperrt den Weg für Rollstuhl und Kinderwagen. Eingetragen ist er nur an wenigen Stellen.',
+      l: 'Ein hoher Bord-Stein ist für einen Rollstuhl zu hoch. Auf der Karte fehlen viele Bord-Steine.',
+    },
+    'osm-licht-titel': { n: 'Beleuchtung', l: 'Licht' },
+    'osm-licht-text': {
+      n: 'Nachts rechnet die Karte mit Umwegen um dunkle Wege. Ob ein Weg beleuchtet ist, steht nur an etwa 3.200 von 17.000 Wegen.',
+      l: 'Nachts sind dunkle Wege schwierig. Die Karte weiß oft nicht, ob ein Weg Licht hat.',
+    },
+    'osm-treppe-titel': { n: 'Treppen', l: 'Treppen' },
+    'osm-treppe-text': {
+      n: 'Treppen sperren den Weg für Rollstuhl und Kinderwagen. Eine Rampe daneben sollte als eigener Weg eingetragen sein.',
+      l: 'Mit dem Rollstuhl kommt man keine Treppe hoch. Gibt es eine Rampe? Dann tragen Sie sie ein.',
+    },
+    'osm-querung-titel': { n: 'Ampeln und Zebrastreifen', l: 'Ampeln und Zebra-Streifen' },
+    'osm-querung-text': {
+      n: 'Kinder lässt die Karte große Straßen nur an eingetragenen Ampeln und Zebrastreifen überqueren. Fehlt der Eintrag, endet ihr Weg an der Straße.',
+      l: 'Kinder gehen nur an der Ampel oder am Zebra-Streifen über große Straßen. Manche fehlen auf der Karte.',
+    },
+    'osm-gehweg-titel': { n: 'Gehwege', l: 'Geh-Wege' },
+    'osm-gehweg-text': {
+      n: 'Ob eine Straße einen Gehweg hat, steht nur an rund 2.000 Straßen. Ohne Angabe nimmt die Karte einen an.',
+      l: 'Die Karte weiß oft nicht, ob es einen Geh-Weg gibt.',
+    },
+    'osm-schule-titel': { n: 'Grundschulen', l: 'Grund-Schulen' },
+    'osm-schule-text': {
+      n: 'Nur 14 Ingolstädter Grundschulen sind in OpenStreetMap als solche erkennbar. Der Zusatz macht sie für die Kinder-Karte sichtbar.',
+      l: 'Manche Grund-Schulen fehlen auf der Karte.',
+    },
+    'osm-praxis-titel': { n: 'Fachrichtung von Arztpraxen', l: 'Arzt-Praxen' },
+    'osm-praxis-text': {
+      n: 'Bei den meisten Praxen fehlt die Fachrichtung. Die Karte kann dann nicht sicher sagen, wo eine Hausarztpraxis ist.',
+      l: 'Bei vielen Ärzten fehlt auf der Karte, was für ein Arzt es ist.',
+    },
+    'osm-wasser-titel': { n: 'Trinkwasser', l: 'Trink-Wasser' },
+    'osm-wasser-text': {
+      n: 'Bei Hitze zeigt die Karte Trinkwasserbrunnen. Brunnen in Parks und an Schulen fehlen oft.',
+      l: 'Bei Hitze braucht man Wasser. Manche Brunnen fehlen auf der Karte.',
+    },
     'h1': { n: 'Beteiligen', l: 'Mitmachen' },
     'lede': {
       n: 'Informieren, mitreden, Themen ansprechen oder Antworten holen: Demokratie lebt von Beteiligung und Austausch.',
@@ -384,6 +530,16 @@
     'link-projekt-isek': { n: 'Zu ISEK 2040+', l: 'Zu ISEK 2040+' },
     'link-portal-cta': { n: 'Alle Beteiligungsprojekte ansehen', l: 'Alle Mitmach-Projekte ansehen' },
     'link-mitmacher': { n: 'Zu den MitmacherINnen', l: 'Zu den MitmacherINnen' },
+    'link-osm-notiz': { n: 'Notiz in OpenStreetMap hinterlassen', l: 'Eine Notiz schreiben' },
+    'link-osm-bank': { n: 'So wird es eingetragen', l: 'So geht das' },
+    'link-osm-bordstein': { n: 'So wird es eingetragen', l: 'So geht das' },
+    'link-osm-licht': { n: 'So wird es eingetragen', l: 'So geht das' },
+    'link-osm-treppe': { n: 'So wird es eingetragen', l: 'So geht das' },
+    'link-osm-querung': { n: 'So wird es eingetragen', l: 'So geht das' },
+    'link-osm-gehweg': { n: 'So wird es eingetragen', l: 'So geht das' },
+    'link-osm-schule': { n: 'So wird es eingetragen', l: 'So geht das' },
+    'link-osm-praxis': { n: 'So wird es eingetragen', l: 'So geht das' },
+    'link-osm-wasser': { n: 'So wird es eingetragen', l: 'So geht das' },
   };
 
   function setLinkText(id, paar) {

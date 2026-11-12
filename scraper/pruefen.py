@@ -276,6 +276,57 @@ def p_wege():
     if not 130000 <= ew <= 145000:
         fehlt(f"wege-zellen: {ew} Einwohner, erwartet 130.000 bis 145.000")
     p_wege_personen(zellen, orte)
+    p_wege_phase5(netz, orte)
+
+
+def p_wege_phase5(netz, orte):
+    """
+    Bus-Reichweite (oepnv_bauen.py), grosse Ziele, Kennzahlen ab Rathausplatz und
+    die Daten der grafischen Fassung. Der Fahrplan steht unter CC BY-SA; fehlt die
+    Lizenzangabe in der Datei, darf sie nicht veroeffentlicht werden.
+    """
+    grosse = orte.get("grosse_ziele") or []
+    if len(grosse) < 6 or any(not g[3] for g in grosse):
+        fehlt(f"wege-orte: {len(grosse)} grosse Ziele, erwartet 6 mit Einstiegsknoten")
+    tw = sum(1 for o in orte["orte"] if orte["kategorien"][o[0]]["id"] == "trinkwasser")
+    if tw < 10:
+        warnt(f"wege-orte: nur {tw} Trinkwasserbrunnen (OSM + Stadt), erwartet mindestens 10")
+    personen = lade("wege-personen.json")
+    if not os.path.exists(os.path.join(DATEN_VZ, "wege-rathausplatz.json")):
+        fehlt("wege-rathausplatz.json fehlt (wege_bauen.py)")
+    else:
+        rp = lade("wege-rathausplatz.json")["personen"]
+        if set(rp) != set(personen["reihe"]):
+            fehlt("wege-rathausplatz: Personen passen nicht zu wege-personen.json")
+    with open(os.path.join(DATEN_VZ, "grafik.js"), encoding="utf-8") as f:
+        if '"wege":' not in f.read():
+            fehlt("grafik.js ohne Wege-Daten (grafik_bauen.py nach wege_bauen.py laufen lassen)")
+    pfad = os.path.join(DATEN_VZ, "wege-bus.json")
+    if not os.path.exists(pfad):
+        warnt("wege-bus.json fehlt (oepnv_bauen.py); „Mit Bus“ funktioniert dann nicht")
+        return
+    bus = lade("wege-bus.json")
+    if "CC BY-SA 3.0" not in bus.get("lizenz", "") or "INVG" not in bus.get("quelle", ""):
+        fehlt("wege-bus: Lizenz- oder Quellenangabe des Fahrplans fehlt")
+    if os.path.getsize(os.path.join(DATEN_VZ, "wege-bus.js")) > 1.5 * 1024 * 1024:
+        fehlt("wege-bus.js ist groesser als 1,5 MB")
+    h = bus["haltestellen"]
+    if len(h) < 150:
+        fehlt(f"wege-bus: nur {len(h)} Haltestellen im Stadtgebiet")
+    if any(k >= netz["knoten_anzahl"] for x in h for k in x[3]):
+        fehlt("wege-bus: Einstiegsknoten ausserhalb des Netzes (oepnv_bauen.py nach wege_bauen.py laufen lassen)")
+    for f in bus["fenster"]:
+        fid = f["id"]
+        if len(bus["takt"].get(fid, [])) != len(h) or len(bus["ziele"].get(fid, [])) != len(h):
+            fehlt(f"wege-bus {fid}: Takt oder Ziele passen nicht zur Zahl der Haltestellen")
+            continue
+        for liste in bus["ziele"][fid]:
+            d = 0
+            for v in liste:
+                d += v // 32
+                if d >= len(h) or v % 32 > bus["grenze_min"]:
+                    fehlt(f"wege-bus {fid}: Ziel ausserhalb oder ueber {bus['grenze_min']} Minuten")
+                    break
 
 
 def p_wege_personen(zellen, orte):

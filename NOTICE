@@ -77,6 +77,24 @@ Lizenzen
 - Die Grundkarte `karten/ingolstadt.pmtiles` ist ein Ausschnitt aus dem
   Protomaps-Basemap-Build (https://maps.protomaps.com/builds/) und beruht auf
   OpenStreetMap-Daten, © OpenStreetMap-Mitwirkende, ODbL 1.0.
+- Zusätzliche Trinkwasserbrunnen in `data/wege-orte.*` (Einträge mit Kennung
+  `stadt:…`) stammen aus dem Datensatz „Trinkwasserbrunnen Stadt Ingolstadt“
+  der Stadt Ingolstadt (https://www.ingolstadt.de/openbydata/GIS/, über
+  open.bydata.de) unter der Lizenz Creative Commons Namensnennung 4.0
+  International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/.
+  Verändert: Brunnen, die schon in OpenStreetMap stehen (unter 30 m Abstand),
+  sind weggelassen.
+- Die Bus-Reichweite in `data/wege-bus.*` (erzeugt von `scraper/oepnv_bauen.py`)
+  ist abgeleitet aus den Soll-Fahrplandaten (GTFS) der Ingolstädter
+  Verkehrsgesellschaft mbH (INVG) / des Verkehrsverbunds Großraum Ingolstadt
+  (https://www.vgi.de/FileServlet?gtfs=true). Lizenz laut Nutzungsbedingungen
+  (https://www.vgi.de/Nutzungsbedingungen_GTFS): Creative Commons Namensnennung –
+  Weitergabe unter gleichen Bedingungen 3.0 Deutschland (CC BY-SA 3.0 DE),
+  https://creativecommons.org/licenses/by-sa/3.0/de/, zur nicht kommerziellen
+  Nutzung. `data/wege-bus.*` steht deshalb ebenfalls unter CC BY-SA 3.0 DE.
+  Verändert: Fahrten zu Takten und Fahrzeiten zwischen Haltestellen im Stadtgebiet
+  zusammengefasst, Haltestellen an das Fußwegenetz angebunden. Marken der INVG
+  werden nicht verwendet.
 - Die Stadtbezirke in `data/bezirke.*` stammen von der Stadt Ingolstadt
   (Stadtbezirke Ingolstadt, https://www.ingolstadt.de/openbydata/GIS/,
   über open.bydata.de) unter der Lizenz Creative Commons Namensnennung 3.0

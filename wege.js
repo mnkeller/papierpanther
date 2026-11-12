@@ -34,6 +34,10 @@ const NAMEN_LEICHT = {
 const ALPHA_STUFEN = [0.3, 0.2, 0.22];    // Einzelansicht: 5, 10, 15 Minuten, liegen uebereinander
 const ALPHA_SCHICHT = 0.36;               // Schichtbild: Fläche (die oberste Schicht deckt)
 const ALPHA_RAND = 0.9;                   // Schichtbild: Rand jeder Fläche in ihrer Farbe
+const BUS_STUFEN_MIN = [10, 20, 30];      // Mit Bus: Ringe
+const BUS_WARTEN_MAX_MIN = 10;            // Warten an der Haltestelle: halber Takt, höchstens so viel
+const BUS_FARBE = '#8a5a00';
+const BUS_RASTER_M = 24, BUS_RASTER_MAX = 700;
 
 /* ------------------------------------------------------- Leichte Sprache */
 const LS_KEY_LEICHT = 'papierpanther-leichte-sprache';
@@ -262,14 +266,20 @@ class Haufen {   // Minimum-Heap fuer (Zeit, Nummer)
   }
 }
 
+/* Startpunkte der Wegsuche: {e, f, d, t0, sx, sy} liegt auf Kante e (Anteil f ab von[e],
+   d Meter neben dem Weg), {k, t0} beginnt an Knoten k. t0: Sekunden, die schon vergangen sind. */
+
 /* Dijkstra ueber Knoten (alle Personen ohne Abbiegeregel). */
-function sucheKnoten(g, start, grenze) {
+function sucheKnoten(g, starts, grenze) {
   const zeit = new Float64Array(nK).fill(Infinity), besucht = [];
   const h = new Haufen();
-  const e = start.e, a = von[e], b = nach[e], weg = start.d / g.v;
-  zeit[a] = weg + start.f * g.kante[e];
-  zeit[b] = Math.min(zeit[b], weg + (1 - start.f) * g.kante[e]);
-  h.rein(zeit[a], a); h.rein(zeit[b], b);
+  const setze = (k, z) => { if (z < zeit[k] && z <= grenze) { zeit[k] = z; h.rein(z, k); } };
+  for (const st of starts) {
+    if (st.k !== undefined) { setze(st.k, st.t0); continue; }
+    const e = st.e, weg = (st.t0 || 0) + st.d / g.v;
+    setze(von[e], weg + st.f * g.kante[e]);
+    setze(nach[e], weg + (1 - st.f) * g.kante[e]);
+  }
   while (!h.leer) {
     const z = h.raus(), k = h.zuletzt;
     if (z > zeit[k]) continue;
@@ -288,8 +298,9 @@ function sucheKnoten(g, start, grenze) {
    entlanggeht, ist auf einer Seite (links/rechts der Laufrichtung). Auf die
    andere Seite wechseln — also die Strasse queren — darf das Kind nur an einem
    Knoten mit Ampel oder Zebrastreifen; danach ist die Seite frei waehlbar.
-   Zustand: (Kante, Richtung, Seite), Seite 0 links, 1 rechts, 2 frei/abseits. */
-function sucheKanten(g, start, grenze, sx, sy) {
+   Zustand: (Kante, Richtung, Seite), Seite 0 links, 1 rechts, 2 frei/abseits.
+   Ein Start an einem Knoten (Haltestelle) laeuft mit freier Seite los. */
+function sucheKanten(g, starts, grenze) {
   const zs = new Float64Array(6 * nE).fill(Infinity);
   const zeit = new Float64Array(nK).fill(Infinity), besucht = [];
   const h = new Haufen();
@@ -297,10 +308,22 @@ function sucheKanten(g, start, grenze, sx, sy) {
     const s = (2 * e + rueck) * 3 + sei;
     if (z < zs[s] && z <= grenze) { zs[s] = z; h.rein(z, s); }
   };
-  const e0 = start.e, weg = start.d / g.v, haupt0 = TYPEN[typ[e0]].haupt;
-  const s0 = haupt0 ? seite(von[e0], nach[e0], sx, sy) : 2;
-  rein(e0, 0, s0, weg + (1 - start.f) * g.kante[e0]);
-  rein(e0, 1, s0 === 2 ? 2 : 1 - s0, weg + start.f * g.kante[e0]);
+  for (const st of starts) {
+    if (st.k !== undefined) {
+      const n = st.k;
+      if (st.t0 > grenze) continue;
+      if (st.t0 < zeit[n]) { if (zeit[n] === Infinity) besucht.push(n); zeit[n] = st.t0; }
+      for (let i = adjStart[n]; i < adjStart[n + 1]; i++) {
+        const f = adjKante[i], m = anderes(f, n);
+        if (g.kante[f] !== Infinity) rein(f, von[f] === n ? 0 : 1, 2, st.t0 + g.kante[f] + g.knoten[m]);
+      }
+      continue;
+    }
+    const e0 = st.e, weg = (st.t0 || 0) + st.d / g.v;
+    const s0 = TYPEN[typ[e0]].haupt ? seite(von[e0], nach[e0], st.sx, st.sy) : 2;
+    rein(e0, 0, s0, weg + (1 - st.f) * g.kante[e0]);
+    rein(e0, 1, s0 === 2 ? 2 : 1 - s0, weg + st.f * g.kante[e0]);
+  }
   while (!h.leer) {
     const z = h.raus(), s = h.zuletzt;
     if (z > zs[s]) continue;
@@ -333,7 +356,7 @@ function sucheKanten(g, start, grenze, sx, sy) {
   return { zeit, besucht };
 }
 
-function naechsteOrte(g, zeit, ziele, ohne) {
+function naechsteOrte(g, zeit, ziele, ohne, grenze = STUFEN_MIN[2] * 60) {
   const aus = {};
   for (const kat of ziele) {
     let best = null;
@@ -342,7 +365,7 @@ function naechsteOrte(g, zeit, ziele, ohne) {
       const o = ORTE.orte[oi];
       for (let j = 0; j < o[5].length; j++) {
         const z = zeit[o[5][j]] + o[6][j] / g.v;
-        if (z <= STUFEN_MIN[2] * 60 && (!best || z < best.z)) best = { z, oi };
+        if (z <= grenze && (!best || z < best.z)) best = { z, oi };
       }
     }
     aus[kat] = best;
@@ -351,34 +374,39 @@ function naechsteOrte(g, zeit, ziele, ohne) {
 }
 
 /* ------------------------------------------------------------ Flaechen
-   Ein gemeinsames Raster um den Startpunkt, gross genug fuer die schnellste
-   Person samt Puffer und Glaettung. */
+   Zu Fuss: ein gemeinsames quadratisches Raster um den Startpunkt, gross genug
+   fuer die schnellste Person samt Puffer und Glaettung. Mit Bus: ein Raster
+   ueber alles, was in 30 Minuten erreicht wird. Raster: {z, x0, y1, n, m}
+   mit n x n Zellen zu m Metern, x0/y1 linke obere Ecke. */
 const R_MAX = 5.0 / 3.6 * STUFEN_MIN[2] * 60 + PUFFER_M + GLAETTEN_M + 4 * RASTER_M;
 const N = Math.ceil(2 * R_MAX / RASTER_M);
-const PUNKTE = (() => {   // Zellversatz im Puffer mit Abstand
-  const r = Math.ceil(PUFFER_M / RASTER_M), aus = [];
-  for (let dj = -r; dj <= r; dj++) for (let di = -r; di <= r; di++) {
-    const d = Math.hypot(di, dj) * RASTER_M;
-    if (d <= PUFFER_M) aus.push([di, dj, d]);
-  }
-  return aus;
-})();
-
-function zeitRaster(g, such, sx, sy) {
-  const grenze = STUFEN_MIN[2] * 60;
-  const x0 = sx - R_MAX, y1 = sy + R_MAX;
-  const z = new Float32Array(N * N).fill(Infinity);
-  const tupfe = (x, y, t0) => {
-    const ci = Math.floor((x - x0) / RASTER_M), cj = Math.floor((y1 - y) / RASTER_M);
-    for (const [di, dj, d] of PUNKTE) {
-      const i = ci + di, j = cj + dj;
-      if (i < 0 || j < 0 || i >= N || j >= N) continue;
-      const tt = t0 + d / g.v, c = j * N + i;
-      if (tt < z[c]) z[c] = tt;
+const _punkte = {};
+function punkteFuer(m) {   // Zellversatz im Puffer mit Abstand, je Zellweite
+  if (!_punkte[m]) {
+    const r = Math.ceil(PUFFER_M / m), aus = [];
+    for (let dj = -r; dj <= r; dj++) for (let di = -r; di <= r; di++) {
+      const d = Math.hypot(di, dj) * m;
+      if (d <= PUFFER_M) aus.push([di, dj, d]);
     }
-  };
-  const fertig = new Uint8Array(nE), { zeit } = such;
-  for (const k of such.besucht) {
+    _punkte[m] = aus;
+  }
+  return _punkte[m];
+}
+const rasterNeu = (x0, y1, n, m) => ({ z: new Float32Array(n * n).fill(Infinity), x0, y1, n, m });
+const zelleVon = (r, x, y) => Math.floor((r.y1 - y) / r.m) * r.n + Math.floor((x - r.x0) / r.m);
+
+function tupfe(r, g, x, y, t0) {
+  const ci = Math.floor((x - r.x0) / r.m), cj = Math.floor((r.y1 - y) / r.m), n = r.n;
+  for (const [di, dj, d] of punkteFuer(r.m)) {
+    const i = ci + di, j = cj + dj;
+    if (i < 0 || j < 0 || i >= n || j >= n) continue;
+    const tt = t0 + d / g.v, c = j * n + i;
+    if (tt < r.z[c]) r.z[c] = tt;
+  }
+}
+function tupfeWege(r, g, zeit, besucht, grenze) {
+  const fertig = new Uint8Array(nE);
+  for (const k of besucht) {
     for (let i = adjStart[k]; i < adjStart[k + 1]; i++) {
       const e = adjKante[i];
       if (fertig[e]) continue;
@@ -386,21 +414,25 @@ function zeitRaster(g, such, sx, sy) {
       const ce = g.kante[e];
       if (ce === Infinity) continue;
       const a = von[e], b = nach[e], za = zeit[a], zb = zeit[b];
-      const schritte = Math.max(1, Math.ceil(Math.hypot(kx[b] - kx[a], ky[b] - ky[a]) / 12));
+      const schritte = Math.max(1, Math.ceil(Math.hypot(kx[b] - kx[a], ky[b] - ky[a]) / r.m));
       for (let s = 0; s <= schritte; s++) {
         const f = s / schritte, tt = Math.min(za + f * ce, zb + (1 - f) * ce);
-        if (tt <= grenze) tupfe(kx[a] + f * (kx[b] - kx[a]), ky[a] + f * (ky[b] - ky[a]), tt);
+        if (tt <= grenze) tupfe(r, g, kx[a] + f * (kx[b] - kx[a]), ky[a] + f * (ky[b] - ky[a]), tt);
       }
     }
   }
-  tupfe(sx, sy, 0);
-  return { z, x0, y1 };
+}
+function zeitRaster(g, such, sx, sy) {
+  const r = rasterNeu(sx - R_MAX, sy + R_MAX, N, RASTER_M);
+  tupfeWege(r, g, such.zeit, such.besucht, STUFEN_MIN[2] * 60);
+  tupfe(r, g, sx, sy, 0);
+  return r;
 }
 
 /* Quadrierter Abstand jeder Zelle zur naechsten Zelle mit maske == 1
    (Felzenszwalb/Huttenlocher, zwei Durchlaeufe zu je einer Dimension). */
 const GROSS = 1e20;
-const _f = new Float64Array(N), _d = new Float64Array(N), _v = new Int32Array(N), _zz = new Float64Array(N + 1);
+let _f, _d, _v, _zz, _platz = 0;
 function abstand1(n) {
   let k = 0; _v[0] = 0; _zz[0] = -GROSS; _zz[1] = GROSS;
   for (let q = 1; q < n; q++) {
@@ -414,94 +446,98 @@ function abstand1(n) {
     _d[q] = (q - _v[k]) * (q - _v[k]) + _f[_v[k]];
   }
 }
-function abstand2(maske) {
-  const d = new Float64Array(N * N);
-  for (let i = 0; i < N; i++) {
-    for (let j = 0; j < N; j++) _f[j] = maske[j * N + i] ? 0 : GROSS;
-    abstand1(N);
-    for (let j = 0; j < N; j++) d[j * N + i] = _d[j];
+function abstand2(maske, n) {
+  if (n > _platz) { _platz = n; _f = new Float64Array(n); _d = new Float64Array(n); _v = new Int32Array(n); _zz = new Float64Array(n + 1); }
+  const d = new Float64Array(n * n);
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) _f[j] = maske[j * n + i] ? 0 : GROSS;
+    abstand1(n);
+    for (let j = 0; j < n; j++) d[j * n + i] = _d[j];
   }
-  for (let j = 0; j < N; j++) {
-    for (let i = 0; i < N; i++) _f[i] = d[j * N + i];
-    abstand1(N);
-    for (let i = 0; i < N; i++) d[j * N + i] = _d[i];
+  for (let j = 0; j < n; j++) {
+    for (let i = 0; i < n; i++) _f[i] = d[j * n + i];
+    abstand1(n);
+    for (let i = 0; i < n; i++) d[j * n + i] = _d[i];
   }
   return d;
 }
 
 /* Zusammenhaengende Gebiete (4er-Nachbarschaft) mit wert: zu kleine umschalten.
    Bei Loechern zaehlen nur Gebiete, die den Rand nicht beruehren. */
-const _schlange = new Int32Array(N * N);
-function kleineGebiete(maske, wert, minZellen, behalte) {
-  const gesehen = new Uint8Array(N * N);
-  for (let s = 0; s < N * N; s++) {
+let _schlange = new Int32Array(0);
+function kleineGebiete(maske, wert, minZellen, behalte, n) {
+  if (_schlange.length < n * n) _schlange = new Int32Array(n * n);
+  const gesehen = new Uint8Array(n * n);
+  for (let s = 0; s < n * n; s++) {
     if (gesehen[s] || maske[s] !== wert) continue;
     let kopf = 0, ende = 0, rand = false, haltet = false;
     _schlange[ende++] = s; gesehen[s] = 1;
     while (kopf < ende) {
-      const c = _schlange[kopf++], i = c % N, j = (c / N) | 0;
-      if (i === 0 || j === 0 || i === N - 1 || j === N - 1) rand = true;
+      const c = _schlange[kopf++], i = c % n, j = (c / n) | 0;
+      if (i === 0 || j === 0 || i === n - 1 || j === n - 1) rand = true;
       if (c === behalte) haltet = true;
       if (i > 0 && !gesehen[c - 1] && maske[c - 1] === wert) { gesehen[c - 1] = 1; _schlange[ende++] = c - 1; }
-      if (i < N - 1 && !gesehen[c + 1] && maske[c + 1] === wert) { gesehen[c + 1] = 1; _schlange[ende++] = c + 1; }
-      if (j > 0 && !gesehen[c - N] && maske[c - N] === wert) { gesehen[c - N] = 1; _schlange[ende++] = c - N; }
-      if (j < N - 1 && !gesehen[c + N] && maske[c + N] === wert) { gesehen[c + N] = 1; _schlange[ende++] = c + N; }
+      if (i < n - 1 && !gesehen[c + 1] && maske[c + 1] === wert) { gesehen[c + 1] = 1; _schlange[ende++] = c + 1; }
+      if (j > 0 && !gesehen[c - n] && maske[c - n] === wert) { gesehen[c - n] = 1; _schlange[ende++] = c - n; }
+      if (j < n - 1 && !gesehen[c + n] && maske[c + n] === wert) { gesehen[c + n] = 1; _schlange[ende++] = c + n; }
     }
     if (ende < minZellen && !rand && !haltet) for (let k = 0; k < ende; k++) maske[_schlange[k]] = 1 - wert;
   }
 }
 
 /* Maske glaetten: schliessen (Rand mit runden Ecken), kleine Loecher fuellen,
-   kleine Inseln weglassen. Die Insel mit dem Startpunkt bleibt immer. */
-function glaette(maske, startZelle) {
-  const r2 = (GLAETTEN_M / RASTER_M) ** 2;
-  const zu = abstand2(maske), dil = new Uint8Array(N * N);
-  for (let c = 0; c < N * N; c++) dil[c] = zu[c] <= r2 ? 0 : 1;   // dil = 1 heisst: ausserhalb der Erweiterung
-  const weg = abstand2(dil), aus = new Uint8Array(N * N);
-  for (let c = 0; c < N * N; c++) aus[c] = weg[c] > r2 ? 1 : 0;
-  const zelle = RASTER_M * RASTER_M;
-  kleineGebiete(aus, 0, LOCH_MIN_M2 / zelle, -1);
-  kleineGebiete(aus, 1, INSEL_MIN_M2 / zelle, startZelle);
+   kleine Inseln weglassen. Die Insel mit dem Startpunkt bleibt immer; mit Bus
+   bleiben auch die Inseln um die Haltestellen (behalte = -1: keine). */
+function glaette(maske, startZelle, n, m, inselnLassen) {
+  const r2 = (GLAETTEN_M / m) ** 2;
+  const zu = abstand2(maske, n), dil = new Uint8Array(n * n);
+  for (let c = 0; c < n * n; c++) dil[c] = zu[c] <= r2 ? 0 : 1;   // dil = 1 heisst: ausserhalb der Erweiterung
+  const weg = abstand2(dil, n), aus = new Uint8Array(n * n);
+  for (let c = 0; c < n * n; c++) aus[c] = weg[c] > r2 ? 1 : 0;
+  const zelle = m * m;
+  kleineGebiete(aus, 0, LOCH_MIN_M2 / zelle, -1, n);
+  if (!inselnLassen) kleineGebiete(aus, 1, INSEL_MIN_M2 / zelle, startZelle, n);
   return aus;
 }
 
-function stufenMasken(raster, grenzenS) {
-  const startZelle = Math.floor(N / 2) * N + Math.floor(N / 2);
+function stufenMasken(raster, grenzenS, startZelle, inselnLassen) {
+  const n = raster.n;
+  if (startZelle === undefined) startZelle = Math.floor(n / 2) * n + Math.floor(n / 2);
   const masken = grenzenS.map((g) => {
-    const m = new Uint8Array(N * N);
-    for (let c = 0; c < N * N; c++) m[c] = raster.z[c] <= g ? 1 : 0;
-    return glaette(m, startZelle);
+    const m = new Uint8Array(n * n);
+    for (let c = 0; c < n * n; c++) m[c] = raster.z[c] <= g ? 1 : 0;
+    return glaette(m, startZelle, n, raster.m, inselnLassen);
   });
   for (let k = masken.length - 2; k >= 0; k--) {   // innere Stufe liegt immer in der aeusseren
-    for (let c = 0; c < N * N; c++) masken[k][c] &= masken[k + 1][c];
+    for (let c = 0; c < n * n; c++) masken[k][c] &= masken[k + 1][c];
   }
   return masken;
 }
 
 const hexRGB = (h) => [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16));
 
-/* Bild im Rastermass auf die Kartenleinwand: dreifach vergroessert und
-   weich gezeichnet, damit der Rand nicht in 12-m-Stufen erscheint. */
+/* Bild im Rastermass auf die Kartenleinwand: vergroessert und weich gezeichnet,
+   damit der Rand nicht in Zellstufen erscheint. Grosse Raster (Bus) nur doppelt. */
 const ROH = document.createElement('canvas');
-const AUFLOESUNG = 3;
-function aufLeinwand(leinwand, bild) {
-  ROH.width = N; ROH.height = N;
+function aufLeinwand(leinwand, bild, n) {
+  const faktor = n > 400 ? 2 : 3;
+  ROH.width = n; ROH.height = n;
   ROH.getContext('2d').putImageData(bild, 0, 0);
-  leinwand.width = N * AUFLOESUNG; leinwand.height = N * AUFLOESUNG;
+  leinwand.width = n * faktor; leinwand.height = n * faktor;
   const ctx = leinwand.getContext('2d');
   ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high';
-  ctx.filter = 'blur(' + AUFLOESUNG * 0.6 + 'px)';
+  ctx.filter = 'blur(' + faktor * 0.6 + 'px)';
   ctx.drawImage(ROH, 0, 0, leinwand.width, leinwand.height);
   ctx.filter = 'none';
 }
 
 /* Schichten von unten nach oben ueber einander legen (Alpha-Mischung). */
-function male(leinwand, schichten) {
-  const bild = new ImageData(N, N), d = bild.data;
-  const r = new Float32Array(N * N), gg = new Float32Array(N * N), b = new Float32Array(N * N), a = new Float32Array(N * N);
+function male(leinwand, schichten, n) {
+  const bild = new ImageData(n, n), d = bild.data;
+  const r = new Float32Array(n * n), gg = new Float32Array(n * n), b = new Float32Array(n * n), a = new Float32Array(n * n);
   for (const s of schichten) {
     const [cr, cg, cb] = hexRGB(s.farbe), al = s.alpha;
-    for (let c = 0; c < N * N; c++) {
+    for (let c = 0; c < n * n; c++) {
       if (!s.maske[c]) continue;
       const neu = al + a[c] * (1 - al);
       r[c] = (cr * al + r[c] * a[c] * (1 - al)) / neu;
@@ -510,36 +546,83 @@ function male(leinwand, schichten) {
       a[c] = neu;
     }
   }
-  for (let c = 0; c < N * N; c++) {
+  for (let c = 0; c < n * n; c++) {
     if (!a[c]) continue;
     d[4 * c] = r[c]; d[4 * c + 1] = gg[c]; d[4 * c + 2] = b[c]; d[4 * c + 3] = Math.round(a[c] * 255);
   }
-  aufLeinwand(leinwand, bild);
+  aufLeinwand(leinwand, bild, n);
 }
 
 /* Schichtbild: Jede Zelle zeigt die oberste (kleinste) Flaeche, die sie
    bedeckt; jede Flaeche bekommt einen schmalen Rand in ihrer Farbe. So bleibt
    die Mitte hell und jede Person auch dort sichtbar, wo Flaechen sich kreuzen. */
-function maleSchichten(leinwand, schichten) {
-  const bild = new ImageData(N, N), d = bild.data;
+function maleSchichten(leinwand, schichten, n) {
+  const bild = new ImageData(n, n), d = bild.data;
   const setze = (c, rgb, al) => { d[4 * c] = rgb[0]; d[4 * c + 1] = rgb[1]; d[4 * c + 2] = rgb[2]; d[4 * c + 3] = Math.round(al * 255); };
   for (const s of schichten) {
     const rgb = hexRGB(s.farbe);
-    for (let c = 0; c < N * N; c++) if (s.maske[c]) setze(c, rgb, ALPHA_SCHICHT);
+    for (let c = 0; c < n * n; c++) if (s.maske[c]) setze(c, rgb, ALPHA_SCHICHT);
   }
   for (const s of schichten) {
     const rgb = hexRGB(s.farbe), m = s.maske;
-    for (let j = 1; j < N - 1; j++) for (let i = 1; i < N - 1; i++) {
-      const c = j * N + i;
-      if (m[c] && (!m[c - 1] || !m[c + 1] || !m[c - N] || !m[c + N])) setze(c, rgb, ALPHA_RAND);
+    for (let j = 1; j < n - 1; j++) for (let i = 1; i < n - 1; i++) {
+      const c = j * n + i;
+      if (m[c] && (!m[c - 1] || !m[c + 1] || !m[c - n] || !m[c + n])) setze(c, rgb, ALPHA_RAND);
     }
   }
-  aufLeinwand(leinwand, bild);
+  aufLeinwand(leinwand, bild, n);
 }
 
 function ecken(raster) {
-  const x1 = raster.x0 + N * RASTER_M, y0 = raster.y1 - N * RASTER_M;
+  const x1 = raster.x0 + raster.n * raster.m, y0 = raster.y1 - raster.n * raster.m;
   return [zuGeo(raster.x0, raster.y1), zuGeo(x1, raster.y1), zuGeo(x1, y0), zuGeo(raster.x0, y0)];
+}
+
+/* ------------------------------------------------------------ Mit Bus
+   Fussweg zur Haltestelle + Warten (halber Takt, hoechstens 10 Minuten) +
+   Fahrt (mit 5 Minuten je Umstieg, aus scraper/oepnv_bauen.py) + Fussweg vom
+   Ziel-Halt. Grenze 30 Minuten. Fahrplan: VGI/INVG, CC BY-SA 3.0 DE. */
+function rechneBus(person, sx, sy) {
+  const B = window.WEGE_BUS, fid = zustand.bus.fenster;
+  const g = gewichte(person, zustand.bed);
+  const einstieg = naechsteKante(sx, sy, g.kante);
+  if (!einstieg) return null;
+  const grenze = BUS_STUFEN_MIN[2] * 60 + 1, suche = g.abbiegen ? sucheKanten : sucheKnoten;
+  const fuss = suche(g, [{ ...einstieg, t0: 0, sx, sy }], grenze);
+  const H = B.haltestellen, takt = B.takt[fid], ziele = B.ziele[fid];
+  const an = new Float64Array(H.length).fill(Infinity);
+  let genutzt = 0;
+  H.forEach((h, o) => {
+    if (takt[o] === 255 || !h[3].length) return;
+    const hin = Math.min(...h[3].map((k, j) => fuss.zeit[k] + h[4][j] / g.v));
+    if (hin > grenze) return;
+    genutzt++;
+    const ab = hin + Math.min(takt[o] / 2, BUS_WARTEN_MAX_MIN) * 60;
+    let d = 0;
+    for (const v of ziele[o]) {
+      d += Math.floor(v / 32);
+      const t = ab + (v % 32) * 60;
+      if (t < an[d]) an[d] = t;
+    }
+  });
+  const starts = [];
+  H.forEach((h, d) => { if (an[d] < grenze) h[3].forEach((k, j) => starts.push({ k, t0: an[d] + h[4][j] / g.v })); });
+  const weiter = starts.length ? suche(g, starts, grenze) : { zeit: new Float64Array(nK).fill(Infinity), besucht: [] };
+  const zeit = new Float64Array(nK);
+  for (let k = 0; k < nK; k++) zeit[k] = Math.min(fuss.zeit[k], weiter.zeit[k]);
+  const besucht = Array.from(new Set(fuss.besucht.concat(weiter.besucht)));
+  let x0 = sx, x1 = sx, y0 = sy, y1 = sy;
+  for (const k of besucht) {
+    if (zeit[k] > grenze) continue;
+    if (kx[k] < x0) x0 = kx[k]; if (kx[k] > x1) x1 = kx[k];
+    if (ky[k] < y0) y0 = ky[k]; if (ky[k] > y1) y1 = ky[k];
+  }
+  const rand = PUFFER_M + GLAETTEN_M + 3 * BUS_RASTER_M, laenge = Math.max(x1 - x0, y1 - y0) + 2 * rand;
+  const n = Math.min(BUS_RASTER_MAX, Math.ceil(laenge / BUS_RASTER_M)), m = laenge / n;
+  const raster = rasterNeu(x0 - rand, y1 + rand, n, m);
+  tupfeWege(raster, g, zeit, besucht, BUS_STUFEN_MIN[2] * 60);
+  tupfe(raster, g, sx, sy, 0);
+  return { g, fuss: fuss.zeit, zeit, raster, startZelle: zelleVon(raster, sx, sy), genutzt, angefahren: starts.length / 2 };
 }
 
 /* -------------------------------------------------------------- Bezirke */
@@ -594,6 +677,7 @@ const zustand = {
   start: { lat: START.lat, lon: START.lon, name: START.name },
   ansicht: 'eine', person: 'erwachsene', bed: { nacht: false, hitze: false },
   bezirk: { person: 'aeltere', kat: 'apotheke', luecken: false, nr: null },
+  bus: { an: false, fenster: 'mo_frueh' },
   wenn: null,   // Ort (Index), dessen Schliessung in der Einzelansicht durchgespielt wird
 };
 let karte = null, kartenBereit = false, letztes = null;
@@ -605,7 +689,7 @@ function rechnePerson(person, sx, sy) {
   const einstieg = naechsteKante(sx, sy, g.kante);
   if (!einstieg) return null;
   const grenze = STUFEN_MIN[2] * 60 + 1;
-  const such = g.abbiegen ? sucheKanten(g, einstieg, grenze, sx, sy) : sucheKnoten(g, einstieg, grenze);
+  const such = (g.abbiegen ? sucheKanten : sucheKnoten)(g, [{ ...einstieg, t0: 0, sx, sy }], grenze);
   return { g, such, raster: zeitRaster(g, such, sx, sy) };
 }
 
@@ -629,10 +713,18 @@ function rechne() {
     const r = rechnePerson(zustand.person, sx, sy);
     if (!r) {
       letztes = { fehler: true, bez };
+    } else if (zustand.bus.an && window.WEGE_BUS) {
+      const rb = rechneBus(zustand.person, sx, sy), ziele = zieleVon(zustand.person);
+      const masken = stufenMasken(rb.raster, BUS_STUFEN_MIN.map((m) => m * 60), rb.startZelle, true);
+      male(leinwand, masken.slice().reverse().map((m, k) => ({ maske: m, farbe: BUS_FARBE, alpha: ALPHA_STUFEN[2 - k] })), rb.raster.n);
+      const ziel = (zeit, o) => Math.min(...o[3].map((k, j) => zeit[k] + o[4][j] / rb.g.v));
+      letztes = { bez, raster: rb.raster, g: r.g, zeit: r.such.zeit, orte: naechsteOrte(r.g, r.such.zeit, ziele),
+        bus: { orte: naechsteOrte(rb.g, rb.zeit, ziele, undefined, BUS_STUFEN_MIN[2] * 60), genutzt: rb.genutzt,
+          grosse: (ORTE.grosse_ziele || []).map((o) => ({ name: o[0], fuss: ziel(rb.fuss, o), bus: ziel(rb.zeit, o) })) } };
     } else {
       const masken = stufenMasken(r.raster, STUFEN_MIN.map((m) => m * 60));
       const farbe = PERSONEN[zustand.person].farbe;
-      male(leinwand, masken.slice().reverse().map((m, k) => ({ maske: m, farbe, alpha: ALPHA_STUFEN[2 - k] })));
+      male(leinwand, masken.slice().reverse().map((m, k) => ({ maske: m, farbe, alpha: ALPHA_STUFEN[2 - k] })), N);
       letztes = { bez, raster: r.raster, g: r.g, zeit: r.such.zeit, orte: naechsteOrte(r.g, r.such.zeit, zieleVon(zustand.person)) };
     }
   } else {
@@ -646,7 +738,7 @@ function rechne() {
       schichten.push({ person: p, maske, farbe: PERSONEN[p].farbe, alpha: ALPHA_SCHICHT, km2: zellen * RASTER_M * RASTER_M / 1e6, raster: r.raster });
     }
     schichten.sort((a, b) => b.km2 - a.km2);   // groesste Flaeche unten
-    if (schichten.length) maleSchichten(leinwand, schichten);
+    if (schichten.length) maleSchichten(leinwand, schichten, N);
     letztes = schichten.length ? { bez, raster: schichten[0].raster, schichten } : { fehler: true, bez };
   }
   zeigePanel();
@@ -685,12 +777,15 @@ function zeigeListe() {
   ul.innerHTML = '';
   const r = letztes;
   // Legende: so dunkel wie die uebereinanderliegenden Stufen auf der Karte
-  const [cr, cg, cb] = hexRGB(PERSONEN[zustand.person].farbe);
+  const bus = r.bus, stufen = bus ? BUS_STUFEN_MIN : STUFEN_MIN;
+  const [cr, cg, cb] = hexRGB(bus ? BUS_FARBE : PERSONEN[zustand.person].farbe);
   let a = 0;
   for (let k = 2; k >= 0; k--) {
     a = ALPHA_STUFEN[k] + a * (1 - ALPHA_STUFEN[k]);
     $('leg-' + STUFEN_MIN[k]).style.background = 'rgba(' + cr + ',' + cg + ',' + cb + ',' + a.toFixed(2) + ')';
+    $('txt-legende-' + STUFEN_MIN[k]).textContent = stufen[k] + t(' Min', ' Minuten');
   }
+  zeigeBus();
   if (r.fehler) {
     const li = document.createElement('li');
     li.className = 'ziel-fehler';
@@ -717,6 +812,13 @@ function zeigeListe() {
     min.className = 'ziel-min';
     min.textContent = a ? minText(a.z) : '–';
     li.append(name, was, min);
+    if (bus) {
+      const b = bus.orte[kat], m2 = document.createElement('span');
+      m2.className = 'ziel-min ziel-min-2';
+      m2.textContent = b ? minText(b.z) : '–';
+      m2.title = b ? t('mit Bus: ', 'mit Bus: ') + (ORTE.orte[b.oi][1] || katName(kat)) : '';
+      li.appendChild(m2);
+    }
     if (a && kat !== 'trinkwasser') {
       const knopf = document.createElement('button');
       knopf.type = 'button';
@@ -732,6 +834,23 @@ function zeigeListe() {
   $('ziele-summe').textContent = t(
     erreicht + ' von ' + ziele.length + ' Zielen liegen in 15 Minuten (' + personName(zustand.person) + ').',
     erreicht + ' von ' + ziele.length + ' Zielen sind nah. Nah heißt: in 15 Minuten zu Fuß.');
+}
+
+function zeigeBus() {
+  const r = letztes, bus = r && r.bus, B = window.WEGE_BUS;
+  $('ziele-kopf').hidden = !bus;
+  $('grosse-block').hidden = !bus;
+  $('hinweis-bus').innerHTML = '';
+  if (!bus) return;
+  const f = B.fenster.find((x) => x.id === zustand.bus.fenster);
+  $('hinweis-bus').innerHTML = t(
+    'Mit Bus (' + f.name + ', Fahrplan vom ' + f.stichtag.slice(6) + '.' + f.stichtag.slice(4, 6) + '.' + f.stichtag.slice(0, 4) + '): Weg zur Haltestelle, ' +
+    'Warten (halber Takt, höchstens ' + BUS_WARTEN_MAX_MIN + ' Min), Fahrt mit 5 Min je Umstieg, Weg vom Ziel-Halt. ' + bus.genutzt +
+    ' Haltestellen liegen zu Fuß in Reichweite.',
+    'Mit Bus: Sie gehen zur Halte-Stelle. Sie warten. Sie fahren. Dann gehen Sie weiter. Alles zusammen höchstens 30 Minuten.');
+  $('grosse').innerHTML = bus.grosse.map((g) => '<li><span class="ziel-kat">' + g.name + '</span><span class="ziel-min">' +
+    (g.fuss <= BUS_STUFEN_MIN[2] * 60 ? minText(g.fuss) : t('über 30', 'weit')) + '</span><span class="ziel-min ziel-min-2">' +
+    (g.bus <= BUS_STUFEN_MIN[2] * 60 ? minText(g.bus) : t('über 30', 'weit')) + '</span></li>').join('');
 }
 
 function zeigeSchichten() {
@@ -1190,6 +1309,21 @@ function baueBedienung() {
   });
   $('bz-kat').addEventListener('change', (e) => { zustand.bezirk.kat = e.target.value; rechneBezirke(); });
   $('bz-luecken').addEventListener('change', (e) => { zustand.bezirk.luecken = e.target.checked; rechneBezirke(); });
+  const busWahl = $('bus-fenster');
+  $('bus-an').addEventListener('change', (e) => {
+    zustand.bus.an = e.target.checked;
+    busWahl.disabled = !e.target.checked;
+    if (!e.target.checked) { rechne(); return; }
+    $('hinweis-bus').textContent = t('Lade Fahrplan …', 'Bitte warten …');
+    ladeSkript('data/wege-bus.js').then(() => {
+      if (!busWahl.options.length) {
+        busWahl.innerHTML = window.WEGE_BUS.fenster.map((f) => '<option value="' + f.id + '">' + t(f.name, f.name_l) + '</option>').join('');
+        busWahl.value = zustand.bus.fenster;
+      }
+      rechne();
+    }).catch(() => { $('hinweis-bus').textContent = t('Der Fahrplan konnte nicht geladen werden.', 'Das geht gerade nicht.'); });
+  });
+  busWahl.addEventListener('change', () => { zustand.bus.fenster = busWahl.value; rechne(); });
   for (const k of Object.keys(zustand.bed)) {
     $('bed-' + k).addEventListener('change', (e) => { zustand.bed[k] = e.target.checked; rechne(); });
   }
@@ -1279,6 +1413,16 @@ const TEXTE = {
   'legende-10': { n: '10 Min', l: '10 Minuten' },
   'legende-15': { n: '15 Min', l: '15 Minuten' },
   'ziele-h': { n: 'Was liegt in Reichweite?', l: 'Was ist in der Nähe?' },
+  'bus-label': { n: 'Mit Bus', l: 'Mit dem Bus' },
+  'ziele-kopf-fuss': { n: 'zu Fuß', l: 'zu Fuß' },
+  'ziele-kopf-bus': { n: 'mit Bus', l: 'mit Bus' },
+  'grosse-h': { n: 'Große Ziele', l: 'Wichtige Orte in der Stadt' },
+  'grosse-kopf-fuss': { n: 'zu Fuß', l: 'zu Fuß' },
+  'grosse-kopf-bus': { n: 'mit Bus', l: 'mit Bus' },
+  'grosse-fuss': {
+    n: 'Minuten bis zum Eingang, „über 30“: nicht in 30 Minuten. Das Audi-Werk ist mit dem Audi Forum vertreten, weil in OpenStreetMap kein Haupttor eingetragen ist.',
+    l: 'So viele Minuten brauchen Sie bis dorthin.',
+  },
   'ziele-fuss': {
     n: 'Gehminuten zum nächsten Ort, aufgerundet. Der Weg vom Startpunkt bis zum nächsten Weg zählt mit.',
     l: 'So viele Minuten gehen Sie bis dorthin.',
@@ -1301,6 +1445,10 @@ const TEXTE = {
     n: 'Die Fläche reicht bis 40 Meter neben die erreichten Wege. Danach wird sie geglättet: Lücken zwischen Straßen bis etwa 140 Meter schließen sich, Ecken werden rund, Löcher unter 4 Hektar füllen sich, Inseln unter 1 Hektar fallen weg. So zeigt die Karte ein Viertel statt eines Straßenabdrucks. Die Minuten in der Liste sind davon unberührt.',
     l: 'Die Farbe zeigt: Bis hier kommen Sie.',
   },
+  'wie-p4': {
+    n: 'Mit Bus rechnet die Karte nach dem Soll-Fahrplan der VGI an je einem Stichtag: Fußweg zur Haltestelle, dort warten (den halben Takt aller Linien, höchstens 10 Minuten), fahren (Fahrzeit je Abschnitt als Mittelwert der Fahrten im Zeitfenster, 5 Minuten je Umstieg, auch zu einem Steig bis 200 Meter entfernt) und vom Ziel-Halt weitergehen. Grenze sind 30 Minuten, die Ringe zeigen 10, 20 und 30 Minuten.',
+    l: 'Mit dem Bus rechnet die Karte so: zur Halte-Stelle gehen, warten, fahren, weiter-gehen. Alles zusammen höchstens 30 Minuten.',
+  },
   'luecken-h2': { n: 'Was die Karte nicht weiß', l: 'Was die Karte nicht weiß' },
   'luecken-liste': {
     n: '<li><strong>Fehlende Orte:</strong> Nur was in OpenStreetMap steht, kommt vor. Von den Ingolstädter Grundschulen sind dort nur 14 als solche erkennbar, viele Arztpraxen ohne Fachrichtung; Praxen ohne Angabe zählen hier als Hausarzt.</li>' +
@@ -1308,7 +1456,8 @@ const TEXTE = {
       '<li><strong>Kind:</strong> Haupt- und Sammelstraßen sind oft nur als Mittellinie eingetragen. Die Karte merkt sich deshalb, auf welcher Straßenseite das Kind geht, und lässt es nur an einer eingetragenen Ampel oder einem Zebrastreifen auf die andere Seite wechseln. Fehlt dort die Angabe zur Querung, sperrt die Karte zu viel; liegt ein Gehweg nur auf einer Seite, merkt sie das nicht. Ob es einen Gehweg gibt, steht nur an rund 2.000 Straßen; ohne Angabe nimmt die Karte einen an.</li>' +
       '<li><strong>Rollstuhl und Kinderwagen:</strong> Ob ein Weg befahrbar ist, steht nur an 86 Wegen, hohe Bordsteine an wenigen Stellen. Treppen sind dagegen fast vollständig eingetragen. Aufzüge an Unterführungen fehlen meist.</li>' +
       '<li><strong>Nacht:</strong> Beleuchtung steht nur an etwa 3.200 von 17.000 Wegen. Ohne Angabe gelten Straßen und Gehwege als hell, Pfade und Feldwege als dunkel.</li>' +
-      '<li><strong>Hitze:</strong> Schatten ist geschätzt: Ein Weg gilt als schattig, wenn er durch Wald oder Park führt oder nah an eingetragenen Bäumen. Viele Straßenbäume fehlen in OpenStreetMap; Trinkwasserbrunnen sind dort nur 8 eingetragen.</li>' +
+      '<li><strong>Hitze:</strong> Schatten ist geschätzt: Ein Weg gilt als schattig, wenn er durch Wald oder Park führt oder nah an eingetragenen Bäumen. Viele Straßenbäume fehlen in OpenStreetMap. Trinkwasserbrunnen kommen aus OpenStreetMap und dem Datensatz der Stadt (zusammen 15); Brunnen in Parks oder Schulen ohne Eintrag fehlen.</li>' +
+      '<li><strong>Bus:</strong> Die Wartezeit nimmt den Takt aller Linien an einer Haltestelle zusammen; fährt die passende Linie seltener, wartet man länger. Verspätungen, Baustellen-Umleitungen und Anschlüsse, die genau passen, kennt die Karte nicht. Ein- und Aussteigen sind für Rollstuhl und Kinderwagen als möglich angenommen.</li>' +
       '<li><strong>Öffnungszeiten:</strong> Die Karte rechnet, als hätte alles offen.</li>' +
       '<li><strong>Bänke und Ampeln:</strong> Sitzbänke sind lückenhaft; wo keine eingetragen ist, rechnet die Karte für ältere Menschen mit Pausen. Ampeln zählen, wo sie eingetragen sind.</li>',
     l: '<li>Manche Orte fehlen auf der Karte. Zum Beispiel Schulen oder Ärzte.</li>' +
@@ -1316,11 +1465,12 @@ const TEXTE = {
       '<li>Die Karte weiß nicht überall, wo Licht ist. Und wo Schatten ist.</li>' +
       '<li>Kinder gehen auf der Karte nur an der Ampel oder am Zebra-Streifen über große Straßen. Manche Ampeln fehlen auf der Karte.</li>' +
       '<li>Die Karte weiß nicht überall, wo ein Rollstuhl fahren kann.</li>' +
+      '<li>Busse kommen manchmal zu spät. Das weiß die Karte nicht.</li>' +
       '<li>Die Karte weiß nicht, wann ein Geschäft offen ist.</li>',
   },
   mithelfen: {
-    n: 'Fehlt etwas? Orte und Wege lassen sich in <a href="https://www.openstreetmap.org" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> selbst eintragen, auch Beleuchtung, Gehwege und Bordsteine; nach dem nächsten Daten-Update erscheinen sie hier. Mehr zum Mitmachen auf der Seite <a href="beteiligen.html">Beteiligen</a>.',
-    l: 'Fehlt etwas? Sie können es bei <a href="https://www.openstreetmap.org" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> eintragen. Mehr dazu auf der Seite <a href="beteiligen.html">Mitmachen</a>.',
+    n: 'Fehlt etwas? Orte und Wege lassen sich in <a href="https://www.openstreetmap.org" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> selbst eintragen, auch Beleuchtung, Gehwege und Bordsteine; nach dem nächsten Daten-Update erscheinen sie hier. Welche Angaben am meisten helfen und wie das geht, steht auf der Seite <a href="beteiligen.html#wege-eintragen">Beteiligen</a>.',
+    l: 'Fehlt etwas? Sie können es bei <a href="https://www.openstreetmap.org" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> eintragen. Wie das geht, steht auf der Seite <a href="beteiligen.html#wege-eintragen">Mitmachen</a>.',
   },
 };
 
@@ -1356,7 +1506,10 @@ function quellen() {
     '<li>' + t('Wege, Orte und Grundkarte', 'Wege und Karte') + ': © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap-Mitwirkende</a>, ODbL 1.0; ' +
     t('Kartenstil und Kacheln', 'Karten-Stil') + ': <a href="https://protomaps.com" target="_blank" rel="noopener noreferrer">Protomaps</a></li>' +
     '<li>' + t('Stadtbezirke', 'Stadt-Bezirke') + ': Stadt Ingolstadt, CC BY 3.0 DE</li>' +
-    '<li>' + t('Karte im Browser', 'Karte') + ': <a href="https://maplibre.org" target="_blank" rel="noopener noreferrer">MapLibre GL JS</a> (BSD-3)</li></ul>' +
+    '<li>' + t('Karte im Browser', 'Karte') + ': <a href="https://maplibre.org" target="_blank" rel="noopener noreferrer">MapLibre GL JS</a> (BSD-3)</li>' +
+    '<li>' + t('Fahrplan (Mit Bus)', 'Bus-Fahrplan') + ': Soll-Fahrplandaten der Ingolstädter Verkehrsgesellschaft (INVG) / ' +
+    '<a href="https://www.vgi.de" target="_blank" rel="noopener noreferrer">VGI</a>, CC BY-SA 3.0 DE, ' + t('nicht kommerziell; daraus abgeleitet data/wege-bus.js unter derselben Lizenz', 'nicht für Geld') + '</li>' +
+    '<li>' + t('Trinkwasserbrunnen', 'Trink-Wasser') + ': ' + t('zusätzlich', 'auch') + ' Stadt Ingolstadt, CC BY 4.0</li></ul>' +
     '<p>' + t('Stand der Wegedaten: ', 'Stand: ') + NETZ.erzeugt_am.split('-').reverse().join('.') + '. ' +
     t('Alle Berechnungen laufen in Ihrem Browser; Startpunkt, Adresse und Standort werden nicht übertragen.',
       'Alles bleibt auf Ihrem Gerät.') + '</p>';

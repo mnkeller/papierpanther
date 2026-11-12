@@ -1,0 +1,42 @@
+{
+ "erzeugt_von": "scraper/wege_bauen.py",
+ "erzeugt_am": "2026-11-12",
+ "start": {
+  "name": "Rathausplatz",
+  "lat": 48.76338,
+  "lon": 11.42514
+ },
+ "format": "orte: verschiedene Alltagsorte (ohne Baenke und Haltestellen) in 15 Minuten zu Fuss; ziele_erreicht: Ziele der eigenen Liste mit mindestens einem Ort in 15 Minuten. Bei Tag.",
+ "personen": {
+  "erwachsene": {
+   "orte": 219,
+   "haltestellen": 127,
+   "ziele_erreicht": 11,
+   "ziele_gesamt": 12
+  },
+  "kind": {
+   "orte": 176,
+   "haltestellen": 108,
+   "ziele_erreicht": 6,
+   "ziele_gesamt": 6
+  },
+  "aeltere": {
+   "orte": 165,
+   "haltestellen": 80,
+   "ziele_erreicht": 6,
+   "ziele_gesamt": 7
+  },
+  "rollstuhl": {
+   "orte": 183,
+   "haltestellen": 118,
+   "ziele_erreicht": 11,
+   "ziele_gesamt": 12
+  },
+  "besucher": {
+   "orte": 191,
+   "haltestellen": 119,
+   "ziele_erreicht": 7,
+   "ziele_gesamt": 8
+  }
+ }
+}

@@ -195,7 +195,16 @@
   .ziel-kat { font-weight: 600; font-size: .84rem; }
   .ziel-was { font-size: .84rem; color: var(--text-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .ziel-min { font-variant-numeric: tabular-nums; font-weight: 700; font-size: .86rem; text-align: right; min-width: 3.4em; }
-  .ziel-min-2 { color: #b00e2b; font-weight: 600; }
+  .ziel-min-2 { color: #8a5a00; font-weight: 700; }
+  .bus-wahl { display: flex; flex-wrap: wrap; gap: .4rem .8rem; align-items: center; margin-top: .6rem; }
+  .bus-wahl label { display: flex; gap: .45rem; align-items: baseline; cursor: pointer; }
+  .bus-wahl select { font: inherit; font-size: .84rem; padding: .25rem .35rem; border: 1px solid var(--border-strong); border-radius: 7px; background: #fff; }
+  .spalten-kopf { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: .6rem; font-size: .72rem; color: var(--text-faint); text-align: right; }
+  .spalten-kopf span { min-width: 3.4em; }
+  .spalten-ziele { grid-template-columns: 6.6rem minmax(0, 1fr) auto auto; }
+  .spalten-kopf[hidden] { display: none; }
+  #grosse { list-style: none; display: grid; }
+  #grosse li { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: .6rem; padding: .3rem 0; border-bottom: 1px solid var(--border); align-items: baseline; }
   .ziel-fehlt .ziel-was { color: #b00e2b; font-weight: 600; white-space: normal; }
   .ziel-fehler { color: #b00e2b; padding: .4rem 0; }
   #ziele-summe { font-size: .84rem; margin: .6rem 0 .2rem; font-weight: 600; }
@@ -285,15 +294,27 @@
         <div id="einzel">
           <h2 id="txt-person-h"></h2>
           <div class="wahl" id="personen"></div>
+          <div class="bus-wahl">
+            <label><input type="checkbox" id="bus-an"> <span id="txt-bus-label"></span></label>
+            <select id="bus-fenster" aria-label="Zeitfenster" disabled></select>
+          </div>
+          <p class="klein" id="hinweis-bus" aria-live="polite"></p>
           <div class="legende-karte" aria-hidden="true">
             <span><i id="leg-5"></i><b id="txt-legende-5"></b></span>
             <span><i id="leg-10"></i><b id="txt-legende-10"></b></span>
             <span><i id="leg-15"></i><b id="txt-legende-15"></b></span>
           </div>
           <h2 id="txt-ziele-h"></h2>
+          <div class="spalten-kopf spalten-ziele" id="ziele-kopf" hidden><span></span><span></span><span id="txt-ziele-kopf-fuss"></span><span id="txt-ziele-kopf-bus"></span></div>
           <ul id="ziele" aria-live="polite"><li class="ladehinweis">Lade Karte …</li></ul>
           <p id="ziele-summe"></p>
           <p class="klein" id="txt-ziele-fuss"></p>
+          <div id="grosse-block" hidden>
+            <h2 id="txt-grosse-h"></h2>
+            <div class="spalten-kopf"><span></span><span id="txt-grosse-kopf-fuss"></span><span id="txt-grosse-kopf-bus"></span></div>
+            <ul id="grosse"></ul>
+            <p class="klein" id="txt-grosse-fuss"></p>
+          </div>
         </div>
 
         <div id="schicht" hidden>
@@ -331,6 +352,7 @@
       <p id="txt-wie-p2"></p>
       <div id="werte"></div>
       <p id="txt-wie-p3"></p>
+      <p id="txt-wie-p4"></p>
     </section>
 
     <section id="luecken">
@@ -362,6 +384,7 @@
 <script src="vendor/protomaps/basemaps.js"></script>
 <script type="module" src="wege.js"></script>
 <script src="kopf.js" defer></script>
+<script src="grafik/kern.js" defer></script>
 <script src="zaehler.js" defer></script>
 </body>
 </html>

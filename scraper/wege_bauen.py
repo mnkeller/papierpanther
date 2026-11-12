@@ -55,11 +55,12 @@ ZENSUS = {  # Kurzname: (Zip, Spalte im 100-m-CSV)
 BEZIRKE_URL = 'https://www.ingolstadt.de/openbydata/GIS/Stadtbezirke_Ingolstadt.geojson'
 # Trinkwasserbrunnen der Stadt (open.bydata, CC BY 4.0), ergaenzt die Brunnen aus OpenStreetMap
 BRUNNEN_URL = 'https://www.ingolstadt.de/openbydata/GIS/Trinkwasserbrunnen_Ingolstadt.geojson'
+BRUNNEN_DUBLETTE_M = 30    # naeher an einem OSM-Brunnen: derselbe Brunnen, OSM behaelt Vorrang
 # Grosse Ziele, die meist nur mit Bus Sinn ergeben (Plan, Phase 5); OSM-Kennungen von Hand geprueft.
-# Das Audi-Werk hat kein als Haupttor benanntes Tor; stellvertretend das Audi Forum (Punkt im Forum).
-GROSSE_ZIELE = [('Klinikum', 'w894974428'), ('Hauptbahnhof', 'n3543804400'), ('Nordbahnhof', 'n925360247'),
-                ('THI', 'w135548926'), ('Audi Forum', 'n2268039752'), ('Stadttheater', 'w25643773'),
-                ('Westpark', 'w28013665'), ('Klenzepark', 'w32592151')]
+# Das Audi-Werk hat in OSM kein als Haupttor benanntes Tor; stellvertretend das Audi Forum (Punkt im
+# Forum). Rathaus: Rathausplatz 4, Sitz der Stadtverwaltung.
+GROSSE_ZIELE = [('Klinikum', 'w894974428'), ('Hauptbahnhof', 'n3543804400'), ('Rathaus', 'w52512206'),
+                ('Westpark', 'w28013665'), ('Audi Forum', 'n2268039752'), ('Stadttheater', 'w25643773')]
 OVERPASS_URL = 'https://overpass-api.de/api/interpreter'
 
 # Werte je Person: data/wege-personen.json, dieselbe Datei liest wege.js (als wege-personen.js)
@@ -871,26 +872,74 @@ def orte_bauen(raster):
                          'lon': round(LON0 + mx / MX, 5), 'merkmale': merkmale,
                          'knoten': [kn for kn, _ in knoten], 'abstand': [round(d) for _, d in knoten],
                          'oeffnungszeiten': t.get('opening_hours', ''), 'osm': e['type'][0] + str(e['id'])})
+    orte += brunnen_der_stadt(raster, orte)
     orte.sort(key=lambda o: (o['kat'], o['lat'], o['lon']))
     if ohne:
         print('Orte ohne Weg in 300 m (ausgelassen):', dict(ohne))
     return orte
 
 
-def orte_ausgabe(orte):
+def brunnen_der_stadt(raster, orte):
+    """Trinkwasserbrunnen aus dem Datensatz der Stadt (CC BY 4.0), soweit nicht schon in OSM."""
+    roh = json.load(open(datei('Trinkwasserbrunnen_Ingolstadt.geojson', BRUNNEN_URL, NEU), encoding='utf-8'))
+    osm = [xy(o['lat'], o['lon']) for o in orte if o['kat'] == KAT_NR['trinkwasser']]
+    neu, doppelt = [], 0
+    for f in roh.get('features', []):
+        g = f.get('geometry') or {}
+        if g.get('type') != 'Point':
+            continue
+        lon, lat = g['coordinates'][:2]
+        x, y = xy(lat, lon)
+        if any(math.hypot(x - ox, y - oy) < BRUNNEN_DUBLETTE_M for ox, oy in osm):
+            doppelt += 1
+            continue
+        einstieg = raster.einstieg(x, y, 300)
+        if not einstieg:
+            continue
+        neu.append({'kat': KAT_NR['trinkwasser'], 'name': (f.get('properties') or {}).get('name', ''),
+                    'lat': round(lat, 5), 'lon': round(lon, 5), 'merkmale': 0,
+                    'knoten': list(einstieg), 'abstand': [round(d) for d in einstieg.values()],
+                    'oeffnungszeiten': '', 'osm': 'stadt:' + str(f.get('id', ''))})
+    print('Trinkwasserbrunnen der Stadt: %d Brunnen, %d neu, %d schon in OSM' % (len(roh.get('features', [])), len(neu), doppelt))
+    return neu
+
+
+def grosse_ziele_bauen(raster):
+    """Grosse Ziele (Klinikum, Hauptbahnhof ...) mit Einstiegsknoten, in der Reihenfolge von GROSSE_ZIELE."""
+    elemente = {e['type'][0] + str(e['id']): e for e in overpass('grosse')['elements']}
+    aus = []
+    for name, kennung in GROSSE_ZIELE:
+        e = elemente.get(kennung)
+        a = anbinden(e, raster) if e else None
+        if not a or not a[1]:
+            print('Grosses Ziel ohne Anbindung:', name, kennung)
+            continue
+        punkte, einstieg, _ = a
+        knoten = sorted(einstieg.items(), key=lambda kv: kv[1])[:40]
+        mx = sum(p[0] for p in punkte) / len(punkte)
+        my = sum(p[1] for p in punkte) / len(punkte)
+        aus.append([name, round(LAT0 + my / MY, 5), round(LON0 + mx / MX, 5), [k for k, _ in knoten],
+                    [round(d) for _, d in knoten], kennung])
+    return aus
+
+
+def orte_ausgabe(orte, grosse):
     anzahl = collections.Counter(o['kat'] for o in orte)
     return {
         'erzeugt_von': 'scraper/wege_bauen.py', 'erzeugt_am': date.today().isoformat(),
-        'quelle': '© OpenStreetMap-Mitwirkende, ODbL 1.0 (openstreetmap.org/copyright)',
+        'quelle': ('© OpenStreetMap-Mitwirkende, ODbL 1.0 (openstreetmap.org/copyright); Trinkwasserbrunnen '
+                   'zusaetzlich: Stadt Ingolstadt, CC BY 4.0 (osm-Feld „stadt:…“)'),
         'format': ('orte: [kategorie, name, lat, lon, merkmale, knoten, abstand, oeffnungszeiten, osm]. '
                    'merkmale: Bits 1 Flaeche, 2 Oeffnungszeiten bekannt, 4 rollstuhlgerecht, 8 nicht rollstuhlgerecht. '
                    'knoten: Einstiegsknoten in WEGE_NETZ (Flaechen ueber ihren Rand angebunden), '
                    'abstand: Meter vom Ort bis zum jeweiligen Knoten. lat/lon: Punkt bzw. Mitte der Flaeche. '
-                   'osm: Kennung in OpenStreetMap (n/w/r + Nummer). '
+                   'osm: Kennung in OpenStreetMap (n/w/r + Nummer) oder stadt:<id> fuer Brunnen der Stadt. '
+                   'grosse_ziele: [name, lat, lon, knoten, abstand, osm]. '
                    'Praxen ohne Fachrichtung in OSM zaehlen als Hausarzt.'),
         'kategorien': [{'id': k, 'name': n, 'anzahl': anzahl[i]} for i, (k, n) in enumerate(KATEGORIEN)],
         'orte': [[o['kat'], o['name'], o['lat'], o['lon'], o['merkmale'], o['knoten'], o['abstand'], o['oeffnungszeiten'],
                   o['osm']] for o in orte],
+        'grosse_ziele': grosse,
     }
 
 
@@ -1260,6 +1309,32 @@ def personen_rechnen(netz, raster, orte, zellen, personen, massnahmen):
     return ergebnis, wirkung
 
 
+RATHAUSPLATZ = (48.76338, 11.42514)   # Startpunkt von wege.html
+
+
+def ab_rathausplatz(netz, raster, orte, personen):
+    """Je Person: Alltagsorte und Haltestellen in 15 Minuten ab dem Rathausplatz (fuer die grafische Fassung)."""
+    typen = Typen(netz)
+    bank = ohne_bank(netz, orte, personen['allgemein']['bank_naehe_m'])
+    x, y = xy(*RATHAUSPLATZ)
+    ohne = {KAT_NR['sitzbank'], KAT_NR['haltestelle']}
+    aus = {}
+    for pid in personen['reihe']:
+        p = personen['personen'][pid]
+        g = gewichte(typen, bank, p, personen['allgemein'])
+        d, k, t = raster.naechste(x, y, 300, g['kante'])
+        a, b, _, _ = netz['kanten'][k]
+        quellen = [(d / g['v'] + t * g['kante'][k], a, 0), (d / g['v'] + (1 - t) * g['kante'][k], b, 0)]
+        marke = (zwei_naechste_kind if g['abbiegen'] else zwei_naechste)(quellen, netz, typen, g)
+        zeit = lambda kn: marke[kn][0][0] if marke[kn] else INF
+        nah = [o for o in orte if min((zeit(kn) + ab / g['v'] for kn, ab in zip(o['knoten'], o['abstand'])), default=INF) <= 900]
+        ziele = [kat for kat in p['ziele'] if any(o['kat'] == KAT_NR[kat] for o in nah)]
+        aus[pid] = {'orte': len({o['osm'] for o in nah if o['kat'] not in ohne}),
+                    'haltestellen': len({o['osm'] for o in nah if o['kat'] == KAT_NR['haltestelle']}),
+                    'ziele_erreicht': len(ziele), 'ziele_gesamt': len(p['ziele'])}
+    return aus
+
+
 def gewicht_je_zelle(zellen, art):
     """Einwohner oder die passende Altersgruppe je Zelle; ohne Wert (geheim) das Stadtmittel."""
     if art == 'einwohner':
@@ -1388,6 +1463,7 @@ def main():
     netz = netz_bauen()
     raster = Kantenraster(netz)
     orte = orte_bauen(raster)
+    grosse = grosse_ziele_bauen(raster)
     adressen = adressen_bauen()
     zellen = zensus_lesen(bezirke)
     ergebnis, wirkung = personen_rechnen(netz, raster, orte, zellen, personen, massnahmen_roh['massnahmen'])
@@ -1398,7 +1474,7 @@ def main():
     groessen = {
         'wege-netz.js': schreibe('wege-netz', 'WEGE_NETZ', netz_ausgabe(netz),
                                  'Fusswegenetz Ingolstadt, © OpenStreetMap-Mitwirkende, ODbL 1.0; erzeugt von scraper/wege_bauen.py'),
-        'wege-orte.js': schreibe('wege-orte', 'WEGE_ORTE', orte_ausgabe(orte),
+        'wege-orte.js': schreibe('wege-orte', 'WEGE_ORTE', orte_ausgabe(orte, grosse),
                                  'Alltagsorte Ingolstadt, © OpenStreetMap-Mitwirkende, ODbL 1.0; erzeugt von scraper/wege_bauen.py'),
         'wege-zellen.js': schreibe('wege-zellen', 'WEGE_ZELLEN', zellen_ausgabe(zellen, personen),
                                    'Zensus 2022 (Statistische Ämter des Bundes und der Länder); erzeugt von scraper/wege_bauen.py'),
@@ -1418,6 +1494,15 @@ def main():
             'wege-zellen-' + pid, 'WEGE_ZELLEN_' + pid.upper(), person_ausgabe(pid, ergebnis[pid], personen),
             'Gehminuten je Zensus-Zelle, Person %s; Zensus 2022 und © OpenStreetMap-Mitwirkende; erzeugt von scraper/wege_bauen.py' % pid)
 
+    rathaus = ab_rathausplatz(netz, raster, orte, personen)
+    with open(os.path.join(DATEN, 'wege-rathausplatz.json'), 'w', encoding='utf-8') as f:
+        json.dump({'erzeugt_von': 'scraper/wege_bauen.py', 'erzeugt_am': date.today().isoformat(),
+                   'start': {'name': 'Rathausplatz', 'lat': RATHAUSPLATZ[0], 'lon': RATHAUSPLATZ[1]},
+                   'format': 'orte: verschiedene Alltagsorte (ohne Baenke und Haltestellen) in 15 Minuten zu Fuss; '
+                             'ziele_erreicht: Ziele der eigenen Liste mit mindestens einem Ort in 15 Minuten. Bei Tag.',
+                   'personen': rathaus}, f, ensure_ascii=False, indent=1)
+        f.write('\n')
+    print('Ab Rathausplatz (15 Min):', ' · '.join('%s %d Orte' % (k, v['orte']) for k, v in rathaus.items()))
     kanten_gesperrt = sum(1 for k in netz['kanten'] if k[3][7])
     print('\nKnoten %d · Kanten %d (davon gesperrt %d) · aus %d OSM-Wegen'
           % (len(netz['knoten']), len(netz['kanten']), kanten_gesperrt, netz['osm_wege']))

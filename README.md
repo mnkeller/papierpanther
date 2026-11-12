@@ -213,6 +213,32 @@ die zweitnächsten Orte der Zellen. Darunter steht „Was der Sparplan für Wege
 bedeutet“ aus `data/wege-massnahmen.json` (von Hand gepflegt: Maßnahmen aus
 `data/hsk.json` mit eindeutigem Ort, Text in beiden Sprachen, Quelle).
 
+**Mit Bus** (`scraper/oepnv_bauen.py`):
+
+```bash
+python3 scraper/oepnv_bauen.py         # nach wege_bauen.py; --neu lädt den Fahrplan frisch (12,7 MB)
+```
+
+Liest den Soll-Fahrplan (GTFS) der VGI/INVG
+(`https://www.vgi.de/FileServlet?gtfs=true`, Cache in `scraper/.cache/oepnv/`) und
+schreibt `data/wege-bus.json` + `.js` (window.WEGE_BUS, rund 800 KB): die rund 315
+Haltestellen im Stadtgebiet mit Einstiegsknoten im Fußnetz und für fünf Zeitfenster
+an je einem Stichtag (Mo 7–9, 12–14, 17–19, Sa 10–12, So 10–12) den Takt je
+Haltestelle (alle Linien) und die Haltestellen, die man in 30 Minuten Fahrt
+erreicht. Fahrzeit je Linienabschnitt ist der Median der Fahrten im Fenster;
+Umsteigen kostet 5 Minuten, auch zu einem Steig bis 200 m entfernt (die ZOB-Steige
+sind im GTFS getrennte Haltestellen). Die Seite rechnet dazu: Fußweg zur
+Haltestelle + halber Takt (höchstens 10 Minuten) + Fahrt + Fußweg weiter, Grenze
+30 Minuten. Die Stichtage stehen oben im Skript (`FENSTER`) und müssen im
+Gültigkeitszeitraum des Fahrplans liegen, sonst bricht das Skript ab. Lizenz der
+Fahrplandaten: CC BY-SA 3.0 DE, nicht kommerziell (siehe NOTICE); die abgeleitete
+Datei steht unter derselben Lizenz.
+
+Reihenfolge nach einem Daten-Update: `wege_bauen.py` → `oepnv_bauen.py` →
+`grafik_bauen.py` → `themen_bauen.py` → `pruefen.py`. `wege_bauen.py` schreibt dabei
+auch `data/wege-rathausplatz.json` (Orte in 15 Minuten ab Rathausplatz je Person)
+für die grafische Fassung (`grafik/wege.js`).
+
 Plan und Rechenmodell: [WEGE-KARTE-PLAN.md](WEGE-KARTE-PLAN.md). Die Werte je
 Person und Bedingung stehen nur in `data/wege-personen.json` (von Hand
 gepflegt); `wege_bauen.py` rechnet damit und legt sie als `data/wege-personen.js`
@@ -229,6 +255,10 @@ schreibt je eine `.json` und `.js`:
 - `data/wege-orte` (window.WEGE_ORTE): Alltagsorte in 26 Kategorien mit
   Einstiegsknoten; Flächen (Parks, Spielplätze, Sportanlagen, Schulhöfe)
   hängen über Randpunkte alle 20 m am Netz, nicht über ihren Mittelpunkt.
+  Trinkwasserbrunnen zusätzlich aus dem Datensatz der Stadt (open.bydata,
+  CC BY 4.0; Brunnen unter 30 m neben einem OSM-Brunnen fallen weg). Dazu
+  `grosse_ziele` (Klinikum, Hauptbahnhof, Rathaus, Westpark, Audi Forum,
+  Stadttheater) für die Liste „Große Ziele“ bei „Mit Bus“.
 - `data/wege-zellen` (window.WEGE_ZELLEN): bewohnte Zensus-2022-Zellen
   (100 m) im Stadtgebiet mit Einwohnern, Anteil unter 18 und ab 65 und Bezirk.
 - `data/wege-zellen-<person>` (window.WEGE_ZELLEN_<PERSON>): je Person und
