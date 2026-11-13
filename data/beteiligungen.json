@@ -1,5 +1,5 @@
 {
-  "_hinweis": "Von Hand gepflegt. Zahlen aus dem Beteiligungsbericht 2026 der Stadt Ingolstadt (Berichtsjahr 2025), jeweils mit gedruckter Seitenzahl. Alle Beträge in TEUR. scraper/beteiligungen_bauen.py rechnet die Überleitungen nach und bricht bei Abweichungen ab. Die Zahlen stammen aus dem Textauszug des PDF und sind noch nicht am Seitenbild gegengelesen.",
+  "_hinweis": "Von Hand gepflegt. Zahlen aus dem Beteiligungsbericht 2026 der Stadt Ingolstadt (Berichtsjahr 2025), jeweils mit gedruckter Seitenzahl. Alle Beträge in TEUR. scraper/beteiligungen_bauen.py rechnet die Überleitungen nach und bricht bei Abweichungen ab. Am 13.11.2026 mit dem Seitenbild des PDF abgeglichen (S. 5, 12, 14, 15, 16, 20, 21, 33, 55, 56, 57, 153, 241, 270, 271); Angaben aus dem Fließtext stammen aus dem Textauszug. Kredite und Ergebnisse je Bereich folgen den Einzelberichten; die Gesamtübersicht auf S. 21 weicht bei den Freizeitanlagen (49.541 statt 86.260, Einlagen der Stadt abgezogen), der INVG (29.035 statt 29.342) und der COM-IN (-123 statt -124) davon ab.",
   "stand": "2026-11-13",
   "quelle": {
     "titel": "Beteiligungsbericht 2026 der Stadt Ingolstadt",
@@ -118,7 +118,7 @@
         "n": "Freibad, Hallenbäder, Sportbad, Donautherme, Saturn-Arena und zweite Eishalle.",
         "l": "Dazu gehören das Frei-Bad, die Hallen-Bäder, die Donau-Therme und die Saturn-Arena."
       },
-      "seiten": "11, 270, 271"
+      "seiten": "11, 21, 270, 271"
     },
     {
       "id": "glasfaser",

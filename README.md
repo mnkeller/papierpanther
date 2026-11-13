@@ -183,9 +183,9 @@ Berichtsjahr 2025). Anders als beim Sparplan wird nichts maschinell gelesen:
 - Die grafische Fassung ist `grafik/waage.js`. Ihre Regler rechnen vereinfacht;
   die Annahmen stehen in der Fußzeile der Szene.
 
-Die Seite gibt wieder, was im Bericht steht, und bewertet nicht. Die Zahlen
-sind aus dem Textauszug des PDF übertragen; ein Abgleich mit dem Seitenbild
-steht noch aus. Für den nächsten Bericht: Werte in der JSON ersetzen, ein
+Die Seite gibt wieder, was im Bericht steht, und bewertet nicht. Die Tabellenwerte
+sind am 13.11.2026 mit dem Seitenbild des PDF abgeglichen; wo die Gesamtübersicht
+(S. 21) von den Einzelberichten abweicht, steht das im `_hinweis` der JSON. Für den nächsten Bericht: Werte in der JSON ersetzen, ein
 weiteres Jahr an `waage.jahre` anhängen, Skripte laufen lassen.
 
 ### Deine 15 Minuten (`wege.html`)

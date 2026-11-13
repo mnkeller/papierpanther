@@ -625,7 +625,7 @@
       zeilen, max,
       [{ klasse: "selbst", text: nl(ART.selbst) }, { klasse: "teils", text: nl(ART.teils) }, { klasse: "haushalt", text: nl(ART.haushalt) }],
       t("Die Balken lassen sich nicht einfach addieren: Die Unternehmen leihen sich auch untereinander Geld, und die Kommunalbetriebe haben zusätzlich Kredite für den Kauf von Unternehmensanteilen. " +
-        "Zusammengerechnet nennt der Bericht " + mio(E.kredite_teur, 0) + " (S. " + E._seite_kredite + "). Kernhaushalt: Haushaltssicherungskonzept, Stand " + D.kernhaushalt.stand + ".",
+        "Zusammengerechnet nennt der Bericht " + mio(E.kredite_teur, 0) + " (S. " + E._seite_kredite + "); dort sind bei den Bädern und Eishallen die Einlagen der Stadt schon abgezogen. Kernhaushalt: Haushaltssicherungskonzept, Stand " + D.kernhaushalt.stand + ".",
         "Quelle: Bericht der Stadt, 2026."));
     var r = document.getElementById("kasten-rentierlich");
     r.innerHTML = "";
@@ -668,7 +668,7 @@
     });
     box.appendChild(ul);
     box.appendChild(absatz("", t(
-      "Stand der Angaben: " + datumDE(D.stand) + ". " + D.quelle.hinweis + " Die Zahlen sind von Hand aus dem Bericht übertragen (<code>data/beteiligungen.json</code>), jede mit Seitenangabe; " +
+      "Stand der Angaben: " + datumDE(D.stand) + ". " + D.quelle.hinweis + " Die Zahlen sind von Hand aus dem Bericht übertragen (<code>data/beteiligungen.json</code>), jede mit Seitenangabe, und mit dem Bericht abgeglichen; " +
       "ein Skript rechnet die Summen und Überleitungen nach. Verbindlich ist der Bericht der Stadt.",
       "Stand: " + datumDE(D.stand) + ". Es gilt immer der Bericht von der Stadt.")));
   }
