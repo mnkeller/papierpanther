@@ -10,6 +10,7 @@
     ['antraege.html', 'Anträge der Parteien', 'Was die Fraktionen beantragen', 'Anträge der Parteien', 'Was die Parteien wollen'],
     ['haushalt.html', 'Haushalt', 'Woher das Geld kommt und wohin es geht', 'Das Geld der Stadt', 'Wie viel Geld die Stadt hat'],
     ['hsk.html', 'Sparplan', 'Wo die Stadt sparen will', 'Spar-Plan', 'Wo die Stadt sparen will'],
+    ['beteiligungen.html', 'Unternehmen der Stadt', 'Stadtwerke, Klinikum, Busse: wer sie bezahlt', 'Firmen der Stadt', 'Wem gehören Bus, Wasser und Bad?'],
     ['klima.html', 'Klima', 'Wetter, Solarstrom, Ladepunkte', 'Klima', 'Wetter und Strom aus Sonne'],
     ['wohnen.html', 'Wohnen', 'Mieten oder besitzen, Eigentümer, Leerstand', 'Wohnen', 'Wem gehören die Wohnungen?'],
     ['miete.html', 'Miete', 'Mietspiegel-Rechner, Mietpreisbremse', 'Miete', 'Wie viel Miete ist üblich?'],

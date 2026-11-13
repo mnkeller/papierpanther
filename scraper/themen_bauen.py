@@ -6,7 +6,7 @@ Baut die Kennzahlen fuer die Themen-Kacheln (Startseite und themen.html).
 
 Je Themenseite eine Zahl, berechnet aus den Datendateien, die diese Seiten
 selbst verwenden -- damit Kachel und Seite nie auseinanderlaufen. Nach jedem
-Update der zugrunde liegenden Daten (antraege, haushalt, hsk, klima, miete)
+Update der zugrunde liegenden Daten (antraege, haushalt, hsk, beteiligungen, klima, miete)
 neu laufen lassen; feed_bauen.py tut das nicht.
 
 Ergebnis: ../data/themen.js (window.THEMEN_DATEN)
@@ -40,6 +40,9 @@ def main():
     hsk = lade("hsk_bericht.json")["konsolidierungsziel"]
     sparziel = -hsk["durchschnitt_kzv"] / 1000
     hsk_von, hsk_bis = hsk["jahre"][0], hsk["jahre"][-1]
+
+    bet = lade("beteiligungen.json")
+    bet_einlagen = [j["einlage"] / 1000 for j in bet["waage"]["jahre"] if not j.get("prognose")]
 
     klima = lade("klima.json")
     solar = klima["solar"]["reihe"][-1]
@@ -94,6 +97,12 @@ def main():
              zahl=f"{de(sparziel, 1)} Mio. €",
              text=f"muss die Stadt im Schnitt pro Jahr einsparen ({hsk_von}–{hsk_bis}). Wo, steht im Sparplan.",
              text_l="So viel Geld muss die Stadt jedes Jahr sparen."),
+        dict(href="beteiligungen.html", farbe="#7a2e55",
+             titel="Unternehmen der Stadt", titel_l="Firmen der Stadt",
+             zahl=f"{bet['eckdaten']['unternehmen']} Unternehmen",
+             text="gehören der Stadt ganz oder teilweise, von den Stadtwerken bis zum Klinikum. "
+                  f"Für Busse, Bäder und Eishallen legt der Haushalt jährlich {de(min(bet_einlagen))} bis {de(max(bet_einlagen))} Mio. € dazu.",
+             text_l="So viele Firmen gehören der Stadt. Zum Beispiel die Stadt-Werke und das Kranken-Haus."),
         dict(href="klima.html", farbe="#2e7d4f",
              titel="Klima", titel_l="Klima",
              zahl=f"{de(solar['bestand_anzahl'])} Solaranlagen",

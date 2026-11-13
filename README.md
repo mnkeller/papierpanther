@@ -50,6 +50,7 @@ scraper/
   feed_bauen.py       Rohdaten + Kuration           -> data/feed.json + feed.js
   pruefen.py          Zusagen der Seite nachrechnen (Exit-Code)
   themen_bauen.py     Kennzahlen für die Themen-Kacheln -> data/themen.js
+  beteiligungen_bauen.py  prüft data/beteiligungen.json -> data/beteiligungen.js
   grafik_bauen.py     Daten der grafischen Fassung  -> data/grafik.js
   altstadt_bauen.py   Altstadt aus OpenStreetMap    -> data/altstadt.js
   wege_bauen.py       Fußnetz, Orte, Zensus, Bezirke -> data/wege-*.js, data/bezirke.js
@@ -160,6 +161,32 @@ und schreibt `data/hsk.json` + `data/hsk.js` (window.HSK_DATEN).
 Für eine Fortschreibung des HSK: neue Dokument-IDs in `DOK_IDS` eintragen,
 Seitenbereiche in `lies_anlage1`/`lies_anlage5` prüfen, `hsk_bericht.json`
 abgleichen.
+
+### Unternehmen der Stadt (`beteiligungen.html`)
+
+```bash
+cd scraper && python3 beteiligungen_bauen.py && python3 themen_bauen.py
+```
+
+Grundlage ist der Beteiligungsbericht 2026 der Stadt (Vorlage V0569/26,
+Berichtsjahr 2025). Anders als beim Sparplan wird nichts maschinell gelesen:
+
+- `data/beteiligungen.json`: von Hand aus dem Bericht übertragen, jede Zahl
+  mit gedruckter Seitenzahl. Enthält die Eckdaten, neun Alltagsbereiche
+  (Wohnungen, Wasser, Busse …), die Zahlungen zwischen Stadt und Unternehmen
+  und die Reihe „Energiegewinn, Verlust, Einlage“ der Stadtwerke seit 2020/21.
+- `beteiligungen_bauen.py` rechnet nach, was sich nachrechnen lässt (die
+  Überleitung des Berichts auf S. 56, die Summen der Seiten 14 und 15), holt
+  den Schuldenstand des Kernhaushalts aus `data/hsk_bericht.json` und schreibt
+  `data/beteiligungen.js` (window.BETEILIGUNGEN_DATEN). Bei einer Abweichung
+  bricht es ab.
+- Die grafische Fassung ist `grafik/waage.js`. Ihre Regler rechnen vereinfacht;
+  die Annahmen stehen in der Fußzeile der Szene.
+
+Die Seite gibt wieder, was im Bericht steht, und bewertet nicht. Die Zahlen
+sind aus dem Textauszug des PDF übertragen; ein Abgleich mit dem Seitenbild
+steht noch aus. Für den nächsten Bericht: Werte in der JSON ersetzen, ein
+weiteres Jahr an `waage.jahre` anhängen, Skripte laufen lassen.
 
 ### Deine 15 Minuten (`wege.html`)
 

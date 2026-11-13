@@ -28,6 +28,15 @@ window.THEMEN_DATEN = [
   "text_l": "So viel Geld muss die Stadt jedes Jahr sparen."
  },
  {
+  "href": "beteiligungen.html",
+  "farbe": "#7a2e55",
+  "titel": "Unternehmen der Stadt",
+  "titel_l": "Firmen der Stadt",
+  "zahl": "49 Unternehmen",
+  "text": "gehören der Stadt ganz oder teilweise, von den Stadtwerken bis zum Klinikum. Für Busse, Bäder und Eishallen legt der Haushalt jährlich 8 bis 20 Mio. € dazu.",
+  "text_l": "So viele Firmen gehören der Stadt. Zum Beispiel die Stadt-Werke und das Kranken-Haus."
+ },
+ {
   "href": "klima.html",
   "farbe": "#2e7d4f",
   "titel": "Klima",
