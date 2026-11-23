@@ -5,8 +5,8 @@
       "software": "Session (Somacos GmbH & Co. KG)",
       "basis_url": "https://www.ingolstadt.de/sessionnet",
       "endung": "php",
-      "anzahl_sitzungen": 396,
-      "anzahl_tops": 3379
+      "anzahl_sitzungen": 400,
+      "anzahl_tops": 3401
     },
     "bza": {
       "name": "Ratsinfoportal der Bezirksausschüsse der Stadt Ingolstadt",
@@ -21,20 +21,1622 @@
       "software": "Session (Somacos GmbH & Co. KG)",
       "basis_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de",
       "endung": "asp",
-      "anzahl_sitzungen": 83,
-      "anzahl_tops": 765
+      "anzahl_sitzungen": 85,
+      "anzahl_tops": 797
     }
   },
   "hinweis": "Oeffentlich zugaengliche Seiten, ohne Anmeldung abgerufen.",
-  "abgerufen_am": "2026-11-19",
+  "abgerufen_am": "2026-11-23",
   "zeitraum": {
     "von": "2023-11",
-    "bis": "2027-02"
+    "bis": "2027-01"
   },
-  "anzahl_sitzungen": 661,
-  "anzahl_tops": 6514,
-  "anzahl_verfahren": 906,
+  "anzahl_sitzungen": 667,
+  "anzahl_tops": 6568,
+  "anzahl_verfahren": 908,
   "sitzungen": [
+    {
+      "id": "14414",
+      "kennung": "RPV/03/2026",
+      "gremium": "Planungsverband Region Ingolstadt, Planungsausschuss",
+      "raum": "Sitzungssaal Zimmer-Nr. 3.009 (3. Stock) des Landratsamtes Eichstätt –Dienst — leistungszentrum Lenting, Bahnhofstraße 16, 85101 Lenting",
+      "datum": "2026-12-17",
+      "datum_anzeige": "17.12.2026",
+      "zeit": "09:00 Uhr",
+      "url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=14414",
+      "dokumente": [
+        {
+          "titel": "einladung-pa-17.12.2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255837&type=do"
+        }
+      ],
+      "tops": [],
+      "quelle": "stadt"
+    },
+    {
+      "id": "13555",
+      "kennung": "FPA/04/2026",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "raum": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "zeit": "16:00 Uhr",
+      "url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [
+        {
+          "titel": "Öffentliche Bekanntmachung",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255764&type=do"
+        },
+        {
+          "titel": "Livestream",
+          "url": "https://www.ingolstadt.de/live"
+        }
+      ],
+      "tops": [
+        {
+          "nr": "Ö 1",
+          "titel": "Finanzlagebericht von Herrn Fleckinger",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 2",
+          "titel": "Maßnahmen zur Fortschreibung des Haushaltssicherungskonzepts",
+          "zusatz": "Referenten: Oberbürgermeister Dr. Kern, Herr Fleckinger, Herr Kuch",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 3",
+          "titel": "IFG Ingolstadt AöR; — Wirtschaftsplan 2027 einschließlich Mittelfristplanung 2028 bis 2030",
+          "zusatz": "Referent: Oberbürgermeister Dr. Kern",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 4",
+          "titel": "Krankenhauszweckverband Ingolstadt; — Betriebs- und Investumlagen für Klinikum",
+          "zusatz": "Referent: Oberbürgermeister Dr. Kern",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 5",
+          "titel": "Kostenersatz für die nicht gebührenfinanzierte Aufgabenübertragung der Stadt Ingolstadt an die Ingolstädter Kommunalbetriebe AöR für das Jahr 2027",
+          "zusatz": "Referent: Oberbürgermeister Dr. Kern",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 6",
+          "titel": "Ingolstädter Kommunalbetriebe AöR (INKB): — - Jahresabschluss und Lagebericht 2025/26; — - Ausübung der Gesellschafterrechte bei den Tochtergesellschaften zur Feststellung der Jahresabschlüsse 2025/26; — - Kostenersatz nicht gebührenfinanzierter Teilder Innenstadtreinigung, 10%iger Anteil der Kosten der gebührenpflichtigen Straßenreinigung, Straßenentwässerung, Winterdienst",
+          "zusatz": "Referenten: Oberbürgermeister Dr. Kern, Bürgermeister De Lapuente",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 7",
+          "titel": "Kammerphilharmonie Ingolstadt GmbH; — Ausübung der Gesellschafterrechte zum Jahresabschluss 2025",
+          "zusatz": "Referent: Herr Grandmontagne",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 8",
+          "titel": "Kammerphilharmonie Ingolstadt GmbH; — Ausübung der Gesellschafterrechte zum Wirtschaftsplan 2027",
+          "zusatz": "Referenten: Bürgermeister Wöhrl, Herr Grandmontagne",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "V0709/26",
+          "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23472",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255428&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-24",
+              "datum_anzeige": "24.11.2026",
+              "gremium": "Ausschuss für Kultur und Bildung",
+              "top_nr": "8",
+              "oeffentlich": true,
+              "rolle": "Vorberatung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552&toselect=91273"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Ausschuss für Finanzen und Personal",
+              "top_nr": "8",
+              "oeffentlich": true,
+              "rolle": "Vorberatung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91364"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 9",
+          "titel": "Verlängerung der Arbeitsmarktzulage für tariflich beschäftigte Ärztinnen und Ärzte (Humanmedizin) im Gesundheitsamt sowie Verlängerung des beamtenrechtlichen Zuschlags nach Art. 60b BayBesG",
+          "zusatz": "Referent: Herr Kuch",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 10",
+          "titel": "Persönlich zugeordnete Dienstfahrzeuge für kommunale Wahlbeamte",
+          "zusatz": "Referent: Herr Kuch",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 11",
+          "titel": "Bericht zur Umsetzung der Digitalisierungsstrategie",
+          "zusatz": "Referent: Herr Kuch",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 12",
+          "titel": "Haushaltspläne des Peter-Steuart-Hauses und der Waisenhausstiftung für das Jahr 2027",
+          "zusatz": "Referent: Herr Müller",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "V0695/26",
+          "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23456",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255459&type=do"
+            },
+            {
+              "titel": "Anlage zu V0695-26 HH-Pläne PSH und WHS 2027",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255460&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-19",
+              "datum_anzeige": "19.11.2026",
+              "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+              "top_nr": "2",
+              "oeffentlich": true,
+              "rolle": "Vorberatung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551&toselect=91180"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Ausschuss für Finanzen und Personal",
+              "top_nr": "12",
+              "oeffentlich": true,
+              "rolle": "Vorberatung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91354"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 13",
+          "titel": "Aufhebung der Satzung über die Gebühren für die Benutzung der Museen der Stadt Ingolstadt (Museumsgebührensatzung) und Aufhebung der Satzung über die Benutzung der Museen der Stadt Ingolstadt (Museumssatzung) — Neufassung der Allgemeinen Geschäftsbedingungen für die Nutzung der Museen der Stadt Ingolstadt",
+          "zusatz": "Referenten: Herr Grandmontagne, Herr Müller",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "V0666/26",
+          "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23423",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254605&type=do"
+            },
+            {
+              "titel": "Anlage 1 - Aufhebungssatzung Gebühren Museen",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254612&type=do"
+            },
+            {
+              "titel": "Anlage 2 - Aufhebungssatzung Benutzung Museen",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254613&type=do"
+            },
+            {
+              "titel": "Anlage 3 - AGB Museen",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254614&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-24",
+              "datum_anzeige": "24.11.2026",
+              "gremium": "Ausschuss für Kultur und Bildung",
+              "top_nr": "3",
+              "oeffentlich": true,
+              "rolle": "Vorberatung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552&toselect=91263"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Ausschuss für Finanzen und Personal",
+              "top_nr": "13",
+              "oeffentlich": true,
+              "rolle": "Vorberatung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91356"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 14",
+          "titel": "Änderung der Benutzungs- und Gebührensatzung der Stadtbücherei Ingolstadt — Änderung der Benutzungs- und Gebührensatzung der Schulmedienzentrale",
+          "zusatz": "Referenten: Herr Grandmontagne, Herr Müller",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "V0258/26",
+          "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23008",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249857&type=do"
+            },
+            {
+              "titel": "Satzung Anlage 1 - Änderung der Benutzungssatzung Stadtbücherei Stand 06.10.2026",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254191&type=do"
+            },
+            {
+              "titel": "Satzung Anlage 2 - Änderung der Gebührensatzung Stadtbücherei Stand 06.10.2026",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254190&type=do"
+            },
+            {
+              "titel": "Satzung Anlage 3 - Änderung der Benutzungssatzung SMZ Stand 06.10.2026",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254189&type=do"
+            },
+            {
+              "titel": "Satzung Anlage 4 - Änderung der Gebührensatzung SMZ Stand 06.10.2026",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254188&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-24",
+              "datum_anzeige": "24.11.2026",
+              "gremium": "Ausschuss für Kultur und Bildung",
+              "top_nr": "4",
+              "oeffentlich": true,
+              "rolle": "Vorberatung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552&toselect=91260"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Ausschuss für Finanzen und Personal",
+              "top_nr": "14",
+              "oeffentlich": true,
+              "rolle": "Vorberatung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91355"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 15",
+          "titel": "Bericht Projektgenehmigungen",
+          "zusatz": "Referent: Herr Grandmontagne",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 16",
+          "titel": "Rückforderung von Fördermitteln von der Heilig-Geist-Stiftung aufgrund der Aufgabe der stationären Pflegeeinrichtung in der Fechtgasse und Umnutzung zu Service Wohnen",
+          "zusatz": "Referent: Herr Fischer",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "V0629/26",
+          "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23385",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253953&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-10-22",
+              "datum_anzeige": "22.10.2026",
+              "gremium": "Ausschuss für Finanzen und Personal",
+              "top_nr": "15",
+              "oeffentlich": true,
+              "rolle": "Entscheidung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545&toselect=90514"
+            },
+            {
+              "datum": "2026-11-19",
+              "datum_anzeige": "19.11.2026",
+              "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+              "top_nr": "4",
+              "oeffentlich": true,
+              "rolle": "Vorberatung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551&toselect=91177"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Ausschuss für Finanzen und Personal",
+              "top_nr": "16",
+              "oeffentlich": true,
+              "rolle": "Entscheidung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91357"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 17",
+          "titel": "Gewährung eines Verwaltungskostenzuschusses an die Träger der Flüchtlings- und Integrationsberatung nach der Beratungs- und Integrationsrichtlinie des Freistaates Bayern",
+          "zusatz": "Referent: Herr Fischer",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "V0683/26",
+          "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23442",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255298&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-19",
+              "datum_anzeige": "19.11.2026",
+              "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+              "top_nr": "5",
+              "oeffentlich": true,
+              "rolle": "Vorberatung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551&toselect=91178"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Ausschuss für Finanzen und Personal",
+              "top_nr": "17",
+              "oeffentlich": true,
+              "rolle": "Entscheidung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91358"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 18",
+          "titel": "Änderung der Satzung über das Bürgerhaus Ingolstadt im Zusammenhang mit der verpflichtenden Anwendung des § 2b Umsatzsteuergesetz (UStG) zum 01.01.2027",
+          "zusatz": "Referenten: Herr Fischer, Herr Müller",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "V0730/26",
+          "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23493",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255494&type=do"
+            },
+            {
+              "titel": "Anlage zur Änderung der Satzung Bürgerhaus Ingolstadt",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255493&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Ausschuss für Finanzen und Personal",
+              "top_nr": "18",
+              "oeffentlich": true,
+              "rolle": "Vorberatung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91368"
+            }
+          ]
+        }
+      ],
+      "quelle": "stadt"
+    },
+    {
+      "id": "4982",
+      "kennung": "BezA/007/2026",
+      "gremium": "Bezirksausschuss",
+      "raum": "Hybrid (Sitzungssaal 5. OG und Teams), ges.kameral.HH",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "zeit": "09:30-13:30 Uhr",
+      "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [
+        {
+          "titel": "Öffentliche Bekanntmachung",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89753&type=do"
+        }
+      ],
+      "tops": [
+        {
+          "nr": "Ö 1",
+          "titel": "Genehmigung des Protokolls der letzten Sitzung",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": true,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 2",
+          "titel": "Haushaltssatzung 2027 und Haushaltsplan mit Anlagen",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "82/BV/227/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15022",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89566&type=do"
+            },
+            {
+              "titel": "1A1 Haushaltssatzung 2027 Entwurf",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89576&type=do"
+            },
+            {
+              "titel": "1A2 Haushaltsplan 2027 Entwurf neu",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89683&type=do"
+            },
+            {
+              "titel": "1A3 Anlagen zum Haushaltsplan 2027",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89733&type=do"
+            },
+            {
+              "titel": "1A4 Bezirksgüter Wirtschaftsplan 2026-27",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89574&type=do"
+            },
+            {
+              "titel": "1A5 Kloster Seeon Wirtschaftsplan 2027",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89575&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "2",
+              "oeffentlich": true,
+              "rolle": "vorberatend nach § 7 Abs. 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28283"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 3",
+          "titel": "SHG - Kompetenzzentrum für Digitale Holzbearbeitung in Garmisch-Partenkirchen — Freigabe der HU-Bau",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "12/BV/218/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14997",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89037&type=do"
+            },
+            {
+              "titel": "20261117 GAP Neubau-Präsentation",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89686&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-17",
+              "datum_anzeige": "17.11.2026",
+              "gremium": "Ausschuss für Bau, Umwelt und Energie",
+              "top_nr": "3",
+              "oeffentlich": true,
+              "rolle": "vorberatend nach § 11 Abs. 1 Nr. 1 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939&toselect=28021"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "3",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 7 Abs. 3 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28276"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 4",
+          "titel": "Freilichtmuseum an der Glentleiten Kramerladen — Varianten - Bedarfsfeststellung und Freigabe des Planungsauftrages",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "12/BV/220/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14999",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89031&type=do"
+            },
+            {
+              "titel": "20261117 FLMG Umbau Küche Kramerladen-Präsentation",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89687&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-17",
+              "datum_anzeige": "17.11.2026",
+              "gremium": "Ausschuss für Bau, Umwelt und Energie",
+              "top_nr": "4",
+              "oeffentlich": true,
+              "rolle": "vorberatend nach § 11 Abs. 1 Nr. 1 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939&toselect=28023"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "4",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 7 Abs. 3 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28277"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 5",
+          "titel": "Annahme einer Geldspende an die Carl-August-Heckscher-Schule in München",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "31/BV/213/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14985",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89051&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "5",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 7 Abs. 1 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28280"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 6",
+          "titel": "Annahme einer Spende der Stiftung Kleine Hilfen an das Berufsbildungswerk Förderschwerpunkt Hören und Sprache in München-Johanneskirchen",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "31/BV/247/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15049",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89498&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "6",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 7 Abs. 1 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28281"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 7",
+          "titel": "Investitionskostenzuschuss zur Errichtung von stationären Hospizplätzen",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "27/BV/245/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15047",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89348&type=do"
+            },
+            {
+              "titel": "2012 3 1 Auszug HA-Protokoll",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89349&type=do"
+            },
+            {
+              "titel": "AW Förderung des Projektes 2 Hospize in Polling - Fraktionsinitiative und Investitionskostenförderung",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89350&type=do"
+            },
+            {
+              "titel": "Beschluss Hauptausschuss 20.05.2026",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89351&type=do"
+            },
+            {
+              "titel": "projektkosten kostenberechnung DIN276-081025 Polling",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89352&type=do"
+            },
+            {
+              "titel": "regOBB-bewilligung Polling",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89353&type=do"
+            },
+            {
+              "titel": "Zuwendungsbescheid Oberland Hospiz",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89360&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-26",
+              "datum_anzeige": "26.11.2026",
+              "gremium": "Sozial- und Gesundheitsausschuss",
+              "top_nr": "9",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 9 Abs. 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019&toselect=28268"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "7",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 9 Abs. 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28278"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 8",
+          "titel": "Kleines Theater Haar - Genehmigung von Mehrausgaben für 2026",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "30/BV/237/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15038",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89206&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "8",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 7 Abs. 3 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28279"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 9",
+          "titel": "Genehmigung von Mehrausgaben für die Durchführung der überörtlichen Rechnungsprüfung beim Bezirk Oberbayern",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "82/BV/250/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15058",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89528&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "9",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 7 Abs. 3 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28284"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 10",
+          "titel": "Genehmigung Mehrausgaben auf der HhSt 1.02910.71100.999 Bayern Packages",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "82/BV/251/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15059",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89554&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "10",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 7 Abs. 3 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28285"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 11",
+          "titel": "Genehmigung überplanmäßiger Ausgaben auf HhSt 2.27020.94070.999 Carl-August-Heckscher Schule Neubau Außenstelle Haar - Korrektur der Abrechnung",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "82/BV/252/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15060",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89555&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "11",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 7 Abs. 3 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28286"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 12",
+          "titel": "Antrag der Fraktion BÜNDNIS 90 / DIE GRÜNEN auf Untersuchung der gesamten Bezirksgutflächen auf weitere potenzielle Flächen zur Renaturierung bzw. Vernässung",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "82/AN/010/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14813",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=86056&type=do"
+            },
+            {
+              "titel": "2026-04-13 Antrag PV Flächen Wiedervernässung Hilgermoos",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=86051&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-17",
+              "datum_anzeige": "17.11.2026",
+              "gremium": "Ausschuss für Bau, Umwelt und Energie",
+              "top_nr": "5",
+              "oeffentlich": true,
+              "rolle": "vorberatend nach § 11 Abs. 1 Nr. 1 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939&toselect=28024"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "12",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 7 Abs. 3 Eigenbetriebssatzung",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28282"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 13",
+          "titel": "Antrag der Ausschussgemeinschaft LiVolParTie vom 19.10.2026: Geschäftspauschale",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 14",
+          "titel": "Übernahme einer Bürgschaft für die Baumaßnahme „Bauabschnitt 3a der Neustrukturierung (Errichtung Bauteil C mit Verbindungsbau) beim kbo-Inn-Salzach-Klinikum Wasserburg am Inn",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "82/BV/260/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15076",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89751&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "14",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 7 Abs. 1 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28310"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 15",
+          "titel": "Übernahme einer Bürgschaft für die Baumaßnahme „Bauabschnitt 3b der Neustrukturierung (Errichtung Bauteil D)“ beim kbo-Inn-Salzach-Klinikum Wasserburg am Inn",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "82/BV/261/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15077",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89752&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "15",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 7 Abs. 1 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28311"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 16",
+          "titel": "Beratung und Beschluss über die Geschäftsordnung des Bezirkstags von Oberbayern vom 10.12.2026",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "11/BV/248/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15056",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89514&type=do"
+            },
+            {
+              "titel": "Anlage 1, Entwurf Geschäftsordnung vom 10.12.2026",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89569&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "16",
+              "oeffentlich": true,
+              "rolle": "vorberatend nach § 7 Abs. 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28275"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 17",
+          "titel": "kbo-Kliniken des Bezirks Oberbayern-Kommunalunternehmen:Halbjahresbericht 1.HJ 2026",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "83/BV/214/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14987",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88717&type=do"
+            },
+            {
+              "titel": "kbo Halbjahresbericht 1. HJ 2026",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88716&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "17",
+              "oeffentlich": true,
+              "rolle": "Kenntnisnahme",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28287"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 18",
+          "titel": "Beteiligungsbericht Klinische Beteiligungen; Geschäftsjahr 2025",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "83/BV/234/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15035",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89186&type=do"
+            },
+            {
+              "titel": "Beteiligungsbericht Klinische Beteiligungen Geschäftsjahr 2025",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89530&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "18",
+              "oeffentlich": true,
+              "rolle": "Kenntnisnahme",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28288"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 19",
+          "titel": "Bekanntgaben und Sonstiges",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        }
+      ],
+      "quelle": "bezirk_obb"
+    },
+    {
+      "id": "13783",
+      "kennung": "KHZV-VV/04/2026",
+      "gremium": "Krankenhauszweckverband, Verbandsversammlung",
+      "raum": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "datum": "2026-12-01",
+      "datum_anzeige": "01.12.2026",
+      "zeit": "17:00 Uhr",
+      "url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13783",
+      "dokumente": [
+        {
+          "titel": "Öffentliche Bekanntmachung",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255933&type=do"
+        }
+      ],
+      "tops": [
+        {
+          "nr": "Ö 1",
+          "titel": "Bericht über die wirtschaftliche Situation des Krankenhauszweckverbandes Ingolstadt in der Zeit vom 1. Januar bis 30. Juni 2026",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "V0758/26",
+          "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23521",
+          "dokumente": [
+            {
+              "titel": "20261201 ZVV TOP 1 öS wirtschaft. Situation KhZVI",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255931&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-12-01",
+              "datum_anzeige": "01.12.2026",
+              "gremium": "Krankenhauszweckverband, Verbandsversammlung",
+              "top_nr": "1",
+              "oeffentlich": false,
+              "rolle": "Bekanntgabe",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13783&toselect=91406"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 2",
+          "titel": "Wirtschaftsplan 2027",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        }
+      ],
+      "quelle": "stadt"
+    },
+    {
+      "id": "13779",
+      "kennung": "VR IFG/04/2026",
+      "gremium": "IFG Ingolstadt AöR, Verwaltungsrat",
+      "raum": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
+      "datum": "2026-11-30",
+      "datum_anzeige": "30.11.2026",
+      "zeit": "15:00 Uhr",
+      "url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13779",
+      "dokumente": [
+        {
+          "titel": "Öffentliche Bekanntmachung IFG",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255831&type=do"
+        }
+      ],
+      "tops": [
+        {
+          "nr": "Ö 1",
+          "titel": "Mündlicher Bericht des Vorstands - öffentlich",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 2",
+          "titel": "Neuordnung der Innenstadtförderung mit dem IN-City e.V.",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "V0741/26",
+          "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23504",
+          "dokumente": [
+            {
+              "titel": "Vorlage IFG",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255716&type=do"
+            },
+            {
+              "titel": "741-26 Anlage Entwurf DAWI",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255717&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-30",
+              "datum_anzeige": "30.11.2026",
+              "gremium": "IFG Ingolstadt AöR, Verwaltungsrat",
+              "top_nr": "2",
+              "oeffentlich": true,
+              "rolle": "Entscheidung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13779&toselect=91480"
+            }
+          ]
+        }
+      ],
+      "quelle": "stadt"
+    },
+    {
+      "id": "5019",
+      "kennung": "SozGA/003/2026",
+      "gremium": "Sozial- und Gesundheitsausschuss",
+      "raum": "Sitzungssaal im 5. OG des Verwaltungsgebäudes",
+      "datum": "2026-11-26",
+      "datum_anzeige": "26.11.2026",
+      "zeit": "09:30-11:00 Uhr",
+      "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019",
+      "dokumente": [
+        {
+          "titel": "Öffentliche Bekanntmachung",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89638&type=do"
+        }
+      ],
+      "tops": [
+        {
+          "nr": "Ö 1",
+          "titel": "Genehmigung des Protokolls der letzten Sitzung",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": true,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 2",
+          "titel": "Vertretung des Lebenshilfe Landesverbands Bayern e. V. als Sachverständiger im Sozial- und Gesundheitsausschuss des Bezirk Oberbayern",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 3",
+          "titel": "Vertretung des Caritasverbands der Erzdiözese München und Freising e.V.",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 4",
+          "titel": "Betreutes Wohnen in Familien als pauschalfinanziertes Leistungsangebot – Monitoring und weiteres Vorgehen",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "22/BV/221/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15000",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88813&type=do"
+            },
+            {
+              "titel": "Anlage 1 BWF Durchschnitt",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88805&type=do"
+            },
+            {
+              "titel": "Anlage 2 BWF Beschlussvorlage v. 16.02.2023",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88806&type=do"
+            },
+            {
+              "titel": "Anlage 3 Überblick - Entwicklung BWF 2019 - 2021",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88807&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-26",
+              "datum_anzeige": "26.11.2026",
+              "gremium": "Sozial- und Gesundheitsausschuss",
+              "top_nr": "4",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 9 Abs. 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019&toselect=28262"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 5",
+          "titel": "Überarbeitung der bestehenden Rahmenleistungsbeschreibung für die sozialpsychiatrischen Dienste in Bayern (hier: Bezirk Oberbayern) vom 13.05.2016 in der Fassung vom 19. August 2026 mit Anwendung ab 01.01.2027",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "22/BV/233/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15034",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89362&type=do"
+            },
+            {
+              "titel": "26-10-22 bayerische RLB final Beschluss HA 22.10.26",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89361&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-26",
+              "datum_anzeige": "26.11.2026",
+              "gremium": "Sozial- und Gesundheitsausschuss",
+              "top_nr": "5",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 9 Abs. 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019&toselect=28263"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 6",
+          "titel": "Mobilitätshilfe für Menschen mit Behinderung in Oberbayern - Kostenermittlung",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "23/BV/194/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14964",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88782&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-26",
+              "datum_anzeige": "26.11.2026",
+              "gremium": "Sozial- und Gesundheitsausschuss",
+              "top_nr": "6",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 9 Abs. 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019&toselect=28265"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 7",
+          "titel": "Anpassung der „Richtlinie des Bezirks Oberbayern zur Förderung der Sozialpsychiatrischen Dienste“ und der „Richtlinie zur Förderung Gerontopsychiatrischer Dienste sowie gerontopsychiatrischer Fachkräfte an Sozialpsychiatrischen Diensten“",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "27/BV/242/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15043",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89288&type=do"
+            },
+            {
+              "titel": "Anlage1 RahmenkoopV DigiSpDi",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89290&type=do"
+            },
+            {
+              "titel": "GpDi-Richtlinie-FINAL-20261026",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89291&type=do"
+            },
+            {
+              "titel": "Kooperationsvereinbarung DigiSpDi zur Ausschreibung technisch Platform 03.07.2025",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89292&type=do"
+            },
+            {
+              "titel": "RahmenkoopV DigiSpDi 15.01.2026",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89293&type=do"
+            },
+            {
+              "titel": "SPDi-Richtlinie-FINAL-20261026",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89294&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-26",
+              "datum_anzeige": "26.11.2026",
+              "gremium": "Sozial- und Gesundheitsausschuss",
+              "top_nr": "7",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 9 Abs. 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019&toselect=28266"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 8",
+          "titel": "Antrag auf Erhöhung der Förderung des Sicherheitsdienstes für den Kontaktladen L43, Prop e.V.",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "27/BV/243/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15044",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89300&type=do"
+            },
+            {
+              "titel": "2026-05-27 Antrag Erhöhung SiDi Prop",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89301&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-26",
+              "datum_anzeige": "26.11.2026",
+              "gremium": "Sozial- und Gesundheitsausschuss",
+              "top_nr": "8",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 9 Abs. 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019&toselect=28267"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 9",
+          "titel": "Investitionskostenzuschuss zur Errichtung von stationären Hospizplätzen",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "27/BV/245/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15047",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89348&type=do"
+            },
+            {
+              "titel": "2012 3 1 Auszug HA-Protokoll",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89349&type=do"
+            },
+            {
+              "titel": "AW Förderung des Projektes 2 Hospize in Polling - Fraktionsinitiative und Investitionskostenförderung",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89350&type=do"
+            },
+            {
+              "titel": "Beschluss Hauptausschuss 20.05.2026",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89351&type=do"
+            },
+            {
+              "titel": "projektkosten kostenberechnung DIN276-081025 Polling",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89352&type=do"
+            },
+            {
+              "titel": "regOBB-bewilligung Polling",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89353&type=do"
+            },
+            {
+              "titel": "Zuwendungsbescheid Oberland Hospiz",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89360&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-26",
+              "datum_anzeige": "26.11.2026",
+              "gremium": "Sozial- und Gesundheitsausschuss",
+              "top_nr": "9",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 9 Abs. 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019&toselect=28268"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "7",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 9 Abs. 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28278"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 10",
+          "titel": "Antrag der Ausschussgemeinschaft ÖDP/BP/dieBasis vom 07.05.2026: Schaffung einer Modellregion für sozialraumorientierte Eingliederungshilfe",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        },
+        {
+          "nr": "Ö 11",
+          "titel": "Gemeinsamer Antrag der CSU, SPD FW vom Oktober 2026: Einrichtungsbudget",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "22/AN/021/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15067",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89662&type=do"
+            },
+            {
+              "titel": "ANTRAG Einrichtungsbudget",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89730&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-26",
+              "datum_anzeige": "26.11.2026",
+              "gremium": "Sozial- und Gesundheitsausschuss",
+              "top_nr": "11",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 9 Abs. 2 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019&toselect=28303"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 12",
+          "titel": "Vorberatung des Bezirkshaushalts 2027: Einzelplan 4 - Soziales und Jugend",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "82/BV/246/2026",
+          "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15048",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89374&type=do"
+            },
+            {
+              "titel": "Anlage Produktplan 2027",
+              "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89359&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-26",
+              "datum_anzeige": "26.11.2026",
+              "gremium": "Sozial- und Gesundheitsausschuss",
+              "top_nr": "12",
+              "oeffentlich": true,
+              "rolle": "vorberatend nach § 9 Abs. 1 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019&toselect=28269"
+            }
+          ]
+        },
+        {
+          "nr": "Ö 13",
+          "titel": "Bekanntgaben und Sonstiges",
+          "zusatz": "",
+          "antragsteller": "",
+          "nachtrag": "",
+          "oeffentlich": true,
+          "verfahren": false,
+          "vorlage": "",
+          "vorlage_url": "",
+          "dokumente": [],
+          "beratungen": []
+        }
+      ],
+      "quelle": "bezirk_obb"
+    },
     {
       "id": "13553",
       "kennung": "PLA/04/2026",
@@ -613,6 +2215,15 @@
               "oeffentlich": true,
               "rolle": "Vorberatung",
               "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552&toselect=91263"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Ausschuss für Finanzen und Personal",
+              "top_nr": "13",
+              "oeffentlich": true,
+              "rolle": "Vorberatung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91356"
             }
           ]
         },
@@ -657,6 +2268,15 @@
               "oeffentlich": true,
               "rolle": "Vorberatung",
               "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552&toselect=91260"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Ausschuss für Finanzen und Personal",
+              "top_nr": "14",
+              "oeffentlich": true,
+              "rolle": "Vorberatung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91355"
             }
           ]
         },
@@ -767,10 +2387,34 @@
           "nachtrag": "",
           "oeffentlich": true,
           "verfahren": false,
-          "vorlage": "",
-          "vorlage_url": "",
-          "dokumente": [],
-          "beratungen": []
+          "vorlage": "V0709/26",
+          "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23472",
+          "dokumente": [
+            {
+              "titel": "Vorlage",
+              "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255428&type=do"
+            }
+          ],
+          "beratungen": [
+            {
+              "datum": "2026-11-24",
+              "datum_anzeige": "24.11.2026",
+              "gremium": "Ausschuss für Kultur und Bildung",
+              "top_nr": "8",
+              "oeffentlich": true,
+              "rolle": "Vorberatung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552&toselect=91273"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Ausschuss für Finanzen und Personal",
+              "top_nr": "8",
+              "oeffentlich": true,
+              "rolle": "Vorberatung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91364"
+            }
+          ]
         },
         {
           "nr": "Ö 9",
@@ -902,7 +2546,7 @@
       "raum": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
       "datum": "2026-11-19",
       "datum_anzeige": "19.11.2026",
-      "zeit": "16:00 Uhr",
+      "zeit": "16:00-18:05 Uhr",
       "url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551",
       "dokumente": [
         {
@@ -976,6 +2620,15 @@
               "oeffentlich": true,
               "rolle": "Vorberatung",
               "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551&toselect=91180"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Ausschuss für Finanzen und Personal",
+              "top_nr": "12",
+              "oeffentlich": true,
+              "rolle": "Vorberatung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91354"
             }
           ]
         },
@@ -1026,6 +2679,15 @@
               "oeffentlich": true,
               "rolle": "Vorberatung",
               "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551&toselect=91177"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Ausschuss für Finanzen und Personal",
+              "top_nr": "16",
+              "oeffentlich": true,
+              "rolle": "Entscheidung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91357"
             }
           ]
         },
@@ -1054,6 +2716,15 @@
               "oeffentlich": true,
               "rolle": "Vorberatung",
               "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551&toselect=91178"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Ausschuss für Finanzen und Personal",
+              "top_nr": "17",
+              "oeffentlich": true,
+              "rolle": "Entscheidung",
+              "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91358"
             }
           ]
         },
@@ -1751,6 +3422,15 @@
               "oeffentlich": true,
               "rolle": "vorberatend nach § 11 Abs. 1 Nr. 1 GeschO",
               "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939&toselect=28021"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "3",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 7 Abs. 3 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28276"
             }
           ]
         },
@@ -1783,6 +3463,15 @@
               "oeffentlich": true,
               "rolle": "vorberatend nach § 11 Abs. 1 Nr. 1 GeschO",
               "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939&toselect=28023"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "4",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 7 Abs. 3 GeschO",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28277"
             }
           ]
         },
@@ -1815,6 +3504,15 @@
               "oeffentlich": true,
               "rolle": "vorberatend nach § 11 Abs. 1 Nr. 1 GeschO",
               "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939&toselect=28024"
+            },
+            {
+              "datum": "2026-12-03",
+              "datum_anzeige": "03.12.2026",
+              "gremium": "Bezirksausschuss",
+              "top_nr": "12",
+              "oeffentlich": true,
+              "rolle": "beschließend nach § 7 Abs. 3 Eigenbetriebssatzung",
+              "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28282"
             }
           ]
         },
@@ -9887,7 +11585,7 @@
       "raum": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
       "datum": "2026-10-13",
       "datum_anzeige": "13.10.2026",
-      "zeit": "10:00 Uhr",
+      "zeit": "10:06-11:20 Uhr",
       "url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13757",
       "dokumente": [
         {
@@ -178252,40 +179950,13 @@
   ],
   "kommende_termine": [
     {
-      "gremium": "Sozial- und Gesundheitsausschuss",
-      "artikel": "",
-      "datum": "2026-11-26",
-      "datum_anzeige": "26.11.2026",
-      "zeit": "09:30-11:00 Uhr",
-      "ort": "Sitzungssaal im 5. OG des Verwaltungsgebäudes",
-      "quelle": "bezirk_obb"
-    },
-    {
       "gremium": "Bezirksausschusses I-Mitte",
       "artikel": "des",
       "datum": "2026-12-01",
       "datum_anzeige": "01.12.2026",
-      "zeit": "",
-      "ort": "- geplanter Sitzungstermin -",
+      "zeit": "17:30 Uhr",
+      "ort": "Gemeindesaal St. Matthäus, Schrannenstraße 7, 85049 Ingolstadt —",
       "quelle": "bza"
-    },
-    {
-      "gremium": "Ausschusses für Finanzen und Personal",
-      "artikel": "des",
-      "datum": "2026-12-03",
-      "datum_anzeige": "03.12.2026",
-      "zeit": "16:00 Uhr",
-      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
-      "quelle": "stadt"
-    },
-    {
-      "gremium": "Bezirksausschuss",
-      "artikel": "",
-      "datum": "2026-12-03",
-      "datum_anzeige": "03.12.2026",
-      "zeit": "09:30-13:30 Uhr",
-      "ort": "Hybrid (Sitzungssaal 5. OG und Teams), ges.kameral.HH",
-      "quelle": "bezirk_obb"
     },
     {
       "gremium": "Bezirksausschusses XI-Friedrichshofen/Hollerstauden",

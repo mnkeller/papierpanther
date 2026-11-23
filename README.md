@@ -215,7 +215,12 @@ cd scraper && python3 hsk_lesen.py
 ```
 
 Liest das Haushaltssicherungskonzept (Vorlage V0652/26, Stadtrat 29.10.2026)
-und schreibt `data/hsk.json` + `data/hsk.js` (window.HSK_DATEN).
+und schreibt `data/hsk.json` + `data/hsk.js` (window.HSK_DATEN). Grundlage ist
+seit 23.11.2026 die zur Stadtratssitzung nachgereichte Fassung: Konzept „V2“
+(Stand 28.10.2026) und Anlagen in der überarbeiteten Fassung vom 20.10.2026.
+Gegenüber der ersten Fassung vom 15.10.2026 sind alle Zahlen gleich; gestrichen
+ist das Zieljahr 2030 („schnellstmöglich“ statt „bis 2030“), deshalb ist
+`ziel_jahr` in `hsk_bericht.json` leer und `ziel` beschreibt die Änderung.
 
 - Aus den Anlagen maschinell gelesen: der Maßnahmenkatalog (Anlage 1, drei
   Blätter) und die Liste der freiwilligen Leistungen (Anlage 5). Jede Tabelle

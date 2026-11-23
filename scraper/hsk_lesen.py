@@ -5,7 +5,10 @@ Baut die Daten fuer hsk.html aus dem Haushaltssicherungskonzept (HSK).
     python3 hsk_lesen.py
 
 Quelle ist die Beschlussvorlage V0652/26 "Haushaltssicherungskonzept (HSK)"
-(Finanzausschuss 22.10.2026, Stadtrat 29.10.2026) mit zwei PDFs:
+(Finanzausschuss 22.10.2026, Stadtrat 29.10.2026) mit zwei PDFs, jeweils in
+der zur Stadtratssitzung nachgereichten Fassung (Konzept "V2", Stand
+28.10.2026; Anlagen "ueberarbeitete Fassung 20.10.2026"). Die erste Fassung
+vom 15.10.2026 hatte die Dokument-IDs 254467 (Konzept) und 254468 (Anlagen).
 
 - "Haushaltssicherungskonzept 2026" (71 Seiten Text). Die Zahlen daraus
   (Konsolidierungsziel, Schuldenszenarien, Ausgabenstruktur ...) stehen von
@@ -50,8 +53,9 @@ BASIS = "https://www.ingolstadt.de/sessionnet/"
 VORLAGE_URL = BASIS + "vo0050.php?__kvonr=23409"
 DOK_IDS = {
     "vorlage": 254276,
-    "konzept": 254467,
-    "anlagen": 254468,
+    "konzept": 255062,   # "NEU Haushaltssicherungskonzept 2026 V2", Stand 28.10.2026
+    "anlagen": 254676,   # "Anlagen - ueberarbeitete Fassung 20.10.2026"
+    "praesentation": 255061,  # Folien der Kaemmerei zur Stadtratssitzung
 }
 
 # Einzelplaene der Kameralistik; erste Ziffer der Gliederungsnummer.
@@ -347,6 +351,7 @@ def main():
             "vorlage_pdf": url(DOK_IDS["vorlage"]),
             "konzept_pdf": url(DOK_IDS["konzept"]),
             "anlagen_pdf": url(DOK_IDS["anlagen"]),
+            "praesentation_pdf": url(DOK_IDS["praesentation"]),
         },
         "bericht": {k: v for k, v in bericht.items() if k != "massnahmen_texte"},
         "einzelplaene": EINZELPLAN,

@@ -41,7 +41,7 @@ window.THEMEN_DATEN = [
   "farbe": "#2e7d4f",
   "titel": "Klima",
   "titel_l": "Klima",
-  "zahl": "9.738 Solaranlagen",
+  "zahl": "9.750 Solaranlagen",
   "text": "gibt es in Ingolstadt (2026), dazu 1.538 öffentliche Ladepunkte. Plus: Wetter seit 1961.",
   "text_l": "So viele Anlagen machen in Ingolstadt Strom aus Sonne."
  },

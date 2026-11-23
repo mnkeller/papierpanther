@@ -1,7 +1,7 @@
 {
   "erzeugt_von": "scraper/antraege_holen_lesen.py",
   "quelle_hinweis": "Anträge der Stadtratsfraktionen aus dem Ratsinfoportal der Stadt Ingolstadt, laufende Wahlperiode. Status stammt aus den bereits gescrapten Tagesordnungen und dem kuratierten Feed dieser Seite, nicht aus einer eigenen Recherche.",
-  "abgerufen_am": "2026-11-19",
+  "abgerufen_am": "2026-11-23",
   "parteien": {
     "CSU": [
       {

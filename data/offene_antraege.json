@@ -1,6 +1,6 @@
 {
   "hinweis": "Antraege ohne Sitzungstermin, aus der Liste 'Aktuelle Stadtratsantraege' im Ratsinfoportal der Stadt Ingolstadt. Sobald die Tagesordnung seiner Sitzung veroeffentlicht ist, verschwindet ein Antrag von hier und taucht stattdessen ganz normal ueber ris_ingolstadt.py auf. Bis dahin steht ein schon angesetzter Termin im Feld 'termin'.",
-  "abgerufen_am": "2026-11-19",
+  "abgerufen_am": "2026-11-23",
   "antraege": [
     {
       "quelle": "stadt",

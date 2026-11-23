@@ -6,8 +6,8 @@
       "software": "Session (Somacos GmbH & Co. KG)",
       "basis_url": "https://www.ingolstadt.de/sessionnet",
       "endung": "php",
-      "anzahl_sitzungen": 396,
-      "anzahl_tops": 3379
+      "anzahl_sitzungen": 400,
+      "anzahl_tops": 3401
     },
     "bza": {
       "name": "Ratsinfoportal der Bezirksausschüsse der Stadt Ingolstadt",
@@ -22,25 +22,25 @@
       "software": "Session (Somacos GmbH & Co. KG)",
       "basis_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de",
       "endung": "asp",
-      "anzahl_sitzungen": 83,
-      "anzahl_tops": 765
+      "anzahl_sitzungen": 85,
+      "anzahl_tops": 797
     }
   },
   "hinweis": "Oeffentlich zugaengliche Seiten, ohne Anmeldung abgerufen.",
-  "daten_abgerufen_am": "2026-11-19",
-  "feed_gebaut_am": "2026-11-19",
+  "daten_abgerufen_am": "2026-11-23",
+  "feed_gebaut_am": "2026-11-23",
   "zeitraum": {
     "von": "2023-11",
-    "bis": "2027-02"
+    "bis": "2027-01"
   },
   "statistik": {
-    "sitzungen_ausgelesen": 661,
-    "tops_ausgelesen": 6514,
-    "tops_verfahren": 906,
-    "tops_kuratiert": 4265,
-    "tops_abgedeckt": 4950,
-    "tops_sitzungsroutine_offen": 904,
-    "tops_beteiligung": 270,
+    "sitzungen_ausgelesen": 667,
+    "tops_ausgelesen": 6568,
+    "tops_verfahren": 908,
+    "tops_kuratiert": 4303,
+    "tops_abgedeckt": 4998,
+    "tops_sitzungsroutine_offen": 906,
+    "tops_beteiligung": 274,
     "tops_sonstige": 388,
     "tops_nicht_oeffentlich": 2,
     "tops_offen": 0,
@@ -51,34 +51,34 @@
       "2026"
     ],
     "jahre_rueckstand": [],
-    "entwuerfe": 1665,
-    "leichte_sprache": 1633,
+    "entwuerfe": 1681,
+    "leichte_sprache": 1655,
     "je_quelle": {
-      "stadt": 2170,
+      "stadt": 2182,
       "bza": 1548,
-      "bezirk_obb": 547
+      "bezirk_obb": 573
     },
     "stand": {
-      "Wird noch beraten": 52,
-      "Bekanntgabe": 335,
-      "Entscheidung geplant": 1,
-      "Steht auf der Tagesordnung": 10,
+      "Entscheidung geplant": 21,
+      "Wird noch beraten": 53,
+      "Steht auf der Tagesordnung": 26,
+      "Bekanntgabe": 337,
       "Nur besprochen, nichts entschieden": 1266,
-      "Entscheidung angesetzt": 265,
       "Im Bezirksausschuss behandelt": 1548,
+      "Entscheidung angesetzt": 264,
       "Noch nicht terminiert": 143,
       "Beschlossen": 631,
       "Abgelehnt": 13,
       "Teilweise beschlossen": 1
     },
     "status": {
-      "Noch offen": 196,
-      "Nur zur Information": 3159,
-      "Ergebnis steht im Protokoll": 265,
+      "Noch offen": 217,
+      "Nur zur Information": 3177,
+      "Ergebnis steht im Protokoll": 264,
       "Entschieden": 645
     },
     "stadtbezirke": 12,
-    "duenn": 2632
+    "duenn": 2648
   },
   "achsen": {
     "lebenslage": [
@@ -149,6 +149,2336 @@
     ]
   },
   "eintraege": [
+    {
+      "ref": "stadt:13551#Ö 4",
+      "thema": "stadt:vorlage:23385",
+      "auftritte": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 15",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
+        },
+        {
+          "datum": "2026-11-19",
+          "datum_anzeige": "19.11.2026",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 16",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
+        }
+      ],
+      "klartext_titel": "Heilig-Geist-Spital: Stadt will 25.308,90 Euro Förderung zurückfordern",
+      "klartext": "Die Heilig-Geist-Stiftung hat nach einem Stadtratsbeschluss aus dem Jahr 2000 zwei Förderungen für ihr Pflegeheim in der Fechtgasse erhalten: 1.350.000 DM für den Umbau der Küche und 165.000 DM für den Umbau einer Wohnstation in eine Pflegestation. Die geförderten Pflegeplätze mussten mindestens 30 Jahre so genutzt werden. Das Alten- und Pflegeheim wurde zum 31. Dezember 2024 geschlossen; ein Investor baut dort 90 seniorengerechte Wohnungen, die Stiftung will die Mieterinnen und Mieter betreuen. Die Küche wird weiter genutzt, deshalb soll deren Förderung nicht zurückgefordert werden. Für die frühere Pflegestation will die Verwaltung anteilig 25.308,90 Euro zurückverlangen. Der Sozialausschuss berät am 19. November, der Finanzausschuss soll am 3. Dezember 2026 entscheiden.",
+      "klartext_titel_leicht": "Die Stadt will Förder-Geld zurück haben",
+      "klartext_leicht": "In der Fechtgasse war ein Pflege-Heim. Es heißt Heilig-Geist-Spital. Die Stadt hat früher Geld für den Umbau gegeben. Das Geld war für eine Küche und für eine Pflege-Station. Ende 2024 hat das Pflege-Heim zugemacht. Jetzt entstehen dort 90 Wohnungen für ältere Menschen. Die Küche wird weiter benutzt. Die Pflege-Station gibt es nicht mehr. Deshalb will die Stadt ungefähr 25.300 Euro zurück haben. Ein Ausschuss vom Stadt-Rat soll am 3. Dezember 2026 entscheiden.",
+      "lebenslage": [
+        "Senior:innen",
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [
+        "I-Mitte"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [],
+      "ort": [
+        "Fechtgasse"
+      ],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Rückforderung von Fördermitteln von der Heilig-Geist-Stiftung aufgrund der Aufgabe der stationären Pflegeeinrichtung in der Fechtgasse und Umnutzung zu Service Wohnen",
+      "top_nr": "Ö 16",
+      "vorlage": "V0629/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23385",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/04/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253953&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-10-22",
+          "datum_anzeige": "22.10.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "15",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545&toselect=90514"
+        },
+        {
+          "datum": "2026-11-19",
+          "datum_anzeige": "19.11.2026",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551&toselect=91177"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "16",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91357"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:4939#Ö 3",
+      "thema": "bezirk_obb:vorlage:14997",
+      "auftritte": [
+        {
+          "datum": "2026-11-17",
+          "datum_anzeige": "17.11.2026",
+          "gremium": "Ausschuss für Bau, Umwelt und Energie",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
+        }
+      ],
+      "klartext_titel": "Neubau für die Holzschule in Garmisch-Partenkirchen soll 29,5 Millionen Euro kosten",
+      "klartext": "Die Schulen für Holz und Gestaltung des Bezirks in Garmisch-Partenkirchen bekommen einen Erweiterungsbau, das „Kompetenzzentrum für digitale Holzbearbeitung“, auf dem früheren Minigolfplatz neben der Schule. Geplant sind unter anderem eine Werkstatt mit moderner Maschinenausstattung, Räume für Fachakademie und Meisterausbildung sowie im Keller Metallwerkstatt und Lackiererei; ab dem Erdgeschoss wird in Holz gebaut. Die Entwurfsplanung ist fertig, die Kostenberechnung liegt bei rund 29,5 Millionen Euro einschließlich 13 Prozent Risikoaufschlag. 2021 waren noch 11 bis 14,3 Millionen Euro geschätzt worden. Förderfähig sind nach den staatlichen Richtwerten mindestens rund 12 Millionen Euro, gut 13 Millionen Euro entfallen auf Sonderkosten für die besondere Schulart, das Grundstück und ökologische Ziele. Der Bauausschuss berät am 17. November 2026 vor, freigeben soll die Haushaltsunterlage Bau der Bezirksausschuss am 3. Dezember 2026.",
+      "klartext_titel_leicht": "Der Bezirk baut für eine Holz-Schule für 29,5 Millionen Euro",
+      "klartext_leicht": "Der Bezirk Oberbayern hat eine Schule für Holz in Garmisch-Partenkirchen. Dort lernen Menschen, mit Holz zu arbeiten. Die Schule braucht mehr Platz. Deshalb soll es einen neuen Bau geben. Dort gibt es große Werk-Stätten mit neuen Maschinen. Das Haus wird zum großen Teil aus Holz gebaut. Der Bau kostet ungefähr 29,5 Millionen Euro. Früher hat man mit viel weniger Geld gerechnet. Der Bezirks-Ausschuss entscheidet am 3. Dezember 2026.",
+      "lebenslage": [
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [
+        "Schulbau"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "SHG - Kompetenzzentrum für Digitale Holzbearbeitung in Garmisch-Partenkirchen — Freigabe der HU-Bau",
+      "top_nr": "Ö 3",
+      "vorlage": "12/BV/218/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14997",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss",
+      "sitzung_kennung": "BezA/007/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89037&type=do"
+        },
+        {
+          "titel": "20261117 GAP Neubau-Präsentation",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89686&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-11-17",
+          "datum_anzeige": "17.11.2026",
+          "gremium": "Ausschuss für Bau, Umwelt und Energie",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "vorberatend nach § 11 Abs. 1 Nr. 1 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939&toselect=28021"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 7 Abs. 3 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28276"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:4939#Ö 4",
+      "thema": "bezirk_obb:vorlage:14999",
+      "auftritte": [
+        {
+          "datum": "2026-11-17",
+          "datum_anzeige": "17.11.2026",
+          "gremium": "Ausschuss für Bau, Umwelt und Energie",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
+        }
+      ],
+      "klartext_titel": "Freilichtmuseum Glentleiten: Kramerladen bekommt eine neue Küche",
+      "klartext": "Im Freilichtmuseum an der Glentleiten gibt es im Mesnerhof aus Siegertsbrunn einen Kramerladen mit Kiosk, der warme Gerichte, Brotzeiten, Kaffee und Kuchen verkauft. Das Gebäude hat Mängel beim Brandschutz, die Küche erfüllt die Hygiene- und Arbeitsschutzvorgaben nicht mehr, und die Kühltechnik und Elektrik sind veraltet. Eine Machbarkeitsstudie zeigt, dass eine neue Küche, Toiletten für Besucher und Personal sowie Lagerräume im bestehenden Gebäude Platz finden; am denkmalgeschützten Wohnteil von 1796 ändert sich nur wenig. Die Sanierung soll grob geschätzt rund 811.000 Euro kosten, für die Entwurfsplanung und Voruntersuchungen sind rund 80.000 Euro nötig. Bis Mai 2027 soll eine genaue Kostenberechnung vorliegen, für den Bau selbst sind rund fünf Monate angesetzt. Der Bauausschuss berät am 17. November 2026, die Planungsmittel freigeben soll der Bezirksausschuss am 3. Dezember 2026.",
+      "klartext_titel_leicht": "Das Museum Glentleiten bekommt eine neue Küche",
+      "klartext_leicht": "Die Glentleiten ist ein Museum unter freiem Himmel. Dort stehen alte Bauern-Häuser. In einem alten Haus gibt es einen Laden mit Essen. Die Küche dort ist zu alt. Sie erfüllt die Regeln für Sauberkeit nicht mehr. Auch der Schutz vor Feuer ist nicht gut genug. Der Bezirk will die Küche neu bauen. Das kostet ungefähr 811.000 Euro. Der Bezirks-Ausschuss entscheidet am 3. Dezember 2026 über das Geld für die Planung.",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Freilichtmuseum an der Glentleiten Kramerladen — Varianten - Bedarfsfeststellung und Freigabe des Planungsauftrages",
+      "top_nr": "Ö 4",
+      "vorlage": "12/BV/220/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14999",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss",
+      "sitzung_kennung": "BezA/007/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89031&type=do"
+        },
+        {
+          "titel": "20261117 FLMG Umbau Küche Kramerladen-Präsentation",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89687&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-11-17",
+          "datum_anzeige": "17.11.2026",
+          "gremium": "Ausschuss für Bau, Umwelt und Energie",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "vorberatend nach § 11 Abs. 1 Nr. 1 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939&toselect=28023"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 7 Abs. 3 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28277"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:4939#Ö 5",
+      "thema": "bezirk_obb:vorlage:14813",
+      "auftritte": [
+        {
+          "datum": "2026-11-17",
+          "datum_anzeige": "17.11.2026",
+          "gremium": "Ausschuss für Bau, Umwelt und Energie",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 12",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
+        }
+      ],
+      "klartext_titel": "Grüne wollen weitere Moorflächen des Bezirks wieder vernässen",
+      "klartext": "Die Fraktion BÜNDNIS 90/DIE GRÜNEN im Bezirkstag beantragt, alle Flächen der Bezirksgüter nach weiteren Stellen zu durchsuchen, die sich zur Renaturierung oder Wiedervernässung eignen. Vorbild ist das schon umgesetzte Projekt im Hilgermoos bei Taufkirchen an der Vils. Wiedervernässte Flächen speichern CO₂ und bieten seltenen Tieren und Pflanzen Lebensraum. Laut Verwaltung arbeitet sie seit Januar 2026 bereits daran und hat das Röhrmoos bei Gabersee in Wasserburg als nächstes Vorhaben ausgewählt. Der Bauausschuss berät am 17. November 2026 vor, abstimmen soll der Bezirksausschuss am 3. Dezember 2026.",
+      "klartext_titel_leicht": "Die Grünen wollen mehr nasse Moore beim Bezirk",
+      "klartext_leicht": "Ein Moor ist ein sehr nasser Boden. Nasse Moore speichern schädliche Gase aus der Luft. Viele Moore wurden früher trocken gelegt. Der Bezirk Oberbayern hat eigene Bauern-Höfe mit viel Land. Die Partei Die Grünen hat einen Wunsch. Der Bezirk soll dort mehr Moore nass machen. Der Bezirk hat schon ein Moor gefunden. Es liegt bei Wasserburg. Der Bezirks-Ausschuss stimmt am 3. Dezember 2026 ab.",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [
+        "Klima & Umwelt"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Antrag der Fraktion BÜNDNIS 90 / DIE GRÜNEN auf Untersuchung der gesamten Bezirksgutflächen auf weitere potenzielle Flächen zur Renaturierung bzw. Vernässung",
+      "top_nr": "Ö 12",
+      "vorlage": "82/AN/010/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14813",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss",
+      "sitzung_kennung": "BezA/007/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=86056&type=do"
+        },
+        {
+          "titel": "2026-04-13 Antrag PV Flächen Wiedervernässung Hilgermoos",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=86051&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-11-17",
+          "datum_anzeige": "17.11.2026",
+          "gremium": "Ausschuss für Bau, Umwelt und Energie",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "vorberatend nach § 11 Abs. 1 Nr. 1 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939&toselect=28024"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "12",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 7 Abs. 3 Eigenbetriebssatzung",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28282"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13552#Ö 3",
+      "thema": "stadt:vorlage:23423",
+      "auftritte": [
+        {
+          "datum": "2026-11-24",
+          "datum_anzeige": "24.11.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 13",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
+        }
+      ],
+      "klartext_titel": "Museen: Satzungen sollen wegfallen, Eintrittspreise bleiben vorerst gleich",
+      "klartext": "Die Stadt will die Gebührensatzung und die Benutzungssatzung ihrer Museen aufheben und durch Allgemeine Geschäftsbedingungen ersetzen. Grund ist das neue Umsatzsteuerrecht für Kommunen (§ 2b Umsatzsteuergesetz): Mit den bisherigen Satzungen könnten die Museen laut Vorlage keine Vorsteuer mehr abziehen. Der Museumsbesuch läuft künftig auf privatrechtlicher Grundlage, der Eintritt ist dann ein Entgelt statt einer Gebühr. An den Eintrittspreisen ändert sich dadurch nichts. Eine Anpassung der Preise ist im Lauf des Jahres 2027 vorgesehen, wenn das MKKD eröffnet. Der Ausschuss für Kultur und Bildung berät am 24. November, der Stadtrat soll am 10. Dezember 2026 entscheiden.",
+      "klartext_titel_leicht": "Neue Regeln für die Museen von der Stadt",
+      "klartext_leicht": "Die Stadt hat mehrere Museen. Für die Museen gibt es Regeln von der Stadt. Diese Regeln heißen Satzung. Die Stadt will die Satzungen abschaffen. Dafür gibt es neue Regeln für den Besuch. Der Grund ist ein neues Steuer-Gesetz. Der Eintritt kostet erst einmal gleich viel. Im Jahr 2027 will die Stadt die Preise ändern. Der Stadt-Rat soll am 10. Dezember 2026 entscheiden.",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Satzung & Regeln",
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Wird noch beraten",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Aufhebung der Satzung über die Gebühren für die Benutzung der Museen der Stadt Ingolstadt (Museumsgebührensatzung) und Aufhebung der Satzung über die Benutzung der Museen der Stadt Ingolstadt (Museumssatzung) — Neufassung der Allgemeinen Geschäftsbedingungen für die Nutzung der Museen der Stadt Ingolstadt",
+      "top_nr": "Ö 13",
+      "vorlage": "V0666/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23423",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/04/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254605&type=do"
+        },
+        {
+          "titel": "Anlage 1 - Aufhebungssatzung Gebühren Museen",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254612&type=do"
+        },
+        {
+          "titel": "Anlage 2 - Aufhebungssatzung Benutzung Museen",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254613&type=do"
+        },
+        {
+          "titel": "Anlage 3 - AGB Museen",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254614&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-11-24",
+          "datum_anzeige": "24.11.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "3",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552&toselect=91263"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "13",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91356"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13552#Ö 4",
+      "thema": "stadt:vorlage:23008",
+      "auftritte": [
+        {
+          "datum": "2026-11-24",
+          "datum_anzeige": "24.11.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 14",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
+        }
+      ],
+      "klartext_titel": "Stadtbücherei: Säumnisgebühren sollen steigen, Grundgebühren nicht",
+      "klartext": "Die Stadt will die Benutzungs- und Gebührensatzungen der Stadtbücherei und der Schulmedienzentrale ändern. Angehoben werden die vermeidbaren Gebühren, etwa für verspätete Rückgabe. Die Grundgebühren für die Benutzung steigen nicht, die Sozialermäßigungen bleiben, und Kinder- und Jugendmedien bleiben für Minderjährige kostenlos. Neu kostet es etwas, ohne Leseausweis auszuleihen oder Medien an einem anderen Standort zurückzugeben als dem der Ausleihe. Die Stadt rechnet mit Mehreinnahmen von etwa 10.000 Euro im Jahr. Bei der Schulmedienzentrale steigt die Ausleihgebühr für Klassensätze für Schulen, deren Sachaufwand nicht die Stadt trägt. Die Änderungen sollen am 1. Februar 2027 gelten; der Stadtrat soll am 10. Dezember 2026 entscheiden.",
+      "klartext_titel_leicht": "Die Stadt-Bücherei ändert einige Gebühren",
+      "klartext_leicht": "In der Stadt-Bücherei können Sie Bücher ausleihen. Wer ein Buch zu spät zurückbringt, zahlt eine Gebühr. Diese Gebühr soll höher werden. Die normale Gebühr für die Bücherei bleibt gleich. Bücher für Kinder und Jugendliche bleiben kostenlos. Neu ist: Ausleihen ohne Lese-Ausweis kostet Geld. Auch die Rückgabe an einem anderen Ort kostet dann Geld. Die Stadt rechnet mit ungefähr 10.000 Euro mehr im Jahr. Die neuen Regeln sollen ab dem 1. Februar 2027 gelten.",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Satzung & Regeln",
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Wird noch beraten",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Änderung der Benutzungs- und Gebührensatzung der Stadtbücherei Ingolstadt — Änderung der Benutzungs- und Gebührensatzung der Schulmedienzentrale",
+      "top_nr": "Ö 14",
+      "vorlage": "V0258/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23008",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/04/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249857&type=do"
+        },
+        {
+          "titel": "Satzung Anlage 1 - Änderung der Benutzungssatzung Stadtbücherei Stand 06.10.2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254191&type=do"
+        },
+        {
+          "titel": "Satzung Anlage 2 - Änderung der Gebührensatzung Stadtbücherei Stand 06.10.2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254190&type=do"
+        },
+        {
+          "titel": "Satzung Anlage 3 - Änderung der Benutzungssatzung SMZ Stand 06.10.2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254189&type=do"
+        },
+        {
+          "titel": "Satzung Anlage 4 - Änderung der Gebührensatzung SMZ Stand 06.10.2026",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254188&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-11-24",
+          "datum_anzeige": "24.11.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552&toselect=91260"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "14",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91355"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13551#Ö 2",
+      "thema": "stadt:vorlage:23456",
+      "auftritte": [
+        {
+          "datum": "2026-11-19",
+          "datum_anzeige": "19.11.2026",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 12",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
+        }
+      ],
+      "klartext_titel": "Peter-Steuart-Haus plant für 2027 mit einem Minus von 115.300 Euro",
+      "klartext": "Der Stadtrat soll die Haushaltspläne 2027 des Peter-Steuart-Hauses und der Waisenhausstiftung samt Stellenplan genehmigen. Das Peter-Steuart-Haus rechnet mit Einnahmen von 5.848.800 Euro und Ausgaben von 5.964.100 Euro; das Defizit von 115.300 Euro übernimmt die Waisenhausstiftung. Größter Posten sind die Personalkosten mit 5.073.400 Euro, eingerechnet ist eine Tarifsteigerung von 3 Prozent ab April 2027. Die stationären Wohngruppen waren von Januar bis Oktober 2026 zu 96,67 Prozent belegt. Die Waisenhausstiftung selbst erwartet einen Gewinn von 36.900 Euro, nach der Verlustübernahme bleibt ein Ergebnis von minus 78.400 Euro. Der Sozialausschuss berät am 19. November, der Stadtrat soll am 10. Dezember 2026 entscheiden.",
+      "klartext_titel_leicht": "Der Geld-Plan für das Peter-Steuart-Haus",
+      "klartext_leicht": "Im Peter-Steuart-Haus wohnen Kinder und Jugendliche. Sie können gerade nicht bei ihrer Familie wohnen. Das Haus braucht jedes Jahr einen Plan für das Geld. Im Jahr 2027 kostet das Haus ungefähr 6 Millionen Euro. Das meiste Geld ist für die Mitarbeiter. Es fehlen ungefähr 115.000 Euro. Dieses Geld zahlt die Waisenhaus-Stiftung. Die Wohn-Gruppen im Haus sind fast immer voll. Der Stadt-Rat soll am 10. Dezember 2026 entscheiden.",
+      "lebenslage": [
+        "Eltern & Kinder",
+        "Jugend",
+        "Geld & Soziales"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Wird noch beraten",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Haushaltspläne des Peter-Steuart-Hauses und der Waisenhausstiftung für das Jahr 2027",
+      "top_nr": "Ö 12",
+      "vorlage": "V0695/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23456",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/04/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255459&type=do"
+        },
+        {
+          "titel": "Anlage zu V0695-26 HH-Pläne PSH und WHS 2027",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255460&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-11-19",
+          "datum_anzeige": "19.11.2026",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "2",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551&toselect=91180"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "12",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91354"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13551#Ö 5",
+      "thema": "stadt:vorlage:23442",
+      "auftritte": [
+        {
+          "datum": "2026-11-19",
+          "datum_anzeige": "19.11.2026",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 17",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
+        }
+      ],
+      "klartext_titel": "Flüchtlings- und Integrationsberatung: Zuschuss der Stadt soll bis 2029 weiterlaufen",
+      "klartext": "Die Träger der Flüchtlings- und Integrationsberatung in Ingolstadt sollen von 2027 bis 2029 weiter 6.500 Euro im Jahr je geförderter Vollzeitstelle für Sachkosten bekommen. Den Zuschuss gibt es seit 2020; die Landesförderung reicht laut Vorlage nicht für Betrieb, Räume und Ausstattung. Der Freistaat fördert ab 2027 knapp 20 Prozent weniger Beraterstellen. Auf Ingolstadt entfallen 11,03 statt bisher 12,20 Vollzeitstellen, davon 2,8 bei der Stadt selbst, die übrigen bei der Caritas Ingolstadt, der Caritas Pfaffenhofen und der EJSA. Die Gesamtkosten für die Stadt sinken dadurch auf 53.495 Euro im Jahr, im Haushalt 2026 standen 65.000 Euro. Der Sozialausschuss berät am 19. November, der Finanzausschuss soll am 3. Dezember 2026 entscheiden.",
+      "klartext_titel_leicht": "Geld für die Beratung von geflüchteten Menschen",
+      "klartext_leicht": "In Ingolstadt gibt es Beratung für geflüchtete Menschen. Auch Menschen aus anderen Ländern bekommen dort Hilfe. Die Beratung machen zum Beispiel die Caritas und die Stadt. Das Land Bayern bezahlt den größten Teil. Die Stadt gibt Geld dazu, zum Beispiel für Räume. Das soll in den Jahren 2027 bis 2029 so bleiben. Die Stadt zahlt dann ungefähr 53.500 Euro im Jahr. Es gibt etwas weniger Stellen für Berater als bisher. Ein Ausschuss vom Stadt-Rat soll am 3. Dezember 2026 entscheiden.",
+      "lebenslage": [
+        "Zuwanderung & Integration",
+        "Geld & Soziales"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Gewährung eines Verwaltungskostenzuschusses an die Träger der Flüchtlings- und Integrationsberatung nach der Beratungs- und Integrationsrichtlinie des Freistaates Bayern",
+      "top_nr": "Ö 17",
+      "vorlage": "V0683/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23442",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/04/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255298&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-11-19",
+          "datum_anzeige": "19.11.2026",
+          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551&toselect=91178"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "17",
+          "oeffentlich": true,
+          "rolle": "Entscheidung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91358"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13555#Ö 8",
+      "thema": "stadt:vorlage:23472",
+      "auftritte": [
+        {
+          "datum": "2026-11-24",
+          "datum_anzeige": "24.11.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "Ö 8",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 8",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
+        }
+      ],
+      "klartext_titel": "Kammerphilharmonie: Stadt soll 2027 rund 1,1 Mio. € zuschießen",
+      "klartext": "Die Kammerphilharmonie Ingolstadt GmbH veranstaltet Konzerte und bekommt dafür jedes Jahr einen Ausgleich von der Stadt. Für 2027 schlägt die Verwaltung 1,098 Mio. € vor, so viel wie 2026. Mittelfristig soll der Betrag bei höchstens 1,1 Mio. € im Jahr bleiben. Gegenüber der bisherigen Finanzplanung sind das 177.000 € weniger für 2027, 200.000 € weniger für 2028 und 225.000 € weniger für 2029. Der Wirtschaftsplan rechnet 2027 mit Erträgen von rund 1,37 Mio. €, unter anderem 560.000 € vom Freistaat. Der Ausschuss für Kultur und Bildung und der Finanzausschuss beraten vor, der Stadtrat soll am 10. Dezember 2026 entscheiden.",
+      "klartext_titel_leicht": "Die Stadt gibt Geld für ein Orchester",
+      "klartext_leicht": "Die Kammer-Philharmonie ist ein Orchester in Ingolstadt. Ein Orchester ist eine große Gruppe von Musikern. Das Orchester gehört zu einer Firma der Stadt. Die Stadt gibt der Firma jedes Jahr Geld. Im Jahr 2027 sollen es ungefähr 1,1 Millionen Euro sein. Das ist so viel wie im Jahr 2026. Früher hat die Stadt mit mehr Geld geplant. Auch der Freistaat Bayern gibt Geld. Der Stadt-Rat soll am 10. Dezember 2026 entscheiden.",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Wird noch beraten",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Kammerphilharmonie Ingolstadt GmbH; — Ausübung der Gesellschafterrechte zum Wirtschaftsplan 2027",
+      "top_nr": "Ö 8",
+      "vorlage": "V0709/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23472",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/04/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255428&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-11-24",
+          "datum_anzeige": "24.11.2026",
+          "gremium": "Ausschuss für Kultur und Bildung",
+          "top_nr": "8",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552&toselect=91273"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "8",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91364"
+        }
+      ]
+    },
+    {
+      "ref": "stadt:13555#Ö 1",
+      "thema": "stadt:13555#Ö 1",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 1",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
+        }
+      ],
+      "klartext_titel": "Finanzlagebericht von Herrn Fleckinger",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Steht auf der Tagesordnung",
+      "stand_datum": "03.12.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Finanzlagebericht von Herrn Fleckinger",
+      "top_nr": "Ö 1",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/04/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13555#Ö 2",
+      "thema": "stadt:13555#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
+        }
+      ],
+      "klartext_titel": "Maßnahmen zur Fortschreibung des Haushaltssicherungskonzepts",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Steht auf der Tagesordnung",
+      "stand_datum": "03.12.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Maßnahmen zur Fortschreibung des Haushaltssicherungskonzepts",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/04/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13555#Ö 3",
+      "thema": "stadt:13555#Ö 3",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
+        }
+      ],
+      "klartext_titel": "IFG Ingolstadt AöR; — Wirtschaftsplan 2027 einschließlich Mittelfristplanung 2028 bis 2030",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Gewerbe & Gastro"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Steht auf der Tagesordnung",
+      "stand_datum": "03.12.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "IFG Ingolstadt AöR; — Wirtschaftsplan 2027 einschließlich Mittelfristplanung 2028 bis 2030",
+      "top_nr": "Ö 3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/04/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13555#Ö 4",
+      "thema": "stadt:13555#Ö 4",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
+        }
+      ],
+      "klartext_titel": "Krankenhauszweckverband Ingolstadt",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Steht auf der Tagesordnung",
+      "stand_datum": "03.12.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Krankenhauszweckverband Ingolstadt; — Betriebs- und Investumlagen für Klinikum",
+      "top_nr": "Ö 4",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/04/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13555#Ö 5",
+      "thema": "stadt:13555#Ö 5",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
+        }
+      ],
+      "klartext_titel": "Kostenersatz für die nicht gebührenfinanzierte Aufgabenübertragung der Stadt Ingolstadt an die Ingolstädter …",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Steht auf der Tagesordnung",
+      "stand_datum": "03.12.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Kostenersatz für die nicht gebührenfinanzierte Aufgabenübertragung der Stadt Ingolstadt an die Ingolstädter Kommunalbetriebe AöR für das Jahr 2027",
+      "top_nr": "Ö 5",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/04/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13555#Ö 6",
+      "thema": "stadt:13555#Ö 6",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
+        }
+      ],
+      "klartext_titel": "Ingolstädter Kommunalbetriebe AöR (INKB)",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Unterwegs"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Gebühren & Preise",
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Steht auf der Tagesordnung",
+      "stand_datum": "03.12.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Ingolstädter Kommunalbetriebe AöR (INKB): — - Jahresabschluss und Lagebericht 2025/26; — - Ausübung der Gesellschafterrechte bei den Tochtergesellschaften zur Feststellung der Jahresabschlüsse 2025/26; — - Kostenersatz nicht gebührenfinanzierter Teilder Innenstadtreinigung, 10%iger Anteil der Kosten der gebührenpflichtigen Straßenreinigung, Straßenentwässerung, Winterdienst",
+      "top_nr": "Ö 6",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/04/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13555#Ö 7",
+      "thema": "stadt:13555#Ö 7",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
+        }
+      ],
+      "klartext_titel": "Kammerphilharmonie Ingolstadt GmbH",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Steht auf der Tagesordnung",
+      "stand_datum": "03.12.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Kammerphilharmonie Ingolstadt GmbH; — Ausübung der Gesellschafterrechte zum Jahresabschluss 2025",
+      "top_nr": "Ö 7",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/04/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13555#Ö 9",
+      "thema": "stadt:13555#Ö 9",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 9",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
+        }
+      ],
+      "klartext_titel": "Verlängerung der Arbeitsmarktzulage für tariflich beschäftigte Ärztinnen und Ärzte (Humanmedizin) im …",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Gesundheit & Pflege",
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Steht auf der Tagesordnung",
+      "stand_datum": "03.12.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Verlängerung der Arbeitsmarktzulage für tariflich beschäftigte Ärztinnen und Ärzte (Humanmedizin) im Gesundheitsamt sowie Verlängerung des beamtenrechtlichen Zuschlags nach Art. 60b BayBesG",
+      "top_nr": "Ö 9",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/04/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13555#Ö 10",
+      "thema": "stadt:13555#Ö 10",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 10",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
+        }
+      ],
+      "klartext_titel": "Persönlich zugeordnete Dienstfahrzeuge für kommunale Wahlbeamte",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Steht auf der Tagesordnung",
+      "stand_datum": "03.12.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Persönlich zugeordnete Dienstfahrzeuge für kommunale Wahlbeamte",
+      "top_nr": "Ö 10",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/04/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13555#Ö 11",
+      "thema": "stadt:13555#Ö 11",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 11",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
+        }
+      ],
+      "klartext_titel": "Bericht zur Umsetzung der Digitalisierungsstrategie",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Steht auf der Tagesordnung",
+      "stand_datum": "03.12.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht zur Umsetzung der Digitalisierungsstrategie",
+      "top_nr": "Ö 11",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/04/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13555#Ö 15",
+      "thema": "stadt:13555#Ö 15",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 15",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
+        }
+      ],
+      "klartext_titel": "Bericht Projektgenehmigungen",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Steht auf der Tagesordnung",
+      "stand_datum": "03.12.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Bericht Projektgenehmigungen",
+      "top_nr": "Ö 15",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/04/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "stadt:13555#Ö 18",
+      "thema": "stadt:vorlage:23493",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "Ö 18",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
+        }
+      ],
+      "klartext_titel": "Bürgerhaus: Satzung wird wegen neuer Umsatzsteuer-Regeln ergänzt",
+      "klartext": "Ab dem 1. Januar 2027 gelten für Städte neue Regeln bei der Umsatzsteuer (§ 2b Umsatzsteuergesetz). Das Bürgerhaus bietet Kurse und Veranstaltungen an und vermietet Räume; dafür verlangt es Entgelte. Die Verwaltung will in der Satzung ausdrücklich festhalten, dass diese Leistungen auf privatrechtlicher Grundlage erbracht werden, damit ihre steuerliche Behandlung klar ist. Aufgaben und gemeinnützige Ausrichtung des Bürgerhauses bleiben laut Vorlage gleich. Die Höhe der Entgelte ändert sich durch die Satzungsänderung nicht. Der Finanzausschuss berät am 3. Dezember, der Stadtrat soll am 10. Dezember 2026 entscheiden.",
+      "klartext_titel_leicht": "Neue Regel für das Bürger-Haus",
+      "klartext_leicht": "Das Bürger-Haus ist ein Haus der Stadt. Dort gibt es Kurse und Veranstaltungen. Man kann dort auch Räume mieten. Dafür muss man Geld bezahlen. Ab dem 1. Januar 2027 gibt es neue Regeln für eine Steuer. Deshalb ändert die Stadt die Satzung für das Bürger-Haus. Eine Satzung ist eine Regel von der Stadt. Die Preise im Bürger-Haus bleiben gleich. Der Stadt-Rat soll am 10. Dezember 2026 entscheiden.",
+      "lebenslage": [
+        "Freizeit & Sport",
+        "Ehrenamt & Vereine"
+      ],
+      "bezirk": [
+        "stadtweit"
+      ],
+      "ebene": [
+        "Stadtrat & Ausschüsse"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Wird noch beraten",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "stadt",
+      "amtlicher_titel": "Änderung der Satzung über das Bürgerhaus Ingolstadt im Zusammenhang mit der verpflichtenden Anwendung des § 2b Umsatzsteuergesetz (UStG) zum 01.01.2027",
+      "top_nr": "Ö 18",
+      "vorlage": "V0730/26",
+      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23493",
+      "antragsteller": "",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "sitzung_kennung": "FPA/04/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255494&type=do"
+        },
+        {
+          "titel": "Anlage zur Änderung der Satzung Bürgerhaus Ingolstadt",
+          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255493&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Ausschuss für Finanzen und Personal",
+          "top_nr": "18",
+          "oeffentlich": true,
+          "rolle": "Vorberatung",
+          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555&toselect=91368"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:4982#Ö 2",
+      "thema": "bezirk_obb:vorlage:15022",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
+        }
+      ],
+      "klartext_titel": "Bezirk Oberbayern: Haushalt 2027 mit 3,3 Milliarden Euro",
+      "klartext": "Der Bezirk Oberbayern stellt seinen Haushalt für 2027 auf. Der Verwaltungshaushalt, also die laufenden Einnahmen und Ausgaben, soll 3,3108 Mrd. € umfassen, der Vermögenshaushalt für Investitionen 87,52 Mio. €. Der Hebesatz der Bezirksumlage soll 24,35 Prozent betragen; diese Umlage zahlen die Landkreise und kreisfreien Städte in Oberbayern, also auch Ingolstadt. Zum Paket gehören außerdem der Finanzplan bis 2030, der Stellenplan sowie die Wirtschaftspläne für das Kloster Seeon und die Bezirksgüter. Der Bezirksausschuss berät am 3. Dezember vor, der Bezirkstag soll am 10. Dezember 2026 beschließen.",
+      "klartext_titel_leicht": "Der Bezirk plant sein Geld für 2027",
+      "klartext_leicht": "Der Bezirk Oberbayern macht einen Plan für sein Geld. Der Plan heißt Haushalt. Der Haushalt ist für das Jahr 2027. Für die laufenden Ausgaben plant der Bezirk ungefähr 3,3 Milliarden Euro. Für Bau-Projekte und Anschaffungen plant er ungefähr 88 Millionen Euro. Ein großer Teil vom Geld kommt von den Städten und Land-Kreisen. Auch Ingolstadt zahlt Geld an den Bezirk. Der Bezirks-Tag soll am 10. Dezember 2026 entscheiden.",
+      "lebenslage": [
+        "Geld & Soziales"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Wird noch beraten",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Haushaltssatzung 2027 und Haushaltsplan mit Anlagen",
+      "top_nr": "Ö 2",
+      "vorlage": "82/BV/227/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15022",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss",
+      "sitzung_kennung": "BezA/007/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89566&type=do"
+        },
+        {
+          "titel": "1A1 Haushaltssatzung 2027 Entwurf",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89576&type=do"
+        },
+        {
+          "titel": "1A2 Haushaltsplan 2027 Entwurf neu",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89683&type=do"
+        },
+        {
+          "titel": "1A3 Anlagen zum Haushaltsplan 2027",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89733&type=do"
+        },
+        {
+          "titel": "1A4 Bezirksgüter Wirtschaftsplan 2026-27",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89574&type=do"
+        },
+        {
+          "titel": "1A5 Kloster Seeon Wirtschaftsplan 2027",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89575&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "2",
+          "oeffentlich": true,
+          "rolle": "vorberatend nach § 7 Abs. 2 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28283"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:4982#Ö 5",
+      "thema": "bezirk_obb:vorlage:14985",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
+        }
+      ],
+      "klartext_titel": "2.000 Euro Spende für Motivationstraining an Münchner Klinikschule",
+      "klartext": "Die Carl-August-Heckscher-Schule in München unterrichtet Kinder und Jugendliche, die in der Kinder- und Jugendpsychiatrie behandelt werden. Sie soll von der Stiftung Hubert Beck zur Ausbildungsförderung 2.000 € bekommen, zum dritten Mal. Mit dem Geld bezahlt die Schule das Motivations- und Mentaltraining „Kick for Future“ für Oberstufenklassen in der Berufswahlphase. Im Schuljahr 2026/27 sind 16 Trainingsstunden an drei Standorten geplant. Der Bezirk ist Träger der Schule, deshalb soll der Bezirksausschuss am 3. Dezember 2026 über die Annahme der Spende entscheiden.",
+      "klartext_titel_leicht": "Eine Schule bekommt eine Spende",
+      "klartext_leicht": "In München gibt es eine besondere Schule. Dort lernen Kinder und Jugendliche, die in einer Klinik sind. Die Schule gehört zum Bezirk Oberbayern. Eine Stiftung will der Schule 2.000 Euro schenken. Mit dem Geld bezahlt die Schule ein Training. Das Training soll den Jugendlichen Mut machen. Es hilft ihnen bei der Suche nach einem Beruf. Der Bezirk muss erlauben, dass die Schule das Geld annimmt. Ein Ausschuss vom Bezirk soll am 3. Dezember 2026 entscheiden.",
+      "lebenslage": [
+        "Jugend",
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Annahme einer Geldspende an die Carl-August-Heckscher-Schule in München",
+      "top_nr": "Ö 5",
+      "vorlage": "31/BV/213/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14985",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss",
+      "sitzung_kennung": "BezA/007/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89051&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 7 Abs. 1 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28280"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:4982#Ö 6",
+      "thema": "bezirk_obb:vorlage:15049",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
+        }
+      ],
+      "klartext_titel": "2.000 Euro Spende für Info-Bildschirme im Berufsbildungswerk",
+      "klartext": "Das Berufsbildungswerk für junge Menschen mit Hör- und Sprachbehinderung in München-Johanneskirchen soll von der Stiftung Kleine Hilfen 2.000 € bekommen. Das Geld ist für Bildschirme im Eingangsbereich gedacht. Sie sollen Termine, Wegweiser und aktuelle Hinweise anzeigen, etwa zu Prüfungen, zum Tag der offenen Tür oder zu Störungen bei der S-Bahn. Auch die „Gebärde der Woche“ oder neue Mitarbeitende können dort vorgestellt werden. Das System soll 2027 in Betrieb gehen. Der Bezirksausschuss soll am 3. Dezember 2026 über die Annahme der Spende entscheiden.",
+      "klartext_titel_leicht": "Eine Spende für Bildschirme",
+      "klartext_leicht": "In München gibt es ein Berufs-Bildungs-Werk. Dort lernen junge Menschen einen Beruf. Sie können schlecht hören oder schlecht sprechen. Eine Stiftung will dem Haus 2.000 Euro schenken. Mit dem Geld kauft das Haus Bildschirme für den Eingang. Auf den Bildschirmen stehen wichtige Hinweise. Zum Beispiel Termine oder der Weg zu einem Raum. Ein Ausschuss vom Bezirk soll am 3. Dezember 2026 entscheiden.",
+      "lebenslage": [
+        "Jugend",
+        "Arbeit & Beruf"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Annahme einer Spende der Stiftung Kleine Hilfen an das Berufsbildungswerk Förderschwerpunkt Hören und Sprache in München-Johanneskirchen",
+      "top_nr": "Ö 6",
+      "vorlage": "31/BV/247/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15049",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss",
+      "sitzung_kennung": "BezA/007/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89498&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "6",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 7 Abs. 1 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28281"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:4982#Ö 7",
+      "thema": "bezirk_obb:vorlage:15047",
+      "auftritte": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "Ö 9",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
+        }
+      ],
+      "klartext_titel": "Bezirk will Kinderhospiz in Polling fördern und danach keine Hospize mehr",
+      "klartext": "Für den Neubau des Kinderhospizes St. Martin in Polling mit 8 Plätzen schlägt die Verwaltung einen Zuschuss von 75.000 € vor. Möglich wären nach bisheriger Praxis 80.000 €, im Haushalt sind aber nur 75.000 € verfügbar. Über einen zweiten Antrag, die Ausstattung des Oberland Hospizes in Bad Wiessee mit 12 Plätzen, soll noch nicht entschieden werden: Die Sozialverwaltung sieht nach dem Förderbescheid des Freistaats keinen Raum für einen Zuschuss und will erst noch einmal mit der Geschäftsführung sprechen. Künftig soll der Bezirk gar keine Hospize mehr fördern. Der Bayerische Bezirketag hat im Mai 2026 klargestellt, dass die Finanzierung von Hospizen nicht Aufgabe der Bezirke ist; die laufenden Kosten tragen die Krankenkassen. Der Sozial- und Gesundheitsausschuss berät am 26. November, der Bezirksausschuss soll am 3. Dezember 2026 entscheiden.",
+      "klartext_titel_leicht": "Geld für ein Kinder-Hospiz",
+      "klartext_leicht": "Ein Hospiz ist ein Haus für sehr kranke Menschen. Die Menschen dort werden bald sterben. Im Hospiz werden sie gut versorgt. In Polling entsteht ein Hospiz für Kinder. Es hat 8 Plätze. Der Bezirk Oberbayern soll 75.000 Euro für den Bau geben. Ein anderes Hospiz in Bad Wiessee will auch Geld. Darüber entscheidet der Bezirk noch nicht. In Zukunft will der Bezirk kein Geld mehr für Hospize geben. Die Verwaltung sagt: Das ist nicht die Aufgabe vom Bezirk. Ein Ausschuss vom Bezirk soll am 3. Dezember 2026 entscheiden.",
+      "lebenslage": [
+        "Gesundheit & Pflege",
+        "Eltern & Kinder"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Investitionskostenzuschuss zur Errichtung von stationären Hospizplätzen",
+      "top_nr": "Ö 7",
+      "vorlage": "27/BV/245/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15047",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss",
+      "sitzung_kennung": "BezA/007/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89348&type=do"
+        },
+        {
+          "titel": "2012 3 1 Auszug HA-Protokoll",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89349&type=do"
+        },
+        {
+          "titel": "AW Förderung des Projektes 2 Hospize in Polling - Fraktionsinitiative und Investitionskostenförderung",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89350&type=do"
+        },
+        {
+          "titel": "Beschluss Hauptausschuss 20.05.2026",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89351&type=do"
+        },
+        {
+          "titel": "projektkosten kostenberechnung DIN276-081025 Polling",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89352&type=do"
+        },
+        {
+          "titel": "regOBB-bewilligung Polling",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89353&type=do"
+        },
+        {
+          "titel": "Zuwendungsbescheid Oberland Hospiz",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89360&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "9",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 9 Abs. 2 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019&toselect=28268"
+        },
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "7",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 9 Abs. 2 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28278"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:4982#Ö 8",
+      "thema": "bezirk_obb:vorlage:15038",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 8",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
+        }
+      ],
+      "klartext_titel": "Kleines Theater Haar: 55.000 Euro für das Defizit der „Zauberflöte“",
+      "klartext": "Das Kleine Theater Haar hat 2026 Mozarts Oper „Zauberflöte“ als Eigenproduktion mit sechs Aufführungen gezeigt. Die Auslastung lag nach den Ticketverkäufen bei 88 Prozent (Stand 26. Oktober 2026). Geplant war ein Defizit von 27.000 €, nach aktueller Hochrechnung sind es 55.000 €; als einen Grund nennt die Vorlage gestiegene Kosten. Der Bezirk will die 55.000 € zunächst vollständig bereitstellen, damit der Träger des Theaters, das kbo-Sozialpsychiatrische Zentrum, nicht in Zahlungsschwierigkeiten kommt. Die Stadt Haar soll nach der Abrechnung die Hälfte übernehmen. Das Geld kommt aus der Deckungsreserve des Bezirks. Der Bezirksausschuss soll am 3. Dezember 2026 entscheiden.",
+      "klartext_titel_leicht": "Mehr Geld für ein Theater in Haar",
+      "klartext_leicht": "In Haar bei München gibt es ein kleines Theater. Das Theater hat im Jahr 2026 eine Oper gezeigt. Die Oper heißt Zauber-Flöte. Die Oper hat mehr Geld gekostet als geplant. Es fehlen ungefähr 55.000 Euro. Der Bezirk Oberbayern will das Geld zuerst allein bezahlen. Später soll die Stadt Haar die Hälfte zurück-zahlen. Ein Ausschuss vom Bezirk soll am 3. Dezember 2026 entscheiden.",
+      "lebenslage": [
+        "Freizeit & Sport"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [
+        "Kultur & Bildung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Kleines Theater Haar - Genehmigung von Mehrausgaben für 2026",
+      "top_nr": "Ö 8",
+      "vorlage": "30/BV/237/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15038",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss",
+      "sitzung_kennung": "BezA/007/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89206&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "8",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 7 Abs. 3 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28279"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:4982#Ö 9",
+      "thema": "bezirk_obb:vorlage:15058",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 9",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
+        }
+      ],
+      "klartext_titel": "Rechnungsprüfung beim Bezirk kostet 150.000 Euro mehr als geplant",
+      "klartext": "Der Bayerische Kommunale Prüfungsverband prüft seit März 2026 die Haushaltsjahre 2018 bis 2025 des Bezirks Oberbayern. Die Prüfung ist in mehreren Teilbereichen noch nicht abgeschlossen. Im Haushalt 2026 waren dafür 85.000 € eingeplant, die bisher angeforderten Abschlagszahlungen liegen aber schon bei 165.200 €. Die Kämmerei schlägt vor, den Ansatz um 150.000 € auf 235.000 € zu erhöhen. Das Geld soll aus der allgemeinen Deckungsreserve kommen. Der Bezirksausschuss soll am 3. Dezember 2026 entscheiden.",
+      "klartext_titel_leicht": "Die Prüfung vom Bezirk kostet mehr Geld",
+      "klartext_leicht": "Ein Verband prüft, wie der Bezirk Oberbayern mit Geld umgeht. Der Verband prüft die Jahre 2018 bis 2025. Die Prüfung ist noch nicht fertig. Der Bezirk hat dafür 85.000 Euro geplant. Die Prüfung kostet aber mehr. Der Bezirk soll deshalb 150.000 Euro mehr bezahlen. Das Geld kommt aus einer Reserve. Ein Ausschuss vom Bezirk soll am 3. Dezember 2026 entscheiden.",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Genehmigung von Mehrausgaben für die Durchführung der überörtlichen Rechnungsprüfung beim Bezirk Oberbayern",
+      "top_nr": "Ö 9",
+      "vorlage": "82/BV/250/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15058",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss",
+      "sitzung_kennung": "BezA/007/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89528&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "9",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 7 Abs. 3 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28284"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:4982#Ö 10",
+      "thema": "bezirk_obb:vorlage:15059",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 10",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
+        }
+      ],
+      "klartext_titel": "Digitale Verwaltung: Bezirk zahlt 2026 knapp 70.000 statt 3.000 Euro",
+      "klartext": "Der Freistaat, die Gemeinden und die Gemeindeverbände bezahlen gemeinsam technische Lösungen für die digitale Verwaltung, die sogenannten BayernPackages. Für 2026 wurde der Beitrag des Bezirks Oberbayern auf 69.968 € festgesetzt. Eingeplant waren nur 3.000 €, weil der Beitrag im Vorjahr bei 2.834 € lag. Der Betrag wurde im Juni 2026 bereits mit einer Zuweisung des Freistaats verrechnet, er muss aber noch ordnungsgemäß im Haushalt gebucht werden. Der Bezirksausschuss soll deshalb am 3. Dezember 2026 Mehrausgaben von 66.968 € genehmigen; das Geld kommt aus der allgemeinen Deckungsreserve.",
+      "klartext_titel_leicht": "Der Bezirk zahlt mehr für digitale Technik",
+      "klartext_leicht": "Bayern will, dass Ämter mehr über das Internet erledigen. Dafür braucht es Technik. Der Freistaat Bayern, die Städte und die Bezirke bezahlen die Technik zusammen. Der Bezirk Oberbayern hat für das Jahr 2026 mit 3.000 Euro gerechnet. Jetzt sind es ungefähr 70.000 Euro. Das Geld ist schon bezahlt. Der Bezirk muss das noch genehmigen. Ein Ausschuss vom Bezirk soll am 3. Dezember 2026 entscheiden.",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Genehmigung Mehrausgaben auf der HhSt 1.02910.71100.999 Bayern Packages",
+      "top_nr": "Ö 10",
+      "vorlage": "82/BV/251/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15059",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss",
+      "sitzung_kennung": "BezA/007/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89554&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "10",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 7 Abs. 3 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28285"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:4982#Ö 11",
+      "thema": "bezirk_obb:vorlage:15060",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 11",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
+        }
+      ],
+      "klartext_titel": "Schulneubau in Haar: Abrechnung korrigiert, weitere 35.464 Euro nötig",
+      "klartext": "Für den Neubau der Außenstelle der Carl-August-Heckscher-Schule in Haar hatte der Bezirksausschuss im April 2026 schon überplanmäßige Ausgaben von 40.486,01 € genehmigt. Bei dieser ersten Berechnung wurden laut Vorlage die falschen Bezugsgrößen verwendet. Richtig gerechnet stehen Auszahlungen von 1.745.950,01 € einem Haushaltsansatz von 1.670.000 € aus den Jahren 2013 bis 2026 gegenüber. Die Lücke beträgt also 75.950,01 €, und es fehlen noch 35.464 €. Das Geld soll aus dem Haushaltsposten für den Erwerb von Grundstücken kommen. Der Bezirksausschuss soll am 3. Dezember 2026 entscheiden.",
+      "klartext_titel_leicht": "Ein Schul-Bau in Haar kostet mehr",
+      "klartext_leicht": "Der Bezirk Oberbayern hat in Haar eine Schule gebaut. Die Schule ist für Kinder und Jugendliche in einer Klinik. Der Bau hat mehr gekostet als geplant. Der Bezirk hat im April 2026 schon mehr Geld erlaubt. Dabei hat die Verwaltung falsch gerechnet. Jetzt fehlen noch ungefähr 35.000 Euro. Ein Ausschuss vom Bezirk soll am 3. Dezember 2026 entscheiden.",
+      "lebenslage": [
+        "Eltern & Kinder"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [
+        "Schulbau"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Genehmigung überplanmäßiger Ausgaben auf HhSt 2.27020.94070.999 Carl-August-Heckscher Schule Neubau Außenstelle Haar - Korrektur der Abrechnung",
+      "top_nr": "Ö 11",
+      "vorlage": "82/BV/252/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15060",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss",
+      "sitzung_kennung": "BezA/007/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89555&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "11",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 7 Abs. 3 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28286"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:4982#Ö 13",
+      "thema": "bezirk_obb:4982#Ö 13",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 13",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
+        }
+      ],
+      "klartext_titel": "Antrag der Ausschussgemeinschaft LiVolParTie vom 19.10.2026: Geschäftspauschale",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Steht auf der Tagesordnung",
+      "stand_datum": "03.12.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Antrag der Ausschussgemeinschaft LiVolParTie vom 19.10.2026: Geschäftspauschale",
+      "top_nr": "Ö 13",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss",
+      "sitzung_kennung": "BezA/007/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bezirk_obb:4982#Ö 14",
+      "thema": "bezirk_obb:vorlage:15076",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 14",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
+        }
+      ],
+      "klartext_titel": "Klinikum Wasserburg: Bezirk soll für 83,7 Mio. € Fördergeld bürgen",
+      "klartext": "Das kbo-Inn-Salzach-Klinikum in Wasserburg am Inn wird umgebaut. Für den Bauabschnitt 3a, das neue Bauteil C mit Verbindungsbau, hat die Regierung von Oberbayern eine Förderung mit einem Festbetrag von 67,08 Mio. € fachlich gebilligt. Der Freistaat verlangt dafür eine Bürgschaft: Muss die Klinik Fördergeld zurückzahlen und kann das nicht, steht der Bezirk dafür ein. Wegen erwarteter Baukostensteigerungen und eines Zuschlags von 15 Prozent für Zinsen und Kosten beläuft sich die Bürgschaft auf 83.702.141 €. Bisher bürgt der Bezirk für Fördermittel seiner Kliniken mit insgesamt rund 172,2 Mio. €. Der Bezirksausschuss berät am 3. Dezember 2026.",
+      "klartext_titel_leicht": "Der Bezirk bürgt für eine Klinik",
+      "klartext_leicht": "In Wasserburg am Inn gibt es eine Klinik vom Bezirk Oberbayern. Die Klinik baut ein neues Gebäude. Der Freistaat Bayern gibt dafür viel Geld. Der Freistaat will eine Sicherheit. Diese Sicherheit heißt Bürgschaft. Das bedeutet: Vielleicht muss die Klinik das Geld zurück-zahlen. Wenn die Klinik das nicht kann, zahlt der Bezirk. Es geht um ungefähr 84 Millionen Euro. Ein Ausschuss vom Bezirk berät am 3. Dezember 2026.",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Übernahme einer Bürgschaft für die Baumaßnahme „Bauabschnitt 3a der Neustrukturierung (Errichtung Bauteil C mit Verbindungsbau) beim kbo-Inn-Salzach-Klinikum Wasserburg am Inn",
+      "top_nr": "Ö 14",
+      "vorlage": "82/BV/260/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15076",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss",
+      "sitzung_kennung": "BezA/007/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89751&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "14",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 7 Abs. 1 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28310"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:4982#Ö 15",
+      "thema": "bezirk_obb:vorlage:15077",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 15",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
+        }
+      ],
+      "klartext_titel": "Klinikum Wasserburg: weitere Bürgschaft über 69,6 Mio. € für Bauteil D",
+      "klartext": "Auch für den Bauabschnitt 3b am kbo-Inn-Salzach-Klinikum in Wasserburg am Inn, das neue Bauteil D, soll der Bezirk Oberbayern bürgen. Die Regierung von Oberbayern hat hier eine Förderung mit einem Festbetrag von 55,75 Mio. € fachlich gebilligt. Mit erwarteten Baukostensteigerungen und einem Zuschlag von 15 Prozent für Zinsen und Kosten ergibt sich eine Bürgschaft von 69.561.782 €. Der Bezirk steht damit gegenüber dem Freistaat ein, falls die Klinik Fördergeld zurückzahlen muss. Bisher bürgt der Bezirk für Fördermittel seiner Kliniken mit insgesamt rund 172,2 Mio. €. Der Bezirksausschuss berät am 3. Dezember 2026.",
+      "klartext_titel_leicht": "Noch eine Bürgschaft für die Klinik",
+      "klartext_leicht": "Die Klinik in Wasserburg am Inn baut noch ein zweites Gebäude. Auch dafür gibt der Freistaat Bayern viel Geld. Der Bezirk Oberbayern soll wieder eine Bürgschaft geben. Eine Bürgschaft ist eine Sicherheit. Das bedeutet: Vielleicht muss die Klinik das Geld zurück-zahlen. Wenn die Klinik das nicht kann, zahlt der Bezirk. Es geht um ungefähr 70 Millionen Euro. Ein Ausschuss vom Bezirk berät am 3. Dezember 2026.",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Übernahme einer Bürgschaft für die Baumaßnahme „Bauabschnitt 3b der Neustrukturierung (Errichtung Bauteil D)“ beim kbo-Inn-Salzach-Klinikum Wasserburg am Inn",
+      "top_nr": "Ö 15",
+      "vorlage": "82/BV/261/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15077",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss",
+      "sitzung_kennung": "BezA/007/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89752&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "15",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 7 Abs. 1 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28311"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:4982#Ö 16",
+      "thema": "bezirk_obb:vorlage:15056",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 16",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
+        }
+      ],
+      "klartext_titel": "Bezirkstag ändert seine Geschäftsordnung – auch wegen Ingolstadt",
+      "klartext": "Der Bezirkstag von Oberbayern will seine Geschäftsordnung anpassen. Mehrere Regeln zum Krankenhauszweckverband Ingolstadt entfallen: Dessen Satzung sieht seit dem 1. Januar 2026 keine Investitions- und Betriebsumlagen mehr vor, und die psychiatrische Abteilung des Klinikums Ingolstadt ist zum selben Tag an die Kliniken des Bezirks (kbo) übergegangen. Außerdem soll der Bezirkstagspräsident über Bedarf und Vergabe von Aufträgen künftig bis 250.000 € allein entscheiden dürfen, bisher sind es 150.000 €. Die Mitglieder müssen sich nicht mehr selbst in Anwesenheitslisten eintragen, das übernimmt der Sitzungsdienst. Der Bezirksausschuss berät am 3. Dezember vor, der Bezirkstag soll am 10. Dezember 2026 beschließen.",
+      "klartext_titel_leicht": "Der Bezirks-Tag ändert seine Regeln",
+      "klartext_leicht": "Der Bezirks-Tag hat Regeln für seine Arbeit. Diese Regeln heißen Geschäfts-Ordnung. Der Bezirks-Tag will einige Regeln ändern. Ein paar Regeln zum Klinikum Ingolstadt fallen weg. Der Grund: Die Abteilung für seelische Krankheiten gehört seit dem 1. Januar 2026 zu den Kliniken vom Bezirk. Der Präsident vom Bezirks-Tag darf bald über größere Aufträge allein entscheiden. Bisher bis 150.000 Euro. Bald bis 250.000 Euro. Der Bezirks-Tag soll am 10. Dezember 2026 entscheiden.",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Wird noch beraten",
+      "stand_datum": "03.12.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Beratung und Beschluss über die Geschäftsordnung des Bezirkstags von Oberbayern vom 10.12.2026",
+      "top_nr": "Ö 16",
+      "vorlage": "11/BV/248/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15056",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss",
+      "sitzung_kennung": "BezA/007/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89514&type=do"
+        },
+        {
+          "titel": "Anlage 1, Entwurf Geschäftsordnung vom 10.12.2026",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89569&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "16",
+          "oeffentlich": true,
+          "rolle": "vorberatend nach § 7 Abs. 2 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28275"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:4982#Ö 17",
+      "thema": "bezirk_obb:vorlage:14987",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 17",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
+        }
+      ],
+      "klartext_titel": "Kliniken des Bezirks legen Halbjahresbericht 2026 vor",
+      "klartext": "Die Kliniken des Bezirks Oberbayern (kbo) sind ein Kommunalunternehmen des Bezirks. Ihr Verwaltungsrat muss dem Bezirk zweimal im Jahr berichten: über den Verlauf des Geschäftsjahres, wichtige Ereignisse und seine eigene Tätigkeit. Den Bericht für das erste Halbjahr 2026 hat der Verwaltungsrat am 1. Oktober 2026 freigegeben. Der Bezirksausschuss soll ihn am 3. Dezember 2026 zur Kenntnis nehmen; eine Entscheidung ist damit nicht verbunden. Zahlen aus dem Bericht nennt die Vorlage selbst nicht, sie stehen in der Anlage.",
+      "klartext_titel_leicht": "Die Kliniken vom Bezirk berichten",
+      "klartext_leicht": "Der Bezirk Oberbayern hat eigene Kliniken. Die Kliniken müssen dem Bezirk 2 Mal im Jahr berichten. Sie sagen: So ist das Jahr bisher gelaufen. Jetzt gibt es den Bericht für die ersten 6 Monate vom Jahr 2026. Ein Ausschuss vom Bezirk bekommt den Bericht am 3. Dezember 2026. Der Ausschuss entscheidet dabei nichts.",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "03.12.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "kbo-Kliniken des Bezirks Oberbayern-Kommunalunternehmen:Halbjahresbericht 1.HJ 2026",
+      "top_nr": "Ö 17",
+      "vorlage": "83/BV/214/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14987",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss",
+      "sitzung_kennung": "BezA/007/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88717&type=do"
+        },
+        {
+          "titel": "kbo Halbjahresbericht 1. HJ 2026",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88716&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "17",
+          "oeffentlich": true,
+          "rolle": "Kenntnisnahme",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28287"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:4982#Ö 18",
+      "thema": "bezirk_obb:vorlage:15035",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 18",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
+        }
+      ],
+      "klartext_titel": "Bericht über die Klinik-Beteiligungen des Bezirks für 2025",
+      "klartext": "Der Bezirk Oberbayern muss jedes Jahr über Unternehmen berichten, an denen er mit mindestens fünf Prozent beteiligt ist. Gesetzlich vorgeschrieben wäre das bei den Kliniken nur für das Behandlungszentrum Kempfenhausen für Multiple-Sklerose-Kranke. Der Bericht behandelt trotzdem alle vier klinischen Beteiligungen, also auch die Kliniken des Bezirks (kbo), den Krankenhauszweckverband Ingolstadt und das Zentrum für Kinder und Jugendliche Inn-Salzach. Er stellt für das Geschäftsjahr 2025 ausgewählte Finanzkennzahlen und wichtige Vorgänge vor. Bezirksausschuss und Bezirkstag sollen den Bericht zur Kenntnis nehmen.",
+      "klartext_titel_leicht": "Bericht über die Kliniken vom Bezirk",
+      "klartext_leicht": "Der Bezirk Oberbayern ist an 4 Kliniken oder Klinik-Verbänden beteiligt. Das bedeutet: Sie gehören ganz oder zum Teil dem Bezirk. Auch das Klinikum Ingolstadt gehört dazu. Der Bezirk schreibt jedes Jahr einen Bericht darüber. Der Bericht ist für das Jahr 2025. Darin stehen Zahlen zum Geld und wichtige Ereignisse. Ein Ausschuss vom Bezirk bekommt den Bericht am 3. Dezember 2026. Er entscheidet dabei nichts.",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Bekanntgabe",
+      "stand_datum": "03.12.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Beteiligungsbericht Klinische Beteiligungen; Geschäftsjahr 2025",
+      "top_nr": "Ö 18",
+      "vorlage": "83/BV/234/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15035",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss",
+      "sitzung_kennung": "BezA/007/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89186&type=do"
+        },
+        {
+          "titel": "Beteiligungsbericht Klinische Beteiligungen Geschäftsjahr 2025",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89530&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "18",
+          "oeffentlich": true,
+          "rolle": "Kenntnisnahme",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982&toselect=28288"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:4982#Ö 19",
+      "thema": "bezirk_obb:4982#Ö 19",
+      "auftritte": [
+        {
+          "datum": "2026-12-03",
+          "datum_anzeige": "03.12.2026",
+          "gremium": "Bezirksausschuss",
+          "top_nr": "Ö 19",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
+        }
+      ],
+      "klartext_titel": "Bekanntgaben und Sonstiges",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Steht auf der Tagesordnung",
+      "stand_datum": "03.12.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Bekanntgaben und Sonstiges",
+      "top_nr": "Ö 19",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Bezirksausschuss",
+      "sitzung_kennung": "BezA/007/2026",
+      "datum": "2026-12-03",
+      "datum_anzeige": "03.12.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982",
+      "dokumente": [],
+      "beratungsweg": []
+    },
     {
       "ref": "stadt:13552#Ö 7",
       "thema": "stadt:vorlage:23448",
@@ -625,6 +2955,687 @@
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13553&toselect=91340"
         }
       ]
+    },
+    {
+      "ref": "bezirk_obb:5019#Ö 2",
+      "thema": "bezirk_obb:5019#Ö 2",
+      "auftritte": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "Ö 2",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019"
+        }
+      ],
+      "klartext_titel": "Vertretung des Lebenshilfe Landesverbands Bayern e. V. als Sachverständiger im Sozial- und …",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Steht auf der Tagesordnung",
+      "stand_datum": "26.11.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Vertretung des Lebenshilfe Landesverbands Bayern e. V. als Sachverständiger im Sozial- und Gesundheitsausschuss des Bezirk Oberbayern",
+      "top_nr": "Ö 2",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Sozial- und Gesundheitsausschuss",
+      "sitzung_kennung": "SozGA/003/2026",
+      "datum": "2026-11-26",
+      "datum_anzeige": "26.11.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bezirk_obb:5019#Ö 3",
+      "thema": "bezirk_obb:5019#Ö 3",
+      "auftritte": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "Ö 3",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019"
+        }
+      ],
+      "klartext_titel": "Vertretung des Caritasverbands der Erzdiözese München und Freising e.V.",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Steht auf der Tagesordnung",
+      "stand_datum": "26.11.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Vertretung des Caritasverbands der Erzdiözese München und Freising e.V.",
+      "top_nr": "Ö 3",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Sozial- und Gesundheitsausschuss",
+      "sitzung_kennung": "SozGA/003/2026",
+      "datum": "2026-11-26",
+      "datum_anzeige": "26.11.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bezirk_obb:5019#Ö 4",
+      "thema": "bezirk_obb:vorlage:15000",
+      "auftritte": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "Ö 4",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019"
+        }
+      ],
+      "klartext_titel": "Wohnen in Gastfamilien: Bezirk will Regeln und Förderung überarbeiten",
+      "klartext": "Beim Betreuten Wohnen in Familien leben erwachsene Menschen mit Behinderung bei einer Gastfamilie, ein Fachteam begleitet beide Seiten. Die Zahl der Plätze wächst seit 2019, von 2022 bis 2024 aber nur noch um 5,3 Prozent nach gut 15 Prozent in den drei Jahren davor. Laut Vorlage ist es schwer, Gastfamilien zu halten und neue zu finden; Anfragen von Interessierten können oft nicht bedient werden. Als ein Grund gilt das Betreuungsgeld von 650 € im Monat, das seit 2021 unverändert ist. Auch die Dienste halten ihre Pauschalen für zu niedrig. Der Sozial- und Gesundheitsausschuss soll am 26. November 2026 den Bericht zur Kenntnis nehmen und die Verwaltung beauftragen, Förderrichtlinie und Leistungsbeschreibung zu überarbeiten. Neue Beträge stehen noch nicht fest.",
+      "klartext_titel_leicht": "Menschen mit Behinderung wohnen bei Gast-Familien",
+      "klartext_leicht": "Manche Menschen mit Behinderung wohnen bei einer Gast-Familie. Fach-Leute helfen dem Gast und der Familie. Der Bezirk Oberbayern bezahlt das. Die Gast-Familie bekommt jeden Monat 650 Euro für die Betreuung. Dieser Betrag ist seit dem Jahr 2021 gleich. Es gibt zu wenige Gast-Familien. Viele Menschen fragen nach einem Platz und bekommen keinen. Der Bezirk will deshalb die Regeln ändern. Die Verwaltung soll neue Regeln vorschlagen. Ein Ausschuss vom Bezirk berät am 26. November 2026.",
+      "lebenslage": [
+        "Gesundheit & Pflege",
+        "Wohnen & Miete",
+        "Geld & Soziales"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "26.11.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Betreutes Wohnen in Familien als pauschalfinanziertes Leistungsangebot – Monitoring und weiteres Vorgehen",
+      "top_nr": "Ö 4",
+      "vorlage": "22/BV/221/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15000",
+      "antragsteller": "",
+      "gremium": "Sozial- und Gesundheitsausschuss",
+      "sitzung_kennung": "SozGA/003/2026",
+      "datum": "2026-11-26",
+      "datum_anzeige": "26.11.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88813&type=do"
+        },
+        {
+          "titel": "Anlage 1 BWF Durchschnitt",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88805&type=do"
+        },
+        {
+          "titel": "Anlage 2 BWF Beschlussvorlage v. 16.02.2023",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88806&type=do"
+        },
+        {
+          "titel": "Anlage 3 Überblick - Entwicklung BWF 2019 - 2021",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88807&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "4",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 9 Abs. 2 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019&toselect=28262"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:5019#Ö 5",
+      "thema": "bezirk_obb:vorlage:15034",
+      "auftritte": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "Ö 5",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019"
+        }
+      ],
+      "klartext_titel": "Sozialpsychiatrische Dienste: neue Leistungsbeschreibung ab 2027",
+      "klartext": "Sozialpsychiatrische Dienste beraten Menschen mit psychischen Erkrankungen und ihre Angehörigen. Was diese Dienste leisten und wie sie arbeiten, regelt eine bayernweite Rahmenleistungsbeschreibung, zuletzt überarbeitet 2016. Die Neufassung nimmt unter anderem digitale Beratung auf, den Einsatz von Genesungsbegleiterinnen und -begleitern und von Studierenden ab dem vierten Semester sowie die Pflicht zu einem Gewaltschutzkonzept und zur Meldung besonderer Vorkommnisse. Auch die Berechnung der Jahresarbeitszeit wurde angepasst. Für die Finanzierung der Dienste in Oberbayern ist das laut Vorlage kostenneutral. Der Sozial- und Gesundheitsausschuss soll am 26. November 2026 zustimmen, gelten soll die Neufassung ab 1. Januar 2027.",
+      "klartext_titel_leicht": "Neue Regeln für Beratung bei seelischen Krankheiten",
+      "klartext_leicht": "Es gibt Beratungs-Stellen für Menschen mit seelischen Krankheiten. Sie heißen Sozial-psychiatrische Dienste. Der Bezirk Oberbayern bezahlt diese Stellen. Für die Arbeit dort gibt es Regeln. Die Regeln sind aus dem Jahr 2016. Jetzt gibt es neue Regeln. Zum Beispiel: Beratung geht auch über das Internet. Menschen, die selbst seelisch krank waren, dürfen mithelfen. Jede Stelle braucht einen Plan zum Schutz vor Gewalt. Die neuen Regeln kosten nicht mehr Geld. Ein Ausschuss vom Bezirk soll am 26. November 2026 entscheiden.",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "26.11.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Überarbeitung der bestehenden Rahmenleistungsbeschreibung für die sozialpsychiatrischen Dienste in Bayern (hier: Bezirk Oberbayern) vom 13.05.2016 in der Fassung vom 19. August 2026 mit Anwendung ab 01.01.2027",
+      "top_nr": "Ö 5",
+      "vorlage": "22/BV/233/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15034",
+      "antragsteller": "",
+      "gremium": "Sozial- und Gesundheitsausschuss",
+      "sitzung_kennung": "SozGA/003/2026",
+      "datum": "2026-11-26",
+      "datum_anzeige": "26.11.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89362&type=do"
+        },
+        {
+          "titel": "26-10-22 bayerische RLB final Beschluss HA 22.10.26",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89361&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "5",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 9 Abs. 2 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019&toselect=28263"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:5019#Ö 6",
+      "thema": "bezirk_obb:vorlage:14964",
+      "auftritte": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "Ö 6",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019"
+        }
+      ],
+      "klartext_titel": "Mobilitätshilfe für Menschen mit Behinderung soll um 7 Prozent steigen",
+      "klartext": "Menschen, die wegen ihrer Behinderung Bus und Bahn nicht nutzen können, bekommen vom Bezirk Oberbayern eine monatliche Geldpauschale für Fahrten in der Freizeit, etwa mit Taxi oder Behindertenfahrdienst. Die Verwaltung schlägt vor, die Pauschalen zum 1. Januar 2027 um 7 Prozent zu erhöhen. Der Sockelbetrag stiege von 143 auf 153 €, der Betrag in vollstationären Wohnformen von 268 auf 287 € und der Höchstbetrag von 403 auf 431 €. Grundlage ist eine Preisermittlung: Taxitarife stiegen seit Januar 2026 im Schnitt um 3,94 Prozent, Behindertenfahrdienste um 7,44 Prozent, dazu kommt ein Rückstand aus 2025. Betroffen sind etwa 3.000 Fälle, die Mehrkosten liegen bei rund 402.500 € im Jahr. Der Sozial- und Gesundheitsausschuss soll am 26. November 2026 entscheiden; 2028 sollen die Preise erneut geprüft werden.",
+      "klartext_titel_leicht": "Mehr Geld für Fahrten bei Behinderung",
+      "klartext_leicht": "Manche Menschen mit Behinderung können nicht mit Bus oder Bahn fahren. Sie brauchen zum Beispiel ein Taxi. Der Bezirk Oberbayern gibt ihnen dafür jeden Monat Geld. Dieses Geld heißt Mobilitäts-Hilfe. Taxis und Fahr-Dienste sind teurer geworden. Deshalb soll es ab dem 1. Januar 2027 mehr Geld geben. Der kleinste Betrag steigt von 143 Euro auf 153 Euro im Monat. Der größte Betrag steigt von 403 Euro auf 431 Euro im Monat. Ungefähr 3.000 Menschen bekommen diese Hilfe. Ein Ausschuss vom Bezirk soll am 26. November 2026 entscheiden.",
+      "lebenslage": [
+        "Gesundheit & Pflege",
+        "Unterwegs",
+        "Geld & Soziales"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [
+        "Gebühren & Preise"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "26.11.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Mobilitätshilfe für Menschen mit Behinderung in Oberbayern - Kostenermittlung",
+      "top_nr": "Ö 6",
+      "vorlage": "23/BV/194/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14964",
+      "antragsteller": "",
+      "gremium": "Sozial- und Gesundheitsausschuss",
+      "sitzung_kennung": "SozGA/003/2026",
+      "datum": "2026-11-26",
+      "datum_anzeige": "26.11.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=88782&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "6",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 9 Abs. 2 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019&toselect=28265"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:5019#Ö 7",
+      "thema": "bezirk_obb:vorlage:15043",
+      "auftritte": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "Ö 7",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019"
+        }
+      ],
+      "klartext_titel": "Bis zu 3.000 Euro je Beratungsdienst für digitale Beratung",
+      "klartext": "Die bayerischen Bezirke führen seit 2023 unter dem Namen „DigiSpDi“ eine digitale Beratung bei den Sozialpsychiatrischen Diensten ein, als Ergänzung zur Beratung vor Ort. Damit die Dienste die nötige Technik anschaffen können, soll jeder teilnehmende Dienst einmalig bis zu 3.000 € „Anschlusskosten“ abrechnen dürfen. Das gilt auch für die fünf eigenständigen Gerontopsychiatrischen Dienste in Oberbayern, vier in München und einen in Waldkraiburg; sie beraten ältere Menschen mit psychischen Erkrankungen. Bei 32 Sozialpsychiatrischen und 5 Gerontopsychiatrischen Diensten rechnet die Verwaltung mit einmalig bis zu 111.000 €. Der Sozial- und Gesundheitsausschuss soll am 26. November 2026 die beiden geänderten Förderrichtlinien beschließen, gelten sollen sie ab 1. Januar 2027.",
+      "klartext_titel_leicht": "Geld für Beratung über das Internet",
+      "klartext_leicht": "Es gibt Beratungs-Stellen für Menschen mit seelischen Krankheiten. Der Bezirk Oberbayern bezahlt diese Stellen. Bald beraten die Stellen auch über das Internet. Dafür brauchen sie Technik. Jede Stelle soll dafür 1 Mal bis zu 3.000 Euro bekommen. In Oberbayern gibt es 37 solche Stellen. Zusammen kostet das höchstens 111.000 Euro. Ein Ausschuss vom Bezirk soll am 26. November 2026 entscheiden.",
+      "lebenslage": [
+        "Gesundheit & Pflege",
+        "Senior:innen"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [
+        "Satzung & Regeln"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "26.11.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Anpassung der „Richtlinie des Bezirks Oberbayern zur Förderung der Sozialpsychiatrischen Dienste“ und der „Richtlinie zur Förderung Gerontopsychiatrischer Dienste sowie gerontopsychiatrischer Fachkräfte an Sozialpsychiatrischen Diensten“",
+      "top_nr": "Ö 7",
+      "vorlage": "27/BV/242/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15043",
+      "antragsteller": "",
+      "gremium": "Sozial- und Gesundheitsausschuss",
+      "sitzung_kennung": "SozGA/003/2026",
+      "datum": "2026-11-26",
+      "datum_anzeige": "26.11.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89288&type=do"
+        },
+        {
+          "titel": "Anlage1 RahmenkoopV DigiSpDi",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89290&type=do"
+        },
+        {
+          "titel": "GpDi-Richtlinie-FINAL-20261026",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89291&type=do"
+        },
+        {
+          "titel": "Kooperationsvereinbarung DigiSpDi zur Ausschreibung technisch Platform 03.07.2025",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89292&type=do"
+        },
+        {
+          "titel": "RahmenkoopV DigiSpDi 15.01.2026",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89293&type=do"
+        },
+        {
+          "titel": "SPDi-Richtlinie-FINAL-20261026",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89294&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "7",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 9 Abs. 2 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019&toselect=28266"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:5019#Ö 8",
+      "thema": "bezirk_obb:vorlage:15044",
+      "auftritte": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "Ö 8",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019"
+        }
+      ],
+      "klartext_titel": "Münchner Kontaktladen L43: mehr Geld für den Sicherheitsdienst",
+      "klartext": "Der Kontaktladen L43 in München ist eine Anlaufstelle der Suchthilfe, getragen vom Verein Prop. Seit 2019 fördert der Bezirk Oberbayern dort zusätzlich einen Sicherheitsdienst, seit 2024 mit 87.800 € im Jahr; die Stadt München gibt 43.300 €. Die Gesamtkosten sind laut Antrag auf rund 152.000 € im Jahr 2025 gestiegen, für 2026 sind 158.000 € geplant. Prop beantragt deshalb 110.600 € vom Bezirk. Einen ähnlichen Antrag hatte der Bezirk 2025 mit Blick auf die Haushaltslage abgelehnt. Jetzt schlägt die Verwaltung als Kompromiss höchstens 100.000 € jährlich ab 2027 vor. Der Sozial- und Gesundheitsausschuss soll am 26. November 2026 entscheiden.",
+      "klartext_titel_leicht": "Mehr Geld für Sicherheit in einem Kontakt-Laden",
+      "klartext_leicht": "In München gibt es den Kontakt-Laden L43. Dorthin können Menschen mit einer Sucht kommen. Sie bekommen dort Hilfe. Im Kontakt-Laden arbeitet auch ein Sicherheits-Dienst. Der Bezirk Oberbayern bezahlt einen Teil davon. Bisher sind es ungefähr 88.000 Euro im Jahr. Der Sicherheits-Dienst ist teurer geworden. Der Verein vom Kontakt-Laden will deshalb ungefähr 111.000 Euro. Die Verwaltung schlägt 100.000 Euro im Jahr vor. Ein Ausschuss vom Bezirk soll am 26. November 2026 entscheiden.",
+      "lebenslage": [
+        "Gesundheit & Pflege",
+        "Geld & Soziales"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [
+        "Sicherheit"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "26.11.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Antrag auf Erhöhung der Förderung des Sicherheitsdienstes für den Kontaktladen L43, Prop e.V.",
+      "top_nr": "Ö 8",
+      "vorlage": "27/BV/243/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15044",
+      "antragsteller": "",
+      "gremium": "Sozial- und Gesundheitsausschuss",
+      "sitzung_kennung": "SozGA/003/2026",
+      "datum": "2026-11-26",
+      "datum_anzeige": "26.11.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89300&type=do"
+        },
+        {
+          "titel": "2026-05-27 Antrag Erhöhung SiDi Prop",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89301&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "8",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 9 Abs. 2 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019&toselect=28267"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:5019#Ö 10",
+      "thema": "bezirk_obb:5019#Ö 10",
+      "auftritte": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "Ö 10",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019"
+        }
+      ],
+      "klartext_titel": "Antrag der Ausschussgemeinschaft ÖDP/BP/dieBasis vom 07.05.2026: Schaffung einer Modellregion für …",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Steht auf der Tagesordnung",
+      "stand_datum": "26.11.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Antrag der Ausschussgemeinschaft ÖDP/BP/dieBasis vom 07.05.2026: Schaffung einer Modellregion für sozialraumorientierte Eingliederungshilfe",
+      "top_nr": "Ö 10",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Sozial- und Gesundheitsausschuss",
+      "sitzung_kennung": "SozGA/003/2026",
+      "datum": "2026-11-26",
+      "datum_anzeige": "26.11.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019",
+      "dokumente": [],
+      "beratungsweg": []
+    },
+    {
+      "ref": "bezirk_obb:5019#Ö 11",
+      "thema": "bezirk_obb:vorlage:15067",
+      "auftritte": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "Ö 11",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019"
+        }
+      ],
+      "klartext_titel": "Antrag von CSU, SPD und FW: feste Budgets für Einrichtungen prüfen",
+      "klartext": "CSU, SPD und Freie Wähler im Bezirkstag wollen prüfen lassen, ob Einrichtungen der Eingliederungshilfe für Menschen mit Behinderung künftig ein festes Budget bekommen können. Bisher wird einzeln abgerechnet, was laut Vorlage für Einrichtungen und Bezirk viel Verwaltungsaufwand bedeutet. Die Verwaltung empfiehlt, dem Antrag zuzustimmen und ein Projekt vorzubereiten, das ergebnisoffen untersucht, ob solche Budgets rechtlich zulässig sind und tatsächlich Vorteile bringen. Die individuellen Ansprüche der Betroffenen müssen dabei erhalten bleiben. Wohlfahrtsverbände, private Anbieter und Einrichtungen sollen mitarbeiten. Die Verwaltung weist darauf hin, dass das Projekt mit dem vorhandenen Personal und Geld nicht ohne Weiteres zu leisten ist; Kosten nennt sie noch nicht. Ob es einen Modellversuch gibt, soll erst später entschieden werden. Der Sozial- und Gesundheitsausschuss berät am 26. November 2026.",
+      "klartext_titel_leicht": "Parteien wollen feste Geld-Beträge für Einrichtungen prüfen",
+      "klartext_leicht": "Der Bezirk Oberbayern bezahlt Hilfen für Menschen mit Behinderung. Viele Einrichtungen bieten diese Hilfen an. Bisher rechnen die Einrichtungen jede Hilfe einzeln ab. Das macht viel Arbeit. 3 Parteien haben einen Antrag gestellt: CSU, SPD und Freie Wähler. Sie wollen prüfen: Kann eine Einrichtung einen festen Geld-Betrag bekommen? Die Verwaltung soll dazu ein Projekt vorbereiten. Die Verwaltung sagt: Dafür braucht sie mehr Personal und Geld. Die Menschen mit Behinderung sollen weiter die Hilfe bekommen, die sie brauchen. Ein Ausschuss vom Bezirk berät am 26. November 2026.",
+      "lebenslage": [
+        "Gesundheit & Pflege",
+        "Geld & Soziales"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Entscheidung geplant",
+      "stand_datum": "26.11.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Gemeinsamer Antrag der CSU, SPD FW vom Oktober 2026: Einrichtungsbudget",
+      "top_nr": "Ö 11",
+      "vorlage": "22/AN/021/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15067",
+      "antragsteller": "",
+      "gremium": "Sozial- und Gesundheitsausschuss",
+      "sitzung_kennung": "SozGA/003/2026",
+      "datum": "2026-11-26",
+      "datum_anzeige": "26.11.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89662&type=do"
+        },
+        {
+          "titel": "ANTRAG Einrichtungsbudget",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89730&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "11",
+          "oeffentlich": true,
+          "rolle": "beschließend nach § 9 Abs. 2 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019&toselect=28303"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:5019#Ö 12",
+      "thema": "bezirk_obb:vorlage:15048",
+      "auftritte": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "Ö 12",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019"
+        }
+      ],
+      "klartext_titel": "Bezirk Oberbayern: Sozialausgaben steigen 2027 auf knapp 3,1 Milliarden Euro",
+      "klartext": "Der Sozial- und Gesundheitsausschuss berät am 26. November 2026 den größten Teil des Bezirkshaushalts 2027 vor: den Einzelplan Soziales und Jugend. Geplant sind Ausgaben von 3,07 Mrd. €, das sind 171,1 Mio. € oder 5,9 Prozent mehr als für 2026 erwartet. Dem stehen Einnahmen von 298,2 Mio. € gegenüber. Der Zuschussbedarf steigt um 173,7 Mio. € auf 2,77 Mrd. €, ein Plus von 6,7 Prozent; das ist laut Vorlage weniger als in den Jahren 2023 bis 2025. Als Gründe nennt sie weiter steigende Vergütungen für die Anbieter und mehr Menschen, die Leistungen beziehen. Allein bei der Hilfe zur Pflege wächst der Zuschussbedarf um 45,1 Mio. € auf 487,7 Mio. €. Über den gesamten Haushalt soll der Bezirkstag am 10. Dezember 2026 entscheiden.",
+      "klartext_titel_leicht": "Der Bezirk gibt mehr Geld für Soziales aus",
+      "klartext_leicht": "Der Bezirk Oberbayern bezahlt viele Hilfen. Zum Beispiel für Menschen mit Behinderung. Und für Menschen, die Pflege brauchen. Im Jahr 2027 plant der Bezirk dafür ungefähr 3,1 Milliarden Euro. Das sind ungefähr 171 Millionen Euro mehr als im Jahr 2026. Die Gründe: Die Hilfen sind teurer geworden. Und mehr Menschen brauchen Hilfe. Ein Ausschuss vom Bezirk berät am 26. November 2026. Der Bezirks-Tag soll am 10. Dezember 2026 über den ganzen Haushalt entscheiden.",
+      "lebenslage": [
+        "Geld & Soziales",
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [
+        "Konzept & Planung"
+      ],
+      "ort": [],
+      "entwurf": false,
+      "duenn": false,
+      "stand": "Wird noch beraten",
+      "stand_datum": "26.11.2026",
+      "status": "Noch offen",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Vorberatung des Bezirkshaushalts 2027: Einzelplan 4 - Soziales und Jugend",
+      "top_nr": "Ö 12",
+      "vorlage": "82/BV/246/2026",
+      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=15048",
+      "antragsteller": "",
+      "gremium": "Sozial- und Gesundheitsausschuss",
+      "sitzung_kennung": "SozGA/003/2026",
+      "datum": "2026-11-26",
+      "datum_anzeige": "26.11.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019",
+      "dokumente": [
+        {
+          "titel": "Vorlage",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89374&type=do"
+        },
+        {
+          "titel": "Anlage Produktplan 2027",
+          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89359&type=do"
+        }
+      ],
+      "beratungsweg": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "12",
+          "oeffentlich": true,
+          "rolle": "vorberatend nach § 9 Abs. 1 GeschO",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019&toselect=28269"
+        }
+      ]
+    },
+    {
+      "ref": "bezirk_obb:5019#Ö 13",
+      "thema": "bezirk_obb:5019#Ö 13",
+      "auftritte": [
+        {
+          "datum": "2026-11-26",
+          "datum_anzeige": "26.11.2026",
+          "gremium": "Sozial- und Gesundheitsausschuss",
+          "top_nr": "Ö 13",
+          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019"
+        }
+      ],
+      "klartext_titel": "Bekanntgaben und Sonstiges",
+      "klartext": "",
+      "klartext_titel_leicht": "",
+      "klartext_leicht": "",
+      "lebenslage": [
+        "Gesundheit & Pflege"
+      ],
+      "bezirk": [],
+      "ebene": [
+        "Bezirk Oberbayern"
+      ],
+      "anlass": [],
+      "ort": [],
+      "entwurf": true,
+      "duenn": true,
+      "stand": "Steht auf der Tagesordnung",
+      "stand_datum": "26.11.2026",
+      "status": "Nur zur Information",
+      "niederschrift_url": "",
+      "beschluss": null,
+      "quelle": "bezirk_obb",
+      "amtlicher_titel": "Bekanntgaben und Sonstiges",
+      "top_nr": "Ö 13",
+      "vorlage": "",
+      "vorlage_url": "",
+      "antragsteller": "",
+      "gremium": "Sozial- und Gesundheitsausschuss",
+      "sitzung_kennung": "SozGA/003/2026",
+      "datum": "2026-11-26",
+      "datum_anzeige": "26.11.2026",
+      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019",
+      "dokumente": [],
+      "beratungsweg": []
     },
     {
       "ref": "stadt:13774#Ö 3",
@@ -1110,168 +4121,6 @@
       "beratungsweg": []
     },
     {
-      "ref": "stadt:13552#Ö 3",
-      "thema": "stadt:vorlage:23423",
-      "auftritte": [
-        {
-          "datum": "2026-11-24",
-          "datum_anzeige": "24.11.2026",
-          "gremium": "Ausschuss für Kultur und Bildung",
-          "top_nr": "Ö 3",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552"
-        }
-      ],
-      "klartext_titel": "Museen: Satzungen sollen wegfallen, Eintrittspreise bleiben vorerst gleich",
-      "klartext": "Die Stadt will die Gebührensatzung und die Benutzungssatzung ihrer Museen aufheben und durch Allgemeine Geschäftsbedingungen ersetzen. Grund ist das neue Umsatzsteuerrecht für Kommunen (§ 2b Umsatzsteuergesetz): Mit den bisherigen Satzungen könnten die Museen laut Vorlage keine Vorsteuer mehr abziehen. Der Museumsbesuch läuft künftig auf privatrechtlicher Grundlage, der Eintritt ist dann ein Entgelt statt einer Gebühr. An den Eintrittspreisen ändert sich dadurch nichts. Eine Anpassung der Preise ist im Lauf des Jahres 2027 vorgesehen, wenn das MKKD eröffnet. Der Ausschuss für Kultur und Bildung berät am 24. November, der Stadtrat soll am 10. Dezember 2026 entscheiden.",
-      "klartext_titel_leicht": "Neue Regeln für die Museen von der Stadt",
-      "klartext_leicht": "Die Stadt hat mehrere Museen. Für die Museen gibt es Regeln von der Stadt. Diese Regeln heißen Satzung. Die Stadt will die Satzungen abschaffen. Dafür gibt es neue Regeln für den Besuch. Der Grund ist ein neues Steuer-Gesetz. Der Eintritt kostet erst einmal gleich viel. Im Jahr 2027 will die Stadt die Preise ändern. Der Stadt-Rat soll am 10. Dezember 2026 entscheiden.",
-      "lebenslage": [
-        "Freizeit & Sport"
-      ],
-      "bezirk": [
-        "stadtweit"
-      ],
-      "ebene": [
-        "Stadtrat & Ausschüsse"
-      ],
-      "anlass": [
-        "Gebühren & Preise",
-        "Satzung & Regeln",
-        "Kultur & Bildung"
-      ],
-      "ort": [],
-      "entwurf": false,
-      "duenn": false,
-      "stand": "Wird noch beraten",
-      "stand_datum": "24.11.2026",
-      "status": "Noch offen",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "stadt",
-      "amtlicher_titel": "Aufhebung der Satzung über die Gebühren für die Benutzung der Museen der Stadt Ingolstadt (Museumsgebührensatzung) und Aufhebung der Satzung über die Benutzung der Museen der Stadt Ingolstadt (Museumssatzung) — Neufassung der Allgemeinen Geschäftsbedingungen für die Nutzung der Museen der Stadt Ingolstadt",
-      "top_nr": "Ö 3",
-      "vorlage": "V0666/26",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23423",
-      "antragsteller": "",
-      "gremium": "Ausschuss für Kultur und Bildung",
-      "sitzung_kennung": "KBA/04/2026",
-      "datum": "2026-11-24",
-      "datum_anzeige": "24.11.2026",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552",
-      "dokumente": [
-        {
-          "titel": "Vorlage",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254605&type=do"
-        },
-        {
-          "titel": "Anlage 1 - Aufhebungssatzung Gebühren Museen",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254612&type=do"
-        },
-        {
-          "titel": "Anlage 2 - Aufhebungssatzung Benutzung Museen",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254613&type=do"
-        },
-        {
-          "titel": "Anlage 3 - AGB Museen",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254614&type=do"
-        }
-      ],
-      "beratungsweg": [
-        {
-          "datum": "2026-11-24",
-          "datum_anzeige": "24.11.2026",
-          "gremium": "Ausschuss für Kultur und Bildung",
-          "top_nr": "3",
-          "oeffentlich": true,
-          "rolle": "Vorberatung",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552&toselect=91263"
-        }
-      ]
-    },
-    {
-      "ref": "stadt:13552#Ö 4",
-      "thema": "stadt:vorlage:23008",
-      "auftritte": [
-        {
-          "datum": "2026-11-24",
-          "datum_anzeige": "24.11.2026",
-          "gremium": "Ausschuss für Kultur und Bildung",
-          "top_nr": "Ö 4",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552"
-        }
-      ],
-      "klartext_titel": "Stadtbücherei: Säumnisgebühren sollen steigen, Grundgebühren nicht",
-      "klartext": "Die Stadt will die Benutzungs- und Gebührensatzungen der Stadtbücherei und der Schulmedienzentrale ändern. Angehoben werden die vermeidbaren Gebühren, etwa für verspätete Rückgabe. Die Grundgebühren für die Benutzung steigen nicht, die Sozialermäßigungen bleiben, und Kinder- und Jugendmedien bleiben für Minderjährige kostenlos. Neu kostet es etwas, ohne Leseausweis auszuleihen oder Medien an einem anderen Standort zurückzugeben als dem der Ausleihe. Die Stadt rechnet mit Mehreinnahmen von etwa 10.000 Euro im Jahr. Bei der Schulmedienzentrale steigt die Ausleihgebühr für Klassensätze für Schulen, deren Sachaufwand nicht die Stadt trägt. Die Änderungen sollen am 1. Februar 2027 gelten; der Stadtrat soll am 10. Dezember 2026 entscheiden.",
-      "klartext_titel_leicht": "Die Stadt-Bücherei ändert einige Gebühren",
-      "klartext_leicht": "In der Stadt-Bücherei können Sie Bücher ausleihen. Wer ein Buch zu spät zurückbringt, zahlt eine Gebühr. Diese Gebühr soll höher werden. Die normale Gebühr für die Bücherei bleibt gleich. Bücher für Kinder und Jugendliche bleiben kostenlos. Neu ist: Ausleihen ohne Lese-Ausweis kostet Geld. Auch die Rückgabe an einem anderen Ort kostet dann Geld. Die Stadt rechnet mit ungefähr 10.000 Euro mehr im Jahr. Die neuen Regeln sollen ab dem 1. Februar 2027 gelten.",
-      "lebenslage": [
-        "Freizeit & Sport"
-      ],
-      "bezirk": [
-        "stadtweit"
-      ],
-      "ebene": [
-        "Stadtrat & Ausschüsse"
-      ],
-      "anlass": [
-        "Gebühren & Preise",
-        "Satzung & Regeln",
-        "Kultur & Bildung"
-      ],
-      "ort": [],
-      "entwurf": false,
-      "duenn": false,
-      "stand": "Wird noch beraten",
-      "stand_datum": "24.11.2026",
-      "status": "Noch offen",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "stadt",
-      "amtlicher_titel": "Änderung der Benutzungs- und Gebührensatzung der Stadtbücherei Ingolstadt — Änderung der Benutzungs- und Gebührensatzung der Schulmedienzentrale",
-      "top_nr": "Ö 4",
-      "vorlage": "V0258/26",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23008",
-      "antragsteller": "",
-      "gremium": "Ausschuss für Kultur und Bildung",
-      "sitzung_kennung": "KBA/04/2026",
-      "datum": "2026-11-24",
-      "datum_anzeige": "24.11.2026",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552",
-      "dokumente": [
-        {
-          "titel": "Vorlage",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=249857&type=do"
-        },
-        {
-          "titel": "Satzung Anlage 1 - Änderung der Benutzungssatzung Stadtbücherei Stand 06.10.2026",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254191&type=do"
-        },
-        {
-          "titel": "Satzung Anlage 2 - Änderung der Gebührensatzung Stadtbücherei Stand 06.10.2026",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254190&type=do"
-        },
-        {
-          "titel": "Satzung Anlage 3 - Änderung der Benutzungssatzung SMZ Stand 06.10.2026",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254189&type=do"
-        },
-        {
-          "titel": "Satzung Anlage 4 - Änderung der Gebührensatzung SMZ Stand 06.10.2026",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254188&type=do"
-        }
-      ],
-      "beratungsweg": [
-        {
-          "datum": "2026-11-24",
-          "datum_anzeige": "24.11.2026",
-          "gremium": "Ausschuss für Kultur und Bildung",
-          "top_nr": "4",
-          "oeffentlich": true,
-          "rolle": "Vorberatung",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552&toselect=91260"
-        }
-      ]
-    },
-    {
       "ref": "stadt:13552#Ö4",
       "thema": "stadt:vorlage:23477",
       "auftritte": [
@@ -1526,55 +4375,6 @@
       "beratungsweg": []
     },
     {
-      "ref": "stadt:13552#Ö 8",
-      "thema": "stadt:13552#Ö 8",
-      "auftritte": [
-        {
-          "datum": "2026-11-24",
-          "datum_anzeige": "24.11.2026",
-          "gremium": "Ausschuss für Kultur und Bildung",
-          "top_nr": "Ö 8",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552"
-        }
-      ],
-      "klartext_titel": "Kammerphilharmonie Ingolstadt GmbH",
-      "klartext": "",
-      "klartext_titel_leicht": "",
-      "klartext_leicht": "",
-      "lebenslage": [
-        "Gewerbe & Gastro",
-        "Freizeit & Sport"
-      ],
-      "bezirk": [],
-      "ebene": [
-        "Stadtrat & Ausschüsse"
-      ],
-      "anlass": [
-        "Kultur & Bildung"
-      ],
-      "ort": [],
-      "entwurf": true,
-      "duenn": true,
-      "stand": "Steht auf der Tagesordnung",
-      "stand_datum": "24.11.2026",
-      "status": "Nur zur Information",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "stadt",
-      "amtlicher_titel": "Kammerphilharmonie Ingolstadt GmbH; — Ausübung der Gesellschafterrechte zum Wirtschaftsplan 2027",
-      "top_nr": "Ö 8",
-      "vorlage": "",
-      "vorlage_url": "",
-      "antragsteller": "",
-      "gremium": "Ausschuss für Kultur und Bildung",
-      "sitzung_kennung": "KBA/04/2026",
-      "datum": "2026-11-24",
-      "datum_anzeige": "24.11.2026",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552",
-      "dokumente": [],
-      "beratungsweg": []
-    },
-    {
       "ref": "stadt:13552#Ö 9",
       "thema": "stadt:13552#Ö 9",
       "auftritte": [
@@ -1621,88 +4421,6 @@
       "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13552",
       "dokumente": [],
       "beratungsweg": []
-    },
-    {
-      "ref": "stadt:13551#Ö 4",
-      "thema": "stadt:vorlage:23385",
-      "auftritte": [
-        {
-          "datum": "2026-10-22",
-          "datum_anzeige": "22.10.2026",
-          "gremium": "Ausschuss für Finanzen und Personal",
-          "top_nr": "Ö 15",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
-        },
-        {
-          "datum": "2026-11-19",
-          "datum_anzeige": "19.11.2026",
-          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
-          "top_nr": "Ö 4",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551"
-        }
-      ],
-      "klartext_titel": "Heilig-Geist-Spital: Stadt will 25.308,90 Euro Förderung zurückfordern",
-      "klartext": "Die Heilig-Geist-Stiftung hat nach einem Stadtratsbeschluss aus dem Jahr 2000 zwei Förderungen für ihr Pflegeheim in der Fechtgasse erhalten: 1.350.000 DM für den Umbau der Küche und 165.000 DM für den Umbau einer Wohnstation in eine Pflegestation. Die geförderten Pflegeplätze mussten mindestens 30 Jahre so genutzt werden. Das Alten- und Pflegeheim wurde zum 31. Dezember 2024 geschlossen; ein Investor baut dort 90 seniorengerechte Wohnungen, die Stiftung will die Mieterinnen und Mieter betreuen. Die Küche wird weiter genutzt, deshalb soll deren Förderung nicht zurückgefordert werden. Für die frühere Pflegestation will die Verwaltung anteilig 25.308,90 Euro zurückverlangen. Der Sozialausschuss berät am 19. November, der Finanzausschuss soll am 3. Dezember 2026 entscheiden.",
-      "klartext_titel_leicht": "Die Stadt will Förder-Geld zurück haben",
-      "klartext_leicht": "In der Fechtgasse war ein Pflege-Heim. Es heißt Heilig-Geist-Spital. Die Stadt hat früher Geld für den Umbau gegeben. Das Geld war für eine Küche und für eine Pflege-Station. Ende 2024 hat das Pflege-Heim zugemacht. Jetzt entstehen dort 90 Wohnungen für ältere Menschen. Die Küche wird weiter benutzt. Die Pflege-Station gibt es nicht mehr. Deshalb will die Stadt ungefähr 25.300 Euro zurück haben. Ein Ausschuss vom Stadt-Rat soll am 3. Dezember 2026 entscheiden.",
-      "lebenslage": [
-        "Senior:innen",
-        "Gesundheit & Pflege"
-      ],
-      "bezirk": [
-        "I-Mitte"
-      ],
-      "ebene": [
-        "Stadtrat & Ausschüsse"
-      ],
-      "anlass": [],
-      "ort": [
-        "Fechtgasse"
-      ],
-      "entwurf": false,
-      "duenn": false,
-      "stand": "Entscheidung angesetzt",
-      "stand_datum": "22.10.2026",
-      "status": "Ergebnis steht im Protokoll",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "stadt",
-      "amtlicher_titel": "Rückforderung von Fördermitteln von der Heilig-Geist-Stiftung aufgrund der Aufgabe der stationären Pflegeeinrichtung in der Fechtgasse und Umnutzung zu Service Wohnen",
-      "top_nr": "Ö 4",
-      "vorlage": "V0629/26",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23385",
-      "antragsteller": "",
-      "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
-      "sitzung_kennung": "SGA/03/2026",
-      "datum": "2026-11-19",
-      "datum_anzeige": "19.11.2026",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551",
-      "dokumente": [
-        {
-          "titel": "Vorlage",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=253953&type=do"
-        }
-      ],
-      "beratungsweg": [
-        {
-          "datum": "2026-10-22",
-          "datum_anzeige": "22.10.2026",
-          "gremium": "Ausschuss für Finanzen und Personal",
-          "top_nr": "15",
-          "oeffentlich": true,
-          "rolle": "Entscheidung",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545&toselect=90514"
-        },
-        {
-          "datum": "2026-11-19",
-          "datum_anzeige": "19.11.2026",
-          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
-          "top_nr": "4",
-          "oeffentlich": true,
-          "rolle": "Vorberatung",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551&toselect=91177"
-        }
-      ]
     },
     {
       "ref": "bza:14378#Ö 3",
@@ -1866,139 +4584,6 @@
           "oeffentlich": true,
           "rolle": "Bekanntgabe",
           "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551&toselect=91176"
-        }
-      ]
-    },
-    {
-      "ref": "stadt:13551#Ö 2",
-      "thema": "stadt:vorlage:23456",
-      "auftritte": [
-        {
-          "datum": "2026-11-19",
-          "datum_anzeige": "19.11.2026",
-          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
-          "top_nr": "Ö 2",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551"
-        }
-      ],
-      "klartext_titel": "Peter-Steuart-Haus plant für 2027 mit einem Minus von 115.300 Euro",
-      "klartext": "Der Stadtrat soll die Haushaltspläne 2027 des Peter-Steuart-Hauses und der Waisenhausstiftung samt Stellenplan genehmigen. Das Peter-Steuart-Haus rechnet mit Einnahmen von 5.848.800 Euro und Ausgaben von 5.964.100 Euro; das Defizit von 115.300 Euro übernimmt die Waisenhausstiftung. Größter Posten sind die Personalkosten mit 5.073.400 Euro, eingerechnet ist eine Tarifsteigerung von 3 Prozent ab April 2027. Die stationären Wohngruppen waren von Januar bis Oktober 2026 zu 96,67 Prozent belegt. Die Waisenhausstiftung selbst erwartet einen Gewinn von 36.900 Euro, nach der Verlustübernahme bleibt ein Ergebnis von minus 78.400 Euro. Der Sozialausschuss berät am 19. November, der Stadtrat soll am 10. Dezember 2026 entscheiden.",
-      "klartext_titel_leicht": "Der Geld-Plan für das Peter-Steuart-Haus",
-      "klartext_leicht": "Im Peter-Steuart-Haus wohnen Kinder und Jugendliche. Sie können gerade nicht bei ihrer Familie wohnen. Das Haus braucht jedes Jahr einen Plan für das Geld. Im Jahr 2027 kostet das Haus ungefähr 6 Millionen Euro. Das meiste Geld ist für die Mitarbeiter. Es fehlen ungefähr 115.000 Euro. Dieses Geld zahlt die Waisenhaus-Stiftung. Die Wohn-Gruppen im Haus sind fast immer voll. Der Stadt-Rat soll am 10. Dezember 2026 entscheiden.",
-      "lebenslage": [
-        "Eltern & Kinder",
-        "Jugend",
-        "Geld & Soziales"
-      ],
-      "bezirk": [
-        "stadtweit"
-      ],
-      "ebene": [
-        "Stadtrat & Ausschüsse"
-      ],
-      "anlass": [],
-      "ort": [],
-      "entwurf": false,
-      "duenn": false,
-      "stand": "Wird noch beraten",
-      "stand_datum": "19.11.2026",
-      "status": "Noch offen",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "stadt",
-      "amtlicher_titel": "Haushaltspläne des Peter-Steuart-Hauses und der Waisenhausstiftung für das Jahr 2027",
-      "top_nr": "Ö 2",
-      "vorlage": "V0695/26",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23456",
-      "antragsteller": "",
-      "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
-      "sitzung_kennung": "SGA/03/2026",
-      "datum": "2026-11-19",
-      "datum_anzeige": "19.11.2026",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551",
-      "dokumente": [
-        {
-          "titel": "Vorlage",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255459&type=do"
-        },
-        {
-          "titel": "Anlage zu V0695-26 HH-Pläne PSH und WHS 2027",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255460&type=do"
-        }
-      ],
-      "beratungsweg": [
-        {
-          "datum": "2026-11-19",
-          "datum_anzeige": "19.11.2026",
-          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
-          "top_nr": "2",
-          "oeffentlich": true,
-          "rolle": "Vorberatung",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551&toselect=91180"
-        }
-      ]
-    },
-    {
-      "ref": "stadt:13551#Ö 5",
-      "thema": "stadt:vorlage:23442",
-      "auftritte": [
-        {
-          "datum": "2026-11-19",
-          "datum_anzeige": "19.11.2026",
-          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
-          "top_nr": "Ö 5",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551"
-        }
-      ],
-      "klartext_titel": "Flüchtlings- und Integrationsberatung: Zuschuss der Stadt soll bis 2029 weiterlaufen",
-      "klartext": "Die Träger der Flüchtlings- und Integrationsberatung in Ingolstadt sollen von 2027 bis 2029 weiter 6.500 Euro im Jahr je geförderter Vollzeitstelle für Sachkosten bekommen. Den Zuschuss gibt es seit 2020; die Landesförderung reicht laut Vorlage nicht für Betrieb, Räume und Ausstattung. Der Freistaat fördert ab 2027 knapp 20 Prozent weniger Beraterstellen. Auf Ingolstadt entfallen 11,03 statt bisher 12,20 Vollzeitstellen, davon 2,8 bei der Stadt selbst, die übrigen bei der Caritas Ingolstadt, der Caritas Pfaffenhofen und der EJSA. Die Gesamtkosten für die Stadt sinken dadurch auf 53.495 Euro im Jahr, im Haushalt 2026 standen 65.000 Euro. Der Sozialausschuss berät am 19. November, der Finanzausschuss soll am 3. Dezember 2026 entscheiden.",
-      "klartext_titel_leicht": "Geld für die Beratung von geflüchteten Menschen",
-      "klartext_leicht": "In Ingolstadt gibt es Beratung für geflüchtete Menschen. Auch Menschen aus anderen Ländern bekommen dort Hilfe. Die Beratung machen zum Beispiel die Caritas und die Stadt. Das Land Bayern bezahlt den größten Teil. Die Stadt gibt Geld dazu, zum Beispiel für Räume. Das soll in den Jahren 2027 bis 2029 so bleiben. Die Stadt zahlt dann ungefähr 53.500 Euro im Jahr. Es gibt etwas weniger Stellen für Berater als bisher. Ein Ausschuss vom Stadt-Rat soll am 3. Dezember 2026 entscheiden.",
-      "lebenslage": [
-        "Zuwanderung & Integration",
-        "Geld & Soziales"
-      ],
-      "bezirk": [
-        "stadtweit"
-      ],
-      "ebene": [
-        "Stadtrat & Ausschüsse"
-      ],
-      "anlass": [],
-      "ort": [],
-      "entwurf": false,
-      "duenn": false,
-      "stand": "Wird noch beraten",
-      "stand_datum": "19.11.2026",
-      "status": "Noch offen",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "stadt",
-      "amtlicher_titel": "Gewährung eines Verwaltungskostenzuschusses an die Träger der Flüchtlings- und Integrationsberatung nach der Beratungs- und Integrationsrichtlinie des Freistaates Bayern",
-      "top_nr": "Ö 5",
-      "vorlage": "V0683/26",
-      "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23442",
-      "antragsteller": "",
-      "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
-      "sitzung_kennung": "SGA/03/2026",
-      "datum": "2026-11-19",
-      "datum_anzeige": "19.11.2026",
-      "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551",
-      "dokumente": [
-        {
-          "titel": "Vorlage",
-          "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255298&type=do"
-        }
-      ],
-      "beratungsweg": [
-        {
-          "datum": "2026-11-19",
-          "datum_anzeige": "19.11.2026",
-          "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
-          "top_nr": "5",
-          "oeffentlich": true,
-          "rolle": "Vorberatung",
-          "sitzung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551&toselect=91178"
         }
       ]
     },
@@ -3102,205 +5687,6 @@
           "oeffentlich": true,
           "rolle": "beschließend nach § 11 Abs. 1 Nr. 2 GeschO",
           "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939&toselect=28026"
-        }
-      ]
-    },
-    {
-      "ref": "bezirk_obb:4939#Ö 3",
-      "thema": "bezirk_obb:vorlage:14997",
-      "auftritte": [
-        {
-          "datum": "2026-11-17",
-          "datum_anzeige": "17.11.2026",
-          "gremium": "Ausschuss für Bau, Umwelt und Energie",
-          "top_nr": "Ö 3",
-          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939"
-        }
-      ],
-      "klartext_titel": "Neubau für die Holzschule in Garmisch-Partenkirchen soll 29,5 Millionen Euro kosten",
-      "klartext": "Die Schulen für Holz und Gestaltung des Bezirks in Garmisch-Partenkirchen bekommen einen Erweiterungsbau, das „Kompetenzzentrum für digitale Holzbearbeitung“, auf dem früheren Minigolfplatz neben der Schule. Geplant sind unter anderem eine Werkstatt mit moderner Maschinenausstattung, Räume für Fachakademie und Meisterausbildung sowie im Keller Metallwerkstatt und Lackiererei; ab dem Erdgeschoss wird in Holz gebaut. Die Entwurfsplanung ist fertig, die Kostenberechnung liegt bei rund 29,5 Millionen Euro einschließlich 13 Prozent Risikoaufschlag. 2021 waren noch 11 bis 14,3 Millionen Euro geschätzt worden. Förderfähig sind nach den staatlichen Richtwerten mindestens rund 12 Millionen Euro, gut 13 Millionen Euro entfallen auf Sonderkosten für die besondere Schulart, das Grundstück und ökologische Ziele. Der Bauausschuss berät am 17. November 2026 vor, freigeben soll die Haushaltsunterlage Bau der Bezirksausschuss am 3. Dezember 2026.",
-      "klartext_titel_leicht": "Der Bezirk baut für eine Holz-Schule für 29,5 Millionen Euro",
-      "klartext_leicht": "Der Bezirk Oberbayern hat eine Schule für Holz in Garmisch-Partenkirchen. Dort lernen Menschen, mit Holz zu arbeiten. Die Schule braucht mehr Platz. Deshalb soll es einen neuen Bau geben. Dort gibt es große Werk-Stätten mit neuen Maschinen. Das Haus wird zum großen Teil aus Holz gebaut. Der Bau kostet ungefähr 29,5 Millionen Euro. Früher hat man mit viel weniger Geld gerechnet. Der Bezirks-Ausschuss entscheidet am 3. Dezember 2026.",
-      "lebenslage": [
-        "Arbeit & Beruf"
-      ],
-      "bezirk": [],
-      "ebene": [
-        "Bezirk Oberbayern"
-      ],
-      "anlass": [
-        "Schulbau"
-      ],
-      "ort": [],
-      "entwurf": false,
-      "duenn": false,
-      "stand": "Wird noch beraten",
-      "stand_datum": "17.11.2026",
-      "status": "Noch offen",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "bezirk_obb",
-      "amtlicher_titel": "SHG - Kompetenzzentrum für Digitale Holzbearbeitung in Garmisch-Partenkirchen — Freigabe der HU-Bau",
-      "top_nr": "Ö 3",
-      "vorlage": "12/BV/218/2026",
-      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14997",
-      "antragsteller": "",
-      "gremium": "Ausschuss für Bau, Umwelt und Energie",
-      "sitzung_kennung": "BauA/004/2026",
-      "datum": "2026-11-17",
-      "datum_anzeige": "17.11.2026",
-      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939",
-      "dokumente": [
-        {
-          "titel": "Vorlage",
-          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89037&type=do"
-        },
-        {
-          "titel": "20261117 GAP Neubau-Präsentation",
-          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89686&type=do"
-        }
-      ],
-      "beratungsweg": [
-        {
-          "datum": "2026-11-17",
-          "datum_anzeige": "17.11.2026",
-          "gremium": "Ausschuss für Bau, Umwelt und Energie",
-          "top_nr": "3",
-          "oeffentlich": true,
-          "rolle": "vorberatend nach § 11 Abs. 1 Nr. 1 GeschO",
-          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939&toselect=28021"
-        }
-      ]
-    },
-    {
-      "ref": "bezirk_obb:4939#Ö 4",
-      "thema": "bezirk_obb:vorlage:14999",
-      "auftritte": [
-        {
-          "datum": "2026-11-17",
-          "datum_anzeige": "17.11.2026",
-          "gremium": "Ausschuss für Bau, Umwelt und Energie",
-          "top_nr": "Ö 4",
-          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939"
-        }
-      ],
-      "klartext_titel": "Freilichtmuseum Glentleiten: Kramerladen bekommt eine neue Küche",
-      "klartext": "Im Freilichtmuseum an der Glentleiten gibt es im Mesnerhof aus Siegertsbrunn einen Kramerladen mit Kiosk, der warme Gerichte, Brotzeiten, Kaffee und Kuchen verkauft. Das Gebäude hat Mängel beim Brandschutz, die Küche erfüllt die Hygiene- und Arbeitsschutzvorgaben nicht mehr, und die Kühltechnik und Elektrik sind veraltet. Eine Machbarkeitsstudie zeigt, dass eine neue Küche, Toiletten für Besucher und Personal sowie Lagerräume im bestehenden Gebäude Platz finden; am denkmalgeschützten Wohnteil von 1796 ändert sich nur wenig. Die Sanierung soll grob geschätzt rund 811.000 Euro kosten, für die Entwurfsplanung und Voruntersuchungen sind rund 80.000 Euro nötig. Bis Mai 2027 soll eine genaue Kostenberechnung vorliegen, für den Bau selbst sind rund fünf Monate angesetzt. Der Bauausschuss berät am 17. November 2026, die Planungsmittel freigeben soll der Bezirksausschuss am 3. Dezember 2026.",
-      "klartext_titel_leicht": "Das Museum Glentleiten bekommt eine neue Küche",
-      "klartext_leicht": "Die Glentleiten ist ein Museum unter freiem Himmel. Dort stehen alte Bauern-Häuser. In einem alten Haus gibt es einen Laden mit Essen. Die Küche dort ist zu alt. Sie erfüllt die Regeln für Sauberkeit nicht mehr. Auch der Schutz vor Feuer ist nicht gut genug. Der Bezirk will die Küche neu bauen. Das kostet ungefähr 811.000 Euro. Der Bezirks-Ausschuss entscheidet am 3. Dezember 2026 über das Geld für die Planung.",
-      "lebenslage": [
-        "Freizeit & Sport"
-      ],
-      "bezirk": [],
-      "ebene": [
-        "Bezirk Oberbayern"
-      ],
-      "anlass": [
-        "Kultur & Bildung"
-      ],
-      "ort": [],
-      "entwurf": false,
-      "duenn": false,
-      "stand": "Wird noch beraten",
-      "stand_datum": "17.11.2026",
-      "status": "Noch offen",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "bezirk_obb",
-      "amtlicher_titel": "Freilichtmuseum an der Glentleiten Kramerladen — Varianten - Bedarfsfeststellung und Freigabe des Planungsauftrages",
-      "top_nr": "Ö 4",
-      "vorlage": "12/BV/220/2026",
-      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14999",
-      "antragsteller": "",
-      "gremium": "Ausschuss für Bau, Umwelt und Energie",
-      "sitzung_kennung": "BauA/004/2026",
-      "datum": "2026-11-17",
-      "datum_anzeige": "17.11.2026",
-      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939",
-      "dokumente": [
-        {
-          "titel": "Vorlage",
-          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89031&type=do"
-        },
-        {
-          "titel": "20261117 FLMG Umbau Küche Kramerladen-Präsentation",
-          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=89687&type=do"
-        }
-      ],
-      "beratungsweg": [
-        {
-          "datum": "2026-11-17",
-          "datum_anzeige": "17.11.2026",
-          "gremium": "Ausschuss für Bau, Umwelt und Energie",
-          "top_nr": "4",
-          "oeffentlich": true,
-          "rolle": "vorberatend nach § 11 Abs. 1 Nr. 1 GeschO",
-          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939&toselect=28023"
-        }
-      ]
-    },
-    {
-      "ref": "bezirk_obb:4939#Ö 5",
-      "thema": "bezirk_obb:vorlage:14813",
-      "auftritte": [
-        {
-          "datum": "2026-11-17",
-          "datum_anzeige": "17.11.2026",
-          "gremium": "Ausschuss für Bau, Umwelt und Energie",
-          "top_nr": "Ö 5",
-          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939"
-        }
-      ],
-      "klartext_titel": "Grüne wollen weitere Moorflächen des Bezirks wieder vernässen",
-      "klartext": "Die Fraktion BÜNDNIS 90/DIE GRÜNEN im Bezirkstag beantragt, alle Flächen der Bezirksgüter nach weiteren Stellen zu durchsuchen, die sich zur Renaturierung oder Wiedervernässung eignen. Vorbild ist das schon umgesetzte Projekt im Hilgermoos bei Taufkirchen an der Vils. Wiedervernässte Flächen speichern CO₂ und bieten seltenen Tieren und Pflanzen Lebensraum. Laut Verwaltung arbeitet sie seit Januar 2026 bereits daran und hat das Röhrmoos bei Gabersee in Wasserburg als nächstes Vorhaben ausgewählt. Der Bauausschuss berät am 17. November 2026 vor, abstimmen soll der Bezirksausschuss am 3. Dezember 2026.",
-      "klartext_titel_leicht": "Die Grünen wollen mehr nasse Moore beim Bezirk",
-      "klartext_leicht": "Ein Moor ist ein sehr nasser Boden. Nasse Moore speichern schädliche Gase aus der Luft. Viele Moore wurden früher trocken gelegt. Der Bezirk Oberbayern hat eigene Bauern-Höfe mit viel Land. Die Partei Die Grünen hat einen Wunsch. Der Bezirk soll dort mehr Moore nass machen. Der Bezirk hat schon ein Moor gefunden. Es liegt bei Wasserburg. Der Bezirks-Ausschuss stimmt am 3. Dezember 2026 ab.",
-      "lebenslage": [],
-      "bezirk": [],
-      "ebene": [
-        "Bezirk Oberbayern"
-      ],
-      "anlass": [
-        "Klima & Umwelt"
-      ],
-      "ort": [],
-      "entwurf": false,
-      "duenn": false,
-      "stand": "Wird noch beraten",
-      "stand_datum": "17.11.2026",
-      "status": "Noch offen",
-      "niederschrift_url": "",
-      "beschluss": null,
-      "quelle": "bezirk_obb",
-      "amtlicher_titel": "Antrag der Fraktion BÜNDNIS 90 / DIE GRÜNEN auf Untersuchung der gesamten Bezirksgutflächen auf weitere potenzielle Flächen zur Renaturierung bzw. Vernässung",
-      "top_nr": "Ö 5",
-      "vorlage": "82/AN/010/2026",
-      "vorlage_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/vo0050.asp?__kvonr=14813",
-      "antragsteller": "",
-      "gremium": "Ausschuss für Bau, Umwelt und Energie",
-      "sitzung_kennung": "BauA/004/2026",
-      "datum": "2026-11-17",
-      "datum_anzeige": "17.11.2026",
-      "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939",
-      "dokumente": [
-        {
-          "titel": "Vorlage",
-          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=86056&type=do"
-        },
-        {
-          "titel": "2026-04-13 Antrag PV Flächen Wiedervernässung Hilgermoos",
-          "url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/getfile.asp?id=86051&type=do"
-        }
-      ],
-      "beratungsweg": [
-        {
-          "datum": "2026-11-17",
-          "datum_anzeige": "17.11.2026",
-          "gremium": "Ausschuss für Bau, Umwelt und Energie",
-          "top_nr": "5",
-          "oeffentlich": true,
-          "rolle": "vorberatend nach § 11 Abs. 1 Nr. 1 GeschO",
-          "sitzung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4939&toselect=28024"
         }
       ]
     },
@@ -254486,26 +256872,6 @@
   ],
   "kommende_termine": [
     {
-      "gremium": "Ausschuss für Soziales, Gesundheit, Stiftungen und Familien",
-      "artikel": "",
-      "datum": "2026-11-19",
-      "datum_anzeige": "19.11.2026",
-      "zeit": "16:00 Uhr",
-      "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
-      "quelle": "stadt",
-      "tagesordnung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13551"
-    },
-    {
-      "gremium": "Bezirksausschuss VIII-Oberhaunstadt",
-      "artikel": "",
-      "datum": "2026-11-19",
-      "datum_anzeige": "19.11.2026",
-      "zeit": "19:00 Uhr",
-      "ort": "Gastwirtschaft Kastaniengarten, Gutsstraße 4, 85055 Ingolstadt",
-      "quelle": "bza",
-      "tagesordnung_url": "https://www.ingolstadt.de/sessionnetbza/si0056.php?__ksinr=14378"
-    },
-    {
       "gremium": "Ausschuss für Kultur und Bildung",
       "artikel": "",
       "datum": "2026-11-24",
@@ -254542,7 +256908,8 @@
       "datum_anzeige": "26.11.2026",
       "zeit": "09:30-11:00 Uhr",
       "ort": "Sitzungssaal im 5. OG des Verwaltungsgebäudes",
-      "quelle": "bezirk_obb"
+      "quelle": "bezirk_obb",
+      "tagesordnung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=5019"
     },
     {
       "gremium": "Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit",
@@ -254559,8 +256926,8 @@
       "artikel": "des",
       "datum": "2026-12-01",
       "datum_anzeige": "01.12.2026",
-      "zeit": "",
-      "ort": "- geplanter Sitzungstermin -",
+      "zeit": "17:30 Uhr",
+      "ort": "Gemeindesaal St. Matthäus, Schrannenstraße 7, 85049 Ingolstadt —",
       "quelle": "bza"
     },
     {
@@ -254570,16 +256937,18 @@
       "datum_anzeige": "03.12.2026",
       "zeit": "09:30-13:30 Uhr",
       "ort": "Hybrid (Sitzungssaal 5. OG und Teams), ges.kameral.HH",
-      "quelle": "bezirk_obb"
+      "quelle": "bezirk_obb",
+      "tagesordnung_url": "https://buergerinfo-bezirk-obb.digitalfabrix.de/si0056.asp?__ksinr=4982"
     },
     {
-      "gremium": "Ausschusses für Finanzen und Personal",
-      "artikel": "des",
+      "gremium": "Ausschuss für Finanzen und Personal",
+      "artikel": "",
       "datum": "2026-12-03",
       "datum_anzeige": "03.12.2026",
       "zeit": "16:00 Uhr",
       "ort": "Ingolstadt, Neues Rathaus, Großer Sitzungssaal, II. OG",
-      "quelle": "stadt"
+      "quelle": "stadt",
+      "tagesordnung_url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
     },
     {
       "gremium": "Bezirksausschusses XI-Friedrichshofen/Hollerstauden",

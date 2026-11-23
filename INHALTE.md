@@ -1,6 +1,6 @@
 # PapierPanther: Inhaltskatalog
 
-Erzeugt von `scraper/inhalte_bauen.py` am 19.11.2026. Nicht von Hand ändern: Texte stehen im Skript (`SEITEN`), Zahlen kommen aus `data/`.
+Erzeugt von `scraper/inhalte_bauen.py` am 23.11.2026. Nicht von Hand ändern: Texte stehen im Skript (`SEITEN`), Zahlen kommen aus `data/`.
 
 Wozu: Wer über PapierPanther schreibt, postet oder vorträgt, findet hier jede Seite mit Kernaussage, Zahlen, Quellen, Lizenz und Fallstricken, ohne das Repository zu durchsuchen. Die Datei lässt sich in andere Projekte kopieren.
 
@@ -23,15 +23,15 @@ Adresse: https://schanzer-papierpanther.de/
 
 **Was man dort tun kann:** Filter nach Bezirk, Lebenslage und Stand; Orte an Einträgen anklickbar (`?ort=`); „In meiner Nähe“ mit Umkreis; Vorgangsketten der Bezirksausschüsse (`?kette=`); Unfallzahlen an Verkehrsthemen; Baustellen der nächsten 14 Tage; kommende Sitzungstermine.
 
-**Zahlen** (Daten abgerufen 19.11.2026, Feed gebaut 19.11.2026):
+**Zahlen** (Daten abgerufen 23.11.2026, Feed gebaut 23.11.2026):
 
-- 661 Sitzungen und 6.514 Tagesordnungspunkte ausgelesen (2023-11 bis 2027-02), davon 4.265 als Eintrag in Klartext
-- Einträge je Quelle: Stadtrat und Ausschüsse 2.170, Bezirksausschüsse 1.548, Bezirk Oberbayern 547
-- 1.633 Einträge auch in Einfacher Sprache
-- Stand der Einträge: Im Bezirksausschuss behandelt 1.548, Nur besprochen, nichts entschieden 1.266, Beschlossen 631, Bekanntgabe 335, Entscheidung angesetzt 265, Noch nicht terminiert 143, Wird noch beraten 52, Abgelehnt 13, Steht auf der Tagesordnung 10, Entscheidung geplant 1, Teilweise beschlossen 1
-- 874 von 3.718 Einträgen tragen einen Ort (496 verschiedene Orte)
+- 667 Sitzungen und 6.568 Tagesordnungspunkte ausgelesen (2023-11 bis 2027-01), davon 4.303 als Eintrag in Klartext
+- Einträge je Quelle: Stadtrat und Ausschüsse 2.182, Bezirksausschüsse 1.548, Bezirk Oberbayern 573
+- 1.655 Einträge auch in Einfacher Sprache
+- Stand der Einträge: Im Bezirksausschuss behandelt 1.548, Nur besprochen, nichts entschieden 1.266, Beschlossen 631, Bekanntgabe 337, Entscheidung angesetzt 264, Noch nicht terminiert 143, Wird noch beraten 53, Steht auf der Tagesordnung 26, Entscheidung geplant 21, Abgelehnt 13, Teilweise beschlossen 1
+- 875 von 3.730 Einträgen tragen einen Ort (496 verschiedene Orte)
 - Unfallatlas 2021–2025: 3.326 Unfälle mit Verletzten im Stadtgebiet
-- Einträge je Stadtbezirk: stadtweit 1.009, I-Mitte 343, IV-Südost 196, II-Nordwest 171, V-Südwest 164, VII-Etting 145, III-Nordost 140, XII-Münchener Straße 139, X-Süd 131, XI-Friedrichshofen/Hollerstauden 100, VI-West 96, VIII-Oberhaunstadt 47, IX-Mailing/Feldkirchen 36
+- Einträge je Stadtbezirk: stadtweit 1.011, I-Mitte 343, IV-Südost 196, II-Nordwest 171, V-Südwest 164, VII-Etting 145, III-Nordost 140, XII-Münchener Straße 139, X-Süd 131, XI-Friedrichshofen/Hollerstauden 100, VI-West 96, VIII-Oberhaunstadt 47, IX-Mailing/Feldkirchen 36
 
 **Schaubild:** Schaubild mit Szenen „start“, „orte“ (Stadtkarte mit Orten der Einträge) und „themen“.
 
@@ -52,7 +52,7 @@ Adresse: https://schanzer-papierpanther.de/antraege.html
 
 **Was man dort tun kann:** Je Partei aufklappbar, Stand je Antrag, Link zum Antrag als PDF.
 
-**Zahlen** (abgerufen 19.11.2026):
+**Zahlen** (abgerufen 23.11.2026):
 
 - 391 Anträge der Stadtratsfraktionen in dieser Wahlperiode
 - 223 davon schon in Beratung, 168 noch auf keiner Tagesordnung
@@ -105,7 +105,7 @@ Adresse: https://schanzer-papierpanther.de/hsk.html
 
 **Was man dort tun kann:** Maßnahmen nach Bereich und Stand; Betroffene einzelner Maßnahmen auf der Karte „Deine 15 Minuten“.
 
-**Zahlen** (Konzept Stand 15.10.2026):
+**Zahlen** (Konzept Stand 28.10.2026):
 
 - Sparziel im Schnitt 79,0 Mio. € pro Jahr (2026–2029), das sind im Schnitt 12,6 % des bereinigten Verwaltungshaushalts
 - Sparziel je Jahr: 2026 70,1 Mio. €, 2027 71,8 Mio. €, 2028 76,9 Mio. €, 2029 97,2 Mio. €
@@ -152,19 +152,19 @@ Adresse: https://schanzer-papierpanther.de/beteiligungen.html
 
 Adresse: https://schanzer-papierpanther.de/klima.html
 
-**Kachel:** 9.738 Solaranlagen gibt es in Ingolstadt (2026), dazu 1.538 öffentliche Ladepunkte. Plus: Wetter seit 1961.  
+**Kachel:** 9.750 Solaranlagen gibt es in Ingolstadt (2026), dazu 1.538 öffentliche Ladepunkte. Plus: Wetter seit 1961.  
 *Einfache Sprache:* So viele Anlagen machen in Ingolstadt Strom aus Sonne.
 
 **Worum es geht:** Wetter seit 1961 (heiße Tage, Tropennächte, Frosttage), Solaranlagen und Speicher, öffentliche Ladepunkte, Klimaziele und Treibhausgasbilanz der Stadt.
 
 **Was man dort tun kann:** Zeitreihen je Jahr, Vergleich mit Referenzperiode 1971–2000.
 
-**Zahlen** (erzeugt 19.11.2026):
+**Zahlen** (erzeugt 23.11.2026):
 
-- 9.738 Solaranlagen mit 127,6 MW (2026), Zubau 2026: 1.391 Anlagen, davon 667 Steckersolar
+- 9.750 Solaranlagen mit 127,7 MW (2026), Zubau 2026: 1.404 Anlagen, davon 671 Steckersolar
 - 1.538 öffentliche Ladepunkte an 869 Standorten, 222 davon Schnelllader (Stand 12.11.2026)
 - Wetter: Station Kösching, Tageswerte seit 1961
-- Heiße Tage (ab 30 °C): Mittel 1971–2000 5,6, 2025: 17, 2026 bis 18.11.2026: 40; Höchstwert 40 (2026). Mitteltemperatur 2025: 10,1 °C (Referenz 8,2 °C)
+- Heiße Tage (ab 30 °C): Mittel 1971–2000 5,6, 2025: 17, 2026 bis 22.11.2026: 40; Höchstwert 40 (2026). Mitteltemperatur 2025: 10,1 °C (Referenz 8,2 °C)
 - Ziel klimaneutral: Stadt 2035, Verwaltung 2030 (Stadtratsbeschluss Juni 2022)
 - CO₂-Minderung nötig 89.500 t/Jahr, erreicht 70.500 t/Jahr (Durchschnitt seit 2019, Bilanzjahr 2023); Industrie-Anteil 2021: 48 %
 
@@ -326,22 +326,22 @@ Adresse: https://schanzer-papierpanther.de/beteiligen.html
 
 ## Aktuell aus dem Rat
 
-Stand 19.11.2026. Veraltet schnell, vor einem Post auf der Seite gegenprüfen.
+Stand 23.11.2026. Veraltet schnell, vor einem Post auf der Seite gegenprüfen.
 
 ### Kommende Sitzungen
 
-- 19.11.2026 16:00 Uhr: Ausschuss für Soziales, Gesundheit, Stiftungen und Familien
-- 19.11.2026 19:00 Uhr: Bezirksausschuss VIII-Oberhaunstadt
 - 24.11.2026 16:00 Uhr: Ausschuss für Kultur und Bildung
 - 24.11.2026 18:30 Uhr: Bürgerversammlung XII - Münchener Straße
 - 25.11.2026 16:00 Uhr: Inklusionsbeirat
 - 26.11.2026 16:00 Uhr: Ausschuss für Stadtentwicklung, Bau, Umwelt und Nachhaltigkeit
-- 01.12.2026: Bezirksausschusses I-Mitte
-- 03.12.2026 16:00 Uhr: Ausschusses für Finanzen und Personal
+- 01.12.2026 17:30 Uhr: Bezirksausschusses I-Mitte
+- 03.12.2026 16:00 Uhr: Ausschuss für Finanzen und Personal
 - 08.12.2026: Bezirksausschusses XI-Friedrichshofen/Hollerstauden
 - 10.12.2026 10:00 Uhr: Stadtrates
 - 11.12.2026 17:30 Uhr: Jugendparlamentes
 - 17.12.2026: Bezirksausschusses IV-Südost
+- 19.01.2027 16:00 Uhr: Jugendhilfeausschusses
+- 26.01.2027 16:00 Uhr: Ausschusses für Sport, Veranstaltungen und Freizeit
 
 ### Zuletzt entschieden
 

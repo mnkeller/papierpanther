@@ -1,16 +1,17 @@
 {
  "erzeugt_von": "scraper/hsk_lesen.py",
- "erzeugt_am": "2026-10-23",
+ "erzeugt_am": "2026-11-23",
  "quellen": {
   "vorlage": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23409",
   "vorlage_nr": "V0652/26",
   "vorlage_pdf": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254276&type=do",
-  "konzept_pdf": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254467&type=do",
-  "anlagen_pdf": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254468&type=do"
+  "konzept_pdf": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255062&type=do",
+  "anlagen_pdf": "https://www.ingolstadt.de/sessionnet/getfile.php?id=254676&type=do",
+  "praesentation_pdf": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255061&type=do"
  },
  "bericht": {
-  "_hinweis": "Von Hand gepflegt. Zahlen aus dem Text des Haushaltssicherungskonzepts (Stand 15.10.2026), jeweils mit Seitenangabe. scraper/hsk_lesen.py rechnet die Summen nach und bricht bei Abweichungen ab. Die Maßnahmentabellen und die freiwilligen Leistungen liest das Skript selbst aus den Anlagen; hier stehen dazu nur die Klartexte.",
-  "stand": "15.10.2026",
+  "_hinweis": "Von Hand gepflegt. Zahlen aus dem Text des Haushaltssicherungskonzepts (Fassung „V2“, Stand 28.10.2026; die erste Fassung vom 15.10.2026 unterscheidet sich nur im Zieljahr und in Formulierungen, alle Zahlen sind gleich), jeweils mit Seitenangabe. scraper/hsk_lesen.py rechnet die Summen nach und bricht bei Abweichungen ab. Die Maßnahmentabellen und die freiwilligen Leistungen liest das Skript selbst aus den Anlagen; hier stehen dazu nur die Klartexte.",
+  "stand": "28.10.2026",
   "beratung": [
    {
     "gremium": "Ausschuss für Finanzen und Personal",
@@ -24,7 +25,16 @@
     "rolle": "Entscheidung"
    }
   ],
-  "ziel_jahr": 2030,
+  "ziel_jahr": null,
+  "ziel": {
+   "_seite": 15,
+   "wann": "schnellstmöglich",
+   "wann_leicht": "so schnell wie möglich",
+   "erste_fassung_jahr": 2030,
+   "erste_fassung_stand": "15.10.2026",
+   "text": "Der Haushalt soll schnellstmöglich wieder strukturell ausgeglichen und genehmigungsfähig sein. In der ersten Fassung vom 15.10.2026 stand an dieser Stelle „bis 2030“; die Fassung vom 28.10.2026 nennt kein Jahr mehr.",
+   "text_leicht": "Die Stadt soll so schnell wie möglich wieder genug Geld haben. Zuerst stand im Plan: bis zum Jahr 2030. Jetzt steht kein Jahr mehr im Plan."
+  },
   "konsolidierungsziel": {
    "_seite": 18,
    "jahre": [
@@ -637,13 +647,30 @@
     "url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13545"
    },
    {
+    "datum": "2026-10-28",
+    "titel": "Neue Fassung: Zieljahr 2030 gestrichen",
+    "text": "Einen Tag vor der Stadtratssitzung legt die Verwaltung eine überarbeitete Fassung vor. Statt „bis 2030“ soll der Haushalt jetzt „schnellstmöglich“ wieder ausgeglichen sein. Die Zahlen, das Sparziel und der Maßnahmenkatalog sind unverändert.",
+    "titel_leicht": "Der Plan wird geändert",
+    "text_leicht": "Die Verwaltung ändert den Plan. Vorher stand im Plan: Bis 2030 soll wieder genug Geld da sein. Jetzt steht dort: so schnell wie möglich. Die Zahlen sind gleich geblieben.",
+    "_seite": 15,
+    "url": "https://www.ingolstadt.de/sessionnet/getfile.php?id=255062&type=do"
+   },
+   {
     "datum": "2026-10-29",
     "titel": "Stadtrat entscheidet",
-    "text": "Der Stadtrat soll das HSK beschließen und die Verwaltung beauftragen, es umzusetzen, fortzuschreiben und der Regierung von Oberbayern vorzulegen.",
+    "text": "Auf der Tagesordnung des Stadtrats: das HSK beschließen und die Verwaltung beauftragen, es umzusetzen, fortzuschreiben und der Regierung von Oberbayern vorzulegen. Das Protokoll mit dem Ergebnis ist noch nicht veröffentlicht.",
     "titel_leicht": "Der Stadt-Rat entscheidet",
-    "text_leicht": "Der ganze Stadt-Rat stimmt über den Plan ab. Danach schickt die Stadt den Plan an die Regierung.",
+    "text_leicht": "Der ganze Stadt-Rat spricht über den Plan. Das Protokoll von der Sitzung gibt es noch nicht. Nach dem Beschluss schickt die Stadt den Plan an die Regierung.",
     "vorlage": "V0652/26",
     "url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23409"
+   },
+   {
+    "datum": "2026-12-03",
+    "titel": "Finanzausschuss: Maßnahmen zur Fortschreibung des HSK",
+    "text": "Auf der Tagesordnung des Ausschusses für Finanzen und Personal steht der Punkt „Maßnahmen zur Fortschreibung des Haushaltssicherungskonzepts“, davor der Finanzlagebericht des Finanzreferenten. Unterlagen dazu sind im Ratsinfoportal noch nicht veröffentlicht (Stand 23.11.2026). Die Sitzung ist öffentlich.",
+    "titel_leicht": "Ein Ausschuss spricht über neue Spar-Ideen",
+    "text_leicht": "Der Finanz-Ausschuss spricht wieder über den Spar-Plan. Es geht um neue Spar-Ideen. Die Papiere dazu gibt es noch nicht. Jeder darf bei der Sitzung zuschauen.",
+    "url": "https://www.ingolstadt.de/sessionnet/si0056.php?__ksinr=13555"
    },
    {
     "datum": "2026-12",
@@ -654,11 +681,11 @@
     "_seite": 47
    },
    {
-    "datum": "2030",
+    "datum": "offen",
     "titel": "Ziel: Haushalt wieder ausgeglichen",
-    "text": "Bis 2030 soll der Haushalt strukturell ausgeglichen und genehmigungsfähig sein, danach wieder Überschüsse für Investitionen bringen.",
-    "titel_leicht": "Ziel für 2030",
-    "text_leicht": "Im Jahr 2030 soll die Stadt wieder genug Geld haben. Einnahmen und Ausgaben sollen gleich sein.",
+    "text": "Der Haushalt soll schnellstmöglich wieder strukturell ausgeglichen und genehmigungsfähig sein, danach wieder Überschüsse für Investitionen bringen. Ein Jahr nennt das Konzept dafür nicht mehr; in der ersten Fassung stand 2030.",
+    "titel_leicht": "Ziel: wieder genug Geld",
+    "text_leicht": "Die Stadt soll so schnell wie möglich wieder genug Geld haben. Einnahmen und Ausgaben sollen gleich sein. Ein Jahr dafür steht nicht mehr im Plan.",
     "_seite": 15
    }
   ]
@@ -1107,6 +1134,7 @@
     "geschaetzt": false,
     "verantwortlich": "IV",
     "vorlage": "V0621/26",
+    "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23377",
     "bereich": "bildung",
     "status": "beratung",
     "titel": "Technikerschule: höhere Schulgebühren",
@@ -1133,6 +1161,7 @@
     "geschaetzt": false,
     "verantwortlich": "IV",
     "vorlage": "V0636/26",
+    "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23392",
     "bereich": "bildung",
     "status": "beratung",
     "titel": "Volkshochschule: Honorare steigen vorerst nicht",
@@ -1159,6 +1188,7 @@
     "geschaetzt": false,
     "verantwortlich": "IV",
     "vorlage": "V0622/26",
+    "vorlage_url": "https://www.ingolstadt.de/sessionnet/vo0050.php?__kvonr=23378",
     "bereich": "bildung",
     "status": "beratung",
     "titel": "Stadtbücherei: Gebühren und Bücherbus",

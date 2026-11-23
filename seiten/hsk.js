@@ -31,6 +31,7 @@
   function mio(teur, stellen) { return zahl(teur / 1000, stellen === undefined ? 1 : stellen); }
   function datumDe(iso) {
     if (/^\d{4}$/.test(iso)) return iso;
+    if (!/^\d/.test(iso)) return iso;          // "offen": Ziel ohne Jahr
     var t = iso.split("-");
     var monate = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August",
       "September", "Oktober", "November", "Dezember"];
@@ -280,10 +281,13 @@
     } else {
       txt = t(
         "<strong>Stand:</strong> Der Stadtrat hat am " + datumDe(sr.datum) + " über das HSK beraten (" + vorlage +
-          "). Die Zahlen auf dieser Seite sind die der Beschlussvorlage; Änderungen aus der Sitzung sind noch " +
-          "nicht eingearbeitet.",
+          "). Diese Seite zeigt die Fassung, die dem Stadtrat zur Sitzung vorlag (Stand " + B.stand + "). " +
+          "Gegenüber der ersten Fassung vom " + B.ziel.erste_fassung_stand + " ist das Zieljahr " +
+          B.ziel.erste_fassung_jahr + " gestrichen, die Zahlen sind gleich. Das Protokoll der Sitzung ist im " +
+          "Ratsinfoportal noch nicht veröffentlicht; was der Stadtrat beschlossen hat, steht deshalb hier noch nicht.",
         "<strong>Wichtig:</strong> Der Stadt-Rat hat am " + datumDe(sr.datum) + " über den Plan gesprochen. " +
-          "Die Zahlen hier sind aus dem Plan vor der Sitzung.");
+          "Das Protokoll von der Sitzung gibt es noch nicht. " +
+          "Die Zahlen hier sind aus dem Plan für die Sitzung.");
     }
     document.getElementById("status-hinweis").innerHTML = txt;
   }
@@ -305,9 +309,14 @@
       { wert: geld(offen27), rot: true,
         label: t("bleiben 2027 trotzdem offen", "fehlen 2027 dann noch"),
         unter: t("ohne Klinikum-Defizit: " + geld(offen27b), "ohne Klinikum: " + geld(offen27b)) },
-      { wert: String(B.ziel_jahr),
-        label: t("soll der Haushalt wieder ausgeglichen sein", "soll wieder genug Geld da sein"),
-        unter: t("strukturell und genehmigungsfähig", "Einnahmen und Ausgaben sind dann gleich.") },
+      B.ziel_jahr ?
+        { wert: String(B.ziel_jahr),
+          label: t("soll der Haushalt wieder ausgeglichen sein", "soll wieder genug Geld da sein"),
+          unter: t("strukturell und genehmigungsfähig", "Einnahmen und Ausgaben sind dann gleich.") } :
+        { wert: t("ohne Jahr", "kein Jahr"),
+          label: t("Ziel: Haushalt „" + B.ziel.wann + "“ wieder ausgeglichen", "Wann ist wieder genug Geld da?"),
+          unter: t("In der ersten Fassung vom " + B.ziel.erste_fassung_stand + " stand noch: bis " + B.ziel.erste_fassung_jahr,
+            "Zuerst stand im Plan: bis " + B.ziel.erste_fassung_jahr + ". Jetzt steht kein Jahr mehr im Plan.") },
     ];
     var box = document.getElementById("kennzahlen");
     box.innerHTML = "";
@@ -488,7 +497,9 @@
     document.getElementById("rechenweg").innerHTML = t(
       "<p>Das HSK legt die Zielgröße so fest: Fehlbetrag im Verwaltungshaushalt plus eventuell noch nicht gedeckte " +
         "Fehlbeträge aus Vorjahren (derzeit null) plus eine Reserve für Kostensteigerungen, Einnahmeausfälle und " +
-        "Umsetzungsprobleme. Ab 2030 soll zusätzlich ein Überschuss für Investitionen dazukommen.</p>" + tab +
+        "Umsetzungsprobleme. Sobald der Haushalt wieder ausgeglichen ist, soll zusätzlich ein Überschuss für " +
+        "Investitionen dazukommen. Die erste Fassung des HSK nannte dafür das Jahr 2030, die Fassung vom " + B.stand +
+        " nennt kein Jahr mehr.</p>" + tab +
         "<p>Das Klinikum wird gesondert ausgewiesen, weil der Zuschuss stark von der bundesweiten Krankenhausfinanzierung " +
         "abhängt. Bezahlen muss die Stadt ihn trotzdem; er bleibt in der Planung vollständig enthalten.</p>" +
         "<p>Zur Einordnung: Das Sparziel entspricht im Schnitt " + zahl(KZV.anteil_prozent_durchschnitt, 1) +
@@ -1112,8 +1123,11 @@
     var sr = B.beratung[1];
     document.getElementById("weiter-inhalt").innerHTML = t(
       "<ul class=\"liste-schlicht\">" +
-        "<li><strong>" + datumDe(sr.datum) + ":</strong> Der Stadtrat entscheidet in öffentlicher Sitzung über das HSK. " +
-        "Danach legt die Stadt es der Regierung von Oberbayern vor. Erst wenn die Regierung überzeugt ist, kann sie einen " +
+        "<li><strong>" + datumDe(sr.datum) + ":</strong> " + (heute() <= sr.datum ?
+          "Der Stadtrat entscheidet in öffentlicher Sitzung über das HSK. Danach legt die Stadt es " :
+          "Das HSK stand zur Entscheidung auf der Tagesordnung des Stadtrats; das Protokoll ist noch nicht veröffentlicht. " +
+          "Nach dem Beschluss legt die Stadt das HSK ") +
+        "der Regierung von Oberbayern vor. Erst wenn die Regierung überzeugt ist, kann sie einen " +
         "Haushalt mit Krediten wieder genehmigen.</li>" +
         "<li><strong>Fortschreibung:</strong> Der Text des HSK wird mindestens mit jedem neuen Haushalt aktualisiert, der " +
         "Maßnahmenkatalog auch zwischendurch. Das Sparziel wird jedes Jahr an die neue Finanzplanung angepasst.</li>" +
@@ -1127,8 +1141,10 @@
         "Stadtrat bringen können, steht auf der Seite <a href=\"beteiligen.html\">Beteiligen</a>. Wie der Haushalt insgesamt " +
         "aufgebaut ist, zeigt die Seite <a href=\"haushalt.html\">Der Haushalt</a>.</p>",
       "<ul class=\"liste-schlicht\">" +
-        "<li>Am " + datumDe(sr.datum) + " entscheidet der Stadt-Rat. Jeder darf zuschauen.</li>" +
-        "<li>Dann bekommt die Regierung von Ober-Bayern den Plan.</li>" +
+        (heute() <= sr.datum ?
+          "<li>Am " + datumDe(sr.datum) + " entscheidet der Stadt-Rat. Jeder darf zuschauen.</li>" :
+          "<li>Am " + datumDe(sr.datum) + " hat der Stadt-Rat über den Plan gesprochen.</li>") +
+        "<li>Die Regierung von Ober-Bayern bekommt den Plan.</li>" +
         "<li>Jedes Jahr prüft die Stadt: Hat das Sparen geklappt?</li></ul>" +
         "<p>Sie wollen mitreden? Auf der Seite <a href=\"beteiligen.html\">Beteiligen</a> steht, wie das geht.</p>");
   }
@@ -1139,7 +1155,8 @@
     [
       [t("Beschlussvorlage " + Q.vorlage_nr + " im Ratsinfoportal", "Das Papier im Rats-Info-Portal"), Q.vorlage],
       [t("Haushaltssicherungskonzept, Stand " + B.stand + " (PDF, 71 Seiten)", "Der Spar-Plan (PDF)"), Q.konzept_pdf],
-      [t("Anlagen: Maßnahmenkatalog, Prüfmaßnahmen, freiwillige Leistungen (PDF, 19 Seiten)", "Die Listen zum Plan (PDF)"), Q.anlagen_pdf],
+      [t("Anlagen in der überarbeiteten Fassung vom 20.10.2026: Maßnahmenkatalog, Prüfmaßnahmen, freiwillige Leistungen (PDF, 19 Seiten)", "Die Listen zum Plan (PDF)"), Q.anlagen_pdf],
+      [t("Folien der Kämmerei zur Stadtratssitzung (PDF, 13 Seiten)", "Die Folien zum Plan (PDF)"), Q.praesentation_pdf],
     ].forEach(function (q) { ul.appendChild(el("li", {}, extern(q[1], esc(q[0])))); });
     box.appendChild(ul);
     box.appendChild(el("p", { style: "margin-top:.75rem" }, t(
