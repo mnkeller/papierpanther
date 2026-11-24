@@ -73,6 +73,14 @@ def main():
     hh = re.search(r'haushalte: \{\s*2022: \{ gesamt: (\d+), eigentum: (\d+), miete: (\d+)', wohnen)
     miet_anteil = int(hh.group(3)) / int(hh.group(1)) * 100
 
+    # Mobilitaetsplan: Anteil von Bus und Bahn an allen Wegen (MiD 2023), daneben das Auto.
+    # Warum diese Zahl: Sie ist der Wert, an dem die frueheren Ziele der Stadt am weitesten
+    # vorbeigehen, und sie steht woertlich in der Vorlage.
+    with open(os.path.join(DATEN_VZ, "mobilitaet.js"), encoding="utf-8") as f:
+        mobil = f.read()
+    ms = re.search(r'id: "in23".*?fuss: (\d+), rad: (\d+), auto: (\d+), oev: (\d+)', mobil)
+    mob_fuss, mob_rad, mob_auto, mob_oev = (int(x) for x in ms.groups())
+
     # Erreichbarkeit: „Aeltere Person, Apotheke“. Warum: Der Supermarkt fuer Erwachsene (87 %)
     # klingt beruhigend und verdeckt, fuer wen die 15 Minuten nicht reichen. Aeltere gehen
     # langsamer und brauchen die Apotheke oft. Als Zahl der Stadtwert, der schwaechste Bezirk im
@@ -146,6 +154,12 @@ def main():
              text=f"und {de(plan_kraft)} geltende Bebauungspläne: wie weit jeder ist, mit Planzeichnung, Gutachten "
                   "und den Beratungen im Bezirksausschuss.",
              text_l="So viele Pläne für neue Bau-Gebiete macht die Stadt gerade. Hier sehen Sie: Wie weit ist jeder Plan?"),
+        dict(href="mobilitaet.html", farbe="#7a3b69",
+             titel="Mobilitätsplan", titel_l="Verkehrs-Plan",
+             zahl=f"{mob_oev} von 100 Wegen",
+             text=f"legen Ingolstädterinnen und Ingolstädter mit Bus und Bahn zurück, {mob_auto} mit dem Auto, {mob_fuss} zu Fuß. "
+                  "Wie es in Ihrem Bezirk aussieht und was der Stadtrat beschließen soll.",
+             text_l="So wenige Wege machen die Menschen mit Bus und Bahn. Wie ist es in Ihrem Stadt-Teil?"),
         dict(href="wege.html", farbe="#1d6a6f",
              titel="Deine 15 Minuten", titel_l="Deine 15 Minuten",
              zahl=f"{de(apo_stadt)} %",

@@ -25,10 +25,11 @@
     'miete.html': ['miete'],
     'plaene.html': ['plaene'],
     'beteiligen.html': ['beteiligen'],
-    'wege.html': ['wege', 'wege-apotheke']
+    'wege.html': ['wege', 'wege-apotheke'],
+    'mobilitaet.html': ['mobilitaet']
   };
-  // Zusätzliche Daten je Szene; data/wohnen.js und data/miete.js laden die Seiten selbst
-  var EXTRA = { klima: ['data/altstadt.js'], waage: ['data/beteiligungen.js'],
+  // Zusätzliche Daten je Szene; data/wohnen.js, data/miete.js und data/mobilitaet.js laden die Seiten selbst
+  var EXTRA = { mobilitaet: ['data/bezirke.js'], klima: ['data/altstadt.js'], waage: ['data/beteiligungen.js'],
     orte: ['data/unfaelle.js', 'data/baustellen.js', 'data/bezirke.js', 'vendor/pmtiles/pmtiles.js', 'vendor/protomaps/basemaps.js'],
     waerme: ['data/bezirke.js', 'data/baublock.js', 'vendor/pmtiles/pmtiles.js', 'vendor/protomaps/basemaps.js'],
     plaene: ['data/plangebiete.js', 'data/bezirke.js', 'vendor/pmtiles/pmtiles.js', 'vendor/protomaps/basemaps.js'] };

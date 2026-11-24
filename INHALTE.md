@@ -1,6 +1,6 @@
 # PapierPanther: Inhaltskatalog
 
-Erzeugt von `scraper/inhalte_bauen.py` am 23.11.2026. Nicht von Hand ändern: Texte stehen im Skript (`SEITEN`), Zahlen kommen aus `data/`.
+Erzeugt von `scraper/inhalte_bauen.py` am 24.11.2026. Nicht von Hand ändern: Texte stehen im Skript (`SEITEN`), Zahlen kommen aus `data/`.
 
 Wozu: Wer über PapierPanther schreibt, postet oder vorträgt, findet hier jede Seite mit Kernaussage, Zahlen, Quellen, Lizenz und Fallstricken, ohne das Repository zu durchsuchen. Die Datei lässt sich in andere Projekte kopieren.
 
@@ -275,6 +275,32 @@ Adresse: https://schanzer-papierpanther.de/plaene.html
 **Vorsicht:** Umgriffe und Planzeichnungen aus Bauleitpläne Bayern: CC BY-ND, also nicht verändern, nicht zuschneiden oder einfärben. Ob ein Plan gilt, entscheidet die Bekanntmachung im Amtsblatt.
 
 **Ideen für Posts:** „Was wird hier gebaut?“ je Plan; ein Plan von der Idee bis zur Satzung.
+
+### Mobilitätsplan
+
+Adresse: https://schanzer-papierpanther.de/mobilitaet.html
+
+**Kachel:** 8 von 100 Wegen legen Ingolstädterinnen und Ingolstädter mit Bus und Bahn zurück, 48 mit dem Auto, 26 zu Fuß. Wie es in Ihrem Bezirk aussieht und was der Stadtrat beschließen soll.  
+*Einfache Sprache:* So wenige Wege machen die Menschen mit Bus und Bahn. Wie ist es in Ihrem Stadt-Teil?
+
+**Worum es geht:** Was der Stadtrat zum Mobilitätsplan Ingolstadt 2040+ beschließen soll (Leitbild, 4 Oberziele, 20 Unterziele), wie Ingolstadt laut Befragung unterwegs ist, auch je Stadtbezirk, wo Bus und Bahn, Fuß- und Radverkehr Schwächen haben, Unfallzahlen, frühere Ziele und Stand heute, Wünsche aus der Online-Befragung.
+
+**Was man dort tun kann:** Verkehrsmittel je Bezirk vergleichen; Termine der Beratung; Zieltabelle; Liste dessen, was die Berichte offen lassen.
+
+**Zahlen** (Stand 24.11.2026, Befragung MiD 2023):
+
+- Anteil an allen Wegen: Auto und Motorrad 48 %, zu Fuß 26 %, Rad 19 %, Bus und Bahn 8 %
+- Zu Fuß je Bezirk: Mailing 61 %, Nordost 31 %, West 28 %, Münchener Straße 28 %, Friedrichshofen-Hollerstauden 27 %, Mitte 26 %, Oberhaunstadt 25 %, Nordwest 24 %, Etting 21 %, Südost 19 %, Südwest 17 % (Süd fehlt im Bericht)
+- Bezirke unter 100 Fällen: Nordwest, Etting, Oberhaunstadt
+- Weitere Zahlen (Bus und Bahn, Unfälle, frühere Ziele, Online-Befragung): direkt in data/mobilitaet.js, jeweils mit Seitenzahl
+
+**Schaubild:** Szene „mobilitaet“ (Karte der Bezirke und eine Straße, deren Spuren so breit sind wie die Anteile).
+
+**Quellen und Lizenz:** Beschlussvorlage V0690/26 der Stadt Ingolstadt mit Anlagen: MiD 2023 Regionalbericht (infas u. a. im Auftrag des BMV), Analysebericht (Planersocietät), Zielkonzept. Zahlen übernommen, Diagramme eigene Darstellung; keine Abbildungen aus den Berichten verwenden.
+
+**Vorsicht:** Bezirkswerte beruhen teils auf unter 100 Fällen; Mailing (61 % zu Fuß) nicht als Schlagzeile. Süd fehlt. Fahrer und Mitfahrer je Bezirk passen nicht zum Stadtwert, deshalb nur die Summe nennen. Einpendler sind nicht befragt. Vergleich 2017/2023 nur bedingt möglich. Online-Befragung nicht repräsentativ. Erklären, nicht bewerten: Der Plan ist noch nicht beschlossen, Maßnahmen gibt es noch keine.
+
+**Ideen für Posts:** „8 von 100 Wegen mit dem Bus“; „So ist dein Bezirk unterwegs“; was am 10.12. beschlossen wird; frühere Ziele und Stand heute.
 
 ### Deine 15 Minuten
 

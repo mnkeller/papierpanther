@@ -16,6 +16,7 @@
     ['wohnen.html', 'Wohnen', 'Mieten oder besitzen, Eigentümer, Leerstand', 'Wohnen', 'Wem gehören die Wohnungen?'],
     ['miete.html', 'Miete', 'Mietspiegel-Rechner, Mietpreisbremse', 'Miete', 'Wie viel Miete ist üblich?'],
     ['plaene.html', 'Baugebiete und Pläne', 'Wie weit jeder Bebauungsplan ist', 'Bau-Gebiete und Pläne', 'Wo darf gebaut werden?'],
+    ['mobilitaet.html', 'Mobilitätsplan', 'Wie Ingolstadt unterwegs ist, je Bezirk', 'Verkehrs-Plan', 'Wie sind die Menschen unterwegs?'],
     ['wege.html', 'Deine 15 Minuten', 'Was Sie zu Fuß erreichen', 'Deine 15 Minuten', 'Wie weit Sie zu Fuß kommen'],
     ['beteiligen.html', 'Beteiligen', 'Wie Sie mitreden können', 'Mitmachen', 'So können Sie mitreden']
   ];

@@ -82,6 +82,15 @@ window.THEMEN_DATEN = [
   "text_l": "So viele Pläne für neue Bau-Gebiete macht die Stadt gerade. Hier sehen Sie: Wie weit ist jeder Plan?"
  },
  {
+  "href": "mobilitaet.html",
+  "farbe": "#7a3b69",
+  "titel": "Mobilitätsplan",
+  "titel_l": "Verkehrs-Plan",
+  "zahl": "8 von 100 Wegen",
+  "text": "legen Ingolstädterinnen und Ingolstädter mit Bus und Bahn zurück, 48 mit dem Auto, 26 zu Fuß. Wie es in Ihrem Bezirk aussieht und was der Stadtrat beschließen soll.",
+  "text_l": "So wenige Wege machen die Menschen mit Bus und Bahn. Wie ist es in Ihrem Stadt-Teil?"
+ },
+ {
   "href": "wege.html",
   "farbe": "#1d6a6f",
   "titel": "Deine 15 Minuten",

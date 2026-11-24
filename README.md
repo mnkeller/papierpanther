@@ -408,6 +408,25 @@ verbinden und die Baustellen keine Kontaktadresse enthalten. Die Lärmkarte des
 Landesamts für Umwelt ist nicht eingebunden: Der Dienst liefert nur ein
 Kartenbild und an Hausadressen überwiegend keinen Wert.
 
+### Mobilitätsplan (`mobilitaet.html`)
+
+Kein Skript: `data/mobilitaet.js` (window.MOBILITAET_DATEN) ist von Hand gepflegt.
+Quelle ist die Beschlussvorlage V0690/26 mit drei Anlagen (MiD 2023
+Regionalbericht, Analysebericht zum Mobilitätsplan Ingolstadt 2040+, Zielkonzept).
+
+- Hinter jeder Zahl steht in der Datei die Seite der Anlage. Werte aus Grafiken
+  und Tabellen (Bezirke, Teilräume, Ziele, Wünsche) sind am gerenderten Seitenbild
+  gegengelesen, weil der Textauszug der PDFs dort Spalten vermischt.
+- Die Bezirksauswertung (Anlage 2, S. 18) nennt elf von zwölf Bezirken, Süd fehlt.
+  Fahrer und Mitfahrer stehen dort im umgekehrten Verhältnis zum Stadtwert;
+  die Seite zeigt deshalb nur die Summe „Auto und Motorrad“.
+- Texte und Diagramme stehen in `seiten/mobilitaet.js`, das Schaubild in
+  `grafik/mobilitaet.js`. Die Seite gibt die Berichte wieder und bewertet nicht.
+
+Fortschreiben: Ergebnis der Stadtratssitzung am 10.12.2026 in
+`vorlage.beratung[].ergebnis` eintragen, den Förderbescheid nachtragen, 2027 die
+Maßnahmenphase ergänzen. Danach `themen_bauen.py` und `inhalte_bauen.py` laufen lassen.
+
 ### Deine 15 Minuten (`wege.html`)
 
 ```bash

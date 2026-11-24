@@ -1,7 +1,7 @@
 /* Bausteine, die alle Themenseiten mit Zahlen teilen: Diagrammtitel, Legende,
    Kennzahl-Kacheln, Quellenliste, Stand-Zeile.
 
-   Eingebunden von: beteiligungen.html, haushalt.html, hsk.html, klima.html, miete.html, plaene.html, waerme.html, wohnen.html.
+   Eingebunden von: beteiligungen.html, haushalt.html, hsk.html, klima.html, miete.html, mobilitaet.html, plaene.html, waerme.html, wohnen.html.
    Nicht von der Startseite — dort heisst .stand etwas anderes (Statuszeile
    einer Karte). Deshalb eine eigene Datei statt basis.css. */
 

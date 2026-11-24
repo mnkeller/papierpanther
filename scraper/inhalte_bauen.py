@@ -242,6 +242,21 @@ def z_plaene():
     ]
 
 
+def z_mobilitaet():
+    with open(os.path.join(DATEN_VZ, "mobilitaet.js"), encoding="utf-8") as f:
+        text = f.read()
+    stand = re.search(r'stand: "([^"]+)"', text).group(1)
+    ms = re.search(r'id: "in23".*?fuss: (\d+), rad: (\d+), auto: (\d+), oev: (\d+)', text)
+    fuss, rad, auto, oev = ms.groups()
+    bez = re.findall(r'\{ n: "([^"]+)", fuss: (\d+), rad: (\d+), fahrer: (\d+), mitfahrer: (\d+), oev: (\d+), faelle: (\d+)', text)
+    return f"Stand {datum_de(stand)}, Befragung MiD 2023", [
+        f"Anteil an allen Wegen: Auto und Motorrad {auto} %, zu Fuß {fuss} %, Rad {rad} %, Bus und Bahn {oev} %",
+        "Zu Fuß je Bezirk: " + ", ".join(f"{b[0]} {b[1]} %" for b in sorted(bez, key=lambda b: -int(b[1]))) + " (Süd fehlt im Bericht)",
+        "Bezirke unter 100 Fällen: " + ", ".join(b[0] for b in bez if int(b[6]) < 100),
+        "Weitere Zahlen (Bus und Bahn, Unfälle, frühere Ziele, Online-Befragung): direkt in data/mobilitaet.js, jeweils mit Seitenzahl",
+    ]
+
+
 def z_wege():
     return "Zensus-Gitter 2022 und OpenStreetMap", [
         "Fünf Personen (Erwachsene, Kind, ältere Person, Rollstuhl/Kinderwagen, Besucher:in), zwei Bedingungen (Nacht, Hitze)",
@@ -258,6 +273,7 @@ ZAHLEN = {
     "index.html": z_start, "antraege.html": z_antraege, "haushalt.html": z_haushalt, "hsk.html": z_hsk,
     "beteiligungen.html": z_beteiligungen, "klima.html": z_klima, "waerme.html": z_waerme,
     "wohnen.html": z_wohnen, "miete.html": z_miete, "plaene.html": z_plaene, "wege.html": z_wege,
+    "mobilitaet.html": z_mobilitaet,
     "beteiligen.html": z_beteiligen,
 }
 
@@ -364,6 +380,21 @@ SEITEN = [
          vorsicht="Umgriffe und Planzeichnungen aus Bauleitpläne Bayern: CC BY-ND, also nicht verändern, nicht "
                   "zuschneiden oder einfärben. Ob ein Plan gilt, entscheidet die Bekanntmachung im Amtsblatt.",
          ideen="„Was wird hier gebaut?“ je Plan; ein Plan von der Idee bis zur Satzung."),
+    dict(href="mobilitaet.html", titel="Mobilitätsplan",
+         worum="Was der Stadtrat zum Mobilitätsplan Ingolstadt 2040+ beschließen soll (Leitbild, 4 Oberziele, 20 Unterziele), "
+               "wie Ingolstadt laut Befragung unterwegs ist, auch je Stadtbezirk, wo Bus und Bahn, Fuß- und Radverkehr "
+               "Schwächen haben, Unfallzahlen, frühere Ziele und Stand heute, Wünsche aus der Online-Befragung.",
+         kann="Verkehrsmittel je Bezirk vergleichen; Termine der Beratung; Zieltabelle; Liste dessen, was die Berichte offen lassen.",
+         grafik="Szene „mobilitaet“ (Karte der Bezirke und eine Straße, deren Spuren so breit sind wie die Anteile).",
+         quellen="Beschlussvorlage V0690/26 der Stadt Ingolstadt mit Anlagen: MiD 2023 Regionalbericht (infas u. a. im Auftrag "
+                 "des BMV), Analysebericht (Planersocietät), Zielkonzept. Zahlen übernommen, Diagramme eigene Darstellung; "
+                 "keine Abbildungen aus den Berichten verwenden.",
+         vorsicht="Bezirkswerte beruhen teils auf unter 100 Fällen; Mailing (61 % zu Fuß) nicht als Schlagzeile. Süd fehlt. "
+                  "Fahrer und Mitfahrer je Bezirk passen nicht zum Stadtwert, deshalb nur die Summe nennen. Einpendler sind "
+                  "nicht befragt. Vergleich 2017/2023 nur bedingt möglich. Online-Befragung nicht repräsentativ. "
+                  "Erklären, nicht bewerten: Der Plan ist noch nicht beschlossen, Maßnahmen gibt es noch keine.",
+         ideen="„8 von 100 Wegen mit dem Bus“; „So ist dein Bezirk unterwegs“; was am 10.12. beschlossen wird; "
+               "frühere Ziele und Stand heute."),
     dict(href="wege.html", titel="Deine 15 Minuten",
          worum="Was man von einem Punkt in 5, 10 und 15 Minuten zu Fuß erreicht, für fünf Personen und unter Nacht- "
                "und Hitzebedingungen; Auswertung je Bezirk; Betroffene von Sparplan-Maßnahmen.",
